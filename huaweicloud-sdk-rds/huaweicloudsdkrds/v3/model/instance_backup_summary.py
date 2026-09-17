@@ -15,79 +15,79 @@ class InstanceBackupSummary:
     sensitive_list = []
 
     openapi_types = {
-        'id': 'str',
+        'instance_id': 'str',
         'name': 'str',
-        'backup_use_space': 'float',
+        'backup_used_space': 'float',
         'datastore': 'InstanceBackupDatastore',
-        'spaces': 'Spaces'
+        'space': 'Space'
     }
 
     attribute_map = {
-        'id': 'id',
+        'instance_id': 'instance_id',
         'name': 'name',
-        'backup_use_space': 'backup_use_space',
+        'backup_used_space': 'backup_used_space',
         'datastore': 'datastore',
-        'spaces': 'spaces'
+        'space': 'space'
     }
 
-    def __init__(self, id=None, name=None, backup_use_space=None, datastore=None, spaces=None):
+    def __init__(self, instance_id=None, name=None, backup_used_space=None, datastore=None, space=None):
         r"""InstanceBackupSummary
 
         The model defined in huaweicloud sdk
 
-        :param id: **参数解释**：  实例ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
-        :type id: str
+        :param instance_id: **参数解释**：  实例ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        :type instance_id: str
         :param name: **参数解释**：  实例名称。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
         :type name: str
-        :param backup_use_space: **参数解释**：  备份用量，单位MB。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
-        :type backup_use_space: float
+        :param backup_used_space: **参数解释**：  备份用量，单位MB。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        :type backup_used_space: float
         :param datastore: 
         :type datastore: :class:`huaweicloudsdkrds.v3.InstanceBackupDatastore`
-        :param spaces: 
-        :type spaces: :class:`huaweicloudsdkrds.v3.Spaces`
+        :param space: 
+        :type space: :class:`huaweicloudsdkrds.v3.Space`
         """
         
         
 
-        self._id = None
+        self._instance_id = None
         self._name = None
-        self._backup_use_space = None
+        self._backup_used_space = None
         self._datastore = None
-        self._spaces = None
+        self._space = None
         self.discriminator = None
 
-        if id is not None:
-            self.id = id
+        if instance_id is not None:
+            self.instance_id = instance_id
         if name is not None:
             self.name = name
-        if backup_use_space is not None:
-            self.backup_use_space = backup_use_space
+        if backup_used_space is not None:
+            self.backup_used_space = backup_used_space
         if datastore is not None:
             self.datastore = datastore
-        if spaces is not None:
-            self.spaces = spaces
+        if space is not None:
+            self.space = space
 
     @property
-    def id(self):
-        r"""Gets the id of this InstanceBackupSummary.
+    def instance_id(self):
+        r"""Gets the instance_id of this InstanceBackupSummary.
 
         **参数解释**：  实例ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
-        :return: The id of this InstanceBackupSummary.
+        :return: The instance_id of this InstanceBackupSummary.
         :rtype: str
         """
-        return self._id
+        return self._instance_id
 
-    @id.setter
-    def id(self, id):
-        r"""Sets the id of this InstanceBackupSummary.
+    @instance_id.setter
+    def instance_id(self, instance_id):
+        r"""Sets the instance_id of this InstanceBackupSummary.
 
         **参数解释**：  实例ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
-        :param id: The id of this InstanceBackupSummary.
-        :type id: str
+        :param instance_id: The instance_id of this InstanceBackupSummary.
+        :type instance_id: str
         """
-        self._id = id
+        self._instance_id = instance_id
 
     @property
     def name(self):
@@ -112,26 +112,26 @@ class InstanceBackupSummary:
         self._name = name
 
     @property
-    def backup_use_space(self):
-        r"""Gets the backup_use_space of this InstanceBackupSummary.
+    def backup_used_space(self):
+        r"""Gets the backup_used_space of this InstanceBackupSummary.
 
         **参数解释**：  备份用量，单位MB。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
-        :return: The backup_use_space of this InstanceBackupSummary.
+        :return: The backup_used_space of this InstanceBackupSummary.
         :rtype: float
         """
-        return self._backup_use_space
+        return self._backup_used_space
 
-    @backup_use_space.setter
-    def backup_use_space(self, backup_use_space):
-        r"""Sets the backup_use_space of this InstanceBackupSummary.
+    @backup_used_space.setter
+    def backup_used_space(self, backup_used_space):
+        r"""Sets the backup_used_space of this InstanceBackupSummary.
 
         **参数解释**：  备份用量，单位MB。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
-        :param backup_use_space: The backup_use_space of this InstanceBackupSummary.
-        :type backup_use_space: float
+        :param backup_used_space: The backup_used_space of this InstanceBackupSummary.
+        :type backup_used_space: float
         """
-        self._backup_use_space = backup_use_space
+        self._backup_used_space = backup_used_space
 
     @property
     def datastore(self):
@@ -152,22 +152,22 @@ class InstanceBackupSummary:
         self._datastore = datastore
 
     @property
-    def spaces(self):
-        r"""Gets the spaces of this InstanceBackupSummary.
+    def space(self):
+        r"""Gets the space of this InstanceBackupSummary.
 
-        :return: The spaces of this InstanceBackupSummary.
-        :rtype: :class:`huaweicloudsdkrds.v3.Spaces`
+        :return: The space of this InstanceBackupSummary.
+        :rtype: :class:`huaweicloudsdkrds.v3.Space`
         """
-        return self._spaces
+        return self._space
 
-    @spaces.setter
-    def spaces(self, spaces):
-        r"""Sets the spaces of this InstanceBackupSummary.
+    @space.setter
+    def space(self, space):
+        r"""Sets the space of this InstanceBackupSummary.
 
-        :param spaces: The spaces of this InstanceBackupSummary.
-        :type spaces: :class:`huaweicloudsdkrds.v3.Spaces`
+        :param space: The space of this InstanceBackupSummary.
+        :type space: :class:`huaweicloudsdkrds.v3.Space`
         """
-        self._spaces = spaces
+        self._space = space
 
     def to_dict(self):
         result = {}

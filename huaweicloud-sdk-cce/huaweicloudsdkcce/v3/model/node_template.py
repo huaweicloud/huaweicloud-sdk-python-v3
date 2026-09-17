@@ -19,6 +19,7 @@ class NodeTemplate:
         'az': 'str',
         'os': 'str',
         'login': 'Login',
+        'volume_config': 'VolumeConfig',
         'root_volume': 'Volume',
         'data_volumes': 'list[Volume]',
         'storage': 'Storage',
@@ -47,6 +48,7 @@ class NodeTemplate:
         'az': 'az',
         'os': 'os',
         'login': 'login',
+        'volume_config': 'volumeConfig',
         'root_volume': 'rootVolume',
         'data_volumes': 'dataVolumes',
         'storage': 'storage',
@@ -70,7 +72,7 @@ class NodeTemplate:
         'node_name_template': 'nodeNameTemplate'
     }
 
-    def __init__(self, flavor=None, az=None, os=None, login=None, root_volume=None, data_volumes=None, storage=None, public_ip=None, node_nic_spec=None, count=None, billing_mode=None, taints=None, wait_post_install_finish=None, k8s_tags=None, ecs_group_id=None, dedicated_host_id=None, user_tags=None, runtime=None, initialized_conditions=None, extend_param=None, hostname_config=None, server_enterprise_project_id=None, partition=None, configurations_override=None, node_name_template=None):
+    def __init__(self, flavor=None, az=None, os=None, login=None, volume_config=None, root_volume=None, data_volumes=None, storage=None, public_ip=None, node_nic_spec=None, count=None, billing_mode=None, taints=None, wait_post_install_finish=None, k8s_tags=None, ecs_group_id=None, dedicated_host_id=None, user_tags=None, runtime=None, initialized_conditions=None, extend_param=None, hostname_config=None, server_enterprise_project_id=None, partition=None, configurations_override=None, node_name_template=None):
         r"""NodeTemplate
 
         The model defined in huaweicloud sdk
@@ -83,6 +85,8 @@ class NodeTemplate:
         :type os: str
         :param login: 
         :type login: :class:`huaweicloudsdkcce.v3.Login`
+        :param volume_config: 
+        :type volume_config: :class:`huaweicloudsdkcce.v3.VolumeConfig`
         :param root_volume: 
         :type root_volume: :class:`huaweicloudsdkcce.v3.Volume`
         :param data_volumes: **参数解释**： 节点的数据盘参数。针对专属云节点，参数解释与rootVolume一致。 **约束限制**： - 磁盘挂载上限为虚拟机不超过16块，裸金属不超过10块。在此基础上还受限于虚拟机/裸金属规格可挂载磁盘数上限。（目前支持通过控制台和API为CCE节点添加多块数据盘）。 - 如果数据盘正供容器运行时和Kubelet组件使用，则不可被卸载，否则将导致节点不可用。 - 仅在选择系统盘作为系统组件存储磁盘时，允许为空。
@@ -133,6 +137,7 @@ class NodeTemplate:
         self._az = None
         self._os = None
         self._login = None
+        self._volume_config = None
         self._root_volume = None
         self._data_volumes = None
         self._storage = None
@@ -164,6 +169,8 @@ class NodeTemplate:
             self.os = os
         if login is not None:
             self.login = login
+        if volume_config is not None:
+            self.volume_config = volume_config
         if root_volume is not None:
             self.root_volume = root_volume
         if data_volumes is not None:
@@ -290,6 +297,24 @@ class NodeTemplate:
         :type login: :class:`huaweicloudsdkcce.v3.Login`
         """
         self._login = login
+
+    @property
+    def volume_config(self):
+        r"""Gets the volume_config of this NodeTemplate.
+
+        :return: The volume_config of this NodeTemplate.
+        :rtype: :class:`huaweicloudsdkcce.v3.VolumeConfig`
+        """
+        return self._volume_config
+
+    @volume_config.setter
+    def volume_config(self, volume_config):
+        r"""Sets the volume_config of this NodeTemplate.
+
+        :param volume_config: The volume_config of this NodeTemplate.
+        :type volume_config: :class:`huaweicloudsdkcce.v3.VolumeConfig`
+        """
+        self._volume_config = volume_config
 
     @property
     def root_volume(self):

@@ -29,7 +29,7 @@ class SkippedCheckItemList:
 
         The model defined in huaweicloud sdk
 
-        :param name: 跳过的检查项名称
+        :param name: **参数解释：** 跳过检查的项目名称 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type name: str
         :param resource_selector: 
         :type resource_selector: :class:`huaweicloudsdkcce.v3.ResourceSelector`
@@ -50,7 +50,7 @@ class SkippedCheckItemList:
     def name(self):
         r"""Gets the name of this SkippedCheckItemList.
 
-        跳过的检查项名称
+        **参数解释：** 跳过检查的项目名称 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The name of this SkippedCheckItemList.
         :rtype: str
@@ -61,7 +61,7 @@ class SkippedCheckItemList:
     def name(self, name):
         r"""Sets the name of this SkippedCheckItemList.
 
-        跳过的检查项名称
+        **参数解释：** 跳过检查的项目名称 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param name: The name of this SkippedCheckItemList.
         :type name: str

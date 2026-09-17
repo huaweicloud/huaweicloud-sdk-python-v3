@@ -23,7 +23,7 @@ import os
 import configparser
 from abc import abstractmethod, ABC
 
-from huaweicloudsdkcore.auth.internal import MetadataAccessor, FederalAccessor, PodIdentityAccessor
+from huaweicloudsdkcore.auth.internal import MetadataAccessor, FederalAccessor, PodIdentityAccessor, OidcStsAccessor
 from huaweicloudsdkcore.utils import filepath_utils
 from huaweicloudsdkcore.auth.credentials import BasicCredentials, GlobalCredentials
 from huaweicloudsdkcore.exceptions.exceptions import ApiTypeError, ApiValueError, SdkException
@@ -178,6 +178,133 @@ class ProfileCredentialProvider(CredentialProvider):
                             ) if home_path else home_path
 
 
+class OidcStsCredentialProvider(CredentialProvider):
+    _PROVIDER_URN_ENV = "HUAWEICLOUD_OIDC_PROVIDER_URN"
+    _AGENCY_URN_ENV = "HUAWEICLOUD_OIDC_AGENCY_URN"
+    _ID_TOKEN_ENV = "HUAWEICLOUD_OIDC_ID_TOKEN"
+    _TOKEN_FILE_ENV = "HUAWEICLOUD_OIDC_TOKEN_FILE"
+    _SESSION_NAME_ENV = "HUAWEICLOUD_OIDC_SESSION_NAME"
+    _DURATION_SECONDS_ENV = "HUAWEICLOUD_OIDC_DURATION_SECONDS"
+    _POLICY_ENV = "HUAWEICLOUD_OIDC_POLICY"
+    _POLICY_IDS_ENV = "HUAWEICLOUD_OIDC_POLICY_IDS"
+    _PROJECT_ID_ENV = "HUAWEICLOUD_SDK_PROJECT_ID"
+    _DOMAIN_ID_ENV = "HUAWEICLOUD_SDK_DOMAIN_ID"
+
+    _DEFAULT_SESSION_NAME = "oidc-sts-session"
+    _DEFAULT_DURATION_SECONDS = 3600
+
+    @staticmethod
+    def get_basic_credential_oidc_provider():
+        return OidcStsCredentialProvider(_CredentialType.BASIC)
+
+    @staticmethod
+    def get_global_credential_oidc_provider():
+        return OidcStsCredentialProvider(_CredentialType.GLOBAL)
+
+    @staticmethod
+    def get_basic():
+        return OidcStsCredentialProvider(_CredentialType.BASIC)
+
+    @staticmethod
+    def get_global():
+        return OidcStsCredentialProvider(_CredentialType.GLOBAL)
+
+    def __init__(self, credential_type, provider_urn=None, agency_urn=None,
+                 id_token=None, id_token_file=None, agency_session_name=None,
+                 duration_seconds=None, policy=None, policy_ids=None,
+                 sts_endpoint=None):
+        super().__init__(credential_type)
+        self._provider_urn = provider_urn
+        self._agency_urn = agency_urn
+        self._id_token = id_token
+        self._id_token_file = id_token_file
+        self._agency_session_name = agency_session_name
+        self._duration_seconds = duration_seconds
+        self._policy = policy
+        self._policy_ids = policy_ids
+        self._sts_endpoint = sts_endpoint
+
+    def _require_env(self, name):
+        val = os.getenv(name)
+        if not val:
+            raise ApiValueError("Missing required env var: {}".format(name))
+        return val
+
+    def _resolve_provider_urn(self):
+        return self._provider_urn or self._require_env(self._PROVIDER_URN_ENV)
+
+    def _resolve_agency_urn(self):
+        return self._agency_urn or self._require_env(self._AGENCY_URN_ENV)
+
+    def _resolve_id_token(self):
+        if self._id_token:
+            return self._id_token
+        env_token = os.getenv(self._ID_TOKEN_ENV)
+        if env_token:
+            return env_token
+        token_file = self._id_token_file or os.getenv(self._TOKEN_FILE_ENV)
+        if token_file:
+            if not os.path.exists(token_file):
+                raise ApiValueError("id_token file '{}' does not exist".format(token_file))
+            with open(token_file, "r") as f:
+                content = f.read().strip()
+            if not content:
+                raise ApiValueError("empty content in id_token file '{}'".format(token_file))
+            return content
+        raise ApiValueError("Missing required env var: {} or {}".format(
+            self._ID_TOKEN_ENV, self._TOKEN_FILE_ENV))
+
+    def _resolve_session_name(self):
+        return self._agency_session_name or os.getenv(self._SESSION_NAME_ENV, self._DEFAULT_SESSION_NAME)
+
+    def _resolve_duration_seconds(self):
+        if self._duration_seconds is not None:
+            return self._duration_seconds
+        return int(os.getenv(self._DURATION_SECONDS_ENV, str(self._DEFAULT_DURATION_SECONDS)))
+
+    def _resolve_policy(self):
+        if self._policy is not None:
+            return self._policy
+        return os.getenv(self._POLICY_ENV)
+
+    def _resolve_policy_ids(self):
+        if self._policy_ids is not None:
+            return self._policy_ids
+        env_val = os.getenv(self._POLICY_IDS_ENV)
+        if env_val:
+            return [pid.strip() for pid in env_val.split(",") if pid.strip()]
+        return None
+
+    def get_credentials(self):
+        provider_urn = self._resolve_provider_urn()
+        agency_urn = self._resolve_agency_urn()
+        id_token = self._resolve_id_token()
+        session_name = self._resolve_session_name()
+        duration_seconds = self._resolve_duration_seconds()
+
+        accessor = OidcStsAccessor(
+            provider_urn=provider_urn,
+            agency_urn=agency_urn,
+            id_token=id_token,
+            agency_session_name=session_name,
+            duration_seconds=duration_seconds,
+            policy=self._resolve_policy(),
+            policy_ids=self._resolve_policy_ids(),
+        )
+
+        if self._credential_type.startswith(_CredentialType.BASIC):
+            credentials = BasicCredentials().with_project_id(os.getenv(self._PROJECT_ID_ENV))
+        elif self._credential_type.startswith(_CredentialType.GLOBAL):
+            credentials = GlobalCredentials().with_domain_id(os.getenv(self._DOMAIN_ID_ENV))
+        else:
+            raise ApiTypeError("unsupported credential type: " + self._credential_type)
+
+        if self._sts_endpoint:
+            credentials.with_sts_endpoint(self._sts_endpoint)
+        credentials.sts_accessor = accessor
+        return credentials
+
+
 class PodIdentityCredentialProvider(CredentialProvider):
     _HC_CONTAINER_CREDENTIALS_FULL_URI = "HC_CONTAINER_CREDENTIALS_FULL_URI"
     _HC_CONTAINER_AUTHORIZATION_TOKEN_FILE = "HC_CONTAINER_AUTHORIZATION_TOKEN_FILE"
@@ -284,6 +411,7 @@ class CredentialProviderChain:
     @staticmethod
     def get_basic_credential_provider_chain():
         providers = (
+            OidcStsCredentialProvider.get_basic(),
             EnvCredentialProvider.get_basic(),
             ProfileCredentialProvider.get_basic(),
             MetadataCredentialProvider.get_basic(),
@@ -298,6 +426,7 @@ class CredentialProviderChain:
     @staticmethod
     def get_global_credential_provider_chain():
         providers = (
+            OidcStsCredentialProvider.get_global(),
             EnvCredentialProvider.get_global(),
             ProfileCredentialProvider.get_global(),
             MetadataCredentialProvider.get_global(),
@@ -312,6 +441,7 @@ class CredentialProviderChain:
     @staticmethod
     def get_default_credential_provider_chain(credential_type):
         providers = (
+            OidcStsCredentialProvider(credential_type),
             EnvCredentialProvider(credential_type),
             ProfileCredentialProvider(credential_type),
             MetadataCredentialProvider(credential_type),
@@ -333,3 +463,42 @@ class CredentialProviderChain:
                 errors.append(str(e))
 
         raise ApiValueError("Failed to get credentials from provider chain\n" + "\n".join(errors))
+
+
+def patch_provider_chain():
+    """Insert OidcStsCredentialProvider as the first provider in the chain.
+
+    This is useful when the SDK is installed externally (e.g. via pip) and
+    the default chain does not yet include OidcStsCredentialProvider.
+    If OidcStsCredentialProvider is already present in the chain, this is a no-op.
+    """
+
+    orig_basic = CredentialProviderChain.get_basic_credential_provider_chain
+    orig_global = CredentialProviderChain.get_global_credential_provider_chain
+
+    def patched_basic():
+        return CredentialProviderChain(
+            (
+                OidcStsCredentialProvider.get_basic(),
+                EnvCredentialProvider.get_basic(),
+                ProfileCredentialProvider.get_basic(),
+                MetadataCredentialProvider.get_basic(),
+                PodIdentityCredentialProvider.get_basic(),
+            )
+        )
+
+    def patched_global():
+        return CredentialProviderChain(
+            (
+                OidcStsCredentialProvider.get_global(),
+                EnvCredentialProvider.get_global(),
+                ProfileCredentialProvider.get_global(),
+                MetadataCredentialProvider.get_global(),
+                PodIdentityCredentialProvider.get_global(),
+            )
+        )
+
+    CredentialProviderChain.get_basic_credential_provider_chain = staticmethod(patched_basic)
+    CredentialProviderChain.get_basic = staticmethod(patched_basic)
+    CredentialProviderChain.get_global_credential_provider_chain = staticmethod(patched_global)
+    CredentialProviderChain.get_global = staticmethod(patched_global)

@@ -17,16 +17,18 @@ class RetryPipelineRunRequest:
     openapi_types = {
         'project_id': 'str',
         'pipeline_id': 'str',
-        'pipeline_run_id': 'str'
+        'pipeline_run_id': 'str',
+        'body': 'RetryPipelineRequest'
     }
 
     attribute_map = {
         'project_id': 'project_id',
         'pipeline_id': 'pipeline_id',
-        'pipeline_run_id': 'pipeline_run_id'
+        'pipeline_run_id': 'pipeline_run_id',
+        'body': 'body'
     }
 
-    def __init__(self, project_id=None, pipeline_id=None, pipeline_run_id=None):
+    def __init__(self, project_id=None, pipeline_id=None, pipeline_run_id=None, body=None):
         r"""RetryPipelineRunRequest
 
         The model defined in huaweicloud sdk
@@ -37,6 +39,8 @@ class RetryPipelineRunRequest:
         :type pipeline_id: str
         :param pipeline_run_id: 流水线运行实例ID
         :type pipeline_run_id: str
+        :param body: Body of the RetryPipelineRunRequest
+        :type body: :class:`huaweicloudsdkcodeartspipeline.v2.RetryPipelineRequest`
         """
         
         
@@ -44,11 +48,14 @@ class RetryPipelineRunRequest:
         self._project_id = None
         self._pipeline_id = None
         self._pipeline_run_id = None
+        self._body = None
         self.discriminator = None
 
         self.project_id = project_id
         self.pipeline_id = pipeline_id
         self.pipeline_run_id = pipeline_run_id
+        if body is not None:
+            self.body = body
 
     @property
     def project_id(self):
@@ -115,6 +122,24 @@ class RetryPipelineRunRequest:
         :type pipeline_run_id: str
         """
         self._pipeline_run_id = pipeline_run_id
+
+    @property
+    def body(self):
+        r"""Gets the body of this RetryPipelineRunRequest.
+
+        :return: The body of this RetryPipelineRunRequest.
+        :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.RetryPipelineRequest`
+        """
+        return self._body
+
+    @body.setter
+    def body(self, body):
+        r"""Sets the body of this RetryPipelineRunRequest.
+
+        :param body: The body of this RetryPipelineRunRequest.
+        :type body: :class:`huaweicloudsdkcodeartspipeline.v2.RetryPipelineRequest`
+        """
+        self._body = body
 
     def to_dict(self):
         result = {}

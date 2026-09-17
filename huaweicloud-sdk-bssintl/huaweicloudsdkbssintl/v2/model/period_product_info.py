@@ -25,7 +25,8 @@ class PeriodProductInfo:
         'size_measure_id': 'int',
         'period_type': 'int',
         'period_num': 'int',
-        'subscription_num': 'int'
+        'subscription_num': 'int',
+        'fee_installment_mode': 'str'
     }
 
     attribute_map = {
@@ -39,10 +40,11 @@ class PeriodProductInfo:
         'size_measure_id': 'size_measure_id',
         'period_type': 'period_type',
         'period_num': 'period_num',
-        'subscription_num': 'subscription_num'
+        'subscription_num': 'subscription_num',
+        'fee_installment_mode': 'fee_installment_mode'
     }
 
-    def __init__(self, id=None, cloud_service_type=None, resource_type=None, resource_spec=None, region=None, available_zone=None, resource_size=None, size_measure_id=None, period_type=None, period_num=None, subscription_num=None):
+    def __init__(self, id=None, cloud_service_type=None, resource_type=None, resource_spec=None, region=None, available_zone=None, resource_size=None, size_measure_id=None, period_type=None, period_num=None, subscription_num=None, fee_installment_mode=None):
         r"""PeriodProductInfo
 
         The model defined in huaweicloud sdk
@@ -69,6 +71,8 @@ class PeriodProductInfo:
         :type period_num: int
         :param subscription_num: 订购包年/包月产品的数量。
         :type subscription_num: int
+        :param fee_installment_mode: 费用分期模式。HALF_PAY：半付 ZERO_PAY：零付 NA：不支持费用分期模式。说明：此参数不携带或携带值为空串或携带值为null时，默认值为“NA”。暂只支持ECS产品。
+        :type fee_installment_mode: str
         """
         
         
@@ -84,6 +88,7 @@ class PeriodProductInfo:
         self._period_type = None
         self._period_num = None
         self._subscription_num = None
+        self._fee_installment_mode = None
         self.discriminator = None
 
         self.id = id
@@ -100,6 +105,8 @@ class PeriodProductInfo:
         self.period_type = period_type
         self.period_num = period_num
         self.subscription_num = subscription_num
+        if fee_installment_mode is not None:
+            self.fee_installment_mode = fee_installment_mode
 
     @property
     def id(self):
@@ -342,6 +349,28 @@ class PeriodProductInfo:
         :type subscription_num: int
         """
         self._subscription_num = subscription_num
+
+    @property
+    def fee_installment_mode(self):
+        r"""Gets the fee_installment_mode of this PeriodProductInfo.
+
+        费用分期模式。HALF_PAY：半付 ZERO_PAY：零付 NA：不支持费用分期模式。说明：此参数不携带或携带值为空串或携带值为null时，默认值为“NA”。暂只支持ECS产品。
+
+        :return: The fee_installment_mode of this PeriodProductInfo.
+        :rtype: str
+        """
+        return self._fee_installment_mode
+
+    @fee_installment_mode.setter
+    def fee_installment_mode(self, fee_installment_mode):
+        r"""Sets the fee_installment_mode of this PeriodProductInfo.
+
+        费用分期模式。HALF_PAY：半付 ZERO_PAY：零付 NA：不支持费用分期模式。说明：此参数不携带或携带值为空串或携带值为null时，默认值为“NA”。暂只支持ECS产品。
+
+        :param fee_installment_mode: The fee_installment_mode of this PeriodProductInfo.
+        :type fee_installment_mode: str
+        """
+        self._fee_installment_mode = fee_installment_mode
 
     def to_dict(self):
         result = {}

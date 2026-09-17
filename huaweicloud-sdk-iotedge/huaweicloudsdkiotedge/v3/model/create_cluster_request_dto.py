@@ -17,16 +17,18 @@ class CreateClusterRequestDTO:
     openapi_types = {
         'cluster_name': 'str',
         'description': 'str',
-        'cluster_node_config': 'ClusterNodeConfig'
+        'cluster_node_config': 'ClusterNodeConfig',
+        'cluster_type': 'str'
     }
 
     attribute_map = {
         'cluster_name': 'cluster_name',
         'description': 'description',
-        'cluster_node_config': 'cluster_node_config'
+        'cluster_node_config': 'cluster_node_config',
+        'cluster_type': 'cluster_type'
     }
 
-    def __init__(self, cluster_name=None, description=None, cluster_node_config=None):
+    def __init__(self, cluster_name=None, description=None, cluster_node_config=None, cluster_type=None):
         r"""CreateClusterRequestDTO
 
         The model defined in huaweicloud sdk
@@ -37,6 +39,8 @@ class CreateClusterRequestDTO:
         :type description: str
         :param cluster_node_config: 
         :type cluster_node_config: :class:`huaweicloudsdkiotedge.v3.ClusterNodeConfig`
+        :param cluster_type: 集群类型
+        :type cluster_type: str
         """
         
         
@@ -44,6 +48,7 @@ class CreateClusterRequestDTO:
         self._cluster_name = None
         self._description = None
         self._cluster_node_config = None
+        self._cluster_type = None
         self.discriminator = None
 
         self.cluster_name = cluster_name
@@ -51,6 +56,8 @@ class CreateClusterRequestDTO:
             self.description = description
         if cluster_node_config is not None:
             self.cluster_node_config = cluster_node_config
+        if cluster_type is not None:
+            self.cluster_type = cluster_type
 
     @property
     def cluster_name(self):
@@ -113,6 +120,28 @@ class CreateClusterRequestDTO:
         :type cluster_node_config: :class:`huaweicloudsdkiotedge.v3.ClusterNodeConfig`
         """
         self._cluster_node_config = cluster_node_config
+
+    @property
+    def cluster_type(self):
+        r"""Gets the cluster_type of this CreateClusterRequestDTO.
+
+        集群类型
+
+        :return: The cluster_type of this CreateClusterRequestDTO.
+        :rtype: str
+        """
+        return self._cluster_type
+
+    @cluster_type.setter
+    def cluster_type(self, cluster_type):
+        r"""Sets the cluster_type of this CreateClusterRequestDTO.
+
+        集群类型
+
+        :param cluster_type: The cluster_type of this CreateClusterRequestDTO.
+        :type cluster_type: str
+        """
+        self._cluster_type = cluster_type
 
     def to_dict(self):
         result = {}

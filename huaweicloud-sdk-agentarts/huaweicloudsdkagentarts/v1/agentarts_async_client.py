@@ -7118,73 +7118,6 @@ class AgentArtsAsyncClient(Client):
 
         return http_info
 
-    def update_ops_dataset_tags_async(self, request):
-        r"""更新评测集标签
-
-        该接口用于更新指定数据集的分类标签体系，通过全量覆盖的方式重新定义数据集的标签属性，实现对数据的精细化归类与检索。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for UpdateOpsDatasetTags
-        :type request: :class:`huaweicloudsdkagentarts.v1.UpdateOpsDatasetTagsRequest`
-        :rtype: :class:`huaweicloudsdkagentarts.v1.UpdateOpsDatasetTagsResponse`
-        """
-        http_info = self._update_ops_dataset_tags_http_info(request)
-        return self._call_api(**http_info)
-
-    def update_ops_dataset_tags_async_invoker(self, request):
-        http_info = self._update_ops_dataset_tags_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _update_ops_dataset_tags_http_info(self, request):
-        http_info = {
-            "method": "PUT",
-            "resource_path": "/v1/ops/datasets/{dataset_id}/tags",
-            "request_type": request.__class__.__name__,
-            "response_type": "UpdateOpsDatasetTagsResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'dataset_id' in local_var_params:
-            path_params['dataset_id'] = local_var_params['dataset_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def update_ops_synthesis_task_async(self, request):
         r"""更新评测集合成任务状态
 
@@ -7359,6 +7292,1194 @@ class AgentArtsAsyncClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_create_ops_dataset_tags_async(self, request):
+        r"""批量创建数据集TMS标签
+
+        该接口用于批量创建指定数据集的TMS标签。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchCreateOpsDatasetTags
+        :type request: :class:`huaweicloudsdkagentarts.v1.BatchCreateOpsDatasetTagsRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.BatchCreateOpsDatasetTagsResponse`
+        """
+        http_info = self._batch_create_ops_dataset_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_create_ops_dataset_tags_async_invoker(self, request):
+        http_info = self._batch_create_ops_dataset_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_create_ops_dataset_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/datasets/{dataset_id}/tags/create",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateOpsDatasetTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'dataset_id' in local_var_params:
+            path_params['dataset_id'] = local_var_params['dataset_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_create_ops_evaluation_task_tags_async(self, request):
+        r"""批量创建评估任务TMS标签
+
+        该接口用于批量创建指定评估任务的TMS标签。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchCreateOpsEvaluationTaskTags
+        :type request: :class:`huaweicloudsdkagentarts.v1.BatchCreateOpsEvaluationTaskTagsRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.BatchCreateOpsEvaluationTaskTagsResponse`
+        """
+        http_info = self._batch_create_ops_evaluation_task_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_create_ops_evaluation_task_tags_async_invoker(self, request):
+        http_info = self._batch_create_ops_evaluation_task_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_create_ops_evaluation_task_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/evaluation-tasks/{task_id}/tags/create",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateOpsEvaluationTaskTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_create_ops_evaluator_tags_async(self, request):
+        r"""批量创建评估器TMS标签
+
+        该接口用于批量创建指定评估器的TMS标签。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchCreateOpsEvaluatorTags
+        :type request: :class:`huaweicloudsdkagentarts.v1.BatchCreateOpsEvaluatorTagsRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.BatchCreateOpsEvaluatorTagsResponse`
+        """
+        http_info = self._batch_create_ops_evaluator_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_create_ops_evaluator_tags_async_invoker(self, request):
+        http_info = self._batch_create_ops_evaluator_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_create_ops_evaluator_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/evaluators/{evaluator_id}/tags/create",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateOpsEvaluatorTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'evaluator_id' in local_var_params:
+            path_params['evaluator_id'] = local_var_params['evaluator_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_delete_ops_dataset_tags_async(self, request):
+        r"""批量删除数据集TMS标签
+
+        该接口用于批量删除指定数据集的TMS标签。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchDeleteOpsDatasetTags
+        :type request: :class:`huaweicloudsdkagentarts.v1.BatchDeleteOpsDatasetTagsRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.BatchDeleteOpsDatasetTagsResponse`
+        """
+        http_info = self._batch_delete_ops_dataset_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_ops_dataset_tags_async_invoker(self, request):
+        http_info = self._batch_delete_ops_dataset_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_ops_dataset_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/datasets/{dataset_id}/tags/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteOpsDatasetTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'dataset_id' in local_var_params:
+            path_params['dataset_id'] = local_var_params['dataset_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_delete_ops_evaluation_task_tags_async(self, request):
+        r"""批量删除评估任务TMS标签
+
+        该接口用于批量删除指定评估任务的TMS标签。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchDeleteOpsEvaluationTaskTags
+        :type request: :class:`huaweicloudsdkagentarts.v1.BatchDeleteOpsEvaluationTaskTagsRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.BatchDeleteOpsEvaluationTaskTagsResponse`
+        """
+        http_info = self._batch_delete_ops_evaluation_task_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_ops_evaluation_task_tags_async_invoker(self, request):
+        http_info = self._batch_delete_ops_evaluation_task_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_ops_evaluation_task_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/evaluation-tasks/{task_id}/tags/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteOpsEvaluationTaskTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_delete_ops_evaluator_tags_async(self, request):
+        r"""批量删除评估器TMS标签
+
+        该接口用于批量删除指定评估器的TMS标签。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchDeleteOpsEvaluatorTags
+        :type request: :class:`huaweicloudsdkagentarts.v1.BatchDeleteOpsEvaluatorTagsRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.BatchDeleteOpsEvaluatorTagsResponse`
+        """
+        http_info = self._batch_delete_ops_evaluator_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_ops_evaluator_tags_async_invoker(self, request):
+        http_info = self._batch_delete_ops_evaluator_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_ops_evaluator_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/evaluators/{evaluator_id}/tags/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteOpsEvaluatorTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'evaluator_id' in local_var_params:
+            path_params['evaluator_id'] = local_var_params['evaluator_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_all_ops_dataset_tms_tags_async(self, request):
+        r"""查询账号下所有数据集TMS标签
+
+        该接口用于查询账号下所有数据集的TMS标签列表，支持分页查询。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListAllOpsDatasetTmsTags
+        :type request: :class:`huaweicloudsdkagentarts.v1.ListAllOpsDatasetTmsTagsRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ListAllOpsDatasetTmsTagsResponse`
+        """
+        http_info = self._list_all_ops_dataset_tms_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_all_ops_dataset_tms_tags_async_invoker(self, request):
+        http_info = self._list_all_ops_dataset_tms_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_all_ops_dataset_tms_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/datasets/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAllOpsDatasetTmsTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_all_ops_evaluation_task_tms_tags_async(self, request):
+        r"""查询账号下所有评估任务TMS标签
+
+        该接口用于查询账号下所有评估任务的TMS标签列表，支持分页查询。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListAllOpsEvaluationTaskTmsTags
+        :type request: :class:`huaweicloudsdkagentarts.v1.ListAllOpsEvaluationTaskTmsTagsRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ListAllOpsEvaluationTaskTmsTagsResponse`
+        """
+        http_info = self._list_all_ops_evaluation_task_tms_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_all_ops_evaluation_task_tms_tags_async_invoker(self, request):
+        http_info = self._list_all_ops_evaluation_task_tms_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_all_ops_evaluation_task_tms_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/evaluation-tasks/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAllOpsEvaluationTaskTmsTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_all_ops_evaluator_tms_tags_async(self, request):
+        r"""查询账号下所有评估器TMS标签
+
+        该接口用于查询账号下所有评估器的TMS标签列表，支持分页查询。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListAllOpsEvaluatorTmsTags
+        :type request: :class:`huaweicloudsdkagentarts.v1.ListAllOpsEvaluatorTmsTagsRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ListAllOpsEvaluatorTmsTagsResponse`
+        """
+        http_info = self._list_all_ops_evaluator_tms_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_all_ops_evaluator_tms_tags_async_invoker(self, request):
+        http_info = self._list_all_ops_evaluator_tms_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_all_ops_evaluator_tms_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/evaluators/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAllOpsEvaluatorTmsTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_ops_dataset_tags_async(self, request):
+        r"""查询数据集TMS标签列表
+
+        该接口用于查询指定数据集的TMS标签列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListOpsDatasetTags
+        :type request: :class:`huaweicloudsdkagentarts.v1.ListOpsDatasetTagsRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ListOpsDatasetTagsResponse`
+        """
+        http_info = self._list_ops_dataset_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_ops_dataset_tags_async_invoker(self, request):
+        http_info = self._list_ops_dataset_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_ops_dataset_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/datasets/{dataset_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListOpsDatasetTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'dataset_id' in local_var_params:
+            path_params['dataset_id'] = local_var_params['dataset_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_ops_datasets_by_tags_async(self, request):
+        r"""根据标签过滤查询数据集资源实例
+
+        该接口用于根据标签过滤查询数据集资源实例列表，支持分页查询。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListOpsDatasetsByTags
+        :type request: :class:`huaweicloudsdkagentarts.v1.ListOpsDatasetsByTagsRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ListOpsDatasetsByTagsResponse`
+        """
+        http_info = self._list_ops_datasets_by_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_ops_datasets_by_tags_async_invoker(self, request):
+        http_info = self._list_ops_datasets_by_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_ops_datasets_by_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/datasets/resource-instances/filter",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListOpsDatasetsByTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_ops_evaluation_task_tags_async(self, request):
+        r"""查询评估任务TMS标签列表
+
+        该接口用于查询指定评估任务的TMS标签列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListOpsEvaluationTaskTags
+        :type request: :class:`huaweicloudsdkagentarts.v1.ListOpsEvaluationTaskTagsRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ListOpsEvaluationTaskTagsResponse`
+        """
+        http_info = self._list_ops_evaluation_task_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_ops_evaluation_task_tags_async_invoker(self, request):
+        http_info = self._list_ops_evaluation_task_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_ops_evaluation_task_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/evaluation-tasks/{task_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListOpsEvaluationTaskTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_ops_evaluation_tasks_by_tags_async(self, request):
+        r"""根据标签过滤查询评估任务资源实例
+
+        该接口用于根据标签过滤查询评估任务资源实例列表，支持分页查询。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListOpsEvaluationTasksByTags
+        :type request: :class:`huaweicloudsdkagentarts.v1.ListOpsEvaluationTasksByTagsRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ListOpsEvaluationTasksByTagsResponse`
+        """
+        http_info = self._list_ops_evaluation_tasks_by_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_ops_evaluation_tasks_by_tags_async_invoker(self, request):
+        http_info = self._list_ops_evaluation_tasks_by_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_ops_evaluation_tasks_by_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/evaluation-tasks/resource-instances/filter",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListOpsEvaluationTasksByTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_ops_evaluator_tags_async(self, request):
+        r"""查询评估器TMS标签列表
+
+        该接口用于查询指定评估器的TMS标签列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListOpsEvaluatorTags
+        :type request: :class:`huaweicloudsdkagentarts.v1.ListOpsEvaluatorTagsRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ListOpsEvaluatorTagsResponse`
+        """
+        http_info = self._list_ops_evaluator_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_ops_evaluator_tags_async_invoker(self, request):
+        http_info = self._list_ops_evaluator_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_ops_evaluator_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/evaluators/{evaluator_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListOpsEvaluatorTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'evaluator_id' in local_var_params:
+            path_params['evaluator_id'] = local_var_params['evaluator_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_ops_evaluators_by_tags_async(self, request):
+        r"""根据标签过滤查询评估器资源实例
+
+        该接口用于根据标签过滤查询评估器资源实例列表，支持分页查询。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListOpsEvaluatorsByTags
+        :type request: :class:`huaweicloudsdkagentarts.v1.ListOpsEvaluatorsByTagsRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ListOpsEvaluatorsByTagsResponse`
+        """
+        http_info = self._list_ops_evaluators_by_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_ops_evaluators_by_tags_async_invoker(self, request):
+        http_info = self._list_ops_evaluators_by_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_ops_evaluators_by_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/evaluators/resource-instances/filter",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListOpsEvaluatorsByTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_ops_dataset_nums_by_tags_async(self, request):
+        r"""根据标签统计数据集资源实例数量
+
+        该接口用于根据标签统计数据集资源实例数量。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowOpsDatasetNumsByTags
+        :type request: :class:`huaweicloudsdkagentarts.v1.ShowOpsDatasetNumsByTagsRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ShowOpsDatasetNumsByTagsResponse`
+        """
+        http_info = self._show_ops_dataset_nums_by_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_ops_dataset_nums_by_tags_async_invoker(self, request):
+        http_info = self._show_ops_dataset_nums_by_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_ops_dataset_nums_by_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/datasets/resource-instances/count",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowOpsDatasetNumsByTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_ops_evaluation_task_nums_by_tags_async(self, request):
+        r"""根据标签统计评估任务资源实例数量
+
+        该接口用于根据标签统计评估任务资源实例数量。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowOpsEvaluationTaskNumsByTags
+        :type request: :class:`huaweicloudsdkagentarts.v1.ShowOpsEvaluationTaskNumsByTagsRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ShowOpsEvaluationTaskNumsByTagsResponse`
+        """
+        http_info = self._show_ops_evaluation_task_nums_by_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_ops_evaluation_task_nums_by_tags_async_invoker(self, request):
+        http_info = self._show_ops_evaluation_task_nums_by_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_ops_evaluation_task_nums_by_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/evaluation-tasks/resource-instances/count",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowOpsEvaluationTaskNumsByTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_ops_evaluator_nums_by_tags_async(self, request):
+        r"""根据标签统计评估器资源实例数量
+
+        该接口用于根据标签统计评估器资源实例数量。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowOpsEvaluatorNumsByTags
+        :type request: :class:`huaweicloudsdkagentarts.v1.ShowOpsEvaluatorNumsByTagsRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ShowOpsEvaluatorNumsByTagsResponse`
+        """
+        http_info = self._show_ops_evaluator_nums_by_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_ops_evaluator_nums_by_tags_async_invoker(self, request):
+        http_info = self._show_ops_evaluator_nums_by_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_ops_evaluator_nums_by_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/evaluators/resource-instances/count",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowOpsEvaluatorNumsByTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -8246,73 +9367,6 @@ class AgentArtsAsyncClient(Client):
         form_params = {}
 
         body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def update_ops_evaluator_tags_async(self, request):
-        r"""更新评估器标签
-
-        该接口用于全量更新指定评估器的标签信息，通过重新定义评估器的分类维度，实现对评测资产的精准分类、快速检索及生命周期归类。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for UpdateOpsEvaluatorTags
-        :type request: :class:`huaweicloudsdkagentarts.v1.UpdateOpsEvaluatorTagsRequest`
-        :rtype: :class:`huaweicloudsdkagentarts.v1.UpdateOpsEvaluatorTagsResponse`
-        """
-        http_info = self._update_ops_evaluator_tags_http_info(request)
-        return self._call_api(**http_info)
-
-    def update_ops_evaluator_tags_async_invoker(self, request):
-        http_info = self._update_ops_evaluator_tags_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _update_ops_evaluator_tags_http_info(self, request):
-        http_info = {
-            "method": "PUT",
-            "resource_path": "/v1/ops/evaluators/{evaluator_id}/tags",
-            "request_type": request.__class__.__name__,
-            "response_type": "UpdateOpsEvaluatorTagsResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'evaluator_id' in local_var_params:
-            path_params['evaluator_id'] = local_var_params['evaluator_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -11022,6 +12076,75 @@ class AgentArtsAsyncClient(Client):
 
         return http_info
 
+    def show_ops_evaluation_quota_async(self, request):
+        r"""查询配额维度的免费配额和总配额信息
+
+        该接口用于查询配额维度的免费配额和总配额信息。
+        适用场景：
+        - 查询评测任务或合成任务的免费配额使用情况。
+        - 查询指定配额维度的总配额限制和已用数量。
+        - 不传type参数时，返回所有7个配额维度的信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowOpsEvaluationQuota
+        :type request: :class:`huaweicloudsdkagentarts.v1.ShowOpsEvaluationQuotaRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ShowOpsEvaluationQuotaResponse`
+        """
+        http_info = self._show_ops_evaluation_quota_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_ops_evaluation_quota_async_invoker(self, request):
+        http_info = self._show_ops_evaluation_quota_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_ops_evaluation_quota_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/ops/evaluation-quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowOpsEvaluationQuotaResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_ops_quota_async(self, request):
         r"""获取当前项目的配额
 
@@ -12598,31 +13721,35 @@ class AgentArtsAsyncClient(Client):
 
         return http_info
 
-    def update_ops_evaluation_task_tags_async(self, request):
-        r"""更新评估任务标签
+    def debug_ops_third_party_agent_async(self, request):
+        r"""调试三方托管智能体
 
-        该接口用于更新评估任务的标签信息，支持设置或修改任务的键值对标签。
+        该接口用于调试三方托管智能体或智能体运行时，向Agent发送测试请求，验证调用配置的正确性。调试成功后，配置自动保存至数据库并记录调试状态。三方智能体的身份信息（ID、名称）从可观测服务获取，调用参数（API地址、鉴权、请求参数、响应模式等）由评估服务管理并持久化存储。
+        适用场景：
+        - 配置验证：在创建评估任务前，验证三方智能体或智能体运行时的调用配置是否正确。
+        - 连通性测试：测试Agent是否可正常访问和响应。
+        - 配置保存：调试成功后自动保存配置，后续创建评估任务时可直接引用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for UpdateOpsEvaluationTaskTags
-        :type request: :class:`huaweicloudsdkagentarts.v1.UpdateOpsEvaluationTaskTagsRequest`
-        :rtype: :class:`huaweicloudsdkagentarts.v1.UpdateOpsEvaluationTaskTagsResponse`
+        :param request: Request instance for DebugOpsThirdPartyAgent
+        :type request: :class:`huaweicloudsdkagentarts.v1.DebugOpsThirdPartyAgentRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.DebugOpsThirdPartyAgentResponse`
         """
-        http_info = self._update_ops_evaluation_task_tags_http_info(request)
+        http_info = self._debug_ops_third_party_agent_http_info(request)
         return self._call_api(**http_info)
 
-    def update_ops_evaluation_task_tags_async_invoker(self, request):
-        http_info = self._update_ops_evaluation_task_tags_http_info(request)
+    def debug_ops_third_party_agent_async_invoker(self, request):
+        http_info = self._debug_ops_third_party_agent_http_info(request)
         return AsyncInvoker(self, http_info)
 
-    def _update_ops_evaluation_task_tags_http_info(self, request):
+    def _debug_ops_third_party_agent_http_info(self, request):
         http_info = {
-            "method": "PUT",
-            "resource_path": "/v1/ops/evaluation-tasks/{task_id}/tags",
+            "method": "POST",
+            "resource_path": "/v1/ops/third-party-agents/{agent_id}/debug",
             "request_type": request.__class__.__name__,
-            "response_type": "UpdateOpsEvaluationTaskTagsResponse"
+            "response_type": "DebugOpsThirdPartyAgentResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -12632,8 +13759,8 @@ class AgentArtsAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'task_id' in local_var_params:
-            path_params['task_id'] = local_var_params['task_id']
+        if 'agent_id' in local_var_params:
+            path_params['agent_id'] = local_var_params['agent_id']
 
         query_params = []
 
@@ -12644,6 +13771,149 @@ class AgentArtsAsyncClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_ops_third_party_agents_async(self, request):
+        r"""获取三方托管智能体列表
+
+        该接口用于分页获取三方托管智能体和智能体运行时的配置列表，包含基本信息和调试状态。
+        适用场景：
+        - 列表查询：查看租户下所有已配置的三方智能体和智能体运行时。
+        - 筛选查询：按类型（third_party_agent/agent_runtime）筛选。
+        - 确认调试状态：查看各智能体的调试状态，确认是否可用于创建评估任务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListOpsThirdPartyAgents
+        :type request: :class:`huaweicloudsdkagentarts.v1.ListOpsThirdPartyAgentsRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ListOpsThirdPartyAgentsResponse`
+        """
+        http_info = self._list_ops_third_party_agents_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_ops_third_party_agents_async_invoker(self, request):
+        http_info = self._list_ops_third_party_agents_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_ops_third_party_agents_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/ops/third-party-agents",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListOpsThirdPartyAgentsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'agent_type' in local_var_params:
+            query_params.append(('agent_type', local_var_params['agent_type']))
+        if 'agent_name' in local_var_params:
+            query_params.append(('agent_name', local_var_params['agent_name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_ops_third_party_agent_async(self, request):
+        r"""获取三方托管智能体配置
+
+        该接口用于获取三方托管智能体的配置信息，包含调用参数和调试状态。配置信息在调试接口调用成功后自动保存至数据库。
+        适用场景：
+        - 查看配置：查看三方智能体已保存的调用配置信息。
+        - 确认调试状态：确认三方智能体是否已调试通过，评估任务创建时需引用已调试通过的配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowOpsThirdPartyAgent
+        :type request: :class:`huaweicloudsdkagentarts.v1.ShowOpsThirdPartyAgentRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ShowOpsThirdPartyAgentResponse`
+        """
+        http_info = self._show_ops_third_party_agent_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_ops_third_party_agent_async_invoker(self, request):
+        http_info = self._show_ops_third_party_agent_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_ops_third_party_agent_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/ops/third-party-agents/{agent_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowOpsThirdPartyAgentResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'agent_id' in local_var_params:
+            path_params['agent_id'] = local_var_params['agent_id']
+
+        query_params = []
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 

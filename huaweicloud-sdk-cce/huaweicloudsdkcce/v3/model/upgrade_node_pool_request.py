@@ -33,7 +33,7 @@ class UpgradeNodePoolRequest:
 
         :param cluster_id: 集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
         :type cluster_id: str
-        :param nodepool_id: 节点池ID
+        :param nodepool_id: **参数解释**： 选择需要同步/升级的节点池 **约束限制**： 不涉及 **取值范围**： - 节点池ID：同步指定节点池中的配置，节点池ID获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。 - DefaultPool：升级默认节点池的配置  **默认取值**： 不涉及 
         :type nodepool_id: str
         :param body: Body of the UpgradeNodePoolRequest
         :type body: :class:`huaweicloudsdkcce.v3.UpgradeNodePool`
@@ -77,7 +77,7 @@ class UpgradeNodePoolRequest:
     def nodepool_id(self):
         r"""Gets the nodepool_id of this UpgradeNodePoolRequest.
 
-        节点池ID
+        **参数解释**： 选择需要同步/升级的节点池 **约束限制**： 不涉及 **取值范围**： - 节点池ID：同步指定节点池中的配置，节点池ID获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。 - DefaultPool：升级默认节点池的配置  **默认取值**： 不涉及 
 
         :return: The nodepool_id of this UpgradeNodePoolRequest.
         :rtype: str
@@ -88,7 +88,7 @@ class UpgradeNodePoolRequest:
     def nodepool_id(self, nodepool_id):
         r"""Sets the nodepool_id of this UpgradeNodePoolRequest.
 
-        节点池ID
+        **参数解释**： 选择需要同步/升级的节点池 **约束限制**： 不涉及 **取值范围**： - 节点池ID：同步指定节点池中的配置，节点池ID获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。 - DefaultPool：升级默认节点池的配置  **默认取值**： 不涉及 
 
         :param nodepool_id: The nodepool_id of this UpgradeNodePoolRequest.
         :type nodepool_id: str

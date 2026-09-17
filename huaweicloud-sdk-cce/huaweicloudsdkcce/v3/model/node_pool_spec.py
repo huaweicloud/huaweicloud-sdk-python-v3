@@ -19,6 +19,7 @@ class NodePoolSpec:
         'node_template': 'NodeTemplate',
         'initial_node_count': 'int',
         'autoscaling': 'NodePoolNodeAutoscaling',
+        'repair_policy': 'NodePoolRepairPolicy',
         'node_management': 'NodeManagement',
         'pod_security_groups': 'list[SecurityID]',
         'extension_scale_groups': 'list[ExtensionScaleGroup]',
@@ -33,6 +34,7 @@ class NodePoolSpec:
         'node_template': 'nodeTemplate',
         'initial_node_count': 'initialNodeCount',
         'autoscaling': 'autoscaling',
+        'repair_policy': 'repairPolicy',
         'node_management': 'nodeManagement',
         'pod_security_groups': 'podSecurityGroups',
         'extension_scale_groups': 'extensionScaleGroups',
@@ -42,7 +44,7 @@ class NodePoolSpec:
         'user_tags_policy_on_existing_nodes': 'userTagsPolicyOnExistingNodes'
     }
 
-    def __init__(self, type=None, node_template=None, initial_node_count=None, autoscaling=None, node_management=None, pod_security_groups=None, extension_scale_groups=None, custom_security_groups=None, taint_policy_on_existing_nodes=None, label_policy_on_existing_nodes=None, user_tags_policy_on_existing_nodes=None):
+    def __init__(self, type=None, node_template=None, initial_node_count=None, autoscaling=None, repair_policy=None, node_management=None, pod_security_groups=None, extension_scale_groups=None, custom_security_groups=None, taint_policy_on_existing_nodes=None, label_policy_on_existing_nodes=None, user_tags_policy_on_existing_nodes=None):
         r"""NodePoolSpec
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class NodePoolSpec:
         :type initial_node_count: int
         :param autoscaling: 
         :type autoscaling: :class:`huaweicloudsdkcce.v3.NodePoolNodeAutoscaling`
+        :param repair_policy: 
+        :type repair_policy: :class:`huaweicloudsdkcce.v3.NodePoolRepairPolicy`
         :param node_management: 
         :type node_management: :class:`huaweicloudsdkcce.v3.NodeManagement`
         :param pod_security_groups: 1.21版本集群节点池支持绑定安全组，最多五个。
@@ -77,6 +81,7 @@ class NodePoolSpec:
         self._node_template = None
         self._initial_node_count = None
         self._autoscaling = None
+        self._repair_policy = None
         self._node_management = None
         self._pod_security_groups = None
         self._extension_scale_groups = None
@@ -93,6 +98,8 @@ class NodePoolSpec:
             self.initial_node_count = initial_node_count
         if autoscaling is not None:
             self.autoscaling = autoscaling
+        if repair_policy is not None:
+            self.repair_policy = repair_policy
         if node_management is not None:
             self.node_management = node_management
         if pod_security_groups is not None:
@@ -187,6 +194,24 @@ class NodePoolSpec:
         :type autoscaling: :class:`huaweicloudsdkcce.v3.NodePoolNodeAutoscaling`
         """
         self._autoscaling = autoscaling
+
+    @property
+    def repair_policy(self):
+        r"""Gets the repair_policy of this NodePoolSpec.
+
+        :return: The repair_policy of this NodePoolSpec.
+        :rtype: :class:`huaweicloudsdkcce.v3.NodePoolRepairPolicy`
+        """
+        return self._repair_policy
+
+    @repair_policy.setter
+    def repair_policy(self, repair_policy):
+        r"""Sets the repair_policy of this NodePoolSpec.
+
+        :param repair_policy: The repair_policy of this NodePoolSpec.
+        :type repair_policy: :class:`huaweicloudsdkcce.v3.NodePoolRepairPolicy`
+        """
+        self._repair_policy = repair_policy
 
     @property
     def node_management(self):

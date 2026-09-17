@@ -15,29 +15,43 @@ class ContainerSettingsReqDTO:
     sensitive_list = []
 
     openapi_types = {
-        'configs': 'ContainerConfigsReqDTO'
+        'configs': 'ContainerConfigsReqDTO',
+        'custom_envs': 'object',
+        'extra_hosts': 'object'
     }
 
     attribute_map = {
-        'configs': 'configs'
+        'configs': 'configs',
+        'custom_envs': 'custom_envs',
+        'extra_hosts': 'extra_hosts'
     }
 
-    def __init__(self, configs=None):
+    def __init__(self, configs=None, custom_envs=None, extra_hosts=None):
         r"""ContainerSettingsReqDTO
 
         The model defined in huaweicloud sdk
 
         :param configs: 
         :type configs: :class:`huaweicloudsdkiotedge.v2.ContainerConfigsReqDTO`
+        :param custom_envs: 自定义环境变量
+        :type custom_envs: object
+        :param extra_hosts: 域名解析配置集合。示例：[{\&quot;hostname\&quot;:\&quot;endpoint\&quot;,\&quot;ip\&quot;:\&quot;127.0.0.1\&quot;}]
+        :type extra_hosts: object
         """
         
         
 
         self._configs = None
+        self._custom_envs = None
+        self._extra_hosts = None
         self.discriminator = None
 
         if configs is not None:
             self.configs = configs
+        if custom_envs is not None:
+            self.custom_envs = custom_envs
+        if extra_hosts is not None:
+            self.extra_hosts = extra_hosts
 
     @property
     def configs(self):
@@ -56,6 +70,50 @@ class ContainerSettingsReqDTO:
         :type configs: :class:`huaweicloudsdkiotedge.v2.ContainerConfigsReqDTO`
         """
         self._configs = configs
+
+    @property
+    def custom_envs(self):
+        r"""Gets the custom_envs of this ContainerSettingsReqDTO.
+
+        自定义环境变量
+
+        :return: The custom_envs of this ContainerSettingsReqDTO.
+        :rtype: object
+        """
+        return self._custom_envs
+
+    @custom_envs.setter
+    def custom_envs(self, custom_envs):
+        r"""Sets the custom_envs of this ContainerSettingsReqDTO.
+
+        自定义环境变量
+
+        :param custom_envs: The custom_envs of this ContainerSettingsReqDTO.
+        :type custom_envs: object
+        """
+        self._custom_envs = custom_envs
+
+    @property
+    def extra_hosts(self):
+        r"""Gets the extra_hosts of this ContainerSettingsReqDTO.
+
+        域名解析配置集合。示例：[{\"hostname\":\"endpoint\",\"ip\":\"127.0.0.1\"}]
+
+        :return: The extra_hosts of this ContainerSettingsReqDTO.
+        :rtype: object
+        """
+        return self._extra_hosts
+
+    @extra_hosts.setter
+    def extra_hosts(self, extra_hosts):
+        r"""Sets the extra_hosts of this ContainerSettingsReqDTO.
+
+        域名解析配置集合。示例：[{\"hostname\":\"endpoint\",\"ip\":\"127.0.0.1\"}]
+
+        :param extra_hosts: The extra_hosts of this ContainerSettingsReqDTO.
+        :type extra_hosts: object
+        """
+        self._extra_hosts = extra_hosts
 
     def to_dict(self):
         result = {}

@@ -18,17 +18,21 @@ class PeriodProductOfficialRatingResult:
         'id': 'str',
         'product_id': 'str',
         'official_website_amount': 'decimal.Decimal',
-        'measure_id': 'int'
+        'measure_id': 'int',
+        'installment_official_website_amount': 'str',
+        'installment_period_type': 'int'
     }
 
     attribute_map = {
         'id': 'id',
         'product_id': 'product_id',
         'official_website_amount': 'official_website_amount',
-        'measure_id': 'measure_id'
+        'measure_id': 'measure_id',
+        'installment_official_website_amount': 'installment_official_website_amount',
+        'installment_period_type': 'installment_period_type'
     }
 
-    def __init__(self, id=None, product_id=None, official_website_amount=None, measure_id=None):
+    def __init__(self, id=None, product_id=None, official_website_amount=None, measure_id=None, installment_official_website_amount=None, installment_period_type=None):
         r"""PeriodProductOfficialRatingResult
 
         The model defined in huaweicloud sdk
@@ -41,6 +45,10 @@ class PeriodProductOfficialRatingResult:
         :type official_website_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         :param measure_id: 价格度量单位标识。 1：美元
         :type measure_id: int
+        :param installment_official_website_amount: 分期金额的官网价。 说明：暂只支持ECS产品。
+        :type installment_official_website_amount: str
+        :param installment_period_type: 分期付款的周期类型。 2：月。说明：暂只支持ECS产品。
+        :type installment_period_type: int
         """
         
         
@@ -49,6 +57,8 @@ class PeriodProductOfficialRatingResult:
         self._product_id = None
         self._official_website_amount = None
         self._measure_id = None
+        self._installment_official_website_amount = None
+        self._installment_period_type = None
         self.discriminator = None
 
         if id is not None:
@@ -59,6 +69,10 @@ class PeriodProductOfficialRatingResult:
             self.official_website_amount = official_website_amount
         if measure_id is not None:
             self.measure_id = measure_id
+        if installment_official_website_amount is not None:
+            self.installment_official_website_amount = installment_official_website_amount
+        if installment_period_type is not None:
+            self.installment_period_type = installment_period_type
 
     @property
     def id(self):
@@ -147,6 +161,50 @@ class PeriodProductOfficialRatingResult:
         :type measure_id: int
         """
         self._measure_id = measure_id
+
+    @property
+    def installment_official_website_amount(self):
+        r"""Gets the installment_official_website_amount of this PeriodProductOfficialRatingResult.
+
+        分期金额的官网价。 说明：暂只支持ECS产品。
+
+        :return: The installment_official_website_amount of this PeriodProductOfficialRatingResult.
+        :rtype: str
+        """
+        return self._installment_official_website_amount
+
+    @installment_official_website_amount.setter
+    def installment_official_website_amount(self, installment_official_website_amount):
+        r"""Sets the installment_official_website_amount of this PeriodProductOfficialRatingResult.
+
+        分期金额的官网价。 说明：暂只支持ECS产品。
+
+        :param installment_official_website_amount: The installment_official_website_amount of this PeriodProductOfficialRatingResult.
+        :type installment_official_website_amount: str
+        """
+        self._installment_official_website_amount = installment_official_website_amount
+
+    @property
+    def installment_period_type(self):
+        r"""Gets the installment_period_type of this PeriodProductOfficialRatingResult.
+
+        分期付款的周期类型。 2：月。说明：暂只支持ECS产品。
+
+        :return: The installment_period_type of this PeriodProductOfficialRatingResult.
+        :rtype: int
+        """
+        return self._installment_period_type
+
+    @installment_period_type.setter
+    def installment_period_type(self, installment_period_type):
+        r"""Sets the installment_period_type of this PeriodProductOfficialRatingResult.
+
+        分期付款的周期类型。 2：月。说明：暂只支持ECS产品。
+
+        :param installment_period_type: The installment_period_type of this PeriodProductOfficialRatingResult.
+        :type installment_period_type: int
+        """
+        self._installment_period_type = installment_period_type
 
     def to_dict(self):
         result = {}

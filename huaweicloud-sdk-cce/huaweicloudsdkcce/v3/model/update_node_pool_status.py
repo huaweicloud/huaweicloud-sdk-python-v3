@@ -47,7 +47,7 @@ class UpdateNodePoolStatus:
         :type creating_node: int
         :param deleting_node: 当前节点池中删除中的节点数量。
         :type deleting_node: int
-        :param active_node: **参数解释**： 当前节点池中就绪的节点数量。 **取值范围**： 不涉及
+        :param active_node: **参数解释**： 当前节点池中就绪的节点数量。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type active_node: int
         :param configuration_synced_node_count: **参数解释** 当前节点池中已经同步了节点池配置参数的节点数量。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type configuration_synced_node_count: int
@@ -158,7 +158,7 @@ class UpdateNodePoolStatus:
     def active_node(self):
         r"""Gets the active_node of this UpdateNodePoolStatus.
 
-        **参数解释**： 当前节点池中就绪的节点数量。 **取值范围**： 不涉及
+        **参数解释**： 当前节点池中就绪的节点数量。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The active_node of this UpdateNodePoolStatus.
         :rtype: int
@@ -169,7 +169,7 @@ class UpdateNodePoolStatus:
     def active_node(self, active_node):
         r"""Sets the active_node of this UpdateNodePoolStatus.
 
-        **参数解释**： 当前节点池中就绪的节点数量。 **取值范围**： 不涉及
+        **参数解释**： 当前节点池中就绪的节点数量。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param active_node: The active_node of this UpdateNodePoolStatus.
         :type active_node: int

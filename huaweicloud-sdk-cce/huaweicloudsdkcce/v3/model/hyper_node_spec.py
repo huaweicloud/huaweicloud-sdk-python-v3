@@ -17,7 +17,7 @@ class HyperNodeSpec:
     openapi_types = {
         'flavor': 'str',
         'nodepool_id': 'str',
-        'node_template': 'list[NodeTemplateInHyperNode]',
+        'node_template': 'NodeTemplateInHyperNode',
         'charge_mode': 'str'
     }
 
@@ -33,13 +33,13 @@ class HyperNodeSpec:
 
         The model defined in huaweicloud sdk
 
-        :param flavor: **参数解释**： 超节点规格
+        :param flavor: **参数解释**： 超节点规格 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type flavor: str
-        :param nodepool_id: **参数解释**： 所属节点池ID
+        :param nodepool_id: **参数解释**： 所属节点池ID **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type nodepool_id: str
-        :param node_template: **参数解释**： 超节点下节点相关的配置。
-        :type node_template: list[:class:`huaweicloudsdkcce.v3.NodeTemplateInHyperNode`]
-        :param charge_mode: **参数解释**： 付费方式 **取值范围**： - prepaid: 预付费，即包年包月； - postpaid: 后付费，即按需付费；
+        :param node_template: 
+        :type node_template: :class:`huaweicloudsdkcce.v3.NodeTemplateInHyperNode`
+        :param charge_mode: **参数解释**： 付费方式 **约束限制**： 不涉及 **取值范围**： - prepaid：预付费，即包年包月； - postpaid：后付费，即按需付费；  **默认取值**： 不涉及
         :type charge_mode: str
         """
         
@@ -64,7 +64,7 @@ class HyperNodeSpec:
     def flavor(self):
         r"""Gets the flavor of this HyperNodeSpec.
 
-        **参数解释**： 超节点规格
+        **参数解释**： 超节点规格 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The flavor of this HyperNodeSpec.
         :rtype: str
@@ -75,7 +75,7 @@ class HyperNodeSpec:
     def flavor(self, flavor):
         r"""Sets the flavor of this HyperNodeSpec.
 
-        **参数解释**： 超节点规格
+        **参数解释**： 超节点规格 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param flavor: The flavor of this HyperNodeSpec.
         :type flavor: str
@@ -86,7 +86,7 @@ class HyperNodeSpec:
     def nodepool_id(self):
         r"""Gets the nodepool_id of this HyperNodeSpec.
 
-        **参数解释**： 所属节点池ID
+        **参数解释**： 所属节点池ID **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The nodepool_id of this HyperNodeSpec.
         :rtype: str
@@ -97,7 +97,7 @@ class HyperNodeSpec:
     def nodepool_id(self, nodepool_id):
         r"""Sets the nodepool_id of this HyperNodeSpec.
 
-        **参数解释**： 所属节点池ID
+        **参数解释**： 所属节点池ID **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param nodepool_id: The nodepool_id of this HyperNodeSpec.
         :type nodepool_id: str
@@ -108,10 +108,8 @@ class HyperNodeSpec:
     def node_template(self):
         r"""Gets the node_template of this HyperNodeSpec.
 
-        **参数解释**： 超节点下节点相关的配置。
-
         :return: The node_template of this HyperNodeSpec.
-        :rtype: list[:class:`huaweicloudsdkcce.v3.NodeTemplateInHyperNode`]
+        :rtype: :class:`huaweicloudsdkcce.v3.NodeTemplateInHyperNode`
         """
         return self._node_template
 
@@ -119,10 +117,8 @@ class HyperNodeSpec:
     def node_template(self, node_template):
         r"""Sets the node_template of this HyperNodeSpec.
 
-        **参数解释**： 超节点下节点相关的配置。
-
         :param node_template: The node_template of this HyperNodeSpec.
-        :type node_template: list[:class:`huaweicloudsdkcce.v3.NodeTemplateInHyperNode`]
+        :type node_template: :class:`huaweicloudsdkcce.v3.NodeTemplateInHyperNode`
         """
         self._node_template = node_template
 
@@ -130,7 +126,7 @@ class HyperNodeSpec:
     def charge_mode(self):
         r"""Gets the charge_mode of this HyperNodeSpec.
 
-        **参数解释**： 付费方式 **取值范围**： - prepaid: 预付费，即包年包月； - postpaid: 后付费，即按需付费；
+        **参数解释**： 付费方式 **约束限制**： 不涉及 **取值范围**： - prepaid：预付费，即包年包月； - postpaid：后付费，即按需付费；  **默认取值**： 不涉及
 
         :return: The charge_mode of this HyperNodeSpec.
         :rtype: str
@@ -141,7 +137,7 @@ class HyperNodeSpec:
     def charge_mode(self, charge_mode):
         r"""Sets the charge_mode of this HyperNodeSpec.
 
-        **参数解释**： 付费方式 **取值范围**： - prepaid: 预付费，即包年包月； - postpaid: 后付费，即按需付费；
+        **参数解释**： 付费方式 **约束限制**： 不涉及 **取值范围**： - prepaid：预付费，即包年包月； - postpaid：后付费，即按需付费；  **默认取值**： 不涉及
 
         :param charge_mode: The charge_mode of this HyperNodeSpec.
         :type charge_mode: str

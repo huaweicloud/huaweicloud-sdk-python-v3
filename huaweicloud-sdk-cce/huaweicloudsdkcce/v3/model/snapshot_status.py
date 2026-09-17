@@ -31,11 +31,11 @@ class SnapshotStatus:
 
         The model defined in huaweicloud sdk
 
-        :param phase: 任务状态
+        :param phase: **参数解释：** 任务状态 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type phase: str
-        :param progress: 任务进度
+        :param progress: **参数解释：** 任务进度 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type progress: str
-        :param completion_time: 完成时间
+        :param completion_time: **参数解释：** 完成时间 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type completion_time: str
         """
         
@@ -57,7 +57,7 @@ class SnapshotStatus:
     def phase(self):
         r"""Gets the phase of this SnapshotStatus.
 
-        任务状态
+        **参数解释：** 任务状态 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The phase of this SnapshotStatus.
         :rtype: str
@@ -68,7 +68,7 @@ class SnapshotStatus:
     def phase(self, phase):
         r"""Sets the phase of this SnapshotStatus.
 
-        任务状态
+        **参数解释：** 任务状态 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param phase: The phase of this SnapshotStatus.
         :type phase: str
@@ -79,7 +79,7 @@ class SnapshotStatus:
     def progress(self):
         r"""Gets the progress of this SnapshotStatus.
 
-        任务进度
+        **参数解释：** 任务进度 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The progress of this SnapshotStatus.
         :rtype: str
@@ -90,7 +90,7 @@ class SnapshotStatus:
     def progress(self, progress):
         r"""Sets the progress of this SnapshotStatus.
 
-        任务进度
+        **参数解释：** 任务进度 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param progress: The progress of this SnapshotStatus.
         :type progress: str
@@ -101,7 +101,7 @@ class SnapshotStatus:
     def completion_time(self):
         r"""Gets the completion_time of this SnapshotStatus.
 
-        完成时间
+        **参数解释：** 完成时间 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The completion_time of this SnapshotStatus.
         :rtype: str
@@ -112,7 +112,7 @@ class SnapshotStatus:
     def completion_time(self, completion_time):
         r"""Sets the completion_time of this SnapshotStatus.
 
-        完成时间
+        **参数解释：** 完成时间 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param completion_time: The completion_time of this SnapshotStatus.
         :type completion_time: str

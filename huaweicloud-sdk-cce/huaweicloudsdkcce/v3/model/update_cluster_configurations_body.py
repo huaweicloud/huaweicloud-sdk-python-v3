@@ -33,9 +33,9 @@ class UpdateClusterConfigurationsBody:
 
         The model defined in huaweicloud sdk
 
-        :param api_version: API版本，固定值**v3**
+        :param api_version: **参数解释：** API版本，固定值**v3** **约束限制：** 固定值 **取值范围：** - v3  **默认取值：** v3 
         :type api_version: str
-        :param kind: API类型，固定值**Configuration**
+        :param kind: **参数解释：** API类型，固定值**Configuration** **约束限制：** 固定值 **取值范围：** - Configuration  **默认取值：** Configuration 
         :type kind: str
         :param metadata: 
         :type metadata: :class:`huaweicloudsdkcce.v3.ConfigurationMetadata`
@@ -60,7 +60,7 @@ class UpdateClusterConfigurationsBody:
     def api_version(self):
         r"""Gets the api_version of this UpdateClusterConfigurationsBody.
 
-        API版本，固定值**v3**
+        **参数解释：** API版本，固定值**v3** **约束限制：** 固定值 **取值范围：** - v3  **默认取值：** v3 
 
         :return: The api_version of this UpdateClusterConfigurationsBody.
         :rtype: str
@@ -71,7 +71,7 @@ class UpdateClusterConfigurationsBody:
     def api_version(self, api_version):
         r"""Sets the api_version of this UpdateClusterConfigurationsBody.
 
-        API版本，固定值**v3**
+        **参数解释：** API版本，固定值**v3** **约束限制：** 固定值 **取值范围：** - v3  **默认取值：** v3 
 
         :param api_version: The api_version of this UpdateClusterConfigurationsBody.
         :type api_version: str
@@ -82,7 +82,7 @@ class UpdateClusterConfigurationsBody:
     def kind(self):
         r"""Gets the kind of this UpdateClusterConfigurationsBody.
 
-        API类型，固定值**Configuration**
+        **参数解释：** API类型，固定值**Configuration** **约束限制：** 固定值 **取值范围：** - Configuration  **默认取值：** Configuration 
 
         :return: The kind of this UpdateClusterConfigurationsBody.
         :rtype: str
@@ -93,7 +93,7 @@ class UpdateClusterConfigurationsBody:
     def kind(self, kind):
         r"""Sets the kind of this UpdateClusterConfigurationsBody.
 
-        API类型，固定值**Configuration**
+        **参数解释：** API类型，固定值**Configuration** **约束限制：** 固定值 **取值范围：** - Configuration  **默认取值：** Configuration 
 
         :param kind: The kind of this UpdateClusterConfigurationsBody.
         :type kind: str

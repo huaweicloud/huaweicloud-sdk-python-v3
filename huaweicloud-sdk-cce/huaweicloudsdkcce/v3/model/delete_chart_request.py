@@ -27,7 +27,7 @@ class DeleteChartRequest:
 
         The model defined in huaweicloud sdk
 
-        :param chart_id: 模板的ID
+        :param chart_id: **参数解释：** 模板的ID。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type chart_id: str
         """
         
@@ -42,7 +42,7 @@ class DeleteChartRequest:
     def chart_id(self):
         r"""Gets the chart_id of this DeleteChartRequest.
 
-        模板的ID
+        **参数解释：** 模板的ID。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The chart_id of this DeleteChartRequest.
         :rtype: str
@@ -53,7 +53,7 @@ class DeleteChartRequest:
     def chart_id(self, chart_id):
         r"""Sets the chart_id of this DeleteChartRequest.
 
-        模板的ID
+        **参数解释：** 模板的ID。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param chart_id: The chart_id of this DeleteChartRequest.
         :type chart_id: str

@@ -34,13 +34,13 @@ class ListAutopilotPreCheckTasksResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param api_version: api版本，默认为v3
+        :param api_version: **参数解释：** API版本，默认为v3 **约束限制：** 不涉及 **取值范围：** - v3  **默认取值：** v3 
         :type api_version: str
-        :param kind: 类型
+        :param kind: **参数解释：** 类型 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type kind: str
         :param metadata: 
         :type metadata: :class:`huaweicloudsdkcce.v3.Metadata`
-        :param items: 集群检查任务列表
+        :param items: **参数解释：** 集群检查任务列表 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type items: list[:class:`huaweicloudsdkcce.v3.PrecheckClusterTask`]
         """
         
@@ -65,7 +65,7 @@ class ListAutopilotPreCheckTasksResponse(SdkResponse):
     def api_version(self):
         r"""Gets the api_version of this ListAutopilotPreCheckTasksResponse.
 
-        api版本，默认为v3
+        **参数解释：** API版本，默认为v3 **约束限制：** 不涉及 **取值范围：** - v3  **默认取值：** v3 
 
         :return: The api_version of this ListAutopilotPreCheckTasksResponse.
         :rtype: str
@@ -76,7 +76,7 @@ class ListAutopilotPreCheckTasksResponse(SdkResponse):
     def api_version(self, api_version):
         r"""Sets the api_version of this ListAutopilotPreCheckTasksResponse.
 
-        api版本，默认为v3
+        **参数解释：** API版本，默认为v3 **约束限制：** 不涉及 **取值范围：** - v3  **默认取值：** v3 
 
         :param api_version: The api_version of this ListAutopilotPreCheckTasksResponse.
         :type api_version: str
@@ -87,7 +87,7 @@ class ListAutopilotPreCheckTasksResponse(SdkResponse):
     def kind(self):
         r"""Gets the kind of this ListAutopilotPreCheckTasksResponse.
 
-        类型
+        **参数解释：** 类型 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The kind of this ListAutopilotPreCheckTasksResponse.
         :rtype: str
@@ -98,7 +98,7 @@ class ListAutopilotPreCheckTasksResponse(SdkResponse):
     def kind(self, kind):
         r"""Sets the kind of this ListAutopilotPreCheckTasksResponse.
 
-        类型
+        **参数解释：** 类型 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param kind: The kind of this ListAutopilotPreCheckTasksResponse.
         :type kind: str
@@ -127,7 +127,7 @@ class ListAutopilotPreCheckTasksResponse(SdkResponse):
     def items(self):
         r"""Gets the items of this ListAutopilotPreCheckTasksResponse.
 
-        集群检查任务列表
+        **参数解释：** 集群检查任务列表 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The items of this ListAutopilotPreCheckTasksResponse.
         :rtype: list[:class:`huaweicloudsdkcce.v3.PrecheckClusterTask`]
@@ -138,7 +138,7 @@ class ListAutopilotPreCheckTasksResponse(SdkResponse):
     def items(self, items):
         r"""Sets the items of this ListAutopilotPreCheckTasksResponse.
 
-        集群检查任务列表
+        **参数解释：** 集群检查任务列表 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param items: The items of this ListAutopilotPreCheckTasksResponse.
         :type items: list[:class:`huaweicloudsdkcce.v3.PrecheckClusterTask`]

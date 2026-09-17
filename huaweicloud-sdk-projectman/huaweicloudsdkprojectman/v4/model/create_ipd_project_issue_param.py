@@ -19,6 +19,7 @@ class CreateIpdProjectIssueParam:
         'description': 'str',
         'status': 'str',
         'src_domain': 'str',
+        'feature_set': 'str',
         'submitted_by': 'str',
         'domain_id': 'str',
         'recipient': 'list[str]',
@@ -33,7 +34,13 @@ class CreateIpdProjectIssueParam:
         'plan_end_date': 'int',
         'workload_man_day': 'int',
         'business_domain': 'str',
-        'need_break': 'str'
+        'need_break': 'str',
+        'category_layer_id': 'str',
+        'parent_id': 'str',
+        'ir2rr': 'str',
+        'us2rr': 'str',
+        'link': 'str',
+        'ir2feature': 'str'
     }
 
     attribute_map = {
@@ -41,6 +48,7 @@ class CreateIpdProjectIssueParam:
         'description': 'description',
         'status': 'status',
         'src_domain': 'src_domain',
+        'feature_set': 'feature_set',
         'submitted_by': 'submitted_by',
         'domain_id': 'domain_id',
         'recipient': 'recipient',
@@ -55,10 +63,16 @@ class CreateIpdProjectIssueParam:
         'plan_end_date': 'plan_end_date',
         'workload_man_day': 'workload_man_day',
         'business_domain': 'business_domain',
-        'need_break': 'need_break'
+        'need_break': 'need_break',
+        'category_layer_id': 'category_layer_id',
+        'parent_id': 'parent_id',
+        'ir2rr': 'ir2rr',
+        'us2rr': 'us2rr',
+        'link': 'link',
+        'ir2feature': 'ir2feature'
     }
 
-    def __init__(self, title=None, description=None, status=None, src_domain=None, submitted_by=None, domain_id=None, recipient=None, expect_delivery_time=None, priority=None, assigned_cc=None, category=None, assignee=None, plan_pi=None, plan_iteration=None, plan_start_date=None, plan_end_date=None, workload_man_day=None, business_domain=None, need_break=None):
+    def __init__(self, title=None, description=None, status=None, src_domain=None, feature_set=None, submitted_by=None, domain_id=None, recipient=None, expect_delivery_time=None, priority=None, assigned_cc=None, category=None, assignee=None, plan_pi=None, plan_iteration=None, plan_start_date=None, plan_end_date=None, workload_man_day=None, business_domain=None, need_break=None, category_layer_id=None, parent_id=None, ir2rr=None, us2rr=None, link=None, ir2feature=None):
         r"""CreateIpdProjectIssueParam
 
         The model defined in huaweicloud sdk
@@ -71,6 +85,8 @@ class CreateIpdProjectIssueParam:
         :type status: str
         :param src_domain: 提出项目domainId
         :type src_domain: str
+        :param feature_set: 所属特性集，适用于SF类型工作项
+        :type feature_set: str
         :param submitted_by: 提交人Id
         :type submitted_by: str
         :param domain_id: 归属项目domainId
@@ -101,6 +117,18 @@ class CreateIpdProjectIssueParam:
         :type business_domain: str
         :param need_break: 是否需要分解
         :type need_break: str
+        :param category_layer_id: 工作项层级ID
+        :type category_layer_id: str
+        :param parent_id: 父工作项ID
+        :type parent_id: str
+        :param ir2rr: IR关联的RR的ID
+        :type ir2rr: str
+        :param us2rr: US关联的RR的ID
+        :type us2rr: str
+        :param link: 关联工作项ID，多值使用英文逗号分隔
+        :type link: str
+        :param ir2feature: IR关联的SF的ID
+        :type ir2feature: str
         """
         
         
@@ -109,6 +137,7 @@ class CreateIpdProjectIssueParam:
         self._description = None
         self._status = None
         self._src_domain = None
+        self._feature_set = None
         self._submitted_by = None
         self._domain_id = None
         self._recipient = None
@@ -124,6 +153,12 @@ class CreateIpdProjectIssueParam:
         self._workload_man_day = None
         self._business_domain = None
         self._need_break = None
+        self._category_layer_id = None
+        self._parent_id = None
+        self._ir2rr = None
+        self._us2rr = None
+        self._link = None
+        self._ir2feature = None
         self.discriminator = None
 
         if title is not None:
@@ -134,6 +169,8 @@ class CreateIpdProjectIssueParam:
             self.status = status
         if src_domain is not None:
             self.src_domain = src_domain
+        if feature_set is not None:
+            self.feature_set = feature_set
         if submitted_by is not None:
             self.submitted_by = submitted_by
         if domain_id is not None:
@@ -164,6 +201,18 @@ class CreateIpdProjectIssueParam:
             self.business_domain = business_domain
         if need_break is not None:
             self.need_break = need_break
+        if category_layer_id is not None:
+            self.category_layer_id = category_layer_id
+        if parent_id is not None:
+            self.parent_id = parent_id
+        if ir2rr is not None:
+            self.ir2rr = ir2rr
+        if us2rr is not None:
+            self.us2rr = us2rr
+        if link is not None:
+            self.link = link
+        if ir2feature is not None:
+            self.ir2feature = ir2feature
 
     @property
     def title(self):
@@ -252,6 +301,28 @@ class CreateIpdProjectIssueParam:
         :type src_domain: str
         """
         self._src_domain = src_domain
+
+    @property
+    def feature_set(self):
+        r"""Gets the feature_set of this CreateIpdProjectIssueParam.
+
+        所属特性集，适用于SF类型工作项
+
+        :return: The feature_set of this CreateIpdProjectIssueParam.
+        :rtype: str
+        """
+        return self._feature_set
+
+    @feature_set.setter
+    def feature_set(self, feature_set):
+        r"""Sets the feature_set of this CreateIpdProjectIssueParam.
+
+        所属特性集，适用于SF类型工作项
+
+        :param feature_set: The feature_set of this CreateIpdProjectIssueParam.
+        :type feature_set: str
+        """
+        self._feature_set = feature_set
 
     @property
     def submitted_by(self):
@@ -582,6 +653,138 @@ class CreateIpdProjectIssueParam:
         :type need_break: str
         """
         self._need_break = need_break
+
+    @property
+    def category_layer_id(self):
+        r"""Gets the category_layer_id of this CreateIpdProjectIssueParam.
+
+        工作项层级ID
+
+        :return: The category_layer_id of this CreateIpdProjectIssueParam.
+        :rtype: str
+        """
+        return self._category_layer_id
+
+    @category_layer_id.setter
+    def category_layer_id(self, category_layer_id):
+        r"""Sets the category_layer_id of this CreateIpdProjectIssueParam.
+
+        工作项层级ID
+
+        :param category_layer_id: The category_layer_id of this CreateIpdProjectIssueParam.
+        :type category_layer_id: str
+        """
+        self._category_layer_id = category_layer_id
+
+    @property
+    def parent_id(self):
+        r"""Gets the parent_id of this CreateIpdProjectIssueParam.
+
+        父工作项ID
+
+        :return: The parent_id of this CreateIpdProjectIssueParam.
+        :rtype: str
+        """
+        return self._parent_id
+
+    @parent_id.setter
+    def parent_id(self, parent_id):
+        r"""Sets the parent_id of this CreateIpdProjectIssueParam.
+
+        父工作项ID
+
+        :param parent_id: The parent_id of this CreateIpdProjectIssueParam.
+        :type parent_id: str
+        """
+        self._parent_id = parent_id
+
+    @property
+    def ir2rr(self):
+        r"""Gets the ir2rr of this CreateIpdProjectIssueParam.
+
+        IR关联的RR的ID
+
+        :return: The ir2rr of this CreateIpdProjectIssueParam.
+        :rtype: str
+        """
+        return self._ir2rr
+
+    @ir2rr.setter
+    def ir2rr(self, ir2rr):
+        r"""Sets the ir2rr of this CreateIpdProjectIssueParam.
+
+        IR关联的RR的ID
+
+        :param ir2rr: The ir2rr of this CreateIpdProjectIssueParam.
+        :type ir2rr: str
+        """
+        self._ir2rr = ir2rr
+
+    @property
+    def us2rr(self):
+        r"""Gets the us2rr of this CreateIpdProjectIssueParam.
+
+        US关联的RR的ID
+
+        :return: The us2rr of this CreateIpdProjectIssueParam.
+        :rtype: str
+        """
+        return self._us2rr
+
+    @us2rr.setter
+    def us2rr(self, us2rr):
+        r"""Sets the us2rr of this CreateIpdProjectIssueParam.
+
+        US关联的RR的ID
+
+        :param us2rr: The us2rr of this CreateIpdProjectIssueParam.
+        :type us2rr: str
+        """
+        self._us2rr = us2rr
+
+    @property
+    def link(self):
+        r"""Gets the link of this CreateIpdProjectIssueParam.
+
+        关联工作项ID，多值使用英文逗号分隔
+
+        :return: The link of this CreateIpdProjectIssueParam.
+        :rtype: str
+        """
+        return self._link
+
+    @link.setter
+    def link(self, link):
+        r"""Sets the link of this CreateIpdProjectIssueParam.
+
+        关联工作项ID，多值使用英文逗号分隔
+
+        :param link: The link of this CreateIpdProjectIssueParam.
+        :type link: str
+        """
+        self._link = link
+
+    @property
+    def ir2feature(self):
+        r"""Gets the ir2feature of this CreateIpdProjectIssueParam.
+
+        IR关联的SF的ID
+
+        :return: The ir2feature of this CreateIpdProjectIssueParam.
+        :rtype: str
+        """
+        return self._ir2feature
+
+    @ir2feature.setter
+    def ir2feature(self, ir2feature):
+        r"""Sets the ir2feature of this CreateIpdProjectIssueParam.
+
+        IR关联的SF的ID
+
+        :param ir2feature: The ir2feature of this CreateIpdProjectIssueParam.
+        :type ir2feature: str
+        """
+        self._ir2feature = ir2feature
 
     def to_dict(self):
         result = {}

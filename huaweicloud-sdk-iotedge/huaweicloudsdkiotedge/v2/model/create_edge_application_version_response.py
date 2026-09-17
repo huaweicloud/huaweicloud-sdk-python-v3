@@ -38,7 +38,8 @@ class CreateEdgeApplicationVersionResponse(SdkResponse):
         'publish_time': 'str',
         'off_shelf_time': 'str',
         'supplier': 'str',
-        'tpl_id': 'str'
+        'tpl_id': 'str',
+        'pre_upgrade_probe': 'PreUpgradeProbeDTO'
     }
 
     attribute_map = {
@@ -64,10 +65,11 @@ class CreateEdgeApplicationVersionResponse(SdkResponse):
         'publish_time': 'publish_time',
         'off_shelf_time': 'off_shelf_time',
         'supplier': 'supplier',
-        'tpl_id': 'tpl_id'
+        'tpl_id': 'tpl_id',
+        'pre_upgrade_probe': 'pre_upgrade_probe'
     }
 
-    def __init__(self, edge_app_id=None, name=None, deploy_type=None, deploy_multi_instance=None, version=None, sdk_version=None, description=None, create_time=None, update_time=None, state=None, liveness_probe=None, readiness_probe=None, arch=None, command=None, args=None, container_settings=None, outputs=None, inputs=None, services=None, publish_time=None, off_shelf_time=None, supplier=None, tpl_id=None):
+    def __init__(self, edge_app_id=None, name=None, deploy_type=None, deploy_multi_instance=None, version=None, sdk_version=None, description=None, create_time=None, update_time=None, state=None, liveness_probe=None, readiness_probe=None, arch=None, command=None, args=None, container_settings=None, outputs=None, inputs=None, services=None, publish_time=None, off_shelf_time=None, supplier=None, tpl_id=None, pre_upgrade_probe=None):
         r"""CreateEdgeApplicationVersionResponse
 
         The model defined in huaweicloud sdk
@@ -118,6 +120,8 @@ class CreateEdgeApplicationVersionResponse(SdkResponse):
         :type supplier: str
         :param tpl_id: 模板id
         :type tpl_id: str
+        :param pre_upgrade_probe: 
+        :type pre_upgrade_probe: :class:`huaweicloudsdkiotedge.v2.PreUpgradeProbeDTO`
         """
         
         super().__init__()
@@ -145,6 +149,7 @@ class CreateEdgeApplicationVersionResponse(SdkResponse):
         self._off_shelf_time = None
         self._supplier = None
         self._tpl_id = None
+        self._pre_upgrade_probe = None
         self.discriminator = None
 
         if edge_app_id is not None:
@@ -193,6 +198,8 @@ class CreateEdgeApplicationVersionResponse(SdkResponse):
             self.supplier = supplier
         if tpl_id is not None:
             self.tpl_id = tpl_id
+        if pre_upgrade_probe is not None:
+            self.pre_upgrade_probe = pre_upgrade_probe
 
     @property
     def edge_app_id(self):
@@ -687,6 +694,24 @@ class CreateEdgeApplicationVersionResponse(SdkResponse):
         :type tpl_id: str
         """
         self._tpl_id = tpl_id
+
+    @property
+    def pre_upgrade_probe(self):
+        r"""Gets the pre_upgrade_probe of this CreateEdgeApplicationVersionResponse.
+
+        :return: The pre_upgrade_probe of this CreateEdgeApplicationVersionResponse.
+        :rtype: :class:`huaweicloudsdkiotedge.v2.PreUpgradeProbeDTO`
+        """
+        return self._pre_upgrade_probe
+
+    @pre_upgrade_probe.setter
+    def pre_upgrade_probe(self, pre_upgrade_probe):
+        r"""Sets the pre_upgrade_probe of this CreateEdgeApplicationVersionResponse.
+
+        :param pre_upgrade_probe: The pre_upgrade_probe of this CreateEdgeApplicationVersionResponse.
+        :type pre_upgrade_probe: :class:`huaweicloudsdkiotedge.v2.PreUpgradeProbeDTO`
+        """
+        self._pre_upgrade_probe = pre_upgrade_probe
 
     def to_dict(self):
         import warnings

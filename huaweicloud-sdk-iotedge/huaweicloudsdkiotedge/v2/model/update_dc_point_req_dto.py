@@ -20,7 +20,8 @@ class UpdateDcPointReqDTO:
         'device_id': 'str',
         '_property': 'str',
         'data_type': 'str',
-        'processing_config': 'ProcessingConfigDTO'
+        'processing_config': 'ProcessingConfigDTO',
+        'active': 'bool'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class UpdateDcPointReqDTO:
         'device_id': 'device_id',
         '_property': 'property',
         'data_type': 'data_type',
-        'processing_config': 'processing_config'
+        'processing_config': 'processing_config',
+        'active': 'active'
     }
 
-    def __init__(self, name=None, collection_config=None, device_id=None, _property=None, data_type=None, processing_config=None):
+    def __init__(self, name=None, collection_config=None, device_id=None, _property=None, data_type=None, processing_config=None, active=None):
         r"""UpdateDcPointReqDTO
 
         The model defined in huaweicloud sdk
@@ -49,6 +51,8 @@ class UpdateDcPointReqDTO:
         :type data_type: str
         :param processing_config: 
         :type processing_config: :class:`huaweicloudsdkiotedge.v2.ProcessingConfigDTO`
+        :param active: 点位启停状态，默认开启
+        :type active: bool
         """
         
         
@@ -59,6 +63,7 @@ class UpdateDcPointReqDTO:
         self.__property = None
         self._data_type = None
         self._processing_config = None
+        self._active = None
         self.discriminator = None
 
         if name is not None:
@@ -71,6 +76,8 @@ class UpdateDcPointReqDTO:
             self.data_type = data_type
         if processing_config is not None:
             self.processing_config = processing_config
+        if active is not None:
+            self.active = active
 
     @property
     def name(self):
@@ -199,6 +206,28 @@ class UpdateDcPointReqDTO:
         :type processing_config: :class:`huaweicloudsdkiotedge.v2.ProcessingConfigDTO`
         """
         self._processing_config = processing_config
+
+    @property
+    def active(self):
+        r"""Gets the active of this UpdateDcPointReqDTO.
+
+        点位启停状态，默认开启
+
+        :return: The active of this UpdateDcPointReqDTO.
+        :rtype: bool
+        """
+        return self._active
+
+    @active.setter
+    def active(self, active):
+        r"""Sets the active of this UpdateDcPointReqDTO.
+
+        点位启停状态，默认开启
+
+        :param active: The active of this UpdateDcPointReqDTO.
+        :type active: bool
+        """
+        self._active = active
 
     def to_dict(self):
         result = {}

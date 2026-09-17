@@ -3351,10 +3351,12 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.ListErrorLogsRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ListErrorLogsResponse`
         """
+        warnings.warn("Method 'list_error_logs' of DdsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_error_logs_http_info(request)
         return self._call_api(**http_info)
 
     def list_error_logs_invoker(self, request):
+        warnings.warn("Method 'list_error_logs_invoker' of DdsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_error_logs_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -3499,10 +3501,12 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.ListFlavorsRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ListFlavorsResponse`
         """
+        warnings.warn("Method 'list_flavors' of DdsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_flavors_http_info(request)
         return self._call_api(**http_info)
 
     def list_flavors_invoker(self, request):
+        warnings.warn("Method 'list_flavors_invoker' of DdsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_flavors_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -4481,10 +4485,12 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.ListSlowLogsRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ListSlowLogsResponse`
         """
+        warnings.warn("Method 'list_slow_logs' of DdsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_slow_logs_http_info(request)
         return self._call_api(**http_info)
 
     def list_slow_logs_invoker(self, request):
+        warnings.warn("Method 'list_slow_logs_invoker' of DdsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_slow_logs_http_info(request)
         return SyncInvoker(self, http_info)
 

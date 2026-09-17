@@ -29,9 +29,9 @@ class CreateReleaseReqBodyValues:
 
         The model defined in huaweicloud sdk
 
-        :param image_pull_policy: 镜像拉取策略
+        :param image_pull_policy: **参数解释：** 镜像拉取策略 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type image_pull_policy: str
-        :param image_tag: 镜像标签
+        :param image_tag: **参数解释：** 镜像标签 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type image_tag: str
         """
         
@@ -50,7 +50,7 @@ class CreateReleaseReqBodyValues:
     def image_pull_policy(self):
         r"""Gets the image_pull_policy of this CreateReleaseReqBodyValues.
 
-        镜像拉取策略
+        **参数解释：** 镜像拉取策略 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The image_pull_policy of this CreateReleaseReqBodyValues.
         :rtype: str
@@ -61,7 +61,7 @@ class CreateReleaseReqBodyValues:
     def image_pull_policy(self, image_pull_policy):
         r"""Sets the image_pull_policy of this CreateReleaseReqBodyValues.
 
-        镜像拉取策略
+        **参数解释：** 镜像拉取策略 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param image_pull_policy: The image_pull_policy of this CreateReleaseReqBodyValues.
         :type image_pull_policy: str
@@ -72,7 +72,7 @@ class CreateReleaseReqBodyValues:
     def image_tag(self):
         r"""Gets the image_tag of this CreateReleaseReqBodyValues.
 
-        镜像标签
+        **参数解释：** 镜像标签 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The image_tag of this CreateReleaseReqBodyValues.
         :rtype: str
@@ -83,7 +83,7 @@ class CreateReleaseReqBodyValues:
     def image_tag(self, image_tag):
         r"""Sets the image_tag of this CreateReleaseReqBodyValues.
 
-        镜像标签
+        **参数解释：** 镜像标签 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param image_tag: The image_tag of this CreateReleaseReqBodyValues.
         :type image_tag: str

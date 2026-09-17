@@ -1,0 +1,369 @@
+# coding: utf-8
+
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
+
+
+class IssueAccessoryV2:
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+    sensitive_list = []
+
+    openapi_types = {
+        'attachment_id': 'int',
+        'issue_id': 'int',
+        'creator_num_id': 'int',
+        'created_date': 'str',
+        'file_name': 'str',
+        'container_type': 'str',
+        'disk_file_name': 'str',
+        'digest': 'str',
+        'disk_directory': 'str',
+        'creator_id': 'str'
+    }
+
+    attribute_map = {
+        'attachment_id': 'attachment_id',
+        'issue_id': 'issue_id',
+        'creator_num_id': 'creator_num_id',
+        'created_date': 'created_date',
+        'file_name': 'file_name',
+        'container_type': 'container_type',
+        'disk_file_name': 'disk_file_name',
+        'digest': 'digest',
+        'disk_directory': 'disk_directory',
+        'creator_id': 'creator_id'
+    }
+
+    def __init__(self, attachment_id=None, issue_id=None, creator_num_id=None, created_date=None, file_name=None, container_type=None, disk_file_name=None, digest=None, disk_directory=None, creator_id=None):
+        r"""IssueAccessoryV2
+
+        The model defined in huaweicloud sdk
+
+        :param attachment_id: **参数解释：** 附件id。 **取值范围：** 不涉及。
+        :type attachment_id: int
+        :param issue_id: **参数解释：** 工作项数字id。 **取值范围：** 不涉及。
+        :type issue_id: int
+        :param creator_num_id: **参数解释：** 附件的上传者数字ID。 **取值范围：** 不涉及。
+        :type creator_num_id: int
+        :param created_date: **参数解释：** 附件创建时间（示例：2025-08-04 19:43:46）。 **取值范围：** 不涉及。
+        :type created_date: str
+        :param file_name: **参数解释：** 附件名称。 **取值范围：** 不涉及。
+        :type file_name: str
+        :param container_type: **参数解释：** 附件所属类型。 **取值范围：** scrum。
+        :type container_type: str
+        :param disk_file_name: **参数解释：** 附件在服务器上实际名称。 **取值范围：** 不涉及。
+        :type disk_file_name: str
+        :param digest: **参数解释：** 附件来源。 **取值范围：** 1：工作项本地上传的文档；2：关联的文档。
+        :type digest: str
+        :param disk_directory: **参数解释：** 附件在服务器上的路径。 **取值范围：** 不涉及。
+        :type disk_directory: str
+        :param creator_id: **参数解释：** 附件的上传者uuid。 **取值范围：** 不涉及。
+        :type creator_id: str
+        """
+        
+        
+
+        self._attachment_id = None
+        self._issue_id = None
+        self._creator_num_id = None
+        self._created_date = None
+        self._file_name = None
+        self._container_type = None
+        self._disk_file_name = None
+        self._digest = None
+        self._disk_directory = None
+        self._creator_id = None
+        self.discriminator = None
+
+        if attachment_id is not None:
+            self.attachment_id = attachment_id
+        if issue_id is not None:
+            self.issue_id = issue_id
+        if creator_num_id is not None:
+            self.creator_num_id = creator_num_id
+        if created_date is not None:
+            self.created_date = created_date
+        if file_name is not None:
+            self.file_name = file_name
+        if container_type is not None:
+            self.container_type = container_type
+        if disk_file_name is not None:
+            self.disk_file_name = disk_file_name
+        if digest is not None:
+            self.digest = digest
+        if disk_directory is not None:
+            self.disk_directory = disk_directory
+        if creator_id is not None:
+            self.creator_id = creator_id
+
+    @property
+    def attachment_id(self):
+        r"""Gets the attachment_id of this IssueAccessoryV2.
+
+        **参数解释：** 附件id。 **取值范围：** 不涉及。
+
+        :return: The attachment_id of this IssueAccessoryV2.
+        :rtype: int
+        """
+        return self._attachment_id
+
+    @attachment_id.setter
+    def attachment_id(self, attachment_id):
+        r"""Sets the attachment_id of this IssueAccessoryV2.
+
+        **参数解释：** 附件id。 **取值范围：** 不涉及。
+
+        :param attachment_id: The attachment_id of this IssueAccessoryV2.
+        :type attachment_id: int
+        """
+        self._attachment_id = attachment_id
+
+    @property
+    def issue_id(self):
+        r"""Gets the issue_id of this IssueAccessoryV2.
+
+        **参数解释：** 工作项数字id。 **取值范围：** 不涉及。
+
+        :return: The issue_id of this IssueAccessoryV2.
+        :rtype: int
+        """
+        return self._issue_id
+
+    @issue_id.setter
+    def issue_id(self, issue_id):
+        r"""Sets the issue_id of this IssueAccessoryV2.
+
+        **参数解释：** 工作项数字id。 **取值范围：** 不涉及。
+
+        :param issue_id: The issue_id of this IssueAccessoryV2.
+        :type issue_id: int
+        """
+        self._issue_id = issue_id
+
+    @property
+    def creator_num_id(self):
+        r"""Gets the creator_num_id of this IssueAccessoryV2.
+
+        **参数解释：** 附件的上传者数字ID。 **取值范围：** 不涉及。
+
+        :return: The creator_num_id of this IssueAccessoryV2.
+        :rtype: int
+        """
+        return self._creator_num_id
+
+    @creator_num_id.setter
+    def creator_num_id(self, creator_num_id):
+        r"""Sets the creator_num_id of this IssueAccessoryV2.
+
+        **参数解释：** 附件的上传者数字ID。 **取值范围：** 不涉及。
+
+        :param creator_num_id: The creator_num_id of this IssueAccessoryV2.
+        :type creator_num_id: int
+        """
+        self._creator_num_id = creator_num_id
+
+    @property
+    def created_date(self):
+        r"""Gets the created_date of this IssueAccessoryV2.
+
+        **参数解释：** 附件创建时间（示例：2025-08-04 19:43:46）。 **取值范围：** 不涉及。
+
+        :return: The created_date of this IssueAccessoryV2.
+        :rtype: str
+        """
+        return self._created_date
+
+    @created_date.setter
+    def created_date(self, created_date):
+        r"""Sets the created_date of this IssueAccessoryV2.
+
+        **参数解释：** 附件创建时间（示例：2025-08-04 19:43:46）。 **取值范围：** 不涉及。
+
+        :param created_date: The created_date of this IssueAccessoryV2.
+        :type created_date: str
+        """
+        self._created_date = created_date
+
+    @property
+    def file_name(self):
+        r"""Gets the file_name of this IssueAccessoryV2.
+
+        **参数解释：** 附件名称。 **取值范围：** 不涉及。
+
+        :return: The file_name of this IssueAccessoryV2.
+        :rtype: str
+        """
+        return self._file_name
+
+    @file_name.setter
+    def file_name(self, file_name):
+        r"""Sets the file_name of this IssueAccessoryV2.
+
+        **参数解释：** 附件名称。 **取值范围：** 不涉及。
+
+        :param file_name: The file_name of this IssueAccessoryV2.
+        :type file_name: str
+        """
+        self._file_name = file_name
+
+    @property
+    def container_type(self):
+        r"""Gets the container_type of this IssueAccessoryV2.
+
+        **参数解释：** 附件所属类型。 **取值范围：** scrum。
+
+        :return: The container_type of this IssueAccessoryV2.
+        :rtype: str
+        """
+        return self._container_type
+
+    @container_type.setter
+    def container_type(self, container_type):
+        r"""Sets the container_type of this IssueAccessoryV2.
+
+        **参数解释：** 附件所属类型。 **取值范围：** scrum。
+
+        :param container_type: The container_type of this IssueAccessoryV2.
+        :type container_type: str
+        """
+        self._container_type = container_type
+
+    @property
+    def disk_file_name(self):
+        r"""Gets the disk_file_name of this IssueAccessoryV2.
+
+        **参数解释：** 附件在服务器上实际名称。 **取值范围：** 不涉及。
+
+        :return: The disk_file_name of this IssueAccessoryV2.
+        :rtype: str
+        """
+        return self._disk_file_name
+
+    @disk_file_name.setter
+    def disk_file_name(self, disk_file_name):
+        r"""Sets the disk_file_name of this IssueAccessoryV2.
+
+        **参数解释：** 附件在服务器上实际名称。 **取值范围：** 不涉及。
+
+        :param disk_file_name: The disk_file_name of this IssueAccessoryV2.
+        :type disk_file_name: str
+        """
+        self._disk_file_name = disk_file_name
+
+    @property
+    def digest(self):
+        r"""Gets the digest of this IssueAccessoryV2.
+
+        **参数解释：** 附件来源。 **取值范围：** 1：工作项本地上传的文档；2：关联的文档。
+
+        :return: The digest of this IssueAccessoryV2.
+        :rtype: str
+        """
+        return self._digest
+
+    @digest.setter
+    def digest(self, digest):
+        r"""Sets the digest of this IssueAccessoryV2.
+
+        **参数解释：** 附件来源。 **取值范围：** 1：工作项本地上传的文档；2：关联的文档。
+
+        :param digest: The digest of this IssueAccessoryV2.
+        :type digest: str
+        """
+        self._digest = digest
+
+    @property
+    def disk_directory(self):
+        r"""Gets the disk_directory of this IssueAccessoryV2.
+
+        **参数解释：** 附件在服务器上的路径。 **取值范围：** 不涉及。
+
+        :return: The disk_directory of this IssueAccessoryV2.
+        :rtype: str
+        """
+        return self._disk_directory
+
+    @disk_directory.setter
+    def disk_directory(self, disk_directory):
+        r"""Sets the disk_directory of this IssueAccessoryV2.
+
+        **参数解释：** 附件在服务器上的路径。 **取值范围：** 不涉及。
+
+        :param disk_directory: The disk_directory of this IssueAccessoryV2.
+        :type disk_directory: str
+        """
+        self._disk_directory = disk_directory
+
+    @property
+    def creator_id(self):
+        r"""Gets the creator_id of this IssueAccessoryV2.
+
+        **参数解释：** 附件的上传者uuid。 **取值范围：** 不涉及。
+
+        :return: The creator_id of this IssueAccessoryV2.
+        :rtype: str
+        """
+        return self._creator_id
+
+    @creator_id.setter
+    def creator_id(self, creator_id):
+        r"""Sets the creator_id of this IssueAccessoryV2.
+
+        **参数解释：** 附件的上传者uuid。 **取值范围：** 不涉及。
+
+        :param creator_id: The creator_id of this IssueAccessoryV2.
+        :type creator_id: str
+        """
+        self._creator_id = creator_id
+
+    def to_dict(self):
+        result = {}
+
+        for attr, _ in self.openapi_types.items():
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        import simplejson as json
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
+
+    def __repr__(self):
+        """For `print`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, IssueAccessoryV2):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

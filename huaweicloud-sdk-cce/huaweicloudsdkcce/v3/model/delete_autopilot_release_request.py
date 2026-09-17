@@ -33,9 +33,9 @@ class DeleteAutopilotReleaseRequest:
 
         The model defined in huaweicloud sdk
 
-        :param name: 模板实例名称
+        :param name: **参数解释：** 模板实例名称。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type name: str
-        :param namespace: 模板实例所在的命名空间
+        :param namespace: **参数解释：** 模板实例所在的命名空间。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type namespace: str
         :param show_resources: **参数解释：** 是否展示模板实例的资源信息。 **约束限制：** 不涉及 **取值范围：** 指定为“true”时展示模板实例的资源信息，不指定该参数时默认不展示。 **默认取值：** 无
         :type show_resources: str
@@ -61,7 +61,7 @@ class DeleteAutopilotReleaseRequest:
     def name(self):
         r"""Gets the name of this DeleteAutopilotReleaseRequest.
 
-        模板实例名称
+        **参数解释：** 模板实例名称。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The name of this DeleteAutopilotReleaseRequest.
         :rtype: str
@@ -72,7 +72,7 @@ class DeleteAutopilotReleaseRequest:
     def name(self, name):
         r"""Sets the name of this DeleteAutopilotReleaseRequest.
 
-        模板实例名称
+        **参数解释：** 模板实例名称。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param name: The name of this DeleteAutopilotReleaseRequest.
         :type name: str
@@ -83,7 +83,7 @@ class DeleteAutopilotReleaseRequest:
     def namespace(self):
         r"""Gets the namespace of this DeleteAutopilotReleaseRequest.
 
-        模板实例所在的命名空间
+        **参数解释：** 模板实例所在的命名空间。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The namespace of this DeleteAutopilotReleaseRequest.
         :rtype: str
@@ -94,7 +94,7 @@ class DeleteAutopilotReleaseRequest:
     def namespace(self, namespace):
         r"""Sets the namespace of this DeleteAutopilotReleaseRequest.
 
-        模板实例所在的命名空间
+        **参数解释：** 模板实例所在的命名空间。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param namespace: The namespace of this DeleteAutopilotReleaseRequest.
         :type namespace: str

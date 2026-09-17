@@ -19,7 +19,9 @@ class RunPipelineDTO:
         'description': 'str',
         'variables': 'list[RunPipelineDTOVariables]',
         'choose_jobs': 'list[str]',
-        'choose_stages': 'list[str]'
+        'choose_stages': 'list[str]',
+        'sub_hook': 'bool',
+        'execution_plan_id': 'str'
     }
 
     attribute_map = {
@@ -27,10 +29,12 @@ class RunPipelineDTO:
         'description': 'description',
         'variables': 'variables',
         'choose_jobs': 'choose_jobs',
-        'choose_stages': 'choose_stages'
+        'choose_stages': 'choose_stages',
+        'sub_hook': 'sub_hook',
+        'execution_plan_id': 'execution_plan_id'
     }
 
-    def __init__(self, sources=None, description=None, variables=None, choose_jobs=None, choose_stages=None):
+    def __init__(self, sources=None, description=None, variables=None, choose_jobs=None, choose_stages=None, sub_hook=None, execution_plan_id=None):
         r"""RunPipelineDTO
 
         The model defined in huaweicloud sdk
@@ -45,6 +49,10 @@ class RunPipelineDTO:
         :type choose_jobs: list[str]
         :param choose_stages: **参数解释**： 选择的流水线阶段。优先级高于choose_jobs，即stage未选择时，无视choose_jobs中该stage下的job。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type choose_stages: list[str]
+        :param sub_hook: **参数解释**： 是否为子流水线触发。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
+        :type sub_hook: bool
+        :param execution_plan_id: **参数解释**： 使用哪一个执行方案运行流水线。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
+        :type execution_plan_id: str
         """
         
         
@@ -54,6 +62,8 @@ class RunPipelineDTO:
         self._variables = None
         self._choose_jobs = None
         self._choose_stages = None
+        self._sub_hook = None
+        self._execution_plan_id = None
         self.discriminator = None
 
         if sources is not None:
@@ -66,6 +76,10 @@ class RunPipelineDTO:
             self.choose_jobs = choose_jobs
         if choose_stages is not None:
             self.choose_stages = choose_stages
+        if sub_hook is not None:
+            self.sub_hook = sub_hook
+        if execution_plan_id is not None:
+            self.execution_plan_id = execution_plan_id
 
     @property
     def sources(self):
@@ -176,6 +190,50 @@ class RunPipelineDTO:
         :type choose_stages: list[str]
         """
         self._choose_stages = choose_stages
+
+    @property
+    def sub_hook(self):
+        r"""Gets the sub_hook of this RunPipelineDTO.
+
+        **参数解释**： 是否为子流水线触发。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
+
+        :return: The sub_hook of this RunPipelineDTO.
+        :rtype: bool
+        """
+        return self._sub_hook
+
+    @sub_hook.setter
+    def sub_hook(self, sub_hook):
+        r"""Sets the sub_hook of this RunPipelineDTO.
+
+        **参数解释**： 是否为子流水线触发。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
+
+        :param sub_hook: The sub_hook of this RunPipelineDTO.
+        :type sub_hook: bool
+        """
+        self._sub_hook = sub_hook
+
+    @property
+    def execution_plan_id(self):
+        r"""Gets the execution_plan_id of this RunPipelineDTO.
+
+        **参数解释**： 使用哪一个执行方案运行流水线。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
+
+        :return: The execution_plan_id of this RunPipelineDTO.
+        :rtype: str
+        """
+        return self._execution_plan_id
+
+    @execution_plan_id.setter
+    def execution_plan_id(self, execution_plan_id):
+        r"""Sets the execution_plan_id of this RunPipelineDTO.
+
+        **参数解释**： 使用哪一个执行方案运行流水线。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
+
+        :param execution_plan_id: The execution_plan_id of this RunPipelineDTO.
+        :type execution_plan_id: str
+        """
+        self._execution_plan_id = execution_plan_id
 
     def to_dict(self):
         result = {}

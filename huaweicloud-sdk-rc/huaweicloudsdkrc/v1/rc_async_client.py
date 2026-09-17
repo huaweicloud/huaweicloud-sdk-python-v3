@@ -496,6 +496,469 @@ class RcAsyncClient(Client):
 
         return http_info
 
+    def create_stored_query_async(self, request):
+        r"""创建高级查询
+
+        Create Resource Query Language
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateStoredQuery
+        :type request: :class:`huaweicloudsdkrc.v1.CreateStoredQueryRequest`
+        :rtype: :class:`huaweicloudsdkrc.v1.CreateStoredQueryResponse`
+        """
+        http_info = self._create_stored_query_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_stored_query_async_invoker(self, request):
+        http_info = self._create_stored_query_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_stored_query_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/resource-center/stored-queries",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateStoredQueryResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_stored_query_async(self, request):
+        r"""删除高级查询
+
+        Select resources by SQL
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteStoredQuery
+        :type request: :class:`huaweicloudsdkrc.v1.DeleteStoredQueryRequest`
+        :rtype: :class:`huaweicloudsdkrc.v1.DeleteStoredQueryResponse`
+        """
+        http_info = self._delete_stored_query_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_stored_query_async_invoker(self, request):
+        http_info = self._delete_stored_query_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_stored_query_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/resource-center/stored-queries/{query_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteStoredQueryResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'query_id' in local_var_params:
+            path_params['query_id'] = local_var_params['query_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_schemas_async(self, request):
+        r"""列举高级查询Schema
+
+        List Schemas
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListSchemas
+        :type request: :class:`huaweicloudsdkrc.v1.ListSchemasRequest`
+        :rtype: :class:`huaweicloudsdkrc.v1.ListSchemasResponse`
+        """
+        http_info = self._list_schemas_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_schemas_async_invoker(self, request):
+        http_info = self._list_schemas_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_schemas_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource-center/schemas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSchemasResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_stored_queries_async(self, request):
+        r"""列出高级查询
+
+        List Resource Query Language
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListStoredQueries
+        :type request: :class:`huaweicloudsdkrc.v1.ListStoredQueriesRequest`
+        :rtype: :class:`huaweicloudsdkrc.v1.ListStoredQueriesResponse`
+        """
+        http_info = self._list_stored_queries_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_stored_queries_async_invoker(self, request):
+        http_info = self._list_stored_queries_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_stored_queries_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource-center/stored-queries",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListStoredQueriesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def run_query_async(self, request):
+        r"""运行高级查询
+
+        Run Resource Query Language
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RunQuery
+        :type request: :class:`huaweicloudsdkrc.v1.RunQueryRequest`
+        :rtype: :class:`huaweicloudsdkrc.v1.RunQueryResponse`
+        """
+        http_info = self._run_query_http_info(request)
+        return self._call_api(**http_info)
+
+    def run_query_async_invoker(self, request):
+        http_info = self._run_query_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_query_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/resource-center/run-query",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunQueryResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_stored_query_async(self, request):
+        r"""查询单个高级查询
+
+        Show Resource Query Language
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowStoredQuery
+        :type request: :class:`huaweicloudsdkrc.v1.ShowStoredQueryRequest`
+        :rtype: :class:`huaweicloudsdkrc.v1.ShowStoredQueryResponse`
+        """
+        http_info = self._show_stored_query_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_stored_query_async_invoker(self, request):
+        http_info = self._show_stored_query_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_stored_query_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource-center/stored-queries/{query_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowStoredQueryResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'query_id' in local_var_params:
+            path_params['query_id'] = local_var_params['query_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_stored_query_async(self, request):
+        r"""更新单个高级查询
+
+        Update Resource Query Language
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateStoredQuery
+        :type request: :class:`huaweicloudsdkrc.v1.UpdateStoredQueryRequest`
+        :rtype: :class:`huaweicloudsdkrc.v1.UpdateStoredQueryResponse`
+        """
+        http_info = self._update_stored_query_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_stored_query_async_invoker(self, request):
+        http_info = self._update_stored_query_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_stored_query_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/resource-center/stored-queries/{query_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateStoredQueryResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'query_id' in local_var_params:
+            path_params['query_id'] = local_var_params['query_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_resource_relations_async(self, request):
         r"""列举资源关系
 
@@ -1007,6 +1470,8 @@ class RcAsyncClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'marker' in local_var_params:
             query_params.append(('marker', local_var_params['marker']))
+        if 'group_id' in local_var_params:
+            query_params.append(('group_id', local_var_params['group_id']))
 
         header_params = {}
 

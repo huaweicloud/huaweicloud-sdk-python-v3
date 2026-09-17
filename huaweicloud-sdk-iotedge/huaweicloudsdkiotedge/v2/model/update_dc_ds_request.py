@@ -17,16 +17,18 @@ class UpdateDcDsRequest:
     openapi_types = {
         'edge_node_id': 'str',
         'ds_id': 'str',
+        'update_name_only': 'bool',
         'body': 'UpdateDcDsReqDTO'
     }
 
     attribute_map = {
         'edge_node_id': 'edge_node_id',
         'ds_id': 'ds_id',
+        'update_name_only': 'update_name_only',
         'body': 'body'
     }
 
-    def __init__(self, edge_node_id=None, ds_id=None, body=None):
+    def __init__(self, edge_node_id=None, ds_id=None, update_name_only=None, body=None):
         r"""UpdateDcDsRequest
 
         The model defined in huaweicloud sdk
@@ -35,6 +37,8 @@ class UpdateDcDsRequest:
         :type edge_node_id: str
         :param ds_id: 采集数据源id，创建数据源配置时设置，节点下唯一。
         :type ds_id: str
+        :param update_name_only: 指此配置是否只更新了名称，默认值为false。 - true: 配置中只更新了名称 - false: 配置中包含其他配置参数更新 
+        :type update_name_only: bool
         :param body: Body of the UpdateDcDsRequest
         :type body: :class:`huaweicloudsdkiotedge.v2.UpdateDcDsReqDTO`
         """
@@ -43,11 +47,14 @@ class UpdateDcDsRequest:
 
         self._edge_node_id = None
         self._ds_id = None
+        self._update_name_only = None
         self._body = None
         self.discriminator = None
 
         self.edge_node_id = edge_node_id
         self.ds_id = ds_id
+        if update_name_only is not None:
+            self.update_name_only = update_name_only
         if body is not None:
             self.body = body
 
@@ -94,6 +101,28 @@ class UpdateDcDsRequest:
         :type ds_id: str
         """
         self._ds_id = ds_id
+
+    @property
+    def update_name_only(self):
+        r"""Gets the update_name_only of this UpdateDcDsRequest.
+
+        指此配置是否只更新了名称，默认值为false。 - true: 配置中只更新了名称 - false: 配置中包含其他配置参数更新 
+
+        :return: The update_name_only of this UpdateDcDsRequest.
+        :rtype: bool
+        """
+        return self._update_name_only
+
+    @update_name_only.setter
+    def update_name_only(self, update_name_only):
+        r"""Sets the update_name_only of this UpdateDcDsRequest.
+
+        指此配置是否只更新了名称，默认值为false。 - true: 配置中只更新了名称 - false: 配置中包含其他配置参数更新 
+
+        :param update_name_only: The update_name_only of this UpdateDcDsRequest.
+        :type update_name_only: bool
+        """
+        self._update_name_only = update_name_only
 
     @property
     def body(self):

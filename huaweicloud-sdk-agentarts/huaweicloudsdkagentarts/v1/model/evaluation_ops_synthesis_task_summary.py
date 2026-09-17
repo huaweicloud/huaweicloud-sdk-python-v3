@@ -20,11 +20,10 @@ class EvaluationOpsSynthesisTaskSummary:
         'scenario_type': 'str',
         'scenario_name': 'str',
         'scenario_description': 'str',
-        'stats': 'list[SynthesisTaskStats]',
+        'stats': 'object',
         'status': 'str',
-        'progress': 'int',
-        'sample_count': 'int',
-        'generated_count': 'int',
+        'error_message': 'str',
+        'is_free': 'bool',
         'model_config': 'EvaluationOpsModelConfig',
         'seed_data': 'EvaluationOpsSeedDataConfig',
         'base_info': 'EvaluationOpsTaskBaseInfo'
@@ -38,15 +37,14 @@ class EvaluationOpsSynthesisTaskSummary:
         'scenario_description': 'scenario_description',
         'stats': 'stats',
         'status': 'status',
-        'progress': 'progress',
-        'sample_count': 'sample_count',
-        'generated_count': 'generated_count',
+        'error_message': 'error_message',
+        'is_free': 'is_free',
         'model_config': 'model_config',
         'seed_data': 'seed_data',
         'base_info': 'base_info'
     }
 
-    def __init__(self, id=None, name=None, scenario_type=None, scenario_name=None, scenario_description=None, stats=None, status=None, progress=None, sample_count=None, generated_count=None, model_config=None, seed_data=None, base_info=None):
+    def __init__(self, id=None, name=None, scenario_type=None, scenario_name=None, scenario_description=None, stats=None, status=None, error_message=None, is_free=None, model_config=None, seed_data=None, base_info=None):
         r"""EvaluationOpsSynthesisTaskSummary
 
         The model defined in huaweicloud sdk
@@ -62,15 +60,13 @@ class EvaluationOpsSynthesisTaskSummary:
         :param scenario_description: **参数解释：**   合成任务背景的详细描述。 **约束限制：**   1-4000字符。 **取值范围：**   场景背景文本。 **默认取值：**   不涉及。 
         :type scenario_description: str
         :param stats: **参数解释：**   合成任务的运行状态统计列表。 **约束限制：**   数组类型。 **取值范围：**   不涉及。 **默认取值：**   不涉及。 
-        :type stats: list[:class:`huaweicloudsdkagentarts.v1.SynthesisTaskStats`]
+        :type stats: object
         :param status: **参数解释：**   合成任务当前的生命周期状态。 **约束限制：**   枚举类型。 **取值范围：**   pending, running, completed, failed, stopped。 **默认取值：**   pending。 
         :type status: str
-        :param progress: **参数解释：**   当前合成进度百分比。 **约束限制：**   0-100 整数。 **取值范围：**   0-100。 **默认取值：**   0。 
-        :type progress: int
-        :param sample_count: **参数解释：**   预设需要生成的总样本数量。 **约束限制：**   1-500整数。 **取值范围：**   1-500。 **默认取值：**   1。 
-        :type sample_count: int
-        :param generated_count: **参数解释：**   截至当前已生成的有效样本数。 **约束限制：**   不大于sample_count。 **取值范围：**   0-500。 **默认取值：**   0。 
-        :type generated_count: int
+        :param error_message: **参数解释：**   任务失败时的错误信息。 **约束限制：**   不涉及。 **取值范围：**   不涉及。 **默认取值：**   不涉及。 
+        :type error_message: str
+        :param is_free: **参数解释：**   是否使用免费额度创建的任务。 **约束限制：**   不涉及。 **取值范围：**   - true：免费任务 - false：付费任务 **默认取值：**   不涉及。 
+        :type is_free: bool
         :param model_config: 
         :type model_config: :class:`huaweicloudsdkagentarts.v1.EvaluationOpsModelConfig`
         :param seed_data: 
@@ -88,9 +84,8 @@ class EvaluationOpsSynthesisTaskSummary:
         self._scenario_description = None
         self._stats = None
         self._status = None
-        self._progress = None
-        self._sample_count = None
-        self._generated_count = None
+        self._error_message = None
+        self._is_free = None
         self._model_config = None
         self._seed_data = None
         self._base_info = None
@@ -110,12 +105,10 @@ class EvaluationOpsSynthesisTaskSummary:
             self.stats = stats
         if status is not None:
             self.status = status
-        if progress is not None:
-            self.progress = progress
-        if sample_count is not None:
-            self.sample_count = sample_count
-        if generated_count is not None:
-            self.generated_count = generated_count
+        if error_message is not None:
+            self.error_message = error_message
+        if is_free is not None:
+            self.is_free = is_free
         if model_config is not None:
             self.model_config = model_config
         if seed_data is not None:
@@ -240,7 +233,7 @@ class EvaluationOpsSynthesisTaskSummary:
         **参数解释：**   合成任务的运行状态统计列表。 **约束限制：**   数组类型。 **取值范围：**   不涉及。 **默认取值：**   不涉及。 
 
         :return: The stats of this EvaluationOpsSynthesisTaskSummary.
-        :rtype: list[:class:`huaweicloudsdkagentarts.v1.SynthesisTaskStats`]
+        :rtype: object
         """
         return self._stats
 
@@ -251,7 +244,7 @@ class EvaluationOpsSynthesisTaskSummary:
         **参数解释：**   合成任务的运行状态统计列表。 **约束限制：**   数组类型。 **取值范围：**   不涉及。 **默认取值：**   不涉及。 
 
         :param stats: The stats of this EvaluationOpsSynthesisTaskSummary.
-        :type stats: list[:class:`huaweicloudsdkagentarts.v1.SynthesisTaskStats`]
+        :type stats: object
         """
         self._stats = stats
 
@@ -278,70 +271,48 @@ class EvaluationOpsSynthesisTaskSummary:
         self._status = status
 
     @property
-    def progress(self):
-        r"""Gets the progress of this EvaluationOpsSynthesisTaskSummary.
+    def error_message(self):
+        r"""Gets the error_message of this EvaluationOpsSynthesisTaskSummary.
 
-        **参数解释：**   当前合成进度百分比。 **约束限制：**   0-100 整数。 **取值范围：**   0-100。 **默认取值：**   0。 
+        **参数解释：**   任务失败时的错误信息。 **约束限制：**   不涉及。 **取值范围：**   不涉及。 **默认取值：**   不涉及。 
 
-        :return: The progress of this EvaluationOpsSynthesisTaskSummary.
-        :rtype: int
+        :return: The error_message of this EvaluationOpsSynthesisTaskSummary.
+        :rtype: str
         """
-        return self._progress
+        return self._error_message
 
-    @progress.setter
-    def progress(self, progress):
-        r"""Sets the progress of this EvaluationOpsSynthesisTaskSummary.
+    @error_message.setter
+    def error_message(self, error_message):
+        r"""Sets the error_message of this EvaluationOpsSynthesisTaskSummary.
 
-        **参数解释：**   当前合成进度百分比。 **约束限制：**   0-100 整数。 **取值范围：**   0-100。 **默认取值：**   0。 
+        **参数解释：**   任务失败时的错误信息。 **约束限制：**   不涉及。 **取值范围：**   不涉及。 **默认取值：**   不涉及。 
 
-        :param progress: The progress of this EvaluationOpsSynthesisTaskSummary.
-        :type progress: int
+        :param error_message: The error_message of this EvaluationOpsSynthesisTaskSummary.
+        :type error_message: str
         """
-        self._progress = progress
+        self._error_message = error_message
 
     @property
-    def sample_count(self):
-        r"""Gets the sample_count of this EvaluationOpsSynthesisTaskSummary.
+    def is_free(self):
+        r"""Gets the is_free of this EvaluationOpsSynthesisTaskSummary.
 
-        **参数解释：**   预设需要生成的总样本数量。 **约束限制：**   1-500整数。 **取值范围：**   1-500。 **默认取值：**   1。 
+        **参数解释：**   是否使用免费额度创建的任务。 **约束限制：**   不涉及。 **取值范围：**   - true：免费任务 - false：付费任务 **默认取值：**   不涉及。 
 
-        :return: The sample_count of this EvaluationOpsSynthesisTaskSummary.
-        :rtype: int
+        :return: The is_free of this EvaluationOpsSynthesisTaskSummary.
+        :rtype: bool
         """
-        return self._sample_count
+        return self._is_free
 
-    @sample_count.setter
-    def sample_count(self, sample_count):
-        r"""Sets the sample_count of this EvaluationOpsSynthesisTaskSummary.
+    @is_free.setter
+    def is_free(self, is_free):
+        r"""Sets the is_free of this EvaluationOpsSynthesisTaskSummary.
 
-        **参数解释：**   预设需要生成的总样本数量。 **约束限制：**   1-500整数。 **取值范围：**   1-500。 **默认取值：**   1。 
+        **参数解释：**   是否使用免费额度创建的任务。 **约束限制：**   不涉及。 **取值范围：**   - true：免费任务 - false：付费任务 **默认取值：**   不涉及。 
 
-        :param sample_count: The sample_count of this EvaluationOpsSynthesisTaskSummary.
-        :type sample_count: int
+        :param is_free: The is_free of this EvaluationOpsSynthesisTaskSummary.
+        :type is_free: bool
         """
-        self._sample_count = sample_count
-
-    @property
-    def generated_count(self):
-        r"""Gets the generated_count of this EvaluationOpsSynthesisTaskSummary.
-
-        **参数解释：**   截至当前已生成的有效样本数。 **约束限制：**   不大于sample_count。 **取值范围：**   0-500。 **默认取值：**   0。 
-
-        :return: The generated_count of this EvaluationOpsSynthesisTaskSummary.
-        :rtype: int
-        """
-        return self._generated_count
-
-    @generated_count.setter
-    def generated_count(self, generated_count):
-        r"""Sets the generated_count of this EvaluationOpsSynthesisTaskSummary.
-
-        **参数解释：**   截至当前已生成的有效样本数。 **约束限制：**   不大于sample_count。 **取值范围：**   0-500。 **默认取值：**   0。 
-
-        :param generated_count: The generated_count of this EvaluationOpsSynthesisTaskSummary.
-        :type generated_count: int
-        """
-        self._generated_count = generated_count
+        self._is_free = is_free
 
     @property
     def model_config(self):

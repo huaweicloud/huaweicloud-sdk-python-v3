@@ -16,7 +16,7 @@ class CreateOpsEvaluatorRequestBody:
 
     openapi_types = {
         'evaluator_type': 'int',
-        'turn_type': 'str',
+        'tags': 'list[OpsTmsTag]',
         'current_version': 'EvaluationOpsCurrentVersion',
         'name': 'str',
         'description': 'str'
@@ -24,21 +24,21 @@ class CreateOpsEvaluatorRequestBody:
 
     attribute_map = {
         'evaluator_type': 'evaluator_type',
-        'turn_type': 'turn_type',
+        'tags': 'tags',
         'current_version': 'current_version',
         'name': 'name',
         'description': 'description'
     }
 
-    def __init__(self, evaluator_type=None, turn_type=None, current_version=None, name=None, description=None):
+    def __init__(self, evaluator_type=None, tags=None, current_version=None, name=None, description=None):
         r"""CreateOpsEvaluatorRequestBody
 
         The model defined in huaweicloud sdk
 
         :param evaluator_type: **参数解释：** 评估器的核心执行模式。 **约束限制：** 整型数值，取值范围为int32。 **取值范围：** - 1: 模型评估器（模型评估器，基于大语言模型进行智能评判） - 2: 代码评估器（代码评估器，基于预设脚本逻辑进行规则判定） - 3: 自适应评估器 **默认取值：** 不涉及。 
         :type evaluator_type: int
-        :param turn_type: **参数解释：** 评估器的轮次类型。 **约束限制：** 长度为0到100个字符。 **取值范围：** - single: 单轮评估器 - multi: 多轮评估器 **默认取值：** 不涉及。 
-        :type turn_type: str
+        :param tags: **参数解释：** 创建评估器时绑定的TMS标签列表。数组内每个元素为OpsTmsTag对象，包含标签的键值信息。 **约束限制：** 数组元素最小数量为0，最大数量为50。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
+        :type tags: list[:class:`huaweicloudsdkagentarts.v1.OpsTmsTag`]
         :param current_version: 
         :type current_version: :class:`huaweicloudsdkagentarts.v1.EvaluationOpsCurrentVersion`
         :param name: **参数解释：** 评估器的业务名称。 **约束限制：** 长度为1到10000个字符。 **取值范围：** 中英文、数字、下划线（_）、中划线（-）组成的字符串。 **默认取值：** 不涉及。 
@@ -50,18 +50,20 @@ class CreateOpsEvaluatorRequestBody:
         
 
         self._evaluator_type = None
-        self._turn_type = None
+        self._tags = None
         self._current_version = None
         self._name = None
         self._description = None
         self.discriminator = None
 
-        self.evaluator_type = evaluator_type
-        if turn_type is not None:
-            self.turn_type = turn_type
+        if evaluator_type is not None:
+            self.evaluator_type = evaluator_type
+        if tags is not None:
+            self.tags = tags
         self.current_version = current_version
         self.name = name
-        self.description = description
+        if description is not None:
+            self.description = description
 
     @property
     def evaluator_type(self):
@@ -86,26 +88,26 @@ class CreateOpsEvaluatorRequestBody:
         self._evaluator_type = evaluator_type
 
     @property
-    def turn_type(self):
-        r"""Gets the turn_type of this CreateOpsEvaluatorRequestBody.
+    def tags(self):
+        r"""Gets the tags of this CreateOpsEvaluatorRequestBody.
 
-        **参数解释：** 评估器的轮次类型。 **约束限制：** 长度为0到100个字符。 **取值范围：** - single: 单轮评估器 - multi: 多轮评估器 **默认取值：** 不涉及。 
+        **参数解释：** 创建评估器时绑定的TMS标签列表。数组内每个元素为OpsTmsTag对象，包含标签的键值信息。 **约束限制：** 数组元素最小数量为0，最大数量为50。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
-        :return: The turn_type of this CreateOpsEvaluatorRequestBody.
-        :rtype: str
+        :return: The tags of this CreateOpsEvaluatorRequestBody.
+        :rtype: list[:class:`huaweicloudsdkagentarts.v1.OpsTmsTag`]
         """
-        return self._turn_type
+        return self._tags
 
-    @turn_type.setter
-    def turn_type(self, turn_type):
-        r"""Sets the turn_type of this CreateOpsEvaluatorRequestBody.
+    @tags.setter
+    def tags(self, tags):
+        r"""Sets the tags of this CreateOpsEvaluatorRequestBody.
 
-        **参数解释：** 评估器的轮次类型。 **约束限制：** 长度为0到100个字符。 **取值范围：** - single: 单轮评估器 - multi: 多轮评估器 **默认取值：** 不涉及。 
+        **参数解释：** 创建评估器时绑定的TMS标签列表。数组内每个元素为OpsTmsTag对象，包含标签的键值信息。 **约束限制：** 数组元素最小数量为0，最大数量为50。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
-        :param turn_type: The turn_type of this CreateOpsEvaluatorRequestBody.
-        :type turn_type: str
+        :param tags: The tags of this CreateOpsEvaluatorRequestBody.
+        :type tags: list[:class:`huaweicloudsdkagentarts.v1.OpsTmsTag`]
         """
-        self._turn_type = turn_type
+        self._tags = tags
 
     @property
     def current_version(self):

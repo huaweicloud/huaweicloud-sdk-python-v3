@@ -39,19 +39,19 @@ class ConfigurationRisks:
 
         The model defined in huaweicloud sdk
 
-        :param package: 组件名称
+        :param package: **参数解释：** 组件名称。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type package: str
-        :param source_file: 涉及文件路径
+        :param source_file: **参数解释：** 涉及文件路径。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type source_file: str
-        :param node_msg: 节点信息
+        :param node_msg: **参数解释：** 节点信息。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type node_msg: str
-        :param field: 参数值
+        :param field: **参数解释：** 参数值。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type field: str
-        :param operation: 修改操作类型
+        :param operation: **参数解释：** 修改操作类型。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type operation: str
-        :param original_value: 原始值
+        :param original_value: **参数解释：** 原始值。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type original_value: str
-        :param value: 当前值
+        :param value: **参数解释：** 当前值。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type value: str
         """
         
@@ -85,7 +85,7 @@ class ConfigurationRisks:
     def package(self):
         r"""Gets the package of this ConfigurationRisks.
 
-        组件名称
+        **参数解释：** 组件名称。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The package of this ConfigurationRisks.
         :rtype: str
@@ -96,7 +96,7 @@ class ConfigurationRisks:
     def package(self, package):
         r"""Sets the package of this ConfigurationRisks.
 
-        组件名称
+        **参数解释：** 组件名称。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param package: The package of this ConfigurationRisks.
         :type package: str
@@ -107,7 +107,7 @@ class ConfigurationRisks:
     def source_file(self):
         r"""Gets the source_file of this ConfigurationRisks.
 
-        涉及文件路径
+        **参数解释：** 涉及文件路径。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The source_file of this ConfigurationRisks.
         :rtype: str
@@ -118,7 +118,7 @@ class ConfigurationRisks:
     def source_file(self, source_file):
         r"""Sets the source_file of this ConfigurationRisks.
 
-        涉及文件路径
+        **参数解释：** 涉及文件路径。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param source_file: The source_file of this ConfigurationRisks.
         :type source_file: str
@@ -129,7 +129,7 @@ class ConfigurationRisks:
     def node_msg(self):
         r"""Gets the node_msg of this ConfigurationRisks.
 
-        节点信息
+        **参数解释：** 节点信息。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The node_msg of this ConfigurationRisks.
         :rtype: str
@@ -140,7 +140,7 @@ class ConfigurationRisks:
     def node_msg(self, node_msg):
         r"""Sets the node_msg of this ConfigurationRisks.
 
-        节点信息
+        **参数解释：** 节点信息。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param node_msg: The node_msg of this ConfigurationRisks.
         :type node_msg: str
@@ -151,7 +151,7 @@ class ConfigurationRisks:
     def field(self):
         r"""Gets the field of this ConfigurationRisks.
 
-        参数值
+        **参数解释：** 参数值。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The field of this ConfigurationRisks.
         :rtype: str
@@ -162,7 +162,7 @@ class ConfigurationRisks:
     def field(self, field):
         r"""Sets the field of this ConfigurationRisks.
 
-        参数值
+        **参数解释：** 参数值。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param field: The field of this ConfigurationRisks.
         :type field: str
@@ -173,7 +173,7 @@ class ConfigurationRisks:
     def operation(self):
         r"""Gets the operation of this ConfigurationRisks.
 
-        修改操作类型
+        **参数解释：** 修改操作类型。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The operation of this ConfigurationRisks.
         :rtype: str
@@ -184,7 +184,7 @@ class ConfigurationRisks:
     def operation(self, operation):
         r"""Sets the operation of this ConfigurationRisks.
 
-        修改操作类型
+        **参数解释：** 修改操作类型。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param operation: The operation of this ConfigurationRisks.
         :type operation: str
@@ -195,7 +195,7 @@ class ConfigurationRisks:
     def original_value(self):
         r"""Gets the original_value of this ConfigurationRisks.
 
-        原始值
+        **参数解释：** 原始值。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The original_value of this ConfigurationRisks.
         :rtype: str
@@ -206,7 +206,7 @@ class ConfigurationRisks:
     def original_value(self, original_value):
         r"""Sets the original_value of this ConfigurationRisks.
 
-        原始值
+        **参数解释：** 原始值。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param original_value: The original_value of this ConfigurationRisks.
         :type original_value: str
@@ -217,7 +217,7 @@ class ConfigurationRisks:
     def value(self):
         r"""Gets the value of this ConfigurationRisks.
 
-        当前值
+        **参数解释：** 当前值。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The value of this ConfigurationRisks.
         :rtype: str
@@ -228,7 +228,7 @@ class ConfigurationRisks:
     def value(self, value):
         r"""Sets the value of this ConfigurationRisks.
 
-        当前值
+        **参数解释：** 当前值。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param value: The value of this ConfigurationRisks.
         :type value: str

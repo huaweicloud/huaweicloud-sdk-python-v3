@@ -16,29 +16,87 @@ class ShowOpsEvaluationModelResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'msg': 'str',
+        'code': 'int',
         'model': 'Model'
     }
 
     attribute_map = {
+        'msg': 'msg',
+        'code': 'code',
         'model': 'model'
     }
 
-    def __init__(self, model=None):
+    def __init__(self, msg=None, code=None, model=None):
         r"""ShowOpsEvaluationModelResponse
 
         The model defined in huaweicloud sdk
 
+        :param msg: **参数解释：** 接口返回的提示信息。 **约束限制：** 不涉及。 **取值范围：** 不涉及。
+        :type msg: str
+        :param code: **参数解释：** 接口返回的状态码。 **约束限制：** 不涉及。 **取值范围：** 不涉及。
+        :type code: int
         :param model: 
         :type model: :class:`huaweicloudsdkagentarts.v1.Model`
         """
         
         super().__init__()
 
+        self._msg = None
+        self._code = None
         self._model = None
         self.discriminator = None
 
+        if msg is not None:
+            self.msg = msg
+        if code is not None:
+            self.code = code
         if model is not None:
             self.model = model
+
+    @property
+    def msg(self):
+        r"""Gets the msg of this ShowOpsEvaluationModelResponse.
+
+        **参数解释：** 接口返回的提示信息。 **约束限制：** 不涉及。 **取值范围：** 不涉及。
+
+        :return: The msg of this ShowOpsEvaluationModelResponse.
+        :rtype: str
+        """
+        return self._msg
+
+    @msg.setter
+    def msg(self, msg):
+        r"""Sets the msg of this ShowOpsEvaluationModelResponse.
+
+        **参数解释：** 接口返回的提示信息。 **约束限制：** 不涉及。 **取值范围：** 不涉及。
+
+        :param msg: The msg of this ShowOpsEvaluationModelResponse.
+        :type msg: str
+        """
+        self._msg = msg
+
+    @property
+    def code(self):
+        r"""Gets the code of this ShowOpsEvaluationModelResponse.
+
+        **参数解释：** 接口返回的状态码。 **约束限制：** 不涉及。 **取值范围：** 不涉及。
+
+        :return: The code of this ShowOpsEvaluationModelResponse.
+        :rtype: int
+        """
+        return self._code
+
+    @code.setter
+    def code(self, code):
+        r"""Sets the code of this ShowOpsEvaluationModelResponse.
+
+        **参数解释：** 接口返回的状态码。 **约束限制：** 不涉及。 **取值范围：** 不涉及。
+
+        :param code: The code of this ShowOpsEvaluationModelResponse.
+        :type code: int
+        """
+        self._code = code
 
     @property
     def model(self):

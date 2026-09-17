@@ -69,7 +69,7 @@ class CreateClusterInfo:
         :type port: int
         :param name: **参数解释**： 集群名称。 **约束限制**： 要求唯一性，必须以字母开头并只包含字母、数字、中划线或下划线，长度为4~64个字符。 **取值范围**： 4~64个字符。 **默认取值**： 8000
         :type name: str
-        :param user_name: **参数解释**： DWS集群管理员用户名。 **约束限制**： - 只能由小写字母、数字或下划线组成。 - 必须由小写字母或下划线开头。 - 长度为1~63个字符。 - 用户名不能为DWS数据库的关键字。    **取值范围**：   1~63个字符； **默认取值**： dbadmin
+        :param user_name: **参数解释**： DWS集群管理员用户名。 **约束限制**： - 只能由小写字母、数字或下划线组成。 - 必须由小写字母或下划线开头。 - 长度为1~63个字符。 - 用户名不能为DWS数据库的关键字。   **取值范围**： 1~63个字符； **默认取值**： dbadmin
         :type user_name: str
         :param user_pwd: **参数解释**： DWS集群管理员密码。 **约束限制**： 不涉及。 **取值范围**： 12~32个字符； 至少包含以下字符的3种：大写字母、小写字母、数字和特殊字符(~!?,.:;_(){}[]/&lt;&gt;@#%^&amp;*+|\\\\&#x3D;-)； 不能与用户名或倒序的用户名相同； **默认取值**： 不涉及。
         :type user_pwd: str
@@ -302,7 +302,7 @@ class CreateClusterInfo:
     def user_name(self):
         r"""Gets the user_name of this CreateClusterInfo.
 
-        **参数解释**： DWS集群管理员用户名。 **约束限制**： - 只能由小写字母、数字或下划线组成。 - 必须由小写字母或下划线开头。 - 长度为1~63个字符。 - 用户名不能为DWS数据库的关键字。    **取值范围**：   1~63个字符； **默认取值**： dbadmin
+        **参数解释**： DWS集群管理员用户名。 **约束限制**： - 只能由小写字母、数字或下划线组成。 - 必须由小写字母或下划线开头。 - 长度为1~63个字符。 - 用户名不能为DWS数据库的关键字。   **取值范围**： 1~63个字符； **默认取值**： dbadmin
 
         :return: The user_name of this CreateClusterInfo.
         :rtype: str
@@ -313,7 +313,7 @@ class CreateClusterInfo:
     def user_name(self, user_name):
         r"""Sets the user_name of this CreateClusterInfo.
 
-        **参数解释**： DWS集群管理员用户名。 **约束限制**： - 只能由小写字母、数字或下划线组成。 - 必须由小写字母或下划线开头。 - 长度为1~63个字符。 - 用户名不能为DWS数据库的关键字。    **取值范围**：   1~63个字符； **默认取值**： dbadmin
+        **参数解释**： DWS集群管理员用户名。 **约束限制**： - 只能由小写字母、数字或下划线组成。 - 必须由小写字母或下划线开头。 - 长度为1~63个字符。 - 用户名不能为DWS数据库的关键字。   **取值范围**： 1~63个字符； **默认取值**： dbadmin
 
         :param user_name: The user_name of this CreateClusterInfo.
         :type user_name: str

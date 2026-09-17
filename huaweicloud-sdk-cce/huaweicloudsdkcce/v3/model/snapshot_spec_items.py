@@ -37,17 +37,17 @@ class SnapshotSpecItems:
 
         The model defined in huaweicloud sdk
 
-        :param id: 子任务ID
+        :param id: **参数解释：** 子任务ID **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type id: str
         :param type: **参数解释**： 子任务类型 **取值范围**： - master-backup：集群EVS备份 - master-backup-rollback：集群EVS回滚 **默认取值**： 不涉及
         :type type: str
         :param status: **参数解释**： 状态 **取值范围**： - Init：初始化 - Queuing：等待 - Running：运行中 - Pause：暂停 - Success：成功 - Failed：失败 **默认取值**： 不涉及
         :type status: str
-        :param creation_timestamp: 任务创建时间
+        :param creation_timestamp: **参数解释：** 任务创建时间 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type creation_timestamp: str
-        :param update_timestamp: 任务更新时间
+        :param update_timestamp: **参数解释：** 任务更新时间 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type update_timestamp: str
-        :param message: 信息
+        :param message: **参数解释：** 信息 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type message: str
         """
         
@@ -78,7 +78,7 @@ class SnapshotSpecItems:
     def id(self):
         r"""Gets the id of this SnapshotSpecItems.
 
-        子任务ID
+        **参数解释：** 子任务ID **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The id of this SnapshotSpecItems.
         :rtype: str
@@ -89,7 +89,7 @@ class SnapshotSpecItems:
     def id(self, id):
         r"""Sets the id of this SnapshotSpecItems.
 
-        子任务ID
+        **参数解释：** 子任务ID **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param id: The id of this SnapshotSpecItems.
         :type id: str
@@ -144,7 +144,7 @@ class SnapshotSpecItems:
     def creation_timestamp(self):
         r"""Gets the creation_timestamp of this SnapshotSpecItems.
 
-        任务创建时间
+        **参数解释：** 任务创建时间 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The creation_timestamp of this SnapshotSpecItems.
         :rtype: str
@@ -155,7 +155,7 @@ class SnapshotSpecItems:
     def creation_timestamp(self, creation_timestamp):
         r"""Sets the creation_timestamp of this SnapshotSpecItems.
 
-        任务创建时间
+        **参数解释：** 任务创建时间 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param creation_timestamp: The creation_timestamp of this SnapshotSpecItems.
         :type creation_timestamp: str
@@ -166,7 +166,7 @@ class SnapshotSpecItems:
     def update_timestamp(self):
         r"""Gets the update_timestamp of this SnapshotSpecItems.
 
-        任务更新时间
+        **参数解释：** 任务更新时间 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The update_timestamp of this SnapshotSpecItems.
         :rtype: str
@@ -177,7 +177,7 @@ class SnapshotSpecItems:
     def update_timestamp(self, update_timestamp):
         r"""Sets the update_timestamp of this SnapshotSpecItems.
 
-        任务更新时间
+        **参数解释：** 任务更新时间 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param update_timestamp: The update_timestamp of this SnapshotSpecItems.
         :type update_timestamp: str
@@ -188,7 +188,7 @@ class SnapshotSpecItems:
     def message(self):
         r"""Gets the message of this SnapshotSpecItems.
 
-        信息
+        **参数解释：** 信息 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The message of this SnapshotSpecItems.
         :rtype: str
@@ -199,7 +199,7 @@ class SnapshotSpecItems:
     def message(self, message):
         r"""Sets the message of this SnapshotSpecItems.
 
-        信息
+        **参数解释：** 信息 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param message: The message of this SnapshotSpecItems.
         :type message: str

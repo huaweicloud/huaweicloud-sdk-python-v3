@@ -19,7 +19,10 @@ class BatchListModulesRequest:
         'offset': 'int',
         'limit': 'int',
         'app_type': 'str',
-        'function_type': 'str'
+        'function_type': 'str',
+        'function_types': 'list[str]',
+        'protocol_types': 'list[str]',
+        'module_name': 'str'
     }
 
     attribute_map = {
@@ -27,10 +30,13 @@ class BatchListModulesRequest:
         'offset': 'offset',
         'limit': 'limit',
         'app_type': 'app_type',
-        'function_type': 'function_type'
+        'function_type': 'function_type',
+        'function_types': 'function_types',
+        'protocol_types': 'protocol_types',
+        'module_name': 'module_name'
     }
 
-    def __init__(self, edge_node_id=None, offset=None, limit=None, app_type=None, function_type=None):
+    def __init__(self, edge_node_id=None, offset=None, limit=None, app_type=None, function_type=None, function_types=None, protocol_types=None, module_name=None):
         r"""BatchListModulesRequest
 
         The model defined in huaweicloud sdk
@@ -45,6 +51,12 @@ class BatchListModulesRequest:
         :type app_type: str
         :param function_type: 功能类型
         :type function_type: str
+        :param function_types: 功能类型列表
+        :type function_types: list[str]
+        :param protocol_types: 协议类型列表
+        :type protocol_types: list[str]
+        :param module_name: 边缘模块名称
+        :type module_name: str
         """
         
         
@@ -54,6 +66,9 @@ class BatchListModulesRequest:
         self._limit = None
         self._app_type = None
         self._function_type = None
+        self._function_types = None
+        self._protocol_types = None
+        self._module_name = None
         self.discriminator = None
 
         self.edge_node_id = edge_node_id
@@ -65,6 +80,12 @@ class BatchListModulesRequest:
             self.app_type = app_type
         if function_type is not None:
             self.function_type = function_type
+        if function_types is not None:
+            self.function_types = function_types
+        if protocol_types is not None:
+            self.protocol_types = protocol_types
+        if module_name is not None:
+            self.module_name = module_name
 
     @property
     def edge_node_id(self):
@@ -175,6 +196,72 @@ class BatchListModulesRequest:
         :type function_type: str
         """
         self._function_type = function_type
+
+    @property
+    def function_types(self):
+        r"""Gets the function_types of this BatchListModulesRequest.
+
+        功能类型列表
+
+        :return: The function_types of this BatchListModulesRequest.
+        :rtype: list[str]
+        """
+        return self._function_types
+
+    @function_types.setter
+    def function_types(self, function_types):
+        r"""Sets the function_types of this BatchListModulesRequest.
+
+        功能类型列表
+
+        :param function_types: The function_types of this BatchListModulesRequest.
+        :type function_types: list[str]
+        """
+        self._function_types = function_types
+
+    @property
+    def protocol_types(self):
+        r"""Gets the protocol_types of this BatchListModulesRequest.
+
+        协议类型列表
+
+        :return: The protocol_types of this BatchListModulesRequest.
+        :rtype: list[str]
+        """
+        return self._protocol_types
+
+    @protocol_types.setter
+    def protocol_types(self, protocol_types):
+        r"""Sets the protocol_types of this BatchListModulesRequest.
+
+        协议类型列表
+
+        :param protocol_types: The protocol_types of this BatchListModulesRequest.
+        :type protocol_types: list[str]
+        """
+        self._protocol_types = protocol_types
+
+    @property
+    def module_name(self):
+        r"""Gets the module_name of this BatchListModulesRequest.
+
+        边缘模块名称
+
+        :return: The module_name of this BatchListModulesRequest.
+        :rtype: str
+        """
+        return self._module_name
+
+    @module_name.setter
+    def module_name(self, module_name):
+        r"""Sets the module_name of this BatchListModulesRequest.
+
+        边缘模块名称
+
+        :param module_name: The module_name of this BatchListModulesRequest.
+        :type module_name: str
+        """
+        self._module_name = module_name
 
     def to_dict(self):
         result = {}

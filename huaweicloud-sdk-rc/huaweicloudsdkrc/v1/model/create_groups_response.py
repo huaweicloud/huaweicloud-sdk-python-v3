@@ -19,8 +19,8 @@ class CreateGroupsResponse:
         'domain_id': 'str',
         'group_name': 'str',
         'description': 'str',
-        'create_time': 'str',
-        'update_time': 'str'
+        'created': 'str',
+        'updated': 'str'
     }
 
     attribute_map = {
@@ -28,11 +28,11 @@ class CreateGroupsResponse:
         'domain_id': 'domain_id',
         'group_name': 'group_name',
         'description': 'description',
-        'create_time': 'create_time',
-        'update_time': 'update_time'
+        'created': 'created',
+        'updated': 'updated'
     }
 
-    def __init__(self, group_id=None, domain_id=None, group_name=None, description=None, create_time=None, update_time=None):
+    def __init__(self, group_id=None, domain_id=None, group_name=None, description=None, created=None, updated=None):
         r"""CreateGroupsResponse
 
         The model defined in huaweicloud sdk
@@ -45,10 +45,10 @@ class CreateGroupsResponse:
         :type group_name: str
         :param description: 
         :type description: str
-        :param create_time: 
-        :type create_time: str
-        :param update_time: 
-        :type update_time: str
+        :param created: 
+        :type created: str
+        :param updated: 
+        :type updated: str
         """
         
         
@@ -57,8 +57,8 @@ class CreateGroupsResponse:
         self._domain_id = None
         self._group_name = None
         self._description = None
-        self._create_time = None
-        self._update_time = None
+        self._created = None
+        self._updated = None
         self.discriminator = None
 
         if group_id is not None:
@@ -69,10 +69,10 @@ class CreateGroupsResponse:
             self.group_name = group_name
         if description is not None:
             self.description = description
-        if create_time is not None:
-            self.create_time = create_time
-        if update_time is not None:
-            self.update_time = update_time
+        if created is not None:
+            self.created = created
+        if updated is not None:
+            self.updated = updated
 
     @property
     def group_id(self):
@@ -151,40 +151,40 @@ class CreateGroupsResponse:
         self._description = description
 
     @property
-    def create_time(self):
-        r"""Gets the create_time of this CreateGroupsResponse.
+    def created(self):
+        r"""Gets the created of this CreateGroupsResponse.
 
-        :return: The create_time of this CreateGroupsResponse.
+        :return: The created of this CreateGroupsResponse.
         :rtype: str
         """
-        return self._create_time
+        return self._created
 
-    @create_time.setter
-    def create_time(self, create_time):
-        r"""Sets the create_time of this CreateGroupsResponse.
+    @created.setter
+    def created(self, created):
+        r"""Sets the created of this CreateGroupsResponse.
 
-        :param create_time: The create_time of this CreateGroupsResponse.
-        :type create_time: str
+        :param created: The created of this CreateGroupsResponse.
+        :type created: str
         """
-        self._create_time = create_time
+        self._created = created
 
     @property
-    def update_time(self):
-        r"""Gets the update_time of this CreateGroupsResponse.
+    def updated(self):
+        r"""Gets the updated of this CreateGroupsResponse.
 
-        :return: The update_time of this CreateGroupsResponse.
+        :return: The updated of this CreateGroupsResponse.
         :rtype: str
         """
-        return self._update_time
+        return self._updated
 
-    @update_time.setter
-    def update_time(self, update_time):
-        r"""Sets the update_time of this CreateGroupsResponse.
+    @updated.setter
+    def updated(self, updated):
+        r"""Sets the updated of this CreateGroupsResponse.
 
-        :param update_time: The update_time of this CreateGroupsResponse.
-        :type update_time: str
+        :param updated: The updated of this CreateGroupsResponse.
+        :type updated: str
         """
-        self._update_time = update_time
+        self._updated = updated
 
     def to_dict(self):
         result = {}

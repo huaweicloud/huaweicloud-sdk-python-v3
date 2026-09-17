@@ -33,13 +33,13 @@ class UpgradeVersionInfo:
 
         The model defined in huaweicloud sdk
 
-        :param release: 正式版本号，如：v1.19.10
+        :param release: **参数解释：** 正式版本号，如：v1.19.10 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type release: str
-        :param patch: 补丁版本号，如r0
+        :param patch: **参数解释：** 补丁版本号，如r0 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type patch: str
-        :param suggest_patch: 推荐升级的目标补丁版本号，如r0
+        :param suggest_patch: **参数解释：** 推荐升级的目标补丁版本号，如r0 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type suggest_patch: str
-        :param target_versions: 升级目标版本集合
+        :param target_versions: **参数解释：** 升级目标版本集合 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type target_versions: list[str]
         """
         
@@ -64,7 +64,7 @@ class UpgradeVersionInfo:
     def release(self):
         r"""Gets the release of this UpgradeVersionInfo.
 
-        正式版本号，如：v1.19.10
+        **参数解释：** 正式版本号，如：v1.19.10 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The release of this UpgradeVersionInfo.
         :rtype: str
@@ -75,7 +75,7 @@ class UpgradeVersionInfo:
     def release(self, release):
         r"""Sets the release of this UpgradeVersionInfo.
 
-        正式版本号，如：v1.19.10
+        **参数解释：** 正式版本号，如：v1.19.10 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param release: The release of this UpgradeVersionInfo.
         :type release: str
@@ -86,7 +86,7 @@ class UpgradeVersionInfo:
     def patch(self):
         r"""Gets the patch of this UpgradeVersionInfo.
 
-        补丁版本号，如r0
+        **参数解释：** 补丁版本号，如r0 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The patch of this UpgradeVersionInfo.
         :rtype: str
@@ -97,7 +97,7 @@ class UpgradeVersionInfo:
     def patch(self, patch):
         r"""Sets the patch of this UpgradeVersionInfo.
 
-        补丁版本号，如r0
+        **参数解释：** 补丁版本号，如r0 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param patch: The patch of this UpgradeVersionInfo.
         :type patch: str
@@ -108,7 +108,7 @@ class UpgradeVersionInfo:
     def suggest_patch(self):
         r"""Gets the suggest_patch of this UpgradeVersionInfo.
 
-        推荐升级的目标补丁版本号，如r0
+        **参数解释：** 推荐升级的目标补丁版本号，如r0 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The suggest_patch of this UpgradeVersionInfo.
         :rtype: str
@@ -119,7 +119,7 @@ class UpgradeVersionInfo:
     def suggest_patch(self, suggest_patch):
         r"""Sets the suggest_patch of this UpgradeVersionInfo.
 
-        推荐升级的目标补丁版本号，如r0
+        **参数解释：** 推荐升级的目标补丁版本号，如r0 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param suggest_patch: The suggest_patch of this UpgradeVersionInfo.
         :type suggest_patch: str
@@ -130,7 +130,7 @@ class UpgradeVersionInfo:
     def target_versions(self):
         r"""Gets the target_versions of this UpgradeVersionInfo.
 
-        升级目标版本集合
+        **参数解释：** 升级目标版本集合 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The target_versions of this UpgradeVersionInfo.
         :rtype: list[str]
@@ -141,7 +141,7 @@ class UpgradeVersionInfo:
     def target_versions(self, target_versions):
         r"""Sets the target_versions of this UpgradeVersionInfo.
 
-        升级目标版本集合
+        **参数解释：** 升级目标版本集合 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param target_versions: The target_versions of this UpgradeVersionInfo.
         :type target_versions: list[str]

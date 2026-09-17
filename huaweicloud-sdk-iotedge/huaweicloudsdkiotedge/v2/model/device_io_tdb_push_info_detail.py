@@ -1,0 +1,137 @@
+# coding: utf-8
+
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
+
+
+class DeviceIoTDBPushInfoDetail:
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+    sensitive_list = []
+
+    openapi_types = {
+        'storage_group': 'str',
+        'format': 'str'
+    }
+
+    attribute_map = {
+        'storage_group': 'storage_group',
+        'format': 'format'
+    }
+
+    def __init__(self, storage_group=None, format=None):
+        r"""DeviceIoTDBPushInfoDetail
+
+        The model defined in huaweicloud sdk
+
+        :param storage_group: 数据存储的存储组
+        :type storage_group: str
+        :param format: 数据格式转换类型
+        :type format: str
+        """
+        
+        
+
+        self._storage_group = None
+        self._format = None
+        self.discriminator = None
+
+        if storage_group is not None:
+            self.storage_group = storage_group
+        if format is not None:
+            self.format = format
+
+    @property
+    def storage_group(self):
+        r"""Gets the storage_group of this DeviceIoTDBPushInfoDetail.
+
+        数据存储的存储组
+
+        :return: The storage_group of this DeviceIoTDBPushInfoDetail.
+        :rtype: str
+        """
+        return self._storage_group
+
+    @storage_group.setter
+    def storage_group(self, storage_group):
+        r"""Sets the storage_group of this DeviceIoTDBPushInfoDetail.
+
+        数据存储的存储组
+
+        :param storage_group: The storage_group of this DeviceIoTDBPushInfoDetail.
+        :type storage_group: str
+        """
+        self._storage_group = storage_group
+
+    @property
+    def format(self):
+        r"""Gets the format of this DeviceIoTDBPushInfoDetail.
+
+        数据格式转换类型
+
+        :return: The format of this DeviceIoTDBPushInfoDetail.
+        :rtype: str
+        """
+        return self._format
+
+    @format.setter
+    def format(self, format):
+        r"""Sets the format of this DeviceIoTDBPushInfoDetail.
+
+        数据格式转换类型
+
+        :param format: The format of this DeviceIoTDBPushInfoDetail.
+        :type format: str
+        """
+        self._format = format
+
+    def to_dict(self):
+        result = {}
+
+        for attr, _ in self.openapi_types.items():
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        import simplejson as json
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
+
+    def __repr__(self):
+        """For `print`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, DeviceIoTDBPushInfoDetail):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

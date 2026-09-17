@@ -19,6 +19,7 @@ class CreateModuleResponse(SdkResponse):
         'edge_app_id': 'str',
         'app_version': 'str',
         'state': 'str',
+        'liveness_state': 'str',
         'control_status': 'str',
         'node_id': 'str',
         'module_name': 'str',
@@ -34,6 +35,7 @@ class CreateModuleResponse(SdkResponse):
         'edge_app_id': 'edge_app_id',
         'app_version': 'app_version',
         'state': 'state',
+        'liveness_state': 'liveness_state',
         'control_status': 'control_status',
         'node_id': 'node_id',
         'module_name': 'module_name',
@@ -45,7 +47,7 @@ class CreateModuleResponse(SdkResponse):
         'container_settings': 'container_settings'
     }
 
-    def __init__(self, edge_app_id=None, app_version=None, state=None, control_status=None, node_id=None, module_name=None, module_id=None, create_time=None, update_time=None, app_type=None, function_type=None, container_settings=None):
+    def __init__(self, edge_app_id=None, app_version=None, state=None, liveness_state=None, control_status=None, node_id=None, module_name=None, module_id=None, create_time=None, update_time=None, app_type=None, function_type=None, container_settings=None):
         r"""CreateModuleResponse
 
         The model defined in huaweicloud sdk
@@ -56,6 +58,8 @@ class CreateModuleResponse(SdkResponse):
         :type app_version: str
         :param state: 模块运行状态
         :type state: str
+        :param liveness_state: 模块健康状态
+        :type liveness_state: str
         :param control_status: 模块管控状态
         :type control_status: str
         :param node_id: 边缘节点（同deviceID）ID
@@ -81,6 +85,7 @@ class CreateModuleResponse(SdkResponse):
         self._edge_app_id = None
         self._app_version = None
         self._state = None
+        self._liveness_state = None
         self._control_status = None
         self._node_id = None
         self._module_name = None
@@ -98,6 +103,8 @@ class CreateModuleResponse(SdkResponse):
             self.app_version = app_version
         if state is not None:
             self.state = state
+        if liveness_state is not None:
+            self.liveness_state = liveness_state
         if control_status is not None:
             self.control_status = control_status
         if node_id is not None:
@@ -182,6 +189,28 @@ class CreateModuleResponse(SdkResponse):
         :type state: str
         """
         self._state = state
+
+    @property
+    def liveness_state(self):
+        r"""Gets the liveness_state of this CreateModuleResponse.
+
+        模块健康状态
+
+        :return: The liveness_state of this CreateModuleResponse.
+        :rtype: str
+        """
+        return self._liveness_state
+
+    @liveness_state.setter
+    def liveness_state(self, liveness_state):
+        r"""Sets the liveness_state of this CreateModuleResponse.
+
+        模块健康状态
+
+        :param liveness_state: The liveness_state of this CreateModuleResponse.
+        :type liveness_state: str
+        """
+        self._liveness_state = liveness_state
 
     @property
     def control_status(self):

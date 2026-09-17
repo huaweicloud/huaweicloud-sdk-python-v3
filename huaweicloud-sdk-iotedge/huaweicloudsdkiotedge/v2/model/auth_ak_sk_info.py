@@ -27,7 +27,7 @@ class AuthAkSkInfo:
 
         The model defined in huaweicloud sdk
 
-        :param secret: 鉴权秘钥
+        :param secret: 鉴权密钥
         :type secret: str
         """
         
@@ -43,7 +43,7 @@ class AuthAkSkInfo:
     def secret(self):
         r"""Gets the secret of this AuthAkSkInfo.
 
-        鉴权秘钥
+        鉴权密钥
 
         :return: The secret of this AuthAkSkInfo.
         :rtype: str
@@ -54,7 +54,7 @@ class AuthAkSkInfo:
     def secret(self, secret):
         r"""Sets the secret of this AuthAkSkInfo.
 
-        鉴权秘钥
+        鉴权密钥
 
         :param secret: The secret of this AuthAkSkInfo.
         :type secret: str

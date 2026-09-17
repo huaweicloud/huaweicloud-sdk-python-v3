@@ -19,7 +19,7 @@ class InfluxdbSlowLogDetail:
         'node_name': 'str',
         'whole_message': 'str',
         'operate_type': 'str',
-        'cost_time': 'str',
+        'cost_time': 'int',
         'log_time': 'str',
         'database': 'str',
         'retention_policy': 'str',
@@ -52,7 +52,7 @@ class InfluxdbSlowLogDetail:
         :param operate_type: 语句类型。
         :type operate_type: str
         :param cost_time: 执行时间。单位：ms
-        :type cost_time: str
+        :type cost_time: int
         :param log_time: 日志产生时间，UTC时间。 格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
         :type log_time: str
         :param database: 数据库名称。
@@ -181,7 +181,7 @@ class InfluxdbSlowLogDetail:
         执行时间。单位：ms
 
         :return: The cost_time of this InfluxdbSlowLogDetail.
-        :rtype: str
+        :rtype: int
         """
         return self._cost_time
 
@@ -192,7 +192,7 @@ class InfluxdbSlowLogDetail:
         执行时间。单位：ms
 
         :param cost_time: The cost_time of this InfluxdbSlowLogDetail.
-        :type cost_time: str
+        :type cost_time: int
         """
         self._cost_time = cost_time
 

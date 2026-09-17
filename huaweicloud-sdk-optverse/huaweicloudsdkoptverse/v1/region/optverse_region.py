@@ -6,10 +6,13 @@ from huaweicloudsdkcore.region.provider import RegionProviderChain
 class OptVerseRegion:
     _PROVIDER = RegionProviderChain.get_default_region_provider_chain("OPTVERSE")
 
+    CN_EAST_3 = Region("cn-east-3",
+                        "https://optverse.cn-east-3.myhuaweicloud.com")
     CN_NORTH_4 = Region("cn-north-4",
                         "https://optverse.cn-north-4.myhuaweicloud.com")
 
     static_fields = {
+        "cn-east-3": CN_EAST_3,
         "cn-north-4": CN_NORTH_4,
     }
 

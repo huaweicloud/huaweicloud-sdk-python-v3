@@ -20,7 +20,8 @@ class HyperNodeStatus:
         'current_node': 'int',
         'deleting_node': 'int',
         'creating_node': 'int',
-        'active_node': 'int'
+        'active_node': 'int',
+        'is_static': 'bool'
     }
 
     attribute_map = {
@@ -29,26 +30,29 @@ class HyperNodeStatus:
         'current_node': 'currentNode',
         'deleting_node': 'deletingNode',
         'creating_node': 'creatingNode',
-        'active_node': 'activeNode'
+        'active_node': 'activeNode',
+        'is_static': 'isStatic'
     }
 
-    def __init__(self, phase=None, instance_id=None, current_node=None, deleting_node=None, creating_node=None, active_node=None):
+    def __init__(self, phase=None, instance_id=None, current_node=None, deleting_node=None, creating_node=None, active_node=None, is_static=None):
         r"""HyperNodeStatus
 
         The model defined in huaweicloud sdk
 
-        :param phase: **参数解释** 超节点状态 **取值范围** - provisioning: 创建中。 - active: 整体可用，代表超节点下所有节点都可用。 - partially-available: 超节点下存在不可用节点时会从 active 转成此状态。 - error: 错误状态。 - deleting: 删除中。 - reinstalling: 重置中。 - scaling: 扩容或缩容中。
+        :param phase: **参数解释**： 超节点状态 **约束限制**： 不涉及 **取值范围**： - provisioning：创建中。 - active：整体可用，代表超节点下所有节点都可用。 - partially-available：超节点下存在不可用节点时会从 active 转成此状态。 - error：错误状态。 - deleting：删除中。 - reinstalling：重置中。 - scaling：扩容或缩容中。  **默认取值**： 不涉及
         :type phase: str
-        :param instance_id: **参数解释** 超节点实例 ID
+        :param instance_id: **参数解释**： 超节点ID **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type instance_id: str
-        :param current_node: **参数解释** 超节点下节点总数
+        :param current_node: **参数解释**： 超节点下节点总数 **约束限制**： 不涉及 **取值范围**： 大于等于0的整数 **默认取值**： 不涉及
         :type current_node: int
-        :param deleting_node: **参数解释** 超节点下处于删除中的节点数
+        :param deleting_node: **参数解释**： 超节点下处于删除中的节点数 **约束限制**： 不涉及 **取值范围**： 大于等于0的整数 **默认取值**： 不涉及
         :type deleting_node: int
-        :param creating_node: **参数解释** 超节点下处于创建中的节点数
+        :param creating_node: **参数解释**： 超节点下处于创建中的节点数 **约束限制**： 不涉及 **取值范围**： 大于等于0的整数 **默认取值**： 不涉及
         :type creating_node: int
-        :param active_node: **参数解释** 超节点下处于可用状态的节点数
+        :param active_node: **参数解释**： 超节点下处于可用状态的节点数 **约束限制**： 不涉及 **取值范围**： 大于等于0的整数 **默认取值**： 不涉及
         :type active_node: int
+        :param is_static: **参数解释**： 超节点是否为纳管节点。纳管节点指用户已有的存量服务器接入CCE集群，而非由CCE自动创建的ECS/BMS。 **约束限制**： 不涉及 **取值范围**： - true：纳管节点，服务器在加入集群前已存在，删除超节点时不会释放底层云服务器资源。 - false：CCE创建的节点，生命周期由CCE管理，删除时会释放底层资源。 **默认取值**： false
+        :type is_static: bool
         """
         
         
@@ -59,6 +63,7 @@ class HyperNodeStatus:
         self._deleting_node = None
         self._creating_node = None
         self._active_node = None
+        self._is_static = None
         self.discriminator = None
 
         if phase is not None:
@@ -73,12 +78,14 @@ class HyperNodeStatus:
             self.creating_node = creating_node
         if active_node is not None:
             self.active_node = active_node
+        if is_static is not None:
+            self.is_static = is_static
 
     @property
     def phase(self):
         r"""Gets the phase of this HyperNodeStatus.
 
-        **参数解释** 超节点状态 **取值范围** - provisioning: 创建中。 - active: 整体可用，代表超节点下所有节点都可用。 - partially-available: 超节点下存在不可用节点时会从 active 转成此状态。 - error: 错误状态。 - deleting: 删除中。 - reinstalling: 重置中。 - scaling: 扩容或缩容中。
+        **参数解释**： 超节点状态 **约束限制**： 不涉及 **取值范围**： - provisioning：创建中。 - active：整体可用，代表超节点下所有节点都可用。 - partially-available：超节点下存在不可用节点时会从 active 转成此状态。 - error：错误状态。 - deleting：删除中。 - reinstalling：重置中。 - scaling：扩容或缩容中。  **默认取值**： 不涉及
 
         :return: The phase of this HyperNodeStatus.
         :rtype: str
@@ -89,7 +96,7 @@ class HyperNodeStatus:
     def phase(self, phase):
         r"""Sets the phase of this HyperNodeStatus.
 
-        **参数解释** 超节点状态 **取值范围** - provisioning: 创建中。 - active: 整体可用，代表超节点下所有节点都可用。 - partially-available: 超节点下存在不可用节点时会从 active 转成此状态。 - error: 错误状态。 - deleting: 删除中。 - reinstalling: 重置中。 - scaling: 扩容或缩容中。
+        **参数解释**： 超节点状态 **约束限制**： 不涉及 **取值范围**： - provisioning：创建中。 - active：整体可用，代表超节点下所有节点都可用。 - partially-available：超节点下存在不可用节点时会从 active 转成此状态。 - error：错误状态。 - deleting：删除中。 - reinstalling：重置中。 - scaling：扩容或缩容中。  **默认取值**： 不涉及
 
         :param phase: The phase of this HyperNodeStatus.
         :type phase: str
@@ -100,7 +107,7 @@ class HyperNodeStatus:
     def instance_id(self):
         r"""Gets the instance_id of this HyperNodeStatus.
 
-        **参数解释** 超节点实例 ID
+        **参数解释**： 超节点ID **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The instance_id of this HyperNodeStatus.
         :rtype: str
@@ -111,7 +118,7 @@ class HyperNodeStatus:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this HyperNodeStatus.
 
-        **参数解释** 超节点实例 ID
+        **参数解释**： 超节点ID **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param instance_id: The instance_id of this HyperNodeStatus.
         :type instance_id: str
@@ -122,7 +129,7 @@ class HyperNodeStatus:
     def current_node(self):
         r"""Gets the current_node of this HyperNodeStatus.
 
-        **参数解释** 超节点下节点总数
+        **参数解释**： 超节点下节点总数 **约束限制**： 不涉及 **取值范围**： 大于等于0的整数 **默认取值**： 不涉及
 
         :return: The current_node of this HyperNodeStatus.
         :rtype: int
@@ -133,7 +140,7 @@ class HyperNodeStatus:
     def current_node(self, current_node):
         r"""Sets the current_node of this HyperNodeStatus.
 
-        **参数解释** 超节点下节点总数
+        **参数解释**： 超节点下节点总数 **约束限制**： 不涉及 **取值范围**： 大于等于0的整数 **默认取值**： 不涉及
 
         :param current_node: The current_node of this HyperNodeStatus.
         :type current_node: int
@@ -144,7 +151,7 @@ class HyperNodeStatus:
     def deleting_node(self):
         r"""Gets the deleting_node of this HyperNodeStatus.
 
-        **参数解释** 超节点下处于删除中的节点数
+        **参数解释**： 超节点下处于删除中的节点数 **约束限制**： 不涉及 **取值范围**： 大于等于0的整数 **默认取值**： 不涉及
 
         :return: The deleting_node of this HyperNodeStatus.
         :rtype: int
@@ -155,7 +162,7 @@ class HyperNodeStatus:
     def deleting_node(self, deleting_node):
         r"""Sets the deleting_node of this HyperNodeStatus.
 
-        **参数解释** 超节点下处于删除中的节点数
+        **参数解释**： 超节点下处于删除中的节点数 **约束限制**： 不涉及 **取值范围**： 大于等于0的整数 **默认取值**： 不涉及
 
         :param deleting_node: The deleting_node of this HyperNodeStatus.
         :type deleting_node: int
@@ -166,7 +173,7 @@ class HyperNodeStatus:
     def creating_node(self):
         r"""Gets the creating_node of this HyperNodeStatus.
 
-        **参数解释** 超节点下处于创建中的节点数
+        **参数解释**： 超节点下处于创建中的节点数 **约束限制**： 不涉及 **取值范围**： 大于等于0的整数 **默认取值**： 不涉及
 
         :return: The creating_node of this HyperNodeStatus.
         :rtype: int
@@ -177,7 +184,7 @@ class HyperNodeStatus:
     def creating_node(self, creating_node):
         r"""Sets the creating_node of this HyperNodeStatus.
 
-        **参数解释** 超节点下处于创建中的节点数
+        **参数解释**： 超节点下处于创建中的节点数 **约束限制**： 不涉及 **取值范围**： 大于等于0的整数 **默认取值**： 不涉及
 
         :param creating_node: The creating_node of this HyperNodeStatus.
         :type creating_node: int
@@ -188,7 +195,7 @@ class HyperNodeStatus:
     def active_node(self):
         r"""Gets the active_node of this HyperNodeStatus.
 
-        **参数解释** 超节点下处于可用状态的节点数
+        **参数解释**： 超节点下处于可用状态的节点数 **约束限制**： 不涉及 **取值范围**： 大于等于0的整数 **默认取值**： 不涉及
 
         :return: The active_node of this HyperNodeStatus.
         :rtype: int
@@ -199,12 +206,34 @@ class HyperNodeStatus:
     def active_node(self, active_node):
         r"""Sets the active_node of this HyperNodeStatus.
 
-        **参数解释** 超节点下处于可用状态的节点数
+        **参数解释**： 超节点下处于可用状态的节点数 **约束限制**： 不涉及 **取值范围**： 大于等于0的整数 **默认取值**： 不涉及
 
         :param active_node: The active_node of this HyperNodeStatus.
         :type active_node: int
         """
         self._active_node = active_node
+
+    @property
+    def is_static(self):
+        r"""Gets the is_static of this HyperNodeStatus.
+
+        **参数解释**： 超节点是否为纳管节点。纳管节点指用户已有的存量服务器接入CCE集群，而非由CCE自动创建的ECS/BMS。 **约束限制**： 不涉及 **取值范围**： - true：纳管节点，服务器在加入集群前已存在，删除超节点时不会释放底层云服务器资源。 - false：CCE创建的节点，生命周期由CCE管理，删除时会释放底层资源。 **默认取值**： false
+
+        :return: The is_static of this HyperNodeStatus.
+        :rtype: bool
+        """
+        return self._is_static
+
+    @is_static.setter
+    def is_static(self, is_static):
+        r"""Sets the is_static of this HyperNodeStatus.
+
+        **参数解释**： 超节点是否为纳管节点。纳管节点指用户已有的存量服务器接入CCE集群，而非由CCE自动创建的ECS/BMS。 **约束限制**： 不涉及 **取值范围**： - true：纳管节点，服务器在加入集群前已存在，删除超节点时不会释放底层云服务器资源。 - false：CCE创建的节点，生命周期由CCE管理，删除时会释放底层资源。 **默认取值**： false
+
+        :param is_static: The is_static of this HyperNodeStatus.
+        :type is_static: bool
+        """
+        self._is_static = is_static
 
     def to_dict(self):
         result = {}

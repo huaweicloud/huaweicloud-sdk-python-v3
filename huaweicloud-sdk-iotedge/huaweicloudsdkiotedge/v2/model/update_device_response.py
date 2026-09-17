@@ -16,29 +16,58 @@ class UpdateDeviceResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'device_name': 'str',
         'config': 'object'
     }
 
     attribute_map = {
+        'device_name': 'device_name',
         'config': 'config'
     }
 
-    def __init__(self, config=None):
+    def __init__(self, device_name=None, config=None):
         r"""UpdateDeviceResponse
 
         The model defined in huaweicloud sdk
 
+        :param device_name: 设备名称。
+        :type device_name: str
         :param config: 设备配置，内容由产品的$config服务定义。
         :type config: object
         """
         
         super().__init__()
 
+        self._device_name = None
         self._config = None
         self.discriminator = None
 
+        if device_name is not None:
+            self.device_name = device_name
         if config is not None:
             self.config = config
+
+    @property
+    def device_name(self):
+        r"""Gets the device_name of this UpdateDeviceResponse.
+
+        设备名称。
+
+        :return: The device_name of this UpdateDeviceResponse.
+        :rtype: str
+        """
+        return self._device_name
+
+    @device_name.setter
+    def device_name(self, device_name):
+        r"""Sets the device_name of this UpdateDeviceResponse.
+
+        设备名称。
+
+        :param device_name: The device_name of this UpdateDeviceResponse.
+        :type device_name: str
+        """
+        self._device_name = device_name
 
     @property
     def config(self):

@@ -45,7 +45,7 @@ class ListSchemasRequest:
         :type database_name: str
         :param sort_key: **参数解释**： 排序字段。 **约束限制**： 不涉及。 **取值范围**： schemaName：模式名称排序。 **默认取值**： 不涉及。
         :type sort_key: str
-        :param sort_dir: **参数解释**： 排序字段。 **约束限制**： 不涉及。 **取值范围**： ASC：表示按升序排序。  DESC：表示按降序排序。 **默认取值**： 不涉及。
+        :param sort_dir: **参数解释**： 排序字段。 **约束限制**： 不涉及。 **取值范围**： ASC：表示按升序排序。 DESC：表示按降序排序。 **默认取值**： 不涉及。
         :type sort_dir: str
         :param keywords: **参数解释**： 查询关键词。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type keywords: str
@@ -149,7 +149,7 @@ class ListSchemasRequest:
     def sort_dir(self):
         r"""Gets the sort_dir of this ListSchemasRequest.
 
-        **参数解释**： 排序字段。 **约束限制**： 不涉及。 **取值范围**： ASC：表示按升序排序。  DESC：表示按降序排序。 **默认取值**： 不涉及。
+        **参数解释**： 排序字段。 **约束限制**： 不涉及。 **取值范围**： ASC：表示按升序排序。 DESC：表示按降序排序。 **默认取值**： 不涉及。
 
         :return: The sort_dir of this ListSchemasRequest.
         :rtype: str
@@ -160,7 +160,7 @@ class ListSchemasRequest:
     def sort_dir(self, sort_dir):
         r"""Sets the sort_dir of this ListSchemasRequest.
 
-        **参数解释**： 排序字段。 **约束限制**： 不涉及。 **取值范围**： ASC：表示按升序排序。  DESC：表示按降序排序。 **默认取值**： 不涉及。
+        **参数解释**： 排序字段。 **约束限制**： 不涉及。 **取值范围**： ASC：表示按升序排序。 DESC：表示按降序排序。 **默认取值**： 不涉及。
 
         :param sort_dir: The sort_dir of this ListSchemasRequest.
         :type sort_dir: str

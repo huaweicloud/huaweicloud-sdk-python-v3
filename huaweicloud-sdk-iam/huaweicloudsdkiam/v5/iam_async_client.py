@@ -4577,6 +4577,284 @@ class IamAsyncClient(Client):
 
         return http_info
 
+    def delete_service_specific_credential_v5_async(self, request):
+        r"""删除服务专属凭证
+
+        该接口可以用于删除服务专属凭证。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteServiceSpecificCredentialV5
+        :type request: :class:`huaweicloudsdkiam.v5.DeleteServiceSpecificCredentialV5Request`
+        :rtype: :class:`huaweicloudsdkiam.v5.DeleteServiceSpecificCredentialV5Response`
+        """
+        http_info = self._delete_service_specific_credential_v5_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_service_specific_credential_v5_async_invoker(self, request):
+        http_info = self._delete_service_specific_credential_v5_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_service_specific_credential_v5_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v5/users/{user_id}/service-specific-credentials/{credential_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteServiceSpecificCredentialV5Response"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'credential_id' in local_var_params:
+            path_params['credential_id'] = local_var_params['credential_id']
+        if 'user_id' in local_var_params:
+            path_params['user_id'] = local_var_params['user_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam-used-authn5']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_service_specific_credential_supported_services_v5_async(self, request):
+        r"""查询支持服务专属凭证的云服务列表
+
+        该接口可以用于查询支持服务专属凭证的云服务列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListServiceSpecificCredentialSupportedServicesV5
+        :type request: :class:`huaweicloudsdkiam.v5.ListServiceSpecificCredentialSupportedServicesV5Request`
+        :rtype: :class:`huaweicloudsdkiam.v5.ListServiceSpecificCredentialSupportedServicesV5Response`
+        """
+        http_info = self._list_service_specific_credential_supported_services_v5_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_service_specific_credential_supported_services_v5_async_invoker(self, request):
+        http_info = self._list_service_specific_credential_supported_services_v5_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_service_specific_credential_supported_services_v5_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/service-specific-credentials/supported-services",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListServiceSpecificCredentialSupportedServicesV5Response"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam-used-authn5']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_service_specific_credentials_v5_async(self, request):
+        r"""查询服务专属凭证列表
+
+        该接口可以用于查询服务专属凭证列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListServiceSpecificCredentialsV5
+        :type request: :class:`huaweicloudsdkiam.v5.ListServiceSpecificCredentialsV5Request`
+        :rtype: :class:`huaweicloudsdkiam.v5.ListServiceSpecificCredentialsV5Response`
+        """
+        http_info = self._list_service_specific_credentials_v5_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_service_specific_credentials_v5_async_invoker(self, request):
+        http_info = self._list_service_specific_credentials_v5_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_service_specific_credentials_v5_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/service-specific-credentials",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListServiceSpecificCredentialsV5Response"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'user_id' in local_var_params:
+            query_params.append(('user_id', local_var_params['user_id']))
+        if 'service_name' in local_var_params:
+            query_params.append(('service_name', local_var_params['service_name']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam-used-authn5']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_service_specific_credential_v5_async(self, request):
+        r"""更新服务专属凭证
+
+        该接口可以用于更新服务专属凭证的状态或描述。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateServiceSpecificCredentialV5
+        :type request: :class:`huaweicloudsdkiam.v5.UpdateServiceSpecificCredentialV5Request`
+        :rtype: :class:`huaweicloudsdkiam.v5.UpdateServiceSpecificCredentialV5Response`
+        """
+        http_info = self._update_service_specific_credential_v5_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_service_specific_credential_v5_async_invoker(self, request):
+        http_info = self._update_service_specific_credential_v5_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_service_specific_credential_v5_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v5/users/{user_id}/service-specific-credentials/{credential_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateServiceSpecificCredentialV5Response"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'user_id' in local_var_params:
+            path_params['user_id'] = local_var_params['user_id']
+        if 'credential_id' in local_var_params:
+            path_params['credential_id'] = local_var_params['credential_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam-used-authn5']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_user_v5_async(self, request):
         r"""创建IAM用户
 

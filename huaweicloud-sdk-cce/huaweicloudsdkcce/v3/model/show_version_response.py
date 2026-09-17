@@ -28,7 +28,7 @@ class ShowVersionResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param versions: API版本信息列表
+        :param versions: **参数解释：** API版本信息列表 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type versions: list[:class:`huaweicloudsdkcce.v3.APIVersionDetail`]
         """
         
@@ -44,7 +44,7 @@ class ShowVersionResponse(SdkResponse):
     def versions(self):
         r"""Gets the versions of this ShowVersionResponse.
 
-        API版本信息列表
+        **参数解释：** API版本信息列表 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The versions of this ShowVersionResponse.
         :rtype: list[:class:`huaweicloudsdkcce.v3.APIVersionDetail`]
@@ -55,7 +55,7 @@ class ShowVersionResponse(SdkResponse):
     def versions(self, versions):
         r"""Sets the versions of this ShowVersionResponse.
 
-        API版本信息列表
+        **参数解释：** API版本信息列表 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param versions: The versions of this ShowVersionResponse.
         :type versions: list[:class:`huaweicloudsdkcce.v3.APIVersionDetail`]

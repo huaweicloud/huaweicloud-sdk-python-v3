@@ -16,7 +16,7 @@ class GetClusterFlavorSpecsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'cluster_flavor_specs': 'ClusterFlavorSpecification'
+        'cluster_flavor_specs': 'list[ClusterFlavorSpecification]'
     }
 
     attribute_map = {
@@ -29,7 +29,7 @@ class GetClusterFlavorSpecsResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param cluster_flavor_specs: 
-        :type cluster_flavor_specs: :class:`huaweicloudsdkcce.v3.ClusterFlavorSpecification`
+        :type cluster_flavor_specs: list[:class:`huaweicloudsdkcce.v3.ClusterFlavorSpecification`]
         """
         
         super().__init__()
@@ -45,7 +45,7 @@ class GetClusterFlavorSpecsResponse(SdkResponse):
         r"""Gets the cluster_flavor_specs of this GetClusterFlavorSpecsResponse.
 
         :return: The cluster_flavor_specs of this GetClusterFlavorSpecsResponse.
-        :rtype: :class:`huaweicloudsdkcce.v3.ClusterFlavorSpecification`
+        :rtype: list[:class:`huaweicloudsdkcce.v3.ClusterFlavorSpecification`]
         """
         return self._cluster_flavor_specs
 
@@ -54,7 +54,7 @@ class GetClusterFlavorSpecsResponse(SdkResponse):
         r"""Sets the cluster_flavor_specs of this GetClusterFlavorSpecsResponse.
 
         :param cluster_flavor_specs: The cluster_flavor_specs of this GetClusterFlavorSpecsResponse.
-        :type cluster_flavor_specs: :class:`huaweicloudsdkcce.v3.ClusterFlavorSpecification`
+        :type cluster_flavor_specs: list[:class:`huaweicloudsdkcce.v3.ClusterFlavorSpecification`]
         """
         self._cluster_flavor_specs = cluster_flavor_specs
 

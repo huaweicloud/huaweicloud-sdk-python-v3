@@ -1,0 +1,166 @@
+# coding: utf-8
+
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
+
+
+class RapidGrowthTableInfo:
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+    sensitive_list = []
+
+    openapi_types = {
+        'db_name': 'str',
+        'table_name': 'str',
+        'growth': 'float'
+    }
+
+    attribute_map = {
+        'db_name': 'db_name',
+        'table_name': 'table_name',
+        'growth': 'growth'
+    }
+
+    def __init__(self, db_name=None, table_name=None, growth=None):
+        r"""RapidGrowthTableInfo
+
+        The model defined in huaweicloud sdk
+
+        :param db_name: 库名
+        :type db_name: str
+        :param table_name: 表名
+        :type table_name: str
+        :param growth: 增长量，单位MB
+        :type growth: float
+        """
+        
+        
+
+        self._db_name = None
+        self._table_name = None
+        self._growth = None
+        self.discriminator = None
+
+        if db_name is not None:
+            self.db_name = db_name
+        if table_name is not None:
+            self.table_name = table_name
+        if growth is not None:
+            self.growth = growth
+
+    @property
+    def db_name(self):
+        r"""Gets the db_name of this RapidGrowthTableInfo.
+
+        库名
+
+        :return: The db_name of this RapidGrowthTableInfo.
+        :rtype: str
+        """
+        return self._db_name
+
+    @db_name.setter
+    def db_name(self, db_name):
+        r"""Sets the db_name of this RapidGrowthTableInfo.
+
+        库名
+
+        :param db_name: The db_name of this RapidGrowthTableInfo.
+        :type db_name: str
+        """
+        self._db_name = db_name
+
+    @property
+    def table_name(self):
+        r"""Gets the table_name of this RapidGrowthTableInfo.
+
+        表名
+
+        :return: The table_name of this RapidGrowthTableInfo.
+        :rtype: str
+        """
+        return self._table_name
+
+    @table_name.setter
+    def table_name(self, table_name):
+        r"""Sets the table_name of this RapidGrowthTableInfo.
+
+        表名
+
+        :param table_name: The table_name of this RapidGrowthTableInfo.
+        :type table_name: str
+        """
+        self._table_name = table_name
+
+    @property
+    def growth(self):
+        r"""Gets the growth of this RapidGrowthTableInfo.
+
+        增长量，单位MB
+
+        :return: The growth of this RapidGrowthTableInfo.
+        :rtype: float
+        """
+        return self._growth
+
+    @growth.setter
+    def growth(self, growth):
+        r"""Sets the growth of this RapidGrowthTableInfo.
+
+        增长量，单位MB
+
+        :param growth: The growth of this RapidGrowthTableInfo.
+        :type growth: float
+        """
+        self._growth = growth
+
+    def to_dict(self):
+        result = {}
+
+        for attr, _ in self.openapi_types.items():
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        import simplejson as json
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
+
+    def __repr__(self):
+        """For `print`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, RapidGrowthTableInfo):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

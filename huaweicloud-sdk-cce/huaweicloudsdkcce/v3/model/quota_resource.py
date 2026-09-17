@@ -37,17 +37,17 @@ class QuotaResource:
 
         The model defined in huaweicloud sdk
 
-        :param quota_key: 资源类型
+        :param quota_key: **参数解释：** 资源类型 **约束限制：** 不涉及 **取值范围：** - cluster：表示集群配额  **默认取值：** 不涉及 
         :type quota_key: str
-        :param quota_limit: 配额值
+        :param quota_limit: **参数解释：** 资源配额值 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type quota_limit: int
-        :param used: 已创建的资源个数
+        :param used: **参数解释：** 已创建的资源个数 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type used: int
-        :param unit: 单位
+        :param unit: **参数解释：** 资源单位 **约束限制：** 不涉及 **取值范围：** - count：个数  **默认取值：** 不涉及 
         :type unit: str
-        :param region_id: 局点ID。若资源不涉及此参数，则不返回该参数。
+        :param region_id: **参数解释：** 局点ID。若资源不涉及此参数，则不返回该参数。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type region_id: str
-        :param availability_zone_id: 可用区ID。若资源不涉及此参数，则不返回该参数。
+        :param availability_zone_id: **参数解释：** 可用区ID。若资源不涉及此参数，则不返回该参数。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type availability_zone_id: str
         """
         
@@ -78,7 +78,7 @@ class QuotaResource:
     def quota_key(self):
         r"""Gets the quota_key of this QuotaResource.
 
-        资源类型
+        **参数解释：** 资源类型 **约束限制：** 不涉及 **取值范围：** - cluster：表示集群配额  **默认取值：** 不涉及 
 
         :return: The quota_key of this QuotaResource.
         :rtype: str
@@ -89,7 +89,7 @@ class QuotaResource:
     def quota_key(self, quota_key):
         r"""Sets the quota_key of this QuotaResource.
 
-        资源类型
+        **参数解释：** 资源类型 **约束限制：** 不涉及 **取值范围：** - cluster：表示集群配额  **默认取值：** 不涉及 
 
         :param quota_key: The quota_key of this QuotaResource.
         :type quota_key: str
@@ -100,7 +100,7 @@ class QuotaResource:
     def quota_limit(self):
         r"""Gets the quota_limit of this QuotaResource.
 
-        配额值
+        **参数解释：** 资源配额值 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The quota_limit of this QuotaResource.
         :rtype: int
@@ -111,7 +111,7 @@ class QuotaResource:
     def quota_limit(self, quota_limit):
         r"""Sets the quota_limit of this QuotaResource.
 
-        配额值
+        **参数解释：** 资源配额值 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param quota_limit: The quota_limit of this QuotaResource.
         :type quota_limit: int
@@ -122,7 +122,7 @@ class QuotaResource:
     def used(self):
         r"""Gets the used of this QuotaResource.
 
-        已创建的资源个数
+        **参数解释：** 已创建的资源个数 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The used of this QuotaResource.
         :rtype: int
@@ -133,7 +133,7 @@ class QuotaResource:
     def used(self, used):
         r"""Sets the used of this QuotaResource.
 
-        已创建的资源个数
+        **参数解释：** 已创建的资源个数 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param used: The used of this QuotaResource.
         :type used: int
@@ -144,7 +144,7 @@ class QuotaResource:
     def unit(self):
         r"""Gets the unit of this QuotaResource.
 
-        单位
+        **参数解释：** 资源单位 **约束限制：** 不涉及 **取值范围：** - count：个数  **默认取值：** 不涉及 
 
         :return: The unit of this QuotaResource.
         :rtype: str
@@ -155,7 +155,7 @@ class QuotaResource:
     def unit(self, unit):
         r"""Sets the unit of this QuotaResource.
 
-        单位
+        **参数解释：** 资源单位 **约束限制：** 不涉及 **取值范围：** - count：个数  **默认取值：** 不涉及 
 
         :param unit: The unit of this QuotaResource.
         :type unit: str
@@ -166,7 +166,7 @@ class QuotaResource:
     def region_id(self):
         r"""Gets the region_id of this QuotaResource.
 
-        局点ID。若资源不涉及此参数，则不返回该参数。
+        **参数解释：** 局点ID。若资源不涉及此参数，则不返回该参数。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The region_id of this QuotaResource.
         :rtype: str
@@ -177,7 +177,7 @@ class QuotaResource:
     def region_id(self, region_id):
         r"""Sets the region_id of this QuotaResource.
 
-        局点ID。若资源不涉及此参数，则不返回该参数。
+        **参数解释：** 局点ID。若资源不涉及此参数，则不返回该参数。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param region_id: The region_id of this QuotaResource.
         :type region_id: str
@@ -188,7 +188,7 @@ class QuotaResource:
     def availability_zone_id(self):
         r"""Gets the availability_zone_id of this QuotaResource.
 
-        可用区ID。若资源不涉及此参数，则不返回该参数。
+        **参数解释：** 可用区ID。若资源不涉及此参数，则不返回该参数。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The availability_zone_id of this QuotaResource.
         :rtype: str
@@ -199,7 +199,7 @@ class QuotaResource:
     def availability_zone_id(self, availability_zone_id):
         r"""Sets the availability_zone_id of this QuotaResource.
 
-        可用区ID。若资源不涉及此参数，则不返回该参数。
+        **参数解释：** 可用区ID。若资源不涉及此参数，则不返回该参数。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param availability_zone_id: The availability_zone_id of this QuotaResource.
         :type availability_zone_id: str

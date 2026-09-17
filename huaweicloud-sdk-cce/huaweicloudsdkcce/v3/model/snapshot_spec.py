@@ -27,7 +27,7 @@ class SnapshotSpec:
 
         The model defined in huaweicloud sdk
 
-        :param items: 备份任务详情
+        :param items: **参数解释：** 备份任务详情 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type items: list[:class:`huaweicloudsdkcce.v3.SnapshotSpecItems`]
         """
         
@@ -43,7 +43,7 @@ class SnapshotSpec:
     def items(self):
         r"""Gets the items of this SnapshotSpec.
 
-        备份任务详情
+        **参数解释：** 备份任务详情 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The items of this SnapshotSpec.
         :rtype: list[:class:`huaweicloudsdkcce.v3.SnapshotSpecItems`]
@@ -54,7 +54,7 @@ class SnapshotSpec:
     def items(self, items):
         r"""Sets the items of this SnapshotSpec.
 
-        备份任务详情
+        **参数解释：** 备份任务详情 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param items: The items of this SnapshotSpec.
         :type items: list[:class:`huaweicloudsdkcce.v3.SnapshotSpecItems`]

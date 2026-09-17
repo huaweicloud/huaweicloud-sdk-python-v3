@@ -16,8 +16,11 @@ class PublishOpsDatasetVersionResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'created_by': 'OpsEvaluationUserInfo',
         'id': 'str',
+        'reference_count': 'int',
         'version': 'str',
+        'can_delete': 'bool',
         'version_num': 'int',
         'description': 'str',
         'item_count': 'int',
@@ -26,8 +29,11 @@ class PublishOpsDatasetVersionResponse(SdkResponse):
     }
 
     attribute_map = {
+        'created_by': 'created_by',
         'id': 'id',
+        'reference_count': 'reference_count',
         'version': 'version',
+        'can_delete': 'can_delete',
         'version_num': 'version_num',
         'description': 'description',
         'item_count': 'item_count',
@@ -35,15 +41,21 @@ class PublishOpsDatasetVersionResponse(SdkResponse):
         'created_at': 'created_at'
     }
 
-    def __init__(self, id=None, version=None, version_num=None, description=None, item_count=None, schema_snapshot=None, created_at=None):
+    def __init__(self, created_by=None, id=None, reference_count=None, version=None, can_delete=None, version_num=None, description=None, item_count=None, schema_snapshot=None, created_at=None):
         r"""PublishOpsDatasetVersionResponse
 
         The model defined in huaweicloud sdk
 
+        :param created_by: 
+        :type created_by: :class:`huaweicloudsdkagentarts.v1.OpsEvaluationUserInfo`
         :param id: **参数解释：** 版本的内部唯一标识符。 **取值范围：** 符合通用唯一识别码(UUID)标准的字符串。
         :type id: str
+        :param reference_count: **参数解释：** 该版本被评估任务引用的次数。 **约束限制：** 不涉及。 **取值范围：** 0~2147483647。
+        :type reference_count: int
         :param version: **参数解释：** 发布的版本显示名称。 **取值范围：** 自定义字符串。
         :type version: str
+        :param can_delete: **参数解释：** 该版本是否允许被删除。存在被评估任务引用的版本不可删除。 **约束限制：** 不涉及。 **取值范围：** - true：可删除 - false：不可删除
+        :type can_delete: bool
         :param version_num: **参数解释：** 系统生成的递增版本序号。 **取值范围：** 0到2147483647。
         :type version_num: int
         :param description: **参数解释：** 该版本的详细备注说明。 **取值范围：** 任意字符串。
@@ -58,8 +70,11 @@ class PublishOpsDatasetVersionResponse(SdkResponse):
         
         super().__init__()
 
+        self._created_by = None
         self._id = None
+        self._reference_count = None
         self._version = None
+        self._can_delete = None
         self._version_num = None
         self._description = None
         self._item_count = None
@@ -67,10 +82,16 @@ class PublishOpsDatasetVersionResponse(SdkResponse):
         self._created_at = None
         self.discriminator = None
 
+        if created_by is not None:
+            self.created_by = created_by
         if id is not None:
             self.id = id
+        if reference_count is not None:
+            self.reference_count = reference_count
         if version is not None:
             self.version = version
+        if can_delete is not None:
+            self.can_delete = can_delete
         if version_num is not None:
             self.version_num = version_num
         if description is not None:
@@ -81,6 +102,24 @@ class PublishOpsDatasetVersionResponse(SdkResponse):
             self.schema_snapshot = schema_snapshot
         if created_at is not None:
             self.created_at = created_at
+
+    @property
+    def created_by(self):
+        r"""Gets the created_by of this PublishOpsDatasetVersionResponse.
+
+        :return: The created_by of this PublishOpsDatasetVersionResponse.
+        :rtype: :class:`huaweicloudsdkagentarts.v1.OpsEvaluationUserInfo`
+        """
+        return self._created_by
+
+    @created_by.setter
+    def created_by(self, created_by):
+        r"""Sets the created_by of this PublishOpsDatasetVersionResponse.
+
+        :param created_by: The created_by of this PublishOpsDatasetVersionResponse.
+        :type created_by: :class:`huaweicloudsdkagentarts.v1.OpsEvaluationUserInfo`
+        """
+        self._created_by = created_by
 
     @property
     def id(self):
@@ -105,6 +144,28 @@ class PublishOpsDatasetVersionResponse(SdkResponse):
         self._id = id
 
     @property
+    def reference_count(self):
+        r"""Gets the reference_count of this PublishOpsDatasetVersionResponse.
+
+        **参数解释：** 该版本被评估任务引用的次数。 **约束限制：** 不涉及。 **取值范围：** 0~2147483647。
+
+        :return: The reference_count of this PublishOpsDatasetVersionResponse.
+        :rtype: int
+        """
+        return self._reference_count
+
+    @reference_count.setter
+    def reference_count(self, reference_count):
+        r"""Sets the reference_count of this PublishOpsDatasetVersionResponse.
+
+        **参数解释：** 该版本被评估任务引用的次数。 **约束限制：** 不涉及。 **取值范围：** 0~2147483647。
+
+        :param reference_count: The reference_count of this PublishOpsDatasetVersionResponse.
+        :type reference_count: int
+        """
+        self._reference_count = reference_count
+
+    @property
     def version(self):
         r"""Gets the version of this PublishOpsDatasetVersionResponse.
 
@@ -125,6 +186,28 @@ class PublishOpsDatasetVersionResponse(SdkResponse):
         :type version: str
         """
         self._version = version
+
+    @property
+    def can_delete(self):
+        r"""Gets the can_delete of this PublishOpsDatasetVersionResponse.
+
+        **参数解释：** 该版本是否允许被删除。存在被评估任务引用的版本不可删除。 **约束限制：** 不涉及。 **取值范围：** - true：可删除 - false：不可删除
+
+        :return: The can_delete of this PublishOpsDatasetVersionResponse.
+        :rtype: bool
+        """
+        return self._can_delete
+
+    @can_delete.setter
+    def can_delete(self, can_delete):
+        r"""Sets the can_delete of this PublishOpsDatasetVersionResponse.
+
+        **参数解释：** 该版本是否允许被删除。存在被评估任务引用的版本不可删除。 **约束限制：** 不涉及。 **取值范围：** - true：可删除 - false：不可删除
+
+        :param can_delete: The can_delete of this PublishOpsDatasetVersionResponse.
+        :type can_delete: bool
+        """
+        self._can_delete = can_delete
 
     @property
     def version_num(self):

@@ -19,7 +19,8 @@ class CreateEdgeApplicationRequestDTO:
         'edge_app_name': 'str',
         'description': 'str',
         'function_type': 'str',
-        'protocol': 'str'
+        'protocol': 'str',
+        'delivered_app': 'bool'
     }
 
     attribute_map = {
@@ -27,10 +28,11 @@ class CreateEdgeApplicationRequestDTO:
         'edge_app_name': 'edge_app_name',
         'description': 'description',
         'function_type': 'function_type',
-        'protocol': 'protocol'
+        'protocol': 'protocol',
+        'delivered_app': 'delivered_app'
     }
 
-    def __init__(self, edge_app_id=None, edge_app_name=None, description=None, function_type=None, protocol=None):
+    def __init__(self, edge_app_id=None, edge_app_name=None, description=None, function_type=None, protocol=None, delivered_app=None):
         r"""CreateEdgeApplicationRequestDTO
 
         The model defined in huaweicloud sdk
@@ -45,6 +47,8 @@ class CreateEdgeApplicationRequestDTO:
         :type function_type: str
         :param protocol: 驱动协议类型OPCUA|Modbus-TCP
         :type protocol: str
+        :param delivered_app: 是否是下发到端侧网关上应用。
+        :type delivered_app: bool
         """
         
         
@@ -54,6 +58,7 @@ class CreateEdgeApplicationRequestDTO:
         self._description = None
         self._function_type = None
         self._protocol = None
+        self._delivered_app = None
         self.discriminator = None
 
         self.edge_app_id = edge_app_id
@@ -65,6 +70,8 @@ class CreateEdgeApplicationRequestDTO:
             self.function_type = function_type
         if protocol is not None:
             self.protocol = protocol
+        if delivered_app is not None:
+            self.delivered_app = delivered_app
 
     @property
     def edge_app_id(self):
@@ -175,6 +182,28 @@ class CreateEdgeApplicationRequestDTO:
         :type protocol: str
         """
         self._protocol = protocol
+
+    @property
+    def delivered_app(self):
+        r"""Gets the delivered_app of this CreateEdgeApplicationRequestDTO.
+
+        是否是下发到端侧网关上应用。
+
+        :return: The delivered_app of this CreateEdgeApplicationRequestDTO.
+        :rtype: bool
+        """
+        return self._delivered_app
+
+    @delivered_app.setter
+    def delivered_app(self, delivered_app):
+        r"""Sets the delivered_app of this CreateEdgeApplicationRequestDTO.
+
+        是否是下发到端侧网关上应用。
+
+        :param delivered_app: The delivered_app of this CreateEdgeApplicationRequestDTO.
+        :type delivered_app: bool
+        """
+        self._delivered_app = delivered_app
 
     def to_dict(self):
         result = {}

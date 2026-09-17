@@ -19,7 +19,8 @@ class AcceptManualReviewRequest:
         'project_id': 'str',
         'pipeline_id': 'str',
         'pipeline_run_id': 'str',
-        'step_run_id': 'str'
+        'step_run_id': 'str',
+        'approval_description': 'str'
     }
 
     attribute_map = {
@@ -27,10 +28,11 @@ class AcceptManualReviewRequest:
         'project_id': 'project_id',
         'pipeline_id': 'pipeline_id',
         'pipeline_run_id': 'pipeline_run_id',
-        'step_run_id': 'step_run_id'
+        'step_run_id': 'step_run_id',
+        'approval_description': 'approval_description'
     }
 
-    def __init__(self, job_run_id=None, project_id=None, pipeline_id=None, pipeline_run_id=None, step_run_id=None):
+    def __init__(self, job_run_id=None, project_id=None, pipeline_id=None, pipeline_run_id=None, step_run_id=None, approval_description=None):
         r"""AcceptManualReviewRequest
 
         The model defined in huaweicloud sdk
@@ -45,6 +47,8 @@ class AcceptManualReviewRequest:
         :type pipeline_run_id: str
         :param step_run_id: 流水线步骤ID
         :type step_run_id: str
+        :param approval_description: 审核意见
+        :type approval_description: str
         """
         
         
@@ -54,6 +58,7 @@ class AcceptManualReviewRequest:
         self._pipeline_id = None
         self._pipeline_run_id = None
         self._step_run_id = None
+        self._approval_description = None
         self.discriminator = None
 
         self.job_run_id = job_run_id
@@ -61,6 +66,8 @@ class AcceptManualReviewRequest:
         self.pipeline_id = pipeline_id
         self.pipeline_run_id = pipeline_run_id
         self.step_run_id = step_run_id
+        if approval_description is not None:
+            self.approval_description = approval_description
 
     @property
     def job_run_id(self):
@@ -171,6 +178,28 @@ class AcceptManualReviewRequest:
         :type step_run_id: str
         """
         self._step_run_id = step_run_id
+
+    @property
+    def approval_description(self):
+        r"""Gets the approval_description of this AcceptManualReviewRequest.
+
+        审核意见
+
+        :return: The approval_description of this AcceptManualReviewRequest.
+        :rtype: str
+        """
+        return self._approval_description
+
+    @approval_description.setter
+    def approval_description(self, approval_description):
+        r"""Sets the approval_description of this AcceptManualReviewRequest.
+
+        审核意见
+
+        :param approval_description: The approval_description of this AcceptManualReviewRequest.
+        :type approval_description: str
+        """
+        self._approval_description = approval_description
 
     def to_dict(self):
         result = {}

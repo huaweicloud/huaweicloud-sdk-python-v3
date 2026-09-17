@@ -29,9 +29,9 @@ class DeprecatedAPIRisks:
 
         The model defined in huaweicloud sdk
 
-        :param url: 请求路径，如/apis/policy/v1beta1/podsecuritypolicies
+        :param url: **参数解释：** 请求路径，如/apis/policy/v1beta1/podsecuritypolicies。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type url: str
-        :param user_agent: 客户端信息
+        :param user_agent: **参数解释：** 客户端信息。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type user_agent: str
         """
         
@@ -50,7 +50,7 @@ class DeprecatedAPIRisks:
     def url(self):
         r"""Gets the url of this DeprecatedAPIRisks.
 
-        请求路径，如/apis/policy/v1beta1/podsecuritypolicies
+        **参数解释：** 请求路径，如/apis/policy/v1beta1/podsecuritypolicies。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The url of this DeprecatedAPIRisks.
         :rtype: str
@@ -61,7 +61,7 @@ class DeprecatedAPIRisks:
     def url(self, url):
         r"""Sets the url of this DeprecatedAPIRisks.
 
-        请求路径，如/apis/policy/v1beta1/podsecuritypolicies
+        **参数解释：** 请求路径，如/apis/policy/v1beta1/podsecuritypolicies。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param url: The url of this DeprecatedAPIRisks.
         :type url: str
@@ -72,7 +72,7 @@ class DeprecatedAPIRisks:
     def user_agent(self):
         r"""Gets the user_agent of this DeprecatedAPIRisks.
 
-        客户端信息
+        **参数解释：** 客户端信息。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The user_agent of this DeprecatedAPIRisks.
         :rtype: str
@@ -83,7 +83,7 @@ class DeprecatedAPIRisks:
     def user_agent(self, user_agent):
         r"""Sets the user_agent of this DeprecatedAPIRisks.
 
-        客户端信息
+        **参数解释：** 客户端信息。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param user_agent: The user_agent of this DeprecatedAPIRisks.
         :type user_agent: str

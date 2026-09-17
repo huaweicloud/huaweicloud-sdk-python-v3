@@ -27,7 +27,7 @@ class PostcheckClusterResponseBodyStatus:
 
         The model defined in huaweicloud sdk
 
-        :param phase: 状态，取值如下 - Success 成功 - Failed 失败 - Error 错误
+        :param phase: **参数解释：** 状态 **约束限制：** 不涉及 **取值范围：** - Success：成功 - Failed：失败 - Error：错误  **默认取值：** 不涉及
         :type phase: str
         """
         
@@ -43,7 +43,7 @@ class PostcheckClusterResponseBodyStatus:
     def phase(self):
         r"""Gets the phase of this PostcheckClusterResponseBodyStatus.
 
-        状态，取值如下 - Success 成功 - Failed 失败 - Error 错误
+        **参数解释：** 状态 **约束限制：** 不涉及 **取值范围：** - Success：成功 - Failed：失败 - Error：错误  **默认取值：** 不涉及
 
         :return: The phase of this PostcheckClusterResponseBodyStatus.
         :rtype: str
@@ -54,7 +54,7 @@ class PostcheckClusterResponseBodyStatus:
     def phase(self, phase):
         r"""Sets the phase of this PostcheckClusterResponseBodyStatus.
 
-        状态，取值如下 - Success 成功 - Failed 失败 - Error 错误
+        **参数解释：** 状态 **约束限制：** 不涉及 **取值范围：** - Success：成功 - Failed：失败 - Error：错误  **默认取值：** 不涉及
 
         :param phase: The phase of this PostcheckClusterResponseBodyStatus.
         :type phase: str

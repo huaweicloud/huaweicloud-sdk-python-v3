@@ -21,6 +21,7 @@ class CreateScheduleResponse(SdkResponse):
         'name': 'str',
         'cycle_type': 'str',
         'enabled': 'bool',
+        'reset_current_task': 'bool',
         'start_time': 'int',
         'end_time': 'int',
         'priority': 'int',
@@ -34,6 +35,7 @@ class CreateScheduleResponse(SdkResponse):
         'name': 'name',
         'cycle_type': 'cycle_type',
         'enabled': 'enabled',
+        'reset_current_task': 'reset_current_task',
         'start_time': 'start_time',
         'end_time': 'end_time',
         'priority': 'priority',
@@ -41,7 +43,7 @@ class CreateScheduleResponse(SdkResponse):
         'tasks': 'tasks'
     }
 
-    def __init__(self, schedule_id=None, node_id=None, name=None, cycle_type=None, enabled=None, start_time=None, end_time=None, priority=None, daily=None, tasks=None):
+    def __init__(self, schedule_id=None, node_id=None, name=None, cycle_type=None, enabled=None, reset_current_task=None, start_time=None, end_time=None, priority=None, daily=None, tasks=None):
         r"""CreateScheduleResponse
 
         The model defined in huaweicloud sdk
@@ -56,6 +58,8 @@ class CreateScheduleResponse(SdkResponse):
         :type cycle_type: str
         :param enabled: 调度计划是否生效
         :type enabled: bool
+        :param reset_current_task: 是否立即执行
+        :type reset_current_task: bool
         :param start_time: 调度计划起始时间，毫秒级别的时间戳
         :type start_time: int
         :param end_time: 调度计划结束时间，毫秒级别的时间戳
@@ -75,6 +79,7 @@ class CreateScheduleResponse(SdkResponse):
         self._name = None
         self._cycle_type = None
         self._enabled = None
+        self._reset_current_task = None
         self._start_time = None
         self._end_time = None
         self._priority = None
@@ -92,6 +97,8 @@ class CreateScheduleResponse(SdkResponse):
             self.cycle_type = cycle_type
         if enabled is not None:
             self.enabled = enabled
+        if reset_current_task is not None:
+            self.reset_current_task = reset_current_task
         if start_time is not None:
             self.start_time = start_time
         if end_time is not None:
@@ -212,6 +219,28 @@ class CreateScheduleResponse(SdkResponse):
         :type enabled: bool
         """
         self._enabled = enabled
+
+    @property
+    def reset_current_task(self):
+        r"""Gets the reset_current_task of this CreateScheduleResponse.
+
+        是否立即执行
+
+        :return: The reset_current_task of this CreateScheduleResponse.
+        :rtype: bool
+        """
+        return self._reset_current_task
+
+    @reset_current_task.setter
+    def reset_current_task(self, reset_current_task):
+        r"""Sets the reset_current_task of this CreateScheduleResponse.
+
+        是否立即执行
+
+        :param reset_current_task: The reset_current_task of this CreateScheduleResponse.
+        :type reset_current_task: bool
+        """
+        self._reset_current_task = reset_current_task
 
     @property
     def start_time(self):

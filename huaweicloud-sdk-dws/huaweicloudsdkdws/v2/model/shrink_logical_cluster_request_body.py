@@ -33,13 +33,13 @@ class ShrinkLogicalClusterRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_rings: **参数解释**： 缩容主机环信息。  **约束限制**：  与shrink_node_num缩容节点个数两个参数任选其一，两者都存在，优先取cluster_rings缩容主机环信息参数。 **取值范围**：  不涉及。 **默认取值**：  不涉及。
+        :param cluster_rings: **参数解释**： 缩容主机环信息。 **约束限制**：  与shrink_node_num缩容节点个数两个参数任选其一，两者都存在，优先取cluster_rings缩容主机环信息参数。 **取值范围**： 不涉及。 **默认取值**：  不涉及。
         :type cluster_rings: list[:class:`huaweicloudsdkdws.v2.ClusterRing`]
-        :param parallel_jobs: **参数解释**： 重分布并发配置数。  **约束限制**：  不涉及。 **取值范围**：  1~200。 **默认取值**：  4。
+        :param parallel_jobs: **参数解释**： 重分布并发配置数。 **约束限制**：  不涉及。 **取值范围**： 1~200。 **默认取值**：  4。
         :type parallel_jobs: int
-        :param mode: **参数解释**：  缩容模式。 **约束限制**：  不涉及。 **取值范围**：  read-only：离线模式 insert：在线模式 **默认取值**：  insert
+        :param mode: **参数解释**： 缩容模式。 **约束限制**：  不涉及。 **取值范围**： read-only：离线模式 insert：在线模式 **默认取值**：  insert
         :type mode: str
-        :param shrink_node_num: **参数解释**： 缩容节点个数。 **约束限制**：  与cluster_rings缩容主机环信息两个参数任选其一，两者都存在，优先取cluster_rings缩容主机环信息参数。 **取值范围**：  不涉及。 **默认取值**：  不涉及。
+        :param shrink_node_num: **参数解释**： 缩容节点个数。 **约束限制**：  与cluster_rings缩容主机环信息两个参数任选其一，两者都存在，优先取cluster_rings缩容主机环信息参数。 **取值范围**： 不涉及。 **默认取值**：  不涉及。
         :type shrink_node_num: int
         """
         
@@ -64,7 +64,7 @@ class ShrinkLogicalClusterRequestBody:
     def cluster_rings(self):
         r"""Gets the cluster_rings of this ShrinkLogicalClusterRequestBody.
 
-        **参数解释**： 缩容主机环信息。  **约束限制**：  与shrink_node_num缩容节点个数两个参数任选其一，两者都存在，优先取cluster_rings缩容主机环信息参数。 **取值范围**：  不涉及。 **默认取值**：  不涉及。
+        **参数解释**： 缩容主机环信息。 **约束限制**：  与shrink_node_num缩容节点个数两个参数任选其一，两者都存在，优先取cluster_rings缩容主机环信息参数。 **取值范围**： 不涉及。 **默认取值**：  不涉及。
 
         :return: The cluster_rings of this ShrinkLogicalClusterRequestBody.
         :rtype: list[:class:`huaweicloudsdkdws.v2.ClusterRing`]
@@ -75,7 +75,7 @@ class ShrinkLogicalClusterRequestBody:
     def cluster_rings(self, cluster_rings):
         r"""Sets the cluster_rings of this ShrinkLogicalClusterRequestBody.
 
-        **参数解释**： 缩容主机环信息。  **约束限制**：  与shrink_node_num缩容节点个数两个参数任选其一，两者都存在，优先取cluster_rings缩容主机环信息参数。 **取值范围**：  不涉及。 **默认取值**：  不涉及。
+        **参数解释**： 缩容主机环信息。 **约束限制**：  与shrink_node_num缩容节点个数两个参数任选其一，两者都存在，优先取cluster_rings缩容主机环信息参数。 **取值范围**： 不涉及。 **默认取值**：  不涉及。
 
         :param cluster_rings: The cluster_rings of this ShrinkLogicalClusterRequestBody.
         :type cluster_rings: list[:class:`huaweicloudsdkdws.v2.ClusterRing`]
@@ -86,7 +86,7 @@ class ShrinkLogicalClusterRequestBody:
     def parallel_jobs(self):
         r"""Gets the parallel_jobs of this ShrinkLogicalClusterRequestBody.
 
-        **参数解释**： 重分布并发配置数。  **约束限制**：  不涉及。 **取值范围**：  1~200。 **默认取值**：  4。
+        **参数解释**： 重分布并发配置数。 **约束限制**：  不涉及。 **取值范围**： 1~200。 **默认取值**：  4。
 
         :return: The parallel_jobs of this ShrinkLogicalClusterRequestBody.
         :rtype: int
@@ -97,7 +97,7 @@ class ShrinkLogicalClusterRequestBody:
     def parallel_jobs(self, parallel_jobs):
         r"""Sets the parallel_jobs of this ShrinkLogicalClusterRequestBody.
 
-        **参数解释**： 重分布并发配置数。  **约束限制**：  不涉及。 **取值范围**：  1~200。 **默认取值**：  4。
+        **参数解释**： 重分布并发配置数。 **约束限制**：  不涉及。 **取值范围**： 1~200。 **默认取值**：  4。
 
         :param parallel_jobs: The parallel_jobs of this ShrinkLogicalClusterRequestBody.
         :type parallel_jobs: int
@@ -108,7 +108,7 @@ class ShrinkLogicalClusterRequestBody:
     def mode(self):
         r"""Gets the mode of this ShrinkLogicalClusterRequestBody.
 
-        **参数解释**：  缩容模式。 **约束限制**：  不涉及。 **取值范围**：  read-only：离线模式 insert：在线模式 **默认取值**：  insert
+        **参数解释**： 缩容模式。 **约束限制**：  不涉及。 **取值范围**： read-only：离线模式 insert：在线模式 **默认取值**：  insert
 
         :return: The mode of this ShrinkLogicalClusterRequestBody.
         :rtype: str
@@ -119,7 +119,7 @@ class ShrinkLogicalClusterRequestBody:
     def mode(self, mode):
         r"""Sets the mode of this ShrinkLogicalClusterRequestBody.
 
-        **参数解释**：  缩容模式。 **约束限制**：  不涉及。 **取值范围**：  read-only：离线模式 insert：在线模式 **默认取值**：  insert
+        **参数解释**： 缩容模式。 **约束限制**：  不涉及。 **取值范围**： read-only：离线模式 insert：在线模式 **默认取值**：  insert
 
         :param mode: The mode of this ShrinkLogicalClusterRequestBody.
         :type mode: str
@@ -130,7 +130,7 @@ class ShrinkLogicalClusterRequestBody:
     def shrink_node_num(self):
         r"""Gets the shrink_node_num of this ShrinkLogicalClusterRequestBody.
 
-        **参数解释**： 缩容节点个数。 **约束限制**：  与cluster_rings缩容主机环信息两个参数任选其一，两者都存在，优先取cluster_rings缩容主机环信息参数。 **取值范围**：  不涉及。 **默认取值**：  不涉及。
+        **参数解释**： 缩容节点个数。 **约束限制**：  与cluster_rings缩容主机环信息两个参数任选其一，两者都存在，优先取cluster_rings缩容主机环信息参数。 **取值范围**： 不涉及。 **默认取值**：  不涉及。
 
         :return: The shrink_node_num of this ShrinkLogicalClusterRequestBody.
         :rtype: int
@@ -141,7 +141,7 @@ class ShrinkLogicalClusterRequestBody:
     def shrink_node_num(self, shrink_node_num):
         r"""Sets the shrink_node_num of this ShrinkLogicalClusterRequestBody.
 
-        **参数解释**： 缩容节点个数。 **约束限制**：  与cluster_rings缩容主机环信息两个参数任选其一，两者都存在，优先取cluster_rings缩容主机环信息参数。 **取值范围**：  不涉及。 **默认取值**：  不涉及。
+        **参数解释**： 缩容节点个数。 **约束限制**：  与cluster_rings缩容主机环信息两个参数任选其一，两者都存在，优先取cluster_rings缩容主机环信息参数。 **取值范围**： 不涉及。 **默认取值**：  不涉及。
 
         :param shrink_node_num: The shrink_node_num of this ShrinkLogicalClusterRequestBody.
         :type shrink_node_num: int

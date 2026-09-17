@@ -72,7 +72,7 @@ def mocked_empty_domain_responses():
 
 @pytest.fixture()
 def mock_sts_endpoint(monkeypatch):
-    monkeypatch.setattr(endpoint, "get_sts_endpoint_by_id", lambda x: "https://localhost")
+    monkeypatch.setattr(endpoint, "get_sts_endpoint_by_id", lambda *args, **kwargs: "https://localhost")
 
 
 @pytest.fixture
@@ -178,15 +178,21 @@ class TestGlobalCredentialsGetDomainId:
         credentials.process_auth_params(mocked_http_client, "region-id")
         assert "domain_id" == credentials.domain_id
 
-    def test_empty_domain_id(self, mocked_http_client, mocked_empty_domain_responses):
+    def test_empty_domain_id(self, mock_sts_endpoint, mocked_http_client, mocked_empty_domain_responses):
+        mocked_empty_domain_responses.add(
+            method=responses.GET,
+            url="https://localhost/v5/caller-identity",
+            content_type="application/json",
+            headers={"x-request-id": "request-id"},
+            body='{"account_id": ""}'
+        )
+
         credentials = GlobalCredentials("ak2", "sk2")
         try:
             credentials.process_auth_params(mocked_http_client, "region-id")
             raise AssertionError("Should have thrown a SdkException: Failed to get domain id...")
         except SdkException as e:
-            assert ("Failed to get domain id, X-IAM-Trace-Id=trace-id. "
-                    "Please confirm that you have 'iam:users:getUser' permission, "
-                    "or set domain id: GlobalCredentials(ak, sk, domain_id)") == e.error_msg
+            assert "Failed to get domain id" in e.error_msg
 
     def test_get_domain_id_v5(self, mock_sts_endpoint, mocked_http_client, mocked_empty_domain_responses):
         mocked_empty_domain_responses.add(

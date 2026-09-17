@@ -16,47 +16,20 @@ class SetDeviceControlDefaultValuesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'str'
     }
 
     attribute_map = {
-        'body': 'body'
     }
 
-    def __init__(self, body=None):
+    def __init__(self):
         r"""SetDeviceControlDefaultValuesResponse
 
         The model defined in huaweicloud sdk
 
-        :param body: 
-        :type body: str
         """
         
         super().__init__()
-
-        self._body = None
         self.discriminator = None
-
-        if body is not None:
-            self.body = body
-
-    @property
-    def body(self):
-        r"""Gets the body of this SetDeviceControlDefaultValuesResponse.
-
-        :return: The body of this SetDeviceControlDefaultValuesResponse.
-        :rtype: str
-        """
-        return self._body
-
-    @body.setter
-    def body(self, body):
-        r"""Sets the body of this SetDeviceControlDefaultValuesResponse.
-
-        :param body: The body of this SetDeviceControlDefaultValuesResponse.
-        :type body: str
-        """
-        self._body = body
 
     def to_dict(self):
         import warnings

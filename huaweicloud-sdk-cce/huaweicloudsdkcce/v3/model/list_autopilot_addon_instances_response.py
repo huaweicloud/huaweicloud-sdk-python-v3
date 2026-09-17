@@ -32,11 +32,11 @@ class ListAutopilotAddonInstancesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param kind: API类型，固定值“Addon”，该值不可修改。
+        :param kind: **参数解释**： API类型，固定值\&quot;Addon\&quot;，该值不可修改。 **约束限制**： 该值不可修改 **取值范围**： - Addon  **默认取值**： Addon
         :type kind: str
-        :param api_version: API版本，固定值“v3”，该值不可修改。
+        :param api_version: **参数解释**： API版本，固定值\&quot;v3\&quot;，该值不可修改。 **约束限制**： 该值不可修改 **取值范围**： - v3  **默认取值**： v3
         :type api_version: str
-        :param items: 插件实例列表
+        :param items: **参数解释**： 插件实例列表。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type items: list[:class:`huaweicloudsdkcce.v3.AddonInstance`]
         """
         
@@ -58,7 +58,7 @@ class ListAutopilotAddonInstancesResponse(SdkResponse):
     def kind(self):
         r"""Gets the kind of this ListAutopilotAddonInstancesResponse.
 
-        API类型，固定值“Addon”，该值不可修改。
+        **参数解释**： API类型，固定值\"Addon\"，该值不可修改。 **约束限制**： 该值不可修改 **取值范围**： - Addon  **默认取值**： Addon
 
         :return: The kind of this ListAutopilotAddonInstancesResponse.
         :rtype: str
@@ -69,7 +69,7 @@ class ListAutopilotAddonInstancesResponse(SdkResponse):
     def kind(self, kind):
         r"""Sets the kind of this ListAutopilotAddonInstancesResponse.
 
-        API类型，固定值“Addon”，该值不可修改。
+        **参数解释**： API类型，固定值\"Addon\"，该值不可修改。 **约束限制**： 该值不可修改 **取值范围**： - Addon  **默认取值**： Addon
 
         :param kind: The kind of this ListAutopilotAddonInstancesResponse.
         :type kind: str
@@ -80,7 +80,7 @@ class ListAutopilotAddonInstancesResponse(SdkResponse):
     def api_version(self):
         r"""Gets the api_version of this ListAutopilotAddonInstancesResponse.
 
-        API版本，固定值“v3”，该值不可修改。
+        **参数解释**： API版本，固定值\"v3\"，该值不可修改。 **约束限制**： 该值不可修改 **取值范围**： - v3  **默认取值**： v3
 
         :return: The api_version of this ListAutopilotAddonInstancesResponse.
         :rtype: str
@@ -91,7 +91,7 @@ class ListAutopilotAddonInstancesResponse(SdkResponse):
     def api_version(self, api_version):
         r"""Sets the api_version of this ListAutopilotAddonInstancesResponse.
 
-        API版本，固定值“v3”，该值不可修改。
+        **参数解释**： API版本，固定值\"v3\"，该值不可修改。 **约束限制**： 该值不可修改 **取值范围**： - v3  **默认取值**： v3
 
         :param api_version: The api_version of this ListAutopilotAddonInstancesResponse.
         :type api_version: str
@@ -102,7 +102,7 @@ class ListAutopilotAddonInstancesResponse(SdkResponse):
     def items(self):
         r"""Gets the items of this ListAutopilotAddonInstancesResponse.
 
-        插件实例列表
+        **参数解释**： 插件实例列表。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The items of this ListAutopilotAddonInstancesResponse.
         :rtype: list[:class:`huaweicloudsdkcce.v3.AddonInstance`]
@@ -113,7 +113,7 @@ class ListAutopilotAddonInstancesResponse(SdkResponse):
     def items(self, items):
         r"""Sets the items of this ListAutopilotAddonInstancesResponse.
 
-        插件实例列表
+        **参数解释**： 插件实例列表。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param items: The items of this ListAutopilotAddonInstancesResponse.
         :type items: list[:class:`huaweicloudsdkcce.v3.AddonInstance`]

@@ -27,7 +27,7 @@ class UpgradeCluserResponseMetadata:
 
         The model defined in huaweicloud sdk
 
-        :param uid: 升级任务ID，可通过调用获取集群升级任务详情API查询进展
+        :param uid: **参数解释：** 升级任务ID，可通过调用获取集群升级任务详情API查询进展 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type uid: str
         """
         
@@ -43,7 +43,7 @@ class UpgradeCluserResponseMetadata:
     def uid(self):
         r"""Gets the uid of this UpgradeCluserResponseMetadata.
 
-        升级任务ID，可通过调用获取集群升级任务详情API查询进展
+        **参数解释：** 升级任务ID，可通过调用获取集群升级任务详情API查询进展 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The uid of this UpgradeCluserResponseMetadata.
         :rtype: str
@@ -54,7 +54,7 @@ class UpgradeCluserResponseMetadata:
     def uid(self, uid):
         r"""Sets the uid of this UpgradeCluserResponseMetadata.
 
-        升级任务ID，可通过调用获取集群升级任务详情API查询进展
+        **参数解释：** 升级任务ID，可通过调用获取集群升级任务详情API查询进展 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param uid: The uid of this UpgradeCluserResponseMetadata.
         :type uid: str

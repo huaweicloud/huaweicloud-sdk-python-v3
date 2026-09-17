@@ -19,6 +19,8 @@ class NodePoolStatus:
         'creating_node': 'int',
         'deleting_node': 'int',
         'active_node': 'int',
+        'repairing_node': 'int',
+        'repair_failed_node': 'int',
         'configuration_synced_node_count': 'int',
         'phase': 'str',
         'job_id': 'str',
@@ -31,6 +33,8 @@ class NodePoolStatus:
         'creating_node': 'creatingNode',
         'deleting_node': 'deletingNode',
         'active_node': 'activeNode',
+        'repairing_node': 'repairingNode',
+        'repair_failed_node': 'repairFailedNode',
         'configuration_synced_node_count': 'configurationSyncedNodeCount',
         'phase': 'phase',
         'job_id': 'jobId',
@@ -38,7 +42,7 @@ class NodePoolStatus:
         'scale_group_statuses': 'scaleGroupStatuses'
     }
 
-    def __init__(self, current_node=None, creating_node=None, deleting_node=None, active_node=None, configuration_synced_node_count=None, phase=None, job_id=None, conditions=None, scale_group_statuses=None):
+    def __init__(self, current_node=None, creating_node=None, deleting_node=None, active_node=None, repairing_node=None, repair_failed_node=None, configuration_synced_node_count=None, phase=None, job_id=None, conditions=None, scale_group_statuses=None):
         r"""NodePoolStatus
 
         The model defined in huaweicloud sdk
@@ -49,8 +53,12 @@ class NodePoolStatus:
         :type creating_node: int
         :param deleting_node: 当前节点池中删除中的节点数量。
         :type deleting_node: int
-        :param active_node: **参数解释**： 当前节点池中就绪的节点数量。 **取值范围**： 不涉及
+        :param active_node: **参数解释**： 当前节点池中就绪的节点数量。 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type active_node: int
+        :param repairing_node: **参数解释**： 当前节点池中修复中的节点数量。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
+        :type repairing_node: int
+        :param repair_failed_node: **参数解释**： 当前节点池中修复失败的节点数量。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
+        :type repair_failed_node: int
         :param configuration_synced_node_count: **参数解释** 当前节点池中已经同步了节点池配置参数的节点数量。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type configuration_synced_node_count: int
         :param phase: 节点池状态。 - 空值：可用（节点池当前节点数已达到预期，且无伸缩中的节点） - Synchronizing：伸缩中（节点池当前节点数未达到预期，且无伸缩中的节点） - Synchronized：伸缩等待中（节点池当前节点数未达到预期，或者存在伸缩中的节点） - SoldOut：节点池当前不可扩容（兼容字段，标记节点池资源售罄、资源配额不足等不可扩容状态） &gt; 上述节点池状态已废弃，仅兼容保留，不建议使用，替代感知方式如下： &gt; - 节点池扩缩状态：可通过currentNode/creatingNode/deletingNode节点状态统计信息，精确感知当前节点池扩缩状态。 &gt; - 节点池可扩容状态：可通过conditions感知节点池详细状态，其中\&quot;Scalable\&quot;可替代SoldOut语义。 - Deleting：删除中 - Error：错误 
@@ -69,6 +77,8 @@ class NodePoolStatus:
         self._creating_node = None
         self._deleting_node = None
         self._active_node = None
+        self._repairing_node = None
+        self._repair_failed_node = None
         self._configuration_synced_node_count = None
         self._phase = None
         self._job_id = None
@@ -84,6 +94,10 @@ class NodePoolStatus:
             self.deleting_node = deleting_node
         if active_node is not None:
             self.active_node = active_node
+        if repairing_node is not None:
+            self.repairing_node = repairing_node
+        if repair_failed_node is not None:
+            self.repair_failed_node = repair_failed_node
         if configuration_synced_node_count is not None:
             self.configuration_synced_node_count = configuration_synced_node_count
         if phase is not None:
@@ -165,7 +179,7 @@ class NodePoolStatus:
     def active_node(self):
         r"""Gets the active_node of this NodePoolStatus.
 
-        **参数解释**： 当前节点池中就绪的节点数量。 **取值范围**： 不涉及
+        **参数解释**： 当前节点池中就绪的节点数量。 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The active_node of this NodePoolStatus.
         :rtype: int
@@ -176,12 +190,56 @@ class NodePoolStatus:
     def active_node(self, active_node):
         r"""Sets the active_node of this NodePoolStatus.
 
-        **参数解释**： 当前节点池中就绪的节点数量。 **取值范围**： 不涉及
+        **参数解释**： 当前节点池中就绪的节点数量。 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param active_node: The active_node of this NodePoolStatus.
         :type active_node: int
         """
         self._active_node = active_node
+
+    @property
+    def repairing_node(self):
+        r"""Gets the repairing_node of this NodePoolStatus.
+
+        **参数解释**： 当前节点池中修复中的节点数量。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
+
+        :return: The repairing_node of this NodePoolStatus.
+        :rtype: int
+        """
+        return self._repairing_node
+
+    @repairing_node.setter
+    def repairing_node(self, repairing_node):
+        r"""Sets the repairing_node of this NodePoolStatus.
+
+        **参数解释**： 当前节点池中修复中的节点数量。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
+
+        :param repairing_node: The repairing_node of this NodePoolStatus.
+        :type repairing_node: int
+        """
+        self._repairing_node = repairing_node
+
+    @property
+    def repair_failed_node(self):
+        r"""Gets the repair_failed_node of this NodePoolStatus.
+
+        **参数解释**： 当前节点池中修复失败的节点数量。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
+
+        :return: The repair_failed_node of this NodePoolStatus.
+        :rtype: int
+        """
+        return self._repair_failed_node
+
+    @repair_failed_node.setter
+    def repair_failed_node(self, repair_failed_node):
+        r"""Sets the repair_failed_node of this NodePoolStatus.
+
+        **参数解释**： 当前节点池中修复失败的节点数量。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
+
+        :param repair_failed_node: The repair_failed_node of this NodePoolStatus.
+        :type repair_failed_node: int
+        """
+        self._repair_failed_node = repair_failed_node
 
     @property
     def configuration_synced_node_count(self):

@@ -16,34 +16,41 @@ class ResizeInstanceRequestBody:
 
     openapi_types = {
         'resize': 'ResizeInstanceOption',
-        'is_auto_pay': 'bool'
+        'is_auto_pay': 'bool',
+        'is_force_resize': 'bool'
     }
 
     attribute_map = {
         'resize': 'resize',
-        'is_auto_pay': 'is_auto_pay'
+        'is_auto_pay': 'is_auto_pay',
+        'is_force_resize': 'is_force_resize'
     }
 
-    def __init__(self, resize=None, is_auto_pay=None):
+    def __init__(self, resize=None, is_auto_pay=None, is_force_resize=None):
         r"""ResizeInstanceRequestBody
 
         The model defined in huaweicloud sdk
 
         :param resize: 
         :type resize: :class:`huaweicloudsdkdds.v3.ResizeInstanceOption`
-        :param is_auto_pay: 变更包年包月实例规格时可指定，表示是否自动从账户中支付，此字段不影响自动续订的支付方式。 - 对于降低规格场景，该字段无效。 - 对于扩大规格场景：   - true，表示自动从账户中支付。   - false，表示手动从账户中支付，默认为该方式。
+        :param is_auto_pay: **参数解释：** 变更包年包月实例规格时可指定，表示是否自动从账户中支付，此字段不影响自动续订的支付方式。 **约束限制：** 对于降低规格场景，该字段无效。 **取值范围：** 对于扩大规格场景： - true，表示自动从账户中支付。 - false，表示手动从账户中支付，默认为该方式。 **默认取值：** false。
         :type is_auto_pay: bool
+        :param is_force_resize: **参数解释：** 标识是否进行强制规格变更操作。 **约束限制：** 集群的dds mongos节点和只读节点不支持强制规格变更。 **取值范围：** 对于规格变更： - true，表示执行强制规格变更。 - 不传此参数，表示执行正常规格变更。 **默认取值：** 不传此参数。
+        :type is_force_resize: bool
         """
         
         
 
         self._resize = None
         self._is_auto_pay = None
+        self._is_force_resize = None
         self.discriminator = None
 
         self.resize = resize
         if is_auto_pay is not None:
             self.is_auto_pay = is_auto_pay
+        if is_force_resize is not None:
+            self.is_force_resize = is_force_resize
 
     @property
     def resize(self):
@@ -67,7 +74,7 @@ class ResizeInstanceRequestBody:
     def is_auto_pay(self):
         r"""Gets the is_auto_pay of this ResizeInstanceRequestBody.
 
-        变更包年包月实例规格时可指定，表示是否自动从账户中支付，此字段不影响自动续订的支付方式。 - 对于降低规格场景，该字段无效。 - 对于扩大规格场景：   - true，表示自动从账户中支付。   - false，表示手动从账户中支付，默认为该方式。
+        **参数解释：** 变更包年包月实例规格时可指定，表示是否自动从账户中支付，此字段不影响自动续订的支付方式。 **约束限制：** 对于降低规格场景，该字段无效。 **取值范围：** 对于扩大规格场景： - true，表示自动从账户中支付。 - false，表示手动从账户中支付，默认为该方式。 **默认取值：** false。
 
         :return: The is_auto_pay of this ResizeInstanceRequestBody.
         :rtype: bool
@@ -78,12 +85,34 @@ class ResizeInstanceRequestBody:
     def is_auto_pay(self, is_auto_pay):
         r"""Sets the is_auto_pay of this ResizeInstanceRequestBody.
 
-        变更包年包月实例规格时可指定，表示是否自动从账户中支付，此字段不影响自动续订的支付方式。 - 对于降低规格场景，该字段无效。 - 对于扩大规格场景：   - true，表示自动从账户中支付。   - false，表示手动从账户中支付，默认为该方式。
+        **参数解释：** 变更包年包月实例规格时可指定，表示是否自动从账户中支付，此字段不影响自动续订的支付方式。 **约束限制：** 对于降低规格场景，该字段无效。 **取值范围：** 对于扩大规格场景： - true，表示自动从账户中支付。 - false，表示手动从账户中支付，默认为该方式。 **默认取值：** false。
 
         :param is_auto_pay: The is_auto_pay of this ResizeInstanceRequestBody.
         :type is_auto_pay: bool
         """
         self._is_auto_pay = is_auto_pay
+
+    @property
+    def is_force_resize(self):
+        r"""Gets the is_force_resize of this ResizeInstanceRequestBody.
+
+        **参数解释：** 标识是否进行强制规格变更操作。 **约束限制：** 集群的dds mongos节点和只读节点不支持强制规格变更。 **取值范围：** 对于规格变更： - true，表示执行强制规格变更。 - 不传此参数，表示执行正常规格变更。 **默认取值：** 不传此参数。
+
+        :return: The is_force_resize of this ResizeInstanceRequestBody.
+        :rtype: bool
+        """
+        return self._is_force_resize
+
+    @is_force_resize.setter
+    def is_force_resize(self, is_force_resize):
+        r"""Sets the is_force_resize of this ResizeInstanceRequestBody.
+
+        **参数解释：** 标识是否进行强制规格变更操作。 **约束限制：** 集群的dds mongos节点和只读节点不支持强制规格变更。 **取值范围：** 对于规格变更： - true，表示执行强制规格变更。 - 不传此参数，表示执行正常规格变更。 **默认取值：** 不传此参数。
+
+        :param is_force_resize: The is_force_resize of this ResizeInstanceRequestBody.
+        :type is_force_resize: bool
+        """
+        self._is_force_resize = is_force_resize
 
     def to_dict(self):
         result = {}

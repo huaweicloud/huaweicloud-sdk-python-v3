@@ -41,7 +41,7 @@ class NPUDetailsDTO:
 
         :param device_id: 昇腾设备ID
         :type device_id: str
-        :param npu_type: 华为AI加速卡型号，如D310推理卡、D310P推理卡、D910训练卡。
+        :param npu_type: AI加速卡型号，如D310推理卡、D310P推理卡、D910训练卡。
         :type npu_type: str
         :param product_name: 昇腾设备产品类型
         :type product_name: str
@@ -107,7 +107,7 @@ class NPUDetailsDTO:
     def npu_type(self):
         r"""Gets the npu_type of this NPUDetailsDTO.
 
-        华为AI加速卡型号，如D310推理卡、D310P推理卡、D910训练卡。
+        AI加速卡型号，如D310推理卡、D310P推理卡、D910训练卡。
 
         :return: The npu_type of this NPUDetailsDTO.
         :rtype: str
@@ -118,7 +118,7 @@ class NPUDetailsDTO:
     def npu_type(self, npu_type):
         r"""Sets the npu_type of this NPUDetailsDTO.
 
-        华为AI加速卡型号，如D310推理卡、D310P推理卡、D910训练卡。
+        AI加速卡型号，如D310推理卡、D310P推理卡、D910训练卡。
 
         :param npu_type: The npu_type of this NPUDetailsDTO.
         :type npu_type: str

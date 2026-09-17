@@ -36,15 +36,15 @@ class UpdateNodePoolConfigurationResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param api_version: API版本
+        :param api_version: **参数解释：** API版本，固定值**v3** **约束限制：** 固定值 **取值范围：** - v3  **默认取值：** v3 
         :type api_version: str
-        :param kind: API类型，固定值**Configuration**
+        :param kind: **参数解释：** API类型，固定值**Configuration** **约束限制：** 固定值 **取值范围：** - Configuration  **默认取值：** Configuration 
         :type kind: str
         :param metadata: 
         :type metadata: :class:`huaweicloudsdkcce.v3.ConfigurationMetadata`
         :param spec: 
         :type spec: :class:`huaweicloudsdkcce.v3.ClusterConfigurationsSpec`
-        :param status: Configuration的状态信息
+        :param status: **参数解释：** Configuration的状态信息 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type status: object
         """
         
@@ -72,7 +72,7 @@ class UpdateNodePoolConfigurationResponse(SdkResponse):
     def api_version(self):
         r"""Gets the api_version of this UpdateNodePoolConfigurationResponse.
 
-        API版本
+        **参数解释：** API版本，固定值**v3** **约束限制：** 固定值 **取值范围：** - v3  **默认取值：** v3 
 
         :return: The api_version of this UpdateNodePoolConfigurationResponse.
         :rtype: str
@@ -83,7 +83,7 @@ class UpdateNodePoolConfigurationResponse(SdkResponse):
     def api_version(self, api_version):
         r"""Sets the api_version of this UpdateNodePoolConfigurationResponse.
 
-        API版本
+        **参数解释：** API版本，固定值**v3** **约束限制：** 固定值 **取值范围：** - v3  **默认取值：** v3 
 
         :param api_version: The api_version of this UpdateNodePoolConfigurationResponse.
         :type api_version: str
@@ -94,7 +94,7 @@ class UpdateNodePoolConfigurationResponse(SdkResponse):
     def kind(self):
         r"""Gets the kind of this UpdateNodePoolConfigurationResponse.
 
-        API类型，固定值**Configuration**
+        **参数解释：** API类型，固定值**Configuration** **约束限制：** 固定值 **取值范围：** - Configuration  **默认取值：** Configuration 
 
         :return: The kind of this UpdateNodePoolConfigurationResponse.
         :rtype: str
@@ -105,7 +105,7 @@ class UpdateNodePoolConfigurationResponse(SdkResponse):
     def kind(self, kind):
         r"""Sets the kind of this UpdateNodePoolConfigurationResponse.
 
-        API类型，固定值**Configuration**
+        **参数解释：** API类型，固定值**Configuration** **约束限制：** 固定值 **取值范围：** - Configuration  **默认取值：** Configuration 
 
         :param kind: The kind of this UpdateNodePoolConfigurationResponse.
         :type kind: str
@@ -152,7 +152,7 @@ class UpdateNodePoolConfigurationResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this UpdateNodePoolConfigurationResponse.
 
-        Configuration的状态信息
+        **参数解释：** Configuration的状态信息 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The status of this UpdateNodePoolConfigurationResponse.
         :rtype: object
@@ -163,7 +163,7 @@ class UpdateNodePoolConfigurationResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this UpdateNodePoolConfigurationResponse.
 
-        Configuration的状态信息
+        **参数解释：** Configuration的状态信息 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param status: The status of this UpdateNodePoolConfigurationResponse.
         :type status: object

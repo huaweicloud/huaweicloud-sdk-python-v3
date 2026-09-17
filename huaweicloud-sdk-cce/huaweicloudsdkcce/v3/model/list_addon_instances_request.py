@@ -27,7 +27,7 @@ class ListAddonInstancesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: 集群 ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)
+        :param cluster_id: **参数解释**： 集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type cluster_id: str
         """
         
@@ -42,7 +42,7 @@ class ListAddonInstancesRequest:
     def cluster_id(self):
         r"""Gets the cluster_id of this ListAddonInstancesRequest.
 
-        集群 ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)
+        **参数解释**： 集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The cluster_id of this ListAddonInstancesRequest.
         :rtype: str
@@ -53,7 +53,7 @@ class ListAddonInstancesRequest:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this ListAddonInstancesRequest.
 
-        集群 ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)
+        **参数解释**： 集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param cluster_id: The cluster_id of this ListAddonInstancesRequest.
         :type cluster_id: str

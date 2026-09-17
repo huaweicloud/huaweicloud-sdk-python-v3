@@ -27,7 +27,7 @@ class DownloadHttpSignCertRequest:
 
         The model defined in huaweicloud sdk
 
-        :param certificate_id: 证书文件ID名称，格式为SMN-{RegionID}-{UUID}.pem
+        :param certificate_id: 证书文件ID名称，格式为SMN_{RegionID}_{UUID}.pem
         :type certificate_id: str
         """
         
@@ -42,7 +42,7 @@ class DownloadHttpSignCertRequest:
     def certificate_id(self):
         r"""Gets the certificate_id of this DownloadHttpSignCertRequest.
 
-        证书文件ID名称，格式为SMN-{RegionID}-{UUID}.pem
+        证书文件ID名称，格式为SMN_{RegionID}_{UUID}.pem
 
         :return: The certificate_id of this DownloadHttpSignCertRequest.
         :rtype: str
@@ -53,7 +53,7 @@ class DownloadHttpSignCertRequest:
     def certificate_id(self, certificate_id):
         r"""Sets the certificate_id of this DownloadHttpSignCertRequest.
 
-        证书文件ID名称，格式为SMN-{RegionID}-{UUID}.pem
+        证书文件ID名称，格式为SMN_{RegionID}_{UUID}.pem
 
         :param certificate_id: The certificate_id of this DownloadHttpSignCertRequest.
         :type certificate_id: str

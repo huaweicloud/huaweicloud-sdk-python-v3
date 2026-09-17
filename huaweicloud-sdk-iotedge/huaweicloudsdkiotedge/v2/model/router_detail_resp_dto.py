@@ -21,7 +21,8 @@ class RouterDetailRespDTO:
         'input': 'str',
         'output': 'str',
         'sql': 'str',
-        'available': 'bool'
+        'available': 'bool',
+        'type': 'str'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class RouterDetailRespDTO:
         'input': 'input',
         'output': 'output',
         'sql': 'sql',
-        'available': 'available'
+        'available': 'available',
+        'type': 'type'
     }
 
-    def __init__(self, route_id=None, input_module_id=None, output_module_id=None, input=None, output=None, sql=None, available=None):
+    def __init__(self, route_id=None, input_module_id=None, output_module_id=None, input=None, output=None, sql=None, available=None, type=None):
         r"""RouterDetailRespDTO
 
         The model defined in huaweicloud sdk
@@ -53,6 +55,8 @@ class RouterDetailRespDTO:
         :type sql: str
         :param available: 是否可用
         :type available: bool
+        :param type: 路由类型：standard|customized
+        :type type: str
         """
         
         
@@ -64,6 +68,7 @@ class RouterDetailRespDTO:
         self._output = None
         self._sql = None
         self._available = None
+        self._type = None
         self.discriminator = None
 
         self.route_id = route_id
@@ -79,6 +84,8 @@ class RouterDetailRespDTO:
             self.sql = sql
         if available is not None:
             self.available = available
+        if type is not None:
+            self.type = type
 
     @property
     def route_id(self):
@@ -233,6 +240,28 @@ class RouterDetailRespDTO:
         :type available: bool
         """
         self._available = available
+
+    @property
+    def type(self):
+        r"""Gets the type of this RouterDetailRespDTO.
+
+        路由类型：standard|customized
+
+        :return: The type of this RouterDetailRespDTO.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        r"""Sets the type of this RouterDetailRespDTO.
+
+        路由类型：standard|customized
+
+        :param type: The type of this RouterDetailRespDTO.
+        :type type: str
+        """
+        self._type = type
 
     def to_dict(self):
         result = {}

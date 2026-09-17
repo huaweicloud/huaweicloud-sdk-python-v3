@@ -17,6 +17,7 @@ class ListClustersRequest:
     openapi_types = {
         'cluster_name': 'str',
         'state': 'str',
+        'cluster_ids': 'list[str]',
         'limit': 'int',
         'offset': 'int'
     }
@@ -24,11 +25,12 @@ class ListClustersRequest:
     attribute_map = {
         'cluster_name': 'cluster_name',
         'state': 'state',
+        'cluster_ids': 'cluster_ids',
         'limit': 'limit',
         'offset': 'offset'
     }
 
-    def __init__(self, cluster_name=None, state=None, limit=None, offset=None):
+    def __init__(self, cluster_name=None, state=None, cluster_ids=None, limit=None, offset=None):
         r"""ListClustersRequest
 
         The model defined in huaweicloud sdk
@@ -37,6 +39,8 @@ class ListClustersRequest:
         :type cluster_name: str
         :param state: 边缘集群状态
         :type state: str
+        :param cluster_ids: 边缘集群ID列表
+        :type cluster_ids: list[str]
         :param limit: 每页记录数，默认值为10，取值区间为1-1000。
         :type limit: int
         :param offset: 查询的起始位置，取值范围为非负整数，默认为0。
@@ -47,6 +51,7 @@ class ListClustersRequest:
 
         self._cluster_name = None
         self._state = None
+        self._cluster_ids = None
         self._limit = None
         self._offset = None
         self.discriminator = None
@@ -55,6 +60,8 @@ class ListClustersRequest:
             self.cluster_name = cluster_name
         if state is not None:
             self.state = state
+        if cluster_ids is not None:
+            self.cluster_ids = cluster_ids
         if limit is not None:
             self.limit = limit
         if offset is not None:
@@ -103,6 +110,28 @@ class ListClustersRequest:
         :type state: str
         """
         self._state = state
+
+    @property
+    def cluster_ids(self):
+        r"""Gets the cluster_ids of this ListClustersRequest.
+
+        边缘集群ID列表
+
+        :return: The cluster_ids of this ListClustersRequest.
+        :rtype: list[str]
+        """
+        return self._cluster_ids
+
+    @cluster_ids.setter
+    def cluster_ids(self, cluster_ids):
+        r"""Sets the cluster_ids of this ListClustersRequest.
+
+        边缘集群ID列表
+
+        :param cluster_ids: The cluster_ids of this ListClustersRequest.
+        :type cluster_ids: list[str]
+        """
+        self._cluster_ids = cluster_ids
 
     @property
     def limit(self):

@@ -16,47 +16,51 @@ class ImportOpsResultsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'object'
+        'dataset_id': 'str'
     }
 
     attribute_map = {
-        'body': 'body'
+        'dataset_id': 'dataset_id'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, dataset_id=None):
         r"""ImportOpsResultsResponse
 
         The model defined in huaweicloud sdk
 
-        :param body: 
-        :type body: object
+        :param dataset_id: **参数解释：** 数据导入完成后承载结果的目标评测集ID。 **取值范围：** 符合通用唯一识别码(UUID)标准的字符串。 
+        :type dataset_id: str
         """
         
         super().__init__()
 
-        self._body = None
+        self._dataset_id = None
         self.discriminator = None
 
-        if body is not None:
-            self.body = body
+        if dataset_id is not None:
+            self.dataset_id = dataset_id
 
     @property
-    def body(self):
-        r"""Gets the body of this ImportOpsResultsResponse.
+    def dataset_id(self):
+        r"""Gets the dataset_id of this ImportOpsResultsResponse.
 
-        :return: The body of this ImportOpsResultsResponse.
-        :rtype: object
+        **参数解释：** 数据导入完成后承载结果的目标评测集ID。 **取值范围：** 符合通用唯一识别码(UUID)标准的字符串。 
+
+        :return: The dataset_id of this ImportOpsResultsResponse.
+        :rtype: str
         """
-        return self._body
+        return self._dataset_id
 
-    @body.setter
-    def body(self, body):
-        r"""Sets the body of this ImportOpsResultsResponse.
+    @dataset_id.setter
+    def dataset_id(self, dataset_id):
+        r"""Sets the dataset_id of this ImportOpsResultsResponse.
 
-        :param body: The body of this ImportOpsResultsResponse.
-        :type body: object
+        **参数解释：** 数据导入完成后承载结果的目标评测集ID。 **取值范围：** 符合通用唯一识别码(UUID)标准的字符串。 
+
+        :param dataset_id: The dataset_id of this ImportOpsResultsResponse.
+        :type dataset_id: str
         """
-        self._body = body
+        self._dataset_id = dataset_id
 
     def to_dict(self):
         import warnings

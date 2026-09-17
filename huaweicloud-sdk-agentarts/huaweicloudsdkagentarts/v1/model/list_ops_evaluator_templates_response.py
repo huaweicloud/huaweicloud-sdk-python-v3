@@ -19,17 +19,23 @@ class ListOpsEvaluatorTemplatesResponse(SdkResponse):
         'evaluator_templates': 'list[ListOpsEvaluatorTemplatesResponseBodyEvaluatorTemplates]',
         'total': 'int',
         'code': 'int',
-        'msg': 'str'
+        'msg': 'str',
+        'page_number': 'int',
+        'page_size': 'int',
+        'total_pages': 'int'
     }
 
     attribute_map = {
         'evaluator_templates': 'evaluator_templates',
         'total': 'total',
         'code': 'code',
-        'msg': 'msg'
+        'msg': 'msg',
+        'page_number': 'page_number',
+        'page_size': 'page_size',
+        'total_pages': 'total_pages'
     }
 
-    def __init__(self, evaluator_templates=None, total=None, code=None, msg=None):
+    def __init__(self, evaluator_templates=None, total=None, code=None, msg=None, page_number=None, page_size=None, total_pages=None):
         r"""ListOpsEvaluatorTemplatesResponse
 
         The model defined in huaweicloud sdk
@@ -42,6 +48,12 @@ class ListOpsEvaluatorTemplatesResponse(SdkResponse):
         :type code: int
         :param msg: **参数解释：** 响应状态描述信息。 **取值范围：** 不涉及。 
         :type msg: str
+        :param page_number: **参数解释：** 当前页码。 **约束限制：** 不涉及。 **取值范围：** 正整数。 
+        :type page_number: int
+        :param page_size: **参数解释：** 每页返回的记录条数。 **约束限制：** 不涉及。 **取值范围：** 1~100。 
+        :type page_size: int
+        :param total_pages: **参数解释：** 总页数。 **约束限制：** 不涉及。 **取值范围：** 非负整数。 
+        :type total_pages: int
         """
         
         super().__init__()
@@ -50,6 +62,9 @@ class ListOpsEvaluatorTemplatesResponse(SdkResponse):
         self._total = None
         self._code = None
         self._msg = None
+        self._page_number = None
+        self._page_size = None
+        self._total_pages = None
         self.discriminator = None
 
         if evaluator_templates is not None:
@@ -60,6 +75,12 @@ class ListOpsEvaluatorTemplatesResponse(SdkResponse):
             self.code = code
         if msg is not None:
             self.msg = msg
+        if page_number is not None:
+            self.page_number = page_number
+        if page_size is not None:
+            self.page_size = page_size
+        if total_pages is not None:
+            self.total_pages = total_pages
 
     @property
     def evaluator_templates(self):
@@ -148,6 +169,72 @@ class ListOpsEvaluatorTemplatesResponse(SdkResponse):
         :type msg: str
         """
         self._msg = msg
+
+    @property
+    def page_number(self):
+        r"""Gets the page_number of this ListOpsEvaluatorTemplatesResponse.
+
+        **参数解释：** 当前页码。 **约束限制：** 不涉及。 **取值范围：** 正整数。 
+
+        :return: The page_number of this ListOpsEvaluatorTemplatesResponse.
+        :rtype: int
+        """
+        return self._page_number
+
+    @page_number.setter
+    def page_number(self, page_number):
+        r"""Sets the page_number of this ListOpsEvaluatorTemplatesResponse.
+
+        **参数解释：** 当前页码。 **约束限制：** 不涉及。 **取值范围：** 正整数。 
+
+        :param page_number: The page_number of this ListOpsEvaluatorTemplatesResponse.
+        :type page_number: int
+        """
+        self._page_number = page_number
+
+    @property
+    def page_size(self):
+        r"""Gets the page_size of this ListOpsEvaluatorTemplatesResponse.
+
+        **参数解释：** 每页返回的记录条数。 **约束限制：** 不涉及。 **取值范围：** 1~100。 
+
+        :return: The page_size of this ListOpsEvaluatorTemplatesResponse.
+        :rtype: int
+        """
+        return self._page_size
+
+    @page_size.setter
+    def page_size(self, page_size):
+        r"""Sets the page_size of this ListOpsEvaluatorTemplatesResponse.
+
+        **参数解释：** 每页返回的记录条数。 **约束限制：** 不涉及。 **取值范围：** 1~100。 
+
+        :param page_size: The page_size of this ListOpsEvaluatorTemplatesResponse.
+        :type page_size: int
+        """
+        self._page_size = page_size
+
+    @property
+    def total_pages(self):
+        r"""Gets the total_pages of this ListOpsEvaluatorTemplatesResponse.
+
+        **参数解释：** 总页数。 **约束限制：** 不涉及。 **取值范围：** 非负整数。 
+
+        :return: The total_pages of this ListOpsEvaluatorTemplatesResponse.
+        :rtype: int
+        """
+        return self._total_pages
+
+    @total_pages.setter
+    def total_pages(self, total_pages):
+        r"""Sets the total_pages of this ListOpsEvaluatorTemplatesResponse.
+
+        **参数解释：** 总页数。 **约束限制：** 不涉及。 **取值范围：** 非负整数。 
+
+        :param total_pages: The total_pages of this ListOpsEvaluatorTemplatesResponse.
+        :type total_pages: int
+        """
+        self._total_pages = total_pages
 
     def to_dict(self):
         import warnings

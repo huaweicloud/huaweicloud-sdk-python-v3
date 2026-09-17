@@ -29,9 +29,9 @@ class ClusterConfigurationsSpecPackages:
 
         The model defined in huaweicloud sdk
 
-        :param name: 组件名称
+        :param name: **参数解释：** 组件名称 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type name: str
-        :param configurations: 组件配置项详情
+        :param configurations: **参数解释：** 组件配置项详情 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type configurations: list[:class:`huaweicloudsdkcce.v3.ConfigurationItem`]
         """
         
@@ -50,7 +50,7 @@ class ClusterConfigurationsSpecPackages:
     def name(self):
         r"""Gets the name of this ClusterConfigurationsSpecPackages.
 
-        组件名称
+        **参数解释：** 组件名称 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The name of this ClusterConfigurationsSpecPackages.
         :rtype: str
@@ -61,7 +61,7 @@ class ClusterConfigurationsSpecPackages:
     def name(self, name):
         r"""Sets the name of this ClusterConfigurationsSpecPackages.
 
-        组件名称
+        **参数解释：** 组件名称 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param name: The name of this ClusterConfigurationsSpecPackages.
         :type name: str
@@ -72,7 +72,7 @@ class ClusterConfigurationsSpecPackages:
     def configurations(self):
         r"""Gets the configurations of this ClusterConfigurationsSpecPackages.
 
-        组件配置项详情
+        **参数解释：** 组件配置项详情 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The configurations of this ClusterConfigurationsSpecPackages.
         :rtype: list[:class:`huaweicloudsdkcce.v3.ConfigurationItem`]
@@ -83,7 +83,7 @@ class ClusterConfigurationsSpecPackages:
     def configurations(self, configurations):
         r"""Sets the configurations of this ClusterConfigurationsSpecPackages.
 
-        组件配置项详情
+        **参数解释：** 组件配置项详情 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param configurations: The configurations of this ClusterConfigurationsSpecPackages.
         :type configurations: list[:class:`huaweicloudsdkcce.v3.ConfigurationItem`]

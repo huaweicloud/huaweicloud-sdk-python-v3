@@ -31,11 +31,11 @@ class ResourceSelector:
 
         The model defined in huaweicloud sdk
 
-        :param key: 标签键值，取值如下 - node.uid：节点UID。
+        :param key: **参数解释：** 标签键值 **约束限制：** 不涉及 **取值范围：** - node.uid：节点UID  **默认取值：** 不涉及
         :type key: str
-        :param values: 标签值列表
+        :param values: **参数解释：** 标签值列表 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type values: list[str]
-        :param operator: 标签逻辑运算符，当前支持如下取值 - In
+        :param operator: **参数解释：** 标签逻辑运算符 **约束限制：** 不涉及 **取值范围：** - In  **默认取值：** 不涉及
         :type operator: str
         """
         
@@ -55,7 +55,7 @@ class ResourceSelector:
     def key(self):
         r"""Gets the key of this ResourceSelector.
 
-        标签键值，取值如下 - node.uid：节点UID。
+        **参数解释：** 标签键值 **约束限制：** 不涉及 **取值范围：** - node.uid：节点UID  **默认取值：** 不涉及
 
         :return: The key of this ResourceSelector.
         :rtype: str
@@ -66,7 +66,7 @@ class ResourceSelector:
     def key(self, key):
         r"""Sets the key of this ResourceSelector.
 
-        标签键值，取值如下 - node.uid：节点UID。
+        **参数解释：** 标签键值 **约束限制：** 不涉及 **取值范围：** - node.uid：节点UID  **默认取值：** 不涉及
 
         :param key: The key of this ResourceSelector.
         :type key: str
@@ -77,7 +77,7 @@ class ResourceSelector:
     def values(self):
         r"""Gets the values of this ResourceSelector.
 
-        标签值列表
+        **参数解释：** 标签值列表 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The values of this ResourceSelector.
         :rtype: list[str]
@@ -88,7 +88,7 @@ class ResourceSelector:
     def values(self, values):
         r"""Sets the values of this ResourceSelector.
 
-        标签值列表
+        **参数解释：** 标签值列表 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param values: The values of this ResourceSelector.
         :type values: list[str]
@@ -99,7 +99,7 @@ class ResourceSelector:
     def operator(self):
         r"""Gets the operator of this ResourceSelector.
 
-        标签逻辑运算符，当前支持如下取值 - In
+        **参数解释：** 标签逻辑运算符 **约束限制：** 不涉及 **取值范围：** - In  **默认取值：** 不涉及
 
         :return: The operator of this ResourceSelector.
         :rtype: str
@@ -110,7 +110,7 @@ class ResourceSelector:
     def operator(self, operator):
         r"""Sets the operator of this ResourceSelector.
 
-        标签逻辑运算符，当前支持如下取值 - In
+        **参数解释：** 标签逻辑运算符 **约束限制：** 不涉及 **取值范围：** - In  **默认取值：** 不涉及
 
         :param operator: The operator of this ResourceSelector.
         :type operator: str

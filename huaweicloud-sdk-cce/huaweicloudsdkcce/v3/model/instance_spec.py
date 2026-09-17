@@ -41,21 +41,21 @@ class InstanceSpec:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: 集群id
+        :param cluster_id: **参数解释**： 集群ID **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type cluster_id: str
-        :param version: 插件模板版本号，如1.0.0
+        :param version: **参数解释**： 插件模板版本号，如1.0.0。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type version: str
-        :param addon_template_name: 插件模板名称，如coredns
+        :param addon_template_name: **参数解释**： 插件模板名称，如coredns。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type addon_template_name: str
-        :param addon_template_type: **参数解释：** 插件模板类型 **约束限制：** 不涉及 **取值范围：** - helm: 表示使用Helm包进行部署的模板类型 - static: 表示静态模板类型  **默认取值：** 不涉及
+        :param addon_template_type: **参数解释**： 插件模板类型。 **约束限制**： 不涉及 **取值范围**： - helm：表示使用Helm包进行部署的模板类型 - static：表示静态模板类型  **默认取值**： 不涉及
         :type addon_template_type: str
-        :param addon_template_logo: 插件模板logo图片的地址
+        :param addon_template_logo: **参数解释**： 插件模板logo图片的地址。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type addon_template_logo: str
-        :param addon_template_labels: 插件模板所属类型
+        :param addon_template_labels: **参数解释**： 插件模板所属类型。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type addon_template_labels: list[str]
-        :param description: 插件模板描述
+        :param description: **参数解释**： 插件模板描述。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type description: str
-        :param values: 插件模板安装参数（各插件不同），请根据具体插件模板信息填写安装参数。
+        :param values: **参数解释**： 插件模板安装参数（各插件不同），请根据具体插件模板信息填写安装参数。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type values: dict(str, object)
         """
         
@@ -86,7 +86,7 @@ class InstanceSpec:
     def cluster_id(self):
         r"""Gets the cluster_id of this InstanceSpec.
 
-        集群id
+        **参数解释**： 集群ID **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The cluster_id of this InstanceSpec.
         :rtype: str
@@ -97,7 +97,7 @@ class InstanceSpec:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this InstanceSpec.
 
-        集群id
+        **参数解释**： 集群ID **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param cluster_id: The cluster_id of this InstanceSpec.
         :type cluster_id: str
@@ -108,7 +108,7 @@ class InstanceSpec:
     def version(self):
         r"""Gets the version of this InstanceSpec.
 
-        插件模板版本号，如1.0.0
+        **参数解释**： 插件模板版本号，如1.0.0。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The version of this InstanceSpec.
         :rtype: str
@@ -119,7 +119,7 @@ class InstanceSpec:
     def version(self, version):
         r"""Sets the version of this InstanceSpec.
 
-        插件模板版本号，如1.0.0
+        **参数解释**： 插件模板版本号，如1.0.0。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param version: The version of this InstanceSpec.
         :type version: str
@@ -130,7 +130,7 @@ class InstanceSpec:
     def addon_template_name(self):
         r"""Gets the addon_template_name of this InstanceSpec.
 
-        插件模板名称，如coredns
+        **参数解释**： 插件模板名称，如coredns。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The addon_template_name of this InstanceSpec.
         :rtype: str
@@ -141,7 +141,7 @@ class InstanceSpec:
     def addon_template_name(self, addon_template_name):
         r"""Sets the addon_template_name of this InstanceSpec.
 
-        插件模板名称，如coredns
+        **参数解释**： 插件模板名称，如coredns。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param addon_template_name: The addon_template_name of this InstanceSpec.
         :type addon_template_name: str
@@ -152,7 +152,7 @@ class InstanceSpec:
     def addon_template_type(self):
         r"""Gets the addon_template_type of this InstanceSpec.
 
-        **参数解释：** 插件模板类型 **约束限制：** 不涉及 **取值范围：** - helm: 表示使用Helm包进行部署的模板类型 - static: 表示静态模板类型  **默认取值：** 不涉及
+        **参数解释**： 插件模板类型。 **约束限制**： 不涉及 **取值范围**： - helm：表示使用Helm包进行部署的模板类型 - static：表示静态模板类型  **默认取值**： 不涉及
 
         :return: The addon_template_type of this InstanceSpec.
         :rtype: str
@@ -163,7 +163,7 @@ class InstanceSpec:
     def addon_template_type(self, addon_template_type):
         r"""Sets the addon_template_type of this InstanceSpec.
 
-        **参数解释：** 插件模板类型 **约束限制：** 不涉及 **取值范围：** - helm: 表示使用Helm包进行部署的模板类型 - static: 表示静态模板类型  **默认取值：** 不涉及
+        **参数解释**： 插件模板类型。 **约束限制**： 不涉及 **取值范围**： - helm：表示使用Helm包进行部署的模板类型 - static：表示静态模板类型  **默认取值**： 不涉及
 
         :param addon_template_type: The addon_template_type of this InstanceSpec.
         :type addon_template_type: str
@@ -174,7 +174,7 @@ class InstanceSpec:
     def addon_template_logo(self):
         r"""Gets the addon_template_logo of this InstanceSpec.
 
-        插件模板logo图片的地址
+        **参数解释**： 插件模板logo图片的地址。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The addon_template_logo of this InstanceSpec.
         :rtype: str
@@ -185,7 +185,7 @@ class InstanceSpec:
     def addon_template_logo(self, addon_template_logo):
         r"""Sets the addon_template_logo of this InstanceSpec.
 
-        插件模板logo图片的地址
+        **参数解释**： 插件模板logo图片的地址。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param addon_template_logo: The addon_template_logo of this InstanceSpec.
         :type addon_template_logo: str
@@ -196,7 +196,7 @@ class InstanceSpec:
     def addon_template_labels(self):
         r"""Gets the addon_template_labels of this InstanceSpec.
 
-        插件模板所属类型
+        **参数解释**： 插件模板所属类型。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The addon_template_labels of this InstanceSpec.
         :rtype: list[str]
@@ -207,7 +207,7 @@ class InstanceSpec:
     def addon_template_labels(self, addon_template_labels):
         r"""Sets the addon_template_labels of this InstanceSpec.
 
-        插件模板所属类型
+        **参数解释**： 插件模板所属类型。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param addon_template_labels: The addon_template_labels of this InstanceSpec.
         :type addon_template_labels: list[str]
@@ -218,7 +218,7 @@ class InstanceSpec:
     def description(self):
         r"""Gets the description of this InstanceSpec.
 
-        插件模板描述
+        **参数解释**： 插件模板描述。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The description of this InstanceSpec.
         :rtype: str
@@ -229,7 +229,7 @@ class InstanceSpec:
     def description(self, description):
         r"""Sets the description of this InstanceSpec.
 
-        插件模板描述
+        **参数解释**： 插件模板描述。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param description: The description of this InstanceSpec.
         :type description: str
@@ -240,7 +240,7 @@ class InstanceSpec:
     def values(self):
         r"""Gets the values of this InstanceSpec.
 
-        插件模板安装参数（各插件不同），请根据具体插件模板信息填写安装参数。
+        **参数解释**： 插件模板安装参数（各插件不同），请根据具体插件模板信息填写安装参数。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The values of this InstanceSpec.
         :rtype: dict(str, object)
@@ -251,7 +251,7 @@ class InstanceSpec:
     def values(self, values):
         r"""Sets the values of this InstanceSpec.
 
-        插件模板安装参数（各插件不同），请根据具体插件模板信息填写安装参数。
+        **参数解释**： 插件模板安装参数（各插件不同），请根据具体插件模板信息填写安装参数。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param values: The values of this InstanceSpec.
         :type values: dict(str, object)

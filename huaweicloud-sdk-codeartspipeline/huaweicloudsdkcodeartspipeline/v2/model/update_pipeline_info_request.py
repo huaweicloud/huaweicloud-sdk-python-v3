@@ -24,7 +24,7 @@ class UpdatePipelineInfoRequest:
     attribute_map = {
         'project_id': 'project_id',
         'pipeline_id': 'pipeline_id',
-        'component_id': 'componentId',
+        'component_id': 'component_id',
         'body': 'body'
     }
 

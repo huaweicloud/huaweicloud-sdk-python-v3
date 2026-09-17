@@ -50,7 +50,12 @@ class UpdateEdgeNodeResponse(SdkResponse):
         'device_data_format': 'str',
         'automatic_upgrade': 'str',
         'device_data_record': 'DeviceDataRecord',
-        'metric_report': 'str'
+        'metric_report': 'str',
+        'iotda_south_access': 'str',
+        'tpm_info': 'TPMInfoDTO',
+        'runtime_info': 'RuntimeInfoDTO',
+        'os_type': 'str',
+        'node_group_id': 'str'
     }
 
     attribute_map = {
@@ -88,10 +93,15 @@ class UpdateEdgeNodeResponse(SdkResponse):
         'device_data_format': 'device_data_format',
         'automatic_upgrade': 'automatic_upgrade',
         'device_data_record': 'device_data_record',
-        'metric_report': 'metric_report'
+        'metric_report': 'metric_report',
+        'iotda_south_access': 'iotda_south_access',
+        'tpm_info': 'tpm_info',
+        'runtime_info': 'runtime_info',
+        'os_type': 'os_type',
+        'node_group_id': 'node_group_id'
     }
 
-    def __init__(self, log_configs=None, ha_config=None, edge_node_id=None, instance_id=None, product_id=None, product_name=None, space_id=None, resource_spec_types=None, resource_ids=None, ips=None, name=None, state=None, software_version=None, create_time=None, update_time=None, os_name=None, arch=None, host_name=None, nics=None, specification=None, ai_card_type=None, npu_library_path=None, container_version=None, type=None, security_level=None, reliability_level=None, storage_period=None, base_path=None, hardware_model=None, offline_cache_configs=None, device_auth_info=None, device_data_format=None, automatic_upgrade=None, device_data_record=None, metric_report=None):
+    def __init__(self, log_configs=None, ha_config=None, edge_node_id=None, instance_id=None, product_id=None, product_name=None, space_id=None, resource_spec_types=None, resource_ids=None, ips=None, name=None, state=None, software_version=None, create_time=None, update_time=None, os_name=None, arch=None, host_name=None, nics=None, specification=None, ai_card_type=None, npu_library_path=None, container_version=None, type=None, security_level=None, reliability_level=None, storage_period=None, base_path=None, hardware_model=None, offline_cache_configs=None, device_auth_info=None, device_data_format=None, automatic_upgrade=None, device_data_record=None, metric_report=None, iotda_south_access=None, tpm_info=None, runtime_info=None, os_type=None, node_group_id=None):
         r"""UpdateEdgeNodeResponse
 
         The model defined in huaweicloud sdk
@@ -120,15 +130,15 @@ class UpdateEdgeNodeResponse(SdkResponse):
         :type name: str
         :param state: 边缘节点状态
         :type state: str
-        :param software_version: 边缘应用id，只允许数字、英文小写、中划线，切必须以字母或数字结尾
+        :param software_version: 边缘应用id，只允许数字、英文小写、中划线，且必须以字母或数字结尾
         :type software_version: str
         :param create_time: 边缘节点创建时间
         :type create_time: str
         :param update_time: 边缘节点更新时间
         :type update_time: str
-        :param os_name: 边缘节点操作系统名称
+        :param os_name: 边缘节点操作系统。例如：Ubuntu 20.04；CentOS 7.9。不同于os_type边缘节点系统类型。
         :type os_name: str
-        :param arch: 边缘节点操作系统架构
+        :param arch: 边缘节点系统架构。包括：arm64，arm32，x86_64。
         :type arch: str
         :param host_name: 边缘节点主机名
         :type host_name: str
@@ -136,17 +146,17 @@ class UpdateEdgeNodeResponse(SdkResponse):
         :type nics: list[:class:`huaweicloudsdkiotedge.v2.Nic`]
         :param specification: 网络规格，如4 cores | 3867 MB
         :type specification: str
-        :param ai_card_type: AI加速卡类型，如华为昇腾AI加速卡NPU、图像处理加速卡GPU。
+        :param ai_card_type: AI加速卡类型，如昇腾AI加速卡NPU、图像处理加速卡GPU。
         :type ai_card_type: str
         :param npu_library_path: npu驱动动态库路径
         :type npu_library_path: str
         :param container_version: 容器运行时版本
         :type container_version: str
-        :param type: 节点所属资源类型：advanced|standard
+        :param type: 边缘节点类型：lite|advanced|standard。lite表示基础版边缘节点，advanced或standard表示专业版边缘节点。
         :type type: str
         :param security_level: 节点的安全等级，MEDIUM边缘节数据上报不进行加密，HIGH对数据上报进行加密。
         :type security_level: str
-        :param reliability_level: 节点的可靠性等级。
+        :param reliability_level: 节点的可靠性等级，LOW表示中级别，MEDIUM表示高级别。详细功能请参考“用户指南&gt;管理边缘节点&gt;注册节点”。
         :type reliability_level: str
         :param storage_period: 节点的存储周期，默认0天，取值范围0~7天，0天则不存储。
         :type storage_period: int
@@ -166,6 +176,16 @@ class UpdateEdgeNodeResponse(SdkResponse):
         :type device_data_record: :class:`huaweicloudsdkiotedge.v2.DeviceDataRecord`
         :param metric_report: omagent监控运维工具是否上报指标
         :type metric_report: str
+        :param iotda_south_access: iotda南向接入地址
+        :type iotda_south_access: str
+        :param tpm_info: 
+        :type tpm_info: :class:`huaweicloudsdkiotedge.v2.TPMInfoDTO`
+        :param runtime_info: 
+        :type runtime_info: :class:`huaweicloudsdkiotedge.v2.RuntimeInfoDTO`
+        :param os_type: 边缘节点系统类型。包括：generalLinux通用系统，openHarmony鸿蒙系统。
+        :type os_type: str
+        :param node_group_id: 节点组ID
+        :type node_group_id: str
         """
         
         super().__init__()
@@ -205,6 +225,11 @@ class UpdateEdgeNodeResponse(SdkResponse):
         self._automatic_upgrade = None
         self._device_data_record = None
         self._metric_report = None
+        self._iotda_south_access = None
+        self._tpm_info = None
+        self._runtime_info = None
+        self._os_type = None
+        self._node_group_id = None
         self.discriminator = None
 
         if log_configs is not None:
@@ -277,6 +302,16 @@ class UpdateEdgeNodeResponse(SdkResponse):
             self.device_data_record = device_data_record
         if metric_report is not None:
             self.metric_report = metric_report
+        if iotda_south_access is not None:
+            self.iotda_south_access = iotda_south_access
+        if tpm_info is not None:
+            self.tpm_info = tpm_info
+        if runtime_info is not None:
+            self.runtime_info = runtime_info
+        if os_type is not None:
+            self.os_type = os_type
+        if node_group_id is not None:
+            self.node_group_id = node_group_id
 
     @property
     def log_configs(self):
@@ -542,7 +577,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
     def software_version(self):
         r"""Gets the software_version of this UpdateEdgeNodeResponse.
 
-        边缘应用id，只允许数字、英文小写、中划线，切必须以字母或数字结尾
+        边缘应用id，只允许数字、英文小写、中划线，且必须以字母或数字结尾
 
         :return: The software_version of this UpdateEdgeNodeResponse.
         :rtype: str
@@ -553,7 +588,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
     def software_version(self, software_version):
         r"""Sets the software_version of this UpdateEdgeNodeResponse.
 
-        边缘应用id，只允许数字、英文小写、中划线，切必须以字母或数字结尾
+        边缘应用id，只允许数字、英文小写、中划线，且必须以字母或数字结尾
 
         :param software_version: The software_version of this UpdateEdgeNodeResponse.
         :type software_version: str
@@ -608,7 +643,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
     def os_name(self):
         r"""Gets the os_name of this UpdateEdgeNodeResponse.
 
-        边缘节点操作系统名称
+        边缘节点操作系统。例如：Ubuntu 20.04；CentOS 7.9。不同于os_type边缘节点系统类型。
 
         :return: The os_name of this UpdateEdgeNodeResponse.
         :rtype: str
@@ -619,7 +654,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
     def os_name(self, os_name):
         r"""Sets the os_name of this UpdateEdgeNodeResponse.
 
-        边缘节点操作系统名称
+        边缘节点操作系统。例如：Ubuntu 20.04；CentOS 7.9。不同于os_type边缘节点系统类型。
 
         :param os_name: The os_name of this UpdateEdgeNodeResponse.
         :type os_name: str
@@ -630,7 +665,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
     def arch(self):
         r"""Gets the arch of this UpdateEdgeNodeResponse.
 
-        边缘节点操作系统架构
+        边缘节点系统架构。包括：arm64，arm32，x86_64。
 
         :return: The arch of this UpdateEdgeNodeResponse.
         :rtype: str
@@ -641,7 +676,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
     def arch(self, arch):
         r"""Sets the arch of this UpdateEdgeNodeResponse.
 
-        边缘节点操作系统架构
+        边缘节点系统架构。包括：arm64，arm32，x86_64。
 
         :param arch: The arch of this UpdateEdgeNodeResponse.
         :type arch: str
@@ -718,7 +753,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
     def ai_card_type(self):
         r"""Gets the ai_card_type of this UpdateEdgeNodeResponse.
 
-        AI加速卡类型，如华为昇腾AI加速卡NPU、图像处理加速卡GPU。
+        AI加速卡类型，如昇腾AI加速卡NPU、图像处理加速卡GPU。
 
         :return: The ai_card_type of this UpdateEdgeNodeResponse.
         :rtype: str
@@ -729,7 +764,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
     def ai_card_type(self, ai_card_type):
         r"""Sets the ai_card_type of this UpdateEdgeNodeResponse.
 
-        AI加速卡类型，如华为昇腾AI加速卡NPU、图像处理加速卡GPU。
+        AI加速卡类型，如昇腾AI加速卡NPU、图像处理加速卡GPU。
 
         :param ai_card_type: The ai_card_type of this UpdateEdgeNodeResponse.
         :type ai_card_type: str
@@ -784,7 +819,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
     def type(self):
         r"""Gets the type of this UpdateEdgeNodeResponse.
 
-        节点所属资源类型：advanced|standard
+        边缘节点类型：lite|advanced|standard。lite表示基础版边缘节点，advanced或standard表示专业版边缘节点。
 
         :return: The type of this UpdateEdgeNodeResponse.
         :rtype: str
@@ -795,7 +830,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
     def type(self, type):
         r"""Sets the type of this UpdateEdgeNodeResponse.
 
-        节点所属资源类型：advanced|standard
+        边缘节点类型：lite|advanced|standard。lite表示基础版边缘节点，advanced或standard表示专业版边缘节点。
 
         :param type: The type of this UpdateEdgeNodeResponse.
         :type type: str
@@ -828,7 +863,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
     def reliability_level(self):
         r"""Gets the reliability_level of this UpdateEdgeNodeResponse.
 
-        节点的可靠性等级。
+        节点的可靠性等级，LOW表示中级别，MEDIUM表示高级别。详细功能请参考“用户指南>管理边缘节点>注册节点”。
 
         :return: The reliability_level of this UpdateEdgeNodeResponse.
         :rtype: str
@@ -839,7 +874,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
     def reliability_level(self, reliability_level):
         r"""Sets the reliability_level of this UpdateEdgeNodeResponse.
 
-        节点的可靠性等级。
+        节点的可靠性等级，LOW表示中级别，MEDIUM表示高级别。详细功能请参考“用户指南>管理边缘节点>注册节点”。
 
         :param reliability_level: The reliability_level of this UpdateEdgeNodeResponse.
         :type reliability_level: str
@@ -1027,6 +1062,108 @@ class UpdateEdgeNodeResponse(SdkResponse):
         :type metric_report: str
         """
         self._metric_report = metric_report
+
+    @property
+    def iotda_south_access(self):
+        r"""Gets the iotda_south_access of this UpdateEdgeNodeResponse.
+
+        iotda南向接入地址
+
+        :return: The iotda_south_access of this UpdateEdgeNodeResponse.
+        :rtype: str
+        """
+        return self._iotda_south_access
+
+    @iotda_south_access.setter
+    def iotda_south_access(self, iotda_south_access):
+        r"""Sets the iotda_south_access of this UpdateEdgeNodeResponse.
+
+        iotda南向接入地址
+
+        :param iotda_south_access: The iotda_south_access of this UpdateEdgeNodeResponse.
+        :type iotda_south_access: str
+        """
+        self._iotda_south_access = iotda_south_access
+
+    @property
+    def tpm_info(self):
+        r"""Gets the tpm_info of this UpdateEdgeNodeResponse.
+
+        :return: The tpm_info of this UpdateEdgeNodeResponse.
+        :rtype: :class:`huaweicloudsdkiotedge.v2.TPMInfoDTO`
+        """
+        return self._tpm_info
+
+    @tpm_info.setter
+    def tpm_info(self, tpm_info):
+        r"""Sets the tpm_info of this UpdateEdgeNodeResponse.
+
+        :param tpm_info: The tpm_info of this UpdateEdgeNodeResponse.
+        :type tpm_info: :class:`huaweicloudsdkiotedge.v2.TPMInfoDTO`
+        """
+        self._tpm_info = tpm_info
+
+    @property
+    def runtime_info(self):
+        r"""Gets the runtime_info of this UpdateEdgeNodeResponse.
+
+        :return: The runtime_info of this UpdateEdgeNodeResponse.
+        :rtype: :class:`huaweicloudsdkiotedge.v2.RuntimeInfoDTO`
+        """
+        return self._runtime_info
+
+    @runtime_info.setter
+    def runtime_info(self, runtime_info):
+        r"""Sets the runtime_info of this UpdateEdgeNodeResponse.
+
+        :param runtime_info: The runtime_info of this UpdateEdgeNodeResponse.
+        :type runtime_info: :class:`huaweicloudsdkiotedge.v2.RuntimeInfoDTO`
+        """
+        self._runtime_info = runtime_info
+
+    @property
+    def os_type(self):
+        r"""Gets the os_type of this UpdateEdgeNodeResponse.
+
+        边缘节点系统类型。包括：generalLinux通用系统，openHarmony鸿蒙系统。
+
+        :return: The os_type of this UpdateEdgeNodeResponse.
+        :rtype: str
+        """
+        return self._os_type
+
+    @os_type.setter
+    def os_type(self, os_type):
+        r"""Sets the os_type of this UpdateEdgeNodeResponse.
+
+        边缘节点系统类型。包括：generalLinux通用系统，openHarmony鸿蒙系统。
+
+        :param os_type: The os_type of this UpdateEdgeNodeResponse.
+        :type os_type: str
+        """
+        self._os_type = os_type
+
+    @property
+    def node_group_id(self):
+        r"""Gets the node_group_id of this UpdateEdgeNodeResponse.
+
+        节点组ID
+
+        :return: The node_group_id of this UpdateEdgeNodeResponse.
+        :rtype: str
+        """
+        return self._node_group_id
+
+    @node_group_id.setter
+    def node_group_id(self, node_group_id):
+        r"""Sets the node_group_id of this UpdateEdgeNodeResponse.
+
+        节点组ID
+
+        :param node_group_id: The node_group_id of this UpdateEdgeNodeResponse.
+        :type node_group_id: str
+        """
+        self._node_group_id = node_group_id
 
     def to_dict(self):
         import warnings

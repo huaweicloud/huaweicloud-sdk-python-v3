@@ -36,9 +36,9 @@ class ShowClusterUpgradeInfoResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param kind: 类型
+        :param kind: **参数解释：** 类型 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type kind: str
-        :param api_version: API版本
+        :param api_version: **参数解释：** API版本 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type api_version: str
         :param metadata: 
         :type metadata: :class:`huaweicloudsdkcce.v3.Metadata`
@@ -72,7 +72,7 @@ class ShowClusterUpgradeInfoResponse(SdkResponse):
     def kind(self):
         r"""Gets the kind of this ShowClusterUpgradeInfoResponse.
 
-        类型
+        **参数解释：** 类型 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The kind of this ShowClusterUpgradeInfoResponse.
         :rtype: str
@@ -83,7 +83,7 @@ class ShowClusterUpgradeInfoResponse(SdkResponse):
     def kind(self, kind):
         r"""Sets the kind of this ShowClusterUpgradeInfoResponse.
 
-        类型
+        **参数解释：** 类型 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param kind: The kind of this ShowClusterUpgradeInfoResponse.
         :type kind: str
@@ -94,7 +94,7 @@ class ShowClusterUpgradeInfoResponse(SdkResponse):
     def api_version(self):
         r"""Gets the api_version of this ShowClusterUpgradeInfoResponse.
 
-        API版本
+        **参数解释：** API版本 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The api_version of this ShowClusterUpgradeInfoResponse.
         :rtype: str
@@ -105,7 +105,7 @@ class ShowClusterUpgradeInfoResponse(SdkResponse):
     def api_version(self, api_version):
         r"""Sets the api_version of this ShowClusterUpgradeInfoResponse.
 
-        API版本
+        **参数解释：** API版本 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param api_version: The api_version of this ShowClusterUpgradeInfoResponse.
         :type api_version: str

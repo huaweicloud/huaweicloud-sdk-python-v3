@@ -21,7 +21,8 @@ class ListResourcesRequest:
         'ep_id': 'str',
         'tag': 'dict(str, list[str])',
         'limit': 'int',
-        'marker': 'str'
+        'marker': 'str',
+        'group_id': 'str'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class ListResourcesRequest:
         'ep_id': 'ep_id',
         'tag': 'tag',
         'limit': 'limit',
-        'marker': 'marker'
+        'marker': 'marker',
+        'group_id': 'group_id'
     }
 
-    def __init__(self, provider=None, type=None, region_id=None, ep_id=None, tag=None, limit=None, marker=None):
+    def __init__(self, provider=None, type=None, region_id=None, ep_id=None, tag=None, limit=None, marker=None, group_id=None):
         r"""ListResourcesRequest
 
         The model defined in huaweicloud sdk
@@ -53,6 +55,8 @@ class ListResourcesRequest:
         :type limit: int
         :param marker: 分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
         :type marker: str
+        :param group_id: 资源组ID
+        :type group_id: str
         """
         
         
@@ -64,6 +68,7 @@ class ListResourcesRequest:
         self._tag = None
         self._limit = None
         self._marker = None
+        self._group_id = None
         self.discriminator = None
 
         self.provider = provider
@@ -78,6 +83,8 @@ class ListResourcesRequest:
             self.limit = limit
         if marker is not None:
             self.marker = marker
+        if group_id is not None:
+            self.group_id = group_id
 
     @property
     def provider(self):
@@ -232,6 +239,28 @@ class ListResourcesRequest:
         :type marker: str
         """
         self._marker = marker
+
+    @property
+    def group_id(self):
+        r"""Gets the group_id of this ListResourcesRequest.
+
+        资源组ID
+
+        :return: The group_id of this ListResourcesRequest.
+        :rtype: str
+        """
+        return self._group_id
+
+    @group_id.setter
+    def group_id(self, group_id):
+        r"""Sets the group_id of this ListResourcesRequest.
+
+        资源组ID
+
+        :param group_id: The group_id of this ListResourcesRequest.
+        :type group_id: str
+        """
+        self._group_id = group_id
 
     def to_dict(self):
         result = {}

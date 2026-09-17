@@ -30,7 +30,7 @@ class CreateAutopilotClusterMasterSnapshotResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param uid: 任务ID
+        :param uid: **参数解释：** 任务ID **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type uid: str
         :param metadata: 
         :type metadata: :class:`huaweicloudsdkcce.v3.SnapshotCluserResponseMetadata`
@@ -51,7 +51,7 @@ class CreateAutopilotClusterMasterSnapshotResponse(SdkResponse):
     def uid(self):
         r"""Gets the uid of this CreateAutopilotClusterMasterSnapshotResponse.
 
-        任务ID
+        **参数解释：** 任务ID **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The uid of this CreateAutopilotClusterMasterSnapshotResponse.
         :rtype: str
@@ -62,7 +62,7 @@ class CreateAutopilotClusterMasterSnapshotResponse(SdkResponse):
     def uid(self, uid):
         r"""Sets the uid of this CreateAutopilotClusterMasterSnapshotResponse.
 
-        任务ID
+        **参数解释：** 任务ID **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param uid: The uid of this CreateAutopilotClusterMasterSnapshotResponse.
         :type uid: str

@@ -18,17 +18,21 @@ class LogQuery:
         'start_offset': 'int',
         'end_offset': 'int',
         'limit': 'int',
-        'sort': 'str'
+        'sort': 'str',
+        'offset': 'int',
+        'level': 'str'
     }
 
     attribute_map = {
         'start_offset': 'start_offset',
         'end_offset': 'end_offset',
         'limit': 'limit',
-        'sort': 'sort'
+        'sort': 'sort',
+        'offset': 'offset',
+        'level': 'level'
     }
 
-    def __init__(self, start_offset=None, end_offset=None, limit=None, sort=None):
+    def __init__(self, start_offset=None, end_offset=None, limit=None, sort=None, offset=None, level=None):
         r"""LogQuery
 
         The model defined in huaweicloud sdk
@@ -41,6 +45,10 @@ class LogQuery:
         :type limit: int
         :param sort: **参数解释**： 排序规则。 **约束限制**： 不涉及。 **取值范围**： - asc：按排序字段升序。 - desc：按排序字段降序 **默认取值**： 不涉及。 
         :type sort: str
+        :param offset: **参数解释**： 日志偏移量。仅查询Jenkins日志时使用，其余场景请使用start_offset和end_offset。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
+        :type offset: int
+        :param level: **参数解释**： 日志级别。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
+        :type level: str
         """
         
         
@@ -49,6 +57,8 @@ class LogQuery:
         self._end_offset = None
         self._limit = None
         self._sort = None
+        self._offset = None
+        self._level = None
         self.discriminator = None
 
         if start_offset is not None:
@@ -57,6 +67,10 @@ class LogQuery:
             self.end_offset = end_offset
         self.limit = limit
         self.sort = sort
+        if offset is not None:
+            self.offset = offset
+        if level is not None:
+            self.level = level
 
     @property
     def start_offset(self):
@@ -145,6 +159,50 @@ class LogQuery:
         :type sort: str
         """
         self._sort = sort
+
+    @property
+    def offset(self):
+        r"""Gets the offset of this LogQuery.
+
+        **参数解释**： 日志偏移量。仅查询Jenkins日志时使用，其余场景请使用start_offset和end_offset。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
+
+        :return: The offset of this LogQuery.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        r"""Sets the offset of this LogQuery.
+
+        **参数解释**： 日志偏移量。仅查询Jenkins日志时使用，其余场景请使用start_offset和end_offset。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
+
+        :param offset: The offset of this LogQuery.
+        :type offset: int
+        """
+        self._offset = offset
+
+    @property
+    def level(self):
+        r"""Gets the level of this LogQuery.
+
+        **参数解释**： 日志级别。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
+
+        :return: The level of this LogQuery.
+        :rtype: str
+        """
+        return self._level
+
+    @level.setter
+    def level(self, level):
+        r"""Sets the level of this LogQuery.
+
+        **参数解释**： 日志级别。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
+
+        :param level: The level of this LogQuery.
+        :type level: str
+        """
+        self._level = level
 
     def to_dict(self):
         result = {}

@@ -21,6 +21,7 @@ class BatchListDcPointsRequest:
         'name': 'str',
         '_property': 'str',
         'device_id': 'str',
+        'active': 'bool',
         'offset': 'int',
         'limit': 'int'
     }
@@ -32,11 +33,12 @@ class BatchListDcPointsRequest:
         'name': 'name',
         '_property': 'property',
         'device_id': 'device_id',
+        'active': 'active',
         'offset': 'offset',
         'limit': 'limit'
     }
 
-    def __init__(self, edge_node_id=None, ds_id=None, point_id=None, name=None, _property=None, device_id=None, offset=None, limit=None):
+    def __init__(self, edge_node_id=None, ds_id=None, point_id=None, name=None, _property=None, device_id=None, active=None, offset=None, limit=None):
         r"""BatchListDcPointsRequest
 
         The model defined in huaweicloud sdk
@@ -53,6 +55,8 @@ class BatchListDcPointsRequest:
         :type _property: str
         :param device_id: 设备标识，精确查询
         :type device_id: str
+        :param active: 点位启停状态筛选
+        :type active: bool
         :param offset: 查询的起始位置，取值范围为非负整数，默认为0
         :type offset: int
         :param limit: 每页记录数，默认值为10，取值区间为1-1000
@@ -67,6 +71,7 @@ class BatchListDcPointsRequest:
         self._name = None
         self.__property = None
         self._device_id = None
+        self._active = None
         self._offset = None
         self._limit = None
         self.discriminator = None
@@ -81,6 +86,8 @@ class BatchListDcPointsRequest:
             self._property = _property
         if device_id is not None:
             self.device_id = device_id
+        if active is not None:
+            self.active = active
         if offset is not None:
             self.offset = offset
         if limit is not None:
@@ -217,6 +224,28 @@ class BatchListDcPointsRequest:
         :type device_id: str
         """
         self._device_id = device_id
+
+    @property
+    def active(self):
+        r"""Gets the active of this BatchListDcPointsRequest.
+
+        点位启停状态筛选
+
+        :return: The active of this BatchListDcPointsRequest.
+        :rtype: bool
+        """
+        return self._active
+
+    @active.setter
+    def active(self, active):
+        r"""Sets the active of this BatchListDcPointsRequest.
+
+        点位启停状态筛选
+
+        :param active: The active of this BatchListDcPointsRequest.
+        :type active: bool
+        """
+        self._active = active
 
     @property
     def offset(self):

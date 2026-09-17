@@ -33,7 +33,7 @@ class UpgradeWorkFlowUpdateRequest:
 
         :param cluster_id: 集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
         :type cluster_id: str
-        :param upgrade_workflow_id: 集群升级任务引导流程ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
+        :param upgrade_workflow_id: **参数解释：** 集群升级任务引导流程ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type upgrade_workflow_id: str
         :param body: Body of the UpgradeWorkFlowUpdateRequest
         :type body: :class:`huaweicloudsdkcce.v3.UpgradeWorkFlowUpdateRequestBody`
@@ -77,7 +77,7 @@ class UpgradeWorkFlowUpdateRequest:
     def upgrade_workflow_id(self):
         r"""Gets the upgrade_workflow_id of this UpgradeWorkFlowUpdateRequest.
 
-        集群升级任务引导流程ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
+        **参数解释：** 集群升级任务引导流程ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The upgrade_workflow_id of this UpgradeWorkFlowUpdateRequest.
         :rtype: str
@@ -88,7 +88,7 @@ class UpgradeWorkFlowUpdateRequest:
     def upgrade_workflow_id(self, upgrade_workflow_id):
         r"""Sets the upgrade_workflow_id of this UpgradeWorkFlowUpdateRequest.
 
-        集群升级任务引导流程ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
+        **参数解释：** 集群升级任务引导流程ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param upgrade_workflow_id: The upgrade_workflow_id of this UpgradeWorkFlowUpdateRequest.
         :type upgrade_workflow_id: str

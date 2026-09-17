@@ -27,7 +27,7 @@ class QuotaRespQuotas:
 
         The model defined in huaweicloud sdk
 
-        :param resources: 资源
+        :param resources: **参数解释：** 资源 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type resources: list[:class:`huaweicloudsdkcce.v3.QuotaRespQuotasResources`]
         """
         
@@ -43,7 +43,7 @@ class QuotaRespQuotas:
     def resources(self):
         r"""Gets the resources of this QuotaRespQuotas.
 
-        资源
+        **参数解释：** 资源 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The resources of this QuotaRespQuotas.
         :rtype: list[:class:`huaweicloudsdkcce.v3.QuotaRespQuotasResources`]
@@ -54,7 +54,7 @@ class QuotaRespQuotas:
     def resources(self, resources):
         r"""Sets the resources of this QuotaRespQuotas.
 
-        资源
+        **参数解释：** 资源 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param resources: The resources of this QuotaRespQuotas.
         :type resources: list[:class:`huaweicloudsdkcce.v3.QuotaRespQuotasResources`]

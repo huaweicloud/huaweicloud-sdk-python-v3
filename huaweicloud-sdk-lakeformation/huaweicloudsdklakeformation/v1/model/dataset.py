@@ -65,7 +65,7 @@ class Dataset:
         :type dataset_name: str
         :param dataset_id: DatasetID
         :type dataset_id: str
-        :param description: 数据集的描述信息
+        :param description: 数据集描述信息。最大长度为4000个字符。
         :type description: str
         :param database_name: 数据库名称。
         :type database_name: str
@@ -234,7 +234,7 @@ class Dataset:
     def description(self):
         r"""Gets the description of this Dataset.
 
-        数据集的描述信息
+        数据集描述信息。最大长度为4000个字符。
 
         :return: The description of this Dataset.
         :rtype: str
@@ -245,7 +245,7 @@ class Dataset:
     def description(self, description):
         r"""Sets the description of this Dataset.
 
-        数据集的描述信息
+        数据集描述信息。最大长度为4000个字符。
 
         :param description: The description of this Dataset.
         :type description: str

@@ -31,7 +31,7 @@ class NodeStageStatus:
 
         :param node_info: 
         :type node_info: :class:`huaweicloudsdkcce.v3.NodeInfo`
-        :param items_status: 检查项状态集合
+        :param items_status: **参数解释：** 检查项状态集合。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type items_status: list[:class:`huaweicloudsdkcce.v3.PreCheckItemStatus`]
         """
         
@@ -68,7 +68,7 @@ class NodeStageStatus:
     def items_status(self):
         r"""Gets the items_status of this NodeStageStatus.
 
-        检查项状态集合
+        **参数解释：** 检查项状态集合。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The items_status of this NodeStageStatus.
         :rtype: list[:class:`huaweicloudsdkcce.v3.PreCheckItemStatus`]
@@ -79,7 +79,7 @@ class NodeStageStatus:
     def items_status(self, items_status):
         r"""Sets the items_status of this NodeStageStatus.
 
-        检查项状态集合
+        **参数解释：** 检查项状态集合。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param items_status: The items_status of this NodeStageStatus.
         :type items_status: list[:class:`huaweicloudsdkcce.v3.PreCheckItemStatus`]

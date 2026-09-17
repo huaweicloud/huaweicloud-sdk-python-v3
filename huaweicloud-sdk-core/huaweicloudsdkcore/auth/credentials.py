@@ -75,6 +75,7 @@ class Credentials(DerivedCredentials):
         self._idp_id: Optional[str] = None
         self._id_token_file: Optional[str] = None
         self._iam_endpoint: Optional[str] = None
+        self._sts_endpoint: Optional[str] = None
         self._security_token: Optional[str] = None
         self._derived_auth_service_name: Optional[str] = None
         self._derived_predicate: Optional[Callable[[SdkRequest], bool]] = None
@@ -129,6 +130,14 @@ class Credentials(DerivedCredentials):
         self._iam_endpoint = value
 
     @property
+    def sts_endpoint(self):
+        return self._sts_endpoint
+
+    @sts_endpoint.setter
+    def sts_endpoint(self, value: str):
+        self._sts_endpoint = value
+
+    @property
     def security_token(self):
         return self._security_token
 
@@ -172,6 +181,10 @@ class Credentials(DerivedCredentials):
         self.iam_endpoint = endpoint
         return self
 
+    def with_sts_endpoint(self, endpoint: str):
+        self.sts_endpoint = endpoint
+        return self
+
     def with_security_token(self, token: str):
         self.security_token = token
         return self
@@ -192,11 +205,13 @@ class Credentials(DerivedCredentials):
 
         if self._need_refresh_sts():
             iam_endpoint = self.iam_endpoint or IamHelper.get_iam_endpoint()
+            sts_endpoint = self.sts_endpoint or StsHelper.get_sts_endpoint()
             credential = self.sts_accessor.get_credential(
                 iam_endpoint=iam_endpoint,
                 http_client=http_client,
                 idp_id=self.idp_id,
-                id_token_file=self.id_token_file
+                id_token_file=self.id_token_file,
+                sts_endpoint=sts_endpoint
             )
 
             self.ak = credential.access

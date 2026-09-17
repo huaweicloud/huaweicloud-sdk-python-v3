@@ -21,6 +21,7 @@ class ListEdgeNodesRequest:
         'instance_id': 'str',
         'space_id': 'str',
         'node_ids': 'list[str]',
+        'app_id': 'str',
         'offset': 'int',
         'limit': 'int'
     }
@@ -32,18 +33,19 @@ class ListEdgeNodesRequest:
         'instance_id': 'instance_id',
         'space_id': 'space_id',
         'node_ids': 'node_ids',
+        'app_id': 'app_id',
         'offset': 'offset',
         'limit': 'limit'
     }
 
-    def __init__(self, name=None, state=None, type=None, instance_id=None, space_id=None, node_ids=None, offset=None, limit=None):
+    def __init__(self, name=None, state=None, type=None, instance_id=None, space_id=None, node_ids=None, app_id=None, offset=None, limit=None):
         r"""ListEdgeNodesRequest
 
         The model defined in huaweicloud sdk
 
         :param name: 节点名称
         :type name: str
-        :param state: 节点状态,OFFLINE|ONLINE|UNINSTALLED|INSTALLED|DELETING|UPGRADING
+        :param state: 节点状态,OFFLINE|ONLINE|UNINSTALLED|INSTALLED|DELETING|UPGRADING|FROZEN
         :type state: str
         :param type: 节点所属资源类型，advanced|standard
         :type type: str
@@ -53,6 +55,8 @@ class ListEdgeNodesRequest:
         :type space_id: str
         :param node_ids: 节点id列表,查询ID在给的节点ID列表内的节点信息
         :type node_ids: list[str]
+        :param app_id: 应用ID，查询部署了该应用的节点列表。
+        :type app_id: str
         :param offset: 查询的起始位置，取值范围为非负整数，默认为0
         :type offset: int
         :param limit: 每页记录数，默认值为10，取值区间为1-1000
@@ -67,6 +71,7 @@ class ListEdgeNodesRequest:
         self._instance_id = None
         self._space_id = None
         self._node_ids = None
+        self._app_id = None
         self._offset = None
         self._limit = None
         self.discriminator = None
@@ -83,6 +88,8 @@ class ListEdgeNodesRequest:
             self.space_id = space_id
         if node_ids is not None:
             self.node_ids = node_ids
+        if app_id is not None:
+            self.app_id = app_id
         if offset is not None:
             self.offset = offset
         if limit is not None:
@@ -114,7 +121,7 @@ class ListEdgeNodesRequest:
     def state(self):
         r"""Gets the state of this ListEdgeNodesRequest.
 
-        节点状态,OFFLINE|ONLINE|UNINSTALLED|INSTALLED|DELETING|UPGRADING
+        节点状态,OFFLINE|ONLINE|UNINSTALLED|INSTALLED|DELETING|UPGRADING|FROZEN
 
         :return: The state of this ListEdgeNodesRequest.
         :rtype: str
@@ -125,7 +132,7 @@ class ListEdgeNodesRequest:
     def state(self, state):
         r"""Sets the state of this ListEdgeNodesRequest.
 
-        节点状态,OFFLINE|ONLINE|UNINSTALLED|INSTALLED|DELETING|UPGRADING
+        节点状态,OFFLINE|ONLINE|UNINSTALLED|INSTALLED|DELETING|UPGRADING|FROZEN
 
         :param state: The state of this ListEdgeNodesRequest.
         :type state: str
@@ -219,6 +226,28 @@ class ListEdgeNodesRequest:
         :type node_ids: list[str]
         """
         self._node_ids = node_ids
+
+    @property
+    def app_id(self):
+        r"""Gets the app_id of this ListEdgeNodesRequest.
+
+        应用ID，查询部署了该应用的节点列表。
+
+        :return: The app_id of this ListEdgeNodesRequest.
+        :rtype: str
+        """
+        return self._app_id
+
+    @app_id.setter
+    def app_id(self, app_id):
+        r"""Sets the app_id of this ListEdgeNodesRequest.
+
+        应用ID，查询部署了该应用的节点列表。
+
+        :param app_id: The app_id of this ListEdgeNodesRequest.
+        :type app_id: str
+        """
+        self._app_id = app_id
 
     @property
     def offset(self):

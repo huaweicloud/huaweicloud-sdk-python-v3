@@ -31,11 +31,11 @@ class UpgradeInfoStatus:
 
         The model defined in huaweicloud sdk
 
-        :param phase: 升级任务状态. &gt; Init：初始化 &gt; Running：运行中 &gt; Pause：暂停 &gt; Success：成功 &gt; Failed：失败 
+        :param phase: **参数解释：** 升级任务状态 **约束限制：** 不涉及 **取值范围：** - Init：初始化 - Running：运行中 - Pause：暂停 - Success：成功 - Failed：失败  **默认取值：** 不涉及
         :type phase: str
-        :param progress: 升级任务进度
+        :param progress: **参数解释：** 升级任务进度 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type progress: str
-        :param completion_time: 升级任务结束时间
+        :param completion_time: **参数解释：** 升级任务结束时间 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type completion_time: str
         """
         
@@ -57,7 +57,7 @@ class UpgradeInfoStatus:
     def phase(self):
         r"""Gets the phase of this UpgradeInfoStatus.
 
-        升级任务状态. > Init：初始化 > Running：运行中 > Pause：暂停 > Success：成功 > Failed：失败 
+        **参数解释：** 升级任务状态 **约束限制：** 不涉及 **取值范围：** - Init：初始化 - Running：运行中 - Pause：暂停 - Success：成功 - Failed：失败  **默认取值：** 不涉及
 
         :return: The phase of this UpgradeInfoStatus.
         :rtype: str
@@ -68,7 +68,7 @@ class UpgradeInfoStatus:
     def phase(self, phase):
         r"""Sets the phase of this UpgradeInfoStatus.
 
-        升级任务状态. > Init：初始化 > Running：运行中 > Pause：暂停 > Success：成功 > Failed：失败 
+        **参数解释：** 升级任务状态 **约束限制：** 不涉及 **取值范围：** - Init：初始化 - Running：运行中 - Pause：暂停 - Success：成功 - Failed：失败  **默认取值：** 不涉及
 
         :param phase: The phase of this UpgradeInfoStatus.
         :type phase: str
@@ -79,7 +79,7 @@ class UpgradeInfoStatus:
     def progress(self):
         r"""Gets the progress of this UpgradeInfoStatus.
 
-        升级任务进度
+        **参数解释：** 升级任务进度 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The progress of this UpgradeInfoStatus.
         :rtype: str
@@ -90,7 +90,7 @@ class UpgradeInfoStatus:
     def progress(self, progress):
         r"""Sets the progress of this UpgradeInfoStatus.
 
-        升级任务进度
+        **参数解释：** 升级任务进度 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param progress: The progress of this UpgradeInfoStatus.
         :type progress: str
@@ -101,7 +101,7 @@ class UpgradeInfoStatus:
     def completion_time(self):
         r"""Gets the completion_time of this UpgradeInfoStatus.
 
-        升级任务结束时间
+        **参数解释：** 升级任务结束时间 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The completion_time of this UpgradeInfoStatus.
         :rtype: str
@@ -112,7 +112,7 @@ class UpgradeInfoStatus:
     def completion_time(self, completion_time):
         r"""Sets the completion_time of this UpgradeInfoStatus.
 
-        升级任务结束时间
+        **参数解释：** 升级任务结束时间 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param completion_time: The completion_time of this UpgradeInfoStatus.
         :type completion_time: str

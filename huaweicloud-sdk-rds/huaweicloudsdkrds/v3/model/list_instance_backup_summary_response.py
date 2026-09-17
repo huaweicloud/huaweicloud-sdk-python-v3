@@ -17,35 +17,35 @@ class ListInstanceBackupSummaryResponse(SdkResponse):
 
     openapi_types = {
         'infos': 'list[InstanceBackupSummary]',
-        'total_count': 'int'
+        'total': 'int'
     }
 
     attribute_map = {
         'infos': 'infos',
-        'total_count': 'total_count'
+        'total': 'total'
     }
 
-    def __init__(self, infos=None, total_count=None):
+    def __init__(self, infos=None, total=None):
         r"""ListInstanceBackupSummaryResponse
 
         The model defined in huaweicloud sdk
 
         :param infos: **参数解释**：  实例备份概览列表  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
         :type infos: list[:class:`huaweicloudsdkrds.v3.InstanceBackupSummary`]
-        :param total_count: **参数解释**：  总记录数。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
-        :type total_count: int
+        :param total: **参数解释**：  总记录数。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        :type total: int
         """
         
         super().__init__()
 
         self._infos = None
-        self._total_count = None
+        self._total = None
         self.discriminator = None
 
         if infos is not None:
             self.infos = infos
-        if total_count is not None:
-            self.total_count = total_count
+        if total is not None:
+            self.total = total
 
     @property
     def infos(self):
@@ -70,26 +70,26 @@ class ListInstanceBackupSummaryResponse(SdkResponse):
         self._infos = infos
 
     @property
-    def total_count(self):
-        r"""Gets the total_count of this ListInstanceBackupSummaryResponse.
+    def total(self):
+        r"""Gets the total of this ListInstanceBackupSummaryResponse.
 
         **参数解释**：  总记录数。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
-        :return: The total_count of this ListInstanceBackupSummaryResponse.
+        :return: The total of this ListInstanceBackupSummaryResponse.
         :rtype: int
         """
-        return self._total_count
+        return self._total
 
-    @total_count.setter
-    def total_count(self, total_count):
-        r"""Sets the total_count of this ListInstanceBackupSummaryResponse.
+    @total.setter
+    def total(self, total):
+        r"""Sets the total of this ListInstanceBackupSummaryResponse.
 
         **参数解释**：  总记录数。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
-        :param total_count: The total_count of this ListInstanceBackupSummaryResponse.
-        :type total_count: int
+        :param total: The total of this ListInstanceBackupSummaryResponse.
+        :type total: int
         """
-        self._total_count = total_count
+        self._total = total
 
     def to_dict(self):
         import warnings

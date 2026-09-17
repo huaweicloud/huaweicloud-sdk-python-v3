@@ -35,7 +35,7 @@ class VirtualSpace:
 
         :param name: virtualSpace的名称，当前仅支持四种类型：share、kubernetes、runtime、user。 - share：共享磁盘空间配置(取消runtime和kubernetes分区)，需配置lvmConfig； - kubernetes：k8s空间配置，需配置lvmConfig； - runtime：运行时空间配置，需配置runtimeConfig； - user：用户空间配置，需配置lvmConfig 
         :type name: str
-        :param size: virtualSpace的大小，仅支持整数百分比。例如：90%。 &gt;一个group中所有virtualSpace的百分比之和不得超过100% 
+        :param size: **参数解释**： virtualSpace的大小，仅支持整数百分比。例如：90%。 **约束限制**： - 同一StorageGroup内所有VirtualSpace的size之和≤100% - 单个VirtualSpace的size必须≥1%且≤100% **取值范围**： 1% ~ 100% **默认取值**： 不涉及
         :type size: str
         :param lvm_config: 
         :type lvm_config: :class:`huaweicloudsdkcce.v3.LVMConfig`
@@ -84,7 +84,7 @@ class VirtualSpace:
     def size(self):
         r"""Gets the size of this VirtualSpace.
 
-        virtualSpace的大小，仅支持整数百分比。例如：90%。 >一个group中所有virtualSpace的百分比之和不得超过100% 
+        **参数解释**： virtualSpace的大小，仅支持整数百分比。例如：90%。 **约束限制**： - 同一StorageGroup内所有VirtualSpace的size之和≤100% - 单个VirtualSpace的size必须≥1%且≤100% **取值范围**： 1% ~ 100% **默认取值**： 不涉及
 
         :return: The size of this VirtualSpace.
         :rtype: str
@@ -95,7 +95,7 @@ class VirtualSpace:
     def size(self, size):
         r"""Sets the size of this VirtualSpace.
 
-        virtualSpace的大小，仅支持整数百分比。例如：90%。 >一个group中所有virtualSpace的百分比之和不得超过100% 
+        **参数解释**： virtualSpace的大小，仅支持整数百分比。例如：90%。 **约束限制**： - 同一StorageGroup内所有VirtualSpace的size之和≤100% - 单个VirtualSpace的size必须≥1%且≤100% **取值范围**： 1% ~ 100% **默认取值**： 不涉及
 
         :param size: The size of this VirtualSpace.
         :type size: str

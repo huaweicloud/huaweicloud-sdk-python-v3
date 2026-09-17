@@ -24,6 +24,7 @@ class CreateDcPointResponse(SdkResponse):
         'data_type': 'str',
         'ds_id': 'str',
         'processing_config': 'ProcessingConfigDTO',
+        'active': 'bool',
         'create_time': 'str',
         'update_time': 'str'
     }
@@ -37,11 +38,12 @@ class CreateDcPointResponse(SdkResponse):
         'data_type': 'data_type',
         'ds_id': 'ds_id',
         'processing_config': 'processing_config',
+        'active': 'active',
         'create_time': 'create_time',
         'update_time': 'update_time'
     }
 
-    def __init__(self, point_id=None, name=None, collection_config=None, device_id=None, _property=None, data_type=None, ds_id=None, processing_config=None, create_time=None, update_time=None):
+    def __init__(self, point_id=None, name=None, collection_config=None, device_id=None, _property=None, data_type=None, ds_id=None, processing_config=None, active=None, create_time=None, update_time=None):
         r"""CreateDcPointResponse
 
         The model defined in huaweicloud sdk
@@ -62,6 +64,8 @@ class CreateDcPointResponse(SdkResponse):
         :type ds_id: str
         :param processing_config: 
         :type processing_config: :class:`huaweicloudsdkiotedge.v2.ProcessingConfigDTO`
+        :param active: 点位启停状态
+        :type active: bool
         :param create_time: 创建时间
         :type create_time: str
         :param update_time: 最后一次修改时间
@@ -78,6 +82,7 @@ class CreateDcPointResponse(SdkResponse):
         self._data_type = None
         self._ds_id = None
         self._processing_config = None
+        self._active = None
         self._create_time = None
         self._update_time = None
         self.discriminator = None
@@ -98,6 +103,8 @@ class CreateDcPointResponse(SdkResponse):
             self.ds_id = ds_id
         if processing_config is not None:
             self.processing_config = processing_config
+        if active is not None:
+            self.active = active
         if create_time is not None:
             self.create_time = create_time
         if update_time is not None:
@@ -274,6 +281,28 @@ class CreateDcPointResponse(SdkResponse):
         :type processing_config: :class:`huaweicloudsdkiotedge.v2.ProcessingConfigDTO`
         """
         self._processing_config = processing_config
+
+    @property
+    def active(self):
+        r"""Gets the active of this CreateDcPointResponse.
+
+        点位启停状态
+
+        :return: The active of this CreateDcPointResponse.
+        :rtype: bool
+        """
+        return self._active
+
+    @active.setter
+    def active(self, active):
+        r"""Sets the active of this CreateDcPointResponse.
+
+        点位启停状态
+
+        :param active: The active of this CreateDcPointResponse.
+        :type active: bool
+        """
+        self._active = active
 
     @property
     def create_time(self):

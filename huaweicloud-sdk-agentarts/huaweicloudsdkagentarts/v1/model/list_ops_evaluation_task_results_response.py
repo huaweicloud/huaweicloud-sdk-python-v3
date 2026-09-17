@@ -16,47 +16,47 @@ class ListOpsEvaluationTaskResultsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'object'
+        'data': 'ListOpsEvaluationTaskResultsResponseBodyData'
     }
 
     attribute_map = {
-        'body': 'body'
+        'data': 'data'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, data=None):
         r"""ListOpsEvaluationTaskResultsResponse
 
         The model defined in huaweicloud sdk
 
-        :param body: 
-        :type body: object
+        :param data: 
+        :type data: :class:`huaweicloudsdkagentarts.v1.ListOpsEvaluationTaskResultsResponseBodyData`
         """
         
         super().__init__()
 
-        self._body = None
+        self._data = None
         self.discriminator = None
 
-        if body is not None:
-            self.body = body
+        if data is not None:
+            self.data = data
 
     @property
-    def body(self):
-        r"""Gets the body of this ListOpsEvaluationTaskResultsResponse.
+    def data(self):
+        r"""Gets the data of this ListOpsEvaluationTaskResultsResponse.
 
-        :return: The body of this ListOpsEvaluationTaskResultsResponse.
-        :rtype: object
+        :return: The data of this ListOpsEvaluationTaskResultsResponse.
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ListOpsEvaluationTaskResultsResponseBodyData`
         """
-        return self._body
+        return self._data
 
-    @body.setter
-    def body(self, body):
-        r"""Sets the body of this ListOpsEvaluationTaskResultsResponse.
+    @data.setter
+    def data(self, data):
+        r"""Sets the data of this ListOpsEvaluationTaskResultsResponse.
 
-        :param body: The body of this ListOpsEvaluationTaskResultsResponse.
-        :type body: object
+        :param data: The data of this ListOpsEvaluationTaskResultsResponse.
+        :type data: :class:`huaweicloudsdkagentarts.v1.ListOpsEvaluationTaskResultsResponseBodyData`
         """
-        self._body = body
+        self._data = data
 
     def to_dict(self):
         import warnings

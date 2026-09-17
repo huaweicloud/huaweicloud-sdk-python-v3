@@ -21,7 +21,8 @@ class ClusterInformationSpec:
         'container_network': 'ContainerNetworkUpdate',
         'eni_network': 'EniNetworkUpdate',
         'host_network': 'ClusterInformationSpecHostNetwork',
-        'deletion_protection': 'bool'
+        'deletion_protection': 'bool',
+        'secret_config': 'SecretConfigUpdate'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class ClusterInformationSpec:
         'container_network': 'containerNetwork',
         'eni_network': 'eniNetwork',
         'host_network': 'hostNetwork',
-        'deletion_protection': 'deletionProtection'
+        'deletion_protection': 'deletionProtection',
+        'secret_config': 'secretConfig'
     }
 
-    def __init__(self, agency_name=None, description=None, custom_san=None, container_network=None, eni_network=None, host_network=None, deletion_protection=None):
+    def __init__(self, agency_name=None, description=None, custom_san=None, container_network=None, eni_network=None, host_network=None, deletion_protection=None, secret_config=None):
         r"""ClusterInformationSpec
 
         The model defined in huaweicloud sdk
@@ -53,6 +55,8 @@ class ClusterInformationSpec:
         :type host_network: :class:`huaweicloudsdkcce.v3.ClusterInformationSpecHostNetwork`
         :param deletion_protection: **参数解释：** 集群删除保护，如果开启后用户将无法删除该集群。 **约束限制：** 不涉及 **取值范围：** - true: 开启集群删除保护 - false: 关闭集群删除保护  **默认取值：** 默认false
         :type deletion_protection: bool
+        :param secret_config: 
+        :type secret_config: :class:`huaweicloudsdkcce.v3.SecretConfigUpdate`
         """
         
         
@@ -64,6 +68,7 @@ class ClusterInformationSpec:
         self._eni_network = None
         self._host_network = None
         self._deletion_protection = None
+        self._secret_config = None
         self.discriminator = None
 
         if agency_name is not None:
@@ -80,6 +85,8 @@ class ClusterInformationSpec:
             self.host_network = host_network
         if deletion_protection is not None:
             self.deletion_protection = deletion_protection
+        if secret_config is not None:
+            self.secret_config = secret_config
 
     @property
     def agency_name(self):
@@ -222,6 +229,24 @@ class ClusterInformationSpec:
         :type deletion_protection: bool
         """
         self._deletion_protection = deletion_protection
+
+    @property
+    def secret_config(self):
+        r"""Gets the secret_config of this ClusterInformationSpec.
+
+        :return: The secret_config of this ClusterInformationSpec.
+        :rtype: :class:`huaweicloudsdkcce.v3.SecretConfigUpdate`
+        """
+        return self._secret_config
+
+    @secret_config.setter
+    def secret_config(self, secret_config):
+        r"""Sets the secret_config of this ClusterInformationSpec.
+
+        :param secret_config: The secret_config of this ClusterInformationSpec.
+        :type secret_config: :class:`huaweicloudsdkcce.v3.SecretConfigUpdate`
+        """
+        self._secret_config = secret_config
 
     def to_dict(self):
         result = {}

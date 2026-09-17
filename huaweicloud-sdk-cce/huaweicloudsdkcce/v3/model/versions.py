@@ -39,19 +39,19 @@ class Versions:
 
         The model defined in huaweicloud sdk
 
-        :param version: 插件版本号
+        :param version: **参数解释**： 插件版本号。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type version: str
-        :param input: 插件安装参数
+        :param input: **参数解释**： 插件安装参数。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type input: object
-        :param stable: 是否为稳定版本
+        :param stable: **参数解释**： 是否为稳定版本。 **约束限制**： 不涉及 **取值范围**： - true：稳定版本 - false：非稳定版本  **默认取值**： 不涉及
         :type stable: bool
-        :param translate: 供界面使用的翻译信息
+        :param translate: **参数解释**： 供界面使用的翻译信息。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type translate: object
-        :param support_versions: 支持集群版本号
+        :param support_versions: **参数解释**： 支持集群版本号。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type support_versions: list[:class:`huaweicloudsdkcce.v3.SupportVersions`]
-        :param creation_timestamp: 创建时间
+        :param creation_timestamp: **参数解释**： 创建时间。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type creation_timestamp: date
-        :param update_timestamp: 更新时间
+        :param update_timestamp: **参数解释**： 更新时间。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type update_timestamp: date
         """
         
@@ -79,7 +79,7 @@ class Versions:
     def version(self):
         r"""Gets the version of this Versions.
 
-        插件版本号
+        **参数解释**： 插件版本号。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The version of this Versions.
         :rtype: str
@@ -90,7 +90,7 @@ class Versions:
     def version(self, version):
         r"""Sets the version of this Versions.
 
-        插件版本号
+        **参数解释**： 插件版本号。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param version: The version of this Versions.
         :type version: str
@@ -101,7 +101,7 @@ class Versions:
     def input(self):
         r"""Gets the input of this Versions.
 
-        插件安装参数
+        **参数解释**： 插件安装参数。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The input of this Versions.
         :rtype: object
@@ -112,7 +112,7 @@ class Versions:
     def input(self, input):
         r"""Sets the input of this Versions.
 
-        插件安装参数
+        **参数解释**： 插件安装参数。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param input: The input of this Versions.
         :type input: object
@@ -123,7 +123,7 @@ class Versions:
     def stable(self):
         r"""Gets the stable of this Versions.
 
-        是否为稳定版本
+        **参数解释**： 是否为稳定版本。 **约束限制**： 不涉及 **取值范围**： - true：稳定版本 - false：非稳定版本  **默认取值**： 不涉及
 
         :return: The stable of this Versions.
         :rtype: bool
@@ -134,7 +134,7 @@ class Versions:
     def stable(self, stable):
         r"""Sets the stable of this Versions.
 
-        是否为稳定版本
+        **参数解释**： 是否为稳定版本。 **约束限制**： 不涉及 **取值范围**： - true：稳定版本 - false：非稳定版本  **默认取值**： 不涉及
 
         :param stable: The stable of this Versions.
         :type stable: bool
@@ -145,7 +145,7 @@ class Versions:
     def translate(self):
         r"""Gets the translate of this Versions.
 
-        供界面使用的翻译信息
+        **参数解释**： 供界面使用的翻译信息。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The translate of this Versions.
         :rtype: object
@@ -156,7 +156,7 @@ class Versions:
     def translate(self, translate):
         r"""Sets the translate of this Versions.
 
-        供界面使用的翻译信息
+        **参数解释**： 供界面使用的翻译信息。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param translate: The translate of this Versions.
         :type translate: object
@@ -167,7 +167,7 @@ class Versions:
     def support_versions(self):
         r"""Gets the support_versions of this Versions.
 
-        支持集群版本号
+        **参数解释**： 支持集群版本号。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The support_versions of this Versions.
         :rtype: list[:class:`huaweicloudsdkcce.v3.SupportVersions`]
@@ -178,7 +178,7 @@ class Versions:
     def support_versions(self, support_versions):
         r"""Sets the support_versions of this Versions.
 
-        支持集群版本号
+        **参数解释**： 支持集群版本号。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param support_versions: The support_versions of this Versions.
         :type support_versions: list[:class:`huaweicloudsdkcce.v3.SupportVersions`]
@@ -189,7 +189,7 @@ class Versions:
     def creation_timestamp(self):
         r"""Gets the creation_timestamp of this Versions.
 
-        创建时间
+        **参数解释**： 创建时间。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The creation_timestamp of this Versions.
         :rtype: date
@@ -200,7 +200,7 @@ class Versions:
     def creation_timestamp(self, creation_timestamp):
         r"""Sets the creation_timestamp of this Versions.
 
-        创建时间
+        **参数解释**： 创建时间。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param creation_timestamp: The creation_timestamp of this Versions.
         :type creation_timestamp: date
@@ -211,7 +211,7 @@ class Versions:
     def update_timestamp(self):
         r"""Gets the update_timestamp of this Versions.
 
-        更新时间
+        **参数解释**： 更新时间。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The update_timestamp of this Versions.
         :rtype: date
@@ -222,7 +222,7 @@ class Versions:
     def update_timestamp(self, update_timestamp):
         r"""Sets the update_timestamp of this Versions.
 
-        更新时间
+        **参数解释**： 更新时间。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param update_timestamp: The update_timestamp of this Versions.
         :type update_timestamp: date

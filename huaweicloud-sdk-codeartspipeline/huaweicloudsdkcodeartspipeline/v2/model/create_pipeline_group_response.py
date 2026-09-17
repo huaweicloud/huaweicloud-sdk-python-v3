@@ -27,6 +27,8 @@ class CreatePipelineGroupResponse(SdkResponse):
         'updater': 'str',
         'create_time': 'int',
         'update_time': 'int',
+        'pipeline_count': 'int',
+        'no_group_count': 'int',
         'children': 'list[PipelineGroupVo]'
     }
 
@@ -42,10 +44,12 @@ class CreatePipelineGroupResponse(SdkResponse):
         'updater': 'updater',
         'create_time': 'create_time',
         'update_time': 'update_time',
+        'pipeline_count': 'pipeline_count',
+        'no_group_count': 'no_group_count',
         'children': 'children'
     }
 
-    def __init__(self, id=None, domain_id=None, project_id=None, name=None, parent_id=None, path_id=None, ordinal=None, creator=None, updater=None, create_time=None, update_time=None, children=None):
+    def __init__(self, id=None, domain_id=None, project_id=None, name=None, parent_id=None, path_id=None, ordinal=None, creator=None, updater=None, create_time=None, update_time=None, pipeline_count=None, no_group_count=None, children=None):
         r"""CreatePipelineGroupResponse
 
         The model defined in huaweicloud sdk
@@ -72,6 +76,10 @@ class CreatePipelineGroupResponse(SdkResponse):
         :type create_time: int
         :param update_time: **参数解释**： 更新时间。 **取值范围**： 不涉及。 
         :type update_time: int
+        :param pipeline_count: **参数解释**： 分组下的流水线总数。 **取值范围**： 不涉及。 
+        :type pipeline_count: int
+        :param no_group_count: **参数解释**： 未分组的流水线数量。 **取值范围**： 不涉及。 
+        :type no_group_count: int
         :param children: **参数解释**： 流水线分组详情。 **取值范围**： 不涉及。 
         :type children: list[:class:`huaweicloudsdkcodeartspipeline.v2.PipelineGroupVo`]
         """
@@ -89,6 +97,8 @@ class CreatePipelineGroupResponse(SdkResponse):
         self._updater = None
         self._create_time = None
         self._update_time = None
+        self._pipeline_count = None
+        self._no_group_count = None
         self._children = None
         self.discriminator = None
 
@@ -114,6 +124,10 @@ class CreatePipelineGroupResponse(SdkResponse):
             self.create_time = create_time
         if update_time is not None:
             self.update_time = update_time
+        if pipeline_count is not None:
+            self.pipeline_count = pipeline_count
+        if no_group_count is not None:
+            self.no_group_count = no_group_count
         if children is not None:
             self.children = children
 
@@ -358,6 +372,50 @@ class CreatePipelineGroupResponse(SdkResponse):
         :type update_time: int
         """
         self._update_time = update_time
+
+    @property
+    def pipeline_count(self):
+        r"""Gets the pipeline_count of this CreatePipelineGroupResponse.
+
+        **参数解释**： 分组下的流水线总数。 **取值范围**： 不涉及。 
+
+        :return: The pipeline_count of this CreatePipelineGroupResponse.
+        :rtype: int
+        """
+        return self._pipeline_count
+
+    @pipeline_count.setter
+    def pipeline_count(self, pipeline_count):
+        r"""Sets the pipeline_count of this CreatePipelineGroupResponse.
+
+        **参数解释**： 分组下的流水线总数。 **取值范围**： 不涉及。 
+
+        :param pipeline_count: The pipeline_count of this CreatePipelineGroupResponse.
+        :type pipeline_count: int
+        """
+        self._pipeline_count = pipeline_count
+
+    @property
+    def no_group_count(self):
+        r"""Gets the no_group_count of this CreatePipelineGroupResponse.
+
+        **参数解释**： 未分组的流水线数量。 **取值范围**： 不涉及。 
+
+        :return: The no_group_count of this CreatePipelineGroupResponse.
+        :rtype: int
+        """
+        return self._no_group_count
+
+    @no_group_count.setter
+    def no_group_count(self, no_group_count):
+        r"""Sets the no_group_count of this CreatePipelineGroupResponse.
+
+        **参数解释**： 未分组的流水线数量。 **取值范围**： 不涉及。 
+
+        :param no_group_count: The no_group_count of this CreatePipelineGroupResponse.
+        :type no_group_count: int
+        """
+        self._no_group_count = no_group_count
 
     @property
     def children(self):

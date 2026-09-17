@@ -30,7 +30,8 @@ class CreateEdgeApplicationVersionDTO:
         'inputs': 'object',
         'services': 'object',
         'supplier': 'str',
-        'tpl_id': 'str'
+        'tpl_id': 'str',
+        'pre_upgrade_probe': 'PreUpgradeProbeDTO'
     }
 
     attribute_map = {
@@ -49,10 +50,11 @@ class CreateEdgeApplicationVersionDTO:
         'inputs': 'inputs',
         'services': 'services',
         'supplier': 'supplier',
-        'tpl_id': 'tpl_id'
+        'tpl_id': 'tpl_id',
+        'pre_upgrade_probe': 'pre_upgrade_probe'
     }
 
-    def __init__(self, version=None, description=None, sdk_version=None, deploy_type=None, deploy_multi_instance=None, container_settings=None, liveness_probe=None, readiness_probe=None, arch=None, command=None, args=None, outputs=None, inputs=None, services=None, supplier=None, tpl_id=None):
+    def __init__(self, version=None, description=None, sdk_version=None, deploy_type=None, deploy_multi_instance=None, container_settings=None, liveness_probe=None, readiness_probe=None, arch=None, command=None, args=None, outputs=None, inputs=None, services=None, supplier=None, tpl_id=None, pre_upgrade_probe=None):
         r"""CreateEdgeApplicationVersionDTO
 
         The model defined in huaweicloud sdk
@@ -73,7 +75,7 @@ class CreateEdgeApplicationVersionDTO:
         :type liveness_probe: :class:`huaweicloudsdkiotedge.v2.ProbeDTO`
         :param readiness_probe: 
         :type readiness_probe: :class:`huaweicloudsdkiotedge.v2.ProbeDTO`
-        :param arch: 架构
+        :param arch: 架构（x86_64|arm32|arm64）,示例：[\&quot;x86_64\&quot;]
         :type arch: object
         :param command: 启动命令
         :type command: object
@@ -89,6 +91,8 @@ class CreateEdgeApplicationVersionDTO:
         :type supplier: str
         :param tpl_id: 模板id
         :type tpl_id: str
+        :param pre_upgrade_probe: 
+        :type pre_upgrade_probe: :class:`huaweicloudsdkiotedge.v2.PreUpgradeProbeDTO`
         """
         
         
@@ -109,6 +113,7 @@ class CreateEdgeApplicationVersionDTO:
         self._services = None
         self._supplier = None
         self._tpl_id = None
+        self._pre_upgrade_probe = None
         self.discriminator = None
 
         self.version = version
@@ -140,6 +145,8 @@ class CreateEdgeApplicationVersionDTO:
             self.supplier = supplier
         if tpl_id is not None:
             self.tpl_id = tpl_id
+        if pre_upgrade_probe is not None:
+            self.pre_upgrade_probe = pre_upgrade_probe
 
     @property
     def version(self):
@@ -309,7 +316,7 @@ class CreateEdgeApplicationVersionDTO:
     def arch(self):
         r"""Gets the arch of this CreateEdgeApplicationVersionDTO.
 
-        架构
+        架构（x86_64|arm32|arm64）,示例：[\"x86_64\"]
 
         :return: The arch of this CreateEdgeApplicationVersionDTO.
         :rtype: object
@@ -320,7 +327,7 @@ class CreateEdgeApplicationVersionDTO:
     def arch(self, arch):
         r"""Sets the arch of this CreateEdgeApplicationVersionDTO.
 
-        架构
+        架构（x86_64|arm32|arm64）,示例：[\"x86_64\"]
 
         :param arch: The arch of this CreateEdgeApplicationVersionDTO.
         :type arch: object
@@ -480,6 +487,24 @@ class CreateEdgeApplicationVersionDTO:
         :type tpl_id: str
         """
         self._tpl_id = tpl_id
+
+    @property
+    def pre_upgrade_probe(self):
+        r"""Gets the pre_upgrade_probe of this CreateEdgeApplicationVersionDTO.
+
+        :return: The pre_upgrade_probe of this CreateEdgeApplicationVersionDTO.
+        :rtype: :class:`huaweicloudsdkiotedge.v2.PreUpgradeProbeDTO`
+        """
+        return self._pre_upgrade_probe
+
+    @pre_upgrade_probe.setter
+    def pre_upgrade_probe(self, pre_upgrade_probe):
+        r"""Sets the pre_upgrade_probe of this CreateEdgeApplicationVersionDTO.
+
+        :param pre_upgrade_probe: The pre_upgrade_probe of this CreateEdgeApplicationVersionDTO.
+        :type pre_upgrade_probe: :class:`huaweicloudsdkiotedge.v2.PreUpgradeProbeDTO`
+        """
+        self._pre_upgrade_probe = pre_upgrade_probe
 
     def to_dict(self):
         result = {}

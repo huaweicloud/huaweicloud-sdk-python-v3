@@ -22,6 +22,7 @@ class ListDatasetsRequest:
         'marker': 'str',
         'reverse_page': 'bool',
         'name_partern': 'str',
+        'name_pattern': 'str',
         'format': 'str'
     }
 
@@ -33,10 +34,11 @@ class ListDatasetsRequest:
         'marker': 'marker',
         'reverse_page': 'reverse_page',
         'name_partern': 'name_partern',
+        'name_pattern': 'name_pattern',
         'format': 'format'
     }
 
-    def __init__(self, instance_id=None, catalog_name=None, database_name=None, limit=None, marker=None, reverse_page=None, name_partern=None, format=None):
+    def __init__(self, instance_id=None, catalog_name=None, database_name=None, limit=None, marker=None, reverse_page=None, name_partern=None, name_pattern=None, format=None):
         r"""ListDatasetsRequest
 
         The model defined in huaweicloud sdk
@@ -53,8 +55,10 @@ class ListDatasetsRequest:
         :type marker: str
         :param reverse_page: **参数解释:** 是否查询上一页。 **约束限制:** 不涉及 **取值范围:** 不涉及 **默认取值:** false
         :type reverse_page: bool
-        :param name_partern: **参数解释:** 数据集名称通配符，用于模糊查询。 **约束限制:** 只能包含中文、字母、数字和_|*.-特殊字符，且长度为1~256个字符。 **取值范围:** 长度为1~256个字符
+        :param name_partern: **参数解释:** 冗余字段，后续删除。数据集名称通配符，用于模糊查询。 **约束限制:** 只能包含中文、字母、数字和_|*.-特殊字符，且长度为1~256个字符。 **取值范围:** 长度为1~256个字符
         :type name_partern: str
+        :param name_pattern: **参数解释:** 数据集名称通配符，用于模糊查询。 **约束限制:** 只能包含中文、字母、数字和_|*.-特殊字符，且长度为1~256个字符。 **取值范围:** 长度为1~256个字符
+        :type name_pattern: str
         :param format: 数据格式 描述文件的组织方式：行存储/文本/图片/音频/视频/自定义
         :type format: str
         """
@@ -68,6 +72,7 @@ class ListDatasetsRequest:
         self._marker = None
         self._reverse_page = None
         self._name_partern = None
+        self._name_pattern = None
         self._format = None
         self.discriminator = None
 
@@ -82,6 +87,8 @@ class ListDatasetsRequest:
             self.reverse_page = reverse_page
         if name_partern is not None:
             self.name_partern = name_partern
+        if name_pattern is not None:
+            self.name_pattern = name_pattern
         if format is not None:
             self.format = format
 
@@ -221,7 +228,7 @@ class ListDatasetsRequest:
     def name_partern(self):
         r"""Gets the name_partern of this ListDatasetsRequest.
 
-        **参数解释:** 数据集名称通配符，用于模糊查询。 **约束限制:** 只能包含中文、字母、数字和_|*.-特殊字符，且长度为1~256个字符。 **取值范围:** 长度为1~256个字符
+        **参数解释:** 冗余字段，后续删除。数据集名称通配符，用于模糊查询。 **约束限制:** 只能包含中文、字母、数字和_|*.-特殊字符，且长度为1~256个字符。 **取值范围:** 长度为1~256个字符
 
         :return: The name_partern of this ListDatasetsRequest.
         :rtype: str
@@ -232,12 +239,34 @@ class ListDatasetsRequest:
     def name_partern(self, name_partern):
         r"""Sets the name_partern of this ListDatasetsRequest.
 
-        **参数解释:** 数据集名称通配符，用于模糊查询。 **约束限制:** 只能包含中文、字母、数字和_|*.-特殊字符，且长度为1~256个字符。 **取值范围:** 长度为1~256个字符
+        **参数解释:** 冗余字段，后续删除。数据集名称通配符，用于模糊查询。 **约束限制:** 只能包含中文、字母、数字和_|*.-特殊字符，且长度为1~256个字符。 **取值范围:** 长度为1~256个字符
 
         :param name_partern: The name_partern of this ListDatasetsRequest.
         :type name_partern: str
         """
         self._name_partern = name_partern
+
+    @property
+    def name_pattern(self):
+        r"""Gets the name_pattern of this ListDatasetsRequest.
+
+        **参数解释:** 数据集名称通配符，用于模糊查询。 **约束限制:** 只能包含中文、字母、数字和_|*.-特殊字符，且长度为1~256个字符。 **取值范围:** 长度为1~256个字符
+
+        :return: The name_pattern of this ListDatasetsRequest.
+        :rtype: str
+        """
+        return self._name_pattern
+
+    @name_pattern.setter
+    def name_pattern(self, name_pattern):
+        r"""Sets the name_pattern of this ListDatasetsRequest.
+
+        **参数解释:** 数据集名称通配符，用于模糊查询。 **约束限制:** 只能包含中文、字母、数字和_|*.-特殊字符，且长度为1~256个字符。 **取值范围:** 长度为1~256个字符
+
+        :param name_pattern: The name_pattern of this ListDatasetsRequest.
+        :type name_pattern: str
+        """
+        self._name_pattern = name_pattern
 
     @property
     def format(self):

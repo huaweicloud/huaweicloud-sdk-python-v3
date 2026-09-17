@@ -16,36 +16,29 @@ class ShowOpsEvaluationTasksCompareResultResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'data': 'list[CompareResultItem]',
-        'total': 'int'
+        'data': 'list[CompareResultItem]'
     }
 
     attribute_map = {
-        'data': 'data',
-        'total': 'total'
+        'data': 'data'
     }
 
-    def __init__(self, data=None, total=None):
+    def __init__(self, data=None):
         r"""ShowOpsEvaluationTasksCompareResultResponse
 
         The model defined in huaweicloud sdk
 
         :param data: 评估任务对比返回结构体。
         :type data: list[:class:`huaweicloudsdkagentarts.v1.CompareResultItem`]
-        :param total: **参数解释：**             符合查询过滤条件的总记录数。           **约束限制：**             整型数值。           **取值范围：**             0-500。           **默认取值：**             不涉及。
-        :type total: int
         """
         
         super().__init__()
 
         self._data = None
-        self._total = None
         self.discriminator = None
 
         if data is not None:
             self.data = data
-        if total is not None:
-            self.total = total
 
     @property
     def data(self):
@@ -68,28 +61,6 @@ class ShowOpsEvaluationTasksCompareResultResponse(SdkResponse):
         :type data: list[:class:`huaweicloudsdkagentarts.v1.CompareResultItem`]
         """
         self._data = data
-
-    @property
-    def total(self):
-        r"""Gets the total of this ShowOpsEvaluationTasksCompareResultResponse.
-
-        **参数解释：**             符合查询过滤条件的总记录数。           **约束限制：**             整型数值。           **取值范围：**             0-500。           **默认取值：**             不涉及。
-
-        :return: The total of this ShowOpsEvaluationTasksCompareResultResponse.
-        :rtype: int
-        """
-        return self._total
-
-    @total.setter
-    def total(self, total):
-        r"""Sets the total of this ShowOpsEvaluationTasksCompareResultResponse.
-
-        **参数解释：**             符合查询过滤条件的总记录数。           **约束限制：**             整型数值。           **取值范围：**             0-500。           **默认取值：**             不涉及。
-
-        :param total: The total of this ShowOpsEvaluationTasksCompareResultResponse.
-        :type total: int
-        """
-        self._total = total
 
     def to_dict(self):
         import warnings

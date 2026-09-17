@@ -29,9 +29,9 @@ class Storage:
 
         The model defined in huaweicloud sdk
 
-        :param storage_selectors: 磁盘选择，根据matchLabels和storageType对匹配的磁盘进行管理。磁盘匹配存在先后顺序，靠前的匹配规则优先匹配。
+        :param storage_selectors: **参数解释**： 磁盘选择，根据matchLabels和storageType对匹配的磁盘进行管理。磁盘匹配存在先后顺序，靠前的匹配规则优先匹配。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type storage_selectors: list[:class:`huaweicloudsdkcce.v3.StorageSelectors`]
-        :param storage_groups: 由多个存储设备组成的存储组，用于各个存储空间的划分。
+        :param storage_groups: **参数解释**： 由多个存储设备组成的存储组，用于各个存储空间的划分。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type storage_groups: list[:class:`huaweicloudsdkcce.v3.StorageGroups`]
         """
         
@@ -48,7 +48,7 @@ class Storage:
     def storage_selectors(self):
         r"""Gets the storage_selectors of this Storage.
 
-        磁盘选择，根据matchLabels和storageType对匹配的磁盘进行管理。磁盘匹配存在先后顺序，靠前的匹配规则优先匹配。
+        **参数解释**： 磁盘选择，根据matchLabels和storageType对匹配的磁盘进行管理。磁盘匹配存在先后顺序，靠前的匹配规则优先匹配。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The storage_selectors of this Storage.
         :rtype: list[:class:`huaweicloudsdkcce.v3.StorageSelectors`]
@@ -59,7 +59,7 @@ class Storage:
     def storage_selectors(self, storage_selectors):
         r"""Sets the storage_selectors of this Storage.
 
-        磁盘选择，根据matchLabels和storageType对匹配的磁盘进行管理。磁盘匹配存在先后顺序，靠前的匹配规则优先匹配。
+        **参数解释**： 磁盘选择，根据matchLabels和storageType对匹配的磁盘进行管理。磁盘匹配存在先后顺序，靠前的匹配规则优先匹配。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param storage_selectors: The storage_selectors of this Storage.
         :type storage_selectors: list[:class:`huaweicloudsdkcce.v3.StorageSelectors`]
@@ -70,7 +70,7 @@ class Storage:
     def storage_groups(self):
         r"""Gets the storage_groups of this Storage.
 
-        由多个存储设备组成的存储组，用于各个存储空间的划分。
+        **参数解释**： 由多个存储设备组成的存储组，用于各个存储空间的划分。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The storage_groups of this Storage.
         :rtype: list[:class:`huaweicloudsdkcce.v3.StorageGroups`]
@@ -81,7 +81,7 @@ class Storage:
     def storage_groups(self, storage_groups):
         r"""Sets the storage_groups of this Storage.
 
-        由多个存储设备组成的存储组，用于各个存储空间的划分。
+        **参数解释**： 由多个存储设备组成的存储组，用于各个存储空间的划分。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param storage_groups: The storage_groups of this Storage.
         :type storage_groups: list[:class:`huaweicloudsdkcce.v3.StorageGroups`]

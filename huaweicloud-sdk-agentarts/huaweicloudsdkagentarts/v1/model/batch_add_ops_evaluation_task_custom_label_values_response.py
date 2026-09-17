@@ -16,47 +16,80 @@ class BatchAddOpsEvaluationTaskCustomLabelValuesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'BatchTagValueMsg'
+        'msg': 'str',
+        'code': 'str'
     }
 
     attribute_map = {
-        'body': 'body'
+        'msg': 'msg',
+        'code': 'code'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, msg=None, code=None):
         r"""BatchAddOpsEvaluationTaskCustomLabelValuesResponse
 
         The model defined in huaweicloud sdk
 
-        :param body: 
-        :type body: :class:`huaweicloudsdkagentarts.v1.BatchTagValueMsg`
+        :param msg: **参数解释：** 返回的结果的msg。 **约束限制：** 不涉及。 
+        :type msg: str
+        :param code: **参数解释：** 返回的结果的code。 **约束限制：** 不涉及。 
+        :type code: str
         """
         
         super().__init__()
 
-        self._body = None
+        self._msg = None
+        self._code = None
         self.discriminator = None
 
-        if body is not None:
-            self.body = body
+        if msg is not None:
+            self.msg = msg
+        if code is not None:
+            self.code = code
 
     @property
-    def body(self):
-        r"""Gets the body of this BatchAddOpsEvaluationTaskCustomLabelValuesResponse.
+    def msg(self):
+        r"""Gets the msg of this BatchAddOpsEvaluationTaskCustomLabelValuesResponse.
 
-        :return: The body of this BatchAddOpsEvaluationTaskCustomLabelValuesResponse.
-        :rtype: :class:`huaweicloudsdkagentarts.v1.BatchTagValueMsg`
+        **参数解释：** 返回的结果的msg。 **约束限制：** 不涉及。 
+
+        :return: The msg of this BatchAddOpsEvaluationTaskCustomLabelValuesResponse.
+        :rtype: str
         """
-        return self._body
+        return self._msg
 
-    @body.setter
-    def body(self, body):
-        r"""Sets the body of this BatchAddOpsEvaluationTaskCustomLabelValuesResponse.
+    @msg.setter
+    def msg(self, msg):
+        r"""Sets the msg of this BatchAddOpsEvaluationTaskCustomLabelValuesResponse.
 
-        :param body: The body of this BatchAddOpsEvaluationTaskCustomLabelValuesResponse.
-        :type body: :class:`huaweicloudsdkagentarts.v1.BatchTagValueMsg`
+        **参数解释：** 返回的结果的msg。 **约束限制：** 不涉及。 
+
+        :param msg: The msg of this BatchAddOpsEvaluationTaskCustomLabelValuesResponse.
+        :type msg: str
         """
-        self._body = body
+        self._msg = msg
+
+    @property
+    def code(self):
+        r"""Gets the code of this BatchAddOpsEvaluationTaskCustomLabelValuesResponse.
+
+        **参数解释：** 返回的结果的code。 **约束限制：** 不涉及。 
+
+        :return: The code of this BatchAddOpsEvaluationTaskCustomLabelValuesResponse.
+        :rtype: str
+        """
+        return self._code
+
+    @code.setter
+    def code(self, code):
+        r"""Sets the code of this BatchAddOpsEvaluationTaskCustomLabelValuesResponse.
+
+        **参数解释：** 返回的结果的code。 **约束限制：** 不涉及。 
+
+        :param code: The code of this BatchAddOpsEvaluationTaskCustomLabelValuesResponse.
+        :type code: str
+        """
+        self._code = code
 
     def to_dict(self):
         import warnings

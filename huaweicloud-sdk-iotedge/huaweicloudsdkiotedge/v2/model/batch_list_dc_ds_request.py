@@ -17,6 +17,7 @@ class BatchListDcDsRequest:
     openapi_types = {
         'edge_node_id': 'str',
         'module_id': 'str',
+        'name': 'str',
         'offset': 'int',
         'limit': 'int'
     }
@@ -24,11 +25,12 @@ class BatchListDcDsRequest:
     attribute_map = {
         'edge_node_id': 'edge_node_id',
         'module_id': 'module_id',
+        'name': 'name',
         'offset': 'offset',
         'limit': 'limit'
     }
 
-    def __init__(self, edge_node_id=None, module_id=None, offset=None, limit=None):
+    def __init__(self, edge_node_id=None, module_id=None, name=None, offset=None, limit=None):
         r"""BatchListDcDsRequest
 
         The model defined in huaweicloud sdk
@@ -37,6 +39,8 @@ class BatchListDcDsRequest:
         :type edge_node_id: str
         :param module_id: 数据源所属的模块id
         :type module_id: str
+        :param name: 采集数据源名称，允许中、数字、英文大小写、下划线、中划线
+        :type name: str
         :param offset: 查询的起始位置，取值范围为非负整数，默认为0
         :type offset: int
         :param limit: 每页记录数，默认值为10，取值区间为1-1000
@@ -47,6 +51,7 @@ class BatchListDcDsRequest:
 
         self._edge_node_id = None
         self._module_id = None
+        self._name = None
         self._offset = None
         self._limit = None
         self.discriminator = None
@@ -54,6 +59,8 @@ class BatchListDcDsRequest:
         self.edge_node_id = edge_node_id
         if module_id is not None:
             self.module_id = module_id
+        if name is not None:
+            self.name = name
         if offset is not None:
             self.offset = offset
         if limit is not None:
@@ -102,6 +109,28 @@ class BatchListDcDsRequest:
         :type module_id: str
         """
         self._module_id = module_id
+
+    @property
+    def name(self):
+        r"""Gets the name of this BatchListDcDsRequest.
+
+        采集数据源名称，允许中、数字、英文大小写、下划线、中划线
+
+        :return: The name of this BatchListDcDsRequest.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        r"""Sets the name of this BatchListDcDsRequest.
+
+        采集数据源名称，允许中、数字、英文大小写、下划线、中划线
+
+        :param name: The name of this BatchListDcDsRequest.
+        :type name: str
+        """
+        self._name = name
 
     @property
     def offset(self):

@@ -52,31 +52,31 @@ class ShowChartResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param id: 模板ID
+        :param id: **参数解释：** 模板ID **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type id: str
-        :param name: 模板名称
+        :param name: **参数解释：** 模板名称 **约束限制：** 最长64个字符 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type name: str
-        :param values: 模板值
+        :param values: **参数解释：** 模板值 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type values: str
-        :param translate: 模板翻译资源
+        :param translate: **参数解释：** 模板翻译资源 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type translate: str
-        :param instruction: 模板介绍
+        :param instruction: **参数解释：** 模板介绍 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type instruction: str
-        :param version: 模板版本
+        :param version: **参数解释：** 模板版本 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type version: str
-        :param description: 模板描述
+        :param description: **参数解释：** 模板描述 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type description: str
-        :param source: 模板的来源
+        :param source: **参数解释：** 模板的来源 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type source: str
-        :param icon_url: 模板的图标链接
+        :param icon_url: **参数解释：** 模板的图标链接 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type icon_url: str
-        :param public: 是否公开模板
+        :param public: **参数解释：** 是否公开模板 **约束限制：** 不涉及 **取值范围：** - true：公开模板 - false：不公开模板  **默认取值：** false
         :type public: bool
-        :param chart_url: 模板的链接
+        :param chart_url: **参数解释：** 模板的链接 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type chart_url: str
-        :param create_at: 创建时间
+        :param create_at: **参数解释：** 创建时间 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type create_at: str
-        :param update_at: 更新时间
+        :param update_at: **参数解释：** 更新时间 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type update_at: str
         """
         
@@ -128,7 +128,7 @@ class ShowChartResponse(SdkResponse):
     def id(self):
         r"""Gets the id of this ShowChartResponse.
 
-        模板ID
+        **参数解释：** 模板ID **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The id of this ShowChartResponse.
         :rtype: str
@@ -139,7 +139,7 @@ class ShowChartResponse(SdkResponse):
     def id(self, id):
         r"""Sets the id of this ShowChartResponse.
 
-        模板ID
+        **参数解释：** 模板ID **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param id: The id of this ShowChartResponse.
         :type id: str
@@ -150,7 +150,7 @@ class ShowChartResponse(SdkResponse):
     def name(self):
         r"""Gets the name of this ShowChartResponse.
 
-        模板名称
+        **参数解释：** 模板名称 **约束限制：** 最长64个字符 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The name of this ShowChartResponse.
         :rtype: str
@@ -161,7 +161,7 @@ class ShowChartResponse(SdkResponse):
     def name(self, name):
         r"""Sets the name of this ShowChartResponse.
 
-        模板名称
+        **参数解释：** 模板名称 **约束限制：** 最长64个字符 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param name: The name of this ShowChartResponse.
         :type name: str
@@ -172,7 +172,7 @@ class ShowChartResponse(SdkResponse):
     def values(self):
         r"""Gets the values of this ShowChartResponse.
 
-        模板值
+        **参数解释：** 模板值 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The values of this ShowChartResponse.
         :rtype: str
@@ -183,7 +183,7 @@ class ShowChartResponse(SdkResponse):
     def values(self, values):
         r"""Sets the values of this ShowChartResponse.
 
-        模板值
+        **参数解释：** 模板值 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param values: The values of this ShowChartResponse.
         :type values: str
@@ -194,7 +194,7 @@ class ShowChartResponse(SdkResponse):
     def translate(self):
         r"""Gets the translate of this ShowChartResponse.
 
-        模板翻译资源
+        **参数解释：** 模板翻译资源 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The translate of this ShowChartResponse.
         :rtype: str
@@ -205,7 +205,7 @@ class ShowChartResponse(SdkResponse):
     def translate(self, translate):
         r"""Sets the translate of this ShowChartResponse.
 
-        模板翻译资源
+        **参数解释：** 模板翻译资源 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param translate: The translate of this ShowChartResponse.
         :type translate: str
@@ -216,7 +216,7 @@ class ShowChartResponse(SdkResponse):
     def instruction(self):
         r"""Gets the instruction of this ShowChartResponse.
 
-        模板介绍
+        **参数解释：** 模板介绍 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The instruction of this ShowChartResponse.
         :rtype: str
@@ -227,7 +227,7 @@ class ShowChartResponse(SdkResponse):
     def instruction(self, instruction):
         r"""Sets the instruction of this ShowChartResponse.
 
-        模板介绍
+        **参数解释：** 模板介绍 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param instruction: The instruction of this ShowChartResponse.
         :type instruction: str
@@ -238,7 +238,7 @@ class ShowChartResponse(SdkResponse):
     def version(self):
         r"""Gets the version of this ShowChartResponse.
 
-        模板版本
+        **参数解释：** 模板版本 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The version of this ShowChartResponse.
         :rtype: str
@@ -249,7 +249,7 @@ class ShowChartResponse(SdkResponse):
     def version(self, version):
         r"""Sets the version of this ShowChartResponse.
 
-        模板版本
+        **参数解释：** 模板版本 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param version: The version of this ShowChartResponse.
         :type version: str
@@ -260,7 +260,7 @@ class ShowChartResponse(SdkResponse):
     def description(self):
         r"""Gets the description of this ShowChartResponse.
 
-        模板描述
+        **参数解释：** 模板描述 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The description of this ShowChartResponse.
         :rtype: str
@@ -271,7 +271,7 @@ class ShowChartResponse(SdkResponse):
     def description(self, description):
         r"""Sets the description of this ShowChartResponse.
 
-        模板描述
+        **参数解释：** 模板描述 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param description: The description of this ShowChartResponse.
         :type description: str
@@ -282,7 +282,7 @@ class ShowChartResponse(SdkResponse):
     def source(self):
         r"""Gets the source of this ShowChartResponse.
 
-        模板的来源
+        **参数解释：** 模板的来源 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The source of this ShowChartResponse.
         :rtype: str
@@ -293,7 +293,7 @@ class ShowChartResponse(SdkResponse):
     def source(self, source):
         r"""Sets the source of this ShowChartResponse.
 
-        模板的来源
+        **参数解释：** 模板的来源 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param source: The source of this ShowChartResponse.
         :type source: str
@@ -304,7 +304,7 @@ class ShowChartResponse(SdkResponse):
     def icon_url(self):
         r"""Gets the icon_url of this ShowChartResponse.
 
-        模板的图标链接
+        **参数解释：** 模板的图标链接 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The icon_url of this ShowChartResponse.
         :rtype: str
@@ -315,7 +315,7 @@ class ShowChartResponse(SdkResponse):
     def icon_url(self, icon_url):
         r"""Sets the icon_url of this ShowChartResponse.
 
-        模板的图标链接
+        **参数解释：** 模板的图标链接 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param icon_url: The icon_url of this ShowChartResponse.
         :type icon_url: str
@@ -326,7 +326,7 @@ class ShowChartResponse(SdkResponse):
     def public(self):
         r"""Gets the public of this ShowChartResponse.
 
-        是否公开模板
+        **参数解释：** 是否公开模板 **约束限制：** 不涉及 **取值范围：** - true：公开模板 - false：不公开模板  **默认取值：** false
 
         :return: The public of this ShowChartResponse.
         :rtype: bool
@@ -337,7 +337,7 @@ class ShowChartResponse(SdkResponse):
     def public(self, public):
         r"""Sets the public of this ShowChartResponse.
 
-        是否公开模板
+        **参数解释：** 是否公开模板 **约束限制：** 不涉及 **取值范围：** - true：公开模板 - false：不公开模板  **默认取值：** false
 
         :param public: The public of this ShowChartResponse.
         :type public: bool
@@ -348,7 +348,7 @@ class ShowChartResponse(SdkResponse):
     def chart_url(self):
         r"""Gets the chart_url of this ShowChartResponse.
 
-        模板的链接
+        **参数解释：** 模板的链接 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The chart_url of this ShowChartResponse.
         :rtype: str
@@ -359,7 +359,7 @@ class ShowChartResponse(SdkResponse):
     def chart_url(self, chart_url):
         r"""Sets the chart_url of this ShowChartResponse.
 
-        模板的链接
+        **参数解释：** 模板的链接 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param chart_url: The chart_url of this ShowChartResponse.
         :type chart_url: str
@@ -370,7 +370,7 @@ class ShowChartResponse(SdkResponse):
     def create_at(self):
         r"""Gets the create_at of this ShowChartResponse.
 
-        创建时间
+        **参数解释：** 创建时间 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The create_at of this ShowChartResponse.
         :rtype: str
@@ -381,7 +381,7 @@ class ShowChartResponse(SdkResponse):
     def create_at(self, create_at):
         r"""Sets the create_at of this ShowChartResponse.
 
-        创建时间
+        **参数解释：** 创建时间 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param create_at: The create_at of this ShowChartResponse.
         :type create_at: str
@@ -392,7 +392,7 @@ class ShowChartResponse(SdkResponse):
     def update_at(self):
         r"""Gets the update_at of this ShowChartResponse.
 
-        更新时间
+        **参数解释：** 更新时间 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The update_at of this ShowChartResponse.
         :rtype: str
@@ -403,7 +403,7 @@ class ShowChartResponse(SdkResponse):
     def update_at(self, update_at):
         r"""Sets the update_at of this ShowChartResponse.
 
-        更新时间
+        **参数解释：** 更新时间 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param update_at: The update_at of this ShowChartResponse.
         :type update_at: str

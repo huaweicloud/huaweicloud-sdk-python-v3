@@ -28,7 +28,7 @@ class ListAutopilotChartsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param body: 模板列表
+        :param body: **参数解释：** 模板列表 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type body: list[:class:`huaweicloudsdkcce.v3.ChartResp`]
         """
         
@@ -44,7 +44,7 @@ class ListAutopilotChartsResponse(SdkResponse):
     def body(self):
         r"""Gets the body of this ListAutopilotChartsResponse.
 
-        模板列表
+        **参数解释：** 模板列表 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The body of this ListAutopilotChartsResponse.
         :rtype: list[:class:`huaweicloudsdkcce.v3.ChartResp`]
@@ -55,7 +55,7 @@ class ListAutopilotChartsResponse(SdkResponse):
     def body(self, body):
         r"""Sets the body of this ListAutopilotChartsResponse.
 
-        模板列表
+        **参数解释：** 模板列表 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param body: The body of this ListAutopilotChartsResponse.
         :type body: list[:class:`huaweicloudsdkcce.v3.ChartResp`]

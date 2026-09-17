@@ -16,47 +16,51 @@ class CreateOpsEvaluationTaskResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'object'
+        'data': 'str'
     }
 
     attribute_map = {
-        'body': 'body'
+        'data': 'data'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, data=None):
         r"""CreateOpsEvaluationTaskResponse
 
         The model defined in huaweicloud sdk
 
-        :param body: 
-        :type body: object
+        :param data: **参数解释：** 创建成功的评估任务ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
+        :type data: str
         """
         
         super().__init__()
 
-        self._body = None
+        self._data = None
         self.discriminator = None
 
-        if body is not None:
-            self.body = body
+        if data is not None:
+            self.data = data
 
     @property
-    def body(self):
-        r"""Gets the body of this CreateOpsEvaluationTaskResponse.
+    def data(self):
+        r"""Gets the data of this CreateOpsEvaluationTaskResponse.
 
-        :return: The body of this CreateOpsEvaluationTaskResponse.
-        :rtype: object
+        **参数解释：** 创建成功的评估任务ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
+
+        :return: The data of this CreateOpsEvaluationTaskResponse.
+        :rtype: str
         """
-        return self._body
+        return self._data
 
-    @body.setter
-    def body(self, body):
-        r"""Sets the body of this CreateOpsEvaluationTaskResponse.
+    @data.setter
+    def data(self, data):
+        r"""Sets the data of this CreateOpsEvaluationTaskResponse.
 
-        :param body: The body of this CreateOpsEvaluationTaskResponse.
-        :type body: object
+        **参数解释：** 创建成功的评估任务ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
+
+        :param data: The data of this CreateOpsEvaluationTaskResponse.
+        :type data: str
         """
-        self._body = body
+        self._data = data
 
     def to_dict(self):
         import warnings

@@ -42,7 +42,8 @@ class DatasetFileFormat:
         self.discriminator = None
 
         self.format = format
-        self.content_types = content_types
+        if content_types is not None:
+            self.content_types = content_types
 
     @property
     def format(self):

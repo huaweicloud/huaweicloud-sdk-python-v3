@@ -27,7 +27,9 @@ class ShowOpsSynthesisTaskResponse(SdkResponse):
         'model_config': 'EvaluationOpsModelConfig',
         'seed_data': 'EvaluationOpsSeedDataConfig',
         'schemas': 'list[EvaluationOpsSynthesisSchema]',
-        'base_info': 'EvaluationOpsTaskBaseInfo'
+        'base_info': 'EvaluationOpsTaskBaseInfo',
+        'error_message': 'str',
+        'is_free': 'bool'
     }
 
     attribute_map = {
@@ -42,10 +44,12 @@ class ShowOpsSynthesisTaskResponse(SdkResponse):
         'model_config': 'model_config',
         'seed_data': 'seed_data',
         'schemas': 'schemas',
-        'base_info': 'base_info'
+        'base_info': 'base_info',
+        'error_message': 'error_message',
+        'is_free': 'is_free'
     }
 
-    def __init__(self, id=None, name=None, scenario_type=None, scenario_name=None, scenario_description=None, status=None, stats=None, usage=None, model_config=None, seed_data=None, schemas=None, base_info=None):
+    def __init__(self, id=None, name=None, scenario_type=None, scenario_name=None, scenario_description=None, status=None, stats=None, usage=None, model_config=None, seed_data=None, schemas=None, base_info=None, error_message=None, is_free=None):
         r"""ShowOpsSynthesisTaskResponse
 
         The model defined in huaweicloud sdk
@@ -74,6 +78,10 @@ class ShowOpsSynthesisTaskResponse(SdkResponse):
         :type schemas: list[:class:`huaweicloudsdkagentarts.v1.EvaluationOpsSynthesisSchema`]
         :param base_info: 
         :type base_info: :class:`huaweicloudsdkagentarts.v1.EvaluationOpsTaskBaseInfo`
+        :param error_message: **参数解释：** 任务失败时的错误信息。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。 
+        :type error_message: str
+        :param is_free: **参数解释：** 是否使用免费额度创建的任务。 **约束限制：** 不涉及。 **取值范围：** - true：免费任务 - false：付费任务 **默认取值：** 不涉及。 
+        :type is_free: bool
         """
         
         super().__init__()
@@ -90,6 +98,8 @@ class ShowOpsSynthesisTaskResponse(SdkResponse):
         self._seed_data = None
         self._schemas = None
         self._base_info = None
+        self._error_message = None
+        self._is_free = None
         self.discriminator = None
 
         if id is not None:
@@ -116,6 +126,10 @@ class ShowOpsSynthesisTaskResponse(SdkResponse):
             self.schemas = schemas
         if base_info is not None:
             self.base_info = base_info
+        if error_message is not None:
+            self.error_message = error_message
+        if is_free is not None:
+            self.is_free = is_free
 
     @property
     def id(self):
@@ -360,6 +374,50 @@ class ShowOpsSynthesisTaskResponse(SdkResponse):
         :type base_info: :class:`huaweicloudsdkagentarts.v1.EvaluationOpsTaskBaseInfo`
         """
         self._base_info = base_info
+
+    @property
+    def error_message(self):
+        r"""Gets the error_message of this ShowOpsSynthesisTaskResponse.
+
+        **参数解释：** 任务失败时的错误信息。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。 
+
+        :return: The error_message of this ShowOpsSynthesisTaskResponse.
+        :rtype: str
+        """
+        return self._error_message
+
+    @error_message.setter
+    def error_message(self, error_message):
+        r"""Sets the error_message of this ShowOpsSynthesisTaskResponse.
+
+        **参数解释：** 任务失败时的错误信息。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。 
+
+        :param error_message: The error_message of this ShowOpsSynthesisTaskResponse.
+        :type error_message: str
+        """
+        self._error_message = error_message
+
+    @property
+    def is_free(self):
+        r"""Gets the is_free of this ShowOpsSynthesisTaskResponse.
+
+        **参数解释：** 是否使用免费额度创建的任务。 **约束限制：** 不涉及。 **取值范围：** - true：免费任务 - false：付费任务 **默认取值：** 不涉及。 
+
+        :return: The is_free of this ShowOpsSynthesisTaskResponse.
+        :rtype: bool
+        """
+        return self._is_free
+
+    @is_free.setter
+    def is_free(self, is_free):
+        r"""Sets the is_free of this ShowOpsSynthesisTaskResponse.
+
+        **参数解释：** 是否使用免费额度创建的任务。 **约束限制：** 不涉及。 **取值范围：** - true：免费任务 - false：付费任务 **默认取值：** 不涉及。 
+
+        :param is_free: The is_free of this ShowOpsSynthesisTaskResponse.
+        :type is_free: bool
+        """
+        self._is_free = is_free
 
     def to_dict(self):
         import warnings

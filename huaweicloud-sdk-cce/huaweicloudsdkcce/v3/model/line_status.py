@@ -35,7 +35,7 @@ class LineStatus:
         :type start_point: :class:`huaweicloudsdkcce.v3.Point`
         :param end_point: 
         :type end_point: :class:`huaweicloudsdkcce.v3.Point`
-        :param critical: 表示是否为关键线路（关键线路未执行无法取消升级流程）
+        :param critical: **参数解释：** 表示是否为关键线路（关键线路未执行无法取消升级流程） **约束限制：** 不涉及 **取值范围：** - true：是关键线路 - false：非关键线路  **默认取值：** 不涉及
         :type critical: bool
         """
         
@@ -93,7 +93,7 @@ class LineStatus:
     def critical(self):
         r"""Gets the critical of this LineStatus.
 
-        表示是否为关键线路（关键线路未执行无法取消升级流程）
+        **参数解释：** 表示是否为关键线路（关键线路未执行无法取消升级流程） **约束限制：** 不涉及 **取值范围：** - true：是关键线路 - false：非关键线路  **默认取值：** 不涉及
 
         :return: The critical of this LineStatus.
         :rtype: bool
@@ -104,7 +104,7 @@ class LineStatus:
     def critical(self, critical):
         r"""Sets the critical of this LineStatus.
 
-        表示是否为关键线路（关键线路未执行无法取消升级流程）
+        **参数解释：** 表示是否为关键线路（关键线路未执行无法取消升级流程） **约束限制：** 不涉及 **取值范围：** - true：是关键线路 - false：非关键线路  **默认取值：** 不涉及
 
         :param critical: The critical of this LineStatus.
         :type critical: bool

@@ -45,7 +45,7 @@ class AddDatasetInput:
 
         :param dataset_name: 数据集名称
         :type dataset_name: str
-        :param description: 数据集的描述信息
+        :param description: 数据集描述信息。最大长度为4000个字符。
         :type description: str
         :param storage_type: 数据集存储类型：EXTERNAL-外置存储,MANAGED-系统托管存储 EXTERNAL类型的数据集不支持创建文件分组和文件元数据。
         :type storage_type: str
@@ -119,7 +119,7 @@ class AddDatasetInput:
     def description(self):
         r"""Gets the description of this AddDatasetInput.
 
-        数据集的描述信息
+        数据集描述信息。最大长度为4000个字符。
 
         :return: The description of this AddDatasetInput.
         :rtype: str
@@ -130,7 +130,7 @@ class AddDatasetInput:
     def description(self, description):
         r"""Sets the description of this AddDatasetInput.
 
-        数据集的描述信息
+        数据集描述信息。最大长度为4000个字符。
 
         :param description: The description of this AddDatasetInput.
         :type description: str

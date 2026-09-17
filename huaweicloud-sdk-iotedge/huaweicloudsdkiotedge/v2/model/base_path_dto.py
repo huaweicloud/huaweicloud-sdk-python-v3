@@ -17,18 +17,16 @@ class BasePathDTO:
     openapi_types = {
         'log_base_path': 'str',
         'config_base_path': 'str',
-        'db_base_path': 'str',
-        'offline_cache_configs': 'OfflineCacheConfigsDTO'
+        'db_base_path': 'str'
     }
 
     attribute_map = {
         'log_base_path': 'log_base_path',
         'config_base_path': 'config_base_path',
-        'db_base_path': 'db_base_path',
-        'offline_cache_configs': 'offline_cache_configs'
+        'db_base_path': 'db_base_path'
     }
 
-    def __init__(self, log_base_path=None, config_base_path=None, db_base_path=None, offline_cache_configs=None):
+    def __init__(self, log_base_path=None, config_base_path=None, db_base_path=None):
         r"""BasePathDTO
 
         The model defined in huaweicloud sdk
@@ -39,8 +37,6 @@ class BasePathDTO:
         :type config_base_path: str
         :param db_base_path: 节点数据存储根目录
         :type db_base_path: str
-        :param offline_cache_configs: 
-        :type offline_cache_configs: :class:`huaweicloudsdkiotedge.v2.OfflineCacheConfigsDTO`
         """
         
         
@@ -48,7 +44,6 @@ class BasePathDTO:
         self._log_base_path = None
         self._config_base_path = None
         self._db_base_path = None
-        self._offline_cache_configs = None
         self.discriminator = None
 
         if log_base_path is not None:
@@ -57,8 +52,6 @@ class BasePathDTO:
             self.config_base_path = config_base_path
         if db_base_path is not None:
             self.db_base_path = db_base_path
-        if offline_cache_configs is not None:
-            self.offline_cache_configs = offline_cache_configs
 
     @property
     def log_base_path(self):
@@ -125,24 +118,6 @@ class BasePathDTO:
         :type db_base_path: str
         """
         self._db_base_path = db_base_path
-
-    @property
-    def offline_cache_configs(self):
-        r"""Gets the offline_cache_configs of this BasePathDTO.
-
-        :return: The offline_cache_configs of this BasePathDTO.
-        :rtype: :class:`huaweicloudsdkiotedge.v2.OfflineCacheConfigsDTO`
-        """
-        return self._offline_cache_configs
-
-    @offline_cache_configs.setter
-    def offline_cache_configs(self, offline_cache_configs):
-        r"""Sets the offline_cache_configs of this BasePathDTO.
-
-        :param offline_cache_configs: The offline_cache_configs of this BasePathDTO.
-        :type offline_cache_configs: :class:`huaweicloudsdkiotedge.v2.OfflineCacheConfigsDTO`
-        """
-        self._offline_cache_configs = offline_cache_configs
 
     def to_dict(self):
         result = {}

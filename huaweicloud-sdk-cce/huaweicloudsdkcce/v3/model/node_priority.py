@@ -31,7 +31,7 @@ class NodePriority:
 
         :param node_selector: 
         :type node_selector: :class:`huaweicloudsdkcce.v3.NodeSelector`
-        :param priority: 该批次节点的优先级，默认值为0，优先级最低，数值越大优先级越高
+        :param priority: **参数解释：** 该批次节点的优先级，数值越大优先级越高 **约束限制：** 不涉及 **取值范围：** 非负整数 **默认取值：** 0
         :type priority: int
         """
         
@@ -66,7 +66,7 @@ class NodePriority:
     def priority(self):
         r"""Gets the priority of this NodePriority.
 
-        该批次节点的优先级，默认值为0，优先级最低，数值越大优先级越高
+        **参数解释：** 该批次节点的优先级，数值越大优先级越高 **约束限制：** 不涉及 **取值范围：** 非负整数 **默认取值：** 0
 
         :return: The priority of this NodePriority.
         :rtype: int
@@ -77,7 +77,7 @@ class NodePriority:
     def priority(self, priority):
         r"""Sets the priority of this NodePriority.
 
-        该批次节点的优先级，默认值为0，优先级最低，数值越大优先级越高
+        **参数解释：** 该批次节点的优先级，数值越大优先级越高 **约束限制：** 不涉及 **取值范围：** 非负整数 **默认取值：** 0
 
         :param priority: The priority of this NodePriority.
         :type priority: int

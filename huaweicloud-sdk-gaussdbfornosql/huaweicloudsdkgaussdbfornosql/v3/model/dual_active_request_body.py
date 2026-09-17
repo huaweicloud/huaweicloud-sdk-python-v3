@@ -16,39 +16,46 @@ class DualActiveRequestBody:
 
     openapi_types = {
         'destination_region': 'str',
-        'destination_instance_id': 'str'
+        'destination_instance_id': 'str',
+        'tables': 'list[str]'
     }
 
     attribute_map = {
         'destination_region': 'destination_region',
-        'destination_instance_id': 'destination_instance_id'
+        'destination_instance_id': 'destination_instance_id',
+        'tables': 'tables'
     }
 
-    def __init__(self, destination_region=None, destination_instance_id=None):
+    def __init__(self, destination_region=None, destination_instance_id=None, tables=None):
         r"""DualActiveRequestBody
 
         The model defined in huaweicloud sdk
 
-        :param destination_region: 参数解释 搭建双活目标实例所在的region。 约束限制 不涉及。 取值范围 不涉及。 默认取值 不涉及。
+        :param destination_region: **参数解释：** 搭建双活目标实例所在的region。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type destination_region: str
-        :param destination_instance_id: 参数解释 搭建双活目标实例ID。 约束限制 不涉及。 取值范围 不涉及。 默认取值 不涉及。
+        :param destination_instance_id: **参数解释：** 搭建双活目标实例ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type destination_instance_id: str
+        :param tables: 
+        :type tables: list[str]
         """
         
         
 
         self._destination_region = None
         self._destination_instance_id = None
+        self._tables = None
         self.discriminator = None
 
         self.destination_region = destination_region
         self.destination_instance_id = destination_instance_id
+        if tables is not None:
+            self.tables = tables
 
     @property
     def destination_region(self):
         r"""Gets the destination_region of this DualActiveRequestBody.
 
-        参数解释 搭建双活目标实例所在的region。 约束限制 不涉及。 取值范围 不涉及。 默认取值 不涉及。
+        **参数解释：** 搭建双活目标实例所在的region。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The destination_region of this DualActiveRequestBody.
         :rtype: str
@@ -59,7 +66,7 @@ class DualActiveRequestBody:
     def destination_region(self, destination_region):
         r"""Sets the destination_region of this DualActiveRequestBody.
 
-        参数解释 搭建双活目标实例所在的region。 约束限制 不涉及。 取值范围 不涉及。 默认取值 不涉及。
+        **参数解释：** 搭建双活目标实例所在的region。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param destination_region: The destination_region of this DualActiveRequestBody.
         :type destination_region: str
@@ -70,7 +77,7 @@ class DualActiveRequestBody:
     def destination_instance_id(self):
         r"""Gets the destination_instance_id of this DualActiveRequestBody.
 
-        参数解释 搭建双活目标实例ID。 约束限制 不涉及。 取值范围 不涉及。 默认取值 不涉及。
+        **参数解释：** 搭建双活目标实例ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The destination_instance_id of this DualActiveRequestBody.
         :rtype: str
@@ -81,12 +88,30 @@ class DualActiveRequestBody:
     def destination_instance_id(self, destination_instance_id):
         r"""Sets the destination_instance_id of this DualActiveRequestBody.
 
-        参数解释 搭建双活目标实例ID。 约束限制 不涉及。 取值范围 不涉及。 默认取值 不涉及。
+        **参数解释：** 搭建双活目标实例ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param destination_instance_id: The destination_instance_id of this DualActiveRequestBody.
         :type destination_instance_id: str
         """
         self._destination_instance_id = destination_instance_id
+
+    @property
+    def tables(self):
+        r"""Gets the tables of this DualActiveRequestBody.
+
+        :return: The tables of this DualActiveRequestBody.
+        :rtype: list[str]
+        """
+        return self._tables
+
+    @tables.setter
+    def tables(self, tables):
+        r"""Sets the tables of this DualActiveRequestBody.
+
+        :param tables: The tables of this DualActiveRequestBody.
+        :type tables: list[str]
+        """
+        self._tables = tables
 
     def to_dict(self):
         result = {}

@@ -22,6 +22,7 @@ class CountMetaObjResponse(SdkResponse):
         'databases_count': 'int',
         'tables_count': 'int',
         'partitions_count': 'int',
+        'datasets_count': 'int',
         'indexes_count': 'int'
     }
 
@@ -32,10 +33,11 @@ class CountMetaObjResponse(SdkResponse):
         'databases_count': 'databases_count',
         'tables_count': 'tables_count',
         'partitions_count': 'partitions_count',
+        'datasets_count': 'datasets_count',
         'indexes_count': 'indexes_count'
     }
 
-    def __init__(self, total_count=None, functions_count=None, catalogs_count=None, databases_count=None, tables_count=None, partitions_count=None, indexes_count=None):
+    def __init__(self, total_count=None, functions_count=None, catalogs_count=None, databases_count=None, tables_count=None, partitions_count=None, datasets_count=None, indexes_count=None):
         r"""CountMetaObjResponse
 
         The model defined in huaweicloud sdk
@@ -52,6 +54,8 @@ class CountMetaObjResponse(SdkResponse):
         :type tables_count: int
         :param partitions_count: 分区数量
         :type partitions_count: int
+        :param datasets_count: 数据集数量
+        :type datasets_count: int
         :param indexes_count: 索引数量
         :type indexes_count: int
         """
@@ -64,6 +68,7 @@ class CountMetaObjResponse(SdkResponse):
         self._databases_count = None
         self._tables_count = None
         self._partitions_count = None
+        self._datasets_count = None
         self._indexes_count = None
         self.discriminator = None
 
@@ -79,6 +84,8 @@ class CountMetaObjResponse(SdkResponse):
             self.tables_count = tables_count
         if partitions_count is not None:
             self.partitions_count = partitions_count
+        if datasets_count is not None:
+            self.datasets_count = datasets_count
         if indexes_count is not None:
             self.indexes_count = indexes_count
 
@@ -213,6 +220,28 @@ class CountMetaObjResponse(SdkResponse):
         :type partitions_count: int
         """
         self._partitions_count = partitions_count
+
+    @property
+    def datasets_count(self):
+        r"""Gets the datasets_count of this CountMetaObjResponse.
+
+        数据集数量
+
+        :return: The datasets_count of this CountMetaObjResponse.
+        :rtype: int
+        """
+        return self._datasets_count
+
+    @datasets_count.setter
+    def datasets_count(self, datasets_count):
+        r"""Sets the datasets_count of this CountMetaObjResponse.
+
+        数据集数量
+
+        :param datasets_count: The datasets_count of this CountMetaObjResponse.
+        :type datasets_count: int
+        """
+        self._datasets_count = datasets_count
 
     @property
     def indexes_count(self):

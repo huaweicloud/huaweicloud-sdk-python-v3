@@ -29,9 +29,9 @@ class NodeCheckStatus:
 
         The model defined in huaweicloud sdk
 
-        :param phase: 状态，取值如下 - Init: 初始化 - Running 运行中 - Success 成功 - Failed 失败
+        :param phase: **参数解释：** 状态 **约束限制：** 不涉及 **取值范围：** - Init：初始化 - Running：运行中 - Success：成功 - Failed：失败  **默认取值：** 不涉及
         :type phase: str
-        :param node_stage_status: 节点检查状态
+        :param node_stage_status: **参数解释：** 节点检查状态 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type node_stage_status: list[:class:`huaweicloudsdkcce.v3.NodeStageStatus`]
         """
         
@@ -50,7 +50,7 @@ class NodeCheckStatus:
     def phase(self):
         r"""Gets the phase of this NodeCheckStatus.
 
-        状态，取值如下 - Init: 初始化 - Running 运行中 - Success 成功 - Failed 失败
+        **参数解释：** 状态 **约束限制：** 不涉及 **取值范围：** - Init：初始化 - Running：运行中 - Success：成功 - Failed：失败  **默认取值：** 不涉及
 
         :return: The phase of this NodeCheckStatus.
         :rtype: str
@@ -61,7 +61,7 @@ class NodeCheckStatus:
     def phase(self, phase):
         r"""Sets the phase of this NodeCheckStatus.
 
-        状态，取值如下 - Init: 初始化 - Running 运行中 - Success 成功 - Failed 失败
+        **参数解释：** 状态 **约束限制：** 不涉及 **取值范围：** - Init：初始化 - Running：运行中 - Success：成功 - Failed：失败  **默认取值：** 不涉及
 
         :param phase: The phase of this NodeCheckStatus.
         :type phase: str
@@ -72,7 +72,7 @@ class NodeCheckStatus:
     def node_stage_status(self):
         r"""Gets the node_stage_status of this NodeCheckStatus.
 
-        节点检查状态
+        **参数解释：** 节点检查状态 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The node_stage_status of this NodeCheckStatus.
         :rtype: list[:class:`huaweicloudsdkcce.v3.NodeStageStatus`]
@@ -83,7 +83,7 @@ class NodeCheckStatus:
     def node_stage_status(self, node_stage_status):
         r"""Sets the node_stage_status of this NodeCheckStatus.
 
-        节点检查状态
+        **参数解释：** 节点检查状态 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param node_stage_status: The node_stage_status of this NodeCheckStatus.
         :type node_stage_status: list[:class:`huaweicloudsdkcce.v3.NodeStageStatus`]

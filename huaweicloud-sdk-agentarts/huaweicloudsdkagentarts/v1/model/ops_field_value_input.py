@@ -15,6 +15,8 @@ class OpsFieldValueInput:
     sensitive_list = []
 
     openapi_types = {
+        'id': 'str',
+        'required': 'bool',
         'key': 'str',
         'type': 'str',
         'content_type': 'str',
@@ -22,17 +24,23 @@ class OpsFieldValueInput:
     }
 
     attribute_map = {
+        'id': 'id',
+        'required': 'required',
         'key': 'key',
         'type': 'type',
         'content_type': 'content_type',
         'value': 'value'
     }
 
-    def __init__(self, key=None, type=None, content_type=None, value=None):
+    def __init__(self, id=None, required=None, key=None, type=None, content_type=None, value=None):
         r"""OpsFieldValueInput
 
         The model defined in huaweicloud sdk
 
+        :param id: **参数解释：** 字段的唯一标识符。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。 
+        :type id: str
+        :param required: **参数解释：** 该字段在写入数据时是否必填。 **约束限制：** 不涉及。 **取值范围：** - true：必填 - false：可选 **默认取值：** 不涉及。 
+        :type required: bool
         :param key: **参数解释：** 字段的键名，需与评测集Schema中定义的字段名保持一致。 **约束限制：** 字符串长度为0到10000个字符。 **取值范围：** 符合Schema定义的Key字符串。 **默认取值：** 不涉及。 
         :type key: str
         :param type: **参数解释：** 字段的数据存储类型，决定系统底层解析逻辑。 **约束限制：** 长度0到10000字符。 **取值范围：** 常见值如 string, integer, float, boolean, object 等。 **默认取值：** 不涉及。 
@@ -45,20 +53,67 @@ class OpsFieldValueInput:
         
         
 
+        self._id = None
+        self._required = None
         self._key = None
         self._type = None
         self._content_type = None
         self._value = None
         self.discriminator = None
 
-        if key is not None:
-            self.key = key
-        if type is not None:
-            self.type = type
+        if id is not None:
+            self.id = id
+        if required is not None:
+            self.required = required
+        self.key = key
+        self.type = type
         if content_type is not None:
             self.content_type = content_type
-        if value is not None:
-            self.value = value
+        self.value = value
+
+    @property
+    def id(self):
+        r"""Gets the id of this OpsFieldValueInput.
+
+        **参数解释：** 字段的唯一标识符。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。 
+
+        :return: The id of this OpsFieldValueInput.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        r"""Sets the id of this OpsFieldValueInput.
+
+        **参数解释：** 字段的唯一标识符。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。 
+
+        :param id: The id of this OpsFieldValueInput.
+        :type id: str
+        """
+        self._id = id
+
+    @property
+    def required(self):
+        r"""Gets the required of this OpsFieldValueInput.
+
+        **参数解释：** 该字段在写入数据时是否必填。 **约束限制：** 不涉及。 **取值范围：** - true：必填 - false：可选 **默认取值：** 不涉及。 
+
+        :return: The required of this OpsFieldValueInput.
+        :rtype: bool
+        """
+        return self._required
+
+    @required.setter
+    def required(self, required):
+        r"""Sets the required of this OpsFieldValueInput.
+
+        **参数解释：** 该字段在写入数据时是否必填。 **约束限制：** 不涉及。 **取值范围：** - true：必填 - false：可选 **默认取值：** 不涉及。 
+
+        :param required: The required of this OpsFieldValueInput.
+        :type required: bool
+        """
+        self._required = required
 
     @property
     def key(self):

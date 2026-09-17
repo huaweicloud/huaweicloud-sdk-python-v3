@@ -16,15 +16,17 @@ class Volume:
 
     openapi_types = {
         'volume': 'str',
-        'capacity': 'int'
+        'capacity': 'int',
+        'iops': 'int'
     }
 
     attribute_map = {
         'volume': 'volume',
-        'capacity': 'capacity'
+        'capacity': 'capacity',
+        'iops': 'iops'
     }
 
-    def __init__(self, volume=None, capacity=None):
+    def __init__(self, volume=None, capacity=None, iops=None):
         r"""Volume
 
         The model defined in huaweicloud sdk
@@ -33,17 +35,22 @@ class Volume:
         :type volume: str
         :param capacity: **参数解释**： 磁盘容量，单位：GB。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type capacity: int
+        :param iops: **参数解释**： ESSD2磁盘IOPS值。  **约束限制**： 仅磁盘类型为ESSD2时必填。 **取值范围**： 100~256000 **默认取值**： 不涉及。
+        :type iops: int
         """
         
         
 
         self._volume = None
         self._capacity = None
+        self._iops = None
         self.discriminator = None
 
         self.volume = volume
         if capacity is not None:
             self.capacity = capacity
+        if iops is not None:
+            self.iops = iops
 
     @property
     def volume(self):
@@ -88,6 +95,28 @@ class Volume:
         :type capacity: int
         """
         self._capacity = capacity
+
+    @property
+    def iops(self):
+        r"""Gets the iops of this Volume.
+
+        **参数解释**： ESSD2磁盘IOPS值。  **约束限制**： 仅磁盘类型为ESSD2时必填。 **取值范围**： 100~256000 **默认取值**： 不涉及。
+
+        :return: The iops of this Volume.
+        :rtype: int
+        """
+        return self._iops
+
+    @iops.setter
+    def iops(self, iops):
+        r"""Sets the iops of this Volume.
+
+        **参数解释**： ESSD2磁盘IOPS值。  **约束限制**： 仅磁盘类型为ESSD2时必填。 **取值范围**： 100~256000 **默认取值**： 不涉及。
+
+        :param iops: The iops of this Volume.
+        :type iops: int
+        """
+        self._iops = iops
 
     def to_dict(self):
         result = {}

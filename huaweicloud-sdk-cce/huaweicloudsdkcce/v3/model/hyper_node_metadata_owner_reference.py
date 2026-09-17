@@ -29,9 +29,9 @@ class HyperNodeMetadataOwnerReference:
 
         The model defined in huaweicloud sdk
 
-        :param nodepool_name: **参数解释**： 节点池名称
+        :param nodepool_name: **参数解释**： 节点池名称 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type nodepool_name: str
-        :param nodepool_id: **参数解释**： 节点池UID
+        :param nodepool_id: **参数解释**： 节点池ID **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type nodepool_id: str
         """
         
@@ -50,7 +50,7 @@ class HyperNodeMetadataOwnerReference:
     def nodepool_name(self):
         r"""Gets the nodepool_name of this HyperNodeMetadataOwnerReference.
 
-        **参数解释**： 节点池名称
+        **参数解释**： 节点池名称 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The nodepool_name of this HyperNodeMetadataOwnerReference.
         :rtype: str
@@ -61,7 +61,7 @@ class HyperNodeMetadataOwnerReference:
     def nodepool_name(self, nodepool_name):
         r"""Sets the nodepool_name of this HyperNodeMetadataOwnerReference.
 
-        **参数解释**： 节点池名称
+        **参数解释**： 节点池名称 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param nodepool_name: The nodepool_name of this HyperNodeMetadataOwnerReference.
         :type nodepool_name: str
@@ -72,7 +72,7 @@ class HyperNodeMetadataOwnerReference:
     def nodepool_id(self):
         r"""Gets the nodepool_id of this HyperNodeMetadataOwnerReference.
 
-        **参数解释**： 节点池UID
+        **参数解释**： 节点池ID **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The nodepool_id of this HyperNodeMetadataOwnerReference.
         :rtype: str
@@ -83,7 +83,7 @@ class HyperNodeMetadataOwnerReference:
     def nodepool_id(self, nodepool_id):
         r"""Sets the nodepool_id of this HyperNodeMetadataOwnerReference.
 
-        **参数解释**： 节点池UID
+        **参数解释**： 节点池ID **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param nodepool_id: The nodepool_id of this HyperNodeMetadataOwnerReference.
         :type nodepool_id: str

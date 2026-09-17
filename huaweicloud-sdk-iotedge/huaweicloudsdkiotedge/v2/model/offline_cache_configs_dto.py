@@ -17,16 +17,18 @@ class OfflineCacheConfigsDTO:
     openapi_types = {
         'publish_order': 'str',
         'period': 'int',
-        'capacity': 'int'
+        'capacity': 'int',
+        'channel_cache_state': 'str'
     }
 
     attribute_map = {
         'publish_order': 'publish_order',
         'period': 'period',
-        'capacity': 'capacity'
+        'capacity': 'capacity',
+        'channel_cache_state': 'channel_cache_state'
     }
 
-    def __init__(self, publish_order=None, period=None, capacity=None):
+    def __init__(self, publish_order=None, period=None, capacity=None, channel_cache_state=None):
         r"""OfflineCacheConfigsDTO
 
         The model defined in huaweicloud sdk
@@ -35,8 +37,10 @@ class OfflineCacheConfigsDTO:
         :type publish_order: str
         :param period: 节点离线缓存数据的储存天数，默认7，取值范围-1~14，-1表示存储天数没有限制
         :type period: int
-        :param capacity: 节点离线缓存容量，单位MB，默认2048，取值范围500-8192
+        :param capacity: 节点离线缓存容量，单位MB，默认2048，取值范围500-1048576
         :type capacity: int
+        :param channel_cache_state: 路由转发开启离线缓存
+        :type channel_cache_state: str
         """
         
         
@@ -44,6 +48,7 @@ class OfflineCacheConfigsDTO:
         self._publish_order = None
         self._period = None
         self._capacity = None
+        self._channel_cache_state = None
         self.discriminator = None
 
         if publish_order is not None:
@@ -52,6 +57,8 @@ class OfflineCacheConfigsDTO:
             self.period = period
         if capacity is not None:
             self.capacity = capacity
+        if channel_cache_state is not None:
+            self.channel_cache_state = channel_cache_state
 
     @property
     def publish_order(self):
@@ -101,7 +108,7 @@ class OfflineCacheConfigsDTO:
     def capacity(self):
         r"""Gets the capacity of this OfflineCacheConfigsDTO.
 
-        节点离线缓存容量，单位MB，默认2048，取值范围500-8192
+        节点离线缓存容量，单位MB，默认2048，取值范围500-1048576
 
         :return: The capacity of this OfflineCacheConfigsDTO.
         :rtype: int
@@ -112,12 +119,34 @@ class OfflineCacheConfigsDTO:
     def capacity(self, capacity):
         r"""Sets the capacity of this OfflineCacheConfigsDTO.
 
-        节点离线缓存容量，单位MB，默认2048，取值范围500-8192
+        节点离线缓存容量，单位MB，默认2048，取值范围500-1048576
 
         :param capacity: The capacity of this OfflineCacheConfigsDTO.
         :type capacity: int
         """
         self._capacity = capacity
+
+    @property
+    def channel_cache_state(self):
+        r"""Gets the channel_cache_state of this OfflineCacheConfigsDTO.
+
+        路由转发开启离线缓存
+
+        :return: The channel_cache_state of this OfflineCacheConfigsDTO.
+        :rtype: str
+        """
+        return self._channel_cache_state
+
+    @channel_cache_state.setter
+    def channel_cache_state(self, channel_cache_state):
+        r"""Sets the channel_cache_state of this OfflineCacheConfigsDTO.
+
+        路由转发开启离线缓存
+
+        :param channel_cache_state: The channel_cache_state of this OfflineCacheConfigsDTO.
+        :type channel_cache_state: str
+        """
+        self._channel_cache_state = channel_cache_state
 
     def to_dict(self):
         result = {}

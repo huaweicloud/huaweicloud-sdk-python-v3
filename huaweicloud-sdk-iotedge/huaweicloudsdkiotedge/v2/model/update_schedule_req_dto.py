@@ -17,6 +17,7 @@ class UpdateScheduleReqDTO:
     openapi_types = {
         'name': 'str',
         'enabled': 'bool',
+        'reset_current_task': 'bool',
         'start_time': 'int',
         'end_time': 'int',
         'priority': 'int',
@@ -27,6 +28,7 @@ class UpdateScheduleReqDTO:
     attribute_map = {
         'name': 'name',
         'enabled': 'enabled',
+        'reset_current_task': 'reset_current_task',
         'start_time': 'start_time',
         'end_time': 'end_time',
         'priority': 'priority',
@@ -34,7 +36,7 @@ class UpdateScheduleReqDTO:
         'tasks': 'tasks'
     }
 
-    def __init__(self, name=None, enabled=None, start_time=None, end_time=None, priority=None, daily=None, tasks=None):
+    def __init__(self, name=None, enabled=None, reset_current_task=None, start_time=None, end_time=None, priority=None, daily=None, tasks=None):
         r"""UpdateScheduleReqDTO
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class UpdateScheduleReqDTO:
         :type name: str
         :param enabled: 调度计划是否生效
         :type enabled: bool
+        :param reset_current_task: 是否立即执行
+        :type reset_current_task: bool
         :param start_time: 调度计划起始时间，毫秒级别的时间戳
         :type start_time: int
         :param end_time: 调度计划结束时间，毫秒级别的时间戳
@@ -59,6 +63,7 @@ class UpdateScheduleReqDTO:
 
         self._name = None
         self._enabled = None
+        self._reset_current_task = None
         self._start_time = None
         self._end_time = None
         self._priority = None
@@ -68,6 +73,8 @@ class UpdateScheduleReqDTO:
 
         self.name = name
         self.enabled = enabled
+        if reset_current_task is not None:
+            self.reset_current_task = reset_current_task
         if start_time is not None:
             self.start_time = start_time
         self.end_time = end_time
@@ -119,6 +126,28 @@ class UpdateScheduleReqDTO:
         :type enabled: bool
         """
         self._enabled = enabled
+
+    @property
+    def reset_current_task(self):
+        r"""Gets the reset_current_task of this UpdateScheduleReqDTO.
+
+        是否立即执行
+
+        :return: The reset_current_task of this UpdateScheduleReqDTO.
+        :rtype: bool
+        """
+        return self._reset_current_task
+
+    @reset_current_task.setter
+    def reset_current_task(self, reset_current_task):
+        r"""Sets the reset_current_task of this UpdateScheduleReqDTO.
+
+        是否立即执行
+
+        :param reset_current_task: The reset_current_task of this UpdateScheduleReqDTO.
+        :type reset_current_task: bool
+        """
+        self._reset_current_task = reset_current_task
 
     @property
     def start_time(self):

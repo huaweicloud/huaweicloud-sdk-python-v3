@@ -25,7 +25,8 @@ class CreateEdgeAppResponse(SdkResponse):
         'function_type': 'str',
         'deploy_type': 'str',
         'protocol': 'str',
-        'edge_app_name': 'str'
+        'edge_app_name': 'str',
+        'delivered_app': 'bool'
     }
 
     attribute_map = {
@@ -38,10 +39,11 @@ class CreateEdgeAppResponse(SdkResponse):
         'function_type': 'function_type',
         'deploy_type': 'deploy_type',
         'protocol': 'protocol',
-        'edge_app_name': 'edge_app_name'
+        'edge_app_name': 'edge_app_name',
+        'delivered_app': 'delivered_app'
     }
 
-    def __init__(self, edge_app_id=None, description=None, create_time=None, update_time=None, last_published_version=None, app_type=None, function_type=None, deploy_type=None, protocol=None, edge_app_name=None):
+    def __init__(self, edge_app_id=None, description=None, create_time=None, update_time=None, last_published_version=None, app_type=None, function_type=None, deploy_type=None, protocol=None, edge_app_name=None, delivered_app=None):
         r"""CreateEdgeAppResponse
 
         The model defined in huaweicloud sdk
@@ -66,6 +68,8 @@ class CreateEdgeAppResponse(SdkResponse):
         :type protocol: str
         :param edge_app_name: 应用名称
         :type edge_app_name: str
+        :param delivered_app: 是否是下发到端侧网关上应用。
+        :type delivered_app: bool
         """
         
         super().__init__()
@@ -80,6 +84,7 @@ class CreateEdgeAppResponse(SdkResponse):
         self._deploy_type = None
         self._protocol = None
         self._edge_app_name = None
+        self._delivered_app = None
         self.discriminator = None
 
         if edge_app_id is not None:
@@ -102,6 +107,8 @@ class CreateEdgeAppResponse(SdkResponse):
             self.protocol = protocol
         if edge_app_name is not None:
             self.edge_app_name = edge_app_name
+        if delivered_app is not None:
+            self.delivered_app = delivered_app
 
     @property
     def edge_app_id(self):
@@ -322,6 +329,28 @@ class CreateEdgeAppResponse(SdkResponse):
         :type edge_app_name: str
         """
         self._edge_app_name = edge_app_name
+
+    @property
+    def delivered_app(self):
+        r"""Gets the delivered_app of this CreateEdgeAppResponse.
+
+        是否是下发到端侧网关上应用。
+
+        :return: The delivered_app of this CreateEdgeAppResponse.
+        :rtype: bool
+        """
+        return self._delivered_app
+
+    @delivered_app.setter
+    def delivered_app(self, delivered_app):
+        r"""Sets the delivered_app of this CreateEdgeAppResponse.
+
+        是否是下发到端侧网关上应用。
+
+        :param delivered_app: The delivered_app of this CreateEdgeAppResponse.
+        :type delivered_app: bool
+        """
+        self._delivered_app = delivered_app
 
     def to_dict(self):
         import warnings

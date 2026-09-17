@@ -22,7 +22,8 @@ class PipelineTemplateDTO:
         'definition': 'str',
         'is_system': 'bool',
         'domain_id': 'str',
-        'is_show_source': 'bool'
+        'is_show_source': 'bool',
+        'manifest_version': 'str'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class PipelineTemplateDTO:
         'definition': 'definition',
         'is_system': 'is_system',
         'domain_id': 'domain_id',
-        'is_show_source': 'is_show_source'
+        'is_show_source': 'is_show_source',
+        'manifest_version': 'manifest_version'
     }
 
-    def __init__(self, name=None, description=None, language=None, variables=None, definition=None, is_system=None, domain_id=None, is_show_source=None):
+    def __init__(self, name=None, description=None, language=None, variables=None, definition=None, is_system=None, domain_id=None, is_show_source=None, manifest_version=None):
         r"""PipelineTemplateDTO
 
         The model defined in huaweicloud sdk
@@ -57,6 +59,8 @@ class PipelineTemplateDTO:
         :type domain_id: str
         :param is_show_source: **参数解释**： 是否显示流水线源。 **约束限制**： 不涉及。 **取值范围**： - true：显示流水线源。 - false：不显示流水线源。 **默认取值**： 不涉及。 
         :type is_show_source: bool
+        :param manifest_version: **参数解释**： 模板manifest版本。 **约束限制**： 不涉及。 **取值范围**： - 3.0：CLASSIC版本。 - 2.0.0：YAML版本。 - 4.0：PAC版本。 - 5.0：DATAOPS版本。 - 6.0：GITCODE_ACTIONS_NEW版本。 **默认取值**： 3.0。 
+        :type manifest_version: str
         """
         
         
@@ -69,6 +73,7 @@ class PipelineTemplateDTO:
         self._is_system = None
         self._domain_id = None
         self._is_show_source = None
+        self._manifest_version = None
         self.discriminator = None
 
         self.name = name
@@ -81,6 +86,8 @@ class PipelineTemplateDTO:
         self.is_system = is_system
         self.domain_id = domain_id
         self.is_show_source = is_show_source
+        if manifest_version is not None:
+            self.manifest_version = manifest_version
 
     @property
     def name(self):
@@ -257,6 +264,28 @@ class PipelineTemplateDTO:
         :type is_show_source: bool
         """
         self._is_show_source = is_show_source
+
+    @property
+    def manifest_version(self):
+        r"""Gets the manifest_version of this PipelineTemplateDTO.
+
+        **参数解释**： 模板manifest版本。 **约束限制**： 不涉及。 **取值范围**： - 3.0：CLASSIC版本。 - 2.0.0：YAML版本。 - 4.0：PAC版本。 - 5.0：DATAOPS版本。 - 6.0：GITCODE_ACTIONS_NEW版本。 **默认取值**： 3.0。 
+
+        :return: The manifest_version of this PipelineTemplateDTO.
+        :rtype: str
+        """
+        return self._manifest_version
+
+    @manifest_version.setter
+    def manifest_version(self, manifest_version):
+        r"""Sets the manifest_version of this PipelineTemplateDTO.
+
+        **参数解释**： 模板manifest版本。 **约束限制**： 不涉及。 **取值范围**： - 3.0：CLASSIC版本。 - 2.0.0：YAML版本。 - 4.0：PAC版本。 - 5.0：DATAOPS版本。 - 6.0：GITCODE_ACTIONS_NEW版本。 **默认取值**： 3.0。 
+
+        :param manifest_version: The manifest_version of this PipelineTemplateDTO.
+        :type manifest_version: str
+        """
+        self._manifest_version = manifest_version
 
     def to_dict(self):
         result = {}

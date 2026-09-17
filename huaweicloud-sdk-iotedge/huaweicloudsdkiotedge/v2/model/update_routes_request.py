@@ -31,7 +31,7 @@ class UpdateRoutesRequest:
 
         :param edge_node_id: 边缘节点ID
         :type edge_node_id: str
-        :param body: Body of the UpdateRoutesRequest
+        :param body: 创建路由请求结构体
         :type body: list[:class:`huaweicloudsdkiotedge.v2.CreateRouterReqDTO`]
         """
         
@@ -71,6 +71,8 @@ class UpdateRoutesRequest:
     def body(self):
         r"""Gets the body of this UpdateRoutesRequest.
 
+        创建路由请求结构体
+
         :return: The body of this UpdateRoutesRequest.
         :rtype: list[:class:`huaweicloudsdkiotedge.v2.CreateRouterReqDTO`]
         """
@@ -79,6 +81,8 @@ class UpdateRoutesRequest:
     @body.setter
     def body(self, body):
         r"""Sets the body of this UpdateRoutesRequest.
+
+        创建路由请求结构体
 
         :param body: The body of this UpdateRoutesRequest.
         :type body: list[:class:`huaweicloudsdkiotedge.v2.CreateRouterReqDTO`]

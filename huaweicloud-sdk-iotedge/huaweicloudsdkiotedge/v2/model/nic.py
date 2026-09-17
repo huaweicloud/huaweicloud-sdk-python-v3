@@ -16,15 +16,17 @@ class Nic:
 
     openapi_types = {
         'eth': 'str',
-        'ip': 'str'
+        'ip': 'str',
+        'mask_len': 'int'
     }
 
     attribute_map = {
         'eth': 'eth',
-        'ip': 'ip'
+        'ip': 'ip',
+        'mask_len': 'mask_len'
     }
 
-    def __init__(self, eth=None, ip=None):
+    def __init__(self, eth=None, ip=None, mask_len=None):
         r"""Nic
 
         The model defined in huaweicloud sdk
@@ -33,18 +35,23 @@ class Nic:
         :type eth: str
         :param ip: 网卡ip
         :type ip: str
+        :param mask_len: 子网掩码的位数
+        :type mask_len: int
         """
         
         
 
         self._eth = None
         self._ip = None
+        self._mask_len = None
         self.discriminator = None
 
         if eth is not None:
             self.eth = eth
         if ip is not None:
             self.ip = ip
+        if mask_len is not None:
+            self.mask_len = mask_len
 
     @property
     def eth(self):
@@ -89,6 +96,28 @@ class Nic:
         :type ip: str
         """
         self._ip = ip
+
+    @property
+    def mask_len(self):
+        r"""Gets the mask_len of this Nic.
+
+        子网掩码的位数
+
+        :return: The mask_len of this Nic.
+        :rtype: int
+        """
+        return self._mask_len
+
+    @mask_len.setter
+    def mask_len(self, mask_len):
+        r"""Sets the mask_len of this Nic.
+
+        子网掩码的位数
+
+        :param mask_len: The mask_len of this Nic.
+        :type mask_len: int
+        """
+        self._mask_len = mask_len
 
     def to_dict(self):
         result = {}

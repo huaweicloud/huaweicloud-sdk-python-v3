@@ -19,7 +19,6 @@ class FirewallRuleDetail:
         'name': 'str',
         'description': 'str',
         'action': 'str',
-        'project_id': 'str',
         'protocol': 'str',
         'ip_version': 'int',
         'source_ip_address': 'str',
@@ -36,7 +35,6 @@ class FirewallRuleDetail:
         'name': 'name',
         'description': 'description',
         'action': 'action',
-        'project_id': 'project_id',
         'protocol': 'protocol',
         'ip_version': 'ip_version',
         'source_ip_address': 'source_ip_address',
@@ -48,7 +46,7 @@ class FirewallRuleDetail:
         'enabled': 'enabled'
     }
 
-    def __init__(self, id=None, name=None, description=None, action=None, project_id=None, protocol=None, ip_version=None, source_ip_address=None, destination_ip_address=None, source_port=None, destination_port=None, source_address_group_id=None, destination_address_group_id=None, enabled=None):
+    def __init__(self, id=None, name=None, description=None, action=None, protocol=None, ip_version=None, source_ip_address=None, destination_ip_address=None, source_port=None, destination_port=None, source_address_group_id=None, destination_address_group_id=None, enabled=None):
         r"""FirewallRuleDetail
 
         The model defined in huaweicloud sdk
@@ -61,8 +59,6 @@ class FirewallRuleDetail:
         :type description: str
         :param action: 功能说明：ACL规则对流量执行的操作放通或拒绝 取值范围：allow放通；deny拒绝
         :type action: str
-        :param project_id: 功能说明：资源所属项目ID
-        :type project_id: str
         :param protocol: 功能说明：ACL规则协议 取值范围：支持TCP,UDP,ICMP, ICMPV6或者IP协议号（0-255）
         :type protocol: str
         :param ip_version: 功能说明：ACL规则的ip版本 取值范围：4, 表示ipv4；6, 表示ipv6
@@ -89,7 +85,6 @@ class FirewallRuleDetail:
         self._name = None
         self._description = None
         self._action = None
-        self._project_id = None
         self._protocol = None
         self._ip_version = None
         self._source_ip_address = None
@@ -105,7 +100,6 @@ class FirewallRuleDetail:
         self.name = name
         self.description = description
         self.action = action
-        self.project_id = project_id
         self.protocol = protocol
         self.ip_version = ip_version
         self.source_ip_address = source_ip_address
@@ -203,28 +197,6 @@ class FirewallRuleDetail:
         :type action: str
         """
         self._action = action
-
-    @property
-    def project_id(self):
-        r"""Gets the project_id of this FirewallRuleDetail.
-
-        功能说明：资源所属项目ID
-
-        :return: The project_id of this FirewallRuleDetail.
-        :rtype: str
-        """
-        return self._project_id
-
-    @project_id.setter
-    def project_id(self, project_id):
-        r"""Sets the project_id of this FirewallRuleDetail.
-
-        功能说明：资源所属项目ID
-
-        :param project_id: The project_id of this FirewallRuleDetail.
-        :type project_id: str
-        """
-        self._project_id = project_id
 
     @property
     def protocol(self):

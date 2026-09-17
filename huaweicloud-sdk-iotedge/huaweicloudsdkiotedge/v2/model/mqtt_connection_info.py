@@ -47,7 +47,7 @@ class MqttConnectionInfo:
         :type client_id: str
         :param auth_type: 鉴权类型。支持密钥认证接入(SECRET)和证书认证接入(CERTIFICATES)两种方式。使用密钥认证接入方式(SECRET)填写user_name和user_name字段，使用证书认证接入方式(CERTIFICATES)填写privateKey和certificate字段
         :type auth_type: str
-        :param private_key: 证书秘钥
+        :param private_key: 证书密钥
         :type private_key: str
         :param certificate: 证书
         :type certificate: str
@@ -158,7 +158,7 @@ class MqttConnectionInfo:
     def private_key(self):
         r"""Gets the private_key of this MqttConnectionInfo.
 
-        证书秘钥
+        证书密钥
 
         :return: The private_key of this MqttConnectionInfo.
         :rtype: str
@@ -169,7 +169,7 @@ class MqttConnectionInfo:
     def private_key(self, private_key):
         r"""Sets the private_key of this MqttConnectionInfo.
 
-        证书秘钥
+        证书密钥
 
         :param private_key: The private_key of this MqttConnectionInfo.
         :type private_key: str

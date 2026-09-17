@@ -2299,6 +2299,8 @@ class LakeFormationAsyncClient(Client):
             query_params.append(('reverse_page', local_var_params['reverse_page']))
         if 'name_partern' in local_var_params:
             query_params.append(('name_partern', local_var_params['name_partern']))
+        if 'name_pattern' in local_var_params:
+            query_params.append(('name_pattern', local_var_params['name_pattern']))
         if 'format' in local_var_params:
             query_params.append(('format', local_var_params['format']))
 

@@ -29,9 +29,9 @@ class UpdateAutopilotChartRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param parameters: 上传模板的配置参数，示例如下：\&quot;{\\\&quot;override\\\&quot;:true,\\\&quot;skip_lint\\\&quot;:true,\\\&quot;source\\\&quot;:\\\&quot;package\\\&quot;}\&quot; - skip_lint: whether lint uploaded chart - override: whether override existed chart - visible: update chart visible
+        :param parameters: **参数解释：** 更新模板的配置参数，示例如下：\&quot;{\\\&quot;override\\\&quot;:true,\\\&quot;skip_lint\\\&quot;:true,\\\&quot;source\\\&quot;:\\\&quot;package\\\&quot;}\&quot;。 **约束限制：** 不涉及 **取值范围：** - skip_lint：是否验证上传的模板 - override：是否覆盖已存在的模板 - visible：模板是否可见  **默认取值：** 不涉及
         :type parameters: str
-        :param content: 模板包文件
+        :param content: **参数解释：** 模板包文件。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type content: :class:`huaweicloudsdkcore.http.formdata.FormFile`
         """
         
@@ -49,7 +49,7 @@ class UpdateAutopilotChartRequestBody:
     def parameters(self):
         r"""Gets the parameters of this UpdateAutopilotChartRequestBody.
 
-        上传模板的配置参数，示例如下：\"{\\\"override\\\":true,\\\"skip_lint\\\":true,\\\"source\\\":\\\"package\\\"}\" - skip_lint: whether lint uploaded chart - override: whether override existed chart - visible: update chart visible
+        **参数解释：** 更新模板的配置参数，示例如下：\"{\\\"override\\\":true,\\\"skip_lint\\\":true,\\\"source\\\":\\\"package\\\"}\"。 **约束限制：** 不涉及 **取值范围：** - skip_lint：是否验证上传的模板 - override：是否覆盖已存在的模板 - visible：模板是否可见  **默认取值：** 不涉及
 
         :return: The parameters of this UpdateAutopilotChartRequestBody.
         :rtype: str
@@ -60,7 +60,7 @@ class UpdateAutopilotChartRequestBody:
     def parameters(self, parameters):
         r"""Sets the parameters of this UpdateAutopilotChartRequestBody.
 
-        上传模板的配置参数，示例如下：\"{\\\"override\\\":true,\\\"skip_lint\\\":true,\\\"source\\\":\\\"package\\\"}\" - skip_lint: whether lint uploaded chart - override: whether override existed chart - visible: update chart visible
+        **参数解释：** 更新模板的配置参数，示例如下：\"{\\\"override\\\":true,\\\"skip_lint\\\":true,\\\"source\\\":\\\"package\\\"}\"。 **约束限制：** 不涉及 **取值范围：** - skip_lint：是否验证上传的模板 - override：是否覆盖已存在的模板 - visible：模板是否可见  **默认取值：** 不涉及
 
         :param parameters: The parameters of this UpdateAutopilotChartRequestBody.
         :type parameters: str
@@ -71,7 +71,7 @@ class UpdateAutopilotChartRequestBody:
     def content(self):
         r"""Gets the content of this UpdateAutopilotChartRequestBody.
 
-        模板包文件
+        **参数解释：** 模板包文件。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The content of this UpdateAutopilotChartRequestBody.
         :rtype: :class:`huaweicloudsdkcore.http.formdata.FormFile`
@@ -82,7 +82,7 @@ class UpdateAutopilotChartRequestBody:
     def content(self, content):
         r"""Sets the content of this UpdateAutopilotChartRequestBody.
 
-        模板包文件
+        **参数解释：** 模板包文件。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param content: The content of this UpdateAutopilotChartRequestBody.
         :type content: :class:`huaweicloudsdkcore.http.formdata.FormFile`

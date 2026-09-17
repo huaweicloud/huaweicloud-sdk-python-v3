@@ -29,9 +29,9 @@ class ResourceTag:
 
         The model defined in huaweicloud sdk
 
-        :param key: 键。  - 最大长度127个unicode字符。  - key不能为空。
+        :param key: 键。  - 最大长度128个unicode字符。  - key不能为空。
         :type key: str
-        :param value: 值。  - 每个值最大长度255个unicode字符。
+        :param value: 值。  - 每个值最大长度256个unicode字符。
         :type value: str
         """
         
@@ -48,7 +48,7 @@ class ResourceTag:
     def key(self):
         r"""Gets the key of this ResourceTag.
 
-        键。  - 最大长度127个unicode字符。  - key不能为空。
+        键。  - 最大长度128个unicode字符。  - key不能为空。
 
         :return: The key of this ResourceTag.
         :rtype: str
@@ -59,7 +59,7 @@ class ResourceTag:
     def key(self, key):
         r"""Sets the key of this ResourceTag.
 
-        键。  - 最大长度127个unicode字符。  - key不能为空。
+        键。  - 最大长度128个unicode字符。  - key不能为空。
 
         :param key: The key of this ResourceTag.
         :type key: str
@@ -70,7 +70,7 @@ class ResourceTag:
     def value(self):
         r"""Gets the value of this ResourceTag.
 
-        值。  - 每个值最大长度255个unicode字符。
+        值。  - 每个值最大长度256个unicode字符。
 
         :return: The value of this ResourceTag.
         :rtype: str
@@ -81,7 +81,7 @@ class ResourceTag:
     def value(self, value):
         r"""Sets the value of this ResourceTag.
 
-        值。  - 每个值最大长度255个unicode字符。
+        值。  - 每个值最大长度256个unicode字符。
 
         :param value: The value of this ResourceTag.
         :type value: str

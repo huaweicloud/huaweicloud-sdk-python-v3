@@ -41,21 +41,21 @@ class PreCheckItemStatus:
 
         The model defined in huaweicloud sdk
 
-        :param name: 检查项名称
+        :param name: **参数解释：** 检查项名称 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type name: str
-        :param kind: 检查项类型，取值如下 - Exception: 异常类，需要用户解决 - Risk：风险类，用户确认后可选择跳过
+        :param kind: **参数解释：** 检查项类型 **约束限制：** 不涉及 **取值范围：** - Exception：异常类，需要用户解决 - Risk：风险类，用户确认后可选择跳过  **默认取值：** 不涉及
         :type kind: str
-        :param group: 检查项分组，取值如下 - LimitCheck: 集群限制检查 - MasterCheck：控制节点检查 - NodeCheck：用户节点检查 - AddonCheck：插件检查 - ExecuteException：检查流程错误
+        :param group: **参数解释：** 检查项分组 **约束限制：** 不涉及 **取值范围：** - LimitCheck：集群限制检查 - MasterCheck：控制节点检查 - NodeCheck：用户节点检查 - AddonCheck：插件检查 - ExecuteException：检查流程错误  **默认取值：** 不涉及
         :type group: str
-        :param level: 检查项风险级别，取值如下 - Info: 提示级别 - Warning：风险级别 - Fatal：严重级别
+        :param level: **参数解释：** 检查项风险级别 **约束限制：** 不涉及 **取值范围：** - Info：提示级别 - Warning：风险级别 - Fatal：严重级别  **默认取值：** 不涉及
         :type level: str
-        :param phase: 状态，取值如下 - Init: 初始化 - Running 运行中 - Success 成功 - Failed 失败
+        :param phase: **参数解释：** 状态 **约束限制：** 不涉及 **取值范围：** - Init：初始化 - Running：运行中 - Success：成功 - Failed：失败  **默认取值：** 不涉及
         :type phase: str
-        :param message: 提示信息
+        :param message: **参数解释：** 提示信息 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type message: str
         :param risk_source: 
         :type risk_source: :class:`huaweicloudsdkcce.v3.RiskSource`
-        :param error_codes: 错误码集合
+        :param error_codes: **参数解释：** 错误码集合 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type error_codes: list[str]
         """
         
@@ -92,7 +92,7 @@ class PreCheckItemStatus:
     def name(self):
         r"""Gets the name of this PreCheckItemStatus.
 
-        检查项名称
+        **参数解释：** 检查项名称 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The name of this PreCheckItemStatus.
         :rtype: str
@@ -103,7 +103,7 @@ class PreCheckItemStatus:
     def name(self, name):
         r"""Sets the name of this PreCheckItemStatus.
 
-        检查项名称
+        **参数解释：** 检查项名称 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param name: The name of this PreCheckItemStatus.
         :type name: str
@@ -114,7 +114,7 @@ class PreCheckItemStatus:
     def kind(self):
         r"""Gets the kind of this PreCheckItemStatus.
 
-        检查项类型，取值如下 - Exception: 异常类，需要用户解决 - Risk：风险类，用户确认后可选择跳过
+        **参数解释：** 检查项类型 **约束限制：** 不涉及 **取值范围：** - Exception：异常类，需要用户解决 - Risk：风险类，用户确认后可选择跳过  **默认取值：** 不涉及
 
         :return: The kind of this PreCheckItemStatus.
         :rtype: str
@@ -125,7 +125,7 @@ class PreCheckItemStatus:
     def kind(self, kind):
         r"""Sets the kind of this PreCheckItemStatus.
 
-        检查项类型，取值如下 - Exception: 异常类，需要用户解决 - Risk：风险类，用户确认后可选择跳过
+        **参数解释：** 检查项类型 **约束限制：** 不涉及 **取值范围：** - Exception：异常类，需要用户解决 - Risk：风险类，用户确认后可选择跳过  **默认取值：** 不涉及
 
         :param kind: The kind of this PreCheckItemStatus.
         :type kind: str
@@ -136,7 +136,7 @@ class PreCheckItemStatus:
     def group(self):
         r"""Gets the group of this PreCheckItemStatus.
 
-        检查项分组，取值如下 - LimitCheck: 集群限制检查 - MasterCheck：控制节点检查 - NodeCheck：用户节点检查 - AddonCheck：插件检查 - ExecuteException：检查流程错误
+        **参数解释：** 检查项分组 **约束限制：** 不涉及 **取值范围：** - LimitCheck：集群限制检查 - MasterCheck：控制节点检查 - NodeCheck：用户节点检查 - AddonCheck：插件检查 - ExecuteException：检查流程错误  **默认取值：** 不涉及
 
         :return: The group of this PreCheckItemStatus.
         :rtype: str
@@ -147,7 +147,7 @@ class PreCheckItemStatus:
     def group(self, group):
         r"""Sets the group of this PreCheckItemStatus.
 
-        检查项分组，取值如下 - LimitCheck: 集群限制检查 - MasterCheck：控制节点检查 - NodeCheck：用户节点检查 - AddonCheck：插件检查 - ExecuteException：检查流程错误
+        **参数解释：** 检查项分组 **约束限制：** 不涉及 **取值范围：** - LimitCheck：集群限制检查 - MasterCheck：控制节点检查 - NodeCheck：用户节点检查 - AddonCheck：插件检查 - ExecuteException：检查流程错误  **默认取值：** 不涉及
 
         :param group: The group of this PreCheckItemStatus.
         :type group: str
@@ -158,7 +158,7 @@ class PreCheckItemStatus:
     def level(self):
         r"""Gets the level of this PreCheckItemStatus.
 
-        检查项风险级别，取值如下 - Info: 提示级别 - Warning：风险级别 - Fatal：严重级别
+        **参数解释：** 检查项风险级别 **约束限制：** 不涉及 **取值范围：** - Info：提示级别 - Warning：风险级别 - Fatal：严重级别  **默认取值：** 不涉及
 
         :return: The level of this PreCheckItemStatus.
         :rtype: str
@@ -169,7 +169,7 @@ class PreCheckItemStatus:
     def level(self, level):
         r"""Sets the level of this PreCheckItemStatus.
 
-        检查项风险级别，取值如下 - Info: 提示级别 - Warning：风险级别 - Fatal：严重级别
+        **参数解释：** 检查项风险级别 **约束限制：** 不涉及 **取值范围：** - Info：提示级别 - Warning：风险级别 - Fatal：严重级别  **默认取值：** 不涉及
 
         :param level: The level of this PreCheckItemStatus.
         :type level: str
@@ -180,7 +180,7 @@ class PreCheckItemStatus:
     def phase(self):
         r"""Gets the phase of this PreCheckItemStatus.
 
-        状态，取值如下 - Init: 初始化 - Running 运行中 - Success 成功 - Failed 失败
+        **参数解释：** 状态 **约束限制：** 不涉及 **取值范围：** - Init：初始化 - Running：运行中 - Success：成功 - Failed：失败  **默认取值：** 不涉及
 
         :return: The phase of this PreCheckItemStatus.
         :rtype: str
@@ -191,7 +191,7 @@ class PreCheckItemStatus:
     def phase(self, phase):
         r"""Sets the phase of this PreCheckItemStatus.
 
-        状态，取值如下 - Init: 初始化 - Running 运行中 - Success 成功 - Failed 失败
+        **参数解释：** 状态 **约束限制：** 不涉及 **取值范围：** - Init：初始化 - Running：运行中 - Success：成功 - Failed：失败  **默认取值：** 不涉及
 
         :param phase: The phase of this PreCheckItemStatus.
         :type phase: str
@@ -202,7 +202,7 @@ class PreCheckItemStatus:
     def message(self):
         r"""Gets the message of this PreCheckItemStatus.
 
-        提示信息
+        **参数解释：** 提示信息 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The message of this PreCheckItemStatus.
         :rtype: str
@@ -213,7 +213,7 @@ class PreCheckItemStatus:
     def message(self, message):
         r"""Sets the message of this PreCheckItemStatus.
 
-        提示信息
+        **参数解释：** 提示信息 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param message: The message of this PreCheckItemStatus.
         :type message: str
@@ -242,7 +242,7 @@ class PreCheckItemStatus:
     def error_codes(self):
         r"""Gets the error_codes of this PreCheckItemStatus.
 
-        错误码集合
+        **参数解释：** 错误码集合 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The error_codes of this PreCheckItemStatus.
         :rtype: list[str]
@@ -253,7 +253,7 @@ class PreCheckItemStatus:
     def error_codes(self, error_codes):
         r"""Sets the error_codes of this PreCheckItemStatus.
 
-        错误码集合
+        **参数解释：** 错误码集合 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param error_codes: The error_codes of this PreCheckItemStatus.
         :type error_codes: list[str]

@@ -25,7 +25,7 @@ class CreateSecurityGroupRuleOption:
         'remote_group_id': 'str',
         'remote_address_group_id': 'str',
         'action': 'str',
-        'priority': 'str',
+        'priority': 'int',
         'enabled': 'bool'
     }
 
@@ -70,7 +70,7 @@ class CreateSecurityGroupRuleOption:
         :param action: 功能说明：安全组规则生效策略 取值范围：allow 允许，deny 拒绝 约束：默认值为allow 
         :type action: str
         :param priority: 功能说明：规则在安全组中的优先级 取值范围：1~100，1代表最高优先级 约束：默认值为100
-        :type priority: str
+        :type priority: int
         :param enabled: 功能说明：是否启用安全组规则。 取值范围：true, false。 约束：默认值为true。
         :type enabled: bool
         """
@@ -341,7 +341,7 @@ class CreateSecurityGroupRuleOption:
         功能说明：规则在安全组中的优先级 取值范围：1~100，1代表最高优先级 约束：默认值为100
 
         :return: The priority of this CreateSecurityGroupRuleOption.
-        :rtype: str
+        :rtype: int
         """
         return self._priority
 
@@ -352,7 +352,7 @@ class CreateSecurityGroupRuleOption:
         功能说明：规则在安全组中的优先级 取值范围：1~100，1代表最高优先级 约束：默认值为100
 
         :param priority: The priority of this CreateSecurityGroupRuleOption.
-        :type priority: str
+        :type priority: int
         """
         self._priority = priority
 

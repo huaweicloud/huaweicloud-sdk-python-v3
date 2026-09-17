@@ -31,11 +31,11 @@ class UpgradeTaskMetadata:
 
         The model defined in huaweicloud sdk
 
-        :param uid: 升级任务ID
+        :param uid: **参数解释：** 升级任务ID **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type uid: str
-        :param creation_timestamp: 任务创建时间
+        :param creation_timestamp: **参数解释：** 任务创建时间 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type creation_timestamp: str
-        :param update_timestamp: 任务更新时间
+        :param update_timestamp: **参数解释：** 任务更新时间 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type update_timestamp: str
         """
         
@@ -57,7 +57,7 @@ class UpgradeTaskMetadata:
     def uid(self):
         r"""Gets the uid of this UpgradeTaskMetadata.
 
-        升级任务ID
+        **参数解释：** 升级任务ID **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The uid of this UpgradeTaskMetadata.
         :rtype: str
@@ -68,7 +68,7 @@ class UpgradeTaskMetadata:
     def uid(self, uid):
         r"""Sets the uid of this UpgradeTaskMetadata.
 
-        升级任务ID
+        **参数解释：** 升级任务ID **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param uid: The uid of this UpgradeTaskMetadata.
         :type uid: str
@@ -79,7 +79,7 @@ class UpgradeTaskMetadata:
     def creation_timestamp(self):
         r"""Gets the creation_timestamp of this UpgradeTaskMetadata.
 
-        任务创建时间
+        **参数解释：** 任务创建时间 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The creation_timestamp of this UpgradeTaskMetadata.
         :rtype: str
@@ -90,7 +90,7 @@ class UpgradeTaskMetadata:
     def creation_timestamp(self, creation_timestamp):
         r"""Sets the creation_timestamp of this UpgradeTaskMetadata.
 
-        任务创建时间
+        **参数解释：** 任务创建时间 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param creation_timestamp: The creation_timestamp of this UpgradeTaskMetadata.
         :type creation_timestamp: str
@@ -101,7 +101,7 @@ class UpgradeTaskMetadata:
     def update_timestamp(self):
         r"""Gets the update_timestamp of this UpgradeTaskMetadata.
 
-        任务更新时间
+        **参数解释：** 任务更新时间 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The update_timestamp of this UpgradeTaskMetadata.
         :rtype: str
@@ -112,7 +112,7 @@ class UpgradeTaskMetadata:
     def update_timestamp(self, update_timestamp):
         r"""Sets the update_timestamp of this UpgradeTaskMetadata.
 
-        任务更新时间
+        **参数解释：** 任务更新时间 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param update_timestamp: The update_timestamp of this UpgradeTaskMetadata.
         :type update_timestamp: str

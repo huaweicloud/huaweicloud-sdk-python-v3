@@ -1877,7 +1877,7 @@ class VpcClient(Client):
     def list_route_tables(self, request):
         r"""查询路由表列表
 
-        查询提交请求的帐户的所有路由表列表，并根据过滤条件进行过滤
+        查询提交请求的账户的所有路由表列表，并根据过滤条件进行过滤
         
         Please refer to HUAWEI cloud API Explorer for details.
 

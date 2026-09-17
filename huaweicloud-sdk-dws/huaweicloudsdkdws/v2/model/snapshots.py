@@ -139,7 +139,7 @@ class Snapshots:
         :type support_inplace_restore: bool
         :param fine_grained_backup: **参数解释**： 是否支持细粒度备份。 **取值范围**： 不涉及。
         :type fine_grained_backup: bool
-        :param backup_level: **参数解释**： 备份等级。 **取值范围**： 不涉及。
+        :param backup_level: **参数解释**： 备份等级。 **取值范围**： - cluster：集群级 - schema：schema级 - table：表级
         :type backup_level: str
         :param fine_grained_backup_detail: 
         :type fine_grained_backup_detail: :class:`huaweicloudsdkdws.v2.ExtFineGrainedSnapshotDetail`
@@ -797,7 +797,7 @@ class Snapshots:
     def backup_level(self):
         r"""Gets the backup_level of this Snapshots.
 
-        **参数解释**： 备份等级。 **取值范围**： 不涉及。
+        **参数解释**： 备份等级。 **取值范围**： - cluster：集群级 - schema：schema级 - table：表级
 
         :return: The backup_level of this Snapshots.
         :rtype: str
@@ -808,7 +808,7 @@ class Snapshots:
     def backup_level(self, backup_level):
         r"""Sets the backup_level of this Snapshots.
 
-        **参数解释**： 备份等级。 **取值范围**： 不涉及。
+        **参数解释**： 备份等级。 **取值范围**： - cluster：集群级 - schema：schema级 - table：表级
 
         :param backup_level: The backup_level of this Snapshots.
         :type backup_level: str

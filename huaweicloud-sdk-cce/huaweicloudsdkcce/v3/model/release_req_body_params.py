@@ -41,21 +41,21 @@ class ReleaseReqBodyParams:
 
         The model defined in huaweicloud sdk
 
-        :param dry_run: 开启后，仅验证模板参数，不进行安装
+        :param dry_run: **参数解释：** 开启后，仅验证模板参数，不进行安装 **约束限制：** 不涉及 **取值范围：** - true：仅验证 - false：正常安装  **默认取值：** false
         :type dry_run: bool
-        :param name_template: 实例名称模板
+        :param name_template: **参数解释：** 实例名称模板 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type name_template: str
-        :param no_hooks: 安装时是否禁用hooks
+        :param no_hooks: **参数解释：** 安装时是否禁用hooks **约束限制：** 不涉及 **取值范围：** - true：禁用hooks - false：不禁用hooks  **默认取值：** false
         :type no_hooks: bool
-        :param replace: 模板实例更新时是否保留values，该字段仅在更新指定模板实例时生效
+        :param replace: **参数解释：** 模板实例更新时是否保留values，该字段仅在更新指定模板实例时生效 **约束限制：** 不涉及 **取值范围：** - true：保留values - false：不保留values  **默认取值：** false
         :type replace: bool
-        :param recreate: 模板实例更新时是否重建实例，该字段仅在更新指定模板实例时生效
+        :param recreate: **参数解释：** 模板实例更新时是否重建实例，该字段仅在更新指定模板实例时生效 **约束限制：** 不涉及 **取值范围：** - true：重建实例 - false：不重建实例  **默认取值：** false
         :type recreate: bool
-        :param reset_values: 模板实例更新时是否重置values，该字段仅在更新指定模板实例时生效
+        :param reset_values: **参数解释：** 模板实例更新时是否重置values，该字段仅在更新指定模板实例时生效 **约束限制：** 不涉及 **取值范围：** - true：重置values - false：不重置values  **默认取值：** false
         :type reset_values: bool
-        :param release_version: 回滚实例的版本
+        :param release_version: **参数解释：** 回滚实例的版本 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type release_version: int
-        :param include_hooks: 更新或者删除时启用hooks
+        :param include_hooks: **参数解释：** 更新或者删除时启用hooks **约束限制：** 不涉及 **取值范围：** - true：启用hooks - false：不启用hooks  **默认取值：** false
         :type include_hooks: bool
         """
         
@@ -92,7 +92,7 @@ class ReleaseReqBodyParams:
     def dry_run(self):
         r"""Gets the dry_run of this ReleaseReqBodyParams.
 
-        开启后，仅验证模板参数，不进行安装
+        **参数解释：** 开启后，仅验证模板参数，不进行安装 **约束限制：** 不涉及 **取值范围：** - true：仅验证 - false：正常安装  **默认取值：** false
 
         :return: The dry_run of this ReleaseReqBodyParams.
         :rtype: bool
@@ -103,7 +103,7 @@ class ReleaseReqBodyParams:
     def dry_run(self, dry_run):
         r"""Sets the dry_run of this ReleaseReqBodyParams.
 
-        开启后，仅验证模板参数，不进行安装
+        **参数解释：** 开启后，仅验证模板参数，不进行安装 **约束限制：** 不涉及 **取值范围：** - true：仅验证 - false：正常安装  **默认取值：** false
 
         :param dry_run: The dry_run of this ReleaseReqBodyParams.
         :type dry_run: bool
@@ -114,7 +114,7 @@ class ReleaseReqBodyParams:
     def name_template(self):
         r"""Gets the name_template of this ReleaseReqBodyParams.
 
-        实例名称模板
+        **参数解释：** 实例名称模板 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The name_template of this ReleaseReqBodyParams.
         :rtype: str
@@ -125,7 +125,7 @@ class ReleaseReqBodyParams:
     def name_template(self, name_template):
         r"""Sets the name_template of this ReleaseReqBodyParams.
 
-        实例名称模板
+        **参数解释：** 实例名称模板 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param name_template: The name_template of this ReleaseReqBodyParams.
         :type name_template: str
@@ -136,7 +136,7 @@ class ReleaseReqBodyParams:
     def no_hooks(self):
         r"""Gets the no_hooks of this ReleaseReqBodyParams.
 
-        安装时是否禁用hooks
+        **参数解释：** 安装时是否禁用hooks **约束限制：** 不涉及 **取值范围：** - true：禁用hooks - false：不禁用hooks  **默认取值：** false
 
         :return: The no_hooks of this ReleaseReqBodyParams.
         :rtype: bool
@@ -147,7 +147,7 @@ class ReleaseReqBodyParams:
     def no_hooks(self, no_hooks):
         r"""Sets the no_hooks of this ReleaseReqBodyParams.
 
-        安装时是否禁用hooks
+        **参数解释：** 安装时是否禁用hooks **约束限制：** 不涉及 **取值范围：** - true：禁用hooks - false：不禁用hooks  **默认取值：** false
 
         :param no_hooks: The no_hooks of this ReleaseReqBodyParams.
         :type no_hooks: bool
@@ -158,7 +158,7 @@ class ReleaseReqBodyParams:
     def replace(self):
         r"""Gets the replace of this ReleaseReqBodyParams.
 
-        模板实例更新时是否保留values，该字段仅在更新指定模板实例时生效
+        **参数解释：** 模板实例更新时是否保留values，该字段仅在更新指定模板实例时生效 **约束限制：** 不涉及 **取值范围：** - true：保留values - false：不保留values  **默认取值：** false
 
         :return: The replace of this ReleaseReqBodyParams.
         :rtype: bool
@@ -169,7 +169,7 @@ class ReleaseReqBodyParams:
     def replace(self, replace):
         r"""Sets the replace of this ReleaseReqBodyParams.
 
-        模板实例更新时是否保留values，该字段仅在更新指定模板实例时生效
+        **参数解释：** 模板实例更新时是否保留values，该字段仅在更新指定模板实例时生效 **约束限制：** 不涉及 **取值范围：** - true：保留values - false：不保留values  **默认取值：** false
 
         :param replace: The replace of this ReleaseReqBodyParams.
         :type replace: bool
@@ -180,7 +180,7 @@ class ReleaseReqBodyParams:
     def recreate(self):
         r"""Gets the recreate of this ReleaseReqBodyParams.
 
-        模板实例更新时是否重建实例，该字段仅在更新指定模板实例时生效
+        **参数解释：** 模板实例更新时是否重建实例，该字段仅在更新指定模板实例时生效 **约束限制：** 不涉及 **取值范围：** - true：重建实例 - false：不重建实例  **默认取值：** false
 
         :return: The recreate of this ReleaseReqBodyParams.
         :rtype: bool
@@ -191,7 +191,7 @@ class ReleaseReqBodyParams:
     def recreate(self, recreate):
         r"""Sets the recreate of this ReleaseReqBodyParams.
 
-        模板实例更新时是否重建实例，该字段仅在更新指定模板实例时生效
+        **参数解释：** 模板实例更新时是否重建实例，该字段仅在更新指定模板实例时生效 **约束限制：** 不涉及 **取值范围：** - true：重建实例 - false：不重建实例  **默认取值：** false
 
         :param recreate: The recreate of this ReleaseReqBodyParams.
         :type recreate: bool
@@ -202,7 +202,7 @@ class ReleaseReqBodyParams:
     def reset_values(self):
         r"""Gets the reset_values of this ReleaseReqBodyParams.
 
-        模板实例更新时是否重置values，该字段仅在更新指定模板实例时生效
+        **参数解释：** 模板实例更新时是否重置values，该字段仅在更新指定模板实例时生效 **约束限制：** 不涉及 **取值范围：** - true：重置values - false：不重置values  **默认取值：** false
 
         :return: The reset_values of this ReleaseReqBodyParams.
         :rtype: bool
@@ -213,7 +213,7 @@ class ReleaseReqBodyParams:
     def reset_values(self, reset_values):
         r"""Sets the reset_values of this ReleaseReqBodyParams.
 
-        模板实例更新时是否重置values，该字段仅在更新指定模板实例时生效
+        **参数解释：** 模板实例更新时是否重置values，该字段仅在更新指定模板实例时生效 **约束限制：** 不涉及 **取值范围：** - true：重置values - false：不重置values  **默认取值：** false
 
         :param reset_values: The reset_values of this ReleaseReqBodyParams.
         :type reset_values: bool
@@ -224,7 +224,7 @@ class ReleaseReqBodyParams:
     def release_version(self):
         r"""Gets the release_version of this ReleaseReqBodyParams.
 
-        回滚实例的版本
+        **参数解释：** 回滚实例的版本 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The release_version of this ReleaseReqBodyParams.
         :rtype: int
@@ -235,7 +235,7 @@ class ReleaseReqBodyParams:
     def release_version(self, release_version):
         r"""Sets the release_version of this ReleaseReqBodyParams.
 
-        回滚实例的版本
+        **参数解释：** 回滚实例的版本 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param release_version: The release_version of this ReleaseReqBodyParams.
         :type release_version: int
@@ -246,7 +246,7 @@ class ReleaseReqBodyParams:
     def include_hooks(self):
         r"""Gets the include_hooks of this ReleaseReqBodyParams.
 
-        更新或者删除时启用hooks
+        **参数解释：** 更新或者删除时启用hooks **约束限制：** 不涉及 **取值范围：** - true：启用hooks - false：不启用hooks  **默认取值：** false
 
         :return: The include_hooks of this ReleaseReqBodyParams.
         :rtype: bool
@@ -257,7 +257,7 @@ class ReleaseReqBodyParams:
     def include_hooks(self, include_hooks):
         r"""Sets the include_hooks of this ReleaseReqBodyParams.
 
-        更新或者删除时启用hooks
+        **参数解释：** 更新或者删除时启用hooks **约束限制：** 不涉及 **取值范围：** - true：启用hooks - false：不启用hooks  **默认取值：** false
 
         :param include_hooks: The include_hooks of this ReleaseReqBodyParams.
         :type include_hooks: bool

@@ -31,7 +31,7 @@ class DeleteEdgeNodeRequest:
 
         :param edge_node_id: 边缘节点ID
         :type edge_node_id: str
-        :param delete_external_node: 是否同时删除外部节点（仅对高级版有效），默认为false不删除IEF侧的边缘节点
+        :param delete_external_node: 是否同时删除外部节点（仅对专业版有效），默认为false不删除IEF侧的边缘节点
         :type delete_external_node: bool
         """
         
@@ -71,7 +71,7 @@ class DeleteEdgeNodeRequest:
     def delete_external_node(self):
         r"""Gets the delete_external_node of this DeleteEdgeNodeRequest.
 
-        是否同时删除外部节点（仅对高级版有效），默认为false不删除IEF侧的边缘节点
+        是否同时删除外部节点（仅对专业版有效），默认为false不删除IEF侧的边缘节点
 
         :return: The delete_external_node of this DeleteEdgeNodeRequest.
         :rtype: bool
@@ -82,7 +82,7 @@ class DeleteEdgeNodeRequest:
     def delete_external_node(self, delete_external_node):
         r"""Sets the delete_external_node of this DeleteEdgeNodeRequest.
 
-        是否同时删除外部节点（仅对高级版有效），默认为false不删除IEF侧的边缘节点
+        是否同时删除外部节点（仅对专业版有效），默认为false不删除IEF侧的边缘节点
 
         :param delete_external_node: The delete_external_node of this DeleteEdgeNodeRequest.
         :type delete_external_node: bool

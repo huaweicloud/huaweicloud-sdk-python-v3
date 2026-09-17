@@ -29,9 +29,9 @@ class AddonCheckStatus:
 
         The model defined in huaweicloud sdk
 
-        :param phase: 状态，取值如下 - Init: 初始化 - Running 运行中 - Success 成功 - Failed 失败
+        :param phase: **参数解释：** 状态 **约束限制：** 不涉及 **取值范围：** - Init：初始化 - Running：运行中 - Success：成功 - Failed：失败  **默认取值：** 不涉及
         :type phase: str
-        :param items_status: 检查项状态集合
+        :param items_status: **参数解释：** 检查项状态集合 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type items_status: list[:class:`huaweicloudsdkcce.v3.PreCheckItemStatus`]
         """
         
@@ -50,7 +50,7 @@ class AddonCheckStatus:
     def phase(self):
         r"""Gets the phase of this AddonCheckStatus.
 
-        状态，取值如下 - Init: 初始化 - Running 运行中 - Success 成功 - Failed 失败
+        **参数解释：** 状态 **约束限制：** 不涉及 **取值范围：** - Init：初始化 - Running：运行中 - Success：成功 - Failed：失败  **默认取值：** 不涉及
 
         :return: The phase of this AddonCheckStatus.
         :rtype: str
@@ -61,7 +61,7 @@ class AddonCheckStatus:
     def phase(self, phase):
         r"""Sets the phase of this AddonCheckStatus.
 
-        状态，取值如下 - Init: 初始化 - Running 运行中 - Success 成功 - Failed 失败
+        **参数解释：** 状态 **约束限制：** 不涉及 **取值范围：** - Init：初始化 - Running：运行中 - Success：成功 - Failed：失败  **默认取值：** 不涉及
 
         :param phase: The phase of this AddonCheckStatus.
         :type phase: str
@@ -72,7 +72,7 @@ class AddonCheckStatus:
     def items_status(self):
         r"""Gets the items_status of this AddonCheckStatus.
 
-        检查项状态集合
+        **参数解释：** 检查项状态集合 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The items_status of this AddonCheckStatus.
         :rtype: list[:class:`huaweicloudsdkcce.v3.PreCheckItemStatus`]
@@ -83,7 +83,7 @@ class AddonCheckStatus:
     def items_status(self, items_status):
         r"""Sets the items_status of this AddonCheckStatus.
 
-        检查项状态集合
+        **参数解释：** 检查项状态集合 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param items_status: The items_status of this AddonCheckStatus.
         :type items_status: list[:class:`huaweicloudsdkcce.v3.PreCheckItemStatus`]

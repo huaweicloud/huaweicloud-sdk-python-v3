@@ -29,7 +29,7 @@ class UpgradeStrategy:
 
         The model defined in huaweicloud sdk
 
-        :param type: 升级策略类型，当前仅支持原地升级类型\&quot;inPlaceRollingUpdate\&quot;
+        :param type: **参数解释：** 升级策略类型 **约束限制：** 当前仅支持inPlaceRollingUpdate类型 **取值范围：** - \&quot;inPlaceRollingUpdate\&quot;：原地升级类型  **默认取值：** 不涉及
         :type type: str
         :param in_place_rolling_update: 
         :type in_place_rolling_update: :class:`huaweicloudsdkcce.v3.InPlaceRollingUpdate`
@@ -49,7 +49,7 @@ class UpgradeStrategy:
     def type(self):
         r"""Gets the type of this UpgradeStrategy.
 
-        升级策略类型，当前仅支持原地升级类型\"inPlaceRollingUpdate\"
+        **参数解释：** 升级策略类型 **约束限制：** 当前仅支持inPlaceRollingUpdate类型 **取值范围：** - \"inPlaceRollingUpdate\"：原地升级类型  **默认取值：** 不涉及
 
         :return: The type of this UpgradeStrategy.
         :rtype: str
@@ -60,7 +60,7 @@ class UpgradeStrategy:
     def type(self, type):
         r"""Sets the type of this UpgradeStrategy.
 
-        升级策略类型，当前仅支持原地升级类型\"inPlaceRollingUpdate\"
+        **参数解释：** 升级策略类型 **约束限制：** 当前仅支持inPlaceRollingUpdate类型 **取值范围：** - \"inPlaceRollingUpdate\"：原地升级类型  **默认取值：** 不涉及
 
         :param type: The type of this UpgradeStrategy.
         :type type: str

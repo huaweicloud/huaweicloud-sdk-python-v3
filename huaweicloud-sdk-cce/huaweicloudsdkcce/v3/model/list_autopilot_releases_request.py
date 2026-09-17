@@ -33,9 +33,9 @@ class ListAutopilotReleasesRequest:
 
         :param cluster_id: 集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
         :type cluster_id: str
-        :param chart_id: 模板ID
+        :param chart_id: **参数解释：** 模板ID。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type chart_id: str
-        :param namespace: 模板对应的命名空间
+        :param namespace: **参数解释：** 模板对应的命名空间。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type namespace: str
         """
         
@@ -78,7 +78,7 @@ class ListAutopilotReleasesRequest:
     def chart_id(self):
         r"""Gets the chart_id of this ListAutopilotReleasesRequest.
 
-        模板ID
+        **参数解释：** 模板ID。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The chart_id of this ListAutopilotReleasesRequest.
         :rtype: str
@@ -89,7 +89,7 @@ class ListAutopilotReleasesRequest:
     def chart_id(self, chart_id):
         r"""Sets the chart_id of this ListAutopilotReleasesRequest.
 
-        模板ID
+        **参数解释：** 模板ID。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param chart_id: The chart_id of this ListAutopilotReleasesRequest.
         :type chart_id: str
@@ -100,7 +100,7 @@ class ListAutopilotReleasesRequest:
     def namespace(self):
         r"""Gets the namespace of this ListAutopilotReleasesRequest.
 
-        模板对应的命名空间
+        **参数解释：** 模板对应的命名空间。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The namespace of this ListAutopilotReleasesRequest.
         :rtype: str
@@ -111,7 +111,7 @@ class ListAutopilotReleasesRequest:
     def namespace(self, namespace):
         r"""Sets the namespace of this ListAutopilotReleasesRequest.
 
-        模板对应的命名空间
+        **参数解释：** 模板对应的命名空间。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param namespace: The namespace of this ListAutopilotReleasesRequest.
         :type namespace: str

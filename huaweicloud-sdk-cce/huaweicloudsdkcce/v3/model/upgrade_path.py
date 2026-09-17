@@ -31,11 +31,11 @@ class UpgradePath:
 
         The model defined in huaweicloud sdk
 
-        :param version: 集群版本，v1.19及以下集群形如v1.19.16-r20，v1.21及以上形如v1.21,v1.23，详细请参考CCE集群版本号说明。
+        :param version: **参数解释：** 集群版本，v1.19及以下集群形如v1.19.16-r20，v1.21及以上形如v1.21,v1.23，详细请参考CCE集群版本号说明。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type version: str
-        :param platform_version: CCE集群平台版本号，表示集群版本(version)下的内部版本。用于跟踪某一集群版本内的迭代，集群版本内唯一，跨集群版本重新计数。   platformVersion格式为：cce.X.Y   - X: 表示内部特性版本。集群版本中特性或者补丁修复，或者OS支持等变更场景。其值从1开始单调递增。  - Y: 表示内部特性版本的补丁版本。仅用于特性版本上线后的软件包更新，不涉及其他修改。其值从0开始单调递增。
+        :param platform_version: **参数解释：** CCE集群平台版本号，表示集群版本(version)下的内部版本。用于跟踪某一集群版本内的迭代，集群版本内唯一，跨集群版本重新计数。 platformVersion格式为：cce.X.Y - X: 表示内部特性版本。集群版本中特性或者补丁修复，或者OS支持等变更场景。其值从1开始单调递增。 - Y: 表示内部特性版本的补丁版本。仅用于特性版本上线后的软件包更新，不涉及其他修改。其值从0开始单调递增。  **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type platform_version: str
-        :param target_versions: 可升级的目标版本集合
+        :param target_versions: **参数解释：** 可升级的目标版本集合 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type target_versions: list[str]
         """
         
@@ -57,7 +57,7 @@ class UpgradePath:
     def version(self):
         r"""Gets the version of this UpgradePath.
 
-        集群版本，v1.19及以下集群形如v1.19.16-r20，v1.21及以上形如v1.21,v1.23，详细请参考CCE集群版本号说明。
+        **参数解释：** 集群版本，v1.19及以下集群形如v1.19.16-r20，v1.21及以上形如v1.21,v1.23，详细请参考CCE集群版本号说明。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The version of this UpgradePath.
         :rtype: str
@@ -68,7 +68,7 @@ class UpgradePath:
     def version(self, version):
         r"""Sets the version of this UpgradePath.
 
-        集群版本，v1.19及以下集群形如v1.19.16-r20，v1.21及以上形如v1.21,v1.23，详细请参考CCE集群版本号说明。
+        **参数解释：** 集群版本，v1.19及以下集群形如v1.19.16-r20，v1.21及以上形如v1.21,v1.23，详细请参考CCE集群版本号说明。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param version: The version of this UpgradePath.
         :type version: str
@@ -79,7 +79,7 @@ class UpgradePath:
     def platform_version(self):
         r"""Gets the platform_version of this UpgradePath.
 
-        CCE集群平台版本号，表示集群版本(version)下的内部版本。用于跟踪某一集群版本内的迭代，集群版本内唯一，跨集群版本重新计数。   platformVersion格式为：cce.X.Y   - X: 表示内部特性版本。集群版本中特性或者补丁修复，或者OS支持等变更场景。其值从1开始单调递增。  - Y: 表示内部特性版本的补丁版本。仅用于特性版本上线后的软件包更新，不涉及其他修改。其值从0开始单调递增。
+        **参数解释：** CCE集群平台版本号，表示集群版本(version)下的内部版本。用于跟踪某一集群版本内的迭代，集群版本内唯一，跨集群版本重新计数。 platformVersion格式为：cce.X.Y - X: 表示内部特性版本。集群版本中特性或者补丁修复，或者OS支持等变更场景。其值从1开始单调递增。 - Y: 表示内部特性版本的补丁版本。仅用于特性版本上线后的软件包更新，不涉及其他修改。其值从0开始单调递增。  **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The platform_version of this UpgradePath.
         :rtype: str
@@ -90,7 +90,7 @@ class UpgradePath:
     def platform_version(self, platform_version):
         r"""Sets the platform_version of this UpgradePath.
 
-        CCE集群平台版本号，表示集群版本(version)下的内部版本。用于跟踪某一集群版本内的迭代，集群版本内唯一，跨集群版本重新计数。   platformVersion格式为：cce.X.Y   - X: 表示内部特性版本。集群版本中特性或者补丁修复，或者OS支持等变更场景。其值从1开始单调递增。  - Y: 表示内部特性版本的补丁版本。仅用于特性版本上线后的软件包更新，不涉及其他修改。其值从0开始单调递增。
+        **参数解释：** CCE集群平台版本号，表示集群版本(version)下的内部版本。用于跟踪某一集群版本内的迭代，集群版本内唯一，跨集群版本重新计数。 platformVersion格式为：cce.X.Y - X: 表示内部特性版本。集群版本中特性或者补丁修复，或者OS支持等变更场景。其值从1开始单调递增。 - Y: 表示内部特性版本的补丁版本。仅用于特性版本上线后的软件包更新，不涉及其他修改。其值从0开始单调递增。  **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param platform_version: The platform_version of this UpgradePath.
         :type platform_version: str
@@ -101,7 +101,7 @@ class UpgradePath:
     def target_versions(self):
         r"""Gets the target_versions of this UpgradePath.
 
-        可升级的目标版本集合
+        **参数解释：** 可升级的目标版本集合 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The target_versions of this UpgradePath.
         :rtype: list[str]
@@ -112,7 +112,7 @@ class UpgradePath:
     def target_versions(self, target_versions):
         r"""Sets the target_versions of this UpgradePath.
 
-        可升级的目标版本集合
+        **参数解释：** 可升级的目标版本集合 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param target_versions: The target_versions of this UpgradePath.
         :type target_versions: list[str]

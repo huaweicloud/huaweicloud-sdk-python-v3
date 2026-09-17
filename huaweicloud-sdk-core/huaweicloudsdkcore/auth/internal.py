@@ -102,9 +102,12 @@ class StsAccessor(ABC):
             credential_map = credential_map.get("credentials")
 
         credential = Credential()
-        credential.access = credential_map.get("access") or credential_map.get("accessKeyId")
-        credential.secret = credential_map.get("secret") or credential_map.get("secretAccessKey")
-        credential.security_token = credential_map.get("securitytoken") or credential_map.get("securityToken")
+        credential.access = (credential_map.get("access") or credential_map.get("accessKeyId")
+                             or credential_map.get("access_key_id"))
+        credential.secret = (credential_map.get("secret") or credential_map.get("secretAccessKey")
+                             or credential_map.get("secret_access_key"))
+        credential.security_token = (credential_map.get("securitytoken") or credential_map.get("securityToken")
+                                     or credential_map.get("security_token"))
         expire_at = credential_map.get("expires_at") or credential_map.get("expiration")
         credential.expire_at = time_utils.get_timestamp_from_str(expire_at, _TIME_FORMAT)
         return credential
@@ -160,6 +163,48 @@ class PodIdentityAccessor(StsAccessor):
         except requests.HTTPError as e:
             raise SdkException("failed to get credential from pod identity, detail: {}".format(e))
         return self._process_credential(resp.content)
+
+
+class OidcStsAccessor(StsAccessor):
+    _ASSUME_AGENCY_WITH_OIDC_URI = "/v5/agencies/assume-with-oidc"
+    _DEFAULT_DURATION_SECONDS = 3600
+
+    def __init__(self, provider_urn, agency_urn, id_token,
+                 agency_session_name=None, duration_seconds=None,
+                 policy=None, policy_ids=None):
+        self._provider_urn = provider_urn
+        self._agency_urn = agency_urn
+        self._id_token = id_token
+        self._agency_session_name = agency_session_name
+        self._duration_seconds = duration_seconds or self._DEFAULT_DURATION_SECONDS
+        self._policy = policy
+        self._policy_ids = policy_ids
+
+    def get_credential(self, *args, **kwargs) -> Credential:
+        if not self._id_token:
+            raise SdkException("id_token is required for OidcStsAccessor")
+
+        sts_endpoint = kwargs.get("sts_endpoint") or StsHelper.get_sts_endpoint()
+
+        http_client = kwargs.get("http_client")
+        if not http_client:
+            raise SdkException("http_client is required for OidcStsAccessor")
+
+        payload = {
+            "provider_urn": self._provider_urn,
+            "agency_urn": self._agency_urn,
+            "agency_session_name": self._agency_session_name,
+            "id_token": self._id_token,
+            "duration_seconds": self._duration_seconds,
+        }
+        if self._policy:
+            payload["policy"] = self._policy
+        if self._policy_ids:
+            payload["policy_ids"] = self._policy_ids
+
+        request = IamHelper.get_assume_agency_with_oidc_request(http_client.config, sts_endpoint, payload)
+        content = IamHelper.assume_agency_with_oidc(http_client, request)
+        return self._process_credential(content)
 
 
 class MetadataAccessor(StsAccessor):
@@ -223,11 +268,15 @@ class MetadataAccessor(StsAccessor):
 
 class StsHelper:
     STS_ENDPOINT_ENV_NAME = "HUAWEICLOUD_SDK_STS_ENDPOINT"
+    DEFAULT_STS_ENDPOINT = "https://sts.cn-north-4.myhuaweicloud.com"
     GET_CALLER_IDENTITY_URI = "/v5/caller-identity"
 
     @classmethod
     def get_sts_endpoint(cls, region_id: str = None) -> Optional[str]:
-        return os.getenv(cls.STS_ENDPOINT_ENV_NAME) or endpoint.get_sts_endpoint_by_id(region_id)
+        env = os.getenv(cls.STS_ENDPOINT_ENV_NAME)
+        if env:
+            return env
+        return endpoint.get_sts_endpoint_by_id(region_id, cls.DEFAULT_STS_ENDPOINT)
 
     @classmethod
     def get_caller_identity_request(cls, config: HttpConfig, sts_endpoint: str) -> SdkRequest:
@@ -371,3 +420,39 @@ class IamHelper:
             body="",
             signing_algorithm=config.signing_algorithm
         )
+
+    ASSUME_AGENCY_WITH_OIDC_URI = "/v5/agencies/assume-with-oidc"
+
+    @classmethod
+    def get_assume_agency_with_oidc_request(cls, config: HttpConfig, sts_endpoint: str,
+                                             payload: dict) -> SdkRequest:
+        url_parse_result = urlparse(sts_endpoint)
+        schema = url_parse_result.scheme
+        host = url_parse_result.netloc
+        resource_path = cls.ASSUME_AGENCY_WITH_OIDC_URI
+        header_params = {"Content-Type": "application/json;charset=UTF-8",
+                         "User-Agent": user_agent_string}
+        return SdkRequest(
+            method="POST",
+            schema=schema,
+            host=host,
+            resource_path=resource_path,
+            uri=resource_path,
+            header_params=header_params,
+            query_params=[],
+            body=json.dumps(payload),
+            stream=False,
+            signing_algorithm=config.signing_algorithm
+        )
+
+    @staticmethod
+    def assume_agency_with_oidc(http_client: HttpClient, request: SdkRequest):
+        try:
+            resp = http_client.do_request_sync(request)
+        except exceptions.ServiceResponseException as e:
+            raise SdkException("failed to get credential from oidc sts, detail: {}".format(e))
+
+        if not resp or not resp.content:
+            raise SdkException("failed to get credential from oidc sts, empty response")
+
+        return resp.content

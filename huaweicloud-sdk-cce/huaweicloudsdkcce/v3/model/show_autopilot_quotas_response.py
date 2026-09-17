@@ -28,7 +28,7 @@ class ShowAutopilotQuotasResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param quotas: 资源
+        :param quotas: **参数解释：** 资源配额列表 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type quotas: list[:class:`huaweicloudsdkcce.v3.QuotaResource`]
         """
         
@@ -44,7 +44,7 @@ class ShowAutopilotQuotasResponse(SdkResponse):
     def quotas(self):
         r"""Gets the quotas of this ShowAutopilotQuotasResponse.
 
-        资源
+        **参数解释：** 资源配额列表 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The quotas of this ShowAutopilotQuotasResponse.
         :rtype: list[:class:`huaweicloudsdkcce.v3.QuotaResource`]
@@ -55,7 +55,7 @@ class ShowAutopilotQuotasResponse(SdkResponse):
     def quotas(self, quotas):
         r"""Sets the quotas of this ShowAutopilotQuotasResponse.
 
-        资源
+        **参数解释：** 资源配额列表 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param quotas: The quotas of this ShowAutopilotQuotasResponse.
         :type quotas: list[:class:`huaweicloudsdkcce.v3.QuotaResource`]

@@ -15,34 +15,41 @@ class PointValidityingDTO:
     sensitive_list = []
 
     openapi_types = {
-        'min': 'int',
-        'max': 'int'
+        'min': 'object',
+        'max': 'object',
+        'outlier_filtering': 'bool'
     }
 
     attribute_map = {
         'min': 'min',
-        'max': 'max'
+        'max': 'max',
+        'outlier_filtering': 'outlier_filtering'
     }
 
-    def __init__(self, min=None, max=None):
+    def __init__(self, min=None, max=None, outlier_filtering=None):
         r"""PointValidityingDTO
 
         The model defined in huaweicloud sdk
 
         :param min: 点位上报值的最小值，小于该值则上报告警
-        :type min: int
+        :type min: object
         :param max: 点位上报值的最大值，大于该值则上报告警
-        :type max: int
+        :type max: object
+        :param outlier_filtering: 异常值过滤
+        :type outlier_filtering: bool
         """
         
         
 
         self._min = None
         self._max = None
+        self._outlier_filtering = None
         self.discriminator = None
 
         self.min = min
         self.max = max
+        if outlier_filtering is not None:
+            self.outlier_filtering = outlier_filtering
 
     @property
     def min(self):
@@ -51,7 +58,7 @@ class PointValidityingDTO:
         点位上报值的最小值，小于该值则上报告警
 
         :return: The min of this PointValidityingDTO.
-        :rtype: int
+        :rtype: object
         """
         return self._min
 
@@ -62,7 +69,7 @@ class PointValidityingDTO:
         点位上报值的最小值，小于该值则上报告警
 
         :param min: The min of this PointValidityingDTO.
-        :type min: int
+        :type min: object
         """
         self._min = min
 
@@ -73,7 +80,7 @@ class PointValidityingDTO:
         点位上报值的最大值，大于该值则上报告警
 
         :return: The max of this PointValidityingDTO.
-        :rtype: int
+        :rtype: object
         """
         return self._max
 
@@ -84,9 +91,31 @@ class PointValidityingDTO:
         点位上报值的最大值，大于该值则上报告警
 
         :param max: The max of this PointValidityingDTO.
-        :type max: int
+        :type max: object
         """
         self._max = max
+
+    @property
+    def outlier_filtering(self):
+        r"""Gets the outlier_filtering of this PointValidityingDTO.
+
+        异常值过滤
+
+        :return: The outlier_filtering of this PointValidityingDTO.
+        :rtype: bool
+        """
+        return self._outlier_filtering
+
+    @outlier_filtering.setter
+    def outlier_filtering(self, outlier_filtering):
+        r"""Sets the outlier_filtering of this PointValidityingDTO.
+
+        异常值过滤
+
+        :param outlier_filtering: The outlier_filtering of this PointValidityingDTO.
+        :type outlier_filtering: bool
+        """
+        self._outlier_filtering = outlier_filtering
 
     def to_dict(self):
         result = {}

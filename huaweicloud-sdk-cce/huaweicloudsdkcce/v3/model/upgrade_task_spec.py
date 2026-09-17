@@ -31,11 +31,11 @@ class UpgradeTaskSpec:
 
         The model defined in huaweicloud sdk
 
-        :param version: 升级前集群版本
+        :param version: **参数解释：** 升级前集群版本 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type version: str
-        :param target_version: 升级的目标集群版本
+        :param target_version: **参数解释：** 升级的目标集群版本 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type target_version: str
-        :param items: 升级任务附属信息
+        :param items: **参数解释：** 升级任务附属信息 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type items: object
         """
         
@@ -57,7 +57,7 @@ class UpgradeTaskSpec:
     def version(self):
         r"""Gets the version of this UpgradeTaskSpec.
 
-        升级前集群版本
+        **参数解释：** 升级前集群版本 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The version of this UpgradeTaskSpec.
         :rtype: str
@@ -68,7 +68,7 @@ class UpgradeTaskSpec:
     def version(self, version):
         r"""Sets the version of this UpgradeTaskSpec.
 
-        升级前集群版本
+        **参数解释：** 升级前集群版本 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param version: The version of this UpgradeTaskSpec.
         :type version: str
@@ -79,7 +79,7 @@ class UpgradeTaskSpec:
     def target_version(self):
         r"""Gets the target_version of this UpgradeTaskSpec.
 
-        升级的目标集群版本
+        **参数解释：** 升级的目标集群版本 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The target_version of this UpgradeTaskSpec.
         :rtype: str
@@ -90,7 +90,7 @@ class UpgradeTaskSpec:
     def target_version(self, target_version):
         r"""Sets the target_version of this UpgradeTaskSpec.
 
-        升级的目标集群版本
+        **参数解释：** 升级的目标集群版本 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param target_version: The target_version of this UpgradeTaskSpec.
         :type target_version: str
@@ -101,7 +101,7 @@ class UpgradeTaskSpec:
     def items(self):
         r"""Gets the items of this UpgradeTaskSpec.
 
-        升级任务附属信息
+        **参数解释：** 升级任务附属信息 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The items of this UpgradeTaskSpec.
         :rtype: object
@@ -112,7 +112,7 @@ class UpgradeTaskSpec:
     def items(self, items):
         r"""Sets the items of this UpgradeTaskSpec.
 
-        升级任务附属信息
+        **参数解释：** 升级任务附属信息 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param items: The items of this UpgradeTaskSpec.
         :type items: object

@@ -15,6 +15,7 @@ class CreateOpsSynthesisTaskRequestBody:
     sensitive_list = []
 
     openapi_types = {
+        'account_id': 'str',
         'name': 'str',
         'scenario_type': 'str',
         'scenario_description': 'str',
@@ -26,6 +27,7 @@ class CreateOpsSynthesisTaskRequestBody:
     }
 
     attribute_map = {
+        'account_id': 'account_id',
         'name': 'name',
         'scenario_type': 'scenario_type',
         'scenario_description': 'scenario_description',
@@ -36,11 +38,13 @@ class CreateOpsSynthesisTaskRequestBody:
         'sample_count': 'sample_count'
     }
 
-    def __init__(self, name=None, scenario_type=None, scenario_description=None, status=None, model_config=None, seed_data=None, schemas=None, sample_count=None):
+    def __init__(self, account_id=None, name=None, scenario_type=None, scenario_description=None, status=None, model_config=None, seed_data=None, schemas=None, sample_count=None):
         r"""CreateOpsSynthesisTaskRequestBody
 
         The model defined in huaweicloud sdk
 
+        :param account_id: **参数解释：** 租户账号ID。 **约束限制：** 不涉及。 **取值范围：** 由英文字母、数字及连字符(-)、下划线(_)组成的0~64个字符的字符串。 **默认取值：** 不涉及。
+        :type account_id: str
         :param name: **参数解释：**   数据合成任务的显示名称，用于在任务列表中进行识别与检索。 **约束限制：**   长度为2-100个字符。 **取值范围：**   任意字符串。 **默认取值：**   不涉及。 
         :type name: str
         :param scenario_type: **参数解释：**   指定数据合成的具体逻辑场景。 **约束限制：**   必填，仅支持枚举值。字符长度1-100。 **取值范围：**   字符长度1-100，seed_data (基于种子数据生成)。 **默认取值：**   不涉及。 
@@ -61,6 +65,7 @@ class CreateOpsSynthesisTaskRequestBody:
         
         
 
+        self._account_id = None
         self._name = None
         self._scenario_type = None
         self._scenario_description = None
@@ -71,17 +76,42 @@ class CreateOpsSynthesisTaskRequestBody:
         self._sample_count = None
         self.discriminator = None
 
+        if account_id is not None:
+            self.account_id = account_id
         self.name = name
         self.scenario_type = scenario_type
         if scenario_description is not None:
             self.scenario_description = scenario_description
         if status is not None:
             self.status = status
-        self.model_config = model_config
+        if model_config is not None:
+            self.model_config = model_config
         if seed_data is not None:
             self.seed_data = seed_data
         self.schemas = schemas
         self.sample_count = sample_count
+
+    @property
+    def account_id(self):
+        r"""Gets the account_id of this CreateOpsSynthesisTaskRequestBody.
+
+        **参数解释：** 租户账号ID。 **约束限制：** 不涉及。 **取值范围：** 由英文字母、数字及连字符(-)、下划线(_)组成的0~64个字符的字符串。 **默认取值：** 不涉及。
+
+        :return: The account_id of this CreateOpsSynthesisTaskRequestBody.
+        :rtype: str
+        """
+        return self._account_id
+
+    @account_id.setter
+    def account_id(self, account_id):
+        r"""Sets the account_id of this CreateOpsSynthesisTaskRequestBody.
+
+        **参数解释：** 租户账号ID。 **约束限制：** 不涉及。 **取值范围：** 由英文字母、数字及连字符(-)、下划线(_)组成的0~64个字符的字符串。 **默认取值：** 不涉及。
+
+        :param account_id: The account_id of this CreateOpsSynthesisTaskRequestBody.
+        :type account_id: str
+        """
+        self._account_id = account_id
 
     @property
     def name(self):

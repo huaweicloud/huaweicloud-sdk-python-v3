@@ -39,15 +39,15 @@ class PointStatus:
 
         :param task_type: 
         :type task_type: :class:`huaweicloudsdkcce.v3.TaskType`
-        :param task_id: 升级任务项ID
+        :param task_id: **参数解释：** 升级任务项ID **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type task_id: str
         :param status: 
         :type status: :class:`huaweicloudsdkcce.v3.UpgradeWorkflowTaskStatus`
-        :param start_time_stamp: 升级任务开始时间
+        :param start_time_stamp: **参数解释：** 升级任务开始时间 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type start_time_stamp: str
-        :param end_time_stamp: 升级任务结束时间
+        :param end_time_stamp: **参数解释：** 升级任务结束时间 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type end_time_stamp: str
-        :param expire_time_stamp: 升级任务过期时间（当前仅升级前检查任务适用）
+        :param expire_time_stamp: **参数解释：** 升级任务过期时间（当前仅升级前检查任务适用） **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type expire_time_stamp: str
         """
         
@@ -96,7 +96,7 @@ class PointStatus:
     def task_id(self):
         r"""Gets the task_id of this PointStatus.
 
-        升级任务项ID
+        **参数解释：** 升级任务项ID **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The task_id of this PointStatus.
         :rtype: str
@@ -107,7 +107,7 @@ class PointStatus:
     def task_id(self, task_id):
         r"""Sets the task_id of this PointStatus.
 
-        升级任务项ID
+        **参数解释：** 升级任务项ID **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param task_id: The task_id of this PointStatus.
         :type task_id: str
@@ -136,7 +136,7 @@ class PointStatus:
     def start_time_stamp(self):
         r"""Gets the start_time_stamp of this PointStatus.
 
-        升级任务开始时间
+        **参数解释：** 升级任务开始时间 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The start_time_stamp of this PointStatus.
         :rtype: str
@@ -147,7 +147,7 @@ class PointStatus:
     def start_time_stamp(self, start_time_stamp):
         r"""Sets the start_time_stamp of this PointStatus.
 
-        升级任务开始时间
+        **参数解释：** 升级任务开始时间 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param start_time_stamp: The start_time_stamp of this PointStatus.
         :type start_time_stamp: str
@@ -158,7 +158,7 @@ class PointStatus:
     def end_time_stamp(self):
         r"""Gets the end_time_stamp of this PointStatus.
 
-        升级任务结束时间
+        **参数解释：** 升级任务结束时间 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The end_time_stamp of this PointStatus.
         :rtype: str
@@ -169,7 +169,7 @@ class PointStatus:
     def end_time_stamp(self, end_time_stamp):
         r"""Sets the end_time_stamp of this PointStatus.
 
-        升级任务结束时间
+        **参数解释：** 升级任务结束时间 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param end_time_stamp: The end_time_stamp of this PointStatus.
         :type end_time_stamp: str
@@ -180,7 +180,7 @@ class PointStatus:
     def expire_time_stamp(self):
         r"""Gets the expire_time_stamp of this PointStatus.
 
-        升级任务过期时间（当前仅升级前检查任务适用）
+        **参数解释：** 升级任务过期时间（当前仅升级前检查任务适用） **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The expire_time_stamp of this PointStatus.
         :rtype: str
@@ -191,7 +191,7 @@ class PointStatus:
     def expire_time_stamp(self, expire_time_stamp):
         r"""Sets the expire_time_stamp of this PointStatus.
 
-        升级任务过期时间（当前仅升级前检查任务适用）
+        **参数解释：** 升级任务过期时间（当前仅升级前检查任务适用） **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param expire_time_stamp: The expire_time_stamp of this PointStatus.
         :type expire_time_stamp: str

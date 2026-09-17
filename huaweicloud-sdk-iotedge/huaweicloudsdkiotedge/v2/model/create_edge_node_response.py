@@ -33,7 +33,9 @@ class CreateEdgeNodeResponse(SdkResponse):
         'device_data_format': 'str',
         'automatic_upgrade': 'str',
         'device_data_record': 'DeviceDataRecord',
-        'metric_report': 'str'
+        'metric_report': 'str',
+        'iotda_south_access': 'str',
+        'os_type': 'str'
     }
 
     attribute_map = {
@@ -54,10 +56,12 @@ class CreateEdgeNodeResponse(SdkResponse):
         'device_data_format': 'device_data_format',
         'automatic_upgrade': 'automatic_upgrade',
         'device_data_record': 'device_data_record',
-        'metric_report': 'metric_report'
+        'metric_report': 'metric_report',
+        'iotda_south_access': 'iotda_south_access',
+        'os_type': 'os_type'
     }
 
-    def __init__(self, edge_node_id=None, name=None, instance_id=None, space_id=None, product_id=None, product_name=None, state=None, type=None, installer_version=None, base_path=None, resource_ids=None, ips=None, create_time=None, hardware_model=None, device_data_format=None, automatic_upgrade=None, device_data_record=None, metric_report=None):
+    def __init__(self, edge_node_id=None, name=None, instance_id=None, space_id=None, product_id=None, product_name=None, state=None, type=None, installer_version=None, base_path=None, resource_ids=None, ips=None, create_time=None, hardware_model=None, device_data_format=None, automatic_upgrade=None, device_data_record=None, metric_report=None, iotda_south_access=None, os_type=None):
         r"""CreateEdgeNodeResponse
 
         The model defined in huaweicloud sdk
@@ -76,7 +80,7 @@ class CreateEdgeNodeResponse(SdkResponse):
         :type product_name: str
         :param state: 边缘节点状态UNINSTALLED|INSTALLED|OFFLINE|ONLINE|DELETING|FROZEN
         :type state: str
-        :param type: 节点所属资源类型：advanced|standard
+        :param type: 边缘节点类型：lite|advanced|standard。lite表示基础版边缘节点，advanced或standard表示专业版边缘节点。
         :type type: str
         :param installer_version: 安装文件版本
         :type installer_version: str
@@ -98,6 +102,10 @@ class CreateEdgeNodeResponse(SdkResponse):
         :type device_data_record: :class:`huaweicloudsdkiotedge.v2.DeviceDataRecord`
         :param metric_report: omagent监控运维工具是否上报指标
         :type metric_report: str
+        :param iotda_south_access: iotda南向接入地址
+        :type iotda_south_access: str
+        :param os_type: 边缘节点系统类型。包括：generalLinux通用系统，openHarmony鸿蒙系统。
+        :type os_type: str
         """
         
         super().__init__()
@@ -120,6 +128,8 @@ class CreateEdgeNodeResponse(SdkResponse):
         self._automatic_upgrade = None
         self._device_data_record = None
         self._metric_report = None
+        self._iotda_south_access = None
+        self._os_type = None
         self.discriminator = None
 
         if edge_node_id is not None:
@@ -158,6 +168,10 @@ class CreateEdgeNodeResponse(SdkResponse):
             self.device_data_record = device_data_record
         if metric_report is not None:
             self.metric_report = metric_report
+        if iotda_south_access is not None:
+            self.iotda_south_access = iotda_south_access
+        if os_type is not None:
+            self.os_type = os_type
 
     @property
     def edge_node_id(self):
@@ -317,7 +331,7 @@ class CreateEdgeNodeResponse(SdkResponse):
     def type(self):
         r"""Gets the type of this CreateEdgeNodeResponse.
 
-        节点所属资源类型：advanced|standard
+        边缘节点类型：lite|advanced|standard。lite表示基础版边缘节点，advanced或standard表示专业版边缘节点。
 
         :return: The type of this CreateEdgeNodeResponse.
         :rtype: str
@@ -328,7 +342,7 @@ class CreateEdgeNodeResponse(SdkResponse):
     def type(self, type):
         r"""Sets the type of this CreateEdgeNodeResponse.
 
-        节点所属资源类型：advanced|standard
+        边缘节点类型：lite|advanced|standard。lite表示基础版边缘节点，advanced或standard表示专业版边缘节点。
 
         :param type: The type of this CreateEdgeNodeResponse.
         :type type: str
@@ -546,6 +560,50 @@ class CreateEdgeNodeResponse(SdkResponse):
         :type metric_report: str
         """
         self._metric_report = metric_report
+
+    @property
+    def iotda_south_access(self):
+        r"""Gets the iotda_south_access of this CreateEdgeNodeResponse.
+
+        iotda南向接入地址
+
+        :return: The iotda_south_access of this CreateEdgeNodeResponse.
+        :rtype: str
+        """
+        return self._iotda_south_access
+
+    @iotda_south_access.setter
+    def iotda_south_access(self, iotda_south_access):
+        r"""Sets the iotda_south_access of this CreateEdgeNodeResponse.
+
+        iotda南向接入地址
+
+        :param iotda_south_access: The iotda_south_access of this CreateEdgeNodeResponse.
+        :type iotda_south_access: str
+        """
+        self._iotda_south_access = iotda_south_access
+
+    @property
+    def os_type(self):
+        r"""Gets the os_type of this CreateEdgeNodeResponse.
+
+        边缘节点系统类型。包括：generalLinux通用系统，openHarmony鸿蒙系统。
+
+        :return: The os_type of this CreateEdgeNodeResponse.
+        :rtype: str
+        """
+        return self._os_type
+
+    @os_type.setter
+    def os_type(self, os_type):
+        r"""Sets the os_type of this CreateEdgeNodeResponse.
+
+        边缘节点系统类型。包括：generalLinux通用系统，openHarmony鸿蒙系统。
+
+        :param os_type: The os_type of this CreateEdgeNodeResponse.
+        :type os_type: str
+        """
+        self._os_type = os_type
 
     def to_dict(self):
         import warnings

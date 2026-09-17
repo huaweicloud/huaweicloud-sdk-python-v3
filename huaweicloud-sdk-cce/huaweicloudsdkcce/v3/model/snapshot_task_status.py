@@ -27,7 +27,7 @@ class SnapshotTaskStatus:
 
         The model defined in huaweicloud sdk
 
-        :param latest_backup_time: 最近一次备份的时间
+        :param latest_backup_time: **参数解释：** 最近一次备份的时间 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type latest_backup_time: str
         """
         
@@ -43,7 +43,7 @@ class SnapshotTaskStatus:
     def latest_backup_time(self):
         r"""Gets the latest_backup_time of this SnapshotTaskStatus.
 
-        最近一次备份的时间
+        **参数解释：** 最近一次备份的时间 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The latest_backup_time of this SnapshotTaskStatus.
         :rtype: str
@@ -54,7 +54,7 @@ class SnapshotTaskStatus:
     def latest_backup_time(self, latest_backup_time):
         r"""Sets the latest_backup_time of this SnapshotTaskStatus.
 
-        最近一次备份的时间
+        **参数解释：** 最近一次备份的时间 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param latest_backup_time: The latest_backup_time of this SnapshotTaskStatus.
         :type latest_backup_time: str

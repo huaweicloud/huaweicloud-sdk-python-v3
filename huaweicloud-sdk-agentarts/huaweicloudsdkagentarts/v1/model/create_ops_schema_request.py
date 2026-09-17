@@ -15,6 +15,8 @@ class CreateOpsSchemaRequest:
     sensitive_list = []
 
     openapi_types = {
+        'id': 'str',
+        'content_type': 'str',
         'name': 'str',
         'type': 'str',
         'is_required': 'bool',
@@ -22,17 +24,23 @@ class CreateOpsSchemaRequest:
     }
 
     attribute_map = {
+        'id': 'id',
+        'content_type': 'content_type',
         'name': 'name',
         'type': 'type',
         'is_required': 'is_required',
         'description': 'description'
     }
 
-    def __init__(self, name=None, type=None, is_required=None, description=None):
+    def __init__(self, id=None, content_type=None, name=None, type=None, is_required=None, description=None):
         r"""CreateOpsSchemaRequest
 
         The model defined in huaweicloud sdk
 
+        :param id: **参数解释：** 字段的唯一标识符。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
+        :type id: str
+        :param content_type: **参数解释：** 字段的内容类型。 **约束限制：** 不涉及。 **取值范围：** - text：纯文本 - image：图片 - audio：音频 - video：视频 - file：文件 **默认取值：** 不涉及。
+        :type content_type: str
         :param name: **参数解释：** 评测集字段的唯一标识符。 **约束限制：** 必须以字母开头，仅支持字母、数字、下划线。 **取值范围：** 1-50字符，正则 ^[a-zA-Z][a-zA-Z0-9_]*$。 **默认取值：** 不涉及。
         :type name: str
         :param type: **参数解释：** 字段的数据存储与校验类型。 **约束限制：** 必填；必须在预定义的枚举值中选择。 **取值范围：** String, Integer, Float, Boolean。 **默认取值：** 不涉及。
@@ -45,18 +53,68 @@ class CreateOpsSchemaRequest:
         
         
 
+        self._id = None
+        self._content_type = None
         self._name = None
         self._type = None
         self._is_required = None
         self._description = None
         self.discriminator = None
 
+        if id is not None:
+            self.id = id
+        if content_type is not None:
+            self.content_type = content_type
         self.name = name
         self.type = type
         if is_required is not None:
             self.is_required = is_required
         if description is not None:
             self.description = description
+
+    @property
+    def id(self):
+        r"""Gets the id of this CreateOpsSchemaRequest.
+
+        **参数解释：** 字段的唯一标识符。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
+
+        :return: The id of this CreateOpsSchemaRequest.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        r"""Sets the id of this CreateOpsSchemaRequest.
+
+        **参数解释：** 字段的唯一标识符。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
+
+        :param id: The id of this CreateOpsSchemaRequest.
+        :type id: str
+        """
+        self._id = id
+
+    @property
+    def content_type(self):
+        r"""Gets the content_type of this CreateOpsSchemaRequest.
+
+        **参数解释：** 字段的内容类型。 **约束限制：** 不涉及。 **取值范围：** - text：纯文本 - image：图片 - audio：音频 - video：视频 - file：文件 **默认取值：** 不涉及。
+
+        :return: The content_type of this CreateOpsSchemaRequest.
+        :rtype: str
+        """
+        return self._content_type
+
+    @content_type.setter
+    def content_type(self, content_type):
+        r"""Sets the content_type of this CreateOpsSchemaRequest.
+
+        **参数解释：** 字段的内容类型。 **约束限制：** 不涉及。 **取值范围：** - text：纯文本 - image：图片 - audio：音频 - video：视频 - file：文件 **默认取值：** 不涉及。
+
+        :param content_type: The content_type of this CreateOpsSchemaRequest.
+        :type content_type: str
+        """
+        self._content_type = content_type
 
     @property
     def name(self):

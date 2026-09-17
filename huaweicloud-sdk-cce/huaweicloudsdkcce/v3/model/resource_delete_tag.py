@@ -27,7 +27,7 @@ class ResourceDeleteTag:
 
         The model defined in huaweicloud sdk
 
-        :param key: Key值。 - 不能为空，最多支持128个字符 - 可用UTF-8格式表示的汉字、字母、数字和空格 - 支持部分特殊字符：_.:/&#x3D;+-@ - 不能以\&quot;\\_sys\\_\&quot;开头
+        :param key: **参数解释：** 标签Key值。 **约束限制：** - 不能为空，最多支持128个字符 - 可用UTF-8格式表示的汉字、字母、数字和空格 - 支持部分特殊字符：_.:/&#x3D;+-@ - 不能以\&quot;_sys_\&quot;开头  **取值范围：** 不涉及 **默认取值：** 不涉及
         :type key: str
         """
         
@@ -43,7 +43,7 @@ class ResourceDeleteTag:
     def key(self):
         r"""Gets the key of this ResourceDeleteTag.
 
-        Key值。 - 不能为空，最多支持128个字符 - 可用UTF-8格式表示的汉字、字母、数字和空格 - 支持部分特殊字符：_.:/=+-@ - 不能以\"\\_sys\\_\"开头
+        **参数解释：** 标签Key值。 **约束限制：** - 不能为空，最多支持128个字符 - 可用UTF-8格式表示的汉字、字母、数字和空格 - 支持部分特殊字符：_.:/=+-@ - 不能以\"_sys_\"开头  **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The key of this ResourceDeleteTag.
         :rtype: str
@@ -54,7 +54,7 @@ class ResourceDeleteTag:
     def key(self, key):
         r"""Sets the key of this ResourceDeleteTag.
 
-        Key值。 - 不能为空，最多支持128个字符 - 可用UTF-8格式表示的汉字、字母、数字和空格 - 支持部分特殊字符：_.:/=+-@ - 不能以\"\\_sys\\_\"开头
+        **参数解释：** 标签Key值。 **约束限制：** - 不能为空，最多支持128个字符 - 可用UTF-8格式表示的汉字、字母、数字和空格 - 支持部分特殊字符：_.:/=+-@ - 不能以\"_sys_\"开头  **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param key: The key of this ResourceDeleteTag.
         :type key: str

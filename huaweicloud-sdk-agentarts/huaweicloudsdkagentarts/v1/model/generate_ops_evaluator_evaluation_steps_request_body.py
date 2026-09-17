@@ -42,7 +42,8 @@ class GenerateOpsEvaluatorEvaluationStepsRequestBody:
         self.discriminator = None
 
         self.criteria = criteria
-        self.model_config = model_config
+        if model_config is not None:
+            self.model_config = model_config
 
     @property
     def criteria(self):

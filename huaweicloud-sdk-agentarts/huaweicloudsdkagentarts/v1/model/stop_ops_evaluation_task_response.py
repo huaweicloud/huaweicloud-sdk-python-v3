@@ -16,80 +16,51 @@ class StopOpsEvaluationTaskResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'code': 'str',
-        'msg': 'str'
+        'data': 'str'
     }
 
     attribute_map = {
-        'code': 'code',
-        'msg': 'msg'
+        'data': 'data'
     }
 
-    def __init__(self, code=None, msg=None):
+    def __init__(self, data=None):
         r"""StopOpsEvaluationTaskResponse
 
         The model defined in huaweicloud sdk
 
-        :param code: **参数解释：** 系统定义的标准化成功代码。 **取值范围：** 不涉及。 
-        :type code: str
-        :param msg: **参数解释：** 成功描述。 **约束限制：** 字符串类型，最小长度为2，最大长度为512。 **取值范围：** 字符长度2-512，任意文本内容。 
-        :type msg: str
+        :param data: **参数解释：** 被停止的任务ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
+        :type data: str
         """
         
         super().__init__()
 
-        self._code = None
-        self._msg = None
+        self._data = None
         self.discriminator = None
 
-        if code is not None:
-            self.code = code
-        if msg is not None:
-            self.msg = msg
+        if data is not None:
+            self.data = data
 
     @property
-    def code(self):
-        r"""Gets the code of this StopOpsEvaluationTaskResponse.
+    def data(self):
+        r"""Gets the data of this StopOpsEvaluationTaskResponse.
 
-        **参数解释：** 系统定义的标准化成功代码。 **取值范围：** 不涉及。 
+        **参数解释：** 被停止的任务ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
-        :return: The code of this StopOpsEvaluationTaskResponse.
+        :return: The data of this StopOpsEvaluationTaskResponse.
         :rtype: str
         """
-        return self._code
+        return self._data
 
-    @code.setter
-    def code(self, code):
-        r"""Sets the code of this StopOpsEvaluationTaskResponse.
+    @data.setter
+    def data(self, data):
+        r"""Sets the data of this StopOpsEvaluationTaskResponse.
 
-        **参数解释：** 系统定义的标准化成功代码。 **取值范围：** 不涉及。 
+        **参数解释：** 被停止的任务ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
-        :param code: The code of this StopOpsEvaluationTaskResponse.
-        :type code: str
+        :param data: The data of this StopOpsEvaluationTaskResponse.
+        :type data: str
         """
-        self._code = code
-
-    @property
-    def msg(self):
-        r"""Gets the msg of this StopOpsEvaluationTaskResponse.
-
-        **参数解释：** 成功描述。 **约束限制：** 字符串类型，最小长度为2，最大长度为512。 **取值范围：** 字符长度2-512，任意文本内容。 
-
-        :return: The msg of this StopOpsEvaluationTaskResponse.
-        :rtype: str
-        """
-        return self._msg
-
-    @msg.setter
-    def msg(self, msg):
-        r"""Sets the msg of this StopOpsEvaluationTaskResponse.
-
-        **参数解释：** 成功描述。 **约束限制：** 字符串类型，最小长度为2，最大长度为512。 **取值范围：** 字符长度2-512，任意文本内容。 
-
-        :param msg: The msg of this StopOpsEvaluationTaskResponse.
-        :type msg: str
-        """
-        self._msg = msg
+        self._data = data
 
     def to_dict(self):
         import warnings

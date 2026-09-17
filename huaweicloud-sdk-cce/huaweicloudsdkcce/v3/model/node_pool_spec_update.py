@@ -19,6 +19,7 @@ class NodePoolSpecUpdate:
         'initial_node_count': 'int',
         'ignore_initial_node_count': 'bool',
         'autoscaling': 'NodePoolNodeAutoscaling',
+        'repair_policy': 'NodePoolRepairPolicy',
         'node_management_update': 'NodeManagement',
         'custom_security_groups': 'list[str]',
         'taint_policy_on_existing_nodes': 'str',
@@ -32,6 +33,7 @@ class NodePoolSpecUpdate:
         'initial_node_count': 'initialNodeCount',
         'ignore_initial_node_count': 'ignoreInitialNodeCount',
         'autoscaling': 'autoscaling',
+        'repair_policy': 'repairPolicy',
         'node_management_update': 'nodeManagementUpdate',
         'custom_security_groups': 'customSecurityGroups',
         'taint_policy_on_existing_nodes': 'taintPolicyOnExistingNodes',
@@ -40,7 +42,7 @@ class NodePoolSpecUpdate:
         'extension_scale_groups': 'extensionScaleGroups'
     }
 
-    def __init__(self, node_template=None, initial_node_count=None, ignore_initial_node_count=None, autoscaling=None, node_management_update=None, custom_security_groups=None, taint_policy_on_existing_nodes=None, label_policy_on_existing_nodes=None, user_tags_policy_on_existing_nodes=None, extension_scale_groups=None):
+    def __init__(self, node_template=None, initial_node_count=None, ignore_initial_node_count=None, autoscaling=None, repair_policy=None, node_management_update=None, custom_security_groups=None, taint_policy_on_existing_nodes=None, label_policy_on_existing_nodes=None, user_tags_policy_on_existing_nodes=None, extension_scale_groups=None):
         r"""NodePoolSpecUpdate
 
         The model defined in huaweicloud sdk
@@ -53,6 +55,8 @@ class NodePoolSpecUpdate:
         :type ignore_initial_node_count: bool
         :param autoscaling: 
         :type autoscaling: :class:`huaweicloudsdkcce.v3.NodePoolNodeAutoscaling`
+        :param repair_policy: 
+        :type repair_policy: :class:`huaweicloudsdkcce.v3.NodePoolRepairPolicy`
         :param node_management_update: 
         :type node_management_update: :class:`huaweicloudsdkcce.v3.NodeManagement`
         :param custom_security_groups: 节点池自定义安全组相关配置。支持节点池新扩容节点绑定指定的安全组。  - 未指定安全组ID，新建节点将添加Node节点默认安全组。  - 指定有效安全组ID，新建节点将使用指定安全组。  - 指定安全组，应避免对CCE运行依赖的端口规则进行修改。[详细设置请参考[集群安全组规则配置](https://support.huaweicloud.com/cce_faq/cce_faq_00265.html)。](tag:hws)[详细设置请参考[集群安全组规则配置](https://support.huaweicloud.com/intl/zh-cn/cce_faq/cce_faq_00265.html)。](tag:hws_hk) 
@@ -73,6 +77,7 @@ class NodePoolSpecUpdate:
         self._initial_node_count = None
         self._ignore_initial_node_count = None
         self._autoscaling = None
+        self._repair_policy = None
         self._node_management_update = None
         self._custom_security_groups = None
         self._taint_policy_on_existing_nodes = None
@@ -88,6 +93,8 @@ class NodePoolSpecUpdate:
             self.ignore_initial_node_count = ignore_initial_node_count
         if autoscaling is not None:
             self.autoscaling = autoscaling
+        if repair_policy is not None:
+            self.repair_policy = repair_policy
         if node_management_update is not None:
             self.node_management_update = node_management_update
         if custom_security_groups is not None:
@@ -180,6 +187,24 @@ class NodePoolSpecUpdate:
         :type autoscaling: :class:`huaweicloudsdkcce.v3.NodePoolNodeAutoscaling`
         """
         self._autoscaling = autoscaling
+
+    @property
+    def repair_policy(self):
+        r"""Gets the repair_policy of this NodePoolSpecUpdate.
+
+        :return: The repair_policy of this NodePoolSpecUpdate.
+        :rtype: :class:`huaweicloudsdkcce.v3.NodePoolRepairPolicy`
+        """
+        return self._repair_policy
+
+    @repair_policy.setter
+    def repair_policy(self, repair_policy):
+        r"""Sets the repair_policy of this NodePoolSpecUpdate.
+
+        :param repair_policy: The repair_policy of this NodePoolSpecUpdate.
+        :type repair_policy: :class:`huaweicloudsdkcce.v3.NodePoolRepairPolicy`
+        """
+        self._repair_policy = repair_policy
 
     @property
     def node_management_update(self):

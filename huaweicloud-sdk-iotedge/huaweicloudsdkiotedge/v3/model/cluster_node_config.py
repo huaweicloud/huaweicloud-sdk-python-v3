@@ -16,40 +16,61 @@ class ClusterNodeConfig:
 
     openapi_types = {
         'master_node_vip': 'str',
+        'dmz_vip': 'str',
+        'interface_name': 'str',
         'master_nodes': 'list[NodeConfig]',
+        'dmz_nodes': 'list[NodeConfig]',
         'work_nodes': 'list[NodeConfig]'
     }
 
     attribute_map = {
         'master_node_vip': 'master_node_vip',
+        'dmz_vip': 'dmz_vip',
+        'interface_name': 'interface_name',
         'master_nodes': 'master_nodes',
+        'dmz_nodes': 'dmz_nodes',
         'work_nodes': 'work_nodes'
     }
 
-    def __init__(self, master_node_vip=None, master_nodes=None, work_nodes=None):
+    def __init__(self, master_node_vip=None, dmz_vip=None, interface_name=None, master_nodes=None, dmz_nodes=None, work_nodes=None):
         r"""ClusterNodeConfig
 
         The model defined in huaweicloud sdk
 
         :param master_node_vip: master虚拟ip
         :type master_node_vip: str
+        :param dmz_vip: dmz区worker节点虚拟ip
+        :type dmz_vip: str
+        :param interface_name: 网卡名称
+        :type interface_name: str
         :param master_nodes: master节点数
         :type master_nodes: list[:class:`huaweicloudsdkiotedge.v3.NodeConfig`]
-        :param work_nodes: work节点数
+        :param dmz_nodes: dmz区worker节点数
+        :type dmz_nodes: list[:class:`huaweicloudsdkiotedge.v3.NodeConfig`]
+        :param work_nodes: trust区worker节点数
         :type work_nodes: list[:class:`huaweicloudsdkiotedge.v3.NodeConfig`]
         """
         
         
 
         self._master_node_vip = None
+        self._dmz_vip = None
+        self._interface_name = None
         self._master_nodes = None
+        self._dmz_nodes = None
         self._work_nodes = None
         self.discriminator = None
 
         if master_node_vip is not None:
             self.master_node_vip = master_node_vip
+        if dmz_vip is not None:
+            self.dmz_vip = dmz_vip
+        if interface_name is not None:
+            self.interface_name = interface_name
         if master_nodes is not None:
             self.master_nodes = master_nodes
+        if dmz_nodes is not None:
+            self.dmz_nodes = dmz_nodes
         if work_nodes is not None:
             self.work_nodes = work_nodes
 
@@ -76,6 +97,50 @@ class ClusterNodeConfig:
         self._master_node_vip = master_node_vip
 
     @property
+    def dmz_vip(self):
+        r"""Gets the dmz_vip of this ClusterNodeConfig.
+
+        dmz区worker节点虚拟ip
+
+        :return: The dmz_vip of this ClusterNodeConfig.
+        :rtype: str
+        """
+        return self._dmz_vip
+
+    @dmz_vip.setter
+    def dmz_vip(self, dmz_vip):
+        r"""Sets the dmz_vip of this ClusterNodeConfig.
+
+        dmz区worker节点虚拟ip
+
+        :param dmz_vip: The dmz_vip of this ClusterNodeConfig.
+        :type dmz_vip: str
+        """
+        self._dmz_vip = dmz_vip
+
+    @property
+    def interface_name(self):
+        r"""Gets the interface_name of this ClusterNodeConfig.
+
+        网卡名称
+
+        :return: The interface_name of this ClusterNodeConfig.
+        :rtype: str
+        """
+        return self._interface_name
+
+    @interface_name.setter
+    def interface_name(self, interface_name):
+        r"""Sets the interface_name of this ClusterNodeConfig.
+
+        网卡名称
+
+        :param interface_name: The interface_name of this ClusterNodeConfig.
+        :type interface_name: str
+        """
+        self._interface_name = interface_name
+
+    @property
     def master_nodes(self):
         r"""Gets the master_nodes of this ClusterNodeConfig.
 
@@ -98,10 +163,32 @@ class ClusterNodeConfig:
         self._master_nodes = master_nodes
 
     @property
+    def dmz_nodes(self):
+        r"""Gets the dmz_nodes of this ClusterNodeConfig.
+
+        dmz区worker节点数
+
+        :return: The dmz_nodes of this ClusterNodeConfig.
+        :rtype: list[:class:`huaweicloudsdkiotedge.v3.NodeConfig`]
+        """
+        return self._dmz_nodes
+
+    @dmz_nodes.setter
+    def dmz_nodes(self, dmz_nodes):
+        r"""Sets the dmz_nodes of this ClusterNodeConfig.
+
+        dmz区worker节点数
+
+        :param dmz_nodes: The dmz_nodes of this ClusterNodeConfig.
+        :type dmz_nodes: list[:class:`huaweicloudsdkiotedge.v3.NodeConfig`]
+        """
+        self._dmz_nodes = dmz_nodes
+
+    @property
     def work_nodes(self):
         r"""Gets the work_nodes of this ClusterNodeConfig.
 
-        work节点数
+        trust区worker节点数
 
         :return: The work_nodes of this ClusterNodeConfig.
         :rtype: list[:class:`huaweicloudsdkiotedge.v3.NodeConfig`]
@@ -112,7 +199,7 @@ class ClusterNodeConfig:
     def work_nodes(self, work_nodes):
         r"""Sets the work_nodes of this ClusterNodeConfig.
 
-        work节点数
+        trust区worker节点数
 
         :param work_nodes: The work_nodes of this ClusterNodeConfig.
         :type work_nodes: list[:class:`huaweicloudsdkiotedge.v3.NodeConfig`]

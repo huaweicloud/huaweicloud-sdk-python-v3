@@ -83,6 +83,7 @@ from huaweicloudsdkgaussdbfornosql.v3.model.create_instance_flavor_result import
 from huaweicloudsdkgaussdbfornosql.v3.model.create_instance_request import CreateInstanceRequest
 from huaweicloudsdkgaussdbfornosql.v3.model.create_instance_request_body import CreateInstanceRequestBody
 from huaweicloudsdkgaussdbfornosql.v3.model.create_instance_response import CreateInstanceResponse
+from huaweicloudsdkgaussdbfornosql.v3.model.dr_info import DRInfo
 from huaweicloudsdkgaussdbfornosql.v3.model.data_store_list import DataStoreList
 from huaweicloudsdkgaussdbfornosql.v3.model.database_table import DatabaseTable
 from huaweicloudsdkgaussdbfornosql.v3.model.datastore import Datastore

@@ -169,6 +169,72 @@ class ProjectManClient(Client):
 
         return http_info
 
+    def associate_scrum_issue(self, request):
+        r"""关联工作项
+
+        将一个工作项与一个或多个目标工作项建立关联关系,同时支持在同一次请求中取消已有关联。
+        关联关系建立后会同步生成 journal 动态记录,并受单工作项关联数量上限约束。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for AssociateScrumIssue
+        :type request: :class:`huaweicloudsdkprojectman.v4.AssociateScrumIssueRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.AssociateScrumIssueResponse`
+        """
+        http_info = self._associate_scrum_issue_http_info(request)
+        return self._call_api(**http_info)
+
+    def associate_scrum_issue_invoker(self, request):
+        http_info = self._associate_scrum_issue_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _associate_scrum_issue_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/issues/associate-issue",
+            "request_type": request.__class__.__name__,
+            "response_type": "AssociateScrumIssueResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_add_members_v4(self, request):
         r"""批量添加项目成员
 
@@ -368,6 +434,72 @@ class ProjectManClient(Client):
 
         return http_info
 
+    def cancel_scrum_associate(self, request):
+        r"""取消关联工作项
+
+        取消两个工作项之间的关联关系。仅项目创建者、项目管理员、工作项责任人、创建人或具有编辑权限的角色可执行取消操作。
+        取消后会同步生成 journal 动态记录。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CancelScrumAssociate
+        :type request: :class:`huaweicloudsdkprojectman.v4.CancelScrumAssociateRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.CancelScrumAssociateResponse`
+        """
+        http_info = self._cancel_scrum_associate_http_info(request)
+        return self._call_api(**http_info)
+
+    def cancel_scrum_associate_invoker(self, request):
+        http_info = self._cancel_scrum_associate_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _cancel_scrum_associate_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/issues/cancel-associate",
+            "request_type": request.__class__.__name__,
+            "response_type": "CancelScrumAssociateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def check_project_name_v4(self, request):
         r"""检查项目名称是否存在
 
@@ -551,6 +683,72 @@ class ProjectManClient(Client):
             ['application/json'])
 
         auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_scrum_my_issue_notes(self, request):
+        r"""删除工作项评论
+
+        删除指定工作项下的评论。仅评论创建者可删除，删除评论后工作项的备注内容将被清空。
+        该接口会同步触发 testman 需求通知，用于跨系统数据同步。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteScrumMyIssueNotes
+        :type request: :class:`huaweicloudsdkprojectman.v4.DeleteScrumMyIssueNotesRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.DeleteScrumMyIssueNotesResponse`
+        """
+        http_info = self._delete_scrum_my_issue_notes_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_scrum_my_issue_notes_invoker(self, request):
+        http_info = self._delete_scrum_my_issue_notes_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_scrum_my_issue_notes_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/workitem/issue-note",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteScrumMyIssueNotesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -894,6 +1092,71 @@ class ProjectManClient(Client):
             ['application/json'])
 
         auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_scrum_job_cache(self, request):
+        r"""查询缓存
+
+        查询缓存。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListScrumJobCache
+        :type request: :class:`huaweicloudsdkprojectman.v4.ListScrumJobCacheRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ListScrumJobCacheResponse`
+        """
+        http_info = self._list_scrum_job_cache_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_scrum_job_cache_invoker(self, request):
+        http_info = self._list_scrum_job_cache_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_scrum_job_cache_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/job-cache/list-cache",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListScrumJobCacheResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -2110,6 +2373,73 @@ class ProjectManClient(Client):
 
         return http_info
 
+    def batch_create_ipd_issues(self, request):
+        r"""批量创建工作项
+
+        批量创建工作项
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchCreateIpdIssues
+        :type request: :class:`huaweicloudsdkprojectman.v4.BatchCreateIpdIssuesRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.BatchCreateIpdIssuesResponse`
+        """
+        http_info = self._batch_create_ipd_issues_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_create_ipd_issues_invoker(self, request):
+        http_info = self._batch_create_ipd_issues_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_create_ipd_issues_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/ipdprojectservice/projects/{project_id}/issues/batch-create",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateIpdIssuesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_create_issue_snapitems(self, request):
         r"""批量创建工作项快照
 
@@ -2135,6 +2465,282 @@ class ProjectManClient(Client):
             "resource_path": "/v1/ipdprojectservice/projects/{project_id}/baseline-snapshots/create/batch",
             "request_type": request.__class__.__name__,
             "response_type": "BatchCreateIssueSnapitemsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_create_issues_v2(self, request):
+        r"""批量创建工作项
+
+        批量创建工作项。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchCreateIssuesV2
+        :type request: :class:`huaweicloudsdkprojectman.v4.BatchCreateIssuesV2Request`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.BatchCreateIssuesV2Response`
+        """
+        http_info = self._batch_create_issues_v2_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_create_issues_v2_invoker(self, request):
+        http_info = self._batch_create_issues_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_create_issues_v2_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/ipdprojectservice/projects/{project_id}/issues/batch",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateIssuesV2Response"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_delete_ipd_issue(self, request):
+        r"""批量删除工作项
+
+        批量删除工作项
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchDeleteIpdIssue
+        :type request: :class:`huaweicloudsdkprojectman.v4.BatchDeleteIpdIssueRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.BatchDeleteIpdIssueResponse`
+        """
+        http_info = self._batch_delete_ipd_issue_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_ipd_issue_invoker(self, request):
+        http_info = self._batch_delete_ipd_issue_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_ipd_issue_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/ipdprojectservice/projects/{project_id}/issues/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteIpdIssueResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+        if 'is_permanent_delete' in local_var_params:
+            query_params.append(('is_permanent_delete', local_var_params['is_permanent_delete']))
+        if 'src_project_id' in local_var_params:
+            query_params.append(('src_project_id', local_var_params['src_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_delete_ipd_issues(self, request):
+        r"""批量删除工作项
+
+        批量删除工作项
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchDeleteIpdIssues
+        :type request: :class:`huaweicloudsdkprojectman.v4.BatchDeleteIpdIssuesRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.BatchDeleteIpdIssuesResponse`
+        """
+        http_info = self._batch_delete_ipd_issues_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_ipd_issues_invoker(self, request):
+        http_info = self._batch_delete_ipd_issues_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_ipd_issues_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/ipdprojectservice/projects/{project_id}/issues/batch",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteIpdIssuesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+        if 'is_permanent_delete' in local_var_params:
+            query_params.append(('is_permanent_delete', local_var_params['is_permanent_delete']))
+        if 'src_project_id' in local_var_params:
+            query_params.append(('src_project_id', local_var_params['src_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_delete_plans(self, request):
+        r"""批量删除计划
+
+        当需要删除发布计划/迭代时，可调用此接口，用户可以根据传入的发布计划/迭代ID列表批量删除计划或迭代。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchDeletePlans
+        :type request: :class:`huaweicloudsdkprojectman.v4.BatchDeletePlansRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.BatchDeletePlansResponse`
+        """
+        http_info = self._batch_delete_plans_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_plans_invoker(self, request):
+        http_info = self._batch_delete_plans_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_plans_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/planservice/projects/{project_id}/plans/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeletePlansResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -2244,6 +2850,209 @@ class ProjectManClient(Client):
 
         return http_info
 
+    def batch_transfer_ipd_work_item_flow(self, request):
+        r"""工作项流程批量流转
+
+        工作项流程批量流转
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchTransferIpdWorkItemFlow
+        :type request: :class:`huaweicloudsdkprojectman.v4.BatchTransferIpdWorkItemFlowRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.BatchTransferIpdWorkItemFlowResponse`
+        """
+        http_info = self._batch_transfer_ipd_work_item_flow_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_transfer_ipd_work_item_flow_invoker(self, request):
+        http_info = self._batch_transfer_ipd_work_item_flow_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_transfer_ipd_work_item_flow_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/ipdprojectservice/projects/{project_id}/work-item/processes/transfer-batch",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchTransferIpdWorkItemFlowResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+        if 'is_recover' in local_var_params:
+            query_params.append(('is_recover', local_var_params['is_recover']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_update_baseline(self, request):
+        r"""批量基线或取消基线
+
+        批量基线或取消基线
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchUpdateBaseline
+        :type request: :class:`huaweicloudsdkprojectman.v4.BatchUpdateBaselineRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.BatchUpdateBaselineResponse`
+        """
+        http_info = self._batch_update_baseline_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_update_baseline_invoker(self, request):
+        http_info = self._batch_update_baseline_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_update_baseline_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/planservice/projects/{project_id}/plans/batch-baseline",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchUpdateBaselineResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_update_ipd_issues(self, request):
+        r"""批量更新工作项
+
+        批量更新工作项，单次最多支持50个工作项。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchUpdateIpdIssues
+        :type request: :class:`huaweicloudsdkprojectman.v4.BatchUpdateIpdIssuesRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.BatchUpdateIpdIssuesResponse`
+        """
+        http_info = self._batch_update_ipd_issues_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_update_ipd_issues_invoker(self, request):
+        http_info = self._batch_update_ipd_issues_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_update_ipd_issues_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/ipdprojectservice/projects/{project_id}/issues/batch",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchUpdateIpdIssuesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_update_snapshot_deletable_flag(self, request):
         r"""批量更新快照可删除标识
 
@@ -2280,6 +3089,144 @@ class ProjectManClient(Client):
         path_params = {}
         if 'project_id' in local_var_params:
             path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def change_plan_status(self, request):
+        r"""更新发布/迭代状态
+
+        更新发布/迭代状态
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ChangePlanStatus
+        :type request: :class:`huaweicloudsdkprojectman.v4.ChangePlanStatusRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ChangePlanStatusResponse`
+        """
+        http_info = self._change_plan_status_http_info(request)
+        return self._call_api(**http_info)
+
+    def change_plan_status_invoker(self, request):
+        http_info = self._change_plan_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _change_plan_status_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/planservice/projects/{project_id}/plans/{plan_id}/status",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangePlanStatusResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'plan_id' in local_var_params:
+            path_params['plan_id'] = local_var_params['plan_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_ipd_issue_comments(self, request):
+        r"""创建工作项评论
+
+        为工作项创建评论、回复评论
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateIpdIssueComments
+        :type request: :class:`huaweicloudsdkprojectman.v4.CreateIpdIssueCommentsRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.CreateIpdIssueCommentsResponse`
+        """
+        http_info = self._create_ipd_issue_comments_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_ipd_issue_comments_invoker(self, request):
+        http_info = self._create_ipd_issue_comments_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_ipd_issue_comments_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/ipdprojectservice/projects/{project_id}/issues/{issue_id}/comments",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateIpdIssueCommentsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'issue_id' in local_var_params:
+            path_params['issue_id'] = local_var_params['issue_id']
 
         query_params = []
 
@@ -2587,6 +3534,73 @@ class ProjectManClient(Client):
 
         return http_info
 
+    def create_plans(self, request):
+        r"""新建计划
+
+        在项目下新建计划（里程碑、发布、迭代），支持创建子迭代。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreatePlans
+        :type request: :class:`huaweicloudsdkprojectman.v4.CreatePlansRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.CreatePlansResponse`
+        """
+        http_info = self._create_plans_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_plans_invoker(self, request):
+        http_info = self._create_plans_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_plans_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/planservice/projects/{project_id}/plans",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePlansResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_sprint_snapshots(self, request):
         r"""创建计划管理快照
 
@@ -2696,6 +3710,75 @@ class ProjectManClient(Client):
             query_params.append(('issue_id', local_var_params['issue_id']))
         if 'file_name' in local_var_params:
             query_params.append(('file_name', local_var_params['file_name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_ipd_issue_comment(self, request):
+        r"""删除工作项评论
+
+        删除工作项评论
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteIpdIssueComment
+        :type request: :class:`huaweicloudsdkprojectman.v4.DeleteIpdIssueCommentRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.DeleteIpdIssueCommentResponse`
+        """
+        http_info = self._delete_ipd_issue_comment_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_ipd_issue_comment_invoker(self, request):
+        http_info = self._delete_ipd_issue_comment_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_ipd_issue_comment_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/ipdprojectservice/projects/{project_id}/issues/{issue_id}/comments/{comment_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteIpdIssueCommentResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'issue_id' in local_var_params:
+            path_params['issue_id'] = local_var_params['issue_id']
+        if 'comment_id' in local_var_params:
+            path_params['comment_id'] = local_var_params['comment_id']
+
+        query_params = []
 
         header_params = {}
 
@@ -2928,6 +4011,146 @@ class ProjectManClient(Client):
 
         return http_info
 
+    def get_model_config(self, request):
+        r"""获取模型树配置信息
+
+        获取模型树配置信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for GetModelConfig
+        :type request: :class:`huaweicloudsdkprojectman.v4.GetModelConfigRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.GetModelConfigResponse`
+        """
+        http_info = self._get_model_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def get_model_config_invoker(self, request):
+        http_info = self._get_model_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _get_model_config_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/ipdprojectservice/projects/{project_id}/model-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "GetModelConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_ipd_issue_comments(self, request):
+        r"""查询工作项评论
+
+        查询工作项的评论，包含用户创建的评论和系统创建的关键信息评论
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListIpdIssueComments
+        :type request: :class:`huaweicloudsdkprojectman.v4.ListIpdIssueCommentsRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ListIpdIssueCommentsResponse`
+        """
+        http_info = self._list_ipd_issue_comments_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_ipd_issue_comments_invoker(self, request):
+        http_info = self._list_ipd_issue_comments_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_ipd_issue_comments_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/ipdprojectservice/projects/{project_id}/issues/{issue_id}/comments",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListIpdIssueCommentsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'issue_id' in local_var_params:
+            path_params['issue_id'] = local_var_params['issue_id']
+
+        query_params = []
+        if 'date_desc' in local_var_params:
+            query_params.append(('date_desc', local_var_params['date_desc']))
+        if 'page_no' in local_var_params:
+            query_params.append(('page_no', local_var_params['page_no']))
+        if 'page_size' in local_var_params:
+            query_params.append(('page_size', local_var_params['page_size']))
+        if 'category' in local_var_params:
+            query_params.append(('category', local_var_params['category']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_ipd_labels(self, request):
         r"""查询标签列表
 
@@ -2972,6 +4195,77 @@ class ProjectManClient(Client):
             query_params.append(('title', local_var_params['title']))
         if 'category_types' in local_var_params:
             query_params.append(('category_types', local_var_params['category_types']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_ipd_project_fields(self, request):
+        r"""查询字段列表
+
+        分页查询字段列表，关键字搜索支持标题、字段类型、创建人搜索。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListIpdProjectFields
+        :type request: :class:`huaweicloudsdkprojectman.v4.ListIpdProjectFieldsRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ListIpdProjectFieldsResponse`
+        """
+        http_info = self._list_ipd_project_fields_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_ipd_project_fields_invoker(self, request):
+        http_info = self._list_ipd_project_fields_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_ipd_project_fields_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/ipdprojectservice/projects/{project_id}/fields",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListIpdProjectFieldsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+        if 'keyword' in local_var_params:
+            query_params.append(('keyword', local_var_params['keyword']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
 
@@ -3413,6 +4707,207 @@ class ProjectManClient(Client):
 
         return http_info
 
+    def list_plan(self, request):
+        r"""发布/迭代计划列表查询
+
+        发布/迭代计划列表查询
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListPlan
+        :type request: :class:`huaweicloudsdkprojectman.v4.ListPlanRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ListPlanResponse`
+        """
+        http_info = self._list_plan_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_plan_invoker(self, request):
+        http_info = self._list_plan_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_plan_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/planservice/projects/{project_id}/plans/query",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPlanResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+        if 'key_word' in local_var_params:
+            query_params.append(('key_word', local_var_params['key_word']))
+        if 'updated_time_interval' in local_var_params:
+            query_params.append(('updated_time_interval', local_var_params['updated_time_interval']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_plan_detail(self, request):
+        r"""发布/迭代计划详情查询
+
+        查询指定发布或迭代计划的详情信息，包含其子迭代列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListPlanDetail
+        :type request: :class:`huaweicloudsdkprojectman.v4.ListPlanDetailRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ListPlanDetailResponse`
+        """
+        http_info = self._list_plan_detail_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_plan_detail_invoker(self, request):
+        http_info = self._list_plan_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_plan_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/planservice/projects/{project_id}/plans/{plan_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPlanDetailResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'plan_id' in local_var_params:
+            path_params['plan_id'] = local_var_params['plan_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_project_users(self, request):
+        r"""查询项目下的用户
+
+        查询项目下的所有用户
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListProjectUsers
+        :type request: :class:`huaweicloudsdkprojectman.v4.ListProjectUsersRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ListProjectUsersResponse`
+        """
+        http_info = self._list_project_users_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_project_users_invoker(self, request):
+        http_info = self._list_project_users_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_project_users_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/ipdprojectservice/projects/{project_id}/users",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProjectUsersResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def put_ipd_change_review_form_v2(self, request):
         r"""更新IPD变更评审单
 
@@ -3561,6 +5056,73 @@ class ProjectManClient(Client):
 
         return http_info
 
+    def show_category_status(self, request):
+        r"""查询工作项状态列表
+
+        查询工作项状态列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowCategoryStatus
+        :type request: :class:`huaweicloudsdkprojectman.v4.ShowCategoryStatusRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ShowCategoryStatusResponse`
+        """
+        http_info = self._show_category_status_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_category_status_invoker(self, request):
+        http_info = self._show_category_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_category_status_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/ipdprojectservice/projects/{project_id}/status",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCategoryStatusResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+        if 'categories' in local_var_params:
+            query_params.append(('categories', local_var_params['categories']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_ipd_fields_v2(self, request):
         r"""查询工作项实例字段列表
 
@@ -3632,6 +5194,138 @@ class ProjectManClient(Client):
 
         return http_info
 
+    def show_ipd_issue_relations_config_by_project(self, request):
+        r"""查询项目下工作项类型的关联关系配置
+
+        查询项目下工作项类型的关联关系配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowIpdIssueRelationsConfigByProject
+        :type request: :class:`huaweicloudsdkprojectman.v4.ShowIpdIssueRelationsConfigByProjectRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ShowIpdIssueRelationsConfigByProjectResponse`
+        """
+        http_info = self._show_ipd_issue_relations_config_by_project_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_ipd_issue_relations_config_by_project_invoker(self, request):
+        http_info = self._show_ipd_issue_relations_config_by_project_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_ipd_issue_relations_config_by_project_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/ipdprojectservice/projects/{project_id}/issue-relation-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowIpdIssueRelationsConfigByProjectResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_ipd_project_list(self, request):
+        r"""查询IPD项目列表
+
+        查询IPD项目列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowIpdProjectList
+        :type request: :class:`huaweicloudsdkprojectman.v4.ShowIpdProjectListRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ShowIpdProjectListResponse`
+        """
+        http_info = self._show_ipd_project_list_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_ipd_project_list_invoker(self, request):
+        http_info = self._show_ipd_project_list_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_ipd_project_list_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/ipdprojectservice/projects/ipd",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowIpdProjectListResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'search' in local_var_params:
+            query_params.append(('search', local_var_params['search']))
+        if 'model' in local_var_params:
+            query_params.append(('model', local_var_params['model']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_ipd_third_party_associated(self, request):
         r"""查询外部链接
 
@@ -3672,6 +5366,75 @@ class ProjectManClient(Client):
             path_params['project_id'] = local_var_params['project_id']
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_ipd_work_item_flow(self, request):
+        r"""查询工作项流程信息
+
+        查询工作项流程信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowIpdWorkItemFlow
+        :type request: :class:`huaweicloudsdkprojectman.v4.ShowIpdWorkItemFlowRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ShowIpdWorkItemFlowResponse`
+        """
+        http_info = self._show_ipd_work_item_flow_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_ipd_work_item_flow_invoker(self, request):
+        http_info = self._show_ipd_work_item_flow_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_ipd_work_item_flow_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/ipdprojectservice/projects/{project_id}/work-item/{issue_id}/flow/detail",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowIpdWorkItemFlowResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'issue_id' in local_var_params:
+            path_params['issue_id'] = local_var_params['issue_id']
+
+        query_params = []
+        if 'issue_category' in local_var_params:
+            query_params.append(('issue_category', local_var_params['issue_category']))
 
         header_params = {}
 
@@ -3837,6 +5600,75 @@ class ProjectManClient(Client):
 
         return http_info
 
+    def show_tenant_issue_list(self, request):
+        r"""查询个人工作台工作项列表
+
+        需要获取当前登录用户在租户空间中的所有工作项列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowTenantIssueList
+        :type request: :class:`huaweicloudsdkprojectman.v4.ShowTenantIssueListRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ShowTenantIssueListResponse`
+        """
+        http_info = self._show_tenant_issue_list_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_tenant_issue_list_invoker(self, request):
+        http_info = self._show_tenant_issue_list_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_tenant_issue_list_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/ipdprojectservice/projects/tenant/query",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTenantIssueListResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'project_id' in local_var_params:
+            query_params.append(('project_id', local_var_params['project_id']))
+        if 'issue_type' in local_var_params:
+            query_params.append(('issue_type', local_var_params['issue_type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_workflow_template(self, request):
         r"""获取工作流的详情及每条流转线的详情
 
@@ -3959,6 +5791,77 @@ class ProjectManClient(Client):
             ['application/json'])
 
         auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_ipd_issue_comment(self, request):
+        r"""修改工作项评论
+
+        修改工作项评论
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateIpdIssueComment
+        :type request: :class:`huaweicloudsdkprojectman.v4.UpdateIpdIssueCommentRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.UpdateIpdIssueCommentResponse`
+        """
+        http_info = self._update_ipd_issue_comment_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_ipd_issue_comment_invoker(self, request):
+        http_info = self._update_ipd_issue_comment_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_ipd_issue_comment_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/ipdprojectservice/projects/{project_id}/issues/{issue_id}/comments/{comment_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateIpdIssueCommentResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'issue_id' in local_var_params:
+            path_params['issue_id'] = local_var_params['issue_id']
+        if 'comment_id' in local_var_params:
+            path_params['comment_id'] = local_var_params['comment_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -4109,6 +6012,75 @@ class ProjectManClient(Client):
 
         return http_info
 
+    def update_plan_info(self, request):
+        r"""更新计划
+
+        更新指定计划信息，支持更新里程碑、发布、迭代的属性。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdatePlanInfo
+        :type request: :class:`huaweicloudsdkprojectman.v4.UpdatePlanInfoRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.UpdatePlanInfoResponse`
+        """
+        http_info = self._update_plan_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_plan_info_invoker(self, request):
+        http_info = self._update_plan_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_plan_info_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/planservice/projects/{project_id}/plans/{plan_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePlanInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'plan_id' in local_var_params:
+            path_params['plan_id'] = local_var_params['plan_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def upload_ipd_image_in_issue(self, request):
         r"""上传图片到工作项描述中
 
@@ -4168,6 +6140,73 @@ class ProjectManClient(Client):
             ['multipart/form-data'])
 
         auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_baseline_snapshots(self, request):
+        r"""根据快照版本查询特性集
+
+        根据快照版本查询特性集
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowBaselineSnapshots
+        :type request: :class:`huaweicloudsdkprojectman.v4.ShowBaselineSnapshotsRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ShowBaselineSnapshotsResponse`
+        """
+        http_info = self._show_baseline_snapshots_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_baseline_snapshots_invoker(self, request):
+        http_info = self._show_baseline_snapshots_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_baseline_snapshots_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/ipdprojectservice/projects/{project_id}/feature-set/query",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowBaselineSnapshotsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+        if 'snapshot_version_id' in local_var_params:
+            query_params.append(('snapshot_version_id', local_var_params['snapshot_version_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -4787,6 +6826,71 @@ class ProjectManClient(Client):
 
         return http_info
 
+    def batch_delete_scrum_workitem(self, request):
+        r"""批量删除工作项
+
+        批量删除工作项。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchDeleteScrumWorkitem
+        :type request: :class:`huaweicloudsdkprojectman.v4.BatchDeleteScrumWorkitemRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.BatchDeleteScrumWorkitemResponse`
+        """
+        http_info = self._batch_delete_scrum_workitem_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_scrum_workitem_invoker(self, request):
+        http_info = self._batch_delete_scrum_workitem_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_scrum_workitem_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/workitem/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteScrumWorkitemResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_list_associated_issues(self, request):
         r"""查询当前项目下已经关联的工作项
 
@@ -4844,6 +6948,71 @@ class ProjectManClient(Client):
             ['application/json'])
 
         auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_update_scrum_issues(self, request):
+        r"""批量编辑工作项
+
+        批量编辑工作项。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchUpdateScrumIssues
+        :type request: :class:`huaweicloudsdkprojectman.v4.BatchUpdateScrumIssuesRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.BatchUpdateScrumIssuesResponse`
+        """
+        http_info = self._batch_update_scrum_issues_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_update_scrum_issues_invoker(self, request):
+        http_info = self._batch_update_scrum_issues_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_update_scrum_issues_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/workitem/issues",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchUpdateScrumIssuesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -7125,6 +9294,71 @@ class ProjectManClient(Client):
 
         return http_info
 
+    def list_workitem_configs(self, request):
+        r"""获取项目公共配置
+
+        获取项目公共配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListWorkitemConfigs
+        :type request: :class:`huaweicloudsdkprojectman.v4.ListWorkitemConfigsRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ListWorkitemConfigsResponse`
+        """
+        http_info = self._list_workitem_configs_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_workitem_configs_invoker(self, request):
+        http_info = self._list_workitem_configs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_workitem_configs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/project/{project_id}/public-configs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListWorkitemConfigsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def search_issues(self, request):
         r"""高级查询我的待办工作项
 
@@ -7785,6 +10019,201 @@ class ProjectManClient(Client):
             ['application/json'])
 
         auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_scrum_issue_notes(self, request):
+        r"""工作项添加评论
+
+        工作项添加评论。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateScrumIssueNotes
+        :type request: :class:`huaweicloudsdkprojectman.v4.UpdateScrumIssueNotesRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.UpdateScrumIssueNotesResponse`
+        """
+        http_info = self._update_scrum_issue_notes_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_scrum_issue_notes_invoker(self, request):
+        http_info = self._update_scrum_issue_notes_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_scrum_issue_notes_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/issues/update-issue-notes",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateScrumIssueNotesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_scrum_issue_workflow(self, request):
+        r"""工作项状态流转
+
+        工作项状态流转。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateScrumIssueWorkflow
+        :type request: :class:`huaweicloudsdkprojectman.v4.UpdateScrumIssueWorkflowRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.UpdateScrumIssueWorkflowResponse`
+        """
+        http_info = self._update_scrum_issue_workflow_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_scrum_issue_workflow_invoker(self, request):
+        http_info = self._update_scrum_issue_workflow_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_scrum_issue_workflow_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/workitem/issue-flowage",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateScrumIssueWorkflowResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_scrum_my_issue_notes(self, request):
+        r"""更新工作项评论
+
+        更新工作项评论。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateScrumMyIssueNotes
+        :type request: :class:`huaweicloudsdkprojectman.v4.UpdateScrumMyIssueNotesRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.UpdateScrumMyIssueNotesResponse`
+        """
+        http_info = self._update_scrum_my_issue_notes_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_scrum_my_issue_notes_invoker(self, request):
+        http_info = self._update_scrum_my_issue_notes_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_scrum_my_issue_notes_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/workitem/issue-note",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateScrumMyIssueNotesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats

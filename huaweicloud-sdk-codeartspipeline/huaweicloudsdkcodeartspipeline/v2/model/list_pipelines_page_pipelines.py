@@ -26,7 +26,10 @@ class ListPipelinesPagePipelines:
         'create_time': 'int',
         'latest_run': 'ListPipelinesPageLatestRun',
         'convert_sign': 'int',
-        'security_level': 'int'
+        'security_level': 'int',
+        'banned': 'bool',
+        'description': 'str',
+        'tag_list': 'list[ListPipelinesPageTagList]'
     }
 
     attribute_map = {
@@ -41,10 +44,13 @@ class ListPipelinesPagePipelines:
         'create_time': 'create_time',
         'latest_run': 'latest_run',
         'convert_sign': 'convert_sign',
-        'security_level': 'security_level'
+        'security_level': 'security_level',
+        'banned': 'banned',
+        'description': 'description',
+        'tag_list': 'tag_list'
     }
 
-    def __init__(self, pipeline_id=None, name=None, project_id=None, project_name=None, component_id=None, is_publish=None, is_collect=None, manifest_version=None, create_time=None, latest_run=None, convert_sign=None, security_level=None):
+    def __init__(self, pipeline_id=None, name=None, project_id=None, project_name=None, component_id=None, is_publish=None, is_collect=None, manifest_version=None, create_time=None, latest_run=None, convert_sign=None, security_level=None, banned=None, description=None, tag_list=None):
         r"""ListPipelinesPagePipelines
 
         The model defined in huaweicloud sdk
@@ -73,6 +79,12 @@ class ListPipelinesPagePipelines:
         :type convert_sign: int
         :param security_level: **参数解释**： 流水线涉密等级。 **取值范围**： 正整数。 null：未设置密级。 1：最低密级。 
         :type security_level: int
+        :param banned: **参数解释**： 是否禁用流水线。 **取值范围**： - true：流水线已禁用。 - false：流水线未禁用。 
+        :type banned: bool
+        :param description: **参数解释**： 流水线描述。 **取值范围**： 不涉及。 
+        :type description: str
+        :param tag_list: **参数解释**： 流水线标签列表。 **取值范围**： 不涉及。 
+        :type tag_list: list[:class:`huaweicloudsdkcodeartspipeline.v2.ListPipelinesPageTagList`]
         """
         
         
@@ -89,6 +101,9 @@ class ListPipelinesPagePipelines:
         self._latest_run = None
         self._convert_sign = None
         self._security_level = None
+        self._banned = None
+        self._description = None
+        self._tag_list = None
         self.discriminator = None
 
         if pipeline_id is not None:
@@ -115,6 +130,12 @@ class ListPipelinesPagePipelines:
             self.convert_sign = convert_sign
         if security_level is not None:
             self.security_level = security_level
+        if banned is not None:
+            self.banned = banned
+        if description is not None:
+            self.description = description
+        if tag_list is not None:
+            self.tag_list = tag_list
 
     @property
     def pipeline_id(self):
@@ -375,6 +396,72 @@ class ListPipelinesPagePipelines:
         :type security_level: int
         """
         self._security_level = security_level
+
+    @property
+    def banned(self):
+        r"""Gets the banned of this ListPipelinesPagePipelines.
+
+        **参数解释**： 是否禁用流水线。 **取值范围**： - true：流水线已禁用。 - false：流水线未禁用。 
+
+        :return: The banned of this ListPipelinesPagePipelines.
+        :rtype: bool
+        """
+        return self._banned
+
+    @banned.setter
+    def banned(self, banned):
+        r"""Sets the banned of this ListPipelinesPagePipelines.
+
+        **参数解释**： 是否禁用流水线。 **取值范围**： - true：流水线已禁用。 - false：流水线未禁用。 
+
+        :param banned: The banned of this ListPipelinesPagePipelines.
+        :type banned: bool
+        """
+        self._banned = banned
+
+    @property
+    def description(self):
+        r"""Gets the description of this ListPipelinesPagePipelines.
+
+        **参数解释**： 流水线描述。 **取值范围**： 不涉及。 
+
+        :return: The description of this ListPipelinesPagePipelines.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        r"""Sets the description of this ListPipelinesPagePipelines.
+
+        **参数解释**： 流水线描述。 **取值范围**： 不涉及。 
+
+        :param description: The description of this ListPipelinesPagePipelines.
+        :type description: str
+        """
+        self._description = description
+
+    @property
+    def tag_list(self):
+        r"""Gets the tag_list of this ListPipelinesPagePipelines.
+
+        **参数解释**： 流水线标签列表。 **取值范围**： 不涉及。 
+
+        :return: The tag_list of this ListPipelinesPagePipelines.
+        :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.ListPipelinesPageTagList`]
+        """
+        return self._tag_list
+
+    @tag_list.setter
+    def tag_list(self, tag_list):
+        r"""Sets the tag_list of this ListPipelinesPagePipelines.
+
+        **参数解释**： 流水线标签列表。 **取值范围**： 不涉及。 
+
+        :param tag_list: The tag_list of this ListPipelinesPagePipelines.
+        :type tag_list: list[:class:`huaweicloudsdkcodeartspipeline.v2.ListPipelinesPageTagList`]
+        """
+        self._tag_list = tag_list
 
     def to_dict(self):
         result = {}

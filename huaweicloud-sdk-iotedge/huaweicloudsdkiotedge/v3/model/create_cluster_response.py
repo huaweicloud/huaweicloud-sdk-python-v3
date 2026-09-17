@@ -21,9 +21,11 @@ class CreateClusterResponse(SdkResponse):
         'description': 'str',
         'version': 'str',
         'state': 'str',
+        'is_upgradeable': 'bool',
+        'cluster_type': 'str',
+        'cluster_addr': 'str',
         'create_time': 'str',
-        'update_time': 'str',
-        'is_upgradeable': 'bool'
+        'update_time': 'str'
     }
 
     attribute_map = {
@@ -32,12 +34,14 @@ class CreateClusterResponse(SdkResponse):
         'description': 'description',
         'version': 'version',
         'state': 'state',
+        'is_upgradeable': 'is_upgradeable',
+        'cluster_type': 'cluster_type',
+        'cluster_addr': 'cluster_addr',
         'create_time': 'create_time',
-        'update_time': 'update_time',
-        'is_upgradeable': 'is_upgradeable'
+        'update_time': 'update_time'
     }
 
-    def __init__(self, cluster_id=None, cluster_name=None, description=None, version=None, state=None, create_time=None, update_time=None, is_upgradeable=None):
+    def __init__(self, cluster_id=None, cluster_name=None, description=None, version=None, state=None, is_upgradeable=None, cluster_type=None, cluster_addr=None, create_time=None, update_time=None):
         r"""CreateClusterResponse
 
         The model defined in huaweicloud sdk
@@ -52,12 +56,16 @@ class CreateClusterResponse(SdkResponse):
         :type version: str
         :param state: 边缘集群状态
         :type state: str
+        :param is_upgradeable: 是否可升级
+        :type is_upgradeable: bool
+        :param cluster_type: 集群类型
+        :type cluster_type: str
+        :param cluster_addr: 集群地址
+        :type cluster_addr: str
         :param create_time: 创建时间
         :type create_time: str
         :param update_time: 最后一次修改时间
         :type update_time: str
-        :param is_upgradeable: 是否可升级
-        :type is_upgradeable: bool
         """
         
         super().__init__()
@@ -67,9 +75,11 @@ class CreateClusterResponse(SdkResponse):
         self._description = None
         self._version = None
         self._state = None
+        self._is_upgradeable = None
+        self._cluster_type = None
+        self._cluster_addr = None
         self._create_time = None
         self._update_time = None
-        self._is_upgradeable = None
         self.discriminator = None
 
         if cluster_id is not None:
@@ -82,12 +92,16 @@ class CreateClusterResponse(SdkResponse):
             self.version = version
         if state is not None:
             self.state = state
+        if is_upgradeable is not None:
+            self.is_upgradeable = is_upgradeable
+        if cluster_type is not None:
+            self.cluster_type = cluster_type
+        if cluster_addr is not None:
+            self.cluster_addr = cluster_addr
         if create_time is not None:
             self.create_time = create_time
         if update_time is not None:
             self.update_time = update_time
-        if is_upgradeable is not None:
-            self.is_upgradeable = is_upgradeable
 
     @property
     def cluster_id(self):
@@ -200,6 +214,72 @@ class CreateClusterResponse(SdkResponse):
         self._state = state
 
     @property
+    def is_upgradeable(self):
+        r"""Gets the is_upgradeable of this CreateClusterResponse.
+
+        是否可升级
+
+        :return: The is_upgradeable of this CreateClusterResponse.
+        :rtype: bool
+        """
+        return self._is_upgradeable
+
+    @is_upgradeable.setter
+    def is_upgradeable(self, is_upgradeable):
+        r"""Sets the is_upgradeable of this CreateClusterResponse.
+
+        是否可升级
+
+        :param is_upgradeable: The is_upgradeable of this CreateClusterResponse.
+        :type is_upgradeable: bool
+        """
+        self._is_upgradeable = is_upgradeable
+
+    @property
+    def cluster_type(self):
+        r"""Gets the cluster_type of this CreateClusterResponse.
+
+        集群类型
+
+        :return: The cluster_type of this CreateClusterResponse.
+        :rtype: str
+        """
+        return self._cluster_type
+
+    @cluster_type.setter
+    def cluster_type(self, cluster_type):
+        r"""Sets the cluster_type of this CreateClusterResponse.
+
+        集群类型
+
+        :param cluster_type: The cluster_type of this CreateClusterResponse.
+        :type cluster_type: str
+        """
+        self._cluster_type = cluster_type
+
+    @property
+    def cluster_addr(self):
+        r"""Gets the cluster_addr of this CreateClusterResponse.
+
+        集群地址
+
+        :return: The cluster_addr of this CreateClusterResponse.
+        :rtype: str
+        """
+        return self._cluster_addr
+
+    @cluster_addr.setter
+    def cluster_addr(self, cluster_addr):
+        r"""Sets the cluster_addr of this CreateClusterResponse.
+
+        集群地址
+
+        :param cluster_addr: The cluster_addr of this CreateClusterResponse.
+        :type cluster_addr: str
+        """
+        self._cluster_addr = cluster_addr
+
+    @property
     def create_time(self):
         r"""Gets the create_time of this CreateClusterResponse.
 
@@ -242,28 +322,6 @@ class CreateClusterResponse(SdkResponse):
         :type update_time: str
         """
         self._update_time = update_time
-
-    @property
-    def is_upgradeable(self):
-        r"""Gets the is_upgradeable of this CreateClusterResponse.
-
-        是否可升级
-
-        :return: The is_upgradeable of this CreateClusterResponse.
-        :rtype: bool
-        """
-        return self._is_upgradeable
-
-    @is_upgradeable.setter
-    def is_upgradeable(self, is_upgradeable):
-        r"""Sets the is_upgradeable of this CreateClusterResponse.
-
-        是否可升级
-
-        :param is_upgradeable: The is_upgradeable of this CreateClusterResponse.
-        :type is_upgradeable: bool
-        """
-        self._is_upgradeable = is_upgradeable
 
     def to_dict(self):
         import warnings

@@ -57,7 +57,7 @@ class AlarmSubUpdateRequest:
         :type notification_target_name: str
         :param notification_target_type: **参数解释**： 消息主题类型。 **取值范围**： - SMN：SMN类型
         :type notification_target_type: str
-        :param language: **参数解释**：  语言。  **取值范围**：  不涉及。
+        :param language: **参数解释**： 语言。 **取值范围**： 不涉及。
         :type language: str
         :param time_zone: **参数解释**： 时区。 **取值范围**： 不涉及。
         :type time_zone: str
@@ -234,7 +234,7 @@ class AlarmSubUpdateRequest:
     def language(self):
         r"""Gets the language of this AlarmSubUpdateRequest.
 
-        **参数解释**：  语言。  **取值范围**：  不涉及。
+        **参数解释**： 语言。 **取值范围**： 不涉及。
 
         :return: The language of this AlarmSubUpdateRequest.
         :rtype: str
@@ -245,7 +245,7 @@ class AlarmSubUpdateRequest:
     def language(self, language):
         r"""Sets the language of this AlarmSubUpdateRequest.
 
-        **参数解释**：  语言。  **取值范围**：  不涉及。
+        **参数解释**： 语言。 **取值范围**： 不涉及。
 
         :param language: The language of this AlarmSubUpdateRequest.
         :type language: str

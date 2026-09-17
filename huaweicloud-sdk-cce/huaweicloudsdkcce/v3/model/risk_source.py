@@ -33,13 +33,13 @@ class RiskSource:
 
         The model defined in huaweicloud sdk
 
-        :param configuration_risks: 配置风险项
+        :param configuration_risks: **参数解释：** 配置风险项。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type configuration_risks: list[:class:`huaweicloudsdkcce.v3.ConfigurationRisks`]
-        :param deprecated_api_risks: 废弃API风险
+        :param deprecated_api_risks: **参数解释：** 废弃API风险。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type deprecated_api_risks: list[:class:`huaweicloudsdkcce.v3.DeprecatedAPIRisks`]
-        :param node_risks: 节点风险
+        :param node_risks: **参数解释：** 节点风险。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type node_risks: list[:class:`huaweicloudsdkcce.v3.NodeRisks`]
-        :param addon_risks: 插件风险
+        :param addon_risks: **参数解释：** 插件风险。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type addon_risks: list[:class:`huaweicloudsdkcce.v3.AddonRisks`]
         """
         
@@ -64,7 +64,7 @@ class RiskSource:
     def configuration_risks(self):
         r"""Gets the configuration_risks of this RiskSource.
 
-        配置风险项
+        **参数解释：** 配置风险项。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The configuration_risks of this RiskSource.
         :rtype: list[:class:`huaweicloudsdkcce.v3.ConfigurationRisks`]
@@ -75,7 +75,7 @@ class RiskSource:
     def configuration_risks(self, configuration_risks):
         r"""Sets the configuration_risks of this RiskSource.
 
-        配置风险项
+        **参数解释：** 配置风险项。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param configuration_risks: The configuration_risks of this RiskSource.
         :type configuration_risks: list[:class:`huaweicloudsdkcce.v3.ConfigurationRisks`]
@@ -86,7 +86,7 @@ class RiskSource:
     def deprecated_api_risks(self):
         r"""Gets the deprecated_api_risks of this RiskSource.
 
-        废弃API风险
+        **参数解释：** 废弃API风险。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The deprecated_api_risks of this RiskSource.
         :rtype: list[:class:`huaweicloudsdkcce.v3.DeprecatedAPIRisks`]
@@ -97,7 +97,7 @@ class RiskSource:
     def deprecated_api_risks(self, deprecated_api_risks):
         r"""Sets the deprecated_api_risks of this RiskSource.
 
-        废弃API风险
+        **参数解释：** 废弃API风险。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param deprecated_api_risks: The deprecated_api_risks of this RiskSource.
         :type deprecated_api_risks: list[:class:`huaweicloudsdkcce.v3.DeprecatedAPIRisks`]
@@ -108,7 +108,7 @@ class RiskSource:
     def node_risks(self):
         r"""Gets the node_risks of this RiskSource.
 
-        节点风险
+        **参数解释：** 节点风险。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The node_risks of this RiskSource.
         :rtype: list[:class:`huaweicloudsdkcce.v3.NodeRisks`]
@@ -119,7 +119,7 @@ class RiskSource:
     def node_risks(self, node_risks):
         r"""Sets the node_risks of this RiskSource.
 
-        节点风险
+        **参数解释：** 节点风险。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param node_risks: The node_risks of this RiskSource.
         :type node_risks: list[:class:`huaweicloudsdkcce.v3.NodeRisks`]
@@ -130,7 +130,7 @@ class RiskSource:
     def addon_risks(self):
         r"""Gets the addon_risks of this RiskSource.
 
-        插件风险
+        **参数解释：** 插件风险。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The addon_risks of this RiskSource.
         :rtype: list[:class:`huaweicloudsdkcce.v3.AddonRisks`]
@@ -141,7 +141,7 @@ class RiskSource:
     def addon_risks(self, addon_risks):
         r"""Sets the addon_risks of this RiskSource.
 
-        插件风险
+        **参数解释：** 插件风险。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param addon_risks: The addon_risks of this RiskSource.
         :type addon_risks: list[:class:`huaweicloudsdkcce.v3.AddonRisks`]

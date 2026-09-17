@@ -33,7 +33,7 @@ class UpdateLogicalClusterRequestBody:
 
         :param cluster_rings: **参数解释**： 逻辑集群编辑环列表信息。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type cluster_rings: list[:class:`huaweicloudsdkdws.v2.ClusterRing`]
-        :param mode: **参数解释**： 重分布模式。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :param mode: **参数解释**： 重分布模式。 **约束限制**： 不涉及。 **取值范围**： - null：离线模式 - read-only：离线模式 - insert：在线模式  **默认取值**： 不涉及。
         :type mode: str
         :param waiting_for_killing: **参数解释**： 查杀作业等待时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type waiting_for_killing: int
@@ -78,7 +78,7 @@ class UpdateLogicalClusterRequestBody:
     def mode(self):
         r"""Gets the mode of this UpdateLogicalClusterRequestBody.
 
-        **参数解释**： 重分布模式。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 重分布模式。 **约束限制**： 不涉及。 **取值范围**： - null：离线模式 - read-only：离线模式 - insert：在线模式  **默认取值**： 不涉及。
 
         :return: The mode of this UpdateLogicalClusterRequestBody.
         :rtype: str
@@ -89,7 +89,7 @@ class UpdateLogicalClusterRequestBody:
     def mode(self, mode):
         r"""Sets the mode of this UpdateLogicalClusterRequestBody.
 
-        **参数解释**： 重分布模式。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 重分布模式。 **约束限制**： 不涉及。 **取值范围**： - null：离线模式 - read-only：离线模式 - insert：在线模式  **默认取值**： 不涉及。
 
         :param mode: The mode of this UpdateLogicalClusterRequestBody.
         :type mode: str

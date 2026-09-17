@@ -35,7 +35,7 @@ class DeviceDataRecord:
         :type disk_quota: int
         :param age: 老化时间，日志压缩文件名时间戳老于这个时间就会发生老化删除
         :type age: int
-        :param state: 配置开关，true启用数据打印，false不启用数据打印
+        :param state: 配置开关，on启用数据打印，off不启用数据打印
         :type state: str
         """
         
@@ -98,7 +98,7 @@ class DeviceDataRecord:
     def state(self):
         r"""Gets the state of this DeviceDataRecord.
 
-        配置开关，true启用数据打印，false不启用数据打印
+        配置开关，on启用数据打印，off不启用数据打印
 
         :return: The state of this DeviceDataRecord.
         :rtype: str
@@ -109,7 +109,7 @@ class DeviceDataRecord:
     def state(self, state):
         r"""Sets the state of this DeviceDataRecord.
 
-        配置开关，true启用数据打印，false不启用数据打印
+        配置开关，on启用数据打印，off不启用数据打印
 
         :param state: The state of this DeviceDataRecord.
         :type state: str

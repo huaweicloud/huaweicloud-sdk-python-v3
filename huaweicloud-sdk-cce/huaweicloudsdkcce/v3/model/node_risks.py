@@ -27,7 +27,7 @@ class NodeRisks:
 
         The model defined in huaweicloud sdk
 
-        :param node_id: 用户节点ID
+        :param node_id: **参数解释：** 用户节点ID。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type node_id: str
         """
         
@@ -43,7 +43,7 @@ class NodeRisks:
     def node_id(self):
         r"""Gets the node_id of this NodeRisks.
 
-        用户节点ID
+        **参数解释：** 用户节点ID。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The node_id of this NodeRisks.
         :rtype: str
@@ -54,7 +54,7 @@ class NodeRisks:
     def node_id(self, node_id):
         r"""Sets the node_id of this NodeRisks.
 
-        用户节点ID
+        **参数解释：** 用户节点ID。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param node_id: The node_id of this NodeRisks.
         :type node_id: str

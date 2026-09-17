@@ -34,13 +34,13 @@ class ListAutopilotClusterUpgradeFeatureGatesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param api_version: API版本
+        :param api_version: **参数解释：** API版本 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type api_version: str
-        :param kind: 资源类型
+        :param kind: **参数解释：** 资源类型 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type kind: str
         :param metadata: 
         :type metadata: :class:`huaweicloudsdkcce.v3.Metadata`
-        :param upgrade_feature_gates: 特性开关信息,格式为key/value键值对。 - Key: 目前有下列值：DisplayPreCheckDetail(展示所有集群升级前检查项详情),EvsSnapshot(使用EVS快照备份集群), LabelForSkippedNode(支持为集群升级过程中跳过的节点打标签), UpgradeStrategy(集群升级策略) - Value: Support 支持,Disable 关闭,Default 使用CCE服务默认规则判断
+        :param upgrade_feature_gates: **参数解释：** 特性开关信息,格式为key/value键值对。 - Key: 目前有下列值：DisplayPreCheckDetail(展示所有集群升级前检查项详情),EvsSnapshot(使用EVS快照备份集群), LabelForSkippedNode(支持为集群升级过程中跳过的节点打标签), UpgradeStrategy(集群升级策略) - Value: Support 支持,Disable 关闭,Default 使用CCE服务默认规则判断  **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type upgrade_feature_gates: dict(str, str)
         """
         
@@ -65,7 +65,7 @@ class ListAutopilotClusterUpgradeFeatureGatesResponse(SdkResponse):
     def api_version(self):
         r"""Gets the api_version of this ListAutopilotClusterUpgradeFeatureGatesResponse.
 
-        API版本
+        **参数解释：** API版本 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The api_version of this ListAutopilotClusterUpgradeFeatureGatesResponse.
         :rtype: str
@@ -76,7 +76,7 @@ class ListAutopilotClusterUpgradeFeatureGatesResponse(SdkResponse):
     def api_version(self, api_version):
         r"""Sets the api_version of this ListAutopilotClusterUpgradeFeatureGatesResponse.
 
-        API版本
+        **参数解释：** API版本 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param api_version: The api_version of this ListAutopilotClusterUpgradeFeatureGatesResponse.
         :type api_version: str
@@ -87,7 +87,7 @@ class ListAutopilotClusterUpgradeFeatureGatesResponse(SdkResponse):
     def kind(self):
         r"""Gets the kind of this ListAutopilotClusterUpgradeFeatureGatesResponse.
 
-        资源类型
+        **参数解释：** 资源类型 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The kind of this ListAutopilotClusterUpgradeFeatureGatesResponse.
         :rtype: str
@@ -98,7 +98,7 @@ class ListAutopilotClusterUpgradeFeatureGatesResponse(SdkResponse):
     def kind(self, kind):
         r"""Sets the kind of this ListAutopilotClusterUpgradeFeatureGatesResponse.
 
-        资源类型
+        **参数解释：** 资源类型 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param kind: The kind of this ListAutopilotClusterUpgradeFeatureGatesResponse.
         :type kind: str
@@ -127,7 +127,7 @@ class ListAutopilotClusterUpgradeFeatureGatesResponse(SdkResponse):
     def upgrade_feature_gates(self):
         r"""Gets the upgrade_feature_gates of this ListAutopilotClusterUpgradeFeatureGatesResponse.
 
-        特性开关信息,格式为key/value键值对。 - Key: 目前有下列值：DisplayPreCheckDetail(展示所有集群升级前检查项详情),EvsSnapshot(使用EVS快照备份集群), LabelForSkippedNode(支持为集群升级过程中跳过的节点打标签), UpgradeStrategy(集群升级策略) - Value: Support 支持,Disable 关闭,Default 使用CCE服务默认规则判断
+        **参数解释：** 特性开关信息,格式为key/value键值对。 - Key: 目前有下列值：DisplayPreCheckDetail(展示所有集群升级前检查项详情),EvsSnapshot(使用EVS快照备份集群), LabelForSkippedNode(支持为集群升级过程中跳过的节点打标签), UpgradeStrategy(集群升级策略) - Value: Support 支持,Disable 关闭,Default 使用CCE服务默认规则判断  **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The upgrade_feature_gates of this ListAutopilotClusterUpgradeFeatureGatesResponse.
         :rtype: dict(str, str)
@@ -138,7 +138,7 @@ class ListAutopilotClusterUpgradeFeatureGatesResponse(SdkResponse):
     def upgrade_feature_gates(self, upgrade_feature_gates):
         r"""Sets the upgrade_feature_gates of this ListAutopilotClusterUpgradeFeatureGatesResponse.
 
-        特性开关信息,格式为key/value键值对。 - Key: 目前有下列值：DisplayPreCheckDetail(展示所有集群升级前检查项详情),EvsSnapshot(使用EVS快照备份集群), LabelForSkippedNode(支持为集群升级过程中跳过的节点打标签), UpgradeStrategy(集群升级策略) - Value: Support 支持,Disable 关闭,Default 使用CCE服务默认规则判断
+        **参数解释：** 特性开关信息,格式为key/value键值对。 - Key: 目前有下列值：DisplayPreCheckDetail(展示所有集群升级前检查项详情),EvsSnapshot(使用EVS快照备份集群), LabelForSkippedNode(支持为集群升级过程中跳过的节点打标签), UpgradeStrategy(集群升级策略) - Value: Support 支持,Disable 关闭,Default 使用CCE服务默认规则判断  **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param upgrade_feature_gates: The upgrade_feature_gates of this ListAutopilotClusterUpgradeFeatureGatesResponse.
         :type upgrade_feature_gates: dict(str, str)

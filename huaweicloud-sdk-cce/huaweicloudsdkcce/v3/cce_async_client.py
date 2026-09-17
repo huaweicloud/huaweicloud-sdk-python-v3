@@ -1052,9 +1052,9 @@ class CceAsyncClient(Client):
         return http_info
 
     def create_kubernetes_cluster_cert_async(self, request):
-        r"""获取集群证书
+        r"""获取集群访问证书
 
-        该API用于获取指定集群的证书信息。
+        该API用于获取指定集群的访问证书信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3015,6 +3015,77 @@ class CceAsyncClient(Client):
 
         return http_info
 
+    def inplace_migrate_node_async(self, request):
+        r"""节点腾挪
+
+        该API用于在指定集群下腾挪节点到另一集群。
+        
+        &gt; 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for InplaceMigrateNode
+        :type request: :class:`huaweicloudsdkcce.v3.InplaceMigrateNodeRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.InplaceMigrateNodeResponse`
+        """
+        http_info = self._inplace_migrate_node_http_info(request)
+        return self._call_api(**http_info)
+
+    def inplace_migrate_node_async_invoker(self, request):
+        http_info = self._inplace_migrate_node_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _inplace_migrate_node_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/api/v3/projects/{project_id}/clusters/{cluster_id}/nodes/operation/in-place-migrateto/{target_cluster_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "InplaceMigrateNodeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+        if 'target_cluster_id' in local_var_params:
+            path_params['target_cluster_id'] = local_var_params['target_cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_access_policy_async(self, request):
         r"""获取访问策略列表
 
@@ -3717,6 +3788,8 @@ class CceAsyncClient(Client):
         query_params = []
         if 'show_default_node_pool' in local_var_params:
             query_params.append(('showDefaultNodePool', local_var_params['show_default_node_pool']))
+        if 'advance_status' in local_var_params:
+            query_params.append(('advanceStatus', local_var_params['advance_status']))
 
         header_params = {}
 
@@ -4522,6 +4595,8 @@ class CceAsyncClient(Client):
             path_params['cluster_id'] = local_var_params['cluster_id']
 
         query_params = []
+        if 'remove_node_system_security_group' in local_var_params:
+            query_params.append(('removeNodeSystemSecurityGroup', local_var_params['remove_node_system_security_group']))
 
         header_params = {}
 
@@ -4758,9 +4833,9 @@ class CceAsyncClient(Client):
         return http_info
 
     def revoke_kubernetes_cluster_cert_async(self, request):
-        r"""吊销用户的集群证书
+        r"""吊销集群访问证书
 
-        该API用于吊销指定集群的用户证书
+        该API用于吊销指定集群的访问证书
         
         &gt; 吊销操作完成后，此证书申请人之前下载的证书和 kubectl 配置文件无法再用于连接集群。此证书申请人可以重新下载证书或 kubectl 配置文件，并使用新下载的文件连接集群
         
@@ -4894,11 +4969,11 @@ class CceAsyncClient(Client):
         return http_info
 
     def rotate_cluster_credentials_async(self, request):
-        r"""轮转用户的集群证书
+        r"""轮转集群证书
 
         该API用于轮转指定集群的证书
         
-        &gt; 只支持1.19及以上集群版本
+        &gt; 只支持1.15.11及以上集群版本
         &gt; 操作完成后，用户集群组件的证书有效期会续期5年。
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -5942,6 +6017,8 @@ class CceAsyncClient(Client):
             path_params['nodepool_id'] = local_var_params['nodepool_id']
 
         query_params = []
+        if 'advance_status' in local_var_params:
+            query_params.append(('advanceStatus', local_var_params['advance_status']))
 
         header_params = {}
 

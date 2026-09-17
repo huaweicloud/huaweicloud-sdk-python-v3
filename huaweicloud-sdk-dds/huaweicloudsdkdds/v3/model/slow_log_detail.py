@@ -26,7 +26,8 @@ class SlowLogDetail:
         'database': 'str',
         'collection': 'str',
         'log_time': 'str',
-        'line_num': 'str'
+        'line_num': 'str',
+        'index_recommendation': 'str'
     }
 
     attribute_map = {
@@ -41,10 +42,11 @@ class SlowLogDetail:
         'database': 'database',
         'collection': 'collection',
         'log_time': 'log_time',
-        'line_num': 'line_num'
+        'line_num': 'line_num',
+        'index_recommendation': 'index_recommendation'
     }
 
-    def __init__(self, node_name=None, node_id=None, whole_message=None, operate_type=None, cost_time=None, lock_time=None, docs_returned=None, docs_scanned=None, database=None, collection=None, log_time=None, line_num=None):
+    def __init__(self, node_name=None, node_id=None, whole_message=None, operate_type=None, cost_time=None, lock_time=None, docs_returned=None, docs_scanned=None, database=None, collection=None, log_time=None, line_num=None, index_recommendation=None):
         r"""SlowLogDetail
 
         The model defined in huaweicloud sdk
@@ -73,6 +75,8 @@ class SlowLogDetail:
         :type log_time: str
         :param line_num: 日志单行序列号
         :type line_num: str
+        :param index_recommendation: 推荐的创建索引命令。使用此命令创建索引可优化该慢查询语句。如果结果为空，说明不需要推荐索引，或AI未识别出可优化的索引。
+        :type index_recommendation: str
         """
         
         
@@ -89,6 +93,7 @@ class SlowLogDetail:
         self._collection = None
         self._log_time = None
         self._line_num = None
+        self._index_recommendation = None
         self.discriminator = None
 
         self.node_name = node_name
@@ -103,6 +108,7 @@ class SlowLogDetail:
         self.collection = collection
         self.log_time = log_time
         self.line_num = line_num
+        self.index_recommendation = index_recommendation
 
     @property
     def node_name(self):
@@ -367,6 +373,28 @@ class SlowLogDetail:
         :type line_num: str
         """
         self._line_num = line_num
+
+    @property
+    def index_recommendation(self):
+        r"""Gets the index_recommendation of this SlowLogDetail.
+
+        推荐的创建索引命令。使用此命令创建索引可优化该慢查询语句。如果结果为空，说明不需要推荐索引，或AI未识别出可优化的索引。
+
+        :return: The index_recommendation of this SlowLogDetail.
+        :rtype: str
+        """
+        return self._index_recommendation
+
+    @index_recommendation.setter
+    def index_recommendation(self, index_recommendation):
+        r"""Sets the index_recommendation of this SlowLogDetail.
+
+        推荐的创建索引命令。使用此命令创建索引可优化该慢查询语句。如果结果为空，说明不需要推荐索引，或AI未识别出可优化的索引。
+
+        :param index_recommendation: The index_recommendation of this SlowLogDetail.
+        :type index_recommendation: str
+        """
+        self._index_recommendation = index_recommendation
 
     def to_dict(self):
         result = {}

@@ -36,13 +36,13 @@ class ListAutopilotClusterMasterSnapshotTasksResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param api_version: api版本，默认为v3.1
+        :param api_version: **参数解释：** API版本，默认为v3.1 **约束限制：** 不涉及 **取值范围：** - v3.1  **默认取值：** v3.1 
         :type api_version: str
-        :param kind: 任务类型
+        :param kind: **参数解释：** 任务类型 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type kind: str
         :param metadata: 
         :type metadata: :class:`huaweicloudsdkcce.v3.SnapshotTaskMetadata`
-        :param items: 备份任务列表
+        :param items: **参数解释：** 备份任务列表 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type items: list[:class:`huaweicloudsdkcce.v3.SnapshotTask`]
         :param status: 
         :type status: :class:`huaweicloudsdkcce.v3.SnapshotTaskStatus`
@@ -72,7 +72,7 @@ class ListAutopilotClusterMasterSnapshotTasksResponse(SdkResponse):
     def api_version(self):
         r"""Gets the api_version of this ListAutopilotClusterMasterSnapshotTasksResponse.
 
-        api版本，默认为v3.1
+        **参数解释：** API版本，默认为v3.1 **约束限制：** 不涉及 **取值范围：** - v3.1  **默认取值：** v3.1 
 
         :return: The api_version of this ListAutopilotClusterMasterSnapshotTasksResponse.
         :rtype: str
@@ -83,7 +83,7 @@ class ListAutopilotClusterMasterSnapshotTasksResponse(SdkResponse):
     def api_version(self, api_version):
         r"""Sets the api_version of this ListAutopilotClusterMasterSnapshotTasksResponse.
 
-        api版本，默认为v3.1
+        **参数解释：** API版本，默认为v3.1 **约束限制：** 不涉及 **取值范围：** - v3.1  **默认取值：** v3.1 
 
         :param api_version: The api_version of this ListAutopilotClusterMasterSnapshotTasksResponse.
         :type api_version: str
@@ -94,7 +94,7 @@ class ListAutopilotClusterMasterSnapshotTasksResponse(SdkResponse):
     def kind(self):
         r"""Gets the kind of this ListAutopilotClusterMasterSnapshotTasksResponse.
 
-        任务类型
+        **参数解释：** 任务类型 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The kind of this ListAutopilotClusterMasterSnapshotTasksResponse.
         :rtype: str
@@ -105,7 +105,7 @@ class ListAutopilotClusterMasterSnapshotTasksResponse(SdkResponse):
     def kind(self, kind):
         r"""Sets the kind of this ListAutopilotClusterMasterSnapshotTasksResponse.
 
-        任务类型
+        **参数解释：** 任务类型 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param kind: The kind of this ListAutopilotClusterMasterSnapshotTasksResponse.
         :type kind: str
@@ -134,7 +134,7 @@ class ListAutopilotClusterMasterSnapshotTasksResponse(SdkResponse):
     def items(self):
         r"""Gets the items of this ListAutopilotClusterMasterSnapshotTasksResponse.
 
-        备份任务列表
+        **参数解释：** 备份任务列表 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The items of this ListAutopilotClusterMasterSnapshotTasksResponse.
         :rtype: list[:class:`huaweicloudsdkcce.v3.SnapshotTask`]
@@ -145,7 +145,7 @@ class ListAutopilotClusterMasterSnapshotTasksResponse(SdkResponse):
     def items(self, items):
         r"""Sets the items of this ListAutopilotClusterMasterSnapshotTasksResponse.
 
-        备份任务列表
+        **参数解释：** 备份任务列表 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param items: The items of this ListAutopilotClusterMasterSnapshotTasksResponse.
         :type items: list[:class:`huaweicloudsdkcce.v3.SnapshotTask`]

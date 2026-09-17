@@ -27,7 +27,7 @@ class AuthorizeNa2NodesRequestDTO:
 
         The model defined in huaweicloud sdk
 
-        :param node_ids: 授权北向NA信息到边缘节点的请求结构体
+        :param node_ids: 授权北向NA信息到边缘节点的请求结构体。示例：[\&quot;node_id1\&quot;]
         :type node_ids: object
         """
         
@@ -42,7 +42,7 @@ class AuthorizeNa2NodesRequestDTO:
     def node_ids(self):
         r"""Gets the node_ids of this AuthorizeNa2NodesRequestDTO.
 
-        授权北向NA信息到边缘节点的请求结构体
+        授权北向NA信息到边缘节点的请求结构体。示例：[\"node_id1\"]
 
         :return: The node_ids of this AuthorizeNa2NodesRequestDTO.
         :rtype: object
@@ -53,7 +53,7 @@ class AuthorizeNa2NodesRequestDTO:
     def node_ids(self, node_ids):
         r"""Sets the node_ids of this AuthorizeNa2NodesRequestDTO.
 
-        授权北向NA信息到边缘节点的请求结构体
+        授权北向NA信息到边缘节点的请求结构体。示例：[\"node_id1\"]
 
         :param node_ids: The node_ids of this AuthorizeNa2NodesRequestDTO.
         :type node_ids: object

@@ -23,6 +23,12 @@ class ShowClusterResponse(SdkResponse):
         'state': 'str',
         'os': 'str',
         'arch': 'str',
+        'license': 'LicenseInfo',
+        'resource_id': 'str',
+        'cluster_type': 'str',
+        'kubernetes_version': 'str',
+        'license_status': 'str',
+        'cluster_addr': 'str',
         'create_time': 'str',
         'update_time': 'str'
     }
@@ -35,11 +41,17 @@ class ShowClusterResponse(SdkResponse):
         'state': 'state',
         'os': 'os',
         'arch': 'arch',
+        'license': 'license',
+        'resource_id': 'resource_id',
+        'cluster_type': 'cluster_type',
+        'kubernetes_version': 'kubernetes_version',
+        'license_status': 'license_status',
+        'cluster_addr': 'cluster_addr',
         'create_time': 'create_time',
         'update_time': 'update_time'
     }
 
-    def __init__(self, cluster_id=None, cluster_name=None, description=None, version=None, state=None, os=None, arch=None, create_time=None, update_time=None):
+    def __init__(self, cluster_id=None, cluster_name=None, description=None, version=None, state=None, os=None, arch=None, license=None, resource_id=None, cluster_type=None, kubernetes_version=None, license_status=None, cluster_addr=None, create_time=None, update_time=None):
         r"""ShowClusterResponse
 
         The model defined in huaweicloud sdk
@@ -58,6 +70,18 @@ class ShowClusterResponse(SdkResponse):
         :type os: str
         :param arch: 集群架构
         :type arch: str
+        :param license: 
+        :type license: :class:`huaweicloudsdkiotedge.v3.LicenseInfo`
+        :param resource_id: 资源id
+        :type resource_id: str
+        :param cluster_type: 集群类型
+        :type cluster_type: str
+        :param kubernetes_version: kubernetes版本
+        :type kubernetes_version: str
+        :param license_status: 集群license状态
+        :type license_status: str
+        :param cluster_addr: 集群地址
+        :type cluster_addr: str
         :param create_time: 创建时间
         :type create_time: str
         :param update_time: 最后一次修改时间
@@ -73,6 +97,12 @@ class ShowClusterResponse(SdkResponse):
         self._state = None
         self._os = None
         self._arch = None
+        self._license = None
+        self._resource_id = None
+        self._cluster_type = None
+        self._kubernetes_version = None
+        self._license_status = None
+        self._cluster_addr = None
         self._create_time = None
         self._update_time = None
         self.discriminator = None
@@ -91,6 +121,18 @@ class ShowClusterResponse(SdkResponse):
             self.os = os
         if arch is not None:
             self.arch = arch
+        if license is not None:
+            self.license = license
+        if resource_id is not None:
+            self.resource_id = resource_id
+        if cluster_type is not None:
+            self.cluster_type = cluster_type
+        if kubernetes_version is not None:
+            self.kubernetes_version = kubernetes_version
+        if license_status is not None:
+            self.license_status = license_status
+        if cluster_addr is not None:
+            self.cluster_addr = cluster_addr
         if create_time is not None:
             self.create_time = create_time
         if update_time is not None:
@@ -249,6 +291,134 @@ class ShowClusterResponse(SdkResponse):
         :type arch: str
         """
         self._arch = arch
+
+    @property
+    def license(self):
+        r"""Gets the license of this ShowClusterResponse.
+
+        :return: The license of this ShowClusterResponse.
+        :rtype: :class:`huaweicloudsdkiotedge.v3.LicenseInfo`
+        """
+        return self._license
+
+    @license.setter
+    def license(self, license):
+        r"""Sets the license of this ShowClusterResponse.
+
+        :param license: The license of this ShowClusterResponse.
+        :type license: :class:`huaweicloudsdkiotedge.v3.LicenseInfo`
+        """
+        self._license = license
+
+    @property
+    def resource_id(self):
+        r"""Gets the resource_id of this ShowClusterResponse.
+
+        资源id
+
+        :return: The resource_id of this ShowClusterResponse.
+        :rtype: str
+        """
+        return self._resource_id
+
+    @resource_id.setter
+    def resource_id(self, resource_id):
+        r"""Sets the resource_id of this ShowClusterResponse.
+
+        资源id
+
+        :param resource_id: The resource_id of this ShowClusterResponse.
+        :type resource_id: str
+        """
+        self._resource_id = resource_id
+
+    @property
+    def cluster_type(self):
+        r"""Gets the cluster_type of this ShowClusterResponse.
+
+        集群类型
+
+        :return: The cluster_type of this ShowClusterResponse.
+        :rtype: str
+        """
+        return self._cluster_type
+
+    @cluster_type.setter
+    def cluster_type(self, cluster_type):
+        r"""Sets the cluster_type of this ShowClusterResponse.
+
+        集群类型
+
+        :param cluster_type: The cluster_type of this ShowClusterResponse.
+        :type cluster_type: str
+        """
+        self._cluster_type = cluster_type
+
+    @property
+    def kubernetes_version(self):
+        r"""Gets the kubernetes_version of this ShowClusterResponse.
+
+        kubernetes版本
+
+        :return: The kubernetes_version of this ShowClusterResponse.
+        :rtype: str
+        """
+        return self._kubernetes_version
+
+    @kubernetes_version.setter
+    def kubernetes_version(self, kubernetes_version):
+        r"""Sets the kubernetes_version of this ShowClusterResponse.
+
+        kubernetes版本
+
+        :param kubernetes_version: The kubernetes_version of this ShowClusterResponse.
+        :type kubernetes_version: str
+        """
+        self._kubernetes_version = kubernetes_version
+
+    @property
+    def license_status(self):
+        r"""Gets the license_status of this ShowClusterResponse.
+
+        集群license状态
+
+        :return: The license_status of this ShowClusterResponse.
+        :rtype: str
+        """
+        return self._license_status
+
+    @license_status.setter
+    def license_status(self, license_status):
+        r"""Sets the license_status of this ShowClusterResponse.
+
+        集群license状态
+
+        :param license_status: The license_status of this ShowClusterResponse.
+        :type license_status: str
+        """
+        self._license_status = license_status
+
+    @property
+    def cluster_addr(self):
+        r"""Gets the cluster_addr of this ShowClusterResponse.
+
+        集群地址
+
+        :return: The cluster_addr of this ShowClusterResponse.
+        :rtype: str
+        """
+        return self._cluster_addr
+
+    @cluster_addr.setter
+    def cluster_addr(self, cluster_addr):
+        r"""Sets the cluster_addr of this ShowClusterResponse.
+
+        集群地址
+
+        :param cluster_addr: The cluster_addr of this ShowClusterResponse.
+        :type cluster_addr: str
+        """
+        self._cluster_addr = cluster_addr
 
     @property
     def create_time(self):

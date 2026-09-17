@@ -57,9 +57,9 @@ class AddDeviceRequestBody:
         :type gateway_id: str
         :param space_id: 资源空间Id。此参数为非必选参数，用于兼容平台老用户存在多应用的场景。存在多应用的用户需要使用该接口时，必须携带该参数指定注册的设备归属到哪个应用下，否则接口会提示错误。如果用户存在多应用，同时又不想携带该参数，可以联系华为技术支持对用户数据做应用合并。
         :type space_id: str
-        :param extension_info: 设备扩展信息。用户可以自定义任何想要的扩展信息，如果在创建设备时为子设备指定该字段，将会通过MQTT接口“平台通知网关子设备新增“将该信息通知给网关。字段值大小上限为1K。 追加：如果通过EdgeHub, EdgeAccess进行设备接入，不需要携带extension_info；如果通过用户自定义的应用进行边缘设备接入，则携带模块id参数作为extension_info, 例如：{\\\&quot;module_id\&quot;:\\\&quot;user_xxx\&quot;}
+        :param extension_info: 设备扩展信息。用户可以自定义任何想要的扩展信息，如果在创建设备时为子设备指定该字段，将会通过MQTT接口“平台通知网关子设备新增“将该信息通知给网关。字段值大小上限为1K。
         :type extension_info: object
-        :param config: 设备初始配置。用户使用该字段可以为设备指定初始配置，指定后将会根据service_id和desired设置的属性值与产品中对应属性的默认值比对，如果不同，则将以设置的属性值为准写入到设备配置中。例如连接MQTT设备，配置接入平台密码，携带该参数{\\\&quot;password\&quot;:\\\&quot;xxxxxxxx\&quot;}
+        :param config: 设备初始配置。用户使用该字段可以为设备指定初始配置，指定后将会根据service_id和desired设置的属性值与产品中对应属性的默认值比对，如果不同，则将以设置的属性值为准写入到设备配置中。
         :type config: object
         """
         
@@ -247,7 +247,7 @@ class AddDeviceRequestBody:
     def extension_info(self):
         r"""Gets the extension_info of this AddDeviceRequestBody.
 
-        设备扩展信息。用户可以自定义任何想要的扩展信息，如果在创建设备时为子设备指定该字段，将会通过MQTT接口“平台通知网关子设备新增“将该信息通知给网关。字段值大小上限为1K。 追加：如果通过EdgeHub, EdgeAccess进行设备接入，不需要携带extension_info；如果通过用户自定义的应用进行边缘设备接入，则携带模块id参数作为extension_info, 例如：{\\\"module_id\":\\\"user_xxx\"}
+        设备扩展信息。用户可以自定义任何想要的扩展信息，如果在创建设备时为子设备指定该字段，将会通过MQTT接口“平台通知网关子设备新增“将该信息通知给网关。字段值大小上限为1K。
 
         :return: The extension_info of this AddDeviceRequestBody.
         :rtype: object
@@ -258,7 +258,7 @@ class AddDeviceRequestBody:
     def extension_info(self, extension_info):
         r"""Sets the extension_info of this AddDeviceRequestBody.
 
-        设备扩展信息。用户可以自定义任何想要的扩展信息，如果在创建设备时为子设备指定该字段，将会通过MQTT接口“平台通知网关子设备新增“将该信息通知给网关。字段值大小上限为1K。 追加：如果通过EdgeHub, EdgeAccess进行设备接入，不需要携带extension_info；如果通过用户自定义的应用进行边缘设备接入，则携带模块id参数作为extension_info, 例如：{\\\"module_id\":\\\"user_xxx\"}
+        设备扩展信息。用户可以自定义任何想要的扩展信息，如果在创建设备时为子设备指定该字段，将会通过MQTT接口“平台通知网关子设备新增“将该信息通知给网关。字段值大小上限为1K。
 
         :param extension_info: The extension_info of this AddDeviceRequestBody.
         :type extension_info: object
@@ -269,7 +269,7 @@ class AddDeviceRequestBody:
     def config(self):
         r"""Gets the config of this AddDeviceRequestBody.
 
-        设备初始配置。用户使用该字段可以为设备指定初始配置，指定后将会根据service_id和desired设置的属性值与产品中对应属性的默认值比对，如果不同，则将以设置的属性值为准写入到设备配置中。例如连接MQTT设备，配置接入平台密码，携带该参数{\\\"password\":\\\"xxxxxxxx\"}
+        设备初始配置。用户使用该字段可以为设备指定初始配置，指定后将会根据service_id和desired设置的属性值与产品中对应属性的默认值比对，如果不同，则将以设置的属性值为准写入到设备配置中。
 
         :return: The config of this AddDeviceRequestBody.
         :rtype: object
@@ -280,7 +280,7 @@ class AddDeviceRequestBody:
     def config(self, config):
         r"""Sets the config of this AddDeviceRequestBody.
 
-        设备初始配置。用户使用该字段可以为设备指定初始配置，指定后将会根据service_id和desired设置的属性值与产品中对应属性的默认值比对，如果不同，则将以设置的属性值为准写入到设备配置中。例如连接MQTT设备，配置接入平台密码，携带该参数{\\\"password\":\\\"xxxxxxxx\"}
+        设备初始配置。用户使用该字段可以为设备指定初始配置，指定后将会根据service_id和desired设置的属性值与产品中对应属性的默认值比对，如果不同，则将以设置的属性值为准写入到设备配置中。
 
         :param config: The config of this AddDeviceRequestBody.
         :type config: object

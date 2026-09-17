@@ -26,6 +26,11 @@ class ListPipelineQuery:
         'executor_ids': 'list[str]',
         'start_time': 'str',
         'end_time': 'str',
+        'pipeline_run_update_time': 'str',
+        'exclude_pipeline_id': 'str',
+        'include_pipeline_id': 'str',
+        'tag_list': 'list[str]',
+        'manifest_version_list': 'list[str]',
         'offset': 'int',
         'limit': 'int',
         'sort_key': 'str',
@@ -34,7 +39,8 @@ class ListPipelineQuery:
         'by_group': 'bool',
         'is_banned': 'bool',
         'query_new': 'bool',
-        'security_level_list': 'list[int]'
+        'security_level_list': 'list[int]',
+        'dev_uc_security_level_list': 'list[int]'
     }
 
     attribute_map = {
@@ -49,6 +55,11 @@ class ListPipelineQuery:
         'executor_ids': 'executor_ids',
         'start_time': 'start_time',
         'end_time': 'end_time',
+        'pipeline_run_update_time': 'pipeline_run_update_time',
+        'exclude_pipeline_id': 'exclude_pipeline_id',
+        'include_pipeline_id': 'include_pipeline_id',
+        'tag_list': 'tag_list',
+        'manifest_version_list': 'manifest_version_list',
         'offset': 'offset',
         'limit': 'limit',
         'sort_key': 'sort_key',
@@ -57,10 +68,11 @@ class ListPipelineQuery:
         'by_group': 'by_group',
         'is_banned': 'is_banned',
         'query_new': 'query_new',
-        'security_level_list': 'security_level_list'
+        'security_level_list': 'security_level_list',
+        'dev_uc_security_level_list': 'dev_uc_security_level_list'
     }
 
-    def __init__(self, project_id=None, project_ids=None, component_id=None, name=None, status=None, is_publish=None, creator_id=None, creator_ids=None, executor_ids=None, start_time=None, end_time=None, offset=None, limit=None, sort_key=None, sort_dir=None, group_path_id=None, by_group=None, is_banned=None, query_new=None, security_level_list=None):
+    def __init__(self, project_id=None, project_ids=None, component_id=None, name=None, status=None, is_publish=None, creator_id=None, creator_ids=None, executor_ids=None, start_time=None, end_time=None, pipeline_run_update_time=None, exclude_pipeline_id=None, include_pipeline_id=None, tag_list=None, manifest_version_list=None, offset=None, limit=None, sort_key=None, sort_dir=None, group_path_id=None, by_group=None, is_banned=None, query_new=None, security_level_list=None, dev_uc_security_level_list=None):
         r"""ListPipelineQuery
 
         The model defined in huaweicloud sdk
@@ -87,6 +99,16 @@ class ListPipelineQuery:
         :type start_time: str
         :param end_time: **参数解释**： 流水线结束时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type end_time: str
+        :param pipeline_run_update_time: **参数解释**： 流水线运行更新时间。 **约束限制**： 不涉及。 **取值范围**： 时间戳或yyyy-MM-dd HH:mm:ss格式。 **默认取值**： 不涉及。 
+        :type pipeline_run_update_time: str
+        :param exclude_pipeline_id: **参数解释**： 排除的流水线ID。 **约束限制**： 不涉及。 **取值范围**： 32位字符，仅由数字和字母组成。 **默认取值**： 不涉及。 
+        :type exclude_pipeline_id: str
+        :param include_pipeline_id: **参数解释**： 包含的流水线ID。 **约束限制**： 不涉及。 **取值范围**： 32位字符，仅由数字和字母组成。 **默认取值**： 不涉及。 
+        :type include_pipeline_id: str
+        :param tag_list: **参数解释**： 流水线标签列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
+        :type tag_list: list[str]
+        :param manifest_version_list: **参数解释**： 流水线版本列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
+        :type manifest_version_list: list[str]
         :param offset: **参数解释**： 起始偏移。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type offset: int
         :param limit: **参数解释**： 查询数量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
@@ -105,6 +127,8 @@ class ListPipelineQuery:
         :type query_new: bool
         :param security_level_list: **参数解释**： 流水线密集等级。 **约束限制**： 非涉密场景无该字段。 **取值范围**： 零及以上正整数。 0：未设置密级。 1：最低密级。 **默认取值**： 不涉及。 
         :type security_level_list: list[int]
+        :param dev_uc_security_level_list: **参数解释**： DevUC流水线密级列表。 **约束限制**： 非涉密场景无该字段。 **取值范围**： 零及以上正整数。 0：未设置密级。 1：最低密级。 **默认取值**： 不涉及。 
+        :type dev_uc_security_level_list: list[int]
         """
         
         
@@ -120,6 +144,11 @@ class ListPipelineQuery:
         self._executor_ids = None
         self._start_time = None
         self._end_time = None
+        self._pipeline_run_update_time = None
+        self._exclude_pipeline_id = None
+        self._include_pipeline_id = None
+        self._tag_list = None
+        self._manifest_version_list = None
         self._offset = None
         self._limit = None
         self._sort_key = None
@@ -129,6 +158,7 @@ class ListPipelineQuery:
         self._is_banned = None
         self._query_new = None
         self._security_level_list = None
+        self._dev_uc_security_level_list = None
         self.discriminator = None
 
         if project_id is not None:
@@ -153,6 +183,16 @@ class ListPipelineQuery:
             self.start_time = start_time
         if end_time is not None:
             self.end_time = end_time
+        if pipeline_run_update_time is not None:
+            self.pipeline_run_update_time = pipeline_run_update_time
+        if exclude_pipeline_id is not None:
+            self.exclude_pipeline_id = exclude_pipeline_id
+        if include_pipeline_id is not None:
+            self.include_pipeline_id = include_pipeline_id
+        if tag_list is not None:
+            self.tag_list = tag_list
+        if manifest_version_list is not None:
+            self.manifest_version_list = manifest_version_list
         if offset is not None:
             self.offset = offset
         if limit is not None:
@@ -171,6 +211,8 @@ class ListPipelineQuery:
             self.query_new = query_new
         if security_level_list is not None:
             self.security_level_list = security_level_list
+        if dev_uc_security_level_list is not None:
+            self.dev_uc_security_level_list = dev_uc_security_level_list
 
     @property
     def project_id(self):
@@ -415,6 +457,116 @@ class ListPipelineQuery:
         self._end_time = end_time
 
     @property
+    def pipeline_run_update_time(self):
+        r"""Gets the pipeline_run_update_time of this ListPipelineQuery.
+
+        **参数解释**： 流水线运行更新时间。 **约束限制**： 不涉及。 **取值范围**： 时间戳或yyyy-MM-dd HH:mm:ss格式。 **默认取值**： 不涉及。 
+
+        :return: The pipeline_run_update_time of this ListPipelineQuery.
+        :rtype: str
+        """
+        return self._pipeline_run_update_time
+
+    @pipeline_run_update_time.setter
+    def pipeline_run_update_time(self, pipeline_run_update_time):
+        r"""Sets the pipeline_run_update_time of this ListPipelineQuery.
+
+        **参数解释**： 流水线运行更新时间。 **约束限制**： 不涉及。 **取值范围**： 时间戳或yyyy-MM-dd HH:mm:ss格式。 **默认取值**： 不涉及。 
+
+        :param pipeline_run_update_time: The pipeline_run_update_time of this ListPipelineQuery.
+        :type pipeline_run_update_time: str
+        """
+        self._pipeline_run_update_time = pipeline_run_update_time
+
+    @property
+    def exclude_pipeline_id(self):
+        r"""Gets the exclude_pipeline_id of this ListPipelineQuery.
+
+        **参数解释**： 排除的流水线ID。 **约束限制**： 不涉及。 **取值范围**： 32位字符，仅由数字和字母组成。 **默认取值**： 不涉及。 
+
+        :return: The exclude_pipeline_id of this ListPipelineQuery.
+        :rtype: str
+        """
+        return self._exclude_pipeline_id
+
+    @exclude_pipeline_id.setter
+    def exclude_pipeline_id(self, exclude_pipeline_id):
+        r"""Sets the exclude_pipeline_id of this ListPipelineQuery.
+
+        **参数解释**： 排除的流水线ID。 **约束限制**： 不涉及。 **取值范围**： 32位字符，仅由数字和字母组成。 **默认取值**： 不涉及。 
+
+        :param exclude_pipeline_id: The exclude_pipeline_id of this ListPipelineQuery.
+        :type exclude_pipeline_id: str
+        """
+        self._exclude_pipeline_id = exclude_pipeline_id
+
+    @property
+    def include_pipeline_id(self):
+        r"""Gets the include_pipeline_id of this ListPipelineQuery.
+
+        **参数解释**： 包含的流水线ID。 **约束限制**： 不涉及。 **取值范围**： 32位字符，仅由数字和字母组成。 **默认取值**： 不涉及。 
+
+        :return: The include_pipeline_id of this ListPipelineQuery.
+        :rtype: str
+        """
+        return self._include_pipeline_id
+
+    @include_pipeline_id.setter
+    def include_pipeline_id(self, include_pipeline_id):
+        r"""Sets the include_pipeline_id of this ListPipelineQuery.
+
+        **参数解释**： 包含的流水线ID。 **约束限制**： 不涉及。 **取值范围**： 32位字符，仅由数字和字母组成。 **默认取值**： 不涉及。 
+
+        :param include_pipeline_id: The include_pipeline_id of this ListPipelineQuery.
+        :type include_pipeline_id: str
+        """
+        self._include_pipeline_id = include_pipeline_id
+
+    @property
+    def tag_list(self):
+        r"""Gets the tag_list of this ListPipelineQuery.
+
+        **参数解释**： 流水线标签列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
+
+        :return: The tag_list of this ListPipelineQuery.
+        :rtype: list[str]
+        """
+        return self._tag_list
+
+    @tag_list.setter
+    def tag_list(self, tag_list):
+        r"""Sets the tag_list of this ListPipelineQuery.
+
+        **参数解释**： 流水线标签列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
+
+        :param tag_list: The tag_list of this ListPipelineQuery.
+        :type tag_list: list[str]
+        """
+        self._tag_list = tag_list
+
+    @property
+    def manifest_version_list(self):
+        r"""Gets the manifest_version_list of this ListPipelineQuery.
+
+        **参数解释**： 流水线版本列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
+
+        :return: The manifest_version_list of this ListPipelineQuery.
+        :rtype: list[str]
+        """
+        return self._manifest_version_list
+
+    @manifest_version_list.setter
+    def manifest_version_list(self, manifest_version_list):
+        r"""Sets the manifest_version_list of this ListPipelineQuery.
+
+        **参数解释**： 流水线版本列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
+
+        :param manifest_version_list: The manifest_version_list of this ListPipelineQuery.
+        :type manifest_version_list: list[str]
+        """
+        self._manifest_version_list = manifest_version_list
+
+    @property
     def offset(self):
         r"""Gets the offset of this ListPipelineQuery.
 
@@ -611,6 +763,28 @@ class ListPipelineQuery:
         :type security_level_list: list[int]
         """
         self._security_level_list = security_level_list
+
+    @property
+    def dev_uc_security_level_list(self):
+        r"""Gets the dev_uc_security_level_list of this ListPipelineQuery.
+
+        **参数解释**： DevUC流水线密级列表。 **约束限制**： 非涉密场景无该字段。 **取值范围**： 零及以上正整数。 0：未设置密级。 1：最低密级。 **默认取值**： 不涉及。 
+
+        :return: The dev_uc_security_level_list of this ListPipelineQuery.
+        :rtype: list[int]
+        """
+        return self._dev_uc_security_level_list
+
+    @dev_uc_security_level_list.setter
+    def dev_uc_security_level_list(self, dev_uc_security_level_list):
+        r"""Sets the dev_uc_security_level_list of this ListPipelineQuery.
+
+        **参数解释**： DevUC流水线密级列表。 **约束限制**： 非涉密场景无该字段。 **取值范围**： 零及以上正整数。 0：未设置密级。 1：最低密级。 **默认取值**： 不涉及。 
+
+        :param dev_uc_security_level_list: The dev_uc_security_level_list of this ListPipelineQuery.
+        :type dev_uc_security_level_list: list[int]
+        """
+        self._dev_uc_security_level_list = dev_uc_security_level_list
 
     def to_dict(self):
         result = {}

@@ -33,9 +33,9 @@ class WorkFlowStatus:
 
         :param phase: 
         :type phase: :class:`huaweicloudsdkcce.v3.WorkFlowPhase`
-        :param point_statuses: 升级流程中的各个任务项的执行状态
+        :param point_statuses: **参数解释：** 升级流程中的各个任务项的执行状态 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type point_statuses: list[:class:`huaweicloudsdkcce.v3.PointStatus`]
-        :param line_statuses: 表示该升级流程的任务执行线路
+        :param line_statuses: **参数解释：** 表示该升级流程的任务执行线路 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type line_statuses: list[:class:`huaweicloudsdkcce.v3.LineStatus`]
         """
         
@@ -75,7 +75,7 @@ class WorkFlowStatus:
     def point_statuses(self):
         r"""Gets the point_statuses of this WorkFlowStatus.
 
-        升级流程中的各个任务项的执行状态
+        **参数解释：** 升级流程中的各个任务项的执行状态 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The point_statuses of this WorkFlowStatus.
         :rtype: list[:class:`huaweicloudsdkcce.v3.PointStatus`]
@@ -86,7 +86,7 @@ class WorkFlowStatus:
     def point_statuses(self, point_statuses):
         r"""Sets the point_statuses of this WorkFlowStatus.
 
-        升级流程中的各个任务项的执行状态
+        **参数解释：** 升级流程中的各个任务项的执行状态 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param point_statuses: The point_statuses of this WorkFlowStatus.
         :type point_statuses: list[:class:`huaweicloudsdkcce.v3.PointStatus`]
@@ -97,7 +97,7 @@ class WorkFlowStatus:
     def line_statuses(self):
         r"""Gets the line_statuses of this WorkFlowStatus.
 
-        表示该升级流程的任务执行线路
+        **参数解释：** 表示该升级流程的任务执行线路 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The line_statuses of this WorkFlowStatus.
         :rtype: list[:class:`huaweicloudsdkcce.v3.LineStatus`]
@@ -108,7 +108,7 @@ class WorkFlowStatus:
     def line_statuses(self, line_statuses):
         r"""Sets the line_statuses of this WorkFlowStatus.
 
-        表示该升级流程的任务执行线路
+        **参数解释：** 表示该升级流程的任务执行线路 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param line_statuses: The line_statuses of this WorkFlowStatus.
         :type line_statuses: list[:class:`huaweicloudsdkcce.v3.LineStatus`]

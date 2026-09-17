@@ -35,15 +35,15 @@ class ClusterUpgradeResponseAction:
 
         The model defined in huaweicloud sdk
 
-        :param version: 当前集群版本
+        :param version: **参数解释：** 当前集群版本 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type version: str
-        :param target_version: 目标集群版本，例如\&quot;v1.23\&quot;
+        :param target_version: **参数解释：** 目标集群版本，例如\&quot;v1.23\&quot; **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type target_version: str
-        :param target_platform_version: 目标集群的平台版本号，表示集群版本(version)下的内部版本，不支持用户指定。
+        :param target_platform_version: **参数解释：** 目标集群的平台版本号，表示集群版本(version)下的内部版本，不支持用户指定。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type target_platform_version: str
         :param strategy: 
         :type strategy: :class:`huaweicloudsdkcce.v3.UpgradeStrategy`
-        :param config: 升级过程中指定的集群配置
+        :param config: **参数解释：** 升级过程中指定的集群配置 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type config: object
         """
         
@@ -71,7 +71,7 @@ class ClusterUpgradeResponseAction:
     def version(self):
         r"""Gets the version of this ClusterUpgradeResponseAction.
 
-        当前集群版本
+        **参数解释：** 当前集群版本 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The version of this ClusterUpgradeResponseAction.
         :rtype: str
@@ -82,7 +82,7 @@ class ClusterUpgradeResponseAction:
     def version(self, version):
         r"""Sets the version of this ClusterUpgradeResponseAction.
 
-        当前集群版本
+        **参数解释：** 当前集群版本 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param version: The version of this ClusterUpgradeResponseAction.
         :type version: str
@@ -93,7 +93,7 @@ class ClusterUpgradeResponseAction:
     def target_version(self):
         r"""Gets the target_version of this ClusterUpgradeResponseAction.
 
-        目标集群版本，例如\"v1.23\"
+        **参数解释：** 目标集群版本，例如\"v1.23\" **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The target_version of this ClusterUpgradeResponseAction.
         :rtype: str
@@ -104,7 +104,7 @@ class ClusterUpgradeResponseAction:
     def target_version(self, target_version):
         r"""Sets the target_version of this ClusterUpgradeResponseAction.
 
-        目标集群版本，例如\"v1.23\"
+        **参数解释：** 目标集群版本，例如\"v1.23\" **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param target_version: The target_version of this ClusterUpgradeResponseAction.
         :type target_version: str
@@ -115,7 +115,7 @@ class ClusterUpgradeResponseAction:
     def target_platform_version(self):
         r"""Gets the target_platform_version of this ClusterUpgradeResponseAction.
 
-        目标集群的平台版本号，表示集群版本(version)下的内部版本，不支持用户指定。
+        **参数解释：** 目标集群的平台版本号，表示集群版本(version)下的内部版本，不支持用户指定。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The target_platform_version of this ClusterUpgradeResponseAction.
         :rtype: str
@@ -126,7 +126,7 @@ class ClusterUpgradeResponseAction:
     def target_platform_version(self, target_platform_version):
         r"""Sets the target_platform_version of this ClusterUpgradeResponseAction.
 
-        目标集群的平台版本号，表示集群版本(version)下的内部版本，不支持用户指定。
+        **参数解释：** 目标集群的平台版本号，表示集群版本(version)下的内部版本，不支持用户指定。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param target_platform_version: The target_platform_version of this ClusterUpgradeResponseAction.
         :type target_platform_version: str
@@ -155,7 +155,7 @@ class ClusterUpgradeResponseAction:
     def config(self):
         r"""Gets the config of this ClusterUpgradeResponseAction.
 
-        升级过程中指定的集群配置
+        **参数解释：** 升级过程中指定的集群配置 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The config of this ClusterUpgradeResponseAction.
         :rtype: object
@@ -166,7 +166,7 @@ class ClusterUpgradeResponseAction:
     def config(self, config):
         r"""Sets the config of this ClusterUpgradeResponseAction.
 
-        升级过程中指定的集群配置
+        **参数解释：** 升级过程中指定的集群配置 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param config: The config of this ClusterUpgradeResponseAction.
         :type config: object

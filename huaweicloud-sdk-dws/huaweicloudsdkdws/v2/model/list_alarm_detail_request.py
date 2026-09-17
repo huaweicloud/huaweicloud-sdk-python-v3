@@ -43,11 +43,11 @@ class ListAlarmDetailRequest:
         :type offset: str
         :param limit: **参数解释**： 分页单页大小。 **约束限制**： 不涉及。 **取值范围**： 大于0。 **默认取值**： 10。
         :type limit: str
-        :param _from: **参数解释**：  开始UTC时间，单位精确到毫秒。  **取值范围**：  不涉及。
+        :param _from: **参数解释**： 开始UTC时间，单位精确到毫秒。 **取值范围**： 不涉及。
         :type _from: int
-        :param to: **参数解释**：  结束UTC时间，单位精确到毫秒。  **取值范围**：  不涉及。
+        :param to: **参数解释**： 结束UTC时间，单位精确到毫秒。 **取值范围**： 不涉及。
         :type to: int
-        :param recent_day: **参数解释**：  查询前N天到当前时间范围内的告警。  **约束限制**： 不涉及。 **取值范围**： 大于0。
+        :param recent_day: **参数解释**： 查询前N天到当前时间范围内的告警。 **约束限制**： 不涉及。 **取值范围**： 大于0。
         :type recent_day: int
         """
         
@@ -144,7 +144,7 @@ class ListAlarmDetailRequest:
     def _from(self):
         r"""Gets the _from of this ListAlarmDetailRequest.
 
-        **参数解释**：  开始UTC时间，单位精确到毫秒。  **取值范围**：  不涉及。
+        **参数解释**： 开始UTC时间，单位精确到毫秒。 **取值范围**： 不涉及。
 
         :return: The _from of this ListAlarmDetailRequest.
         :rtype: int
@@ -155,7 +155,7 @@ class ListAlarmDetailRequest:
     def _from(self, _from):
         r"""Sets the _from of this ListAlarmDetailRequest.
 
-        **参数解释**：  开始UTC时间，单位精确到毫秒。  **取值范围**：  不涉及。
+        **参数解释**： 开始UTC时间，单位精确到毫秒。 **取值范围**： 不涉及。
 
         :param _from: The _from of this ListAlarmDetailRequest.
         :type _from: int
@@ -166,7 +166,7 @@ class ListAlarmDetailRequest:
     def to(self):
         r"""Gets the to of this ListAlarmDetailRequest.
 
-        **参数解释**：  结束UTC时间，单位精确到毫秒。  **取值范围**：  不涉及。
+        **参数解释**： 结束UTC时间，单位精确到毫秒。 **取值范围**： 不涉及。
 
         :return: The to of this ListAlarmDetailRequest.
         :rtype: int
@@ -177,7 +177,7 @@ class ListAlarmDetailRequest:
     def to(self, to):
         r"""Sets the to of this ListAlarmDetailRequest.
 
-        **参数解释**：  结束UTC时间，单位精确到毫秒。  **取值范围**：  不涉及。
+        **参数解释**： 结束UTC时间，单位精确到毫秒。 **取值范围**： 不涉及。
 
         :param to: The to of this ListAlarmDetailRequest.
         :type to: int
@@ -188,7 +188,7 @@ class ListAlarmDetailRequest:
     def recent_day(self):
         r"""Gets the recent_day of this ListAlarmDetailRequest.
 
-        **参数解释**：  查询前N天到当前时间范围内的告警。  **约束限制**： 不涉及。 **取值范围**： 大于0。
+        **参数解释**： 查询前N天到当前时间范围内的告警。 **约束限制**： 不涉及。 **取值范围**： 大于0。
 
         :return: The recent_day of this ListAlarmDetailRequest.
         :rtype: int
@@ -199,7 +199,7 @@ class ListAlarmDetailRequest:
     def recent_day(self, recent_day):
         r"""Sets the recent_day of this ListAlarmDetailRequest.
 
-        **参数解释**：  查询前N天到当前时间范围内的告警。  **约束限制**： 不涉及。 **取值范围**： 大于0。
+        **参数解释**： 查询前N天到当前时间范围内的告警。 **约束限制**： 不涉及。 **取值范围**： 大于0。
 
         :param recent_day: The recent_day of this ListAlarmDetailRequest.
         :type recent_day: int

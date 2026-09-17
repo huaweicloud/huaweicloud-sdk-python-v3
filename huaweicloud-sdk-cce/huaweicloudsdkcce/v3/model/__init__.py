@@ -172,6 +172,7 @@ from huaweicloudsdkcce.v3.model.create_upgrade_work_flow_request_body import Cre
 from huaweicloudsdkcce.v3.model.create_upgrade_work_flow_response import CreateUpgradeWorkFlowResponse
 from huaweicloudsdkcce.v3.model.credentials import Credentials
 from huaweicloudsdkcce.v3.model.customize_resource_tag import CustomizeResourceTag
+from huaweicloudsdkcce.v3.model.data_disk_clean_up_option import DataDiskCleanUpOption
 from huaweicloudsdkcce.v3.model.delay_upgrade_plan_request_body import DelayUpgradePlanRequestBody
 from huaweicloudsdkcce.v3.model.delete_access_policy_request import DeleteAccessPolicyRequest
 from huaweicloudsdkcce.v3.model.delete_access_policy_response import DeleteAccessPolicyResponse
@@ -249,7 +250,13 @@ from huaweicloudsdkcce.v3.model.hyper_node_metadata import HyperNodeMetadata
 from huaweicloudsdkcce.v3.model.hyper_node_metadata_owner_reference import HyperNodeMetadataOwnerReference
 from huaweicloudsdkcce.v3.model.hyper_node_spec import HyperNodeSpec
 from huaweicloudsdkcce.v3.model.hyper_node_status import HyperNodeStatus
+from huaweicloudsdkcce.v3.model.in_place_migrate import InPlaceMigrate
+from huaweicloudsdkcce.v3.model.in_place_migrate_node_extend_param import InPlaceMigrateNodeExtendParam
+from huaweicloudsdkcce.v3.model.in_place_migrateto_nodes_spec import InPlaceMigratetoNodesSpec
 from huaweicloudsdkcce.v3.model.in_place_rolling_update import InPlaceRollingUpdate
+from huaweicloudsdkcce.v3.model.inplace_migrate_node_item import InplaceMigrateNodeItem
+from huaweicloudsdkcce.v3.model.inplace_migrate_node_request import InplaceMigrateNodeRequest
+from huaweicloudsdkcce.v3.model.inplace_migrate_node_response import InplaceMigrateNodeResponse
 from huaweicloudsdkcce.v3.model.instance_request import InstanceRequest
 from huaweicloudsdkcce.v3.model.instance_request_spec import InstanceRequestSpec
 from huaweicloudsdkcce.v3.model.instance_spec import InstanceSpec
@@ -367,6 +374,7 @@ from huaweicloudsdkcce.v3.model.node_pool_condition import NodePoolCondition
 from huaweicloudsdkcce.v3.model.node_pool_metadata import NodePoolMetadata
 from huaweicloudsdkcce.v3.model.node_pool_metadata_update import NodePoolMetadataUpdate
 from huaweicloudsdkcce.v3.model.node_pool_node_autoscaling import NodePoolNodeAutoscaling
+from huaweicloudsdkcce.v3.model.node_pool_repair_policy import NodePoolRepairPolicy
 from huaweicloudsdkcce.v3.model.node_pool_resp import NodePoolResp
 from huaweicloudsdkcce.v3.model.node_pool_spec import NodePoolSpec
 from huaweicloudsdkcce.v3.model.node_pool_spec_update import NodePoolSpecUpdate
@@ -489,6 +497,8 @@ from huaweicloudsdkcce.v3.model.scale_node_pool_response import ScaleNodePoolRes
 from huaweicloudsdkcce.v3.model.scale_node_pool_spec import ScaleNodePoolSpec
 from huaweicloudsdkcce.v3.model.scale_up_billing_config_override import ScaleUpBillingConfigOverride
 from huaweicloudsdkcce.v3.model.scale_up_extend_param import ScaleUpExtendParam
+from huaweicloudsdkcce.v3.model.secret_config import SecretConfig
+from huaweicloudsdkcce.v3.model.secret_config_update import SecretConfigUpdate
 from huaweicloudsdkcce.v3.model.security_id import SecurityID
 from huaweicloudsdkcce.v3.model.service_network import ServiceNetwork
 from huaweicloudsdkcce.v3.model.show_addon_instance_request import ShowAddonInstanceRequest
@@ -664,6 +674,7 @@ from huaweicloudsdkcce.v3.model.upgrade_info_status import UpgradeInfoStatus
 from huaweicloudsdkcce.v3.model.upgrade_node_pool import UpgradeNodePool
 from huaweicloudsdkcce.v3.model.upgrade_node_pool_request import UpgradeNodePoolRequest
 from huaweicloudsdkcce.v3.model.upgrade_node_pool_response import UpgradeNodePoolResponse
+from huaweicloudsdkcce.v3.model.upgrade_node_pool_spec_node_template import UpgradeNodePoolSpecNodeTemplate
 from huaweicloudsdkcce.v3.model.upgrade_path import UpgradePath
 from huaweicloudsdkcce.v3.model.upgrade_plan import UpgradePlan
 from huaweicloudsdkcce.v3.model.upgrade_plan_spec import UpgradePlanSpec
@@ -699,6 +710,7 @@ from huaweicloudsdkcce.v3.model.v2_job_type_object import V2JobTypeObject
 from huaweicloudsdkcce.v3.model.versions import Versions
 from huaweicloudsdkcce.v3.model.virtual_space import VirtualSpace
 from huaweicloudsdkcce.v3.model.volume import Volume
+from huaweicloudsdkcce.v3.model.volume_config import VolumeConfig
 from huaweicloudsdkcce.v3.model.volume_metadata import VolumeMetadata
 from huaweicloudsdkcce.v3.model.work_flow_phase import WorkFlowPhase
 from huaweicloudsdkcce.v3.model.work_flow_spec import WorkFlowSpec

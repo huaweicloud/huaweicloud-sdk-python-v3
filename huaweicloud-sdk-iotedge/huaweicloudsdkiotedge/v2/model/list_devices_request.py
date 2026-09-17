@@ -18,6 +18,8 @@ class ListDevicesRequest:
         'edge_node_id': 'str',
         'gateway_id': 'str',
         'device_name': 'str',
+        'module_id': 'str',
+        'device_id': 'str',
         'offset': 'int',
         'limit': 'int'
     }
@@ -26,21 +28,27 @@ class ListDevicesRequest:
         'edge_node_id': 'edge_node_id',
         'gateway_id': 'gateway_id',
         'device_name': 'device_name',
+        'module_id': 'module_id',
+        'device_id': 'device_id',
         'offset': 'offset',
         'limit': 'limit'
     }
 
-    def __init__(self, edge_node_id=None, gateway_id=None, device_name=None, offset=None, limit=None):
+    def __init__(self, edge_node_id=None, gateway_id=None, device_name=None, module_id=None, device_id=None, offset=None, limit=None):
         r"""ListDevicesRequest
 
         The model defined in huaweicloud sdk
 
         :param edge_node_id: 边缘节点ID
         :type edge_node_id: str
-        :param gateway_id: 父设备ID,对应之前的gatewayId的概念，传该参数时代表查询网关下的子设备，不传代表查询网关直连设备
+        :param gateway_id: 父设备ID,对应之前的gatewayId的概念，传该参数时代表查询网关下的子设备，不传代表节点下的
         :type gateway_id: str
         :param device_name: 设备名称
         :type device_name: str
+        :param module_id: 设备所属的模块id
+        :type module_id: str
+        :param device_id: 设备ID
+        :type device_id: str
         :param offset: 查询的起始位置，取值范围为非负整数，默认为0
         :type offset: int
         :param limit: 每页记录数，默认值为10，取值区间为1-1000
@@ -52,6 +60,8 @@ class ListDevicesRequest:
         self._edge_node_id = None
         self._gateway_id = None
         self._device_name = None
+        self._module_id = None
+        self._device_id = None
         self._offset = None
         self._limit = None
         self.discriminator = None
@@ -61,6 +71,10 @@ class ListDevicesRequest:
             self.gateway_id = gateway_id
         if device_name is not None:
             self.device_name = device_name
+        if module_id is not None:
+            self.module_id = module_id
+        if device_id is not None:
+            self.device_id = device_id
         if offset is not None:
             self.offset = offset
         if limit is not None:
@@ -92,7 +106,7 @@ class ListDevicesRequest:
     def gateway_id(self):
         r"""Gets the gateway_id of this ListDevicesRequest.
 
-        父设备ID,对应之前的gatewayId的概念，传该参数时代表查询网关下的子设备，不传代表查询网关直连设备
+        父设备ID,对应之前的gatewayId的概念，传该参数时代表查询网关下的子设备，不传代表节点下的
 
         :return: The gateway_id of this ListDevicesRequest.
         :rtype: str
@@ -103,7 +117,7 @@ class ListDevicesRequest:
     def gateway_id(self, gateway_id):
         r"""Sets the gateway_id of this ListDevicesRequest.
 
-        父设备ID,对应之前的gatewayId的概念，传该参数时代表查询网关下的子设备，不传代表查询网关直连设备
+        父设备ID,对应之前的gatewayId的概念，传该参数时代表查询网关下的子设备，不传代表节点下的
 
         :param gateway_id: The gateway_id of this ListDevicesRequest.
         :type gateway_id: str
@@ -131,6 +145,50 @@ class ListDevicesRequest:
         :type device_name: str
         """
         self._device_name = device_name
+
+    @property
+    def module_id(self):
+        r"""Gets the module_id of this ListDevicesRequest.
+
+        设备所属的模块id
+
+        :return: The module_id of this ListDevicesRequest.
+        :rtype: str
+        """
+        return self._module_id
+
+    @module_id.setter
+    def module_id(self, module_id):
+        r"""Sets the module_id of this ListDevicesRequest.
+
+        设备所属的模块id
+
+        :param module_id: The module_id of this ListDevicesRequest.
+        :type module_id: str
+        """
+        self._module_id = module_id
+
+    @property
+    def device_id(self):
+        r"""Gets the device_id of this ListDevicesRequest.
+
+        设备ID
+
+        :return: The device_id of this ListDevicesRequest.
+        :rtype: str
+        """
+        return self._device_id
+
+    @device_id.setter
+    def device_id(self, device_id):
+        r"""Sets the device_id of this ListDevicesRequest.
+
+        设备ID
+
+        :param device_id: The device_id of this ListDevicesRequest.
+        :type device_id: str
+        """
+        self._device_id = device_id
 
     @property
     def offset(self):

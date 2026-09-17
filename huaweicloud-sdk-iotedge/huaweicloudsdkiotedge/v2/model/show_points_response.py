@@ -1,10 +1,10 @@
 # coding: utf-8
 
-from huaweicloudsdkcore.sdk_stream_response import SdkStreamResponse
+from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ShowPointsResponse(SdkStreamResponse):
+class ShowPointsResponse(SdkResponse):
 
     """
     Attributes:
@@ -21,14 +21,14 @@ class ShowPointsResponse(SdkStreamResponse):
     attribute_map = {
     }
 
-    def __init__(self, response):
+    def __init__(self):
         r"""ShowPointsResponse
 
         The model defined in huaweicloud sdk
 
         """
         
-        super().__init__(response)
+        super().__init__()
         self.discriminator = None
 
     def to_dict(self):

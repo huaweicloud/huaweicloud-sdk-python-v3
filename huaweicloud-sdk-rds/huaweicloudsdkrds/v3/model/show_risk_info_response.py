@@ -16,7 +16,7 @@ class ShowRiskInfoResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'risks': 'list[EngineRiskDesc]',
+        'risks': 'list[ShowRiskInfoEngineRiskDesc]',
         'x_request_id': 'str'
     }
 
@@ -31,7 +31,7 @@ class ShowRiskInfoResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param risks: 风险版本信息
-        :type risks: list[:class:`huaweicloudsdkrds.v3.EngineRiskDesc`]
+        :type risks: list[:class:`huaweicloudsdkrds.v3.ShowRiskInfoEngineRiskDesc`]
         :param x_request_id: 
         :type x_request_id: str
         """
@@ -54,7 +54,7 @@ class ShowRiskInfoResponse(SdkResponse):
         风险版本信息
 
         :return: The risks of this ShowRiskInfoResponse.
-        :rtype: list[:class:`huaweicloudsdkrds.v3.EngineRiskDesc`]
+        :rtype: list[:class:`huaweicloudsdkrds.v3.ShowRiskInfoEngineRiskDesc`]
         """
         return self._risks
 
@@ -65,7 +65,7 @@ class ShowRiskInfoResponse(SdkResponse):
         风险版本信息
 
         :param risks: The risks of this ShowRiskInfoResponse.
-        :type risks: list[:class:`huaweicloudsdkrds.v3.EngineRiskDesc`]
+        :type risks: list[:class:`huaweicloudsdkrds.v3.ShowRiskInfoEngineRiskDesc`]
         """
         self._risks = risks
 

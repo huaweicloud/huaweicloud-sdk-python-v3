@@ -15,6 +15,11 @@ class CreateOpsEvaluationTaskRequestBody:
     sensitive_list = []
 
     openapi_types = {
+        'account_id': 'str',
+        'creator': 'str',
+        'domain_id': 'str',
+        'run_at': 'datetime',
+        'tags': 'list[OpsTmsTag]',
         'eval_mode': 'str',
         'name': 'str',
         'description': 'str',
@@ -29,6 +34,11 @@ class CreateOpsEvaluationTaskRequestBody:
     }
 
     attribute_map = {
+        'account_id': 'account_id',
+        'creator': 'creator',
+        'domain_id': 'domain_id',
+        'run_at': 'run_at',
+        'tags': 'tags',
         'eval_mode': 'eval_mode',
         'name': 'name',
         'description': 'description',
@@ -42,11 +52,21 @@ class CreateOpsEvaluationTaskRequestBody:
         'evaluation_object_config': 'evaluation_object_config'
     }
 
-    def __init__(self, eval_mode=None, name=None, description=None, dataset_id=None, dataset_version=None, human_read_version=None, dataset_name=None, input_source_type=None, input_source=None, runtime_config=None, evaluation_object_config=None):
+    def __init__(self, account_id=None, creator=None, domain_id=None, run_at=None, tags=None, eval_mode=None, name=None, description=None, dataset_id=None, dataset_version=None, human_read_version=None, dataset_name=None, input_source_type=None, input_source=None, runtime_config=None, evaluation_object_config=None):
         r"""CreateOpsEvaluationTaskRequestBody
 
         The model defined in huaweicloud sdk
 
+        :param account_id: **参数解释：** 租户账号ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
+        :type account_id: str
+        :param creator: **参数解释：** 创建人用户名。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
+        :type creator: str
+        :param domain_id: **参数解释：** 租户域ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
+        :type domain_id: str
+        :param run_at: **参数解释：** 计划执行时间。 **约束限制：** 不涉及。 **取值范围：** ISO 8601 时间格式，长度范围为0~40。 **默认取值：** 不涉及。
+        :type run_at: datetime
+        :param tags: **参数解释：** 创建评估任务时绑定的TMS标签列表。 **约束限制：** 数组长度0到50。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
+        :type tags: list[:class:`huaweicloudsdkagentarts.v1.OpsTmsTag`]
         :param eval_mode: **参数解释：** 评估模式，指定任务是在线评估还是离线评估，影响任务的执行环境和策略。 **约束限制：** 字符串类型，最小长度为1，最大长度为36。 **取值范围：** 枚举值：OFFLINE（离线）、ONLINE（在线）。字符最小长度为1，最大长度为36。 **默认取值：** OFFLINE。
         :type eval_mode: str
         :param name: **参数解释：** 评估任务的名称，用于标识和区分不同的评估任务，方便管理和查找。 **约束限制：** 字符串类型，最小长度为4，最大长度为100。 **取值范围：** 字符长度4-100。 **默认取值：** 不涉及。
@@ -73,6 +93,11 @@ class CreateOpsEvaluationTaskRequestBody:
         
         
 
+        self._account_id = None
+        self._creator = None
+        self._domain_id = None
+        self._run_at = None
+        self._tags = None
         self._eval_mode = None
         self._name = None
         self._description = None
@@ -86,6 +111,16 @@ class CreateOpsEvaluationTaskRequestBody:
         self._evaluation_object_config = None
         self.discriminator = None
 
+        if account_id is not None:
+            self.account_id = account_id
+        if creator is not None:
+            self.creator = creator
+        if domain_id is not None:
+            self.domain_id = domain_id
+        if run_at is not None:
+            self.run_at = run_at
+        if tags is not None:
+            self.tags = tags
         if eval_mode is not None:
             self.eval_mode = eval_mode
         if name is not None:
@@ -108,6 +143,116 @@ class CreateOpsEvaluationTaskRequestBody:
             self.runtime_config = runtime_config
         if evaluation_object_config is not None:
             self.evaluation_object_config = evaluation_object_config
+
+    @property
+    def account_id(self):
+        r"""Gets the account_id of this CreateOpsEvaluationTaskRequestBody.
+
+        **参数解释：** 租户账号ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
+
+        :return: The account_id of this CreateOpsEvaluationTaskRequestBody.
+        :rtype: str
+        """
+        return self._account_id
+
+    @account_id.setter
+    def account_id(self, account_id):
+        r"""Sets the account_id of this CreateOpsEvaluationTaskRequestBody.
+
+        **参数解释：** 租户账号ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
+
+        :param account_id: The account_id of this CreateOpsEvaluationTaskRequestBody.
+        :type account_id: str
+        """
+        self._account_id = account_id
+
+    @property
+    def creator(self):
+        r"""Gets the creator of this CreateOpsEvaluationTaskRequestBody.
+
+        **参数解释：** 创建人用户名。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
+
+        :return: The creator of this CreateOpsEvaluationTaskRequestBody.
+        :rtype: str
+        """
+        return self._creator
+
+    @creator.setter
+    def creator(self, creator):
+        r"""Sets the creator of this CreateOpsEvaluationTaskRequestBody.
+
+        **参数解释：** 创建人用户名。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
+
+        :param creator: The creator of this CreateOpsEvaluationTaskRequestBody.
+        :type creator: str
+        """
+        self._creator = creator
+
+    @property
+    def domain_id(self):
+        r"""Gets the domain_id of this CreateOpsEvaluationTaskRequestBody.
+
+        **参数解释：** 租户域ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
+
+        :return: The domain_id of this CreateOpsEvaluationTaskRequestBody.
+        :rtype: str
+        """
+        return self._domain_id
+
+    @domain_id.setter
+    def domain_id(self, domain_id):
+        r"""Sets the domain_id of this CreateOpsEvaluationTaskRequestBody.
+
+        **参数解释：** 租户域ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
+
+        :param domain_id: The domain_id of this CreateOpsEvaluationTaskRequestBody.
+        :type domain_id: str
+        """
+        self._domain_id = domain_id
+
+    @property
+    def run_at(self):
+        r"""Gets the run_at of this CreateOpsEvaluationTaskRequestBody.
+
+        **参数解释：** 计划执行时间。 **约束限制：** 不涉及。 **取值范围：** ISO 8601 时间格式，长度范围为0~40。 **默认取值：** 不涉及。
+
+        :return: The run_at of this CreateOpsEvaluationTaskRequestBody.
+        :rtype: datetime
+        """
+        return self._run_at
+
+    @run_at.setter
+    def run_at(self, run_at):
+        r"""Sets the run_at of this CreateOpsEvaluationTaskRequestBody.
+
+        **参数解释：** 计划执行时间。 **约束限制：** 不涉及。 **取值范围：** ISO 8601 时间格式，长度范围为0~40。 **默认取值：** 不涉及。
+
+        :param run_at: The run_at of this CreateOpsEvaluationTaskRequestBody.
+        :type run_at: datetime
+        """
+        self._run_at = run_at
+
+    @property
+    def tags(self):
+        r"""Gets the tags of this CreateOpsEvaluationTaskRequestBody.
+
+        **参数解释：** 创建评估任务时绑定的TMS标签列表。 **约束限制：** 数组长度0到50。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
+
+        :return: The tags of this CreateOpsEvaluationTaskRequestBody.
+        :rtype: list[:class:`huaweicloudsdkagentarts.v1.OpsTmsTag`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        r"""Sets the tags of this CreateOpsEvaluationTaskRequestBody.
+
+        **参数解释：** 创建评估任务时绑定的TMS标签列表。 **约束限制：** 数组长度0到50。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
+
+        :param tags: The tags of this CreateOpsEvaluationTaskRequestBody.
+        :type tags: list[:class:`huaweicloudsdkagentarts.v1.OpsTmsTag`]
+        """
+        self._tags = tags
 
     @property
     def eval_mode(self):

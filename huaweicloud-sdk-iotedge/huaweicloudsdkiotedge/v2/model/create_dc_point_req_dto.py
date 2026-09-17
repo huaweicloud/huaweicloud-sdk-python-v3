@@ -21,7 +21,8 @@ class CreateDcPointReqDTO:
         'collection_config': 'object',
         'device_id': 'str',
         '_property': 'str',
-        'processing_config': 'ProcessingConfigDTO'
+        'processing_config': 'ProcessingConfigDTO',
+        'active': 'bool'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class CreateDcPointReqDTO:
         'collection_config': 'collection_config',
         'device_id': 'device_id',
         '_property': 'property',
-        'processing_config': 'processing_config'
+        'processing_config': 'processing_config',
+        'active': 'active'
     }
 
-    def __init__(self, point_id=None, name=None, data_type=None, collection_config=None, device_id=None, _property=None, processing_config=None):
+    def __init__(self, point_id=None, name=None, data_type=None, collection_config=None, device_id=None, _property=None, processing_config=None, active=None):
         r"""CreateDcPointReqDTO
 
         The model defined in huaweicloud sdk
@@ -53,6 +55,8 @@ class CreateDcPointReqDTO:
         :type _property: str
         :param processing_config: 
         :type processing_config: :class:`huaweicloudsdkiotedge.v2.ProcessingConfigDTO`
+        :param active: 点位启停状态，默认开启
+        :type active: bool
         """
         
         
@@ -64,6 +68,7 @@ class CreateDcPointReqDTO:
         self._device_id = None
         self.__property = None
         self._processing_config = None
+        self._active = None
         self.discriminator = None
 
         self.point_id = point_id
@@ -75,6 +80,8 @@ class CreateDcPointReqDTO:
         self._property = _property
         if processing_config is not None:
             self.processing_config = processing_config
+        if active is not None:
+            self.active = active
 
     @property
     def point_id(self):
@@ -225,6 +232,28 @@ class CreateDcPointReqDTO:
         :type processing_config: :class:`huaweicloudsdkiotedge.v2.ProcessingConfigDTO`
         """
         self._processing_config = processing_config
+
+    @property
+    def active(self):
+        r"""Gets the active of this CreateDcPointReqDTO.
+
+        点位启停状态，默认开启
+
+        :return: The active of this CreateDcPointReqDTO.
+        :rtype: bool
+        """
+        return self._active
+
+    @active.setter
+    def active(self, active):
+        r"""Sets the active of this CreateDcPointReqDTO.
+
+        点位启停状态，默认开启
+
+        :param active: The active of this CreateDcPointReqDTO.
+        :type active: bool
+        """
+        self._active = active
 
     def to_dict(self):
         result = {}

@@ -31,9 +31,9 @@ class ShowReleaseHistoryRequest:
 
         The model defined in huaweicloud sdk
 
-        :param name: 模板实例名称
+        :param name: **参数解释：** 模板实例名称。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type name: str
-        :param namespace: 模板实例所在的命名空间
+        :param namespace: **参数解释：** 模板实例所在的命名空间。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type namespace: str
         :param cluster_id: 集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
         :type cluster_id: str
@@ -54,7 +54,7 @@ class ShowReleaseHistoryRequest:
     def name(self):
         r"""Gets the name of this ShowReleaseHistoryRequest.
 
-        模板实例名称
+        **参数解释：** 模板实例名称。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The name of this ShowReleaseHistoryRequest.
         :rtype: str
@@ -65,7 +65,7 @@ class ShowReleaseHistoryRequest:
     def name(self, name):
         r"""Sets the name of this ShowReleaseHistoryRequest.
 
-        模板实例名称
+        **参数解释：** 模板实例名称。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param name: The name of this ShowReleaseHistoryRequest.
         :type name: str
@@ -76,7 +76,7 @@ class ShowReleaseHistoryRequest:
     def namespace(self):
         r"""Gets the namespace of this ShowReleaseHistoryRequest.
 
-        模板实例所在的命名空间
+        **参数解释：** 模板实例所在的命名空间。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The namespace of this ShowReleaseHistoryRequest.
         :rtype: str
@@ -87,7 +87,7 @@ class ShowReleaseHistoryRequest:
     def namespace(self, namespace):
         r"""Sets the namespace of this ShowReleaseHistoryRequest.
 
-        模板实例所在的命名空间
+        **参数解释：** 模板实例所在的命名空间。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param namespace: The namespace of this ShowReleaseHistoryRequest.
         :type namespace: str

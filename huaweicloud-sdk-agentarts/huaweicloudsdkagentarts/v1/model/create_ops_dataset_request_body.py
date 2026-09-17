@@ -17,16 +17,20 @@ class CreateOpsDatasetRequestBody:
     openapi_types = {
         'name': 'str',
         'description': 'str',
-        'schemas': 'list[CreateOpsSchemaRequest]'
+        'schemas': 'list[CreateOpsSchemaRequest]',
+        'use_default_schema': 'bool',
+        'tags': 'list[OpsTmsTag]'
     }
 
     attribute_map = {
         'name': 'name',
         'description': 'description',
-        'schemas': 'schemas'
+        'schemas': 'schemas',
+        'use_default_schema': 'use_default_schema',
+        'tags': 'tags'
     }
 
-    def __init__(self, name=None, description=None, schemas=None):
+    def __init__(self, name=None, description=None, schemas=None, use_default_schema=None, tags=None):
         r"""CreateOpsDatasetRequestBody
 
         The model defined in huaweicloud sdk
@@ -37,6 +41,10 @@ class CreateOpsDatasetRequestBody:
         :type description: str
         :param schemas: **参数解释：** 定义评测集结构的一组字段配置列表。 **约束限制：** 列表元素数量上限为50个。 **取值范围：** CreateOpsSchemaRequest 对象数组。 **默认取值：** 空列表。
         :type schemas: list[:class:`huaweicloudsdkagentarts.v1.CreateOpsSchemaRequest`]
+        :param use_default_schema: **参数解释：** 是否使用平台默认的字段定义。为true时使用默认Schema，此时可不传schemas。 **约束限制：** 不涉及。 **取值范围：** - true：使用默认字段定义 - false：使用自定义字段定义 **默认取值：** false。
+        :type use_default_schema: bool
+        :param tags: **参数解释：** 创建评测集时绑定的TMS标签列表，默认为空列表。 **约束限制：** 数组长度0到50。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
+        :type tags: list[:class:`huaweicloudsdkagentarts.v1.OpsTmsTag`]
         """
         
         
@@ -44,6 +52,8 @@ class CreateOpsDatasetRequestBody:
         self._name = None
         self._description = None
         self._schemas = None
+        self._use_default_schema = None
+        self._tags = None
         self.discriminator = None
 
         self.name = name
@@ -51,6 +61,10 @@ class CreateOpsDatasetRequestBody:
             self.description = description
         if schemas is not None:
             self.schemas = schemas
+        if use_default_schema is not None:
+            self.use_default_schema = use_default_schema
+        if tags is not None:
+            self.tags = tags
 
     @property
     def name(self):
@@ -117,6 +131,50 @@ class CreateOpsDatasetRequestBody:
         :type schemas: list[:class:`huaweicloudsdkagentarts.v1.CreateOpsSchemaRequest`]
         """
         self._schemas = schemas
+
+    @property
+    def use_default_schema(self):
+        r"""Gets the use_default_schema of this CreateOpsDatasetRequestBody.
+
+        **参数解释：** 是否使用平台默认的字段定义。为true时使用默认Schema，此时可不传schemas。 **约束限制：** 不涉及。 **取值范围：** - true：使用默认字段定义 - false：使用自定义字段定义 **默认取值：** false。
+
+        :return: The use_default_schema of this CreateOpsDatasetRequestBody.
+        :rtype: bool
+        """
+        return self._use_default_schema
+
+    @use_default_schema.setter
+    def use_default_schema(self, use_default_schema):
+        r"""Sets the use_default_schema of this CreateOpsDatasetRequestBody.
+
+        **参数解释：** 是否使用平台默认的字段定义。为true时使用默认Schema，此时可不传schemas。 **约束限制：** 不涉及。 **取值范围：** - true：使用默认字段定义 - false：使用自定义字段定义 **默认取值：** false。
+
+        :param use_default_schema: The use_default_schema of this CreateOpsDatasetRequestBody.
+        :type use_default_schema: bool
+        """
+        self._use_default_schema = use_default_schema
+
+    @property
+    def tags(self):
+        r"""Gets the tags of this CreateOpsDatasetRequestBody.
+
+        **参数解释：** 创建评测集时绑定的TMS标签列表，默认为空列表。 **约束限制：** 数组长度0到50。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
+
+        :return: The tags of this CreateOpsDatasetRequestBody.
+        :rtype: list[:class:`huaweicloudsdkagentarts.v1.OpsTmsTag`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        r"""Sets the tags of this CreateOpsDatasetRequestBody.
+
+        **参数解释：** 创建评测集时绑定的TMS标签列表，默认为空列表。 **约束限制：** 数组长度0到50。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
+
+        :param tags: The tags of this CreateOpsDatasetRequestBody.
+        :type tags: list[:class:`huaweicloudsdkagentarts.v1.OpsTmsTag`]
+        """
+        self._tags = tags
 
     def to_dict(self):
         result = {}

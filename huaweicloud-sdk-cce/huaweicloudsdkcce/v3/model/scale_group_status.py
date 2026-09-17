@@ -63,7 +63,7 @@ class ScaleGroupStatus:
         :type desired_node_count: int
         :param unpaid_scale_node_count: 订单未支付节点个数
         :type unpaid_scale_node_count: int
-        :param active_node_count: **参数解释**： 伸缩组就绪节点个数 **取值范围**： 不涉及
+        :param active_node_count: **参数解释**： 伸缩组就绪节点个数 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type active_node_count: int
         :param existing_node_count: 
         :type existing_node_count: :class:`huaweicloudsdkcce.v3.ScaleGroupStatusExistingNodeCount`
@@ -274,7 +274,7 @@ class ScaleGroupStatus:
     def active_node_count(self):
         r"""Gets the active_node_count of this ScaleGroupStatus.
 
-        **参数解释**： 伸缩组就绪节点个数 **取值范围**： 不涉及
+        **参数解释**： 伸缩组就绪节点个数 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The active_node_count of this ScaleGroupStatus.
         :rtype: int
@@ -285,7 +285,7 @@ class ScaleGroupStatus:
     def active_node_count(self, active_node_count):
         r"""Sets the active_node_count of this ScaleGroupStatus.
 
-        **参数解释**： 伸缩组就绪节点个数 **取值范围**： 不涉及
+        **参数解释**： 伸缩组就绪节点个数 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param active_node_count: The active_node_count of this ScaleGroupStatus.
         :type active_node_count: int

@@ -220,7 +220,8 @@ the [CHANGELOG.md](https://github.com/huaweicloud/huaweicloud-sdk-python-v3/blob
 	  * [2.4.2 Profile](#242-profile-top)
 	  * [2.4.3 Metadata](#243-metadata-top)
       * [2.4.4 Pod Identity](#244-pod-identity-top)
-	  * [2.4.5 Provider Chain](#245-provider-chain-top)
+      * [2.4.5 OIDC Trust Agency](#245-oidc-trust-agency-top)
+	  * [2.4.6 Provider Chain](#246-provider-chain-top)
 * [3. Client Initialization](#3-client-initialization-top)
     * [3.1 Initialize the client with specified Endpoint](#31-initialize-the-serviceclient-with-specified-endpoint-top)
     * [3.2 Initialize the client with specified Region (Recommended)](#32-initialize-the-serviceclient-with-specified-region-recommended-top)
@@ -624,9 +625,69 @@ global_provider = PodIdentityCredentialProvider.get_global()
 global_provider = global_provider.get_credentials()
 ```
 
-##### 2.4.5 Provider Chain [:top:](#user-manual-top)
+##### 2.4.5 OIDC Trust Agency [:top:](#user-manual-top)
 
-When creating a service client without credentials, try to load authentication in the order **Environment Variables -> Profile -> Metadata -> Pod Identity**
+Obtaining temporary security credentials through OIDC identity provider token (AssumeAgencyWithOIDC).
+
+Refer to [AssumeAgencyWithOIDC](https://support.huaweicloud.com/api-iam5/AssumeAgencyWithOIDC.html) for more information.
+
+**Environment Variables**
+
+| Environment Variable  |  Description |
+| :------- | :--- |
+| HUAWEICLOUD_OIDC_PROVIDER_URN  | Required, URN of the OIDC identity provider, e.g. `iam::123456789:oidcProvider:test`  |
+| HUAWEICLOUD_OIDC_AGENCY_URN  | Required, URN of the trust agency, e.g. `iam::123456789:agency:demo`  |
+| HUAWEICLOUD_OIDC_TOKEN_FILE  | Optional, OIDC ID Token file path, used when `HUAWEICLOUD_OIDC_ID_TOKEN` is not set  |
+| HUAWEICLOUD_OIDC_ID_TOKEN  | Optional, OIDC ID Token value, takes priority over `HUAWEICLOUD_OIDC_TOKEN_FILE`  |
+| HUAWEICLOUD_OIDC_SESSION_NAME  | Optional, agency session name, default is `oidc-sts-session`  |
+| HUAWEICLOUD_OIDC_DURATION_SECONDS  | Optional, temporary credential duration in seconds, default is `3600`  |
+| HUAWEICLOUD_OIDC_POLICY  | Optional, IAM policy JSON string for permission scoping  |
+| HUAWEICLOUD_OIDC_POLICY_IDS  | Optional, comma-separated policy IDs, e.g. `policy-id-1,policy-id-2`  |
+| HUAWEICLOUD_SDK_STS_ENDPOINT  | Optional, STS endpoint, default is `https://sts.cn-north-4.myhuaweicloud.com`  |
+| HUAWEICLOUD_SDK_PROJECT_ID  | Optional for basic credential type  |
+| HUAWEICLOUD_SDK_DOMAIN_ID  | Optional for global credential type  |
+
+Configure environment variables:
+
+```bash
+export HUAWEICLOUD_OIDC_PROVIDER_URN=iam::123456789:oidcProvider:test
+export HUAWEICLOUD_OIDC_AGENCY_URN=iam::123456789:agency:demo
+export HUAWEICLOUD_OIDC_TOKEN_FILE=/path/to/id_token
+export HUAWEICLOUD_OIDC_SESSION_NAME=my-session
+```
+
+Get authentication from environment variables:
+
+```python
+from huaweicloudsdkcore.auth.provider import OidcStsCredentialProvider
+
+# basic
+basic_provider = OidcStsCredentialProvider.get_basic()
+basic_cred = basic_provider.get_credentials()
+
+# global
+global_provider = OidcStsCredentialProvider.get_global()
+global_cred = global_provider.get_credentials()
+```
+
+Or provide parameters programmatically:
+
+```python
+from huaweicloudsdkcore.auth.provider import OidcStsCredentialProvider
+
+provider = OidcStsCredentialProvider(
+    "basic",
+    provider_urn="iam::123456789:oidcProvider:test",
+    agency_urn="iam::123456789:agency:demo",
+    id_token="your-id-token",
+    sts_endpoint="https://sts.cn-north-4.myhuaweicloud.com",
+)
+cred = provider.get_credentials()
+```
+
+##### 2.4.6 Provider Chain [:top:](#user-manual-top)
+
+When creating a service client without credentials, try to load authentication in the order **OIDC Trust Agency -> Environment Variables -> Profile -> Metadata -> Pod Identity**
 
 Get authentication from provider chain:
 

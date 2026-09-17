@@ -31,7 +31,7 @@ class ContainerPortDTO:
 
         The model defined in huaweicloud sdk
 
-        :param container_port: 构成一堆映射的容器端口
+        :param container_port: 构成一对映射的容器端口
         :type container_port: int
         :param host_port: 构成一对映射的物理机对应网卡端口
         :type host_port: int
@@ -57,7 +57,7 @@ class ContainerPortDTO:
     def container_port(self):
         r"""Gets the container_port of this ContainerPortDTO.
 
-        构成一堆映射的容器端口
+        构成一对映射的容器端口
 
         :return: The container_port of this ContainerPortDTO.
         :rtype: int
@@ -68,7 +68,7 @@ class ContainerPortDTO:
     def container_port(self, container_port):
         r"""Sets the container_port of this ContainerPortDTO.
 
-        构成一堆映射的容器端口
+        构成一对映射的容器端口
 
         :param container_port: The container_port of this ContainerPortDTO.
         :type container_port: int

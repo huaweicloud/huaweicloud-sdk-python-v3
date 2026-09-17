@@ -35,13 +35,13 @@ class HyperNodeMetadata:
 
         The model defined in huaweicloud sdk
 
-        :param name: **参数解释**： 超节点名称 &gt; 命名规则：以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围1-56位，且不能以中划线(-)结尾。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
+        :param name: **参数解释**： 超节点名称。 **约束限制**： 不涉及 **取值范围**： 命名规则：以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围1-69位，且不能以中划线(-)结尾。 **默认取值**： 不涉及
         :type name: str
-        :param uid: **参数解释**： 超节点ID，资源唯一标识，创建成功后自动生成，填写无效
+        :param uid: **参数解释**： 超节点ID，资源唯一标识，创建成功后自动生成，填写无效 **约束限制**： 不涉及 **取值范围**： UUID格式 **默认取值**： 不涉及
         :type uid: str
-        :param creation_timestamp: **参数解释**： 创建时间，创建成功后自动生成，填写无效
+        :param creation_timestamp: **参数解释**： 创建时间，创建成功后自动生成，填写无效 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type creation_timestamp: str
-        :param update_timestamp: **参数解释**： 更新时间，创建成功后自动生成，填写无效
+        :param update_timestamp: **参数解释**： 更新时间，系统自动生成，填写无效。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type update_timestamp: str
         :param owner_reference: 
         :type owner_reference: :class:`huaweicloudsdkcce.v3.HyperNodeMetadataOwnerReference`
@@ -71,7 +71,7 @@ class HyperNodeMetadata:
     def name(self):
         r"""Gets the name of this HyperNodeMetadata.
 
-        **参数解释**： 超节点名称 > 命名规则：以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围1-56位，且不能以中划线(-)结尾。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
+        **参数解释**： 超节点名称。 **约束限制**： 不涉及 **取值范围**： 命名规则：以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围1-69位，且不能以中划线(-)结尾。 **默认取值**： 不涉及
 
         :return: The name of this HyperNodeMetadata.
         :rtype: str
@@ -82,7 +82,7 @@ class HyperNodeMetadata:
     def name(self, name):
         r"""Sets the name of this HyperNodeMetadata.
 
-        **参数解释**： 超节点名称 > 命名规则：以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围1-56位，且不能以中划线(-)结尾。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
+        **参数解释**： 超节点名称。 **约束限制**： 不涉及 **取值范围**： 命名规则：以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围1-69位，且不能以中划线(-)结尾。 **默认取值**： 不涉及
 
         :param name: The name of this HyperNodeMetadata.
         :type name: str
@@ -93,7 +93,7 @@ class HyperNodeMetadata:
     def uid(self):
         r"""Gets the uid of this HyperNodeMetadata.
 
-        **参数解释**： 超节点ID，资源唯一标识，创建成功后自动生成，填写无效
+        **参数解释**： 超节点ID，资源唯一标识，创建成功后自动生成，填写无效 **约束限制**： 不涉及 **取值范围**： UUID格式 **默认取值**： 不涉及
 
         :return: The uid of this HyperNodeMetadata.
         :rtype: str
@@ -104,7 +104,7 @@ class HyperNodeMetadata:
     def uid(self, uid):
         r"""Sets the uid of this HyperNodeMetadata.
 
-        **参数解释**： 超节点ID，资源唯一标识，创建成功后自动生成，填写无效
+        **参数解释**： 超节点ID，资源唯一标识，创建成功后自动生成，填写无效 **约束限制**： 不涉及 **取值范围**： UUID格式 **默认取值**： 不涉及
 
         :param uid: The uid of this HyperNodeMetadata.
         :type uid: str
@@ -115,7 +115,7 @@ class HyperNodeMetadata:
     def creation_timestamp(self):
         r"""Gets the creation_timestamp of this HyperNodeMetadata.
 
-        **参数解释**： 创建时间，创建成功后自动生成，填写无效
+        **参数解释**： 创建时间，创建成功后自动生成，填写无效 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The creation_timestamp of this HyperNodeMetadata.
         :rtype: str
@@ -126,7 +126,7 @@ class HyperNodeMetadata:
     def creation_timestamp(self, creation_timestamp):
         r"""Sets the creation_timestamp of this HyperNodeMetadata.
 
-        **参数解释**： 创建时间，创建成功后自动生成，填写无效
+        **参数解释**： 创建时间，创建成功后自动生成，填写无效 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param creation_timestamp: The creation_timestamp of this HyperNodeMetadata.
         :type creation_timestamp: str
@@ -137,7 +137,7 @@ class HyperNodeMetadata:
     def update_timestamp(self):
         r"""Gets the update_timestamp of this HyperNodeMetadata.
 
-        **参数解释**： 更新时间，创建成功后自动生成，填写无效
+        **参数解释**： 更新时间，系统自动生成，填写无效。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The update_timestamp of this HyperNodeMetadata.
         :rtype: str
@@ -148,7 +148,7 @@ class HyperNodeMetadata:
     def update_timestamp(self, update_timestamp):
         r"""Sets the update_timestamp of this HyperNodeMetadata.
 
-        **参数解释**： 更新时间，创建成功后自动生成，填写无效
+        **参数解释**： 更新时间，系统自动生成，填写无效。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param update_timestamp: The update_timestamp of this HyperNodeMetadata.
         :type update_timestamp: str

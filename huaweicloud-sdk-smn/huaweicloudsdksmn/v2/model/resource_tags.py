@@ -29,9 +29,9 @@ class ResourceTags:
 
         The model defined in huaweicloud sdk
 
-        :param key: 键。  - 最大长度127个unicode字符。  - key不能为空。
+        :param key: 键。  - 最大长度128个unicode字符。  - key不能为空。
         :type key: str
-        :param values: 值列表。  - 最多10个value。  - value不允许重复。  - 每个值最大长度255个unicode字符。  - 如果values为空则表示any_value。  - value之间为或的关系。
+        :param values: 值列表。  - 最多10个value。  - value不允许重复。  - 每个值最大长度256个unicode字符。  - 如果values为空则表示any_value。  - value之间为或的关系。
         :type values: list[str]
         """
         
@@ -48,7 +48,7 @@ class ResourceTags:
     def key(self):
         r"""Gets the key of this ResourceTags.
 
-        键。  - 最大长度127个unicode字符。  - key不能为空。
+        键。  - 最大长度128个unicode字符。  - key不能为空。
 
         :return: The key of this ResourceTags.
         :rtype: str
@@ -59,7 +59,7 @@ class ResourceTags:
     def key(self, key):
         r"""Sets the key of this ResourceTags.
 
-        键。  - 最大长度127个unicode字符。  - key不能为空。
+        键。  - 最大长度128个unicode字符。  - key不能为空。
 
         :param key: The key of this ResourceTags.
         :type key: str
@@ -70,7 +70,7 @@ class ResourceTags:
     def values(self):
         r"""Gets the values of this ResourceTags.
 
-        值列表。  - 最多10个value。  - value不允许重复。  - 每个值最大长度255个unicode字符。  - 如果values为空则表示any_value。  - value之间为或的关系。
+        值列表。  - 最多10个value。  - value不允许重复。  - 每个值最大长度256个unicode字符。  - 如果values为空则表示any_value。  - value之间为或的关系。
 
         :return: The values of this ResourceTags.
         :rtype: list[str]
@@ -81,7 +81,7 @@ class ResourceTags:
     def values(self, values):
         r"""Sets the values of this ResourceTags.
 
-        值列表。  - 最多10个value。  - value不允许重复。  - 每个值最大长度255个unicode字符。  - 如果values为空则表示any_value。  - value之间为或的关系。
+        值列表。  - 最多10个value。  - value不允许重复。  - 每个值最大长度256个unicode字符。  - 如果values为空则表示any_value。  - value之间为或的关系。
 
         :param values: The values of this ResourceTags.
         :type values: list[str]

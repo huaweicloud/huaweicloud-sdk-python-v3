@@ -24,7 +24,9 @@ class EdgeNodeDTO:
         'resource_ids': 'list[str]',
         'resource_spec_types': 'list[str]',
         'ips': 'list[str]',
-        'create_time': 'str'
+        'software_version': 'str',
+        'create_time': 'str',
+        'node_group_id': 'str'
     }
 
     attribute_map = {
@@ -37,10 +39,12 @@ class EdgeNodeDTO:
         'resource_ids': 'resource_ids',
         'resource_spec_types': 'resource_spec_types',
         'ips': 'ips',
-        'create_time': 'create_time'
+        'software_version': 'software_version',
+        'create_time': 'create_time',
+        'node_group_id': 'node_group_id'
     }
 
-    def __init__(self, edge_node_id=None, name=None, state=None, instance_id=None, space_id=None, type=None, resource_ids=None, resource_spec_types=None, ips=None, create_time=None):
+    def __init__(self, edge_node_id=None, name=None, state=None, instance_id=None, space_id=None, type=None, resource_ids=None, resource_spec_types=None, ips=None, software_version=None, create_time=None, node_group_id=None):
         r"""EdgeNodeDTO
 
         The model defined in huaweicloud sdk
@@ -55,7 +59,7 @@ class EdgeNodeDTO:
         :type instance_id: str
         :param space_id: 资源空间id，对应IOTDA云服务接口参数中的app_id。
         :type space_id: str
-        :param type: 节点所属资源类型：advanced|standard
+        :param type: 边缘节点类型：lite|advanced|standard。lite表示基础版边缘节点，advanced或standard表示专业版边缘节点。
         :type type: str
         :param resource_ids: 节点所购买的资源类型的列表
         :type resource_ids: list[str]
@@ -63,8 +67,12 @@ class EdgeNodeDTO:
         :type resource_spec_types: list[str]
         :param ips: 边缘节点ip列表
         :type ips: list[str]
+        :param software_version: 节点软件版本
+        :type software_version: str
         :param create_time: 边缘节点创建时间
         :type create_time: str
+        :param node_group_id: 节点组ID
+        :type node_group_id: str
         """
         
         
@@ -78,7 +86,9 @@ class EdgeNodeDTO:
         self._resource_ids = None
         self._resource_spec_types = None
         self._ips = None
+        self._software_version = None
         self._create_time = None
+        self._node_group_id = None
         self.discriminator = None
 
         if edge_node_id is not None:
@@ -99,8 +109,12 @@ class EdgeNodeDTO:
             self.resource_spec_types = resource_spec_types
         if ips is not None:
             self.ips = ips
+        if software_version is not None:
+            self.software_version = software_version
         if create_time is not None:
             self.create_time = create_time
+        if node_group_id is not None:
+            self.node_group_id = node_group_id
 
     @property
     def edge_node_id(self):
@@ -216,7 +230,7 @@ class EdgeNodeDTO:
     def type(self):
         r"""Gets the type of this EdgeNodeDTO.
 
-        节点所属资源类型：advanced|standard
+        边缘节点类型：lite|advanced|standard。lite表示基础版边缘节点，advanced或standard表示专业版边缘节点。
 
         :return: The type of this EdgeNodeDTO.
         :rtype: str
@@ -227,7 +241,7 @@ class EdgeNodeDTO:
     def type(self, type):
         r"""Sets the type of this EdgeNodeDTO.
 
-        节点所属资源类型：advanced|standard
+        边缘节点类型：lite|advanced|standard。lite表示基础版边缘节点，advanced或standard表示专业版边缘节点。
 
         :param type: The type of this EdgeNodeDTO.
         :type type: str
@@ -301,6 +315,28 @@ class EdgeNodeDTO:
         self._ips = ips
 
     @property
+    def software_version(self):
+        r"""Gets the software_version of this EdgeNodeDTO.
+
+        节点软件版本
+
+        :return: The software_version of this EdgeNodeDTO.
+        :rtype: str
+        """
+        return self._software_version
+
+    @software_version.setter
+    def software_version(self, software_version):
+        r"""Sets the software_version of this EdgeNodeDTO.
+
+        节点软件版本
+
+        :param software_version: The software_version of this EdgeNodeDTO.
+        :type software_version: str
+        """
+        self._software_version = software_version
+
+    @property
     def create_time(self):
         r"""Gets the create_time of this EdgeNodeDTO.
 
@@ -321,6 +357,28 @@ class EdgeNodeDTO:
         :type create_time: str
         """
         self._create_time = create_time
+
+    @property
+    def node_group_id(self):
+        r"""Gets the node_group_id of this EdgeNodeDTO.
+
+        节点组ID
+
+        :return: The node_group_id of this EdgeNodeDTO.
+        :rtype: str
+        """
+        return self._node_group_id
+
+    @node_group_id.setter
+    def node_group_id(self, node_group_id):
+        r"""Sets the node_group_id of this EdgeNodeDTO.
+
+        节点组ID
+
+        :param node_group_id: The node_group_id of this EdgeNodeDTO.
+        :type node_group_id: str
+        """
+        self._node_group_id = node_group_id
 
     def to_dict(self):
         result = {}

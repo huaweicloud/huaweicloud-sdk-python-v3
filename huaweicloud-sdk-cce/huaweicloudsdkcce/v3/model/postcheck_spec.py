@@ -31,11 +31,11 @@ class PostcheckSpec:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: 集群ID
+        :param cluster_id: **参数解释：** 集群ID **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type cluster_id: str
-        :param cluster_version: 集群升级源版本
+        :param cluster_version: **参数解释：** 升级前的集群版本 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type cluster_version: str
-        :param target_version: 集群升级目标版本
+        :param target_version: **参数解释：** 当前集群版本 **约束限制：** 不涉及 **取值范围：** CCE支持的集群版本 **默认取值：** 不涉及
         :type target_version: str
         """
         
@@ -57,7 +57,7 @@ class PostcheckSpec:
     def cluster_id(self):
         r"""Gets the cluster_id of this PostcheckSpec.
 
-        集群ID
+        **参数解释：** 集群ID **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The cluster_id of this PostcheckSpec.
         :rtype: str
@@ -68,7 +68,7 @@ class PostcheckSpec:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this PostcheckSpec.
 
-        集群ID
+        **参数解释：** 集群ID **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param cluster_id: The cluster_id of this PostcheckSpec.
         :type cluster_id: str
@@ -79,7 +79,7 @@ class PostcheckSpec:
     def cluster_version(self):
         r"""Gets the cluster_version of this PostcheckSpec.
 
-        集群升级源版本
+        **参数解释：** 升级前的集群版本 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The cluster_version of this PostcheckSpec.
         :rtype: str
@@ -90,7 +90,7 @@ class PostcheckSpec:
     def cluster_version(self, cluster_version):
         r"""Sets the cluster_version of this PostcheckSpec.
 
-        集群升级源版本
+        **参数解释：** 升级前的集群版本 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param cluster_version: The cluster_version of this PostcheckSpec.
         :type cluster_version: str
@@ -101,7 +101,7 @@ class PostcheckSpec:
     def target_version(self):
         r"""Gets the target_version of this PostcheckSpec.
 
-        集群升级目标版本
+        **参数解释：** 当前集群版本 **约束限制：** 不涉及 **取值范围：** CCE支持的集群版本 **默认取值：** 不涉及
 
         :return: The target_version of this PostcheckSpec.
         :rtype: str
@@ -112,7 +112,7 @@ class PostcheckSpec:
     def target_version(self, target_version):
         r"""Sets the target_version of this PostcheckSpec.
 
-        集群升级目标版本
+        **参数解释：** 当前集群版本 **约束限制：** 不涉及 **取值范围：** CCE支持的集群版本 **默认取值：** 不涉及
 
         :param target_version: The target_version of this PostcheckSpec.
         :type target_version: str

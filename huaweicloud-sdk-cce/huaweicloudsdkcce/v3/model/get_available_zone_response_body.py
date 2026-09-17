@@ -29,7 +29,7 @@ class GetAvailableZoneResponseBody:
         'name': 'name',
         'display_name': 'displayName',
         'az_group_ids': 'azGroupIds',
-        'public_border_group': 'PublicBorderGroup',
+        'public_border_group': 'publicBorderGroup',
         'category': 'category',
         'alias': 'alias'
     }

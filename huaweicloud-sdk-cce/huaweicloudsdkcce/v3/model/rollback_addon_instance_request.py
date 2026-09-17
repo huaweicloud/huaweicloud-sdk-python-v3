@@ -29,7 +29,7 @@ class RollbackAddonInstanceRequest:
 
         The model defined in huaweicloud sdk
 
-        :param id: 插件实例ID
+        :param id: **参数解释**： 插件实例ID。 **约束限制**： 不涉及 **取值范围**： UUID格式，长度范围1~255位。 **默认取值**： 不涉及
         :type id: str
         :param body: Body of the RollbackAddonInstanceRequest
         :type body: :class:`huaweicloudsdkcce.v3.AddonInstanceRollbackRequest`
@@ -49,7 +49,7 @@ class RollbackAddonInstanceRequest:
     def id(self):
         r"""Gets the id of this RollbackAddonInstanceRequest.
 
-        插件实例ID
+        **参数解释**： 插件实例ID。 **约束限制**： 不涉及 **取值范围**： UUID格式，长度范围1~255位。 **默认取值**： 不涉及
 
         :return: The id of this RollbackAddonInstanceRequest.
         :rtype: str
@@ -60,7 +60,7 @@ class RollbackAddonInstanceRequest:
     def id(self, id):
         r"""Sets the id of this RollbackAddonInstanceRequest.
 
-        插件实例ID
+        **参数解释**： 插件实例ID。 **约束限制**： 不涉及 **取值范围**： UUID格式，长度范围1~255位。 **默认取值**： 不涉及
 
         :param id: The id of this RollbackAddonInstanceRequest.
         :type id: str

@@ -37,9 +37,9 @@ class StorageGroups:
         :type name: str
         :param cce_managed: k8s及runtime所属存储空间。有且仅有一个group被设置为true，不填默认false。
         :type cce_managed: bool
-        :param selector_names: 对应storageSelectors中的name，一个group可选择多个selector；但一个selector只能被一个group选择。
+        :param selector_names: **参数解释**： 对应storageSelectors中的name，一个group可选择多个selector；但一个selector只能被一个group选择。 **约束限制**： 系统组件无法分别存储于系统盘与数据盘中，因此选择selector的type为system时，group只能选择一个selector。 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type selector_names: list[str]
-        :param virtual_spaces: group中空间配置的详细管理。
+        :param virtual_spaces: **参数解释**： group中空间配置的详细管理。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type virtual_spaces: list[:class:`huaweicloudsdkcce.v3.VirtualSpace`]
         """
         
@@ -105,7 +105,7 @@ class StorageGroups:
     def selector_names(self):
         r"""Gets the selector_names of this StorageGroups.
 
-        对应storageSelectors中的name，一个group可选择多个selector；但一个selector只能被一个group选择。
+        **参数解释**： 对应storageSelectors中的name，一个group可选择多个selector；但一个selector只能被一个group选择。 **约束限制**： 系统组件无法分别存储于系统盘与数据盘中，因此选择selector的type为system时，group只能选择一个selector。 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The selector_names of this StorageGroups.
         :rtype: list[str]
@@ -116,7 +116,7 @@ class StorageGroups:
     def selector_names(self, selector_names):
         r"""Sets the selector_names of this StorageGroups.
 
-        对应storageSelectors中的name，一个group可选择多个selector；但一个selector只能被一个group选择。
+        **参数解释**： 对应storageSelectors中的name，一个group可选择多个selector；但一个selector只能被一个group选择。 **约束限制**： 系统组件无法分别存储于系统盘与数据盘中，因此选择selector的type为system时，group只能选择一个selector。 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param selector_names: The selector_names of this StorageGroups.
         :type selector_names: list[str]
@@ -127,7 +127,7 @@ class StorageGroups:
     def virtual_spaces(self):
         r"""Gets the virtual_spaces of this StorageGroups.
 
-        group中空间配置的详细管理。
+        **参数解释**： group中空间配置的详细管理。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The virtual_spaces of this StorageGroups.
         :rtype: list[:class:`huaweicloudsdkcce.v3.VirtualSpace`]
@@ -138,7 +138,7 @@ class StorageGroups:
     def virtual_spaces(self, virtual_spaces):
         r"""Sets the virtual_spaces of this StorageGroups.
 
-        group中空间配置的详细管理。
+        **参数解释**： group中空间配置的详细管理。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param virtual_spaces: The virtual_spaces of this StorageGroups.
         :type virtual_spaces: list[:class:`huaweicloudsdkcce.v3.VirtualSpace`]

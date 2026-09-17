@@ -20,7 +20,7 @@ class DualActiveInfo:
         'destination_instance_id': 'str',
         'destination_region': 'str',
         'destination_instance_name': 'str',
-        'destination_instance_node_num': 'str',
+        'destination_instance_node_num': 'int',
         'destination_instance_spec_code': 'str'
     }
 
@@ -50,7 +50,7 @@ class DualActiveInfo:
         :param destination_instance_name: **参数解释：** 双活对端实例名称。 **取值范围：** 不涉及。
         :type destination_instance_name: str
         :param destination_instance_node_num: **参数解释：** 双活对端实例节点数量。 **取值范围：** 不涉及。
-        :type destination_instance_node_num: str
+        :type destination_instance_node_num: int
         :param destination_instance_spec_code: **参数解释：** 双活对端实例规格。 **取值范围：** 不涉及。
         :type destination_instance_spec_code: str
         """
@@ -198,7 +198,7 @@ class DualActiveInfo:
         **参数解释：** 双活对端实例节点数量。 **取值范围：** 不涉及。
 
         :return: The destination_instance_node_num of this DualActiveInfo.
-        :rtype: str
+        :rtype: int
         """
         return self._destination_instance_node_num
 
@@ -209,7 +209,7 @@ class DualActiveInfo:
         **参数解释：** 双活对端实例节点数量。 **取值范围：** 不涉及。
 
         :param destination_instance_node_num: The destination_instance_node_num of this DualActiveInfo.
-        :type destination_instance_node_num: str
+        :type destination_instance_node_num: int
         """
         self._destination_instance_node_num = destination_instance_node_num
 

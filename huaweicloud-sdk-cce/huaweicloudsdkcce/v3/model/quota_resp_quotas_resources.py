@@ -31,11 +31,11 @@ class QuotaRespQuotasResources:
 
         The model defined in huaweicloud sdk
 
-        :param type: **参数解释**： 类型 **取值范围**： - Charts：配额类型为模板 
+        :param type: **参数解释：** 类型 **约束限制：** 不涉及 **取值范围：** - Charts：配额类型为模板  **默认取值：** 不涉及
         :type type: str
-        :param quota: 配额
+        :param quota: **参数解释：** 配额 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type quota: int
-        :param used: 已使用量
+        :param used: **参数解释：** 已使用量 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type used: int
         """
         
@@ -57,7 +57,7 @@ class QuotaRespQuotasResources:
     def type(self):
         r"""Gets the type of this QuotaRespQuotasResources.
 
-        **参数解释**： 类型 **取值范围**： - Charts：配额类型为模板 
+        **参数解释：** 类型 **约束限制：** 不涉及 **取值范围：** - Charts：配额类型为模板  **默认取值：** 不涉及
 
         :return: The type of this QuotaRespQuotasResources.
         :rtype: str
@@ -68,7 +68,7 @@ class QuotaRespQuotasResources:
     def type(self, type):
         r"""Sets the type of this QuotaRespQuotasResources.
 
-        **参数解释**： 类型 **取值范围**： - Charts：配额类型为模板 
+        **参数解释：** 类型 **约束限制：** 不涉及 **取值范围：** - Charts：配额类型为模板  **默认取值：** 不涉及
 
         :param type: The type of this QuotaRespQuotasResources.
         :type type: str
@@ -79,7 +79,7 @@ class QuotaRespQuotasResources:
     def quota(self):
         r"""Gets the quota of this QuotaRespQuotasResources.
 
-        配额
+        **参数解释：** 配额 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The quota of this QuotaRespQuotasResources.
         :rtype: int
@@ -90,7 +90,7 @@ class QuotaRespQuotasResources:
     def quota(self, quota):
         r"""Sets the quota of this QuotaRespQuotasResources.
 
-        配额
+        **参数解释：** 配额 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param quota: The quota of this QuotaRespQuotasResources.
         :type quota: int
@@ -101,7 +101,7 @@ class QuotaRespQuotasResources:
     def used(self):
         r"""Gets the used of this QuotaRespQuotasResources.
 
-        已使用量
+        **参数解释：** 已使用量 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The used of this QuotaRespQuotasResources.
         :rtype: int
@@ -112,7 +112,7 @@ class QuotaRespQuotasResources:
     def used(self, used):
         r"""Sets the used of this QuotaRespQuotasResources.
 
-        已使用量
+        **参数解释：** 已使用量 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param used: The used of this QuotaRespQuotasResources.
         :type used: int

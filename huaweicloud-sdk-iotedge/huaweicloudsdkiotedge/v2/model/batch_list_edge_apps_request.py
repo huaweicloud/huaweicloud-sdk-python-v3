@@ -19,7 +19,9 @@ class BatchListEdgeAppsRequest:
         'offset': 'int',
         'limit': 'int',
         'app_type': 'str',
-        'function_type': 'str'
+        'function_type': 'str',
+        'function_types': 'list[str]',
+        'protocol': 'str'
     }
 
     attribute_map = {
@@ -27,24 +29,30 @@ class BatchListEdgeAppsRequest:
         'offset': 'offset',
         'limit': 'limit',
         'app_type': 'app_type',
-        'function_type': 'function_type'
+        'function_type': 'function_type',
+        'function_types': 'function_types',
+        'protocol': 'protocol'
     }
 
-    def __init__(self, edge_app_id=None, offset=None, limit=None, app_type=None, function_type=None):
+    def __init__(self, edge_app_id=None, offset=None, limit=None, app_type=None, function_type=None, function_types=None, protocol=None):
         r"""BatchListEdgeAppsRequest
 
         The model defined in huaweicloud sdk
 
         :param edge_app_id: 应用ID搜索关键字
         :type edge_app_id: str
-        :param offset: 查询的起始位置，取值范围为非负整数，默认为0
+        :param offset: 查询的起始位置，取值范围为非负整数，默认为0。
         :type offset: int
-        :param limit: 每页记录数，默认值为10，取值区间为1-1000
+        :param limit: 每页记录数，默认值为10，取值区间为1-1000。
         :type limit: int
         :param app_type: 应用id搜索关键字
         :type app_type: str
         :param function_type: 功能类型
         :type function_type: str
+        :param function_types: 功能类型列表
+        :type function_types: list[str]
+        :param protocol: 驱动协议类型搜索关键字
+        :type protocol: str
         """
         
         
@@ -54,6 +62,8 @@ class BatchListEdgeAppsRequest:
         self._limit = None
         self._app_type = None
         self._function_type = None
+        self._function_types = None
+        self._protocol = None
         self.discriminator = None
 
         if edge_app_id is not None:
@@ -66,6 +76,10 @@ class BatchListEdgeAppsRequest:
             self.app_type = app_type
         if function_type is not None:
             self.function_type = function_type
+        if function_types is not None:
+            self.function_types = function_types
+        if protocol is not None:
+            self.protocol = protocol
 
     @property
     def edge_app_id(self):
@@ -93,7 +107,7 @@ class BatchListEdgeAppsRequest:
     def offset(self):
         r"""Gets the offset of this BatchListEdgeAppsRequest.
 
-        查询的起始位置，取值范围为非负整数，默认为0
+        查询的起始位置，取值范围为非负整数，默认为0。
 
         :return: The offset of this BatchListEdgeAppsRequest.
         :rtype: int
@@ -104,7 +118,7 @@ class BatchListEdgeAppsRequest:
     def offset(self, offset):
         r"""Sets the offset of this BatchListEdgeAppsRequest.
 
-        查询的起始位置，取值范围为非负整数，默认为0
+        查询的起始位置，取值范围为非负整数，默认为0。
 
         :param offset: The offset of this BatchListEdgeAppsRequest.
         :type offset: int
@@ -115,7 +129,7 @@ class BatchListEdgeAppsRequest:
     def limit(self):
         r"""Gets the limit of this BatchListEdgeAppsRequest.
 
-        每页记录数，默认值为10，取值区间为1-1000
+        每页记录数，默认值为10，取值区间为1-1000。
 
         :return: The limit of this BatchListEdgeAppsRequest.
         :rtype: int
@@ -126,7 +140,7 @@ class BatchListEdgeAppsRequest:
     def limit(self, limit):
         r"""Sets the limit of this BatchListEdgeAppsRequest.
 
-        每页记录数，默认值为10，取值区间为1-1000
+        每页记录数，默认值为10，取值区间为1-1000。
 
         :param limit: The limit of this BatchListEdgeAppsRequest.
         :type limit: int
@@ -176,6 +190,50 @@ class BatchListEdgeAppsRequest:
         :type function_type: str
         """
         self._function_type = function_type
+
+    @property
+    def function_types(self):
+        r"""Gets the function_types of this BatchListEdgeAppsRequest.
+
+        功能类型列表
+
+        :return: The function_types of this BatchListEdgeAppsRequest.
+        :rtype: list[str]
+        """
+        return self._function_types
+
+    @function_types.setter
+    def function_types(self, function_types):
+        r"""Sets the function_types of this BatchListEdgeAppsRequest.
+
+        功能类型列表
+
+        :param function_types: The function_types of this BatchListEdgeAppsRequest.
+        :type function_types: list[str]
+        """
+        self._function_types = function_types
+
+    @property
+    def protocol(self):
+        r"""Gets the protocol of this BatchListEdgeAppsRequest.
+
+        驱动协议类型搜索关键字
+
+        :return: The protocol of this BatchListEdgeAppsRequest.
+        :rtype: str
+        """
+        return self._protocol
+
+    @protocol.setter
+    def protocol(self, protocol):
+        r"""Sets the protocol of this BatchListEdgeAppsRequest.
+
+        驱动协议类型搜索关键字
+
+        :param protocol: The protocol of this BatchListEdgeAppsRequest.
+        :type protocol: str
+        """
+        self._protocol = protocol
 
     def to_dict(self):
         result = {}

@@ -138,6 +138,8 @@ class IoTEdgeClient(Client):
         query_params = []
         if 'arch' in local_var_params:
             query_params.append(('arch', local_var_params['arch']))
+        if 'enable_tpm' in local_var_params:
+            query_params.append(('enable_tpm', local_var_params['enable_tpm']))
 
         header_params = {}
 
@@ -146,6 +148,140 @@ class IoTEdgeClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_reinstall_cmd(self, request):
+        r"""生成边缘节点重新安装命令
+
+        生成边缘节点重新安装命令，命令有效时间30分钟，超过后需要重新生成
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateReinstallCmd
+        :type request: :class:`huaweicloudsdkiotedge.v2.CreateReinstallCmdRequest`
+        :rtype: :class:`huaweicloudsdkiotedge.v2.CreateReinstallCmdResponse`
+        """
+        http_info = self._create_reinstall_cmd_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_reinstall_cmd_invoker(self, request):
+        http_info = self._create_reinstall_cmd_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_reinstall_cmd_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/edge-nodes/{edge_node_id}/reinstall",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateReinstallCmdResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'edge_node_id' in local_var_params:
+            path_params['edge_node_id'] = local_var_params['edge_node_id']
+
+        query_params = []
+        if 'enable_tpm' in local_var_params:
+            query_params.append(('enable_tpm', local_var_params['enable_tpm']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_upgrade_cmd(self, request):
+        r"""生成边缘节点升级命令
+
+        生成边缘节点升级命令，命令有效时间30分钟，超过后需要重新生成
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateUpgradeCmd
+        :type request: :class:`huaweicloudsdkiotedge.v2.CreateUpgradeCmdRequest`
+        :rtype: :class:`huaweicloudsdkiotedge.v2.CreateUpgradeCmdResponse`
+        """
+        http_info = self._create_upgrade_cmd_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_upgrade_cmd_invoker(self, request):
+        http_info = self._create_upgrade_cmd_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_upgrade_cmd_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/edge-nodes/{edge_node_id}/upgrade",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateUpgradeCmdResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'edge_node_id' in local_var_params:
+            path_params['edge_node_id'] = local_var_params['edge_node_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -283,6 +419,8 @@ class IoTEdgeClient(Client):
         if 'node_ids' in local_var_params:
             query_params.append(('node_ids', local_var_params['node_ids']))
             collection_formats['node_ids'] = 'csv'
+        if 'app_id' in local_var_params:
+            query_params.append(('app_id', local_var_params['app_id']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
@@ -480,6 +618,274 @@ class IoTEdgeClient(Client):
         path_params = {}
         if 'edge_node_id' in local_var_params:
             path_params['edge_node_id'] = local_var_params['edge_node_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_client_node(self, request):
+        r"""分配推送通道到客户端节点
+
+        分配推送通道到客户端节点
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateClientNode
+        :type request: :class:`huaweicloudsdkiotedge.v2.CreateClientNodeRequest`
+        :rtype: :class:`huaweicloudsdkiotedge.v2.CreateClientNodeResponse`
+        """
+        http_info = self._create_client_node_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_client_node_invoker(self, request):
+        http_info = self._create_client_node_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_client_node_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/push-channels/{channel_id}/client-nodes",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateClientNodeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'channel_id' in local_var_params:
+            path_params['channel_id'] = local_var_params['channel_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_client_node(self, request):
+        r"""修改已分配节点通道的详情
+
+        修改已分配节点通道的详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateClientNode
+        :type request: :class:`huaweicloudsdkiotedge.v2.UpdateClientNodeRequest`
+        :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateClientNodeResponse`
+        """
+        http_info = self._update_client_node_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_client_node_invoker(self, request):
+        http_info = self._update_client_node_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_client_node_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/push-channels/{channel_id}/client-nodes/{node_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateClientNodeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'channel_id' in local_var_params:
+            path_params['channel_id'] = local_var_params['channel_id']
+        if 'node_id' in local_var_params:
+            path_params['node_id'] = local_var_params['node_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_edge_node_software_version(self, request):
+        r"""查询当前边缘软件版本
+
+        查询当前边缘软件版本
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowEdgeNodeSoftwareVersion
+        :type request: :class:`huaweicloudsdkiotedge.v2.ShowEdgeNodeSoftwareVersionRequest`
+        :rtype: :class:`huaweicloudsdkiotedge.v2.ShowEdgeNodeSoftwareVersionResponse`
+        """
+        http_info = self._show_edge_node_software_version_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_edge_node_software_version_invoker(self, request):
+        http_info = self._show_edge_node_software_version_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_edge_node_software_version_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/edge-nodes/{edge_node_id}/software-versions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowEdgeNodeSoftwareVersionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'edge_node_id' in local_var_params:
+            path_params['edge_node_id'] = local_var_params['edge_node_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def bind_node(self, request):
+        r"""绑定节点-专业版
+
+        绑定节点-专业版
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BindNode
+        :type request: :class:`huaweicloudsdkiotedge.v2.BindNodeRequest`
+        :rtype: :class:`huaweicloudsdkiotedge.v2.BindNodeResponse`
+        """
+        http_info = self._bind_node_http_info(request)
+        return self._call_api(**http_info)
+
+    def bind_node_invoker(self, request):
+        http_info = self._bind_node_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _bind_node_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/resources/{resource_id}/bind",
+            "request_type": request.__class__.__name__,
+            "response_type": "BindNodeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
 
         query_params = []
 
@@ -963,6 +1369,10 @@ class IoTEdgeClient(Client):
             query_params.append(('gateway_id', local_var_params['gateway_id']))
         if 'device_name' in local_var_params:
             query_params.append(('device_name', local_var_params['device_name']))
+        if 'module_id' in local_var_params:
+            query_params.append(('module_id', local_var_params['module_id']))
+        if 'device_id' in local_var_params:
+            query_params.append(('device_id', local_var_params['device_id']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
@@ -1499,6 +1909,11 @@ class IoTEdgeClient(Client):
             query_params.append(('app_type', local_var_params['app_type']))
         if 'function_type' in local_var_params:
             query_params.append(('function_type', local_var_params['function_type']))
+        if 'function_types' in local_var_params:
+            query_params.append(('function_types', local_var_params['function_types']))
+            collection_formats['function_types'] = 'csv'
+        if 'protocol' in local_var_params:
+            query_params.append(('protocol', local_var_params['protocol']))
 
         header_params = {}
 
@@ -1771,6 +2186,8 @@ class IoTEdgeClient(Client):
             query_params.append(('arch', local_var_params['arch']))
         if 'state' in local_var_params:
             query_params.append(('state', local_var_params['state']))
+        if 'deploy_type' in local_var_params:
+            query_params.append(('deploy_type', local_var_params['deploy_type']))
 
         header_params = {}
 
@@ -2177,6 +2594,8 @@ class IoTEdgeClient(Client):
         query_params = []
         if 'module_id' in local_var_params:
             query_params.append(('module_id', local_var_params['module_id']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
@@ -2516,6 +2935,8 @@ class IoTEdgeClient(Client):
             path_params['ds_id'] = local_var_params['ds_id']
 
         query_params = []
+        if 'update_name_only' in local_var_params:
+            query_params.append(('update_name_only', local_var_params['update_name_only']))
 
         header_params = {}
 
@@ -2666,6 +3087,8 @@ class IoTEdgeClient(Client):
             query_params.append(('property', local_var_params['_property']))
         if 'device_id' in local_var_params:
             query_params.append(('device_id', local_var_params['device_id']))
+        if 'active' in local_var_params:
+            query_params.append(('active', local_var_params['active']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
@@ -3370,6 +3793,14 @@ class IoTEdgeClient(Client):
             query_params.append(('app_type', local_var_params['app_type']))
         if 'function_type' in local_var_params:
             query_params.append(('function_type', local_var_params['function_type']))
+        if 'function_types' in local_var_params:
+            query_params.append(('function_types', local_var_params['function_types']))
+            collection_formats['function_types'] = 'csv'
+        if 'protocol_types' in local_var_params:
+            query_params.append(('protocol_types', local_var_params['protocol_types']))
+            collection_formats['protocol_types'] = 'csv'
+        if 'module_name' in local_var_params:
+            query_params.append(('module_name', local_var_params['module_name']))
 
         header_params = {}
 
@@ -3670,7 +4101,7 @@ class IoTEdgeClient(Client):
     def update_module(self, request):
         r"""修改边缘模块
 
-        用户通过Console接口查询指定边缘节点上指定边缘模块
+        用户通过Console接口修改指定边缘节点上指定边缘模块
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4541,9 +4972,9 @@ class IoTEdgeClient(Client):
         return http_info
 
     def show_points(self, request):
-        r"""查询点位表模板文件
+        r"""导出点位表文件
 
-        查询点位表模板文件
+        导出点位表文件
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4810,6 +5241,434 @@ class IoTEdgeClient(Client):
 
         return http_info
 
+    def invoke_delete_proxy(self, request):
+        r"""DELETE方法的代理
+
+        北向NA调用南向第三方应用的DELETE方法时使用
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for InvokeDeleteProxy
+        :type request: :class:`huaweicloudsdkiotedge.v2.InvokeDeleteProxyRequest`
+        :rtype: :class:`huaweicloudsdkiotedge.v2.InvokeDeleteProxyResponse`
+        """
+        http_info = self._invoke_delete_proxy_http_info(request)
+        return self._call_api(**http_info)
+
+    def invoke_delete_proxy_invoker(self, request):
+        http_info = self._invoke_delete_proxy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _invoke_delete_proxy_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/edge-nodes/{node_id}/ias/{ia_id}/api",
+            "request_type": request.__class__.__name__,
+            "response_type": "InvokeDeleteProxyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'node_id' in local_var_params:
+            path_params['node_id'] = local_var_params['node_id']
+        if 'ia_id' in local_var_params:
+            path_params['ia_id'] = local_var_params['ia_id']
+
+        query_params = []
+        if 'ia_uri' in local_var_params:
+            query_params.append(('ia_uri', local_var_params['ia_uri']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def invoke_get_proxy(self, request):
+        r"""GET方法的代理
+
+        北向NA调用南向第三方应用的GET方法时使用
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for InvokeGetProxy
+        :type request: :class:`huaweicloudsdkiotedge.v2.InvokeGetProxyRequest`
+        :rtype: :class:`huaweicloudsdkiotedge.v2.InvokeGetProxyResponse`
+        """
+        http_info = self._invoke_get_proxy_http_info(request)
+        return self._call_api(**http_info)
+
+    def invoke_get_proxy_invoker(self, request):
+        http_info = self._invoke_get_proxy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _invoke_get_proxy_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/edge-nodes/{node_id}/ias/{ia_id}/api",
+            "request_type": request.__class__.__name__,
+            "response_type": "InvokeGetProxyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'node_id' in local_var_params:
+            path_params['node_id'] = local_var_params['node_id']
+        if 'ia_id' in local_var_params:
+            path_params['ia_id'] = local_var_params['ia_id']
+
+        query_params = []
+        if 'ia_uri' in local_var_params:
+            query_params.append(('ia_uri', local_var_params['ia_uri']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def invoke_patch_proxy(self, request):
+        r"""PATCH方法的代理
+
+        北向NA调用南向第三方应用的PATCH方法时使用
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for InvokePatchProxy
+        :type request: :class:`huaweicloudsdkiotedge.v2.InvokePatchProxyRequest`
+        :rtype: :class:`huaweicloudsdkiotedge.v2.InvokePatchProxyResponse`
+        """
+        http_info = self._invoke_patch_proxy_http_info(request)
+        return self._call_api(**http_info)
+
+    def invoke_patch_proxy_invoker(self, request):
+        http_info = self._invoke_patch_proxy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _invoke_patch_proxy_http_info(cls, request):
+        http_info = {
+            "method": "PATCH",
+            "resource_path": "/v2/{project_id}/edge-nodes/{node_id}/ias/{ia_id}/api",
+            "request_type": request.__class__.__name__,
+            "response_type": "InvokePatchProxyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'node_id' in local_var_params:
+            path_params['node_id'] = local_var_params['node_id']
+        if 'ia_id' in local_var_params:
+            path_params['ia_id'] = local_var_params['ia_id']
+
+        query_params = []
+        if 'ia_uri' in local_var_params:
+            query_params.append(('ia_uri', local_var_params['ia_uri']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def invoke_post_proxy(self, request):
+        r"""POST方法的代理
+
+        北向NA调用南向第三方应用的POST方法时使用
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for InvokePostProxy
+        :type request: :class:`huaweicloudsdkiotedge.v2.InvokePostProxyRequest`
+        :rtype: :class:`huaweicloudsdkiotedge.v2.InvokePostProxyResponse`
+        """
+        http_info = self._invoke_post_proxy_http_info(request)
+        return self._call_api(**http_info)
+
+    def invoke_post_proxy_invoker(self, request):
+        http_info = self._invoke_post_proxy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _invoke_post_proxy_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/edge-nodes/{node_id}/ias/{ia_id}/api",
+            "request_type": request.__class__.__name__,
+            "response_type": "InvokePostProxyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'node_id' in local_var_params:
+            path_params['node_id'] = local_var_params['node_id']
+        if 'ia_id' in local_var_params:
+            path_params['ia_id'] = local_var_params['ia_id']
+
+        query_params = []
+        if 'ia_uri' in local_var_params:
+            query_params.append(('ia_uri', local_var_params['ia_uri']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def invoke_put_proxy(self, request):
+        r"""PUT方法的代理
+
+        北向NA调用南向第三方应用的PUT方法时使用
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for InvokePutProxy
+        :type request: :class:`huaweicloudsdkiotedge.v2.InvokePutProxyRequest`
+        :rtype: :class:`huaweicloudsdkiotedge.v2.InvokePutProxyResponse`
+        """
+        http_info = self._invoke_put_proxy_http_info(request)
+        return self._call_api(**http_info)
+
+    def invoke_put_proxy_invoker(self, request):
+        http_info = self._invoke_put_proxy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _invoke_put_proxy_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/edge-nodes/{node_id}/ias/{ia_id}/api",
+            "request_type": request.__class__.__name__,
+            "response_type": "InvokePutProxyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'node_id' in local_var_params:
+            path_params['node_id'] = local_var_params['node_id']
+        if 'ia_id' in local_var_params:
+            path_params['ia_id'] = local_var_params['ia_id']
+
+        query_params = []
+        if 'ia_uri' in local_var_params:
+            query_params.append(('ia_uri', local_var_params['ia_uri']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_confirm_configs(self, request):
+        r"""南向3rdIA对配置项下发进行确认
+
+        南向3rdIA对配置项下发进行确认
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchConfirmConfigs
+        :type request: :class:`huaweicloudsdkiotedge.v2.BatchConfirmConfigsRequest`
+        :rtype: :class:`huaweicloudsdkiotedge.v2.BatchConfirmConfigsResponse`
+        """
+        warnings.warn("Method 'batch_confirm_configs' of IoTEdgeClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._batch_confirm_configs_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_confirm_configs_invoker(self, request):
+        warnings.warn("Method 'batch_confirm_configs_invoker' of IoTEdgeClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._batch_confirm_configs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_confirm_configs_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/edge-nodes/{node_id}/ias/{ia_id}/configs",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchConfirmConfigsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'node_id' in local_var_params:
+            path_params['node_id'] = local_var_params['node_id']
+        if 'ia_id' in local_var_params:
+            path_params['ia_id'] = local_var_params['ia_id']
+
+        query_params = []
+        if 'action' in local_var_params:
+            query_params.append(('action', local_var_params['action']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_confirm_configs_new(self, request):
         r"""批量确认南向3rdIA配置项
 
@@ -4882,7 +5741,7 @@ class IoTEdgeClient(Client):
     def batch_import_configs(self, request):
         r"""批量导入南向3rdIA配置项
 
-        批量导入南向3rdIA配置项
+        用户批量上传/导入南向3rdIA配置项
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5231,8 +6090,7 @@ class IoTEdgeClient(Client):
     def batch_associate_na_to_nodes(self, request):
         r"""授权北向NA信息到边缘节点
 
-        批量授权北向NA信息到边缘节点。
-        已授权的边缘节点上的南向IA应用，可以通过部署在边缘节点上的api网关访问北向NA提供的接口。
+        授权北向NA信息到边缘节点
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5301,7 +6159,7 @@ class IoTEdgeClient(Client):
     def delete_na(self, request):
         r"""删除北向NA信息
 
-        删除北向NA信息，如果有边缘节点已分配该NA信息，会通知到该边缘节点。
+        删除北向NA信息，如果有边缘节点已分配该NA信息，会通知到边缘节点
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5569,7 +6427,7 @@ class IoTEdgeClient(Client):
     def update_na(self, request):
         r"""创建&更新北向NA信息
 
-        创建&amp;更新北向NA信息，当更新北向NA信息时，会通知到已分配该北向NA的所有边缘节点。
+        创建&amp;更新北向NA信息
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5612,6 +6470,203 @@ class IoTEdgeClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_push_channel(self, request):
+        r"""创建外部推送通道
+
+        创建外部推送通道
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreatePushChannel
+        :type request: :class:`huaweicloudsdkiotedge.v2.CreatePushChannelRequest`
+        :rtype: :class:`huaweicloudsdkiotedge.v2.CreatePushChannelResponse`
+        """
+        http_info = self._create_push_channel_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_push_channel_invoker(self, request):
+        http_info = self._create_push_channel_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_push_channel_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/push-channels",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePushChannelResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_push_channel(self, request):
+        r"""删除外部推送通道
+
+        删除查询外部推送通道
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeletePushChannel
+        :type request: :class:`huaweicloudsdkiotedge.v2.DeletePushChannelRequest`
+        :rtype: :class:`huaweicloudsdkiotedge.v2.DeletePushChannelResponse`
+        """
+        http_info = self._delete_push_channel_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_push_channel_invoker(self, request):
+        http_info = self._delete_push_channel_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_push_channel_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/push-channels/{channel_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePushChannelResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'channel_id' in local_var_params:
+            path_params['channel_id'] = local_var_params['channel_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_push_channels(self, request):
+        r"""查询推送通道列表
+
+        查询推送通道列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListPushChannels
+        :type request: :class:`huaweicloudsdkiotedge.v2.ListPushChannelsRequest`
+        :rtype: :class:`huaweicloudsdkiotedge.v2.ListPushChannelsResponse`
+        """
+        http_info = self._list_push_channels_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_push_channels_invoker(self, request):
+        http_info = self._list_push_channels_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_push_channels_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/push-channels",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPushChannelsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 

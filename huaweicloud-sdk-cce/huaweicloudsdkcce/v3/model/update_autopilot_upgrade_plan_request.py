@@ -33,7 +33,7 @@ class UpdateAutopilotUpgradePlanRequest:
 
         :param cluster_id: 集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
         :type cluster_id: str
-        :param upgrade_plan_id: 集群自动升级计划ID
+        :param upgrade_plan_id: **参数解释：** 集群自动升级计划ID。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type upgrade_plan_id: str
         :param body: Body of the UpdateAutopilotUpgradePlanRequest
         :type body: :class:`huaweicloudsdkcce.v3.DelayUpgradePlanRequestBody`
@@ -77,7 +77,7 @@ class UpdateAutopilotUpgradePlanRequest:
     def upgrade_plan_id(self):
         r"""Gets the upgrade_plan_id of this UpdateAutopilotUpgradePlanRequest.
 
-        集群自动升级计划ID
+        **参数解释：** 集群自动升级计划ID。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The upgrade_plan_id of this UpdateAutopilotUpgradePlanRequest.
         :rtype: str
@@ -88,7 +88,7 @@ class UpdateAutopilotUpgradePlanRequest:
     def upgrade_plan_id(self, upgrade_plan_id):
         r"""Sets the upgrade_plan_id of this UpdateAutopilotUpgradePlanRequest.
 
-        集群自动升级计划ID
+        **参数解释：** 集群自动升级计划ID。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param upgrade_plan_id: The upgrade_plan_id of this UpdateAutopilotUpgradePlanRequest.
         :type upgrade_plan_id: str

@@ -28,7 +28,7 @@ class PipelineTemplateSimpleVO:
         'creator_name': 'str',
         'updater_id': 'str',
         'is_collect': 'bool',
-        'is_show_source': 'str',
+        'is_show_source': 'bool',
         'stages': 'list[PipelineTemplateSimpleVOStages]'
     }
 
@@ -82,7 +82,7 @@ class PipelineTemplateSimpleVO:
         :param is_collect: **参数解释**： 是否收藏。 **取值范围**： - true：收藏。 - false：不收藏。 
         :type is_collect: bool
         :param is_show_source: **参数解释**： 是否展示流水线源。 **取值范围**： - true：展示流水线源。 - false：不展示流水线源。 
-        :type is_show_source: str
+        :type is_show_source: bool
         :param stages: **参数解释**： 模板编排的阶段列表。 **约束限制**： 不涉及。 
         :type stages: list[:class:`huaweicloudsdkcodeartspipeline.v2.PipelineTemplateSimpleVOStages`]
         """
@@ -430,7 +430,7 @@ class PipelineTemplateSimpleVO:
         **参数解释**： 是否展示流水线源。 **取值范围**： - true：展示流水线源。 - false：不展示流水线源。 
 
         :return: The is_show_source of this PipelineTemplateSimpleVO.
-        :rtype: str
+        :rtype: bool
         """
         return self._is_show_source
 
@@ -441,7 +441,7 @@ class PipelineTemplateSimpleVO:
         **参数解释**： 是否展示流水线源。 **取值范围**： - true：展示流水线源。 - false：不展示流水线源。 
 
         :param is_show_source: The is_show_source of this PipelineTemplateSimpleVO.
-        :type is_show_source: str
+        :type is_show_source: bool
         """
         self._is_show_source = is_show_source
 

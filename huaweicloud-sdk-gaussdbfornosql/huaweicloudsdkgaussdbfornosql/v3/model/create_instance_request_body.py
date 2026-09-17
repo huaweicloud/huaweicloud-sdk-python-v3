@@ -34,6 +34,7 @@ class CreateInstanceRequestBody:
         'ssl_option': 'str',
         'charge_info': 'ChargeInfoOption',
         'restore_info': 'RestoreInfo',
+        'dr_info': 'DRInfo',
         'port': 'str',
         'availability_zone_detail': 'AvailabilityZoneDetail',
         'lb_access_control_settings': 'LbAccessControlSettings'
@@ -59,12 +60,13 @@ class CreateInstanceRequestBody:
         'ssl_option': 'ssl_option',
         'charge_info': 'charge_info',
         'restore_info': 'restore_info',
+        'dr_info': 'dr_info',
         'port': 'port',
         'availability_zone_detail': 'availability_zone_detail',
         'lb_access_control_settings': 'lb_access_control_settings'
     }
 
-    def __init__(self, name=None, datastore=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, password=None, mode=None, product_type=None, flavor=None, disk_encryption_id=None, configuration_id=None, backup_strategy=None, enterprise_project_id=None, dedicated_resource_id=None, ssl_option=None, charge_info=None, restore_info=None, port=None, availability_zone_detail=None, lb_access_control_settings=None):
+    def __init__(self, name=None, datastore=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, password=None, mode=None, product_type=None, flavor=None, disk_encryption_id=None, configuration_id=None, backup_strategy=None, enterprise_project_id=None, dedicated_resource_id=None, ssl_option=None, charge_info=None, restore_info=None, dr_info=None, port=None, availability_zone_detail=None, lb_access_control_settings=None):
         r"""CreateInstanceRequestBody
 
         The model defined in huaweicloud sdk
@@ -107,6 +109,8 @@ class CreateInstanceRequestBody:
         :type charge_info: :class:`huaweicloudsdkgaussdbfornosql.v3.ChargeInfoOption`
         :param restore_info: 
         :type restore_info: :class:`huaweicloudsdkgaussdbfornosql.v3.RestoreInfo`
+        :param dr_info: 
+        :type dr_info: :class:`huaweicloudsdkgaussdbfornosql.v3.DRInfo`
         :param port: **参数解释：** 数据库访问端口号。 **约束限制：** 目前仅支持GeminiDB Redis实例支持自定义端口，取值范围为：1024~65535，禁用端口号为：2180、2887、3887、6377、6378、6380、8018、8079、8091、8479、8484、8999、12017、12333、50069。  不指定端口时，创建GeminiDB Redis实例的访问端口默认为6379。  如果该实例计划用于搭建双活容灾场景，请配置为8635端口。 **取值范围：** 取值范围为：1024~65535，禁用端口号为：2180、2887、3887、6377、6378、6380、8018、8079、8091、8479、8484、8999、12017、12333、50069。 **默认取值：** 6379。
         :type port: str
         :param availability_zone_detail: 
@@ -136,6 +140,7 @@ class CreateInstanceRequestBody:
         self._ssl_option = None
         self._charge_info = None
         self._restore_info = None
+        self._dr_info = None
         self._port = None
         self._availability_zone_detail = None
         self._lb_access_control_settings = None
@@ -169,6 +174,8 @@ class CreateInstanceRequestBody:
             self.charge_info = charge_info
         if restore_info is not None:
             self.restore_info = restore_info
+        if dr_info is not None:
+            self.dr_info = dr_info
         if port is not None:
             self.port = port
         if availability_zone_detail is not None:
@@ -577,6 +584,24 @@ class CreateInstanceRequestBody:
         :type restore_info: :class:`huaweicloudsdkgaussdbfornosql.v3.RestoreInfo`
         """
         self._restore_info = restore_info
+
+    @property
+    def dr_info(self):
+        r"""Gets the dr_info of this CreateInstanceRequestBody.
+
+        :return: The dr_info of this CreateInstanceRequestBody.
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.DRInfo`
+        """
+        return self._dr_info
+
+    @dr_info.setter
+    def dr_info(self, dr_info):
+        r"""Sets the dr_info of this CreateInstanceRequestBody.
+
+        :param dr_info: The dr_info of this CreateInstanceRequestBody.
+        :type dr_info: :class:`huaweicloudsdkgaussdbfornosql.v3.DRInfo`
+        """
+        self._dr_info = dr_info
 
     @property
     def port(self):

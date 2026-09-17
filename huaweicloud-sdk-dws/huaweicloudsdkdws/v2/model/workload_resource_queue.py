@@ -29,7 +29,7 @@ class WorkloadResourceQueue:
 
         The model defined in huaweicloud sdk
 
-        :param short_query_optimize: **参数解释**： 工作负载队列短查询加速开关。 **约束限制**： 不涉及。 **取值范围**： - on：开启 - off：关闭 **默认取值**： on
+        :param short_query_optimize: **参数解释**： 工作负载队列短查询加速开关。 **约束限制**： 不涉及。 **取值范围**： - on：开启 - off：关闭  **默认取值**： on
         :type short_query_optimize: str
         :param short_query_concurrency_num: **参数解释**： 工作负载队列短查询并发数。 **约束限制**： 不涉及。 **取值范围**： -1以上，-1表示不限制。 **默认取值**： -1
         :type short_query_concurrency_num: str
@@ -50,7 +50,7 @@ class WorkloadResourceQueue:
     def short_query_optimize(self):
         r"""Gets the short_query_optimize of this WorkloadResourceQueue.
 
-        **参数解释**： 工作负载队列短查询加速开关。 **约束限制**： 不涉及。 **取值范围**： - on：开启 - off：关闭 **默认取值**： on
+        **参数解释**： 工作负载队列短查询加速开关。 **约束限制**： 不涉及。 **取值范围**： - on：开启 - off：关闭  **默认取值**： on
 
         :return: The short_query_optimize of this WorkloadResourceQueue.
         :rtype: str
@@ -61,7 +61,7 @@ class WorkloadResourceQueue:
     def short_query_optimize(self, short_query_optimize):
         r"""Sets the short_query_optimize of this WorkloadResourceQueue.
 
-        **参数解释**： 工作负载队列短查询加速开关。 **约束限制**： 不涉及。 **取值范围**： - on：开启 - off：关闭 **默认取值**： on
+        **参数解释**： 工作负载队列短查询加速开关。 **约束限制**： 不涉及。 **取值范围**： - on：开启 - off：关闭  **默认取值**： on
 
         :param short_query_optimize: The short_query_optimize of this WorkloadResourceQueue.
         :type short_query_optimize: str

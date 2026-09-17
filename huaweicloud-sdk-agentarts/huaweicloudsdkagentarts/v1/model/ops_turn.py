@@ -15,29 +15,58 @@ class OpsTurn:
     sensitive_list = []
 
     openapi_types = {
+        'turn_id': 'str',
         'fields': 'dict(str, OpsFieldValue)'
     }
 
     attribute_map = {
+        'turn_id': 'turn_id',
         'fields': 'fields'
     }
 
-    def __init__(self, fields=None):
+    def __init__(self, turn_id=None, fields=None):
         r"""OpsTurn
 
         The model defined in huaweicloud sdk
 
+        :param turn_id: **参数解释：** 轮次的唯一标识符。 **约束限制：** 不涉及。 **取值范围：** 不涉及。
+        :type turn_id: str
         :param fields: **参数解释：** 该轮次中具体字段的键值对集合。 **取值范围：** Map 结构，Value 参考OpsFieldValue定义。
         :type fields: dict(str, OpsFieldValue)
         """
         
         
 
+        self._turn_id = None
         self._fields = None
         self.discriminator = None
 
+        if turn_id is not None:
+            self.turn_id = turn_id
         if fields is not None:
             self.fields = fields
+
+    @property
+    def turn_id(self):
+        r"""Gets the turn_id of this OpsTurn.
+
+        **参数解释：** 轮次的唯一标识符。 **约束限制：** 不涉及。 **取值范围：** 不涉及。
+
+        :return: The turn_id of this OpsTurn.
+        :rtype: str
+        """
+        return self._turn_id
+
+    @turn_id.setter
+    def turn_id(self, turn_id):
+        r"""Sets the turn_id of this OpsTurn.
+
+        **参数解释：** 轮次的唯一标识符。 **约束限制：** 不涉及。 **取值范围：** 不涉及。
+
+        :param turn_id: The turn_id of this OpsTurn.
+        :type turn_id: str
+        """
+        self._turn_id = turn_id
 
     @property
     def fields(self):

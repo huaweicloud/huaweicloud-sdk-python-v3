@@ -29,9 +29,9 @@ class UpgradeClusterRequestMetadata:
 
         The model defined in huaweicloud sdk
 
-        :param api_version: api版本，默认为v3
+        :param api_version: **参数解释：** API版本，固定值\&quot;v3\&quot;，该值不可修改。 **约束限制：** 该值不可修改 **取值范围：** - v3  **默认取值：** v3
         :type api_version: str
-        :param kind: 资源类型，默认为UpgradeTask
+        :param kind: **参数解释：** API类型，固定值\&quot;UpgradeTask\&quot;，该值不可修改。 **约束限制：** 该值不可修改 **取值范围：** - UpgradeTask  **默认取值：** UpgradeTask
         :type kind: str
         """
         
@@ -48,7 +48,7 @@ class UpgradeClusterRequestMetadata:
     def api_version(self):
         r"""Gets the api_version of this UpgradeClusterRequestMetadata.
 
-        api版本，默认为v3
+        **参数解释：** API版本，固定值\"v3\"，该值不可修改。 **约束限制：** 该值不可修改 **取值范围：** - v3  **默认取值：** v3
 
         :return: The api_version of this UpgradeClusterRequestMetadata.
         :rtype: str
@@ -59,7 +59,7 @@ class UpgradeClusterRequestMetadata:
     def api_version(self, api_version):
         r"""Sets the api_version of this UpgradeClusterRequestMetadata.
 
-        api版本，默认为v3
+        **参数解释：** API版本，固定值\"v3\"，该值不可修改。 **约束限制：** 该值不可修改 **取值范围：** - v3  **默认取值：** v3
 
         :param api_version: The api_version of this UpgradeClusterRequestMetadata.
         :type api_version: str
@@ -70,7 +70,7 @@ class UpgradeClusterRequestMetadata:
     def kind(self):
         r"""Gets the kind of this UpgradeClusterRequestMetadata.
 
-        资源类型，默认为UpgradeTask
+        **参数解释：** API类型，固定值\"UpgradeTask\"，该值不可修改。 **约束限制：** 该值不可修改 **取值范围：** - UpgradeTask  **默认取值：** UpgradeTask
 
         :return: The kind of this UpgradeClusterRequestMetadata.
         :rtype: str
@@ -81,7 +81,7 @@ class UpgradeClusterRequestMetadata:
     def kind(self, kind):
         r"""Sets the kind of this UpgradeClusterRequestMetadata.
 
-        资源类型，默认为UpgradeTask
+        **参数解释：** API类型，固定值\"UpgradeTask\"，该值不可修改。 **约束限制：** 该值不可修改 **取值范围：** - UpgradeTask  **默认取值：** UpgradeTask
 
         :param kind: The kind of this UpgradeClusterRequestMetadata.
         :type kind: str

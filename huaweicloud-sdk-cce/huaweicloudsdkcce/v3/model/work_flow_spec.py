@@ -31,11 +31,11 @@ class WorkFlowSpec:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: 集群ID，资源唯一标识，创建成功后自动生成，填写无效
+        :param cluster_id: **参数解释：** 集群ID **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type cluster_id: str
-        :param cluster_version: 本次集群升级的当前版本 
+        :param cluster_version: **参数解释：** 当前集群版本 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type cluster_version: str
-        :param target_version: 本次集群升级的目标版本 
+        :param target_version: **参数解释：** 本次集群升级的目标版本 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type target_version: str
         """
         
@@ -56,7 +56,7 @@ class WorkFlowSpec:
     def cluster_id(self):
         r"""Gets the cluster_id of this WorkFlowSpec.
 
-        集群ID，资源唯一标识，创建成功后自动生成，填写无效
+        **参数解释：** 集群ID **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The cluster_id of this WorkFlowSpec.
         :rtype: str
@@ -67,7 +67,7 @@ class WorkFlowSpec:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this WorkFlowSpec.
 
-        集群ID，资源唯一标识，创建成功后自动生成，填写无效
+        **参数解释：** 集群ID **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param cluster_id: The cluster_id of this WorkFlowSpec.
         :type cluster_id: str
@@ -78,7 +78,7 @@ class WorkFlowSpec:
     def cluster_version(self):
         r"""Gets the cluster_version of this WorkFlowSpec.
 
-        本次集群升级的当前版本 
+        **参数解释：** 当前集群版本 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The cluster_version of this WorkFlowSpec.
         :rtype: str
@@ -89,7 +89,7 @@ class WorkFlowSpec:
     def cluster_version(self, cluster_version):
         r"""Sets the cluster_version of this WorkFlowSpec.
 
-        本次集群升级的当前版本 
+        **参数解释：** 当前集群版本 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param cluster_version: The cluster_version of this WorkFlowSpec.
         :type cluster_version: str
@@ -100,7 +100,7 @@ class WorkFlowSpec:
     def target_version(self):
         r"""Gets the target_version of this WorkFlowSpec.
 
-        本次集群升级的目标版本 
+        **参数解释：** 本次集群升级的目标版本 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The target_version of this WorkFlowSpec.
         :rtype: str
@@ -111,7 +111,7 @@ class WorkFlowSpec:
     def target_version(self, target_version):
         r"""Sets the target_version of this WorkFlowSpec.
 
-        本次集群升级的目标版本 
+        **参数解释：** 本次集群升级的目标版本 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param target_version: The target_version of this WorkFlowSpec.
         :type target_version: str

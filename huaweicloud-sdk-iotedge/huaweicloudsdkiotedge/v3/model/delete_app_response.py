@@ -16,47 +16,20 @@ class DeleteAppResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'str'
     }
 
     attribute_map = {
-        'body': 'body'
     }
 
-    def __init__(self, body=None):
+    def __init__(self):
         r"""DeleteAppResponse
 
         The model defined in huaweicloud sdk
 
-        :param body: 
-        :type body: str
         """
         
         super().__init__()
-
-        self._body = None
         self.discriminator = None
-
-        if body is not None:
-            self.body = body
-
-    @property
-    def body(self):
-        r"""Gets the body of this DeleteAppResponse.
-
-        :return: The body of this DeleteAppResponse.
-        :rtype: str
-        """
-        return self._body
-
-    @body.setter
-    def body(self, body):
-        r"""Sets the body of this DeleteAppResponse.
-
-        :param body: The body of this DeleteAppResponse.
-        :type body: str
-        """
-        self._body = body
 
     def to_dict(self):
         import warnings

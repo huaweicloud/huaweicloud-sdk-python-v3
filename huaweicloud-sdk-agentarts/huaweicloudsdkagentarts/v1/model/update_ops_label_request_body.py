@@ -16,27 +16,23 @@ class UpdateOpsLabelRequestBody:
 
     openapi_types = {
         'name': 'str',
-        'type': 'str',
         'description': 'str',
         'enums': 'list[OpsLabelValueItem]'
     }
 
     attribute_map = {
         'name': 'name',
-        'type': 'type',
         'description': 'description',
         'enums': 'enums'
     }
 
-    def __init__(self, name=None, type=None, description=None, enums=None):
+    def __init__(self, name=None, description=None, enums=None):
         r"""UpdateOpsLabelRequestBody
 
         The model defined in huaweicloud sdk
 
         :param name: **参数解释：** 更新后的标签名称。 **约束限制：** 字符串长度为0到100个字符。 **取值范围：** 不涉及。 **默认取值：** 不涉及。 
         :type name: str
-        :param type: **参数解释：** 标签的类型（如 free-text 等）。 **约束限制：** 字符串长度为0到100个字符。 **取值范围：** 不涉及。 **默认取值：** 不涉及。 
-        :type type: str
         :param description: **参数解释：** 对该标签用途或修改变动的详细说明。 **约束限制：** 字符串长度为0到400个字符。 **取值范围：** 不涉及。 **默认取值：** 不涉及。 
         :type description: str
         :param enums: **参数解释：** 标签的可选值（枚举）列表。 **约束限制：** 数组长度为0到100。 **取值范围：** 不涉及。 **默认取值：** 空列表。 
@@ -46,16 +42,16 @@ class UpdateOpsLabelRequestBody:
         
 
         self._name = None
-        self._type = None
         self._description = None
         self._enums = None
         self.discriminator = None
 
-        self.name = name
-        self.type = type
+        if name is not None:
+            self.name = name
         if description is not None:
             self.description = description
-        self.enums = enums
+        if enums is not None:
+            self.enums = enums
 
     @property
     def name(self):
@@ -78,28 +74,6 @@ class UpdateOpsLabelRequestBody:
         :type name: str
         """
         self._name = name
-
-    @property
-    def type(self):
-        r"""Gets the type of this UpdateOpsLabelRequestBody.
-
-        **参数解释：** 标签的类型（如 free-text 等）。 **约束限制：** 字符串长度为0到100个字符。 **取值范围：** 不涉及。 **默认取值：** 不涉及。 
-
-        :return: The type of this UpdateOpsLabelRequestBody.
-        :rtype: str
-        """
-        return self._type
-
-    @type.setter
-    def type(self, type):
-        r"""Sets the type of this UpdateOpsLabelRequestBody.
-
-        **参数解释：** 标签的类型（如 free-text 等）。 **约束限制：** 字符串长度为0到100个字符。 **取值范围：** 不涉及。 **默认取值：** 不涉及。 
-
-        :param type: The type of this UpdateOpsLabelRequestBody.
-        :type type: str
-        """
-        self._type = type
 
     @property
     def description(self):

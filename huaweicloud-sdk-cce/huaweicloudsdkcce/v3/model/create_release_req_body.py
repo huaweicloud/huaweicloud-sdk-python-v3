@@ -39,15 +39,15 @@ class CreateReleaseReqBody:
 
         The model defined in huaweicloud sdk
 
-        :param chart_id: 模板ID
+        :param chart_id: **参数解释：** 模板ID **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type chart_id: str
-        :param description: 模板实例描述
+        :param description: **参数解释：** 模板实例描述 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type description: str
-        :param name: 模板实例名称
+        :param name: **参数解释：** 模板实例名称 **约束限制：** 由小写字母开头，中间由小写字母、数字和中划线(-)组成，以小写字母或数字结尾 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type name: str
-        :param namespace: 模板实例所在的命名空间
+        :param namespace: **参数解释：** 模板实例所在的命名空间 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type namespace: str
-        :param version: 模板实例版本号
+        :param version: **参数解释：** 模板实例版本号 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type version: str
         :param parameters: 
         :type parameters: :class:`huaweicloudsdkcce.v3.ReleaseReqBodyParams`
@@ -80,7 +80,7 @@ class CreateReleaseReqBody:
     def chart_id(self):
         r"""Gets the chart_id of this CreateReleaseReqBody.
 
-        模板ID
+        **参数解释：** 模板ID **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The chart_id of this CreateReleaseReqBody.
         :rtype: str
@@ -91,7 +91,7 @@ class CreateReleaseReqBody:
     def chart_id(self, chart_id):
         r"""Sets the chart_id of this CreateReleaseReqBody.
 
-        模板ID
+        **参数解释：** 模板ID **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param chart_id: The chart_id of this CreateReleaseReqBody.
         :type chart_id: str
@@ -102,7 +102,7 @@ class CreateReleaseReqBody:
     def description(self):
         r"""Gets the description of this CreateReleaseReqBody.
 
-        模板实例描述
+        **参数解释：** 模板实例描述 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The description of this CreateReleaseReqBody.
         :rtype: str
@@ -113,7 +113,7 @@ class CreateReleaseReqBody:
     def description(self, description):
         r"""Sets the description of this CreateReleaseReqBody.
 
-        模板实例描述
+        **参数解释：** 模板实例描述 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param description: The description of this CreateReleaseReqBody.
         :type description: str
@@ -124,7 +124,7 @@ class CreateReleaseReqBody:
     def name(self):
         r"""Gets the name of this CreateReleaseReqBody.
 
-        模板实例名称
+        **参数解释：** 模板实例名称 **约束限制：** 由小写字母开头，中间由小写字母、数字和中划线(-)组成，以小写字母或数字结尾 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The name of this CreateReleaseReqBody.
         :rtype: str
@@ -135,7 +135,7 @@ class CreateReleaseReqBody:
     def name(self, name):
         r"""Sets the name of this CreateReleaseReqBody.
 
-        模板实例名称
+        **参数解释：** 模板实例名称 **约束限制：** 由小写字母开头，中间由小写字母、数字和中划线(-)组成，以小写字母或数字结尾 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param name: The name of this CreateReleaseReqBody.
         :type name: str
@@ -146,7 +146,7 @@ class CreateReleaseReqBody:
     def namespace(self):
         r"""Gets the namespace of this CreateReleaseReqBody.
 
-        模板实例所在的命名空间
+        **参数解释：** 模板实例所在的命名空间 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The namespace of this CreateReleaseReqBody.
         :rtype: str
@@ -157,7 +157,7 @@ class CreateReleaseReqBody:
     def namespace(self, namespace):
         r"""Sets the namespace of this CreateReleaseReqBody.
 
-        模板实例所在的命名空间
+        **参数解释：** 模板实例所在的命名空间 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param namespace: The namespace of this CreateReleaseReqBody.
         :type namespace: str
@@ -168,7 +168,7 @@ class CreateReleaseReqBody:
     def version(self):
         r"""Gets the version of this CreateReleaseReqBody.
 
-        模板实例版本号
+        **参数解释：** 模板实例版本号 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The version of this CreateReleaseReqBody.
         :rtype: str
@@ -179,7 +179,7 @@ class CreateReleaseReqBody:
     def version(self, version):
         r"""Sets the version of this CreateReleaseReqBody.
 
-        模板实例版本号
+        **参数解释：** 模板实例版本号 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param version: The version of this CreateReleaseReqBody.
         :type version: str

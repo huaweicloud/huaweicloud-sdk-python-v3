@@ -28,7 +28,7 @@ class UpgradeNodePoolResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param jobid: Job ID returned after the job is delivered. The job ID can be used to query the job execution status.
+        :param jobid: **参数解释**： 提交任务成功后返回的任务ID，用户可以使用该ID对任务执行情况进行查询。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type jobid: str
         """
         
@@ -44,7 +44,7 @@ class UpgradeNodePoolResponse(SdkResponse):
     def jobid(self):
         r"""Gets the jobid of this UpgradeNodePoolResponse.
 
-        Job ID returned after the job is delivered. The job ID can be used to query the job execution status.
+        **参数解释**： 提交任务成功后返回的任务ID，用户可以使用该ID对任务执行情况进行查询。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The jobid of this UpgradeNodePoolResponse.
         :rtype: str
@@ -55,7 +55,7 @@ class UpgradeNodePoolResponse(SdkResponse):
     def jobid(self, jobid):
         r"""Sets the jobid of this UpgradeNodePoolResponse.
 
-        Job ID returned after the job is delivered. The job ID can be used to query the job execution status.
+        **参数解释**： 提交任务成功后返回的任务ID，用户可以使用该ID对任务执行情况进行查询。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param jobid: The jobid of this UpgradeNodePoolResponse.
         :type jobid: str

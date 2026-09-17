@@ -34,13 +34,13 @@ class ListClusterUpgradePathsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param api_version: API版本
+        :param api_version: **参数解释：** API版本 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type api_version: str
-        :param kind: 资源类型
+        :param kind: **参数解释：** 资源类型 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type kind: str
         :param metadata: 
         :type metadata: :class:`huaweicloudsdkcce.v3.Metadata`
-        :param upgrade_paths: 升级路径集合
+        :param upgrade_paths: **参数解释：** 升级路径集合 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type upgrade_paths: list[:class:`huaweicloudsdkcce.v3.UpgradePath`]
         """
         
@@ -65,7 +65,7 @@ class ListClusterUpgradePathsResponse(SdkResponse):
     def api_version(self):
         r"""Gets the api_version of this ListClusterUpgradePathsResponse.
 
-        API版本
+        **参数解释：** API版本 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The api_version of this ListClusterUpgradePathsResponse.
         :rtype: str
@@ -76,7 +76,7 @@ class ListClusterUpgradePathsResponse(SdkResponse):
     def api_version(self, api_version):
         r"""Sets the api_version of this ListClusterUpgradePathsResponse.
 
-        API版本
+        **参数解释：** API版本 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param api_version: The api_version of this ListClusterUpgradePathsResponse.
         :type api_version: str
@@ -87,7 +87,7 @@ class ListClusterUpgradePathsResponse(SdkResponse):
     def kind(self):
         r"""Gets the kind of this ListClusterUpgradePathsResponse.
 
-        资源类型
+        **参数解释：** 资源类型 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The kind of this ListClusterUpgradePathsResponse.
         :rtype: str
@@ -98,7 +98,7 @@ class ListClusterUpgradePathsResponse(SdkResponse):
     def kind(self, kind):
         r"""Sets the kind of this ListClusterUpgradePathsResponse.
 
-        资源类型
+        **参数解释：** 资源类型 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param kind: The kind of this ListClusterUpgradePathsResponse.
         :type kind: str
@@ -127,7 +127,7 @@ class ListClusterUpgradePathsResponse(SdkResponse):
     def upgrade_paths(self):
         r"""Gets the upgrade_paths of this ListClusterUpgradePathsResponse.
 
-        升级路径集合
+        **参数解释：** 升级路径集合 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The upgrade_paths of this ListClusterUpgradePathsResponse.
         :rtype: list[:class:`huaweicloudsdkcce.v3.UpgradePath`]
@@ -138,7 +138,7 @@ class ListClusterUpgradePathsResponse(SdkResponse):
     def upgrade_paths(self, upgrade_paths):
         r"""Sets the upgrade_paths of this ListClusterUpgradePathsResponse.
 
-        升级路径集合
+        **参数解释：** 升级路径集合 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param upgrade_paths: The upgrade_paths of this ListClusterUpgradePathsResponse.
         :type upgrade_paths: list[:class:`huaweicloudsdkcce.v3.UpgradePath`]

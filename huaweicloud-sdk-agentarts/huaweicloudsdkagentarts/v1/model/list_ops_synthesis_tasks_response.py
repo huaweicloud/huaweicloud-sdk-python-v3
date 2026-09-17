@@ -17,15 +17,17 @@ class ListOpsSynthesisTasksResponse(SdkResponse):
 
     openapi_types = {
         'syntheses': 'list[EvaluationOpsSynthesisTaskSummary]',
-        'total': 'int'
+        'total': 'int',
+        'total_task_status': 'ListOpsSynthesisTasksResponseBodyTotalTaskStatus'
     }
 
     attribute_map = {
         'syntheses': 'syntheses',
-        'total': 'total'
+        'total': 'total',
+        'total_task_status': 'total_task_status'
     }
 
-    def __init__(self, syntheses=None, total=None):
+    def __init__(self, syntheses=None, total=None, total_task_status=None):
         r"""ListOpsSynthesisTasksResponse
 
         The model defined in huaweicloud sdk
@@ -34,18 +36,23 @@ class ListOpsSynthesisTasksResponse(SdkResponse):
         :type syntheses: list[:class:`huaweicloudsdkagentarts.v1.EvaluationOpsSynthesisTaskSummary`]
         :param total: **参数解释：**   符合当前筛选条件的任务总记录数。 **取值范围：**   0-500。 
         :type total: int
+        :param total_task_status: 
+        :type total_task_status: :class:`huaweicloudsdkagentarts.v1.ListOpsSynthesisTasksResponseBodyTotalTaskStatus`
         """
         
         super().__init__()
 
         self._syntheses = None
         self._total = None
+        self._total_task_status = None
         self.discriminator = None
 
         if syntheses is not None:
             self.syntheses = syntheses
         if total is not None:
             self.total = total
+        if total_task_status is not None:
+            self.total_task_status = total_task_status
 
     @property
     def syntheses(self):
@@ -90,6 +97,24 @@ class ListOpsSynthesisTasksResponse(SdkResponse):
         :type total: int
         """
         self._total = total
+
+    @property
+    def total_task_status(self):
+        r"""Gets the total_task_status of this ListOpsSynthesisTasksResponse.
+
+        :return: The total_task_status of this ListOpsSynthesisTasksResponse.
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ListOpsSynthesisTasksResponseBodyTotalTaskStatus`
+        """
+        return self._total_task_status
+
+    @total_task_status.setter
+    def total_task_status(self, total_task_status):
+        r"""Sets the total_task_status of this ListOpsSynthesisTasksResponse.
+
+        :param total_task_status: The total_task_status of this ListOpsSynthesisTasksResponse.
+        :type total_task_status: :class:`huaweicloudsdkagentarts.v1.ListOpsSynthesisTasksResponseBodyTotalTaskStatus`
+        """
+        self._total_task_status = total_task_status
 
     def to_dict(self):
         import warnings

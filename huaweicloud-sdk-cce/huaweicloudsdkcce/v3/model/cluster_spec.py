@@ -45,7 +45,8 @@ class ClusterSpec:
         'configurations_override': 'list[PackageConfiguration]',
         'cluster_ops': 'ClusterOps',
         'encryption_config': 'EncryptionConfig',
-        'certificate_authority': 'CertificateAuthority'
+        'certificate_authority': 'CertificateAuthority',
+        'secret_config': 'SecretConfig'
     }
 
     attribute_map = {
@@ -79,10 +80,11 @@ class ClusterSpec:
         'configurations_override': 'configurationsOverride',
         'cluster_ops': 'clusterOps',
         'encryption_config': 'encryptionConfig',
-        'certificate_authority': 'certificateAuthority'
+        'certificate_authority': 'certificateAuthority',
+        'secret_config': 'secretConfig'
     }
 
-    def __init__(self, category=None, agency_name=None, type=None, flavor=None, version=None, platform_version=None, legacy_version=None, description=None, custom_san=None, ipv6enable=None, host_network=None, container_network=None, eni_network=None, service_network=None, authentication=None, public_access=None, billing_mode=None, masters=None, kubernetes_svc_ip_range=None, cluster_tags=None, kube_proxy_mode=None, az=None, extend_param=None, support_istio=None, enable_master_volume_encryption=None, enable_dist_mgt=None, deletion_protection=None, configurations_override=None, cluster_ops=None, encryption_config=None, certificate_authority=None):
+    def __init__(self, category=None, agency_name=None, type=None, flavor=None, version=None, platform_version=None, legacy_version=None, description=None, custom_san=None, ipv6enable=None, host_network=None, container_network=None, eni_network=None, service_network=None, authentication=None, public_access=None, billing_mode=None, masters=None, kubernetes_svc_ip_range=None, cluster_tags=None, kube_proxy_mode=None, az=None, extend_param=None, support_istio=None, enable_master_volume_encryption=None, enable_dist_mgt=None, deletion_protection=None, configurations_override=None, cluster_ops=None, encryption_config=None, certificate_authority=None, secret_config=None):
         r"""ClusterSpec
 
         The model defined in huaweicloud sdk
@@ -149,6 +151,8 @@ class ClusterSpec:
         :type encryption_config: :class:`huaweicloudsdkcce.v3.EncryptionConfig`
         :param certificate_authority: 
         :type certificate_authority: :class:`huaweicloudsdkcce.v3.CertificateAuthority`
+        :param secret_config: 
+        :type secret_config: :class:`huaweicloudsdkcce.v3.SecretConfig`
         """
         
         
@@ -184,6 +188,7 @@ class ClusterSpec:
         self._cluster_ops = None
         self._encryption_config = None
         self._certificate_authority = None
+        self._secret_config = None
         self.discriminator = None
 
         if category is not None:
@@ -208,7 +213,8 @@ class ClusterSpec:
             self.ipv6enable = ipv6enable
         self.host_network = host_network
         self.container_network = container_network
-        self.eni_network = eni_network
+        if eni_network is not None:
+            self.eni_network = eni_network
         if service_network is not None:
             self.service_network = service_network
         if authentication is not None:
@@ -245,6 +251,8 @@ class ClusterSpec:
             self.encryption_config = encryption_config
         if certificate_authority is not None:
             self.certificate_authority = certificate_authority
+        if secret_config is not None:
+            self.secret_config = secret_config
 
     @property
     def category(self):
@@ -887,6 +895,24 @@ class ClusterSpec:
         :type certificate_authority: :class:`huaweicloudsdkcce.v3.CertificateAuthority`
         """
         self._certificate_authority = certificate_authority
+
+    @property
+    def secret_config(self):
+        r"""Gets the secret_config of this ClusterSpec.
+
+        :return: The secret_config of this ClusterSpec.
+        :rtype: :class:`huaweicloudsdkcce.v3.SecretConfig`
+        """
+        return self._secret_config
+
+    @secret_config.setter
+    def secret_config(self, secret_config):
+        r"""Sets the secret_config of this ClusterSpec.
+
+        :param secret_config: The secret_config of this ClusterSpec.
+        :type secret_config: :class:`huaweicloudsdkcce.v3.SecretConfig`
+        """
+        self._secret_config = secret_config
 
     def to_dict(self):
         result = {}

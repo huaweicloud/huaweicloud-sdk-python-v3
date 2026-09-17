@@ -39,19 +39,19 @@ class Templatespec:
 
         The model defined in huaweicloud sdk
 
-        :param type: **参数解释：** 插件模板类型 **约束限制：** 不涉及 **取值范围：** - helm: 表示使用Helm包进行部署的模板类型 - static: 表示静态模板类型  **默认取值：** 不涉及
+        :param type: **参数解释**： 插件模板类型。 **约束限制**： 不涉及 **取值范围**： - helm：表示使用Helm包进行部署的模板类型 - static：表示静态模板类型  **默认取值**： 不涉及
         :type type: str
-        :param require: 是否为必安装插件
+        :param require: **参数解释**： 是否为必安装插件。 **约束限制**： 不涉及 **取值范围**： - true：必安装插件 - false：非必安装插件  **默认取值**： 不涉及
         :type require: bool
-        :param labels: 模板所属分组
+        :param labels: **参数解释**： 模板所属分组。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type labels: list[str]
-        :param logo_url: Logo图片地址
+        :param logo_url: **参数解释**： Logo图片地址。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type logo_url: str
-        :param readme_url: 插件详情描述及使用说明
+        :param readme_url: **参数解释**： 插件详情描述及使用说明。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type readme_url: str
-        :param description: 模板描述
+        :param description: **参数解释**： 模板描述。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type description: str
-        :param versions: 模板具体版本详情
+        :param versions: **参数解释**： 模板具体版本详情。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type versions: list[:class:`huaweicloudsdkcce.v3.Versions`]
         """
         
@@ -79,7 +79,7 @@ class Templatespec:
     def type(self):
         r"""Gets the type of this Templatespec.
 
-        **参数解释：** 插件模板类型 **约束限制：** 不涉及 **取值范围：** - helm: 表示使用Helm包进行部署的模板类型 - static: 表示静态模板类型  **默认取值：** 不涉及
+        **参数解释**： 插件模板类型。 **约束限制**： 不涉及 **取值范围**： - helm：表示使用Helm包进行部署的模板类型 - static：表示静态模板类型  **默认取值**： 不涉及
 
         :return: The type of this Templatespec.
         :rtype: str
@@ -90,7 +90,7 @@ class Templatespec:
     def type(self, type):
         r"""Sets the type of this Templatespec.
 
-        **参数解释：** 插件模板类型 **约束限制：** 不涉及 **取值范围：** - helm: 表示使用Helm包进行部署的模板类型 - static: 表示静态模板类型  **默认取值：** 不涉及
+        **参数解释**： 插件模板类型。 **约束限制**： 不涉及 **取值范围**： - helm：表示使用Helm包进行部署的模板类型 - static：表示静态模板类型  **默认取值**： 不涉及
 
         :param type: The type of this Templatespec.
         :type type: str
@@ -101,7 +101,7 @@ class Templatespec:
     def require(self):
         r"""Gets the require of this Templatespec.
 
-        是否为必安装插件
+        **参数解释**： 是否为必安装插件。 **约束限制**： 不涉及 **取值范围**： - true：必安装插件 - false：非必安装插件  **默认取值**： 不涉及
 
         :return: The require of this Templatespec.
         :rtype: bool
@@ -112,7 +112,7 @@ class Templatespec:
     def require(self, require):
         r"""Sets the require of this Templatespec.
 
-        是否为必安装插件
+        **参数解释**： 是否为必安装插件。 **约束限制**： 不涉及 **取值范围**： - true：必安装插件 - false：非必安装插件  **默认取值**： 不涉及
 
         :param require: The require of this Templatespec.
         :type require: bool
@@ -123,7 +123,7 @@ class Templatespec:
     def labels(self):
         r"""Gets the labels of this Templatespec.
 
-        模板所属分组
+        **参数解释**： 模板所属分组。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The labels of this Templatespec.
         :rtype: list[str]
@@ -134,7 +134,7 @@ class Templatespec:
     def labels(self, labels):
         r"""Sets the labels of this Templatespec.
 
-        模板所属分组
+        **参数解释**： 模板所属分组。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param labels: The labels of this Templatespec.
         :type labels: list[str]
@@ -145,7 +145,7 @@ class Templatespec:
     def logo_url(self):
         r"""Gets the logo_url of this Templatespec.
 
-        Logo图片地址
+        **参数解释**： Logo图片地址。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The logo_url of this Templatespec.
         :rtype: str
@@ -156,7 +156,7 @@ class Templatespec:
     def logo_url(self, logo_url):
         r"""Sets the logo_url of this Templatespec.
 
-        Logo图片地址
+        **参数解释**： Logo图片地址。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param logo_url: The logo_url of this Templatespec.
         :type logo_url: str
@@ -167,7 +167,7 @@ class Templatespec:
     def readme_url(self):
         r"""Gets the readme_url of this Templatespec.
 
-        插件详情描述及使用说明
+        **参数解释**： 插件详情描述及使用说明。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The readme_url of this Templatespec.
         :rtype: str
@@ -178,7 +178,7 @@ class Templatespec:
     def readme_url(self, readme_url):
         r"""Sets the readme_url of this Templatespec.
 
-        插件详情描述及使用说明
+        **参数解释**： 插件详情描述及使用说明。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param readme_url: The readme_url of this Templatespec.
         :type readme_url: str
@@ -189,7 +189,7 @@ class Templatespec:
     def description(self):
         r"""Gets the description of this Templatespec.
 
-        模板描述
+        **参数解释**： 模板描述。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The description of this Templatespec.
         :rtype: str
@@ -200,7 +200,7 @@ class Templatespec:
     def description(self, description):
         r"""Sets the description of this Templatespec.
 
-        模板描述
+        **参数解释**： 模板描述。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param description: The description of this Templatespec.
         :type description: str
@@ -211,7 +211,7 @@ class Templatespec:
     def versions(self):
         r"""Gets the versions of this Templatespec.
 
-        模板具体版本详情
+        **参数解释**： 模板具体版本详情。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The versions of this Templatespec.
         :rtype: list[:class:`huaweicloudsdkcce.v3.Versions`]
@@ -222,7 +222,7 @@ class Templatespec:
     def versions(self, versions):
         r"""Sets the versions of this Templatespec.
 
-        模板具体版本详情
+        **参数解释**： 模板具体版本详情。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param versions: The versions of this Templatespec.
         :type versions: list[:class:`huaweicloudsdkcce.v3.Versions`]

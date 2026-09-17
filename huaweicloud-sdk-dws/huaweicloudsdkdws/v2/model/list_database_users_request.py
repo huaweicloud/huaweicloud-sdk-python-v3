@@ -41,9 +41,9 @@ class ListDatabaseUsersRequest:
         :type offset: int
         :param limit: **参数解释**： 分页单页大小。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 1000。
         :type limit: int
-        :param type: **参数解释**： 查询角色还是用户。 **约束限制**： 不涉及。 **取值范围**： ROLE：表示查询所有角色。  USER：表示查询所有用户。 **默认取值**： 不涉及。
+        :param type: **参数解释**： 查询角色还是用户。 **约束限制**： 不涉及。 **取值范围**： ROLE：表示查询所有角色。 USER：表示查询所有用户。 **默认取值**： 不涉及。
         :type type: str
-        :param user_type: **参数解释**： 用户类型，COMMON、IAM或者OneAccess。 **约束限制**： 不涉及。 **取值范围**： COMMON：表示普通数据库用户。  IAM：表示IAM同步的数据库用户。 OneAccess: 表示OneAccess用户。 **默认取值**： 不涉及。
+        :param user_type: **参数解释**： 用户类型，COMMON、IAM或者OneAccess。 **约束限制**： 不涉及。 **取值范围**： COMMON：表示普通数据库用户。 IAM：表示IAM同步的数据库用户。 OneAccess: 表示OneAccess用户。 **默认取值**： 不涉及。
         :type user_type: str
         """
         
@@ -136,7 +136,7 @@ class ListDatabaseUsersRequest:
     def type(self):
         r"""Gets the type of this ListDatabaseUsersRequest.
 
-        **参数解释**： 查询角色还是用户。 **约束限制**： 不涉及。 **取值范围**： ROLE：表示查询所有角色。  USER：表示查询所有用户。 **默认取值**： 不涉及。
+        **参数解释**： 查询角色还是用户。 **约束限制**： 不涉及。 **取值范围**： ROLE：表示查询所有角色。 USER：表示查询所有用户。 **默认取值**： 不涉及。
 
         :return: The type of this ListDatabaseUsersRequest.
         :rtype: str
@@ -147,7 +147,7 @@ class ListDatabaseUsersRequest:
     def type(self, type):
         r"""Sets the type of this ListDatabaseUsersRequest.
 
-        **参数解释**： 查询角色还是用户。 **约束限制**： 不涉及。 **取值范围**： ROLE：表示查询所有角色。  USER：表示查询所有用户。 **默认取值**： 不涉及。
+        **参数解释**： 查询角色还是用户。 **约束限制**： 不涉及。 **取值范围**： ROLE：表示查询所有角色。 USER：表示查询所有用户。 **默认取值**： 不涉及。
 
         :param type: The type of this ListDatabaseUsersRequest.
         :type type: str
@@ -158,7 +158,7 @@ class ListDatabaseUsersRequest:
     def user_type(self):
         r"""Gets the user_type of this ListDatabaseUsersRequest.
 
-        **参数解释**： 用户类型，COMMON、IAM或者OneAccess。 **约束限制**： 不涉及。 **取值范围**： COMMON：表示普通数据库用户。  IAM：表示IAM同步的数据库用户。 OneAccess: 表示OneAccess用户。 **默认取值**： 不涉及。
+        **参数解释**： 用户类型，COMMON、IAM或者OneAccess。 **约束限制**： 不涉及。 **取值范围**： COMMON：表示普通数据库用户。 IAM：表示IAM同步的数据库用户。 OneAccess: 表示OneAccess用户。 **默认取值**： 不涉及。
 
         :return: The user_type of this ListDatabaseUsersRequest.
         :rtype: str
@@ -169,7 +169,7 @@ class ListDatabaseUsersRequest:
     def user_type(self, user_type):
         r"""Sets the user_type of this ListDatabaseUsersRequest.
 
-        **参数解释**： 用户类型，COMMON、IAM或者OneAccess。 **约束限制**： 不涉及。 **取值范围**： COMMON：表示普通数据库用户。  IAM：表示IAM同步的数据库用户。 OneAccess: 表示OneAccess用户。 **默认取值**： 不涉及。
+        **参数解释**： 用户类型，COMMON、IAM或者OneAccess。 **约束限制**： 不涉及。 **取值范围**： COMMON：表示普通数据库用户。 IAM：表示IAM同步的数据库用户。 OneAccess: 表示OneAccess用户。 **默认取值**： 不涉及。
 
         :param user_type: The user_type of this ListDatabaseUsersRequest.
         :type user_type: str

@@ -45,10 +45,12 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ApplyConfigurationRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ApplyConfigurationResponse`
         """
+        warnings.warn("Method 'apply_configuration_async' of GaussDBforNoSQLAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._apply_configuration_http_info(request)
         return self._call_api(**http_info)
 
     def apply_configuration_async_invoker(self, request):
+        warnings.warn("Method 'apply_configuration_async_invoker' of GaussDBforNoSQLAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._apply_configuration_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -2578,10 +2580,12 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ListConfigurationsRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListConfigurationsResponse`
         """
+        warnings.warn("Method 'list_configurations_async' of GaussDBforNoSQLAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_configurations_http_info(request)
         return self._call_api(**http_info)
 
     def list_configurations_async_invoker(self, request):
+        warnings.warn("Method 'list_configurations_async_invoker' of GaussDBforNoSQLAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_configurations_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -3135,7 +3139,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def list_flavors_async(self, request):
-        r"""查询指定条件下的所有实例规格信息
+        r"""查询所有实例规格信息
 
         查询指定条件下的所有实例规格信息。
         
@@ -3146,10 +3150,12 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ListFlavorsRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListFlavorsResponse`
         """
+        warnings.warn("Method 'list_flavors_async' of GaussDBforNoSQLAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_flavors_http_info(request)
         return self._call_api(**http_info)
 
     def list_flavors_async_invoker(self, request):
+        warnings.warn("Method 'list_flavors_async_invoker' of GaussDBforNoSQLAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_flavors_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -3690,10 +3696,12 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ListInstancesByTagsRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListInstancesByTagsResponse`
         """
+        warnings.warn("Method 'list_instances_by_tags_async' of GaussDBforNoSQLAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_instances_by_tags_http_info(request)
         return self._call_api(**http_info)
 
     def list_instances_by_tags_async_invoker(self, request):
+        warnings.warn("Method 'list_instances_by_tags_async_invoker' of GaussDBforNoSQLAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_instances_by_tags_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -4743,10 +4751,12 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ListSlowLogsRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListSlowLogsResponse`
         """
+        warnings.warn("Method 'list_slow_logs_async' of GaussDBforNoSQLAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_slow_logs_http_info(request)
         return self._call_api(**http_info)
 
     def list_slow_logs_async_invoker(self, request):
+        warnings.warn("Method 'list_slow_logs_async_invoker' of GaussDBforNoSQLAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_slow_logs_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -7191,10 +7201,12 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowBackupPolicyRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowBackupPolicyResponse`
         """
+        warnings.warn("Method 'show_backup_policy_async' of GaussDBforNoSQLAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_backup_policy_http_info(request)
         return self._call_api(**http_info)
 
     def show_backup_policy_async_invoker(self, request):
+        warnings.warn("Method 'show_backup_policy_async_invoker' of GaussDBforNoSQLAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_backup_policy_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -7455,10 +7467,12 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowErrorLogRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowErrorLogResponse`
         """
+        warnings.warn("Method 'show_error_log_async' of GaussDBforNoSQLAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_error_log_http_info(request)
         return self._call_api(**http_info)
 
     def show_error_log_async_invoker(self, request):
+        warnings.warn("Method 'show_error_log_async_invoker' of GaussDBforNoSQLAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_error_log_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -9735,10 +9749,12 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.UpdateInstanceConfigurationRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.UpdateInstanceConfigurationResponse`
         """
+        warnings.warn("Method 'update_instance_configuration_async' of GaussDBforNoSQLAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._update_instance_configuration_http_info(request)
         return self._call_api(**http_info)
 
     def update_instance_configuration_async_invoker(self, request):
+        warnings.warn("Method 'update_instance_configuration_async_invoker' of GaussDBforNoSQLAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._update_instance_configuration_http_info(request)
         return AsyncInvoker(self, http_info)
 

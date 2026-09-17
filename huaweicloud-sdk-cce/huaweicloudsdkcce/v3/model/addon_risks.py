@@ -29,9 +29,9 @@ class AddonRisks:
 
         The model defined in huaweicloud sdk
 
-        :param addon_template_name: 插件模板名称
+        :param addon_template_name: **参数解释：** 插件模板名称。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type addon_template_name: str
-        :param alias: 插件别名
+        :param alias: **参数解释：** 插件别名。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type alias: str
         """
         
@@ -50,7 +50,7 @@ class AddonRisks:
     def addon_template_name(self):
         r"""Gets the addon_template_name of this AddonRisks.
 
-        插件模板名称
+        **参数解释：** 插件模板名称。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The addon_template_name of this AddonRisks.
         :rtype: str
@@ -61,7 +61,7 @@ class AddonRisks:
     def addon_template_name(self, addon_template_name):
         r"""Sets the addon_template_name of this AddonRisks.
 
-        插件模板名称
+        **参数解释：** 插件模板名称。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param addon_template_name: The addon_template_name of this AddonRisks.
         :type addon_template_name: str
@@ -72,7 +72,7 @@ class AddonRisks:
     def alias(self):
         r"""Gets the alias of this AddonRisks.
 
-        插件别名
+        **参数解释：** 插件别名。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The alias of this AddonRisks.
         :rtype: str
@@ -83,7 +83,7 @@ class AddonRisks:
     def alias(self, alias):
         r"""Sets the alias of this AddonRisks.
 
-        插件别名
+        **参数解释：** 插件别名。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param alias: The alias of this AddonRisks.
         :type alias: str

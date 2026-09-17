@@ -40,7 +40,8 @@ class EdgeNodeCreation:
         'device_data_format': 'str',
         'automatic_upgrade': 'str',
         'device_data_record': 'DeviceDataRecord',
-        'metric_report': 'str'
+        'metric_report': 'str',
+        'iotda_south_access': 'str'
     }
 
     attribute_map = {
@@ -69,10 +70,11 @@ class EdgeNodeCreation:
         'device_data_format': 'device_data_format',
         'automatic_upgrade': 'automatic_upgrade',
         'device_data_record': 'device_data_record',
-        'metric_report': 'metric_report'
+        'metric_report': 'metric_report',
+        'iotda_south_access': 'iotda_south_access'
     }
 
-    def __init__(self, edge_node_id=None, name=None, type=None, verify_code=None, time_out=None, arch=None, os_type=None, instance_id=None, space_id=None, resource_ids=None, security_level=None, reliability_level=None, storage_period=None, ai_card_type=None, npu_library_path=None, base_path=None, log_configs=None, apps=None, network_access_point=None, hardware_model=None, offline_cache_configs=None, device_auth_info=None, device_data_format=None, automatic_upgrade=None, device_data_record=None, metric_report=None):
+    def __init__(self, edge_node_id=None, name=None, type=None, verify_code=None, time_out=None, arch=None, os_type=None, instance_id=None, space_id=None, resource_ids=None, security_level=None, reliability_level=None, storage_period=None, ai_card_type=None, npu_library_path=None, base_path=None, log_configs=None, apps=None, network_access_point=None, hardware_model=None, offline_cache_configs=None, device_auth_info=None, device_data_format=None, automatic_upgrade=None, device_data_record=None, metric_report=None, iotda_south_access=None):
         r"""EdgeNodeCreation
 
         The model defined in huaweicloud sdk
@@ -81,15 +83,15 @@ class EdgeNodeCreation:
         :type edge_node_id: str
         :param name: 边缘节点名称，只允许中、数字、英文大小写、中划线、下划线
         :type name: str
-        :param type: 节点所属资源类型：advanced|standard
+        :param type: 边缘节点类型：lite|advanced|standard。lite表示基础版边缘节点，advanced或standard表示专业版边缘节点。
         :type type: str
         :param verify_code: 边缘节点注册使用的验证码，如果不输入则平台随机生成。
         :type verify_code: str
         :param time_out: 验证码的有效时间单位秒，默认1800秒，范围为1~864000，过期后平台会随机生成。
         :type time_out: int
-        :param arch: 系统架构。包括：arm64，arm32，x86_64。
+        :param arch: 边缘节点系统架构。包括：arm64，arm32，x86_64。
         :type arch: str
-        :param os_type: 系统类型。包括：generalLinux通用系统，openHarmony。
+        :param os_type: 边缘节点系统类型。包括：generalLinux通用系统，openHarmony鸿蒙系统。
         :type os_type: str
         :param instance_id: 实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
         :type instance_id: str
@@ -99,19 +101,19 @@ class EdgeNodeCreation:
         :type resource_ids: list[str]
         :param security_level: 节点的安全等级，MEDIUM表示本地明文存储，HIGH表示本地加密存储。
         :type security_level: str
-        :param reliability_level: 节点的可靠性等级。
+        :param reliability_level: 节点的可靠性等级，LOW表示中级别，MEDIUM表示高级别。详细功能请参考“用户指南&gt;管理边缘节点&gt;注册节点”。
         :type reliability_level: str
         :param storage_period: 节点的存储周期，默认0天，取值范围0~7天，0天则不存储。
         :type storage_period: int
-        :param ai_card_type: AI加速卡类型，如华为昇腾AI加速卡NPU、图像处理加速卡GPU。
+        :param ai_card_type: AI加速卡类型，如昇腾AI加速卡NPU、图像处理加速卡GPU。
         :type ai_card_type: str
         :param npu_library_path: npu驱动动态库路径
         :type npu_library_path: str
         :param base_path: 
         :type base_path: :class:`huaweicloudsdkiotedge.v2.BasePathDTO`
-        :param log_configs: 边缘节点在IEF日志配置参数，仅高级版支持。
+        :param log_configs: 边缘节点在IEF日志配置参数，仅专业版支持。
         :type log_configs: list[:class:`huaweicloudsdkiotedge.v2.LogConfigDTO`]
-        :param apps: 用户预置第三方边缘应用
+        :param apps: 需要自动安装的边缘应用。此处可填写控制台“应用管理”页面中列出的业务应用与驱动应用。
         :type apps: list[:class:`huaweicloudsdkiotedge.v2.EdgeAppInstanceDTO`]
         :param network_access_point: 网络接入方式类型
         :type network_access_point: str
@@ -129,6 +131,8 @@ class EdgeNodeCreation:
         :type device_data_record: :class:`huaweicloudsdkiotedge.v2.DeviceDataRecord`
         :param metric_report: omagent监控运维工具是否上报指标
         :type metric_report: str
+        :param iotda_south_access: iotda的南向接入地址
+        :type iotda_south_access: str
         """
         
         
@@ -159,6 +163,7 @@ class EdgeNodeCreation:
         self._automatic_upgrade = None
         self._device_data_record = None
         self._metric_report = None
+        self._iotda_south_access = None
         self.discriminator = None
 
         if edge_node_id is not None:
@@ -211,6 +216,8 @@ class EdgeNodeCreation:
             self.device_data_record = device_data_record
         if metric_report is not None:
             self.metric_report = metric_report
+        if iotda_south_access is not None:
+            self.iotda_south_access = iotda_south_access
 
     @property
     def edge_node_id(self):
@@ -260,7 +267,7 @@ class EdgeNodeCreation:
     def type(self):
         r"""Gets the type of this EdgeNodeCreation.
 
-        节点所属资源类型：advanced|standard
+        边缘节点类型：lite|advanced|standard。lite表示基础版边缘节点，advanced或standard表示专业版边缘节点。
 
         :return: The type of this EdgeNodeCreation.
         :rtype: str
@@ -271,7 +278,7 @@ class EdgeNodeCreation:
     def type(self, type):
         r"""Sets the type of this EdgeNodeCreation.
 
-        节点所属资源类型：advanced|standard
+        边缘节点类型：lite|advanced|standard。lite表示基础版边缘节点，advanced或standard表示专业版边缘节点。
 
         :param type: The type of this EdgeNodeCreation.
         :type type: str
@@ -326,7 +333,7 @@ class EdgeNodeCreation:
     def arch(self):
         r"""Gets the arch of this EdgeNodeCreation.
 
-        系统架构。包括：arm64，arm32，x86_64。
+        边缘节点系统架构。包括：arm64，arm32，x86_64。
 
         :return: The arch of this EdgeNodeCreation.
         :rtype: str
@@ -337,7 +344,7 @@ class EdgeNodeCreation:
     def arch(self, arch):
         r"""Sets the arch of this EdgeNodeCreation.
 
-        系统架构。包括：arm64，arm32，x86_64。
+        边缘节点系统架构。包括：arm64，arm32，x86_64。
 
         :param arch: The arch of this EdgeNodeCreation.
         :type arch: str
@@ -348,7 +355,7 @@ class EdgeNodeCreation:
     def os_type(self):
         r"""Gets the os_type of this EdgeNodeCreation.
 
-        系统类型。包括：generalLinux通用系统，openHarmony。
+        边缘节点系统类型。包括：generalLinux通用系统，openHarmony鸿蒙系统。
 
         :return: The os_type of this EdgeNodeCreation.
         :rtype: str
@@ -359,7 +366,7 @@ class EdgeNodeCreation:
     def os_type(self, os_type):
         r"""Sets the os_type of this EdgeNodeCreation.
 
-        系统类型。包括：generalLinux通用系统，openHarmony。
+        边缘节点系统类型。包括：generalLinux通用系统，openHarmony鸿蒙系统。
 
         :param os_type: The os_type of this EdgeNodeCreation.
         :type os_type: str
@@ -458,7 +465,7 @@ class EdgeNodeCreation:
     def reliability_level(self):
         r"""Gets the reliability_level of this EdgeNodeCreation.
 
-        节点的可靠性等级。
+        节点的可靠性等级，LOW表示中级别，MEDIUM表示高级别。详细功能请参考“用户指南>管理边缘节点>注册节点”。
 
         :return: The reliability_level of this EdgeNodeCreation.
         :rtype: str
@@ -469,7 +476,7 @@ class EdgeNodeCreation:
     def reliability_level(self, reliability_level):
         r"""Sets the reliability_level of this EdgeNodeCreation.
 
-        节点的可靠性等级。
+        节点的可靠性等级，LOW表示中级别，MEDIUM表示高级别。详细功能请参考“用户指南>管理边缘节点>注册节点”。
 
         :param reliability_level: The reliability_level of this EdgeNodeCreation.
         :type reliability_level: str
@@ -502,7 +509,7 @@ class EdgeNodeCreation:
     def ai_card_type(self):
         r"""Gets the ai_card_type of this EdgeNodeCreation.
 
-        AI加速卡类型，如华为昇腾AI加速卡NPU、图像处理加速卡GPU。
+        AI加速卡类型，如昇腾AI加速卡NPU、图像处理加速卡GPU。
 
         :return: The ai_card_type of this EdgeNodeCreation.
         :rtype: str
@@ -513,7 +520,7 @@ class EdgeNodeCreation:
     def ai_card_type(self, ai_card_type):
         r"""Sets the ai_card_type of this EdgeNodeCreation.
 
-        AI加速卡类型，如华为昇腾AI加速卡NPU、图像处理加速卡GPU。
+        AI加速卡类型，如昇腾AI加速卡NPU、图像处理加速卡GPU。
 
         :param ai_card_type: The ai_card_type of this EdgeNodeCreation.
         :type ai_card_type: str
@@ -564,7 +571,7 @@ class EdgeNodeCreation:
     def log_configs(self):
         r"""Gets the log_configs of this EdgeNodeCreation.
 
-        边缘节点在IEF日志配置参数，仅高级版支持。
+        边缘节点在IEF日志配置参数，仅专业版支持。
 
         :return: The log_configs of this EdgeNodeCreation.
         :rtype: list[:class:`huaweicloudsdkiotedge.v2.LogConfigDTO`]
@@ -575,7 +582,7 @@ class EdgeNodeCreation:
     def log_configs(self, log_configs):
         r"""Sets the log_configs of this EdgeNodeCreation.
 
-        边缘节点在IEF日志配置参数，仅高级版支持。
+        边缘节点在IEF日志配置参数，仅专业版支持。
 
         :param log_configs: The log_configs of this EdgeNodeCreation.
         :type log_configs: list[:class:`huaweicloudsdkiotedge.v2.LogConfigDTO`]
@@ -586,7 +593,7 @@ class EdgeNodeCreation:
     def apps(self):
         r"""Gets the apps of this EdgeNodeCreation.
 
-        用户预置第三方边缘应用
+        需要自动安装的边缘应用。此处可填写控制台“应用管理”页面中列出的业务应用与驱动应用。
 
         :return: The apps of this EdgeNodeCreation.
         :rtype: list[:class:`huaweicloudsdkiotedge.v2.EdgeAppInstanceDTO`]
@@ -597,7 +604,7 @@ class EdgeNodeCreation:
     def apps(self, apps):
         r"""Sets the apps of this EdgeNodeCreation.
 
-        用户预置第三方边缘应用
+        需要自动安装的边缘应用。此处可填写控制台“应用管理”页面中列出的业务应用与驱动应用。
 
         :param apps: The apps of this EdgeNodeCreation.
         :type apps: list[:class:`huaweicloudsdkiotedge.v2.EdgeAppInstanceDTO`]
@@ -767,6 +774,28 @@ class EdgeNodeCreation:
         :type metric_report: str
         """
         self._metric_report = metric_report
+
+    @property
+    def iotda_south_access(self):
+        r"""Gets the iotda_south_access of this EdgeNodeCreation.
+
+        iotda的南向接入地址
+
+        :return: The iotda_south_access of this EdgeNodeCreation.
+        :rtype: str
+        """
+        return self._iotda_south_access
+
+    @iotda_south_access.setter
+    def iotda_south_access(self, iotda_south_access):
+        r"""Sets the iotda_south_access of this EdgeNodeCreation.
+
+        iotda的南向接入地址
+
+        :param iotda_south_access: The iotda_south_access of this EdgeNodeCreation.
+        :type iotda_south_access: str
+        """
+        self._iotda_south_access = iotda_south_access
 
     def to_dict(self):
         result = {}

@@ -15,29 +15,43 @@ class ModuleContainerSettingsResDTO:
     sensitive_list = []
 
     openapi_types = {
-        'configs': 'ContainerConfigsResDTO'
+        'configs': 'ContainerConfigsResDTO',
+        'custom_envs': 'object',
+        'extra_hosts': 'list[DNSConfigDTO]'
     }
 
     attribute_map = {
-        'configs': 'configs'
+        'configs': 'configs',
+        'custom_envs': 'custom_envs',
+        'extra_hosts': 'extra_hosts'
     }
 
-    def __init__(self, configs=None):
+    def __init__(self, configs=None, custom_envs=None, extra_hosts=None):
         r"""ModuleContainerSettingsResDTO
 
         The model defined in huaweicloud sdk
 
         :param configs: 
         :type configs: :class:`huaweicloudsdkiotedge.v2.ContainerConfigsResDTO`
+        :param custom_envs: 自定义环境变量
+        :type custom_envs: object
+        :param extra_hosts: 域名解析配置集合
+        :type extra_hosts: list[:class:`huaweicloudsdkiotedge.v2.DNSConfigDTO`]
         """
         
         
 
         self._configs = None
+        self._custom_envs = None
+        self._extra_hosts = None
         self.discriminator = None
 
         if configs is not None:
             self.configs = configs
+        if custom_envs is not None:
+            self.custom_envs = custom_envs
+        if extra_hosts is not None:
+            self.extra_hosts = extra_hosts
 
     @property
     def configs(self):
@@ -56,6 +70,50 @@ class ModuleContainerSettingsResDTO:
         :type configs: :class:`huaweicloudsdkiotedge.v2.ContainerConfigsResDTO`
         """
         self._configs = configs
+
+    @property
+    def custom_envs(self):
+        r"""Gets the custom_envs of this ModuleContainerSettingsResDTO.
+
+        自定义环境变量
+
+        :return: The custom_envs of this ModuleContainerSettingsResDTO.
+        :rtype: object
+        """
+        return self._custom_envs
+
+    @custom_envs.setter
+    def custom_envs(self, custom_envs):
+        r"""Sets the custom_envs of this ModuleContainerSettingsResDTO.
+
+        自定义环境变量
+
+        :param custom_envs: The custom_envs of this ModuleContainerSettingsResDTO.
+        :type custom_envs: object
+        """
+        self._custom_envs = custom_envs
+
+    @property
+    def extra_hosts(self):
+        r"""Gets the extra_hosts of this ModuleContainerSettingsResDTO.
+
+        域名解析配置集合
+
+        :return: The extra_hosts of this ModuleContainerSettingsResDTO.
+        :rtype: list[:class:`huaweicloudsdkiotedge.v2.DNSConfigDTO`]
+        """
+        return self._extra_hosts
+
+    @extra_hosts.setter
+    def extra_hosts(self, extra_hosts):
+        r"""Sets the extra_hosts of this ModuleContainerSettingsResDTO.
+
+        域名解析配置集合
+
+        :param extra_hosts: The extra_hosts of this ModuleContainerSettingsResDTO.
+        :type extra_hosts: list[:class:`huaweicloudsdkiotedge.v2.DNSConfigDTO`]
+        """
+        self._extra_hosts = extra_hosts
 
     def to_dict(self):
         result = {}

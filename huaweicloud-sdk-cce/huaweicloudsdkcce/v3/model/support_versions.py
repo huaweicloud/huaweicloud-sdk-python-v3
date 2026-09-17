@@ -31,11 +31,11 @@ class SupportVersions:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_type: **参数解释**： 支持的集群类型 **取值范围**： - VirtualMachine: CCE集群，控制节点架构为X86 - ARM64: 鲲鹏集群，控制节点架构为鲲鹏 **约束限制**： CCE Autopilot集群仅支持VirtualMachine类型
+        :param cluster_type: **参数解释**： 支持的集群类型。 **约束限制**： CCE Autopilot集群仅支持VirtualMachine类型 **取值范围**： - VirtualMachine：CCE集群，控制节点架构为X86 - BareMetal：裸金属集群，控制节点部署在裸金属服务器上 - ARM64：鲲鹏集群，控制节点架构为鲲鹏  **默认取值**： 不涉及
         :type cluster_type: str
-        :param cluster_version: 支持的集群版本（正则表达式）
+        :param cluster_version: **参数解释**： 支持的集群版本（正则表达式）。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type cluster_version: list[str]
-        :param category: 作用的集群类型 **取值范围：** - CCE：CCE Standard集群 - Turbo：CCE Turbo集群 - Autopilot：CCE Autopilot集群  **默认取值** 为空时默认为CCE Standard，CCE Turbo集群
+        :param category: **参数解释**： 作用的集群类型。 **约束限制**： 不涉及 **取值范围**： - CCE：CCE Standard集群 - Turbo：CCE Turbo集群 - Autopilot：CCE Autopilot集群  **默认取值**： 为空时默认为CCE Standard，CCE Turbo集群
         :type category: list[str]
         """
         
@@ -55,7 +55,7 @@ class SupportVersions:
     def cluster_type(self):
         r"""Gets the cluster_type of this SupportVersions.
 
-        **参数解释**： 支持的集群类型 **取值范围**： - VirtualMachine: CCE集群，控制节点架构为X86 - ARM64: 鲲鹏集群，控制节点架构为鲲鹏 **约束限制**： CCE Autopilot集群仅支持VirtualMachine类型
+        **参数解释**： 支持的集群类型。 **约束限制**： CCE Autopilot集群仅支持VirtualMachine类型 **取值范围**： - VirtualMachine：CCE集群，控制节点架构为X86 - BareMetal：裸金属集群，控制节点部署在裸金属服务器上 - ARM64：鲲鹏集群，控制节点架构为鲲鹏  **默认取值**： 不涉及
 
         :return: The cluster_type of this SupportVersions.
         :rtype: str
@@ -66,7 +66,7 @@ class SupportVersions:
     def cluster_type(self, cluster_type):
         r"""Sets the cluster_type of this SupportVersions.
 
-        **参数解释**： 支持的集群类型 **取值范围**： - VirtualMachine: CCE集群，控制节点架构为X86 - ARM64: 鲲鹏集群，控制节点架构为鲲鹏 **约束限制**： CCE Autopilot集群仅支持VirtualMachine类型
+        **参数解释**： 支持的集群类型。 **约束限制**： CCE Autopilot集群仅支持VirtualMachine类型 **取值范围**： - VirtualMachine：CCE集群，控制节点架构为X86 - BareMetal：裸金属集群，控制节点部署在裸金属服务器上 - ARM64：鲲鹏集群，控制节点架构为鲲鹏  **默认取值**： 不涉及
 
         :param cluster_type: The cluster_type of this SupportVersions.
         :type cluster_type: str
@@ -77,7 +77,7 @@ class SupportVersions:
     def cluster_version(self):
         r"""Gets the cluster_version of this SupportVersions.
 
-        支持的集群版本（正则表达式）
+        **参数解释**： 支持的集群版本（正则表达式）。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The cluster_version of this SupportVersions.
         :rtype: list[str]
@@ -88,7 +88,7 @@ class SupportVersions:
     def cluster_version(self, cluster_version):
         r"""Sets the cluster_version of this SupportVersions.
 
-        支持的集群版本（正则表达式）
+        **参数解释**： 支持的集群版本（正则表达式）。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param cluster_version: The cluster_version of this SupportVersions.
         :type cluster_version: list[str]
@@ -99,7 +99,7 @@ class SupportVersions:
     def category(self):
         r"""Gets the category of this SupportVersions.
 
-        作用的集群类型 **取值范围：** - CCE：CCE Standard集群 - Turbo：CCE Turbo集群 - Autopilot：CCE Autopilot集群  **默认取值** 为空时默认为CCE Standard，CCE Turbo集群
+        **参数解释**： 作用的集群类型。 **约束限制**： 不涉及 **取值范围**： - CCE：CCE Standard集群 - Turbo：CCE Turbo集群 - Autopilot：CCE Autopilot集群  **默认取值**： 为空时默认为CCE Standard，CCE Turbo集群
 
         :return: The category of this SupportVersions.
         :rtype: list[str]
@@ -110,7 +110,7 @@ class SupportVersions:
     def category(self, category):
         r"""Sets the category of this SupportVersions.
 
-        作用的集群类型 **取值范围：** - CCE：CCE Standard集群 - Turbo：CCE Turbo集群 - Autopilot：CCE Autopilot集群  **默认取值** 为空时默认为CCE Standard，CCE Turbo集群
+        **参数解释**： 作用的集群类型。 **约束限制**： 不涉及 **取值范围**： - CCE：CCE Standard集群 - Turbo：CCE Turbo集群 - Autopilot：CCE Autopilot集群  **默认取值**： 为空时默认为CCE Standard，CCE Turbo集群
 
         :param category: The category of this SupportVersions.
         :type category: list[str]

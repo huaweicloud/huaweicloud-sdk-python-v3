@@ -17,16 +17,18 @@ class CreateInstallCmdRequest:
     openapi_types = {
         'edge_node_id': 'str',
         'arch': 'str',
+        'enable_tpm': 'bool',
         'body': 'CreateInstallCmdRequestDTO'
     }
 
     attribute_map = {
         'edge_node_id': 'edge_node_id',
         'arch': 'arch',
+        'enable_tpm': 'enable_tpm',
         'body': 'body'
     }
 
-    def __init__(self, edge_node_id=None, arch=None, body=None):
+    def __init__(self, edge_node_id=None, arch=None, enable_tpm=None, body=None):
         r"""CreateInstallCmdRequest
 
         The model defined in huaweicloud sdk
@@ -35,6 +37,8 @@ class CreateInstallCmdRequest:
         :type edge_node_id: str
         :param arch: 节点架构
         :type arch: str
+        :param enable_tpm: 是否启用TPM
+        :type enable_tpm: bool
         :param body: Body of the CreateInstallCmdRequest
         :type body: :class:`huaweicloudsdkiotedge.v2.CreateInstallCmdRequestDTO`
         """
@@ -43,11 +47,14 @@ class CreateInstallCmdRequest:
 
         self._edge_node_id = None
         self._arch = None
+        self._enable_tpm = None
         self._body = None
         self.discriminator = None
 
         self.edge_node_id = edge_node_id
         self.arch = arch
+        if enable_tpm is not None:
+            self.enable_tpm = enable_tpm
         if body is not None:
             self.body = body
 
@@ -94,6 +101,28 @@ class CreateInstallCmdRequest:
         :type arch: str
         """
         self._arch = arch
+
+    @property
+    def enable_tpm(self):
+        r"""Gets the enable_tpm of this CreateInstallCmdRequest.
+
+        是否启用TPM
+
+        :return: The enable_tpm of this CreateInstallCmdRequest.
+        :rtype: bool
+        """
+        return self._enable_tpm
+
+    @enable_tpm.setter
+    def enable_tpm(self, enable_tpm):
+        r"""Sets the enable_tpm of this CreateInstallCmdRequest.
+
+        是否启用TPM
+
+        :param enable_tpm: The enable_tpm of this CreateInstallCmdRequest.
+        :type enable_tpm: bool
+        """
+        self._enable_tpm = enable_tpm
 
     @property
     def body(self):

@@ -51,7 +51,7 @@ class Volume:
         :type iops: int
         :param throughput: 给云硬盘配置吞吐量，单位是MiB/s，购买GPSSD2类型云硬盘时必填，其他类型不能设置。 &gt; - 只支持按需计费。 &gt; - 了解GPSSD2类型的吞吐量大小范围，请参见[云硬盘类型及性能介绍里面的云硬盘性能数据表](https://support.huaweicloud.com/productdesc-evs/zh-cn_topic_0044524691.html)。
         :type throughput: int
-        :param extend_param: 磁盘扩展参数，取值请参见创建云服务器中“extendparam”参数的描述。 [链接请参见[创建云服务器](https://support.huaweicloud.com/api-ecs/zh-cn_topic_0020212668.html)](tag:hws) [链接请参见[创建云服务器](https://support.huaweicloud.com/intl/zh-cn/api-ecs/zh-cn_topic_0020212668.html)](tag:hws_hk) 
+        :param extend_param: **参数解释**： 磁盘扩展参数，取值请参见创建云服务器中“extendparam”参数的描述。 [链接请参见[创建磁盘的extendparam字段数据结构说明](https://support.huaweicloud.com/api-ecs/zh-cn_topic_0167957246.html#section8)。](tag:hws) [链接请参见[创建磁盘的extendparam字段数据结构说明](https://support.huaweicloud.com/intl/zh-cn/api-ecs/zh-cn_topic_0167957246.html#section8)。](tag:hws_hk)  **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type extend_param: dict(str, object)
         :param cluster_id: 云服务器系统盘对应的存储池的ID。仅用作专属云集群，专属分布式存储DSS的存储池ID，即dssPoolID。  [获取方法请参见[获取单个专属分布式存储池详情](https://support.huaweicloud.com/api-dss/dss_02_1001.html)中“表3 响应参数”的ID字段。](tag:hws) [获取方法请参见[获取单个专属分布式存储池详情](https://support.huaweicloud.com/intl/zh-cn/api-dss/dss_02_1001.html)中“表3 响应参数”的ID字段。](tag:hws_hk)
         :type cluster_id: str
@@ -185,7 +185,7 @@ class Volume:
     def extend_param(self):
         r"""Gets the extend_param of this Volume.
 
-        磁盘扩展参数，取值请参见创建云服务器中“extendparam”参数的描述。 [链接请参见[创建云服务器](https://support.huaweicloud.com/api-ecs/zh-cn_topic_0020212668.html)](tag:hws) [链接请参见[创建云服务器](https://support.huaweicloud.com/intl/zh-cn/api-ecs/zh-cn_topic_0020212668.html)](tag:hws_hk) 
+        **参数解释**： 磁盘扩展参数，取值请参见创建云服务器中“extendparam”参数的描述。 [链接请参见[创建磁盘的extendparam字段数据结构说明](https://support.huaweicloud.com/api-ecs/zh-cn_topic_0167957246.html#section8)。](tag:hws) [链接请参见[创建磁盘的extendparam字段数据结构说明](https://support.huaweicloud.com/intl/zh-cn/api-ecs/zh-cn_topic_0167957246.html#section8)。](tag:hws_hk)  **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The extend_param of this Volume.
         :rtype: dict(str, object)
@@ -196,7 +196,7 @@ class Volume:
     def extend_param(self, extend_param):
         r"""Sets the extend_param of this Volume.
 
-        磁盘扩展参数，取值请参见创建云服务器中“extendparam”参数的描述。 [链接请参见[创建云服务器](https://support.huaweicloud.com/api-ecs/zh-cn_topic_0020212668.html)](tag:hws) [链接请参见[创建云服务器](https://support.huaweicloud.com/intl/zh-cn/api-ecs/zh-cn_topic_0020212668.html)](tag:hws_hk) 
+        **参数解释**： 磁盘扩展参数，取值请参见创建云服务器中“extendparam”参数的描述。 [链接请参见[创建磁盘的extendparam字段数据结构说明](https://support.huaweicloud.com/api-ecs/zh-cn_topic_0167957246.html#section8)。](tag:hws) [链接请参见[创建磁盘的extendparam字段数据结构说明](https://support.huaweicloud.com/intl/zh-cn/api-ecs/zh-cn_topic_0167957246.html#section8)。](tag:hws_hk)  **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param extend_param: The extend_param of this Volume.
         :type extend_param: dict(str, object)

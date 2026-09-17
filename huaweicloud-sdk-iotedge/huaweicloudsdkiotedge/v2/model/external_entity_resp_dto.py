@@ -45,7 +45,7 @@ class ExternalEntityRespDTO:
         :type space_id: str
         :param external_id: 外部实体ID
         :type external_id: str
-        :param protocol: 接入协议类型
+        :param protocol: 接入协议类型：MQTT，HTTP。
         :type protocol: str
         :param connection_type: 连接类型(client和server)
         :type connection_type: str
@@ -151,7 +151,7 @@ class ExternalEntityRespDTO:
     def protocol(self):
         r"""Gets the protocol of this ExternalEntityRespDTO.
 
-        接入协议类型
+        接入协议类型：MQTT，HTTP。
 
         :return: The protocol of this ExternalEntityRespDTO.
         :rtype: str
@@ -162,7 +162,7 @@ class ExternalEntityRespDTO:
     def protocol(self, protocol):
         r"""Sets the protocol of this ExternalEntityRespDTO.
 
-        接入协议类型
+        接入协议类型：MQTT，HTTP。
 
         :param protocol: The protocol of this ExternalEntityRespDTO.
         :type protocol: str

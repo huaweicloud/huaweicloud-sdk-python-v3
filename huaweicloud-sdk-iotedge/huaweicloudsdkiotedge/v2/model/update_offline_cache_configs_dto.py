@@ -15,35 +15,93 @@ class UpdateOfflineCacheConfigsDTO:
     sensitive_list = []
 
     openapi_types = {
+        'publish_order': 'str',
+        'period': 'int',
         'capacity': 'int'
     }
 
     attribute_map = {
+        'publish_order': 'publish_order',
+        'period': 'period',
         'capacity': 'capacity'
     }
 
-    def __init__(self, capacity=None):
+    def __init__(self, publish_order=None, period=None, capacity=None):
         r"""UpdateOfflineCacheConfigsDTO
 
         The model defined in huaweicloud sdk
 
-        :param capacity: 节点离线缓存容量，单位MB，默认2048，取值范围500-65536
+        :param publish_order: 数据上报优先级，可选项：realtime_first实时数据优先sequential按时序上报，默认realtime_first
+        :type publish_order: str
+        :param period: 节点离线缓存数据的储存天数，默认7，取值范围-1~14，-1表示存储天数没有限制
+        :type period: int
+        :param capacity: 节点离线缓存容量，单位MB，默认2048，取值范围500-1048576
         :type capacity: int
         """
         
         
 
+        self._publish_order = None
+        self._period = None
         self._capacity = None
         self.discriminator = None
 
+        if publish_order is not None:
+            self.publish_order = publish_order
+        if period is not None:
+            self.period = period
         if capacity is not None:
             self.capacity = capacity
+
+    @property
+    def publish_order(self):
+        r"""Gets the publish_order of this UpdateOfflineCacheConfigsDTO.
+
+        数据上报优先级，可选项：realtime_first实时数据优先sequential按时序上报，默认realtime_first
+
+        :return: The publish_order of this UpdateOfflineCacheConfigsDTO.
+        :rtype: str
+        """
+        return self._publish_order
+
+    @publish_order.setter
+    def publish_order(self, publish_order):
+        r"""Sets the publish_order of this UpdateOfflineCacheConfigsDTO.
+
+        数据上报优先级，可选项：realtime_first实时数据优先sequential按时序上报，默认realtime_first
+
+        :param publish_order: The publish_order of this UpdateOfflineCacheConfigsDTO.
+        :type publish_order: str
+        """
+        self._publish_order = publish_order
+
+    @property
+    def period(self):
+        r"""Gets the period of this UpdateOfflineCacheConfigsDTO.
+
+        节点离线缓存数据的储存天数，默认7，取值范围-1~14，-1表示存储天数没有限制
+
+        :return: The period of this UpdateOfflineCacheConfigsDTO.
+        :rtype: int
+        """
+        return self._period
+
+    @period.setter
+    def period(self, period):
+        r"""Sets the period of this UpdateOfflineCacheConfigsDTO.
+
+        节点离线缓存数据的储存天数，默认7，取值范围-1~14，-1表示存储天数没有限制
+
+        :param period: The period of this UpdateOfflineCacheConfigsDTO.
+        :type period: int
+        """
+        self._period = period
 
     @property
     def capacity(self):
         r"""Gets the capacity of this UpdateOfflineCacheConfigsDTO.
 
-        节点离线缓存容量，单位MB，默认2048，取值范围500-65536
+        节点离线缓存容量，单位MB，默认2048，取值范围500-1048576
 
         :return: The capacity of this UpdateOfflineCacheConfigsDTO.
         :rtype: int
@@ -54,7 +112,7 @@ class UpdateOfflineCacheConfigsDTO:
     def capacity(self, capacity):
         r"""Sets the capacity of this UpdateOfflineCacheConfigsDTO.
 
-        节点离线缓存容量，单位MB，默认2048，取值范围500-65536
+        节点离线缓存容量，单位MB，默认2048，取值范围500-1048576
 
         :param capacity: The capacity of this UpdateOfflineCacheConfigsDTO.
         :type capacity: int

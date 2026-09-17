@@ -17,16 +17,18 @@ class ShowPipelineRunDetailRequest:
     openapi_types = {
         'project_id': 'str',
         'pipeline_id': 'str',
-        'pipeline_run_id': 'str'
+        'pipeline_run_id': 'str',
+        'pipeline_run_number': 'str'
     }
 
     attribute_map = {
         'project_id': 'project_id',
         'pipeline_id': 'pipeline_id',
-        'pipeline_run_id': 'pipeline_run_id'
+        'pipeline_run_id': 'pipeline_run_id',
+        'pipeline_run_number': 'pipeline_run_number'
     }
 
-    def __init__(self, project_id=None, pipeline_id=None, pipeline_run_id=None):
+    def __init__(self, project_id=None, pipeline_id=None, pipeline_run_id=None, pipeline_run_number=None):
         r"""ShowPipelineRunDetailRequest
 
         The model defined in huaweicloud sdk
@@ -37,6 +39,8 @@ class ShowPipelineRunDetailRequest:
         :type pipeline_id: str
         :param pipeline_run_id: 流水线运行实例ID
         :type pipeline_run_id: str
+        :param pipeline_run_number: 流水线运行编号
+        :type pipeline_run_number: str
         """
         
         
@@ -44,12 +48,15 @@ class ShowPipelineRunDetailRequest:
         self._project_id = None
         self._pipeline_id = None
         self._pipeline_run_id = None
+        self._pipeline_run_number = None
         self.discriminator = None
 
         self.project_id = project_id
         self.pipeline_id = pipeline_id
         if pipeline_run_id is not None:
             self.pipeline_run_id = pipeline_run_id
+        if pipeline_run_number is not None:
+            self.pipeline_run_number = pipeline_run_number
 
     @property
     def project_id(self):
@@ -116,6 +123,28 @@ class ShowPipelineRunDetailRequest:
         :type pipeline_run_id: str
         """
         self._pipeline_run_id = pipeline_run_id
+
+    @property
+    def pipeline_run_number(self):
+        r"""Gets the pipeline_run_number of this ShowPipelineRunDetailRequest.
+
+        流水线运行编号
+
+        :return: The pipeline_run_number of this ShowPipelineRunDetailRequest.
+        :rtype: str
+        """
+        return self._pipeline_run_number
+
+    @pipeline_run_number.setter
+    def pipeline_run_number(self, pipeline_run_number):
+        r"""Sets the pipeline_run_number of this ShowPipelineRunDetailRequest.
+
+        流水线运行编号
+
+        :param pipeline_run_number: The pipeline_run_number of this ShowPipelineRunDetailRequest.
+        :type pipeline_run_number: str
+        """
+        self._pipeline_run_number = pipeline_run_number
 
     def to_dict(self):
         result = {}

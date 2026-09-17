@@ -33,13 +33,13 @@ class UpgradeAddonConfig:
 
         The model defined in huaweicloud sdk
 
-        :param addon_template_name: 插件名称
+        :param addon_template_name: **参数解释：** CCE插件名称 **约束限制：** 不涉及 **取值范围：** 集群中已安装的插件名称。[集群中已安装插件详情见[获取AddonInstance列表](https://support.huaweicloud.com/api-cce/cce_02_0326.html)](tag:hws) **默认取值：** 不涉及
         :type addon_template_name: str
-        :param operation: 执行动作，当前升级场景支持操作为\&quot;patch\&quot;
+        :param operation: **参数解释：** 升级插件的执行动作 **约束限制：** 不涉及 **取值范围：** - patch：表示升级插件版本  **默认取值：** 不涉及
         :type operation: str
-        :param version: 目标插件版本号
+        :param version: **参数解释：** 目标插件版本号 **约束限制：** 目标插件版本必须与目标集群版本配套。[集群版本配套关系见[查询AddonTemplates列表](https://support.huaweicloud.com/api-cce/cce_02_0321.html)](tag:hws) **取值范围：** 不涉及 **默认取值：** 不涉及
         :type version: str
-        :param values: 插件参数列表，Key:Value格式
+        :param values: **参数解释：** 插件参数列表，Key:Value格式。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type values: object
         """
         
@@ -61,7 +61,7 @@ class UpgradeAddonConfig:
     def addon_template_name(self):
         r"""Gets the addon_template_name of this UpgradeAddonConfig.
 
-        插件名称
+        **参数解释：** CCE插件名称 **约束限制：** 不涉及 **取值范围：** 集群中已安装的插件名称。[集群中已安装插件详情见[获取AddonInstance列表](https://support.huaweicloud.com/api-cce/cce_02_0326.html)](tag:hws) **默认取值：** 不涉及
 
         :return: The addon_template_name of this UpgradeAddonConfig.
         :rtype: str
@@ -72,7 +72,7 @@ class UpgradeAddonConfig:
     def addon_template_name(self, addon_template_name):
         r"""Sets the addon_template_name of this UpgradeAddonConfig.
 
-        插件名称
+        **参数解释：** CCE插件名称 **约束限制：** 不涉及 **取值范围：** 集群中已安装的插件名称。[集群中已安装插件详情见[获取AddonInstance列表](https://support.huaweicloud.com/api-cce/cce_02_0326.html)](tag:hws) **默认取值：** 不涉及
 
         :param addon_template_name: The addon_template_name of this UpgradeAddonConfig.
         :type addon_template_name: str
@@ -83,7 +83,7 @@ class UpgradeAddonConfig:
     def operation(self):
         r"""Gets the operation of this UpgradeAddonConfig.
 
-        执行动作，当前升级场景支持操作为\"patch\"
+        **参数解释：** 升级插件的执行动作 **约束限制：** 不涉及 **取值范围：** - patch：表示升级插件版本  **默认取值：** 不涉及
 
         :return: The operation of this UpgradeAddonConfig.
         :rtype: str
@@ -94,7 +94,7 @@ class UpgradeAddonConfig:
     def operation(self, operation):
         r"""Sets the operation of this UpgradeAddonConfig.
 
-        执行动作，当前升级场景支持操作为\"patch\"
+        **参数解释：** 升级插件的执行动作 **约束限制：** 不涉及 **取值范围：** - patch：表示升级插件版本  **默认取值：** 不涉及
 
         :param operation: The operation of this UpgradeAddonConfig.
         :type operation: str
@@ -105,7 +105,7 @@ class UpgradeAddonConfig:
     def version(self):
         r"""Gets the version of this UpgradeAddonConfig.
 
-        目标插件版本号
+        **参数解释：** 目标插件版本号 **约束限制：** 目标插件版本必须与目标集群版本配套。[集群版本配套关系见[查询AddonTemplates列表](https://support.huaweicloud.com/api-cce/cce_02_0321.html)](tag:hws) **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The version of this UpgradeAddonConfig.
         :rtype: str
@@ -116,7 +116,7 @@ class UpgradeAddonConfig:
     def version(self, version):
         r"""Sets the version of this UpgradeAddonConfig.
 
-        目标插件版本号
+        **参数解释：** 目标插件版本号 **约束限制：** 目标插件版本必须与目标集群版本配套。[集群版本配套关系见[查询AddonTemplates列表](https://support.huaweicloud.com/api-cce/cce_02_0321.html)](tag:hws) **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param version: The version of this UpgradeAddonConfig.
         :type version: str
@@ -127,7 +127,7 @@ class UpgradeAddonConfig:
     def values(self):
         r"""Gets the values of this UpgradeAddonConfig.
 
-        插件参数列表，Key:Value格式
+        **参数解释：** 插件参数列表，Key:Value格式。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The values of this UpgradeAddonConfig.
         :rtype: object
@@ -138,7 +138,7 @@ class UpgradeAddonConfig:
     def values(self, values):
         r"""Sets the values of this UpgradeAddonConfig.
 
-        插件参数列表，Key:Value格式
+        **参数解释：** 插件参数列表，Key:Value格式。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param values: The values of this UpgradeAddonConfig.
         :type values: object

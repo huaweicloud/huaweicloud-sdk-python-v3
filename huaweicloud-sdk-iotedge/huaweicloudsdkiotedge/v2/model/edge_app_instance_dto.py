@@ -29,9 +29,9 @@ class EdgeAppInstanceDTO:
 
         The model defined in huaweicloud sdk
 
-        :param edge_app_id: 边缘应用id，只允许数字、英文小写、中划线，切必须以字母或数字结尾
+        :param edge_app_id: 边缘应用id，只允许数字、英文小写、中划线，且必须以字母或数字结尾
         :type edge_app_id: str
-        :param app_version: 边缘应用版本，只允许数字、英文小写、中划线，切必须以字母或数字结尾
+        :param app_version: 边缘应用版本，只允许数字、英文小写、中划线，且必须以字母或数字结尾
         :type app_version: str
         """
         
@@ -49,7 +49,7 @@ class EdgeAppInstanceDTO:
     def edge_app_id(self):
         r"""Gets the edge_app_id of this EdgeAppInstanceDTO.
 
-        边缘应用id，只允许数字、英文小写、中划线，切必须以字母或数字结尾
+        边缘应用id，只允许数字、英文小写、中划线，且必须以字母或数字结尾
 
         :return: The edge_app_id of this EdgeAppInstanceDTO.
         :rtype: str
@@ -60,7 +60,7 @@ class EdgeAppInstanceDTO:
     def edge_app_id(self, edge_app_id):
         r"""Sets the edge_app_id of this EdgeAppInstanceDTO.
 
-        边缘应用id，只允许数字、英文小写、中划线，切必须以字母或数字结尾
+        边缘应用id，只允许数字、英文小写、中划线，且必须以字母或数字结尾
 
         :param edge_app_id: The edge_app_id of this EdgeAppInstanceDTO.
         :type edge_app_id: str
@@ -71,7 +71,7 @@ class EdgeAppInstanceDTO:
     def app_version(self):
         r"""Gets the app_version of this EdgeAppInstanceDTO.
 
-        边缘应用版本，只允许数字、英文小写、中划线，切必须以字母或数字结尾
+        边缘应用版本，只允许数字、英文小写、中划线，且必须以字母或数字结尾
 
         :return: The app_version of this EdgeAppInstanceDTO.
         :rtype: str
@@ -82,7 +82,7 @@ class EdgeAppInstanceDTO:
     def app_version(self, app_version):
         r"""Sets the app_version of this EdgeAppInstanceDTO.
 
-        边缘应用版本，只允许数字、英文小写、中划线，切必须以字母或数字结尾
+        边缘应用版本，只允许数字、英文小写、中划线，且必须以字母或数字结尾
 
         :param app_version: The app_version of this EdgeAppInstanceDTO.
         :type app_version: str

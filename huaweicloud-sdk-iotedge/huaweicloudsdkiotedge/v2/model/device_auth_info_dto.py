@@ -31,7 +31,7 @@ class DeviceAuthInfoDTO:
 
         The model defined in huaweicloud sdk
 
-        :param auth_type: 边缘节点认证方式，不填默认为密钥认证接入方式(SECRET)。
+        :param auth_type: 边缘节点认证方式。
         :type auth_type: str
         :param fingerprint: 证书指纹，认证类型使用证书认证接入(CERTIFICATES)需填写该字段。
         :type fingerprint: str
@@ -56,7 +56,7 @@ class DeviceAuthInfoDTO:
     def auth_type(self):
         r"""Gets the auth_type of this DeviceAuthInfoDTO.
 
-        边缘节点认证方式，不填默认为密钥认证接入方式(SECRET)。
+        边缘节点认证方式。
 
         :return: The auth_type of this DeviceAuthInfoDTO.
         :rtype: str
@@ -67,7 +67,7 @@ class DeviceAuthInfoDTO:
     def auth_type(self, auth_type):
         r"""Sets the auth_type of this DeviceAuthInfoDTO.
 
-        边缘节点认证方式，不填默认为密钥认证接入方式(SECRET)。
+        边缘节点认证方式。
 
         :param auth_type: The auth_type of this DeviceAuthInfoDTO.
         :type auth_type: str

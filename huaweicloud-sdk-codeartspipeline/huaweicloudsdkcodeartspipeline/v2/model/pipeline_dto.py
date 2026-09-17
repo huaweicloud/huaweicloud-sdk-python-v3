@@ -28,7 +28,14 @@ class PipelineDTO:
         'group_id': 'str',
         'id': 'str',
         'concurrency_control': 'PipelineConcurrencyMgmt',
-        'security_level': 'int'
+        'security_level': 'int',
+        'disable_release_branch_management': 'bool',
+        'execution_plans': 'list[object]',
+        'project_id': 'str',
+        'cancel_strategy': 'object',
+        'confidentiality_code': 'str',
+        'agency_name': 'str',
+        'variable_group_ids': 'list[str]'
     }
 
     attribute_map = {
@@ -45,10 +52,17 @@ class PipelineDTO:
         'group_id': 'group_id',
         'id': 'id',
         'concurrency_control': 'concurrency_control',
-        'security_level': 'security_level'
+        'security_level': 'security_level',
+        'disable_release_branch_management': 'disable_release_branch_management',
+        'execution_plans': 'execution_plans',
+        'project_id': 'project_id',
+        'cancel_strategy': 'cancel_strategy',
+        'confidentiality_code': 'confidentiality_code',
+        'agency_name': 'agency_name',
+        'variable_group_ids': 'variable_group_ids'
     }
 
-    def __init__(self, name=None, description=None, is_publish=None, sources=None, variables=None, schedules=None, triggers=None, manifest_version=None, definition=None, project_name=None, group_id=None, id=None, concurrency_control=None, security_level=None):
+    def __init__(self, name=None, description=None, is_publish=None, sources=None, variables=None, schedules=None, triggers=None, manifest_version=None, definition=None, project_name=None, group_id=None, id=None, concurrency_control=None, security_level=None, disable_release_branch_management=None, execution_plans=None, project_id=None, cancel_strategy=None, confidentiality_code=None, agency_name=None, variable_group_ids=None):
         r"""PipelineDTO
 
         The model defined in huaweicloud sdk
@@ -75,12 +89,26 @@ class PipelineDTO:
         :type project_name: str
         :param group_id: **参数解释**： 流水线组ID。 **约束限制**： 不涉及。 **取值范围**： 32位字符，仅由数字和字母组成。 **默认取值**： 不涉及。 
         :type group_id: str
-        :param id: **参数解释**： 复制场景使用，为流水线组ID。 **约束限制**： 不涉及。 **取值范围**： 32位字符，仅由数字和字母组成。 **默认取值**： 不涉及。 
+        :param id: **参数解释**： 复制场景使用，为原流水线ID。 **约束限制**： 不涉及。 **取值范围**： 32位字符，仅由数字和字母组成。 **默认取值**： 不涉及。 
         :type id: str
         :param concurrency_control: 
         :type concurrency_control: :class:`huaweicloudsdkcodeartspipeline.v2.PipelineConcurrencyMgmt`
         :param security_level: **参数解释**： 流水线涉密等级。 **约束限制**： 非涉密场景不涉及，涉密场景必填。 **取值范围**： 正整数（1为最低密级）。 **默认取值**： 不涉及。 
         :type security_level: int
+        :param disable_release_branch_management: **参数解释**： 是否禁用自动生成阶段，仅变更流水线适用。默认值为false，即默认启用自动生成阶段。 **约束限制**： 不涉及。 **取值范围**： - true：禁用自动生成阶段。 - false：启用自动生成阶段。 **默认取值**： false。 
+        :type disable_release_branch_management: bool
+        :param execution_plans: **参数解释**： 流水线执行计划列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
+        :type execution_plans: list[object]
+        :param project_id: **参数解释**： 项目ID。 **约束限制**： 不涉及。 **取值范围**： 32位字符，仅由数字和字母组成。 **默认取值**： 不涉及。 
+        :type project_id: str
+        :param cancel_strategy: **参数解释**： 流水线取消运行策略。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
+        :type cancel_strategy: object
+        :param confidentiality_code: **参数解释**： 流水线密级code。 **约束限制**： 非涉密场景不涉及，涉密场景必填。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
+        :type confidentiality_code: str
+        :param agency_name: **参数解释**： 委托名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
+        :type agency_name: str
+        :param variable_group_ids: **参数解释**： 关联的通用参数组ID列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
+        :type variable_group_ids: list[str]
         """
         
         
@@ -99,6 +127,13 @@ class PipelineDTO:
         self._id = None
         self._concurrency_control = None
         self._security_level = None
+        self._disable_release_branch_management = None
+        self._execution_plans = None
+        self._project_id = None
+        self._cancel_strategy = None
+        self._confidentiality_code = None
+        self._agency_name = None
+        self._variable_group_ids = None
         self.discriminator = None
 
         self.name = name
@@ -126,6 +161,20 @@ class PipelineDTO:
             self.concurrency_control = concurrency_control
         if security_level is not None:
             self.security_level = security_level
+        if disable_release_branch_management is not None:
+            self.disable_release_branch_management = disable_release_branch_management
+        if execution_plans is not None:
+            self.execution_plans = execution_plans
+        if project_id is not None:
+            self.project_id = project_id
+        if cancel_strategy is not None:
+            self.cancel_strategy = cancel_strategy
+        if confidentiality_code is not None:
+            self.confidentiality_code = confidentiality_code
+        if agency_name is not None:
+            self.agency_name = agency_name
+        if variable_group_ids is not None:
+            self.variable_group_ids = variable_group_ids
 
     @property
     def name(self):
@@ -373,7 +422,7 @@ class PipelineDTO:
     def id(self):
         r"""Gets the id of this PipelineDTO.
 
-        **参数解释**： 复制场景使用，为流水线组ID。 **约束限制**： 不涉及。 **取值范围**： 32位字符，仅由数字和字母组成。 **默认取值**： 不涉及。 
+        **参数解释**： 复制场景使用，为原流水线ID。 **约束限制**： 不涉及。 **取值范围**： 32位字符，仅由数字和字母组成。 **默认取值**： 不涉及。 
 
         :return: The id of this PipelineDTO.
         :rtype: str
@@ -384,7 +433,7 @@ class PipelineDTO:
     def id(self, id):
         r"""Sets the id of this PipelineDTO.
 
-        **参数解释**： 复制场景使用，为流水线组ID。 **约束限制**： 不涉及。 **取值范围**： 32位字符，仅由数字和字母组成。 **默认取值**： 不涉及。 
+        **参数解释**： 复制场景使用，为原流水线ID。 **约束限制**： 不涉及。 **取值范围**： 32位字符，仅由数字和字母组成。 **默认取值**： 不涉及。 
 
         :param id: The id of this PipelineDTO.
         :type id: str
@@ -430,6 +479,160 @@ class PipelineDTO:
         :type security_level: int
         """
         self._security_level = security_level
+
+    @property
+    def disable_release_branch_management(self):
+        r"""Gets the disable_release_branch_management of this PipelineDTO.
+
+        **参数解释**： 是否禁用自动生成阶段，仅变更流水线适用。默认值为false，即默认启用自动生成阶段。 **约束限制**： 不涉及。 **取值范围**： - true：禁用自动生成阶段。 - false：启用自动生成阶段。 **默认取值**： false。 
+
+        :return: The disable_release_branch_management of this PipelineDTO.
+        :rtype: bool
+        """
+        return self._disable_release_branch_management
+
+    @disable_release_branch_management.setter
+    def disable_release_branch_management(self, disable_release_branch_management):
+        r"""Sets the disable_release_branch_management of this PipelineDTO.
+
+        **参数解释**： 是否禁用自动生成阶段，仅变更流水线适用。默认值为false，即默认启用自动生成阶段。 **约束限制**： 不涉及。 **取值范围**： - true：禁用自动生成阶段。 - false：启用自动生成阶段。 **默认取值**： false。 
+
+        :param disable_release_branch_management: The disable_release_branch_management of this PipelineDTO.
+        :type disable_release_branch_management: bool
+        """
+        self._disable_release_branch_management = disable_release_branch_management
+
+    @property
+    def execution_plans(self):
+        r"""Gets the execution_plans of this PipelineDTO.
+
+        **参数解释**： 流水线执行计划列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
+
+        :return: The execution_plans of this PipelineDTO.
+        :rtype: list[object]
+        """
+        return self._execution_plans
+
+    @execution_plans.setter
+    def execution_plans(self, execution_plans):
+        r"""Sets the execution_plans of this PipelineDTO.
+
+        **参数解释**： 流水线执行计划列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
+
+        :param execution_plans: The execution_plans of this PipelineDTO.
+        :type execution_plans: list[object]
+        """
+        self._execution_plans = execution_plans
+
+    @property
+    def project_id(self):
+        r"""Gets the project_id of this PipelineDTO.
+
+        **参数解释**： 项目ID。 **约束限制**： 不涉及。 **取值范围**： 32位字符，仅由数字和字母组成。 **默认取值**： 不涉及。 
+
+        :return: The project_id of this PipelineDTO.
+        :rtype: str
+        """
+        return self._project_id
+
+    @project_id.setter
+    def project_id(self, project_id):
+        r"""Sets the project_id of this PipelineDTO.
+
+        **参数解释**： 项目ID。 **约束限制**： 不涉及。 **取值范围**： 32位字符，仅由数字和字母组成。 **默认取值**： 不涉及。 
+
+        :param project_id: The project_id of this PipelineDTO.
+        :type project_id: str
+        """
+        self._project_id = project_id
+
+    @property
+    def cancel_strategy(self):
+        r"""Gets the cancel_strategy of this PipelineDTO.
+
+        **参数解释**： 流水线取消运行策略。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
+
+        :return: The cancel_strategy of this PipelineDTO.
+        :rtype: object
+        """
+        return self._cancel_strategy
+
+    @cancel_strategy.setter
+    def cancel_strategy(self, cancel_strategy):
+        r"""Sets the cancel_strategy of this PipelineDTO.
+
+        **参数解释**： 流水线取消运行策略。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
+
+        :param cancel_strategy: The cancel_strategy of this PipelineDTO.
+        :type cancel_strategy: object
+        """
+        self._cancel_strategy = cancel_strategy
+
+    @property
+    def confidentiality_code(self):
+        r"""Gets the confidentiality_code of this PipelineDTO.
+
+        **参数解释**： 流水线密级code。 **约束限制**： 非涉密场景不涉及，涉密场景必填。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
+
+        :return: The confidentiality_code of this PipelineDTO.
+        :rtype: str
+        """
+        return self._confidentiality_code
+
+    @confidentiality_code.setter
+    def confidentiality_code(self, confidentiality_code):
+        r"""Sets the confidentiality_code of this PipelineDTO.
+
+        **参数解释**： 流水线密级code。 **约束限制**： 非涉密场景不涉及，涉密场景必填。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
+
+        :param confidentiality_code: The confidentiality_code of this PipelineDTO.
+        :type confidentiality_code: str
+        """
+        self._confidentiality_code = confidentiality_code
+
+    @property
+    def agency_name(self):
+        r"""Gets the agency_name of this PipelineDTO.
+
+        **参数解释**： 委托名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
+
+        :return: The agency_name of this PipelineDTO.
+        :rtype: str
+        """
+        return self._agency_name
+
+    @agency_name.setter
+    def agency_name(self, agency_name):
+        r"""Sets the agency_name of this PipelineDTO.
+
+        **参数解释**： 委托名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
+
+        :param agency_name: The agency_name of this PipelineDTO.
+        :type agency_name: str
+        """
+        self._agency_name = agency_name
+
+    @property
+    def variable_group_ids(self):
+        r"""Gets the variable_group_ids of this PipelineDTO.
+
+        **参数解释**： 关联的通用参数组ID列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
+
+        :return: The variable_group_ids of this PipelineDTO.
+        :rtype: list[str]
+        """
+        return self._variable_group_ids
+
+    @variable_group_ids.setter
+    def variable_group_ids(self, variable_group_ids):
+        r"""Sets the variable_group_ids of this PipelineDTO.
+
+        **参数解释**： 关联的通用参数组ID列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
+
+        :param variable_group_ids: The variable_group_ids of this PipelineDTO.
+        :type variable_group_ids: list[str]
+        """
+        self._variable_group_ids = variable_group_ids
 
     def to_dict(self):
         result = {}

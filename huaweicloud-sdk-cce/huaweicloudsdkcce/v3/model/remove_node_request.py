@@ -16,21 +16,25 @@ class RemoveNodeRequest:
 
     openapi_types = {
         'cluster_id': 'str',
+        'remove_node_system_security_group': 'bool',
         'body': 'RemoveNodesTask'
     }
 
     attribute_map = {
         'cluster_id': 'cluster_id',
+        'remove_node_system_security_group': 'removeNodeSystemSecurityGroup',
         'body': 'body'
     }
 
-    def __init__(self, cluster_id=None, body=None):
+    def __init__(self, cluster_id=None, remove_node_system_security_group=None, body=None):
         r"""RemoveNodeRequest
 
         The model defined in huaweicloud sdk
 
         :param cluster_id: 集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
         :type cluster_id: str
+        :param remove_node_system_security_group: **参数解释**： 移除节点时是否解绑节点默认安全组。 **约束限制**： 不涉及 **取值范围**： - false：移除节点时保留节点默认安全组 - true：移除节点时解绑节点默认安全组  **默认取值**： false
+        :type remove_node_system_security_group: bool
         :param body: Body of the RemoveNodeRequest
         :type body: :class:`huaweicloudsdkcce.v3.RemoveNodesTask`
         """
@@ -38,10 +42,13 @@ class RemoveNodeRequest:
         
 
         self._cluster_id = None
+        self._remove_node_system_security_group = None
         self._body = None
         self.discriminator = None
 
         self.cluster_id = cluster_id
+        if remove_node_system_security_group is not None:
+            self.remove_node_system_security_group = remove_node_system_security_group
         if body is not None:
             self.body = body
 
@@ -66,6 +73,28 @@ class RemoveNodeRequest:
         :type cluster_id: str
         """
         self._cluster_id = cluster_id
+
+    @property
+    def remove_node_system_security_group(self):
+        r"""Gets the remove_node_system_security_group of this RemoveNodeRequest.
+
+        **参数解释**： 移除节点时是否解绑节点默认安全组。 **约束限制**： 不涉及 **取值范围**： - false：移除节点时保留节点默认安全组 - true：移除节点时解绑节点默认安全组  **默认取值**： false
+
+        :return: The remove_node_system_security_group of this RemoveNodeRequest.
+        :rtype: bool
+        """
+        return self._remove_node_system_security_group
+
+    @remove_node_system_security_group.setter
+    def remove_node_system_security_group(self, remove_node_system_security_group):
+        r"""Sets the remove_node_system_security_group of this RemoveNodeRequest.
+
+        **参数解释**： 移除节点时是否解绑节点默认安全组。 **约束限制**： 不涉及 **取值范围**： - false：移除节点时保留节点默认安全组 - true：移除节点时解绑节点默认安全组  **默认取值**： false
+
+        :param remove_node_system_security_group: The remove_node_system_security_group of this RemoveNodeRequest.
+        :type remove_node_system_security_group: bool
+        """
+        self._remove_node_system_security_group = remove_node_system_security_group
 
     @property
     def body(self):

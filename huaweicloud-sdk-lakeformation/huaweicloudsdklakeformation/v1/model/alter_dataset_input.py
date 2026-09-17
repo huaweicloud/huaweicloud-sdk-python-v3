@@ -31,7 +31,7 @@ class AlterDatasetInput:
 
         The model defined in huaweicloud sdk
 
-        :param description: 数据集的描述信息
+        :param description: 数据集描述信息。最大长度为4000个字符。
         :type description: str
         :param dataset_format: 
         :type dataset_format: :class:`huaweicloudsdklakeformation.v1.DatasetFileFormat`
@@ -57,7 +57,7 @@ class AlterDatasetInput:
     def description(self):
         r"""Gets the description of this AlterDatasetInput.
 
-        数据集的描述信息
+        数据集描述信息。最大长度为4000个字符。
 
         :return: The description of this AlterDatasetInput.
         :rtype: str
@@ -68,7 +68,7 @@ class AlterDatasetInput:
     def description(self, description):
         r"""Sets the description of this AlterDatasetInput.
 
-        数据集的描述信息
+        数据集描述信息。最大长度为4000个字符。
 
         :param description: The description of this AlterDatasetInput.
         :type description: str

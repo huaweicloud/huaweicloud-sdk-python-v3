@@ -1,0 +1,165 @@
+# coding: utf-8
+
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
+
+
+class ListTestBranchesRequest:
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+    sensitive_list = []
+
+    openapi_types = {
+        'project_uuid': 'str',
+        'sort_field': 'str',
+        'sort_type': 'str'
+    }
+
+    attribute_map = {
+        'project_uuid': 'project_uuid',
+        'sort_field': 'sort_field',
+        'sort_type': 'sort_type'
+    }
+
+    def __init__(self, project_uuid=None, sort_field=None, sort_type=None):
+        r"""ListTestBranchesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param project_uuid: 项目ID（云龙场景，传入微服务ID）
+        :type project_uuid: str
+        :param sort_field: 排序字段
+        :type sort_field: str
+        :param sort_type: 排序方式
+        :type sort_type: str
+        """
+        
+        
+
+        self._project_uuid = None
+        self._sort_field = None
+        self._sort_type = None
+        self.discriminator = None
+
+        self.project_uuid = project_uuid
+        if sort_field is not None:
+            self.sort_field = sort_field
+        if sort_type is not None:
+            self.sort_type = sort_type
+
+    @property
+    def project_uuid(self):
+        r"""Gets the project_uuid of this ListTestBranchesRequest.
+
+        项目ID（云龙场景，传入微服务ID）
+
+        :return: The project_uuid of this ListTestBranchesRequest.
+        :rtype: str
+        """
+        return self._project_uuid
+
+    @project_uuid.setter
+    def project_uuid(self, project_uuid):
+        r"""Sets the project_uuid of this ListTestBranchesRequest.
+
+        项目ID（云龙场景，传入微服务ID）
+
+        :param project_uuid: The project_uuid of this ListTestBranchesRequest.
+        :type project_uuid: str
+        """
+        self._project_uuid = project_uuid
+
+    @property
+    def sort_field(self):
+        r"""Gets the sort_field of this ListTestBranchesRequest.
+
+        排序字段
+
+        :return: The sort_field of this ListTestBranchesRequest.
+        :rtype: str
+        """
+        return self._sort_field
+
+    @sort_field.setter
+    def sort_field(self, sort_field):
+        r"""Sets the sort_field of this ListTestBranchesRequest.
+
+        排序字段
+
+        :param sort_field: The sort_field of this ListTestBranchesRequest.
+        :type sort_field: str
+        """
+        self._sort_field = sort_field
+
+    @property
+    def sort_type(self):
+        r"""Gets the sort_type of this ListTestBranchesRequest.
+
+        排序方式
+
+        :return: The sort_type of this ListTestBranchesRequest.
+        :rtype: str
+        """
+        return self._sort_type
+
+    @sort_type.setter
+    def sort_type(self, sort_type):
+        r"""Sets the sort_type of this ListTestBranchesRequest.
+
+        排序方式
+
+        :param sort_type: The sort_type of this ListTestBranchesRequest.
+        :type sort_type: str
+        """
+        self._sort_type = sort_type
+
+    def to_dict(self):
+        result = {}
+
+        for attr, _ in self.openapi_types.items():
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        import simplejson as json
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
+
+    def __repr__(self):
+        """For `print`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, ListTestBranchesRequest):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

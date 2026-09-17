@@ -27,7 +27,7 @@ class PrecheckCluserResponseMetadata:
 
         The model defined in huaweicloud sdk
 
-        :param uid: 检查任务ID
+        :param uid: **参数解释：** 检查任务ID **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type uid: str
         """
         
@@ -43,7 +43,7 @@ class PrecheckCluserResponseMetadata:
     def uid(self):
         r"""Gets the uid of this PrecheckCluserResponseMetadata.
 
-        检查任务ID
+        **参数解释：** 检查任务ID **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The uid of this PrecheckCluserResponseMetadata.
         :rtype: str
@@ -54,7 +54,7 @@ class PrecheckCluserResponseMetadata:
     def uid(self, uid):
         r"""Sets the uid of this PrecheckCluserResponseMetadata.
 
-        检查任务ID
+        **参数解释：** 检查任务ID **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param uid: The uid of this PrecheckCluserResponseMetadata.
         :type uid: str

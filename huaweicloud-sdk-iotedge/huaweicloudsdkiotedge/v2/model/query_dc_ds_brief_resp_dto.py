@@ -65,7 +65,7 @@ class QueryDcDsBriefRespDTO:
         :type tpl_id: str
         :param quality_report: 质量上报开关，不携带或值不为true，默认为false
         :type quality_report: bool
-        :param edge_app_name: 应用ID
+        :param edge_app_name: 应用名称
         :type edge_app_name: str
         :param connection_info: 数采连接信息
         :type connection_info: object
@@ -266,7 +266,7 @@ class QueryDcDsBriefRespDTO:
     def edge_app_name(self):
         r"""Gets the edge_app_name of this QueryDcDsBriefRespDTO.
 
-        应用ID
+        应用名称
 
         :return: The edge_app_name of this QueryDcDsBriefRespDTO.
         :rtype: str
@@ -277,7 +277,7 @@ class QueryDcDsBriefRespDTO:
     def edge_app_name(self, edge_app_name):
         r"""Sets the edge_app_name of this QueryDcDsBriefRespDTO.
 
-        应用ID
+        应用名称
 
         :param edge_app_name: The edge_app_name of this QueryDcDsBriefRespDTO.
         :type edge_app_name: str

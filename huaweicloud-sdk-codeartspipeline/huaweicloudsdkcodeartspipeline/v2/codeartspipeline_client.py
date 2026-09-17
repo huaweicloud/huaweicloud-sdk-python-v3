@@ -100,6 +100,73 @@ class CodeArtsPipelineClient(Client):
 
         return http_info
 
+    def create_alert_policy(self, request):
+        r"""创建告警策略
+
+        创建流水线告警策略
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateAlertPolicy
+        :type request: :class:`huaweicloudsdkcodeartspipeline.v2.CreateAlertPolicyRequest`
+        :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.CreateAlertPolicyResponse`
+        """
+        http_info = self._create_alert_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_alert_policy_invoker(self, request):
+        http_info = self._create_alert_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_alert_policy_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{tenant_id}/api/alert/policies",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAlertPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'tenant_id' in local_var_params:
+            path_params['tenant_id'] = local_var_params['tenant_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_basic_plugin(self, request):
         r"""创建基础插件
 
@@ -257,6 +324,73 @@ class CodeArtsPipelineClient(Client):
             "resource_path": "/v5/{project_id}/api/pipeline-group/create",
             "request_type": request.__class__.__name__,
             "response_type": "CreatePipelineGroupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_pipeline_tag(self, request):
+        r"""新建流水线标签
+
+        新建流水线标签
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreatePipelineTag
+        :type request: :class:`huaweicloudsdkcodeartspipeline.v2.CreatePipelineTagRequest`
+        :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.CreatePipelineTagResponse`
+        """
+        http_info = self._create_pipeline_tag_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_pipeline_tag_invoker(self, request):
+        http_info = self._create_pipeline_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_pipeline_tag_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/api/pipeline-tag/create",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePipelineTagResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -634,6 +768,140 @@ class CodeArtsPipelineClient(Client):
 
         return http_info
 
+    def create_variable_group(self, request):
+        r"""创建参数组
+
+        创建参数组
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateVariableGroup
+        :type request: :class:`huaweicloudsdkcodeartspipeline.v2.CreateVariableGroupRequest`
+        :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.CreateVariableGroupResponse`
+        """
+        http_info = self._create_variable_group_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_variable_group_invoker(self, request):
+        http_info = self._create_variable_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_variable_group_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/api/pipeline/variable/group/create",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateVariableGroupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_alert_policy(self, request):
+        r"""删除告警策略
+
+        删除流水线告警策略
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteAlertPolicy
+        :type request: :class:`huaweicloudsdkcodeartspipeline.v2.DeleteAlertPolicyRequest`
+        :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.DeleteAlertPolicyResponse`
+        """
+        http_info = self._delete_alert_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_alert_policy_invoker(self, request):
+        http_info = self._delete_alert_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_alert_policy_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v5/{tenant_id}/api/alert/policies/{policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAlertPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'tenant_id' in local_var_params:
+            path_params['tenant_id'] = local_var_params['tenant_id']
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_basic_plugin(self, request):
         r"""删除基础插件
 
@@ -745,6 +1013,73 @@ class CodeArtsPipelineClient(Client):
         query_params = []
         if 'id' in local_var_params:
             query_params.append(('id', local_var_params['id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_pipeline_tag(self, request):
+        r"""删除流水线标签
+
+        删除流水线标签
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeletePipelineTag
+        :type request: :class:`huaweicloudsdkcodeartspipeline.v2.DeletePipelineTagRequest`
+        :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.DeletePipelineTagResponse`
+        """
+        http_info = self._delete_pipeline_tag_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_pipeline_tag_invoker(self, request):
+        http_info = self._delete_pipeline_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_pipeline_tag_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v5/{project_id}/api/pipeline-tag/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePipelineTagResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+        if 'tag_id' in local_var_params:
+            query_params.append(('tagId', local_var_params['tag_id']))
 
         header_params = {}
 
@@ -1015,6 +1350,73 @@ class CodeArtsPipelineClient(Client):
             path_params['domain_id'] = local_var_params['domain_id']
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_variable_group(self, request):
+        r"""删除参数组
+
+        删除参数组
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteVariableGroup
+        :type request: :class:`huaweicloudsdkcodeartspipeline.v2.DeleteVariableGroupRequest`
+        :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.DeleteVariableGroupResponse`
+        """
+        http_info = self._delete_variable_group_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_variable_group_invoker(self, request):
+        http_info = self._delete_variable_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_variable_group_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v5/{project_id}/api/pipeline/variable/group/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteVariableGroupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
 
         header_params = {}
 
@@ -1527,6 +1929,73 @@ class CodeArtsPipelineClient(Client):
             ['application/json'])
 
         auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_pipeline_tag(self, request):
+        r"""查询流水线标签列表
+
+        查询流水线标签列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListPipelineTag
+        :type request: :class:`huaweicloudsdkcodeartspipeline.v2.ListPipelineTagRequest`
+        :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.ListPipelineTagResponse`
+        """
+        http_info = self._list_pipeline_tag_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_pipeline_tag_invoker(self, request):
+        http_info = self._list_pipeline_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_pipeline_tag_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/api/pipeline-tag/list",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPipelineTagResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+        if 'proj_id' in local_var_params:
+            query_params.append(('proj_id', local_var_params['proj_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -2200,6 +2669,73 @@ class CodeArtsPipelineClient(Client):
 
         return http_info
 
+    def list_variable_groups(self, request):
+        r"""查询参数组列表
+
+        查询参数组列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListVariableGroups
+        :type request: :class:`huaweicloudsdkcodeartspipeline.v2.ListVariableGroupsRequest`
+        :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.ListVariableGroupsResponse`
+        """
+        http_info = self._list_variable_groups_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_variable_groups_invoker(self, request):
+        http_info = self._list_variable_groups_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_variable_groups_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/api/pipeline/variable/group/list",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListVariableGroupsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def publish_plugin(self, request):
         r"""发布插件
 
@@ -2454,6 +2990,73 @@ class CodeArtsPipelineClient(Client):
             ['application/json'])
 
         auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_alert_policy(self, request):
+        r"""查询告警策略详情
+
+        查询流水线告警策略详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowAlertPolicy
+        :type request: :class:`huaweicloudsdkcodeartspipeline.v2.ShowAlertPolicyRequest`
+        :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.ShowAlertPolicyResponse`
+        """
+        http_info = self._show_alert_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_alert_policy_invoker(self, request):
+        http_info = self._show_alert_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_alert_policy_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{tenant_id}/api/alert/policies/{policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAlertPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'tenant_id' in local_var_params:
+            path_params['tenant_id'] = local_var_params['tenant_id']
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -3070,7 +3673,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def show_project_strategy(self, request):
-        r"""show_project_strategy
+        r"""查询项目级策略详情
 
         查询项目级策略详情
         
@@ -3398,6 +4001,73 @@ class CodeArtsPipelineClient(Client):
             ['application/json'])
 
         auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_variable_group_detail(self, request):
+        r"""查询参数组详情
+
+        查询参数组详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowVariableGroupDetail
+        :type request: :class:`huaweicloudsdkcodeartspipeline.v2.ShowVariableGroupDetailRequest`
+        :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.ShowVariableGroupDetailResponse`
+        """
+        http_info = self._show_variable_group_detail_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_variable_group_detail_invoker(self, request):
+        http_info = self._show_variable_group_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_variable_group_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/api/pipeline/variable/group/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowVariableGroupDetailResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -3788,7 +4458,7 @@ class CodeArtsPipelineClient(Client):
 
         query_params = []
         if 'component_id' in local_var_params:
-            query_params.append(('componentId', local_var_params['component_id']))
+            query_params.append(('component_id', local_var_params['component_id']))
 
         header_params = {}
 
@@ -4776,6 +5446,77 @@ class CodeArtsPipelineClient(Client):
 
         return http_info
 
+    def accept_checkpoint(self, request):
+        r"""手动卡点通过
+
+        手动卡点通过
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for AcceptCheckpoint
+        :type request: :class:`huaweicloudsdkcodeartspipeline.v2.AcceptCheckpointRequest`
+        :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.AcceptCheckpointResponse`
+        """
+        http_info = self._accept_checkpoint_http_info(request)
+        return self._call_api(**http_info)
+
+    def accept_checkpoint_invoker(self, request):
+        http_info = self._accept_checkpoint_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _accept_checkpoint_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/api/pipelines/{pipeline_id}/pipeline-runs/{pipeline_run_id}/steps/{step_run_id}/manual/pass",
+            "request_type": request.__class__.__name__,
+            "response_type": "AcceptCheckpointResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'step_run_id' in local_var_params:
+            path_params['step_run_id'] = local_var_params['step_run_id']
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'pipeline_id' in local_var_params:
+            path_params['pipeline_id'] = local_var_params['pipeline_id']
+        if 'pipeline_run_id' in local_var_params:
+            path_params['pipeline_run_id'] = local_var_params['pipeline_run_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def accept_manual_review(self, request):
         r"""通过人工审核
 
@@ -4822,6 +5563,8 @@ class CodeArtsPipelineClient(Client):
             path_params['step_run_id'] = local_var_params['step_run_id']
 
         query_params = []
+        if 'approval_description' in local_var_params:
+            query_params.append(('approval_description', local_var_params['approval_description']))
 
         header_params = {}
 
@@ -5506,6 +6249,8 @@ class CodeArtsPipelineClient(Client):
             path_params['pipeline_run_id'] = local_var_params['pipeline_run_id']
 
         query_params = []
+        if 'approval_description' in local_var_params:
+            query_params.append(('approval_description', local_var_params['approval_description']))
 
         header_params = {}
 
@@ -5581,13 +6326,15 @@ class CodeArtsPipelineClient(Client):
         form_params = {}
 
         body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
         response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -5857,6 +6604,8 @@ class CodeArtsPipelineClient(Client):
         query_params = []
         if 'pipeline_run_id' in local_var_params:
             query_params.append(('pipeline_run_id', local_var_params['pipeline_run_id']))
+        if 'pipeline_run_number' in local_var_params:
+            query_params.append(('pipeline_run_number', local_var_params['pipeline_run_number']))
 
         header_params = {}
 

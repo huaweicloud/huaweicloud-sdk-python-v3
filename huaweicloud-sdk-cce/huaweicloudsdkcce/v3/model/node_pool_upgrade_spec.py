@@ -21,7 +21,7 @@ class NodePoolUpgradeSpec:
         'skipped_nodes': 'list[str]',
         'node_i_ds': 'list[str]',
         'node_pool_id': 'str',
-        'node_template': 'NodeTemplate'
+        'node_template': 'UpgradeNodePoolSpecNodeTemplate'
     }
 
     attribute_map = {
@@ -52,7 +52,7 @@ class NodePoolUpgradeSpec:
         :param node_pool_id: **参数解释**： 节点池ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type node_pool_id: str
         :param node_template: 
-        :type node_template: :class:`huaweicloudsdkcce.v3.NodeTemplate`
+        :type node_template: :class:`huaweicloudsdkcce.v3.UpgradeNodePoolSpecNodeTemplate`
         """
         
         
@@ -209,7 +209,7 @@ class NodePoolUpgradeSpec:
         r"""Gets the node_template of this NodePoolUpgradeSpec.
 
         :return: The node_template of this NodePoolUpgradeSpec.
-        :rtype: :class:`huaweicloudsdkcce.v3.NodeTemplate`
+        :rtype: :class:`huaweicloudsdkcce.v3.UpgradeNodePoolSpecNodeTemplate`
         """
         return self._node_template
 
@@ -218,7 +218,7 @@ class NodePoolUpgradeSpec:
         r"""Sets the node_template of this NodePoolUpgradeSpec.
 
         :param node_template: The node_template of this NodePoolUpgradeSpec.
-        :type node_template: :class:`huaweicloudsdkcce.v3.NodeTemplate`
+        :type node_template: :class:`huaweicloudsdkcce.v3.UpgradeNodePoolSpecNodeTemplate`
         """
         self._node_template = node_template
 

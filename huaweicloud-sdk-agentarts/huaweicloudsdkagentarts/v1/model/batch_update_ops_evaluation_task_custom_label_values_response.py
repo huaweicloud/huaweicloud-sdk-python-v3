@@ -16,47 +16,80 @@ class BatchUpdateOpsEvaluationTaskCustomLabelValuesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'object'
+        'msg': 'str',
+        'code': 'int'
     }
 
     attribute_map = {
-        'body': 'body'
+        'msg': 'msg',
+        'code': 'code'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, msg=None, code=None):
         r"""BatchUpdateOpsEvaluationTaskCustomLabelValuesResponse
 
         The model defined in huaweicloud sdk
 
-        :param body: 
-        :type body: object
+        :param msg: **参数解释：** 提示信息。 **约束限制：** 不涉及。 **取值范围：** 固定为 update tag value succeed。
+        :type msg: str
+        :param code: **参数解释：** 业务状态码。 **约束限制：** 不涉及。 **取值范围：** 固定为 200。
+        :type code: int
         """
         
         super().__init__()
 
-        self._body = None
+        self._msg = None
+        self._code = None
         self.discriminator = None
 
-        if body is not None:
-            self.body = body
+        if msg is not None:
+            self.msg = msg
+        if code is not None:
+            self.code = code
 
     @property
-    def body(self):
-        r"""Gets the body of this BatchUpdateOpsEvaluationTaskCustomLabelValuesResponse.
+    def msg(self):
+        r"""Gets the msg of this BatchUpdateOpsEvaluationTaskCustomLabelValuesResponse.
 
-        :return: The body of this BatchUpdateOpsEvaluationTaskCustomLabelValuesResponse.
-        :rtype: object
+        **参数解释：** 提示信息。 **约束限制：** 不涉及。 **取值范围：** 固定为 update tag value succeed。
+
+        :return: The msg of this BatchUpdateOpsEvaluationTaskCustomLabelValuesResponse.
+        :rtype: str
         """
-        return self._body
+        return self._msg
 
-    @body.setter
-    def body(self, body):
-        r"""Sets the body of this BatchUpdateOpsEvaluationTaskCustomLabelValuesResponse.
+    @msg.setter
+    def msg(self, msg):
+        r"""Sets the msg of this BatchUpdateOpsEvaluationTaskCustomLabelValuesResponse.
 
-        :param body: The body of this BatchUpdateOpsEvaluationTaskCustomLabelValuesResponse.
-        :type body: object
+        **参数解释：** 提示信息。 **约束限制：** 不涉及。 **取值范围：** 固定为 update tag value succeed。
+
+        :param msg: The msg of this BatchUpdateOpsEvaluationTaskCustomLabelValuesResponse.
+        :type msg: str
         """
-        self._body = body
+        self._msg = msg
+
+    @property
+    def code(self):
+        r"""Gets the code of this BatchUpdateOpsEvaluationTaskCustomLabelValuesResponse.
+
+        **参数解释：** 业务状态码。 **约束限制：** 不涉及。 **取值范围：** 固定为 200。
+
+        :return: The code of this BatchUpdateOpsEvaluationTaskCustomLabelValuesResponse.
+        :rtype: int
+        """
+        return self._code
+
+    @code.setter
+    def code(self, code):
+        r"""Sets the code of this BatchUpdateOpsEvaluationTaskCustomLabelValuesResponse.
+
+        **参数解释：** 业务状态码。 **约束限制：** 不涉及。 **取值范围：** 固定为 200。
+
+        :param code: The code of this BatchUpdateOpsEvaluationTaskCustomLabelValuesResponse.
+        :type code: int
+        """
+        self._code = code
 
     def to_dict(self):
         import warnings

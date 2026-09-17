@@ -19,6 +19,9 @@ class ListPipelinesResponse(SdkResponse):
         'offset': 'int',
         'limit': 'int',
         'total': 'int',
+        'current_system_time': 'int',
+        'highest_confidentiality': 'ListPipelinesPageHighestConfidentiality',
+        'number_of_hidden_data': 'int',
         'pipelines': 'list[ListPipelinesPagePipelines]'
     }
 
@@ -26,10 +29,13 @@ class ListPipelinesResponse(SdkResponse):
         'offset': 'offset',
         'limit': 'limit',
         'total': 'total',
+        'current_system_time': 'current_system_time',
+        'highest_confidentiality': 'highest_confidentiality',
+        'number_of_hidden_data': 'number_of_hidden_data',
         'pipelines': 'pipelines'
     }
 
-    def __init__(self, offset=None, limit=None, total=None, pipelines=None):
+    def __init__(self, offset=None, limit=None, total=None, current_system_time=None, highest_confidentiality=None, number_of_hidden_data=None, pipelines=None):
         r"""ListPipelinesResponse
 
         The model defined in huaweicloud sdk
@@ -40,6 +46,12 @@ class ListPipelinesResponse(SdkResponse):
         :type limit: int
         :param total: **参数解释**： 记录总数。 **取值范围**： 不涉及。 
         :type total: int
+        :param current_system_time: **参数解释**： 当前系统时间。 **取值范围**： 不涉及。 
+        :type current_system_time: int
+        :param highest_confidentiality: 
+        :type highest_confidentiality: :class:`huaweicloudsdkcodeartspipeline.v2.ListPipelinesPageHighestConfidentiality`
+        :param number_of_hidden_data: **参数解释**： 隐藏数据数量。 **约束限制**： 非涉密场景无该字段。 **取值范围**： 不涉及。 
+        :type number_of_hidden_data: int
         :param pipelines: **参数解释**： 流水线。 **取值范围**： 不涉及。 
         :type pipelines: list[:class:`huaweicloudsdkcodeartspipeline.v2.ListPipelinesPagePipelines`]
         """
@@ -49,6 +61,9 @@ class ListPipelinesResponse(SdkResponse):
         self._offset = None
         self._limit = None
         self._total = None
+        self._current_system_time = None
+        self._highest_confidentiality = None
+        self._number_of_hidden_data = None
         self._pipelines = None
         self.discriminator = None
 
@@ -58,6 +73,12 @@ class ListPipelinesResponse(SdkResponse):
             self.limit = limit
         if total is not None:
             self.total = total
+        if current_system_time is not None:
+            self.current_system_time = current_system_time
+        if highest_confidentiality is not None:
+            self.highest_confidentiality = highest_confidentiality
+        if number_of_hidden_data is not None:
+            self.number_of_hidden_data = number_of_hidden_data
         if pipelines is not None:
             self.pipelines = pipelines
 
@@ -126,6 +147,68 @@ class ListPipelinesResponse(SdkResponse):
         :type total: int
         """
         self._total = total
+
+    @property
+    def current_system_time(self):
+        r"""Gets the current_system_time of this ListPipelinesResponse.
+
+        **参数解释**： 当前系统时间。 **取值范围**： 不涉及。 
+
+        :return: The current_system_time of this ListPipelinesResponse.
+        :rtype: int
+        """
+        return self._current_system_time
+
+    @current_system_time.setter
+    def current_system_time(self, current_system_time):
+        r"""Sets the current_system_time of this ListPipelinesResponse.
+
+        **参数解释**： 当前系统时间。 **取值范围**： 不涉及。 
+
+        :param current_system_time: The current_system_time of this ListPipelinesResponse.
+        :type current_system_time: int
+        """
+        self._current_system_time = current_system_time
+
+    @property
+    def highest_confidentiality(self):
+        r"""Gets the highest_confidentiality of this ListPipelinesResponse.
+
+        :return: The highest_confidentiality of this ListPipelinesResponse.
+        :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.ListPipelinesPageHighestConfidentiality`
+        """
+        return self._highest_confidentiality
+
+    @highest_confidentiality.setter
+    def highest_confidentiality(self, highest_confidentiality):
+        r"""Sets the highest_confidentiality of this ListPipelinesResponse.
+
+        :param highest_confidentiality: The highest_confidentiality of this ListPipelinesResponse.
+        :type highest_confidentiality: :class:`huaweicloudsdkcodeartspipeline.v2.ListPipelinesPageHighestConfidentiality`
+        """
+        self._highest_confidentiality = highest_confidentiality
+
+    @property
+    def number_of_hidden_data(self):
+        r"""Gets the number_of_hidden_data of this ListPipelinesResponse.
+
+        **参数解释**： 隐藏数据数量。 **约束限制**： 非涉密场景无该字段。 **取值范围**： 不涉及。 
+
+        :return: The number_of_hidden_data of this ListPipelinesResponse.
+        :rtype: int
+        """
+        return self._number_of_hidden_data
+
+    @number_of_hidden_data.setter
+    def number_of_hidden_data(self, number_of_hidden_data):
+        r"""Sets the number_of_hidden_data of this ListPipelinesResponse.
+
+        **参数解释**： 隐藏数据数量。 **约束限制**： 非涉密场景无该字段。 **取值范围**： 不涉及。 
+
+        :param number_of_hidden_data: The number_of_hidden_data of this ListPipelinesResponse.
+        :type number_of_hidden_data: int
+        """
+        self._number_of_hidden_data = number_of_hidden_data
 
     @property
     def pipelines(self):

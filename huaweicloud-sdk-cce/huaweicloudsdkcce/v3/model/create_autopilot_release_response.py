@@ -58,37 +58,37 @@ class CreateAutopilotReleaseResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param chart_name: 模板名称
+        :param chart_name: **参数解释：** 模板名称 **约束限制：** 最长64个字符 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type chart_name: str
-        :param chart_public: 是否公开模板
+        :param chart_public: **参数解释：** 是否公开模板 **约束限制：** 不涉及 **取值范围：** - true：公开模板 - false：不公开模板  **默认取值：** false
         :type chart_public: bool
-        :param chart_version: 模板版本
+        :param chart_version: **参数解释：** 模板版本 **约束限制：** 最长64个字符 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type chart_version: str
-        :param cluster_id: 集群ID
+        :param cluster_id: **参数解释：** 集群ID **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type cluster_id: str
-        :param cluster_name: 集群名称
+        :param cluster_name: **参数解释：** 集群名称 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type cluster_name: str
-        :param create_at: 创建时间
+        :param create_at: **参数解释：** 创建时间 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type create_at: str
-        :param description: 模板实例描述
+        :param description: **参数解释：** 模板实例描述 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type description: str
-        :param name: 模板实例名称
+        :param name: **参数解释：** 模板实例名称 **约束限制：** 由小写字母开头，中间由小写字母、数字和中划线(-)组成，以小写字母或数字结尾 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type name: str
-        :param namespace: 模板实例所在的命名空间
+        :param namespace: **参数解释：** 模板实例所在的命名空间 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type namespace: str
-        :param parameters: 模板实例参数
+        :param parameters: **参数解释：** 模板实例参数 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type parameters: str
-        :param resources: 模板实例需要的资源
+        :param resources: **参数解释：** 模板实例需要的资源 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type resources: str
-        :param status: 模板实例状态 - DEPLOYED：已部署，表示模板实例处于正常状态。 - DELETED：已删除，表示模板实例已经被删除。 - FAILED：失败，表示模板实例部署失败。 - DELETING：删除中，表示模板实例正处于删除过程中。 - PENDING_INSTALL：待安装，表示模板正在等待安装。 - PENDING_UPGRADE：待升级，表示模板正在等待升级。 - PENDING_ROLLBACK：待回滚，表示模板正在等待回滚。 - UNKNOWN：未知，表示模板状态异常，可尝试手动删除后重新安装。
+        :param status: **参数解释：** 模板实例状态 **约束限制：** 不涉及 **取值范围：** - DEPLOYED：已部署，表示模板实例处于正常状态 - DELETED：已删除，表示模板实例已经被删除 - FAILED：失败，表示模板实例部署失败 - DELETING：删除中，表示模板实例正处于删除过程中 - PENDING_INSTALL：待安装，表示模板正在等待安装 - PENDING_UPGRADE：待升级，表示模板正在等待升级 - PENDING_ROLLBACK：待回滚，表示模板正在等待回滚 - UNKNOWN：未知，表示模板状态异常，可尝试手动删除后重新安装  **默认取值：** 不涉及
         :type status: str
-        :param status_description: 模板实例状态描述
+        :param status_description: **参数解释：** 模板实例状态描述 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type status_description: str
-        :param update_at: 更新时间
+        :param update_at: **参数解释：** 更新时间 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type update_at: str
-        :param values: 模板实例的值
+        :param values: **参数解释：** 模板实例的值 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type values: str
-        :param version: 模板实例版本
+        :param version: **参数解释：** 模板实例版本 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type version: int
         """
         
@@ -149,7 +149,7 @@ class CreateAutopilotReleaseResponse(SdkResponse):
     def chart_name(self):
         r"""Gets the chart_name of this CreateAutopilotReleaseResponse.
 
-        模板名称
+        **参数解释：** 模板名称 **约束限制：** 最长64个字符 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The chart_name of this CreateAutopilotReleaseResponse.
         :rtype: str
@@ -160,7 +160,7 @@ class CreateAutopilotReleaseResponse(SdkResponse):
     def chart_name(self, chart_name):
         r"""Sets the chart_name of this CreateAutopilotReleaseResponse.
 
-        模板名称
+        **参数解释：** 模板名称 **约束限制：** 最长64个字符 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param chart_name: The chart_name of this CreateAutopilotReleaseResponse.
         :type chart_name: str
@@ -171,7 +171,7 @@ class CreateAutopilotReleaseResponse(SdkResponse):
     def chart_public(self):
         r"""Gets the chart_public of this CreateAutopilotReleaseResponse.
 
-        是否公开模板
+        **参数解释：** 是否公开模板 **约束限制：** 不涉及 **取值范围：** - true：公开模板 - false：不公开模板  **默认取值：** false
 
         :return: The chart_public of this CreateAutopilotReleaseResponse.
         :rtype: bool
@@ -182,7 +182,7 @@ class CreateAutopilotReleaseResponse(SdkResponse):
     def chart_public(self, chart_public):
         r"""Sets the chart_public of this CreateAutopilotReleaseResponse.
 
-        是否公开模板
+        **参数解释：** 是否公开模板 **约束限制：** 不涉及 **取值范围：** - true：公开模板 - false：不公开模板  **默认取值：** false
 
         :param chart_public: The chart_public of this CreateAutopilotReleaseResponse.
         :type chart_public: bool
@@ -193,7 +193,7 @@ class CreateAutopilotReleaseResponse(SdkResponse):
     def chart_version(self):
         r"""Gets the chart_version of this CreateAutopilotReleaseResponse.
 
-        模板版本
+        **参数解释：** 模板版本 **约束限制：** 最长64个字符 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The chart_version of this CreateAutopilotReleaseResponse.
         :rtype: str
@@ -204,7 +204,7 @@ class CreateAutopilotReleaseResponse(SdkResponse):
     def chart_version(self, chart_version):
         r"""Sets the chart_version of this CreateAutopilotReleaseResponse.
 
-        模板版本
+        **参数解释：** 模板版本 **约束限制：** 最长64个字符 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param chart_version: The chart_version of this CreateAutopilotReleaseResponse.
         :type chart_version: str
@@ -215,7 +215,7 @@ class CreateAutopilotReleaseResponse(SdkResponse):
     def cluster_id(self):
         r"""Gets the cluster_id of this CreateAutopilotReleaseResponse.
 
-        集群ID
+        **参数解释：** 集群ID **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The cluster_id of this CreateAutopilotReleaseResponse.
         :rtype: str
@@ -226,7 +226,7 @@ class CreateAutopilotReleaseResponse(SdkResponse):
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this CreateAutopilotReleaseResponse.
 
-        集群ID
+        **参数解释：** 集群ID **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param cluster_id: The cluster_id of this CreateAutopilotReleaseResponse.
         :type cluster_id: str
@@ -237,7 +237,7 @@ class CreateAutopilotReleaseResponse(SdkResponse):
     def cluster_name(self):
         r"""Gets the cluster_name of this CreateAutopilotReleaseResponse.
 
-        集群名称
+        **参数解释：** 集群名称 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The cluster_name of this CreateAutopilotReleaseResponse.
         :rtype: str
@@ -248,7 +248,7 @@ class CreateAutopilotReleaseResponse(SdkResponse):
     def cluster_name(self, cluster_name):
         r"""Sets the cluster_name of this CreateAutopilotReleaseResponse.
 
-        集群名称
+        **参数解释：** 集群名称 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param cluster_name: The cluster_name of this CreateAutopilotReleaseResponse.
         :type cluster_name: str
@@ -259,7 +259,7 @@ class CreateAutopilotReleaseResponse(SdkResponse):
     def create_at(self):
         r"""Gets the create_at of this CreateAutopilotReleaseResponse.
 
-        创建时间
+        **参数解释：** 创建时间 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The create_at of this CreateAutopilotReleaseResponse.
         :rtype: str
@@ -270,7 +270,7 @@ class CreateAutopilotReleaseResponse(SdkResponse):
     def create_at(self, create_at):
         r"""Sets the create_at of this CreateAutopilotReleaseResponse.
 
-        创建时间
+        **参数解释：** 创建时间 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param create_at: The create_at of this CreateAutopilotReleaseResponse.
         :type create_at: str
@@ -281,7 +281,7 @@ class CreateAutopilotReleaseResponse(SdkResponse):
     def description(self):
         r"""Gets the description of this CreateAutopilotReleaseResponse.
 
-        模板实例描述
+        **参数解释：** 模板实例描述 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The description of this CreateAutopilotReleaseResponse.
         :rtype: str
@@ -292,7 +292,7 @@ class CreateAutopilotReleaseResponse(SdkResponse):
     def description(self, description):
         r"""Sets the description of this CreateAutopilotReleaseResponse.
 
-        模板实例描述
+        **参数解释：** 模板实例描述 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param description: The description of this CreateAutopilotReleaseResponse.
         :type description: str
@@ -303,7 +303,7 @@ class CreateAutopilotReleaseResponse(SdkResponse):
     def name(self):
         r"""Gets the name of this CreateAutopilotReleaseResponse.
 
-        模板实例名称
+        **参数解释：** 模板实例名称 **约束限制：** 由小写字母开头，中间由小写字母、数字和中划线(-)组成，以小写字母或数字结尾 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The name of this CreateAutopilotReleaseResponse.
         :rtype: str
@@ -314,7 +314,7 @@ class CreateAutopilotReleaseResponse(SdkResponse):
     def name(self, name):
         r"""Sets the name of this CreateAutopilotReleaseResponse.
 
-        模板实例名称
+        **参数解释：** 模板实例名称 **约束限制：** 由小写字母开头，中间由小写字母、数字和中划线(-)组成，以小写字母或数字结尾 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param name: The name of this CreateAutopilotReleaseResponse.
         :type name: str
@@ -325,7 +325,7 @@ class CreateAutopilotReleaseResponse(SdkResponse):
     def namespace(self):
         r"""Gets the namespace of this CreateAutopilotReleaseResponse.
 
-        模板实例所在的命名空间
+        **参数解释：** 模板实例所在的命名空间 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The namespace of this CreateAutopilotReleaseResponse.
         :rtype: str
@@ -336,7 +336,7 @@ class CreateAutopilotReleaseResponse(SdkResponse):
     def namespace(self, namespace):
         r"""Sets the namespace of this CreateAutopilotReleaseResponse.
 
-        模板实例所在的命名空间
+        **参数解释：** 模板实例所在的命名空间 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param namespace: The namespace of this CreateAutopilotReleaseResponse.
         :type namespace: str
@@ -347,7 +347,7 @@ class CreateAutopilotReleaseResponse(SdkResponse):
     def parameters(self):
         r"""Gets the parameters of this CreateAutopilotReleaseResponse.
 
-        模板实例参数
+        **参数解释：** 模板实例参数 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The parameters of this CreateAutopilotReleaseResponse.
         :rtype: str
@@ -358,7 +358,7 @@ class CreateAutopilotReleaseResponse(SdkResponse):
     def parameters(self, parameters):
         r"""Sets the parameters of this CreateAutopilotReleaseResponse.
 
-        模板实例参数
+        **参数解释：** 模板实例参数 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param parameters: The parameters of this CreateAutopilotReleaseResponse.
         :type parameters: str
@@ -369,7 +369,7 @@ class CreateAutopilotReleaseResponse(SdkResponse):
     def resources(self):
         r"""Gets the resources of this CreateAutopilotReleaseResponse.
 
-        模板实例需要的资源
+        **参数解释：** 模板实例需要的资源 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The resources of this CreateAutopilotReleaseResponse.
         :rtype: str
@@ -380,7 +380,7 @@ class CreateAutopilotReleaseResponse(SdkResponse):
     def resources(self, resources):
         r"""Sets the resources of this CreateAutopilotReleaseResponse.
 
-        模板实例需要的资源
+        **参数解释：** 模板实例需要的资源 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param resources: The resources of this CreateAutopilotReleaseResponse.
         :type resources: str
@@ -391,7 +391,7 @@ class CreateAutopilotReleaseResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this CreateAutopilotReleaseResponse.
 
-        模板实例状态 - DEPLOYED：已部署，表示模板实例处于正常状态。 - DELETED：已删除，表示模板实例已经被删除。 - FAILED：失败，表示模板实例部署失败。 - DELETING：删除中，表示模板实例正处于删除过程中。 - PENDING_INSTALL：待安装，表示模板正在等待安装。 - PENDING_UPGRADE：待升级，表示模板正在等待升级。 - PENDING_ROLLBACK：待回滚，表示模板正在等待回滚。 - UNKNOWN：未知，表示模板状态异常，可尝试手动删除后重新安装。
+        **参数解释：** 模板实例状态 **约束限制：** 不涉及 **取值范围：** - DEPLOYED：已部署，表示模板实例处于正常状态 - DELETED：已删除，表示模板实例已经被删除 - FAILED：失败，表示模板实例部署失败 - DELETING：删除中，表示模板实例正处于删除过程中 - PENDING_INSTALL：待安装，表示模板正在等待安装 - PENDING_UPGRADE：待升级，表示模板正在等待升级 - PENDING_ROLLBACK：待回滚，表示模板正在等待回滚 - UNKNOWN：未知，表示模板状态异常，可尝试手动删除后重新安装  **默认取值：** 不涉及
 
         :return: The status of this CreateAutopilotReleaseResponse.
         :rtype: str
@@ -402,7 +402,7 @@ class CreateAutopilotReleaseResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this CreateAutopilotReleaseResponse.
 
-        模板实例状态 - DEPLOYED：已部署，表示模板实例处于正常状态。 - DELETED：已删除，表示模板实例已经被删除。 - FAILED：失败，表示模板实例部署失败。 - DELETING：删除中，表示模板实例正处于删除过程中。 - PENDING_INSTALL：待安装，表示模板正在等待安装。 - PENDING_UPGRADE：待升级，表示模板正在等待升级。 - PENDING_ROLLBACK：待回滚，表示模板正在等待回滚。 - UNKNOWN：未知，表示模板状态异常，可尝试手动删除后重新安装。
+        **参数解释：** 模板实例状态 **约束限制：** 不涉及 **取值范围：** - DEPLOYED：已部署，表示模板实例处于正常状态 - DELETED：已删除，表示模板实例已经被删除 - FAILED：失败，表示模板实例部署失败 - DELETING：删除中，表示模板实例正处于删除过程中 - PENDING_INSTALL：待安装，表示模板正在等待安装 - PENDING_UPGRADE：待升级，表示模板正在等待升级 - PENDING_ROLLBACK：待回滚，表示模板正在等待回滚 - UNKNOWN：未知，表示模板状态异常，可尝试手动删除后重新安装  **默认取值：** 不涉及
 
         :param status: The status of this CreateAutopilotReleaseResponse.
         :type status: str
@@ -413,7 +413,7 @@ class CreateAutopilotReleaseResponse(SdkResponse):
     def status_description(self):
         r"""Gets the status_description of this CreateAutopilotReleaseResponse.
 
-        模板实例状态描述
+        **参数解释：** 模板实例状态描述 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The status_description of this CreateAutopilotReleaseResponse.
         :rtype: str
@@ -424,7 +424,7 @@ class CreateAutopilotReleaseResponse(SdkResponse):
     def status_description(self, status_description):
         r"""Sets the status_description of this CreateAutopilotReleaseResponse.
 
-        模板实例状态描述
+        **参数解释：** 模板实例状态描述 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param status_description: The status_description of this CreateAutopilotReleaseResponse.
         :type status_description: str
@@ -435,7 +435,7 @@ class CreateAutopilotReleaseResponse(SdkResponse):
     def update_at(self):
         r"""Gets the update_at of this CreateAutopilotReleaseResponse.
 
-        更新时间
+        **参数解释：** 更新时间 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The update_at of this CreateAutopilotReleaseResponse.
         :rtype: str
@@ -446,7 +446,7 @@ class CreateAutopilotReleaseResponse(SdkResponse):
     def update_at(self, update_at):
         r"""Sets the update_at of this CreateAutopilotReleaseResponse.
 
-        更新时间
+        **参数解释：** 更新时间 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param update_at: The update_at of this CreateAutopilotReleaseResponse.
         :type update_at: str
@@ -457,7 +457,7 @@ class CreateAutopilotReleaseResponse(SdkResponse):
     def values(self):
         r"""Gets the values of this CreateAutopilotReleaseResponse.
 
-        模板实例的值
+        **参数解释：** 模板实例的值 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The values of this CreateAutopilotReleaseResponse.
         :rtype: str
@@ -468,7 +468,7 @@ class CreateAutopilotReleaseResponse(SdkResponse):
     def values(self, values):
         r"""Sets the values of this CreateAutopilotReleaseResponse.
 
-        模板实例的值
+        **参数解释：** 模板实例的值 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param values: The values of this CreateAutopilotReleaseResponse.
         :type values: str
@@ -479,7 +479,7 @@ class CreateAutopilotReleaseResponse(SdkResponse):
     def version(self):
         r"""Gets the version of this CreateAutopilotReleaseResponse.
 
-        模板实例版本
+        **参数解释：** 模板实例版本 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The version of this CreateAutopilotReleaseResponse.
         :rtype: int
@@ -490,7 +490,7 @@ class CreateAutopilotReleaseResponse(SdkResponse):
     def version(self, version):
         r"""Sets the version of this CreateAutopilotReleaseResponse.
 
-        模板实例版本
+        **参数解释：** 模板实例版本 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param version: The version of this CreateAutopilotReleaseResponse.
         :type version: int

@@ -45,19 +45,19 @@ class NodeTemplateInHyperNode:
 
         The model defined in huaweicloud sdk
 
-        :param az: **参数解释**： 超节点下节点所在的可用区。 [CCE支持的可用区请参考[地区和终端节点](https://console.huaweicloud.com/apiexplorer/#/endpoint/CCE)。](tag:hws) [CCE支持的可用区请参考[地区和终端节点](https://console-intl.huaweicloud.com/apiexplorer/#/endpoint/CCE)。](tag:hws_hk)
+        :param az: **参数解释**： 超节点下节点所在的可用区。 [CCE支持的可用区请参考[地区和终端节点](https://console.huaweicloud.com/apiexplorer/#/endpoint/CCE)。](tag:hws) [CCE支持的可用区请参考[地区和终端节点](https://console-intl.huaweicloud.com/apiexplorer/#/endpoint/CCE)。](tag:hws_hk) **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type az: str
-        :param os: **参数解释**： 超节点下节点的操作系统类型。具体支持的操作系统请参见[节点操作系统说明](node-os.xml)。
+        :param os: **参数解释**： 超节点下节点的操作系统类型。具体支持的操作系统请参见[节点操作系统说明](node-os.xml)。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type os: str
         :param login: 
         :type login: :class:`huaweicloudsdkcce.v3.Login`
         :param root_volume: 
         :type root_volume: :class:`huaweicloudsdkcce.v3.Volume`
-        :param data_volumes: **参数解释**： 节点的数据盘参数。
+        :param data_volumes: **参数解释**： 节点的数据盘参数。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type data_volumes: list[:class:`huaweicloudsdkcce.v3.Volume`]
         :param storage: 
         :type storage: :class:`huaweicloudsdkcce.v3.Storage`
-        :param k8s_tags: **参数解释**： 超节点创建时下发到节点上的 k8s 标签，格式为key/value键值对。此接口中仅为展示作用。 示例： &#x60;&#x60;&#x60; \&quot;k8sTags\&quot;: {   \&quot;key\&quot;: \&quot;value\&quot; } &#x60;&#x60;&#x60;
+        :param k8s_tags: **参数解释**： 超节点创建时下发到节点上的 k8s 标签，格式为key/value键值对。 示例： &#x60;&#x60;&#x60; \&quot;k8sTags\&quot;: {   \&quot;key\&quot;: \&quot;value\&quot; } &#x60;&#x60;&#x60; **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type k8s_tags: dict(str, str)
         :param runtime: 
         :type runtime: :class:`huaweicloudsdkcce.v3.Runtime`
@@ -106,7 +106,7 @@ class NodeTemplateInHyperNode:
     def az(self):
         r"""Gets the az of this NodeTemplateInHyperNode.
 
-        **参数解释**： 超节点下节点所在的可用区。 [CCE支持的可用区请参考[地区和终端节点](https://console.huaweicloud.com/apiexplorer/#/endpoint/CCE)。](tag:hws) [CCE支持的可用区请参考[地区和终端节点](https://console-intl.huaweicloud.com/apiexplorer/#/endpoint/CCE)。](tag:hws_hk)
+        **参数解释**： 超节点下节点所在的可用区。 [CCE支持的可用区请参考[地区和终端节点](https://console.huaweicloud.com/apiexplorer/#/endpoint/CCE)。](tag:hws) [CCE支持的可用区请参考[地区和终端节点](https://console-intl.huaweicloud.com/apiexplorer/#/endpoint/CCE)。](tag:hws_hk) **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The az of this NodeTemplateInHyperNode.
         :rtype: str
@@ -117,7 +117,7 @@ class NodeTemplateInHyperNode:
     def az(self, az):
         r"""Sets the az of this NodeTemplateInHyperNode.
 
-        **参数解释**： 超节点下节点所在的可用区。 [CCE支持的可用区请参考[地区和终端节点](https://console.huaweicloud.com/apiexplorer/#/endpoint/CCE)。](tag:hws) [CCE支持的可用区请参考[地区和终端节点](https://console-intl.huaweicloud.com/apiexplorer/#/endpoint/CCE)。](tag:hws_hk)
+        **参数解释**： 超节点下节点所在的可用区。 [CCE支持的可用区请参考[地区和终端节点](https://console.huaweicloud.com/apiexplorer/#/endpoint/CCE)。](tag:hws) [CCE支持的可用区请参考[地区和终端节点](https://console-intl.huaweicloud.com/apiexplorer/#/endpoint/CCE)。](tag:hws_hk) **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param az: The az of this NodeTemplateInHyperNode.
         :type az: str
@@ -128,7 +128,7 @@ class NodeTemplateInHyperNode:
     def os(self):
         r"""Gets the os of this NodeTemplateInHyperNode.
 
-        **参数解释**： 超节点下节点的操作系统类型。具体支持的操作系统请参见[节点操作系统说明](node-os.xml)。
+        **参数解释**： 超节点下节点的操作系统类型。具体支持的操作系统请参见[节点操作系统说明](node-os.xml)。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The os of this NodeTemplateInHyperNode.
         :rtype: str
@@ -139,7 +139,7 @@ class NodeTemplateInHyperNode:
     def os(self, os):
         r"""Sets the os of this NodeTemplateInHyperNode.
 
-        **参数解释**： 超节点下节点的操作系统类型。具体支持的操作系统请参见[节点操作系统说明](node-os.xml)。
+        **参数解释**： 超节点下节点的操作系统类型。具体支持的操作系统请参见[节点操作系统说明](node-os.xml)。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param os: The os of this NodeTemplateInHyperNode.
         :type os: str
@@ -186,7 +186,7 @@ class NodeTemplateInHyperNode:
     def data_volumes(self):
         r"""Gets the data_volumes of this NodeTemplateInHyperNode.
 
-        **参数解释**： 节点的数据盘参数。
+        **参数解释**： 节点的数据盘参数。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The data_volumes of this NodeTemplateInHyperNode.
         :rtype: list[:class:`huaweicloudsdkcce.v3.Volume`]
@@ -197,7 +197,7 @@ class NodeTemplateInHyperNode:
     def data_volumes(self, data_volumes):
         r"""Sets the data_volumes of this NodeTemplateInHyperNode.
 
-        **参数解释**： 节点的数据盘参数。
+        **参数解释**： 节点的数据盘参数。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param data_volumes: The data_volumes of this NodeTemplateInHyperNode.
         :type data_volumes: list[:class:`huaweicloudsdkcce.v3.Volume`]
@@ -226,7 +226,7 @@ class NodeTemplateInHyperNode:
     def k8s_tags(self):
         r"""Gets the k8s_tags of this NodeTemplateInHyperNode.
 
-        **参数解释**： 超节点创建时下发到节点上的 k8s 标签，格式为key/value键值对。此接口中仅为展示作用。 示例： ``` \"k8sTags\": {   \"key\": \"value\" } ```
+        **参数解释**： 超节点创建时下发到节点上的 k8s 标签，格式为key/value键值对。 示例： ``` \"k8sTags\": {   \"key\": \"value\" } ``` **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The k8s_tags of this NodeTemplateInHyperNode.
         :rtype: dict(str, str)
@@ -237,7 +237,7 @@ class NodeTemplateInHyperNode:
     def k8s_tags(self, k8s_tags):
         r"""Sets the k8s_tags of this NodeTemplateInHyperNode.
 
-        **参数解释**： 超节点创建时下发到节点上的 k8s 标签，格式为key/value键值对。此接口中仅为展示作用。 示例： ``` \"k8sTags\": {   \"key\": \"value\" } ```
+        **参数解释**： 超节点创建时下发到节点上的 k8s 标签，格式为key/value键值对。 示例： ``` \"k8sTags\": {   \"key\": \"value\" } ``` **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param k8s_tags: The k8s_tags of this NodeTemplateInHyperNode.
         :type k8s_tags: dict(str, str)

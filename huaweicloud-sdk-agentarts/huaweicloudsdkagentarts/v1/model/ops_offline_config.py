@@ -36,8 +36,7 @@ class OpsOfflineConfig:
         self._evaluator_config = None
         self.discriminator = None
 
-        if evaluator_config is not None:
-            self.evaluator_config = evaluator_config
+        self.evaluator_config = evaluator_config
 
     @property
     def evaluator_config(self):

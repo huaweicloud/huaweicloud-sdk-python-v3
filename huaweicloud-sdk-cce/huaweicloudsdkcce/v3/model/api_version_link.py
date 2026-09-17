@@ -29,9 +29,9 @@ class APIVersionLink:
 
         The model defined in huaweicloud sdk
 
-        :param href: API版本信息的链接。
+        :param href: **参数解释：** API版本信息的链接。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type href: str
-        :param rel: 链接属性。self：自助链接包含版本链接的资源。立即链接后使用这些链接。
+        :param rel: **参数解释：** 链接属性。 **约束限制：** 不涉及 **取值范围：** - self：自助链接包含版本链接的资源。立即链接后使用这些链接。  **默认取值：** 不涉及
         :type rel: str
         """
         
@@ -48,7 +48,7 @@ class APIVersionLink:
     def href(self):
         r"""Gets the href of this APIVersionLink.
 
-        API版本信息的链接。
+        **参数解释：** API版本信息的链接。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The href of this APIVersionLink.
         :rtype: str
@@ -59,7 +59,7 @@ class APIVersionLink:
     def href(self, href):
         r"""Sets the href of this APIVersionLink.
 
-        API版本信息的链接。
+        **参数解释：** API版本信息的链接。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param href: The href of this APIVersionLink.
         :type href: str
@@ -70,7 +70,7 @@ class APIVersionLink:
     def rel(self):
         r"""Gets the rel of this APIVersionLink.
 
-        链接属性。self：自助链接包含版本链接的资源。立即链接后使用这些链接。
+        **参数解释：** 链接属性。 **约束限制：** 不涉及 **取值范围：** - self：自助链接包含版本链接的资源。立即链接后使用这些链接。  **默认取值：** 不涉及
 
         :return: The rel of this APIVersionLink.
         :rtype: str
@@ -81,7 +81,7 @@ class APIVersionLink:
     def rel(self, rel):
         r"""Sets the rel of this APIVersionLink.
 
-        链接属性。self：自助链接包含版本链接的资源。立即链接后使用这些链接。
+        **参数解释：** 链接属性。 **约束限制：** 不涉及 **取值范围：** - self：自助链接包含版本链接的资源。立即链接后使用这些链接。  **默认取值：** 不涉及
 
         :param rel: The rel of this APIVersionLink.
         :type rel: str

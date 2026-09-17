@@ -16,15 +16,17 @@ class ListNodePoolsRequest:
 
     openapi_types = {
         'cluster_id': 'str',
-        'show_default_node_pool': 'str'
+        'show_default_node_pool': 'str',
+        'advance_status': 'bool'
     }
 
     attribute_map = {
         'cluster_id': 'cluster_id',
-        'show_default_node_pool': 'showDefaultNodePool'
+        'show_default_node_pool': 'showDefaultNodePool',
+        'advance_status': 'advanceStatus'
     }
 
-    def __init__(self, cluster_id=None, show_default_node_pool=None):
+    def __init__(self, cluster_id=None, show_default_node_pool=None, advance_status=None):
         r"""ListNodePoolsRequest
 
         The model defined in huaweicloud sdk
@@ -33,17 +35,22 @@ class ListNodePoolsRequest:
         :type cluster_id: str
         :param show_default_node_pool: 是否展示默认节点池。默认不展示，指定为“true”时展示默认节点池。
         :type show_default_node_pool: str
+        :param advance_status: **参数解释：** 节点池conditions是否反映整个节点池整体状态。 **约束限制：** 不涉及 **取值范围：** - true: 节点池的conditions反映整个节点池整体状态。 - false: 节点池的conditions仅反映默认伸缩组的状态。  **默认取值：** 不指定时默认为false
+        :type advance_status: bool
         """
         
         
 
         self._cluster_id = None
         self._show_default_node_pool = None
+        self._advance_status = None
         self.discriminator = None
 
         self.cluster_id = cluster_id
         if show_default_node_pool is not None:
             self.show_default_node_pool = show_default_node_pool
+        if advance_status is not None:
+            self.advance_status = advance_status
 
     @property
     def cluster_id(self):
@@ -88,6 +95,28 @@ class ListNodePoolsRequest:
         :type show_default_node_pool: str
         """
         self._show_default_node_pool = show_default_node_pool
+
+    @property
+    def advance_status(self):
+        r"""Gets the advance_status of this ListNodePoolsRequest.
+
+        **参数解释：** 节点池conditions是否反映整个节点池整体状态。 **约束限制：** 不涉及 **取值范围：** - true: 节点池的conditions反映整个节点池整体状态。 - false: 节点池的conditions仅反映默认伸缩组的状态。  **默认取值：** 不指定时默认为false
+
+        :return: The advance_status of this ListNodePoolsRequest.
+        :rtype: bool
+        """
+        return self._advance_status
+
+    @advance_status.setter
+    def advance_status(self, advance_status):
+        r"""Sets the advance_status of this ListNodePoolsRequest.
+
+        **参数解释：** 节点池conditions是否反映整个节点池整体状态。 **约束限制：** 不涉及 **取值范围：** - true: 节点池的conditions反映整个节点池整体状态。 - false: 节点池的conditions仅反映默认伸缩组的状态。  **默认取值：** 不指定时默认为false
+
+        :param advance_status: The advance_status of this ListNodePoolsRequest.
+        :type advance_status: bool
+        """
+        self._advance_status = advance_status
 
     def to_dict(self):
         result = {}

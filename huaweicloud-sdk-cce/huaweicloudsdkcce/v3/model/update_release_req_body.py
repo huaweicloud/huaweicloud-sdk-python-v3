@@ -33,9 +33,9 @@ class UpdateReleaseReqBody:
 
         The model defined in huaweicloud sdk
 
-        :param chart_id: 模板ID
+        :param chart_id: **参数解释：** 模板ID **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type chart_id: str
-        :param action: 更新操作，升级为upgrade，回退为rollback
+        :param action: **参数解释：** 更新操作，升级为upgrade，回退为rollback **约束限制：** 不涉及 **取值范围：** - upgrade：升级 - rollback：回退  **默认取值：** 不涉及
         :type action: str
         :param parameters: 
         :type parameters: :class:`huaweicloudsdkcce.v3.ReleaseReqBodyParams`
@@ -60,7 +60,7 @@ class UpdateReleaseReqBody:
     def chart_id(self):
         r"""Gets the chart_id of this UpdateReleaseReqBody.
 
-        模板ID
+        **参数解释：** 模板ID **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The chart_id of this UpdateReleaseReqBody.
         :rtype: str
@@ -71,7 +71,7 @@ class UpdateReleaseReqBody:
     def chart_id(self, chart_id):
         r"""Sets the chart_id of this UpdateReleaseReqBody.
 
-        模板ID
+        **参数解释：** 模板ID **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param chart_id: The chart_id of this UpdateReleaseReqBody.
         :type chart_id: str
@@ -82,7 +82,7 @@ class UpdateReleaseReqBody:
     def action(self):
         r"""Gets the action of this UpdateReleaseReqBody.
 
-        更新操作，升级为upgrade，回退为rollback
+        **参数解释：** 更新操作，升级为upgrade，回退为rollback **约束限制：** 不涉及 **取值范围：** - upgrade：升级 - rollback：回退  **默认取值：** 不涉及
 
         :return: The action of this UpdateReleaseReqBody.
         :rtype: str
@@ -93,7 +93,7 @@ class UpdateReleaseReqBody:
     def action(self, action):
         r"""Sets the action of this UpdateReleaseReqBody.
 
-        更新操作，升级为upgrade，回退为rollback
+        **参数解释：** 更新操作，升级为upgrade，回退为rollback **约束限制：** 不涉及 **取值范围：** - upgrade：升级 - rollback：回退  **默认取值：** 不涉及
 
         :param action: The action of this UpdateReleaseReqBody.
         :type action: str

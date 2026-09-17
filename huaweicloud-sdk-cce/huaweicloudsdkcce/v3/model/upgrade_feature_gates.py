@@ -27,7 +27,7 @@ class UpgradeFeatureGates:
 
         The model defined in huaweicloud sdk
 
-        :param support_upgrade_page_v4: 集群升级Console界面是否支持V4版本，该字段一般由CCE Console使用。
+        :param support_upgrade_page_v4: **参数解释：** 集群升级Console界面是否支持V4版本，该字段一般由CCE Console使用。 **约束限制：** 不涉及 **取值范围：** - true：支持V4版本 - false：不支持V4版本  **默认取值：** 不涉及 
         :type support_upgrade_page_v4: bool
         """
         
@@ -43,7 +43,7 @@ class UpgradeFeatureGates:
     def support_upgrade_page_v4(self):
         r"""Gets the support_upgrade_page_v4 of this UpgradeFeatureGates.
 
-        集群升级Console界面是否支持V4版本，该字段一般由CCE Console使用。
+        **参数解释：** 集群升级Console界面是否支持V4版本，该字段一般由CCE Console使用。 **约束限制：** 不涉及 **取值范围：** - true：支持V4版本 - false：不支持V4版本  **默认取值：** 不涉及 
 
         :return: The support_upgrade_page_v4 of this UpgradeFeatureGates.
         :rtype: bool
@@ -54,7 +54,7 @@ class UpgradeFeatureGates:
     def support_upgrade_page_v4(self, support_upgrade_page_v4):
         r"""Sets the support_upgrade_page_v4 of this UpgradeFeatureGates.
 
-        集群升级Console界面是否支持V4版本，该字段一般由CCE Console使用。
+        **参数解释：** 集群升级Console界面是否支持V4版本，该字段一般由CCE Console使用。 **约束限制：** 不涉及 **取值范围：** - true：支持V4版本 - false：不支持V4版本  **默认取值：** 不涉及 
 
         :param support_upgrade_page_v4: The support_upgrade_page_v4 of this UpgradeFeatureGates.
         :type support_upgrade_page_v4: bool

@@ -234,7 +234,8 @@ if __name__ == "__main__":
 	* [2.4.2 配置文件](#242-配置文件-top)
 	* [2.4.3 实例元数据](#243-实例元数据-top)
     * [2.4.4 容器组身份](#244-容器组身份-top)
-	* [2.4.5 认证信息提供链](#245-认证信息提供链-top)
+    * [2.4.5 OIDC信任委托](#245-oidc信任委托-top)
+	* [2.4.6 认证信息提供链](#246-认证信息提供链-top)
 * [3. 客户端初始化](#3-客户端初始化-top)
     * [3.1 指定云服务 Endpoint 方式](#31-指定云服务-endpoint-方式-top)
     * [3.2 指定 Region 方式（推荐）](#32-指定-region-方式-推荐-top)
@@ -635,9 +636,69 @@ global_provider = PodIdentityCredentialProvider.get_global()
 global_provider = global_provider.get_credentials()
 ```
 
-##### 2.4.5 认证信息提供链 [:top:](#用户手册-top)
+##### 2.4.5 OIDC信任委托 [:top:](#用户手册-top)
 
-在创建服务客户端，未显式指定认证信息时，按照顺序 **环境变量 -> 配置文件 -> 实例元数据 -> 容器组身份** 尝试加载认证信息
+支持通过OIDC身份提供商令牌验证的用户获取临时安全凭证（AssumeAgencyWithOIDC）。
+
+详细说明参考 [通过使用OIDC协议SSO的信任委托获取临时安全凭证](https://support.huaweicloud.com/api-iam5/AssumeAgencyWithOIDC.html)
+
+**环境变量**
+
+| 环境变量  |  说明 |
+| :------- | :--- |
+| HUAWEICLOUD_OIDC_PROVIDER_URN  | 必填, OIDC身份提供商的URN，例如 `iam::123456789:oidcProvider:test`  |
+| HUAWEICLOUD_OIDC_AGENCY_URN  | 必填, 信任委托的URN，例如 `iam::123456789:agency:demo`  |
+| HUAWEICLOUD_OIDC_TOKEN_FILE  | 可选, OIDC ID Token文件路径，当未设置 `HUAWEICLOUD_OIDC_ID_TOKEN` 时使用  |
+| HUAWEICLOUD_OIDC_ID_TOKEN  | 可选, OIDC ID Token值，优先级高于 `HUAWEICLOUD_OIDC_TOKEN_FILE`  |
+| HUAWEICLOUD_OIDC_SESSION_NAME  | 可选, 委托会话名称，默认为 `oidc-sts-session`  |
+| HUAWEICLOUD_OIDC_DURATION_SECONDS  | 可选, 临时凭证有效期（秒），默认为 `3600`  |
+| HUAWEICLOUD_OIDC_POLICY  | 可选, IAM权限策略JSON字符串，用于权限收敛  |
+| HUAWEICLOUD_OIDC_POLICY_IDS  | 可选, 策略ID列表，逗号分隔，例如 `policy-id-1,policy-id-2`  |
+| HUAWEICLOUD_SDK_STS_ENDPOINT  | 可选, STS终端节点，默认为 `https://sts.cn-north-4.myhuaweicloud.com`  |
+| HUAWEICLOUD_SDK_PROJECT_ID  | basic类型认证时，该参数可选  |
+| HUAWEICLOUD_SDK_DOMAIN_ID  | global类型认证时，该参数可选  |
+
+配置环境变量：
+
+```bash
+export HUAWEICLOUD_OIDC_PROVIDER_URN=iam::123456789:oidcProvider:test
+export HUAWEICLOUD_OIDC_AGENCY_URN=iam::123456789:agency:demo
+export HUAWEICLOUD_OIDC_TOKEN_FILE=/path/to/id_token
+export HUAWEICLOUD_OIDC_SESSION_NAME=my-session
+```
+
+从配置的环境变量中获取认证信息：
+
+```python
+from huaweicloudsdkcore.auth.provider import OidcStsCredentialProvider
+
+# basic
+basic_provider = OidcStsCredentialProvider.get_basic()
+basic_cred = basic_provider.get_credentials()
+
+# global
+global_provider = OidcStsCredentialProvider.get_global()
+global_cred = global_provider.get_credentials()
+```
+
+或通过编程式传参获取认证信息：
+
+```python
+from huaweicloudsdkcore.auth.provider import OidcStsCredentialProvider
+
+provider = OidcStsCredentialProvider(
+    "basic",
+    provider_urn="iam::123456789:oidcProvider:test",
+    agency_urn="iam::123456789:agency:demo",
+    id_token="your-id-token",
+    sts_endpoint="https://sts.cn-north-4.myhuaweicloud.com",
+)
+cred = provider.get_credentials()
+```
+
+##### 2.4.6 认证信息提供链 [:top:](#用户手册-top)
+
+在创建服务客户端，未显式指定认证信息时，按照顺序 **OIDC信任委托 -> 环境变量 -> 配置文件 -> 实例元数据 -> 容器组身份** 尝试加载认证信息
 
 通过提供链获取认证信息：
 

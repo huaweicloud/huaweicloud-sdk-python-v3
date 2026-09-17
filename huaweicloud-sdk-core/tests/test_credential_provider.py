@@ -55,7 +55,7 @@ iam_endpoint = https://iam.endpoint.com
 
 
 def _clear_envs():
-    keys = (key for key in os.environ.keys() if key.startswith("HUAWEICLOUD_SDK"))
+    keys = [key for key in os.environ.keys() if key.startswith("HUAWEICLOUD_SDK")]
     for key in keys:
         os.environ.pop(key)
 
@@ -77,7 +77,7 @@ class TestMetadataCredentialProvider:
 
 
 class TestEnvCredentialProvider:
-    def teardown(self):
+    def teardown_method(self):
         _clear_envs()
 
     def test_without_env_with_basic_type(self):
@@ -164,10 +164,10 @@ class TestProfileCredentialProvider:
         if os.path.exists(cls.TEST_CREDENTIALS_FILE):
             os.remove(cls.TEST_CREDENTIALS_FILE)
 
-    def setup(self):
+    def setup_method(self):
         os.environ[self.CREDENTIALS_FILE_ENV_NAME] = self.TEST_CREDENTIALS_FILE
 
-    def teardown(self):
+    def teardown_method(self):
         if self.CREDENTIALS_FILE_ENV_NAME in os.environ:
             os.environ.pop(self.CREDENTIALS_FILE_ENV_NAME)
 

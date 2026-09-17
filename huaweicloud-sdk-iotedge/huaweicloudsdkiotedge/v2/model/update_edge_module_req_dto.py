@@ -17,18 +17,20 @@ class UpdateEdgeModuleReqDTO:
     openapi_types = {
         'app_version': 'str',
         'module_name': 'str',
+        'desired_state': 'str',
         'container_settings': 'ContainerSettingsReqDTO',
-        'desired_state': 'str'
+        'force_upgrade': 'bool'
     }
 
     attribute_map = {
         'app_version': 'app_version',
         'module_name': 'module_name',
+        'desired_state': 'desired_state',
         'container_settings': 'container_settings',
-        'desired_state': 'desired_state'
+        'force_upgrade': 'force_upgrade'
     }
 
-    def __init__(self, app_version=None, module_name=None, container_settings=None, desired_state=None):
+    def __init__(self, app_version=None, module_name=None, desired_state=None, container_settings=None, force_upgrade=None):
         r"""UpdateEdgeModuleReqDTO
 
         The model defined in huaweicloud sdk
@@ -37,28 +39,33 @@ class UpdateEdgeModuleReqDTO:
         :type app_version: str
         :param module_name: 边缘模块名称
         :type module_name: str
-        :param container_settings: 
-        :type container_settings: :class:`huaweicloudsdkiotedge.v2.ContainerSettingsReqDTO`
         :param desired_state: 模块期望状态: RUNNING(升级后期望模块运行)，STOPPED(升级后期望模块停止)，空值默认继承升级前模块期望状态
         :type desired_state: str
+        :param container_settings: 
+        :type container_settings: :class:`huaweicloudsdkiotedge.v2.ContainerSettingsReqDTO`
+        :param force_upgrade: 是否强制升级
+        :type force_upgrade: bool
         """
         
         
 
         self._app_version = None
         self._module_name = None
-        self._container_settings = None
         self._desired_state = None
+        self._container_settings = None
+        self._force_upgrade = None
         self.discriminator = None
 
         if app_version is not None:
             self.app_version = app_version
         if module_name is not None:
             self.module_name = module_name
-        if container_settings is not None:
-            self.container_settings = container_settings
         if desired_state is not None:
             self.desired_state = desired_state
+        if container_settings is not None:
+            self.container_settings = container_settings
+        if force_upgrade is not None:
+            self.force_upgrade = force_upgrade
 
     @property
     def app_version(self):
@@ -105,24 +112,6 @@ class UpdateEdgeModuleReqDTO:
         self._module_name = module_name
 
     @property
-    def container_settings(self):
-        r"""Gets the container_settings of this UpdateEdgeModuleReqDTO.
-
-        :return: The container_settings of this UpdateEdgeModuleReqDTO.
-        :rtype: :class:`huaweicloudsdkiotedge.v2.ContainerSettingsReqDTO`
-        """
-        return self._container_settings
-
-    @container_settings.setter
-    def container_settings(self, container_settings):
-        r"""Sets the container_settings of this UpdateEdgeModuleReqDTO.
-
-        :param container_settings: The container_settings of this UpdateEdgeModuleReqDTO.
-        :type container_settings: :class:`huaweicloudsdkiotedge.v2.ContainerSettingsReqDTO`
-        """
-        self._container_settings = container_settings
-
-    @property
     def desired_state(self):
         r"""Gets the desired_state of this UpdateEdgeModuleReqDTO.
 
@@ -143,6 +132,46 @@ class UpdateEdgeModuleReqDTO:
         :type desired_state: str
         """
         self._desired_state = desired_state
+
+    @property
+    def container_settings(self):
+        r"""Gets the container_settings of this UpdateEdgeModuleReqDTO.
+
+        :return: The container_settings of this UpdateEdgeModuleReqDTO.
+        :rtype: :class:`huaweicloudsdkiotedge.v2.ContainerSettingsReqDTO`
+        """
+        return self._container_settings
+
+    @container_settings.setter
+    def container_settings(self, container_settings):
+        r"""Sets the container_settings of this UpdateEdgeModuleReqDTO.
+
+        :param container_settings: The container_settings of this UpdateEdgeModuleReqDTO.
+        :type container_settings: :class:`huaweicloudsdkiotedge.v2.ContainerSettingsReqDTO`
+        """
+        self._container_settings = container_settings
+
+    @property
+    def force_upgrade(self):
+        r"""Gets the force_upgrade of this UpdateEdgeModuleReqDTO.
+
+        是否强制升级
+
+        :return: The force_upgrade of this UpdateEdgeModuleReqDTO.
+        :rtype: bool
+        """
+        return self._force_upgrade
+
+    @force_upgrade.setter
+    def force_upgrade(self, force_upgrade):
+        r"""Sets the force_upgrade of this UpdateEdgeModuleReqDTO.
+
+        是否强制升级
+
+        :param force_upgrade: The force_upgrade of this UpdateEdgeModuleReqDTO.
+        :type force_upgrade: bool
+        """
+        self._force_upgrade = force_upgrade
 
     def to_dict(self):
         result = {}

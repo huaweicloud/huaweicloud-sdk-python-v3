@@ -31,9 +31,9 @@ class PrecheckClusterRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param api_version: API版本，默认为v3
+        :param api_version: **参数解释：** API版本，固定值\&quot;v3\&quot;，该值不可修改。 **约束限制：** 该值不可修改 **取值范围：** - v3  **默认取值：** v3
         :type api_version: str
-        :param kind: 资源类型，默认为PreCheckTask
+        :param kind: **参数解释：** API类型，固定值\&quot;PreCheckTask\&quot;，该值不可修改。 **约束限制：** 该值不可修改 **取值范围：** - PreCheckTask  **默认取值：** PreCheckTask
         :type kind: str
         :param spec: 
         :type spec: :class:`huaweicloudsdkcce.v3.PrecheckSpec`
@@ -54,7 +54,7 @@ class PrecheckClusterRequestBody:
     def api_version(self):
         r"""Gets the api_version of this PrecheckClusterRequestBody.
 
-        API版本，默认为v3
+        **参数解释：** API版本，固定值\"v3\"，该值不可修改。 **约束限制：** 该值不可修改 **取值范围：** - v3  **默认取值：** v3
 
         :return: The api_version of this PrecheckClusterRequestBody.
         :rtype: str
@@ -65,7 +65,7 @@ class PrecheckClusterRequestBody:
     def api_version(self, api_version):
         r"""Sets the api_version of this PrecheckClusterRequestBody.
 
-        API版本，默认为v3
+        **参数解释：** API版本，固定值\"v3\"，该值不可修改。 **约束限制：** 该值不可修改 **取值范围：** - v3  **默认取值：** v3
 
         :param api_version: The api_version of this PrecheckClusterRequestBody.
         :type api_version: str
@@ -76,7 +76,7 @@ class PrecheckClusterRequestBody:
     def kind(self):
         r"""Gets the kind of this PrecheckClusterRequestBody.
 
-        资源类型，默认为PreCheckTask
+        **参数解释：** API类型，固定值\"PreCheckTask\"，该值不可修改。 **约束限制：** 该值不可修改 **取值范围：** - PreCheckTask  **默认取值：** PreCheckTask
 
         :return: The kind of this PrecheckClusterRequestBody.
         :rtype: str
@@ -87,7 +87,7 @@ class PrecheckClusterRequestBody:
     def kind(self, kind):
         r"""Sets the kind of this PrecheckClusterRequestBody.
 
-        资源类型，默认为PreCheckTask
+        **参数解释：** API类型，固定值\"PreCheckTask\"，该值不可修改。 **约束限制：** 该值不可修改 **取值范围：** - PreCheckTask  **默认取值：** PreCheckTask
 
         :param kind: The kind of this PrecheckClusterRequestBody.
         :type kind: str

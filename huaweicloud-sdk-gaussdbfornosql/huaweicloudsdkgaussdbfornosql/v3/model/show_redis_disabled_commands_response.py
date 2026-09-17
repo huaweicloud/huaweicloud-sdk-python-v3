@@ -16,7 +16,7 @@ class ShowRedisDisabledCommandsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'total_count': 'str',
+        'total_count': 'int',
         'disabled_type': 'str',
         'commands': 'list[str]',
         'keys': 'list[RedisDisabledCommandsDetail]'
@@ -35,7 +35,7 @@ class ShowRedisDisabledCommandsResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param total_count: 总数。
-        :type total_count: str
+        :type total_count: int
         :param disabled_type: 禁用类型。
         :type disabled_type: str
         :param commands: disabled_type为command时展示该参数。
@@ -68,7 +68,7 @@ class ShowRedisDisabledCommandsResponse(SdkResponse):
         总数。
 
         :return: The total_count of this ShowRedisDisabledCommandsResponse.
-        :rtype: str
+        :rtype: int
         """
         return self._total_count
 
@@ -79,7 +79,7 @@ class ShowRedisDisabledCommandsResponse(SdkResponse):
         总数。
 
         :param total_count: The total_count of this ShowRedisDisabledCommandsResponse.
-        :type total_count: str
+        :type total_count: int
         """
         self._total_count = total_count
 

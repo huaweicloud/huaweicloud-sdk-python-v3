@@ -27,7 +27,7 @@ class ClusterConfigurationsSpec:
 
         The model defined in huaweicloud sdk
 
-        :param packages: 组件配置项列表
+        :param packages: **参数解释：** 组件配置项列表 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type packages: list[:class:`huaweicloudsdkcce.v3.ClusterConfigurationsSpecPackages`]
         """
         
@@ -42,7 +42,7 @@ class ClusterConfigurationsSpec:
     def packages(self):
         r"""Gets the packages of this ClusterConfigurationsSpec.
 
-        组件配置项列表
+        **参数解释：** 组件配置项列表 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The packages of this ClusterConfigurationsSpec.
         :rtype: list[:class:`huaweicloudsdkcce.v3.ClusterConfigurationsSpecPackages`]
@@ -53,7 +53,7 @@ class ClusterConfigurationsSpec:
     def packages(self, packages):
         r"""Sets the packages of this ClusterConfigurationsSpec.
 
-        组件配置项列表
+        **参数解释：** 组件配置项列表 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param packages: The packages of this ClusterConfigurationsSpec.
         :type packages: list[:class:`huaweicloudsdkcce.v3.ClusterConfigurationsSpecPackages`]

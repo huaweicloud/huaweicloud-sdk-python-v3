@@ -21,7 +21,8 @@ class BatchListEdgeAppVersionsRequest:
         'limit': 'int',
         'ai_card_type': 'str',
         'arch': 'str',
-        'state': 'str'
+        'state': 'str',
+        'deploy_type': 'str'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class BatchListEdgeAppVersionsRequest:
         'limit': 'limit',
         'ai_card_type': 'ai_card_type',
         'arch': 'arch',
-        'state': 'state'
+        'state': 'state',
+        'deploy_type': 'deploy_type'
     }
 
-    def __init__(self, edge_app_id=None, version=None, offset=None, limit=None, ai_card_type=None, arch=None, state=None):
+    def __init__(self, edge_app_id=None, version=None, offset=None, limit=None, ai_card_type=None, arch=None, state=None, deploy_type=None):
         r"""BatchListEdgeAppVersionsRequest
 
         The model defined in huaweicloud sdk
@@ -53,6 +55,8 @@ class BatchListEdgeAppVersionsRequest:
         :type arch: str
         :param state: 应用版本状态
         :type state: str
+        :param deploy_type: 应用部署类型
+        :type deploy_type: str
         """
         
         
@@ -64,6 +68,7 @@ class BatchListEdgeAppVersionsRequest:
         self._ai_card_type = None
         self._arch = None
         self._state = None
+        self._deploy_type = None
         self.discriminator = None
 
         self.edge_app_id = edge_app_id
@@ -79,6 +84,8 @@ class BatchListEdgeAppVersionsRequest:
             self.arch = arch
         if state is not None:
             self.state = state
+        if deploy_type is not None:
+            self.deploy_type = deploy_type
 
     @property
     def edge_app_id(self):
@@ -233,6 +240,28 @@ class BatchListEdgeAppVersionsRequest:
         :type state: str
         """
         self._state = state
+
+    @property
+    def deploy_type(self):
+        r"""Gets the deploy_type of this BatchListEdgeAppVersionsRequest.
+
+        应用部署类型
+
+        :return: The deploy_type of this BatchListEdgeAppVersionsRequest.
+        :rtype: str
+        """
+        return self._deploy_type
+
+    @deploy_type.setter
+    def deploy_type(self, deploy_type):
+        r"""Sets the deploy_type of this BatchListEdgeAppVersionsRequest.
+
+        应用部署类型
+
+        :param deploy_type: The deploy_type of this BatchListEdgeAppVersionsRequest.
+        :type deploy_type: str
+        """
+        self._deploy_type = deploy_type
 
     def to_dict(self):
         result = {}

@@ -37,11 +37,11 @@ class PrecheckStatus:
 
         The model defined in huaweicloud sdk
 
-        :param phase: 状态，取值如下 - Init: 初始化 - Running 运行中 - Success 成功 - Failed 失败 - Error 错误
+        :param phase: **参数解释：** 状态 **约束限制：** 不涉及 **取值范围：** - Init：初始化 - Running：运行中 - Success：成功 - Failed：失败 - Error：错误  **默认取值：** 不涉及
         :type phase: str
-        :param expire_time_stamp: 检查结果过期时间
+        :param expire_time_stamp: **参数解释：** 检查结果过期时间 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type expire_time_stamp: str
-        :param message: 信息，一般是执行错误的日志信息
+        :param message: **参数解释：** 信息，一般是执行错误的日志信息 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type message: str
         :param cluster_check_status: 
         :type cluster_check_status: :class:`huaweicloudsdkcce.v3.ClusterCheckStatus`
@@ -78,7 +78,7 @@ class PrecheckStatus:
     def phase(self):
         r"""Gets the phase of this PrecheckStatus.
 
-        状态，取值如下 - Init: 初始化 - Running 运行中 - Success 成功 - Failed 失败 - Error 错误
+        **参数解释：** 状态 **约束限制：** 不涉及 **取值范围：** - Init：初始化 - Running：运行中 - Success：成功 - Failed：失败 - Error：错误  **默认取值：** 不涉及
 
         :return: The phase of this PrecheckStatus.
         :rtype: str
@@ -89,7 +89,7 @@ class PrecheckStatus:
     def phase(self, phase):
         r"""Sets the phase of this PrecheckStatus.
 
-        状态，取值如下 - Init: 初始化 - Running 运行中 - Success 成功 - Failed 失败 - Error 错误
+        **参数解释：** 状态 **约束限制：** 不涉及 **取值范围：** - Init：初始化 - Running：运行中 - Success：成功 - Failed：失败 - Error：错误  **默认取值：** 不涉及
 
         :param phase: The phase of this PrecheckStatus.
         :type phase: str
@@ -100,7 +100,7 @@ class PrecheckStatus:
     def expire_time_stamp(self):
         r"""Gets the expire_time_stamp of this PrecheckStatus.
 
-        检查结果过期时间
+        **参数解释：** 检查结果过期时间 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The expire_time_stamp of this PrecheckStatus.
         :rtype: str
@@ -111,7 +111,7 @@ class PrecheckStatus:
     def expire_time_stamp(self, expire_time_stamp):
         r"""Sets the expire_time_stamp of this PrecheckStatus.
 
-        检查结果过期时间
+        **参数解释：** 检查结果过期时间 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param expire_time_stamp: The expire_time_stamp of this PrecheckStatus.
         :type expire_time_stamp: str
@@ -122,7 +122,7 @@ class PrecheckStatus:
     def message(self):
         r"""Gets the message of this PrecheckStatus.
 
-        信息，一般是执行错误的日志信息
+        **参数解释：** 信息，一般是执行错误的日志信息 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The message of this PrecheckStatus.
         :rtype: str
@@ -133,7 +133,7 @@ class PrecheckStatus:
     def message(self, message):
         r"""Sets the message of this PrecheckStatus.
 
-        信息，一般是执行错误的日志信息
+        **参数解释：** 信息，一般是执行错误的日志信息 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param message: The message of this PrecheckStatus.
         :type message: str

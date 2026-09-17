@@ -39,19 +39,19 @@ class AddonMetadata:
 
         The model defined in huaweicloud sdk
 
-        :param uid: 唯一id标识
+        :param uid: **参数解释**： 插件实例唯一ID标识，创建成功后系统自动生成。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type uid: str
-        :param name: 插件名称
+        :param name: **参数解释**： 插件名称 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type name: str
-        :param alias: 插件别名
+        :param alias: **参数解释**： 插件别名。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type alias: str
-        :param labels: 插件标签，key/value对格式，接口保留字段，填写不会生效
+        :param labels: **参数解释**： 插件标签，key/value对格式，接口保留字段，填写不会生效。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type labels: dict(str, str)
-        :param annotations: 插件注解，由key/value组成 - 安装：固定值为{\&quot;addon.install/type\&quot;:\&quot;install\&quot;} - 升级：固定值为{\&quot;addon.upgrade/type\&quot;:\&quot;upgrade\&quot;} 
+        :param annotations: **参数解释**： 插件注解，由key/value组成。 **约束限制**： 不涉及 **取值范围**： - 安装时固定值为{\&quot;addon.install/type\&quot;:\&quot;install\&quot;} - 升级时固定值为{\&quot;addon.upgrade/type\&quot;:\&quot;upgrade\&quot;}  **默认取值**： 不涉及
         :type annotations: dict(str, str)
-        :param update_timestamp: 更新时间
+        :param update_timestamp: **参数解释**： 更新时间 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type update_timestamp: date
-        :param creation_timestamp: 创建时间
+        :param creation_timestamp: **参数解释**： 创建时间，创建成功后系统自动生成，填写无效。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type creation_timestamp: date
         """
         
@@ -85,7 +85,7 @@ class AddonMetadata:
     def uid(self):
         r"""Gets the uid of this AddonMetadata.
 
-        唯一id标识
+        **参数解释**： 插件实例唯一ID标识，创建成功后系统自动生成。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The uid of this AddonMetadata.
         :rtype: str
@@ -96,7 +96,7 @@ class AddonMetadata:
     def uid(self, uid):
         r"""Sets the uid of this AddonMetadata.
 
-        唯一id标识
+        **参数解释**： 插件实例唯一ID标识，创建成功后系统自动生成。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param uid: The uid of this AddonMetadata.
         :type uid: str
@@ -107,7 +107,7 @@ class AddonMetadata:
     def name(self):
         r"""Gets the name of this AddonMetadata.
 
-        插件名称
+        **参数解释**： 插件名称 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The name of this AddonMetadata.
         :rtype: str
@@ -118,7 +118,7 @@ class AddonMetadata:
     def name(self, name):
         r"""Sets the name of this AddonMetadata.
 
-        插件名称
+        **参数解释**： 插件名称 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param name: The name of this AddonMetadata.
         :type name: str
@@ -129,7 +129,7 @@ class AddonMetadata:
     def alias(self):
         r"""Gets the alias of this AddonMetadata.
 
-        插件别名
+        **参数解释**： 插件别名。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The alias of this AddonMetadata.
         :rtype: str
@@ -140,7 +140,7 @@ class AddonMetadata:
     def alias(self, alias):
         r"""Sets the alias of this AddonMetadata.
 
-        插件别名
+        **参数解释**： 插件别名。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param alias: The alias of this AddonMetadata.
         :type alias: str
@@ -151,7 +151,7 @@ class AddonMetadata:
     def labels(self):
         r"""Gets the labels of this AddonMetadata.
 
-        插件标签，key/value对格式，接口保留字段，填写不会生效
+        **参数解释**： 插件标签，key/value对格式，接口保留字段，填写不会生效。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The labels of this AddonMetadata.
         :rtype: dict(str, str)
@@ -162,7 +162,7 @@ class AddonMetadata:
     def labels(self, labels):
         r"""Sets the labels of this AddonMetadata.
 
-        插件标签，key/value对格式，接口保留字段，填写不会生效
+        **参数解释**： 插件标签，key/value对格式，接口保留字段，填写不会生效。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param labels: The labels of this AddonMetadata.
         :type labels: dict(str, str)
@@ -173,7 +173,7 @@ class AddonMetadata:
     def annotations(self):
         r"""Gets the annotations of this AddonMetadata.
 
-        插件注解，由key/value组成 - 安装：固定值为{\"addon.install/type\":\"install\"} - 升级：固定值为{\"addon.upgrade/type\":\"upgrade\"} 
+        **参数解释**： 插件注解，由key/value组成。 **约束限制**： 不涉及 **取值范围**： - 安装时固定值为{\"addon.install/type\":\"install\"} - 升级时固定值为{\"addon.upgrade/type\":\"upgrade\"}  **默认取值**： 不涉及
 
         :return: The annotations of this AddonMetadata.
         :rtype: dict(str, str)
@@ -184,7 +184,7 @@ class AddonMetadata:
     def annotations(self, annotations):
         r"""Sets the annotations of this AddonMetadata.
 
-        插件注解，由key/value组成 - 安装：固定值为{\"addon.install/type\":\"install\"} - 升级：固定值为{\"addon.upgrade/type\":\"upgrade\"} 
+        **参数解释**： 插件注解，由key/value组成。 **约束限制**： 不涉及 **取值范围**： - 安装时固定值为{\"addon.install/type\":\"install\"} - 升级时固定值为{\"addon.upgrade/type\":\"upgrade\"}  **默认取值**： 不涉及
 
         :param annotations: The annotations of this AddonMetadata.
         :type annotations: dict(str, str)
@@ -195,7 +195,7 @@ class AddonMetadata:
     def update_timestamp(self):
         r"""Gets the update_timestamp of this AddonMetadata.
 
-        更新时间
+        **参数解释**： 更新时间 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The update_timestamp of this AddonMetadata.
         :rtype: date
@@ -206,7 +206,7 @@ class AddonMetadata:
     def update_timestamp(self, update_timestamp):
         r"""Sets the update_timestamp of this AddonMetadata.
 
-        更新时间
+        **参数解释**： 更新时间 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param update_timestamp: The update_timestamp of this AddonMetadata.
         :type update_timestamp: date
@@ -217,7 +217,7 @@ class AddonMetadata:
     def creation_timestamp(self):
         r"""Gets the creation_timestamp of this AddonMetadata.
 
-        创建时间
+        **参数解释**： 创建时间，创建成功后系统自动生成，填写无效。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The creation_timestamp of this AddonMetadata.
         :rtype: date
@@ -228,7 +228,7 @@ class AddonMetadata:
     def creation_timestamp(self, creation_timestamp):
         r"""Sets the creation_timestamp of this AddonMetadata.
 
-        创建时间
+        **参数解释**： 创建时间，创建成功后系统自动生成，填写无效。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param creation_timestamp: The creation_timestamp of this AddonMetadata.
         :type creation_timestamp: date

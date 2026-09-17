@@ -16,47 +16,51 @@ class ShowOpsEvaluationTaskChartsLabelsDistributionResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'object'
+        'data': 'list[OpsChartsTagDistributionItem]'
     }
 
     attribute_map = {
-        'body': 'body'
+        'data': 'data'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, data=None):
         r"""ShowOpsEvaluationTaskChartsLabelsDistributionResponse
 
         The model defined in huaweicloud sdk
 
-        :param body: 
-        :type body: object
+        :param data: **参数解释：** 标签分布统计列表。 **约束限制：** 不涉及。
+        :type data: list[:class:`huaweicloudsdkagentarts.v1.OpsChartsTagDistributionItem`]
         """
         
         super().__init__()
 
-        self._body = None
+        self._data = None
         self.discriminator = None
 
-        if body is not None:
-            self.body = body
+        if data is not None:
+            self.data = data
 
     @property
-    def body(self):
-        r"""Gets the body of this ShowOpsEvaluationTaskChartsLabelsDistributionResponse.
+    def data(self):
+        r"""Gets the data of this ShowOpsEvaluationTaskChartsLabelsDistributionResponse.
 
-        :return: The body of this ShowOpsEvaluationTaskChartsLabelsDistributionResponse.
-        :rtype: object
+        **参数解释：** 标签分布统计列表。 **约束限制：** 不涉及。
+
+        :return: The data of this ShowOpsEvaluationTaskChartsLabelsDistributionResponse.
+        :rtype: list[:class:`huaweicloudsdkagentarts.v1.OpsChartsTagDistributionItem`]
         """
-        return self._body
+        return self._data
 
-    @body.setter
-    def body(self, body):
-        r"""Sets the body of this ShowOpsEvaluationTaskChartsLabelsDistributionResponse.
+    @data.setter
+    def data(self, data):
+        r"""Sets the data of this ShowOpsEvaluationTaskChartsLabelsDistributionResponse.
 
-        :param body: The body of this ShowOpsEvaluationTaskChartsLabelsDistributionResponse.
-        :type body: object
+        **参数解释：** 标签分布统计列表。 **约束限制：** 不涉及。
+
+        :param data: The data of this ShowOpsEvaluationTaskChartsLabelsDistributionResponse.
+        :type data: list[:class:`huaweicloudsdkagentarts.v1.OpsChartsTagDistributionItem`]
         """
-        self._body = body
+        self._data = data
 
     def to_dict(self):
         import warnings

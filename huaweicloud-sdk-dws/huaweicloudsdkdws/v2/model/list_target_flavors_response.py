@@ -36,7 +36,7 @@ class ListTargetFlavorsResponse(SdkResponse):
         :type count: int
         :param flavors: **参数解释**： 规格详情列表。接口返回的规格列表最多为20条。 **取值范围**： 不涉及。
         :type flavors: list[:class:`huaweicloudsdkdws.v2.FlavorInfoResponse`]
-        :param change_mode: **参数解释**： 规格变更模式。 **取值范围**： online：在线模式； offline：离线模式； all：在线模式、离线模式都支持。
+        :param change_mode: **参数解释**： 规格变更模式。 **约束限制**： 不涉及。 **取值范围**： - online：在线模式； - offline：离线模式； - all：在线模式、离线模式都支持。 **默认取值**： offline
         :type change_mode: str
         """
         
@@ -102,7 +102,7 @@ class ListTargetFlavorsResponse(SdkResponse):
     def change_mode(self):
         r"""Gets the change_mode of this ListTargetFlavorsResponse.
 
-        **参数解释**： 规格变更模式。 **取值范围**： online：在线模式； offline：离线模式； all：在线模式、离线模式都支持。
+        **参数解释**： 规格变更模式。 **约束限制**： 不涉及。 **取值范围**： - online：在线模式； - offline：离线模式； - all：在线模式、离线模式都支持。 **默认取值**： offline
 
         :return: The change_mode of this ListTargetFlavorsResponse.
         :rtype: str
@@ -113,7 +113,7 @@ class ListTargetFlavorsResponse(SdkResponse):
     def change_mode(self, change_mode):
         r"""Sets the change_mode of this ListTargetFlavorsResponse.
 
-        **参数解释**： 规格变更模式。 **取值范围**： online：在线模式； offline：离线模式； all：在线模式、离线模式都支持。
+        **参数解释**： 规格变更模式。 **约束限制**： 不涉及。 **取值范围**： - online：在线模式； - offline：离线模式； - all：在线模式、离线模式都支持。 **默认取值**： offline
 
         :param change_mode: The change_mode of this ListTargetFlavorsResponse.
         :type change_mode: str

@@ -31,11 +31,11 @@ class NodeSelector:
 
         The model defined in huaweicloud sdk
 
-        :param key: 标签键
+        :param key: **参数解释：** 标签键 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type key: str
-        :param value: 标签值列表
+        :param value: **参数解释：** 标签值列表 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type value: list[str]
-        :param operator: 标签逻辑运算符
+        :param operator: **参数解释：** 标签逻辑运算符 **约束限制：** 不涉及 **取值范围：** - in：值在列表中 - notin：值不在列表中 - exists：标签存在 - !：标签不存在 - gt：大于 - lt：小于  **默认取值：** 不涉及
         :type operator: str
         """
         
@@ -55,7 +55,7 @@ class NodeSelector:
     def key(self):
         r"""Gets the key of this NodeSelector.
 
-        标签键
+        **参数解释：** 标签键 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The key of this NodeSelector.
         :rtype: str
@@ -66,7 +66,7 @@ class NodeSelector:
     def key(self, key):
         r"""Sets the key of this NodeSelector.
 
-        标签键
+        **参数解释：** 标签键 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param key: The key of this NodeSelector.
         :type key: str
@@ -77,7 +77,7 @@ class NodeSelector:
     def value(self):
         r"""Gets the value of this NodeSelector.
 
-        标签值列表
+        **参数解释：** 标签值列表 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The value of this NodeSelector.
         :rtype: list[str]
@@ -88,7 +88,7 @@ class NodeSelector:
     def value(self, value):
         r"""Sets the value of this NodeSelector.
 
-        标签值列表
+        **参数解释：** 标签值列表 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param value: The value of this NodeSelector.
         :type value: list[str]
@@ -99,7 +99,7 @@ class NodeSelector:
     def operator(self):
         r"""Gets the operator of this NodeSelector.
 
-        标签逻辑运算符
+        **参数解释：** 标签逻辑运算符 **约束限制：** 不涉及 **取值范围：** - in：值在列表中 - notin：值不在列表中 - exists：标签存在 - !：标签不存在 - gt：大于 - lt：小于  **默认取值：** 不涉及
 
         :return: The operator of this NodeSelector.
         :rtype: str
@@ -110,7 +110,7 @@ class NodeSelector:
     def operator(self, operator):
         r"""Sets the operator of this NodeSelector.
 
-        标签逻辑运算符
+        **参数解释：** 标签逻辑运算符 **约束限制：** 不涉及 **取值范围：** - in：值在列表中 - notin：值不在列表中 - exists：标签存在 - !：标签不存在 - gt：大于 - lt：小于  **默认取值：** 不涉及
 
         :param operator: The operator of this NodeSelector.
         :type operator: str

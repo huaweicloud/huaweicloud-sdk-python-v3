@@ -20,6 +20,7 @@ class TableMeta:
         'table_name': 'str',
         'table_type': 'str',
         'comments': 'str',
+        'table_format': 'str',
         'columns': 'list[Column]',
         'partition_keys': 'list[Column]'
     }
@@ -30,11 +31,12 @@ class TableMeta:
         'table_name': 'table_name',
         'table_type': 'table_type',
         'comments': 'comments',
+        'table_format': 'table_format',
         'columns': 'columns',
         'partition_keys': 'partition_keys'
     }
 
-    def __init__(self, catalog_name=None, database_name=None, table_name=None, table_type=None, comments=None, columns=None, partition_keys=None):
+    def __init__(self, catalog_name=None, database_name=None, table_name=None, table_type=None, comments=None, table_format=None, columns=None, partition_keys=None):
         r"""TableMeta
 
         The model defined in huaweicloud sdk
@@ -49,6 +51,8 @@ class TableMeta:
         :type table_type: str
         :param comments: 表描述信息
         :type comments: str
+        :param table_format: **参数解释:** 表格式。支持{HIVE,ICEBERG,LANCE,PAIMON}，默认值为HIVE **约束限制:** 可选值为：HIVE, ICEBERG, LANCE,PAIMON
+        :type table_format: str
         :param columns: 分区列以外的所有字段。
         :type columns: list[:class:`huaweicloudsdklakeformation.v1.Column`]
         :param partition_keys: 分区列的信息。
@@ -62,6 +66,7 @@ class TableMeta:
         self._table_name = None
         self._table_type = None
         self._comments = None
+        self._table_format = None
         self._columns = None
         self._partition_keys = None
         self.discriminator = None
@@ -71,6 +76,8 @@ class TableMeta:
         self.table_name = table_name
         self.table_type = table_type
         self.comments = comments
+        if table_format is not None:
+            self.table_format = table_format
         if columns is not None:
             self.columns = columns
         if partition_keys is not None:
@@ -185,6 +192,28 @@ class TableMeta:
         :type comments: str
         """
         self._comments = comments
+
+    @property
+    def table_format(self):
+        r"""Gets the table_format of this TableMeta.
+
+        **参数解释:** 表格式。支持{HIVE,ICEBERG,LANCE,PAIMON}，默认值为HIVE **约束限制:** 可选值为：HIVE, ICEBERG, LANCE,PAIMON
+
+        :return: The table_format of this TableMeta.
+        :rtype: str
+        """
+        return self._table_format
+
+    @table_format.setter
+    def table_format(self, table_format):
+        r"""Sets the table_format of this TableMeta.
+
+        **参数解释:** 表格式。支持{HIVE,ICEBERG,LANCE,PAIMON}，默认值为HIVE **约束限制:** 可选值为：HIVE, ICEBERG, LANCE,PAIMON
+
+        :param table_format: The table_format of this TableMeta.
+        :type table_format: str
+        """
+        self._table_format = table_format
 
     @property
     def columns(self):

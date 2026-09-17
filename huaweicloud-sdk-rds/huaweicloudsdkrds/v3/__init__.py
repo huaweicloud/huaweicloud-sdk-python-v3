@@ -912,6 +912,7 @@ from huaweicloudsdkrds.v3.model.show_restart_policy_response import ShowRestartP
 from huaweicloudsdkrds.v3.model.show_restore_tables_request import ShowRestoreTablesRequest
 from huaweicloudsdkrds.v3.model.show_restore_tables_request_body import ShowRestoreTablesRequestBody
 from huaweicloudsdkrds.v3.model.show_restore_tables_response import ShowRestoreTablesResponse
+from huaweicloudsdkrds.v3.model.show_risk_info_engine_risk_desc import ShowRiskInfoEngineRiskDesc
 from huaweicloudsdkrds.v3.model.show_risk_info_request import ShowRiskInfoRequest
 from huaweicloudsdkrds.v3.model.show_risk_info_response import ShowRiskInfoResponse
 from huaweicloudsdkrds.v3.model.show_second_level_monitoring_request import ShowSecondLevelMonitoringRequest
@@ -943,7 +944,7 @@ from huaweicloudsdkrds.v3.model.slow_log_statistics_for_lts_request import SlowL
 from huaweicloudsdkrds.v3.model.slowlog_download_info import SlowlogDownloadInfo
 from huaweicloudsdkrds.v3.model.slowlog_download_request import SlowlogDownloadRequest
 from huaweicloudsdkrds.v3.model.slowlog_for_lts_request import SlowlogForLtsRequest
-from huaweicloudsdkrds.v3.model.spaces import Spaces
+from huaweicloudsdkrds.v3.model.space import Space
 from huaweicloudsdkrds.v3.model.sparse_backup_policy import SparseBackupPolicy
 from huaweicloudsdkrds.v3.model.sparse_backup_policy_for_update import SparseBackupPolicyForUpdate
 from huaweicloudsdkrds.v3.model.sql_diagnosis_result import SqlDiagnosisResult
