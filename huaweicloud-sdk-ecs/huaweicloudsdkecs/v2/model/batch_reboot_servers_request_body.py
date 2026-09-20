@@ -15,7 +15,7 @@ class BatchRebootServersRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'reboot': 'BatchRebootSeversOption'
+        'reboot': 'BatchRebootServersOption'
     }
 
     attribute_map = {
@@ -28,7 +28,7 @@ class BatchRebootServersRequestBody:
         The model defined in huaweicloud sdk
 
         :param reboot: 
-        :type reboot: :class:`huaweicloudsdkecs.v2.BatchRebootSeversOption`
+        :type reboot: :class:`huaweicloudsdkecs.v2.BatchRebootServersOption`
         """
         
         
@@ -43,7 +43,7 @@ class BatchRebootServersRequestBody:
         r"""Gets the reboot of this BatchRebootServersRequestBody.
 
         :return: The reboot of this BatchRebootServersRequestBody.
-        :rtype: :class:`huaweicloudsdkecs.v2.BatchRebootSeversOption`
+        :rtype: :class:`huaweicloudsdkecs.v2.BatchRebootServersOption`
         """
         return self._reboot
 
@@ -52,7 +52,7 @@ class BatchRebootServersRequestBody:
         r"""Sets the reboot of this BatchRebootServersRequestBody.
 
         :param reboot: The reboot of this BatchRebootServersRequestBody.
-        :type reboot: :class:`huaweicloudsdkecs.v2.BatchRebootSeversOption`
+        :type reboot: :class:`huaweicloudsdkecs.v2.BatchRebootServersOption`
         """
         self._reboot = reboot
 
