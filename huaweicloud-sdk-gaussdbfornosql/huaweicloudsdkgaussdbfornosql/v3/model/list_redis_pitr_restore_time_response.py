@@ -30,9 +30,9 @@ class ListRedisPitrRestoreTimeResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param restore_time: Redis可恢复时间点列表。 yyyy-mm-ddThh:mm:ssZ字符串格式，T指某个时间的开始，Z指时区偏移量。
+        :param restore_time: **参数解释：** Redis可恢复时间点列表。yyyy-mm-ddThh:mm:ssZ字符串格式，T指某个时间的开始，Z指时区偏移量。 **取值范围：** 不涉及。
         :type restore_time: list[str]
-        :param total_count: Redis实例可恢复时间点总数。
+        :param total_count: **参数解释：** Redis实例可恢复时间点总数。 **取值范围：** 不涉及。
         :type total_count: int
         """
         
@@ -51,7 +51,7 @@ class ListRedisPitrRestoreTimeResponse(SdkResponse):
     def restore_time(self):
         r"""Gets the restore_time of this ListRedisPitrRestoreTimeResponse.
 
-        Redis可恢复时间点列表。 yyyy-mm-ddThh:mm:ssZ字符串格式，T指某个时间的开始，Z指时区偏移量。
+        **参数解释：** Redis可恢复时间点列表。yyyy-mm-ddThh:mm:ssZ字符串格式，T指某个时间的开始，Z指时区偏移量。 **取值范围：** 不涉及。
 
         :return: The restore_time of this ListRedisPitrRestoreTimeResponse.
         :rtype: list[str]
@@ -62,7 +62,7 @@ class ListRedisPitrRestoreTimeResponse(SdkResponse):
     def restore_time(self, restore_time):
         r"""Sets the restore_time of this ListRedisPitrRestoreTimeResponse.
 
-        Redis可恢复时间点列表。 yyyy-mm-ddThh:mm:ssZ字符串格式，T指某个时间的开始，Z指时区偏移量。
+        **参数解释：** Redis可恢复时间点列表。yyyy-mm-ddThh:mm:ssZ字符串格式，T指某个时间的开始，Z指时区偏移量。 **取值范围：** 不涉及。
 
         :param restore_time: The restore_time of this ListRedisPitrRestoreTimeResponse.
         :type restore_time: list[str]
@@ -73,7 +73,7 @@ class ListRedisPitrRestoreTimeResponse(SdkResponse):
     def total_count(self):
         r"""Gets the total_count of this ListRedisPitrRestoreTimeResponse.
 
-        Redis实例可恢复时间点总数。
+        **参数解释：** Redis实例可恢复时间点总数。 **取值范围：** 不涉及。
 
         :return: The total_count of this ListRedisPitrRestoreTimeResponse.
         :rtype: int
@@ -84,7 +84,7 @@ class ListRedisPitrRestoreTimeResponse(SdkResponse):
     def total_count(self, total_count):
         r"""Sets the total_count of this ListRedisPitrRestoreTimeResponse.
 
-        Redis实例可恢复时间点总数。
+        **参数解释：** Redis实例可恢复时间点总数。 **取值范围：** 不涉及。
 
         :param total_count: The total_count of this ListRedisPitrRestoreTimeResponse.
         :type total_count: int

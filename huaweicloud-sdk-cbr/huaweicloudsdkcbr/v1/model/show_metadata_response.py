@@ -23,7 +23,8 @@ class ShowMetadataResponse(SdkResponse):
         'interface': 'str',
         'ports': 'list[str]',
         'server': 'str',
-        'volumes': 'list[str]'
+        'volumes': 'list[str]',
+        'workspace': 'str'
     }
 
     attribute_map = {
@@ -34,10 +35,11 @@ class ShowMetadataResponse(SdkResponse):
         'interface': 'interface',
         'ports': 'ports',
         'server': 'server',
-        'volumes': 'volumes'
+        'volumes': 'volumes',
+        'workspace': 'workspace'
     }
 
-    def __init__(self, backup_id=None, backups=None, flavor=None, floatingips=None, interface=None, ports=None, server=None, volumes=None):
+    def __init__(self, backup_id=None, backups=None, flavor=None, floatingips=None, interface=None, ports=None, server=None, volumes=None, workspace=None):
         r"""ShowMetadataResponse
 
         The model defined in huaweicloud sdk
@@ -58,6 +60,8 @@ class ShowMetadataResponse(SdkResponse):
         :type server: str
         :param volumes: 云服务器卷信息
         :type volumes: list[str]
+        :param workspace: 云桌面信息，取值范围不涉及。
+        :type workspace: str
         """
         
         super().__init__()
@@ -70,6 +74,7 @@ class ShowMetadataResponse(SdkResponse):
         self._ports = None
         self._server = None
         self._volumes = None
+        self._workspace = None
         self.discriminator = None
 
         if backup_id is not None:
@@ -88,6 +93,8 @@ class ShowMetadataResponse(SdkResponse):
             self.server = server
         if volumes is not None:
             self.volumes = volumes
+        if workspace is not None:
+            self.workspace = workspace
 
     @property
     def backup_id(self):
@@ -264,6 +271,28 @@ class ShowMetadataResponse(SdkResponse):
         :type volumes: list[str]
         """
         self._volumes = volumes
+
+    @property
+    def workspace(self):
+        r"""Gets the workspace of this ShowMetadataResponse.
+
+        云桌面信息，取值范围不涉及。
+
+        :return: The workspace of this ShowMetadataResponse.
+        :rtype: str
+        """
+        return self._workspace
+
+    @workspace.setter
+    def workspace(self, workspace):
+        r"""Sets the workspace of this ShowMetadataResponse.
+
+        云桌面信息，取值范围不涉及。
+
+        :param workspace: The workspace of this ShowMetadataResponse.
+        :type workspace: str
+        """
+        self._workspace = workspace
 
     def to_dict(self):
         import warnings

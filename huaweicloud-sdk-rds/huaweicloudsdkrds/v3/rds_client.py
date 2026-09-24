@@ -3284,6 +3284,75 @@ class RdsClient(Client):
 
         return http_info
 
+    def execute_optimize_table_space(self, request):
+        r"""清理表碎片空间
+
+        清理表碎片空间
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExecuteOptimizeTableSpace
+        :type request: :class:`huaweicloudsdkrds.v3.ExecuteOptimizeTableSpaceRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ExecuteOptimizeTableSpaceResponse`
+        """
+        http_info = self._execute_optimize_table_space_http_info(request)
+        return self._call_api(**http_info)
+
+    def execute_optimize_table_space_invoker(self, request):
+        http_info = self._execute_optimize_table_space_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _execute_optimize_table_space_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/optimize/table",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteOptimizeTableSpaceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def get_instances_ops_metric_names(self, request):
         r"""查询实例CES监控指标名称列表
 
@@ -3395,6 +3464,79 @@ class RdsClient(Client):
             query_params.append(('start_time', local_var_params['start_time']))
         if 'end_time' in local_var_params:
             query_params.append(('end_time', local_var_params['end_time']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_auto_scaling_history(self, request):
+        r"""查询自动变配历史
+
+        查询自动变配历史。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListAutoScalingHistory
+        :type request: :class:`huaweicloudsdkrds.v3.ListAutoScalingHistoryRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListAutoScalingHistoryResponse`
+        """
+        http_info = self._list_auto_scaling_history_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_auto_scaling_history_invoker(self, request):
+        http_info = self._list_auto_scaling_history_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_auto_scaling_history_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/auto-scaling/history",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAutoScalingHistoryResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'strategy_type' in local_var_params:
+            query_params.append(('strategy_type', local_var_params['strategy_type']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
@@ -9485,6 +9627,75 @@ class RdsClient(Client):
 
         return http_info
 
+    def set_auto_scaling_policy(self, request):
+        r"""修改自动变配策略
+
+        修改自动变配的策略，包括自动升配和降配。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for SetAutoScalingPolicy
+        :type request: :class:`huaweicloudsdkrds.v3.SetAutoScalingPolicyRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.SetAutoScalingPolicyResponse`
+        """
+        http_info = self._set_auto_scaling_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def set_auto_scaling_policy_invoker(self, request):
+        http_info = self._set_auto_scaling_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _set_auto_scaling_policy_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/auto-scaling/policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetAutoScalingPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def set_auto_upgrade_policy(self, request):
         r"""设置实例内核小版本自动升级策略
 
@@ -9922,6 +10133,75 @@ class RdsClient(Client):
             "resource_path": "/v3/{project_id}/instances/{instance_id}/backups/offsite-policy",
             "request_type": request.__class__.__name__,
             "response_type": "SetOffSiteBackupPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def set_rds_db_fault_policy(self, request):
+        r"""设置内核故障的处理策略
+
+        设置内核故障的处理策略：优先切换或优先修复。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for SetRdsDBFaultPolicy
+        :type request: :class:`huaweicloudsdkrds.v3.SetRdsDBFaultPolicyRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.SetRdsDBFaultPolicyResponse`
+        """
+        http_info = self._set_rds_db_fault_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def set_rds_db_fault_policy_invoker(self, request):
+        http_info = self._set_rds_db_fault_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _set_rds_db_fault_policy_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/failover/db-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetRdsDBFaultPolicyResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -10550,6 +10830,71 @@ class RdsClient(Client):
         query_params = []
         if 'type' in local_var_params:
             query_params.append(('type', local_var_params['type']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_available_cors_vpcs(self, request):
+        r"""查询云耀实例的VPC服务信息
+
+        查询云耀实例的VPC服务信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowAvailableCorsVpcs
+        :type request: :class:`huaweicloudsdkrds.v3.ShowAvailableCorsVpcsRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ShowAvailableCorsVpcsResponse`
+        """
+        http_info = self._show_available_cors_vpcs_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_available_cors_vpcs_invoker(self, request):
+        http_info = self._show_available_cors_vpcs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_available_cors_vpcs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/available-cors-vpcs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAvailableCorsVpcsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
 
         header_params = {}
         if 'x_language' in local_var_params:
@@ -20240,6 +20585,77 @@ class RdsClient(Client):
 
         return http_info
 
+    def switch_my_sql_proxy_eip(self, request):
+        r"""数据库代理绑定解绑弹性公网IP
+
+        数据库代理绑定解绑弹性公网IP。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for SwitchMySqlProxyEip
+        :type request: :class:`huaweicloudsdkrds.v3.SwitchMySqlProxyEipRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.SwitchMySqlProxyEipResponse`
+        """
+        http_info = self._switch_my_sql_proxy_eip_http_info(request)
+        return self._call_api(**http_info)
+
+    def switch_my_sql_proxy_eip_invoker(self, request):
+        http_info = self._switch_my_sql_proxy_eip_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _switch_my_sql_proxy_eip_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/proxy/{proxy_id}/bind",
+            "request_type": request.__class__.__name__,
+            "response_type": "SwitchMySqlProxyEipResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'proxy_id' in local_var_params:
+            path_params['proxy_id'] = local_var_params['proxy_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def switch_my_sql_proxy_slow_log(self, request):
         r"""更改数据库代理慢日志上报开关
 
@@ -20489,6 +20905,77 @@ class RdsClient(Client):
         query_params = []
 
         header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_instances_proxy_port(self, request):
+        r"""修改数据库代理端口号
+
+        修改数据库代理端口号。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateInstancesProxyPort
+        :type request: :class:`huaweicloudsdkrds.v3.UpdateInstancesProxyPortRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.UpdateInstancesProxyPortResponse`
+        """
+        http_info = self._update_instances_proxy_port_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_instances_proxy_port_invoker(self, request):
+        http_info = self._update_instances_proxy_port_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_instances_proxy_port_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/proxy/{proxy_id}/port",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateInstancesProxyPortResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'proxy_id' in local_var_params:
+            path_params['proxy_id'] = local_var_params['proxy_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
 
         form_params = {}
 

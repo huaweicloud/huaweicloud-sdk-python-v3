@@ -95,7 +95,7 @@ class NovaCreateServersOption:
         :type max_count: int
         :param os_dc_fdisk_config: diskConfig的方式，取值为AUTO、MANUAL。  - MANUAL，镜像空间不会扩展。 - AUTO，系统盘镜像空间会自动扩展为与flavor大小一致。  当前不支持该功能。
         :type os_dc_fdisk_config: str
-        :param description: 扩展属性，表示弹性云服务器描述信息，默认为空字符串。  - 长度最多允许85个字符。 - 不能包含“&lt;” 和 “&gt;”等特殊符号。  &gt; 说明： &gt;  &gt; - V2接口不支持该字段。 &gt; - V2.1接口支持该字段，此时，需在请求Header中增加一组Key-Value值。其中，Key固定为“X-OpenStack-Nova-API-Version” ，Value为微版本号，当Value的值为2.19时，支持使用该字段。
+        :param description: 扩展属性，表示弹性云服务器描述信息，默认为空字符串。  - 长度最多允许85个字符。 - 不能包含“&lt;” 和 “&gt;”等特殊符号。  &gt; 说明： &gt;  &gt;  &gt; - V2.1接口支持该字段，此时，需在请求Header中增加一组Key-Value值。其中，Key固定为“X-OpenStack-Nova-API-Version” ，Value为微版本号，当Value的值为2.19时，支持使用该字段。
         :type description: str
         """
         
@@ -533,7 +533,7 @@ class NovaCreateServersOption:
     def description(self):
         r"""Gets the description of this NovaCreateServersOption.
 
-        扩展属性，表示弹性云服务器描述信息，默认为空字符串。  - 长度最多允许85个字符。 - 不能包含“<” 和 “>”等特殊符号。  > 说明： >  > - V2接口不支持该字段。 > - V2.1接口支持该字段，此时，需在请求Header中增加一组Key-Value值。其中，Key固定为“X-OpenStack-Nova-API-Version” ，Value为微版本号，当Value的值为2.19时，支持使用该字段。
+        扩展属性，表示弹性云服务器描述信息，默认为空字符串。  - 长度最多允许85个字符。 - 不能包含“<” 和 “>”等特殊符号。  > 说明： >  >  > - V2.1接口支持该字段，此时，需在请求Header中增加一组Key-Value值。其中，Key固定为“X-OpenStack-Nova-API-Version” ，Value为微版本号，当Value的值为2.19时，支持使用该字段。
 
         :return: The description of this NovaCreateServersOption.
         :rtype: str
@@ -544,7 +544,7 @@ class NovaCreateServersOption:
     def description(self, description):
         r"""Sets the description of this NovaCreateServersOption.
 
-        扩展属性，表示弹性云服务器描述信息，默认为空字符串。  - 长度最多允许85个字符。 - 不能包含“<” 和 “>”等特殊符号。  > 说明： >  > - V2接口不支持该字段。 > - V2.1接口支持该字段，此时，需在请求Header中增加一组Key-Value值。其中，Key固定为“X-OpenStack-Nova-API-Version” ，Value为微版本号，当Value的值为2.19时，支持使用该字段。
+        扩展属性，表示弹性云服务器描述信息，默认为空字符串。  - 长度最多允许85个字符。 - 不能包含“<” 和 “>”等特殊符号。  > 说明： >  >  > - V2.1接口支持该字段，此时，需在请求Header中增加一组Key-Value值。其中，Key固定为“X-OpenStack-Nova-API-Version” ，Value为微版本号，当Value的值为2.19时，支持使用该字段。
 
         :param description: The description of this NovaCreateServersOption.
         :type description: str

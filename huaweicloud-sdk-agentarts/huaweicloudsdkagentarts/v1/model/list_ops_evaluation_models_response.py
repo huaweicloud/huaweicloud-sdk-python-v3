@@ -16,29 +16,87 @@ class ListOpsEvaluationModelsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'code': 'int',
+        'msg': 'str',
         'models': 'list[ListOpsEvaluatorModelsResponseBodyModels]'
     }
 
     attribute_map = {
+        'code': 'code',
+        'msg': 'msg',
         'models': 'models'
     }
 
-    def __init__(self, models=None):
+    def __init__(self, code=None, msg=None, models=None):
         r"""ListOpsEvaluationModelsResponse
 
         The model defined in huaweicloud sdk
 
+        :param code: **参数解释：** 接口返回的状态码。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 
+        :type code: int
+        :param msg: **参数解释：** 接口返回的提示信息。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 
+        :type msg: str
         :param models: **参数解释：** 模型信息的列表，包含多个模型的配置参数、阈值范围以及支持的业务场景。 **取值范围：** 符合模型定义的对象数组。 
         :type models: list[:class:`huaweicloudsdkagentarts.v1.ListOpsEvaluatorModelsResponseBodyModels`]
         """
         
         super().__init__()
 
+        self._code = None
+        self._msg = None
         self._models = None
         self.discriminator = None
 
+        if code is not None:
+            self.code = code
+        if msg is not None:
+            self.msg = msg
         if models is not None:
             self.models = models
+
+    @property
+    def code(self):
+        r"""Gets the code of this ListOpsEvaluationModelsResponse.
+
+        **参数解释：** 接口返回的状态码。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 
+
+        :return: The code of this ListOpsEvaluationModelsResponse.
+        :rtype: int
+        """
+        return self._code
+
+    @code.setter
+    def code(self, code):
+        r"""Sets the code of this ListOpsEvaluationModelsResponse.
+
+        **参数解释：** 接口返回的状态码。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 
+
+        :param code: The code of this ListOpsEvaluationModelsResponse.
+        :type code: int
+        """
+        self._code = code
+
+    @property
+    def msg(self):
+        r"""Gets the msg of this ListOpsEvaluationModelsResponse.
+
+        **参数解释：** 接口返回的提示信息。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 
+
+        :return: The msg of this ListOpsEvaluationModelsResponse.
+        :rtype: str
+        """
+        return self._msg
+
+    @msg.setter
+    def msg(self, msg):
+        r"""Sets the msg of this ListOpsEvaluationModelsResponse.
+
+        **参数解释：** 接口返回的提示信息。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 
+
+        :param msg: The msg of this ListOpsEvaluationModelsResponse.
+        :type msg: str
+        """
+        self._msg = msg
 
     @property
     def models(self):

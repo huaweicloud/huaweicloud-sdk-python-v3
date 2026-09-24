@@ -66,6 +66,14 @@ class DcsRegion:
                         "https://dcs.ap-southeast-5.myhuaweicloud.com")
     CN_NORTH_12 = Region("cn-north-12",
                         "https://dcs.cn-north-12.myhuaweicloud.com")
+    CN_SOUTH_4 = Region("cn-south-4",
+                        "https://dcs.cn-south-4.myhuaweicloud.com")
+    CN_SOUTHWEST_3 = Region("cn-southwest-3",
+                        "https://dcs.cn-southwest-3.myhuaweicloud.com")
+    CN_NORTH_11 = Region("cn-north-11",
+                        "https://dcs.cn-north-11.myhuaweicloud.com")
+    AF_NORTH_1 = Region("af-north-1",
+                        "https://dcs.af-north-1.myhuaweicloud.com")
 
     static_fields = {
         "af-south-1": AF_SOUTH_1,
@@ -98,6 +106,10 @@ class DcsRegion:
         "cn-east-4": CN_EAST_4,
         "ap-southeast-5": AP_SOUTHEAST_5,
         "cn-north-12": CN_NORTH_12,
+        "cn-south-4": CN_SOUTH_4,
+        "cn-southwest-3": CN_SOUTHWEST_3,
+        "cn-north-11": CN_NORTH_11,
+        "af-north-1": AF_NORTH_1,
     }
 
     @classmethod

@@ -155,7 +155,8 @@ class IssueCreateEntity:
         self.description = description
         self.category = category
         self.category_layer_id = category_layer_id
-        self.parent_id = parent_id
+        if parent_id is not None:
+            self.parent_id = parent_id
         self.status = status
         self.assignee = assignee
         if recipient is not None:

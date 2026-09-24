@@ -29,7 +29,7 @@ class ListBusinessDiscountInfoRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_language: 忽略大小写，中文：zh_cn 英文：en_us。缺省为zh_cn
+        :param x_language: 语言，非必填，忽略大小写，中文：zh_cn 英文：en_us。缺省为zh_cn
         :type x_language: str
         :param body: Body of the ListBusinessDiscountInfoRequest
         :type body: :class:`huaweicloudsdkbss.v2.BusinessDiscountQueryReq`
@@ -50,7 +50,7 @@ class ListBusinessDiscountInfoRequest:
     def x_language(self):
         r"""Gets the x_language of this ListBusinessDiscountInfoRequest.
 
-        忽略大小写，中文：zh_cn 英文：en_us。缺省为zh_cn
+        语言，非必填，忽略大小写，中文：zh_cn 英文：en_us。缺省为zh_cn
 
         :return: The x_language of this ListBusinessDiscountInfoRequest.
         :rtype: str
@@ -61,7 +61,7 @@ class ListBusinessDiscountInfoRequest:
     def x_language(self, x_language):
         r"""Sets the x_language of this ListBusinessDiscountInfoRequest.
 
-        忽略大小写，中文：zh_cn 英文：en_us。缺省为zh_cn
+        语言，非必填，忽略大小写，中文：zh_cn 英文：en_us。缺省为zh_cn
 
         :param x_language: The x_language of this ListBusinessDiscountInfoRequest.
         :type x_language: str

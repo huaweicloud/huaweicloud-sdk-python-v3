@@ -1,3 +1,380 @@
+# 3.1.216 2026-09-24
+
+### HuaweiCloud SDK AgentArts
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowOpsEvaluationTaskChartsStatus**
+    - changes of response param
+      - `+ data`
+  - **ShowOpsEvaluationTaskChartsScoreStats**
+    - changes of response param
+      - `+ data`
+  - **ShowOpsEvaluator**
+    - changes of response param
+      - `+ evaluator`
+      - `- box_type`
+      - `- latest_version`
+      - `- evaluator_id`
+      - `- builtin`
+      - `- name`
+      - `- description`
+      - `- current_version`
+      - `- base_info`
+      - `- evaluator_type`
+      - `- tags`
+  - **ShowOpsEvaluatorVersion**
+    - changes of response param
+      - `+ evaluator`
+      - `- versions`
+  - **ListOpsEvaluationModels**
+    - changes of response param
+      - `+ msg`
+      - `+ code`
+  - **GenerateOpsEvaluatorEvaluationSteps**
+    - changes of request param
+      - `+ language`
+  - **ListOpsEvaluationTasks**
+    - changes of request param
+      - `+ tag_key_exists`
+      - `+ tag_key_matches`
+      - `+ tag_value_matches`
+      - `+ tag_match_policy`
+    - changes of response param
+      - `+ data`
+  - **UpdateOpsEvaluationTaskResult**
+    - changes of request param
+      - `+ revoke`
+  - **ShowOpsEvaluationTask**
+    - changes of response param
+      - `+ data`
+  - **ListOpsEvaluationTaskCustomLabelValues**
+    - changes of response param
+      - `+ msg`
+      - `+ total`
+      - `+ code`
+      - `+ data`
+  - **ListOpsEvaluationTaskCustomLabels**
+    - changes of response param
+      - `+ msg`
+      - `+ total`
+      - `+ code`
+      - `+ data`
+  - **BatchAddOpsEvaluationTaskCustomLabels**
+    - changes of response param
+      - `+ msg`
+      - `+ code`
+  - **DebugOpsEvaluator**
+    - changes of request param
+      - `+ evaluator_content_type`
+      - `+ evaluator_id`
+      - `+ evaluator_version`
+      - `+ geval_config`
+  - **ShowOpsEvaluatorTemplate**
+    - changes of response param
+      - `+ msg`
+      - `+ code`
+  - **PublishOpsEvaluatorVersion**
+    - changes of response param
+      - `+ version`
+      - `- name`
+      - `- current_version`
+      - `- description`
+      - `- evaluator_type`
+      - `- tags`
+  - **ListOpsEvaluatorVersions**
+    - changes of request param
+      - `+ offset`
+      - `+ limit`
+    - changes of response param
+      - `+ total`
+  - **BatchDeleteOpsEvaluationTasks**
+    - changes of response param
+      - `+ data`
+
+### HuaweiCloud SDK AIDataLake
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the APIs `ListRayJobs`, `RunRayJob`, `ShowRayJob`, `CancelRayJob`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK BSSINTL
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the API `ListResourceSpecsPrice`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CBR
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the API `UpdateExpirationTime`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowMetadata**
+    - changes of response param
+      - `+ workspace`
+  - **AddMember**
+    - changes of response param
+      - `- count`
+  - **BatchCreateAndDeleteVaultTags**
+    - changes of request param
+      - `* tags: list<Tag> -> list<BulkCreateAndDeleteTags>`
+  - **CreateVaultTags**
+    - changes of request param
+      - `* tag: object<Tag> -> object<TagCreate>`
+  - **ShowVaultProjectTag**
+    - changes of response param
+      - `* tags.values: string -> list<string>`
+  - **ShowBackup**
+    - changes of response param
+      - `+ backup.scheduled_operation_id`
+  - **UpdateBackup**
+    - changes of response param
+      - `+ backup.scheduled_operation_id`
+  - **ListBackups**
+    - changes of response param
+      - `+ backups.scheduled_operation_id`
+  - **ListPolicies**
+    - changes of response param
+      - `+ policies.operation_definition.advanced_retention_rules`
+      - `+ policies.trigger.properties.start_window_minutes`
+  - **CreatePolicy**
+    - changes of request param
+      - `+ policy.operation_definition.advanced_retention_rules`
+      - `+ policy.trigger.properties.start_window_minutes`
+    - changes of response param
+      - `+ policy.operation_definition.advanced_retention_rules`
+      - `+ policy.trigger.properties.start_window_minutes`
+  - **ShowPolicy**
+    - changes of response param
+      - `+ policy.operation_definition.advanced_retention_rules`
+      - `+ policy.trigger.properties.start_window_minutes`
+  - **UpdatePolicy**
+    - changes of request param
+      - `+ policy.operation_definition.advanced_retention_rules`
+      - `+ policy.trigger.properties.start_window_minutes`
+      - `* policy.trigger.properties: object<PolicyTriggerPropertiesReq> -> object<PolicyTriggerPropertiesUpdateReq>`
+      - `* policy.trigger: object<PolicyTriggerReq> -> object<PolicyTriggerUpdateReq>`
+    - changes of response param
+      - `+ policy.operation_definition.advanced_retention_rules`
+      - `+ policy.trigger.properties.start_window_minutes`
+  - **ListOrganizationPolicies**
+    - changes of response param
+      - `+ policies.policy_operation_definition.advanced_retention_rules`
+      - `+ policies.policy_trigger.properties.start_window_minutes`
+  - **CreateOrganizationPolicy**
+    - changes of request param
+      - `+ policy.policy_operation_definition.advanced_retention_rules`
+      - `+ policy.policy_trigger.properties.start_window_minutes`
+    - changes of response param
+      - `+ policy.policy_operation_definition.advanced_retention_rules`
+      - `+ policy.policy_trigger.properties.start_window_minutes`
+  - **ShowOrganizationPolicy**
+    - changes of response param
+      - `+ policy.policy_operation_definition.advanced_retention_rules`
+      - `+ policy.policy_trigger.properties.start_window_minutes`
+  - **UpdateOrganizationPolicy**
+    - changes of request param
+      - `+ policy.policy_operation_definition.advanced_retention_rules`
+      - `+ policy.policy_trigger.properties.start_window_minutes`
+      - `* policy.policy_trigger.properties: object<PolicyTriggerPropertiesReq> -> object<PolicyTriggerPropertiesUpdateReq>`
+      - `* policy.policy_trigger: object<PolicyTriggerReq> -> object<PolicyTriggerUpdateReq>`
+    - changes of response param
+      - `+ policy.policy_operation_definition.advanced_retention_rules`
+      - `+ policy.policy_trigger.properties.start_window_minutes`
+  - **CreatePostPaidVault**
+    - changes of request param
+      - `+ vault.cross_account`
+      - `+ vault.data_encryption`
+      - `+ vault.billing.is_double_az`
+      - `+ vault.billing.promotion_info`
+      - `+ vault.billing.purchase_mode`
+      - `+ vault.billing.order_id`
+      - `- vault.billing.cloud_type: enum value [public,hybrid]`
+      - `- vault.billing.consistent_level: enum value [app_consistent,crash_consistent]`
+      - `- vault.billing.object_type: enum value [server,disk,turbo,workspace,vmware,rds,file]`
+      - `- vault.billing.protect_type: enum value [backup,replication]`
+      - `- vault.billing.charging_mode: enum value [post_paid,pre_paid]`
+      - `* vault.billing: object<BillingCreate> -> object<PrePaidBillingCreate>`
+      - `* vault: object<VaultOrder> -> object<PrePaidVaultOrder>`
+  - **ShowOpLog**
+    - changes of response param
+      - `+ operation_log.extra_info.update_expiration_time`
+  - **ListOpLogs**
+    - changes of response param
+      - `+ operation_logs.extra_info.update_expiration_time`
+  - **CreateCheckpoint**
+    - changes of request param
+      - `+ checkpoint.parameters.retention_duration_days`
+  - **ShowProtectable**
+    - changes of request param
+      - `+ protectable_type: enum value [turbo,workspace,workspace_v2]`
+
+### HuaweiCloud SDK CodeArtsRepo
+
+- _API Version_
+  - V4
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowReviewSetting**
+    - changes of request param
+      - `+ take_effect`
+
+### HuaweiCloud SDK DWS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListWorkloadQueue**
+    - changes of response param
+      - `+ queue_list`
+      - `- workload_res_str`
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the API `ListSqlRecommendRules`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListSlowSqlDetails**
+    - changes of response param
+      - `* slow_sql_details.start_time: int32 -> string`
+      - `* slow_sql_details.finish_time: int32 -> string`
+      - `* slow_sql_details.total_time: int32 -> string`
+      - `* slow_sql_details.cpu_time: int32 -> string`
+      - `* slow_sql_details.plan_time: int32 -> string`
+      - `* slow_sql_details.io_time: int32 -> string`
+      - `* slow_sql_details.lock_time: int32 -> string`
+  - **ShowGlobalSlowSqlDetail**
+    - changes of response param
+      - `* slow_sql_details.start_time: int32 -> string`
+      - `* slow_sql_details.finish_time: int32 -> string`
+      - `* slow_sql_details.total_time: int32 -> string`
+      - `* slow_sql_details.cpu_time: int32 -> string`
+      - `* slow_sql_details.plan_time: int32 -> string`
+      - `* slow_sql_details.io_time: int32 -> string`
+      - `* slow_sql_details.lock_time: int32 -> string`
+
+### HuaweiCloud SDK HSS
+
+- _API Version_
+  - V5
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListClusterProtectionDefaultPolicy**
+    - changes of response param
+      - `* data_list.resources.images: string -> list<string>`
+  - **ListClusterProtectionPolicyDetail**
+    - changes of response param
+      - `* data_list.resources.images: string -> list<string>`
+  - **ListClusterProtectionPolicy**
+    - changes of response param
+      - `* data_list.resources.images: string -> list<string>`
+  - **ListContainerNetworkPolicy**
+    - changes of response param
+      - `* data_list.create_time: date-time -> string`
+
+### HuaweiCloud SDK IMS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Deprecate the following APIs:
+    - `GlanceCreateTag`
+    - `GlanceDeleteTag`
+    - `GlanceDeleteImageMember`
+    - `GlanceUpdateImageMember`
+    - `GlanceShowImage`
+    - `GlanceUpdateImage`
+    - `GlanceAddImageMember`
+    - `GlanceListImages`
+    - `ShowJob`
+  - **ListImages**
+    - changes of response param
+      - `+ page_info`
+
+### HuaweiCloud SDK OptVerse
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateAlgorithm**
+    - changes of request param
+      - `- command`
+      - `- picture`
+  - **UpdateAlgorithm**
+    - changes of request param
+      - `- command`
+      - `- picture`
+
+### HuaweiCloud SDK RDS
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the following APIs:
+    - `SetRdsDBFaultPolicy`
+    - `UpdateInstancesProxyPort`
+    - `ListAutoScalingHistory`
+    - `SwitchMySqlProxyEip`
+    - `ShowAvailableCorsVpcs`
+    - `ExecuteOptimizeTableSpace`
+    - `SetAutoScalingPolicy`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK SWR
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the APIs `UpdateInternalEndpointPermissions`, `ListInternalEndpointPermissions`, `UpdateInternalEndpointConnections`, `ListInternalEndpointConnections`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
 # 3.1.215 2026-09-17
 
 ### HuaweiCloud SDK AgentArts

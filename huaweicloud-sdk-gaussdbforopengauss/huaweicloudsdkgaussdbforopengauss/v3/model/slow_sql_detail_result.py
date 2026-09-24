@@ -26,18 +26,18 @@ class SlowSqlDetailResult:
         'node_name': 'str',
         'sql_text': 'str',
         'query_plan': 'str',
-        'start_time': 'int',
-        'finish_time': 'int',
+        'start_time': 'str',
+        'finish_time': 'str',
         'returned_rows': 'int',
         'fetched_rows': 'int',
         'fetched_pages': 'int',
         'hit_pages': 'int',
-        'total_time': 'int',
-        'cpu_time': 'int',
-        'plan_time': 'int',
-        'io_time': 'int',
+        'total_time': 'str',
+        'cpu_time': 'str',
+        'plan_time': 'str',
+        'io_time': 'str',
         'lock_count': 'int',
-        'lock_time': 'int'
+        'lock_time': 'str'
     }
 
     attribute_map = {
@@ -93,10 +93,10 @@ class SlowSqlDetailResult:
         :type sql_text: str
         :param query_plan: **参数解释**: 执行计划。 **取值范围**: 不涉及。
         :type query_plan: str
-        :param start_time: **参数解释**: 开始时间UTC时间。 **取值范围**: 格式为yyyy-mm-ddThh:mm:ss+0000。
-        :type start_time: int
-        :param finish_time: **参数解释**: 结束时间UTC时间。 **取值范围**: 格式为yyyy-mm-ddThh:mm:ss+0000。
-        :type finish_time: int
+        :param start_time: **参数解释**: 开始时间UTC时间，格式为yyyy-mm-ddThh:mm:ss+0000。 **取值范围**: 不涉及。
+        :type start_time: str
+        :param finish_time: **参数解释**: 结束时间UTC时间，格式为yyyy-mm-ddThh:mm:ss+0000。 **取值范围**: 不涉及。
+        :type finish_time: str
         :param returned_rows: **参数解释**: 返回行。 **取值范围**: 不涉及。
         :type returned_rows: int
         :param fetched_rows: **参数解释**: 扫描行。 **取值范围**: 不涉及。
@@ -106,17 +106,17 @@ class SlowSqlDetailResult:
         :param hit_pages: **参数解释**: 命中页。 **取值范围**: 不涉及。
         :type hit_pages: int
         :param total_time: **参数解释**: 总耗时（单位：微秒）。 **取值范围**: 不涉及。
-        :type total_time: int
+        :type total_time: str
         :param cpu_time: **参数解释**: CPU耗时（单位：微秒）。 **取值范围**: 不涉及。
-        :type cpu_time: int
+        :type cpu_time: str
         :param plan_time: **参数解释**: 计划耗时（单位：微秒）。 **取值范围**: 不涉及。
-        :type plan_time: int
+        :type plan_time: str
         :param io_time: **参数解释**: IO耗时（单位：微秒）。 **取值范围**: 不涉及。
-        :type io_time: int
+        :type io_time: str
         :param lock_count: **参数解释**: 加锁次数。 **取值范围**: 不涉及。
         :type lock_count: int
         :param lock_time: **参数解释**: 加锁耗时(单位：微秒)。 **取值范围**: 不涉及。
-        :type lock_time: int
+        :type lock_time: str
         """
         
         
@@ -439,10 +439,10 @@ class SlowSqlDetailResult:
     def start_time(self):
         r"""Gets the start_time of this SlowSqlDetailResult.
 
-        **参数解释**: 开始时间UTC时间。 **取值范围**: 格式为yyyy-mm-ddThh:mm:ss+0000。
+        **参数解释**: 开始时间UTC时间，格式为yyyy-mm-ddThh:mm:ss+0000。 **取值范围**: 不涉及。
 
         :return: The start_time of this SlowSqlDetailResult.
-        :rtype: int
+        :rtype: str
         """
         return self._start_time
 
@@ -450,10 +450,10 @@ class SlowSqlDetailResult:
     def start_time(self, start_time):
         r"""Sets the start_time of this SlowSqlDetailResult.
 
-        **参数解释**: 开始时间UTC时间。 **取值范围**: 格式为yyyy-mm-ddThh:mm:ss+0000。
+        **参数解释**: 开始时间UTC时间，格式为yyyy-mm-ddThh:mm:ss+0000。 **取值范围**: 不涉及。
 
         :param start_time: The start_time of this SlowSqlDetailResult.
-        :type start_time: int
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -461,10 +461,10 @@ class SlowSqlDetailResult:
     def finish_time(self):
         r"""Gets the finish_time of this SlowSqlDetailResult.
 
-        **参数解释**: 结束时间UTC时间。 **取值范围**: 格式为yyyy-mm-ddThh:mm:ss+0000。
+        **参数解释**: 结束时间UTC时间，格式为yyyy-mm-ddThh:mm:ss+0000。 **取值范围**: 不涉及。
 
         :return: The finish_time of this SlowSqlDetailResult.
-        :rtype: int
+        :rtype: str
         """
         return self._finish_time
 
@@ -472,10 +472,10 @@ class SlowSqlDetailResult:
     def finish_time(self, finish_time):
         r"""Sets the finish_time of this SlowSqlDetailResult.
 
-        **参数解释**: 结束时间UTC时间。 **取值范围**: 格式为yyyy-mm-ddThh:mm:ss+0000。
+        **参数解释**: 结束时间UTC时间，格式为yyyy-mm-ddThh:mm:ss+0000。 **取值范围**: 不涉及。
 
         :param finish_time: The finish_time of this SlowSqlDetailResult.
-        :type finish_time: int
+        :type finish_time: str
         """
         self._finish_time = finish_time
 
@@ -574,7 +574,7 @@ class SlowSqlDetailResult:
         **参数解释**: 总耗时（单位：微秒）。 **取值范围**: 不涉及。
 
         :return: The total_time of this SlowSqlDetailResult.
-        :rtype: int
+        :rtype: str
         """
         return self._total_time
 
@@ -585,7 +585,7 @@ class SlowSqlDetailResult:
         **参数解释**: 总耗时（单位：微秒）。 **取值范围**: 不涉及。
 
         :param total_time: The total_time of this SlowSqlDetailResult.
-        :type total_time: int
+        :type total_time: str
         """
         self._total_time = total_time
 
@@ -596,7 +596,7 @@ class SlowSqlDetailResult:
         **参数解释**: CPU耗时（单位：微秒）。 **取值范围**: 不涉及。
 
         :return: The cpu_time of this SlowSqlDetailResult.
-        :rtype: int
+        :rtype: str
         """
         return self._cpu_time
 
@@ -607,7 +607,7 @@ class SlowSqlDetailResult:
         **参数解释**: CPU耗时（单位：微秒）。 **取值范围**: 不涉及。
 
         :param cpu_time: The cpu_time of this SlowSqlDetailResult.
-        :type cpu_time: int
+        :type cpu_time: str
         """
         self._cpu_time = cpu_time
 
@@ -618,7 +618,7 @@ class SlowSqlDetailResult:
         **参数解释**: 计划耗时（单位：微秒）。 **取值范围**: 不涉及。
 
         :return: The plan_time of this SlowSqlDetailResult.
-        :rtype: int
+        :rtype: str
         """
         return self._plan_time
 
@@ -629,7 +629,7 @@ class SlowSqlDetailResult:
         **参数解释**: 计划耗时（单位：微秒）。 **取值范围**: 不涉及。
 
         :param plan_time: The plan_time of this SlowSqlDetailResult.
-        :type plan_time: int
+        :type plan_time: str
         """
         self._plan_time = plan_time
 
@@ -640,7 +640,7 @@ class SlowSqlDetailResult:
         **参数解释**: IO耗时（单位：微秒）。 **取值范围**: 不涉及。
 
         :return: The io_time of this SlowSqlDetailResult.
-        :rtype: int
+        :rtype: str
         """
         return self._io_time
 
@@ -651,7 +651,7 @@ class SlowSqlDetailResult:
         **参数解释**: IO耗时（单位：微秒）。 **取值范围**: 不涉及。
 
         :param io_time: The io_time of this SlowSqlDetailResult.
-        :type io_time: int
+        :type io_time: str
         """
         self._io_time = io_time
 
@@ -684,7 +684,7 @@ class SlowSqlDetailResult:
         **参数解释**: 加锁耗时(单位：微秒)。 **取值范围**: 不涉及。
 
         :return: The lock_time of this SlowSqlDetailResult.
-        :rtype: int
+        :rtype: str
         """
         return self._lock_time
 
@@ -695,7 +695,7 @@ class SlowSqlDetailResult:
         **参数解释**: 加锁耗时(单位：微秒)。 **取值范围**: 不涉及。
 
         :param lock_time: The lock_time of this SlowSqlDetailResult.
-        :type lock_time: int
+        :type lock_time: str
         """
         self._lock_time = lock_time
 

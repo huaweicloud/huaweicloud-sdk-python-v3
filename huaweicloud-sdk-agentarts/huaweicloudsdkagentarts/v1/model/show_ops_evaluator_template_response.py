@@ -16,29 +16,87 @@ class ShowOpsEvaluatorTemplateResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'code': 'int',
+        'msg': 'str',
         'template': 'ShowOpsEvaluatorTemplateResponseBodyTemplate'
     }
 
     attribute_map = {
+        'code': 'code',
+        'msg': 'msg',
         'template': 'template'
     }
 
-    def __init__(self, template=None):
+    def __init__(self, code=None, msg=None, template=None):
         r"""ShowOpsEvaluatorTemplateResponse
 
         The model defined in huaweicloud sdk
 
+        :param code: **参数解释：** API执行状态码。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 
+        :type code: int
+        :param msg: **参数解释：** 响应状态描述信息。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 
+        :type msg: str
         :param template: 
         :type template: :class:`huaweicloudsdkagentarts.v1.ShowOpsEvaluatorTemplateResponseBodyTemplate`
         """
         
         super().__init__()
 
+        self._code = None
+        self._msg = None
         self._template = None
         self.discriminator = None
 
+        if code is not None:
+            self.code = code
+        if msg is not None:
+            self.msg = msg
         if template is not None:
             self.template = template
+
+    @property
+    def code(self):
+        r"""Gets the code of this ShowOpsEvaluatorTemplateResponse.
+
+        **参数解释：** API执行状态码。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 
+
+        :return: The code of this ShowOpsEvaluatorTemplateResponse.
+        :rtype: int
+        """
+        return self._code
+
+    @code.setter
+    def code(self, code):
+        r"""Sets the code of this ShowOpsEvaluatorTemplateResponse.
+
+        **参数解释：** API执行状态码。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 
+
+        :param code: The code of this ShowOpsEvaluatorTemplateResponse.
+        :type code: int
+        """
+        self._code = code
+
+    @property
+    def msg(self):
+        r"""Gets the msg of this ShowOpsEvaluatorTemplateResponse.
+
+        **参数解释：** 响应状态描述信息。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 
+
+        :return: The msg of this ShowOpsEvaluatorTemplateResponse.
+        :rtype: str
+        """
+        return self._msg
+
+    @msg.setter
+    def msg(self, msg):
+        r"""Sets the msg of this ShowOpsEvaluatorTemplateResponse.
+
+        **参数解释：** 响应状态描述信息。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 
+
+        :param msg: The msg of this ShowOpsEvaluatorTemplateResponse.
+        :type msg: str
+        """
+        self._msg = msg
 
     @property
     def template(self):

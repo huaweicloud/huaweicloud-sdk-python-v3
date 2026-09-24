@@ -9197,6 +9197,150 @@ class SwrClient(Client):
 
         return http_info
 
+    def list_internal_endpoint_connections(self, request):
+        r"""查询内网访问连接列表
+
+        查询内网访问连接列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListInternalEndpointConnections
+        :type request: :class:`huaweicloudsdkswr.v2.ListInternalEndpointConnectionsRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.ListInternalEndpointConnectionsResponse`
+        """
+        http_info = self._list_internal_endpoint_connections_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_internal_endpoint_connections_invoker(self, request):
+        http_info = self._list_internal_endpoint_connections_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_internal_endpoint_connections_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/internal-endpoint/connections",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInternalEndpointConnectionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_internal_endpoint_permissions(self, request):
+        r"""查询内网访问白名单列表
+
+        查询内网访问白名单列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListInternalEndpointPermissions
+        :type request: :class:`huaweicloudsdkswr.v2.ListInternalEndpointPermissionsRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.ListInternalEndpointPermissionsResponse`
+        """
+        http_info = self._list_internal_endpoint_permissions_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_internal_endpoint_permissions_invoker(self, request):
+        http_info = self._list_internal_endpoint_permissions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_internal_endpoint_permissions_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/internal-endpoint/permissions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInternalEndpointPermissionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'permission' in local_var_params:
+            query_params.append(('permission', local_var_params['permission']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_namespace_repositories(self, request):
         r"""获取命名空间下所有制品仓库列表
 
@@ -11778,6 +11922,140 @@ class SwrClient(Client):
             path_params['namespace_name'] = local_var_params['namespace_name']
         if 'policy_id' in local_var_params:
             path_params['policy_id'] = local_var_params['policy_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_internal_endpoint_connections(self, request):
+        r"""允许或拒绝内网访问连接
+
+        允许或拒绝内网访问连接
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateInternalEndpointConnections
+        :type request: :class:`huaweicloudsdkswr.v2.UpdateInternalEndpointConnectionsRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.UpdateInternalEndpointConnectionsResponse`
+        """
+        http_info = self._update_internal_endpoint_connections_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_internal_endpoint_connections_invoker(self, request):
+        http_info = self._update_internal_endpoint_connections_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_internal_endpoint_connections_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/internal-endpoint/connections/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateInternalEndpointConnectionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_internal_endpoint_permissions(self, request):
+        r"""添加或移除内网访问白名单
+
+        添加或移除内网访问白名单
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateInternalEndpointPermissions
+        :type request: :class:`huaweicloudsdkswr.v2.UpdateInternalEndpointPermissionsRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.UpdateInternalEndpointPermissionsResponse`
+        """
+        http_info = self._update_internal_endpoint_permissions_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_internal_endpoint_permissions_invoker(self, request):
+        http_info = self._update_internal_endpoint_permissions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_internal_endpoint_permissions_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/internal-endpoint/permissions/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateInternalEndpointPermissionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
 
         query_params = []
 

@@ -2157,10 +2157,12 @@ class ImsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.ShowJobRequest`
         :rtype: :class:`huaweicloudsdkims.v2.ShowJobResponse`
         """
+        warnings.warn("Method 'show_job_async' of ImsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_job_http_info(request)
         return self._call_api(**http_info)
 
     def show_job_async_invoker(self, request):
+        warnings.warn("Method 'show_job_async_invoker' of ImsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_job_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -2482,10 +2484,12 @@ class ImsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.GlanceAddImageMemberRequest`
         :rtype: :class:`huaweicloudsdkims.v2.GlanceAddImageMemberResponse`
         """
+        warnings.warn("Method 'glance_add_image_member_async' of ImsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._glance_add_image_member_http_info(request)
         return self._call_api(**http_info)
 
     def glance_add_image_member_async_invoker(self, request):
+        warnings.warn("Method 'glance_add_image_member_async_invoker' of ImsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._glance_add_image_member_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -2614,10 +2618,12 @@ class ImsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.GlanceCreateTagRequest`
         :rtype: :class:`huaweicloudsdkims.v2.GlanceCreateTagResponse`
         """
+        warnings.warn("Method 'glance_create_tag_async' of ImsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._glance_create_tag_http_info(request)
         return self._call_api(**http_info)
 
     def glance_create_tag_async_invoker(self, request):
+        warnings.warn("Method 'glance_create_tag_async_invoker' of ImsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._glance_create_tag_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -2748,10 +2754,12 @@ class ImsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.GlanceDeleteImageMemberRequest`
         :rtype: :class:`huaweicloudsdkims.v2.GlanceDeleteImageMemberResponse`
         """
+        warnings.warn("Method 'glance_delete_image_member_async' of ImsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._glance_delete_image_member_http_info(request)
         return self._call_api(**http_info)
 
     def glance_delete_image_member_async_invoker(self, request):
+        warnings.warn("Method 'glance_delete_image_member_async_invoker' of ImsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._glance_delete_image_member_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -2815,10 +2823,12 @@ class ImsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.GlanceDeleteTagRequest`
         :rtype: :class:`huaweicloudsdkims.v2.GlanceDeleteTagResponse`
         """
+        warnings.warn("Method 'glance_delete_tag_async' of ImsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._glance_delete_tag_http_info(request)
         return self._call_api(**http_info)
 
     def glance_delete_tag_async_invoker(self, request):
+        warnings.warn("Method 'glance_delete_tag_async_invoker' of ImsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._glance_delete_tag_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -3081,10 +3091,12 @@ class ImsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.GlanceListImagesRequest`
         :rtype: :class:`huaweicloudsdkims.v2.GlanceListImagesResponse`
         """
+        warnings.warn("Method 'glance_list_images_async' of ImsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._glance_list_images_http_info(request)
         return self._call_api(**http_info)
 
     def glance_list_images_async_invoker(self, request):
+        warnings.warn("Method 'glance_list_images_async_invoker' of ImsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._glance_list_images_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -3208,10 +3220,12 @@ class ImsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.GlanceShowImageRequest`
         :rtype: :class:`huaweicloudsdkims.v2.GlanceShowImageResponse`
         """
+        warnings.warn("Method 'glance_show_image_async' of ImsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._glance_show_image_http_info(request)
         return self._call_api(**http_info)
 
     def glance_show_image_async_invoker(self, request):
+        warnings.warn("Method 'glance_show_image_async_invoker' of ImsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._glance_show_image_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -3466,10 +3480,12 @@ class ImsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.GlanceUpdateImageRequest`
         :rtype: :class:`huaweicloudsdkims.v2.GlanceUpdateImageResponse`
         """
+        warnings.warn("Method 'glance_update_image_async' of ImsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._glance_update_image_http_info(request)
         return self._call_api(**http_info)
 
     def glance_update_image_async_invoker(self, request):
+        warnings.warn("Method 'glance_update_image_async_invoker' of ImsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._glance_update_image_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -3533,10 +3549,12 @@ class ImsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.GlanceUpdateImageMemberRequest`
         :rtype: :class:`huaweicloudsdkims.v2.GlanceUpdateImageMemberResponse`
         """
+        warnings.warn("Method 'glance_update_image_member_async' of ImsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._glance_update_image_member_http_info(request)
         return self._call_api(**http_info)
 
     def glance_update_image_member_async_invoker(self, request):
+        warnings.warn("Method 'glance_update_image_member_async_invoker' of ImsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._glance_update_image_member_http_info(request)
         return AsyncInvoker(self, http_info)
 

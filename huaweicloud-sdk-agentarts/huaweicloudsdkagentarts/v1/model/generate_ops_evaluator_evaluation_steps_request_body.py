@@ -16,21 +16,25 @@ class GenerateOpsEvaluatorEvaluationStepsRequestBody:
 
     openapi_types = {
         'criteria': 'str',
+        'language': 'str',
         'model_config': 'GenerateOpsEvaluatorEvaluationStepsRequestBodyModelConfig'
     }
 
     attribute_map = {
         'criteria': 'criteria',
+        'language': 'language',
         'model_config': 'model_config'
     }
 
-    def __init__(self, criteria=None, model_config=None):
+    def __init__(self, criteria=None, language=None, model_config=None):
         r"""GenerateOpsEvaluatorEvaluationStepsRequestBody
 
         The model defined in huaweicloud sdk
 
         :param criteria: **参数解释：** 评估标准描述，用于告知模型需要评估的维度和判断依据。  **约束限制：** - 长度必须在1到20000字符之间。 - 必须包含至少一个用双大括号{{}}包裹的变量。  **取值范围：** 符合自然语言规范的文本，支持中英文。  **示例取值：** \&quot;评估{{actual_output}}是否准确回答了{{input}}，并与{{reference_output}}进行对比\&quot; 
         :type criteria: str
+        :param language: **参数解释：** 生成评估步骤使用的语言。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。 
+        :type language: str
         :param model_config: 
         :type model_config: :class:`huaweicloudsdkagentarts.v1.GenerateOpsEvaluatorEvaluationStepsRequestBodyModelConfig`
         """
@@ -38,10 +42,13 @@ class GenerateOpsEvaluatorEvaluationStepsRequestBody:
         
 
         self._criteria = None
+        self._language = None
         self._model_config = None
         self.discriminator = None
 
         self.criteria = criteria
+        if language is not None:
+            self.language = language
         if model_config is not None:
             self.model_config = model_config
 
@@ -66,6 +73,28 @@ class GenerateOpsEvaluatorEvaluationStepsRequestBody:
         :type criteria: str
         """
         self._criteria = criteria
+
+    @property
+    def language(self):
+        r"""Gets the language of this GenerateOpsEvaluatorEvaluationStepsRequestBody.
+
+        **参数解释：** 生成评估步骤使用的语言。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。 
+
+        :return: The language of this GenerateOpsEvaluatorEvaluationStepsRequestBody.
+        :rtype: str
+        """
+        return self._language
+
+    @language.setter
+    def language(self, language):
+        r"""Sets the language of this GenerateOpsEvaluatorEvaluationStepsRequestBody.
+
+        **参数解释：** 生成评估步骤使用的语言。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。 
+
+        :param language: The language of this GenerateOpsEvaluatorEvaluationStepsRequestBody.
+        :type language: str
+        """
+        self._language = language
 
     @property
     def model_config(self):

@@ -31,7 +31,7 @@ class ShowProtectableRequest:
 
         :param instance_id: 资源ID
         :type instance_id: str
-        :param protectable_type: 可保护性类型
+        :param protectable_type: **参数解释：** 可保护性类型 **约束限制：** 不涉及 **取值范围：** 可选参数为server,disk,turbo,workspace和workspace_v2 server： 云服务器类型 disk：云硬盘类型 turbo：turbo类型 workspace：workspace类型 workspace_v2：workspace_v2类型 **默认取值：** 不涉及
         :type protectable_type: str
         """
         
@@ -70,7 +70,7 @@ class ShowProtectableRequest:
     def protectable_type(self):
         r"""Gets the protectable_type of this ShowProtectableRequest.
 
-        可保护性类型
+        **参数解释：** 可保护性类型 **约束限制：** 不涉及 **取值范围：** 可选参数为server,disk,turbo,workspace和workspace_v2 server： 云服务器类型 disk：云硬盘类型 turbo：turbo类型 workspace：workspace类型 workspace_v2：workspace_v2类型 **默认取值：** 不涉及
 
         :return: The protectable_type of this ShowProtectableRequest.
         :rtype: str
@@ -81,7 +81,7 @@ class ShowProtectableRequest:
     def protectable_type(self, protectable_type):
         r"""Sets the protectable_type of this ShowProtectableRequest.
 
-        可保护性类型
+        **参数解释：** 可保护性类型 **约束限制：** 不涉及 **取值范围：** 可选参数为server,disk,turbo,workspace和workspace_v2 server： 云服务器类型 disk：云硬盘类型 turbo：turbo类型 workspace：workspace类型 workspace_v2：workspace_v2类型 **默认取值：** 不涉及
 
         :param protectable_type: The protectable_type of this ShowProtectableRequest.
         :type protectable_type: str

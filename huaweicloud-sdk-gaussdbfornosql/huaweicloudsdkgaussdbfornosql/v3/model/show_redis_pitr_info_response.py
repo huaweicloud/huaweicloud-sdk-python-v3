@@ -28,7 +28,7 @@ class ShowRedisPitrInfoResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param storage: 查询Redis实例指定时间点恢复所占用的存储空间。 单位：GB
+        :param storage: **参数解释：** 查询Redis实例指定时间点恢复所占用的存储空间。单位：GB **取值范围：** 不涉及。
         :type storage: str
         """
         
@@ -44,7 +44,7 @@ class ShowRedisPitrInfoResponse(SdkResponse):
     def storage(self):
         r"""Gets the storage of this ShowRedisPitrInfoResponse.
 
-        查询Redis实例指定时间点恢复所占用的存储空间。 单位：GB
+        **参数解释：** 查询Redis实例指定时间点恢复所占用的存储空间。单位：GB **取值范围：** 不涉及。
 
         :return: The storage of this ShowRedisPitrInfoResponse.
         :rtype: str
@@ -55,7 +55,7 @@ class ShowRedisPitrInfoResponse(SdkResponse):
     def storage(self, storage):
         r"""Sets the storage of this ShowRedisPitrInfoResponse.
 
-        查询Redis实例指定时间点恢复所占用的存储空间。 单位：GB
+        **参数解释：** 查询Redis实例指定时间点恢复所占用的存储空间。单位：GB **取值范围：** 不涉及。
 
         :param storage: The storage of this ShowRedisPitrInfoResponse.
         :type storage: str

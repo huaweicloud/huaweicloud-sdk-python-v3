@@ -19,7 +19,8 @@ class UpdateOpsEvaluationTaskResultRequestBody:
         'evaluator_id': 'str',
         'evaluator_version': 'str',
         'item_id': 'str',
-        'correction': 'UpdateOpsEvaluationTaskResultRequestBodyCorrection'
+        'correction': 'UpdateOpsEvaluationTaskResultRequestBodyCorrection',
+        'revoke': 'bool'
     }
 
     attribute_map = {
@@ -27,10 +28,11 @@ class UpdateOpsEvaluationTaskResultRequestBody:
         'evaluator_id': 'evaluator_id',
         'evaluator_version': 'evaluator_version',
         'item_id': 'item_id',
-        'correction': 'correction'
+        'correction': 'correction',
+        'revoke': 'revoke'
     }
 
-    def __init__(self, task_id=None, evaluator_id=None, evaluator_version=None, item_id=None, correction=None):
+    def __init__(self, task_id=None, evaluator_id=None, evaluator_version=None, item_id=None, correction=None, revoke=None):
         r"""UpdateOpsEvaluationTaskResultRequestBody
 
         The model defined in huaweicloud sdk
@@ -45,6 +47,8 @@ class UpdateOpsEvaluationTaskResultRequestBody:
         :type item_id: str
         :param correction: 
         :type correction: :class:`huaweicloudsdkagentarts.v1.UpdateOpsEvaluationTaskResultRequestBodyCorrection`
+        :param revoke: **参数解释：** 是否撤销已存在的校正。为true时撤销校正。 **约束限制：** 不涉及。 **取值范围：** - true：撤销校正 - false：应用校正 **默认取值：** 不涉及。 
+        :type revoke: bool
         """
         
         
@@ -54,6 +58,7 @@ class UpdateOpsEvaluationTaskResultRequestBody:
         self._evaluator_version = None
         self._item_id = None
         self._correction = None
+        self._revoke = None
         self.discriminator = None
 
         self.task_id = task_id
@@ -61,6 +66,8 @@ class UpdateOpsEvaluationTaskResultRequestBody:
         self.evaluator_version = evaluator_version
         self.item_id = item_id
         self.correction = correction
+        if revoke is not None:
+            self.revoke = revoke
 
     @property
     def task_id(self):
@@ -167,6 +174,28 @@ class UpdateOpsEvaluationTaskResultRequestBody:
         :type correction: :class:`huaweicloudsdkagentarts.v1.UpdateOpsEvaluationTaskResultRequestBodyCorrection`
         """
         self._correction = correction
+
+    @property
+    def revoke(self):
+        r"""Gets the revoke of this UpdateOpsEvaluationTaskResultRequestBody.
+
+        **参数解释：** 是否撤销已存在的校正。为true时撤销校正。 **约束限制：** 不涉及。 **取值范围：** - true：撤销校正 - false：应用校正 **默认取值：** 不涉及。 
+
+        :return: The revoke of this UpdateOpsEvaluationTaskResultRequestBody.
+        :rtype: bool
+        """
+        return self._revoke
+
+    @revoke.setter
+    def revoke(self, revoke):
+        r"""Sets the revoke of this UpdateOpsEvaluationTaskResultRequestBody.
+
+        **参数解释：** 是否撤销已存在的校正。为true时撤销校正。 **约束限制：** 不涉及。 **取值范围：** - true：撤销校正 - false：应用校正 **默认取值：** 不涉及。 
+
+        :param revoke: The revoke of this UpdateOpsEvaluationTaskResultRequestBody.
+        :type revoke: bool
+        """
+        self._revoke = revoke
 
     def to_dict(self):
         result = {}

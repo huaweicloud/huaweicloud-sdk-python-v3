@@ -17,7 +17,7 @@ class Resources:
     openapi_types = {
         'cluster_id': 'str',
         'cluster_name': 'str',
-        'images': 'str',
+        'images': 'list[str]',
         'labels': 'list[str]',
         'namespace': 'str'
     }
@@ -39,8 +39,8 @@ class Resources:
         :type cluster_id: str
         :param cluster_name: **参数解释**： 集群名称 **取值范围**： 不涉及 
         :type cluster_name: str
-        :param images: **参数解释**： 镜像 **取值范围**： 不涉及 
-        :type images: str
+        :param images: **参数解释**： 镜像列表 **取值范围**： 不涉及 
+        :type images: list[str]
         :param labels: **参数解释**： 标签列表 **取值范围**： 不涉及 
         :type labels: list[str]
         :param namespace: **参数解释**： 命名空间 **取值范围**： 不涉及 
@@ -115,10 +115,10 @@ class Resources:
     def images(self):
         r"""Gets the images of this Resources.
 
-        **参数解释**： 镜像 **取值范围**： 不涉及 
+        **参数解释**： 镜像列表 **取值范围**： 不涉及 
 
         :return: The images of this Resources.
-        :rtype: str
+        :rtype: list[str]
         """
         return self._images
 
@@ -126,10 +126,10 @@ class Resources:
     def images(self, images):
         r"""Sets the images of this Resources.
 
-        **参数解释**： 镜像 **取值范围**： 不涉及 
+        **参数解释**： 镜像列表 **取值范围**： 不涉及 
 
         :param images: The images of this Resources.
-        :type images: str
+        :type images: list[str]
         """
         self._images = images
 

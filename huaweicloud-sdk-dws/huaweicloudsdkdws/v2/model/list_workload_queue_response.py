@@ -16,49 +16,71 @@ class ListWorkloadQueueResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'queue_list': 'list[PlanStageQueue]',
         'workload_queue_name_list': 'list[str]',
-        'workload_res_code': 'int',
-        'workload_res_str': 'str'
+        'workload_res_code': 'int'
     }
 
     attribute_map = {
+        'queue_list': 'queue_list',
         'workload_queue_name_list': 'workload_queue_name_list',
-        'workload_res_code': 'workload_res_code',
-        'workload_res_str': 'workload_res_str'
+        'workload_res_code': 'workload_res_code'
     }
 
-    def __init__(self, workload_queue_name_list=None, workload_res_code=None, workload_res_str=None):
+    def __init__(self, queue_list=None, workload_queue_name_list=None, workload_res_code=None):
         r"""ListWorkloadQueueResponse
 
         The model defined in huaweicloud sdk
 
-        :param workload_queue_name_list: **参数解释**： 资源池名称。 **取值范围**： 不涉及。
+        :param queue_list: 资源池队列详情
+        :type queue_list: list[:class:`huaweicloudsdkdws.v2.PlanStageQueue`]
+        :param workload_queue_name_list: 资源池名称队列
         :type workload_queue_name_list: list[str]
-        :param workload_res_code: **参数解释**： 结果状态码。 **取值范围**： 不涉及。
+        :param workload_res_code: 资源池队列查询返回码
         :type workload_res_code: int
-        :param workload_res_str: **参数解释**： 结果描述。 **取值范围**： 不涉及。
-        :type workload_res_str: str
         """
         
         super().__init__()
 
+        self._queue_list = None
         self._workload_queue_name_list = None
         self._workload_res_code = None
-        self._workload_res_str = None
         self.discriminator = None
 
+        if queue_list is not None:
+            self.queue_list = queue_list
         if workload_queue_name_list is not None:
             self.workload_queue_name_list = workload_queue_name_list
         if workload_res_code is not None:
             self.workload_res_code = workload_res_code
-        if workload_res_str is not None:
-            self.workload_res_str = workload_res_str
+
+    @property
+    def queue_list(self):
+        r"""Gets the queue_list of this ListWorkloadQueueResponse.
+
+        资源池队列详情
+
+        :return: The queue_list of this ListWorkloadQueueResponse.
+        :rtype: list[:class:`huaweicloudsdkdws.v2.PlanStageQueue`]
+        """
+        return self._queue_list
+
+    @queue_list.setter
+    def queue_list(self, queue_list):
+        r"""Sets the queue_list of this ListWorkloadQueueResponse.
+
+        资源池队列详情
+
+        :param queue_list: The queue_list of this ListWorkloadQueueResponse.
+        :type queue_list: list[:class:`huaweicloudsdkdws.v2.PlanStageQueue`]
+        """
+        self._queue_list = queue_list
 
     @property
     def workload_queue_name_list(self):
         r"""Gets the workload_queue_name_list of this ListWorkloadQueueResponse.
 
-        **参数解释**： 资源池名称。 **取值范围**： 不涉及。
+        资源池名称队列
 
         :return: The workload_queue_name_list of this ListWorkloadQueueResponse.
         :rtype: list[str]
@@ -69,7 +91,7 @@ class ListWorkloadQueueResponse(SdkResponse):
     def workload_queue_name_list(self, workload_queue_name_list):
         r"""Sets the workload_queue_name_list of this ListWorkloadQueueResponse.
 
-        **参数解释**： 资源池名称。 **取值范围**： 不涉及。
+        资源池名称队列
 
         :param workload_queue_name_list: The workload_queue_name_list of this ListWorkloadQueueResponse.
         :type workload_queue_name_list: list[str]
@@ -80,7 +102,7 @@ class ListWorkloadQueueResponse(SdkResponse):
     def workload_res_code(self):
         r"""Gets the workload_res_code of this ListWorkloadQueueResponse.
 
-        **参数解释**： 结果状态码。 **取值范围**： 不涉及。
+        资源池队列查询返回码
 
         :return: The workload_res_code of this ListWorkloadQueueResponse.
         :rtype: int
@@ -91,34 +113,12 @@ class ListWorkloadQueueResponse(SdkResponse):
     def workload_res_code(self, workload_res_code):
         r"""Sets the workload_res_code of this ListWorkloadQueueResponse.
 
-        **参数解释**： 结果状态码。 **取值范围**： 不涉及。
+        资源池队列查询返回码
 
         :param workload_res_code: The workload_res_code of this ListWorkloadQueueResponse.
         :type workload_res_code: int
         """
         self._workload_res_code = workload_res_code
-
-    @property
-    def workload_res_str(self):
-        r"""Gets the workload_res_str of this ListWorkloadQueueResponse.
-
-        **参数解释**： 结果描述。 **取值范围**： 不涉及。
-
-        :return: The workload_res_str of this ListWorkloadQueueResponse.
-        :rtype: str
-        """
-        return self._workload_res_str
-
-    @workload_res_str.setter
-    def workload_res_str(self, workload_res_str):
-        r"""Sets the workload_res_str of this ListWorkloadQueueResponse.
-
-        **参数解释**： 结果描述。 **取值范围**： 不涉及。
-
-        :param workload_res_str: The workload_res_str of this ListWorkloadQueueResponse.
-        :type workload_res_str: str
-        """
-        self._workload_res_str = workload_res_str
 
     def to_dict(self):
         import warnings

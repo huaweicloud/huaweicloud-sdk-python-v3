@@ -16,36 +16,29 @@ class AddMemberResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'members': 'list[Member]',
-        'count': 'int'
+        'members': 'list[Member]'
     }
 
     attribute_map = {
-        'members': 'members',
-        'count': 'count'
+        'members': 'members'
     }
 
-    def __init__(self, members=None, count=None):
+    def __init__(self, members=None):
         r"""AddMemberResponse
 
         The model defined in huaweicloud sdk
 
         :param members: 添加备份共享成员响应信息
         :type members: list[:class:`huaweicloudsdkcbr.v1.Member`]
-        :param count: 备份共享成员数量
-        :type count: int
         """
         
         super().__init__()
 
         self._members = None
-        self._count = None
         self.discriminator = None
 
         if members is not None:
             self.members = members
-        if count is not None:
-            self.count = count
 
     @property
     def members(self):
@@ -68,28 +61,6 @@ class AddMemberResponse(SdkResponse):
         :type members: list[:class:`huaweicloudsdkcbr.v1.Member`]
         """
         self._members = members
-
-    @property
-    def count(self):
-        r"""Gets the count of this AddMemberResponse.
-
-        备份共享成员数量
-
-        :return: The count of this AddMemberResponse.
-        :rtype: int
-        """
-        return self._count
-
-    @count.setter
-    def count(self, count):
-        r"""Sets the count of this AddMemberResponse.
-
-        备份共享成员数量
-
-        :param count: The count of this AddMemberResponse.
-        :type count: int
-        """
-        self._count = count
 
     def to_dict(self):
         import warnings

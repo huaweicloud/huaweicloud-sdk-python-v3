@@ -16,29 +16,58 @@ class ListOpsEvaluatorVersionsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'total': 'int',
         'versions': 'list[ListOpsEvaluatorVersionsResponseBodyVersions]'
     }
 
     attribute_map = {
+        'total': 'total',
         'versions': 'versions'
     }
 
-    def __init__(self, versions=None):
+    def __init__(self, total=None, versions=None):
         r"""ListOpsEvaluatorVersionsResponse
 
         The model defined in huaweicloud sdk
 
+        :param total: **参数解释：** 数据总数。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 
+        :type total: int
         :param versions: **参数解释：** 评估器的版本列表，包含该评估器下所有已发布的历史版本及配置详情。 **取值范围：** 不涉及。 
         :type versions: list[:class:`huaweicloudsdkagentarts.v1.ListOpsEvaluatorVersionsResponseBodyVersions`]
         """
         
         super().__init__()
 
+        self._total = None
         self._versions = None
         self.discriminator = None
 
+        if total is not None:
+            self.total = total
         if versions is not None:
             self.versions = versions
+
+    @property
+    def total(self):
+        r"""Gets the total of this ListOpsEvaluatorVersionsResponse.
+
+        **参数解释：** 数据总数。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 
+
+        :return: The total of this ListOpsEvaluatorVersionsResponse.
+        :rtype: int
+        """
+        return self._total
+
+    @total.setter
+    def total(self, total):
+        r"""Sets the total of this ListOpsEvaluatorVersionsResponse.
+
+        **参数解释：** 数据总数。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 
+
+        :param total: The total of this ListOpsEvaluatorVersionsResponse.
+        :type total: int
+        """
+        self._total = total
 
     @property
     def versions(self):

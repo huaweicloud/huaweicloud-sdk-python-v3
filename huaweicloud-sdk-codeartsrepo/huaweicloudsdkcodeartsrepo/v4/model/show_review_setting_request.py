@@ -16,15 +16,17 @@ class ShowReviewSettingRequest:
 
     openapi_types = {
         'repository_id': 'int',
-        'with_default_review_categories': 'bool'
+        'with_default_review_categories': 'bool',
+        'take_effect': 'bool'
     }
 
     attribute_map = {
         'repository_id': 'repository_id',
-        'with_default_review_categories': 'with_default_review_categories'
+        'with_default_review_categories': 'with_default_review_categories',
+        'take_effect': 'take_effect'
     }
 
-    def __init__(self, repository_id=None, with_default_review_categories=None):
+    def __init__(self, repository_id=None, with_default_review_categories=None, take_effect=None):
         r"""ShowReviewSettingRequest
 
         The model defined in huaweicloud sdk
@@ -33,17 +35,22 @@ class ShowReviewSettingRequest:
         :type repository_id: int
         :param with_default_review_categories: **参数解释：** 额外返回可勾选检视意见分类和系统预置检视意见分类。 **取值范围：** - true, 返回可勾选检视意见分类和系统预置检视意见分类。 - false, 不返回可勾选检视意见分类和系统预置检视意见分类。
         :type with_default_review_categories: bool
+        :param take_effect: **参数解释：** 设置是否继承上层配置。 **取值范围：** - true, 返回从上层继承配置。 - false, 只返回自身配置。
+        :type take_effect: bool
         """
         
         
 
         self._repository_id = None
         self._with_default_review_categories = None
+        self._take_effect = None
         self.discriminator = None
 
         self.repository_id = repository_id
         if with_default_review_categories is not None:
             self.with_default_review_categories = with_default_review_categories
+        if take_effect is not None:
+            self.take_effect = take_effect
 
     @property
     def repository_id(self):
@@ -88,6 +95,28 @@ class ShowReviewSettingRequest:
         :type with_default_review_categories: bool
         """
         self._with_default_review_categories = with_default_review_categories
+
+    @property
+    def take_effect(self):
+        r"""Gets the take_effect of this ShowReviewSettingRequest.
+
+        **参数解释：** 设置是否继承上层配置。 **取值范围：** - true, 返回从上层继承配置。 - false, 只返回自身配置。
+
+        :return: The take_effect of this ShowReviewSettingRequest.
+        :rtype: bool
+        """
+        return self._take_effect
+
+    @take_effect.setter
+    def take_effect(self, take_effect):
+        r"""Sets the take_effect of this ShowReviewSettingRequest.
+
+        **参数解释：** 设置是否继承上层配置。 **取值范围：** - true, 返回从上层继承配置。 - false, 只返回自身配置。
+
+        :param take_effect: The take_effect of this ShowReviewSettingRequest.
+        :type take_effect: bool
+        """
+        self._take_effect = take_effect
 
     def to_dict(self):
         result = {}

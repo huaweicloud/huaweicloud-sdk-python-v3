@@ -638,31 +638,32 @@ global_provider = global_provider.get_credentials()
 
 ##### 2.4.5 OIDC信任委托 [:top:](#用户手册-top)
 
-支持通过OIDC身份提供商令牌验证的用户获取临时安全凭证（AssumeAgencyWithOIDC）。
+自`3.1.215`版本起，支持通过OIDC身份提供商令牌和信任委托获取临时安全凭证（AssumeAgencyWithOIDC）。
 
 详细说明参考 [通过使用OIDC协议SSO的信任委托获取临时安全凭证](https://support.huaweicloud.com/api-iam5/AssumeAgencyWithOIDC.html)
+
+通过 `OidcStsCredentialProvider` 获取认证信息，内部自动调用 STS 服务接口获取临时凭证。
 
 **环境变量**
 
 | 环境变量  |  说明 |
 | :------- | :--- |
-| HUAWEICLOUD_OIDC_PROVIDER_URN  | 必填, OIDC身份提供商的URN，例如 `iam::123456789:oidcProvider:test`  |
-| HUAWEICLOUD_OIDC_AGENCY_URN  | 必填, 信任委托的URN，例如 `iam::123456789:agency:demo`  |
-| HUAWEICLOUD_OIDC_TOKEN_FILE  | 可选, OIDC ID Token文件路径，当未设置 `HUAWEICLOUD_OIDC_ID_TOKEN` 时使用  |
-| HUAWEICLOUD_OIDC_ID_TOKEN  | 可选, OIDC ID Token值，优先级高于 `HUAWEICLOUD_OIDC_TOKEN_FILE`  |
-| HUAWEICLOUD_OIDC_SESSION_NAME  | 可选, 委托会话名称，默认为 `oidc-sts-session`  |
-| HUAWEICLOUD_OIDC_DURATION_SECONDS  | 可选, 临时凭证有效期（秒），默认为 `3600`  |
-| HUAWEICLOUD_OIDC_POLICY  | 可选, IAM权限策略JSON字符串，用于权限收敛  |
-| HUAWEICLOUD_OIDC_POLICY_IDS  | 可选, 策略ID列表，逗号分隔，例如 `policy-id-1,policy-id-2`  |
-| HUAWEICLOUD_SDK_STS_ENDPOINT  | 可选, STS终端节点，默认为 `https://sts.cn-north-4.myhuaweicloud.com`  |
-| HUAWEICLOUD_SDK_PROJECT_ID  | basic类型认证时，该参数可选  |
-| HUAWEICLOUD_SDK_DOMAIN_ID  | global类型认证时，该参数可选  |
+| HUAWEICLOUD_OIDC_PROVIDER_URN  | 必填, OIDC身份提供商的URN，例如 `iam::account_id:oidcProvider:provider_name`  |
+| HUAWEICLOUD_OIDC_AGENCY_URN  | 必填, 信任委托的URN，例如 `iam::account_id:agency:agency_name`  |
+| HUAWEICLOUD_OIDC_ID_TOKEN  | 条件必填, 与 `HUAWEICLOUD_OIDC_TOKEN_FILE` 至少设置一个, OIDC ID Token值，优先级高于 `HUAWEICLOUD_OIDC_TOKEN_FILE`  |
+| HUAWEICLOUD_OIDC_TOKEN_FILE  | 条件必填, 与 `HUAWEICLOUD_OIDC_ID_TOKEN` 至少设置一个, OIDC ID Token文件路径  |
+| HUAWEICLOUD_OIDC_SESSION_NAME  | 必填, 委托会话名称  |
+| HUAWEICLOUD_OIDC_DURATION_SECONDS  | 可选, 临时凭证有效期（秒），取值范围[900,43200]，默认 `3600`  |
+| HUAWEICLOUD_OIDC_POLICY  | 可选, 权限策略JSON字符串，用于权限收敛  |
+| HUAWEICLOUD_OIDC_POLICY_IDS  | 可选, 策略ID列表，逗号分隔  |
+
+> STS终端节点可通过环境变量 `HUAWEICLOUD_SDK_STS_ENDPOINT` 配置，默认 `https://sts.cn-north-4.myhuaweicloud.com`。
 
 配置环境变量：
 
 ```bash
-export HUAWEICLOUD_OIDC_PROVIDER_URN=iam::123456789:oidcProvider:test
-export HUAWEICLOUD_OIDC_AGENCY_URN=iam::123456789:agency:demo
+export HUAWEICLOUD_OIDC_PROVIDER_URN=your_provider_urn
+export HUAWEICLOUD_OIDC_AGENCY_URN=your_agency_urn
 export HUAWEICLOUD_OIDC_TOKEN_FILE=/path/to/id_token
 export HUAWEICLOUD_OIDC_SESSION_NAME=my-session
 ```
@@ -688,10 +689,15 @@ from huaweicloudsdkcore.auth.provider import OidcStsCredentialProvider
 
 provider = OidcStsCredentialProvider(
     "basic",
-    provider_urn="iam::123456789:oidcProvider:test",
-    agency_urn="iam::123456789:agency:demo",
-    id_token="your-id-token",
-    sts_endpoint="https://sts.cn-north-4.myhuaweicloud.com",
+    provider_urn=provider_urn,                              # 必填
+    agency_urn=agency_urn,                                  # 必填
+    id_token="your-id-token",                               # 与 id_token_file 至少设置一个
+    # id_token_file="/path/to/id_token",                    # 与 id_token 至少设置一个
+    agency_session_name="my-session",                        # 必填
+    duration_seconds=3600,                                  # 可选，默认 3600
+    policy='{"Version":"5.0","Statement":[]}',              # 可选，JSON字符串
+    policy_ids=["policy-id-1", "policy-id-2"],              # 可选，策略ID列表
+    sts_endpoint="https://sts.cn-north-4.myhuaweicloud.com", # 可选，默认北京四
 )
 cred = provider.get_credentials()
 ```

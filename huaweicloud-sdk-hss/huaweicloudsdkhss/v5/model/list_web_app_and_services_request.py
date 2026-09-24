@@ -59,7 +59,7 @@ class ListWebAppAndServicesRequest:
         :type category: str
         :param name: **参数解释**: web应用，web服务或数据库名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-256 **默认取值**: 不涉及 
         :type name: str
-        :param catalogue: **参数解释**: 资产类型 **约束限制**: 不涉及 **取值范围**: - web-app：web应用 - web-service：web服务 - database：数据库  **默认取值**: 不涉及 
+        :param catalogue: **参数解释**: 资产类型 **约束限制**: 不涉及 **取值范围**: - web_cms：web应用 - web_service：web服务 - database：数据库  **默认取值**: 不涉及 
         :type catalogue: str
         :param host_name: **参数解释**: 服务器名称(可选)，可让用户根据主机名字搜索 **约束限制**: 不涉及 **取值范围**: 字符长度0-256 **默认取值**: 不涉及 
         :type host_name: str
@@ -228,7 +228,7 @@ class ListWebAppAndServicesRequest:
     def catalogue(self):
         r"""Gets the catalogue of this ListWebAppAndServicesRequest.
 
-        **参数解释**: 资产类型 **约束限制**: 不涉及 **取值范围**: - web-app：web应用 - web-service：web服务 - database：数据库  **默认取值**: 不涉及 
+        **参数解释**: 资产类型 **约束限制**: 不涉及 **取值范围**: - web_cms：web应用 - web_service：web服务 - database：数据库  **默认取值**: 不涉及 
 
         :return: The catalogue of this ListWebAppAndServicesRequest.
         :rtype: str
@@ -239,7 +239,7 @@ class ListWebAppAndServicesRequest:
     def catalogue(self, catalogue):
         r"""Sets the catalogue of this ListWebAppAndServicesRequest.
 
-        **参数解释**: 资产类型 **约束限制**: 不涉及 **取值范围**: - web-app：web应用 - web-service：web服务 - database：数据库  **默认取值**: 不涉及 
+        **参数解释**: 资产类型 **约束限制**: 不涉及 **取值范围**: - web_cms：web应用 - web_service：web服务 - database：数据库  **默认取值**: 不涉及 
 
         :param catalogue: The catalogue of this ListWebAppAndServicesRequest.
         :type catalogue: str

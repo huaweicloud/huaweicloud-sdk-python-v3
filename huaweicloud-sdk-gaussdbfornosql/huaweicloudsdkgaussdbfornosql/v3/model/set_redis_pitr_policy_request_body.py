@@ -31,11 +31,11 @@ class SetRedisPitrPolicyRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param enabled: 标识Redis实例是否开启指定时间点恢复。 “true”，表示实例开启Redis指定时间点恢复功能。 “false”，表示实例不启用Redis指定时间点恢复功能。
+        :param enabled: **参数解释：** 标识Redis实例是否开启指定时间点恢复。 **取值范围：** - “true”，表示实例开启Redis指定时间点恢复功能。 - “false”，表示实例不启用Redis指定时间点恢复功能。
         :type enabled: bool
-        :param interval: 数据备份的时间间隔，该数据备份控制redis实例可恢复时间点的间隔，默认值为 20分钟。 取值范围：5～120  单位：分钟  例如，当interval 为20min时，可恢复时间点的间隔为20min，其interval约小，对性能影响越大，存储空间膨胀约明显。
+        :param interval: **参数解释：** 数据备份的时间间隔，该数据备份控制redis实例可恢复时间点的间隔，默认值为 20分钟。 例如，当interval 为20min时，可恢复时间点的间隔为20min，其interval约小，对性能影响越大，存储空间膨胀约明显。 **取值范围：** 5～120  单位：分钟
         :type interval: int
-        :param keep_days: 指定已生成的备份文件可以保存的天数，默认值为 1 天。 取值范围：1～7  单位：天
+        :param keep_days: **参数解释：** 指定已生成的备份文件可以保存的天数，默认值为 1 天。 **取值范围：** 1～7  单位：天
         :type keep_days: int
         """
         
@@ -56,7 +56,7 @@ class SetRedisPitrPolicyRequestBody:
     def enabled(self):
         r"""Gets the enabled of this SetRedisPitrPolicyRequestBody.
 
-        标识Redis实例是否开启指定时间点恢复。 “true”，表示实例开启Redis指定时间点恢复功能。 “false”，表示实例不启用Redis指定时间点恢复功能。
+        **参数解释：** 标识Redis实例是否开启指定时间点恢复。 **取值范围：** - “true”，表示实例开启Redis指定时间点恢复功能。 - “false”，表示实例不启用Redis指定时间点恢复功能。
 
         :return: The enabled of this SetRedisPitrPolicyRequestBody.
         :rtype: bool
@@ -67,7 +67,7 @@ class SetRedisPitrPolicyRequestBody:
     def enabled(self, enabled):
         r"""Sets the enabled of this SetRedisPitrPolicyRequestBody.
 
-        标识Redis实例是否开启指定时间点恢复。 “true”，表示实例开启Redis指定时间点恢复功能。 “false”，表示实例不启用Redis指定时间点恢复功能。
+        **参数解释：** 标识Redis实例是否开启指定时间点恢复。 **取值范围：** - “true”，表示实例开启Redis指定时间点恢复功能。 - “false”，表示实例不启用Redis指定时间点恢复功能。
 
         :param enabled: The enabled of this SetRedisPitrPolicyRequestBody.
         :type enabled: bool
@@ -78,7 +78,7 @@ class SetRedisPitrPolicyRequestBody:
     def interval(self):
         r"""Gets the interval of this SetRedisPitrPolicyRequestBody.
 
-        数据备份的时间间隔，该数据备份控制redis实例可恢复时间点的间隔，默认值为 20分钟。 取值范围：5～120  单位：分钟  例如，当interval 为20min时，可恢复时间点的间隔为20min，其interval约小，对性能影响越大，存储空间膨胀约明显。
+        **参数解释：** 数据备份的时间间隔，该数据备份控制redis实例可恢复时间点的间隔，默认值为 20分钟。 例如，当interval 为20min时，可恢复时间点的间隔为20min，其interval约小，对性能影响越大，存储空间膨胀约明显。 **取值范围：** 5～120  单位：分钟
 
         :return: The interval of this SetRedisPitrPolicyRequestBody.
         :rtype: int
@@ -89,7 +89,7 @@ class SetRedisPitrPolicyRequestBody:
     def interval(self, interval):
         r"""Sets the interval of this SetRedisPitrPolicyRequestBody.
 
-        数据备份的时间间隔，该数据备份控制redis实例可恢复时间点的间隔，默认值为 20分钟。 取值范围：5～120  单位：分钟  例如，当interval 为20min时，可恢复时间点的间隔为20min，其interval约小，对性能影响越大，存储空间膨胀约明显。
+        **参数解释：** 数据备份的时间间隔，该数据备份控制redis实例可恢复时间点的间隔，默认值为 20分钟。 例如，当interval 为20min时，可恢复时间点的间隔为20min，其interval约小，对性能影响越大，存储空间膨胀约明显。 **取值范围：** 5～120  单位：分钟
 
         :param interval: The interval of this SetRedisPitrPolicyRequestBody.
         :type interval: int
@@ -100,7 +100,7 @@ class SetRedisPitrPolicyRequestBody:
     def keep_days(self):
         r"""Gets the keep_days of this SetRedisPitrPolicyRequestBody.
 
-        指定已生成的备份文件可以保存的天数，默认值为 1 天。 取值范围：1～7  单位：天
+        **参数解释：** 指定已生成的备份文件可以保存的天数，默认值为 1 天。 **取值范围：** 1～7  单位：天
 
         :return: The keep_days of this SetRedisPitrPolicyRequestBody.
         :rtype: int
@@ -111,7 +111,7 @@ class SetRedisPitrPolicyRequestBody:
     def keep_days(self, keep_days):
         r"""Sets the keep_days of this SetRedisPitrPolicyRequestBody.
 
-        指定已生成的备份文件可以保存的天数，默认值为 1 天。 取值范围：1～7  单位：天
+        **参数解释：** 指定已生成的备份文件可以保存的天数，默认值为 1 天。 **取值范围：** 1～7  单位：天
 
         :param keep_days: The keep_days of this SetRedisPitrPolicyRequestBody.
         :type keep_days: int

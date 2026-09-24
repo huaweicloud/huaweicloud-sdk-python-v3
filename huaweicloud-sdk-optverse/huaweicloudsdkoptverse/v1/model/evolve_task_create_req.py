@@ -88,7 +88,8 @@ class EvolveTaskCreateReq:
 
         self.name = name
         self.description = description
-        self.output_path = output_path
+        if output_path is not None:
+            self.output_path = output_path
         self.algorithm_id = algorithm_id
         if algorithm_file is not None:
             self.algorithm_file = algorithm_file

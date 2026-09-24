@@ -16,47 +16,80 @@ class BatchAddOpsEvaluationTaskCustomLabelsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'object'
+        'msg': 'str',
+        'code': 'int'
     }
 
     attribute_map = {
-        'body': 'body'
+        'msg': 'msg',
+        'code': 'code'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, msg=None, code=None):
         r"""BatchAddOpsEvaluationTaskCustomLabelsResponse
 
         The model defined in huaweicloud sdk
 
-        :param body: 
-        :type body: object
+        :param msg: **参数解释：** 提示信息。 **约束限制：** 不涉及。 **取值范围：** 固定为 record task relation tag succeed。 
+        :type msg: str
+        :param code: **参数解释：** 业务状态码。 **约束限制：** 不涉及。 **取值范围：** 固定为 200。 
+        :type code: int
         """
         
         super().__init__()
 
-        self._body = None
+        self._msg = None
+        self._code = None
         self.discriminator = None
 
-        if body is not None:
-            self.body = body
+        if msg is not None:
+            self.msg = msg
+        if code is not None:
+            self.code = code
 
     @property
-    def body(self):
-        r"""Gets the body of this BatchAddOpsEvaluationTaskCustomLabelsResponse.
+    def msg(self):
+        r"""Gets the msg of this BatchAddOpsEvaluationTaskCustomLabelsResponse.
 
-        :return: The body of this BatchAddOpsEvaluationTaskCustomLabelsResponse.
-        :rtype: object
+        **参数解释：** 提示信息。 **约束限制：** 不涉及。 **取值范围：** 固定为 record task relation tag succeed。 
+
+        :return: The msg of this BatchAddOpsEvaluationTaskCustomLabelsResponse.
+        :rtype: str
         """
-        return self._body
+        return self._msg
 
-    @body.setter
-    def body(self, body):
-        r"""Sets the body of this BatchAddOpsEvaluationTaskCustomLabelsResponse.
+    @msg.setter
+    def msg(self, msg):
+        r"""Sets the msg of this BatchAddOpsEvaluationTaskCustomLabelsResponse.
 
-        :param body: The body of this BatchAddOpsEvaluationTaskCustomLabelsResponse.
-        :type body: object
+        **参数解释：** 提示信息。 **约束限制：** 不涉及。 **取值范围：** 固定为 record task relation tag succeed。 
+
+        :param msg: The msg of this BatchAddOpsEvaluationTaskCustomLabelsResponse.
+        :type msg: str
         """
-        self._body = body
+        self._msg = msg
+
+    @property
+    def code(self):
+        r"""Gets the code of this BatchAddOpsEvaluationTaskCustomLabelsResponse.
+
+        **参数解释：** 业务状态码。 **约束限制：** 不涉及。 **取值范围：** 固定为 200。 
+
+        :return: The code of this BatchAddOpsEvaluationTaskCustomLabelsResponse.
+        :rtype: int
+        """
+        return self._code
+
+    @code.setter
+    def code(self, code):
+        r"""Sets the code of this BatchAddOpsEvaluationTaskCustomLabelsResponse.
+
+        **参数解释：** 业务状态码。 **约束限制：** 不涉及。 **取值范围：** 固定为 200。 
+
+        :param code: The code of this BatchAddOpsEvaluationTaskCustomLabelsResponse.
+        :type code: int
+        """
+        self._code = code
 
     def to_dict(self):
         import warnings

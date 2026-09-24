@@ -53,9 +53,9 @@ class Space:
         :type obs_free: float
         :param snapshot_free: **参数解释**：  快照备份赠送空间，单位GB。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
         :type snapshot_free: float
-        :param db: **参数解释**：  全量备份大小，单位GB。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        :param db: **参数解释**：  全量备份大小，单位MB。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
         :type db: float
-        :param log: **参数解释**：  增量备份大小，单位GB。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        :param log: **参数解释**：  增量备份大小，单位MB。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
         :type log: float
         """
         
@@ -224,7 +224,7 @@ class Space:
     def db(self):
         r"""Gets the db of this Space.
 
-        **参数解释**：  全量备份大小，单位GB。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        **参数解释**：  全量备份大小，单位MB。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
         :return: The db of this Space.
         :rtype: float
@@ -235,7 +235,7 @@ class Space:
     def db(self, db):
         r"""Sets the db of this Space.
 
-        **参数解释**：  全量备份大小，单位GB。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        **参数解释**：  全量备份大小，单位MB。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
         :param db: The db of this Space.
         :type db: float
@@ -246,7 +246,7 @@ class Space:
     def log(self):
         r"""Gets the log of this Space.
 
-        **参数解释**：  增量备份大小，单位GB。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        **参数解释**：  增量备份大小，单位MB。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
         :return: The log of this Space.
         :rtype: float
@@ -257,7 +257,7 @@ class Space:
     def log(self, log):
         r"""Sets the log of this Space.
 
-        **参数解释**：  增量备份大小，单位GB。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        **参数解释**：  增量备份大小，单位MB。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
         :param log: The log of this Space.
         :type log: float

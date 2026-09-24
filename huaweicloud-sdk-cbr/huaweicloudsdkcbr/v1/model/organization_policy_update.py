@@ -20,7 +20,7 @@ class OrganizationPolicyUpdate:
         'policy_name': 'str',
         'policy_enabled': 'bool',
         'policy_operation_definition': 'PolicyoODCreate',
-        'policy_trigger': 'PolicyTriggerReq',
+        'policy_trigger': 'PolicyTriggerUpdateReq',
         'effective_scope': 'str'
     }
 
@@ -50,7 +50,7 @@ class OrganizationPolicyUpdate:
         :param policy_operation_definition: 
         :type policy_operation_definition: :class:`huaweicloudsdkcbr.v1.PolicyoODCreate`
         :param policy_trigger: 
-        :type policy_trigger: :class:`huaweicloudsdkcbr.v1.PolicyTriggerReq`
+        :type policy_trigger: :class:`huaweicloudsdkcbr.v1.PolicyTriggerUpdateReq`
         :param effective_scope: 组织策略生效范围
         :type effective_scope: str
         """
@@ -192,7 +192,7 @@ class OrganizationPolicyUpdate:
         r"""Gets the policy_trigger of this OrganizationPolicyUpdate.
 
         :return: The policy_trigger of this OrganizationPolicyUpdate.
-        :rtype: :class:`huaweicloudsdkcbr.v1.PolicyTriggerReq`
+        :rtype: :class:`huaweicloudsdkcbr.v1.PolicyTriggerUpdateReq`
         """
         return self._policy_trigger
 
@@ -201,7 +201,7 @@ class OrganizationPolicyUpdate:
         r"""Sets the policy_trigger of this OrganizationPolicyUpdate.
 
         :param policy_trigger: The policy_trigger of this OrganizationPolicyUpdate.
-        :type policy_trigger: :class:`huaweicloudsdkcbr.v1.PolicyTriggerReq`
+        :type policy_trigger: :class:`huaweicloudsdkcbr.v1.PolicyTriggerUpdateReq`
         """
         self._policy_trigger = policy_trigger
 

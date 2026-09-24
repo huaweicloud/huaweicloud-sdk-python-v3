@@ -15,28 +15,35 @@ class PolicyTriggerPropertiesReq:
     sensitive_list = []
 
     openapi_types = {
-        'pattern': 'list[str]'
+        'pattern': 'list[str]',
+        'start_window_minutes': 'int'
     }
 
     attribute_map = {
-        'pattern': 'pattern'
+        'pattern': 'pattern',
+        'start_window_minutes': 'start_window_minutes'
     }
 
-    def __init__(self, pattern=None):
+    def __init__(self, pattern=None, start_window_minutes=None):
         r"""PolicyTriggerPropertiesReq
 
         The model defined in huaweicloud sdk
 
         :param pattern: 调度规则。限制24条规则。调度器的调度规则，可参照iCalendar RFC 2445规范中的事件规则，但仅支持FREQ、BYDAY、BYHOUR、BYMINUTE、INTERVAL等参数，其中FREQ仅支持WEEKLY和DAILY，BYDAY支持一周七天（MO、TU、WE、TH、FR、SA、SU），BYHOUR支持0-23小时，BYMINUTE支持0-59分钟，并且间隔不能小于一小时，一天最大24个时间点。例如，周一到周天，每天UTC时间的14:00调度，其规则为：&#39;FREQ&#x3D;WEEKLY;BYDAY&#x3D;MO,TU,WE,TH,FR,SA,SU;BYHOUR&#x3D;14;BYMINUTE&#x3D;00&#39;。例如：某个地区的时间为 UTC+8，如果在该地区每天14:00调度，则在14点基础上减8，其规则为&#39;FREQ&#x3D;DAILY;INTERVAL&#x3D;1;BYHOUR&#x3D;6;BYMINUTE&#x3D;00&#39;。
         :type pattern: list[str]
+        :param start_window_minutes: 启动时间窗口大小
+        :type start_window_minutes: int
         """
         
         
 
         self._pattern = None
+        self._start_window_minutes = None
         self.discriminator = None
 
         self.pattern = pattern
+        if start_window_minutes is not None:
+            self.start_window_minutes = start_window_minutes
 
     @property
     def pattern(self):
@@ -59,6 +66,28 @@ class PolicyTriggerPropertiesReq:
         :type pattern: list[str]
         """
         self._pattern = pattern
+
+    @property
+    def start_window_minutes(self):
+        r"""Gets the start_window_minutes of this PolicyTriggerPropertiesReq.
+
+        启动时间窗口大小
+
+        :return: The start_window_minutes of this PolicyTriggerPropertiesReq.
+        :rtype: int
+        """
+        return self._start_window_minutes
+
+    @start_window_minutes.setter
+    def start_window_minutes(self, start_window_minutes):
+        r"""Sets the start_window_minutes of this PolicyTriggerPropertiesReq.
+
+        启动时间窗口大小
+
+        :param start_window_minutes: The start_window_minutes of this PolicyTriggerPropertiesReq.
+        :type start_window_minutes: int
+        """
+        self._start_window_minutes = start_window_minutes
 
     def to_dict(self):
         result = {}

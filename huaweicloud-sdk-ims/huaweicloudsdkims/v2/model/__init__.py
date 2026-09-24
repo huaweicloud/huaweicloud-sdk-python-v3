@@ -124,6 +124,7 @@ from huaweicloudsdkims.v2.model.list_versions_request import ListVersionsRequest
 from huaweicloudsdkims.v2.model.list_versions_response import ListVersionsResponse
 from huaweicloudsdkims.v2.model.os_version_info import OsVersionInfo
 from huaweicloudsdkims.v2.model.os_version_response import OsVersionResponse
+from huaweicloudsdkims.v2.model.page_info import PageInfo
 from huaweicloudsdkims.v2.model.query_image_by_tags_resource_detail import QueryImageByTagsResourceDetail
 from huaweicloudsdkims.v2.model.quick_import_image_by_file_request_body import QuickImportImageByFileRequestBody
 from huaweicloudsdkims.v2.model.quota import Quota

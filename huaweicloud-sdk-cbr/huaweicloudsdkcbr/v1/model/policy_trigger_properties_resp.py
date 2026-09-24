@@ -16,15 +16,17 @@ class PolicyTriggerPropertiesResp:
 
     openapi_types = {
         'pattern': 'list[str]',
-        'start_time': 'str'
+        'start_time': 'str',
+        'start_window_minutes': 'int'
     }
 
     attribute_map = {
         'pattern': 'pattern',
-        'start_time': 'start_time'
+        'start_time': 'start_time',
+        'start_window_minutes': 'start_window_minutes'
     }
 
-    def __init__(self, pattern=None, start_time=None):
+    def __init__(self, pattern=None, start_time=None, start_window_minutes=None):
         r"""PolicyTriggerPropertiesResp
 
         The model defined in huaweicloud sdk
@@ -33,17 +35,22 @@ class PolicyTriggerPropertiesResp:
         :type pattern: list[str]
         :param start_time: 调度器开始时间，例如：\&quot;2020-01-08 09:59:49\&quot;
         :type start_time: str
+        :param start_window_minutes: 启动时间窗口大小
+        :type start_window_minutes: int
         """
         
         
 
         self._pattern = None
         self._start_time = None
+        self._start_window_minutes = None
         self.discriminator = None
 
         self.pattern = pattern
         if start_time is not None:
             self.start_time = start_time
+        if start_window_minutes is not None:
+            self.start_window_minutes = start_window_minutes
 
     @property
     def pattern(self):
@@ -88,6 +95,28 @@ class PolicyTriggerPropertiesResp:
         :type start_time: str
         """
         self._start_time = start_time
+
+    @property
+    def start_window_minutes(self):
+        r"""Gets the start_window_minutes of this PolicyTriggerPropertiesResp.
+
+        启动时间窗口大小
+
+        :return: The start_window_minutes of this PolicyTriggerPropertiesResp.
+        :rtype: int
+        """
+        return self._start_window_minutes
+
+    @start_window_minutes.setter
+    def start_window_minutes(self, start_window_minutes):
+        r"""Sets the start_window_minutes of this PolicyTriggerPropertiesResp.
+
+        启动时间窗口大小
+
+        :param start_window_minutes: The start_window_minutes of this PolicyTriggerPropertiesResp.
+        :type start_window_minutes: int
+        """
+        self._start_window_minutes = start_window_minutes
 
     def to_dict(self):
         result = {}

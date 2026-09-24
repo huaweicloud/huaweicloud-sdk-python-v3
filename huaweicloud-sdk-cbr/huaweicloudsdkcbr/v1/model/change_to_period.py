@@ -66,14 +66,11 @@ class ChangeToPeriod:
         self._vault_ids = None
         self.discriminator = None
 
-        if charging_mode is not None:
-            self.charging_mode = charging_mode
+        self.charging_mode = charging_mode
         self.period_type = period_type
         self.period_num = period_num
-        if is_auto_renew is not None:
-            self.is_auto_renew = is_auto_renew
-        if is_auto_pay is not None:
-            self.is_auto_pay = is_auto_pay
+        self.is_auto_renew = is_auto_renew
+        self.is_auto_pay = is_auto_pay
         if console_url is not None:
             self.console_url = console_url
         self.vault_ids = vault_ids

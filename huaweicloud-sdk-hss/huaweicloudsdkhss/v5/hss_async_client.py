@@ -2957,6 +2957,75 @@ class HssAsyncClient(Client):
 
         return http_info
 
+    def list_alarm_white_list_host_detail_async(self, request):
+        r"""查询告警白名单生详情
+
+        查询告警白名单生详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListAlarmWhiteListHostDetail
+        :type request: :class:`huaweicloudsdkhss.v5.ListAlarmWhiteListHostDetailRequest`
+        :rtype: :class:`huaweicloudsdkhss.v5.ListAlarmWhiteListHostDetailResponse`
+        """
+        http_info = self._list_alarm_white_list_host_detail_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_alarm_white_list_host_detail_async_invoker(self, request):
+        http_info = self._list_alarm_white_list_host_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_alarm_white_list_host_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/event/white-list/rule/detail",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAlarmWhiteListHostDetailResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'rule_id' in local_var_params:
+            query_params.append(('rule_id', local_var_params['rule_id']))
+
+        header_params = {}
+        if 'region' in local_var_params:
+            header_params['region'] = local_var_params['region']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_app_change_histories_async(self, request):
         r"""获取软件信息的历史变动记录
 
@@ -4987,10 +5056,10 @@ class HssAsyncClient(Client):
             query_params.append(('protect_status', local_var_params['protect_status']))
         if 'container_tags' in local_var_params:
             query_params.append(('container_tags', local_var_params['container_tags']))
-        if 'container_node' in local_var_params:
-            query_params.append(('container_node', local_var_params['container_node']))
         if 'version' in local_var_params:
             query_params.append(('version', local_var_params['version']))
+        if 'container_node' in local_var_params:
+            query_params.append(('container_node', local_var_params['container_node']))
 
         header_params = {}
         if 'region' in local_var_params:
@@ -13737,6 +13806,75 @@ class HssAsyncClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_alarm_white_list_host_async(self, request):
+        r"""编辑告警白名单生效主机
+
+        编辑告警白名单主机相关信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateAlarmWhiteListHost
+        :type request: :class:`huaweicloudsdkhss.v5.UpdateAlarmWhiteListHostRequest`
+        :rtype: :class:`huaweicloudsdkhss.v5.UpdateAlarmWhiteListHostResponse`
+        """
+        http_info = self._update_alarm_white_list_host_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_alarm_white_list_host_async_invoker(self, request):
+        http_info = self._update_alarm_white_list_host_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_alarm_white_list_host_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v5/{project_id}/event/white-list/alarm",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAlarmWhiteListHostResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+        if 'region' in local_var_params:
+            header_params['region'] = local_var_params['region']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -23148,144 +23286,6 @@ class HssAsyncClient(Client):
         query_params = []
 
         header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_alarm_white_list_host_detail_async(self, request):
-        r"""查询告警白名单生详情
-
-        查询告警白名单生详情
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListAlarmWhiteListHostDetail
-        :type request: :class:`huaweicloudsdkhss.v5.ListAlarmWhiteListHostDetailRequest`
-        :rtype: :class:`huaweicloudsdkhss.v5.ListAlarmWhiteListHostDetailResponse`
-        """
-        http_info = self._list_alarm_white_list_host_detail_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_alarm_white_list_host_detail_async_invoker(self, request):
-        http_info = self._list_alarm_white_list_host_detail_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_alarm_white_list_host_detail_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v5/{project_id}/event/white-list/rule/detail",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListAlarmWhiteListHostDetailResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'enterprise_project_id' in local_var_params:
-            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
-        if 'rule_id' in local_var_params:
-            query_params.append(('rule_id', local_var_params['rule_id']))
-
-        header_params = {}
-        if 'region' in local_var_params:
-            header_params['region'] = local_var_params['region']
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def update_alarm_white_list_host_async(self, request):
-        r"""编辑告警白名单生效主机
-
-        编辑告警白名单主机相关信息
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for UpdateAlarmWhiteListHost
-        :type request: :class:`huaweicloudsdkhss.v5.UpdateAlarmWhiteListHostRequest`
-        :rtype: :class:`huaweicloudsdkhss.v5.UpdateAlarmWhiteListHostResponse`
-        """
-        http_info = self._update_alarm_white_list_host_http_info(request)
-        return self._call_api(**http_info)
-
-    def update_alarm_white_list_host_async_invoker(self, request):
-        http_info = self._update_alarm_white_list_host_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _update_alarm_white_list_host_http_info(self, request):
-        http_info = {
-            "method": "PUT",
-            "resource_path": "/v5/{project_id}/event/white-list/alarm",
-            "request_type": request.__class__.__name__,
-            "response_type": "UpdateAlarmWhiteListHostResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'enterprise_project_id' in local_var_params:
-            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
-
-        header_params = {}
-        if 'region' in local_var_params:
-            header_params['region'] = local_var_params['region']
 
         form_params = {}
 

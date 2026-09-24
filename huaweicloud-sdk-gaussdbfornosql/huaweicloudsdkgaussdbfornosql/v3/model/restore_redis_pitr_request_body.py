@@ -27,7 +27,7 @@ class RestoreRedisPitrRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param restore_time: 恢复的指定时间点, 格式为yyyy-mm-ddThh:mm:ssZ字符串格式，T指某个时间的开始，Z指时区偏移量。  获取方法请参见 查询Redis可恢复时间点 中响应“restore_time”字段下参数的值。
+        :param restore_time: **参数解释：** 恢复的指定时间点, 格式为yyyy-mm-ddThh:mm:ssZ字符串格式，T指某个时间的开始，Z指时区偏移量。 获取方法请参见 查询Redis可恢复时间点 中响应“restore_time”字段下参数的值。 **取值范围：** 不涉及。
         :type restore_time: str
         """
         
@@ -42,7 +42,7 @@ class RestoreRedisPitrRequestBody:
     def restore_time(self):
         r"""Gets the restore_time of this RestoreRedisPitrRequestBody.
 
-        恢复的指定时间点, 格式为yyyy-mm-ddThh:mm:ssZ字符串格式，T指某个时间的开始，Z指时区偏移量。  获取方法请参见 查询Redis可恢复时间点 中响应“restore_time”字段下参数的值。
+        **参数解释：** 恢复的指定时间点, 格式为yyyy-mm-ddThh:mm:ssZ字符串格式，T指某个时间的开始，Z指时区偏移量。 获取方法请参见 查询Redis可恢复时间点 中响应“restore_time”字段下参数的值。 **取值范围：** 不涉及。
 
         :return: The restore_time of this RestoreRedisPitrRequestBody.
         :rtype: str
@@ -53,7 +53,7 @@ class RestoreRedisPitrRequestBody:
     def restore_time(self, restore_time):
         r"""Sets the restore_time of this RestoreRedisPitrRequestBody.
 
-        恢复的指定时间点, 格式为yyyy-mm-ddThh:mm:ssZ字符串格式，T指某个时间的开始，Z指时区偏移量。  获取方法请参见 查询Redis可恢复时间点 中响应“restore_time”字段下参数的值。
+        **参数解释：** 恢复的指定时间点, 格式为yyyy-mm-ddThh:mm:ssZ字符串格式，T指某个时间的开始，Z指时区偏移量。 获取方法请参见 查询Redis可恢复时间点 中响应“restore_time”字段下参数的值。 **取值范围：** 不涉及。
 
         :param restore_time: The restore_time of this RestoreRedisPitrRequestBody.
         :type restore_time: str

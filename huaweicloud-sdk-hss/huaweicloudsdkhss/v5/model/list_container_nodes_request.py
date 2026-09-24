@@ -23,8 +23,8 @@ class ListContainerNodesRequest:
         'agent_status': 'str',
         'protect_status': 'str',
         'container_tags': 'str',
-        'container_node': 'bool',
-        'version': 'str'
+        'version': 'str',
+        'container_node': 'bool'
     }
 
     attribute_map = {
@@ -36,11 +36,11 @@ class ListContainerNodesRequest:
         'agent_status': 'agent_status',
         'protect_status': 'protect_status',
         'container_tags': 'container_tags',
-        'container_node': 'container_node',
-        'version': 'version'
+        'version': 'version',
+        'container_node': 'container_node'
     }
 
-    def __init__(self, region=None, enterprise_project_id=None, offset=None, limit=None, host_name=None, agent_status=None, protect_status=None, container_tags=None, container_node=None, version=None):
+    def __init__(self, region=None, enterprise_project_id=None, offset=None, limit=None, host_name=None, agent_status=None, protect_status=None, container_tags=None, version=None, container_node=None):
         r"""ListContainerNodesRequest
 
         The model defined in huaweicloud sdk
@@ -61,10 +61,10 @@ class ListContainerNodesRequest:
         :type protect_status: str
         :param container_tags: **参数解释**: 用来识别cce节点或者自建节点的标签 **约束限制**: 不涉及 **取值范围**: 包含如下3种。   - cce：cce节点   - self：自建节点   - other：其他节点  **默认取值**: 不涉及 
         :type container_tags: str
+        :param version: **参数解释**: 查询是否是容器节点 **约束限制**: 不涉及 **取值范围**: - hss.version.null：无。 - hss.version.basic：基础版。 - hss.version.advanced：专业版。 - hss.version.enterprise：企业版。 - hss.version.premium：旗舰版。 - hss.version.wtp：网页防篡改版。 - hss.version.container.enterprise：容器版。  **默认取值**: 不涉及 
+        :type version: str
         :param container_node: **参数解释**: 查询是否是容器节点 **约束限制**: 不涉及 **取值范围**: - true：是容器节点 - false：非容器节点  **默认取值**: false 
         :type container_node: bool
-        :param version: **参数解释**: 节点开启的防护版本 **约束限制**: 不涉及 **取值范围**: - hss.version.null ：无。 - hss.version.basic ：基础版。 - hss.version.advanced ：专业版。 - hss.version.enterprise ：企业版。 - hss.version.premium ：旗舰版。 - hss.version.wtp ：网页防篡改版。 - hss.version.container.enterprise：容器版。              **默认取值**: 不涉及 
-        :type version: str
         """
         
         
@@ -77,8 +77,8 @@ class ListContainerNodesRequest:
         self._agent_status = None
         self._protect_status = None
         self._container_tags = None
-        self._container_node = None
         self._version = None
+        self._container_node = None
         self.discriminator = None
 
         if region is not None:
@@ -97,10 +97,10 @@ class ListContainerNodesRequest:
             self.protect_status = protect_status
         if container_tags is not None:
             self.container_tags = container_tags
-        if container_node is not None:
-            self.container_node = container_node
         if version is not None:
             self.version = version
+        if container_node is not None:
+            self.container_node = container_node
 
     @property
     def region(self):
@@ -279,6 +279,28 @@ class ListContainerNodesRequest:
         self._container_tags = container_tags
 
     @property
+    def version(self):
+        r"""Gets the version of this ListContainerNodesRequest.
+
+        **参数解释**: 查询是否是容器节点 **约束限制**: 不涉及 **取值范围**: - hss.version.null：无。 - hss.version.basic：基础版。 - hss.version.advanced：专业版。 - hss.version.enterprise：企业版。 - hss.version.premium：旗舰版。 - hss.version.wtp：网页防篡改版。 - hss.version.container.enterprise：容器版。  **默认取值**: 不涉及 
+
+        :return: The version of this ListContainerNodesRequest.
+        :rtype: str
+        """
+        return self._version
+
+    @version.setter
+    def version(self, version):
+        r"""Sets the version of this ListContainerNodesRequest.
+
+        **参数解释**: 查询是否是容器节点 **约束限制**: 不涉及 **取值范围**: - hss.version.null：无。 - hss.version.basic：基础版。 - hss.version.advanced：专业版。 - hss.version.enterprise：企业版。 - hss.version.premium：旗舰版。 - hss.version.wtp：网页防篡改版。 - hss.version.container.enterprise：容器版。  **默认取值**: 不涉及 
+
+        :param version: The version of this ListContainerNodesRequest.
+        :type version: str
+        """
+        self._version = version
+
+    @property
     def container_node(self):
         r"""Gets the container_node of this ListContainerNodesRequest.
 
@@ -299,28 +321,6 @@ class ListContainerNodesRequest:
         :type container_node: bool
         """
         self._container_node = container_node
-
-    @property
-    def version(self):
-        r"""Gets the version of this ListContainerNodesRequest.
-
-        **参数解释**: 节点开启的防护版本 **约束限制**: 不涉及 **取值范围**: - hss.version.null ：无。 - hss.version.basic ：基础版。 - hss.version.advanced ：专业版。 - hss.version.enterprise ：企业版。 - hss.version.premium ：旗舰版。 - hss.version.wtp ：网页防篡改版。 - hss.version.container.enterprise：容器版。              **默认取值**: 不涉及 
-
-        :return: The version of this ListContainerNodesRequest.
-        :rtype: str
-        """
-        return self._version
-
-    @version.setter
-    def version(self, version):
-        r"""Sets the version of this ListContainerNodesRequest.
-
-        **参数解释**: 节点开启的防护版本 **约束限制**: 不涉及 **取值范围**: - hss.version.null ：无。 - hss.version.basic ：基础版。 - hss.version.advanced ：专业版。 - hss.version.enterprise ：企业版。 - hss.version.premium ：旗舰版。 - hss.version.wtp ：网页防篡改版。 - hss.version.container.enterprise：容器版。              **默认取值**: 不涉及 
-
-        :param version: The version of this ListContainerNodesRequest.
-        :type version: str
-        """
-        self._version = version
 
     def to_dict(self):
         result = {}

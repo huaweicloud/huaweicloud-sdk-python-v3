@@ -15,7 +15,7 @@ class VaultTagsCreateReq:
     sensitive_list = []
 
     openapi_types = {
-        'tag': 'Tag'
+        'tag': 'TagCreate'
     }
 
     attribute_map = {
@@ -28,7 +28,7 @@ class VaultTagsCreateReq:
         The model defined in huaweicloud sdk
 
         :param tag: 
-        :type tag: :class:`huaweicloudsdkcbr.v1.Tag`
+        :type tag: :class:`huaweicloudsdkcbr.v1.TagCreate`
         """
         
         
@@ -36,15 +36,14 @@ class VaultTagsCreateReq:
         self._tag = None
         self.discriminator = None
 
-        if tag is not None:
-            self.tag = tag
+        self.tag = tag
 
     @property
     def tag(self):
         r"""Gets the tag of this VaultTagsCreateReq.
 
         :return: The tag of this VaultTagsCreateReq.
-        :rtype: :class:`huaweicloudsdkcbr.v1.Tag`
+        :rtype: :class:`huaweicloudsdkcbr.v1.TagCreate`
         """
         return self._tag
 
@@ -53,7 +52,7 @@ class VaultTagsCreateReq:
         r"""Sets the tag of this VaultTagsCreateReq.
 
         :param tag: The tag of this VaultTagsCreateReq.
-        :type tag: :class:`huaweicloudsdkcbr.v1.Tag`
+        :type tag: :class:`huaweicloudsdkcbr.v1.TagCreate`
         """
         self._tag = tag
 

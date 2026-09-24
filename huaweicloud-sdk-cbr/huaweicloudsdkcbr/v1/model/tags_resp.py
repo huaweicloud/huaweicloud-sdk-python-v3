@@ -16,7 +16,7 @@ class TagsResp:
 
     openapi_types = {
         'key': 'str',
-        'values': 'str'
+        'values': 'list[str]'
     }
 
     attribute_map = {
@@ -32,7 +32,7 @@ class TagsResp:
         :param key: 键。  key最大长度36个字符。  key不能为空字符串。  key只能由中文，字母，数字，“-”，“_”组成。
         :type key: str
         :param values: 值列表。  value最大长度43个字符。  value可以为空字符串。  key只能由中文，字母，数字，“-”，“_”组成。
-        :type values: str
+        :type values: list[str]
         """
         
         
@@ -75,7 +75,7 @@ class TagsResp:
         值列表。  value最大长度43个字符。  value可以为空字符串。  key只能由中文，字母，数字，“-”，“_”组成。
 
         :return: The values of this TagsResp.
-        :rtype: str
+        :rtype: list[str]
         """
         return self._values
 
@@ -86,7 +86,7 @@ class TagsResp:
         值列表。  value最大长度43个字符。  value可以为空字符串。  key只能由中文，字母，数字，“-”，“_”组成。
 
         :param values: The values of this TagsResp.
-        :type values: str
+        :type values: list[str]
         """
         self._values = values
 

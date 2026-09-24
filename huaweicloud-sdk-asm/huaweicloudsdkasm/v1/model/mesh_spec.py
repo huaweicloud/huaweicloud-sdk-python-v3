@@ -39,7 +39,7 @@ class MeshSpec:
 
         :param type: 网格类型。 取值范围： - InCluster: 集群内控制平面形态，基础版网格取值为InCluster。目前仅支持该类型。
         :type type: str
-        :param version: 网格版本。
+        :param version: **参数解释：** 网格版本，与Istio社区基线版本保持一致，建议选择最新商用版本。  在ASM控制台支持创建多种版本的网格。可登录ASM控制台创建网格，在“版本”处获取到网格版本。 **约束限制：** 格式必须为：vX.Y[.Z[-rN]]，例如 v1.18，v1.18.7，v1.18.7-r1 都将创建1.18版本的网格 - X: 对应社区Istio的主要版本 - Y: 对应社区Istio的次要版本 - Z: 对应社区Istio的补丁版本 - N: 对应ASM补丁版本  **取值范围：** 不涉及 **默认取值：** - 若不配置，默认创建最新版本的网格。 - 若指定网格基线版本但是不指定具体r版本，则系统默认选择对应网格版本的最新r版本。建议不指定具体r版本由系统选择最新版本。
         :type version: str
         :param extend_params: 
         :type extend_params: :class:`huaweicloudsdkasm.v1.MeshExtendParams`
@@ -62,7 +62,8 @@ class MeshSpec:
         self.discriminator = None
 
         self.type = type
-        self.version = version
+        if version is not None:
+            self.version = version
         self.extend_params = extend_params
         if ipv6_enable is not None:
             self.ipv6_enable = ipv6_enable
@@ -97,7 +98,7 @@ class MeshSpec:
     def version(self):
         r"""Gets the version of this MeshSpec.
 
-        网格版本。
+        **参数解释：** 网格版本，与Istio社区基线版本保持一致，建议选择最新商用版本。  在ASM控制台支持创建多种版本的网格。可登录ASM控制台创建网格，在“版本”处获取到网格版本。 **约束限制：** 格式必须为：vX.Y[.Z[-rN]]，例如 v1.18，v1.18.7，v1.18.7-r1 都将创建1.18版本的网格 - X: 对应社区Istio的主要版本 - Y: 对应社区Istio的次要版本 - Z: 对应社区Istio的补丁版本 - N: 对应ASM补丁版本  **取值范围：** 不涉及 **默认取值：** - 若不配置，默认创建最新版本的网格。 - 若指定网格基线版本但是不指定具体r版本，则系统默认选择对应网格版本的最新r版本。建议不指定具体r版本由系统选择最新版本。
 
         :return: The version of this MeshSpec.
         :rtype: str
@@ -108,7 +109,7 @@ class MeshSpec:
     def version(self, version):
         r"""Sets the version of this MeshSpec.
 
-        网格版本。
+        **参数解释：** 网格版本，与Istio社区基线版本保持一致，建议选择最新商用版本。  在ASM控制台支持创建多种版本的网格。可登录ASM控制台创建网格，在“版本”处获取到网格版本。 **约束限制：** 格式必须为：vX.Y[.Z[-rN]]，例如 v1.18，v1.18.7，v1.18.7-r1 都将创建1.18版本的网格 - X: 对应社区Istio的主要版本 - Y: 对应社区Istio的次要版本 - Z: 对应社区Istio的补丁版本 - N: 对应ASM补丁版本  **取值范围：** 不涉及 **默认取值：** - 若不配置，默认创建最新版本的网格。 - 若指定网格基线版本但是不指定具体r版本，则系统默认选择对应网格版本的最新r版本。建议不指定具体r版本由系统选择最新版本。
 
         :param version: The version of this MeshSpec.
         :type version: str

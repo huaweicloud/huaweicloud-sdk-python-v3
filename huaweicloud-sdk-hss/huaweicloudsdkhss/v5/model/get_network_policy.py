@@ -19,7 +19,7 @@ class GetNetworkPolicy:
         'name': 'str',
         'namespace': 'str',
         'policy_content': 'NetworkPolicyBody',
-        'create_time': 'datetime',
+        'create_time': 'str',
         'deploy_status': 'bool'
     }
 
@@ -46,7 +46,7 @@ class GetNetworkPolicy:
         :param policy_content: 
         :type policy_content: :class:`huaweicloudsdkhss.v5.NetworkPolicyBody`
         :param create_time: 创建时间
-        :type create_time: datetime
+        :type create_time: str
         :param deploy_status: **参数解释**: 下发策略到cce成功与否 **取值范围**: - true: 成功 - false: 失败 
         :type deploy_status: bool
         """
@@ -165,7 +165,7 @@ class GetNetworkPolicy:
         创建时间
 
         :return: The create_time of this GetNetworkPolicy.
-        :rtype: datetime
+        :rtype: str
         """
         return self._create_time
 
@@ -176,7 +176,7 @@ class GetNetworkPolicy:
         创建时间
 
         :param create_time: The create_time of this GetNetworkPolicy.
-        :type create_time: datetime
+        :type create_time: str
         """
         self._create_time = create_time
 

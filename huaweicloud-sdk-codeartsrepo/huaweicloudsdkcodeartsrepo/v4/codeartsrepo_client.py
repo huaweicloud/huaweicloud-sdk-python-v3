@@ -1781,6 +1781,8 @@ class CodeArtsRepoClient(Client):
         query_params = []
         if 'with_default_review_categories' in local_var_params:
             query_params.append(('with_default_review_categories', local_var_params['with_default_review_categories']))
+        if 'take_effect' in local_var_params:
+            query_params.append(('take_effect', local_var_params['take_effect']))
 
         header_params = {}
 

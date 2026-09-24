@@ -39,7 +39,7 @@ class CbcProductInfoOrderChange:
         :type resource_size: int
         :param resource_size_measure_id: 资源容量度量标识，枚举值17：GB
         :type resource_size_measure_id: int
-        :param resource_spec_code: 用户购买云服务产品的资源规格 Enum: [vault.backup.server.normal，vault.backup.turbo.normal, vault.backup.database.normal，vault.backup.volume.normal，vault.backup.rds.normal，vault.replication.server.normal，vault.hybrid.server.normal]
+        :param resource_spec_code: **参数解释：** 用户购买云服务产品的资源规格。 **约束限制：** 不涉及 **取值范围：** vault.backup.server.normal：云服务器存储库， vault.backup.turbo.normal：弹性文件系统存储库, vault.backup.database.normal：数据库存储库， vault.backup.volume.normal：云硬盘存储库， vault.backup.rds.normal：RDS存储库， vault.replication.server.normal：云服务器复制存储库， vault.hybrid.server.normal：云服务器混合云存储库 **默认取值：** 不涉及
         :type resource_spec_code: str
         """
         
@@ -127,7 +127,7 @@ class CbcProductInfoOrderChange:
     def resource_spec_code(self):
         r"""Gets the resource_spec_code of this CbcProductInfoOrderChange.
 
-        用户购买云服务产品的资源规格 Enum: [vault.backup.server.normal，vault.backup.turbo.normal, vault.backup.database.normal，vault.backup.volume.normal，vault.backup.rds.normal，vault.replication.server.normal，vault.hybrid.server.normal]
+        **参数解释：** 用户购买云服务产品的资源规格。 **约束限制：** 不涉及 **取值范围：** vault.backup.server.normal：云服务器存储库， vault.backup.turbo.normal：弹性文件系统存储库, vault.backup.database.normal：数据库存储库， vault.backup.volume.normal：云硬盘存储库， vault.backup.rds.normal：RDS存储库， vault.replication.server.normal：云服务器复制存储库， vault.hybrid.server.normal：云服务器混合云存储库 **默认取值：** 不涉及
 
         :return: The resource_spec_code of this CbcProductInfoOrderChange.
         :rtype: str
@@ -138,7 +138,7 @@ class CbcProductInfoOrderChange:
     def resource_spec_code(self, resource_spec_code):
         r"""Sets the resource_spec_code of this CbcProductInfoOrderChange.
 
-        用户购买云服务产品的资源规格 Enum: [vault.backup.server.normal，vault.backup.turbo.normal, vault.backup.database.normal，vault.backup.volume.normal，vault.backup.rds.normal，vault.replication.server.normal，vault.hybrid.server.normal]
+        **参数解释：** 用户购买云服务产品的资源规格。 **约束限制：** 不涉及 **取值范围：** vault.backup.server.normal：云服务器存储库， vault.backup.turbo.normal：弹性文件系统存储库, vault.backup.database.normal：数据库存储库， vault.backup.volume.normal：云硬盘存储库， vault.backup.rds.normal：RDS存储库， vault.replication.server.normal：云服务器复制存储库， vault.hybrid.server.normal：云服务器混合云存储库 **默认取值：** 不涉及
 
         :param resource_spec_code: The resource_spec_code of this CbcProductInfoOrderChange.
         :type resource_spec_code: str

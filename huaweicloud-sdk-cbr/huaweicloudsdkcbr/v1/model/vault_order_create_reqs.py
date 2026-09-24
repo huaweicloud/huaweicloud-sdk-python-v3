@@ -15,7 +15,7 @@ class VaultOrderCreateReqs:
     sensitive_list = []
 
     openapi_types = {
-        'vault': 'VaultOrder'
+        'vault': 'PrePaidVaultOrder'
     }
 
     attribute_map = {
@@ -28,7 +28,7 @@ class VaultOrderCreateReqs:
         The model defined in huaweicloud sdk
 
         :param vault: 
-        :type vault: :class:`huaweicloudsdkcbr.v1.VaultOrder`
+        :type vault: :class:`huaweicloudsdkcbr.v1.PrePaidVaultOrder`
         """
         
         
@@ -43,7 +43,7 @@ class VaultOrderCreateReqs:
         r"""Gets the vault of this VaultOrderCreateReqs.
 
         :return: The vault of this VaultOrderCreateReqs.
-        :rtype: :class:`huaweicloudsdkcbr.v1.VaultOrder`
+        :rtype: :class:`huaweicloudsdkcbr.v1.PrePaidVaultOrder`
         """
         return self._vault
 
@@ -52,7 +52,7 @@ class VaultOrderCreateReqs:
         r"""Sets the vault of this VaultOrderCreateReqs.
 
         :param vault: The vault of this VaultOrderCreateReqs.
-        :type vault: :class:`huaweicloudsdkcbr.v1.VaultOrder`
+        :type vault: :class:`huaweicloudsdkcbr.v1.PrePaidVaultOrder`
         """
         self._vault = vault
 

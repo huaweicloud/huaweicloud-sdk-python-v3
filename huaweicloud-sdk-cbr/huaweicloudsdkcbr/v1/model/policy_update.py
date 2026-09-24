@@ -18,7 +18,7 @@ class PolicyUpdate:
         'enabled': 'bool',
         'name': 'str',
         'operation_definition': 'PolicyoODCreate',
-        'trigger': 'PolicyTriggerReq'
+        'trigger': 'PolicyTriggerUpdateReq'
     }
 
     attribute_map = {
@@ -40,7 +40,7 @@ class PolicyUpdate:
         :param operation_definition: 
         :type operation_definition: :class:`huaweicloudsdkcbr.v1.PolicyoODCreate`
         :param trigger: 
-        :type trigger: :class:`huaweicloudsdkcbr.v1.PolicyTriggerReq`
+        :type trigger: :class:`huaweicloudsdkcbr.v1.PolicyTriggerUpdateReq`
         """
         
         
@@ -127,7 +127,7 @@ class PolicyUpdate:
         r"""Gets the trigger of this PolicyUpdate.
 
         :return: The trigger of this PolicyUpdate.
-        :rtype: :class:`huaweicloudsdkcbr.v1.PolicyTriggerReq`
+        :rtype: :class:`huaweicloudsdkcbr.v1.PolicyTriggerUpdateReq`
         """
         return self._trigger
 
@@ -136,7 +136,7 @@ class PolicyUpdate:
         r"""Sets the trigger of this PolicyUpdate.
 
         :param trigger: The trigger of this PolicyUpdate.
-        :type trigger: :class:`huaweicloudsdkcbr.v1.PolicyTriggerReq`
+        :type trigger: :class:`huaweicloudsdkcbr.v1.PolicyTriggerUpdateReq`
         """
         self._trigger = trigger
 

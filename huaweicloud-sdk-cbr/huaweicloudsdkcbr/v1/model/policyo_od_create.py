@@ -26,7 +26,8 @@ class PolicyoODCreate:
         'week_backups': 'int',
         'year_backups': 'int',
         'full_backup_interval': 'int',
-        'cross_account_urn': 'str'
+        'cross_account_urn': 'str',
+        'advanced_retention_rules': 'PolicyAdvancedRetentionRules'
     }
 
     attribute_map = {
@@ -41,10 +42,11 @@ class PolicyoODCreate:
         'week_backups': 'week_backups',
         'year_backups': 'year_backups',
         'full_backup_interval': 'full_backup_interval',
-        'cross_account_urn': 'cross_account_urn'
+        'cross_account_urn': 'cross_account_urn',
+        'advanced_retention_rules': 'advanced_retention_rules'
     }
 
-    def __init__(self, day_backups=None, destination_project_id=None, destination_region=None, enable_acceleration=None, max_backups=None, month_backups=None, retention_duration_days=None, timezone=None, week_backups=None, year_backups=None, full_backup_interval=None, cross_account_urn=None):
+    def __init__(self, day_backups=None, destination_project_id=None, destination_region=None, enable_acceleration=None, max_backups=None, month_backups=None, retention_duration_days=None, timezone=None, week_backups=None, year_backups=None, full_backup_interval=None, cross_account_urn=None, advanced_retention_rules=None):
         r"""PolicyoODCreate
 
         The model defined in huaweicloud sdk
@@ -73,6 +75,8 @@ class PolicyoODCreate:
         :type full_backup_interval: int
         :param cross_account_urn: 跨账户复制策略所关联的跨账户复制存储库标识
         :type cross_account_urn: str
+        :param advanced_retention_rules: 
+        :type advanced_retention_rules: :class:`huaweicloudsdkcbr.v1.PolicyAdvancedRetentionRules`
         """
         
         
@@ -89,6 +93,7 @@ class PolicyoODCreate:
         self._year_backups = None
         self._full_backup_interval = None
         self._cross_account_urn = None
+        self._advanced_retention_rules = None
         self.discriminator = None
 
         if day_backups is not None:
@@ -115,6 +120,8 @@ class PolicyoODCreate:
             self.full_backup_interval = full_backup_interval
         if cross_account_urn is not None:
             self.cross_account_urn = cross_account_urn
+        if advanced_retention_rules is not None:
+            self.advanced_retention_rules = advanced_retention_rules
 
     @property
     def day_backups(self):
@@ -379,6 +386,24 @@ class PolicyoODCreate:
         :type cross_account_urn: str
         """
         self._cross_account_urn = cross_account_urn
+
+    @property
+    def advanced_retention_rules(self):
+        r"""Gets the advanced_retention_rules of this PolicyoODCreate.
+
+        :return: The advanced_retention_rules of this PolicyoODCreate.
+        :rtype: :class:`huaweicloudsdkcbr.v1.PolicyAdvancedRetentionRules`
+        """
+        return self._advanced_retention_rules
+
+    @advanced_retention_rules.setter
+    def advanced_retention_rules(self, advanced_retention_rules):
+        r"""Sets the advanced_retention_rules of this PolicyoODCreate.
+
+        :param advanced_retention_rules: The advanced_retention_rules of this PolicyoODCreate.
+        :type advanced_retention_rules: :class:`huaweicloudsdkcbr.v1.PolicyAdvancedRetentionRules`
+        """
+        self._advanced_retention_rules = advanced_retention_rules
 
     def to_dict(self):
         result = {}

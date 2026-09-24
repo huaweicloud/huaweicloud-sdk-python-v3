@@ -460,6 +460,7 @@ from huaweicloudsdkdws.v2.model.pause_operational_task_request import PauseOpera
 from huaweicloudsdkdws.v2.model.pause_operational_task_response import PauseOperationalTaskResponse
 from huaweicloudsdkdws.v2.model.plan_log import PlanLog
 from huaweicloudsdkdws.v2.model.plan_stage import PlanStage
+from huaweicloudsdkdws.v2.model.plan_stage_queue import PlanStageQueue
 from huaweicloudsdkdws.v2.model.private_endpoint_response import PrivateEndpointResponse
 from huaweicloudsdkdws.v2.model.product_extend_resp import ProductExtendResp
 from huaweicloudsdkdws.v2.model.product_unit_resp import ProductUnitResp

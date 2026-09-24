@@ -16,47 +16,138 @@ class ListOpsEvaluationTaskCustomLabelsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'object'
+        'msg': 'str',
+        'code': 'int',
+        'data': 'list[OpsTaskCustomLabel]',
+        'total': 'int'
     }
 
     attribute_map = {
-        'body': 'body'
+        'msg': 'msg',
+        'code': 'code',
+        'data': 'data',
+        'total': 'total'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, msg=None, code=None, data=None, total=None):
         r"""ListOpsEvaluationTaskCustomLabelsResponse
 
         The model defined in huaweicloud sdk
 
-        :param body: 
-        :type body: object
+        :param msg: **参数解释：** 提示信息。 **约束限制：** 不涉及。 **取值范围：** 固定为 query succeed。 **默认取值：** 不涉及。 
+        :type msg: str
+        :param code: **参数解释：** 业务状态码。 **约束限制：** 不涉及。 **取值范围：** 固定为 200。 **默认取值：** 不涉及。 
+        :type code: int
+        :param data: **参数解释：** 自定义标签记录列表。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。 
+        :type data: list[:class:`huaweicloudsdkagentarts.v1.OpsTaskCustomLabel`]
+        :param total: **参数解释：** 满足查询条件的记录总数。 **约束限制：** 不涉及。 **取值范围：** 非负整数。 **默认取值：** 不涉及。 
+        :type total: int
         """
         
         super().__init__()
 
-        self._body = None
+        self._msg = None
+        self._code = None
+        self._data = None
+        self._total = None
         self.discriminator = None
 
-        if body is not None:
-            self.body = body
+        if msg is not None:
+            self.msg = msg
+        if code is not None:
+            self.code = code
+        if data is not None:
+            self.data = data
+        if total is not None:
+            self.total = total
 
     @property
-    def body(self):
-        r"""Gets the body of this ListOpsEvaluationTaskCustomLabelsResponse.
+    def msg(self):
+        r"""Gets the msg of this ListOpsEvaluationTaskCustomLabelsResponse.
 
-        :return: The body of this ListOpsEvaluationTaskCustomLabelsResponse.
-        :rtype: object
+        **参数解释：** 提示信息。 **约束限制：** 不涉及。 **取值范围：** 固定为 query succeed。 **默认取值：** 不涉及。 
+
+        :return: The msg of this ListOpsEvaluationTaskCustomLabelsResponse.
+        :rtype: str
         """
-        return self._body
+        return self._msg
 
-    @body.setter
-    def body(self, body):
-        r"""Sets the body of this ListOpsEvaluationTaskCustomLabelsResponse.
+    @msg.setter
+    def msg(self, msg):
+        r"""Sets the msg of this ListOpsEvaluationTaskCustomLabelsResponse.
 
-        :param body: The body of this ListOpsEvaluationTaskCustomLabelsResponse.
-        :type body: object
+        **参数解释：** 提示信息。 **约束限制：** 不涉及。 **取值范围：** 固定为 query succeed。 **默认取值：** 不涉及。 
+
+        :param msg: The msg of this ListOpsEvaluationTaskCustomLabelsResponse.
+        :type msg: str
         """
-        self._body = body
+        self._msg = msg
+
+    @property
+    def code(self):
+        r"""Gets the code of this ListOpsEvaluationTaskCustomLabelsResponse.
+
+        **参数解释：** 业务状态码。 **约束限制：** 不涉及。 **取值范围：** 固定为 200。 **默认取值：** 不涉及。 
+
+        :return: The code of this ListOpsEvaluationTaskCustomLabelsResponse.
+        :rtype: int
+        """
+        return self._code
+
+    @code.setter
+    def code(self, code):
+        r"""Sets the code of this ListOpsEvaluationTaskCustomLabelsResponse.
+
+        **参数解释：** 业务状态码。 **约束限制：** 不涉及。 **取值范围：** 固定为 200。 **默认取值：** 不涉及。 
+
+        :param code: The code of this ListOpsEvaluationTaskCustomLabelsResponse.
+        :type code: int
+        """
+        self._code = code
+
+    @property
+    def data(self):
+        r"""Gets the data of this ListOpsEvaluationTaskCustomLabelsResponse.
+
+        **参数解释：** 自定义标签记录列表。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。 
+
+        :return: The data of this ListOpsEvaluationTaskCustomLabelsResponse.
+        :rtype: list[:class:`huaweicloudsdkagentarts.v1.OpsTaskCustomLabel`]
+        """
+        return self._data
+
+    @data.setter
+    def data(self, data):
+        r"""Sets the data of this ListOpsEvaluationTaskCustomLabelsResponse.
+
+        **参数解释：** 自定义标签记录列表。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。 
+
+        :param data: The data of this ListOpsEvaluationTaskCustomLabelsResponse.
+        :type data: list[:class:`huaweicloudsdkagentarts.v1.OpsTaskCustomLabel`]
+        """
+        self._data = data
+
+    @property
+    def total(self):
+        r"""Gets the total of this ListOpsEvaluationTaskCustomLabelsResponse.
+
+        **参数解释：** 满足查询条件的记录总数。 **约束限制：** 不涉及。 **取值范围：** 非负整数。 **默认取值：** 不涉及。 
+
+        :return: The total of this ListOpsEvaluationTaskCustomLabelsResponse.
+        :rtype: int
+        """
+        return self._total
+
+    @total.setter
+    def total(self, total):
+        r"""Sets the total of this ListOpsEvaluationTaskCustomLabelsResponse.
+
+        **参数解释：** 满足查询条件的记录总数。 **约束限制：** 不涉及。 **取值范围：** 非负整数。 **默认取值：** 不涉及。 
+
+        :param total: The total of this ListOpsEvaluationTaskCustomLabelsResponse.
+        :type total: int
+        """
+        self._total = total
 
     def to_dict(self):
         import warnings

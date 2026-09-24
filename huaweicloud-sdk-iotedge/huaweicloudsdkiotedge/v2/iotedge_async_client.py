@@ -2488,7 +2488,7 @@ class IoTEdgeAsyncClient(Client):
     def update_edge_application_version_state_async(self, request):
         r"""更新应用版本状态
 
-        更新应用版本状态。
+        更新应用版本状态
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2967,7 +2967,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def batch_list_dc_devices_async(self, request):
-        r"""查数采连接子设备列表
+        r"""查询数采连接子设备列表
 
         查询数采连接下子设备列表
         
@@ -3123,7 +3123,7 @@ class IoTEdgeAsyncClient(Client):
     def create_dc_point_async(self, request):
         r"""创建点位表配置
 
-        用户通过Console接口在指定边缘节点上点位表配置
+        用户通过Console接口在指定边缘节点上创建点位表配置
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3898,7 +3898,7 @@ class IoTEdgeAsyncClient(Client):
     def delete_module_async(self, request):
         r"""删除边缘模块
 
-        用户通过过Console接口在指定边缘节点上删除边缘模块
+        用户通过Console接口在指定边缘节点上删除边缘模块
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3965,7 +3965,7 @@ class IoTEdgeAsyncClient(Client):
     def invoke_module_msg_async(self, request):
         r"""代理边缘模块消息
 
-        iotedge通过该接口透明代理用户到模块的请求
+        IoTEdge通过该接口透明代理用户到模块的请求
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4170,7 +4170,7 @@ class IoTEdgeAsyncClient(Client):
     def update_module_state_async(self, request):
         r"""修改边缘模块状态
 
-        用户通过Console接口启停数采连接
+        用户通过Console接口修改边缘模块状态
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4834,7 +4834,7 @@ class IoTEdgeAsyncClient(Client):
     def import_points_async(self, request):
         r"""批量导入点位表
 
-        用户通过Console接口在指定边缘节点上点位表配置
+        用户通过Console接口在指定边缘节点上创建点位表配置
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -6559,7 +6559,7 @@ class IoTEdgeAsyncClient(Client):
     def delete_push_channel_async(self, request):
         r"""删除外部推送通道
 
-        删除查询外部推送通道
+        删除外部推送通道
         
         Please refer to HUAWEI cloud API Explorer for details.
 

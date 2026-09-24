@@ -35,15 +35,15 @@ class ListRedisPitrRestoreTimeRequest:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 实例ID。
+        :param instance_id: **参数解释：** 实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type instance_id: str
-        :param start_time: 查询可恢复时间点的开始时间，为yyyy-mm-ddThh:mm:ssZ字符串格式，T指某个时间的开始，Z指时区偏移量。
+        :param start_time: **参数解释：** 查询可恢复时间点的开始时间，为yyyy-mm-ddThh:mm:ssZ字符串格式，T指某个时间的开始，Z指时区偏移量。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type start_time: str
-        :param end_time: 查询可恢复时间点的结束时间，为yyyy-mm-ddThh:mm:ssZ字符串格式，T指某个时间的开始，Z指时区偏移量。
+        :param end_time: **参数解释：** 查询可恢复时间点的结束时间，为yyyy-mm-ddThh:mm:ssZ字符串格式，T指某个时间的开始，Z指时区偏移量。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type end_time: str
-        :param offset: 偏移量，表示查询该偏移量后面的记录，默认值为0。
+        :param offset: **参数解释：** 偏移量，表示查询该偏移量后面的记录量。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 0。
         :type offset: int
-        :param limit: 查询返回记录的数量上限值，取值范围为1~100，默认值为100。
+        :param limit: **参数解释：** 查询返回记录的数量上限值。 **约束限制：** 不涉及。 **取值范围：** 1~300。 **默认取值：** 300。
         :type limit: int
         """
         
@@ -68,7 +68,7 @@ class ListRedisPitrRestoreTimeRequest:
     def instance_id(self):
         r"""Gets the instance_id of this ListRedisPitrRestoreTimeRequest.
 
-        实例ID。
+        **参数解释：** 实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The instance_id of this ListRedisPitrRestoreTimeRequest.
         :rtype: str
@@ -79,7 +79,7 @@ class ListRedisPitrRestoreTimeRequest:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this ListRedisPitrRestoreTimeRequest.
 
-        实例ID。
+        **参数解释：** 实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param instance_id: The instance_id of this ListRedisPitrRestoreTimeRequest.
         :type instance_id: str
@@ -90,7 +90,7 @@ class ListRedisPitrRestoreTimeRequest:
     def start_time(self):
         r"""Gets the start_time of this ListRedisPitrRestoreTimeRequest.
 
-        查询可恢复时间点的开始时间，为yyyy-mm-ddThh:mm:ssZ字符串格式，T指某个时间的开始，Z指时区偏移量。
+        **参数解释：** 查询可恢复时间点的开始时间，为yyyy-mm-ddThh:mm:ssZ字符串格式，T指某个时间的开始，Z指时区偏移量。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The start_time of this ListRedisPitrRestoreTimeRequest.
         :rtype: str
@@ -101,7 +101,7 @@ class ListRedisPitrRestoreTimeRequest:
     def start_time(self, start_time):
         r"""Sets the start_time of this ListRedisPitrRestoreTimeRequest.
 
-        查询可恢复时间点的开始时间，为yyyy-mm-ddThh:mm:ssZ字符串格式，T指某个时间的开始，Z指时区偏移量。
+        **参数解释：** 查询可恢复时间点的开始时间，为yyyy-mm-ddThh:mm:ssZ字符串格式，T指某个时间的开始，Z指时区偏移量。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param start_time: The start_time of this ListRedisPitrRestoreTimeRequest.
         :type start_time: str
@@ -112,7 +112,7 @@ class ListRedisPitrRestoreTimeRequest:
     def end_time(self):
         r"""Gets the end_time of this ListRedisPitrRestoreTimeRequest.
 
-        查询可恢复时间点的结束时间，为yyyy-mm-ddThh:mm:ssZ字符串格式，T指某个时间的开始，Z指时区偏移量。
+        **参数解释：** 查询可恢复时间点的结束时间，为yyyy-mm-ddThh:mm:ssZ字符串格式，T指某个时间的开始，Z指时区偏移量。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The end_time of this ListRedisPitrRestoreTimeRequest.
         :rtype: str
@@ -123,7 +123,7 @@ class ListRedisPitrRestoreTimeRequest:
     def end_time(self, end_time):
         r"""Sets the end_time of this ListRedisPitrRestoreTimeRequest.
 
-        查询可恢复时间点的结束时间，为yyyy-mm-ddThh:mm:ssZ字符串格式，T指某个时间的开始，Z指时区偏移量。
+        **参数解释：** 查询可恢复时间点的结束时间，为yyyy-mm-ddThh:mm:ssZ字符串格式，T指某个时间的开始，Z指时区偏移量。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param end_time: The end_time of this ListRedisPitrRestoreTimeRequest.
         :type end_time: str
@@ -134,7 +134,7 @@ class ListRedisPitrRestoreTimeRequest:
     def offset(self):
         r"""Gets the offset of this ListRedisPitrRestoreTimeRequest.
 
-        偏移量，表示查询该偏移量后面的记录，默认值为0。
+        **参数解释：** 偏移量，表示查询该偏移量后面的记录量。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 0。
 
         :return: The offset of this ListRedisPitrRestoreTimeRequest.
         :rtype: int
@@ -145,7 +145,7 @@ class ListRedisPitrRestoreTimeRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListRedisPitrRestoreTimeRequest.
 
-        偏移量，表示查询该偏移量后面的记录，默认值为0。
+        **参数解释：** 偏移量，表示查询该偏移量后面的记录量。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 0。
 
         :param offset: The offset of this ListRedisPitrRestoreTimeRequest.
         :type offset: int
@@ -156,7 +156,7 @@ class ListRedisPitrRestoreTimeRequest:
     def limit(self):
         r"""Gets the limit of this ListRedisPitrRestoreTimeRequest.
 
-        查询返回记录的数量上限值，取值范围为1~100，默认值为100。
+        **参数解释：** 查询返回记录的数量上限值。 **约束限制：** 不涉及。 **取值范围：** 1~300。 **默认取值：** 300。
 
         :return: The limit of this ListRedisPitrRestoreTimeRequest.
         :rtype: int
@@ -167,7 +167,7 @@ class ListRedisPitrRestoreTimeRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListRedisPitrRestoreTimeRequest.
 
-        查询返回记录的数量上限值，取值范围为1~100，默认值为100。
+        **参数解释：** 查询返回记录的数量上限值。 **约束限制：** 不涉及。 **取值范围：** 1~300。 **默认取值：** 300。
 
         :param limit: The limit of this ListRedisPitrRestoreTimeRequest.
         :type limit: int

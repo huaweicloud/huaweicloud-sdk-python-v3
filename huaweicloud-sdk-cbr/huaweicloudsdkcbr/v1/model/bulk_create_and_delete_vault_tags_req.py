@@ -15,7 +15,7 @@ class BulkCreateAndDeleteVaultTagsReq:
     sensitive_list = []
 
     openapi_types = {
-        'tags': 'list[Tag]',
+        'tags': 'list[BulkCreateAndDeleteTags]',
         'sys_tags': 'list[SysTag]',
         'action': 'str'
     }
@@ -32,7 +32,7 @@ class BulkCreateAndDeleteVaultTagsReq:
         The model defined in huaweicloud sdk
 
         :param tags: 标签列表。  tags不允许为空列表。  tags中最多包含10个key。  tags中key不允许重复。
-        :type tags: list[:class:`huaweicloudsdkcbr.v1.Tag`]
+        :type tags: list[:class:`huaweicloudsdkcbr.v1.BulkCreateAndDeleteTags`]
         :param sys_tags: 系统标签列表。  op_service权限可以访问，和tags二选一。  目前TMS调用时只包含一个resource_tag结构体 ，key固定为：_sys_enterprise_project_id。  value是UUID或0,value为0表示默认企业项目。  现在仅支持create操作。
         :type sys_tags: list[:class:`huaweicloudsdkcbr.v1.SysTag`]
         :param action: 操作标识：仅限于create（创建）、delete（删除）
@@ -59,7 +59,7 @@ class BulkCreateAndDeleteVaultTagsReq:
         标签列表。  tags不允许为空列表。  tags中最多包含10个key。  tags中key不允许重复。
 
         :return: The tags of this BulkCreateAndDeleteVaultTagsReq.
-        :rtype: list[:class:`huaweicloudsdkcbr.v1.Tag`]
+        :rtype: list[:class:`huaweicloudsdkcbr.v1.BulkCreateAndDeleteTags`]
         """
         return self._tags
 
@@ -70,7 +70,7 @@ class BulkCreateAndDeleteVaultTagsReq:
         标签列表。  tags不允许为空列表。  tags中最多包含10个key。  tags中key不允许重复。
 
         :param tags: The tags of this BulkCreateAndDeleteVaultTagsReq.
-        :type tags: list[:class:`huaweicloudsdkcbr.v1.Tag`]
+        :type tags: list[:class:`huaweicloudsdkcbr.v1.BulkCreateAndDeleteTags`]
         """
         self._tags = tags
 

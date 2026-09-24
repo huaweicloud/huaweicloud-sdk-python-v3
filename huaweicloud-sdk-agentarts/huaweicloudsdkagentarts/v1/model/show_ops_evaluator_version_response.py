@@ -16,51 +16,47 @@ class ShowOpsEvaluatorVersionResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'versions': 'list[ListOpsEvaluatorVersionsResponseBodyVersions]'
+        'evaluator': 'OpsListEvaluatorsInfo'
     }
 
     attribute_map = {
-        'versions': 'versions'
+        'evaluator': 'evaluator'
     }
 
-    def __init__(self, versions=None):
+    def __init__(self, evaluator=None):
         r"""ShowOpsEvaluatorVersionResponse
 
         The model defined in huaweicloud sdk
 
-        :param versions: **参数解释：** 评估器的版本列表，包含该评估器下所有已发布的历史版本及配置详情。 **取值范围：** 不涉及。 
-        :type versions: list[:class:`huaweicloudsdkagentarts.v1.ListOpsEvaluatorVersionsResponseBodyVersions`]
+        :param evaluator: 
+        :type evaluator: :class:`huaweicloudsdkagentarts.v1.OpsListEvaluatorsInfo`
         """
         
         super().__init__()
 
-        self._versions = None
+        self._evaluator = None
         self.discriminator = None
 
-        if versions is not None:
-            self.versions = versions
+        if evaluator is not None:
+            self.evaluator = evaluator
 
     @property
-    def versions(self):
-        r"""Gets the versions of this ShowOpsEvaluatorVersionResponse.
+    def evaluator(self):
+        r"""Gets the evaluator of this ShowOpsEvaluatorVersionResponse.
 
-        **参数解释：** 评估器的版本列表，包含该评估器下所有已发布的历史版本及配置详情。 **取值范围：** 不涉及。 
-
-        :return: The versions of this ShowOpsEvaluatorVersionResponse.
-        :rtype: list[:class:`huaweicloudsdkagentarts.v1.ListOpsEvaluatorVersionsResponseBodyVersions`]
+        :return: The evaluator of this ShowOpsEvaluatorVersionResponse.
+        :rtype: :class:`huaweicloudsdkagentarts.v1.OpsListEvaluatorsInfo`
         """
-        return self._versions
+        return self._evaluator
 
-    @versions.setter
-    def versions(self, versions):
-        r"""Sets the versions of this ShowOpsEvaluatorVersionResponse.
+    @evaluator.setter
+    def evaluator(self, evaluator):
+        r"""Sets the evaluator of this ShowOpsEvaluatorVersionResponse.
 
-        **参数解释：** 评估器的版本列表，包含该评估器下所有已发布的历史版本及配置详情。 **取值范围：** 不涉及。 
-
-        :param versions: The versions of this ShowOpsEvaluatorVersionResponse.
-        :type versions: list[:class:`huaweicloudsdkagentarts.v1.ListOpsEvaluatorVersionsResponseBodyVersions`]
+        :param evaluator: The evaluator of this ShowOpsEvaluatorVersionResponse.
+        :type evaluator: :class:`huaweicloudsdkagentarts.v1.OpsListEvaluatorsInfo`
         """
-        self._versions = versions
+        self._evaluator = evaluator
 
     def to_dict(self):
         import warnings

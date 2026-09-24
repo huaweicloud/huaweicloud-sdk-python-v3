@@ -16,29 +16,36 @@ class ListImagesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'images': 'list[ImageInfo]'
+        'images': 'list[ImageInfo]',
+        'page_info': 'PageInfo'
     }
 
     attribute_map = {
-        'images': 'images'
+        'images': 'images',
+        'page_info': 'page_info'
     }
 
-    def __init__(self, images=None):
+    def __init__(self, images=None, page_info=None):
         r"""ListImagesResponse
 
         The model defined in huaweicloud sdk
 
         :param images: 镜像列表
         :type images: list[:class:`huaweicloudsdkims.v2.ImageInfo`]
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkims.v2.PageInfo`
         """
         
         super().__init__()
 
         self._images = None
+        self._page_info = None
         self.discriminator = None
 
         if images is not None:
             self.images = images
+        if page_info is not None:
+            self.page_info = page_info
 
     @property
     def images(self):
@@ -61,6 +68,24 @@ class ListImagesResponse(SdkResponse):
         :type images: list[:class:`huaweicloudsdkims.v2.ImageInfo`]
         """
         self._images = images
+
+    @property
+    def page_info(self):
+        r"""Gets the page_info of this ListImagesResponse.
+
+        :return: The page_info of this ListImagesResponse.
+        :rtype: :class:`huaweicloudsdkims.v2.PageInfo`
+        """
+        return self._page_info
+
+    @page_info.setter
+    def page_info(self, page_info):
+        r"""Sets the page_info of this ListImagesResponse.
+
+        :param page_info: The page_info of this ListImagesResponse.
+        :type page_info: :class:`huaweicloudsdkims.v2.PageInfo`
+        """
+        self._page_info = page_info
 
     def to_dict(self):
         import warnings

@@ -41,6 +41,7 @@ from huaweicloudsdkcbr.v1.model.billing import Billing
 from huaweicloudsdkcbr.v1.model.billing_create import BillingCreate
 from huaweicloudsdkcbr.v1.model.billing_update import BillingUpdate
 from huaweicloudsdkcbr.v1.model.bind_rules_tags import BindRulesTags
+from huaweicloudsdkcbr.v1.model.bulk_create_and_delete_tags import BulkCreateAndDeleteTags
 from huaweicloudsdkcbr.v1.model.bulk_create_and_delete_vault_tags_req import BulkCreateAndDeleteVaultTagsReq
 from huaweicloudsdkcbr.v1.model.cbc_order_change import CbcOrderChange
 from huaweicloudsdkcbr.v1.model.cbc_order_result import CbcOrderResult
@@ -81,6 +82,7 @@ from huaweicloudsdkcbr.v1.model.create_vault_request import CreateVaultRequest
 from huaweicloudsdkcbr.v1.model.create_vault_response import CreateVaultResponse
 from huaweicloudsdkcbr.v1.model.create_vault_tags_request import CreateVaultTagsRequest
 from huaweicloudsdkcbr.v1.model.create_vault_tags_response import CreateVaultTagsResponse
+from huaweicloudsdkcbr.v1.model.data_encryption import DataEncryption
 from huaweicloudsdkcbr.v1.model.delete_backup_request import DeleteBackupRequest
 from huaweicloudsdkcbr.v1.model.delete_backup_response import DeleteBackupResponse
 from huaweicloudsdkcbr.v1.model.delete_member_request import DeleteMemberRequest
@@ -143,6 +145,7 @@ from huaweicloudsdkcbr.v1.model.op_extend_info_remove_resources import OpExtendI
 from huaweicloudsdkcbr.v1.model.op_extend_info_replication import OpExtendInfoReplication
 from huaweicloudsdkcbr.v1.model.op_extend_info_restore import OpExtendInfoRestore
 from huaweicloudsdkcbr.v1.model.op_extend_info_sync import OpExtendInfoSync
+from huaweicloudsdkcbr.v1.model.op_extend_info_update_expiration_time import OpExtendInfoUpdateExpirationTime
 from huaweicloudsdkcbr.v1.model.op_extend_info_vault_delete import OpExtendInfoVaultDelete
 from huaweicloudsdkcbr.v1.model.op_extra_info import OpExtraInfo
 from huaweicloudsdkcbr.v1.model.operation_log import OperationLog
@@ -154,16 +157,24 @@ from huaweicloudsdkcbr.v1.model.organization_policy_update import OrganizationPo
 from huaweicloudsdkcbr.v1.model.organization_policy_update_req import OrganizationPolicyUpdateReq
 from huaweicloudsdkcbr.v1.model.path import Path
 from huaweicloudsdkcbr.v1.model.policy import Policy
+from huaweicloudsdkcbr.v1.model.policy_advanced_retention_rules import PolicyAdvancedRetentionRules
 from huaweicloudsdkcbr.v1.model.policy_associate_vault import PolicyAssociateVault
 from huaweicloudsdkcbr.v1.model.policy_create import PolicyCreate
 from huaweicloudsdkcbr.v1.model.policy_create_req import PolicyCreateReq
+from huaweicloudsdkcbr.v1.model.policy_monthly_retention_rules import PolicyMonthlyRetentionRules
 from huaweicloudsdkcbr.v1.model.policy_trigger_properties_req import PolicyTriggerPropertiesReq
 from huaweicloudsdkcbr.v1.model.policy_trigger_properties_resp import PolicyTriggerPropertiesResp
+from huaweicloudsdkcbr.v1.model.policy_trigger_properties_update_req import PolicyTriggerPropertiesUpdateReq
 from huaweicloudsdkcbr.v1.model.policy_trigger_req import PolicyTriggerReq
 from huaweicloudsdkcbr.v1.model.policy_trigger_resp import PolicyTriggerResp
+from huaweicloudsdkcbr.v1.model.policy_trigger_update_req import PolicyTriggerUpdateReq
 from huaweicloudsdkcbr.v1.model.policy_update import PolicyUpdate
 from huaweicloudsdkcbr.v1.model.policy_update_req import PolicyUpdateReq
+from huaweicloudsdkcbr.v1.model.policy_weekly_retention_rules import PolicyWeeklyRetentionRules
+from huaweicloudsdkcbr.v1.model.policy_yearly_retention_rules import PolicyYearlyRetentionRules
 from huaweicloudsdkcbr.v1.model.policyo_od_create import PolicyoODCreate
+from huaweicloudsdkcbr.v1.model.pre_paid_billing_create import PrePaidBillingCreate
+from huaweicloudsdkcbr.v1.model.pre_paid_vault_order import PrePaidVaultOrder
 from huaweicloudsdkcbr.v1.model.projects_list_info import ProjectsListInfo
 from huaweicloudsdkcbr.v1.model.protectable_agent_req import ProtectableAgentReq
 from huaweicloudsdkcbr.v1.model.protectable_agent_status import ProtectableAgentStatus
@@ -237,6 +248,7 @@ from huaweicloudsdkcbr.v1.model.sync_resp_body import SyncRespBody
 from huaweicloudsdkcbr.v1.model.sys_tag import SysTag
 from huaweicloudsdkcbr.v1.model.sys_tags import SysTags
 from huaweicloudsdkcbr.v1.model.tag import Tag
+from huaweicloudsdkcbr.v1.model.tag_create import TagCreate
 from huaweicloudsdkcbr.v1.model.tag_resource import TagResource
 from huaweicloudsdkcbr.v1.model.tags_req import TagsReq
 from huaweicloudsdkcbr.v1.model.tags_resp import TagsResp
@@ -246,6 +258,9 @@ from huaweicloudsdkcbr.v1.model.update_agent_request import UpdateAgentRequest
 from huaweicloudsdkcbr.v1.model.update_agent_response import UpdateAgentResponse
 from huaweicloudsdkcbr.v1.model.update_backup_request import UpdateBackupRequest
 from huaweicloudsdkcbr.v1.model.update_backup_response import UpdateBackupResponse
+from huaweicloudsdkcbr.v1.model.update_expiration_time_req import UpdateExpirationTimeReq
+from huaweicloudsdkcbr.v1.model.update_expiration_time_request import UpdateExpirationTimeRequest
+from huaweicloudsdkcbr.v1.model.update_expiration_time_response import UpdateExpirationTimeResponse
 from huaweicloudsdkcbr.v1.model.update_member import UpdateMember
 from huaweicloudsdkcbr.v1.model.update_member_status_request import UpdateMemberStatusRequest
 from huaweicloudsdkcbr.v1.model.update_member_status_response import UpdateMemberStatusResponse
@@ -271,7 +286,6 @@ from huaweicloudsdkcbr.v1.model.vault_create_resource import VaultCreateResource
 from huaweicloudsdkcbr.v1.model.vault_dissociate import VaultDissociate
 from huaweicloudsdkcbr.v1.model.vault_get import VaultGet
 from huaweicloudsdkcbr.v1.model.vault_migrate_resource_req import VaultMigrateResourceReq
-from huaweicloudsdkcbr.v1.model.vault_order import VaultOrder
 from huaweicloudsdkcbr.v1.model.vault_order_create_reqs import VaultOrderCreateReqs
 from huaweicloudsdkcbr.v1.model.vault_policy_resp import VaultPolicyResp
 from huaweicloudsdkcbr.v1.model.vault_remove_resource_req import VaultRemoveResourceReq

@@ -21,9 +21,7 @@ class UpdateAlgorithmDto:
         'build_command': 'str',
         'env': 'str',
         'description': 'str',
-        'command': 'str',
         'create_at': 'int',
-        'picture': 'str',
         'lang': 'ProgramLang'
     }
 
@@ -34,13 +32,11 @@ class UpdateAlgorithmDto:
         'build_command': 'build_command',
         'env': 'env',
         'description': 'description',
-        'command': 'command',
         'create_at': 'create_at',
-        'picture': 'picture',
         'lang': 'lang'
     }
 
-    def __init__(self, project_id=None, id=None, name=None, build_command=None, env=None, description=None, command=None, create_at=None, picture=None, lang=None):
+    def __init__(self, project_id=None, id=None, name=None, build_command=None, env=None, description=None, create_at=None, lang=None):
         r"""UpdateAlgorithmDto
 
         The model defined in huaweicloud sdk
@@ -57,12 +53,8 @@ class UpdateAlgorithmDto:
         :type env: str
         :param description: **参数解释**： 算法描述。 **约束限制**： 不涉及 **取值范围**： 长度[0,32768] **默认取值**： 不涉及 
         :type description: str
-        :param command: **参数解释**： 算法默认启动指令 **约束限制**： 不涉及 **取值范围**： 长度[0,256] **默认取值**： 不涉及 
-        :type command: str
         :param create_at: **参数解释**： 算法的创建时间 **约束限制**： 不涉及 **取值范围**： [0,9999999999999] **默认取值**： 无 
         :type create_at: int
-        :param picture: **参数解释**： 算法项目的图标 **约束限制**： 不涉及 **取值范围**： [0,65536] **默认取值**： 无 
-        :type picture: str
         :param lang: 
         :type lang: :class:`huaweicloudsdkoptverse.v1.ProgramLang`
         """
@@ -75,9 +67,7 @@ class UpdateAlgorithmDto:
         self._build_command = None
         self._env = None
         self._description = None
-        self._command = None
         self._create_at = None
-        self._picture = None
         self._lang = None
         self.discriminator = None
 
@@ -93,12 +83,8 @@ class UpdateAlgorithmDto:
             self.env = env
         if description is not None:
             self.description = description
-        if command is not None:
-            self.command = command
         if create_at is not None:
             self.create_at = create_at
-        if picture is not None:
-            self.picture = picture
         if lang is not None:
             self.lang = lang
 
@@ -235,28 +221,6 @@ class UpdateAlgorithmDto:
         self._description = description
 
     @property
-    def command(self):
-        r"""Gets the command of this UpdateAlgorithmDto.
-
-        **参数解释**： 算法默认启动指令 **约束限制**： 不涉及 **取值范围**： 长度[0,256] **默认取值**： 不涉及 
-
-        :return: The command of this UpdateAlgorithmDto.
-        :rtype: str
-        """
-        return self._command
-
-    @command.setter
-    def command(self, command):
-        r"""Sets the command of this UpdateAlgorithmDto.
-
-        **参数解释**： 算法默认启动指令 **约束限制**： 不涉及 **取值范围**： 长度[0,256] **默认取值**： 不涉及 
-
-        :param command: The command of this UpdateAlgorithmDto.
-        :type command: str
-        """
-        self._command = command
-
-    @property
     def create_at(self):
         r"""Gets the create_at of this UpdateAlgorithmDto.
 
@@ -277,28 +241,6 @@ class UpdateAlgorithmDto:
         :type create_at: int
         """
         self._create_at = create_at
-
-    @property
-    def picture(self):
-        r"""Gets the picture of this UpdateAlgorithmDto.
-
-        **参数解释**： 算法项目的图标 **约束限制**： 不涉及 **取值范围**： [0,65536] **默认取值**： 无 
-
-        :return: The picture of this UpdateAlgorithmDto.
-        :rtype: str
-        """
-        return self._picture
-
-    @picture.setter
-    def picture(self, picture):
-        r"""Sets the picture of this UpdateAlgorithmDto.
-
-        **参数解释**： 算法项目的图标 **约束限制**： 不涉及 **取值范围**： [0,65536] **默认取值**： 无 
-
-        :param picture: The picture of this UpdateAlgorithmDto.
-        :type picture: str
-        """
-        self._picture = picture
 
     @property
     def lang(self):

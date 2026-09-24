@@ -1,3 +1,380 @@
+# 3.1.216 2026-09-24
+
+### HuaweiCloud SDK AgentArts
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowOpsEvaluationTaskChartsStatus**
+    - 响应参数变更
+      - `+ data`
+  - **ShowOpsEvaluationTaskChartsScoreStats**
+    - 响应参数变更
+      - `+ data`
+  - **ShowOpsEvaluator**
+    - 响应参数变更
+      - `+ evaluator`
+      - `- box_type`
+      - `- latest_version`
+      - `- evaluator_id`
+      - `- builtin`
+      - `- name`
+      - `- description`
+      - `- current_version`
+      - `- base_info`
+      - `- evaluator_type`
+      - `- tags`
+  - **ShowOpsEvaluatorVersion**
+    - 响应参数变更
+      - `+ evaluator`
+      - `- versions`
+  - **ListOpsEvaluationModels**
+    - 响应参数变更
+      - `+ msg`
+      - `+ code`
+  - **GenerateOpsEvaluatorEvaluationSteps**
+    - 请求参数变更
+      - `+ language`
+  - **ListOpsEvaluationTasks**
+    - 请求参数变更
+      - `+ tag_key_exists`
+      - `+ tag_key_matches`
+      - `+ tag_value_matches`
+      - `+ tag_match_policy`
+    - 响应参数变更
+      - `+ data`
+  - **UpdateOpsEvaluationTaskResult**
+    - 请求参数变更
+      - `+ revoke`
+  - **ShowOpsEvaluationTask**
+    - 响应参数变更
+      - `+ data`
+  - **ListOpsEvaluationTaskCustomLabelValues**
+    - 响应参数变更
+      - `+ msg`
+      - `+ total`
+      - `+ code`
+      - `+ data`
+  - **ListOpsEvaluationTaskCustomLabels**
+    - 响应参数变更
+      - `+ msg`
+      - `+ total`
+      - `+ code`
+      - `+ data`
+  - **BatchAddOpsEvaluationTaskCustomLabels**
+    - 响应参数变更
+      - `+ msg`
+      - `+ code`
+  - **DebugOpsEvaluator**
+    - 请求参数变更
+      - `+ evaluator_content_type`
+      - `+ evaluator_id`
+      - `+ evaluator_version`
+      - `+ geval_config`
+  - **ShowOpsEvaluatorTemplate**
+    - 响应参数变更
+      - `+ msg`
+      - `+ code`
+  - **PublishOpsEvaluatorVersion**
+    - 响应参数变更
+      - `+ version`
+      - `- name`
+      - `- current_version`
+      - `- description`
+      - `- evaluator_type`
+      - `- tags`
+  - **ListOpsEvaluatorVersions**
+    - 请求参数变更
+      - `+ offset`
+      - `+ limit`
+    - 响应参数变更
+      - `+ total`
+  - **BatchDeleteOpsEvaluationTasks**
+    - 响应参数变更
+      - `+ data`
+
+### HuaweiCloud SDK AIDataLake
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持接口`ListRayJobs`、`RunRayJob`、`ShowRayJob`、`CancelRayJob`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK BSSINTL
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持接口`ListResourceSpecsPrice`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CBR
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`UpdateExpirationTime`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowMetadata**
+    - 响应参数变更
+      - `+ workspace`
+  - **AddMember**
+    - 响应参数变更
+      - `- count`
+  - **BatchCreateAndDeleteVaultTags**
+    - 请求参数变更
+      - `* tags: list<Tag> -> list<BulkCreateAndDeleteTags>`
+  - **CreateVaultTags**
+    - 请求参数变更
+      - `* tag: object<Tag> -> object<TagCreate>`
+  - **ShowVaultProjectTag**
+    - 响应参数变更
+      - `* tags.values: string -> list<string>`
+  - **ShowBackup**
+    - 响应参数变更
+      - `+ backup.scheduled_operation_id`
+  - **UpdateBackup**
+    - 响应参数变更
+      - `+ backup.scheduled_operation_id`
+  - **ListBackups**
+    - 响应参数变更
+      - `+ backups.scheduled_operation_id`
+  - **ListPolicies**
+    - 响应参数变更
+      - `+ policies.operation_definition.advanced_retention_rules`
+      - `+ policies.trigger.properties.start_window_minutes`
+  - **CreatePolicy**
+    - 请求参数变更
+      - `+ policy.operation_definition.advanced_retention_rules`
+      - `+ policy.trigger.properties.start_window_minutes`
+    - 响应参数变更
+      - `+ policy.operation_definition.advanced_retention_rules`
+      - `+ policy.trigger.properties.start_window_minutes`
+  - **ShowPolicy**
+    - 响应参数变更
+      - `+ policy.operation_definition.advanced_retention_rules`
+      - `+ policy.trigger.properties.start_window_minutes`
+  - **UpdatePolicy**
+    - 请求参数变更
+      - `+ policy.operation_definition.advanced_retention_rules`
+      - `+ policy.trigger.properties.start_window_minutes`
+      - `* policy.trigger.properties: object<PolicyTriggerPropertiesReq> -> object<PolicyTriggerPropertiesUpdateReq>`
+      - `* policy.trigger: object<PolicyTriggerReq> -> object<PolicyTriggerUpdateReq>`
+    - 响应参数变更
+      - `+ policy.operation_definition.advanced_retention_rules`
+      - `+ policy.trigger.properties.start_window_minutes`
+  - **ListOrganizationPolicies**
+    - 响应参数变更
+      - `+ policies.policy_operation_definition.advanced_retention_rules`
+      - `+ policies.policy_trigger.properties.start_window_minutes`
+  - **CreateOrganizationPolicy**
+    - 请求参数变更
+      - `+ policy.policy_operation_definition.advanced_retention_rules`
+      - `+ policy.policy_trigger.properties.start_window_minutes`
+    - 响应参数变更
+      - `+ policy.policy_operation_definition.advanced_retention_rules`
+      - `+ policy.policy_trigger.properties.start_window_minutes`
+  - **ShowOrganizationPolicy**
+    - 响应参数变更
+      - `+ policy.policy_operation_definition.advanced_retention_rules`
+      - `+ policy.policy_trigger.properties.start_window_minutes`
+  - **UpdateOrganizationPolicy**
+    - 请求参数变更
+      - `+ policy.policy_operation_definition.advanced_retention_rules`
+      - `+ policy.policy_trigger.properties.start_window_minutes`
+      - `* policy.policy_trigger.properties: object<PolicyTriggerPropertiesReq> -> object<PolicyTriggerPropertiesUpdateReq>`
+      - `* policy.policy_trigger: object<PolicyTriggerReq> -> object<PolicyTriggerUpdateReq>`
+    - 响应参数变更
+      - `+ policy.policy_operation_definition.advanced_retention_rules`
+      - `+ policy.policy_trigger.properties.start_window_minutes`
+  - **CreatePostPaidVault**
+    - 请求参数变更
+      - `+ vault.cross_account`
+      - `+ vault.data_encryption`
+      - `+ vault.billing.is_double_az`
+      - `+ vault.billing.promotion_info`
+      - `+ vault.billing.purchase_mode`
+      - `+ vault.billing.order_id`
+      - `- vault.billing.cloud_type: enum value [public,hybrid]`
+      - `- vault.billing.consistent_level: enum value [app_consistent,crash_consistent]`
+      - `- vault.billing.object_type: enum value [server,disk,turbo,workspace,vmware,rds,file]`
+      - `- vault.billing.protect_type: enum value [backup,replication]`
+      - `- vault.billing.charging_mode: enum value [post_paid,pre_paid]`
+      - `* vault.billing: object<BillingCreate> -> object<PrePaidBillingCreate>`
+      - `* vault: object<VaultOrder> -> object<PrePaidVaultOrder>`
+  - **ShowOpLog**
+    - 响应参数变更
+      - `+ operation_log.extra_info.update_expiration_time`
+  - **ListOpLogs**
+    - 响应参数变更
+      - `+ operation_logs.extra_info.update_expiration_time`
+  - **CreateCheckpoint**
+    - 请求参数变更
+      - `+ checkpoint.parameters.retention_duration_days`
+  - **ShowProtectable**
+    - 请求参数变更
+      - `+ protectable_type: enum value [turbo,workspace,workspace_v2]`
+
+### HuaweiCloud SDK CodeArtsRepo
+
+- _接口版本_
+  - V4
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowReviewSetting**
+    - 请求参数变更
+      - `+ take_effect`
+
+### HuaweiCloud SDK DWS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListWorkloadQueue**
+    - 响应参数变更
+      - `+ queue_list`
+      - `- workload_res_str`
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持接口`ListSqlRecommendRules`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListSlowSqlDetails**
+    - 响应参数变更
+      - `* slow_sql_details.start_time: int32 -> string`
+      - `* slow_sql_details.finish_time: int32 -> string`
+      - `* slow_sql_details.total_time: int32 -> string`
+      - `* slow_sql_details.cpu_time: int32 -> string`
+      - `* slow_sql_details.plan_time: int32 -> string`
+      - `* slow_sql_details.io_time: int32 -> string`
+      - `* slow_sql_details.lock_time: int32 -> string`
+  - **ShowGlobalSlowSqlDetail**
+    - 响应参数变更
+      - `* slow_sql_details.start_time: int32 -> string`
+      - `* slow_sql_details.finish_time: int32 -> string`
+      - `* slow_sql_details.total_time: int32 -> string`
+      - `* slow_sql_details.cpu_time: int32 -> string`
+      - `* slow_sql_details.plan_time: int32 -> string`
+      - `* slow_sql_details.io_time: int32 -> string`
+      - `* slow_sql_details.lock_time: int32 -> string`
+
+### HuaweiCloud SDK HSS
+
+- _接口版本_
+  - V5
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListClusterProtectionDefaultPolicy**
+    - 响应参数变更
+      - `* data_list.resources.images: string -> list<string>`
+  - **ListClusterProtectionPolicyDetail**
+    - 响应参数变更
+      - `* data_list.resources.images: string -> list<string>`
+  - **ListClusterProtectionPolicy**
+    - 响应参数变更
+      - `* data_list.resources.images: string -> list<string>`
+  - **ListContainerNetworkPolicy**
+    - 响应参数变更
+      - `* data_list.create_time: date-time -> string`
+
+### HuaweiCloud SDK IMS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 废弃以下接口：
+    - `GlanceCreateTag`
+    - `GlanceDeleteTag`
+    - `GlanceDeleteImageMember`
+    - `GlanceUpdateImageMember`
+    - `GlanceShowImage`
+    - `GlanceUpdateImage`
+    - `GlanceAddImageMember`
+    - `GlanceListImages`
+    - `ShowJob`
+  - **ListImages**
+    - 响应参数变更
+      - `+ page_info`
+
+### HuaweiCloud SDK OptVerse
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateAlgorithm**
+    - 请求参数变更
+      - `- command`
+      - `- picture`
+  - **UpdateAlgorithm**
+    - 请求参数变更
+      - `- command`
+      - `- picture`
+
+### HuaweiCloud SDK RDS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持以下接口：
+    - `SetRdsDBFaultPolicy`
+    - `UpdateInstancesProxyPort`
+    - `ListAutoScalingHistory`
+    - `SwitchMySqlProxyEip`
+    - `ShowAvailableCorsVpcs`
+    - `ExecuteOptimizeTableSpace`
+    - `SetAutoScalingPolicy`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK SWR
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持接口`UpdateInternalEndpointPermissions`、`ListInternalEndpointPermissions`、`UpdateInternalEndpointConnections`、`ListInternalEndpointConnections`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
 # 3.1.215 2026-09-17
 
 ### HuaweiCloud SDK AgentArts

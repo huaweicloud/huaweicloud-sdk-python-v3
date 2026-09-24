@@ -31,6 +31,7 @@ class BackupResp:
         'resource_name': 'str',
         'resource_size': 'int',
         'resource_type': 'str',
+        'scheduled_operation_id': 'str',
         'status': 'str',
         'updated_at': 'datetime',
         'vault_id': 'str',
@@ -59,6 +60,7 @@ class BackupResp:
         'resource_name': 'resource_name',
         'resource_size': 'resource_size',
         'resource_type': 'resource_type',
+        'scheduled_operation_id': 'scheduled_operation_id',
         'status': 'status',
         'updated_at': 'updated_at',
         'vault_id': 'vault_id',
@@ -70,7 +72,7 @@ class BackupResp:
         'version': 'version'
     }
 
-    def __init__(self, checkpoint_id=None, created_at=None, description=None, expired_at=None, extend_info=None, id=None, image_type=None, name=None, parent_id=None, project_id=None, protected_at=None, resource_az=None, resource_id=None, resource_name=None, resource_size=None, resource_type=None, status=None, updated_at=None, vault_id=None, replication_records=None, enterprise_project_id=None, provider_id=None, children=None, incremental=None, version=None):
+    def __init__(self, checkpoint_id=None, created_at=None, description=None, expired_at=None, extend_info=None, id=None, image_type=None, name=None, parent_id=None, project_id=None, protected_at=None, resource_az=None, resource_id=None, resource_name=None, resource_size=None, resource_type=None, scheduled_operation_id=None, status=None, updated_at=None, vault_id=None, replication_records=None, enterprise_project_id=None, provider_id=None, children=None, incremental=None, version=None):
         r"""BackupResp
 
         The model defined in huaweicloud sdk
@@ -107,6 +109,8 @@ class BackupResp:
         :type resource_size: int
         :param resource_type: [资源类型: OS::Nova::Server, OS::Cinder::Volume, OS::Ironic::BareMetalServer, OS::Native::Server, OS::Sfs::Turbo, OS::Workspace::DesktopV2](tag:hws,hws_hk) [资源类型: OS::Nova::Server, OS::Cinder::Volume, OS::Sfs::Turbo](tag:hk_g42,sbc,dt) [资源类型: OS::Nova::Server, OS::Cinder::Volume, OS::Ironic::BareMetalServer, OS::Sfs::Turbo](tag:fcs_vm,ctc,ocb,tm) [资源类型: OS::Nova::Server, OS::Cinder::Volume](tag:tlf,cmcc,hcso_dt) [资源类型: OS::Nova::Server, OS::Cinder::Volume, OS::Sfs::Turbo, OS::Workspace::DesktopV2](tag:g42)
         :type resource_type: str
+        :param scheduled_operation_id: 策略ID，取值范围不涉及。
+        :type scheduled_operation_id: str
         :param status: 备份状态 - available: 可用 - protecting: 保护中 - deleting: 删除中 - restoring: 恢复中 - error: 异常 - waiting_protect: 等待保护 - waiting_delete: 等待删除 - waiting_restore: 等待恢复
         :type status: str
         :param updated_at: 更新时间，例如:\&quot;2020-02-05T10:38:34.209782\&quot;
@@ -145,6 +149,7 @@ class BackupResp:
         self._resource_name = None
         self._resource_size = None
         self._resource_type = None
+        self._scheduled_operation_id = None
         self._status = None
         self._updated_at = None
         self._vault_id = None
@@ -172,6 +177,8 @@ class BackupResp:
         self.resource_name = resource_name
         self.resource_size = resource_size
         self.resource_type = resource_type
+        if scheduled_operation_id is not None:
+            self.scheduled_operation_id = scheduled_operation_id
         self.status = status
         self.updated_at = updated_at
         self.vault_id = vault_id
@@ -534,6 +541,28 @@ class BackupResp:
         :type resource_type: str
         """
         self._resource_type = resource_type
+
+    @property
+    def scheduled_operation_id(self):
+        r"""Gets the scheduled_operation_id of this BackupResp.
+
+        策略ID，取值范围不涉及。
+
+        :return: The scheduled_operation_id of this BackupResp.
+        :rtype: str
+        """
+        return self._scheduled_operation_id
+
+    @scheduled_operation_id.setter
+    def scheduled_operation_id(self, scheduled_operation_id):
+        r"""Sets the scheduled_operation_id of this BackupResp.
+
+        策略ID，取值范围不涉及。
+
+        :param scheduled_operation_id: The scheduled_operation_id of this BackupResp.
+        :type scheduled_operation_id: str
+        """
+        self._scheduled_operation_id = scheduled_operation_id
 
     @property
     def status(self):

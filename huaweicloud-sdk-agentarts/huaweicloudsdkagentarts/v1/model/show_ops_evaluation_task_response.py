@@ -16,47 +16,47 @@ class ShowOpsEvaluationTaskResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'object'
+        'data': 'ShowOpsEvaluationTaskResponseBodyData'
     }
 
     attribute_map = {
-        'body': 'body'
+        'data': 'data'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, data=None):
         r"""ShowOpsEvaluationTaskResponse
 
         The model defined in huaweicloud sdk
 
-        :param body: 
-        :type body: object
+        :param data: 
+        :type data: :class:`huaweicloudsdkagentarts.v1.ShowOpsEvaluationTaskResponseBodyData`
         """
         
         super().__init__()
 
-        self._body = None
+        self._data = None
         self.discriminator = None
 
-        if body is not None:
-            self.body = body
+        if data is not None:
+            self.data = data
 
     @property
-    def body(self):
-        r"""Gets the body of this ShowOpsEvaluationTaskResponse.
+    def data(self):
+        r"""Gets the data of this ShowOpsEvaluationTaskResponse.
 
-        :return: The body of this ShowOpsEvaluationTaskResponse.
-        :rtype: object
+        :return: The data of this ShowOpsEvaluationTaskResponse.
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ShowOpsEvaluationTaskResponseBodyData`
         """
-        return self._body
+        return self._data
 
-    @body.setter
-    def body(self, body):
-        r"""Sets the body of this ShowOpsEvaluationTaskResponse.
+    @data.setter
+    def data(self, data):
+        r"""Sets the data of this ShowOpsEvaluationTaskResponse.
 
-        :param body: The body of this ShowOpsEvaluationTaskResponse.
-        :type body: object
+        :param data: The data of this ShowOpsEvaluationTaskResponse.
+        :type data: :class:`huaweicloudsdkagentarts.v1.ShowOpsEvaluationTaskResponseBodyData`
         """
-        self._body = body
+        self._data = data
 
     def to_dict(self):
         import warnings

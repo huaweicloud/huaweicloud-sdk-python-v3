@@ -16,47 +16,47 @@ class BatchDeleteOpsEvaluationTasksResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'object'
+        'data': 'InlineResponse204Data'
     }
 
     attribute_map = {
-        'body': 'body'
+        'data': 'data'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, data=None):
         r"""BatchDeleteOpsEvaluationTasksResponse
 
         The model defined in huaweicloud sdk
 
-        :param body: 
-        :type body: object
+        :param data: 
+        :type data: :class:`huaweicloudsdkagentarts.v1.InlineResponse204Data`
         """
         
         super().__init__()
 
-        self._body = None
+        self._data = None
         self.discriminator = None
 
-        if body is not None:
-            self.body = body
+        if data is not None:
+            self.data = data
 
     @property
-    def body(self):
-        r"""Gets the body of this BatchDeleteOpsEvaluationTasksResponse.
+    def data(self):
+        r"""Gets the data of this BatchDeleteOpsEvaluationTasksResponse.
 
-        :return: The body of this BatchDeleteOpsEvaluationTasksResponse.
-        :rtype: object
+        :return: The data of this BatchDeleteOpsEvaluationTasksResponse.
+        :rtype: :class:`huaweicloudsdkagentarts.v1.InlineResponse204Data`
         """
-        return self._body
+        return self._data
 
-    @body.setter
-    def body(self, body):
-        r"""Sets the body of this BatchDeleteOpsEvaluationTasksResponse.
+    @data.setter
+    def data(self, data):
+        r"""Sets the data of this BatchDeleteOpsEvaluationTasksResponse.
 
-        :param body: The body of this BatchDeleteOpsEvaluationTasksResponse.
-        :type body: object
+        :param data: The data of this BatchDeleteOpsEvaluationTasksResponse.
+        :type data: :class:`huaweicloudsdkagentarts.v1.InlineResponse204Data`
         """
-        self._body = body
+        self._data = data
 
     def to_dict(self):
         import warnings

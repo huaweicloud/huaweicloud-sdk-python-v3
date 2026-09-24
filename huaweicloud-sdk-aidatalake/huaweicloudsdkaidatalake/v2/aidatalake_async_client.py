@@ -839,6 +839,293 @@ class AIDataLakeAsyncClient(Client):
 
         return http_info
 
+    def cancel_ray_job_async(self, request):
+        r"""取消作业运行
+
+        取消作业运行。主要使用于取消运行Ray Job场景。本接口为异步接口，当前取消作业运行请求下发成功后会返回job_id，此时取消作业运行并没有立即完成，需要通过调用[查看Ray作业详情](ShowRayJob.xml)查询Job状态，当Job状态为CANCELED时代表取消作业运行成功。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CancelRayJob
+        :type request: :class:`huaweicloudsdkaidatalake.v2.CancelRayJobRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.CancelRayJobResponse`
+        """
+        http_info = self._cancel_ray_job_http_info(request)
+        return self._call_api(**http_info)
+
+    def cancel_ray_job_async_invoker(self, request):
+        http_info = self._cancel_ray_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _cancel_ray_job_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/workspaces/{workspace_id}/ray-jobs/{job_id}/cancel",
+            "request_type": request.__class__.__name__,
+            "response_type": "CancelRayJobResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_ray_jobs_async(self, request):
+        r"""查询Ray作业列表
+
+        列举所有Ray作业。列举工作空间下的作业，分页返回。本接口为同步接口，当前列举所有Ray作业请求下发后会返回结果。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListRayJobs
+        :type request: :class:`huaweicloudsdkaidatalake.v2.ListRayJobsRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.ListRayJobsResponse`
+        """
+        http_info = self._list_ray_jobs_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_ray_jobs_async_invoker(self, request):
+        http_info = self._list_ray_jobs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_ray_jobs_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/workspaces/{workspace_id}/ray-jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRayJobsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+
+        query_params = []
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'endpoint_name' in local_var_params:
+            query_params.append(('endpoint_name', local_var_params['endpoint_name']))
+        if 'federation_name' in local_var_params:
+            query_params.append(('federation_name', local_var_params['federation_name']))
+        if 'create_time_before' in local_var_params:
+            query_params.append(('create_time_before', local_var_params['create_time_before']))
+        if 'create_time_after' in local_var_params:
+            query_params.append(('create_time_after', local_var_params['create_time_after']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+            collection_formats['status'] = 'multi'
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def run_ray_job_async(self, request):
+        r"""运行作业
+
+        运行Ray作业。本接口为异步接口，当前运行作业请求下发成功后会返回job_id，此时运行作业并没有立即完成，需要通过调用[查看Ray作业详情](ShowRayJob.xml)查询Job状态，当Job状态为SUCCEEDED时代表运行作业成功。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RunRayJob
+        :type request: :class:`huaweicloudsdkaidatalake.v2.RunRayJobRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.RunRayJobResponse`
+        """
+        http_info = self._run_ray_job_http_info(request)
+        return self._call_api(**http_info)
+
+    def run_ray_job_async_invoker(self, request):
+        http_info = self._run_ray_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_ray_job_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/workspaces/{workspace_id}/ray-jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunRayJobResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_client_token' in local_var_params:
+            header_params['X-Client-Token'] = local_var_params['x_client_token']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_ray_job_async(self, request):
+        r"""查看Ray作业详情
+
+        查看Ray作业详情。本接口为同步接口，当前查看Ray作业详情请求下发成功后会返回结果。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowRayJob
+        :type request: :class:`huaweicloudsdkaidatalake.v2.ShowRayJobRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.ShowRayJobResponse`
+        """
+        http_info = self._show_ray_job_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_ray_job_async_invoker(self, request):
+        http_info = self._show_ray_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_ray_job_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/workspaces/{workspace_id}/ray-jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRayJobResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def cancel_spark_job_async(self, request):
         r"""取消Spark作业执行
 

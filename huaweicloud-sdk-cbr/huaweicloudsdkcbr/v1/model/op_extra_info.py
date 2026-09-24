@@ -23,7 +23,8 @@ class OpExtraInfo:
         'replication': 'OpExtendInfoReplication',
         'resource': 'Resource',
         'restore': 'OpExtendInfoRestore',
-        'vault_delete': 'OpExtendInfoVaultDelete'
+        'vault_delete': 'OpExtendInfoVaultDelete',
+        'update_expiration_time': 'OpExtendInfoUpdateExpirationTime'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class OpExtraInfo:
         'replication': 'replication',
         'resource': 'resource',
         'restore': 'restore',
-        'vault_delete': 'vault_delete'
+        'vault_delete': 'vault_delete',
+        'update_expiration_time': 'update_expiration_time'
     }
 
-    def __init__(self, backup=None, common=None, delete=None, sync=None, remove_resources=None, replication=None, resource=None, restore=None, vault_delete=None):
+    def __init__(self, backup=None, common=None, delete=None, sync=None, remove_resources=None, replication=None, resource=None, restore=None, vault_delete=None, update_expiration_time=None):
         r"""OpExtraInfo
 
         The model defined in huaweicloud sdk
@@ -61,6 +63,8 @@ class OpExtraInfo:
         :type restore: :class:`huaweicloudsdkcbr.v1.OpExtendInfoRestore`
         :param vault_delete: 
         :type vault_delete: :class:`huaweicloudsdkcbr.v1.OpExtendInfoVaultDelete`
+        :param update_expiration_time: 
+        :type update_expiration_time: :class:`huaweicloudsdkcbr.v1.OpExtendInfoUpdateExpirationTime`
         """
         
         
@@ -74,6 +78,7 @@ class OpExtraInfo:
         self._resource = None
         self._restore = None
         self._vault_delete = None
+        self._update_expiration_time = None
         self.discriminator = None
 
         if backup is not None:
@@ -92,6 +97,8 @@ class OpExtraInfo:
             self.restore = restore
         if vault_delete is not None:
             self.vault_delete = vault_delete
+        if update_expiration_time is not None:
+            self.update_expiration_time = update_expiration_time
 
     @property
     def backup(self):
@@ -254,6 +261,24 @@ class OpExtraInfo:
         :type vault_delete: :class:`huaweicloudsdkcbr.v1.OpExtendInfoVaultDelete`
         """
         self._vault_delete = vault_delete
+
+    @property
+    def update_expiration_time(self):
+        r"""Gets the update_expiration_time of this OpExtraInfo.
+
+        :return: The update_expiration_time of this OpExtraInfo.
+        :rtype: :class:`huaweicloudsdkcbr.v1.OpExtendInfoUpdateExpirationTime`
+        """
+        return self._update_expiration_time
+
+    @update_expiration_time.setter
+    def update_expiration_time(self, update_expiration_time):
+        r"""Sets the update_expiration_time of this OpExtraInfo.
+
+        :param update_expiration_time: The update_expiration_time of this OpExtraInfo.
+        :type update_expiration_time: :class:`huaweicloudsdkcbr.v1.OpExtendInfoUpdateExpirationTime`
+        """
+        self._update_expiration_time = update_expiration_time
 
     def to_dict(self):
         result = {}

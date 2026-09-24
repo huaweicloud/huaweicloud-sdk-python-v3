@@ -2200,9 +2200,9 @@ class OptVerseAsyncClient(Client):
         return http_info
 
     def import_algorithm_file_async(self, request):
-        r"""保存算法文件
+        r"""上传算法文件（ZIP包）
 
-        保存算法文件
+        上传算法文件（ZIP包）
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2631,9 +2631,9 @@ class OptVerseAsyncClient(Client):
         return http_info
 
     def save_algorithm_file_async(self, request):
-        r"""保存算法文件
+        r"""上传算法文件
 
-        保存算法文件
+        上传算法文件
         
         Please refer to HUAWEI cloud API Explorer for details.
 

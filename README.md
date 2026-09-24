@@ -627,31 +627,32 @@ global_provider = global_provider.get_credentials()
 
 ##### 2.4.5 OIDC Trust Agency [:top:](#user-manual-top)
 
-Obtaining temporary security credentials through OIDC identity provider token (AssumeAgencyWithOIDC).
+Since `3.1.215`, supports obtaining temporary security credentials through OIDC identity provider token and trust agency (AssumeAgencyWithOIDC).
 
 Refer to [AssumeAgencyWithOIDC](https://support.huaweicloud.com/api-iam5/AssumeAgencyWithOIDC.html) for more information.
+
+Obtain credentials via `OidcStsCredentialProvider`, which internally calls the STS service API to obtain temporary credentials.
 
 **Environment Variables**
 
 | Environment Variable  |  Description |
 | :------- | :--- |
-| HUAWEICLOUD_OIDC_PROVIDER_URN  | Required, URN of the OIDC identity provider, e.g. `iam::123456789:oidcProvider:test`  |
-| HUAWEICLOUD_OIDC_AGENCY_URN  | Required, URN of the trust agency, e.g. `iam::123456789:agency:demo`  |
-| HUAWEICLOUD_OIDC_TOKEN_FILE  | Optional, OIDC ID Token file path, used when `HUAWEICLOUD_OIDC_ID_TOKEN` is not set  |
-| HUAWEICLOUD_OIDC_ID_TOKEN  | Optional, OIDC ID Token value, takes priority over `HUAWEICLOUD_OIDC_TOKEN_FILE`  |
-| HUAWEICLOUD_OIDC_SESSION_NAME  | Optional, agency session name, default is `oidc-sts-session`  |
-| HUAWEICLOUD_OIDC_DURATION_SECONDS  | Optional, temporary credential duration in seconds, default is `3600`  |
-| HUAWEICLOUD_OIDC_POLICY  | Optional, IAM policy JSON string for permission scoping  |
-| HUAWEICLOUD_OIDC_POLICY_IDS  | Optional, comma-separated policy IDs, e.g. `policy-id-1,policy-id-2`  |
-| HUAWEICLOUD_SDK_STS_ENDPOINT  | Optional, STS endpoint, default is `https://sts.cn-north-4.myhuaweicloud.com`  |
-| HUAWEICLOUD_SDK_PROJECT_ID  | Optional for basic credential type  |
-| HUAWEICLOUD_SDK_DOMAIN_ID  | Optional for global credential type  |
+| HUAWEICLOUD_OIDC_PROVIDER_URN  | Required, URN of the OIDC identity provider, e.g. `iam::account_id:oidcProvider:provider_name`  |
+| HUAWEICLOUD_OIDC_AGENCY_URN  | Required, URN of the trust agency, e.g. `iam::account_id:agency:agency_name`  |
+| HUAWEICLOUD_OIDC_ID_TOKEN  | Conditionally required, at least one of this and `HUAWEICLOUD_OIDC_TOKEN_FILE` must be set. OIDC ID Token value, takes precedence if both are set  |
+| HUAWEICLOUD_OIDC_TOKEN_FILE  | Conditionally required, at least one of this and `HUAWEICLOUD_OIDC_ID_TOKEN` must be set. OIDC ID Token file path  |
+| HUAWEICLOUD_OIDC_SESSION_NAME  | Required, agency session name  |
+| HUAWEICLOUD_OIDC_DURATION_SECONDS  | Optional, temporary credential duration in seconds, range [900, 43200], default `3600`  |
+| HUAWEICLOUD_OIDC_POLICY  | Optional, policy JSON string for permission scoping  |
+| HUAWEICLOUD_OIDC_POLICY_IDS  | Optional, comma-separated policy IDs  |
+
+> The STS endpoint can be configured via the environment variable `HUAWEICLOUD_SDK_STS_ENDPOINT`, default is `https://sts.cn-north-4.myhuaweicloud.com`.
 
 Configure environment variables:
 
 ```bash
-export HUAWEICLOUD_OIDC_PROVIDER_URN=iam::123456789:oidcProvider:test
-export HUAWEICLOUD_OIDC_AGENCY_URN=iam::123456789:agency:demo
+export HUAWEICLOUD_OIDC_PROVIDER_URN=your_provider_urn
+export HUAWEICLOUD_OIDC_AGENCY_URN=your_agency_urn
 export HUAWEICLOUD_OIDC_TOKEN_FILE=/path/to/id_token
 export HUAWEICLOUD_OIDC_SESSION_NAME=my-session
 ```
@@ -677,10 +678,15 @@ from huaweicloudsdkcore.auth.provider import OidcStsCredentialProvider
 
 provider = OidcStsCredentialProvider(
     "basic",
-    provider_urn="iam::123456789:oidcProvider:test",
-    agency_urn="iam::123456789:agency:demo",
-    id_token="your-id-token",
-    sts_endpoint="https://sts.cn-north-4.myhuaweicloud.com",
+    provider_urn=provider_urn,                              # required
+    agency_urn=agency_urn,                                  # required
+    id_token="your-id-token",                               # at least one of id_token/id_token_file
+    # id_token_file="/path/to/id_token",                    # at least one of id_token/id_token_file
+    agency_session_name="my-session",                        # required
+    duration_seconds=3600,                                  # optional, default 3600
+    policy='{"Version":"5.0","Statement":[]}',              # optional, JSON string
+    policy_ids=["policy-id-1", "policy-id-2"],              # optional, list of policy IDs
+    sts_endpoint="https://sts.cn-north-4.myhuaweicloud.com", # optional, default cn-north-4
 )
 cred = provider.get_credentials()
 ```
