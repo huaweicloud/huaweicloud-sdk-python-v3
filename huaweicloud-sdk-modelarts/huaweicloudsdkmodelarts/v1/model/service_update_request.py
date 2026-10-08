@@ -79,7 +79,7 @@ class ServiceUpdateRequest:
         :type tags: str
         :param workspace_id: **参数解释：** 工作空间id，默认是“0” **约束限制：** 不填保留原有值。 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type workspace_id: str
-        :param schedule: **参数解释：**  定时停止配置。 **约束限制：** 1.不填保留原有值。 2.仅当body中另一个参数description为空时，此参数才生效。
+        :param schedule: **参数解释：** 定时停止配置。 **约束限制：** 1.不填保留原有值。 2.仅当body中另一个参数description为空时，此参数才生效。
         :type schedule: list[:class:`huaweicloudsdkmodelarts.v1.ScheduleConfig`]
         :param custom_metrics_path: **参数解释：** 该参数值由英文逗号隔开的协议、端口号、地址组成，其中地址长度不超过255 ，且需要与镜像给定的协议、地址、端口一致，否则指标无法上报。 **约束限制：** 不填保留原有值。
         :type custom_metrics_path: str
@@ -397,7 +397,7 @@ class ServiceUpdateRequest:
     def schedule(self):
         r"""Gets the schedule of this ServiceUpdateRequest.
 
-        **参数解释：**  定时停止配置。 **约束限制：** 1.不填保留原有值。 2.仅当body中另一个参数description为空时，此参数才生效。
+        **参数解释：** 定时停止配置。 **约束限制：** 1.不填保留原有值。 2.仅当body中另一个参数description为空时，此参数才生效。
 
         :return: The schedule of this ServiceUpdateRequest.
         :rtype: list[:class:`huaweicloudsdkmodelarts.v1.ScheduleConfig`]
@@ -408,7 +408,7 @@ class ServiceUpdateRequest:
     def schedule(self, schedule):
         r"""Sets the schedule of this ServiceUpdateRequest.
 
-        **参数解释：**  定时停止配置。 **约束限制：** 1.不填保留原有值。 2.仅当body中另一个参数description为空时，此参数才生效。
+        **参数解释：** 定时停止配置。 **约束限制：** 1.不填保留原有值。 2.仅当body中另一个参数description为空时，此参数才生效。
 
         :param schedule: The schedule of this ServiceUpdateRequest.
         :type schedule: list[:class:`huaweicloudsdkmodelarts.v1.ScheduleConfig`]

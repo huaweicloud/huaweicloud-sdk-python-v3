@@ -4,7 +4,7 @@ from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ShowObsUrlOfTrainingJobLogsResponse(SdkResponse):
+class DeleteCustomModelProviderModelResponse(SdkResponse):
 
     """
     Attributes:
@@ -16,80 +16,24 @@ class ShowObsUrlOfTrainingJobLogsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'obs_url': 'str',
-        'shards': 'Shards'
     }
 
     attribute_map = {
-        'obs_url': 'obs_url',
-        'shards': 'shards'
     }
 
-    def __init__(self, obs_url=None, shards=None):
-        r"""ShowObsUrlOfTrainingJobLogsResponse
+    def __init__(self):
+        r"""DeleteCustomModelProviderModelResponse
 
         The model defined in huaweicloud sdk
 
-        :param obs_url: 日志OBS临时链接（复制到浏览器可查看当前全量日志）。
-        :type obs_url: str
-        :param shards: 
-        :type shards: :class:`huaweicloudsdkmodelarts.v1.Shards`
         """
         
         super().__init__()
-
-        self._obs_url = None
-        self._shards = None
         self.discriminator = None
-
-        if obs_url is not None:
-            self.obs_url = obs_url
-        if shards is not None:
-            self.shards = shards
-
-    @property
-    def obs_url(self):
-        r"""Gets the obs_url of this ShowObsUrlOfTrainingJobLogsResponse.
-
-        日志OBS临时链接（复制到浏览器可查看当前全量日志）。
-
-        :return: The obs_url of this ShowObsUrlOfTrainingJobLogsResponse.
-        :rtype: str
-        """
-        return self._obs_url
-
-    @obs_url.setter
-    def obs_url(self, obs_url):
-        r"""Sets the obs_url of this ShowObsUrlOfTrainingJobLogsResponse.
-
-        日志OBS临时链接（复制到浏览器可查看当前全量日志）。
-
-        :param obs_url: The obs_url of this ShowObsUrlOfTrainingJobLogsResponse.
-        :type obs_url: str
-        """
-        self._obs_url = obs_url
-
-    @property
-    def shards(self):
-        r"""Gets the shards of this ShowObsUrlOfTrainingJobLogsResponse.
-
-        :return: The shards of this ShowObsUrlOfTrainingJobLogsResponse.
-        :rtype: :class:`huaweicloudsdkmodelarts.v1.Shards`
-        """
-        return self._shards
-
-    @shards.setter
-    def shards(self, shards):
-        r"""Sets the shards of this ShowObsUrlOfTrainingJobLogsResponse.
-
-        :param shards: The shards of this ShowObsUrlOfTrainingJobLogsResponse.
-        :type shards: :class:`huaweicloudsdkmodelarts.v1.Shards`
-        """
-        self._shards = shards
 
     def to_dict(self):
         import warnings
-        warnings.warn("ShowObsUrlOfTrainingJobLogsResponse.to_dict() is deprecated and no longer maintained, "
+        warnings.warn("DeleteCustomModelProviderModelResponse.to_dict() is deprecated and no longer maintained, "
                       "use to_json_object() to get the response content.", DeprecationWarning)
         result = {}
 
@@ -127,7 +71,7 @@ class ShowObsUrlOfTrainingJobLogsResponse(SdkResponse):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ShowObsUrlOfTrainingJobLogsResponse):
+        if not isinstance(other, DeleteCustomModelProviderModelResponse):
             return False
 
         return self.__dict__ == other.__dict__

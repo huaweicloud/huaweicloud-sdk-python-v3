@@ -1,3 +1,157 @@
+# 3.1.217 2026-10-08
+
+### HuaweiCloud SDK AgentArts
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `ListModelManagementQuotas`
+    - `ListCoreGatewaySupportedServices`
+    - `ListCoreGatewaySupportedFeatures`
+    - `ListCustomModelProviders`
+    - `CreateCustomModelProvider`
+    - `ShowCustomModelProvider`
+    - `UpdateCustomModelProvider`
+    - `DeleteCustomModelProvider`
+    - `ListCustomModelProviderModels`
+    - `CreateCustomModelProviderModel`
+    - `ShowCustomModelProviderModel`
+    - `UpdateCustomModelProviderModel`
+    - `DeleteCustomModelProviderModel`
+    - `ListModelProxies`
+    - `CreateModelProxy`
+    - `BatchDisassociateModelProxies`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowCoreGateway**
+    - 响应参数变更
+      - `+ endpoint_urls`
+      - `+ protocol_configuration.mcp.session_configuration`
+  - **UpdateCoreGateway**
+    - 请求参数变更
+      - `* tags: list<CoreGatewayTag> -> list<CoreGatewayTagForRequest>`
+      - `+ protocol_configuration.mcp.session_configuration`
+    - 响应参数变更
+      - `+ endpoint_urls`
+      - `+ protocol_configuration.mcp.session_configuration`
+  - **ListCoreGatewayTargets**
+    - 响应参数变更
+      - `+ targets.target_type: enum value [dedicated_gateway_api,cloud_service_open_api,inference]`
+  - **CreateCoreGatewayTarget**
+    - 请求参数变更
+      - `+ target_configuration.dedicated_gateway_api`
+      - `+ target_configuration.cloud_service_open_api`
+      - `+ target_configuration.inference`
+    - 响应参数变更
+      - `+ target.target_type: enum value [dedicated_gateway_api,cloud_service_open_api,inference]`
+      - `+ target.target_configuration.dedicated_gateway_api`
+      - `+ target.target_configuration.cloud_service_open_api`
+      - `+ target.target_configuration.inference`
+  - **ShowCoreGatewayTarget**
+    - 响应参数变更
+      - `+ target.target_type: enum value [dedicated_gateway_api,cloud_service_open_api,inference]`
+      - `+ target.target_configuration.dedicated_gateway_api`
+      - `+ target.target_configuration.cloud_service_open_api`
+      - `+ target.target_configuration.inference`
+  - **UpdateCoreGatewayTarget**
+    - 请求参数变更
+      - `+ target_configuration.dedicated_gateway_api`
+      - `+ target_configuration.cloud_service_open_api`
+      - `+ target_configuration.inference`
+    - 响应参数变更
+      - `+ target.target_type: enum value [dedicated_gateway_api,cloud_service_open_api,inference]`
+      - `+ target.target_configuration.dedicated_gateway_api`
+      - `+ target.target_configuration.cloud_service_open_api`
+      - `+ target.target_configuration.inference`
+  - **CreateCoreGateway**
+    - 请求参数变更
+      - `* tags: list<CoreGatewayTag> -> list<CoreGatewayTagForRequest>`
+      - `+ protocol_configuration.mcp.session_configuration`
+    - 响应参数变更
+      - `+ endpoint_urls`
+      - `+ protocol_configuration.mcp.session_configuration`
+
+### HuaweiCloud SDK DAS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListTemplateDatabaseComparisons**
+    - 请求参数变更
+      - `* start_at2: required -> optional`
+      - `* end_at2: required -> optional`
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateFactoryJob**
+    - 请求参数变更
+      - `+ basic_config.task_priority`
+
+### HuaweiCloud SDK DGC
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateJob**
+    - 请求参数变更
+      - `+ basicConfig.taskPriority`
+  - **ShowJob**
+    - 响应参数变更
+      - `+ basicConfig.taskPriority`
+  - **UpdateJob**
+    - 请求参数变更
+      - `+ basicConfig.taskPriority`
+
+### HuaweiCloud SDK DLF
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowJob**
+    - 响应参数变更
+      - `+ basicConfig.taskPriority`
+  - **UpdateJob**
+    - 请求参数变更
+      - `+ basicConfig.taskPriority`
+  - **CreateJob**
+    - 请求参数变更
+      - `+ basicConfig.taskPriority`
+  - **ListJobs**
+    - 响应参数变更
+      - `+ jobs.basicConfig.taskPriority`
+
+### HuaweiCloud SDK ECS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持接口`ShowServerConsoleOutput`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
 # 3.1.216 2026-09-24
 
 ### HuaweiCloud SDK AgentArts

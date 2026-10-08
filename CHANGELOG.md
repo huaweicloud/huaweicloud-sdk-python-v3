@@ -1,3 +1,157 @@
+# 3.1.217 2026-10-08
+
+### HuaweiCloud SDK AgentArts
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `ListModelManagementQuotas`
+    - `ListCoreGatewaySupportedServices`
+    - `ListCoreGatewaySupportedFeatures`
+    - `ListCustomModelProviders`
+    - `CreateCustomModelProvider`
+    - `ShowCustomModelProvider`
+    - `UpdateCustomModelProvider`
+    - `DeleteCustomModelProvider`
+    - `ListCustomModelProviderModels`
+    - `CreateCustomModelProviderModel`
+    - `ShowCustomModelProviderModel`
+    - `UpdateCustomModelProviderModel`
+    - `DeleteCustomModelProviderModel`
+    - `ListModelProxies`
+    - `CreateModelProxy`
+    - `BatchDisassociateModelProxies`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowCoreGateway**
+    - changes of response param
+      - `+ endpoint_urls`
+      - `+ protocol_configuration.mcp.session_configuration`
+  - **UpdateCoreGateway**
+    - changes of request param
+      - `* tags: list<CoreGatewayTag> -> list<CoreGatewayTagForRequest>`
+      - `+ protocol_configuration.mcp.session_configuration`
+    - changes of response param
+      - `+ endpoint_urls`
+      - `+ protocol_configuration.mcp.session_configuration`
+  - **ListCoreGatewayTargets**
+    - changes of response param
+      - `+ targets.target_type: enum value [dedicated_gateway_api,cloud_service_open_api,inference]`
+  - **CreateCoreGatewayTarget**
+    - changes of request param
+      - `+ target_configuration.dedicated_gateway_api`
+      - `+ target_configuration.cloud_service_open_api`
+      - `+ target_configuration.inference`
+    - changes of response param
+      - `+ target.target_type: enum value [dedicated_gateway_api,cloud_service_open_api,inference]`
+      - `+ target.target_configuration.dedicated_gateway_api`
+      - `+ target.target_configuration.cloud_service_open_api`
+      - `+ target.target_configuration.inference`
+  - **ShowCoreGatewayTarget**
+    - changes of response param
+      - `+ target.target_type: enum value [dedicated_gateway_api,cloud_service_open_api,inference]`
+      - `+ target.target_configuration.dedicated_gateway_api`
+      - `+ target.target_configuration.cloud_service_open_api`
+      - `+ target.target_configuration.inference`
+  - **UpdateCoreGatewayTarget**
+    - changes of request param
+      - `+ target_configuration.dedicated_gateway_api`
+      - `+ target_configuration.cloud_service_open_api`
+      - `+ target_configuration.inference`
+    - changes of response param
+      - `+ target.target_type: enum value [dedicated_gateway_api,cloud_service_open_api,inference]`
+      - `+ target.target_configuration.dedicated_gateway_api`
+      - `+ target.target_configuration.cloud_service_open_api`
+      - `+ target.target_configuration.inference`
+  - **CreateCoreGateway**
+    - changes of request param
+      - `* tags: list<CoreGatewayTag> -> list<CoreGatewayTagForRequest>`
+      - `+ protocol_configuration.mcp.session_configuration`
+    - changes of response param
+      - `+ endpoint_urls`
+      - `+ protocol_configuration.mcp.session_configuration`
+
+### HuaweiCloud SDK DAS
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListTemplateDatabaseComparisons**
+    - changes of request param
+      - `* start_at2: required -> optional`
+      - `* end_at2: required -> optional`
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateFactoryJob**
+    - changes of request param
+      - `+ basic_config.task_priority`
+
+### HuaweiCloud SDK DGC
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateJob**
+    - changes of request param
+      - `+ basicConfig.taskPriority`
+  - **ShowJob**
+    - changes of response param
+      - `+ basicConfig.taskPriority`
+  - **UpdateJob**
+    - changes of request param
+      - `+ basicConfig.taskPriority`
+
+### HuaweiCloud SDK DLF
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowJob**
+    - changes of response param
+      - `+ basicConfig.taskPriority`
+  - **UpdateJob**
+    - changes of request param
+      - `+ basicConfig.taskPriority`
+  - **CreateJob**
+    - changes of request param
+      - `+ basicConfig.taskPriority`
+  - **ListJobs**
+    - changes of response param
+      - `+ jobs.basicConfig.taskPriority`
+
+### HuaweiCloud SDK ECS
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the API `ShowServerConsoleOutput`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
 # 3.1.216 2026-09-24
 
 ### HuaweiCloud SDK AgentArts

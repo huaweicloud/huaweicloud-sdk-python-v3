@@ -16,15 +16,17 @@ class CoreGatewayMcpProtocolConfiguration:
 
     openapi_types = {
         'search_configuration': 'CoreGatewaySearchConfiguration',
-        'supported_versions': 'list[str]'
+        'supported_versions': 'list[str]',
+        'session_configuration': 'CoreGatewaySessionConfiguration'
     }
 
     attribute_map = {
         'search_configuration': 'search_configuration',
-        'supported_versions': 'supported_versions'
+        'supported_versions': 'supported_versions',
+        'session_configuration': 'session_configuration'
     }
 
-    def __init__(self, search_configuration=None, supported_versions=None):
+    def __init__(self, search_configuration=None, supported_versions=None, session_configuration=None):
         r"""CoreGatewayMcpProtocolConfiguration
 
         The model defined in huaweicloud sdk
@@ -33,18 +35,23 @@ class CoreGatewayMcpProtocolConfiguration:
         :type search_configuration: :class:`huaweicloudsdkagentarts.v1.CoreGatewaySearchConfiguration`
         :param supported_versions: MCP网关支持的协议版本列表。
         :type supported_versions: list[str]
+        :param session_configuration: 
+        :type session_configuration: :class:`huaweicloudsdkagentarts.v1.CoreGatewaySessionConfiguration`
         """
         
         
 
         self._search_configuration = None
         self._supported_versions = None
+        self._session_configuration = None
         self.discriminator = None
 
         if search_configuration is not None:
             self.search_configuration = search_configuration
         if supported_versions is not None:
             self.supported_versions = supported_versions
+        if session_configuration is not None:
+            self.session_configuration = session_configuration
 
     @property
     def search_configuration(self):
@@ -85,6 +92,24 @@ class CoreGatewayMcpProtocolConfiguration:
         :type supported_versions: list[str]
         """
         self._supported_versions = supported_versions
+
+    @property
+    def session_configuration(self):
+        r"""Gets the session_configuration of this CoreGatewayMcpProtocolConfiguration.
+
+        :return: The session_configuration of this CoreGatewayMcpProtocolConfiguration.
+        :rtype: :class:`huaweicloudsdkagentarts.v1.CoreGatewaySessionConfiguration`
+        """
+        return self._session_configuration
+
+    @session_configuration.setter
+    def session_configuration(self, session_configuration):
+        r"""Sets the session_configuration of this CoreGatewayMcpProtocolConfiguration.
+
+        :param session_configuration: The session_configuration of this CoreGatewayMcpProtocolConfiguration.
+        :type session_configuration: :class:`huaweicloudsdkagentarts.v1.CoreGatewaySessionConfiguration`
+        """
+        self._session_configuration = session_configuration
 
     def to_dict(self):
         result = {}

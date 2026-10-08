@@ -24,6 +24,7 @@ class CreateCoreGatewayResponseBody:
         'authorizer_type': 'str',
         'agency_name': 'str',
         'endpoint_url': 'str',
+        'endpoint_urls': 'list[str]',
         'log_delivery_configuration': 'CoreGatewayLogDeliveryConfiguration',
         'workload_identity': 'CoreGatewayWorkloadIdentity',
         'agent_gateway_id': 'str',
@@ -43,6 +44,7 @@ class CreateCoreGatewayResponseBody:
         'authorizer_type': 'authorizer_type',
         'agency_name': 'agency_name',
         'endpoint_url': 'endpoint_url',
+        'endpoint_urls': 'endpoint_urls',
         'log_delivery_configuration': 'log_delivery_configuration',
         'workload_identity': 'workload_identity',
         'agent_gateway_id': 'agent_gateway_id',
@@ -52,7 +54,7 @@ class CreateCoreGatewayResponseBody:
         'updated_at': 'updated_at'
     }
 
-    def __init__(self, gateway_id=None, name=None, description=None, status=None, protocol_type=None, protocol_configuration=None, authorizer_type=None, agency_name=None, endpoint_url=None, log_delivery_configuration=None, workload_identity=None, agent_gateway_id=None, outbound_network_configuration=None, tags=None, created_at=None, updated_at=None):
+    def __init__(self, gateway_id=None, name=None, description=None, status=None, protocol_type=None, protocol_configuration=None, authorizer_type=None, agency_name=None, endpoint_url=None, endpoint_urls=None, log_delivery_configuration=None, workload_identity=None, agent_gateway_id=None, outbound_network_configuration=None, tags=None, created_at=None, updated_at=None):
         r"""CreateCoreGatewayResponseBody
 
         The model defined in huaweicloud sdk
@@ -75,6 +77,8 @@ class CreateCoreGatewayResponseBody:
         :type agency_name: str
         :param endpoint_url: 访问网关的 URL 端点。
         :type endpoint_url: str
+        :param endpoint_urls: 访问网关的URL列表。
+        :type endpoint_urls: list[str]
         :param log_delivery_configuration: 
         :type log_delivery_configuration: :class:`huaweicloudsdkagentarts.v1.CoreGatewayLogDeliveryConfiguration`
         :param workload_identity: 
@@ -102,6 +106,7 @@ class CreateCoreGatewayResponseBody:
         self._authorizer_type = None
         self._agency_name = None
         self._endpoint_url = None
+        self._endpoint_urls = None
         self._log_delivery_configuration = None
         self._workload_identity = None
         self._agent_gateway_id = None
@@ -123,6 +128,8 @@ class CreateCoreGatewayResponseBody:
         self.agency_name = agency_name
         if endpoint_url is not None:
             self.endpoint_url = endpoint_url
+        if endpoint_urls is not None:
+            self.endpoint_urls = endpoint_urls
         if log_delivery_configuration is not None:
             self.log_delivery_configuration = log_delivery_configuration
         if workload_identity is not None:
@@ -330,6 +337,28 @@ class CreateCoreGatewayResponseBody:
         :type endpoint_url: str
         """
         self._endpoint_url = endpoint_url
+
+    @property
+    def endpoint_urls(self):
+        r"""Gets the endpoint_urls of this CreateCoreGatewayResponseBody.
+
+        访问网关的URL列表。
+
+        :return: The endpoint_urls of this CreateCoreGatewayResponseBody.
+        :rtype: list[str]
+        """
+        return self._endpoint_urls
+
+    @endpoint_urls.setter
+    def endpoint_urls(self, endpoint_urls):
+        r"""Sets the endpoint_urls of this CreateCoreGatewayResponseBody.
+
+        访问网关的URL列表。
+
+        :param endpoint_urls: The endpoint_urls of this CreateCoreGatewayResponseBody.
+        :type endpoint_urls: list[str]
+        """
+        self._endpoint_urls = endpoint_urls
 
     @property
     def log_delivery_configuration(self):

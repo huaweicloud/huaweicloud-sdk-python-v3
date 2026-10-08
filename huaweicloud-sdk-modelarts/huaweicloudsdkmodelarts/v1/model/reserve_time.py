@@ -29,9 +29,9 @@ class ReserveTime:
 
         The model defined in huaweicloud sdk
 
-        :param time_unit: **参数解释**：时间单位。  **约束限制**：不涉及。  **取值范围**：  - HOURS：小时   **默认取值**：不涉及。
+        :param time_unit: **参数解释**：时间单位。 **约束限制**：不涉及。 **取值范围**： - HOURS：小时  **默认取值**：不涉及。
         :type time_unit: str
-        :param duration: **参数解释**：保留时长。  **约束限制**：不涉及。  **取值范围**：最小值为1。  **默认取值**：不涉及。
+        :param duration: **参数解释**：保留时长。 **约束限制**：不涉及。 **取值范围**：最小值为1。 **默认取值**：不涉及。
         :type duration: int
         """
         
@@ -48,7 +48,7 @@ class ReserveTime:
     def time_unit(self):
         r"""Gets the time_unit of this ReserveTime.
 
-        **参数解释**：时间单位。  **约束限制**：不涉及。  **取值范围**：  - HOURS：小时   **默认取值**：不涉及。
+        **参数解释**：时间单位。 **约束限制**：不涉及。 **取值范围**： - HOURS：小时  **默认取值**：不涉及。
 
         :return: The time_unit of this ReserveTime.
         :rtype: str
@@ -59,7 +59,7 @@ class ReserveTime:
     def time_unit(self, time_unit):
         r"""Sets the time_unit of this ReserveTime.
 
-        **参数解释**：时间单位。  **约束限制**：不涉及。  **取值范围**：  - HOURS：小时   **默认取值**：不涉及。
+        **参数解释**：时间单位。 **约束限制**：不涉及。 **取值范围**： - HOURS：小时  **默认取值**：不涉及。
 
         :param time_unit: The time_unit of this ReserveTime.
         :type time_unit: str
@@ -70,7 +70,7 @@ class ReserveTime:
     def duration(self):
         r"""Gets the duration of this ReserveTime.
 
-        **参数解释**：保留时长。  **约束限制**：不涉及。  **取值范围**：最小值为1。  **默认取值**：不涉及。
+        **参数解释**：保留时长。 **约束限制**：不涉及。 **取值范围**：最小值为1。 **默认取值**：不涉及。
 
         :return: The duration of this ReserveTime.
         :rtype: int
@@ -81,7 +81,7 @@ class ReserveTime:
     def duration(self, duration):
         r"""Sets the duration of this ReserveTime.
 
-        **参数解释**：保留时长。  **约束限制**：不涉及。  **取值范围**：最小值为1。  **默认取值**：不涉及。
+        **参数解释**：保留时长。 **约束限制**：不涉及。 **取值范围**：最小值为1。 **默认取值**：不涉及。
 
         :param duration: The duration of this ReserveTime.
         :type duration: int

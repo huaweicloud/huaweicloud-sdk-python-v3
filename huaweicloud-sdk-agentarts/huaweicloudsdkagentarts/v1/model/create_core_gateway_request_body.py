@@ -25,7 +25,7 @@ class CreateCoreGatewayRequestBody:
         'log_delivery_configuration': 'CoreGatewayLogDeliveryConfigurationRequestBody',
         'agent_gateway_id': 'str',
         'outbound_network_configuration': 'CoreGatewayOutboundNetworkConfiguration',
-        'tags': 'list[CoreGatewayTag]'
+        'tags': 'list[CoreGatewayTagForRequest]'
     }
 
     attribute_map = {
@@ -68,7 +68,7 @@ class CreateCoreGatewayRequestBody:
         :param outbound_network_configuration: 
         :type outbound_network_configuration: :class:`huaweicloudsdkagentarts.v1.CoreGatewayOutboundNetworkConfiguration`
         :param tags: 资源标签列表。
-        :type tags: list[:class:`huaweicloudsdkagentarts.v1.CoreGatewayTag`]
+        :type tags: list[:class:`huaweicloudsdkagentarts.v1.CoreGatewayTagForRequest`]
         """
         
         
@@ -316,7 +316,7 @@ class CreateCoreGatewayRequestBody:
         资源标签列表。
 
         :return: The tags of this CreateCoreGatewayRequestBody.
-        :rtype: list[:class:`huaweicloudsdkagentarts.v1.CoreGatewayTag`]
+        :rtype: list[:class:`huaweicloudsdkagentarts.v1.CoreGatewayTagForRequest`]
         """
         return self._tags
 
@@ -327,7 +327,7 @@ class CreateCoreGatewayRequestBody:
         资源标签列表。
 
         :param tags: The tags of this CreateCoreGatewayRequestBody.
-        :type tags: list[:class:`huaweicloudsdkagentarts.v1.CoreGatewayTag`]
+        :type tags: list[:class:`huaweicloudsdkagentarts.v1.CoreGatewayTagForRequest`]
         """
         self._tags = tags
 

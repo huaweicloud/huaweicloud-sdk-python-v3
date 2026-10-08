@@ -29,7 +29,7 @@ class SyncMultiCloudResourceRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param vendor: **参数解释：** 云广商信息。 **约束限制：** 不涉及。 **取值范围：** - RMS： 华为云。 - AWS：亚马逊。 - AZURE：微软。 - ALI：阿里云。 - VMWARE：VMware。 - OPENSTACK：openstack云平台。 - HCS：Huawei Cloud Stack。 - OTHER：其他云广商。 **默认取值：** 不涉及。
+        :param vendor: **参数解释：** 云厂商信息。 **约束限制：** 不涉及。 **取值范围：** - RMS： 华为云。 - AWS：亚马逊。 - AZURE：微软。 - ALI：阿里云。 - VMWARE：VMware。 - OPENSTACK：openstack云平台。 - HCS：Huawei Cloud Stack。 - OTHER：其他云厂商。 **默认取值：** 不涉及。
         :type vendor: str
         :param account_id: **参数解释：** 供应商的账户ID。 **约束限制：** 不涉及。 **取值范围：** 字符串，长度0到64个字符。 **默认取值：** 不涉及。
         :type account_id: str
@@ -49,7 +49,7 @@ class SyncMultiCloudResourceRequestBody:
     def vendor(self):
         r"""Gets the vendor of this SyncMultiCloudResourceRequestBody.
 
-        **参数解释：** 云广商信息。 **约束限制：** 不涉及。 **取值范围：** - RMS： 华为云。 - AWS：亚马逊。 - AZURE：微软。 - ALI：阿里云。 - VMWARE：VMware。 - OPENSTACK：openstack云平台。 - HCS：Huawei Cloud Stack。 - OTHER：其他云广商。 **默认取值：** 不涉及。
+        **参数解释：** 云厂商信息。 **约束限制：** 不涉及。 **取值范围：** - RMS： 华为云。 - AWS：亚马逊。 - AZURE：微软。 - ALI：阿里云。 - VMWARE：VMware。 - OPENSTACK：openstack云平台。 - HCS：Huawei Cloud Stack。 - OTHER：其他云厂商。 **默认取值：** 不涉及。
 
         :return: The vendor of this SyncMultiCloudResourceRequestBody.
         :rtype: str
@@ -60,7 +60,7 @@ class SyncMultiCloudResourceRequestBody:
     def vendor(self, vendor):
         r"""Sets the vendor of this SyncMultiCloudResourceRequestBody.
 
-        **参数解释：** 云广商信息。 **约束限制：** 不涉及。 **取值范围：** - RMS： 华为云。 - AWS：亚马逊。 - AZURE：微软。 - ALI：阿里云。 - VMWARE：VMware。 - OPENSTACK：openstack云平台。 - HCS：Huawei Cloud Stack。 - OTHER：其他云广商。 **默认取值：** 不涉及。
+        **参数解释：** 云厂商信息。 **约束限制：** 不涉及。 **取值范围：** - RMS： 华为云。 - AWS：亚马逊。 - AZURE：微软。 - ALI：阿里云。 - VMWARE：VMware。 - OPENSTACK：openstack云平台。 - HCS：Huawei Cloud Stack。 - OTHER：其他云厂商。 **默认取值：** 不涉及。
 
         :param vendor: The vendor of this SyncMultiCloudResourceRequestBody.
         :type vendor: str

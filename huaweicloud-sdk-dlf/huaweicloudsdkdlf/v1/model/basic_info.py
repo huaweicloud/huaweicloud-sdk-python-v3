@@ -17,6 +17,7 @@ class BasicInfo:
     openapi_types = {
         'owner': 'str',
         'priority': 'int',
+        'task_priority': 'int',
         'execute_user': 'str',
         'instance_timeout': 'int',
         'custom_fields': 'object'
@@ -25,20 +26,23 @@ class BasicInfo:
     attribute_map = {
         'owner': 'owner',
         'priority': 'priority',
+        'task_priority': 'taskPriority',
         'execute_user': 'executeUser',
         'instance_timeout': 'instanceTimeout',
         'custom_fields': 'customFields'
     }
 
-    def __init__(self, owner=None, priority=None, execute_user=None, instance_timeout=None, custom_fields=None):
+    def __init__(self, owner=None, priority=None, task_priority=None, execute_user=None, instance_timeout=None, custom_fields=None):
         r"""BasicInfo
 
         The model defined in huaweicloud sdk
 
         :param owner: 作业责任人
         :type owner: str
-        :param priority: 作业优先级
+        :param priority: 执行优先级
         :type priority: int
+        :param task_priority: 作业优先级，取值范围[0, 2]，默认值是0。0代表高优先级，1代表中优先级，2代表低优先级。
+        :type task_priority: int
         :param execute_user: 作业执行用户
         :type execute_user: str
         :param instance_timeout: 实例超时时间
@@ -51,6 +55,7 @@ class BasicInfo:
 
         self._owner = None
         self._priority = None
+        self._task_priority = None
         self._execute_user = None
         self._instance_timeout = None
         self._custom_fields = None
@@ -60,6 +65,8 @@ class BasicInfo:
             self.owner = owner
         if priority is not None:
             self.priority = priority
+        if task_priority is not None:
+            self.task_priority = task_priority
         if execute_user is not None:
             self.execute_user = execute_user
         if instance_timeout is not None:
@@ -93,7 +100,7 @@ class BasicInfo:
     def priority(self):
         r"""Gets the priority of this BasicInfo.
 
-        作业优先级
+        执行优先级
 
         :return: The priority of this BasicInfo.
         :rtype: int
@@ -104,12 +111,34 @@ class BasicInfo:
     def priority(self, priority):
         r"""Sets the priority of this BasicInfo.
 
-        作业优先级
+        执行优先级
 
         :param priority: The priority of this BasicInfo.
         :type priority: int
         """
         self._priority = priority
+
+    @property
+    def task_priority(self):
+        r"""Gets the task_priority of this BasicInfo.
+
+        作业优先级，取值范围[0, 2]，默认值是0。0代表高优先级，1代表中优先级，2代表低优先级。
+
+        :return: The task_priority of this BasicInfo.
+        :rtype: int
+        """
+        return self._task_priority
+
+    @task_priority.setter
+    def task_priority(self, task_priority):
+        r"""Sets the task_priority of this BasicInfo.
+
+        作业优先级，取值范围[0, 2]，默认值是0。0代表高优先级，1代表中优先级，2代表低优先级。
+
+        :param task_priority: The task_priority of this BasicInfo.
+        :type task_priority: int
+        """
+        self._task_priority = task_priority
 
     @property
     def execute_user(self):

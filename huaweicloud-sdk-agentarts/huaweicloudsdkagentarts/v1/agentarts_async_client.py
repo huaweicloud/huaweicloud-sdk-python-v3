@@ -167,6 +167,71 @@ class AgentArtsAsyncClient(Client):
 
         return http_info
 
+    def batch_disassociate_model_proxies_async(self, request):
+        r"""批量解绑模型代理
+
+        批量解绑模型代理。当模型代理没有任何模型提供商关联时，会自动删除。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchDisassociateModelProxies
+        :type request: :class:`huaweicloudsdkagentarts.v1.BatchDisassociateModelProxiesRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.BatchDisassociateModelProxiesResponse`
+        """
+        http_info = self._batch_disassociate_model_proxies_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_disassociate_model_proxies_async_invoker(self, request):
+        http_info = self._batch_disassociate_model_proxies_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_disassociate_model_proxies_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/core/model-proxy-batch-disassociate",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDisassociateModelProxiesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_core_code_interpreter_async(self, request):
         r"""创建代码解释器
 
@@ -838,6 +903,203 @@ class AgentArtsAsyncClient(Client):
 
         return http_info
 
+    def create_custom_model_provider_async(self, request):
+        r"""创建模型提供商
+
+        使用指定配置创建一个新的模型提供商。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateCustomModelProvider
+        :type request: :class:`huaweicloudsdkagentarts.v1.CreateCustomModelProviderRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.CreateCustomModelProviderResponse`
+        """
+        http_info = self._create_custom_model_provider_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_custom_model_provider_async_invoker(self, request):
+        http_info = self._create_custom_model_provider_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_custom_model_provider_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/core/custom-model-providers",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCustomModelProviderResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_custom_model_provider_model_async(self, request):
+        r"""创建模型服务
+
+        使用指定配置创建一个新的模型。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateCustomModelProviderModel
+        :type request: :class:`huaweicloudsdkagentarts.v1.CreateCustomModelProviderModelRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.CreateCustomModelProviderModelResponse`
+        """
+        http_info = self._create_custom_model_provider_model_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_custom_model_provider_model_async_invoker(self, request):
+        http_info = self._create_custom_model_provider_model_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_custom_model_provider_model_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/core/custom-model-providers/{custom_model_provider_id}/models",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCustomModelProviderModelResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'custom_model_provider_id' in local_var_params:
+            path_params['custom_model_provider_id'] = local_var_params['custom_model_provider_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_model_proxy_async(self, request):
+        r"""创建模型代理
+
+        创建模型代理。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateModelProxy
+        :type request: :class:`huaweicloudsdkagentarts.v1.CreateModelProxyRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.CreateModelProxyResponse`
+        """
+        http_info = self._create_model_proxy_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_model_proxy_async_invoker(self, request):
+        http_info = self._create_model_proxy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_model_proxy_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/core/model-proxy",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateModelProxyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_core_code_interpreter_async(self, request):
         r"""删除代码解释器
 
@@ -1433,6 +1695,138 @@ class AgentArtsAsyncClient(Client):
 
         return http_info
 
+    def delete_custom_model_provider_async(self, request):
+        r"""删除模型提供商
+
+        永久删除指定ID的模型提供商。此操作无法撤销。当模型提供商关联了模型代理时，无法删除，请先解绑模型代理。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteCustomModelProvider
+        :type request: :class:`huaweicloudsdkagentarts.v1.DeleteCustomModelProviderRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.DeleteCustomModelProviderResponse`
+        """
+        http_info = self._delete_custom_model_provider_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_custom_model_provider_async_invoker(self, request):
+        http_info = self._delete_custom_model_provider_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_custom_model_provider_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/core/custom-model-providers/{custom_model_provider_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteCustomModelProviderResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'custom_model_provider_id' in local_var_params:
+            path_params['custom_model_provider_id'] = local_var_params['custom_model_provider_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_custom_model_provider_model_async(self, request):
+        r"""删除模型服务
+
+        永久删除指定ID的模型。此操作无法撤销。当其所属的模型提供商关联了模型代理时，至少保留一个模型。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteCustomModelProviderModel
+        :type request: :class:`huaweicloudsdkagentarts.v1.DeleteCustomModelProviderModelRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.DeleteCustomModelProviderModelResponse`
+        """
+        http_info = self._delete_custom_model_provider_model_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_custom_model_provider_model_async_invoker(self, request):
+        http_info = self._delete_custom_model_provider_model_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_custom_model_provider_model_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/core/custom-model-providers/{custom_model_provider_id}/models/{model_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteCustomModelProviderModelResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'model_id' in local_var_params:
+            path_params['model_id'] = local_var_params['model_id']
+        if 'custom_model_provider_id' in local_var_params:
+            path_params['custom_model_provider_id'] = local_var_params['custom_model_provider_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_all_core_gateway_tags_async(self, request):
         r"""查询账号下所有网关标签列表
 
@@ -1623,6 +2017,138 @@ class AgentArtsAsyncClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_core_gateway_supported_features_async(self, request):
+        r"""查询网关支持特性列表
+
+        查询网关支持特性列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListCoreGatewaySupportedFeatures
+        :type request: :class:`huaweicloudsdkagentarts.v1.ListCoreGatewaySupportedFeaturesRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ListCoreGatewaySupportedFeaturesResponse`
+        """
+        http_info = self._list_core_gateway_supported_features_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_core_gateway_supported_features_async_invoker(self, request):
+        http_info = self._list_core_gateway_supported_features_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_core_gateway_supported_features_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/core/gateway-supported-features",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCoreGatewaySupportedFeaturesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'gateway_id' in local_var_params:
+            query_params.append(('gateway_id', local_var_params['gateway_id']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_core_gateway_supported_services_async(self, request):
+        r"""查询网关支持服务列表
+
+        当选择云服务Open API类型的target时，获取支持的主力核心服务列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListCoreGatewaySupportedServices
+        :type request: :class:`huaweicloudsdkagentarts.v1.ListCoreGatewaySupportedServicesRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ListCoreGatewaySupportedServicesResponse`
+        """
+        http_info = self._list_core_gateway_supported_services_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_core_gateway_supported_services_async_invoker(self, request):
+        http_info = self._list_core_gateway_supported_services_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_core_gateway_supported_services_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/core/gateway-supported-services",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCoreGatewaySupportedServicesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
 
         header_params = {}
 
@@ -2610,6 +3136,312 @@ class AgentArtsAsyncClient(Client):
 
         return http_info
 
+    def list_custom_model_provider_models_async(self, request):
+        r"""列出所有模型服务
+
+        检索所有模型服务，支持可选的过滤和分页功能。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListCustomModelProviderModels
+        :type request: :class:`huaweicloudsdkagentarts.v1.ListCustomModelProviderModelsRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ListCustomModelProviderModelsResponse`
+        """
+        http_info = self._list_custom_model_provider_models_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_custom_model_provider_models_async_invoker(self, request):
+        http_info = self._list_custom_model_provider_models_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_custom_model_provider_models_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/core/custom-model-providers/{custom_model_provider_id}/models",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCustomModelProviderModelsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'custom_model_provider_id' in local_var_params:
+            path_params['custom_model_provider_id'] = local_var_params['custom_model_provider_id']
+
+        query_params = []
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'model_service_name' in local_var_params:
+            query_params.append(('model_service_name', local_var_params['model_service_name']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_custom_model_providers_async(self, request):
+        r"""列出所有模型提供商
+
+        检索所有模型提供商，支持可选的过滤和分页功能。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListCustomModelProviders
+        :type request: :class:`huaweicloudsdkagentarts.v1.ListCustomModelProvidersRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ListCustomModelProvidersResponse`
+        """
+        http_info = self._list_custom_model_providers_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_custom_model_providers_async_invoker(self, request):
+        http_info = self._list_custom_model_providers_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_custom_model_providers_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/core/custom-model-providers",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCustomModelProvidersResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'tag_key_exists' in local_var_params:
+            query_params.append(('tag_key_exists', local_var_params['tag_key_exists']))
+            collection_formats['tag_key_exists'] = 'csv'
+        if 'tag_key_matches' in local_var_params:
+            query_params.append(('tag_key_matches', local_var_params['tag_key_matches']))
+            collection_formats['tag_key_matches'] = 'csv'
+        if 'tag_value_matches' in local_var_params:
+            query_params.append(('tag_value_matches', local_var_params['tag_value_matches']))
+            collection_formats['tag_value_matches'] = 'csv'
+        if 'tag_match_policy' in local_var_params:
+            query_params.append(('tag_match_policy', local_var_params['tag_match_policy']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_model_management_quotas_async(self, request):
+        r"""查询模型管理配额
+
+        获取当前认证账号的模型提供商、模型代理、模型的有效配额信息，包括配额类型、最小值、最大值、配额值和已使用数量。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListModelManagementQuotas
+        :type request: :class:`huaweicloudsdkagentarts.v1.ListModelManagementQuotasRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ListModelManagementQuotasResponse`
+        """
+        http_info = self._list_model_management_quotas_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_model_management_quotas_async_invoker(self, request):
+        http_info = self._list_model_management_quotas_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_model_management_quotas_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/core/model-management-quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListModelManagementQuotasResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'custom_model_provider_id' in local_var_params:
+            query_params.append(('custom_model_provider_id', local_var_params['custom_model_provider_id']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_model_proxies_async(self, request):
+        r"""列出所有模型代理
+
+        列出所有模型代理。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListModelProxies
+        :type request: :class:`huaweicloudsdkagentarts.v1.ListModelProxiesRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ListModelProxiesResponse`
+        """
+        http_info = self._list_model_proxies_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_model_proxies_async_invoker(self, request):
+        http_info = self._list_model_proxies_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_model_proxies_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/core/model-proxy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListModelProxiesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'tag_key_exists' in local_var_params:
+            query_params.append(('tag_key_exists', local_var_params['tag_key_exists']))
+            collection_formats['tag_key_exists'] = 'csv'
+        if 'tag_key_matches' in local_var_params:
+            query_params.append(('tag_key_matches', local_var_params['tag_key_matches']))
+            collection_formats['tag_key_matches'] = 'csv'
+        if 'tag_value_matches' in local_var_params:
+            query_params.append(('tag_value_matches', local_var_params['tag_value_matches']))
+            collection_formats['tag_value_matches'] = 'csv'
+        if 'tag_match_policy' in local_var_params:
+            query_params.append(('tag_match_policy', local_var_params['tag_match_policy']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def reset_core_space_api_key_async(self, request):
         r"""重置 API Key
 
@@ -3412,6 +4244,138 @@ class AgentArtsAsyncClient(Client):
 
         return http_info
 
+    def show_custom_model_provider_async(self, request):
+        r"""获取模型提供商详情
+
+        获取模型提供商详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowCustomModelProvider
+        :type request: :class:`huaweicloudsdkagentarts.v1.ShowCustomModelProviderRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ShowCustomModelProviderResponse`
+        """
+        http_info = self._show_custom_model_provider_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_custom_model_provider_async_invoker(self, request):
+        http_info = self._show_custom_model_provider_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_custom_model_provider_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/core/custom-model-providers/{custom_model_provider_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCustomModelProviderResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'custom_model_provider_id' in local_var_params:
+            path_params['custom_model_provider_id'] = local_var_params['custom_model_provider_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_custom_model_provider_model_async(self, request):
+        r"""获取模型服务详情
+
+        获取模型服务详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowCustomModelProviderModel
+        :type request: :class:`huaweicloudsdkagentarts.v1.ShowCustomModelProviderModelRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ShowCustomModelProviderModelResponse`
+        """
+        http_info = self._show_custom_model_provider_model_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_custom_model_provider_model_async_invoker(self, request):
+        http_info = self._show_custom_model_provider_model_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_custom_model_provider_model_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/core/custom-model-providers/{custom_model_provider_id}/models/{model_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCustomModelProviderModelResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'model_id' in local_var_params:
+            path_params['model_id'] = local_var_params['model_id']
+        if 'custom_model_provider_id' in local_var_params:
+            path_params['custom_model_provider_id'] = local_var_params['custom_model_provider_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def sync_core_gateway_targets_async(self, request):
         r"""同步网关目标工具列表
 
@@ -4060,6 +5024,142 @@ class AgentArtsAsyncClient(Client):
         path_params = {}
         if 'space_id' in local_var_params:
             path_params['space_id'] = local_var_params['space_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_custom_model_provider_async(self, request):
+        r"""更新模型提供商
+
+        更新模型提供商。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateCustomModelProvider
+        :type request: :class:`huaweicloudsdkagentarts.v1.UpdateCustomModelProviderRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.UpdateCustomModelProviderResponse`
+        """
+        http_info = self._update_custom_model_provider_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_custom_model_provider_async_invoker(self, request):
+        http_info = self._update_custom_model_provider_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_custom_model_provider_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/core/custom-model-providers/{custom_model_provider_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateCustomModelProviderResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'custom_model_provider_id' in local_var_params:
+            path_params['custom_model_provider_id'] = local_var_params['custom_model_provider_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_custom_model_provider_model_async(self, request):
+        r"""更新模型服务
+
+        更新模型服务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateCustomModelProviderModel
+        :type request: :class:`huaweicloudsdkagentarts.v1.UpdateCustomModelProviderModelRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.UpdateCustomModelProviderModelResponse`
+        """
+        http_info = self._update_custom_model_provider_model_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_custom_model_provider_model_async_invoker(self, request):
+        http_info = self._update_custom_model_provider_model_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_custom_model_provider_model_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/core/custom-model-providers/{custom_model_provider_id}/models/{model_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateCustomModelProviderModelResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'model_id' in local_var_params:
+            path_params['model_id'] = local_var_params['model_id']
+        if 'custom_model_provider_id' in local_var_params:
+            path_params['custom_model_provider_id'] = local_var_params['custom_model_provider_id']
 
         query_params = []
 

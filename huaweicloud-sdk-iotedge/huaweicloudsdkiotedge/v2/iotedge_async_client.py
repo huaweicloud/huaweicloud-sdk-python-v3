@@ -5173,7 +5173,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def update_schedule_async(self, request):
-        r"""更新调度计划，机机接口，全量更新字段
+        r"""更新调度计划
 
         用户通过北向接口修改边缘节点上调度计划
         

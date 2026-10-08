@@ -51,7 +51,7 @@ class ContinueTrainTask:
         :type continue_train_type: str
         :param skipped_steps: 跳过步数，0表示不跳过。
         :type skipped_steps: int
-        :param restore_training: 是否续训任务。  0: 非续训, 1:续训。
+        :param restore_training: 是否续训任务。 0: 非续训, 1:续训。
         :type restore_training: int
         :param create_time: 创建时间。
         :type create_time: str
@@ -202,7 +202,7 @@ class ContinueTrainTask:
     def restore_training(self):
         r"""Gets the restore_training of this ContinueTrainTask.
 
-        是否续训任务。  0: 非续训, 1:续训。
+        是否续训任务。 0: 非续训, 1:续训。
 
         :return: The restore_training of this ContinueTrainTask.
         :rtype: int
@@ -213,7 +213,7 @@ class ContinueTrainTask:
     def restore_training(self, restore_training):
         r"""Sets the restore_training of this ContinueTrainTask.
 
-        是否续训任务。  0: 非续训, 1:续训。
+        是否续训任务。 0: 非续训, 1:续训。
 
         :param restore_training: The restore_training of this ContinueTrainTask.
         :type restore_training: int

@@ -61,7 +61,7 @@ class Status:
         :type task_statuses: list[:class:`huaweicloudsdkmodelarts.v1.TaskStatuses`]
         :param running_records: 训练作业运行及故障恢复记录。
         :type running_records: list[:class:`huaweicloudsdkmodelarts.v1.RunningRecord`]
-        :param retention_time: **参数解释**：作业已经保留时长。  **约束限制**：仅当创建训练作业时，设置了&#x60;reserved_time&#x60;时返回。  **取值范围**：不涉及。    **默认取值**：不涉及。
+        :param retention_time: **参数解释**：作业已经保留时长。 **约束限制**：仅当创建训练作业时，设置了&#x60;reserved_time&#x60;时返回。 **取值范围**：不涉及。    **默认取值**：不涉及。
         :type retention_time: int
         :param task_ips: **参数解释**：训练作业各 Task 的 IP 信息。 **约束限制**：仅当查询请求携带 &#x60;host_ips&#x60; 时返回；且仅返回与筛选 IP 匹配的记录。 **取值范围**：不涉及。 **默认取值**：不传 &#x60;host_ips&#x60; 时不返回。
         :type task_ips: list[:class:`huaweicloudsdkmodelarts.v1.TaskIP`]
@@ -282,7 +282,7 @@ class Status:
     def retention_time(self):
         r"""Gets the retention_time of this Status.
 
-        **参数解释**：作业已经保留时长。  **约束限制**：仅当创建训练作业时，设置了`reserved_time`时返回。  **取值范围**：不涉及。    **默认取值**：不涉及。
+        **参数解释**：作业已经保留时长。 **约束限制**：仅当创建训练作业时，设置了`reserved_time`时返回。 **取值范围**：不涉及。    **默认取值**：不涉及。
 
         :return: The retention_time of this Status.
         :rtype: int
@@ -293,7 +293,7 @@ class Status:
     def retention_time(self, retention_time):
         r"""Sets the retention_time of this Status.
 
-        **参数解释**：作业已经保留时长。  **约束限制**：仅当创建训练作业时，设置了`reserved_time`时返回。  **取值范围**：不涉及。    **默认取值**：不涉及。
+        **参数解释**：作业已经保留时长。 **约束限制**：仅当创建训练作业时，设置了`reserved_time`时返回。 **取值范围**：不涉及。    **默认取值**：不涉及。
 
         :param retention_time: The retention_time of this Status.
         :type retention_time: int

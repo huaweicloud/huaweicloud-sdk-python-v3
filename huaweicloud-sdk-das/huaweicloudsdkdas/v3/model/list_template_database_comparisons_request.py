@@ -96,8 +96,10 @@ class ListTemplateDatabaseComparisonsRequest:
             self.node_id = node_id
         self.start_at1 = start_at1
         self.end_at1 = end_at1
-        self.start_at2 = start_at2
-        self.end_at2 = end_at2
+        if start_at2 is not None:
+            self.start_at2 = start_at2
+        if end_at2 is not None:
+            self.end_at2 = end_at2
         if operation is not None:
             self.operation = operation
         if db_name_list is not None:

@@ -83,7 +83,7 @@ class ServiceCreateRequest:
         :type tags: list[:class:`huaweicloudsdkmodelarts.v1.ServiceCreateRequestTags`]
         :param workspace_id: **参数解释：** 工作空间ID。 **约束限制：** 不涉及。 **取值范围：** - 0：默认空间ID。 - 由数字和小写字母组成的32位字符：其他空间ID，可参考[工作空间创建](CreateWorkspace.xml)。 **默认取值：** 不涉及。
         :type workspace_id: str
-        :param schedule: **参数解释：**  定时停止配置。 **约束限制：**  最多支持一个定时任务。
+        :param schedule: **参数解释：** 定时停止配置。 **约束限制：** 最多支持一个定时任务。
         :type schedule: list[:class:`huaweicloudsdkmodelarts.v1.ScheduleConfig`]
         :param custom_metrics_path: **参数解释：** 该参数值由英文逗号隔开的协议、端口号、地址组成，比如：[http,8080,metrics]，其中地址长度不超过255 ，且需要与镜像给定的协议、地址、端口一致，否则指标无法上报。 **约束限制：** 长度不超过255。 **取值范围：** - 协议范围：http/https。 - 端口范围：1-65535。 - 地址范围：仅包含字母、数字、点号（.）、中划线（-)、下划线（_）、斜杠（/）的路径，非斜杠（/）开头。 **默认取值：** 不涉及。
         :type custom_metrics_path: str
@@ -405,7 +405,7 @@ class ServiceCreateRequest:
     def schedule(self):
         r"""Gets the schedule of this ServiceCreateRequest.
 
-        **参数解释：**  定时停止配置。 **约束限制：**  最多支持一个定时任务。
+        **参数解释：** 定时停止配置。 **约束限制：** 最多支持一个定时任务。
 
         :return: The schedule of this ServiceCreateRequest.
         :rtype: list[:class:`huaweicloudsdkmodelarts.v1.ScheduleConfig`]
@@ -416,7 +416,7 @@ class ServiceCreateRequest:
     def schedule(self, schedule):
         r"""Sets the schedule of this ServiceCreateRequest.
 
-        **参数解释：**  定时停止配置。 **约束限制：**  最多支持一个定时任务。
+        **参数解释：** 定时停止配置。 **约束限制：** 最多支持一个定时任务。
 
         :param schedule: The schedule of this ServiceCreateRequest.
         :type schedule: list[:class:`huaweicloudsdkmodelarts.v1.ScheduleConfig`]

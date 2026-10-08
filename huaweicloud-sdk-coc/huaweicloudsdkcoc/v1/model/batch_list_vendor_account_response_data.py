@@ -49,7 +49,7 @@ class BatchListVendorAccountResponseData:
 
         :param id: **参数解释：** CMDB分配的云厂商账户ID。 **取值范围：** 不涉及。
         :type id: str
-        :param vendor: **参数解释：** 云广商信息。 **取值范围：** - RMS： 华为云。 - AWS：亚马逊。 - AZURE：微软。 - ALI：阿里云。 - VMWARE：VMware。 - OPENSTACK：openstack云平台。 - HCS：Huawei Cloud Stack。 - OTHER：其他云广商。
+        :param vendor: **参数解释：** 云厂商信息。 **取值范围：** - RMS： 华为云。 - AWS：亚马逊。 - AZURE：微软。 - ALI：阿里云。 - VMWARE：VMware。 - OPENSTACK：openstack云平台。 - HCS：Huawei Cloud Stack。 - OTHER：其他云厂商。
         :type vendor: str
         :param account_id: **参数解释：** 供应商的账户ID。 **取值范围：** 字符串，长度0到64个字符。
         :type account_id: str
@@ -135,7 +135,7 @@ class BatchListVendorAccountResponseData:
     def vendor(self):
         r"""Gets the vendor of this BatchListVendorAccountResponseData.
 
-        **参数解释：** 云广商信息。 **取值范围：** - RMS： 华为云。 - AWS：亚马逊。 - AZURE：微软。 - ALI：阿里云。 - VMWARE：VMware。 - OPENSTACK：openstack云平台。 - HCS：Huawei Cloud Stack。 - OTHER：其他云广商。
+        **参数解释：** 云厂商信息。 **取值范围：** - RMS： 华为云。 - AWS：亚马逊。 - AZURE：微软。 - ALI：阿里云。 - VMWARE：VMware。 - OPENSTACK：openstack云平台。 - HCS：Huawei Cloud Stack。 - OTHER：其他云厂商。
 
         :return: The vendor of this BatchListVendorAccountResponseData.
         :rtype: str
@@ -146,7 +146,7 @@ class BatchListVendorAccountResponseData:
     def vendor(self, vendor):
         r"""Sets the vendor of this BatchListVendorAccountResponseData.
 
-        **参数解释：** 云广商信息。 **取值范围：** - RMS： 华为云。 - AWS：亚马逊。 - AZURE：微软。 - ALI：阿里云。 - VMWARE：VMware。 - OPENSTACK：openstack云平台。 - HCS：Huawei Cloud Stack。 - OTHER：其他云广商。
+        **参数解释：** 云厂商信息。 **取值范围：** - RMS： 华为云。 - AWS：亚马逊。 - AZURE：微软。 - ALI：阿里云。 - VMWARE：VMware。 - OPENSTACK：openstack云平台。 - HCS：Huawei Cloud Stack。 - OTHER：其他云厂商。
 
         :param vendor: The vendor of this BatchListVendorAccountResponseData.
         :type vendor: str

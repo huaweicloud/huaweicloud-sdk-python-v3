@@ -19,6 +19,7 @@ class BasicConfig:
         'agency': 'str',
         'is_ignore_waiting': 'int',
         'priority': 'int',
+        'task_priority': 'int',
         'execute_user': 'str',
         'instance_timeout': 'int',
         'custom_fields': 'object',
@@ -30,13 +31,14 @@ class BasicConfig:
         'agency': 'agency',
         'is_ignore_waiting': 'isIgnoreWaiting',
         'priority': 'priority',
+        'task_priority': 'taskPriority',
         'execute_user': 'executeUser',
         'instance_timeout': 'instanceTimeout',
         'custom_fields': 'customFields',
         'tags': 'tags'
     }
 
-    def __init__(self, owner=None, agency=None, is_ignore_waiting=None, priority=None, execute_user=None, instance_timeout=None, custom_fields=None, tags=None):
+    def __init__(self, owner=None, agency=None, is_ignore_waiting=None, priority=None, task_priority=None, execute_user=None, instance_timeout=None, custom_fields=None, tags=None):
         r"""BasicConfig
 
         The model defined in huaweicloud sdk
@@ -47,8 +49,10 @@ class BasicConfig:
         :type agency: str
         :param is_ignore_waiting: 实例超时是否忽略等待时间, 取值范围为0和1, 0：表示实例超时不忽略等待时间1：表示实例超时忽略等待时间
         :type is_ignore_waiting: int
-        :param priority: 作业优先级
+        :param priority: 执行优先级
         :type priority: int
+        :param task_priority: 作业优先级，取值范围[0, 2]，默认值是0。0代表高优先级，1代表中优先级，2代表低优先级。
+        :type task_priority: int
         :param execute_user: 作业执行用户
         :type execute_user: str
         :param instance_timeout: 实例超时时间
@@ -65,6 +69,7 @@ class BasicConfig:
         self._agency = None
         self._is_ignore_waiting = None
         self._priority = None
+        self._task_priority = None
         self._execute_user = None
         self._instance_timeout = None
         self._custom_fields = None
@@ -79,6 +84,8 @@ class BasicConfig:
             self.is_ignore_waiting = is_ignore_waiting
         if priority is not None:
             self.priority = priority
+        if task_priority is not None:
+            self.task_priority = task_priority
         if execute_user is not None:
             self.execute_user = execute_user
         if instance_timeout is not None:
@@ -158,7 +165,7 @@ class BasicConfig:
     def priority(self):
         r"""Gets the priority of this BasicConfig.
 
-        作业优先级
+        执行优先级
 
         :return: The priority of this BasicConfig.
         :rtype: int
@@ -169,12 +176,34 @@ class BasicConfig:
     def priority(self, priority):
         r"""Sets the priority of this BasicConfig.
 
-        作业优先级
+        执行优先级
 
         :param priority: The priority of this BasicConfig.
         :type priority: int
         """
         self._priority = priority
+
+    @property
+    def task_priority(self):
+        r"""Gets the task_priority of this BasicConfig.
+
+        作业优先级，取值范围[0, 2]，默认值是0。0代表高优先级，1代表中优先级，2代表低优先级。
+
+        :return: The task_priority of this BasicConfig.
+        :rtype: int
+        """
+        return self._task_priority
+
+    @task_priority.setter
+    def task_priority(self, task_priority):
+        r"""Sets the task_priority of this BasicConfig.
+
+        作业优先级，取值范围[0, 2]，默认值是0。0代表高优先级，1代表中优先级，2代表低优先级。
+
+        :param task_priority: The task_priority of this BasicConfig.
+        :type task_priority: int
+        """
+        self._task_priority = task_priority
 
     @property
     def execute_user(self):
