@@ -29,9 +29,9 @@ class ShowMonitorDataRequest:
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 任务ID。
+        :param job_id: **参数解释**：  迁移任务ID，用于唯一标识一个数据复制任务，在查询、修改、删除等操作中作为任务的识别凭证。  **约束限制**：  不涉及。  **取值范围**：  UUID格式字符串。  **默认取值**：  不涉及
         :type job_id: str
-        :param x_language: 请求语言类型。
+        :param x_language: **参数解释**：  请求语言类型。  **约束限制**：  不涉及。  **取值范围**：  - en-us：英文 - zh-cn：中文  **默认取值**：  en-us
         :type x_language: str
         """
         
@@ -49,7 +49,7 @@ class ShowMonitorDataRequest:
     def job_id(self):
         r"""Gets the job_id of this ShowMonitorDataRequest.
 
-        任务ID。
+        **参数解释**：  迁移任务ID，用于唯一标识一个数据复制任务，在查询、修改、删除等操作中作为任务的识别凭证。  **约束限制**：  不涉及。  **取值范围**：  UUID格式字符串。  **默认取值**：  不涉及
 
         :return: The job_id of this ShowMonitorDataRequest.
         :rtype: str
@@ -60,7 +60,7 @@ class ShowMonitorDataRequest:
     def job_id(self, job_id):
         r"""Sets the job_id of this ShowMonitorDataRequest.
 
-        任务ID。
+        **参数解释**：  迁移任务ID，用于唯一标识一个数据复制任务，在查询、修改、删除等操作中作为任务的识别凭证。  **约束限制**：  不涉及。  **取值范围**：  UUID格式字符串。  **默认取值**：  不涉及
 
         :param job_id: The job_id of this ShowMonitorDataRequest.
         :type job_id: str
@@ -71,7 +71,7 @@ class ShowMonitorDataRequest:
     def x_language(self):
         r"""Gets the x_language of this ShowMonitorDataRequest.
 
-        请求语言类型。
+        **参数解释**：  请求语言类型。  **约束限制**：  不涉及。  **取值范围**：  - en-us：英文 - zh-cn：中文  **默认取值**：  en-us
 
         :return: The x_language of this ShowMonitorDataRequest.
         :rtype: str
@@ -82,7 +82,7 @@ class ShowMonitorDataRequest:
     def x_language(self, x_language):
         r"""Sets the x_language of this ShowMonitorDataRequest.
 
-        请求语言类型。
+        **参数解释**：  请求语言类型。  **约束限制**：  不涉及。  **取值范围**：  - en-us：英文 - zh-cn：中文  **默认取值**：  en-us
 
         :param x_language: The x_language of this ShowMonitorDataRequest.
         :type x_language: str

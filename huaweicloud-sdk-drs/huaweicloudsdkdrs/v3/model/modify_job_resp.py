@@ -33,13 +33,13 @@ class ModifyJobResp:
 
         The model defined in huaweicloud sdk
 
-        :param id: 任务ID
+        :param id: **参数解释**：  任务ID，用于唯一标识一个数据复制任务。  **约束限制**：  不涉及。  **取值范围**：  UUID格式字符串。  **默认取值**：  不涉及
         :type id: str
-        :param status: 状态。 - success 成功 - failed 失败
+        :param status: **参数解释**：  任务修改操作的执行状态。  **约束限制**：  不涉及。  **取值范围**：  - success：成功 - failed：失败  **默认取值**：  不涉及
         :type status: str
-        :param error_code: 错误码
+        :param error_code: **参数解释**：  错误码，当任务修改失败时返回的错误代码。  **约束限制**：  不涉及。  **取值范围**：  格式为DRS.XXXXXX。  **默认取值**：  不涉及
         :type error_code: str
-        :param error_msg: 错误信息
+        :param error_msg: **参数解释**：  错误详细信息，当任务修改失败时返回的具体错误描述。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type error_msg: str
         """
         
@@ -62,7 +62,7 @@ class ModifyJobResp:
     def id(self):
         r"""Gets the id of this ModifyJobResp.
 
-        任务ID
+        **参数解释**：  任务ID，用于唯一标识一个数据复制任务。  **约束限制**：  不涉及。  **取值范围**：  UUID格式字符串。  **默认取值**：  不涉及
 
         :return: The id of this ModifyJobResp.
         :rtype: str
@@ -73,7 +73,7 @@ class ModifyJobResp:
     def id(self, id):
         r"""Sets the id of this ModifyJobResp.
 
-        任务ID
+        **参数解释**：  任务ID，用于唯一标识一个数据复制任务。  **约束限制**：  不涉及。  **取值范围**：  UUID格式字符串。  **默认取值**：  不涉及
 
         :param id: The id of this ModifyJobResp.
         :type id: str
@@ -84,7 +84,7 @@ class ModifyJobResp:
     def status(self):
         r"""Gets the status of this ModifyJobResp.
 
-        状态。 - success 成功 - failed 失败
+        **参数解释**：  任务修改操作的执行状态。  **约束限制**：  不涉及。  **取值范围**：  - success：成功 - failed：失败  **默认取值**：  不涉及
 
         :return: The status of this ModifyJobResp.
         :rtype: str
@@ -95,7 +95,7 @@ class ModifyJobResp:
     def status(self, status):
         r"""Sets the status of this ModifyJobResp.
 
-        状态。 - success 成功 - failed 失败
+        **参数解释**：  任务修改操作的执行状态。  **约束限制**：  不涉及。  **取值范围**：  - success：成功 - failed：失败  **默认取值**：  不涉及
 
         :param status: The status of this ModifyJobResp.
         :type status: str
@@ -106,7 +106,7 @@ class ModifyJobResp:
     def error_code(self):
         r"""Gets the error_code of this ModifyJobResp.
 
-        错误码
+        **参数解释**：  错误码，当任务修改失败时返回的错误代码。  **约束限制**：  不涉及。  **取值范围**：  格式为DRS.XXXXXX。  **默认取值**：  不涉及
 
         :return: The error_code of this ModifyJobResp.
         :rtype: str
@@ -117,7 +117,7 @@ class ModifyJobResp:
     def error_code(self, error_code):
         r"""Sets the error_code of this ModifyJobResp.
 
-        错误码
+        **参数解释**：  错误码，当任务修改失败时返回的错误代码。  **约束限制**：  不涉及。  **取值范围**：  格式为DRS.XXXXXX。  **默认取值**：  不涉及
 
         :param error_code: The error_code of this ModifyJobResp.
         :type error_code: str
@@ -128,7 +128,7 @@ class ModifyJobResp:
     def error_msg(self):
         r"""Gets the error_msg of this ModifyJobResp.
 
-        错误信息
+        **参数解释**：  错误详细信息，当任务修改失败时返回的具体错误描述。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The error_msg of this ModifyJobResp.
         :rtype: str
@@ -139,7 +139,7 @@ class ModifyJobResp:
     def error_msg(self, error_msg):
         r"""Sets the error_msg of this ModifyJobResp.
 
-        错误信息
+        **参数解释**：  错误详细信息，当任务修改失败时返回的具体错误描述。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param error_msg: The error_msg of this ModifyJobResp.
         :type error_msg: str

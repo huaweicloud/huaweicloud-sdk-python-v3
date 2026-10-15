@@ -30,9 +30,9 @@ class BatchCheckJobsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param results: 预检查响应体
+        :param results: **参数解释**：  预检查响应体，详情请参见PostPreCheckResp对象定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type results: list[:class:`huaweicloudsdkdrs.v3.PostPreCheckResp`]
-        :param count: 总数
+        :param count: **参数解释**：  返回的预检查结果总数，与results数组的长度一致。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type count: int
         """
         
@@ -51,7 +51,7 @@ class BatchCheckJobsResponse(SdkResponse):
     def results(self):
         r"""Gets the results of this BatchCheckJobsResponse.
 
-        预检查响应体
+        **参数解释**：  预检查响应体，详情请参见PostPreCheckResp对象定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The results of this BatchCheckJobsResponse.
         :rtype: list[:class:`huaweicloudsdkdrs.v3.PostPreCheckResp`]
@@ -62,7 +62,7 @@ class BatchCheckJobsResponse(SdkResponse):
     def results(self, results):
         r"""Sets the results of this BatchCheckJobsResponse.
 
-        预检查响应体
+        **参数解释**：  预检查响应体，详情请参见PostPreCheckResp对象定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param results: The results of this BatchCheckJobsResponse.
         :type results: list[:class:`huaweicloudsdkdrs.v3.PostPreCheckResp`]
@@ -73,7 +73,7 @@ class BatchCheckJobsResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this BatchCheckJobsResponse.
 
-        总数
+        **参数解释**：  返回的预检查结果总数，与results数组的长度一致。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The count of this BatchCheckJobsResponse.
         :rtype: int
@@ -84,7 +84,7 @@ class BatchCheckJobsResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this BatchCheckJobsResponse.
 
-        总数
+        **参数解释**：  返回的预检查结果总数，与results数组的长度一致。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param count: The count of this BatchCheckJobsResponse.
         :type count: int

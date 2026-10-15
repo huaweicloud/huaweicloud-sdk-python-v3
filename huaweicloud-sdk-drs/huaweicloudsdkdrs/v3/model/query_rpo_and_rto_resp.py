@@ -35,15 +35,15 @@ class QueryRpoAndRtoResp:
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 任务ID
+        :param job_id: **参数解释**：  数据复制任务ID，用于唯一标识一个任务。  **约束限制**：  不涉及。  **取值范围**：  UUID格式字符串。  **默认取值**：  不涉及
         :type job_id: str
         :param rpo_info: 
         :type rpo_info: :class:`huaweicloudsdkdrs.v3.RpoAndRtoInfo`
         :param rto_info: 
         :type rto_info: :class:`huaweicloudsdkdrs.v3.RpoAndRtoInfo`
-        :param error_code: 错误码
+        :param error_code: **参数解释**：  错误码，当查询任务RPO和RTO失败时返回的错误代码。  **约束限制**：  不涉及。  **取值范围**：  格式为DRS.XXXXXX。  **默认取值**：  不涉及
         :type error_code: str
-        :param error_msg: 错误信息
+        :param error_msg: **参数解释**：  错误详细信息，当查询任务RPO和RTO失败时返回的具体错误描述。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type error_msg: str
         """
         
@@ -71,7 +71,7 @@ class QueryRpoAndRtoResp:
     def job_id(self):
         r"""Gets the job_id of this QueryRpoAndRtoResp.
 
-        任务ID
+        **参数解释**：  数据复制任务ID，用于唯一标识一个任务。  **约束限制**：  不涉及。  **取值范围**：  UUID格式字符串。  **默认取值**：  不涉及
 
         :return: The job_id of this QueryRpoAndRtoResp.
         :rtype: str
@@ -82,7 +82,7 @@ class QueryRpoAndRtoResp:
     def job_id(self, job_id):
         r"""Sets the job_id of this QueryRpoAndRtoResp.
 
-        任务ID
+        **参数解释**：  数据复制任务ID，用于唯一标识一个任务。  **约束限制**：  不涉及。  **取值范围**：  UUID格式字符串。  **默认取值**：  不涉及
 
         :param job_id: The job_id of this QueryRpoAndRtoResp.
         :type job_id: str
@@ -129,7 +129,7 @@ class QueryRpoAndRtoResp:
     def error_code(self):
         r"""Gets the error_code of this QueryRpoAndRtoResp.
 
-        错误码
+        **参数解释**：  错误码，当查询任务RPO和RTO失败时返回的错误代码。  **约束限制**：  不涉及。  **取值范围**：  格式为DRS.XXXXXX。  **默认取值**：  不涉及
 
         :return: The error_code of this QueryRpoAndRtoResp.
         :rtype: str
@@ -140,7 +140,7 @@ class QueryRpoAndRtoResp:
     def error_code(self, error_code):
         r"""Sets the error_code of this QueryRpoAndRtoResp.
 
-        错误码
+        **参数解释**：  错误码，当查询任务RPO和RTO失败时返回的错误代码。  **约束限制**：  不涉及。  **取值范围**：  格式为DRS.XXXXXX。  **默认取值**：  不涉及
 
         :param error_code: The error_code of this QueryRpoAndRtoResp.
         :type error_code: str
@@ -151,7 +151,7 @@ class QueryRpoAndRtoResp:
     def error_msg(self):
         r"""Gets the error_msg of this QueryRpoAndRtoResp.
 
-        错误信息
+        **参数解释**：  错误详细信息，当查询任务RPO和RTO失败时返回的具体错误描述。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The error_msg of this QueryRpoAndRtoResp.
         :rtype: str
@@ -162,7 +162,7 @@ class QueryRpoAndRtoResp:
     def error_msg(self, error_msg):
         r"""Sets the error_msg of this QueryRpoAndRtoResp.
 
-        错误信息
+        **参数解释**：  错误详细信息，当查询任务RPO和RTO失败时返回的具体错误描述。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param error_msg: The error_msg of this QueryRpoAndRtoResp.
         :type error_msg: str

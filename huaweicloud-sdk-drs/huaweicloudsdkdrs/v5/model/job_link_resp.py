@@ -43,23 +43,23 @@ class JobLinkResp:
 
         The model defined in huaweicloud sdk
 
-        :param job_type: 任务场景。取值： - migration：实时迁移。 - sync：实时同步。 - cloudDataGuard：实时灾备。
+        :param job_type: **参数解释**：  DRS任务场景类型，用于区分不同的数据复制场景。  **约束限制**：  不涉及。  **取值范围**：  - migration：实时迁移 - sync：实时同步 - cloudDataGuard：实时灾备  **默认取值**：  不涉及
         :type job_type: str
-        :param engine_type: 引擎类型。取值： - oracle-to-gaussdbv5：Oracle同步到GaussDB分布式版，实时同步场景使用。 - redis-to-gaussredis：Redis同步到GeminiDB Redis，实时迁移场景使用。 - rediscluster-to-gaussredis：Redis集群同步到GeminiDB Redis，实时迁移场景使用。
+        :param engine_type: **参数解释**：  DRS任务引擎类型，标识数据复制任务所使用的数据库引擎组合。  **约束限制**：  不涉及。  **取值范围**：  - oracle-to-gaussdbv5：Oracle同步到GaussDB分布式版，实时同步场景使用 - redis-to-gaussredis：Redis迁移到GeminiDB Redis，实时迁移场景使用 - rediscluster-to-gaussredis：Redis集群迁移到GeminiDB Redis，实时迁移场景使用  **默认取值**：  不涉及
         :type engine_type: str
-        :param source_endpoint_type: 源数据库实例类型。取值： - offline：自建数据库。 - ecs：华为云ECS自建数据库。 - cloud：华为云数据库。
+        :param source_endpoint_type: **参数解释**：  源数据库实例类型，标识源数据库的部署方式。  **约束限制**：  不涉及。  **取值范围**：  - offline：自建数据库 - ecs：华为云ECS自建数据库 - cloud：华为云数据库  **默认取值**：  不涉及
         :type source_endpoint_type: str
-        :param target_endpoint_type: 目标数据库实例类型。取值： - offline：自建数据库。 - ecs：华为云ECS自建数据库。 - cloud：华为云数据库。
+        :param target_endpoint_type: **参数解释**：  目标数据库实例类型，标识目标数据库的部署方式。  **约束限制**：  不涉及。  **取值范围**：  - offline：自建数据库 - ecs：华为云ECS自建数据库 - cloud：华为云数据库  **默认取值**：  不涉及
         :type target_endpoint_type: str
-        :param job_direction: 迁移方向。取值： - up：入云 ，灾备场景时对应本云为备。 - down：出云，灾备场景时对应本云为主。 - non-dbs：自建。
+        :param job_direction: **参数解释**：  任务的迁移方向。  **约束限制**：  不涉及。  **取值范围**：  - up：入云，灾备场景时对应本云为备 - down：出云，灾备场景时对应本云为主 - non-dbs：自建  **默认取值**：  不涉及
         :type job_direction: str
-        :param net_type: 网络类型。取值： - eip：公网网络。 - vpc：VPC网络，灾备场景不支持选择VPC网络。 - vpn：VPN、专线网络。
+        :param net_type: **参数解释**：  任务使用的网络类型。  **约束限制**：  不涉及。  **取值范围**：  - eip：公网网络 - vpc：VPC网络，灾备场景不支持选择VPC网络 - vpn：VPN、专线网络  **默认取值**：  不涉及
         :type net_type: str
-        :param task_types: 迁移模式。取值： - FULL_TRANS ：全量。 - FULL_INCR_TRANS：全量+增量。 - INCR_TRANS：增量。
+        :param task_types: **参数解释**：  可用链路支持的迁移模式列表，表示该链路支持的数据迁移执行方式。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type task_types: list[str]
-        :param cluster_modes: 引擎实例模式。取值： - Single：单机模式。 - Ha：主备模式。 - Cluster：集群模式。 - Sharding：分片模式。 - Independent：GaussDB独立部署模式。
+        :param cluster_modes: **参数解释**：  可用链路支持的引擎实例模式列表，表示该链路支持的数据库部署架构类型。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type cluster_modes: list[str]
-        :param description: 链路描述。
+        :param description: **参数解释**：  链路的描述信息，用于说明该链路的适用场景或功能特点。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type description: str
         """
         
@@ -90,7 +90,7 @@ class JobLinkResp:
     def job_type(self):
         r"""Gets the job_type of this JobLinkResp.
 
-        任务场景。取值： - migration：实时迁移。 - sync：实时同步。 - cloudDataGuard：实时灾备。
+        **参数解释**：  DRS任务场景类型，用于区分不同的数据复制场景。  **约束限制**：  不涉及。  **取值范围**：  - migration：实时迁移 - sync：实时同步 - cloudDataGuard：实时灾备  **默认取值**：  不涉及
 
         :return: The job_type of this JobLinkResp.
         :rtype: str
@@ -101,7 +101,7 @@ class JobLinkResp:
     def job_type(self, job_type):
         r"""Sets the job_type of this JobLinkResp.
 
-        任务场景。取值： - migration：实时迁移。 - sync：实时同步。 - cloudDataGuard：实时灾备。
+        **参数解释**：  DRS任务场景类型，用于区分不同的数据复制场景。  **约束限制**：  不涉及。  **取值范围**：  - migration：实时迁移 - sync：实时同步 - cloudDataGuard：实时灾备  **默认取值**：  不涉及
 
         :param job_type: The job_type of this JobLinkResp.
         :type job_type: str
@@ -112,7 +112,7 @@ class JobLinkResp:
     def engine_type(self):
         r"""Gets the engine_type of this JobLinkResp.
 
-        引擎类型。取值： - oracle-to-gaussdbv5：Oracle同步到GaussDB分布式版，实时同步场景使用。 - redis-to-gaussredis：Redis同步到GeminiDB Redis，实时迁移场景使用。 - rediscluster-to-gaussredis：Redis集群同步到GeminiDB Redis，实时迁移场景使用。
+        **参数解释**：  DRS任务引擎类型，标识数据复制任务所使用的数据库引擎组合。  **约束限制**：  不涉及。  **取值范围**：  - oracle-to-gaussdbv5：Oracle同步到GaussDB分布式版，实时同步场景使用 - redis-to-gaussredis：Redis迁移到GeminiDB Redis，实时迁移场景使用 - rediscluster-to-gaussredis：Redis集群迁移到GeminiDB Redis，实时迁移场景使用  **默认取值**：  不涉及
 
         :return: The engine_type of this JobLinkResp.
         :rtype: str
@@ -123,7 +123,7 @@ class JobLinkResp:
     def engine_type(self, engine_type):
         r"""Sets the engine_type of this JobLinkResp.
 
-        引擎类型。取值： - oracle-to-gaussdbv5：Oracle同步到GaussDB分布式版，实时同步场景使用。 - redis-to-gaussredis：Redis同步到GeminiDB Redis，实时迁移场景使用。 - rediscluster-to-gaussredis：Redis集群同步到GeminiDB Redis，实时迁移场景使用。
+        **参数解释**：  DRS任务引擎类型，标识数据复制任务所使用的数据库引擎组合。  **约束限制**：  不涉及。  **取值范围**：  - oracle-to-gaussdbv5：Oracle同步到GaussDB分布式版，实时同步场景使用 - redis-to-gaussredis：Redis迁移到GeminiDB Redis，实时迁移场景使用 - rediscluster-to-gaussredis：Redis集群迁移到GeminiDB Redis，实时迁移场景使用  **默认取值**：  不涉及
 
         :param engine_type: The engine_type of this JobLinkResp.
         :type engine_type: str
@@ -134,7 +134,7 @@ class JobLinkResp:
     def source_endpoint_type(self):
         r"""Gets the source_endpoint_type of this JobLinkResp.
 
-        源数据库实例类型。取值： - offline：自建数据库。 - ecs：华为云ECS自建数据库。 - cloud：华为云数据库。
+        **参数解释**：  源数据库实例类型，标识源数据库的部署方式。  **约束限制**：  不涉及。  **取值范围**：  - offline：自建数据库 - ecs：华为云ECS自建数据库 - cloud：华为云数据库  **默认取值**：  不涉及
 
         :return: The source_endpoint_type of this JobLinkResp.
         :rtype: str
@@ -145,7 +145,7 @@ class JobLinkResp:
     def source_endpoint_type(self, source_endpoint_type):
         r"""Sets the source_endpoint_type of this JobLinkResp.
 
-        源数据库实例类型。取值： - offline：自建数据库。 - ecs：华为云ECS自建数据库。 - cloud：华为云数据库。
+        **参数解释**：  源数据库实例类型，标识源数据库的部署方式。  **约束限制**：  不涉及。  **取值范围**：  - offline：自建数据库 - ecs：华为云ECS自建数据库 - cloud：华为云数据库  **默认取值**：  不涉及
 
         :param source_endpoint_type: The source_endpoint_type of this JobLinkResp.
         :type source_endpoint_type: str
@@ -156,7 +156,7 @@ class JobLinkResp:
     def target_endpoint_type(self):
         r"""Gets the target_endpoint_type of this JobLinkResp.
 
-        目标数据库实例类型。取值： - offline：自建数据库。 - ecs：华为云ECS自建数据库。 - cloud：华为云数据库。
+        **参数解释**：  目标数据库实例类型，标识目标数据库的部署方式。  **约束限制**：  不涉及。  **取值范围**：  - offline：自建数据库 - ecs：华为云ECS自建数据库 - cloud：华为云数据库  **默认取值**：  不涉及
 
         :return: The target_endpoint_type of this JobLinkResp.
         :rtype: str
@@ -167,7 +167,7 @@ class JobLinkResp:
     def target_endpoint_type(self, target_endpoint_type):
         r"""Sets the target_endpoint_type of this JobLinkResp.
 
-        目标数据库实例类型。取值： - offline：自建数据库。 - ecs：华为云ECS自建数据库。 - cloud：华为云数据库。
+        **参数解释**：  目标数据库实例类型，标识目标数据库的部署方式。  **约束限制**：  不涉及。  **取值范围**：  - offline：自建数据库 - ecs：华为云ECS自建数据库 - cloud：华为云数据库  **默认取值**：  不涉及
 
         :param target_endpoint_type: The target_endpoint_type of this JobLinkResp.
         :type target_endpoint_type: str
@@ -178,7 +178,7 @@ class JobLinkResp:
     def job_direction(self):
         r"""Gets the job_direction of this JobLinkResp.
 
-        迁移方向。取值： - up：入云 ，灾备场景时对应本云为备。 - down：出云，灾备场景时对应本云为主。 - non-dbs：自建。
+        **参数解释**：  任务的迁移方向。  **约束限制**：  不涉及。  **取值范围**：  - up：入云，灾备场景时对应本云为备 - down：出云，灾备场景时对应本云为主 - non-dbs：自建  **默认取值**：  不涉及
 
         :return: The job_direction of this JobLinkResp.
         :rtype: str
@@ -189,7 +189,7 @@ class JobLinkResp:
     def job_direction(self, job_direction):
         r"""Sets the job_direction of this JobLinkResp.
 
-        迁移方向。取值： - up：入云 ，灾备场景时对应本云为备。 - down：出云，灾备场景时对应本云为主。 - non-dbs：自建。
+        **参数解释**：  任务的迁移方向。  **约束限制**：  不涉及。  **取值范围**：  - up：入云，灾备场景时对应本云为备 - down：出云，灾备场景时对应本云为主 - non-dbs：自建  **默认取值**：  不涉及
 
         :param job_direction: The job_direction of this JobLinkResp.
         :type job_direction: str
@@ -200,7 +200,7 @@ class JobLinkResp:
     def net_type(self):
         r"""Gets the net_type of this JobLinkResp.
 
-        网络类型。取值： - eip：公网网络。 - vpc：VPC网络，灾备场景不支持选择VPC网络。 - vpn：VPN、专线网络。
+        **参数解释**：  任务使用的网络类型。  **约束限制**：  不涉及。  **取值范围**：  - eip：公网网络 - vpc：VPC网络，灾备场景不支持选择VPC网络 - vpn：VPN、专线网络  **默认取值**：  不涉及
 
         :return: The net_type of this JobLinkResp.
         :rtype: str
@@ -211,7 +211,7 @@ class JobLinkResp:
     def net_type(self, net_type):
         r"""Sets the net_type of this JobLinkResp.
 
-        网络类型。取值： - eip：公网网络。 - vpc：VPC网络，灾备场景不支持选择VPC网络。 - vpn：VPN、专线网络。
+        **参数解释**：  任务使用的网络类型。  **约束限制**：  不涉及。  **取值范围**：  - eip：公网网络 - vpc：VPC网络，灾备场景不支持选择VPC网络 - vpn：VPN、专线网络  **默认取值**：  不涉及
 
         :param net_type: The net_type of this JobLinkResp.
         :type net_type: str
@@ -222,7 +222,7 @@ class JobLinkResp:
     def task_types(self):
         r"""Gets the task_types of this JobLinkResp.
 
-        迁移模式。取值： - FULL_TRANS ：全量。 - FULL_INCR_TRANS：全量+增量。 - INCR_TRANS：增量。
+        **参数解释**：  可用链路支持的迁移模式列表，表示该链路支持的数据迁移执行方式。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The task_types of this JobLinkResp.
         :rtype: list[str]
@@ -233,7 +233,7 @@ class JobLinkResp:
     def task_types(self, task_types):
         r"""Sets the task_types of this JobLinkResp.
 
-        迁移模式。取值： - FULL_TRANS ：全量。 - FULL_INCR_TRANS：全量+增量。 - INCR_TRANS：增量。
+        **参数解释**：  可用链路支持的迁移模式列表，表示该链路支持的数据迁移执行方式。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param task_types: The task_types of this JobLinkResp.
         :type task_types: list[str]
@@ -244,7 +244,7 @@ class JobLinkResp:
     def cluster_modes(self):
         r"""Gets the cluster_modes of this JobLinkResp.
 
-        引擎实例模式。取值： - Single：单机模式。 - Ha：主备模式。 - Cluster：集群模式。 - Sharding：分片模式。 - Independent：GaussDB独立部署模式。
+        **参数解释**：  可用链路支持的引擎实例模式列表，表示该链路支持的数据库部署架构类型。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The cluster_modes of this JobLinkResp.
         :rtype: list[str]
@@ -255,7 +255,7 @@ class JobLinkResp:
     def cluster_modes(self, cluster_modes):
         r"""Sets the cluster_modes of this JobLinkResp.
 
-        引擎实例模式。取值： - Single：单机模式。 - Ha：主备模式。 - Cluster：集群模式。 - Sharding：分片模式。 - Independent：GaussDB独立部署模式。
+        **参数解释**：  可用链路支持的引擎实例模式列表，表示该链路支持的数据库部署架构类型。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param cluster_modes: The cluster_modes of this JobLinkResp.
         :type cluster_modes: list[str]
@@ -266,7 +266,7 @@ class JobLinkResp:
     def description(self):
         r"""Gets the description of this JobLinkResp.
 
-        链路描述。
+        **参数解释**：  链路的描述信息，用于说明该链路的适用场景或功能特点。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The description of this JobLinkResp.
         :rtype: str
@@ -277,7 +277,7 @@ class JobLinkResp:
     def description(self, description):
         r"""Sets the description of this JobLinkResp.
 
-        链路描述。
+        **参数解释**：  链路的描述信息，用于说明该链路的适用场景或功能特点。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param description: The description of this JobLinkResp.
         :type description: str

@@ -27,7 +27,7 @@ class BatchCreateJobReq:
 
         The model defined in huaweicloud sdk
 
-        :param jobs: 创建任务请求体
+        :param jobs: **参数解释**：  创建任务请求体列表，详情请参见CreateJobReq对象定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type jobs: list[:class:`huaweicloudsdkdrs.v3.CreateJobReq`]
         """
         
@@ -42,7 +42,7 @@ class BatchCreateJobReq:
     def jobs(self):
         r"""Gets the jobs of this BatchCreateJobReq.
 
-        创建任务请求体
+        **参数解释**：  创建任务请求体列表，详情请参见CreateJobReq对象定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The jobs of this BatchCreateJobReq.
         :rtype: list[:class:`huaweicloudsdkdrs.v3.CreateJobReq`]
@@ -53,7 +53,7 @@ class BatchCreateJobReq:
     def jobs(self, jobs):
         r"""Sets the jobs of this BatchCreateJobReq.
 
-        创建任务请求体
+        **参数解释**：  创建任务请求体列表，详情请参见CreateJobReq对象定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param jobs: The jobs of this BatchCreateJobReq.
         :type jobs: list[:class:`huaweicloudsdkdrs.v3.CreateJobReq`]

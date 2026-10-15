@@ -30,9 +30,9 @@ class BatchCheckResultsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param results: 批量查询预检查结果响应体集合。
+        :param results: **参数解释**：  批量查询预检查结果响应体集合，包含每个任务的预检查结果详情，详情请参见QueryPreCheckResp对象定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type results: list[:class:`huaweicloudsdkdrs.v3.QueryPreCheckResp`]
-        :param count: 总记录数。
+        :param count: **参数解释**：  返回的任务信息总数，表示本次查询成功返回的任务数量，与results数组的长度一致。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type count: int
         """
         
@@ -51,7 +51,7 @@ class BatchCheckResultsResponse(SdkResponse):
     def results(self):
         r"""Gets the results of this BatchCheckResultsResponse.
 
-        批量查询预检查结果响应体集合。
+        **参数解释**：  批量查询预检查结果响应体集合，包含每个任务的预检查结果详情，详情请参见QueryPreCheckResp对象定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The results of this BatchCheckResultsResponse.
         :rtype: list[:class:`huaweicloudsdkdrs.v3.QueryPreCheckResp`]
@@ -62,7 +62,7 @@ class BatchCheckResultsResponse(SdkResponse):
     def results(self, results):
         r"""Sets the results of this BatchCheckResultsResponse.
 
-        批量查询预检查结果响应体集合。
+        **参数解释**：  批量查询预检查结果响应体集合，包含每个任务的预检查结果详情，详情请参见QueryPreCheckResp对象定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param results: The results of this BatchCheckResultsResponse.
         :type results: list[:class:`huaweicloudsdkdrs.v3.QueryPreCheckResp`]
@@ -73,7 +73,7 @@ class BatchCheckResultsResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this BatchCheckResultsResponse.
 
-        总记录数。
+        **参数解释**：  返回的任务信息总数，表示本次查询成功返回的任务数量，与results数组的长度一致。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The count of this BatchCheckResultsResponse.
         :rtype: int
@@ -84,7 +84,7 @@ class BatchCheckResultsResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this BatchCheckResultsResponse.
 
-        总记录数。
+        **参数解释**：  返回的任务信息总数，表示本次查询成功返回的任务数量，与results数组的长度一致。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param count: The count of this BatchCheckResultsResponse.
         :type count: int

@@ -693,6 +693,12 @@ class OptVerseClient(Client):
             query_params.append(('title', local_var_params['title']))
         if 'agent_type' in local_var_params:
             query_params.append(('agent_type', local_var_params['agent_type']))
+        if 'domain_type' in local_var_params:
+            query_params.append(('domain_type', local_var_params['domain_type']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
 
         header_params = {}
 
@@ -968,6 +974,8 @@ class OptVerseClient(Client):
             form_params['file'] = local_var_params['file']
         if 'agent_type' in local_var_params:
             form_params['agent_type'] = local_var_params['agent_type']
+        if 'domain_type' in local_var_params:
+            form_params['domain_type'] = local_var_params['domain_type']
 
         body = None
         if 'body' in local_var_params:

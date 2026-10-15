@@ -27,7 +27,7 @@ class BatchQueryPrecheckResultReq:
 
         The model defined in huaweicloud sdk
 
-        :param jobs: 批量查询预检查结果请求列表。 约束：不能包含空对象。集合中的元素取值严格匹配UUID规则。任务id不能重复。
+        :param jobs: **参数解释**：  批量查询任务ID列表，通过该参数指定需要查询预检查结果的一个或多个任务。  **约束限制**：  - 不能包含空对象。 - 集合中的元素取值严格匹配UUID规则。 - 任务id不能重复。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type jobs: list[str]
         """
         
@@ -42,7 +42,7 @@ class BatchQueryPrecheckResultReq:
     def jobs(self):
         r"""Gets the jobs of this BatchQueryPrecheckResultReq.
 
-        批量查询预检查结果请求列表。 约束：不能包含空对象。集合中的元素取值严格匹配UUID规则。任务id不能重复。
+        **参数解释**：  批量查询任务ID列表，通过该参数指定需要查询预检查结果的一个或多个任务。  **约束限制**：  - 不能包含空对象。 - 集合中的元素取值严格匹配UUID规则。 - 任务id不能重复。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The jobs of this BatchQueryPrecheckResultReq.
         :rtype: list[str]
@@ -53,7 +53,7 @@ class BatchQueryPrecheckResultReq:
     def jobs(self, jobs):
         r"""Sets the jobs of this BatchQueryPrecheckResultReq.
 
-        批量查询预检查结果请求列表。 约束：不能包含空对象。集合中的元素取值严格匹配UUID规则。任务id不能重复。
+        **参数解释**：  批量查询任务ID列表，通过该参数指定需要查询预检查结果的一个或多个任务。  **约束限制**：  - 不能包含空对象。 - 集合中的元素取值严格匹配UUID规则。 - 任务id不能重复。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param jobs: The jobs of this BatchQueryPrecheckResultReq.
         :type jobs: list[str]

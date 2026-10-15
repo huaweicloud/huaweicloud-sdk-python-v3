@@ -30,9 +30,9 @@ class BatchSetObjectsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param all_counts: 总数
+        :param all_counts: **参数解释**：  批量对象选择操作的任务总数，表示本次请求中处理的对象选择任务总数量。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type all_counts: int
-        :param results: 批量对象选择响应列表
+        :param results: **参数解释**：  批量对象选择操作的响应列表，详情请参见DatabaseObjectResp对象定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type results: list[:class:`huaweicloudsdkdrs.v3.DatabaseObjectResp`]
         """
         
@@ -51,7 +51,7 @@ class BatchSetObjectsResponse(SdkResponse):
     def all_counts(self):
         r"""Gets the all_counts of this BatchSetObjectsResponse.
 
-        总数
+        **参数解释**：  批量对象选择操作的任务总数，表示本次请求中处理的对象选择任务总数量。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The all_counts of this BatchSetObjectsResponse.
         :rtype: int
@@ -62,7 +62,7 @@ class BatchSetObjectsResponse(SdkResponse):
     def all_counts(self, all_counts):
         r"""Sets the all_counts of this BatchSetObjectsResponse.
 
-        总数
+        **参数解释**：  批量对象选择操作的任务总数，表示本次请求中处理的对象选择任务总数量。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param all_counts: The all_counts of this BatchSetObjectsResponse.
         :type all_counts: int
@@ -73,7 +73,7 @@ class BatchSetObjectsResponse(SdkResponse):
     def results(self):
         r"""Gets the results of this BatchSetObjectsResponse.
 
-        批量对象选择响应列表
+        **参数解释**：  批量对象选择操作的响应列表，详情请参见DatabaseObjectResp对象定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The results of this BatchSetObjectsResponse.
         :rtype: list[:class:`huaweicloudsdkdrs.v3.DatabaseObjectResp`]
@@ -84,7 +84,7 @@ class BatchSetObjectsResponse(SdkResponse):
     def results(self, results):
         r"""Sets the results of this BatchSetObjectsResponse.
 
-        批量对象选择响应列表
+        **参数解释**：  批量对象选择操作的响应列表，详情请参见DatabaseObjectResp对象定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param results: The results of this BatchSetObjectsResponse.
         :type results: list[:class:`huaweicloudsdkdrs.v3.DatabaseObjectResp`]

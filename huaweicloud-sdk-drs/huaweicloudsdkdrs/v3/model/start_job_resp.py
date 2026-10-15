@@ -33,9 +33,9 @@ class StartJobResp:
 
         The model defined in huaweicloud sdk
 
-        :param id: 任务id
+        :param id: **参数解释**：  迁移任务ID，用于唯一标识一个数据复制任务，在查询、修改、删除等操作中作为任务的识别凭证。  **约束限制**：  不涉及。  **取值范围**：  UUID格式字符串。  **默认取值**：  不涉及
         :type id: str
-        :param status: 状态。
+        :param status: **参数解释**：  启动任务的操作状态，表示批量启动任务中单个任务的执行结果。  **约束限制**：  不涉及。  **取值范围**：  - success：启动成功 - failed：启动失败  **默认取值**：  不涉及
         :type status: str
         :param error_code: 错误码。
         :type error_code: str
@@ -63,7 +63,7 @@ class StartJobResp:
     def id(self):
         r"""Gets the id of this StartJobResp.
 
-        任务id
+        **参数解释**：  迁移任务ID，用于唯一标识一个数据复制任务，在查询、修改、删除等操作中作为任务的识别凭证。  **约束限制**：  不涉及。  **取值范围**：  UUID格式字符串。  **默认取值**：  不涉及
 
         :return: The id of this StartJobResp.
         :rtype: str
@@ -74,7 +74,7 @@ class StartJobResp:
     def id(self, id):
         r"""Sets the id of this StartJobResp.
 
-        任务id
+        **参数解释**：  迁移任务ID，用于唯一标识一个数据复制任务，在查询、修改、删除等操作中作为任务的识别凭证。  **约束限制**：  不涉及。  **取值范围**：  UUID格式字符串。  **默认取值**：  不涉及
 
         :param id: The id of this StartJobResp.
         :type id: str
@@ -85,7 +85,7 @@ class StartJobResp:
     def status(self):
         r"""Gets the status of this StartJobResp.
 
-        状态。
+        **参数解释**：  启动任务的操作状态，表示批量启动任务中单个任务的执行结果。  **约束限制**：  不涉及。  **取值范围**：  - success：启动成功 - failed：启动失败  **默认取值**：  不涉及
 
         :return: The status of this StartJobResp.
         :rtype: str
@@ -96,7 +96,7 @@ class StartJobResp:
     def status(self, status):
         r"""Sets the status of this StartJobResp.
 
-        状态。
+        **参数解释**：  启动任务的操作状态，表示批量启动任务中单个任务的执行结果。  **约束限制**：  不涉及。  **取值范围**：  - success：启动成功 - failed：启动失败  **默认取值**：  不涉及
 
         :param status: The status of this StartJobResp.
         :type status: str

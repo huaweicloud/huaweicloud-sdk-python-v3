@@ -30,9 +30,9 @@ class BatchValidateConnectionsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param results: 批量测试连接响应体集合。
+        :param results: **参数解释**：  批量测试连接响应体集合，包含每个任务测试连接的结果信息。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type results: list[:class:`huaweicloudsdkdrs.v3.CheckJobResp`]
-        :param count: 总记录数。
+        :param count: **参数解释**：  返回的任务信息总数，表示本次查询成功返回的任务数量，与results数组的长度一致。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type count: int
         """
         
@@ -51,7 +51,7 @@ class BatchValidateConnectionsResponse(SdkResponse):
     def results(self):
         r"""Gets the results of this BatchValidateConnectionsResponse.
 
-        批量测试连接响应体集合。
+        **参数解释**：  批量测试连接响应体集合，包含每个任务测试连接的结果信息。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The results of this BatchValidateConnectionsResponse.
         :rtype: list[:class:`huaweicloudsdkdrs.v3.CheckJobResp`]
@@ -62,7 +62,7 @@ class BatchValidateConnectionsResponse(SdkResponse):
     def results(self, results):
         r"""Sets the results of this BatchValidateConnectionsResponse.
 
-        批量测试连接响应体集合。
+        **参数解释**：  批量测试连接响应体集合，包含每个任务测试连接的结果信息。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param results: The results of this BatchValidateConnectionsResponse.
         :type results: list[:class:`huaweicloudsdkdrs.v3.CheckJobResp`]
@@ -73,7 +73,7 @@ class BatchValidateConnectionsResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this BatchValidateConnectionsResponse.
 
-        总记录数。
+        **参数解释**：  返回的任务信息总数，表示本次查询成功返回的任务数量，与results数组的长度一致。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The count of this BatchValidateConnectionsResponse.
         :rtype: int
@@ -84,7 +84,7 @@ class BatchValidateConnectionsResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this BatchValidateConnectionsResponse.
 
-        总记录数。
+        **参数解释**：  返回的任务信息总数，表示本次查询成功返回的任务数量，与results数组的长度一致。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param count: The count of this BatchValidateConnectionsResponse.
         :type count: int

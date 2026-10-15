@@ -29,7 +29,7 @@ class LimitSpeedReq:
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 任务id
+        :param job_id: 任务ID。
         :type job_id: str
         :param speed_limit: 限速信息请求体
         :type speed_limit: list[:class:`huaweicloudsdkdrs.v3.SpeedLimitInfo`]
@@ -48,7 +48,7 @@ class LimitSpeedReq:
     def job_id(self):
         r"""Gets the job_id of this LimitSpeedReq.
 
-        任务id
+        任务ID。
 
         :return: The job_id of this LimitSpeedReq.
         :rtype: str
@@ -59,7 +59,7 @@ class LimitSpeedReq:
     def job_id(self, job_id):
         r"""Sets the job_id of this LimitSpeedReq.
 
-        任务id
+        任务ID。
 
         :param job_id: The job_id of this LimitSpeedReq.
         :type job_id: str

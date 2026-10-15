@@ -55,7 +55,7 @@ class ShowReplayResultsRequest:
         :type job_id: str
         :param x_language: 请求语言类型。
         :type x_language: str
-        :param type: 结果类型。取值： - shard_statistics：回放概览基于时间维度统计信息。 - slow_sql：慢SQL详情。 - error_sql： 回放异常SQL详情。 - slow_sql_template：慢SQL统计信息。  - error_sql_template：异常SQL统计信息。 - replaying_sql：正在回放SQL详情。 - error_classification：回放异常SQL分类。
+        :param type: 结果类型。取值： - shard_statistics：回放概览基于时间维度统计信息。 - slow_sql：慢SQL详情。 - error_sql： 回放异常SQL详情。 - slow_sql_template：慢SQL统计信息。  - error_sql_template：异常SQL统计信息。 - replaying_sql：正在回放SQL详情。 - error_classification：回放异常SQL分类。 - sql_result_inconsistent：回放库和镜像库里面SQL执行结果不一致详情。 - replayed_sql：流量回放已回放SQL统计信息。 - ugo_error_sql：ugo转换失败信息。 - sql_object_statistic：SQL对象统计信息。 - archive_capture_data：录制产生文件的SQL data数据。
         :type type: str
         :param start_time: 查询数据的起始时间，在type为shard_statistics、slow_sql、error_sql时必填
         :type start_time: str
@@ -169,7 +169,7 @@ class ShowReplayResultsRequest:
     def type(self):
         r"""Gets the type of this ShowReplayResultsRequest.
 
-        结果类型。取值： - shard_statistics：回放概览基于时间维度统计信息。 - slow_sql：慢SQL详情。 - error_sql： 回放异常SQL详情。 - slow_sql_template：慢SQL统计信息。  - error_sql_template：异常SQL统计信息。 - replaying_sql：正在回放SQL详情。 - error_classification：回放异常SQL分类。
+        结果类型。取值： - shard_statistics：回放概览基于时间维度统计信息。 - slow_sql：慢SQL详情。 - error_sql： 回放异常SQL详情。 - slow_sql_template：慢SQL统计信息。  - error_sql_template：异常SQL统计信息。 - replaying_sql：正在回放SQL详情。 - error_classification：回放异常SQL分类。 - sql_result_inconsistent：回放库和镜像库里面SQL执行结果不一致详情。 - replayed_sql：流量回放已回放SQL统计信息。 - ugo_error_sql：ugo转换失败信息。 - sql_object_statistic：SQL对象统计信息。 - archive_capture_data：录制产生文件的SQL data数据。
 
         :return: The type of this ShowReplayResultsRequest.
         :rtype: str
@@ -180,7 +180,7 @@ class ShowReplayResultsRequest:
     def type(self, type):
         r"""Sets the type of this ShowReplayResultsRequest.
 
-        结果类型。取值： - shard_statistics：回放概览基于时间维度统计信息。 - slow_sql：慢SQL详情。 - error_sql： 回放异常SQL详情。 - slow_sql_template：慢SQL统计信息。  - error_sql_template：异常SQL统计信息。 - replaying_sql：正在回放SQL详情。 - error_classification：回放异常SQL分类。
+        结果类型。取值： - shard_statistics：回放概览基于时间维度统计信息。 - slow_sql：慢SQL详情。 - error_sql： 回放异常SQL详情。 - slow_sql_template：慢SQL统计信息。  - error_sql_template：异常SQL统计信息。 - replaying_sql：正在回放SQL详情。 - error_classification：回放异常SQL分类。 - sql_result_inconsistent：回放库和镜像库里面SQL执行结果不一致详情。 - replayed_sql：流量回放已回放SQL统计信息。 - ugo_error_sql：ugo转换失败信息。 - sql_object_statistic：SQL对象统计信息。 - archive_capture_data：录制产生文件的SQL data数据。
 
         :param type: The type of this ShowReplayResultsRequest.
         :type type: str

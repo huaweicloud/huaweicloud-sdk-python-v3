@@ -39,19 +39,19 @@ class SupportLinkInfo:
 
         The model defined in huaweicloud sdk
 
-        :param engine_type: 引擎类型
+        :param engine_type: **参数解释**：  DRS任务引擎类型，标识数据复制任务所使用的数据库引擎。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type engine_type: str
-        :param net_type: 网络类型。取值： - eip：公网网络。 - vpc：VPC网络，灾备场景不支持选择VPC网络。 - vpn：VPN、专线网络。
+        :param net_type: **参数解释**：  任务使用的网络类型。  **约束限制**：  灾备场景不支持选择VPC网络。  **取值范围**：  - eip：公网网络 - vpc：VPC网络 - vpn：VPN、专线网络  **默认取值**：  不涉及
         :type net_type: str
-        :param task_modes: 迁移模式。取值： - FULL_TRANS ：全量。 - FULL_INCR_TRANS：全量+增量。 - INCR_TRANS：增量。
+        :param task_modes: **参数解释**：  可用链路支持的迁移模式列表，表示该链路支持的数据迁移执行方式。  **约束限制**：  不涉及。  **取值范围**：  - FULL_TRANS：全量迁移 - FULL_INCR_TRANS：全量+增量迁移 - INCR_TRANS：增量迁移  **默认取值**：  不涉及
         :type task_modes: list[str]
-        :param job_direction: 迁移方向。取值： - up：入云 ，灾备场景时对应本云为备。 - down：出云，灾备场景时对应本云为主。 - non-dbs：自建。
+        :param job_direction: **参数解释**：  任务的迁移方向。  **约束限制**：  不涉及。  **取值范围**：  - up：入云，灾备场景时对应本云为备 - down：出云，灾备场景时对应本云为主 - non-dbs：自建  **默认取值**：  不涉及
         :type job_direction: str
-        :param cluster_mode: 云上实例类型。取值： - Single：单机模式。 - Ha：主备模式。 - Cluster：集群模式。 - Sharding：分片模式。 - Independent：GaussDB独立部署模式。
+        :param cluster_mode: **参数解释**：  云上数据库实例的部署模式，标识目标或源数据库实例在云上的集群架构类型。  **约束限制**：  不涉及。  **取值范围**：  - Single：单机模式 - Ha：主备模式 - Cluster：集群模式 - Sharding：分片模式 - Independent：GaussDB独立部署模式  **默认取值**：  不涉及
         :type cluster_mode: str
-        :param job_instance_type: DRS实例类型。取值： - Single ：单机。 - Ha：主备。
+        :param job_instance_type: **参数解释**：  DRS迁移实例的部署类型，决定迁移任务所使用的实例架构。  **约束限制**：  不涉及。  **取值范围**：  - Single：单机 - Ha：主备  **默认取值**：  不涉及
         :type job_instance_type: str
-        :param is_support_bind_eip: 是否支持绑定EIP
+        :param is_support_bind_eip: **参数解释**：  是否支持绑定弹性公网IP（EIP），标识当前链路是否允许为迁移实例绑定弹性公网IP以实现公网通信。  **约束限制**：  不涉及。  **取值范围**：  - true：支持绑定EIP - false：不支持绑定EIP  **默认取值**：  不涉及
         :type is_support_bind_eip: bool
         """
         
@@ -85,7 +85,7 @@ class SupportLinkInfo:
     def engine_type(self):
         r"""Gets the engine_type of this SupportLinkInfo.
 
-        引擎类型
+        **参数解释**：  DRS任务引擎类型，标识数据复制任务所使用的数据库引擎。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The engine_type of this SupportLinkInfo.
         :rtype: str
@@ -96,7 +96,7 @@ class SupportLinkInfo:
     def engine_type(self, engine_type):
         r"""Sets the engine_type of this SupportLinkInfo.
 
-        引擎类型
+        **参数解释**：  DRS任务引擎类型，标识数据复制任务所使用的数据库引擎。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param engine_type: The engine_type of this SupportLinkInfo.
         :type engine_type: str
@@ -107,7 +107,7 @@ class SupportLinkInfo:
     def net_type(self):
         r"""Gets the net_type of this SupportLinkInfo.
 
-        网络类型。取值： - eip：公网网络。 - vpc：VPC网络，灾备场景不支持选择VPC网络。 - vpn：VPN、专线网络。
+        **参数解释**：  任务使用的网络类型。  **约束限制**：  灾备场景不支持选择VPC网络。  **取值范围**：  - eip：公网网络 - vpc：VPC网络 - vpn：VPN、专线网络  **默认取值**：  不涉及
 
         :return: The net_type of this SupportLinkInfo.
         :rtype: str
@@ -118,7 +118,7 @@ class SupportLinkInfo:
     def net_type(self, net_type):
         r"""Sets the net_type of this SupportLinkInfo.
 
-        网络类型。取值： - eip：公网网络。 - vpc：VPC网络，灾备场景不支持选择VPC网络。 - vpn：VPN、专线网络。
+        **参数解释**：  任务使用的网络类型。  **约束限制**：  灾备场景不支持选择VPC网络。  **取值范围**：  - eip：公网网络 - vpc：VPC网络 - vpn：VPN、专线网络  **默认取值**：  不涉及
 
         :param net_type: The net_type of this SupportLinkInfo.
         :type net_type: str
@@ -129,7 +129,7 @@ class SupportLinkInfo:
     def task_modes(self):
         r"""Gets the task_modes of this SupportLinkInfo.
 
-        迁移模式。取值： - FULL_TRANS ：全量。 - FULL_INCR_TRANS：全量+增量。 - INCR_TRANS：增量。
+        **参数解释**：  可用链路支持的迁移模式列表，表示该链路支持的数据迁移执行方式。  **约束限制**：  不涉及。  **取值范围**：  - FULL_TRANS：全量迁移 - FULL_INCR_TRANS：全量+增量迁移 - INCR_TRANS：增量迁移  **默认取值**：  不涉及
 
         :return: The task_modes of this SupportLinkInfo.
         :rtype: list[str]
@@ -140,7 +140,7 @@ class SupportLinkInfo:
     def task_modes(self, task_modes):
         r"""Sets the task_modes of this SupportLinkInfo.
 
-        迁移模式。取值： - FULL_TRANS ：全量。 - FULL_INCR_TRANS：全量+增量。 - INCR_TRANS：增量。
+        **参数解释**：  可用链路支持的迁移模式列表，表示该链路支持的数据迁移执行方式。  **约束限制**：  不涉及。  **取值范围**：  - FULL_TRANS：全量迁移 - FULL_INCR_TRANS：全量+增量迁移 - INCR_TRANS：增量迁移  **默认取值**：  不涉及
 
         :param task_modes: The task_modes of this SupportLinkInfo.
         :type task_modes: list[str]
@@ -151,7 +151,7 @@ class SupportLinkInfo:
     def job_direction(self):
         r"""Gets the job_direction of this SupportLinkInfo.
 
-        迁移方向。取值： - up：入云 ，灾备场景时对应本云为备。 - down：出云，灾备场景时对应本云为主。 - non-dbs：自建。
+        **参数解释**：  任务的迁移方向。  **约束限制**：  不涉及。  **取值范围**：  - up：入云，灾备场景时对应本云为备 - down：出云，灾备场景时对应本云为主 - non-dbs：自建  **默认取值**：  不涉及
 
         :return: The job_direction of this SupportLinkInfo.
         :rtype: str
@@ -162,7 +162,7 @@ class SupportLinkInfo:
     def job_direction(self, job_direction):
         r"""Sets the job_direction of this SupportLinkInfo.
 
-        迁移方向。取值： - up：入云 ，灾备场景时对应本云为备。 - down：出云，灾备场景时对应本云为主。 - non-dbs：自建。
+        **参数解释**：  任务的迁移方向。  **约束限制**：  不涉及。  **取值范围**：  - up：入云，灾备场景时对应本云为备 - down：出云，灾备场景时对应本云为主 - non-dbs：自建  **默认取值**：  不涉及
 
         :param job_direction: The job_direction of this SupportLinkInfo.
         :type job_direction: str
@@ -173,7 +173,7 @@ class SupportLinkInfo:
     def cluster_mode(self):
         r"""Gets the cluster_mode of this SupportLinkInfo.
 
-        云上实例类型。取值： - Single：单机模式。 - Ha：主备模式。 - Cluster：集群模式。 - Sharding：分片模式。 - Independent：GaussDB独立部署模式。
+        **参数解释**：  云上数据库实例的部署模式，标识目标或源数据库实例在云上的集群架构类型。  **约束限制**：  不涉及。  **取值范围**：  - Single：单机模式 - Ha：主备模式 - Cluster：集群模式 - Sharding：分片模式 - Independent：GaussDB独立部署模式  **默认取值**：  不涉及
 
         :return: The cluster_mode of this SupportLinkInfo.
         :rtype: str
@@ -184,7 +184,7 @@ class SupportLinkInfo:
     def cluster_mode(self, cluster_mode):
         r"""Sets the cluster_mode of this SupportLinkInfo.
 
-        云上实例类型。取值： - Single：单机模式。 - Ha：主备模式。 - Cluster：集群模式。 - Sharding：分片模式。 - Independent：GaussDB独立部署模式。
+        **参数解释**：  云上数据库实例的部署模式，标识目标或源数据库实例在云上的集群架构类型。  **约束限制**：  不涉及。  **取值范围**：  - Single：单机模式 - Ha：主备模式 - Cluster：集群模式 - Sharding：分片模式 - Independent：GaussDB独立部署模式  **默认取值**：  不涉及
 
         :param cluster_mode: The cluster_mode of this SupportLinkInfo.
         :type cluster_mode: str
@@ -195,7 +195,7 @@ class SupportLinkInfo:
     def job_instance_type(self):
         r"""Gets the job_instance_type of this SupportLinkInfo.
 
-        DRS实例类型。取值： - Single ：单机。 - Ha：主备。
+        **参数解释**：  DRS迁移实例的部署类型，决定迁移任务所使用的实例架构。  **约束限制**：  不涉及。  **取值范围**：  - Single：单机 - Ha：主备  **默认取值**：  不涉及
 
         :return: The job_instance_type of this SupportLinkInfo.
         :rtype: str
@@ -206,7 +206,7 @@ class SupportLinkInfo:
     def job_instance_type(self, job_instance_type):
         r"""Sets the job_instance_type of this SupportLinkInfo.
 
-        DRS实例类型。取值： - Single ：单机。 - Ha：主备。
+        **参数解释**：  DRS迁移实例的部署类型，决定迁移任务所使用的实例架构。  **约束限制**：  不涉及。  **取值范围**：  - Single：单机 - Ha：主备  **默认取值**：  不涉及
 
         :param job_instance_type: The job_instance_type of this SupportLinkInfo.
         :type job_instance_type: str
@@ -217,7 +217,7 @@ class SupportLinkInfo:
     def is_support_bind_eip(self):
         r"""Gets the is_support_bind_eip of this SupportLinkInfo.
 
-        是否支持绑定EIP
+        **参数解释**：  是否支持绑定弹性公网IP（EIP），标识当前链路是否允许为迁移实例绑定弹性公网IP以实现公网通信。  **约束限制**：  不涉及。  **取值范围**：  - true：支持绑定EIP - false：不支持绑定EIP  **默认取值**：  不涉及
 
         :return: The is_support_bind_eip of this SupportLinkInfo.
         :rtype: bool
@@ -228,7 +228,7 @@ class SupportLinkInfo:
     def is_support_bind_eip(self, is_support_bind_eip):
         r"""Sets the is_support_bind_eip of this SupportLinkInfo.
 
-        是否支持绑定EIP
+        **参数解释**：  是否支持绑定弹性公网IP（EIP），标识当前链路是否允许为迁移实例绑定弹性公网IP以实现公网通信。  **约束限制**：  不涉及。  **取值范围**：  - true：支持绑定EIP - false：不支持绑定EIP  **默认取值**：  不涉及
 
         :param is_support_bind_eip: The is_support_bind_eip of this SupportLinkInfo.
         :type is_support_bind_eip: bool

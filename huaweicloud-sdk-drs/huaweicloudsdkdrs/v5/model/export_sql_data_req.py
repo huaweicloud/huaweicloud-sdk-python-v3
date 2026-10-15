@@ -33,7 +33,7 @@ class ExportSqlDataReq:
 
         The model defined in huaweicloud sdk
 
-        :param file_type: 导出的sql文件类型。取值范围： - abnormal_sql ：异常sql列表 - abnormal_sql_detail ：异常sql详情 - slow_sql ：慢sql列表 - slow_sql_detail ： 慢sql详情
+        :param file_type: 导出的sql文件类型。取值范围： - abnormal_sql ：异常sql列表 - abnormal_sql_detail ：异常sql详情 - slow_sql ：慢sql列表 - slow_sql_detail ： 慢sql详情 - sql_result_inconsistent：目标库和镜像库执行结果不一致的sql详情
         :type file_type: str
         :param field_names: 导出的字段名。file_type为时为error_sql_detail、slow_sql_detail必填。取值范围： -id ：自增ID -gmtCreate ：创建时间 -gmtModified ：修改时间 -shardId ：分片ID -startTimestamp ：源库SQL开始执行时间戳 -executeTimePartition ：回放时间分区 -schemaName ：库名 -queryType ：SQL类型 -sqlStatement ：SQL内容 -sqlTemplate ：SQL模板 -errorInfo ：异常信息 -targetType ：目标库类型
         :type field_names: list[str]
@@ -63,7 +63,7 @@ class ExportSqlDataReq:
     def file_type(self):
         r"""Gets the file_type of this ExportSqlDataReq.
 
-        导出的sql文件类型。取值范围： - abnormal_sql ：异常sql列表 - abnormal_sql_detail ：异常sql详情 - slow_sql ：慢sql列表 - slow_sql_detail ： 慢sql详情
+        导出的sql文件类型。取值范围： - abnormal_sql ：异常sql列表 - abnormal_sql_detail ：异常sql详情 - slow_sql ：慢sql列表 - slow_sql_detail ： 慢sql详情 - sql_result_inconsistent：目标库和镜像库执行结果不一致的sql详情
 
         :return: The file_type of this ExportSqlDataReq.
         :rtype: str
@@ -74,7 +74,7 @@ class ExportSqlDataReq:
     def file_type(self, file_type):
         r"""Sets the file_type of this ExportSqlDataReq.
 
-        导出的sql文件类型。取值范围： - abnormal_sql ：异常sql列表 - abnormal_sql_detail ：异常sql详情 - slow_sql ：慢sql列表 - slow_sql_detail ： 慢sql详情
+        导出的sql文件类型。取值范围： - abnormal_sql ：异常sql列表 - abnormal_sql_detail ：异常sql详情 - slow_sql ：慢sql列表 - slow_sql_detail ： 慢sql详情 - sql_result_inconsistent：目标库和镜像库执行结果不一致的sql详情
 
         :param file_type: The file_type of this ExportSqlDataReq.
         :type file_type: str

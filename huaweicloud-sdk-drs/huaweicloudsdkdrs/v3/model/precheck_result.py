@@ -39,19 +39,19 @@ class PrecheckResult:
 
         The model defined in huaweicloud sdk
 
-        :param item: 检查项。
+        :param item: **参数解释**：  预检查的具体检查项名称，用于标识预检查中执行的具体检查项目。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type item: str
-        :param result: 检查结果
+        :param result: **参数解释**：  预检查项的检查结果，表示该检查项是否通过。  **约束限制**：  不涉及。  **取值范围**：  - PASSED：通过 - ALARM：告警 - FAILED：失败  **默认取值**：  不涉及
         :type result: str
-        :param failed_reason: 失败原因。
+        :param failed_reason: **参数解释**：  预检查项的失败原因，当检查结果为FAILED或ALARM时返回的具体失败描述。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type failed_reason: str
-        :param data: 加密的数据。
+        :param data: **参数解释**：  预检查项的加密数据，包含检查项的详细检测数据，以JSON格式加密返回。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type data: str
-        :param raw_error_msg: 行错误信息。
+        :param raw_error_msg: **参数解释**：  原始错误信息，预检查过程中产生的原始错误描述。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type raw_error_msg: str
-        :param group: 检查项分组
+        :param group: **参数解释**：  检查项分组，用于将预检查项按类别归类展示。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type group: str
-        :param failed_sub_jobs: 失败的子任务信息。
+        :param failed_sub_jobs: **参数解释**：  失败的子任务信息集合，包含预检查中失败的子任务详情，详情请参见PrecheckFailSubJobVO对象定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type failed_sub_jobs: list[:class:`huaweicloudsdkdrs.v3.PrecheckFailSubJobVO`]
         """
         
@@ -85,7 +85,7 @@ class PrecheckResult:
     def item(self):
         r"""Gets the item of this PrecheckResult.
 
-        检查项。
+        **参数解释**：  预检查的具体检查项名称，用于标识预检查中执行的具体检查项目。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The item of this PrecheckResult.
         :rtype: str
@@ -96,7 +96,7 @@ class PrecheckResult:
     def item(self, item):
         r"""Sets the item of this PrecheckResult.
 
-        检查项。
+        **参数解释**：  预检查的具体检查项名称，用于标识预检查中执行的具体检查项目。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param item: The item of this PrecheckResult.
         :type item: str
@@ -107,7 +107,7 @@ class PrecheckResult:
     def result(self):
         r"""Gets the result of this PrecheckResult.
 
-        检查结果
+        **参数解释**：  预检查项的检查结果，表示该检查项是否通过。  **约束限制**：  不涉及。  **取值范围**：  - PASSED：通过 - ALARM：告警 - FAILED：失败  **默认取值**：  不涉及
 
         :return: The result of this PrecheckResult.
         :rtype: str
@@ -118,7 +118,7 @@ class PrecheckResult:
     def result(self, result):
         r"""Sets the result of this PrecheckResult.
 
-        检查结果
+        **参数解释**：  预检查项的检查结果，表示该检查项是否通过。  **约束限制**：  不涉及。  **取值范围**：  - PASSED：通过 - ALARM：告警 - FAILED：失败  **默认取值**：  不涉及
 
         :param result: The result of this PrecheckResult.
         :type result: str
@@ -129,7 +129,7 @@ class PrecheckResult:
     def failed_reason(self):
         r"""Gets the failed_reason of this PrecheckResult.
 
-        失败原因。
+        **参数解释**：  预检查项的失败原因，当检查结果为FAILED或ALARM时返回的具体失败描述。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The failed_reason of this PrecheckResult.
         :rtype: str
@@ -140,7 +140,7 @@ class PrecheckResult:
     def failed_reason(self, failed_reason):
         r"""Sets the failed_reason of this PrecheckResult.
 
-        失败原因。
+        **参数解释**：  预检查项的失败原因，当检查结果为FAILED或ALARM时返回的具体失败描述。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param failed_reason: The failed_reason of this PrecheckResult.
         :type failed_reason: str
@@ -151,7 +151,7 @@ class PrecheckResult:
     def data(self):
         r"""Gets the data of this PrecheckResult.
 
-        加密的数据。
+        **参数解释**：  预检查项的加密数据，包含检查项的详细检测数据，以JSON格式加密返回。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The data of this PrecheckResult.
         :rtype: str
@@ -162,7 +162,7 @@ class PrecheckResult:
     def data(self, data):
         r"""Sets the data of this PrecheckResult.
 
-        加密的数据。
+        **参数解释**：  预检查项的加密数据，包含检查项的详细检测数据，以JSON格式加密返回。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param data: The data of this PrecheckResult.
         :type data: str
@@ -173,7 +173,7 @@ class PrecheckResult:
     def raw_error_msg(self):
         r"""Gets the raw_error_msg of this PrecheckResult.
 
-        行错误信息。
+        **参数解释**：  原始错误信息，预检查过程中产生的原始错误描述。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The raw_error_msg of this PrecheckResult.
         :rtype: str
@@ -184,7 +184,7 @@ class PrecheckResult:
     def raw_error_msg(self, raw_error_msg):
         r"""Sets the raw_error_msg of this PrecheckResult.
 
-        行错误信息。
+        **参数解释**：  原始错误信息，预检查过程中产生的原始错误描述。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param raw_error_msg: The raw_error_msg of this PrecheckResult.
         :type raw_error_msg: str
@@ -195,7 +195,7 @@ class PrecheckResult:
     def group(self):
         r"""Gets the group of this PrecheckResult.
 
-        检查项分组
+        **参数解释**：  检查项分组，用于将预检查项按类别归类展示。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The group of this PrecheckResult.
         :rtype: str
@@ -206,7 +206,7 @@ class PrecheckResult:
     def group(self, group):
         r"""Sets the group of this PrecheckResult.
 
-        检查项分组
+        **参数解释**：  检查项分组，用于将预检查项按类别归类展示。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param group: The group of this PrecheckResult.
         :type group: str
@@ -217,7 +217,7 @@ class PrecheckResult:
     def failed_sub_jobs(self):
         r"""Gets the failed_sub_jobs of this PrecheckResult.
 
-        失败的子任务信息。
+        **参数解释**：  失败的子任务信息集合，包含预检查中失败的子任务详情，详情请参见PrecheckFailSubJobVO对象定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The failed_sub_jobs of this PrecheckResult.
         :rtype: list[:class:`huaweicloudsdkdrs.v3.PrecheckFailSubJobVO`]
@@ -228,7 +228,7 @@ class PrecheckResult:
     def failed_sub_jobs(self, failed_sub_jobs):
         r"""Sets the failed_sub_jobs of this PrecheckResult.
 
-        失败的子任务信息。
+        **参数解释**：  失败的子任务信息集合，包含预检查中失败的子任务详情，详情请参见PrecheckFailSubJobVO对象定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param failed_sub_jobs: The failed_sub_jobs of this PrecheckResult.
         :type failed_sub_jobs: list[:class:`huaweicloudsdkdrs.v3.PrecheckFailSubJobVO`]

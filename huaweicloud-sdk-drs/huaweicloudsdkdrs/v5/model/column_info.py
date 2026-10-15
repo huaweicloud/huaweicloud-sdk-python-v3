@@ -20,7 +20,8 @@ class ColumnInfo:
         'key_type': 'str',
         'column_mapped_name': 'str',
         'status': 'bool',
-        'partition': 'bool'
+        'partition': 'bool',
+        'desensitization_algorithm': 'str'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class ColumnInfo:
         'key_type': 'key_type',
         'column_mapped_name': 'column_mapped_name',
         'status': 'status',
-        'partition': 'partition'
+        'partition': 'partition',
+        'desensitization_algorithm': 'desensitization_algorithm'
     }
 
-    def __init__(self, column_name=None, column_type=None, key_type=None, column_mapped_name=None, status=None, partition=None):
+    def __init__(self, column_name=None, column_type=None, key_type=None, column_mapped_name=None, status=None, partition=None, desensitization_algorithm=None):
         r"""ColumnInfo
 
         The model defined in huaweicloud sdk
@@ -49,6 +51,8 @@ class ColumnInfo:
         :type status: bool
         :param partition: 该列是否partitionKey
         :type partition: bool
+        :param desensitization_algorithm: 列的脱敏算法类型（主键和唯一键不支持）。取值： - NAME ：姓名中间遮盖。 - PHONE ：电话中间遮盖。 - IDENTITY_CARD ：证件号码中间遮盖。  - BANK_CARD ：银行卡号中间遮盖。 - EMAIL ：邮箱前缀首字母后遮盖。 - ADDRESS ：地址后缀遮盖。  - DATE ：仅保留年代日期替换为1月1日。  - NUMERIC ：数字变0。 - SECRET_CONTENT ：大段文本全替换。
+        :type desensitization_algorithm: str
         """
         
         
@@ -59,6 +63,7 @@ class ColumnInfo:
         self._column_mapped_name = None
         self._status = None
         self._partition = None
+        self._desensitization_algorithm = None
         self.discriminator = None
 
         if column_name is not None:
@@ -73,6 +78,8 @@ class ColumnInfo:
             self.status = status
         if partition is not None:
             self.partition = partition
+        if desensitization_algorithm is not None:
+            self.desensitization_algorithm = desensitization_algorithm
 
     @property
     def column_name(self):
@@ -205,6 +212,28 @@ class ColumnInfo:
         :type partition: bool
         """
         self._partition = partition
+
+    @property
+    def desensitization_algorithm(self):
+        r"""Gets the desensitization_algorithm of this ColumnInfo.
+
+        列的脱敏算法类型（主键和唯一键不支持）。取值： - NAME ：姓名中间遮盖。 - PHONE ：电话中间遮盖。 - IDENTITY_CARD ：证件号码中间遮盖。  - BANK_CARD ：银行卡号中间遮盖。 - EMAIL ：邮箱前缀首字母后遮盖。 - ADDRESS ：地址后缀遮盖。  - DATE ：仅保留年代日期替换为1月1日。  - NUMERIC ：数字变0。 - SECRET_CONTENT ：大段文本全替换。
+
+        :return: The desensitization_algorithm of this ColumnInfo.
+        :rtype: str
+        """
+        return self._desensitization_algorithm
+
+    @desensitization_algorithm.setter
+    def desensitization_algorithm(self, desensitization_algorithm):
+        r"""Sets the desensitization_algorithm of this ColumnInfo.
+
+        列的脱敏算法类型（主键和唯一键不支持）。取值： - NAME ：姓名中间遮盖。 - PHONE ：电话中间遮盖。 - IDENTITY_CARD ：证件号码中间遮盖。  - BANK_CARD ：银行卡号中间遮盖。 - EMAIL ：邮箱前缀首字母后遮盖。 - ADDRESS ：地址后缀遮盖。  - DATE ：仅保留年代日期替换为1月1日。  - NUMERIC ：数字变0。 - SECRET_CONTENT ：大段文本全替换。
+
+        :param desensitization_algorithm: The desensitization_algorithm of this ColumnInfo.
+        :type desensitization_algorithm: str
+        """
+        self._desensitization_algorithm = desensitization_algorithm
 
     def to_dict(self):
         result = {}

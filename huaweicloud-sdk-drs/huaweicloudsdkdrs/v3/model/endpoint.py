@@ -73,51 +73,51 @@ class Endpoint:
 
         The model defined in huaweicloud sdk
 
-        :param db_type: 数据库类型，测试连接之后修改调用时必填。
+        :param db_type: **参数解释**：  数据库类型，标识源库或目标库的数据库引擎种类。  **约束限制**：  测试连接之后修改调用时必填。  **取值范围**：  - mysql：MySQL - mongodb：MongoDB - gaussdbv5：GaussDB分布式版 - postgresql：PostgreSQL - kafka：Kafka - gaussdbv5ha：GaussDB集中式版 - taurus：TaurusDB  **默认取值**：  不涉及
         :type db_type: str
-        :param az_code: 数据库所在可用区azCode
+        :param az_code: **参数解释**：  数据库所在的可用区（AZ，Availability Zone）编码。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type az_code: str
-        :param region: RDS实例所在Region，数据库为RDS实例时必填（灾备场景下job_direction为down时source_endpoint中该值为必填，job_direction为up时target_endpoint中该值为必填）。
+        :param region: **参数解释**：  数据库实例所在区域。数据库为云上实例时，比如RDS实例时必填。  **约束限制**：  - 灾备场景下job_direction为down时source_endpoint中该值为必填。 - 灾备场景下job_direction为up时target_endpoint中该值为必填。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type region: str
-        :param inst_id: RDS实例ID，数据库为RDS实例必填（灾备场景下job_direction为down时source_endpoint中该值为必填，job_direction为up时target_endpoint中该值为必填）。
+        :param inst_id: **参数解释**：  数据库实例ID，用于标识华为云RDS数据库实例。数据库为云上实例时，比如RDS实例时必填。  **约束限制**：  - 灾备场景下job_direction为down时source_endpoint中该值为必填。 - 灾备场景下job_direction为up时target_endpoint中该值为必填。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type inst_id: str
-        :param vpc_id: 数据库所在的虚拟私有云id
+        :param vpc_id: **参数解释**：  数据库所在的虚拟私有云（VPC，Virtual Private Cloud）ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type vpc_id: str
-        :param subnet_id: 数据库所在的子网id
+        :param subnet_id: **参数解释**：  数据库所在的子网ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type subnet_id: str
-        :param security_group_id: 数据库所在的安全组id。
+        :param security_group_id: **参数解释**：  数据库所在的安全组ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type security_group_id: str
-        :param project_id: RDS实例projectId
+        :param project_id: **参数解释**：  数据库实例所在Region下的项目ID。如果数据库为云上实例时，填写数据库实例所在Region下的Project ID；否则，填写当前任务所在Region下的Project ID。获取方法请参见获取项目ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type project_id: str
-        :param db_name: 服务名serviceName，源库为oracle场景时必填。约束：不能超过128位，不能包含!&lt;&gt;&amp;&#39;\&quot;\\特殊字符。待还原数据库名称是指备份文件中包含的数据库名称，当您选择部分数据库恢复时，需要选择恢复一个或者多个数据库。
+        :param db_name: **参数解释**：  数据库名称，Oracle场景下为serviceName。  **约束限制**：  - 不能超过128位。 - 不能包含!&lt;&gt;&amp;&#39;\&quot;特殊字符。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type db_name: str
-        :param db_password: 数据库密码。
+        :param db_password: **参数解释**：  数据库密码，用于连接数据库的认证密码。  **约束限制**：  除不需要密码的引擎，其他引擎测试连接之后修改调用时必填。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type db_password: str
-        :param db_port: 数据库端口。约束：输入范围为1-65535之间的整数。
+        :param db_port: **参数解释**：  数据库端口号，用于指定连接数据库的服务端口。  **约束限制**：  输入范围为1-65535之间的整数。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type db_port: int
-        :param db_user: 数据库用户。
+        :param db_user: **参数解释**：  数据库帐号，用于连接数据库的用户名。  **约束限制**：  除不需要用户名的引擎，其他引擎测试连接之后修改调用时必填。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type db_user: str
-        :param inst_name: RDS实例名称。
+        :param inst_name: **参数解释**：  RDS实例名称。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type inst_name: str
-        :param ip: 数据库ip
+        :param ip: **参数解释**：  数据库IP地址。测试连接之后修改调用时必填。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type ip: str
-        :param mongo_ha_mode: mongo ha模式。
+        :param mongo_ha_mode: **参数解释**：  MongoDB高可用模式。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type mongo_ha_mode: str
-        :param safe_mode: MRS集群运行模式，取值： - 0普通集群 - 1安全集群
+        :param safe_mode: **参数解释**：  MRS集群运行模式。  **约束限制**：  不涉及。  **取值范围**：  - 0：普通集群 - 1：安全集群  **默认取值**：  不涉及
         :type safe_mode: int
-        :param ssl_cert_password: SSL证书密码，证书文件后缀为.p12
+        :param ssl_cert_password: **参数解释**：  SSL证书密码，证书文件后缀为.p12。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type ssl_cert_password: str
-        :param ssl_cert_check_sum: SSL证书内容checksum值，后端校验，源库安全连接必选。
+        :param ssl_cert_check_sum: **参数解释**：  SSL证书内容checksum值，后端校验，源库安全连接必选。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type ssl_cert_check_sum: str
-        :param ssl_cert_key: SSL证书内容，用base64加密
+        :param ssl_cert_key: **参数解释**：  SSL证书内容，用base64加密。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type ssl_cert_key: str
-        :param ssl_cert_name: SSL证书名字
+        :param ssl_cert_name: **参数解释**：  SSL证书名称。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type ssl_cert_name: str
-        :param ssl_link: 是否SSL安全连接。
+        :param ssl_link: **参数解释**：  是否使用SSL安全连接，指定数据库连接是否启用SSL加密传输。  **约束限制**：  不涉及。  **取值范围**：  - true：使用SSL安全连接 - false：不使用SSL安全连接  **默认取值**：  不涉及
         :type ssl_link: bool
-        :param topic: kafka topic名称
+        :param topic: **参数解释**：  Kafka Topic名称。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type topic: str
-        :param cluster_mode: MongDB集群4.0及以上版本，当集群实例无法获取到分片节点的IP时，source_endpoint中需要填写，值为：Sharding4.0+。
+        :param cluster_mode: **参数解释**：  MongoDB集群模式。当集群实例无法获取到分片节点的IP时，source_endpoint中需要填写。  **约束限制**：  不涉及。  **取值范围**：  - Sharding4.0+：MongoDB集群4.0及以上版本  **默认取值**：  Sharding4.0+
         :type cluster_mode: str
         :param kafka_security_config: 
         :type kafka_security_config: :class:`huaweicloudsdkdrs.v3.KafkaSecurity`
@@ -204,7 +204,7 @@ class Endpoint:
     def db_type(self):
         r"""Gets the db_type of this Endpoint.
 
-        数据库类型，测试连接之后修改调用时必填。
+        **参数解释**：  数据库类型，标识源库或目标库的数据库引擎种类。  **约束限制**：  测试连接之后修改调用时必填。  **取值范围**：  - mysql：MySQL - mongodb：MongoDB - gaussdbv5：GaussDB分布式版 - postgresql：PostgreSQL - kafka：Kafka - gaussdbv5ha：GaussDB集中式版 - taurus：TaurusDB  **默认取值**：  不涉及
 
         :return: The db_type of this Endpoint.
         :rtype: str
@@ -215,7 +215,7 @@ class Endpoint:
     def db_type(self, db_type):
         r"""Sets the db_type of this Endpoint.
 
-        数据库类型，测试连接之后修改调用时必填。
+        **参数解释**：  数据库类型，标识源库或目标库的数据库引擎种类。  **约束限制**：  测试连接之后修改调用时必填。  **取值范围**：  - mysql：MySQL - mongodb：MongoDB - gaussdbv5：GaussDB分布式版 - postgresql：PostgreSQL - kafka：Kafka - gaussdbv5ha：GaussDB集中式版 - taurus：TaurusDB  **默认取值**：  不涉及
 
         :param db_type: The db_type of this Endpoint.
         :type db_type: str
@@ -226,7 +226,7 @@ class Endpoint:
     def az_code(self):
         r"""Gets the az_code of this Endpoint.
 
-        数据库所在可用区azCode
+        **参数解释**：  数据库所在的可用区（AZ，Availability Zone）编码。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The az_code of this Endpoint.
         :rtype: str
@@ -237,7 +237,7 @@ class Endpoint:
     def az_code(self, az_code):
         r"""Sets the az_code of this Endpoint.
 
-        数据库所在可用区azCode
+        **参数解释**：  数据库所在的可用区（AZ，Availability Zone）编码。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param az_code: The az_code of this Endpoint.
         :type az_code: str
@@ -248,7 +248,7 @@ class Endpoint:
     def region(self):
         r"""Gets the region of this Endpoint.
 
-        RDS实例所在Region，数据库为RDS实例时必填（灾备场景下job_direction为down时source_endpoint中该值为必填，job_direction为up时target_endpoint中该值为必填）。
+        **参数解释**：  数据库实例所在区域。数据库为云上实例时，比如RDS实例时必填。  **约束限制**：  - 灾备场景下job_direction为down时source_endpoint中该值为必填。 - 灾备场景下job_direction为up时target_endpoint中该值为必填。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The region of this Endpoint.
         :rtype: str
@@ -259,7 +259,7 @@ class Endpoint:
     def region(self, region):
         r"""Sets the region of this Endpoint.
 
-        RDS实例所在Region，数据库为RDS实例时必填（灾备场景下job_direction为down时source_endpoint中该值为必填，job_direction为up时target_endpoint中该值为必填）。
+        **参数解释**：  数据库实例所在区域。数据库为云上实例时，比如RDS实例时必填。  **约束限制**：  - 灾备场景下job_direction为down时source_endpoint中该值为必填。 - 灾备场景下job_direction为up时target_endpoint中该值为必填。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param region: The region of this Endpoint.
         :type region: str
@@ -270,7 +270,7 @@ class Endpoint:
     def inst_id(self):
         r"""Gets the inst_id of this Endpoint.
 
-        RDS实例ID，数据库为RDS实例必填（灾备场景下job_direction为down时source_endpoint中该值为必填，job_direction为up时target_endpoint中该值为必填）。
+        **参数解释**：  数据库实例ID，用于标识华为云RDS数据库实例。数据库为云上实例时，比如RDS实例时必填。  **约束限制**：  - 灾备场景下job_direction为down时source_endpoint中该值为必填。 - 灾备场景下job_direction为up时target_endpoint中该值为必填。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The inst_id of this Endpoint.
         :rtype: str
@@ -281,7 +281,7 @@ class Endpoint:
     def inst_id(self, inst_id):
         r"""Sets the inst_id of this Endpoint.
 
-        RDS实例ID，数据库为RDS实例必填（灾备场景下job_direction为down时source_endpoint中该值为必填，job_direction为up时target_endpoint中该值为必填）。
+        **参数解释**：  数据库实例ID，用于标识华为云RDS数据库实例。数据库为云上实例时，比如RDS实例时必填。  **约束限制**：  - 灾备场景下job_direction为down时source_endpoint中该值为必填。 - 灾备场景下job_direction为up时target_endpoint中该值为必填。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param inst_id: The inst_id of this Endpoint.
         :type inst_id: str
@@ -292,7 +292,7 @@ class Endpoint:
     def vpc_id(self):
         r"""Gets the vpc_id of this Endpoint.
 
-        数据库所在的虚拟私有云id
+        **参数解释**：  数据库所在的虚拟私有云（VPC，Virtual Private Cloud）ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The vpc_id of this Endpoint.
         :rtype: str
@@ -303,7 +303,7 @@ class Endpoint:
     def vpc_id(self, vpc_id):
         r"""Sets the vpc_id of this Endpoint.
 
-        数据库所在的虚拟私有云id
+        **参数解释**：  数据库所在的虚拟私有云（VPC，Virtual Private Cloud）ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param vpc_id: The vpc_id of this Endpoint.
         :type vpc_id: str
@@ -314,7 +314,7 @@ class Endpoint:
     def subnet_id(self):
         r"""Gets the subnet_id of this Endpoint.
 
-        数据库所在的子网id
+        **参数解释**：  数据库所在的子网ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The subnet_id of this Endpoint.
         :rtype: str
@@ -325,7 +325,7 @@ class Endpoint:
     def subnet_id(self, subnet_id):
         r"""Sets the subnet_id of this Endpoint.
 
-        数据库所在的子网id
+        **参数解释**：  数据库所在的子网ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param subnet_id: The subnet_id of this Endpoint.
         :type subnet_id: str
@@ -336,7 +336,7 @@ class Endpoint:
     def security_group_id(self):
         r"""Gets the security_group_id of this Endpoint.
 
-        数据库所在的安全组id。
+        **参数解释**：  数据库所在的安全组ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The security_group_id of this Endpoint.
         :rtype: str
@@ -347,7 +347,7 @@ class Endpoint:
     def security_group_id(self, security_group_id):
         r"""Sets the security_group_id of this Endpoint.
 
-        数据库所在的安全组id。
+        **参数解释**：  数据库所在的安全组ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param security_group_id: The security_group_id of this Endpoint.
         :type security_group_id: str
@@ -358,7 +358,7 @@ class Endpoint:
     def project_id(self):
         r"""Gets the project_id of this Endpoint.
 
-        RDS实例projectId
+        **参数解释**：  数据库实例所在Region下的项目ID。如果数据库为云上实例时，填写数据库实例所在Region下的Project ID；否则，填写当前任务所在Region下的Project ID。获取方法请参见获取项目ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The project_id of this Endpoint.
         :rtype: str
@@ -369,7 +369,7 @@ class Endpoint:
     def project_id(self, project_id):
         r"""Sets the project_id of this Endpoint.
 
-        RDS实例projectId
+        **参数解释**：  数据库实例所在Region下的项目ID。如果数据库为云上实例时，填写数据库实例所在Region下的Project ID；否则，填写当前任务所在Region下的Project ID。获取方法请参见获取项目ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param project_id: The project_id of this Endpoint.
         :type project_id: str
@@ -380,7 +380,7 @@ class Endpoint:
     def db_name(self):
         r"""Gets the db_name of this Endpoint.
 
-        服务名serviceName，源库为oracle场景时必填。约束：不能超过128位，不能包含!<>&'\"\\特殊字符。待还原数据库名称是指备份文件中包含的数据库名称，当您选择部分数据库恢复时，需要选择恢复一个或者多个数据库。
+        **参数解释**：  数据库名称，Oracle场景下为serviceName。  **约束限制**：  - 不能超过128位。 - 不能包含!<>&'\"特殊字符。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The db_name of this Endpoint.
         :rtype: str
@@ -391,7 +391,7 @@ class Endpoint:
     def db_name(self, db_name):
         r"""Sets the db_name of this Endpoint.
 
-        服务名serviceName，源库为oracle场景时必填。约束：不能超过128位，不能包含!<>&'\"\\特殊字符。待还原数据库名称是指备份文件中包含的数据库名称，当您选择部分数据库恢复时，需要选择恢复一个或者多个数据库。
+        **参数解释**：  数据库名称，Oracle场景下为serviceName。  **约束限制**：  - 不能超过128位。 - 不能包含!<>&'\"特殊字符。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param db_name: The db_name of this Endpoint.
         :type db_name: str
@@ -402,7 +402,7 @@ class Endpoint:
     def db_password(self):
         r"""Gets the db_password of this Endpoint.
 
-        数据库密码。
+        **参数解释**：  数据库密码，用于连接数据库的认证密码。  **约束限制**：  除不需要密码的引擎，其他引擎测试连接之后修改调用时必填。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The db_password of this Endpoint.
         :rtype: str
@@ -413,7 +413,7 @@ class Endpoint:
     def db_password(self, db_password):
         r"""Sets the db_password of this Endpoint.
 
-        数据库密码。
+        **参数解释**：  数据库密码，用于连接数据库的认证密码。  **约束限制**：  除不需要密码的引擎，其他引擎测试连接之后修改调用时必填。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param db_password: The db_password of this Endpoint.
         :type db_password: str
@@ -424,7 +424,7 @@ class Endpoint:
     def db_port(self):
         r"""Gets the db_port of this Endpoint.
 
-        数据库端口。约束：输入范围为1-65535之间的整数。
+        **参数解释**：  数据库端口号，用于指定连接数据库的服务端口。  **约束限制**：  输入范围为1-65535之间的整数。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The db_port of this Endpoint.
         :rtype: int
@@ -435,7 +435,7 @@ class Endpoint:
     def db_port(self, db_port):
         r"""Sets the db_port of this Endpoint.
 
-        数据库端口。约束：输入范围为1-65535之间的整数。
+        **参数解释**：  数据库端口号，用于指定连接数据库的服务端口。  **约束限制**：  输入范围为1-65535之间的整数。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param db_port: The db_port of this Endpoint.
         :type db_port: int
@@ -446,7 +446,7 @@ class Endpoint:
     def db_user(self):
         r"""Gets the db_user of this Endpoint.
 
-        数据库用户。
+        **参数解释**：  数据库帐号，用于连接数据库的用户名。  **约束限制**：  除不需要用户名的引擎，其他引擎测试连接之后修改调用时必填。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The db_user of this Endpoint.
         :rtype: str
@@ -457,7 +457,7 @@ class Endpoint:
     def db_user(self, db_user):
         r"""Sets the db_user of this Endpoint.
 
-        数据库用户。
+        **参数解释**：  数据库帐号，用于连接数据库的用户名。  **约束限制**：  除不需要用户名的引擎，其他引擎测试连接之后修改调用时必填。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param db_user: The db_user of this Endpoint.
         :type db_user: str
@@ -468,7 +468,7 @@ class Endpoint:
     def inst_name(self):
         r"""Gets the inst_name of this Endpoint.
 
-        RDS实例名称。
+        **参数解释**：  RDS实例名称。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The inst_name of this Endpoint.
         :rtype: str
@@ -479,7 +479,7 @@ class Endpoint:
     def inst_name(self, inst_name):
         r"""Sets the inst_name of this Endpoint.
 
-        RDS实例名称。
+        **参数解释**：  RDS实例名称。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param inst_name: The inst_name of this Endpoint.
         :type inst_name: str
@@ -490,7 +490,7 @@ class Endpoint:
     def ip(self):
         r"""Gets the ip of this Endpoint.
 
-        数据库ip
+        **参数解释**：  数据库IP地址。测试连接之后修改调用时必填。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The ip of this Endpoint.
         :rtype: str
@@ -501,7 +501,7 @@ class Endpoint:
     def ip(self, ip):
         r"""Sets the ip of this Endpoint.
 
-        数据库ip
+        **参数解释**：  数据库IP地址。测试连接之后修改调用时必填。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param ip: The ip of this Endpoint.
         :type ip: str
@@ -512,7 +512,7 @@ class Endpoint:
     def mongo_ha_mode(self):
         r"""Gets the mongo_ha_mode of this Endpoint.
 
-        mongo ha模式。
+        **参数解释**：  MongoDB高可用模式。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The mongo_ha_mode of this Endpoint.
         :rtype: str
@@ -523,7 +523,7 @@ class Endpoint:
     def mongo_ha_mode(self, mongo_ha_mode):
         r"""Sets the mongo_ha_mode of this Endpoint.
 
-        mongo ha模式。
+        **参数解释**：  MongoDB高可用模式。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param mongo_ha_mode: The mongo_ha_mode of this Endpoint.
         :type mongo_ha_mode: str
@@ -534,7 +534,7 @@ class Endpoint:
     def safe_mode(self):
         r"""Gets the safe_mode of this Endpoint.
 
-        MRS集群运行模式，取值： - 0普通集群 - 1安全集群
+        **参数解释**：  MRS集群运行模式。  **约束限制**：  不涉及。  **取值范围**：  - 0：普通集群 - 1：安全集群  **默认取值**：  不涉及
 
         :return: The safe_mode of this Endpoint.
         :rtype: int
@@ -545,7 +545,7 @@ class Endpoint:
     def safe_mode(self, safe_mode):
         r"""Sets the safe_mode of this Endpoint.
 
-        MRS集群运行模式，取值： - 0普通集群 - 1安全集群
+        **参数解释**：  MRS集群运行模式。  **约束限制**：  不涉及。  **取值范围**：  - 0：普通集群 - 1：安全集群  **默认取值**：  不涉及
 
         :param safe_mode: The safe_mode of this Endpoint.
         :type safe_mode: int
@@ -556,7 +556,7 @@ class Endpoint:
     def ssl_cert_password(self):
         r"""Gets the ssl_cert_password of this Endpoint.
 
-        SSL证书密码，证书文件后缀为.p12
+        **参数解释**：  SSL证书密码，证书文件后缀为.p12。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The ssl_cert_password of this Endpoint.
         :rtype: str
@@ -567,7 +567,7 @@ class Endpoint:
     def ssl_cert_password(self, ssl_cert_password):
         r"""Sets the ssl_cert_password of this Endpoint.
 
-        SSL证书密码，证书文件后缀为.p12
+        **参数解释**：  SSL证书密码，证书文件后缀为.p12。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param ssl_cert_password: The ssl_cert_password of this Endpoint.
         :type ssl_cert_password: str
@@ -578,7 +578,7 @@ class Endpoint:
     def ssl_cert_check_sum(self):
         r"""Gets the ssl_cert_check_sum of this Endpoint.
 
-        SSL证书内容checksum值，后端校验，源库安全连接必选。
+        **参数解释**：  SSL证书内容checksum值，后端校验，源库安全连接必选。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The ssl_cert_check_sum of this Endpoint.
         :rtype: str
@@ -589,7 +589,7 @@ class Endpoint:
     def ssl_cert_check_sum(self, ssl_cert_check_sum):
         r"""Sets the ssl_cert_check_sum of this Endpoint.
 
-        SSL证书内容checksum值，后端校验，源库安全连接必选。
+        **参数解释**：  SSL证书内容checksum值，后端校验，源库安全连接必选。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param ssl_cert_check_sum: The ssl_cert_check_sum of this Endpoint.
         :type ssl_cert_check_sum: str
@@ -600,7 +600,7 @@ class Endpoint:
     def ssl_cert_key(self):
         r"""Gets the ssl_cert_key of this Endpoint.
 
-        SSL证书内容，用base64加密
+        **参数解释**：  SSL证书内容，用base64加密。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The ssl_cert_key of this Endpoint.
         :rtype: str
@@ -611,7 +611,7 @@ class Endpoint:
     def ssl_cert_key(self, ssl_cert_key):
         r"""Sets the ssl_cert_key of this Endpoint.
 
-        SSL证书内容，用base64加密
+        **参数解释**：  SSL证书内容，用base64加密。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param ssl_cert_key: The ssl_cert_key of this Endpoint.
         :type ssl_cert_key: str
@@ -622,7 +622,7 @@ class Endpoint:
     def ssl_cert_name(self):
         r"""Gets the ssl_cert_name of this Endpoint.
 
-        SSL证书名字
+        **参数解释**：  SSL证书名称。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The ssl_cert_name of this Endpoint.
         :rtype: str
@@ -633,7 +633,7 @@ class Endpoint:
     def ssl_cert_name(self, ssl_cert_name):
         r"""Sets the ssl_cert_name of this Endpoint.
 
-        SSL证书名字
+        **参数解释**：  SSL证书名称。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param ssl_cert_name: The ssl_cert_name of this Endpoint.
         :type ssl_cert_name: str
@@ -644,7 +644,7 @@ class Endpoint:
     def ssl_link(self):
         r"""Gets the ssl_link of this Endpoint.
 
-        是否SSL安全连接。
+        **参数解释**：  是否使用SSL安全连接，指定数据库连接是否启用SSL加密传输。  **约束限制**：  不涉及。  **取值范围**：  - true：使用SSL安全连接 - false：不使用SSL安全连接  **默认取值**：  不涉及
 
         :return: The ssl_link of this Endpoint.
         :rtype: bool
@@ -655,7 +655,7 @@ class Endpoint:
     def ssl_link(self, ssl_link):
         r"""Sets the ssl_link of this Endpoint.
 
-        是否SSL安全连接。
+        **参数解释**：  是否使用SSL安全连接，指定数据库连接是否启用SSL加密传输。  **约束限制**：  不涉及。  **取值范围**：  - true：使用SSL安全连接 - false：不使用SSL安全连接  **默认取值**：  不涉及
 
         :param ssl_link: The ssl_link of this Endpoint.
         :type ssl_link: bool
@@ -666,7 +666,7 @@ class Endpoint:
     def topic(self):
         r"""Gets the topic of this Endpoint.
 
-        kafka topic名称
+        **参数解释**：  Kafka Topic名称。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The topic of this Endpoint.
         :rtype: str
@@ -677,7 +677,7 @@ class Endpoint:
     def topic(self, topic):
         r"""Sets the topic of this Endpoint.
 
-        kafka topic名称
+        **参数解释**：  Kafka Topic名称。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param topic: The topic of this Endpoint.
         :type topic: str
@@ -688,7 +688,7 @@ class Endpoint:
     def cluster_mode(self):
         r"""Gets the cluster_mode of this Endpoint.
 
-        MongDB集群4.0及以上版本，当集群实例无法获取到分片节点的IP时，source_endpoint中需要填写，值为：Sharding4.0+。
+        **参数解释**：  MongoDB集群模式。当集群实例无法获取到分片节点的IP时，source_endpoint中需要填写。  **约束限制**：  不涉及。  **取值范围**：  - Sharding4.0+：MongoDB集群4.0及以上版本  **默认取值**：  Sharding4.0+
 
         :return: The cluster_mode of this Endpoint.
         :rtype: str
@@ -699,7 +699,7 @@ class Endpoint:
     def cluster_mode(self, cluster_mode):
         r"""Sets the cluster_mode of this Endpoint.
 
-        MongDB集群4.0及以上版本，当集群实例无法获取到分片节点的IP时，source_endpoint中需要填写，值为：Sharding4.0+。
+        **参数解释**：  MongoDB集群模式。当集群实例无法获取到分片节点的IP时，source_endpoint中需要填写。  **约束限制**：  不涉及。  **取值范围**：  - Sharding4.0+：MongoDB集群4.0及以上版本  **默认取值**：  Sharding4.0+
 
         :param cluster_mode: The cluster_mode of this Endpoint.
         :type cluster_mode: str

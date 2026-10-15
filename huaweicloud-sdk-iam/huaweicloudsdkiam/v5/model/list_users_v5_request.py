@@ -17,16 +17,18 @@ class ListUsersV5Request:
     openapi_types = {
         'limit': 'int',
         'marker': 'str',
-        'group_id': 'str'
+        'group_id': 'str',
+        'access_key_id': 'str'
     }
 
     attribute_map = {
         'limit': 'limit',
         'marker': 'marker',
-        'group_id': 'group_id'
+        'group_id': 'group_id',
+        'access_key_id': 'access_key_id'
     }
 
-    def __init__(self, limit=None, marker=None, group_id=None):
+    def __init__(self, limit=None, marker=None, group_id=None, access_key_id=None):
         r"""ListUsersV5Request
 
         The model defined in huaweicloud sdk
@@ -37,6 +39,8 @@ class ListUsersV5Request:
         :type marker: str
         :param group_id: 用户组ID，长度为1到64个字符，只包含字母、数字和\&quot;-\&quot;的字符串。
         :type group_id: str
+        :param access_key_id: 永久访问密钥ID，即AK。
+        :type access_key_id: str
         """
         
         
@@ -44,6 +48,7 @@ class ListUsersV5Request:
         self._limit = None
         self._marker = None
         self._group_id = None
+        self._access_key_id = None
         self.discriminator = None
 
         if limit is not None:
@@ -52,6 +57,8 @@ class ListUsersV5Request:
             self.marker = marker
         if group_id is not None:
             self.group_id = group_id
+        if access_key_id is not None:
+            self.access_key_id = access_key_id
 
     @property
     def limit(self):
@@ -118,6 +125,28 @@ class ListUsersV5Request:
         :type group_id: str
         """
         self._group_id = group_id
+
+    @property
+    def access_key_id(self):
+        r"""Gets the access_key_id of this ListUsersV5Request.
+
+        永久访问密钥ID，即AK。
+
+        :return: The access_key_id of this ListUsersV5Request.
+        :rtype: str
+        """
+        return self._access_key_id
+
+    @access_key_id.setter
+    def access_key_id(self, access_key_id):
+        r"""Sets the access_key_id of this ListUsersV5Request.
+
+        永久访问密钥ID，即AK。
+
+        :param access_key_id: The access_key_id of this ListUsersV5Request.
+        :type access_key_id: str
+        """
+        self._access_key_id = access_key_id
 
     def to_dict(self):
         result = {}

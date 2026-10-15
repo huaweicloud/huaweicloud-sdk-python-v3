@@ -23,7 +23,8 @@ class ShowReplayResultsResponse(SdkResponse):
         'error_sqls': 'list[ReplayErrorSqlResp]',
         'error_sql_templates': 'list[ReplayErrorSqlTemplateResp]',
         'replaying_sqls': 'list[ReplayingSqlResp]',
-        'error_classifications': 'list[ReplayErrorClassification]'
+        'error_classifications': 'list[ReplayErrorClassification]',
+        'compare_results': 'list[ReplayCompareResultResp]'
     }
 
     attribute_map = {
@@ -34,10 +35,11 @@ class ShowReplayResultsResponse(SdkResponse):
         'error_sqls': 'error_sqls',
         'error_sql_templates': 'error_sql_templates',
         'replaying_sqls': 'replaying_sqls',
-        'error_classifications': 'error_classifications'
+        'error_classifications': 'error_classifications',
+        'compare_results': 'compare_results'
     }
 
-    def __init__(self, total_count=None, shard_statics=None, slow_sqls=None, slow_sql_templates=None, error_sqls=None, error_sql_templates=None, replaying_sqls=None, error_classifications=None):
+    def __init__(self, total_count=None, shard_statics=None, slow_sqls=None, slow_sql_templates=None, error_sqls=None, error_sql_templates=None, replaying_sqls=None, error_classifications=None, compare_results=None):
         r"""ShowReplayResultsResponse
 
         The model defined in huaweicloud sdk
@@ -58,6 +60,8 @@ class ShowReplayResultsResponse(SdkResponse):
         :type replaying_sqls: list[:class:`huaweicloudsdkdrs.v5.ReplayingSqlResp`]
         :param error_classifications: 回放异常SQL分类信息，在type为error_classification时返回
         :type error_classifications: list[:class:`huaweicloudsdkdrs.v5.ReplayErrorClassification`]
+        :param compare_results: SQL执行结果不一致数据，在type为sql_result_inconsistent时返回
+        :type compare_results: list[:class:`huaweicloudsdkdrs.v5.ReplayCompareResultResp`]
         """
         
         super().__init__()
@@ -70,6 +74,7 @@ class ShowReplayResultsResponse(SdkResponse):
         self._error_sql_templates = None
         self._replaying_sqls = None
         self._error_classifications = None
+        self._compare_results = None
         self.discriminator = None
 
         if total_count is not None:
@@ -88,6 +93,8 @@ class ShowReplayResultsResponse(SdkResponse):
             self.replaying_sqls = replaying_sqls
         if error_classifications is not None:
             self.error_classifications = error_classifications
+        if compare_results is not None:
+            self.compare_results = compare_results
 
     @property
     def total_count(self):
@@ -264,6 +271,28 @@ class ShowReplayResultsResponse(SdkResponse):
         :type error_classifications: list[:class:`huaweicloudsdkdrs.v5.ReplayErrorClassification`]
         """
         self._error_classifications = error_classifications
+
+    @property
+    def compare_results(self):
+        r"""Gets the compare_results of this ShowReplayResultsResponse.
+
+        SQL执行结果不一致数据，在type为sql_result_inconsistent时返回
+
+        :return: The compare_results of this ShowReplayResultsResponse.
+        :rtype: list[:class:`huaweicloudsdkdrs.v5.ReplayCompareResultResp`]
+        """
+        return self._compare_results
+
+    @compare_results.setter
+    def compare_results(self, compare_results):
+        r"""Sets the compare_results of this ShowReplayResultsResponse.
+
+        SQL执行结果不一致数据，在type为sql_result_inconsistent时返回
+
+        :param compare_results: The compare_results of this ShowReplayResultsResponse.
+        :type compare_results: list[:class:`huaweicloudsdkdrs.v5.ReplayCompareResultResp`]
+        """
+        self._compare_results = compare_results
 
     def to_dict(self):
         import warnings

@@ -37,17 +37,17 @@ class DatabaseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param id: object_type为database时，为库名；object_type为table或者view时，字段值参考示例。
+        :param id: **参数解释**：  数据库对象的标识，具体含义取决于object_type的取值。object_type为database时，为库名；object_type为table或view时，字段值参考请求示例。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type id: str
-        :param parent_id: object_type为table或view时需要填写，为库名
+        :param parent_id: **参数解释**：  数据库对象的父级标识，object_type为table或view时需要填写，为库名。  **约束限制**：  - object_type为table或view时必填。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type parent_id: str
-        :param object_type: 类型
+        :param object_type: **参数解释**：  数据库对象的类型，用于标识迁移或同步对象是数据库、表、模式还是视图。  **约束限制**：  不涉及。  **取值范围**：  - database：数据库 - table：表 - schema：模式 - view：视图  **默认取值**：  不涉及
         :type object_type: str
-        :param object_name: 数据库对象名称，库名、表名、视图名
+        :param object_name: **参数解释**：  数据库对象名称，可以是库名、表名或视图名。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type object_name: str
-        :param object_alias_name: 别名，映射的新名称。
+        :param object_alias_name: **参数解释**：  数据库对象的别名，即映射后的新名称。  **约束限制**：  - 仅支持同步任务使用。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type object_alias_name: str
-        :param select: 是否选中，值为true会进行迁移，false该数据库对象不会迁移，partial为迁移库下面的部分表，不填默认为false
+        :param select: **参数解释**：  是否选中该数据库对象进行迁移，用于控制对象级别的迁移选择。  **约束限制**：  不涉及。  **取值范围**：  - true：选中，该数据库对象会进行迁移 - false：不选中，该数据库对象不会迁移 - partial：部分选择，迁移库下面的部分表  **默认取值**：  false
         :type select: str
         """
         
@@ -78,7 +78,7 @@ class DatabaseInfo:
     def id(self):
         r"""Gets the id of this DatabaseInfo.
 
-        object_type为database时，为库名；object_type为table或者view时，字段值参考示例。
+        **参数解释**：  数据库对象的标识，具体含义取决于object_type的取值。object_type为database时，为库名；object_type为table或view时，字段值参考请求示例。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The id of this DatabaseInfo.
         :rtype: str
@@ -89,7 +89,7 @@ class DatabaseInfo:
     def id(self, id):
         r"""Sets the id of this DatabaseInfo.
 
-        object_type为database时，为库名；object_type为table或者view时，字段值参考示例。
+        **参数解释**：  数据库对象的标识，具体含义取决于object_type的取值。object_type为database时，为库名；object_type为table或view时，字段值参考请求示例。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param id: The id of this DatabaseInfo.
         :type id: str
@@ -100,7 +100,7 @@ class DatabaseInfo:
     def parent_id(self):
         r"""Gets the parent_id of this DatabaseInfo.
 
-        object_type为table或view时需要填写，为库名
+        **参数解释**：  数据库对象的父级标识，object_type为table或view时需要填写，为库名。  **约束限制**：  - object_type为table或view时必填。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The parent_id of this DatabaseInfo.
         :rtype: str
@@ -111,7 +111,7 @@ class DatabaseInfo:
     def parent_id(self, parent_id):
         r"""Sets the parent_id of this DatabaseInfo.
 
-        object_type为table或view时需要填写，为库名
+        **参数解释**：  数据库对象的父级标识，object_type为table或view时需要填写，为库名。  **约束限制**：  - object_type为table或view时必填。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param parent_id: The parent_id of this DatabaseInfo.
         :type parent_id: str
@@ -122,7 +122,7 @@ class DatabaseInfo:
     def object_type(self):
         r"""Gets the object_type of this DatabaseInfo.
 
-        类型
+        **参数解释**：  数据库对象的类型，用于标识迁移或同步对象是数据库、表、模式还是视图。  **约束限制**：  不涉及。  **取值范围**：  - database：数据库 - table：表 - schema：模式 - view：视图  **默认取值**：  不涉及
 
         :return: The object_type of this DatabaseInfo.
         :rtype: str
@@ -133,7 +133,7 @@ class DatabaseInfo:
     def object_type(self, object_type):
         r"""Sets the object_type of this DatabaseInfo.
 
-        类型
+        **参数解释**：  数据库对象的类型，用于标识迁移或同步对象是数据库、表、模式还是视图。  **约束限制**：  不涉及。  **取值范围**：  - database：数据库 - table：表 - schema：模式 - view：视图  **默认取值**：  不涉及
 
         :param object_type: The object_type of this DatabaseInfo.
         :type object_type: str
@@ -144,7 +144,7 @@ class DatabaseInfo:
     def object_name(self):
         r"""Gets the object_name of this DatabaseInfo.
 
-        数据库对象名称，库名、表名、视图名
+        **参数解释**：  数据库对象名称，可以是库名、表名或视图名。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The object_name of this DatabaseInfo.
         :rtype: str
@@ -155,7 +155,7 @@ class DatabaseInfo:
     def object_name(self, object_name):
         r"""Sets the object_name of this DatabaseInfo.
 
-        数据库对象名称，库名、表名、视图名
+        **参数解释**：  数据库对象名称，可以是库名、表名或视图名。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param object_name: The object_name of this DatabaseInfo.
         :type object_name: str
@@ -166,7 +166,7 @@ class DatabaseInfo:
     def object_alias_name(self):
         r"""Gets the object_alias_name of this DatabaseInfo.
 
-        别名，映射的新名称。
+        **参数解释**：  数据库对象的别名，即映射后的新名称。  **约束限制**：  - 仅支持同步任务使用。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The object_alias_name of this DatabaseInfo.
         :rtype: str
@@ -177,7 +177,7 @@ class DatabaseInfo:
     def object_alias_name(self, object_alias_name):
         r"""Sets the object_alias_name of this DatabaseInfo.
 
-        别名，映射的新名称。
+        **参数解释**：  数据库对象的别名，即映射后的新名称。  **约束限制**：  - 仅支持同步任务使用。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param object_alias_name: The object_alias_name of this DatabaseInfo.
         :type object_alias_name: str
@@ -188,7 +188,7 @@ class DatabaseInfo:
     def select(self):
         r"""Gets the select of this DatabaseInfo.
 
-        是否选中，值为true会进行迁移，false该数据库对象不会迁移，partial为迁移库下面的部分表，不填默认为false
+        **参数解释**：  是否选中该数据库对象进行迁移，用于控制对象级别的迁移选择。  **约束限制**：  不涉及。  **取值范围**：  - true：选中，该数据库对象会进行迁移 - false：不选中，该数据库对象不会迁移 - partial：部分选择，迁移库下面的部分表  **默认取值**：  false
 
         :return: The select of this DatabaseInfo.
         :rtype: str
@@ -199,7 +199,7 @@ class DatabaseInfo:
     def select(self, select):
         r"""Sets the select of this DatabaseInfo.
 
-        是否选中，值为true会进行迁移，false该数据库对象不会迁移，partial为迁移库下面的部分表，不填默认为false
+        **参数解释**：  是否选中该数据库对象进行迁移，用于控制对象级别的迁移选择。  **约束限制**：  不涉及。  **取值范围**：  - true：选中，该数据库对象会进行迁移 - false：不选中，该数据库对象不会迁移 - partial：部分选择，迁移库下面的部分表  **默认取值**：  false
 
         :param select: The select of this DatabaseInfo.
         :type select: str

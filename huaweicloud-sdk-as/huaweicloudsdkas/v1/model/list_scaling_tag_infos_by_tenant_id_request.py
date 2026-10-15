@@ -27,7 +27,7 @@ class ListScalingTagInfosByTenantIdRequest:
 
         The model defined in huaweicloud sdk
 
-        :param resource_type: 资源类型，枚举类：scaling_group_tag。scaling_group_tag表示资源类型为伸缩组。
+        :param resource_type: 资源类型，枚举类：scaling_group_tag、scaling_configuration_tag。scaling_group_tag表示资源类型为伸缩组，scaling_configuration_tag表示资源类型为伸缩配置。
         :type resource_type: str
         """
         
@@ -42,7 +42,7 @@ class ListScalingTagInfosByTenantIdRequest:
     def resource_type(self):
         r"""Gets the resource_type of this ListScalingTagInfosByTenantIdRequest.
 
-        资源类型，枚举类：scaling_group_tag。scaling_group_tag表示资源类型为伸缩组。
+        资源类型，枚举类：scaling_group_tag、scaling_configuration_tag。scaling_group_tag表示资源类型为伸缩组，scaling_configuration_tag表示资源类型为伸缩配置。
 
         :return: The resource_type of this ListScalingTagInfosByTenantIdRequest.
         :rtype: str
@@ -53,7 +53,7 @@ class ListScalingTagInfosByTenantIdRequest:
     def resource_type(self, resource_type):
         r"""Sets the resource_type of this ListScalingTagInfosByTenantIdRequest.
 
-        资源类型，枚举类：scaling_group_tag。scaling_group_tag表示资源类型为伸缩组。
+        资源类型，枚举类：scaling_group_tag、scaling_configuration_tag。scaling_group_tag表示资源类型为伸缩组，scaling_configuration_tag表示资源类型为伸缩配置。
 
         :param resource_type: The resource_type of this ListScalingTagInfosByTenantIdRequest.
         :type resource_type: str

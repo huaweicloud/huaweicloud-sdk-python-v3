@@ -18,17 +18,19 @@ class QueryStructProcessResp:
         'job_id': 'str',
         'error_code': 'str',
         'error_message': 'str',
-        'struct_process': 'StructProcessResp'
+        'struct_process': 'StructProcessResp',
+        'database_info': 'object'
     }
 
     attribute_map = {
         'job_id': 'job_id',
         'error_code': 'error_code',
         'error_message': 'error_message',
-        'struct_process': 'struct_process'
+        'struct_process': 'struct_process',
+        'database_info': 'database_info'
     }
 
-    def __init__(self, job_id=None, error_code=None, error_message=None, struct_process=None):
+    def __init__(self, job_id=None, error_code=None, error_message=None, struct_process=None, database_info=None):
         r"""QueryStructProcessResp
 
         The model defined in huaweicloud sdk
@@ -41,6 +43,8 @@ class QueryStructProcessResp:
         :type error_message: str
         :param struct_process: 
         :type struct_process: :class:`huaweicloudsdkdrs.v3.StructProcessResp`
+        :param database_info: 灾备数据库信息。
+        :type database_info: object
         """
         
         
@@ -49,6 +53,7 @@ class QueryStructProcessResp:
         self._error_code = None
         self._error_message = None
         self._struct_process = None
+        self._database_info = None
         self.discriminator = None
 
         self.job_id = job_id
@@ -58,6 +63,8 @@ class QueryStructProcessResp:
             self.error_message = error_message
         if struct_process is not None:
             self.struct_process = struct_process
+        if database_info is not None:
+            self.database_info = database_info
 
     @property
     def job_id(self):
@@ -142,6 +149,28 @@ class QueryStructProcessResp:
         :type struct_process: :class:`huaweicloudsdkdrs.v3.StructProcessResp`
         """
         self._struct_process = struct_process
+
+    @property
+    def database_info(self):
+        r"""Gets the database_info of this QueryStructProcessResp.
+
+        灾备数据库信息。
+
+        :return: The database_info of this QueryStructProcessResp.
+        :rtype: object
+        """
+        return self._database_info
+
+    @database_info.setter
+    def database_info(self, database_info):
+        r"""Sets the database_info of this QueryStructProcessResp.
+
+        灾备数据库信息。
+
+        :param database_info: The database_info of this QueryStructProcessResp.
+        :type database_info: object
+        """
+        self._database_info = database_info
 
     def to_dict(self):
         result = {}

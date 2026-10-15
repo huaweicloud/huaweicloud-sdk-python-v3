@@ -27,7 +27,7 @@ class BatchUpdateDatabaseObjectReq:
 
         The model defined in huaweicloud sdk
 
-        :param jobs: 批量更新数据库对象请求任务ID列表
+        :param jobs: **参数解释**：  批量更新数据库对象选择的任务信息列表，每个元素包含一个任务的对象选择配置。  **约束限制**：  - 建议批量调用数量不超过10个。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type jobs: list[:class:`huaweicloudsdkdrs.v3.UpdateDatabaseObjectReq`]
         """
         
@@ -42,7 +42,7 @@ class BatchUpdateDatabaseObjectReq:
     def jobs(self):
         r"""Gets the jobs of this BatchUpdateDatabaseObjectReq.
 
-        批量更新数据库对象请求任务ID列表
+        **参数解释**：  批量更新数据库对象选择的任务信息列表，每个元素包含一个任务的对象选择配置。  **约束限制**：  - 建议批量调用数量不超过10个。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The jobs of this BatchUpdateDatabaseObjectReq.
         :rtype: list[:class:`huaweicloudsdkdrs.v3.UpdateDatabaseObjectReq`]
@@ -53,7 +53,7 @@ class BatchUpdateDatabaseObjectReq:
     def jobs(self, jobs):
         r"""Sets the jobs of this BatchUpdateDatabaseObjectReq.
 
-        批量更新数据库对象请求任务ID列表
+        **参数解释**：  批量更新数据库对象选择的任务信息列表，每个元素包含一个任务的对象选择配置。  **约束限制**：  - 建议批量调用数量不超过10个。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param jobs: The jobs of this BatchUpdateDatabaseObjectReq.
         :type jobs: list[:class:`huaweicloudsdkdrs.v3.UpdateDatabaseObjectReq`]

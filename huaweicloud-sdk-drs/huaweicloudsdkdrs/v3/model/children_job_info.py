@@ -53,31 +53,31 @@ class ChildrenJobInfo:
 
         The model defined in huaweicloud sdk
 
-        :param billing_tag: 是否计费字段。
+        :param billing_tag: **参数解释**：  任务的计费模式标识，用于标识该任务当前是否处于计费状态。  **约束限制**：  不涉及。  **取值范围**：  - true：计费中 - false：不计费  **默认取值**：  不涉及
         :type billing_tag: bool
-        :param create_time: 任务创建时间
+        :param create_time: **参数解释**：  子任务的创建时间，表示任务首次被创建的时间戳。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type create_time: str
-        :param db_use_type: 复制场景
+        :param db_use_type: **参数解释**：  迁移任务的业务场景类型。  **约束限制**：  不涉及。  **取值范围**：  - migration：实时迁移 - sync：实时同步 - cloudDataGuard：实时灾备  **默认取值**：  不涉及
         :type db_use_type: str
-        :param description: 任务描述
+        :param description: **参数解释**：  子任务的描述信息，用于说明任务用途或备注。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type description: str
-        :param engine_type: 引擎类型
+        :param engine_type: **参数解释**：  DRS任务引擎类型。  **约束限制**：  不涉及。  **取值范围**：  - cloudDataGuard-cassandra：Cassandra灾备 - cloudDataGuard-ddm：DDM灾备 - cloudDataGuard-taurus-to-mysql：TaurusDB到MySQL灾备 - cloudDataGuard-mysql：MySQL灾备 - cloudDataGuard-mysql-to-taurus：MySQL到TaurusDB灾备  **默认取值**：  不涉及
         :type engine_type: str
-        :param error_msg: 任务失败原因
+        :param error_msg: **参数解释**：  错误详细信息，当任务执行失败时返回的具体错误描述。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type error_msg: str
-        :param id: 任务id
+        :param id: **参数解释**：  子任务ID，用于唯一标识一个数据复制子任务。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type id: str
-        :param job_direction: 迁移方向
+        :param job_direction: **参数解释**：  子任务的迁移方向。  **约束限制**：  不涉及。  **取值范围**：  - up：入云，灾备场景时对应本云为备 - down：出云，灾备场景时对应本云为主 - no-dbs：自建  **默认取值**：  不涉及
         :type job_direction: str
-        :param name: 任务名称
+        :param name: **参数解释**：  子任务名称，用于标识和区分不同的数据复制子任务。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type name: str
-        :param net_type: 网络类型
+        :param net_type: **参数解释**：  子任务使用的网络类型。  **约束限制**：  不涉及。  **取值范围**：  - vpn：虚拟专用网络 - vpc：虚拟私有云 - eip：弹性公网IP  **默认取值**：  不涉及
         :type net_type: str
-        :param node_new_framework: 新框架
+        :param node_new_framework: **参数解释**：  标识子任务是否使用新框架执行。  **约束限制**：  不涉及。  **取值范围**：  - true：使用新框架 - false：使用旧框架  **默认取值**：  不涉及
         :type node_new_framework: bool
-        :param status: 任务状态。 - CREATING：创建中 - CREATE_FAILED：创建失败 - CONFIGURATION：配置中 - STARTJOBING：启动中 - WAITING_FOR_START：等待启动中 - START_JOB_FAILED：启动失败 - PAUSING：已暂停 - FULL_TRANSFER_STARTED：全量开始，灾备场景下为初始化 - FULL_TRANSFER_FAILED：全量失败，灾备场景下为初始化失败 - FULL_TRANSFER_COMPLETE：全量完成，灾备场景下为初始化完成 - INCRE_TRANSFER_STARTED：增量开始，灾备场景下为灾备中 - INCRE_TRANSFER_FAILED：增量失败，灾备场景下为灾备异常 - RELEASE_RESOURCE_STARTED：结束任务中 - RELEASE_RESOURCE_FAILED：结束任务失败 - RELEASE_RESOURCE_COMPLETE：已结束 - REBUILD_NODE_STARTED：故障恢复中 - REBUILD_NODE_FAILED：故障恢复失败 - CHANGE_JOB_STARTED：任务变更中 - CHANGE_JOB_FAILED：任务变更失败 - DELETED：已删除 - CHILD_TRANSFER_STARTING：再编辑子任务启动中 - CHILD_TRANSFER_STARTED：再编辑子任务迁移中 - CHILD_TRANSFER_COMPLETE：再编辑子任务迁移完成 - CHILD_TRANSFER_FAILED：再编辑子任务迁移失败 - RELEASE_CHILD_TRANSFER_STARTED：再编辑子任务结束中 - RELEASE_CHILD_TRANSFER_COMPLETE：再编辑子任务已结束 - NODE_UPGRADE_START：升级开始 - NODE_UPGRADE_COMPLETE：升级完成 - NODE_UPGRADE_FAILED：升级失败
+        :param status: **参数解释**：  子任务当前运行状态。  **约束限制**：  不涉及。  **取值范围**：  - CREATING：创建中 - CREATE_FAILED：创建失败 - CONFIGURATION：配置中 - STARTJOBING：启动中 - WAITING_FOR_START：等待启动中 - START_JOB_FAILED：启动失败 - PAUSING：已暂停 - FULL_TRANSFER_STARTED：全量开始，灾备场景下为初始化 - FULL_TRANSFER_FAILED：全量失败，灾备场景下为初始化失败 - FULL_TRANSFER_COMPLETE：全量完成，灾备场景下为初始化完成 - INCRE_TRANSFER_STARTED：增量开始，灾备场景下为灾备中 - INCRE_TRANSFER_FAILED：增量失败，灾备场景下为灾备异常 - RELEASE_RESOURCE_STARTED：结束任务中 - RELEASE_RESOURCE_FAILED：结束任务失败 - RELEASE_RESOURCE_COMPLETE：已结束 - REBUILD_NODE_STARTED：故障恢复中 - REBUILD_NODE_FAILED：故障恢复失败 - CHANGE_JOB_STARTED：任务变更中 - CHANGE_JOB_FAILED：任务变更失败 - DELETED：已删除 - CHILD_TRANSFER_STARTING：再编辑子任务启动中 - CHILD_TRANSFER_STARTED：再编辑子任务迁移中 - CHILD_TRANSFER_COMPLETE：再编辑子任务迁移完成 - CHILD_TRANSFER_FAILED：再编辑子任务迁移失败 - RELEASE_CHILD_TRANSFER_STARTED：再编辑子任务结束中 - RELEASE_CHILD_TRANSFER_COMPLETE：再编辑子任务已结束 - NODE_UPGRADE_START：升级开始 - NODE_UPGRADE_COMPLETE：升级完成 - NODE_UPGRADE_FAILED：升级失败  **默认取值**：  不涉及
         :type status: str
-        :param task_type: 迁移模式
+        :param task_type: **参数解释**：  子任务迁移模式，指定数据复制任务的执行方式。  **约束限制**：  不涉及。  **取值范围**：  - FULL_TRANS：全量迁移，仅迁移历史数据 - FULL_INCR_TRANS：全量+增量迁移，先迁移历史数据再持续同步增量 - INCR_TRANS：增量迁移，仅同步数据变更  **默认取值**：  不涉及
         :type task_type: str
         :param job_action: 
         :type job_action: :class:`huaweicloudsdkdrs.v3.JobActionResp`
@@ -134,7 +134,7 @@ class ChildrenJobInfo:
     def billing_tag(self):
         r"""Gets the billing_tag of this ChildrenJobInfo.
 
-        是否计费字段。
+        **参数解释**：  任务的计费模式标识，用于标识该任务当前是否处于计费状态。  **约束限制**：  不涉及。  **取值范围**：  - true：计费中 - false：不计费  **默认取值**：  不涉及
 
         :return: The billing_tag of this ChildrenJobInfo.
         :rtype: bool
@@ -145,7 +145,7 @@ class ChildrenJobInfo:
     def billing_tag(self, billing_tag):
         r"""Sets the billing_tag of this ChildrenJobInfo.
 
-        是否计费字段。
+        **参数解释**：  任务的计费模式标识，用于标识该任务当前是否处于计费状态。  **约束限制**：  不涉及。  **取值范围**：  - true：计费中 - false：不计费  **默认取值**：  不涉及
 
         :param billing_tag: The billing_tag of this ChildrenJobInfo.
         :type billing_tag: bool
@@ -156,7 +156,7 @@ class ChildrenJobInfo:
     def create_time(self):
         r"""Gets the create_time of this ChildrenJobInfo.
 
-        任务创建时间
+        **参数解释**：  子任务的创建时间，表示任务首次被创建的时间戳。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The create_time of this ChildrenJobInfo.
         :rtype: str
@@ -167,7 +167,7 @@ class ChildrenJobInfo:
     def create_time(self, create_time):
         r"""Sets the create_time of this ChildrenJobInfo.
 
-        任务创建时间
+        **参数解释**：  子任务的创建时间，表示任务首次被创建的时间戳。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param create_time: The create_time of this ChildrenJobInfo.
         :type create_time: str
@@ -178,7 +178,7 @@ class ChildrenJobInfo:
     def db_use_type(self):
         r"""Gets the db_use_type of this ChildrenJobInfo.
 
-        复制场景
+        **参数解释**：  迁移任务的业务场景类型。  **约束限制**：  不涉及。  **取值范围**：  - migration：实时迁移 - sync：实时同步 - cloudDataGuard：实时灾备  **默认取值**：  不涉及
 
         :return: The db_use_type of this ChildrenJobInfo.
         :rtype: str
@@ -189,7 +189,7 @@ class ChildrenJobInfo:
     def db_use_type(self, db_use_type):
         r"""Sets the db_use_type of this ChildrenJobInfo.
 
-        复制场景
+        **参数解释**：  迁移任务的业务场景类型。  **约束限制**：  不涉及。  **取值范围**：  - migration：实时迁移 - sync：实时同步 - cloudDataGuard：实时灾备  **默认取值**：  不涉及
 
         :param db_use_type: The db_use_type of this ChildrenJobInfo.
         :type db_use_type: str
@@ -200,7 +200,7 @@ class ChildrenJobInfo:
     def description(self):
         r"""Gets the description of this ChildrenJobInfo.
 
-        任务描述
+        **参数解释**：  子任务的描述信息，用于说明任务用途或备注。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The description of this ChildrenJobInfo.
         :rtype: str
@@ -211,7 +211,7 @@ class ChildrenJobInfo:
     def description(self, description):
         r"""Sets the description of this ChildrenJobInfo.
 
-        任务描述
+        **参数解释**：  子任务的描述信息，用于说明任务用途或备注。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param description: The description of this ChildrenJobInfo.
         :type description: str
@@ -222,7 +222,7 @@ class ChildrenJobInfo:
     def engine_type(self):
         r"""Gets the engine_type of this ChildrenJobInfo.
 
-        引擎类型
+        **参数解释**：  DRS任务引擎类型。  **约束限制**：  不涉及。  **取值范围**：  - cloudDataGuard-cassandra：Cassandra灾备 - cloudDataGuard-ddm：DDM灾备 - cloudDataGuard-taurus-to-mysql：TaurusDB到MySQL灾备 - cloudDataGuard-mysql：MySQL灾备 - cloudDataGuard-mysql-to-taurus：MySQL到TaurusDB灾备  **默认取值**：  不涉及
 
         :return: The engine_type of this ChildrenJobInfo.
         :rtype: str
@@ -233,7 +233,7 @@ class ChildrenJobInfo:
     def engine_type(self, engine_type):
         r"""Sets the engine_type of this ChildrenJobInfo.
 
-        引擎类型
+        **参数解释**：  DRS任务引擎类型。  **约束限制**：  不涉及。  **取值范围**：  - cloudDataGuard-cassandra：Cassandra灾备 - cloudDataGuard-ddm：DDM灾备 - cloudDataGuard-taurus-to-mysql：TaurusDB到MySQL灾备 - cloudDataGuard-mysql：MySQL灾备 - cloudDataGuard-mysql-to-taurus：MySQL到TaurusDB灾备  **默认取值**：  不涉及
 
         :param engine_type: The engine_type of this ChildrenJobInfo.
         :type engine_type: str
@@ -244,7 +244,7 @@ class ChildrenJobInfo:
     def error_msg(self):
         r"""Gets the error_msg of this ChildrenJobInfo.
 
-        任务失败原因
+        **参数解释**：  错误详细信息，当任务执行失败时返回的具体错误描述。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The error_msg of this ChildrenJobInfo.
         :rtype: str
@@ -255,7 +255,7 @@ class ChildrenJobInfo:
     def error_msg(self, error_msg):
         r"""Sets the error_msg of this ChildrenJobInfo.
 
-        任务失败原因
+        **参数解释**：  错误详细信息，当任务执行失败时返回的具体错误描述。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param error_msg: The error_msg of this ChildrenJobInfo.
         :type error_msg: str
@@ -266,7 +266,7 @@ class ChildrenJobInfo:
     def id(self):
         r"""Gets the id of this ChildrenJobInfo.
 
-        任务id
+        **参数解释**：  子任务ID，用于唯一标识一个数据复制子任务。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The id of this ChildrenJobInfo.
         :rtype: str
@@ -277,7 +277,7 @@ class ChildrenJobInfo:
     def id(self, id):
         r"""Sets the id of this ChildrenJobInfo.
 
-        任务id
+        **参数解释**：  子任务ID，用于唯一标识一个数据复制子任务。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param id: The id of this ChildrenJobInfo.
         :type id: str
@@ -288,7 +288,7 @@ class ChildrenJobInfo:
     def job_direction(self):
         r"""Gets the job_direction of this ChildrenJobInfo.
 
-        迁移方向
+        **参数解释**：  子任务的迁移方向。  **约束限制**：  不涉及。  **取值范围**：  - up：入云，灾备场景时对应本云为备 - down：出云，灾备场景时对应本云为主 - no-dbs：自建  **默认取值**：  不涉及
 
         :return: The job_direction of this ChildrenJobInfo.
         :rtype: str
@@ -299,7 +299,7 @@ class ChildrenJobInfo:
     def job_direction(self, job_direction):
         r"""Sets the job_direction of this ChildrenJobInfo.
 
-        迁移方向
+        **参数解释**：  子任务的迁移方向。  **约束限制**：  不涉及。  **取值范围**：  - up：入云，灾备场景时对应本云为备 - down：出云，灾备场景时对应本云为主 - no-dbs：自建  **默认取值**：  不涉及
 
         :param job_direction: The job_direction of this ChildrenJobInfo.
         :type job_direction: str
@@ -310,7 +310,7 @@ class ChildrenJobInfo:
     def name(self):
         r"""Gets the name of this ChildrenJobInfo.
 
-        任务名称
+        **参数解释**：  子任务名称，用于标识和区分不同的数据复制子任务。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The name of this ChildrenJobInfo.
         :rtype: str
@@ -321,7 +321,7 @@ class ChildrenJobInfo:
     def name(self, name):
         r"""Sets the name of this ChildrenJobInfo.
 
-        任务名称
+        **参数解释**：  子任务名称，用于标识和区分不同的数据复制子任务。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param name: The name of this ChildrenJobInfo.
         :type name: str
@@ -332,7 +332,7 @@ class ChildrenJobInfo:
     def net_type(self):
         r"""Gets the net_type of this ChildrenJobInfo.
 
-        网络类型
+        **参数解释**：  子任务使用的网络类型。  **约束限制**：  不涉及。  **取值范围**：  - vpn：虚拟专用网络 - vpc：虚拟私有云 - eip：弹性公网IP  **默认取值**：  不涉及
 
         :return: The net_type of this ChildrenJobInfo.
         :rtype: str
@@ -343,7 +343,7 @@ class ChildrenJobInfo:
     def net_type(self, net_type):
         r"""Sets the net_type of this ChildrenJobInfo.
 
-        网络类型
+        **参数解释**：  子任务使用的网络类型。  **约束限制**：  不涉及。  **取值范围**：  - vpn：虚拟专用网络 - vpc：虚拟私有云 - eip：弹性公网IP  **默认取值**：  不涉及
 
         :param net_type: The net_type of this ChildrenJobInfo.
         :type net_type: str
@@ -354,7 +354,7 @@ class ChildrenJobInfo:
     def node_new_framework(self):
         r"""Gets the node_new_framework of this ChildrenJobInfo.
 
-        新框架
+        **参数解释**：  标识子任务是否使用新框架执行。  **约束限制**：  不涉及。  **取值范围**：  - true：使用新框架 - false：使用旧框架  **默认取值**：  不涉及
 
         :return: The node_new_framework of this ChildrenJobInfo.
         :rtype: bool
@@ -365,7 +365,7 @@ class ChildrenJobInfo:
     def node_new_framework(self, node_new_framework):
         r"""Sets the node_new_framework of this ChildrenJobInfo.
 
-        新框架
+        **参数解释**：  标识子任务是否使用新框架执行。  **约束限制**：  不涉及。  **取值范围**：  - true：使用新框架 - false：使用旧框架  **默认取值**：  不涉及
 
         :param node_new_framework: The node_new_framework of this ChildrenJobInfo.
         :type node_new_framework: bool
@@ -376,7 +376,7 @@ class ChildrenJobInfo:
     def status(self):
         r"""Gets the status of this ChildrenJobInfo.
 
-        任务状态。 - CREATING：创建中 - CREATE_FAILED：创建失败 - CONFIGURATION：配置中 - STARTJOBING：启动中 - WAITING_FOR_START：等待启动中 - START_JOB_FAILED：启动失败 - PAUSING：已暂停 - FULL_TRANSFER_STARTED：全量开始，灾备场景下为初始化 - FULL_TRANSFER_FAILED：全量失败，灾备场景下为初始化失败 - FULL_TRANSFER_COMPLETE：全量完成，灾备场景下为初始化完成 - INCRE_TRANSFER_STARTED：增量开始，灾备场景下为灾备中 - INCRE_TRANSFER_FAILED：增量失败，灾备场景下为灾备异常 - RELEASE_RESOURCE_STARTED：结束任务中 - RELEASE_RESOURCE_FAILED：结束任务失败 - RELEASE_RESOURCE_COMPLETE：已结束 - REBUILD_NODE_STARTED：故障恢复中 - REBUILD_NODE_FAILED：故障恢复失败 - CHANGE_JOB_STARTED：任务变更中 - CHANGE_JOB_FAILED：任务变更失败 - DELETED：已删除 - CHILD_TRANSFER_STARTING：再编辑子任务启动中 - CHILD_TRANSFER_STARTED：再编辑子任务迁移中 - CHILD_TRANSFER_COMPLETE：再编辑子任务迁移完成 - CHILD_TRANSFER_FAILED：再编辑子任务迁移失败 - RELEASE_CHILD_TRANSFER_STARTED：再编辑子任务结束中 - RELEASE_CHILD_TRANSFER_COMPLETE：再编辑子任务已结束 - NODE_UPGRADE_START：升级开始 - NODE_UPGRADE_COMPLETE：升级完成 - NODE_UPGRADE_FAILED：升级失败
+        **参数解释**：  子任务当前运行状态。  **约束限制**：  不涉及。  **取值范围**：  - CREATING：创建中 - CREATE_FAILED：创建失败 - CONFIGURATION：配置中 - STARTJOBING：启动中 - WAITING_FOR_START：等待启动中 - START_JOB_FAILED：启动失败 - PAUSING：已暂停 - FULL_TRANSFER_STARTED：全量开始，灾备场景下为初始化 - FULL_TRANSFER_FAILED：全量失败，灾备场景下为初始化失败 - FULL_TRANSFER_COMPLETE：全量完成，灾备场景下为初始化完成 - INCRE_TRANSFER_STARTED：增量开始，灾备场景下为灾备中 - INCRE_TRANSFER_FAILED：增量失败，灾备场景下为灾备异常 - RELEASE_RESOURCE_STARTED：结束任务中 - RELEASE_RESOURCE_FAILED：结束任务失败 - RELEASE_RESOURCE_COMPLETE：已结束 - REBUILD_NODE_STARTED：故障恢复中 - REBUILD_NODE_FAILED：故障恢复失败 - CHANGE_JOB_STARTED：任务变更中 - CHANGE_JOB_FAILED：任务变更失败 - DELETED：已删除 - CHILD_TRANSFER_STARTING：再编辑子任务启动中 - CHILD_TRANSFER_STARTED：再编辑子任务迁移中 - CHILD_TRANSFER_COMPLETE：再编辑子任务迁移完成 - CHILD_TRANSFER_FAILED：再编辑子任务迁移失败 - RELEASE_CHILD_TRANSFER_STARTED：再编辑子任务结束中 - RELEASE_CHILD_TRANSFER_COMPLETE：再编辑子任务已结束 - NODE_UPGRADE_START：升级开始 - NODE_UPGRADE_COMPLETE：升级完成 - NODE_UPGRADE_FAILED：升级失败  **默认取值**：  不涉及
 
         :return: The status of this ChildrenJobInfo.
         :rtype: str
@@ -387,7 +387,7 @@ class ChildrenJobInfo:
     def status(self, status):
         r"""Sets the status of this ChildrenJobInfo.
 
-        任务状态。 - CREATING：创建中 - CREATE_FAILED：创建失败 - CONFIGURATION：配置中 - STARTJOBING：启动中 - WAITING_FOR_START：等待启动中 - START_JOB_FAILED：启动失败 - PAUSING：已暂停 - FULL_TRANSFER_STARTED：全量开始，灾备场景下为初始化 - FULL_TRANSFER_FAILED：全量失败，灾备场景下为初始化失败 - FULL_TRANSFER_COMPLETE：全量完成，灾备场景下为初始化完成 - INCRE_TRANSFER_STARTED：增量开始，灾备场景下为灾备中 - INCRE_TRANSFER_FAILED：增量失败，灾备场景下为灾备异常 - RELEASE_RESOURCE_STARTED：结束任务中 - RELEASE_RESOURCE_FAILED：结束任务失败 - RELEASE_RESOURCE_COMPLETE：已结束 - REBUILD_NODE_STARTED：故障恢复中 - REBUILD_NODE_FAILED：故障恢复失败 - CHANGE_JOB_STARTED：任务变更中 - CHANGE_JOB_FAILED：任务变更失败 - DELETED：已删除 - CHILD_TRANSFER_STARTING：再编辑子任务启动中 - CHILD_TRANSFER_STARTED：再编辑子任务迁移中 - CHILD_TRANSFER_COMPLETE：再编辑子任务迁移完成 - CHILD_TRANSFER_FAILED：再编辑子任务迁移失败 - RELEASE_CHILD_TRANSFER_STARTED：再编辑子任务结束中 - RELEASE_CHILD_TRANSFER_COMPLETE：再编辑子任务已结束 - NODE_UPGRADE_START：升级开始 - NODE_UPGRADE_COMPLETE：升级完成 - NODE_UPGRADE_FAILED：升级失败
+        **参数解释**：  子任务当前运行状态。  **约束限制**：  不涉及。  **取值范围**：  - CREATING：创建中 - CREATE_FAILED：创建失败 - CONFIGURATION：配置中 - STARTJOBING：启动中 - WAITING_FOR_START：等待启动中 - START_JOB_FAILED：启动失败 - PAUSING：已暂停 - FULL_TRANSFER_STARTED：全量开始，灾备场景下为初始化 - FULL_TRANSFER_FAILED：全量失败，灾备场景下为初始化失败 - FULL_TRANSFER_COMPLETE：全量完成，灾备场景下为初始化完成 - INCRE_TRANSFER_STARTED：增量开始，灾备场景下为灾备中 - INCRE_TRANSFER_FAILED：增量失败，灾备场景下为灾备异常 - RELEASE_RESOURCE_STARTED：结束任务中 - RELEASE_RESOURCE_FAILED：结束任务失败 - RELEASE_RESOURCE_COMPLETE：已结束 - REBUILD_NODE_STARTED：故障恢复中 - REBUILD_NODE_FAILED：故障恢复失败 - CHANGE_JOB_STARTED：任务变更中 - CHANGE_JOB_FAILED：任务变更失败 - DELETED：已删除 - CHILD_TRANSFER_STARTING：再编辑子任务启动中 - CHILD_TRANSFER_STARTED：再编辑子任务迁移中 - CHILD_TRANSFER_COMPLETE：再编辑子任务迁移完成 - CHILD_TRANSFER_FAILED：再编辑子任务迁移失败 - RELEASE_CHILD_TRANSFER_STARTED：再编辑子任务结束中 - RELEASE_CHILD_TRANSFER_COMPLETE：再编辑子任务已结束 - NODE_UPGRADE_START：升级开始 - NODE_UPGRADE_COMPLETE：升级完成 - NODE_UPGRADE_FAILED：升级失败  **默认取值**：  不涉及
 
         :param status: The status of this ChildrenJobInfo.
         :type status: str
@@ -398,7 +398,7 @@ class ChildrenJobInfo:
     def task_type(self):
         r"""Gets the task_type of this ChildrenJobInfo.
 
-        迁移模式
+        **参数解释**：  子任务迁移模式，指定数据复制任务的执行方式。  **约束限制**：  不涉及。  **取值范围**：  - FULL_TRANS：全量迁移，仅迁移历史数据 - FULL_INCR_TRANS：全量+增量迁移，先迁移历史数据再持续同步增量 - INCR_TRANS：增量迁移，仅同步数据变更  **默认取值**：  不涉及
 
         :return: The task_type of this ChildrenJobInfo.
         :rtype: str
@@ -409,7 +409,7 @@ class ChildrenJobInfo:
     def task_type(self, task_type):
         r"""Sets the task_type of this ChildrenJobInfo.
 
-        迁移模式
+        **参数解释**：  子任务迁移模式，指定数据复制任务的执行方式。  **约束限制**：  不涉及。  **取值范围**：  - FULL_TRANS：全量迁移，仅迁移历史数据 - FULL_INCR_TRANS：全量+增量迁移，先迁移历史数据再持续同步增量 - INCR_TRANS：增量迁移，仅同步数据变更  **默认取值**：  不涉及
 
         :param task_type: The task_type of this ChildrenJobInfo.
         :type task_type: str

@@ -50,7 +50,8 @@ class JobDetailResp:
         'repair_progress_info': 'JobDetailRespRepairProgressInfo',
         'repair_detail_info': 'QueryRepairDetailResp',
         'repair_export_status': 'str',
-        'job_kernel_direction': 'str'
+        'job_kernel_direction': 'str',
+        'sync_mode': 'str'
     }
 
     attribute_map = {
@@ -89,29 +90,30 @@ class JobDetailResp:
         'repair_progress_info': 'repair_progress_info',
         'repair_detail_info': 'repair_detail_info',
         'repair_export_status': 'repair_export_status',
-        'job_kernel_direction': 'job_kernel_direction'
+        'job_kernel_direction': 'job_kernel_direction',
+        'sync_mode': 'sync_mode'
     }
 
-    def __init__(self, id=None, status=None, create_time=None, total_count=None, master_job_id=None, base_info=None, source_endpoint=None, target_endpoint=None, alarm_notify=None, speed_limit=None, user_migration=None, policy_config=None, db_param=None, tuning_params=None, period_order=None, node_info=None, logs=None, network_results=None, precheck_result=None, progress_info=None, migration_object_progress_info=None, metrics=None, compare_result=None, support_import_file_resp=None, instance_features=None, task_version=None, connection_management=None, public_ip_list=None, bind_public_ip_state=None, children=None, is_writable=None, diagnoses=None, repair_progress_info=None, repair_detail_info=None, repair_export_status=None, job_kernel_direction=None):
+    def __init__(self, id=None, status=None, create_time=None, total_count=None, master_job_id=None, base_info=None, source_endpoint=None, target_endpoint=None, alarm_notify=None, speed_limit=None, user_migration=None, policy_config=None, db_param=None, tuning_params=None, period_order=None, node_info=None, logs=None, network_results=None, precheck_result=None, progress_info=None, migration_object_progress_info=None, metrics=None, compare_result=None, support_import_file_resp=None, instance_features=None, task_version=None, connection_management=None, public_ip_list=None, bind_public_ip_state=None, children=None, is_writable=None, diagnoses=None, repair_progress_info=None, repair_detail_info=None, repair_export_status=None, job_kernel_direction=None, sync_mode=None):
         r"""JobDetailResp
 
         The model defined in huaweicloud sdk
 
-        :param id: 任务ID。
+        :param id: **参数解释**：  任务ID，用于唯一标识一个数据复制任务。  **约束限制**：  不涉及。  **取值范围**：  UUID格式字符串。  **默认取值**：  不涉及
         :type id: str
-        :param status: 任务状态。 - CREATING：创建中 - CREATE_FAILED：创建失败 - CONFIGURATION：配置中 - STARTJOBING：启动中 - WAITING_FOR_START：等待启动中 - START_JOB_FAILED：启动失败 - PAUSING：已暂停 - FULL_TRANSFER_STARTED：全量开始，灾备场景下为初始化 - FULL_TRANSFER_FAILED：全量失败，灾备场景下为初始化失败 - FULL_TRANSFER_COMPLETE：全量完成，灾备场景下为初始化完成 - INCRE_TRANSFER_STARTED：增量开始，灾备场景下为灾备中 - INCRE_TRANSFER_FAILED：增量失败，灾备场景下为灾备异常 - RELEASE_RESOURCE_STARTED：结束任务中 - RELEASE_RESOURCE_FAILED：结束任务失败 - RELEASE_RESOURCE_COMPLETE：已结束 - REBUILD_NODE_STARTED：故障恢复中 - REBUILD_NODE_FAILED：故障恢复失败 - CHANGE_JOB_STARTED：任务变更中 - CHANGE_JOB_FAILED：任务变更失败 - DELETED：已删除 - CHILD_TRANSFER_STARTING：再编辑子任务启动中 - CHILD_TRANSFER_STARTED：再编辑子任务迁移中 - CHILD_TRANSFER_COMPLETE：再编辑子任务迁移完成 - CHILD_TRANSFER_FAILED：再编辑子任务迁移失败 - RELEASE_CHILD_TRANSFER_STARTED：再编辑子任务结束中 - RELEASE_CHILD_TRANSFER_COMPLETE：再编辑子任务已结束 - NODE_UPGRADE_START：升级开始 - NODE_UPGRADE_COMPLETE：升级完成 - NODE_UPGRADE_FAILED：升级失败
+        :param status: **参数解释**：  任务当前运行状态。  **约束限制**：  不涉及。  **取值范围**：  - CREATING：创建中 - CREATE_FAILED：创建失败 - CONFIGURATION：配置中 - STARTJOBING：启动中 - WAITING_FOR_START：等待启动中 - START_JOB_FAILED：启动失败 - PAUSING：已暂停 - FULL_TRANSFER_STARTED：全量开始，灾备场景下为初始化 - FULL_TRANSFER_FAILED：全量失败，灾备场景下为初始化失败 - FULL_TRANSFER_COMPLETE：全量完成，灾备场景下为初始化完成 - INCRE_TRANSFER_STARTED：增量开始，灾备场景下为灾备中 - INCRE_TRANSFER_FAILED：增量失败，灾备场景下为灾备异常 - RELEASE_RESOURCE_STARTED：结束任务中 - RELEASE_RESOURCE_FAILED：结束任务失败 - RELEASE_RESOURCE_COMPLETE：已结束 - REBUILD_NODE_STARTED：故障恢复中 - REBUILD_NODE_FAILED：故障恢复失败 - CHANGE_JOB_STARTED：任务变更中 - CHANGE_JOB_FAILED：任务变更失败 - DELETED：已删除 - CHILD_TRANSFER_STARTING：再编辑子任务启动中 - CHILD_TRANSFER_STARTED：再编辑子任务迁移中 - CHILD_TRANSFER_COMPLETE：再编辑子任务迁移完成 - CHILD_TRANSFER_FAILED：再编辑子任务迁移失败 - RELEASE_CHILD_TRANSFER_STARTED：再编辑子任务结束中 - RELEASE_CHILD_TRANSFER_COMPLETE：再编辑子任务已结束 - NODE_UPGRADE_START：升级开始 - NODE_UPGRADE_COMPLETE：升级完成 - NODE_UPGRADE_FAILED：升级失败  **默认取值**：  不涉及
         :type status: str
-        :param create_time: 任务创建时间。
+        :param create_time: **参数解释**：  任务的创建时间，表示任务首次被创建的时间戳。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type create_time: str
-        :param total_count: 列表中的项目总数，与分页无关。
+        :param total_count: **参数解释**：  列表中的项目总数，与分页无关。表示满足查询条件的记录总数量，用于分页计算。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type total_count: int
-        :param master_job_id: 多任务主节点的任务ID。
+        :param master_job_id: **参数解释**：  多任务主节点的任务ID，在多对一同步场景中标识主任务。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type master_job_id: str
         :param base_info: 
         :type base_info: :class:`huaweicloudsdkdrs.v5.JobBaseInfo`
-        :param source_endpoint: 任务源数据库信息体。
+        :param source_endpoint: **参数解释**：  任务源数据库信息体，详情请参见JobEndpointInfo对象定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及  **默认取值**：  不涉及
         :type source_endpoint: list[:class:`huaweicloudsdkdrs.v5.JobEndpointInfo`]
-        :param target_endpoint: 任务目标数据库信息体。
+        :param target_endpoint: **参数解释**：  任务目标数据库信息体，详情请参见JobEndpointInfo对象定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及  **默认取值**：  不涉及
         :type target_endpoint: list[:class:`huaweicloudsdkdrs.v5.JobEndpointInfo`]
         :param alarm_notify: 
         :type alarm_notify: :class:`huaweicloudsdkdrs.v5.AlarmNotifyConfig`
@@ -129,9 +131,9 @@ class JobDetailResp:
         :type period_order: :class:`huaweicloudsdkdrs.v5.PeriodOrderInfo`
         :param node_info: 
         :type node_info: :class:`huaweicloudsdkdrs.v5.JobNodeInfo`
-        :param logs: 日志查询结果信息体。
+        :param logs: **参数解释**：  日志查询结果信息体，详情请参见TaskLogInfo对象定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及  **默认取值**：  不涉及
         :type logs: list[:class:`huaweicloudsdkdrs.v5.TaskLogInfo`]
-        :param network_results: 网络打通测试结果信息体。
+        :param network_results: **参数解释**：  网络打通测试结果信息体，详情请参见QueryNetworkResult对象定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及  **默认取值**：  不涉及
         :type network_results: list[:class:`huaweicloudsdkdrs.v5.QueryNetworkResult`]
         :param precheck_result: 
         :type precheck_result: :class:`huaweicloudsdkdrs.v5.QueryPreCheckResult`
@@ -145,30 +147,32 @@ class JobDetailResp:
         :type compare_result: :class:`huaweicloudsdkdrs.v5.CompareResultInfo`
         :param support_import_file_resp: 
         :type support_import_file_resp: :class:`huaweicloudsdkdrs.v5.SupportImportFileResult`
-        :param instance_features: 由开关和版本共同控制的任务级别的功能列表。
+        :param instance_features: **参数解释**：  由开关和版本共同控制的任务级别的功能列表，格式为key/value键值对。  **约束限制**：  不涉及。  **取值范围**：  不涉及  **默认取值**：  不涉及
         :type instance_features: dict(str, str)
-        :param task_version: 任务版本。
+        :param task_version: **参数解释**：  任务版本，标识当前数据复制任务所使用的版本号。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type task_version: str
         :param connection_management: 
         :type connection_management: :class:`huaweicloudsdkdrs.v5.ConnectionManagement`
-        :param public_ip_list: 指定公网IP的信息
+        :param public_ip_list: **参数解释**：  指定公网IP的信息列表，详情请参见PublicIpConfig对象定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及  **默认取值**：  不涉及
         :type public_ip_list: list[:class:`huaweicloudsdkdrs.v5.PublicIpConfig`]
-        :param bind_public_ip_state: 是否成功绑定公网IP 取值：SUCCESS，FAILED
+        :param bind_public_ip_state: **参数解释**：  是否成功绑定公网IP，标识为任务绑定公网IP操作的执行结果。  **约束限制**：  不涉及。  **取值范围**：  - SUCCESS：成功 - FAILED：失败  **默认取值**：  不涉及
         :type bind_public_ip_state: str
-        :param children: 多任务时，存在子任务绑定失败时，返回子任务的信息
+        :param children: **参数解释**：  多任务时存在子任务绑定失败时返回的子任务信息列表，详情请参见FailedToBindEipChildInfo对象定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及  **默认取值**：  不涉及
         :type children: list[:class:`huaweicloudsdkdrs.v5.FailedToBindEipChildInfo`]
-        :param is_writable: 解除目标库只读操作后，目标库解除只读是否成功。 - pending：目标库解除操作进行中。 - success：目标库解除只读操作成功。
+        :param is_writable: **参数解释**：  解除目标库只读操作后，目标库解除只读是否成功。  **约束限制**：  不涉及。  **取值范围**：  - pending：目标库解除操作进行中 - success：目标库解除只读操作成功  **默认取值**：  不涉及
         :type is_writable: str
-        :param diagnoses: 一键诊断结果。
+        :param diagnoses: **参数解释**：  一键诊断结果列表，详情请参见QueryDiagnosisResult对象定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及  **默认取值**：  不涉及
         :type diagnoses: list[:class:`huaweicloudsdkdrs.v5.QueryDiagnosisResult`]
         :param repair_progress_info: 
         :type repair_progress_info: :class:`huaweicloudsdkdrs.v5.JobDetailRespRepairProgressInfo`
         :param repair_detail_info: 
         :type repair_detail_info: :class:`huaweicloudsdkdrs.v5.QueryRepairDetailResp`
-        :param repair_export_status: 修复SQL导出状态。 INIT：初始状态，EXPORTING：比对结果导出中，EXPORT_COMPLETE：比对结果导出完成，EXPORT_COMMON_FAILED：比对结果导出失败
+        :param repair_export_status: **参数解释**：  修复SQL导出状态，标识数据修复SQL文件的导出进度。  **约束限制**：  不涉及。  **取值范围**：  - INIT：初始状态 - EXPORTING：比对结果导出中 - EXPORT_COMPLETE：比对结果导出完成 - EXPORT_COMMON_FAILED：比对结果导出失败  **默认取值**：  不涉及
         :type repair_export_status: str
-        :param job_kernel_direction: 灾备任务内核方向，up上云，down下云。当任务处于倒换中，与灾备任务方向相反，否则相同。
+        :param job_kernel_direction: **参数解释**：  灾备内核方向，非倒换中与job_direction取值相同，倒换中与job_direction取值相反。  **约束限制**：  不涉及。  **取值范围**：  - up：入云，灾备场景时对应本云为备 - down：出云，灾备场景时对应本云为主  **默认取值**：  不涉及
         :type job_kernel_direction: str
+        :param sync_mode: 同步模式 DB_LEVEL：库级 SCHEMA_LEVEL：schema级 TABLE_LEVEL：表级 FILE_IMPORT：文件导入 INSTANCE_LEVEL：实例级
+        :type sync_mode: str
         """
         
         
@@ -209,6 +213,7 @@ class JobDetailResp:
         self._repair_detail_info = None
         self._repair_export_status = None
         self._job_kernel_direction = None
+        self._sync_mode = None
         self.discriminator = None
 
         if id is not None:
@@ -283,12 +288,14 @@ class JobDetailResp:
             self.repair_export_status = repair_export_status
         if job_kernel_direction is not None:
             self.job_kernel_direction = job_kernel_direction
+        if sync_mode is not None:
+            self.sync_mode = sync_mode
 
     @property
     def id(self):
         r"""Gets the id of this JobDetailResp.
 
-        任务ID。
+        **参数解释**：  任务ID，用于唯一标识一个数据复制任务。  **约束限制**：  不涉及。  **取值范围**：  UUID格式字符串。  **默认取值**：  不涉及
 
         :return: The id of this JobDetailResp.
         :rtype: str
@@ -299,7 +306,7 @@ class JobDetailResp:
     def id(self, id):
         r"""Sets the id of this JobDetailResp.
 
-        任务ID。
+        **参数解释**：  任务ID，用于唯一标识一个数据复制任务。  **约束限制**：  不涉及。  **取值范围**：  UUID格式字符串。  **默认取值**：  不涉及
 
         :param id: The id of this JobDetailResp.
         :type id: str
@@ -310,7 +317,7 @@ class JobDetailResp:
     def status(self):
         r"""Gets the status of this JobDetailResp.
 
-        任务状态。 - CREATING：创建中 - CREATE_FAILED：创建失败 - CONFIGURATION：配置中 - STARTJOBING：启动中 - WAITING_FOR_START：等待启动中 - START_JOB_FAILED：启动失败 - PAUSING：已暂停 - FULL_TRANSFER_STARTED：全量开始，灾备场景下为初始化 - FULL_TRANSFER_FAILED：全量失败，灾备场景下为初始化失败 - FULL_TRANSFER_COMPLETE：全量完成，灾备场景下为初始化完成 - INCRE_TRANSFER_STARTED：增量开始，灾备场景下为灾备中 - INCRE_TRANSFER_FAILED：增量失败，灾备场景下为灾备异常 - RELEASE_RESOURCE_STARTED：结束任务中 - RELEASE_RESOURCE_FAILED：结束任务失败 - RELEASE_RESOURCE_COMPLETE：已结束 - REBUILD_NODE_STARTED：故障恢复中 - REBUILD_NODE_FAILED：故障恢复失败 - CHANGE_JOB_STARTED：任务变更中 - CHANGE_JOB_FAILED：任务变更失败 - DELETED：已删除 - CHILD_TRANSFER_STARTING：再编辑子任务启动中 - CHILD_TRANSFER_STARTED：再编辑子任务迁移中 - CHILD_TRANSFER_COMPLETE：再编辑子任务迁移完成 - CHILD_TRANSFER_FAILED：再编辑子任务迁移失败 - RELEASE_CHILD_TRANSFER_STARTED：再编辑子任务结束中 - RELEASE_CHILD_TRANSFER_COMPLETE：再编辑子任务已结束 - NODE_UPGRADE_START：升级开始 - NODE_UPGRADE_COMPLETE：升级完成 - NODE_UPGRADE_FAILED：升级失败
+        **参数解释**：  任务当前运行状态。  **约束限制**：  不涉及。  **取值范围**：  - CREATING：创建中 - CREATE_FAILED：创建失败 - CONFIGURATION：配置中 - STARTJOBING：启动中 - WAITING_FOR_START：等待启动中 - START_JOB_FAILED：启动失败 - PAUSING：已暂停 - FULL_TRANSFER_STARTED：全量开始，灾备场景下为初始化 - FULL_TRANSFER_FAILED：全量失败，灾备场景下为初始化失败 - FULL_TRANSFER_COMPLETE：全量完成，灾备场景下为初始化完成 - INCRE_TRANSFER_STARTED：增量开始，灾备场景下为灾备中 - INCRE_TRANSFER_FAILED：增量失败，灾备场景下为灾备异常 - RELEASE_RESOURCE_STARTED：结束任务中 - RELEASE_RESOURCE_FAILED：结束任务失败 - RELEASE_RESOURCE_COMPLETE：已结束 - REBUILD_NODE_STARTED：故障恢复中 - REBUILD_NODE_FAILED：故障恢复失败 - CHANGE_JOB_STARTED：任务变更中 - CHANGE_JOB_FAILED：任务变更失败 - DELETED：已删除 - CHILD_TRANSFER_STARTING：再编辑子任务启动中 - CHILD_TRANSFER_STARTED：再编辑子任务迁移中 - CHILD_TRANSFER_COMPLETE：再编辑子任务迁移完成 - CHILD_TRANSFER_FAILED：再编辑子任务迁移失败 - RELEASE_CHILD_TRANSFER_STARTED：再编辑子任务结束中 - RELEASE_CHILD_TRANSFER_COMPLETE：再编辑子任务已结束 - NODE_UPGRADE_START：升级开始 - NODE_UPGRADE_COMPLETE：升级完成 - NODE_UPGRADE_FAILED：升级失败  **默认取值**：  不涉及
 
         :return: The status of this JobDetailResp.
         :rtype: str
@@ -321,7 +328,7 @@ class JobDetailResp:
     def status(self, status):
         r"""Sets the status of this JobDetailResp.
 
-        任务状态。 - CREATING：创建中 - CREATE_FAILED：创建失败 - CONFIGURATION：配置中 - STARTJOBING：启动中 - WAITING_FOR_START：等待启动中 - START_JOB_FAILED：启动失败 - PAUSING：已暂停 - FULL_TRANSFER_STARTED：全量开始，灾备场景下为初始化 - FULL_TRANSFER_FAILED：全量失败，灾备场景下为初始化失败 - FULL_TRANSFER_COMPLETE：全量完成，灾备场景下为初始化完成 - INCRE_TRANSFER_STARTED：增量开始，灾备场景下为灾备中 - INCRE_TRANSFER_FAILED：增量失败，灾备场景下为灾备异常 - RELEASE_RESOURCE_STARTED：结束任务中 - RELEASE_RESOURCE_FAILED：结束任务失败 - RELEASE_RESOURCE_COMPLETE：已结束 - REBUILD_NODE_STARTED：故障恢复中 - REBUILD_NODE_FAILED：故障恢复失败 - CHANGE_JOB_STARTED：任务变更中 - CHANGE_JOB_FAILED：任务变更失败 - DELETED：已删除 - CHILD_TRANSFER_STARTING：再编辑子任务启动中 - CHILD_TRANSFER_STARTED：再编辑子任务迁移中 - CHILD_TRANSFER_COMPLETE：再编辑子任务迁移完成 - CHILD_TRANSFER_FAILED：再编辑子任务迁移失败 - RELEASE_CHILD_TRANSFER_STARTED：再编辑子任务结束中 - RELEASE_CHILD_TRANSFER_COMPLETE：再编辑子任务已结束 - NODE_UPGRADE_START：升级开始 - NODE_UPGRADE_COMPLETE：升级完成 - NODE_UPGRADE_FAILED：升级失败
+        **参数解释**：  任务当前运行状态。  **约束限制**：  不涉及。  **取值范围**：  - CREATING：创建中 - CREATE_FAILED：创建失败 - CONFIGURATION：配置中 - STARTJOBING：启动中 - WAITING_FOR_START：等待启动中 - START_JOB_FAILED：启动失败 - PAUSING：已暂停 - FULL_TRANSFER_STARTED：全量开始，灾备场景下为初始化 - FULL_TRANSFER_FAILED：全量失败，灾备场景下为初始化失败 - FULL_TRANSFER_COMPLETE：全量完成，灾备场景下为初始化完成 - INCRE_TRANSFER_STARTED：增量开始，灾备场景下为灾备中 - INCRE_TRANSFER_FAILED：增量失败，灾备场景下为灾备异常 - RELEASE_RESOURCE_STARTED：结束任务中 - RELEASE_RESOURCE_FAILED：结束任务失败 - RELEASE_RESOURCE_COMPLETE：已结束 - REBUILD_NODE_STARTED：故障恢复中 - REBUILD_NODE_FAILED：故障恢复失败 - CHANGE_JOB_STARTED：任务变更中 - CHANGE_JOB_FAILED：任务变更失败 - DELETED：已删除 - CHILD_TRANSFER_STARTING：再编辑子任务启动中 - CHILD_TRANSFER_STARTED：再编辑子任务迁移中 - CHILD_TRANSFER_COMPLETE：再编辑子任务迁移完成 - CHILD_TRANSFER_FAILED：再编辑子任务迁移失败 - RELEASE_CHILD_TRANSFER_STARTED：再编辑子任务结束中 - RELEASE_CHILD_TRANSFER_COMPLETE：再编辑子任务已结束 - NODE_UPGRADE_START：升级开始 - NODE_UPGRADE_COMPLETE：升级完成 - NODE_UPGRADE_FAILED：升级失败  **默认取值**：  不涉及
 
         :param status: The status of this JobDetailResp.
         :type status: str
@@ -332,7 +339,7 @@ class JobDetailResp:
     def create_time(self):
         r"""Gets the create_time of this JobDetailResp.
 
-        任务创建时间。
+        **参数解释**：  任务的创建时间，表示任务首次被创建的时间戳。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The create_time of this JobDetailResp.
         :rtype: str
@@ -343,7 +350,7 @@ class JobDetailResp:
     def create_time(self, create_time):
         r"""Sets the create_time of this JobDetailResp.
 
-        任务创建时间。
+        **参数解释**：  任务的创建时间，表示任务首次被创建的时间戳。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param create_time: The create_time of this JobDetailResp.
         :type create_time: str
@@ -354,7 +361,7 @@ class JobDetailResp:
     def total_count(self):
         r"""Gets the total_count of this JobDetailResp.
 
-        列表中的项目总数，与分页无关。
+        **参数解释**：  列表中的项目总数，与分页无关。表示满足查询条件的记录总数量，用于分页计算。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The total_count of this JobDetailResp.
         :rtype: int
@@ -365,7 +372,7 @@ class JobDetailResp:
     def total_count(self, total_count):
         r"""Sets the total_count of this JobDetailResp.
 
-        列表中的项目总数，与分页无关。
+        **参数解释**：  列表中的项目总数，与分页无关。表示满足查询条件的记录总数量，用于分页计算。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param total_count: The total_count of this JobDetailResp.
         :type total_count: int
@@ -376,7 +383,7 @@ class JobDetailResp:
     def master_job_id(self):
         r"""Gets the master_job_id of this JobDetailResp.
 
-        多任务主节点的任务ID。
+        **参数解释**：  多任务主节点的任务ID，在多对一同步场景中标识主任务。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The master_job_id of this JobDetailResp.
         :rtype: str
@@ -387,7 +394,7 @@ class JobDetailResp:
     def master_job_id(self, master_job_id):
         r"""Sets the master_job_id of this JobDetailResp.
 
-        多任务主节点的任务ID。
+        **参数解释**：  多任务主节点的任务ID，在多对一同步场景中标识主任务。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param master_job_id: The master_job_id of this JobDetailResp.
         :type master_job_id: str
@@ -416,7 +423,7 @@ class JobDetailResp:
     def source_endpoint(self):
         r"""Gets the source_endpoint of this JobDetailResp.
 
-        任务源数据库信息体。
+        **参数解释**：  任务源数据库信息体，详情请参见JobEndpointInfo对象定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及  **默认取值**：  不涉及
 
         :return: The source_endpoint of this JobDetailResp.
         :rtype: list[:class:`huaweicloudsdkdrs.v5.JobEndpointInfo`]
@@ -427,7 +434,7 @@ class JobDetailResp:
     def source_endpoint(self, source_endpoint):
         r"""Sets the source_endpoint of this JobDetailResp.
 
-        任务源数据库信息体。
+        **参数解释**：  任务源数据库信息体，详情请参见JobEndpointInfo对象定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及  **默认取值**：  不涉及
 
         :param source_endpoint: The source_endpoint of this JobDetailResp.
         :type source_endpoint: list[:class:`huaweicloudsdkdrs.v5.JobEndpointInfo`]
@@ -438,7 +445,7 @@ class JobDetailResp:
     def target_endpoint(self):
         r"""Gets the target_endpoint of this JobDetailResp.
 
-        任务目标数据库信息体。
+        **参数解释**：  任务目标数据库信息体，详情请参见JobEndpointInfo对象定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及  **默认取值**：  不涉及
 
         :return: The target_endpoint of this JobDetailResp.
         :rtype: list[:class:`huaweicloudsdkdrs.v5.JobEndpointInfo`]
@@ -449,7 +456,7 @@ class JobDetailResp:
     def target_endpoint(self, target_endpoint):
         r"""Sets the target_endpoint of this JobDetailResp.
 
-        任务目标数据库信息体。
+        **参数解释**：  任务目标数据库信息体，详情请参见JobEndpointInfo对象定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及  **默认取值**：  不涉及
 
         :param target_endpoint: The target_endpoint of this JobDetailResp.
         :type target_endpoint: list[:class:`huaweicloudsdkdrs.v5.JobEndpointInfo`]
@@ -608,7 +615,7 @@ class JobDetailResp:
     def logs(self):
         r"""Gets the logs of this JobDetailResp.
 
-        日志查询结果信息体。
+        **参数解释**：  日志查询结果信息体，详情请参见TaskLogInfo对象定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及  **默认取值**：  不涉及
 
         :return: The logs of this JobDetailResp.
         :rtype: list[:class:`huaweicloudsdkdrs.v5.TaskLogInfo`]
@@ -619,7 +626,7 @@ class JobDetailResp:
     def logs(self, logs):
         r"""Sets the logs of this JobDetailResp.
 
-        日志查询结果信息体。
+        **参数解释**：  日志查询结果信息体，详情请参见TaskLogInfo对象定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及  **默认取值**：  不涉及
 
         :param logs: The logs of this JobDetailResp.
         :type logs: list[:class:`huaweicloudsdkdrs.v5.TaskLogInfo`]
@@ -630,7 +637,7 @@ class JobDetailResp:
     def network_results(self):
         r"""Gets the network_results of this JobDetailResp.
 
-        网络打通测试结果信息体。
+        **参数解释**：  网络打通测试结果信息体，详情请参见QueryNetworkResult对象定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及  **默认取值**：  不涉及
 
         :return: The network_results of this JobDetailResp.
         :rtype: list[:class:`huaweicloudsdkdrs.v5.QueryNetworkResult`]
@@ -641,7 +648,7 @@ class JobDetailResp:
     def network_results(self, network_results):
         r"""Sets the network_results of this JobDetailResp.
 
-        网络打通测试结果信息体。
+        **参数解释**：  网络打通测试结果信息体，详情请参见QueryNetworkResult对象定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及  **默认取值**：  不涉及
 
         :param network_results: The network_results of this JobDetailResp.
         :type network_results: list[:class:`huaweicloudsdkdrs.v5.QueryNetworkResult`]
@@ -760,7 +767,7 @@ class JobDetailResp:
     def instance_features(self):
         r"""Gets the instance_features of this JobDetailResp.
 
-        由开关和版本共同控制的任务级别的功能列表。
+        **参数解释**：  由开关和版本共同控制的任务级别的功能列表，格式为key/value键值对。  **约束限制**：  不涉及。  **取值范围**：  不涉及  **默认取值**：  不涉及
 
         :return: The instance_features of this JobDetailResp.
         :rtype: dict(str, str)
@@ -771,7 +778,7 @@ class JobDetailResp:
     def instance_features(self, instance_features):
         r"""Sets the instance_features of this JobDetailResp.
 
-        由开关和版本共同控制的任务级别的功能列表。
+        **参数解释**：  由开关和版本共同控制的任务级别的功能列表，格式为key/value键值对。  **约束限制**：  不涉及。  **取值范围**：  不涉及  **默认取值**：  不涉及
 
         :param instance_features: The instance_features of this JobDetailResp.
         :type instance_features: dict(str, str)
@@ -782,7 +789,7 @@ class JobDetailResp:
     def task_version(self):
         r"""Gets the task_version of this JobDetailResp.
 
-        任务版本。
+        **参数解释**：  任务版本，标识当前数据复制任务所使用的版本号。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The task_version of this JobDetailResp.
         :rtype: str
@@ -793,7 +800,7 @@ class JobDetailResp:
     def task_version(self, task_version):
         r"""Sets the task_version of this JobDetailResp.
 
-        任务版本。
+        **参数解释**：  任务版本，标识当前数据复制任务所使用的版本号。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param task_version: The task_version of this JobDetailResp.
         :type task_version: str
@@ -822,7 +829,7 @@ class JobDetailResp:
     def public_ip_list(self):
         r"""Gets the public_ip_list of this JobDetailResp.
 
-        指定公网IP的信息
+        **参数解释**：  指定公网IP的信息列表，详情请参见PublicIpConfig对象定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及  **默认取值**：  不涉及
 
         :return: The public_ip_list of this JobDetailResp.
         :rtype: list[:class:`huaweicloudsdkdrs.v5.PublicIpConfig`]
@@ -833,7 +840,7 @@ class JobDetailResp:
     def public_ip_list(self, public_ip_list):
         r"""Sets the public_ip_list of this JobDetailResp.
 
-        指定公网IP的信息
+        **参数解释**：  指定公网IP的信息列表，详情请参见PublicIpConfig对象定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及  **默认取值**：  不涉及
 
         :param public_ip_list: The public_ip_list of this JobDetailResp.
         :type public_ip_list: list[:class:`huaweicloudsdkdrs.v5.PublicIpConfig`]
@@ -844,7 +851,7 @@ class JobDetailResp:
     def bind_public_ip_state(self):
         r"""Gets the bind_public_ip_state of this JobDetailResp.
 
-        是否成功绑定公网IP 取值：SUCCESS，FAILED
+        **参数解释**：  是否成功绑定公网IP，标识为任务绑定公网IP操作的执行结果。  **约束限制**：  不涉及。  **取值范围**：  - SUCCESS：成功 - FAILED：失败  **默认取值**：  不涉及
 
         :return: The bind_public_ip_state of this JobDetailResp.
         :rtype: str
@@ -855,7 +862,7 @@ class JobDetailResp:
     def bind_public_ip_state(self, bind_public_ip_state):
         r"""Sets the bind_public_ip_state of this JobDetailResp.
 
-        是否成功绑定公网IP 取值：SUCCESS，FAILED
+        **参数解释**：  是否成功绑定公网IP，标识为任务绑定公网IP操作的执行结果。  **约束限制**：  不涉及。  **取值范围**：  - SUCCESS：成功 - FAILED：失败  **默认取值**：  不涉及
 
         :param bind_public_ip_state: The bind_public_ip_state of this JobDetailResp.
         :type bind_public_ip_state: str
@@ -866,7 +873,7 @@ class JobDetailResp:
     def children(self):
         r"""Gets the children of this JobDetailResp.
 
-        多任务时，存在子任务绑定失败时，返回子任务的信息
+        **参数解释**：  多任务时存在子任务绑定失败时返回的子任务信息列表，详情请参见FailedToBindEipChildInfo对象定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及  **默认取值**：  不涉及
 
         :return: The children of this JobDetailResp.
         :rtype: list[:class:`huaweicloudsdkdrs.v5.FailedToBindEipChildInfo`]
@@ -877,7 +884,7 @@ class JobDetailResp:
     def children(self, children):
         r"""Sets the children of this JobDetailResp.
 
-        多任务时，存在子任务绑定失败时，返回子任务的信息
+        **参数解释**：  多任务时存在子任务绑定失败时返回的子任务信息列表，详情请参见FailedToBindEipChildInfo对象定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及  **默认取值**：  不涉及
 
         :param children: The children of this JobDetailResp.
         :type children: list[:class:`huaweicloudsdkdrs.v5.FailedToBindEipChildInfo`]
@@ -888,7 +895,7 @@ class JobDetailResp:
     def is_writable(self):
         r"""Gets the is_writable of this JobDetailResp.
 
-        解除目标库只读操作后，目标库解除只读是否成功。 - pending：目标库解除操作进行中。 - success：目标库解除只读操作成功。
+        **参数解释**：  解除目标库只读操作后，目标库解除只读是否成功。  **约束限制**：  不涉及。  **取值范围**：  - pending：目标库解除操作进行中 - success：目标库解除只读操作成功  **默认取值**：  不涉及
 
         :return: The is_writable of this JobDetailResp.
         :rtype: str
@@ -899,7 +906,7 @@ class JobDetailResp:
     def is_writable(self, is_writable):
         r"""Sets the is_writable of this JobDetailResp.
 
-        解除目标库只读操作后，目标库解除只读是否成功。 - pending：目标库解除操作进行中。 - success：目标库解除只读操作成功。
+        **参数解释**：  解除目标库只读操作后，目标库解除只读是否成功。  **约束限制**：  不涉及。  **取值范围**：  - pending：目标库解除操作进行中 - success：目标库解除只读操作成功  **默认取值**：  不涉及
 
         :param is_writable: The is_writable of this JobDetailResp.
         :type is_writable: str
@@ -910,7 +917,7 @@ class JobDetailResp:
     def diagnoses(self):
         r"""Gets the diagnoses of this JobDetailResp.
 
-        一键诊断结果。
+        **参数解释**：  一键诊断结果列表，详情请参见QueryDiagnosisResult对象定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及  **默认取值**：  不涉及
 
         :return: The diagnoses of this JobDetailResp.
         :rtype: list[:class:`huaweicloudsdkdrs.v5.QueryDiagnosisResult`]
@@ -921,7 +928,7 @@ class JobDetailResp:
     def diagnoses(self, diagnoses):
         r"""Sets the diagnoses of this JobDetailResp.
 
-        一键诊断结果。
+        **参数解释**：  一键诊断结果列表，详情请参见QueryDiagnosisResult对象定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及  **默认取值**：  不涉及
 
         :param diagnoses: The diagnoses of this JobDetailResp.
         :type diagnoses: list[:class:`huaweicloudsdkdrs.v5.QueryDiagnosisResult`]
@@ -968,7 +975,7 @@ class JobDetailResp:
     def repair_export_status(self):
         r"""Gets the repair_export_status of this JobDetailResp.
 
-        修复SQL导出状态。 INIT：初始状态，EXPORTING：比对结果导出中，EXPORT_COMPLETE：比对结果导出完成，EXPORT_COMMON_FAILED：比对结果导出失败
+        **参数解释**：  修复SQL导出状态，标识数据修复SQL文件的导出进度。  **约束限制**：  不涉及。  **取值范围**：  - INIT：初始状态 - EXPORTING：比对结果导出中 - EXPORT_COMPLETE：比对结果导出完成 - EXPORT_COMMON_FAILED：比对结果导出失败  **默认取值**：  不涉及
 
         :return: The repair_export_status of this JobDetailResp.
         :rtype: str
@@ -979,7 +986,7 @@ class JobDetailResp:
     def repair_export_status(self, repair_export_status):
         r"""Sets the repair_export_status of this JobDetailResp.
 
-        修复SQL导出状态。 INIT：初始状态，EXPORTING：比对结果导出中，EXPORT_COMPLETE：比对结果导出完成，EXPORT_COMMON_FAILED：比对结果导出失败
+        **参数解释**：  修复SQL导出状态，标识数据修复SQL文件的导出进度。  **约束限制**：  不涉及。  **取值范围**：  - INIT：初始状态 - EXPORTING：比对结果导出中 - EXPORT_COMPLETE：比对结果导出完成 - EXPORT_COMMON_FAILED：比对结果导出失败  **默认取值**：  不涉及
 
         :param repair_export_status: The repair_export_status of this JobDetailResp.
         :type repair_export_status: str
@@ -990,7 +997,7 @@ class JobDetailResp:
     def job_kernel_direction(self):
         r"""Gets the job_kernel_direction of this JobDetailResp.
 
-        灾备任务内核方向，up上云，down下云。当任务处于倒换中，与灾备任务方向相反，否则相同。
+        **参数解释**：  灾备内核方向，非倒换中与job_direction取值相同，倒换中与job_direction取值相反。  **约束限制**：  不涉及。  **取值范围**：  - up：入云，灾备场景时对应本云为备 - down：出云，灾备场景时对应本云为主  **默认取值**：  不涉及
 
         :return: The job_kernel_direction of this JobDetailResp.
         :rtype: str
@@ -1001,12 +1008,34 @@ class JobDetailResp:
     def job_kernel_direction(self, job_kernel_direction):
         r"""Sets the job_kernel_direction of this JobDetailResp.
 
-        灾备任务内核方向，up上云，down下云。当任务处于倒换中，与灾备任务方向相反，否则相同。
+        **参数解释**：  灾备内核方向，非倒换中与job_direction取值相同，倒换中与job_direction取值相反。  **约束限制**：  不涉及。  **取值范围**：  - up：入云，灾备场景时对应本云为备 - down：出云，灾备场景时对应本云为主  **默认取值**：  不涉及
 
         :param job_kernel_direction: The job_kernel_direction of this JobDetailResp.
         :type job_kernel_direction: str
         """
         self._job_kernel_direction = job_kernel_direction
+
+    @property
+    def sync_mode(self):
+        r"""Gets the sync_mode of this JobDetailResp.
+
+        同步模式 DB_LEVEL：库级 SCHEMA_LEVEL：schema级 TABLE_LEVEL：表级 FILE_IMPORT：文件导入 INSTANCE_LEVEL：实例级
+
+        :return: The sync_mode of this JobDetailResp.
+        :rtype: str
+        """
+        return self._sync_mode
+
+    @sync_mode.setter
+    def sync_mode(self, sync_mode):
+        r"""Sets the sync_mode of this JobDetailResp.
+
+        同步模式 DB_LEVEL：库级 SCHEMA_LEVEL：schema级 TABLE_LEVEL：表级 FILE_IMPORT：文件导入 INSTANCE_LEVEL：实例级
+
+        :param sync_mode: The sync_mode of this JobDetailResp.
+        :type sync_mode: str
+        """
+        self._sync_mode = sync_mode
 
     def to_dict(self):
         result = {}

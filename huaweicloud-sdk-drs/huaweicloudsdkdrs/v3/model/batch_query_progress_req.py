@@ -27,7 +27,7 @@ class BatchQueryProgressReq:
 
         The model defined in huaweicloud sdk
 
-        :param jobs: 批量查询进度任务ID请求列表
+        :param jobs: **参数解释**：  批量查询任务ID列表，通过该参数指定需要查询进度的一个或多个任务。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type jobs: list[str]
         """
         
@@ -42,7 +42,7 @@ class BatchQueryProgressReq:
     def jobs(self):
         r"""Gets the jobs of this BatchQueryProgressReq.
 
-        批量查询进度任务ID请求列表
+        **参数解释**：  批量查询任务ID列表，通过该参数指定需要查询进度的一个或多个任务。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The jobs of this BatchQueryProgressReq.
         :rtype: list[str]
@@ -53,7 +53,7 @@ class BatchQueryProgressReq:
     def jobs(self, jobs):
         r"""Sets the jobs of this BatchQueryProgressReq.
 
-        批量查询进度任务ID请求列表
+        **参数解释**：  批量查询任务ID列表，通过该参数指定需要查询进度的一个或多个任务。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param jobs: The jobs of this BatchQueryProgressReq.
         :type jobs: list[str]

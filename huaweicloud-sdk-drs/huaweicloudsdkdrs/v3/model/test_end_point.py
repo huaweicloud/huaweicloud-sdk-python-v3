@@ -67,43 +67,43 @@ class TestEndPoint:
 
         The model defined in huaweicloud sdk
 
-        :param id: 任务ID
+        :param id: **参数解释**：  DRS任务ID，用于唯一标识一个数据复制任务，可从任务列表或任务详情页面获取。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type id: str
-        :param net_type: 网络类型
+        :param net_type: **参数解释**：  任务使用的网络类型。  **约束限制**：  不涉及。  **取值范围**：  - vpn：虚拟专用网络 - vpc：虚拟私有云 - eip：弹性公网IP  **默认取值**：  不涉及
         :type net_type: str
-        :param db_type: 数据库类型
+        :param db_type: **参数解释**：  数据库类型，标识源库或目标库的数据库引擎种类。  **约束限制**：  不涉及。  **取值范围**：  - mysql：MySQL - mongodb：MongoDB - gaussdbv5：GaussDB分布式版 - postgresql：PostgreSQL - kafka：Kafka - gaussdbv5ha：GaussDB集中式版 - taurus：TaurusDB  **默认取值**：  不涉及
         :type db_type: str
-        :param ip: 数据库IP
+        :param ip: **参数解释**：  数据库IP地址，用于指定连接数据库的服务器地址。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type ip: str
-        :param db_port: 数据库端口，Mongo、DDS必填为0。
+        :param db_port: **参数解释**：  数据库端口号，用于指定连接数据库的服务端口。  **约束限制**：  - db_type为MongoDB、DDS时端口必填取值为0。 - db_type为Oracle时为必填。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type db_port: int
-        :param inst_id: RDS实例id，RDS实例必填。
+        :param inst_id: **参数解释**：  RDS实例ID，用于标识华为云RDS数据库实例。  **约束限制**：  - 数据库为RDS实例时必填。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type inst_id: str
-        :param db_user: 数据库帐号。
+        :param db_user: **参数解释**：  数据库帐号，用于连接数据库的用户名。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type db_user: str
-        :param db_password: 数据库密码。
+        :param db_password: **参数解释**：  数据库密码，用于连接数据库的认证密码。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type db_password: str
-        :param ssl_link: 是否SSL安全连接。
+        :param ssl_link: **参数解释**：  是否使用SSL安全连接，指定数据库连接是否启用SSL加密传输。  **约束限制**：  - 该参数为true时，需填写SSL证书相关信息参数。  **取值范围**：  - true：使用SSL安全连接 - false：不使用SSL安全连接  **默认取值**：  不涉及
         :type ssl_link: bool
-        :param ssl_cert_key: SSL证书内容，base64加密后的值，源库安全连接必选。
+        :param ssl_cert_key: **参数解释**：  SSL证书内容，获取SSL证书后将内容通过BASE64加密后所得的字符串。  **约束限制**：  - ssl_link为true时必填。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type ssl_cert_key: str
-        :param ssl_cert_name: SSL证书名字，源库安全连接必选。
+        :param ssl_cert_name: **参数解释**：  SSL证书名字。  **约束限制**：  - ssl_link为true时必填。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type ssl_cert_name: str
-        :param ssl_cert_check_sum: SSL证书内容checksum值，证书经过sha256加密后的值，后端校验，源库安全连接必选。
+        :param ssl_cert_check_sum: **参数解释**：  SSL证书内容checksum值，获取SSL证书后将内容经过SHA256加密后的值，后端校验用。  **约束限制**：  - ssl_link为true时必填。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type ssl_cert_check_sum: str
-        :param ssl_cert_password: SSL证书密码，证书文件后缀为.p12，需要密码。
+        :param ssl_cert_password: **参数解释**：  SSL证书密码。  **约束限制**：  - 证书文件后缀为.p12时需要填写密码。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type ssl_cert_password: str
-        :param vpc_id: vpcid，数据库为RDS时必选。
+        :param vpc_id: **参数解释**：  虚拟私有云ID，用于标识数据库所在的VPC。  **约束限制**：  - 网络类型为VPC时必填。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type vpc_id: str
-        :param subnet_id: subnetid，数据库为RDS必选。
+        :param subnet_id: **参数解释**：  子网ID，用于标识数据库所在的子网。  **约束限制**：  - 网络类型为VPC时必填。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type subnet_id: str
-        :param end_point_type: 源库：so,目标库：ta
+        :param end_point_type: **参数解释**：  数据库端点类型，标识该数据库在数据复制任务中是源端还是目标端。  **约束限制**：  不涉及。  **取值范围**：  - so：源库 - ta：目标库  **默认取值**：  so
         :type end_point_type: str
-        :param region: rds实例region，数据库为RDS时必填。
+        :param region: **参数解释**：  RDS实例所在区域，用于标识数据库实例的地理区域。  **约束限制**：  - 数据库为RDS实例时必填。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type region: str
-        :param project_id: 用户所处region的projectId。
+        :param project_id: **参数解释**：  数据库实例所在Region的项目ID，数据库为云上实例时填写数据库实例所在Region下的项目ID，否则填写当前任务所在Region下的项目ID。获取方法请参见获取项目ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type project_id: str
-        :param db_name: 数据库用户名，DDS的账号认证数据库，Oracle的serviceName。
+        :param db_name: **参数解释**：  数据库名称，Oracle场景下为serviceName。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type db_name: str
         :param kafka_security_config: 
         :type kafka_security_config: :class:`huaweicloudsdkdrs.v3.KafkaSecurity`
@@ -176,7 +176,7 @@ class TestEndPoint:
     def id(self):
         r"""Gets the id of this TestEndPoint.
 
-        任务ID
+        **参数解释**：  DRS任务ID，用于唯一标识一个数据复制任务，可从任务列表或任务详情页面获取。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The id of this TestEndPoint.
         :rtype: str
@@ -187,7 +187,7 @@ class TestEndPoint:
     def id(self, id):
         r"""Sets the id of this TestEndPoint.
 
-        任务ID
+        **参数解释**：  DRS任务ID，用于唯一标识一个数据复制任务，可从任务列表或任务详情页面获取。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param id: The id of this TestEndPoint.
         :type id: str
@@ -198,7 +198,7 @@ class TestEndPoint:
     def net_type(self):
         r"""Gets the net_type of this TestEndPoint.
 
-        网络类型
+        **参数解释**：  任务使用的网络类型。  **约束限制**：  不涉及。  **取值范围**：  - vpn：虚拟专用网络 - vpc：虚拟私有云 - eip：弹性公网IP  **默认取值**：  不涉及
 
         :return: The net_type of this TestEndPoint.
         :rtype: str
@@ -209,7 +209,7 @@ class TestEndPoint:
     def net_type(self, net_type):
         r"""Sets the net_type of this TestEndPoint.
 
-        网络类型
+        **参数解释**：  任务使用的网络类型。  **约束限制**：  不涉及。  **取值范围**：  - vpn：虚拟专用网络 - vpc：虚拟私有云 - eip：弹性公网IP  **默认取值**：  不涉及
 
         :param net_type: The net_type of this TestEndPoint.
         :type net_type: str
@@ -220,7 +220,7 @@ class TestEndPoint:
     def db_type(self):
         r"""Gets the db_type of this TestEndPoint.
 
-        数据库类型
+        **参数解释**：  数据库类型，标识源库或目标库的数据库引擎种类。  **约束限制**：  不涉及。  **取值范围**：  - mysql：MySQL - mongodb：MongoDB - gaussdbv5：GaussDB分布式版 - postgresql：PostgreSQL - kafka：Kafka - gaussdbv5ha：GaussDB集中式版 - taurus：TaurusDB  **默认取值**：  不涉及
 
         :return: The db_type of this TestEndPoint.
         :rtype: str
@@ -231,7 +231,7 @@ class TestEndPoint:
     def db_type(self, db_type):
         r"""Sets the db_type of this TestEndPoint.
 
-        数据库类型
+        **参数解释**：  数据库类型，标识源库或目标库的数据库引擎种类。  **约束限制**：  不涉及。  **取值范围**：  - mysql：MySQL - mongodb：MongoDB - gaussdbv5：GaussDB分布式版 - postgresql：PostgreSQL - kafka：Kafka - gaussdbv5ha：GaussDB集中式版 - taurus：TaurusDB  **默认取值**：  不涉及
 
         :param db_type: The db_type of this TestEndPoint.
         :type db_type: str
@@ -242,7 +242,7 @@ class TestEndPoint:
     def ip(self):
         r"""Gets the ip of this TestEndPoint.
 
-        数据库IP
+        **参数解释**：  数据库IP地址，用于指定连接数据库的服务器地址。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The ip of this TestEndPoint.
         :rtype: str
@@ -253,7 +253,7 @@ class TestEndPoint:
     def ip(self, ip):
         r"""Sets the ip of this TestEndPoint.
 
-        数据库IP
+        **参数解释**：  数据库IP地址，用于指定连接数据库的服务器地址。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param ip: The ip of this TestEndPoint.
         :type ip: str
@@ -264,7 +264,7 @@ class TestEndPoint:
     def db_port(self):
         r"""Gets the db_port of this TestEndPoint.
 
-        数据库端口，Mongo、DDS必填为0。
+        **参数解释**：  数据库端口号，用于指定连接数据库的服务端口。  **约束限制**：  - db_type为MongoDB、DDS时端口必填取值为0。 - db_type为Oracle时为必填。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The db_port of this TestEndPoint.
         :rtype: int
@@ -275,7 +275,7 @@ class TestEndPoint:
     def db_port(self, db_port):
         r"""Sets the db_port of this TestEndPoint.
 
-        数据库端口，Mongo、DDS必填为0。
+        **参数解释**：  数据库端口号，用于指定连接数据库的服务端口。  **约束限制**：  - db_type为MongoDB、DDS时端口必填取值为0。 - db_type为Oracle时为必填。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param db_port: The db_port of this TestEndPoint.
         :type db_port: int
@@ -286,7 +286,7 @@ class TestEndPoint:
     def inst_id(self):
         r"""Gets the inst_id of this TestEndPoint.
 
-        RDS实例id，RDS实例必填。
+        **参数解释**：  RDS实例ID，用于标识华为云RDS数据库实例。  **约束限制**：  - 数据库为RDS实例时必填。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The inst_id of this TestEndPoint.
         :rtype: str
@@ -297,7 +297,7 @@ class TestEndPoint:
     def inst_id(self, inst_id):
         r"""Sets the inst_id of this TestEndPoint.
 
-        RDS实例id，RDS实例必填。
+        **参数解释**：  RDS实例ID，用于标识华为云RDS数据库实例。  **约束限制**：  - 数据库为RDS实例时必填。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param inst_id: The inst_id of this TestEndPoint.
         :type inst_id: str
@@ -308,7 +308,7 @@ class TestEndPoint:
     def db_user(self):
         r"""Gets the db_user of this TestEndPoint.
 
-        数据库帐号。
+        **参数解释**：  数据库帐号，用于连接数据库的用户名。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The db_user of this TestEndPoint.
         :rtype: str
@@ -319,7 +319,7 @@ class TestEndPoint:
     def db_user(self, db_user):
         r"""Sets the db_user of this TestEndPoint.
 
-        数据库帐号。
+        **参数解释**：  数据库帐号，用于连接数据库的用户名。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param db_user: The db_user of this TestEndPoint.
         :type db_user: str
@@ -330,7 +330,7 @@ class TestEndPoint:
     def db_password(self):
         r"""Gets the db_password of this TestEndPoint.
 
-        数据库密码。
+        **参数解释**：  数据库密码，用于连接数据库的认证密码。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The db_password of this TestEndPoint.
         :rtype: str
@@ -341,7 +341,7 @@ class TestEndPoint:
     def db_password(self, db_password):
         r"""Sets the db_password of this TestEndPoint.
 
-        数据库密码。
+        **参数解释**：  数据库密码，用于连接数据库的认证密码。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param db_password: The db_password of this TestEndPoint.
         :type db_password: str
@@ -352,7 +352,7 @@ class TestEndPoint:
     def ssl_link(self):
         r"""Gets the ssl_link of this TestEndPoint.
 
-        是否SSL安全连接。
+        **参数解释**：  是否使用SSL安全连接，指定数据库连接是否启用SSL加密传输。  **约束限制**：  - 该参数为true时，需填写SSL证书相关信息参数。  **取值范围**：  - true：使用SSL安全连接 - false：不使用SSL安全连接  **默认取值**：  不涉及
 
         :return: The ssl_link of this TestEndPoint.
         :rtype: bool
@@ -363,7 +363,7 @@ class TestEndPoint:
     def ssl_link(self, ssl_link):
         r"""Sets the ssl_link of this TestEndPoint.
 
-        是否SSL安全连接。
+        **参数解释**：  是否使用SSL安全连接，指定数据库连接是否启用SSL加密传输。  **约束限制**：  - 该参数为true时，需填写SSL证书相关信息参数。  **取值范围**：  - true：使用SSL安全连接 - false：不使用SSL安全连接  **默认取值**：  不涉及
 
         :param ssl_link: The ssl_link of this TestEndPoint.
         :type ssl_link: bool
@@ -374,7 +374,7 @@ class TestEndPoint:
     def ssl_cert_key(self):
         r"""Gets the ssl_cert_key of this TestEndPoint.
 
-        SSL证书内容，base64加密后的值，源库安全连接必选。
+        **参数解释**：  SSL证书内容，获取SSL证书后将内容通过BASE64加密后所得的字符串。  **约束限制**：  - ssl_link为true时必填。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The ssl_cert_key of this TestEndPoint.
         :rtype: str
@@ -385,7 +385,7 @@ class TestEndPoint:
     def ssl_cert_key(self, ssl_cert_key):
         r"""Sets the ssl_cert_key of this TestEndPoint.
 
-        SSL证书内容，base64加密后的值，源库安全连接必选。
+        **参数解释**：  SSL证书内容，获取SSL证书后将内容通过BASE64加密后所得的字符串。  **约束限制**：  - ssl_link为true时必填。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param ssl_cert_key: The ssl_cert_key of this TestEndPoint.
         :type ssl_cert_key: str
@@ -396,7 +396,7 @@ class TestEndPoint:
     def ssl_cert_name(self):
         r"""Gets the ssl_cert_name of this TestEndPoint.
 
-        SSL证书名字，源库安全连接必选。
+        **参数解释**：  SSL证书名字。  **约束限制**：  - ssl_link为true时必填。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The ssl_cert_name of this TestEndPoint.
         :rtype: str
@@ -407,7 +407,7 @@ class TestEndPoint:
     def ssl_cert_name(self, ssl_cert_name):
         r"""Sets the ssl_cert_name of this TestEndPoint.
 
-        SSL证书名字，源库安全连接必选。
+        **参数解释**：  SSL证书名字。  **约束限制**：  - ssl_link为true时必填。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param ssl_cert_name: The ssl_cert_name of this TestEndPoint.
         :type ssl_cert_name: str
@@ -418,7 +418,7 @@ class TestEndPoint:
     def ssl_cert_check_sum(self):
         r"""Gets the ssl_cert_check_sum of this TestEndPoint.
 
-        SSL证书内容checksum值，证书经过sha256加密后的值，后端校验，源库安全连接必选。
+        **参数解释**：  SSL证书内容checksum值，获取SSL证书后将内容经过SHA256加密后的值，后端校验用。  **约束限制**：  - ssl_link为true时必填。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The ssl_cert_check_sum of this TestEndPoint.
         :rtype: str
@@ -429,7 +429,7 @@ class TestEndPoint:
     def ssl_cert_check_sum(self, ssl_cert_check_sum):
         r"""Sets the ssl_cert_check_sum of this TestEndPoint.
 
-        SSL证书内容checksum值，证书经过sha256加密后的值，后端校验，源库安全连接必选。
+        **参数解释**：  SSL证书内容checksum值，获取SSL证书后将内容经过SHA256加密后的值，后端校验用。  **约束限制**：  - ssl_link为true时必填。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param ssl_cert_check_sum: The ssl_cert_check_sum of this TestEndPoint.
         :type ssl_cert_check_sum: str
@@ -440,7 +440,7 @@ class TestEndPoint:
     def ssl_cert_password(self):
         r"""Gets the ssl_cert_password of this TestEndPoint.
 
-        SSL证书密码，证书文件后缀为.p12，需要密码。
+        **参数解释**：  SSL证书密码。  **约束限制**：  - 证书文件后缀为.p12时需要填写密码。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The ssl_cert_password of this TestEndPoint.
         :rtype: str
@@ -451,7 +451,7 @@ class TestEndPoint:
     def ssl_cert_password(self, ssl_cert_password):
         r"""Sets the ssl_cert_password of this TestEndPoint.
 
-        SSL证书密码，证书文件后缀为.p12，需要密码。
+        **参数解释**：  SSL证书密码。  **约束限制**：  - 证书文件后缀为.p12时需要填写密码。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param ssl_cert_password: The ssl_cert_password of this TestEndPoint.
         :type ssl_cert_password: str
@@ -462,7 +462,7 @@ class TestEndPoint:
     def vpc_id(self):
         r"""Gets the vpc_id of this TestEndPoint.
 
-        vpcid，数据库为RDS时必选。
+        **参数解释**：  虚拟私有云ID，用于标识数据库所在的VPC。  **约束限制**：  - 网络类型为VPC时必填。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The vpc_id of this TestEndPoint.
         :rtype: str
@@ -473,7 +473,7 @@ class TestEndPoint:
     def vpc_id(self, vpc_id):
         r"""Sets the vpc_id of this TestEndPoint.
 
-        vpcid，数据库为RDS时必选。
+        **参数解释**：  虚拟私有云ID，用于标识数据库所在的VPC。  **约束限制**：  - 网络类型为VPC时必填。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param vpc_id: The vpc_id of this TestEndPoint.
         :type vpc_id: str
@@ -484,7 +484,7 @@ class TestEndPoint:
     def subnet_id(self):
         r"""Gets the subnet_id of this TestEndPoint.
 
-        subnetid，数据库为RDS必选。
+        **参数解释**：  子网ID，用于标识数据库所在的子网。  **约束限制**：  - 网络类型为VPC时必填。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The subnet_id of this TestEndPoint.
         :rtype: str
@@ -495,7 +495,7 @@ class TestEndPoint:
     def subnet_id(self, subnet_id):
         r"""Sets the subnet_id of this TestEndPoint.
 
-        subnetid，数据库为RDS必选。
+        **参数解释**：  子网ID，用于标识数据库所在的子网。  **约束限制**：  - 网络类型为VPC时必填。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param subnet_id: The subnet_id of this TestEndPoint.
         :type subnet_id: str
@@ -506,7 +506,7 @@ class TestEndPoint:
     def end_point_type(self):
         r"""Gets the end_point_type of this TestEndPoint.
 
-        源库：so,目标库：ta
+        **参数解释**：  数据库端点类型，标识该数据库在数据复制任务中是源端还是目标端。  **约束限制**：  不涉及。  **取值范围**：  - so：源库 - ta：目标库  **默认取值**：  so
 
         :return: The end_point_type of this TestEndPoint.
         :rtype: str
@@ -517,7 +517,7 @@ class TestEndPoint:
     def end_point_type(self, end_point_type):
         r"""Sets the end_point_type of this TestEndPoint.
 
-        源库：so,目标库：ta
+        **参数解释**：  数据库端点类型，标识该数据库在数据复制任务中是源端还是目标端。  **约束限制**：  不涉及。  **取值范围**：  - so：源库 - ta：目标库  **默认取值**：  so
 
         :param end_point_type: The end_point_type of this TestEndPoint.
         :type end_point_type: str
@@ -528,7 +528,7 @@ class TestEndPoint:
     def region(self):
         r"""Gets the region of this TestEndPoint.
 
-        rds实例region，数据库为RDS时必填。
+        **参数解释**：  RDS实例所在区域，用于标识数据库实例的地理区域。  **约束限制**：  - 数据库为RDS实例时必填。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The region of this TestEndPoint.
         :rtype: str
@@ -539,7 +539,7 @@ class TestEndPoint:
     def region(self, region):
         r"""Sets the region of this TestEndPoint.
 
-        rds实例region，数据库为RDS时必填。
+        **参数解释**：  RDS实例所在区域，用于标识数据库实例的地理区域。  **约束限制**：  - 数据库为RDS实例时必填。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param region: The region of this TestEndPoint.
         :type region: str
@@ -550,7 +550,7 @@ class TestEndPoint:
     def project_id(self):
         r"""Gets the project_id of this TestEndPoint.
 
-        用户所处region的projectId。
+        **参数解释**：  数据库实例所在Region的项目ID，数据库为云上实例时填写数据库实例所在Region下的项目ID，否则填写当前任务所在Region下的项目ID。获取方法请参见获取项目ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The project_id of this TestEndPoint.
         :rtype: str
@@ -561,7 +561,7 @@ class TestEndPoint:
     def project_id(self, project_id):
         r"""Sets the project_id of this TestEndPoint.
 
-        用户所处region的projectId。
+        **参数解释**：  数据库实例所在Region的项目ID，数据库为云上实例时填写数据库实例所在Region下的项目ID，否则填写当前任务所在Region下的项目ID。获取方法请参见获取项目ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param project_id: The project_id of this TestEndPoint.
         :type project_id: str
@@ -572,7 +572,7 @@ class TestEndPoint:
     def db_name(self):
         r"""Gets the db_name of this TestEndPoint.
 
-        数据库用户名，DDS的账号认证数据库，Oracle的serviceName。
+        **参数解释**：  数据库名称，Oracle场景下为serviceName。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The db_name of this TestEndPoint.
         :rtype: str
@@ -583,7 +583,7 @@ class TestEndPoint:
     def db_name(self, db_name):
         r"""Sets the db_name of this TestEndPoint.
 
-        数据库用户名，DDS的账号认证数据库，Oracle的serviceName。
+        **参数解释**：  数据库名称，Oracle场景下为serviceName。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param db_name: The db_name of this TestEndPoint.
         :type db_name: str

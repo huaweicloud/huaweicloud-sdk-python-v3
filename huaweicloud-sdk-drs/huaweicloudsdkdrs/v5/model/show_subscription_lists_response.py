@@ -30,7 +30,7 @@ class ShowSubscriptionListsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total_count: 列表中的项目总数，与分页无关。
+        :param total_count: **参数解释**：  列表中的项目总数，与分页无关。表示满足查询条件的记录总数量，用于分页计算。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type total_count: int
         :param jobs: 
         :type jobs: :class:`huaweicloudsdkdrs.v5.SubscriptionListResp`
@@ -49,7 +49,7 @@ class ShowSubscriptionListsResponse(SdkResponse):
     def total_count(self):
         r"""Gets the total_count of this ShowSubscriptionListsResponse.
 
-        列表中的项目总数，与分页无关。
+        **参数解释**：  列表中的项目总数，与分页无关。表示满足查询条件的记录总数量，用于分页计算。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The total_count of this ShowSubscriptionListsResponse.
         :rtype: int
@@ -60,7 +60,7 @@ class ShowSubscriptionListsResponse(SdkResponse):
     def total_count(self, total_count):
         r"""Sets the total_count of this ShowSubscriptionListsResponse.
 
-        列表中的项目总数，与分页无关。
+        **参数解释**：  列表中的项目总数，与分页无关。表示满足查询条件的记录总数量，用于分页计算。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param total_count: The total_count of this ShowSubscriptionListsResponse.
         :type total_count: int

@@ -21,7 +21,8 @@ class ModifyComparePolicyReq:
         'end_time': 'str',
         'compare_type': 'list[str]',
         'compare_policy': 'str',
-        'interval_hour': 'int'
+        'interval_hour': 'int',
+        'conflict_strategy': 'str'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class ModifyComparePolicyReq:
         'end_time': 'end_time',
         'compare_type': 'compare_type',
         'compare_policy': 'compare_policy',
-        'interval_hour': 'interval_hour'
+        'interval_hour': 'interval_hour',
+        'conflict_strategy': 'conflict_strategy'
     }
 
-    def __init__(self, action=None, period=None, begin_time=None, end_time=None, compare_type=None, compare_policy=None, interval_hour=None):
+    def __init__(self, action=None, period=None, begin_time=None, end_time=None, compare_type=None, compare_policy=None, interval_hour=None, conflict_strategy=None):
         r"""ModifyComparePolicyReq
 
         The model defined in huaweicloud sdk
@@ -47,12 +49,14 @@ class ModifyComparePolicyReq:
         :type begin_time: str
         :param end_time: 对比策略生效结束时间，UTC时间，24小时制，时间格式HH:mm:ss，例如：04:00:00，表示UTC时间的04:00:00，北京时间（UTC+08:00）的12:00:00。
         :type end_time: str
-        :param compare_type: 对比类型列表： - object_comparison：对象对比。 - lines：行对比。 - account：用户对比。
+        :param compare_type: 对比类型列表： - object_comparison：对象对比。 - lines：行对比。 - account：用户对比。 - contents: 内容对比。
         :type compare_type: list[str]
         :param compare_policy: 对比策略： - normal：普通对比。 - manyToOne：多对一对比。
         :type compare_policy: str
         :param interval_hour: 间隔时间，按小时对比时填写，表示每隔多久执行一次对比，单位是小时。
         :type interval_hour: int
+        :param conflict_strategy: **参数解释：** 冲突策略。 **约束限制：** 对存在正在执行中的对比任务时的周期性对比策略 支持链路范围：MySQL-MySQL、MySQL-TaurusDB迁移、MySQL-MySQL同步，MySQL-GaussDB集中式，GaussDB分布式-GaussDB集中式，GaussDB集中式-MySQL，GaussDBV1-GaussDB集中式，GaussDB集中式-GaussDBV1，MySQL-MySQL灾备，GaussDB集中式-GaussDB集中式，OpenGauss-GaussDB分布式，OpenGauss-GaussDB集中式，GaussDB集中式-Oracle，Oracle-GaussDB集中式，GaussDB分布式-GaussDB分布式，GaussDB分布式-Oracle，Oracle-GaussDB分布式，MySQL-TaurusDB，TaurusDB-TaurusDB，TaurusDB-MySQL，GaussDB集中式-GaussDB透明多写，GaussDB分布式-GaussDB透明多写，GaussDB透明多写-GaussDB透明多写，GaussDB透明多写-GaussDB分布式，GaussDB透明多写-GaussDB集中式，Oracle-GaussDB透明多写，GaussDB透明多写-Oracle，DB2-GaussDB分布式，DB2-GaussDB集中式，GaussDB分布式-DB2，GaussDB集中式-DB2 **取值范围：** cover: 覆盖表示取消正在执行的任务，开始新对比 ignore：忽略表示忽略本次周期性对比 **默认取值：** 不涉及
+        :type conflict_strategy: str
         """
         
         
@@ -64,6 +68,7 @@ class ModifyComparePolicyReq:
         self._compare_type = None
         self._compare_policy = None
         self._interval_hour = None
+        self._conflict_strategy = None
         self.discriminator = None
 
         self.action = action
@@ -79,6 +84,8 @@ class ModifyComparePolicyReq:
             self.compare_policy = compare_policy
         if interval_hour is not None:
             self.interval_hour = interval_hour
+        if conflict_strategy is not None:
+            self.conflict_strategy = conflict_strategy
 
     @property
     def action(self):
@@ -172,7 +179,7 @@ class ModifyComparePolicyReq:
     def compare_type(self):
         r"""Gets the compare_type of this ModifyComparePolicyReq.
 
-        对比类型列表： - object_comparison：对象对比。 - lines：行对比。 - account：用户对比。
+        对比类型列表： - object_comparison：对象对比。 - lines：行对比。 - account：用户对比。 - contents: 内容对比。
 
         :return: The compare_type of this ModifyComparePolicyReq.
         :rtype: list[str]
@@ -183,7 +190,7 @@ class ModifyComparePolicyReq:
     def compare_type(self, compare_type):
         r"""Sets the compare_type of this ModifyComparePolicyReq.
 
-        对比类型列表： - object_comparison：对象对比。 - lines：行对比。 - account：用户对比。
+        对比类型列表： - object_comparison：对象对比。 - lines：行对比。 - account：用户对比。 - contents: 内容对比。
 
         :param compare_type: The compare_type of this ModifyComparePolicyReq.
         :type compare_type: list[str]
@@ -233,6 +240,28 @@ class ModifyComparePolicyReq:
         :type interval_hour: int
         """
         self._interval_hour = interval_hour
+
+    @property
+    def conflict_strategy(self):
+        r"""Gets the conflict_strategy of this ModifyComparePolicyReq.
+
+        **参数解释：** 冲突策略。 **约束限制：** 对存在正在执行中的对比任务时的周期性对比策略 支持链路范围：MySQL-MySQL、MySQL-TaurusDB迁移、MySQL-MySQL同步，MySQL-GaussDB集中式，GaussDB分布式-GaussDB集中式，GaussDB集中式-MySQL，GaussDBV1-GaussDB集中式，GaussDB集中式-GaussDBV1，MySQL-MySQL灾备，GaussDB集中式-GaussDB集中式，OpenGauss-GaussDB分布式，OpenGauss-GaussDB集中式，GaussDB集中式-Oracle，Oracle-GaussDB集中式，GaussDB分布式-GaussDB分布式，GaussDB分布式-Oracle，Oracle-GaussDB分布式，MySQL-TaurusDB，TaurusDB-TaurusDB，TaurusDB-MySQL，GaussDB集中式-GaussDB透明多写，GaussDB分布式-GaussDB透明多写，GaussDB透明多写-GaussDB透明多写，GaussDB透明多写-GaussDB分布式，GaussDB透明多写-GaussDB集中式，Oracle-GaussDB透明多写，GaussDB透明多写-Oracle，DB2-GaussDB分布式，DB2-GaussDB集中式，GaussDB分布式-DB2，GaussDB集中式-DB2 **取值范围：** cover: 覆盖表示取消正在执行的任务，开始新对比 ignore：忽略表示忽略本次周期性对比 **默认取值：** 不涉及
+
+        :return: The conflict_strategy of this ModifyComparePolicyReq.
+        :rtype: str
+        """
+        return self._conflict_strategy
+
+    @conflict_strategy.setter
+    def conflict_strategy(self, conflict_strategy):
+        r"""Sets the conflict_strategy of this ModifyComparePolicyReq.
+
+        **参数解释：** 冲突策略。 **约束限制：** 对存在正在执行中的对比任务时的周期性对比策略 支持链路范围：MySQL-MySQL、MySQL-TaurusDB迁移、MySQL-MySQL同步，MySQL-GaussDB集中式，GaussDB分布式-GaussDB集中式，GaussDB集中式-MySQL，GaussDBV1-GaussDB集中式，GaussDB集中式-GaussDBV1，MySQL-MySQL灾备，GaussDB集中式-GaussDB集中式，OpenGauss-GaussDB分布式，OpenGauss-GaussDB集中式，GaussDB集中式-Oracle，Oracle-GaussDB集中式，GaussDB分布式-GaussDB分布式，GaussDB分布式-Oracle，Oracle-GaussDB分布式，MySQL-TaurusDB，TaurusDB-TaurusDB，TaurusDB-MySQL，GaussDB集中式-GaussDB透明多写，GaussDB分布式-GaussDB透明多写，GaussDB透明多写-GaussDB透明多写，GaussDB透明多写-GaussDB分布式，GaussDB透明多写-GaussDB集中式，Oracle-GaussDB透明多写，GaussDB透明多写-Oracle，DB2-GaussDB分布式，DB2-GaussDB集中式，GaussDB分布式-DB2，GaussDB集中式-DB2 **取值范围：** cover: 覆盖表示取消正在执行的任务，开始新对比 ignore：忽略表示忽略本次周期性对比 **默认取值：** 不涉及
+
+        :param conflict_strategy: The conflict_strategy of this ModifyComparePolicyReq.
+        :type conflict_strategy: str
+        """
+        self._conflict_strategy = conflict_strategy
 
     def to_dict(self):
         result = {}

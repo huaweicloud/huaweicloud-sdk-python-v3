@@ -27,7 +27,7 @@ class BatchModifyJobReq:
 
         The model defined in huaweicloud sdk
 
-        :param jobs: 修改任务请求体
+        :param jobs: **参数解释**：  修改任务请求体列表，包含需要修改的一个或多个任务信息，详情请参见ModifyJobReq对象定义。  **约束限制**：  - 建议批量调用数量不超过10个。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type jobs: list[:class:`huaweicloudsdkdrs.v3.ModifyJobReq`]
         """
         
@@ -42,7 +42,7 @@ class BatchModifyJobReq:
     def jobs(self):
         r"""Gets the jobs of this BatchModifyJobReq.
 
-        修改任务请求体
+        **参数解释**：  修改任务请求体列表，包含需要修改的一个或多个任务信息，详情请参见ModifyJobReq对象定义。  **约束限制**：  - 建议批量调用数量不超过10个。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The jobs of this BatchModifyJobReq.
         :rtype: list[:class:`huaweicloudsdkdrs.v3.ModifyJobReq`]
@@ -53,7 +53,7 @@ class BatchModifyJobReq:
     def jobs(self, jobs):
         r"""Sets the jobs of this BatchModifyJobReq.
 
-        修改任务请求体
+        **参数解释**：  修改任务请求体列表，包含需要修改的一个或多个任务信息，详情请参见ModifyJobReq对象定义。  **约束限制**：  - 建议批量调用数量不超过10个。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param jobs: The jobs of this BatchModifyJobReq.
         :type jobs: list[:class:`huaweicloudsdkdrs.v3.ModifyJobReq`]

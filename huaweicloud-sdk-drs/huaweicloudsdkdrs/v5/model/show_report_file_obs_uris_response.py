@@ -1,0 +1,141 @@
+# coding: utf-8
+
+from huaweicloudsdkcore.sdk_response import SdkResponse
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
+
+
+class ShowReportFileObsUrisResponse(SdkResponse):
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+    sensitive_list = []
+
+    openapi_types = {
+        'count': 'int',
+        'export_report_obs_files': 'list[ExportReportObsTmpFileUrlResp]'
+    }
+
+    attribute_map = {
+        'count': 'count',
+        'export_report_obs_files': 'export_report_obs_files'
+    }
+
+    def __init__(self, count=None, export_report_obs_files=None):
+        r"""ShowReportFileObsUrisResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 可下载文件总数
+        :type count: int
+        :param export_report_obs_files: 可下载的文件列表
+        :type export_report_obs_files: list[:class:`huaweicloudsdkdrs.v5.ExportReportObsTmpFileUrlResp`]
+        """
+        
+        super().__init__()
+
+        self._count = None
+        self._export_report_obs_files = None
+        self.discriminator = None
+
+        if count is not None:
+            self.count = count
+        if export_report_obs_files is not None:
+            self.export_report_obs_files = export_report_obs_files
+
+    @property
+    def count(self):
+        r"""Gets the count of this ShowReportFileObsUrisResponse.
+
+        可下载文件总数
+
+        :return: The count of this ShowReportFileObsUrisResponse.
+        :rtype: int
+        """
+        return self._count
+
+    @count.setter
+    def count(self, count):
+        r"""Sets the count of this ShowReportFileObsUrisResponse.
+
+        可下载文件总数
+
+        :param count: The count of this ShowReportFileObsUrisResponse.
+        :type count: int
+        """
+        self._count = count
+
+    @property
+    def export_report_obs_files(self):
+        r"""Gets the export_report_obs_files of this ShowReportFileObsUrisResponse.
+
+        可下载的文件列表
+
+        :return: The export_report_obs_files of this ShowReportFileObsUrisResponse.
+        :rtype: list[:class:`huaweicloudsdkdrs.v5.ExportReportObsTmpFileUrlResp`]
+        """
+        return self._export_report_obs_files
+
+    @export_report_obs_files.setter
+    def export_report_obs_files(self, export_report_obs_files):
+        r"""Sets the export_report_obs_files of this ShowReportFileObsUrisResponse.
+
+        可下载的文件列表
+
+        :param export_report_obs_files: The export_report_obs_files of this ShowReportFileObsUrisResponse.
+        :type export_report_obs_files: list[:class:`huaweicloudsdkdrs.v5.ExportReportObsTmpFileUrlResp`]
+        """
+        self._export_report_obs_files = export_report_obs_files
+
+    def to_dict(self):
+        import warnings
+        warnings.warn("ShowReportFileObsUrisResponse.to_dict() is deprecated and no longer maintained, "
+                      "use to_json_object() to get the response content.", DeprecationWarning)
+        result = {}
+
+        for attr, _ in self.openapi_types.items():
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        import simplejson as json
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
+
+    def __repr__(self):
+        """For `print`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, ShowReportFileObsUrisResponse):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

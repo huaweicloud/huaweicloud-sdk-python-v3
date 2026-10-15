@@ -22,6 +22,7 @@ from huaweicloudsdksts.v1.model.decode_authorization_message_request import Deco
 from huaweicloudsdksts.v1.model.decode_authorization_message_response import DecodeAuthorizationMessageResponse
 from huaweicloudsdksts.v1.model.get_caller_identity_request import GetCallerIdentityRequest
 from huaweicloudsdksts.v1.model.get_caller_identity_response import GetCallerIdentityResponse
+from huaweicloudsdksts.v1.model.provided_context_dto import ProvidedContextDto
 from huaweicloudsdksts.v1.model.tag_dto import TagDto
 from huaweicloudsdksts.v1.model.tag_key_dto import TagKeyDto
 

@@ -31,11 +31,11 @@ class CustomizedDns:
 
         The model defined in huaweicloud sdk
 
-        :param is_set_dns: 是否设置客户自定义DNS。
+        :param is_set_dns: **参数解释**：  是否设置客户自定义DNS。  **约束限制**：  不涉及。  **取值范围**：  - true：设置客户自定义DNS - false：不设置客户自定义DNS  **默认取值**：  不涉及
         :type is_set_dns: bool
-        :param set_dns_action: 设置客户自定义DNS的行为。 - add：新增客户自定义DNS IP。 - keep：保持客户自定义DNS IP。 - update：更新客户自定义DNS IP（当DNS IP变化时更新生效）。 - recover：还原系统默认DNS IP（还原时可能会导致域名解析失败，请谨慎操作）。
+        :param set_dns_action: **参数解释**：  设置客户自定义DNS的行为。  **约束限制**：  不涉及。  **取值范围**：  - add：新增客户自定义DNS IP - keep：保持客户自定义DNS IP - update：更新客户自定义DNS IP（当DNS IP变化时更新生效） - recover：还原系统默认DNS IP（还原时可能会导致域名解析失败，请谨慎操作）  **默认取值**：  不涉及
         :type set_dns_action: str
-        :param dns_ip: 设置客户自定义DNS IP。
+        :param dns_ip: **参数解释**：  设置客户自定义DNS IP地址。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type dns_ip: str
         """
         
@@ -54,7 +54,7 @@ class CustomizedDns:
     def is_set_dns(self):
         r"""Gets the is_set_dns of this CustomizedDns.
 
-        是否设置客户自定义DNS。
+        **参数解释**：  是否设置客户自定义DNS。  **约束限制**：  不涉及。  **取值范围**：  - true：设置客户自定义DNS - false：不设置客户自定义DNS  **默认取值**：  不涉及
 
         :return: The is_set_dns of this CustomizedDns.
         :rtype: bool
@@ -65,7 +65,7 @@ class CustomizedDns:
     def is_set_dns(self, is_set_dns):
         r"""Sets the is_set_dns of this CustomizedDns.
 
-        是否设置客户自定义DNS。
+        **参数解释**：  是否设置客户自定义DNS。  **约束限制**：  不涉及。  **取值范围**：  - true：设置客户自定义DNS - false：不设置客户自定义DNS  **默认取值**：  不涉及
 
         :param is_set_dns: The is_set_dns of this CustomizedDns.
         :type is_set_dns: bool
@@ -76,7 +76,7 @@ class CustomizedDns:
     def set_dns_action(self):
         r"""Gets the set_dns_action of this CustomizedDns.
 
-        设置客户自定义DNS的行为。 - add：新增客户自定义DNS IP。 - keep：保持客户自定义DNS IP。 - update：更新客户自定义DNS IP（当DNS IP变化时更新生效）。 - recover：还原系统默认DNS IP（还原时可能会导致域名解析失败，请谨慎操作）。
+        **参数解释**：  设置客户自定义DNS的行为。  **约束限制**：  不涉及。  **取值范围**：  - add：新增客户自定义DNS IP - keep：保持客户自定义DNS IP - update：更新客户自定义DNS IP（当DNS IP变化时更新生效） - recover：还原系统默认DNS IP（还原时可能会导致域名解析失败，请谨慎操作）  **默认取值**：  不涉及
 
         :return: The set_dns_action of this CustomizedDns.
         :rtype: str
@@ -87,7 +87,7 @@ class CustomizedDns:
     def set_dns_action(self, set_dns_action):
         r"""Sets the set_dns_action of this CustomizedDns.
 
-        设置客户自定义DNS的行为。 - add：新增客户自定义DNS IP。 - keep：保持客户自定义DNS IP。 - update：更新客户自定义DNS IP（当DNS IP变化时更新生效）。 - recover：还原系统默认DNS IP（还原时可能会导致域名解析失败，请谨慎操作）。
+        **参数解释**：  设置客户自定义DNS的行为。  **约束限制**：  不涉及。  **取值范围**：  - add：新增客户自定义DNS IP - keep：保持客户自定义DNS IP - update：更新客户自定义DNS IP（当DNS IP变化时更新生效） - recover：还原系统默认DNS IP（还原时可能会导致域名解析失败，请谨慎操作）  **默认取值**：  不涉及
 
         :param set_dns_action: The set_dns_action of this CustomizedDns.
         :type set_dns_action: str
@@ -98,7 +98,7 @@ class CustomizedDns:
     def dns_ip(self):
         r"""Gets the dns_ip of this CustomizedDns.
 
-        设置客户自定义DNS IP。
+        **参数解释**：  设置客户自定义DNS IP地址。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The dns_ip of this CustomizedDns.
         :rtype: str
@@ -109,7 +109,7 @@ class CustomizedDns:
     def dns_ip(self, dns_ip):
         r"""Sets the dns_ip of this CustomizedDns.
 
-        设置客户自定义DNS IP。
+        **参数解释**：  设置客户自定义DNS IP地址。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param dns_ip: The dns_ip of this CustomizedDns.
         :type dns_ip: str

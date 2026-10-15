@@ -35,15 +35,15 @@ class PostPreCheckResp:
 
         The model defined in huaweicloud sdk
 
-        :param id: 任务id。
+        :param id: **参数解释**：  任务ID，用于唯一标识一个数据复制任务，在查询、修改、删除等操作中作为任务的识别凭证。  **约束限制**：  不涉及。  **取值范围**：  UUID格式字符串。  **默认取值**：  不涉及
         :type id: str
-        :param precheck_id: 预检查id。
+        :param precheck_id: **参数解释**：  预检查后返回的ID，可用于查询预检查结果。  **约束限制**：  不涉及。  **取值范围**：  UUID格式字符串。  **默认取值**：  不涉及
         :type precheck_id: str
-        :param status: 成功或失败的状态
+        :param status: **参数解释**：  预检查结果状态，表示预检查是否通过。  **约束限制**：  不涉及。  **取值范围**：  - success：预检查成功 - failed：预检查失败  **默认取值**：  不涉及
         :type status: str
-        :param error_code: 错误码。
+        :param error_code: **参数解释**：  错误码，当预检查失败时返回的错误代码。  **约束限制**：  不涉及。  **取值范围**：  格式为DRS.XXXXXX。  **默认取值**：  不涉及
         :type error_code: str
-        :param error_msg: 错误信息。
+        :param error_msg: **参数解释**：  错误详细信息，当预检查失败时返回的具体错误描述。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type error_msg: str
         """
         
@@ -71,7 +71,7 @@ class PostPreCheckResp:
     def id(self):
         r"""Gets the id of this PostPreCheckResp.
 
-        任务id。
+        **参数解释**：  任务ID，用于唯一标识一个数据复制任务，在查询、修改、删除等操作中作为任务的识别凭证。  **约束限制**：  不涉及。  **取值范围**：  UUID格式字符串。  **默认取值**：  不涉及
 
         :return: The id of this PostPreCheckResp.
         :rtype: str
@@ -82,7 +82,7 @@ class PostPreCheckResp:
     def id(self, id):
         r"""Sets the id of this PostPreCheckResp.
 
-        任务id。
+        **参数解释**：  任务ID，用于唯一标识一个数据复制任务，在查询、修改、删除等操作中作为任务的识别凭证。  **约束限制**：  不涉及。  **取值范围**：  UUID格式字符串。  **默认取值**：  不涉及
 
         :param id: The id of this PostPreCheckResp.
         :type id: str
@@ -93,7 +93,7 @@ class PostPreCheckResp:
     def precheck_id(self):
         r"""Gets the precheck_id of this PostPreCheckResp.
 
-        预检查id。
+        **参数解释**：  预检查后返回的ID，可用于查询预检查结果。  **约束限制**：  不涉及。  **取值范围**：  UUID格式字符串。  **默认取值**：  不涉及
 
         :return: The precheck_id of this PostPreCheckResp.
         :rtype: str
@@ -104,7 +104,7 @@ class PostPreCheckResp:
     def precheck_id(self, precheck_id):
         r"""Sets the precheck_id of this PostPreCheckResp.
 
-        预检查id。
+        **参数解释**：  预检查后返回的ID，可用于查询预检查结果。  **约束限制**：  不涉及。  **取值范围**：  UUID格式字符串。  **默认取值**：  不涉及
 
         :param precheck_id: The precheck_id of this PostPreCheckResp.
         :type precheck_id: str
@@ -115,7 +115,7 @@ class PostPreCheckResp:
     def status(self):
         r"""Gets the status of this PostPreCheckResp.
 
-        成功或失败的状态
+        **参数解释**：  预检查结果状态，表示预检查是否通过。  **约束限制**：  不涉及。  **取值范围**：  - success：预检查成功 - failed：预检查失败  **默认取值**：  不涉及
 
         :return: The status of this PostPreCheckResp.
         :rtype: str
@@ -126,7 +126,7 @@ class PostPreCheckResp:
     def status(self, status):
         r"""Sets the status of this PostPreCheckResp.
 
-        成功或失败的状态
+        **参数解释**：  预检查结果状态，表示预检查是否通过。  **约束限制**：  不涉及。  **取值范围**：  - success：预检查成功 - failed：预检查失败  **默认取值**：  不涉及
 
         :param status: The status of this PostPreCheckResp.
         :type status: str
@@ -137,7 +137,7 @@ class PostPreCheckResp:
     def error_code(self):
         r"""Gets the error_code of this PostPreCheckResp.
 
-        错误码。
+        **参数解释**：  错误码，当预检查失败时返回的错误代码。  **约束限制**：  不涉及。  **取值范围**：  格式为DRS.XXXXXX。  **默认取值**：  不涉及
 
         :return: The error_code of this PostPreCheckResp.
         :rtype: str
@@ -148,7 +148,7 @@ class PostPreCheckResp:
     def error_code(self, error_code):
         r"""Sets the error_code of this PostPreCheckResp.
 
-        错误码。
+        **参数解释**：  错误码，当预检查失败时返回的错误代码。  **约束限制**：  不涉及。  **取值范围**：  格式为DRS.XXXXXX。  **默认取值**：  不涉及
 
         :param error_code: The error_code of this PostPreCheckResp.
         :type error_code: str
@@ -159,7 +159,7 @@ class PostPreCheckResp:
     def error_msg(self):
         r"""Gets the error_msg of this PostPreCheckResp.
 
-        错误信息。
+        **参数解释**：  错误详细信息，当预检查失败时返回的具体错误描述。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The error_msg of this PostPreCheckResp.
         :rtype: str
@@ -170,7 +170,7 @@ class PostPreCheckResp:
     def error_msg(self, error_msg):
         r"""Sets the error_msg of this PostPreCheckResp.
 
-        错误信息。
+        **参数解释**：  错误详细信息，当预检查失败时返回的具体错误描述。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param error_msg: The error_msg of this PostPreCheckResp.
         :type error_msg: str

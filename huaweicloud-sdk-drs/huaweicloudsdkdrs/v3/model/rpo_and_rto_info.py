@@ -33,13 +33,13 @@ class RpoAndRtoInfo:
 
         The model defined in huaweicloud sdk
 
-        :param check_point: 检查点
+        :param check_point: **参数解释**：  数据复制的检查点位置，标识已同步数据的Binlog位置。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type check_point: str
-        :param delay: 延迟
+        :param delay: **参数解释**：  数据同步延迟时间。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type delay: str
-        :param gtid_set: gtid集合
+        :param gtid_set: **参数解释**：  全局事务ID集合（Global Transaction Identifier），用于标识已执行的事务。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type gtid_set: str
-        :param time: 当前时间 ，格式为“yyyy-MM-dd HH:mm:ss”
+        :param time: **参数解释**：  RPO或RTO的统计时间点，格式为\&quot;yyyy-MM-dd HH:mm:ss\&quot;。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type time: str
         """
         
@@ -64,7 +64,7 @@ class RpoAndRtoInfo:
     def check_point(self):
         r"""Gets the check_point of this RpoAndRtoInfo.
 
-        检查点
+        **参数解释**：  数据复制的检查点位置，标识已同步数据的Binlog位置。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The check_point of this RpoAndRtoInfo.
         :rtype: str
@@ -75,7 +75,7 @@ class RpoAndRtoInfo:
     def check_point(self, check_point):
         r"""Sets the check_point of this RpoAndRtoInfo.
 
-        检查点
+        **参数解释**：  数据复制的检查点位置，标识已同步数据的Binlog位置。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param check_point: The check_point of this RpoAndRtoInfo.
         :type check_point: str
@@ -86,7 +86,7 @@ class RpoAndRtoInfo:
     def delay(self):
         r"""Gets the delay of this RpoAndRtoInfo.
 
-        延迟
+        **参数解释**：  数据同步延迟时间。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The delay of this RpoAndRtoInfo.
         :rtype: str
@@ -97,7 +97,7 @@ class RpoAndRtoInfo:
     def delay(self, delay):
         r"""Sets the delay of this RpoAndRtoInfo.
 
-        延迟
+        **参数解释**：  数据同步延迟时间。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param delay: The delay of this RpoAndRtoInfo.
         :type delay: str
@@ -108,7 +108,7 @@ class RpoAndRtoInfo:
     def gtid_set(self):
         r"""Gets the gtid_set of this RpoAndRtoInfo.
 
-        gtid集合
+        **参数解释**：  全局事务ID集合（Global Transaction Identifier），用于标识已执行的事务。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The gtid_set of this RpoAndRtoInfo.
         :rtype: str
@@ -119,7 +119,7 @@ class RpoAndRtoInfo:
     def gtid_set(self, gtid_set):
         r"""Sets the gtid_set of this RpoAndRtoInfo.
 
-        gtid集合
+        **参数解释**：  全局事务ID集合（Global Transaction Identifier），用于标识已执行的事务。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param gtid_set: The gtid_set of this RpoAndRtoInfo.
         :type gtid_set: str
@@ -130,7 +130,7 @@ class RpoAndRtoInfo:
     def time(self):
         r"""Gets the time of this RpoAndRtoInfo.
 
-        当前时间 ，格式为“yyyy-MM-dd HH:mm:ss”
+        **参数解释**：  RPO或RTO的统计时间点，格式为\"yyyy-MM-dd HH:mm:ss\"。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The time of this RpoAndRtoInfo.
         :rtype: str
@@ -141,7 +141,7 @@ class RpoAndRtoInfo:
     def time(self, time):
         r"""Sets the time of this RpoAndRtoInfo.
 
-        当前时间 ，格式为“yyyy-MM-dd HH:mm:ss”
+        **参数解释**：  RPO或RTO的统计时间点，格式为\"yyyy-MM-dd HH:mm:ss\"。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param time: The time of this RpoAndRtoInfo.
         :type time: str

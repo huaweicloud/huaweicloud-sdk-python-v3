@@ -43,7 +43,7 @@ class MigrationObjectOverviewInfo:
         :type src_count: str
         :param dst_count: 已迁移数量。
         :type dst_count: str
-        :param status: 状态. NOT_START：未启动，TRANSFERING：迁移中，COMPLETED：已完成，FAILED：失败，TRANSFER_WHEN_END：结束后迁移
+        :param status: 状态。 - NOT_START：未启动。 - TRANSFERING：迁移中。 - COMPLETED：已完成。 - FAILED：失败。 - TRANSFER_WHEN_END：结束后迁移。
         :type status: str
         :param start_time: 开始时间。
         :type start_time: str
@@ -144,7 +144,7 @@ class MigrationObjectOverviewInfo:
     def status(self):
         r"""Gets the status of this MigrationObjectOverviewInfo.
 
-        状态. NOT_START：未启动，TRANSFERING：迁移中，COMPLETED：已完成，FAILED：失败，TRANSFER_WHEN_END：结束后迁移
+        状态。 - NOT_START：未启动。 - TRANSFERING：迁移中。 - COMPLETED：已完成。 - FAILED：失败。 - TRANSFER_WHEN_END：结束后迁移。
 
         :return: The status of this MigrationObjectOverviewInfo.
         :rtype: str
@@ -155,7 +155,7 @@ class MigrationObjectOverviewInfo:
     def status(self, status):
         r"""Sets the status of this MigrationObjectOverviewInfo.
 
-        状态. NOT_START：未启动，TRANSFERING：迁移中，COMPLETED：已完成，FAILED：失败，TRANSFER_WHEN_END：结束后迁移
+        状态。 - NOT_START：未启动。 - TRANSFERING：迁移中。 - COMPLETED：已完成。 - FAILED：失败。 - TRANSFER_WHEN_END：结束后迁移。
 
         :param status: The status of this MigrationObjectOverviewInfo.
         :type status: str

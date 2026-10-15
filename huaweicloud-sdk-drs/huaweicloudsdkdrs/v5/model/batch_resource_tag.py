@@ -29,9 +29,9 @@ class BatchResourceTag:
 
         The model defined in huaweicloud sdk
 
-        :param key: 标签键。 - 长度为1-128个unicode字符。 - 可以包含任何语种字母、数字、空格和_.:&#x3D;+-@，但首尾不能含有空格，不能以_sys_开头。
+        :param key: **参数解释**：  标签键。  **约束限制**：  - 长度为1-128个unicode字符。 - 可以包含任何语种字母、数字、空格和_.:&#x3D;+-@，但首尾不能含有空格，不能以_sys_开头。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type key: str
-        :param value: 标签值，删除标签时非必填。 - 最大长度255个unicode字符。 - 可以包含任何语种字母、数字、空格和_.:&#x3D;+-@。
+        :param value: **参数解释**：  标签值，删除标签时非必填。  **约束限制**：  - 最大长度255个unicode字符。 - 可以包含任何语种字母、数字、空格和_.:&#x3D;+-@。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type value: str
         """
         
@@ -49,7 +49,7 @@ class BatchResourceTag:
     def key(self):
         r"""Gets the key of this BatchResourceTag.
 
-        标签键。 - 长度为1-128个unicode字符。 - 可以包含任何语种字母、数字、空格和_.:=+-@，但首尾不能含有空格，不能以_sys_开头。
+        **参数解释**：  标签键。  **约束限制**：  - 长度为1-128个unicode字符。 - 可以包含任何语种字母、数字、空格和_.:=+-@，但首尾不能含有空格，不能以_sys_开头。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The key of this BatchResourceTag.
         :rtype: str
@@ -60,7 +60,7 @@ class BatchResourceTag:
     def key(self, key):
         r"""Sets the key of this BatchResourceTag.
 
-        标签键。 - 长度为1-128个unicode字符。 - 可以包含任何语种字母、数字、空格和_.:=+-@，但首尾不能含有空格，不能以_sys_开头。
+        **参数解释**：  标签键。  **约束限制**：  - 长度为1-128个unicode字符。 - 可以包含任何语种字母、数字、空格和_.:=+-@，但首尾不能含有空格，不能以_sys_开头。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param key: The key of this BatchResourceTag.
         :type key: str
@@ -71,7 +71,7 @@ class BatchResourceTag:
     def value(self):
         r"""Gets the value of this BatchResourceTag.
 
-        标签值，删除标签时非必填。 - 最大长度255个unicode字符。 - 可以包含任何语种字母、数字、空格和_.:=+-@。
+        **参数解释**：  标签值，删除标签时非必填。  **约束限制**：  - 最大长度255个unicode字符。 - 可以包含任何语种字母、数字、空格和_.:=+-@。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The value of this BatchResourceTag.
         :rtype: str
@@ -82,7 +82,7 @@ class BatchResourceTag:
     def value(self, value):
         r"""Sets the value of this BatchResourceTag.
 
-        标签值，删除标签时非必填。 - 最大长度255个unicode字符。 - 可以包含任何语种字母、数字、空格和_.:=+-@。
+        **参数解释**：  标签值，删除标签时非必填。  **约束限制**：  - 最大长度255个unicode字符。 - 可以包含任何语种字母、数字、空格和_.:=+-@。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param value: The value of this BatchResourceTag.
         :type value: str

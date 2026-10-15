@@ -31,11 +31,11 @@ class DeleteJobReq:
 
         The model defined in huaweicloud sdk
 
-        :param delete_type: terminate:结束迁移任务,force_terminate:强制结束迁移任务,delete:删除迁移任务,roll_back_upgrade_active_standby:转主备任务回滚
+        :param delete_type: **参数解释**：  批量结束或删除任务的操作类型，指定对任务执行结束还是删除操作。  **约束限制**：  包年/包月任务需要先手动退订，然后delete_type参数设置为delete调用该接口删除任务。  **取值范围**：  - terminate：结束任务 - force_terminate：强制结束任务 - delete：删除任务 - roll_back_upgrade_active_standby：转主备任务回滚  **默认取值**：  不涉及
         :type delete_type: str
-        :param job_id: 任务ID
+        :param job_id: **参数解释**：  任务ID，用于唯一标识需要结束或删除的数据复制任务。  **约束限制**：  不涉及。  **取值范围**：  UUID格式字符串。  **默认取值**：  不涉及
         :type job_id: str
-        :param is_show_breakpoint_position: MySQL为源，实时迁移，实时同步，数据订阅，实时灾备结束任务时是否展示断点信息
+        :param is_show_breakpoint_position: **参数解释**：  MySQL为源的数据复制任务，结束任务时是否展示断点信息。  **约束限制**：  仅MySQL为源的实时迁移、实时同步、实时灾备任务适用。  **取值范围**：  - true：展示断点信息 - false：不展示断点信息  **默认取值**：  不涉及
         :type is_show_breakpoint_position: bool
         """
         
@@ -55,7 +55,7 @@ class DeleteJobReq:
     def delete_type(self):
         r"""Gets the delete_type of this DeleteJobReq.
 
-        terminate:结束迁移任务,force_terminate:强制结束迁移任务,delete:删除迁移任务,roll_back_upgrade_active_standby:转主备任务回滚
+        **参数解释**：  批量结束或删除任务的操作类型，指定对任务执行结束还是删除操作。  **约束限制**：  包年/包月任务需要先手动退订，然后delete_type参数设置为delete调用该接口删除任务。  **取值范围**：  - terminate：结束任务 - force_terminate：强制结束任务 - delete：删除任务 - roll_back_upgrade_active_standby：转主备任务回滚  **默认取值**：  不涉及
 
         :return: The delete_type of this DeleteJobReq.
         :rtype: str
@@ -66,7 +66,7 @@ class DeleteJobReq:
     def delete_type(self, delete_type):
         r"""Sets the delete_type of this DeleteJobReq.
 
-        terminate:结束迁移任务,force_terminate:强制结束迁移任务,delete:删除迁移任务,roll_back_upgrade_active_standby:转主备任务回滚
+        **参数解释**：  批量结束或删除任务的操作类型，指定对任务执行结束还是删除操作。  **约束限制**：  包年/包月任务需要先手动退订，然后delete_type参数设置为delete调用该接口删除任务。  **取值范围**：  - terminate：结束任务 - force_terminate：强制结束任务 - delete：删除任务 - roll_back_upgrade_active_standby：转主备任务回滚  **默认取值**：  不涉及
 
         :param delete_type: The delete_type of this DeleteJobReq.
         :type delete_type: str
@@ -77,7 +77,7 @@ class DeleteJobReq:
     def job_id(self):
         r"""Gets the job_id of this DeleteJobReq.
 
-        任务ID
+        **参数解释**：  任务ID，用于唯一标识需要结束或删除的数据复制任务。  **约束限制**：  不涉及。  **取值范围**：  UUID格式字符串。  **默认取值**：  不涉及
 
         :return: The job_id of this DeleteJobReq.
         :rtype: str
@@ -88,7 +88,7 @@ class DeleteJobReq:
     def job_id(self, job_id):
         r"""Sets the job_id of this DeleteJobReq.
 
-        任务ID
+        **参数解释**：  任务ID，用于唯一标识需要结束或删除的数据复制任务。  **约束限制**：  不涉及。  **取值范围**：  UUID格式字符串。  **默认取值**：  不涉及
 
         :param job_id: The job_id of this DeleteJobReq.
         :type job_id: str
@@ -99,7 +99,7 @@ class DeleteJobReq:
     def is_show_breakpoint_position(self):
         r"""Gets the is_show_breakpoint_position of this DeleteJobReq.
 
-        MySQL为源，实时迁移，实时同步，数据订阅，实时灾备结束任务时是否展示断点信息
+        **参数解释**：  MySQL为源的数据复制任务，结束任务时是否展示断点信息。  **约束限制**：  仅MySQL为源的实时迁移、实时同步、实时灾备任务适用。  **取值范围**：  - true：展示断点信息 - false：不展示断点信息  **默认取值**：  不涉及
 
         :return: The is_show_breakpoint_position of this DeleteJobReq.
         :rtype: bool
@@ -110,7 +110,7 @@ class DeleteJobReq:
     def is_show_breakpoint_position(self, is_show_breakpoint_position):
         r"""Sets the is_show_breakpoint_position of this DeleteJobReq.
 
-        MySQL为源，实时迁移，实时同步，数据订阅，实时灾备结束任务时是否展示断点信息
+        **参数解释**：  MySQL为源的数据复制任务，结束任务时是否展示断点信息。  **约束限制**：  仅MySQL为源的实时迁移、实时同步、实时灾备任务适用。  **取值范围**：  - true：展示断点信息 - false：不展示断点信息  **默认取值**：  不涉及
 
         :param is_show_breakpoint_position: The is_show_breakpoint_position of this DeleteJobReq.
         :type is_show_breakpoint_position: bool

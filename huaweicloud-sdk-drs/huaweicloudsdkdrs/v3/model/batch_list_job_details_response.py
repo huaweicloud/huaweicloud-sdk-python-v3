@@ -30,9 +30,9 @@ class BatchListJobDetailsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param count: 任务数量
+        :param count: **参数解释**：  返回的任务信息总数，表示本次查询成功返回的任务数量，与results数组的长度一致。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type count: int
-        :param results: 任务详细信息
+        :param results: **参数解释**：  任务详细信息列表，每个元素为QueryJobResp结构。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type results: list[:class:`huaweicloudsdkdrs.v3.QueryJobResp`]
         """
         
@@ -51,7 +51,7 @@ class BatchListJobDetailsResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this BatchListJobDetailsResponse.
 
-        任务数量
+        **参数解释**：  返回的任务信息总数，表示本次查询成功返回的任务数量，与results数组的长度一致。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The count of this BatchListJobDetailsResponse.
         :rtype: int
@@ -62,7 +62,7 @@ class BatchListJobDetailsResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this BatchListJobDetailsResponse.
 
-        任务数量
+        **参数解释**：  返回的任务信息总数，表示本次查询成功返回的任务数量，与results数组的长度一致。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param count: The count of this BatchListJobDetailsResponse.
         :type count: int
@@ -73,7 +73,7 @@ class BatchListJobDetailsResponse(SdkResponse):
     def results(self):
         r"""Gets the results of this BatchListJobDetailsResponse.
 
-        任务详细信息
+        **参数解释**：  任务详细信息列表，每个元素为QueryJobResp结构。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The results of this BatchListJobDetailsResponse.
         :rtype: list[:class:`huaweicloudsdkdrs.v3.QueryJobResp`]
@@ -84,7 +84,7 @@ class BatchListJobDetailsResponse(SdkResponse):
     def results(self, results):
         r"""Sets the results of this BatchListJobDetailsResponse.
 
-        任务详细信息
+        **参数解释**：  任务详细信息列表，每个元素为QueryJobResp结构。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param results: The results of this BatchListJobDetailsResponse.
         :type results: list[:class:`huaweicloudsdkdrs.v3.QueryJobResp`]

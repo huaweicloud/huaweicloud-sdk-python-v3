@@ -15,28 +15,35 @@ class BatchSwitchoverReq:
     sensitive_list = []
 
     openapi_types = {
-        'jobs': 'list[str]'
+        'jobs': 'list[str]',
+        'is_pause_job': 'bool'
     }
 
     attribute_map = {
-        'jobs': 'jobs'
+        'jobs': 'jobs',
+        'is_pause_job': 'is_pause_job'
     }
 
-    def __init__(self, jobs=None):
+    def __init__(self, jobs=None, is_pause_job=None):
         r"""BatchSwitchoverReq
 
         The model defined in huaweicloud sdk
 
         :param jobs: 批量主备调换的任务详情ID请求列表
         :type jobs: list[str]
+        :param is_pause_job: 灾备倒换后是否暂停任务。默认值为false，不暂停灾备任务。
+        :type is_pause_job: bool
         """
         
         
 
         self._jobs = None
+        self._is_pause_job = None
         self.discriminator = None
 
         self.jobs = jobs
+        if is_pause_job is not None:
+            self.is_pause_job = is_pause_job
 
     @property
     def jobs(self):
@@ -59,6 +66,28 @@ class BatchSwitchoverReq:
         :type jobs: list[str]
         """
         self._jobs = jobs
+
+    @property
+    def is_pause_job(self):
+        r"""Gets the is_pause_job of this BatchSwitchoverReq.
+
+        灾备倒换后是否暂停任务。默认值为false，不暂停灾备任务。
+
+        :return: The is_pause_job of this BatchSwitchoverReq.
+        :rtype: bool
+        """
+        return self._is_pause_job
+
+    @is_pause_job.setter
+    def is_pause_job(self, is_pause_job):
+        r"""Sets the is_pause_job of this BatchSwitchoverReq.
+
+        灾备倒换后是否暂停任务。默认值为false，不暂停灾备任务。
+
+        :param is_pause_job: The is_pause_job of this BatchSwitchoverReq.
+        :type is_pause_job: bool
+        """
+        self._is_pause_job = is_pause_job
 
     def to_dict(self):
         result = {}

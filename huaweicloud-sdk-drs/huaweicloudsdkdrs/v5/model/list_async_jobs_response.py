@@ -30,9 +30,9 @@ class ListAsyncJobsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total_count: 列表中的项目总数，与分页无关。
+        :param total_count: **参数解释**：  列表中的项目总数，与分页无关。表示满足查询条件的记录总数量，用于分页计算。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type total_count: int
-        :param jobs: 所有批量异步创建任务响应体。
+        :param jobs: **参数解释**：  批量异步创建任务响应列表，包含满足查询条件的所有异步任务信息。详情请参见AsyncJobResp对象定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type jobs: list[:class:`huaweicloudsdkdrs.v5.AsyncJobResp`]
         """
         
@@ -49,7 +49,7 @@ class ListAsyncJobsResponse(SdkResponse):
     def total_count(self):
         r"""Gets the total_count of this ListAsyncJobsResponse.
 
-        列表中的项目总数，与分页无关。
+        **参数解释**：  列表中的项目总数，与分页无关。表示满足查询条件的记录总数量，用于分页计算。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The total_count of this ListAsyncJobsResponse.
         :rtype: int
@@ -60,7 +60,7 @@ class ListAsyncJobsResponse(SdkResponse):
     def total_count(self, total_count):
         r"""Sets the total_count of this ListAsyncJobsResponse.
 
-        列表中的项目总数，与分页无关。
+        **参数解释**：  列表中的项目总数，与分页无关。表示满足查询条件的记录总数量，用于分页计算。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param total_count: The total_count of this ListAsyncJobsResponse.
         :type total_count: int
@@ -71,7 +71,7 @@ class ListAsyncJobsResponse(SdkResponse):
     def jobs(self):
         r"""Gets the jobs of this ListAsyncJobsResponse.
 
-        所有批量异步创建任务响应体。
+        **参数解释**：  批量异步创建任务响应列表，包含满足查询条件的所有异步任务信息。详情请参见AsyncJobResp对象定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The jobs of this ListAsyncJobsResponse.
         :rtype: list[:class:`huaweicloudsdkdrs.v5.AsyncJobResp`]
@@ -82,7 +82,7 @@ class ListAsyncJobsResponse(SdkResponse):
     def jobs(self, jobs):
         r"""Sets the jobs of this ListAsyncJobsResponse.
 
-        所有批量异步创建任务响应体。
+        **参数解释**：  批量异步创建任务响应列表，包含满足查询条件的所有异步任务信息。详情请参见AsyncJobResp对象定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param jobs: The jobs of this ListAsyncJobsResponse.
         :type jobs: list[:class:`huaweicloudsdkdrs.v5.AsyncJobResp`]

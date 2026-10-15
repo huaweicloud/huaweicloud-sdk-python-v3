@@ -76,7 +76,8 @@ class QueryJobResp:
         'bind_public_ip_state': 'str',
         'children': 'list[FailedToBindEipChildInfo]',
         'is_open_fast_clean': 'bool',
-        'job_kernel_direction': 'str'
+        'job_kernel_direction': 'str',
+        'sync_mode': 'str'
     }
 
     attribute_map = {
@@ -141,138 +142,141 @@ class QueryJobResp:
         'bind_public_ip_state': 'bind_public_ip_state',
         'children': 'children',
         'is_open_fast_clean': 'is_open_fast_clean',
-        'job_kernel_direction': 'job_kernel_direction'
+        'job_kernel_direction': 'job_kernel_direction',
+        'sync_mode': 'sync_mode'
     }
 
-    def __init__(self, id=None, parent_id=None, name=None, status=None, description=None, create_time=None, task_type=None, source_endpoint=None, dmq_endpoint=None, source_sharding=None, target_endpoint=None, net_type=None, failed_reason=None, inst_info=None, actual_start_time=None, full_transfer_complete_time=None, update_time=None, job_direction=None, db_use_type=None, need_restart=None, is_target_readonly=None, conflict_policy=None, filter_ddl_policy=None, speed_limit=None, schema_type=None, node_num=None, object_switch=None, master_job_id=None, full_mode=None, struct_trans=None, index_trans=None, replace_definer=None, migrate_user=None, sync_database=None, error_code=None, error_message=None, target_root_db=None, az_code=None, vpc_id=None, subnet_id=None, security_group_id=None, multi_write=None, support_ip_v6=None, inherit_id=None, gtid=None, alarm_notify=None, incre_start_position=None, is_multi_az=None, az_name=None, master_az=None, slave_az=None, node_role=None, period_order=None, object_infos=None, original_job_direction=None, data_transformation=None, tags=None, public_ip_list=None, bind_public_ip_state=None, children=None, is_open_fast_clean=None, job_kernel_direction=None):
+    def __init__(self, id=None, parent_id=None, name=None, status=None, description=None, create_time=None, task_type=None, source_endpoint=None, dmq_endpoint=None, source_sharding=None, target_endpoint=None, net_type=None, failed_reason=None, inst_info=None, actual_start_time=None, full_transfer_complete_time=None, update_time=None, job_direction=None, db_use_type=None, need_restart=None, is_target_readonly=None, conflict_policy=None, filter_ddl_policy=None, speed_limit=None, schema_type=None, node_num=None, object_switch=None, master_job_id=None, full_mode=None, struct_trans=None, index_trans=None, replace_definer=None, migrate_user=None, sync_database=None, error_code=None, error_message=None, target_root_db=None, az_code=None, vpc_id=None, subnet_id=None, security_group_id=None, multi_write=None, support_ip_v6=None, inherit_id=None, gtid=None, alarm_notify=None, incre_start_position=None, is_multi_az=None, az_name=None, master_az=None, slave_az=None, node_role=None, period_order=None, object_infos=None, original_job_direction=None, data_transformation=None, tags=None, public_ip_list=None, bind_public_ip_state=None, children=None, is_open_fast_clean=None, job_kernel_direction=None, sync_mode=None):
         r"""QueryJobResp
 
         The model defined in huaweicloud sdk
 
-        :param id: 任务id
+        :param id: **参数解释**：  任务ID，用于唯一标识一个数据复制任务。  **约束限制**：  不涉及。  **取值范围**：  UUID格式字符串。  **默认取值**：  不涉及
         :type id: str
-        :param parent_id: 父任务id。
+        :param parent_id: **参数解释**：  父任务ID，多任务场景下子任务所归属的父任务标识。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type parent_id: str
-        :param name: 任务名称
+        :param name: **参数解释**：  任务名称，用户创建任务时自定义的名称，用于区分和识别不同的数据复制任务。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type name: str
-        :param status: 任务状态。 - CREATING：创建中 - CREATE_FAILED：创建失败 - CONFIGURATION：配置中 - STARTJOBING：启动中 - WAITING_FOR_START：等待启动中 - START_JOB_FAILED：启动失败 - PAUSING：已暂停 - FULL_TRANSFER_STARTED：全量开始，灾备场景下为初始化 - FULL_TRANSFER_FAILED：全量失败，灾备场景下为初始化失败 - FULL_TRANSFER_COMPLETE：全量完成，灾备场景下为初始化完成 - INCRE_TRANSFER_STARTED：增量开始，灾备场景下为灾备中 - INCRE_TRANSFER_FAILED：增量失败，灾备场景下为灾备异常 - RELEASE_RESOURCE_STARTED：结束任务中 - RELEASE_RESOURCE_FAILED：结束任务失败 - RELEASE_RESOURCE_COMPLETE：已结束 - REBUILD_NODE_STARTED：故障恢复中 - REBUILD_NODE_FAILED：故障恢复失败 - CHANGE_JOB_STARTED：任务变更中 - CHANGE_JOB_FAILED：任务变更失败 - DELETED：已删除 - CHILD_TRANSFER_STARTING：再编辑子任务启动中 - CHILD_TRANSFER_STARTED：再编辑子任务迁移中 - CHILD_TRANSFER_COMPLETE：再编辑子任务迁移完成 - CHILD_TRANSFER_FAILED：再编辑子任务迁移失败 - RELEASE_CHILD_TRANSFER_STARTED：再编辑子任务结束中 - RELEASE_CHILD_TRANSFER_COMPLETE：再编辑子任务已结束 - NODE_UPGRADE_START：升级开始 - NODE_UPGRADE_COMPLETE：升级完成 - NODE_UPGRADE_FAILED：升级失败
+        :param status: **参数解释**：  任务当前运行状态。  **约束限制**：  不涉及。  **取值范围**：  - CREATING：创建中 - CREATE_FAILED：创建失败 - CONFIGURATION：配置中 - STARTJOBING：启动中 - WAITING_FOR_START：等待启动中 - START_JOB_FAILED：启动失败 - PAUSING：已暂停 - FULL_TRANSFER_STARTED：全量开始，灾备场景下为初始化 - FULL_TRANSFER_FAILED：全量失败，灾备场景下为初始化失败 - FULL_TRANSFER_COMPLETE：全量完成，灾备场景下为初始化完成 - INCRE_TRANSFER_STARTED：增量开始，灾备场景下为灾备中 - INCRE_TRANSFER_FAILED：增量失败，灾备场景下为灾备异常 - RELEASE_RESOURCE_STARTED：结束任务中 - RELEASE_RESOURCE_FAILED：结束任务失败 - RELEASE_RESOURCE_COMPLETE：已结束 - REBUILD_NODE_STARTED：故障恢复中 - REBUILD_NODE_FAILED：故障恢复失败 - CHANGE_JOB_STARTED：任务变更中 - CHANGE_JOB_FAILED：任务变更失败 - DELETED：已删除 - CHILD_TRANSFER_STARTING：再编辑子任务启动中 - CHILD_TRANSFER_STARTED：再编辑子任务迁移中 - CHILD_TRANSFER_COMPLETE：再编辑子任务迁移完成 - CHILD_TRANSFER_FAILED：再编辑子任务迁移失败 - RELEASE_CHILD_TRANSFER_STARTED：再编辑子任务结束中 - RELEASE_CHILD_TRANSFER_COMPLETE：再编辑子任务已结束 - NODE_UPGRADE_START：升级开始 - NODE_UPGRADE_COMPLETE：升级完成 - NODE_UPGRADE_FAILED：升级失败  **默认取值**：  不涉及
         :type status: str
-        :param description: 描述信息
+        :param description: **参数解释**：  任务描述信息，用户创建任务时自定义的备注说明。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type description: str
-        :param create_time: 创建时间，时间戳格式。
+        :param create_time: **参数解释**：  任务的创建时间。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type create_time: str
-        :param task_type: 迁移模式
+        :param task_type: **参数解释**：  任务迁移模式，指定数据复制任务的执行方式。  **约束限制**：  不涉及。  **取值范围**：  - FULL_TRANS：全量迁移，仅迁移历史数据 - FULL_INCR_TRANS：全量+增量迁移，先迁移历史数据再持续同步增量 - INCR_TRANS：增量迁移，仅同步数据变更  **默认取值**：  不涉及
         :type task_type: str
         :param source_endpoint: 
         :type source_endpoint: :class:`huaweicloudsdkdrs.v3.Endpoint`
         :param dmq_endpoint: 
         :type dmq_endpoint: :class:`huaweicloudsdkdrs.v3.Endpoint`
-        :param source_sharding: 物理源库信息。
+        :param source_sharding: **参数解释**：  物理分片源库信息列表，多对一场景下存在多个源库时返回，每个元素为Endpoint结构。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type source_sharding: list[:class:`huaweicloudsdkdrs.v3.Endpoint`]
         :param target_endpoint: 
         :type target_endpoint: :class:`huaweicloudsdkdrs.v3.Endpoint`
-        :param net_type: 网络类型
+        :param net_type: **参数解释**：  任务使用的网络类型。  **约束限制**：  不涉及。  **取值范围**：  - vpn：虚拟专用网络 - vpc：虚拟私有云 - eip：弹性公网IP  **默认取值**：  不涉及
         :type net_type: str
-        :param failed_reason: 失败原因。
+        :param failed_reason: **参数解释**：  任务失败原因，任务状态为失败时返回该字段。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type failed_reason: str
         :param inst_info: 
         :type inst_info: :class:`huaweicloudsdkdrs.v3.InstInfo`
-        :param actual_start_time: 实际启动时间，时间戳格式。
+        :param actual_start_time: **参数解释**：  任务实际启动时间。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type actual_start_time: str
-        :param full_transfer_complete_time: 全量完成时间，时间戳格式。
+        :param full_transfer_complete_time: **参数解释**：  全量迁移完成时间。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type full_transfer_complete_time: str
-        :param update_time: 更新时间，时间戳格式
+        :param update_time: **参数解释**：  任务最近一次更新时间。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type update_time: str
-        :param job_direction: 任务方向
+        :param job_direction: **参数解释**：  任务的迁移方向。  **约束限制**：  不涉及。  **取值范围**：  - up：入云，灾备场景时对应本云为备 - down：出云，灾备场景时对应本云为主 - non-dbs：自建  **默认取值**：  不涉及
         :type job_direction: str
-        :param db_use_type: 迁移场景 - migration：实时迁移 - sync：实时同步 - cloudDataGuard：实时灾备
+        :param db_use_type: **参数解释**：  迁移任务的业务场景类型。  **约束限制**：  不涉及。  **取值范围**：  - migration：实时迁移 - sync：实时同步 - cloudDataGuard：实时灾备  **默认取值**：  不涉及
         :type db_use_type: str
-        :param need_restart: 是否需要重启
+        :param need_restart: **参数解释**：  任务配置变更后是否需要重启迁移实例才能生效。  **约束限制**：  不涉及。  **取值范围**：  - true：需要重启 - false：不需要重启  **默认取值**：  不涉及
         :type need_restart: bool
-        :param is_target_readonly: 指定目标实例是否限制为只读
+        :param is_target_readonly: **参数解释**：  指定目标数据库实例在迁移过程中是否限制为只读状态。  **约束限制**：  不涉及。  **取值范围**：  - true：目标实例限制为只读 - false：目标实例不限制为只读  **默认取值**：  不涉及
         :type is_target_readonly: bool
-        :param conflict_policy: 冲突忽略策略 - stop：冲突失败 - overwrite：冲突覆盖 - ignore：冲突忽略
+        :param conflict_policy: **参数解释**：  数据迁移过程中的冲突忽略策略，指定当目标库已存在相同数据时的处理方式。  **约束限制**：  不涉及。  **取值范围**：  - stop：冲突失败，遇到冲突时停止任务 - overwrite：冲突覆盖，用源库数据覆盖目标库已有数据 - ignore：冲突忽略，跳过冲突数据继续迁移  **默认取值**：  不涉及
         :type conflict_policy: str
-        :param filter_ddl_policy: 过滤DDL策略 - drop_database：过滤drop_database - drop_databasefilter_all：过滤所有ddl - \&quot;\&quot;：不过滤
+        :param filter_ddl_policy: **参数解释**：  过滤DDL策略，指定迁移过程中需要过滤的DDL操作类型。  **约束限制**：  不涉及。  **取值范围**：  - drop_database：过滤drop_database操作 - drop_databasefilter_all：过滤所有DDL操作 - \&quot;\&quot;：不过滤  **默认取值**：  不涉及
         :type filter_ddl_policy: str
-        :param speed_limit: 迁移速度限制。
+        :param speed_limit: **参数解释**：  迁移速度限制信息，详情请参见SpeedLimitInfo对象定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type speed_limit: list[:class:`huaweicloudsdkdrs.v3.SpeedLimitInfo`]
-        :param schema_type: 迁移方案 - Replication-主从复制 - Tungsten-日志解析 - PGBaseBackup-PG备份
+        :param schema_type: **参数解释**：  DRS任务的迁移方案，指定数据复制的底层实现方式。  **约束限制**：  不涉及。  **取值范围**：  - Replication：主从复制 - Tungsten：日志解析 - PGBaseBackup：PG备份  **默认取值**：  不涉及
         :type schema_type: str
-        :param node_num: 节点个数。
+        :param node_num: **参数解释**：  迁移实例节点个数。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type node_num: int
-        :param object_switch: 对象选择开关
+        :param object_switch: **参数解释**：  对象选择开关，标识是否已开启对象选择功能。  **约束限制**：  不涉及。  **取值范围**：  - true：开启对象选择 - false：关闭对象选择  **默认取值**：  不涉及
         :type object_switch: bool
-        :param master_job_id: 主任务Id。
+        :param master_job_id: **参数解释**：  主任务ID，多任务场景下子任务所归属的主任务标识。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type master_job_id: str
-        :param full_mode: 全量快照模式。
+        :param full_mode: **参数解释**：  全量快照模式。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type full_mode: str
-        :param struct_trans: 是否迁移结构。
+        :param struct_trans: **参数解释**：  是否迁移结构。  **约束限制**：  不涉及。  **取值范围**：  - true：迁移结构 - false：不迁移结构  **默认取值**：  不涉及
         :type struct_trans: bool
-        :param index_trans: 否迁移索引。
+        :param index_trans: **参数解释**：  是否迁移索引。  **约束限制**：  不涉及。  **取值范围**：  - true：迁移索引 - false：不迁移索引  **默认取值**：  不涉及
         :type index_trans: bool
-        :param replace_definer: 是否使用目标库的用户替换掉definer。
+        :param replace_definer: **参数解释**：  是否使用目标库的用户替换掉definer。  **约束限制**：  不涉及。  **取值范围**：  - true：使用目标库用户替换definer - false：不替换definer  **默认取值**：  不涉及
         :type replace_definer: bool
-        :param migrate_user: 是否迁移用户。
+        :param migrate_user: **参数解释**：  是否迁移用户。  **约束限制**：  不涉及。  **取值范围**：  - true：迁移用户 - false：不迁移用户  **默认取值**：  不涉及
         :type migrate_user: bool
-        :param sync_database: 是否库级同步。
+        :param sync_database: **参数解释**：  是否库级同步。  **约束限制**：  不涉及。  **取值范围**：  - true：库级同步 - false：非库级同步  **默认取值**：  不涉及
         :type sync_database: bool
-        :param error_code: 错误码
+        :param error_code: **参数解释**：  错误码，当任务报错时返回的错误代码。  **约束限制**：  不涉及。  **取值范围**：  格式为DRS.XXXXXX。  **默认取值**：  不涉及
         :type error_code: str
-        :param error_message: 错误信息。
+        :param error_message: **参数解释**：  错误详细信息，当任务执行失败时返回的具体错误描述。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type error_message: str
         :param target_root_db: 
         :type target_root_db: :class:`huaweicloudsdkdrs.v3.DefaultRootDb`
-        :param az_code: node所在AZ
+        :param az_code: **参数解释**：  迁移实例节点所在的可用区（AZ，Availability Zone）编码。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type az_code: str
-        :param vpc_id: node所在VPC
+        :param vpc_id: **参数解释**：  迁移实例节点所在的虚拟私有云（VPC，Virtual Private Cloud）ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type vpc_id: str
-        :param subnet_id: node所在子网
+        :param subnet_id: **参数解释**：  迁移实例节点所在的子网ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type subnet_id: str
-        :param security_group_id: node所在安全组
+        :param security_group_id: **参数解释**：  迁移实例节点所在的安全组ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type security_group_id: str
-        :param multi_write: 是否多主灾备任务,双主灾备时有值为true
+        :param multi_write: **参数解释**：  是否多主灾备任务，双主灾备场景下该值为true。  **约束限制**：  不涉及。  **取值范围**：  - true：多主灾备任务 - false：非多主灾备任务  **默认取值**：  不涉及
         :type multi_write: bool
-        :param support_ip_v6: 是否支持IPV6
+        :param support_ip_v6: **参数解释**：  是否支持IPv6。  **约束限制**：  不涉及。  **取值范围**：  - true：支持IPv6 - false：不支持IPv6  **默认取值**：  不涉及
         :type support_ip_v6: bool
-        :param inherit_id: 继承的任务ID，Oracle_Mrskafka链路时使用。
+        :param inherit_id: **参数解释**：  继承的任务ID，Oracle到Kafka链路时使用。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type inherit_id: str
-        :param gtid: 断点的GTID集合
+        :param gtid: **参数解释**：  断点的GTID（Global Transaction Identifier）集合，用于记录增量同步的断点位置。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type gtid: str
         :param alarm_notify: 
         :type alarm_notify: :class:`huaweicloudsdkdrs.v3.QuerySmnInfoResp`
-        :param incre_start_position: 增量任务启动位点
+        :param incre_start_position: **参数解释**：  增量任务启动位点，标识增量同步起始的数据位置。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type incre_start_position: str
-        :param is_multi_az: 是否是主备任务。
+        :param is_multi_az: **参数解释**：  标识任务是否为跨可用区（AZ）部署的主备任务。  **约束限制**：  不涉及。  **取值范围**：  - true：跨AZ主备任务 - false：非跨AZ任务  **默认取值**：  不涉及
         :type is_multi_az: bool
-        :param az_name: node所在节点AZ名称。
+        :param az_name: **参数解释**：  迁移实例节点所在的可用区（AZ）名称。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type az_name: str
-        :param master_az: 主备任务主AZ。
+        :param master_az: **参数解释**：  主备任务中主实例所在的可用区（AZ）。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type master_az: str
-        :param slave_az: 主备任务备AZ。
+        :param slave_az: **参数解释**：  主备任务中备实例所在的可用区（AZ）。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type slave_az: str
-        :param node_role: 任务主备角色。
+        :param node_role: **参数解释**：  任务主备角色，标识当前节点在主备任务中的角色。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type node_role: str
         :param period_order: 
         :type period_order: :class:`huaweicloudsdkdrs.v3.PeriodOrderResp`
-        :param object_infos: 已同步对象信息。
+        :param object_infos: **参数解释**：  已同步对象信息列表，每个元素为DatabaseObjectInfo结构。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type object_infos: list[:class:`huaweicloudsdkdrs.v3.DatabaseObjectInfo`]
-        :param original_job_direction: 初始任务方向。 取值： - up：入云，灾备场景时对应本云为备。 - down：出云，灾备场景时对应本云为主。 - non-dbs：自建。
+        :param original_job_direction: **参数解释**：  任务创建时的初始方向，表示任务首次创建时配置的迁移方向，不会随灾备倒换而改变。  **约束限制**：  不涉及。  **取值范围**：  - up：入云，灾备场景时对应本云为备 - down：出云，灾备场景时对应本云为主 - non-dbs：自建  **默认取值**：  不涉及
         :type original_job_direction: str
         :param data_transformation: 
         :type data_transformation: :class:`huaweicloudsdkdrs.v3.GetDataTransformationResp`
-        :param tags: DRS任务标签。
+        :param tags: **参数解释**：  DRS任务标签列表，每个元素为Tag结构。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type tags: list[:class:`huaweicloudsdkdrs.v3.Tag`]
-        :param public_ip_list: 指定公网Ip的信息。
+        :param public_ip_list: **参数解释**：  指定公网IP的信息列表，每个元素为PublicIpConfig结构。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type public_ip_list: list[:class:`huaweicloudsdkdrs.v3.PublicIpConfig`]
-        :param bind_public_ip_state: 是否成功绑定公网IP。
+        :param bind_public_ip_state: **参数解释**：  公网IP绑定状态，标识是否成功绑定公网IP。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type bind_public_ip_state: str
-        :param children: 多任务时，存在子任务绑定失败时，返回子任务的信息。
+        :param children: **参数解释**：  子任务绑定失败信息列表，多任务场景下存在子任务绑定公网IP失败时返回，每个元素为FailedToBindEipChildInfo结构。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type children: list[:class:`huaweicloudsdkdrs.v3.FailedToBindEipChildInfo`]
-        :param is_open_fast_clean: 是否开启云数据库RDS for MySQL/MariaDB的binlog快速清理。
+        :param is_open_fast_clean: **参数解释**：  是否开启云数据库RDS for MySQL或MariaDB的Binlog快速清理。  **约束限制**：  不涉及。  **取值范围**：  - true：开启Binlog快速清理 - false：不开启Binlog快速清理  **默认取值**：  不涉及
         :type is_open_fast_clean: bool
-        :param job_kernel_direction: 灾备任务内核方向，up上云，down下云。当任务处于倒换中，与灾备任务方向相反，否则相同。
+        :param job_kernel_direction: **参数解释**：  灾备任务内核方向。非倒换中与job_direction取值相同，倒换中与job_direction取值相反。  **约束限制**：  不涉及。  **取值范围**：  - up：入云，灾备场景时对应本云为备 - down：出云，灾备场景时对应本云为主  **默认取值**：  不涉及
         :type job_kernel_direction: str
+        :param sync_mode: **参数解释**：  同步任务的同步模式，指定数据同步的粒度级别。  **约束限制**：  不涉及。  **取值范围**：  - DB_LEVEL：库级同步 - SCHEMA_LEVEL：schema级同步 - TABLE_LEVEL：表级同步 - FILE_IMPORT：文件导入 - INSTANCE_LEVEL：实例级同步  **默认取值**：  不涉及
+        :type sync_mode: str
         """
         
         
@@ -339,6 +343,7 @@ class QueryJobResp:
         self._children = None
         self._is_open_fast_clean = None
         self._job_kernel_direction = None
+        self._sync_mode = None
         self.discriminator = None
 
         if id is not None:
@@ -465,12 +470,14 @@ class QueryJobResp:
             self.is_open_fast_clean = is_open_fast_clean
         if job_kernel_direction is not None:
             self.job_kernel_direction = job_kernel_direction
+        if sync_mode is not None:
+            self.sync_mode = sync_mode
 
     @property
     def id(self):
         r"""Gets the id of this QueryJobResp.
 
-        任务id
+        **参数解释**：  任务ID，用于唯一标识一个数据复制任务。  **约束限制**：  不涉及。  **取值范围**：  UUID格式字符串。  **默认取值**：  不涉及
 
         :return: The id of this QueryJobResp.
         :rtype: str
@@ -481,7 +488,7 @@ class QueryJobResp:
     def id(self, id):
         r"""Sets the id of this QueryJobResp.
 
-        任务id
+        **参数解释**：  任务ID，用于唯一标识一个数据复制任务。  **约束限制**：  不涉及。  **取值范围**：  UUID格式字符串。  **默认取值**：  不涉及
 
         :param id: The id of this QueryJobResp.
         :type id: str
@@ -492,7 +499,7 @@ class QueryJobResp:
     def parent_id(self):
         r"""Gets the parent_id of this QueryJobResp.
 
-        父任务id。
+        **参数解释**：  父任务ID，多任务场景下子任务所归属的父任务标识。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The parent_id of this QueryJobResp.
         :rtype: str
@@ -503,7 +510,7 @@ class QueryJobResp:
     def parent_id(self, parent_id):
         r"""Sets the parent_id of this QueryJobResp.
 
-        父任务id。
+        **参数解释**：  父任务ID，多任务场景下子任务所归属的父任务标识。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param parent_id: The parent_id of this QueryJobResp.
         :type parent_id: str
@@ -514,7 +521,7 @@ class QueryJobResp:
     def name(self):
         r"""Gets the name of this QueryJobResp.
 
-        任务名称
+        **参数解释**：  任务名称，用户创建任务时自定义的名称，用于区分和识别不同的数据复制任务。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The name of this QueryJobResp.
         :rtype: str
@@ -525,7 +532,7 @@ class QueryJobResp:
     def name(self, name):
         r"""Sets the name of this QueryJobResp.
 
-        任务名称
+        **参数解释**：  任务名称，用户创建任务时自定义的名称，用于区分和识别不同的数据复制任务。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param name: The name of this QueryJobResp.
         :type name: str
@@ -536,7 +543,7 @@ class QueryJobResp:
     def status(self):
         r"""Gets the status of this QueryJobResp.
 
-        任务状态。 - CREATING：创建中 - CREATE_FAILED：创建失败 - CONFIGURATION：配置中 - STARTJOBING：启动中 - WAITING_FOR_START：等待启动中 - START_JOB_FAILED：启动失败 - PAUSING：已暂停 - FULL_TRANSFER_STARTED：全量开始，灾备场景下为初始化 - FULL_TRANSFER_FAILED：全量失败，灾备场景下为初始化失败 - FULL_TRANSFER_COMPLETE：全量完成，灾备场景下为初始化完成 - INCRE_TRANSFER_STARTED：增量开始，灾备场景下为灾备中 - INCRE_TRANSFER_FAILED：增量失败，灾备场景下为灾备异常 - RELEASE_RESOURCE_STARTED：结束任务中 - RELEASE_RESOURCE_FAILED：结束任务失败 - RELEASE_RESOURCE_COMPLETE：已结束 - REBUILD_NODE_STARTED：故障恢复中 - REBUILD_NODE_FAILED：故障恢复失败 - CHANGE_JOB_STARTED：任务变更中 - CHANGE_JOB_FAILED：任务变更失败 - DELETED：已删除 - CHILD_TRANSFER_STARTING：再编辑子任务启动中 - CHILD_TRANSFER_STARTED：再编辑子任务迁移中 - CHILD_TRANSFER_COMPLETE：再编辑子任务迁移完成 - CHILD_TRANSFER_FAILED：再编辑子任务迁移失败 - RELEASE_CHILD_TRANSFER_STARTED：再编辑子任务结束中 - RELEASE_CHILD_TRANSFER_COMPLETE：再编辑子任务已结束 - NODE_UPGRADE_START：升级开始 - NODE_UPGRADE_COMPLETE：升级完成 - NODE_UPGRADE_FAILED：升级失败
+        **参数解释**：  任务当前运行状态。  **约束限制**：  不涉及。  **取值范围**：  - CREATING：创建中 - CREATE_FAILED：创建失败 - CONFIGURATION：配置中 - STARTJOBING：启动中 - WAITING_FOR_START：等待启动中 - START_JOB_FAILED：启动失败 - PAUSING：已暂停 - FULL_TRANSFER_STARTED：全量开始，灾备场景下为初始化 - FULL_TRANSFER_FAILED：全量失败，灾备场景下为初始化失败 - FULL_TRANSFER_COMPLETE：全量完成，灾备场景下为初始化完成 - INCRE_TRANSFER_STARTED：增量开始，灾备场景下为灾备中 - INCRE_TRANSFER_FAILED：增量失败，灾备场景下为灾备异常 - RELEASE_RESOURCE_STARTED：结束任务中 - RELEASE_RESOURCE_FAILED：结束任务失败 - RELEASE_RESOURCE_COMPLETE：已结束 - REBUILD_NODE_STARTED：故障恢复中 - REBUILD_NODE_FAILED：故障恢复失败 - CHANGE_JOB_STARTED：任务变更中 - CHANGE_JOB_FAILED：任务变更失败 - DELETED：已删除 - CHILD_TRANSFER_STARTING：再编辑子任务启动中 - CHILD_TRANSFER_STARTED：再编辑子任务迁移中 - CHILD_TRANSFER_COMPLETE：再编辑子任务迁移完成 - CHILD_TRANSFER_FAILED：再编辑子任务迁移失败 - RELEASE_CHILD_TRANSFER_STARTED：再编辑子任务结束中 - RELEASE_CHILD_TRANSFER_COMPLETE：再编辑子任务已结束 - NODE_UPGRADE_START：升级开始 - NODE_UPGRADE_COMPLETE：升级完成 - NODE_UPGRADE_FAILED：升级失败  **默认取值**：  不涉及
 
         :return: The status of this QueryJobResp.
         :rtype: str
@@ -547,7 +554,7 @@ class QueryJobResp:
     def status(self, status):
         r"""Sets the status of this QueryJobResp.
 
-        任务状态。 - CREATING：创建中 - CREATE_FAILED：创建失败 - CONFIGURATION：配置中 - STARTJOBING：启动中 - WAITING_FOR_START：等待启动中 - START_JOB_FAILED：启动失败 - PAUSING：已暂停 - FULL_TRANSFER_STARTED：全量开始，灾备场景下为初始化 - FULL_TRANSFER_FAILED：全量失败，灾备场景下为初始化失败 - FULL_TRANSFER_COMPLETE：全量完成，灾备场景下为初始化完成 - INCRE_TRANSFER_STARTED：增量开始，灾备场景下为灾备中 - INCRE_TRANSFER_FAILED：增量失败，灾备场景下为灾备异常 - RELEASE_RESOURCE_STARTED：结束任务中 - RELEASE_RESOURCE_FAILED：结束任务失败 - RELEASE_RESOURCE_COMPLETE：已结束 - REBUILD_NODE_STARTED：故障恢复中 - REBUILD_NODE_FAILED：故障恢复失败 - CHANGE_JOB_STARTED：任务变更中 - CHANGE_JOB_FAILED：任务变更失败 - DELETED：已删除 - CHILD_TRANSFER_STARTING：再编辑子任务启动中 - CHILD_TRANSFER_STARTED：再编辑子任务迁移中 - CHILD_TRANSFER_COMPLETE：再编辑子任务迁移完成 - CHILD_TRANSFER_FAILED：再编辑子任务迁移失败 - RELEASE_CHILD_TRANSFER_STARTED：再编辑子任务结束中 - RELEASE_CHILD_TRANSFER_COMPLETE：再编辑子任务已结束 - NODE_UPGRADE_START：升级开始 - NODE_UPGRADE_COMPLETE：升级完成 - NODE_UPGRADE_FAILED：升级失败
+        **参数解释**：  任务当前运行状态。  **约束限制**：  不涉及。  **取值范围**：  - CREATING：创建中 - CREATE_FAILED：创建失败 - CONFIGURATION：配置中 - STARTJOBING：启动中 - WAITING_FOR_START：等待启动中 - START_JOB_FAILED：启动失败 - PAUSING：已暂停 - FULL_TRANSFER_STARTED：全量开始，灾备场景下为初始化 - FULL_TRANSFER_FAILED：全量失败，灾备场景下为初始化失败 - FULL_TRANSFER_COMPLETE：全量完成，灾备场景下为初始化完成 - INCRE_TRANSFER_STARTED：增量开始，灾备场景下为灾备中 - INCRE_TRANSFER_FAILED：增量失败，灾备场景下为灾备异常 - RELEASE_RESOURCE_STARTED：结束任务中 - RELEASE_RESOURCE_FAILED：结束任务失败 - RELEASE_RESOURCE_COMPLETE：已结束 - REBUILD_NODE_STARTED：故障恢复中 - REBUILD_NODE_FAILED：故障恢复失败 - CHANGE_JOB_STARTED：任务变更中 - CHANGE_JOB_FAILED：任务变更失败 - DELETED：已删除 - CHILD_TRANSFER_STARTING：再编辑子任务启动中 - CHILD_TRANSFER_STARTED：再编辑子任务迁移中 - CHILD_TRANSFER_COMPLETE：再编辑子任务迁移完成 - CHILD_TRANSFER_FAILED：再编辑子任务迁移失败 - RELEASE_CHILD_TRANSFER_STARTED：再编辑子任务结束中 - RELEASE_CHILD_TRANSFER_COMPLETE：再编辑子任务已结束 - NODE_UPGRADE_START：升级开始 - NODE_UPGRADE_COMPLETE：升级完成 - NODE_UPGRADE_FAILED：升级失败  **默认取值**：  不涉及
 
         :param status: The status of this QueryJobResp.
         :type status: str
@@ -558,7 +565,7 @@ class QueryJobResp:
     def description(self):
         r"""Gets the description of this QueryJobResp.
 
-        描述信息
+        **参数解释**：  任务描述信息，用户创建任务时自定义的备注说明。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The description of this QueryJobResp.
         :rtype: str
@@ -569,7 +576,7 @@ class QueryJobResp:
     def description(self, description):
         r"""Sets the description of this QueryJobResp.
 
-        描述信息
+        **参数解释**：  任务描述信息，用户创建任务时自定义的备注说明。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param description: The description of this QueryJobResp.
         :type description: str
@@ -580,7 +587,7 @@ class QueryJobResp:
     def create_time(self):
         r"""Gets the create_time of this QueryJobResp.
 
-        创建时间，时间戳格式。
+        **参数解释**：  任务的创建时间。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The create_time of this QueryJobResp.
         :rtype: str
@@ -591,7 +598,7 @@ class QueryJobResp:
     def create_time(self, create_time):
         r"""Sets the create_time of this QueryJobResp.
 
-        创建时间，时间戳格式。
+        **参数解释**：  任务的创建时间。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param create_time: The create_time of this QueryJobResp.
         :type create_time: str
@@ -602,7 +609,7 @@ class QueryJobResp:
     def task_type(self):
         r"""Gets the task_type of this QueryJobResp.
 
-        迁移模式
+        **参数解释**：  任务迁移模式，指定数据复制任务的执行方式。  **约束限制**：  不涉及。  **取值范围**：  - FULL_TRANS：全量迁移，仅迁移历史数据 - FULL_INCR_TRANS：全量+增量迁移，先迁移历史数据再持续同步增量 - INCR_TRANS：增量迁移，仅同步数据变更  **默认取值**：  不涉及
 
         :return: The task_type of this QueryJobResp.
         :rtype: str
@@ -613,7 +620,7 @@ class QueryJobResp:
     def task_type(self, task_type):
         r"""Sets the task_type of this QueryJobResp.
 
-        迁移模式
+        **参数解释**：  任务迁移模式，指定数据复制任务的执行方式。  **约束限制**：  不涉及。  **取值范围**：  - FULL_TRANS：全量迁移，仅迁移历史数据 - FULL_INCR_TRANS：全量+增量迁移，先迁移历史数据再持续同步增量 - INCR_TRANS：增量迁移，仅同步数据变更  **默认取值**：  不涉及
 
         :param task_type: The task_type of this QueryJobResp.
         :type task_type: str
@@ -660,7 +667,7 @@ class QueryJobResp:
     def source_sharding(self):
         r"""Gets the source_sharding of this QueryJobResp.
 
-        物理源库信息。
+        **参数解释**：  物理分片源库信息列表，多对一场景下存在多个源库时返回，每个元素为Endpoint结构。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The source_sharding of this QueryJobResp.
         :rtype: list[:class:`huaweicloudsdkdrs.v3.Endpoint`]
@@ -671,7 +678,7 @@ class QueryJobResp:
     def source_sharding(self, source_sharding):
         r"""Sets the source_sharding of this QueryJobResp.
 
-        物理源库信息。
+        **参数解释**：  物理分片源库信息列表，多对一场景下存在多个源库时返回，每个元素为Endpoint结构。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param source_sharding: The source_sharding of this QueryJobResp.
         :type source_sharding: list[:class:`huaweicloudsdkdrs.v3.Endpoint`]
@@ -700,7 +707,7 @@ class QueryJobResp:
     def net_type(self):
         r"""Gets the net_type of this QueryJobResp.
 
-        网络类型
+        **参数解释**：  任务使用的网络类型。  **约束限制**：  不涉及。  **取值范围**：  - vpn：虚拟专用网络 - vpc：虚拟私有云 - eip：弹性公网IP  **默认取值**：  不涉及
 
         :return: The net_type of this QueryJobResp.
         :rtype: str
@@ -711,7 +718,7 @@ class QueryJobResp:
     def net_type(self, net_type):
         r"""Sets the net_type of this QueryJobResp.
 
-        网络类型
+        **参数解释**：  任务使用的网络类型。  **约束限制**：  不涉及。  **取值范围**：  - vpn：虚拟专用网络 - vpc：虚拟私有云 - eip：弹性公网IP  **默认取值**：  不涉及
 
         :param net_type: The net_type of this QueryJobResp.
         :type net_type: str
@@ -722,7 +729,7 @@ class QueryJobResp:
     def failed_reason(self):
         r"""Gets the failed_reason of this QueryJobResp.
 
-        失败原因。
+        **参数解释**：  任务失败原因，任务状态为失败时返回该字段。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The failed_reason of this QueryJobResp.
         :rtype: str
@@ -733,7 +740,7 @@ class QueryJobResp:
     def failed_reason(self, failed_reason):
         r"""Sets the failed_reason of this QueryJobResp.
 
-        失败原因。
+        **参数解释**：  任务失败原因，任务状态为失败时返回该字段。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param failed_reason: The failed_reason of this QueryJobResp.
         :type failed_reason: str
@@ -762,7 +769,7 @@ class QueryJobResp:
     def actual_start_time(self):
         r"""Gets the actual_start_time of this QueryJobResp.
 
-        实际启动时间，时间戳格式。
+        **参数解释**：  任务实际启动时间。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The actual_start_time of this QueryJobResp.
         :rtype: str
@@ -773,7 +780,7 @@ class QueryJobResp:
     def actual_start_time(self, actual_start_time):
         r"""Sets the actual_start_time of this QueryJobResp.
 
-        实际启动时间，时间戳格式。
+        **参数解释**：  任务实际启动时间。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param actual_start_time: The actual_start_time of this QueryJobResp.
         :type actual_start_time: str
@@ -784,7 +791,7 @@ class QueryJobResp:
     def full_transfer_complete_time(self):
         r"""Gets the full_transfer_complete_time of this QueryJobResp.
 
-        全量完成时间，时间戳格式。
+        **参数解释**：  全量迁移完成时间。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The full_transfer_complete_time of this QueryJobResp.
         :rtype: str
@@ -795,7 +802,7 @@ class QueryJobResp:
     def full_transfer_complete_time(self, full_transfer_complete_time):
         r"""Sets the full_transfer_complete_time of this QueryJobResp.
 
-        全量完成时间，时间戳格式。
+        **参数解释**：  全量迁移完成时间。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param full_transfer_complete_time: The full_transfer_complete_time of this QueryJobResp.
         :type full_transfer_complete_time: str
@@ -806,7 +813,7 @@ class QueryJobResp:
     def update_time(self):
         r"""Gets the update_time of this QueryJobResp.
 
-        更新时间，时间戳格式
+        **参数解释**：  任务最近一次更新时间。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The update_time of this QueryJobResp.
         :rtype: str
@@ -817,7 +824,7 @@ class QueryJobResp:
     def update_time(self, update_time):
         r"""Sets the update_time of this QueryJobResp.
 
-        更新时间，时间戳格式
+        **参数解释**：  任务最近一次更新时间。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param update_time: The update_time of this QueryJobResp.
         :type update_time: str
@@ -828,7 +835,7 @@ class QueryJobResp:
     def job_direction(self):
         r"""Gets the job_direction of this QueryJobResp.
 
-        任务方向
+        **参数解释**：  任务的迁移方向。  **约束限制**：  不涉及。  **取值范围**：  - up：入云，灾备场景时对应本云为备 - down：出云，灾备场景时对应本云为主 - non-dbs：自建  **默认取值**：  不涉及
 
         :return: The job_direction of this QueryJobResp.
         :rtype: str
@@ -839,7 +846,7 @@ class QueryJobResp:
     def job_direction(self, job_direction):
         r"""Sets the job_direction of this QueryJobResp.
 
-        任务方向
+        **参数解释**：  任务的迁移方向。  **约束限制**：  不涉及。  **取值范围**：  - up：入云，灾备场景时对应本云为备 - down：出云，灾备场景时对应本云为主 - non-dbs：自建  **默认取值**：  不涉及
 
         :param job_direction: The job_direction of this QueryJobResp.
         :type job_direction: str
@@ -850,7 +857,7 @@ class QueryJobResp:
     def db_use_type(self):
         r"""Gets the db_use_type of this QueryJobResp.
 
-        迁移场景 - migration：实时迁移 - sync：实时同步 - cloudDataGuard：实时灾备
+        **参数解释**：  迁移任务的业务场景类型。  **约束限制**：  不涉及。  **取值范围**：  - migration：实时迁移 - sync：实时同步 - cloudDataGuard：实时灾备  **默认取值**：  不涉及
 
         :return: The db_use_type of this QueryJobResp.
         :rtype: str
@@ -861,7 +868,7 @@ class QueryJobResp:
     def db_use_type(self, db_use_type):
         r"""Sets the db_use_type of this QueryJobResp.
 
-        迁移场景 - migration：实时迁移 - sync：实时同步 - cloudDataGuard：实时灾备
+        **参数解释**：  迁移任务的业务场景类型。  **约束限制**：  不涉及。  **取值范围**：  - migration：实时迁移 - sync：实时同步 - cloudDataGuard：实时灾备  **默认取值**：  不涉及
 
         :param db_use_type: The db_use_type of this QueryJobResp.
         :type db_use_type: str
@@ -872,7 +879,7 @@ class QueryJobResp:
     def need_restart(self):
         r"""Gets the need_restart of this QueryJobResp.
 
-        是否需要重启
+        **参数解释**：  任务配置变更后是否需要重启迁移实例才能生效。  **约束限制**：  不涉及。  **取值范围**：  - true：需要重启 - false：不需要重启  **默认取值**：  不涉及
 
         :return: The need_restart of this QueryJobResp.
         :rtype: bool
@@ -883,7 +890,7 @@ class QueryJobResp:
     def need_restart(self, need_restart):
         r"""Sets the need_restart of this QueryJobResp.
 
-        是否需要重启
+        **参数解释**：  任务配置变更后是否需要重启迁移实例才能生效。  **约束限制**：  不涉及。  **取值范围**：  - true：需要重启 - false：不需要重启  **默认取值**：  不涉及
 
         :param need_restart: The need_restart of this QueryJobResp.
         :type need_restart: bool
@@ -894,7 +901,7 @@ class QueryJobResp:
     def is_target_readonly(self):
         r"""Gets the is_target_readonly of this QueryJobResp.
 
-        指定目标实例是否限制为只读
+        **参数解释**：  指定目标数据库实例在迁移过程中是否限制为只读状态。  **约束限制**：  不涉及。  **取值范围**：  - true：目标实例限制为只读 - false：目标实例不限制为只读  **默认取值**：  不涉及
 
         :return: The is_target_readonly of this QueryJobResp.
         :rtype: bool
@@ -905,7 +912,7 @@ class QueryJobResp:
     def is_target_readonly(self, is_target_readonly):
         r"""Sets the is_target_readonly of this QueryJobResp.
 
-        指定目标实例是否限制为只读
+        **参数解释**：  指定目标数据库实例在迁移过程中是否限制为只读状态。  **约束限制**：  不涉及。  **取值范围**：  - true：目标实例限制为只读 - false：目标实例不限制为只读  **默认取值**：  不涉及
 
         :param is_target_readonly: The is_target_readonly of this QueryJobResp.
         :type is_target_readonly: bool
@@ -916,7 +923,7 @@ class QueryJobResp:
     def conflict_policy(self):
         r"""Gets the conflict_policy of this QueryJobResp.
 
-        冲突忽略策略 - stop：冲突失败 - overwrite：冲突覆盖 - ignore：冲突忽略
+        **参数解释**：  数据迁移过程中的冲突忽略策略，指定当目标库已存在相同数据时的处理方式。  **约束限制**：  不涉及。  **取值范围**：  - stop：冲突失败，遇到冲突时停止任务 - overwrite：冲突覆盖，用源库数据覆盖目标库已有数据 - ignore：冲突忽略，跳过冲突数据继续迁移  **默认取值**：  不涉及
 
         :return: The conflict_policy of this QueryJobResp.
         :rtype: str
@@ -927,7 +934,7 @@ class QueryJobResp:
     def conflict_policy(self, conflict_policy):
         r"""Sets the conflict_policy of this QueryJobResp.
 
-        冲突忽略策略 - stop：冲突失败 - overwrite：冲突覆盖 - ignore：冲突忽略
+        **参数解释**：  数据迁移过程中的冲突忽略策略，指定当目标库已存在相同数据时的处理方式。  **约束限制**：  不涉及。  **取值范围**：  - stop：冲突失败，遇到冲突时停止任务 - overwrite：冲突覆盖，用源库数据覆盖目标库已有数据 - ignore：冲突忽略，跳过冲突数据继续迁移  **默认取值**：  不涉及
 
         :param conflict_policy: The conflict_policy of this QueryJobResp.
         :type conflict_policy: str
@@ -938,7 +945,7 @@ class QueryJobResp:
     def filter_ddl_policy(self):
         r"""Gets the filter_ddl_policy of this QueryJobResp.
 
-        过滤DDL策略 - drop_database：过滤drop_database - drop_databasefilter_all：过滤所有ddl - \"\"：不过滤
+        **参数解释**：  过滤DDL策略，指定迁移过程中需要过滤的DDL操作类型。  **约束限制**：  不涉及。  **取值范围**：  - drop_database：过滤drop_database操作 - drop_databasefilter_all：过滤所有DDL操作 - \"\"：不过滤  **默认取值**：  不涉及
 
         :return: The filter_ddl_policy of this QueryJobResp.
         :rtype: str
@@ -949,7 +956,7 @@ class QueryJobResp:
     def filter_ddl_policy(self, filter_ddl_policy):
         r"""Sets the filter_ddl_policy of this QueryJobResp.
 
-        过滤DDL策略 - drop_database：过滤drop_database - drop_databasefilter_all：过滤所有ddl - \"\"：不过滤
+        **参数解释**：  过滤DDL策略，指定迁移过程中需要过滤的DDL操作类型。  **约束限制**：  不涉及。  **取值范围**：  - drop_database：过滤drop_database操作 - drop_databasefilter_all：过滤所有DDL操作 - \"\"：不过滤  **默认取值**：  不涉及
 
         :param filter_ddl_policy: The filter_ddl_policy of this QueryJobResp.
         :type filter_ddl_policy: str
@@ -960,7 +967,7 @@ class QueryJobResp:
     def speed_limit(self):
         r"""Gets the speed_limit of this QueryJobResp.
 
-        迁移速度限制。
+        **参数解释**：  迁移速度限制信息，详情请参见SpeedLimitInfo对象定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The speed_limit of this QueryJobResp.
         :rtype: list[:class:`huaweicloudsdkdrs.v3.SpeedLimitInfo`]
@@ -971,7 +978,7 @@ class QueryJobResp:
     def speed_limit(self, speed_limit):
         r"""Sets the speed_limit of this QueryJobResp.
 
-        迁移速度限制。
+        **参数解释**：  迁移速度限制信息，详情请参见SpeedLimitInfo对象定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param speed_limit: The speed_limit of this QueryJobResp.
         :type speed_limit: list[:class:`huaweicloudsdkdrs.v3.SpeedLimitInfo`]
@@ -982,7 +989,7 @@ class QueryJobResp:
     def schema_type(self):
         r"""Gets the schema_type of this QueryJobResp.
 
-        迁移方案 - Replication-主从复制 - Tungsten-日志解析 - PGBaseBackup-PG备份
+        **参数解释**：  DRS任务的迁移方案，指定数据复制的底层实现方式。  **约束限制**：  不涉及。  **取值范围**：  - Replication：主从复制 - Tungsten：日志解析 - PGBaseBackup：PG备份  **默认取值**：  不涉及
 
         :return: The schema_type of this QueryJobResp.
         :rtype: str
@@ -993,7 +1000,7 @@ class QueryJobResp:
     def schema_type(self, schema_type):
         r"""Sets the schema_type of this QueryJobResp.
 
-        迁移方案 - Replication-主从复制 - Tungsten-日志解析 - PGBaseBackup-PG备份
+        **参数解释**：  DRS任务的迁移方案，指定数据复制的底层实现方式。  **约束限制**：  不涉及。  **取值范围**：  - Replication：主从复制 - Tungsten：日志解析 - PGBaseBackup：PG备份  **默认取值**：  不涉及
 
         :param schema_type: The schema_type of this QueryJobResp.
         :type schema_type: str
@@ -1004,7 +1011,7 @@ class QueryJobResp:
     def node_num(self):
         r"""Gets the node_num of this QueryJobResp.
 
-        节点个数。
+        **参数解释**：  迁移实例节点个数。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The node_num of this QueryJobResp.
         :rtype: int
@@ -1015,7 +1022,7 @@ class QueryJobResp:
     def node_num(self, node_num):
         r"""Sets the node_num of this QueryJobResp.
 
-        节点个数。
+        **参数解释**：  迁移实例节点个数。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param node_num: The node_num of this QueryJobResp.
         :type node_num: int
@@ -1026,7 +1033,7 @@ class QueryJobResp:
     def object_switch(self):
         r"""Gets the object_switch of this QueryJobResp.
 
-        对象选择开关
+        **参数解释**：  对象选择开关，标识是否已开启对象选择功能。  **约束限制**：  不涉及。  **取值范围**：  - true：开启对象选择 - false：关闭对象选择  **默认取值**：  不涉及
 
         :return: The object_switch of this QueryJobResp.
         :rtype: bool
@@ -1037,7 +1044,7 @@ class QueryJobResp:
     def object_switch(self, object_switch):
         r"""Sets the object_switch of this QueryJobResp.
 
-        对象选择开关
+        **参数解释**：  对象选择开关，标识是否已开启对象选择功能。  **约束限制**：  不涉及。  **取值范围**：  - true：开启对象选择 - false：关闭对象选择  **默认取值**：  不涉及
 
         :param object_switch: The object_switch of this QueryJobResp.
         :type object_switch: bool
@@ -1048,7 +1055,7 @@ class QueryJobResp:
     def master_job_id(self):
         r"""Gets the master_job_id of this QueryJobResp.
 
-        主任务Id。
+        **参数解释**：  主任务ID，多任务场景下子任务所归属的主任务标识。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The master_job_id of this QueryJobResp.
         :rtype: str
@@ -1059,7 +1066,7 @@ class QueryJobResp:
     def master_job_id(self, master_job_id):
         r"""Sets the master_job_id of this QueryJobResp.
 
-        主任务Id。
+        **参数解释**：  主任务ID，多任务场景下子任务所归属的主任务标识。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param master_job_id: The master_job_id of this QueryJobResp.
         :type master_job_id: str
@@ -1070,7 +1077,7 @@ class QueryJobResp:
     def full_mode(self):
         r"""Gets the full_mode of this QueryJobResp.
 
-        全量快照模式。
+        **参数解释**：  全量快照模式。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The full_mode of this QueryJobResp.
         :rtype: str
@@ -1081,7 +1088,7 @@ class QueryJobResp:
     def full_mode(self, full_mode):
         r"""Sets the full_mode of this QueryJobResp.
 
-        全量快照模式。
+        **参数解释**：  全量快照模式。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param full_mode: The full_mode of this QueryJobResp.
         :type full_mode: str
@@ -1092,7 +1099,7 @@ class QueryJobResp:
     def struct_trans(self):
         r"""Gets the struct_trans of this QueryJobResp.
 
-        是否迁移结构。
+        **参数解释**：  是否迁移结构。  **约束限制**：  不涉及。  **取值范围**：  - true：迁移结构 - false：不迁移结构  **默认取值**：  不涉及
 
         :return: The struct_trans of this QueryJobResp.
         :rtype: bool
@@ -1103,7 +1110,7 @@ class QueryJobResp:
     def struct_trans(self, struct_trans):
         r"""Sets the struct_trans of this QueryJobResp.
 
-        是否迁移结构。
+        **参数解释**：  是否迁移结构。  **约束限制**：  不涉及。  **取值范围**：  - true：迁移结构 - false：不迁移结构  **默认取值**：  不涉及
 
         :param struct_trans: The struct_trans of this QueryJobResp.
         :type struct_trans: bool
@@ -1114,7 +1121,7 @@ class QueryJobResp:
     def index_trans(self):
         r"""Gets the index_trans of this QueryJobResp.
 
-        否迁移索引。
+        **参数解释**：  是否迁移索引。  **约束限制**：  不涉及。  **取值范围**：  - true：迁移索引 - false：不迁移索引  **默认取值**：  不涉及
 
         :return: The index_trans of this QueryJobResp.
         :rtype: bool
@@ -1125,7 +1132,7 @@ class QueryJobResp:
     def index_trans(self, index_trans):
         r"""Sets the index_trans of this QueryJobResp.
 
-        否迁移索引。
+        **参数解释**：  是否迁移索引。  **约束限制**：  不涉及。  **取值范围**：  - true：迁移索引 - false：不迁移索引  **默认取值**：  不涉及
 
         :param index_trans: The index_trans of this QueryJobResp.
         :type index_trans: bool
@@ -1136,7 +1143,7 @@ class QueryJobResp:
     def replace_definer(self):
         r"""Gets the replace_definer of this QueryJobResp.
 
-        是否使用目标库的用户替换掉definer。
+        **参数解释**：  是否使用目标库的用户替换掉definer。  **约束限制**：  不涉及。  **取值范围**：  - true：使用目标库用户替换definer - false：不替换definer  **默认取值**：  不涉及
 
         :return: The replace_definer of this QueryJobResp.
         :rtype: bool
@@ -1147,7 +1154,7 @@ class QueryJobResp:
     def replace_definer(self, replace_definer):
         r"""Sets the replace_definer of this QueryJobResp.
 
-        是否使用目标库的用户替换掉definer。
+        **参数解释**：  是否使用目标库的用户替换掉definer。  **约束限制**：  不涉及。  **取值范围**：  - true：使用目标库用户替换definer - false：不替换definer  **默认取值**：  不涉及
 
         :param replace_definer: The replace_definer of this QueryJobResp.
         :type replace_definer: bool
@@ -1158,7 +1165,7 @@ class QueryJobResp:
     def migrate_user(self):
         r"""Gets the migrate_user of this QueryJobResp.
 
-        是否迁移用户。
+        **参数解释**：  是否迁移用户。  **约束限制**：  不涉及。  **取值范围**：  - true：迁移用户 - false：不迁移用户  **默认取值**：  不涉及
 
         :return: The migrate_user of this QueryJobResp.
         :rtype: bool
@@ -1169,7 +1176,7 @@ class QueryJobResp:
     def migrate_user(self, migrate_user):
         r"""Sets the migrate_user of this QueryJobResp.
 
-        是否迁移用户。
+        **参数解释**：  是否迁移用户。  **约束限制**：  不涉及。  **取值范围**：  - true：迁移用户 - false：不迁移用户  **默认取值**：  不涉及
 
         :param migrate_user: The migrate_user of this QueryJobResp.
         :type migrate_user: bool
@@ -1180,7 +1187,7 @@ class QueryJobResp:
     def sync_database(self):
         r"""Gets the sync_database of this QueryJobResp.
 
-        是否库级同步。
+        **参数解释**：  是否库级同步。  **约束限制**：  不涉及。  **取值范围**：  - true：库级同步 - false：非库级同步  **默认取值**：  不涉及
 
         :return: The sync_database of this QueryJobResp.
         :rtype: bool
@@ -1191,7 +1198,7 @@ class QueryJobResp:
     def sync_database(self, sync_database):
         r"""Sets the sync_database of this QueryJobResp.
 
-        是否库级同步。
+        **参数解释**：  是否库级同步。  **约束限制**：  不涉及。  **取值范围**：  - true：库级同步 - false：非库级同步  **默认取值**：  不涉及
 
         :param sync_database: The sync_database of this QueryJobResp.
         :type sync_database: bool
@@ -1202,7 +1209,7 @@ class QueryJobResp:
     def error_code(self):
         r"""Gets the error_code of this QueryJobResp.
 
-        错误码
+        **参数解释**：  错误码，当任务报错时返回的错误代码。  **约束限制**：  不涉及。  **取值范围**：  格式为DRS.XXXXXX。  **默认取值**：  不涉及
 
         :return: The error_code of this QueryJobResp.
         :rtype: str
@@ -1213,7 +1220,7 @@ class QueryJobResp:
     def error_code(self, error_code):
         r"""Sets the error_code of this QueryJobResp.
 
-        错误码
+        **参数解释**：  错误码，当任务报错时返回的错误代码。  **约束限制**：  不涉及。  **取值范围**：  格式为DRS.XXXXXX。  **默认取值**：  不涉及
 
         :param error_code: The error_code of this QueryJobResp.
         :type error_code: str
@@ -1224,7 +1231,7 @@ class QueryJobResp:
     def error_message(self):
         r"""Gets the error_message of this QueryJobResp.
 
-        错误信息。
+        **参数解释**：  错误详细信息，当任务执行失败时返回的具体错误描述。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The error_message of this QueryJobResp.
         :rtype: str
@@ -1235,7 +1242,7 @@ class QueryJobResp:
     def error_message(self, error_message):
         r"""Sets the error_message of this QueryJobResp.
 
-        错误信息。
+        **参数解释**：  错误详细信息，当任务执行失败时返回的具体错误描述。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param error_message: The error_message of this QueryJobResp.
         :type error_message: str
@@ -1264,7 +1271,7 @@ class QueryJobResp:
     def az_code(self):
         r"""Gets the az_code of this QueryJobResp.
 
-        node所在AZ
+        **参数解释**：  迁移实例节点所在的可用区（AZ，Availability Zone）编码。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The az_code of this QueryJobResp.
         :rtype: str
@@ -1275,7 +1282,7 @@ class QueryJobResp:
     def az_code(self, az_code):
         r"""Sets the az_code of this QueryJobResp.
 
-        node所在AZ
+        **参数解释**：  迁移实例节点所在的可用区（AZ，Availability Zone）编码。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param az_code: The az_code of this QueryJobResp.
         :type az_code: str
@@ -1286,7 +1293,7 @@ class QueryJobResp:
     def vpc_id(self):
         r"""Gets the vpc_id of this QueryJobResp.
 
-        node所在VPC
+        **参数解释**：  迁移实例节点所在的虚拟私有云（VPC，Virtual Private Cloud）ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The vpc_id of this QueryJobResp.
         :rtype: str
@@ -1297,7 +1304,7 @@ class QueryJobResp:
     def vpc_id(self, vpc_id):
         r"""Sets the vpc_id of this QueryJobResp.
 
-        node所在VPC
+        **参数解释**：  迁移实例节点所在的虚拟私有云（VPC，Virtual Private Cloud）ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param vpc_id: The vpc_id of this QueryJobResp.
         :type vpc_id: str
@@ -1308,7 +1315,7 @@ class QueryJobResp:
     def subnet_id(self):
         r"""Gets the subnet_id of this QueryJobResp.
 
-        node所在子网
+        **参数解释**：  迁移实例节点所在的子网ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The subnet_id of this QueryJobResp.
         :rtype: str
@@ -1319,7 +1326,7 @@ class QueryJobResp:
     def subnet_id(self, subnet_id):
         r"""Sets the subnet_id of this QueryJobResp.
 
-        node所在子网
+        **参数解释**：  迁移实例节点所在的子网ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param subnet_id: The subnet_id of this QueryJobResp.
         :type subnet_id: str
@@ -1330,7 +1337,7 @@ class QueryJobResp:
     def security_group_id(self):
         r"""Gets the security_group_id of this QueryJobResp.
 
-        node所在安全组
+        **参数解释**：  迁移实例节点所在的安全组ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The security_group_id of this QueryJobResp.
         :rtype: str
@@ -1341,7 +1348,7 @@ class QueryJobResp:
     def security_group_id(self, security_group_id):
         r"""Sets the security_group_id of this QueryJobResp.
 
-        node所在安全组
+        **参数解释**：  迁移实例节点所在的安全组ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param security_group_id: The security_group_id of this QueryJobResp.
         :type security_group_id: str
@@ -1352,7 +1359,7 @@ class QueryJobResp:
     def multi_write(self):
         r"""Gets the multi_write of this QueryJobResp.
 
-        是否多主灾备任务,双主灾备时有值为true
+        **参数解释**：  是否多主灾备任务，双主灾备场景下该值为true。  **约束限制**：  不涉及。  **取值范围**：  - true：多主灾备任务 - false：非多主灾备任务  **默认取值**：  不涉及
 
         :return: The multi_write of this QueryJobResp.
         :rtype: bool
@@ -1363,7 +1370,7 @@ class QueryJobResp:
     def multi_write(self, multi_write):
         r"""Sets the multi_write of this QueryJobResp.
 
-        是否多主灾备任务,双主灾备时有值为true
+        **参数解释**：  是否多主灾备任务，双主灾备场景下该值为true。  **约束限制**：  不涉及。  **取值范围**：  - true：多主灾备任务 - false：非多主灾备任务  **默认取值**：  不涉及
 
         :param multi_write: The multi_write of this QueryJobResp.
         :type multi_write: bool
@@ -1374,7 +1381,7 @@ class QueryJobResp:
     def support_ip_v6(self):
         r"""Gets the support_ip_v6 of this QueryJobResp.
 
-        是否支持IPV6
+        **参数解释**：  是否支持IPv6。  **约束限制**：  不涉及。  **取值范围**：  - true：支持IPv6 - false：不支持IPv6  **默认取值**：  不涉及
 
         :return: The support_ip_v6 of this QueryJobResp.
         :rtype: bool
@@ -1385,7 +1392,7 @@ class QueryJobResp:
     def support_ip_v6(self, support_ip_v6):
         r"""Sets the support_ip_v6 of this QueryJobResp.
 
-        是否支持IPV6
+        **参数解释**：  是否支持IPv6。  **约束限制**：  不涉及。  **取值范围**：  - true：支持IPv6 - false：不支持IPv6  **默认取值**：  不涉及
 
         :param support_ip_v6: The support_ip_v6 of this QueryJobResp.
         :type support_ip_v6: bool
@@ -1396,7 +1403,7 @@ class QueryJobResp:
     def inherit_id(self):
         r"""Gets the inherit_id of this QueryJobResp.
 
-        继承的任务ID，Oracle_Mrskafka链路时使用。
+        **参数解释**：  继承的任务ID，Oracle到Kafka链路时使用。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The inherit_id of this QueryJobResp.
         :rtype: str
@@ -1407,7 +1414,7 @@ class QueryJobResp:
     def inherit_id(self, inherit_id):
         r"""Sets the inherit_id of this QueryJobResp.
 
-        继承的任务ID，Oracle_Mrskafka链路时使用。
+        **参数解释**：  继承的任务ID，Oracle到Kafka链路时使用。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param inherit_id: The inherit_id of this QueryJobResp.
         :type inherit_id: str
@@ -1418,7 +1425,7 @@ class QueryJobResp:
     def gtid(self):
         r"""Gets the gtid of this QueryJobResp.
 
-        断点的GTID集合
+        **参数解释**：  断点的GTID（Global Transaction Identifier）集合，用于记录增量同步的断点位置。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The gtid of this QueryJobResp.
         :rtype: str
@@ -1429,7 +1436,7 @@ class QueryJobResp:
     def gtid(self, gtid):
         r"""Sets the gtid of this QueryJobResp.
 
-        断点的GTID集合
+        **参数解释**：  断点的GTID（Global Transaction Identifier）集合，用于记录增量同步的断点位置。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param gtid: The gtid of this QueryJobResp.
         :type gtid: str
@@ -1458,7 +1465,7 @@ class QueryJobResp:
     def incre_start_position(self):
         r"""Gets the incre_start_position of this QueryJobResp.
 
-        增量任务启动位点
+        **参数解释**：  增量任务启动位点，标识增量同步起始的数据位置。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The incre_start_position of this QueryJobResp.
         :rtype: str
@@ -1469,7 +1476,7 @@ class QueryJobResp:
     def incre_start_position(self, incre_start_position):
         r"""Sets the incre_start_position of this QueryJobResp.
 
-        增量任务启动位点
+        **参数解释**：  增量任务启动位点，标识增量同步起始的数据位置。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param incre_start_position: The incre_start_position of this QueryJobResp.
         :type incre_start_position: str
@@ -1480,7 +1487,7 @@ class QueryJobResp:
     def is_multi_az(self):
         r"""Gets the is_multi_az of this QueryJobResp.
 
-        是否是主备任务。
+        **参数解释**：  标识任务是否为跨可用区（AZ）部署的主备任务。  **约束限制**：  不涉及。  **取值范围**：  - true：跨AZ主备任务 - false：非跨AZ任务  **默认取值**：  不涉及
 
         :return: The is_multi_az of this QueryJobResp.
         :rtype: bool
@@ -1491,7 +1498,7 @@ class QueryJobResp:
     def is_multi_az(self, is_multi_az):
         r"""Sets the is_multi_az of this QueryJobResp.
 
-        是否是主备任务。
+        **参数解释**：  标识任务是否为跨可用区（AZ）部署的主备任务。  **约束限制**：  不涉及。  **取值范围**：  - true：跨AZ主备任务 - false：非跨AZ任务  **默认取值**：  不涉及
 
         :param is_multi_az: The is_multi_az of this QueryJobResp.
         :type is_multi_az: bool
@@ -1502,7 +1509,7 @@ class QueryJobResp:
     def az_name(self):
         r"""Gets the az_name of this QueryJobResp.
 
-        node所在节点AZ名称。
+        **参数解释**：  迁移实例节点所在的可用区（AZ）名称。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The az_name of this QueryJobResp.
         :rtype: str
@@ -1513,7 +1520,7 @@ class QueryJobResp:
     def az_name(self, az_name):
         r"""Sets the az_name of this QueryJobResp.
 
-        node所在节点AZ名称。
+        **参数解释**：  迁移实例节点所在的可用区（AZ）名称。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param az_name: The az_name of this QueryJobResp.
         :type az_name: str
@@ -1524,7 +1531,7 @@ class QueryJobResp:
     def master_az(self):
         r"""Gets the master_az of this QueryJobResp.
 
-        主备任务主AZ。
+        **参数解释**：  主备任务中主实例所在的可用区（AZ）。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The master_az of this QueryJobResp.
         :rtype: str
@@ -1535,7 +1542,7 @@ class QueryJobResp:
     def master_az(self, master_az):
         r"""Sets the master_az of this QueryJobResp.
 
-        主备任务主AZ。
+        **参数解释**：  主备任务中主实例所在的可用区（AZ）。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param master_az: The master_az of this QueryJobResp.
         :type master_az: str
@@ -1546,7 +1553,7 @@ class QueryJobResp:
     def slave_az(self):
         r"""Gets the slave_az of this QueryJobResp.
 
-        主备任务备AZ。
+        **参数解释**：  主备任务中备实例所在的可用区（AZ）。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The slave_az of this QueryJobResp.
         :rtype: str
@@ -1557,7 +1564,7 @@ class QueryJobResp:
     def slave_az(self, slave_az):
         r"""Sets the slave_az of this QueryJobResp.
 
-        主备任务备AZ。
+        **参数解释**：  主备任务中备实例所在的可用区（AZ）。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param slave_az: The slave_az of this QueryJobResp.
         :type slave_az: str
@@ -1568,7 +1575,7 @@ class QueryJobResp:
     def node_role(self):
         r"""Gets the node_role of this QueryJobResp.
 
-        任务主备角色。
+        **参数解释**：  任务主备角色，标识当前节点在主备任务中的角色。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The node_role of this QueryJobResp.
         :rtype: str
@@ -1579,7 +1586,7 @@ class QueryJobResp:
     def node_role(self, node_role):
         r"""Sets the node_role of this QueryJobResp.
 
-        任务主备角色。
+        **参数解释**：  任务主备角色，标识当前节点在主备任务中的角色。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param node_role: The node_role of this QueryJobResp.
         :type node_role: str
@@ -1608,7 +1615,7 @@ class QueryJobResp:
     def object_infos(self):
         r"""Gets the object_infos of this QueryJobResp.
 
-        已同步对象信息。
+        **参数解释**：  已同步对象信息列表，每个元素为DatabaseObjectInfo结构。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The object_infos of this QueryJobResp.
         :rtype: list[:class:`huaweicloudsdkdrs.v3.DatabaseObjectInfo`]
@@ -1619,7 +1626,7 @@ class QueryJobResp:
     def object_infos(self, object_infos):
         r"""Sets the object_infos of this QueryJobResp.
 
-        已同步对象信息。
+        **参数解释**：  已同步对象信息列表，每个元素为DatabaseObjectInfo结构。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param object_infos: The object_infos of this QueryJobResp.
         :type object_infos: list[:class:`huaweicloudsdkdrs.v3.DatabaseObjectInfo`]
@@ -1630,7 +1637,7 @@ class QueryJobResp:
     def original_job_direction(self):
         r"""Gets the original_job_direction of this QueryJobResp.
 
-        初始任务方向。 取值： - up：入云，灾备场景时对应本云为备。 - down：出云，灾备场景时对应本云为主。 - non-dbs：自建。
+        **参数解释**：  任务创建时的初始方向，表示任务首次创建时配置的迁移方向，不会随灾备倒换而改变。  **约束限制**：  不涉及。  **取值范围**：  - up：入云，灾备场景时对应本云为备 - down：出云，灾备场景时对应本云为主 - non-dbs：自建  **默认取值**：  不涉及
 
         :return: The original_job_direction of this QueryJobResp.
         :rtype: str
@@ -1641,7 +1648,7 @@ class QueryJobResp:
     def original_job_direction(self, original_job_direction):
         r"""Sets the original_job_direction of this QueryJobResp.
 
-        初始任务方向。 取值： - up：入云，灾备场景时对应本云为备。 - down：出云，灾备场景时对应本云为主。 - non-dbs：自建。
+        **参数解释**：  任务创建时的初始方向，表示任务首次创建时配置的迁移方向，不会随灾备倒换而改变。  **约束限制**：  不涉及。  **取值范围**：  - up：入云，灾备场景时对应本云为备 - down：出云，灾备场景时对应本云为主 - non-dbs：自建  **默认取值**：  不涉及
 
         :param original_job_direction: The original_job_direction of this QueryJobResp.
         :type original_job_direction: str
@@ -1670,7 +1677,7 @@ class QueryJobResp:
     def tags(self):
         r"""Gets the tags of this QueryJobResp.
 
-        DRS任务标签。
+        **参数解释**：  DRS任务标签列表，每个元素为Tag结构。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The tags of this QueryJobResp.
         :rtype: list[:class:`huaweicloudsdkdrs.v3.Tag`]
@@ -1681,7 +1688,7 @@ class QueryJobResp:
     def tags(self, tags):
         r"""Sets the tags of this QueryJobResp.
 
-        DRS任务标签。
+        **参数解释**：  DRS任务标签列表，每个元素为Tag结构。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param tags: The tags of this QueryJobResp.
         :type tags: list[:class:`huaweicloudsdkdrs.v3.Tag`]
@@ -1692,7 +1699,7 @@ class QueryJobResp:
     def public_ip_list(self):
         r"""Gets the public_ip_list of this QueryJobResp.
 
-        指定公网Ip的信息。
+        **参数解释**：  指定公网IP的信息列表，每个元素为PublicIpConfig结构。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The public_ip_list of this QueryJobResp.
         :rtype: list[:class:`huaweicloudsdkdrs.v3.PublicIpConfig`]
@@ -1703,7 +1710,7 @@ class QueryJobResp:
     def public_ip_list(self, public_ip_list):
         r"""Sets the public_ip_list of this QueryJobResp.
 
-        指定公网Ip的信息。
+        **参数解释**：  指定公网IP的信息列表，每个元素为PublicIpConfig结构。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param public_ip_list: The public_ip_list of this QueryJobResp.
         :type public_ip_list: list[:class:`huaweicloudsdkdrs.v3.PublicIpConfig`]
@@ -1714,7 +1721,7 @@ class QueryJobResp:
     def bind_public_ip_state(self):
         r"""Gets the bind_public_ip_state of this QueryJobResp.
 
-        是否成功绑定公网IP。
+        **参数解释**：  公网IP绑定状态，标识是否成功绑定公网IP。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The bind_public_ip_state of this QueryJobResp.
         :rtype: str
@@ -1725,7 +1732,7 @@ class QueryJobResp:
     def bind_public_ip_state(self, bind_public_ip_state):
         r"""Sets the bind_public_ip_state of this QueryJobResp.
 
-        是否成功绑定公网IP。
+        **参数解释**：  公网IP绑定状态，标识是否成功绑定公网IP。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param bind_public_ip_state: The bind_public_ip_state of this QueryJobResp.
         :type bind_public_ip_state: str
@@ -1736,7 +1743,7 @@ class QueryJobResp:
     def children(self):
         r"""Gets the children of this QueryJobResp.
 
-        多任务时，存在子任务绑定失败时，返回子任务的信息。
+        **参数解释**：  子任务绑定失败信息列表，多任务场景下存在子任务绑定公网IP失败时返回，每个元素为FailedToBindEipChildInfo结构。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The children of this QueryJobResp.
         :rtype: list[:class:`huaweicloudsdkdrs.v3.FailedToBindEipChildInfo`]
@@ -1747,7 +1754,7 @@ class QueryJobResp:
     def children(self, children):
         r"""Sets the children of this QueryJobResp.
 
-        多任务时，存在子任务绑定失败时，返回子任务的信息。
+        **参数解释**：  子任务绑定失败信息列表，多任务场景下存在子任务绑定公网IP失败时返回，每个元素为FailedToBindEipChildInfo结构。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param children: The children of this QueryJobResp.
         :type children: list[:class:`huaweicloudsdkdrs.v3.FailedToBindEipChildInfo`]
@@ -1758,7 +1765,7 @@ class QueryJobResp:
     def is_open_fast_clean(self):
         r"""Gets the is_open_fast_clean of this QueryJobResp.
 
-        是否开启云数据库RDS for MySQL/MariaDB的binlog快速清理。
+        **参数解释**：  是否开启云数据库RDS for MySQL或MariaDB的Binlog快速清理。  **约束限制**：  不涉及。  **取值范围**：  - true：开启Binlog快速清理 - false：不开启Binlog快速清理  **默认取值**：  不涉及
 
         :return: The is_open_fast_clean of this QueryJobResp.
         :rtype: bool
@@ -1769,7 +1776,7 @@ class QueryJobResp:
     def is_open_fast_clean(self, is_open_fast_clean):
         r"""Sets the is_open_fast_clean of this QueryJobResp.
 
-        是否开启云数据库RDS for MySQL/MariaDB的binlog快速清理。
+        **参数解释**：  是否开启云数据库RDS for MySQL或MariaDB的Binlog快速清理。  **约束限制**：  不涉及。  **取值范围**：  - true：开启Binlog快速清理 - false：不开启Binlog快速清理  **默认取值**：  不涉及
 
         :param is_open_fast_clean: The is_open_fast_clean of this QueryJobResp.
         :type is_open_fast_clean: bool
@@ -1780,7 +1787,7 @@ class QueryJobResp:
     def job_kernel_direction(self):
         r"""Gets the job_kernel_direction of this QueryJobResp.
 
-        灾备任务内核方向，up上云，down下云。当任务处于倒换中，与灾备任务方向相反，否则相同。
+        **参数解释**：  灾备任务内核方向。非倒换中与job_direction取值相同，倒换中与job_direction取值相反。  **约束限制**：  不涉及。  **取值范围**：  - up：入云，灾备场景时对应本云为备 - down：出云，灾备场景时对应本云为主  **默认取值**：  不涉及
 
         :return: The job_kernel_direction of this QueryJobResp.
         :rtype: str
@@ -1791,12 +1798,34 @@ class QueryJobResp:
     def job_kernel_direction(self, job_kernel_direction):
         r"""Sets the job_kernel_direction of this QueryJobResp.
 
-        灾备任务内核方向，up上云，down下云。当任务处于倒换中，与灾备任务方向相反，否则相同。
+        **参数解释**：  灾备任务内核方向。非倒换中与job_direction取值相同，倒换中与job_direction取值相反。  **约束限制**：  不涉及。  **取值范围**：  - up：入云，灾备场景时对应本云为备 - down：出云，灾备场景时对应本云为主  **默认取值**：  不涉及
 
         :param job_kernel_direction: The job_kernel_direction of this QueryJobResp.
         :type job_kernel_direction: str
         """
         self._job_kernel_direction = job_kernel_direction
+
+    @property
+    def sync_mode(self):
+        r"""Gets the sync_mode of this QueryJobResp.
+
+        **参数解释**：  同步任务的同步模式，指定数据同步的粒度级别。  **约束限制**：  不涉及。  **取值范围**：  - DB_LEVEL：库级同步 - SCHEMA_LEVEL：schema级同步 - TABLE_LEVEL：表级同步 - FILE_IMPORT：文件导入 - INSTANCE_LEVEL：实例级同步  **默认取值**：  不涉及
+
+        :return: The sync_mode of this QueryJobResp.
+        :rtype: str
+        """
+        return self._sync_mode
+
+    @sync_mode.setter
+    def sync_mode(self, sync_mode):
+        r"""Sets the sync_mode of this QueryJobResp.
+
+        **参数解释**：  同步任务的同步模式，指定数据同步的粒度级别。  **约束限制**：  不涉及。  **取值范围**：  - DB_LEVEL：库级同步 - SCHEMA_LEVEL：schema级同步 - TABLE_LEVEL：表级同步 - FILE_IMPORT：文件导入 - INSTANCE_LEVEL：实例级同步  **默认取值**：  不涉及
+
+        :param sync_mode: The sync_mode of this QueryJobResp.
+        :type sync_mode: str
+        """
+        self._sync_mode = sync_mode
 
     def to_dict(self):
         result = {}

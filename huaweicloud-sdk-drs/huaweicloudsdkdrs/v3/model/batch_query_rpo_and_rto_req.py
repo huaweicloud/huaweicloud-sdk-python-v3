@@ -27,7 +27,7 @@ class BatchQueryRpoAndRtoReq:
 
         The model defined in huaweicloud sdk
 
-        :param jobs: 批量查询RPO和RTO的任务详情ID请求列表
+        :param jobs: **参数解释**：  批量查询RPO和RTO的任务ID列表，通过该参数指定需要查询的一个或多个任务。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type jobs: list[str]
         """
         
@@ -42,7 +42,7 @@ class BatchQueryRpoAndRtoReq:
     def jobs(self):
         r"""Gets the jobs of this BatchQueryRpoAndRtoReq.
 
-        批量查询RPO和RTO的任务详情ID请求列表
+        **参数解释**：  批量查询RPO和RTO的任务ID列表，通过该参数指定需要查询的一个或多个任务。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The jobs of this BatchQueryRpoAndRtoReq.
         :rtype: list[str]
@@ -53,7 +53,7 @@ class BatchQueryRpoAndRtoReq:
     def jobs(self, jobs):
         r"""Sets the jobs of this BatchQueryRpoAndRtoReq.
 
-        批量查询RPO和RTO的任务详情ID请求列表
+        **参数解释**：  批量查询RPO和RTO的任务ID列表，通过该参数指定需要查询的一个或多个任务。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param jobs: The jobs of this BatchQueryRpoAndRtoReq.
         :type jobs: list[str]

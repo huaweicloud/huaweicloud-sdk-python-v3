@@ -23,7 +23,8 @@ class ShowComparePolicyResponse(SdkResponse):
         'compare_type': 'list[str]',
         'next_compare_time': 'str',
         'compare_policy': 'str',
-        'interval_hour': 'int'
+        'interval_hour': 'int',
+        'conflict_strategy': 'str'
     }
 
     attribute_map = {
@@ -34,10 +35,11 @@ class ShowComparePolicyResponse(SdkResponse):
         'compare_type': 'compare_type',
         'next_compare_time': 'next_compare_time',
         'compare_policy': 'compare_policy',
-        'interval_hour': 'interval_hour'
+        'interval_hour': 'interval_hour',
+        'conflict_strategy': 'conflict_strategy'
     }
 
-    def __init__(self, period=None, status=None, begin_time=None, end_time=None, compare_type=None, next_compare_time=None, compare_policy=None, interval_hour=None):
+    def __init__(self, period=None, status=None, begin_time=None, end_time=None, compare_type=None, next_compare_time=None, compare_policy=None, interval_hour=None, conflict_strategy=None):
         r"""ShowComparePolicyResponse
 
         The model defined in huaweicloud sdk
@@ -58,6 +60,8 @@ class ShowComparePolicyResponse(SdkResponse):
         :type compare_policy: str
         :param interval_hour: 间隔时间。
         :type interval_hour: int
+        :param conflict_strategy: **参数解释：** 冲突策略。 **约束限制：** 不涉及 **取值范围：** 不涉及 默认取值： 不涉及
+        :type conflict_strategy: str
         """
         
         super().__init__()
@@ -70,6 +74,7 @@ class ShowComparePolicyResponse(SdkResponse):
         self._next_compare_time = None
         self._compare_policy = None
         self._interval_hour = None
+        self._conflict_strategy = None
         self.discriminator = None
 
         if period is not None:
@@ -88,6 +93,8 @@ class ShowComparePolicyResponse(SdkResponse):
             self.compare_policy = compare_policy
         if interval_hour is not None:
             self.interval_hour = interval_hour
+        if conflict_strategy is not None:
+            self.conflict_strategy = conflict_strategy
 
     @property
     def period(self):
@@ -264,6 +271,28 @@ class ShowComparePolicyResponse(SdkResponse):
         :type interval_hour: int
         """
         self._interval_hour = interval_hour
+
+    @property
+    def conflict_strategy(self):
+        r"""Gets the conflict_strategy of this ShowComparePolicyResponse.
+
+        **参数解释：** 冲突策略。 **约束限制：** 不涉及 **取值范围：** 不涉及 默认取值： 不涉及
+
+        :return: The conflict_strategy of this ShowComparePolicyResponse.
+        :rtype: str
+        """
+        return self._conflict_strategy
+
+    @conflict_strategy.setter
+    def conflict_strategy(self, conflict_strategy):
+        r"""Sets the conflict_strategy of this ShowComparePolicyResponse.
+
+        **参数解释：** 冲突策略。 **约束限制：** 不涉及 **取值范围：** 不涉及 默认取值： 不涉及
+
+        :param conflict_strategy: The conflict_strategy of this ShowComparePolicyResponse.
+        :type conflict_strategy: str
+        """
+        self._conflict_strategy = conflict_strategy
 
     def to_dict(self):
         import warnings

@@ -31,11 +31,11 @@ class PrecheckFailSubJobVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 预检查失败子任务id。
+        :param id: **参数解释**：  预检查失败子任务ID，用于唯一标识一个预检查失败的子任务。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type id: str
-        :param name: 预检查失败子任务名称。
+        :param name: **参数解释**：  预检查失败子任务的名称，用于标识失败的子任务。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type name: str
-        :param check_result: 检查结果。
+        :param check_result: **参数解释**：  预检查失败子任务的检查结果，表示该子任务的检查是否通过。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type check_result: str
         """
         
@@ -57,7 +57,7 @@ class PrecheckFailSubJobVO:
     def id(self):
         r"""Gets the id of this PrecheckFailSubJobVO.
 
-        预检查失败子任务id。
+        **参数解释**：  预检查失败子任务ID，用于唯一标识一个预检查失败的子任务。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The id of this PrecheckFailSubJobVO.
         :rtype: str
@@ -68,7 +68,7 @@ class PrecheckFailSubJobVO:
     def id(self, id):
         r"""Sets the id of this PrecheckFailSubJobVO.
 
-        预检查失败子任务id。
+        **参数解释**：  预检查失败子任务ID，用于唯一标识一个预检查失败的子任务。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param id: The id of this PrecheckFailSubJobVO.
         :type id: str
@@ -79,7 +79,7 @@ class PrecheckFailSubJobVO:
     def name(self):
         r"""Gets the name of this PrecheckFailSubJobVO.
 
-        预检查失败子任务名称。
+        **参数解释**：  预检查失败子任务的名称，用于标识失败的子任务。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The name of this PrecheckFailSubJobVO.
         :rtype: str
@@ -90,7 +90,7 @@ class PrecheckFailSubJobVO:
     def name(self, name):
         r"""Sets the name of this PrecheckFailSubJobVO.
 
-        预检查失败子任务名称。
+        **参数解释**：  预检查失败子任务的名称，用于标识失败的子任务。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param name: The name of this PrecheckFailSubJobVO.
         :type name: str
@@ -101,7 +101,7 @@ class PrecheckFailSubJobVO:
     def check_result(self):
         r"""Gets the check_result of this PrecheckFailSubJobVO.
 
-        检查结果。
+        **参数解释**：  预检查失败子任务的检查结果，表示该子任务的检查是否通过。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The check_result of this PrecheckFailSubJobVO.
         :rtype: str
@@ -112,7 +112,7 @@ class PrecheckFailSubJobVO:
     def check_result(self, check_result):
         r"""Sets the check_result of this PrecheckFailSubJobVO.
 
-        检查结果。
+        **参数解释**：  预检查失败子任务的检查结果，表示该子任务的检查是否通过。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param check_result: The check_result of this PrecheckFailSubJobVO.
         :type check_result: str

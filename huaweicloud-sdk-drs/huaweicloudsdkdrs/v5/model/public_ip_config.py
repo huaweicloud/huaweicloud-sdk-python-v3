@@ -31,11 +31,11 @@ class PublicIpConfig:
 
         The model defined in huaweicloud sdk
 
-        :param id: 指定公网IP的ID
+        :param id: 指定公网IP的ID。
         :type id: str
-        :param public_ip: 指定公网IP
+        :param public_ip: 指定公网IP。
         :type public_ip: str
-        :param type: 指定公网IP绑定任务的类型： - 主备任务：主是master，备是slave - 其他固定为master
+        :param type: 指定公网IP绑定任务的类型： - 主备任务：主是master，备是slave。 - 其他固定为master。
         :type type: str
         """
         
@@ -54,7 +54,7 @@ class PublicIpConfig:
     def id(self):
         r"""Gets the id of this PublicIpConfig.
 
-        指定公网IP的ID
+        指定公网IP的ID。
 
         :return: The id of this PublicIpConfig.
         :rtype: str
@@ -65,7 +65,7 @@ class PublicIpConfig:
     def id(self, id):
         r"""Sets the id of this PublicIpConfig.
 
-        指定公网IP的ID
+        指定公网IP的ID。
 
         :param id: The id of this PublicIpConfig.
         :type id: str
@@ -76,7 +76,7 @@ class PublicIpConfig:
     def public_ip(self):
         r"""Gets the public_ip of this PublicIpConfig.
 
-        指定公网IP
+        指定公网IP。
 
         :return: The public_ip of this PublicIpConfig.
         :rtype: str
@@ -87,7 +87,7 @@ class PublicIpConfig:
     def public_ip(self, public_ip):
         r"""Sets the public_ip of this PublicIpConfig.
 
-        指定公网IP
+        指定公网IP。
 
         :param public_ip: The public_ip of this PublicIpConfig.
         :type public_ip: str
@@ -98,7 +98,7 @@ class PublicIpConfig:
     def type(self):
         r"""Gets the type of this PublicIpConfig.
 
-        指定公网IP绑定任务的类型： - 主备任务：主是master，备是slave - 其他固定为master
+        指定公网IP绑定任务的类型： - 主备任务：主是master，备是slave。 - 其他固定为master。
 
         :return: The type of this PublicIpConfig.
         :rtype: str
@@ -109,7 +109,7 @@ class PublicIpConfig:
     def type(self, type):
         r"""Sets the type of this PublicIpConfig.
 
-        指定公网IP绑定任务的类型： - 主备任务：主是master，备是slave - 其他固定为master
+        指定公网IP绑定任务的类型： - 主备任务：主是master，备是slave。 - 其他固定为master。
 
         :param type: The type of this PublicIpConfig.
         :type type: str

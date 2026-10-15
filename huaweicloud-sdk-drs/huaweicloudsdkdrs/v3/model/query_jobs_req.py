@@ -49,29 +49,29 @@ class QueryJobsReq:
 
         The model defined in huaweicloud sdk
 
-        :param cur_page: 第几页
+        :param cur_page: **参数解释**：  当前页码，用于分页查询时指定返回第几页的数据。填0可获取全部数据项。  **约束限制**：  - 当per_page填0时，cur_page只能填0或1。  **取值范围**：  不涉及。  **默认取值**：  1
         :type cur_page: int
-        :param per_page: 每页记录数
+        :param per_page: **参数解释**：  每页返回的记录数，用于分页查询时控制每页数据量。  **约束限制**：  - 填0时，cur_page只能填0或1。  **取值范围**：  0-100。  **默认取值**：  10
         :type per_page: int
-        :param db_use_type: 迁移场景，migration:实时迁移,sync:实时同步,cloudDataGuard:实时灾备
+        :param db_use_type: **参数解释**：  迁移任务的业务场景类型。  **约束限制**：  不涉及。  **取值范围**：  - migration：实时迁移 - sync：实时同步 - cloudDataGuard：实时灾备  **默认取值**：  不涉及
         :type db_use_type: str
-        :param engine_type: 引擎类型,mysql：迁移，同步使用。mongodb：迁移使用。cloudDataGuard-mysql：灾备使用。
+        :param engine_type: **参数解释**：  DRS任务引擎类型。  **约束限制**：  不涉及。  **取值范围**：  - mysql：MySQL到MySQL迁移，MySQL到MySQL同步 - mongodb：MongoDB到DDS迁移与同步 - cloudDataGuard-mysql：MySQL到MySQL灾备 - gaussdbv5：GaussDB同步 - mysql-to-kafka：MySQL到Kafka同步 - taurus-to-kafka：TaurusDB到Kafka同步 - gaussdbv5ha-to-kafka：GaussDB集中式版到Kafka同步 - postgresql：PostgreSQL到PostgreSQL同步  **默认取值**：  不涉及
         :type engine_type: str
-        :param enterprise_project_id: 企业项目
+        :param enterprise_project_id: **参数解释**：  企业项目ID，用于按企业项目过滤查询结果。  **约束限制**：  - 不传值时设置为null，不能设置为空字符串。 - 当企业项目开关打开时，可以传值。  **取值范围**：  不涉及。  **默认取值**：  null
         :type enterprise_project_id: str
-        :param name: Name或ID。支持传入多个任务ID，逗号分隔，最多100个。
+        :param name: **参数解释**：  任务名称或ID，用于按任务名称或ID过滤查询结果。支持传入多个任务ID，逗号分隔，最多100个。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type name: str
-        :param net_type: 网络类型
+        :param net_type: **参数解释**：  任务使用的网络类型。  **约束限制**：  不涉及。  **取值范围**：  - vpn：虚拟专用网络 - vpc：虚拟私有云 - eip：弹性公网IP  **默认取值**：  不涉及
         :type net_type: str
-        :param service_name: 开启EPS时使用，值为eps
+        :param service_name: **参数解释**：  服务名称，开启EPS（企业项目服务）时使用。  **约束限制**：  不涉及。  **取值范围**：  - eps：企业项目服务  **默认取值**：  不涉及
         :type service_name: str
-        :param status: 任务状态。 - CREATING：创建中 - CREATE_FAILED：创建失败 - CONFIGURATION：配置中 - STARTJOBING：启动中 - WAITING_FOR_START：等待启动中 - START_JOB_FAILED：启动失败 - PAUSING：已暂停 - FULL_TRANSFER_STARTED：全量开始，灾备场景下为初始化 - FULL_TRANSFER_FAILED：全量失败，灾备场景下为初始化失败 - FULL_TRANSFER_COMPLETE：全量完成，灾备场景下为初始化完成 - INCRE_TRANSFER_STARTED：增量开始，灾备场景下为灾备中 - INCRE_TRANSFER_FAILED：增量失败，灾备场景下为灾备异常 - RELEASE_RESOURCE_STARTED：结束任务中 - RELEASE_RESOURCE_FAILED：结束任务失败 - RELEASE_RESOURCE_COMPLETE：已结束 - REBUILD_NODE_STARTED：故障恢复中 - REBUILD_NODE_FAILED：故障恢复失败 - CHANGE_JOB_STARTED：任务变更中 - CHANGE_JOB_FAILED：任务变更失败 - DELETED：已删除 - CHILD_TRANSFER_STARTING：再编辑子任务启动中 - CHILD_TRANSFER_STARTED：再编辑子任务迁移中 - CHILD_TRANSFER_COMPLETE：再编辑子任务迁移完成 - CHILD_TRANSFER_FAILED：再编辑子任务迁移失败 - RELEASE_CHILD_TRANSFER_STARTED：再编辑子任务结束中 - RELEASE_CHILD_TRANSFER_COMPLETE：再编辑子任务已结束 - NODE_UPGRADE_START：升级开始 - NODE_UPGRADE_COMPLETE：升级完成 - NODE_UPGRADE_FAILED：升级失败
+        :param status: **参数解释**：  任务当前运行状态，用于按任务状态过滤查询结果。  **约束限制**：  不涉及。  **取值范围**：  - CREATING：创建中 - CREATE_FAILED：创建失败 - CONFIGURATION：配置中 - STARTJOBING：启动中 - WAITING_FOR_START：等待启动中 - START_JOB_FAILED：启动失败 - PAUSING：已暂停 - FULL_TRANSFER_STARTED：全量开始，灾备场景下为初始化 - FULL_TRANSFER_FAILED：全量失败，灾备场景下为初始化失败 - FULL_TRANSFER_COMPLETE：全量完成，灾备场景下为初始化完成 - INCRE_TRANSFER_STARTED：增量开始，灾备场景下为灾备中 - INCRE_TRANSFER_FAILED：增量失败，灾备场景下为灾备异常 - RELEASE_RESOURCE_STARTED：结束任务中 - RELEASE_RESOURCE_FAILED：结束任务失败 - RELEASE_RESOURCE_COMPLETE：已结束 - REBUILD_NODE_STARTED：故障恢复中 - REBUILD_NODE_FAILED：故障恢复失败 - CHANGE_JOB_STARTED：任务变更中 - CHANGE_JOB_FAILED：任务变更失败 - DELETED：已删除 - CHILD_TRANSFER_STARTING：再编辑子任务启动中 - CHILD_TRANSFER_STARTED：再编辑子任务迁移中 - CHILD_TRANSFER_COMPLETE：再编辑子任务迁移完成 - CHILD_TRANSFER_FAILED：再编辑子任务迁移失败 - RELEASE_CHILD_TRANSFER_STARTED：再编辑子任务结束中 - RELEASE_CHILD_TRANSFER_COMPLETE：再编辑子任务已结束 - NODE_UPGRADE_START：升级开始 - NODE_UPGRADE_COMPLETE：升级完成 - NODE_UPGRADE_FAILED：升级失败  **默认取值**：  不涉及
         :type status: str
-        :param tags: 标签
+        :param tags: **参数解释**：  标签信息，用于按标签过滤查询结果，格式为key/value键值对。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type tags: dict(str, str)
-        :param instance_ids: 数据库实例ID列表，最多支持10个
+        :param instance_ids: **参数解释**：  数据库实例ID列表，用于按数据库实例过滤查询结果。  **约束限制**：  - 最多支持10个实例ID。  **取值范围**：  不涉及。  **默认取值**：  null，表示不使用数据库实例ID过滤
         :type instance_ids: list[str]
-        :param instance_ip: DRS绑定数据库实例IP
+        :param instance_ip: **参数解释**：  DRS绑定的数据库实例IP，用于按数据库实例IP过滤查询结果。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  空字符串，表示不使用DRS绑定数据库IP过滤
         :type instance_ip: str
         """
         
@@ -91,8 +91,10 @@ class QueryJobsReq:
         self._instance_ip = None
         self.discriminator = None
 
-        self.cur_page = cur_page
-        self.per_page = per_page
+        if cur_page is not None:
+            self.cur_page = cur_page
+        if per_page is not None:
+            self.per_page = per_page
         self.db_use_type = db_use_type
         if engine_type is not None:
             self.engine_type = engine_type
@@ -117,7 +119,7 @@ class QueryJobsReq:
     def cur_page(self):
         r"""Gets the cur_page of this QueryJobsReq.
 
-        第几页
+        **参数解释**：  当前页码，用于分页查询时指定返回第几页的数据。填0可获取全部数据项。  **约束限制**：  - 当per_page填0时，cur_page只能填0或1。  **取值范围**：  不涉及。  **默认取值**：  1
 
         :return: The cur_page of this QueryJobsReq.
         :rtype: int
@@ -128,7 +130,7 @@ class QueryJobsReq:
     def cur_page(self, cur_page):
         r"""Sets the cur_page of this QueryJobsReq.
 
-        第几页
+        **参数解释**：  当前页码，用于分页查询时指定返回第几页的数据。填0可获取全部数据项。  **约束限制**：  - 当per_page填0时，cur_page只能填0或1。  **取值范围**：  不涉及。  **默认取值**：  1
 
         :param cur_page: The cur_page of this QueryJobsReq.
         :type cur_page: int
@@ -139,7 +141,7 @@ class QueryJobsReq:
     def per_page(self):
         r"""Gets the per_page of this QueryJobsReq.
 
-        每页记录数
+        **参数解释**：  每页返回的记录数，用于分页查询时控制每页数据量。  **约束限制**：  - 填0时，cur_page只能填0或1。  **取值范围**：  0-100。  **默认取值**：  10
 
         :return: The per_page of this QueryJobsReq.
         :rtype: int
@@ -150,7 +152,7 @@ class QueryJobsReq:
     def per_page(self, per_page):
         r"""Sets the per_page of this QueryJobsReq.
 
-        每页记录数
+        **参数解释**：  每页返回的记录数，用于分页查询时控制每页数据量。  **约束限制**：  - 填0时，cur_page只能填0或1。  **取值范围**：  0-100。  **默认取值**：  10
 
         :param per_page: The per_page of this QueryJobsReq.
         :type per_page: int
@@ -161,7 +163,7 @@ class QueryJobsReq:
     def db_use_type(self):
         r"""Gets the db_use_type of this QueryJobsReq.
 
-        迁移场景，migration:实时迁移,sync:实时同步,cloudDataGuard:实时灾备
+        **参数解释**：  迁移任务的业务场景类型。  **约束限制**：  不涉及。  **取值范围**：  - migration：实时迁移 - sync：实时同步 - cloudDataGuard：实时灾备  **默认取值**：  不涉及
 
         :return: The db_use_type of this QueryJobsReq.
         :rtype: str
@@ -172,7 +174,7 @@ class QueryJobsReq:
     def db_use_type(self, db_use_type):
         r"""Sets the db_use_type of this QueryJobsReq.
 
-        迁移场景，migration:实时迁移,sync:实时同步,cloudDataGuard:实时灾备
+        **参数解释**：  迁移任务的业务场景类型。  **约束限制**：  不涉及。  **取值范围**：  - migration：实时迁移 - sync：实时同步 - cloudDataGuard：实时灾备  **默认取值**：  不涉及
 
         :param db_use_type: The db_use_type of this QueryJobsReq.
         :type db_use_type: str
@@ -183,7 +185,7 @@ class QueryJobsReq:
     def engine_type(self):
         r"""Gets the engine_type of this QueryJobsReq.
 
-        引擎类型,mysql：迁移，同步使用。mongodb：迁移使用。cloudDataGuard-mysql：灾备使用。
+        **参数解释**：  DRS任务引擎类型。  **约束限制**：  不涉及。  **取值范围**：  - mysql：MySQL到MySQL迁移，MySQL到MySQL同步 - mongodb：MongoDB到DDS迁移与同步 - cloudDataGuard-mysql：MySQL到MySQL灾备 - gaussdbv5：GaussDB同步 - mysql-to-kafka：MySQL到Kafka同步 - taurus-to-kafka：TaurusDB到Kafka同步 - gaussdbv5ha-to-kafka：GaussDB集中式版到Kafka同步 - postgresql：PostgreSQL到PostgreSQL同步  **默认取值**：  不涉及
 
         :return: The engine_type of this QueryJobsReq.
         :rtype: str
@@ -194,7 +196,7 @@ class QueryJobsReq:
     def engine_type(self, engine_type):
         r"""Sets the engine_type of this QueryJobsReq.
 
-        引擎类型,mysql：迁移，同步使用。mongodb：迁移使用。cloudDataGuard-mysql：灾备使用。
+        **参数解释**：  DRS任务引擎类型。  **约束限制**：  不涉及。  **取值范围**：  - mysql：MySQL到MySQL迁移，MySQL到MySQL同步 - mongodb：MongoDB到DDS迁移与同步 - cloudDataGuard-mysql：MySQL到MySQL灾备 - gaussdbv5：GaussDB同步 - mysql-to-kafka：MySQL到Kafka同步 - taurus-to-kafka：TaurusDB到Kafka同步 - gaussdbv5ha-to-kafka：GaussDB集中式版到Kafka同步 - postgresql：PostgreSQL到PostgreSQL同步  **默认取值**：  不涉及
 
         :param engine_type: The engine_type of this QueryJobsReq.
         :type engine_type: str
@@ -205,7 +207,7 @@ class QueryJobsReq:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this QueryJobsReq.
 
-        企业项目
+        **参数解释**：  企业项目ID，用于按企业项目过滤查询结果。  **约束限制**：  - 不传值时设置为null，不能设置为空字符串。 - 当企业项目开关打开时，可以传值。  **取值范围**：  不涉及。  **默认取值**：  null
 
         :return: The enterprise_project_id of this QueryJobsReq.
         :rtype: str
@@ -216,7 +218,7 @@ class QueryJobsReq:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this QueryJobsReq.
 
-        企业项目
+        **参数解释**：  企业项目ID，用于按企业项目过滤查询结果。  **约束限制**：  - 不传值时设置为null，不能设置为空字符串。 - 当企业项目开关打开时，可以传值。  **取值范围**：  不涉及。  **默认取值**：  null
 
         :param enterprise_project_id: The enterprise_project_id of this QueryJobsReq.
         :type enterprise_project_id: str
@@ -227,7 +229,7 @@ class QueryJobsReq:
     def name(self):
         r"""Gets the name of this QueryJobsReq.
 
-        Name或ID。支持传入多个任务ID，逗号分隔，最多100个。
+        **参数解释**：  任务名称或ID，用于按任务名称或ID过滤查询结果。支持传入多个任务ID，逗号分隔，最多100个。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The name of this QueryJobsReq.
         :rtype: str
@@ -238,7 +240,7 @@ class QueryJobsReq:
     def name(self, name):
         r"""Sets the name of this QueryJobsReq.
 
-        Name或ID。支持传入多个任务ID，逗号分隔，最多100个。
+        **参数解释**：  任务名称或ID，用于按任务名称或ID过滤查询结果。支持传入多个任务ID，逗号分隔，最多100个。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param name: The name of this QueryJobsReq.
         :type name: str
@@ -249,7 +251,7 @@ class QueryJobsReq:
     def net_type(self):
         r"""Gets the net_type of this QueryJobsReq.
 
-        网络类型
+        **参数解释**：  任务使用的网络类型。  **约束限制**：  不涉及。  **取值范围**：  - vpn：虚拟专用网络 - vpc：虚拟私有云 - eip：弹性公网IP  **默认取值**：  不涉及
 
         :return: The net_type of this QueryJobsReq.
         :rtype: str
@@ -260,7 +262,7 @@ class QueryJobsReq:
     def net_type(self, net_type):
         r"""Sets the net_type of this QueryJobsReq.
 
-        网络类型
+        **参数解释**：  任务使用的网络类型。  **约束限制**：  不涉及。  **取值范围**：  - vpn：虚拟专用网络 - vpc：虚拟私有云 - eip：弹性公网IP  **默认取值**：  不涉及
 
         :param net_type: The net_type of this QueryJobsReq.
         :type net_type: str
@@ -271,7 +273,7 @@ class QueryJobsReq:
     def service_name(self):
         r"""Gets the service_name of this QueryJobsReq.
 
-        开启EPS时使用，值为eps
+        **参数解释**：  服务名称，开启EPS（企业项目服务）时使用。  **约束限制**：  不涉及。  **取值范围**：  - eps：企业项目服务  **默认取值**：  不涉及
 
         :return: The service_name of this QueryJobsReq.
         :rtype: str
@@ -282,7 +284,7 @@ class QueryJobsReq:
     def service_name(self, service_name):
         r"""Sets the service_name of this QueryJobsReq.
 
-        开启EPS时使用，值为eps
+        **参数解释**：  服务名称，开启EPS（企业项目服务）时使用。  **约束限制**：  不涉及。  **取值范围**：  - eps：企业项目服务  **默认取值**：  不涉及
 
         :param service_name: The service_name of this QueryJobsReq.
         :type service_name: str
@@ -293,7 +295,7 @@ class QueryJobsReq:
     def status(self):
         r"""Gets the status of this QueryJobsReq.
 
-        任务状态。 - CREATING：创建中 - CREATE_FAILED：创建失败 - CONFIGURATION：配置中 - STARTJOBING：启动中 - WAITING_FOR_START：等待启动中 - START_JOB_FAILED：启动失败 - PAUSING：已暂停 - FULL_TRANSFER_STARTED：全量开始，灾备场景下为初始化 - FULL_TRANSFER_FAILED：全量失败，灾备场景下为初始化失败 - FULL_TRANSFER_COMPLETE：全量完成，灾备场景下为初始化完成 - INCRE_TRANSFER_STARTED：增量开始，灾备场景下为灾备中 - INCRE_TRANSFER_FAILED：增量失败，灾备场景下为灾备异常 - RELEASE_RESOURCE_STARTED：结束任务中 - RELEASE_RESOURCE_FAILED：结束任务失败 - RELEASE_RESOURCE_COMPLETE：已结束 - REBUILD_NODE_STARTED：故障恢复中 - REBUILD_NODE_FAILED：故障恢复失败 - CHANGE_JOB_STARTED：任务变更中 - CHANGE_JOB_FAILED：任务变更失败 - DELETED：已删除 - CHILD_TRANSFER_STARTING：再编辑子任务启动中 - CHILD_TRANSFER_STARTED：再编辑子任务迁移中 - CHILD_TRANSFER_COMPLETE：再编辑子任务迁移完成 - CHILD_TRANSFER_FAILED：再编辑子任务迁移失败 - RELEASE_CHILD_TRANSFER_STARTED：再编辑子任务结束中 - RELEASE_CHILD_TRANSFER_COMPLETE：再编辑子任务已结束 - NODE_UPGRADE_START：升级开始 - NODE_UPGRADE_COMPLETE：升级完成 - NODE_UPGRADE_FAILED：升级失败
+        **参数解释**：  任务当前运行状态，用于按任务状态过滤查询结果。  **约束限制**：  不涉及。  **取值范围**：  - CREATING：创建中 - CREATE_FAILED：创建失败 - CONFIGURATION：配置中 - STARTJOBING：启动中 - WAITING_FOR_START：等待启动中 - START_JOB_FAILED：启动失败 - PAUSING：已暂停 - FULL_TRANSFER_STARTED：全量开始，灾备场景下为初始化 - FULL_TRANSFER_FAILED：全量失败，灾备场景下为初始化失败 - FULL_TRANSFER_COMPLETE：全量完成，灾备场景下为初始化完成 - INCRE_TRANSFER_STARTED：增量开始，灾备场景下为灾备中 - INCRE_TRANSFER_FAILED：增量失败，灾备场景下为灾备异常 - RELEASE_RESOURCE_STARTED：结束任务中 - RELEASE_RESOURCE_FAILED：结束任务失败 - RELEASE_RESOURCE_COMPLETE：已结束 - REBUILD_NODE_STARTED：故障恢复中 - REBUILD_NODE_FAILED：故障恢复失败 - CHANGE_JOB_STARTED：任务变更中 - CHANGE_JOB_FAILED：任务变更失败 - DELETED：已删除 - CHILD_TRANSFER_STARTING：再编辑子任务启动中 - CHILD_TRANSFER_STARTED：再编辑子任务迁移中 - CHILD_TRANSFER_COMPLETE：再编辑子任务迁移完成 - CHILD_TRANSFER_FAILED：再编辑子任务迁移失败 - RELEASE_CHILD_TRANSFER_STARTED：再编辑子任务结束中 - RELEASE_CHILD_TRANSFER_COMPLETE：再编辑子任务已结束 - NODE_UPGRADE_START：升级开始 - NODE_UPGRADE_COMPLETE：升级完成 - NODE_UPGRADE_FAILED：升级失败  **默认取值**：  不涉及
 
         :return: The status of this QueryJobsReq.
         :rtype: str
@@ -304,7 +306,7 @@ class QueryJobsReq:
     def status(self, status):
         r"""Sets the status of this QueryJobsReq.
 
-        任务状态。 - CREATING：创建中 - CREATE_FAILED：创建失败 - CONFIGURATION：配置中 - STARTJOBING：启动中 - WAITING_FOR_START：等待启动中 - START_JOB_FAILED：启动失败 - PAUSING：已暂停 - FULL_TRANSFER_STARTED：全量开始，灾备场景下为初始化 - FULL_TRANSFER_FAILED：全量失败，灾备场景下为初始化失败 - FULL_TRANSFER_COMPLETE：全量完成，灾备场景下为初始化完成 - INCRE_TRANSFER_STARTED：增量开始，灾备场景下为灾备中 - INCRE_TRANSFER_FAILED：增量失败，灾备场景下为灾备异常 - RELEASE_RESOURCE_STARTED：结束任务中 - RELEASE_RESOURCE_FAILED：结束任务失败 - RELEASE_RESOURCE_COMPLETE：已结束 - REBUILD_NODE_STARTED：故障恢复中 - REBUILD_NODE_FAILED：故障恢复失败 - CHANGE_JOB_STARTED：任务变更中 - CHANGE_JOB_FAILED：任务变更失败 - DELETED：已删除 - CHILD_TRANSFER_STARTING：再编辑子任务启动中 - CHILD_TRANSFER_STARTED：再编辑子任务迁移中 - CHILD_TRANSFER_COMPLETE：再编辑子任务迁移完成 - CHILD_TRANSFER_FAILED：再编辑子任务迁移失败 - RELEASE_CHILD_TRANSFER_STARTED：再编辑子任务结束中 - RELEASE_CHILD_TRANSFER_COMPLETE：再编辑子任务已结束 - NODE_UPGRADE_START：升级开始 - NODE_UPGRADE_COMPLETE：升级完成 - NODE_UPGRADE_FAILED：升级失败
+        **参数解释**：  任务当前运行状态，用于按任务状态过滤查询结果。  **约束限制**：  不涉及。  **取值范围**：  - CREATING：创建中 - CREATE_FAILED：创建失败 - CONFIGURATION：配置中 - STARTJOBING：启动中 - WAITING_FOR_START：等待启动中 - START_JOB_FAILED：启动失败 - PAUSING：已暂停 - FULL_TRANSFER_STARTED：全量开始，灾备场景下为初始化 - FULL_TRANSFER_FAILED：全量失败，灾备场景下为初始化失败 - FULL_TRANSFER_COMPLETE：全量完成，灾备场景下为初始化完成 - INCRE_TRANSFER_STARTED：增量开始，灾备场景下为灾备中 - INCRE_TRANSFER_FAILED：增量失败，灾备场景下为灾备异常 - RELEASE_RESOURCE_STARTED：结束任务中 - RELEASE_RESOURCE_FAILED：结束任务失败 - RELEASE_RESOURCE_COMPLETE：已结束 - REBUILD_NODE_STARTED：故障恢复中 - REBUILD_NODE_FAILED：故障恢复失败 - CHANGE_JOB_STARTED：任务变更中 - CHANGE_JOB_FAILED：任务变更失败 - DELETED：已删除 - CHILD_TRANSFER_STARTING：再编辑子任务启动中 - CHILD_TRANSFER_STARTED：再编辑子任务迁移中 - CHILD_TRANSFER_COMPLETE：再编辑子任务迁移完成 - CHILD_TRANSFER_FAILED：再编辑子任务迁移失败 - RELEASE_CHILD_TRANSFER_STARTED：再编辑子任务结束中 - RELEASE_CHILD_TRANSFER_COMPLETE：再编辑子任务已结束 - NODE_UPGRADE_START：升级开始 - NODE_UPGRADE_COMPLETE：升级完成 - NODE_UPGRADE_FAILED：升级失败  **默认取值**：  不涉及
 
         :param status: The status of this QueryJobsReq.
         :type status: str
@@ -315,7 +317,7 @@ class QueryJobsReq:
     def tags(self):
         r"""Gets the tags of this QueryJobsReq.
 
-        标签
+        **参数解释**：  标签信息，用于按标签过滤查询结果，格式为key/value键值对。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The tags of this QueryJobsReq.
         :rtype: dict(str, str)
@@ -326,7 +328,7 @@ class QueryJobsReq:
     def tags(self, tags):
         r"""Sets the tags of this QueryJobsReq.
 
-        标签
+        **参数解释**：  标签信息，用于按标签过滤查询结果，格式为key/value键值对。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param tags: The tags of this QueryJobsReq.
         :type tags: dict(str, str)
@@ -337,7 +339,7 @@ class QueryJobsReq:
     def instance_ids(self):
         r"""Gets the instance_ids of this QueryJobsReq.
 
-        数据库实例ID列表，最多支持10个
+        **参数解释**：  数据库实例ID列表，用于按数据库实例过滤查询结果。  **约束限制**：  - 最多支持10个实例ID。  **取值范围**：  不涉及。  **默认取值**：  null，表示不使用数据库实例ID过滤
 
         :return: The instance_ids of this QueryJobsReq.
         :rtype: list[str]
@@ -348,7 +350,7 @@ class QueryJobsReq:
     def instance_ids(self, instance_ids):
         r"""Sets the instance_ids of this QueryJobsReq.
 
-        数据库实例ID列表，最多支持10个
+        **参数解释**：  数据库实例ID列表，用于按数据库实例过滤查询结果。  **约束限制**：  - 最多支持10个实例ID。  **取值范围**：  不涉及。  **默认取值**：  null，表示不使用数据库实例ID过滤
 
         :param instance_ids: The instance_ids of this QueryJobsReq.
         :type instance_ids: list[str]
@@ -359,7 +361,7 @@ class QueryJobsReq:
     def instance_ip(self):
         r"""Gets the instance_ip of this QueryJobsReq.
 
-        DRS绑定数据库实例IP
+        **参数解释**：  DRS绑定的数据库实例IP，用于按数据库实例IP过滤查询结果。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  空字符串，表示不使用DRS绑定数据库IP过滤
 
         :return: The instance_ip of this QueryJobsReq.
         :rtype: str
@@ -370,7 +372,7 @@ class QueryJobsReq:
     def instance_ip(self, instance_ip):
         r"""Sets the instance_ip of this QueryJobsReq.
 
-        DRS绑定数据库实例IP
+        **参数解释**：  DRS绑定的数据库实例IP，用于按数据库实例IP过滤查询结果。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  空字符串，表示不使用DRS绑定数据库IP过滤
 
         :param instance_ip: The instance_ip of this QueryJobsReq.
         :type instance_ip: str

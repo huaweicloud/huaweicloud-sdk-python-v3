@@ -1291,7 +1291,7 @@ class AsAsyncClient(Client):
     def create_scaling_tag_info_async(self, request):
         r"""创建标签
 
-        创建或删除指定资源的标签。每个伸缩组最多添加10个标签。
+        创建或删除指定资源的标签。每个伸缩组或伸缩配置最多添加10个标签。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1825,7 +1825,7 @@ class AsAsyncClient(Client):
     def delete_scaling_tag_info_async(self, request):
         r"""删除标签
 
-        创建或删除指定资源的标签。每个伸缩组最多添加10个标签。
+        创建或删除指定资源的标签。每个伸缩组或伸缩配置最多添加10个标签。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

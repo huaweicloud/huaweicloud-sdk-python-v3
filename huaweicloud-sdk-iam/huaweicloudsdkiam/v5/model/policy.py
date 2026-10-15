@@ -59,7 +59,7 @@ class Policy:
         :type default_version_id: str
         :param attachment_count: 附加了本身份策略的实体数量。
         :type attachment_count: int
-        :param description: 身份策略描述。
+        :param description: **参数解释**： 身份策略描述信息。  **约束限制**： 不涉及。  **取值范围**： 长度范围为[0,1000]。  **默认取值**： 不涉及。 
         :type description: str
         :param created_at: 身份策略创建时间。
         :type created_at: datetime
@@ -247,7 +247,7 @@ class Policy:
     def description(self):
         r"""Gets the description of this Policy.
 
-        身份策略描述。
+        **参数解释**： 身份策略描述信息。  **约束限制**： 不涉及。  **取值范围**： 长度范围为[0,1000]。  **默认取值**： 不涉及。 
 
         :return: The description of this Policy.
         :rtype: str
@@ -258,7 +258,7 @@ class Policy:
     def description(self, description):
         r"""Sets the description of this Policy.
 
-        身份策略描述。
+        **参数解释**： 身份策略描述信息。  **约束限制**： 不涉及。  **取值范围**： 长度范围为[0,1000]。  **默认取值**： 不涉及。 
 
         :param description: The description of this Policy.
         :type description: str

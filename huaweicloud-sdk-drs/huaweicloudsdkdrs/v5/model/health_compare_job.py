@@ -20,7 +20,8 @@ class HealthCompareJob:
         'status': 'str',
         'start_time': 'str',
         'end_time': 'str',
-        'compute_type': 'str'
+        'compute_type': 'str',
+        'database_info': 'object'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class HealthCompareJob:
         'status': 'status',
         'start_time': 'start_time',
         'end_time': 'end_time',
-        'compute_type': 'compute_type'
+        'compute_type': 'compute_type',
+        'database_info': 'database_info'
     }
 
-    def __init__(self, id=None, type=None, status=None, start_time=None, end_time=None, compute_type=None):
+    def __init__(self, id=None, type=None, status=None, start_time=None, end_time=None, compute_type=None, database_info=None):
         r"""HealthCompareJob
 
         The model defined in huaweicloud sdk
@@ -49,6 +51,8 @@ class HealthCompareJob:
         :type end_time: str
         :param compute_type: 对比计算资源。
         :type compute_type: str
+        :param database_info: 灾备数据库信息。
+        :type database_info: object
         """
         
         
@@ -59,6 +63,7 @@ class HealthCompareJob:
         self._start_time = None
         self._end_time = None
         self._compute_type = None
+        self._database_info = None
         self.discriminator = None
 
         if id is not None:
@@ -73,6 +78,8 @@ class HealthCompareJob:
             self.end_time = end_time
         if compute_type is not None:
             self.compute_type = compute_type
+        if database_info is not None:
+            self.database_info = database_info
 
     @property
     def id(self):
@@ -205,6 +212,28 @@ class HealthCompareJob:
         :type compute_type: str
         """
         self._compute_type = compute_type
+
+    @property
+    def database_info(self):
+        r"""Gets the database_info of this HealthCompareJob.
+
+        灾备数据库信息。
+
+        :return: The database_info of this HealthCompareJob.
+        :rtype: object
+        """
+        return self._database_info
+
+    @database_info.setter
+    def database_info(self, database_info):
+        r"""Sets the database_info of this HealthCompareJob.
+
+        灾备数据库信息。
+
+        :param database_info: The database_info of this HealthCompareJob.
+        :type database_info: object
+        """
+        self._database_info = database_info
 
     def to_dict(self):
         result = {}

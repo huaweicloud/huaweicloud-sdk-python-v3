@@ -27,7 +27,7 @@ class JobNodeSpecInfo:
 
         The model defined in huaweicloud sdk
 
-        :param node_type: 实例规格编码。取值： - micro：极小规格。 - small：小规格。 - medium：中规格。 - high：大规格。
+        :param node_type: **参数解释**：  DRS任务实例规格编码，决定迁移实例的计算资源大小。  **约束限制**：  除实时同步任务以外，其他类型任务的规格只支持取high。  **取值范围**：  - micro：极小规格 - small：小规格 - medium：中规格 - high：大规格  **默认取值**：  不涉及
         :type node_type: str
         """
         
@@ -42,7 +42,7 @@ class JobNodeSpecInfo:
     def node_type(self):
         r"""Gets the node_type of this JobNodeSpecInfo.
 
-        实例规格编码。取值： - micro：极小规格。 - small：小规格。 - medium：中规格。 - high：大规格。
+        **参数解释**：  DRS任务实例规格编码，决定迁移实例的计算资源大小。  **约束限制**：  除实时同步任务以外，其他类型任务的规格只支持取high。  **取值范围**：  - micro：极小规格 - small：小规格 - medium：中规格 - high：大规格  **默认取值**：  不涉及
 
         :return: The node_type of this JobNodeSpecInfo.
         :rtype: str
@@ -53,7 +53,7 @@ class JobNodeSpecInfo:
     def node_type(self, node_type):
         r"""Sets the node_type of this JobNodeSpecInfo.
 
-        实例规格编码。取值： - micro：极小规格。 - small：小规格。 - medium：中规格。 - high：大规格。
+        **参数解释**：  DRS任务实例规格编码，决定迁移实例的计算资源大小。  **约束限制**：  除实时同步任务以外，其他类型任务的规格只支持取high。  **取值范围**：  - micro：极小规格 - small：小规格 - medium：中规格 - high：大规格  **默认取值**：  不涉及
 
         :param node_type: The node_type of this JobNodeSpecInfo.
         :type node_type: str

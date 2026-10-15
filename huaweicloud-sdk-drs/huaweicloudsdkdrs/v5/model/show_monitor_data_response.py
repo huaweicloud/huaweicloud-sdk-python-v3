@@ -68,47 +68,47 @@ class ShowMonitorDataResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param bandwidth: EIP带宽，单位：MB/S
+        :param bandwidth: **参数解释**：  EIP带宽，用于评估公网传输速率是否满足迁移需求。单位：MB/s。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type bandwidth: str
-        :param is_src_normal: 源库连接状态是否正常。
+        :param is_src_normal: **参数解释**：  源库连接状态是否正常。  **约束限制**：  不涉及。  **取值范围**：  - true：源库连接正常 - false：源库连接异常  **默认取值**：  不涉及
         :type is_src_normal: bool
-        :param is_dst_normal: 目标库连接状态是否正常。
+        :param is_dst_normal: **参数解释**：  目标库连接状态是否正常。  **约束限制**：  不涉及。  **取值范围**：  - true：目标库连接正常 - false：目标库连接异常  **默认取值**：  不涉及
         :type is_dst_normal: bool
-        :param src_offset: 源库offSet位点。
+        :param src_offset: **参数解释**：  源库offset位点，用于判断源库数据同步进度。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type src_offset: str
-        :param node_offset: 迁移实例offSet位点。
+        :param node_offset: **参数解释**：  迁移实例offset位点，用于判断迁移实例数据同步进度。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type node_offset: str
-        :param dst_offset: 目标库offSet位点。
+        :param dst_offset: **参数解释**：  目标库offset位点，用于判断目标库数据同步进度。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type dst_offset: str
-        :param src_delay: 源库时延。
+        :param src_delay: **参数解释**：  源库时延，用于判断数据同步的实时性。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type src_delay: int
-        :param dst_delay: 目标库时延。
+        :param dst_delay: **参数解释**：  目标库时延，用于判断数据同步的实时性。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type dst_delay: int
-        :param src_rps: 源库RPS。
+        :param src_rps: **参数解释**：  源库RPS（Requests Per Second，每秒请求数），用于评估源库的数据变更速率。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type src_rps: str
-        :param src_io: 源库IO。
+        :param src_io: **参数解释**：  源库IO（Input/Output，每秒输入输出操作量），用于评估源库的磁盘读写负载。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type src_io: str
-        :param dst_rps: 目标库RPS。
+        :param dst_rps: **参数解释**：  目标库RPS（Requests Per Second，每秒请求数），用于评估目标库的数据写入速率。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type dst_rps: str
-        :param dst_io: 目标库IO。
+        :param dst_io: **参数解释**：  目标库IO（Input/Output，每秒输入输出操作量），用于评估目标库的磁盘读写负载。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type dst_io: str
-        :param trans_data: 迁移数据量。单位：MB
+        :param trans_data: **参数解释**：  已迁移的数据量，用于评估迁移进度。单位：MB。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type trans_data: str
-        :param trans_lines: 迁移数据行数。
+        :param trans_lines: **参数解释**：  已迁移的数据行数，用于评估迁移进度。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type trans_lines: str
-        :param used_volumes: 磁盘使用量。单位：GB
+        :param used_volumes: **参数解释**：  迁移实例磁盘使用量，用于监控迁移实例存储容量。单位：GB。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type used_volumes: str
-        :param used_memory: 内存使用量。单位：MB
+        :param used_memory: **参数解释**：  迁移实例内存使用量，用于监控迁移实例内存消耗。单位：MB。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type used_memory: str
-        :param used_cpu_percent: CPU使用百分比。
+        :param used_cpu_percent: **参数解释**：  迁移实例CPU使用百分比，用于监控迁移实例计算负载。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type used_cpu_percent: str
-        :param node_volume_size: node磁盘总大小。单位：GB
+        :param node_volume_size: **参数解释**：  迁移实例磁盘总大小，与used_volumes配合评估磁盘使用率。单位：GB。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type node_volume_size: int
-        :param node_memory_size: node内存总大小。单位：MB
+        :param node_memory_size: **参数解释**：  迁移实例内存总大小，与used_memory配合评估内存使用率。单位：MB。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type node_memory_size: int
-        :param update_time: 更新时间。
+        :param update_time: **参数解释**：  监控数据的更新时间，UTC格式，如2023-07-19T03:09:25Z。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type update_time: str
-        :param apply_rate: 同步速度。单位：byte/s
+        :param apply_rate: **参数解释**：  同步速度，用于评估数据回放速率。单位：byte/s。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type apply_rate: int
         """
         
@@ -184,7 +184,7 @@ class ShowMonitorDataResponse(SdkResponse):
     def bandwidth(self):
         r"""Gets the bandwidth of this ShowMonitorDataResponse.
 
-        EIP带宽，单位：MB/S
+        **参数解释**：  EIP带宽，用于评估公网传输速率是否满足迁移需求。单位：MB/s。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The bandwidth of this ShowMonitorDataResponse.
         :rtype: str
@@ -195,7 +195,7 @@ class ShowMonitorDataResponse(SdkResponse):
     def bandwidth(self, bandwidth):
         r"""Sets the bandwidth of this ShowMonitorDataResponse.
 
-        EIP带宽，单位：MB/S
+        **参数解释**：  EIP带宽，用于评估公网传输速率是否满足迁移需求。单位：MB/s。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param bandwidth: The bandwidth of this ShowMonitorDataResponse.
         :type bandwidth: str
@@ -206,7 +206,7 @@ class ShowMonitorDataResponse(SdkResponse):
     def is_src_normal(self):
         r"""Gets the is_src_normal of this ShowMonitorDataResponse.
 
-        源库连接状态是否正常。
+        **参数解释**：  源库连接状态是否正常。  **约束限制**：  不涉及。  **取值范围**：  - true：源库连接正常 - false：源库连接异常  **默认取值**：  不涉及
 
         :return: The is_src_normal of this ShowMonitorDataResponse.
         :rtype: bool
@@ -217,7 +217,7 @@ class ShowMonitorDataResponse(SdkResponse):
     def is_src_normal(self, is_src_normal):
         r"""Sets the is_src_normal of this ShowMonitorDataResponse.
 
-        源库连接状态是否正常。
+        **参数解释**：  源库连接状态是否正常。  **约束限制**：  不涉及。  **取值范围**：  - true：源库连接正常 - false：源库连接异常  **默认取值**：  不涉及
 
         :param is_src_normal: The is_src_normal of this ShowMonitorDataResponse.
         :type is_src_normal: bool
@@ -228,7 +228,7 @@ class ShowMonitorDataResponse(SdkResponse):
     def is_dst_normal(self):
         r"""Gets the is_dst_normal of this ShowMonitorDataResponse.
 
-        目标库连接状态是否正常。
+        **参数解释**：  目标库连接状态是否正常。  **约束限制**：  不涉及。  **取值范围**：  - true：目标库连接正常 - false：目标库连接异常  **默认取值**：  不涉及
 
         :return: The is_dst_normal of this ShowMonitorDataResponse.
         :rtype: bool
@@ -239,7 +239,7 @@ class ShowMonitorDataResponse(SdkResponse):
     def is_dst_normal(self, is_dst_normal):
         r"""Sets the is_dst_normal of this ShowMonitorDataResponse.
 
-        目标库连接状态是否正常。
+        **参数解释**：  目标库连接状态是否正常。  **约束限制**：  不涉及。  **取值范围**：  - true：目标库连接正常 - false：目标库连接异常  **默认取值**：  不涉及
 
         :param is_dst_normal: The is_dst_normal of this ShowMonitorDataResponse.
         :type is_dst_normal: bool
@@ -250,7 +250,7 @@ class ShowMonitorDataResponse(SdkResponse):
     def src_offset(self):
         r"""Gets the src_offset of this ShowMonitorDataResponse.
 
-        源库offSet位点。
+        **参数解释**：  源库offset位点，用于判断源库数据同步进度。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The src_offset of this ShowMonitorDataResponse.
         :rtype: str
@@ -261,7 +261,7 @@ class ShowMonitorDataResponse(SdkResponse):
     def src_offset(self, src_offset):
         r"""Sets the src_offset of this ShowMonitorDataResponse.
 
-        源库offSet位点。
+        **参数解释**：  源库offset位点，用于判断源库数据同步进度。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param src_offset: The src_offset of this ShowMonitorDataResponse.
         :type src_offset: str
@@ -272,7 +272,7 @@ class ShowMonitorDataResponse(SdkResponse):
     def node_offset(self):
         r"""Gets the node_offset of this ShowMonitorDataResponse.
 
-        迁移实例offSet位点。
+        **参数解释**：  迁移实例offset位点，用于判断迁移实例数据同步进度。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The node_offset of this ShowMonitorDataResponse.
         :rtype: str
@@ -283,7 +283,7 @@ class ShowMonitorDataResponse(SdkResponse):
     def node_offset(self, node_offset):
         r"""Sets the node_offset of this ShowMonitorDataResponse.
 
-        迁移实例offSet位点。
+        **参数解释**：  迁移实例offset位点，用于判断迁移实例数据同步进度。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param node_offset: The node_offset of this ShowMonitorDataResponse.
         :type node_offset: str
@@ -294,7 +294,7 @@ class ShowMonitorDataResponse(SdkResponse):
     def dst_offset(self):
         r"""Gets the dst_offset of this ShowMonitorDataResponse.
 
-        目标库offSet位点。
+        **参数解释**：  目标库offset位点，用于判断目标库数据同步进度。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The dst_offset of this ShowMonitorDataResponse.
         :rtype: str
@@ -305,7 +305,7 @@ class ShowMonitorDataResponse(SdkResponse):
     def dst_offset(self, dst_offset):
         r"""Sets the dst_offset of this ShowMonitorDataResponse.
 
-        目标库offSet位点。
+        **参数解释**：  目标库offset位点，用于判断目标库数据同步进度。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param dst_offset: The dst_offset of this ShowMonitorDataResponse.
         :type dst_offset: str
@@ -316,7 +316,7 @@ class ShowMonitorDataResponse(SdkResponse):
     def src_delay(self):
         r"""Gets the src_delay of this ShowMonitorDataResponse.
 
-        源库时延。
+        **参数解释**：  源库时延，用于判断数据同步的实时性。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The src_delay of this ShowMonitorDataResponse.
         :rtype: int
@@ -327,7 +327,7 @@ class ShowMonitorDataResponse(SdkResponse):
     def src_delay(self, src_delay):
         r"""Sets the src_delay of this ShowMonitorDataResponse.
 
-        源库时延。
+        **参数解释**：  源库时延，用于判断数据同步的实时性。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param src_delay: The src_delay of this ShowMonitorDataResponse.
         :type src_delay: int
@@ -338,7 +338,7 @@ class ShowMonitorDataResponse(SdkResponse):
     def dst_delay(self):
         r"""Gets the dst_delay of this ShowMonitorDataResponse.
 
-        目标库时延。
+        **参数解释**：  目标库时延，用于判断数据同步的实时性。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The dst_delay of this ShowMonitorDataResponse.
         :rtype: int
@@ -349,7 +349,7 @@ class ShowMonitorDataResponse(SdkResponse):
     def dst_delay(self, dst_delay):
         r"""Sets the dst_delay of this ShowMonitorDataResponse.
 
-        目标库时延。
+        **参数解释**：  目标库时延，用于判断数据同步的实时性。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param dst_delay: The dst_delay of this ShowMonitorDataResponse.
         :type dst_delay: int
@@ -360,7 +360,7 @@ class ShowMonitorDataResponse(SdkResponse):
     def src_rps(self):
         r"""Gets the src_rps of this ShowMonitorDataResponse.
 
-        源库RPS。
+        **参数解释**：  源库RPS（Requests Per Second，每秒请求数），用于评估源库的数据变更速率。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The src_rps of this ShowMonitorDataResponse.
         :rtype: str
@@ -371,7 +371,7 @@ class ShowMonitorDataResponse(SdkResponse):
     def src_rps(self, src_rps):
         r"""Sets the src_rps of this ShowMonitorDataResponse.
 
-        源库RPS。
+        **参数解释**：  源库RPS（Requests Per Second，每秒请求数），用于评估源库的数据变更速率。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param src_rps: The src_rps of this ShowMonitorDataResponse.
         :type src_rps: str
@@ -382,7 +382,7 @@ class ShowMonitorDataResponse(SdkResponse):
     def src_io(self):
         r"""Gets the src_io of this ShowMonitorDataResponse.
 
-        源库IO。
+        **参数解释**：  源库IO（Input/Output，每秒输入输出操作量），用于评估源库的磁盘读写负载。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The src_io of this ShowMonitorDataResponse.
         :rtype: str
@@ -393,7 +393,7 @@ class ShowMonitorDataResponse(SdkResponse):
     def src_io(self, src_io):
         r"""Sets the src_io of this ShowMonitorDataResponse.
 
-        源库IO。
+        **参数解释**：  源库IO（Input/Output，每秒输入输出操作量），用于评估源库的磁盘读写负载。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param src_io: The src_io of this ShowMonitorDataResponse.
         :type src_io: str
@@ -404,7 +404,7 @@ class ShowMonitorDataResponse(SdkResponse):
     def dst_rps(self):
         r"""Gets the dst_rps of this ShowMonitorDataResponse.
 
-        目标库RPS。
+        **参数解释**：  目标库RPS（Requests Per Second，每秒请求数），用于评估目标库的数据写入速率。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The dst_rps of this ShowMonitorDataResponse.
         :rtype: str
@@ -415,7 +415,7 @@ class ShowMonitorDataResponse(SdkResponse):
     def dst_rps(self, dst_rps):
         r"""Sets the dst_rps of this ShowMonitorDataResponse.
 
-        目标库RPS。
+        **参数解释**：  目标库RPS（Requests Per Second，每秒请求数），用于评估目标库的数据写入速率。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param dst_rps: The dst_rps of this ShowMonitorDataResponse.
         :type dst_rps: str
@@ -426,7 +426,7 @@ class ShowMonitorDataResponse(SdkResponse):
     def dst_io(self):
         r"""Gets the dst_io of this ShowMonitorDataResponse.
 
-        目标库IO。
+        **参数解释**：  目标库IO（Input/Output，每秒输入输出操作量），用于评估目标库的磁盘读写负载。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The dst_io of this ShowMonitorDataResponse.
         :rtype: str
@@ -437,7 +437,7 @@ class ShowMonitorDataResponse(SdkResponse):
     def dst_io(self, dst_io):
         r"""Sets the dst_io of this ShowMonitorDataResponse.
 
-        目标库IO。
+        **参数解释**：  目标库IO（Input/Output，每秒输入输出操作量），用于评估目标库的磁盘读写负载。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param dst_io: The dst_io of this ShowMonitorDataResponse.
         :type dst_io: str
@@ -448,7 +448,7 @@ class ShowMonitorDataResponse(SdkResponse):
     def trans_data(self):
         r"""Gets the trans_data of this ShowMonitorDataResponse.
 
-        迁移数据量。单位：MB
+        **参数解释**：  已迁移的数据量，用于评估迁移进度。单位：MB。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The trans_data of this ShowMonitorDataResponse.
         :rtype: str
@@ -459,7 +459,7 @@ class ShowMonitorDataResponse(SdkResponse):
     def trans_data(self, trans_data):
         r"""Sets the trans_data of this ShowMonitorDataResponse.
 
-        迁移数据量。单位：MB
+        **参数解释**：  已迁移的数据量，用于评估迁移进度。单位：MB。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param trans_data: The trans_data of this ShowMonitorDataResponse.
         :type trans_data: str
@@ -470,7 +470,7 @@ class ShowMonitorDataResponse(SdkResponse):
     def trans_lines(self):
         r"""Gets the trans_lines of this ShowMonitorDataResponse.
 
-        迁移数据行数。
+        **参数解释**：  已迁移的数据行数，用于评估迁移进度。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The trans_lines of this ShowMonitorDataResponse.
         :rtype: str
@@ -481,7 +481,7 @@ class ShowMonitorDataResponse(SdkResponse):
     def trans_lines(self, trans_lines):
         r"""Sets the trans_lines of this ShowMonitorDataResponse.
 
-        迁移数据行数。
+        **参数解释**：  已迁移的数据行数，用于评估迁移进度。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param trans_lines: The trans_lines of this ShowMonitorDataResponse.
         :type trans_lines: str
@@ -492,7 +492,7 @@ class ShowMonitorDataResponse(SdkResponse):
     def used_volumes(self):
         r"""Gets the used_volumes of this ShowMonitorDataResponse.
 
-        磁盘使用量。单位：GB
+        **参数解释**：  迁移实例磁盘使用量，用于监控迁移实例存储容量。单位：GB。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The used_volumes of this ShowMonitorDataResponse.
         :rtype: str
@@ -503,7 +503,7 @@ class ShowMonitorDataResponse(SdkResponse):
     def used_volumes(self, used_volumes):
         r"""Sets the used_volumes of this ShowMonitorDataResponse.
 
-        磁盘使用量。单位：GB
+        **参数解释**：  迁移实例磁盘使用量，用于监控迁移实例存储容量。单位：GB。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param used_volumes: The used_volumes of this ShowMonitorDataResponse.
         :type used_volumes: str
@@ -514,7 +514,7 @@ class ShowMonitorDataResponse(SdkResponse):
     def used_memory(self):
         r"""Gets the used_memory of this ShowMonitorDataResponse.
 
-        内存使用量。单位：MB
+        **参数解释**：  迁移实例内存使用量，用于监控迁移实例内存消耗。单位：MB。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The used_memory of this ShowMonitorDataResponse.
         :rtype: str
@@ -525,7 +525,7 @@ class ShowMonitorDataResponse(SdkResponse):
     def used_memory(self, used_memory):
         r"""Sets the used_memory of this ShowMonitorDataResponse.
 
-        内存使用量。单位：MB
+        **参数解释**：  迁移实例内存使用量，用于监控迁移实例内存消耗。单位：MB。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param used_memory: The used_memory of this ShowMonitorDataResponse.
         :type used_memory: str
@@ -536,7 +536,7 @@ class ShowMonitorDataResponse(SdkResponse):
     def used_cpu_percent(self):
         r"""Gets the used_cpu_percent of this ShowMonitorDataResponse.
 
-        CPU使用百分比。
+        **参数解释**：  迁移实例CPU使用百分比，用于监控迁移实例计算负载。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The used_cpu_percent of this ShowMonitorDataResponse.
         :rtype: str
@@ -547,7 +547,7 @@ class ShowMonitorDataResponse(SdkResponse):
     def used_cpu_percent(self, used_cpu_percent):
         r"""Sets the used_cpu_percent of this ShowMonitorDataResponse.
 
-        CPU使用百分比。
+        **参数解释**：  迁移实例CPU使用百分比，用于监控迁移实例计算负载。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param used_cpu_percent: The used_cpu_percent of this ShowMonitorDataResponse.
         :type used_cpu_percent: str
@@ -558,7 +558,7 @@ class ShowMonitorDataResponse(SdkResponse):
     def node_volume_size(self):
         r"""Gets the node_volume_size of this ShowMonitorDataResponse.
 
-        node磁盘总大小。单位：GB
+        **参数解释**：  迁移实例磁盘总大小，与used_volumes配合评估磁盘使用率。单位：GB。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The node_volume_size of this ShowMonitorDataResponse.
         :rtype: int
@@ -569,7 +569,7 @@ class ShowMonitorDataResponse(SdkResponse):
     def node_volume_size(self, node_volume_size):
         r"""Sets the node_volume_size of this ShowMonitorDataResponse.
 
-        node磁盘总大小。单位：GB
+        **参数解释**：  迁移实例磁盘总大小，与used_volumes配合评估磁盘使用率。单位：GB。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param node_volume_size: The node_volume_size of this ShowMonitorDataResponse.
         :type node_volume_size: int
@@ -580,7 +580,7 @@ class ShowMonitorDataResponse(SdkResponse):
     def node_memory_size(self):
         r"""Gets the node_memory_size of this ShowMonitorDataResponse.
 
-        node内存总大小。单位：MB
+        **参数解释**：  迁移实例内存总大小，与used_memory配合评估内存使用率。单位：MB。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The node_memory_size of this ShowMonitorDataResponse.
         :rtype: int
@@ -591,7 +591,7 @@ class ShowMonitorDataResponse(SdkResponse):
     def node_memory_size(self, node_memory_size):
         r"""Sets the node_memory_size of this ShowMonitorDataResponse.
 
-        node内存总大小。单位：MB
+        **参数解释**：  迁移实例内存总大小，与used_memory配合评估内存使用率。单位：MB。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param node_memory_size: The node_memory_size of this ShowMonitorDataResponse.
         :type node_memory_size: int
@@ -602,7 +602,7 @@ class ShowMonitorDataResponse(SdkResponse):
     def update_time(self):
         r"""Gets the update_time of this ShowMonitorDataResponse.
 
-        更新时间。
+        **参数解释**：  监控数据的更新时间，UTC格式，如2023-07-19T03:09:25Z。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The update_time of this ShowMonitorDataResponse.
         :rtype: str
@@ -613,7 +613,7 @@ class ShowMonitorDataResponse(SdkResponse):
     def update_time(self, update_time):
         r"""Sets the update_time of this ShowMonitorDataResponse.
 
-        更新时间。
+        **参数解释**：  监控数据的更新时间，UTC格式，如2023-07-19T03:09:25Z。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param update_time: The update_time of this ShowMonitorDataResponse.
         :type update_time: str
@@ -624,7 +624,7 @@ class ShowMonitorDataResponse(SdkResponse):
     def apply_rate(self):
         r"""Gets the apply_rate of this ShowMonitorDataResponse.
 
-        同步速度。单位：byte/s
+        **参数解释**：  同步速度，用于评估数据回放速率。单位：byte/s。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The apply_rate of this ShowMonitorDataResponse.
         :rtype: int
@@ -635,7 +635,7 @@ class ShowMonitorDataResponse(SdkResponse):
     def apply_rate(self, apply_rate):
         r"""Sets the apply_rate of this ShowMonitorDataResponse.
 
-        同步速度。单位：byte/s
+        **参数解释**：  同步速度，用于评估数据回放速率。单位：byte/s。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param apply_rate: The apply_rate of this ShowMonitorDataResponse.
         :type apply_rate: int

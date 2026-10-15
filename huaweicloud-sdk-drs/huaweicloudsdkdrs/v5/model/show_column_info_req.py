@@ -29,7 +29,7 @@ class ShowColumnInfoReq:
 
         The model defined in huaweicloud sdk
 
-        :param refresh: 是否重新从node获取列信息
+        :param refresh: 是否重新从node获取列信息，默认为否。
         :type refresh: bool
         :param object_ids: 列所属的对象信息
         :type object_ids: list[str]
@@ -41,7 +41,8 @@ class ShowColumnInfoReq:
         self._object_ids = None
         self.discriminator = None
 
-        self.refresh = refresh
+        if refresh is not None:
+            self.refresh = refresh
         if object_ids is not None:
             self.object_ids = object_ids
 
@@ -49,7 +50,7 @@ class ShowColumnInfoReq:
     def refresh(self):
         r"""Gets the refresh of this ShowColumnInfoReq.
 
-        是否重新从node获取列信息
+        是否重新从node获取列信息，默认为否。
 
         :return: The refresh of this ShowColumnInfoReq.
         :rtype: bool
@@ -60,7 +61,7 @@ class ShowColumnInfoReq:
     def refresh(self, refresh):
         r"""Sets the refresh of this ShowColumnInfoReq.
 
-        是否重新从node获取列信息
+        是否重新从node获取列信息，默认为否。
 
         :param refresh: The refresh of this ShowColumnInfoReq.
         :type refresh: bool

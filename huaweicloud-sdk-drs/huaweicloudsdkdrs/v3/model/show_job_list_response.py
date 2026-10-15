@@ -30,9 +30,9 @@ class ShowJobListResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total_record: 任务总数
+        :param total_record: **参数解释**：  任务总数，表示满足查询条件的任务记录总数量。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type total_record: int
-        :param jobs: 任务信息列表
+        :param jobs: **参数解释**：  任务信息列表，包含满足查询条件的所有任务详情。详情请参见JobInfo对象定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type jobs: list[:class:`huaweicloudsdkdrs.v3.JobInfo`]
         """
         
@@ -51,7 +51,7 @@ class ShowJobListResponse(SdkResponse):
     def total_record(self):
         r"""Gets the total_record of this ShowJobListResponse.
 
-        任务总数
+        **参数解释**：  任务总数，表示满足查询条件的任务记录总数量。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The total_record of this ShowJobListResponse.
         :rtype: int
@@ -62,7 +62,7 @@ class ShowJobListResponse(SdkResponse):
     def total_record(self, total_record):
         r"""Sets the total_record of this ShowJobListResponse.
 
-        任务总数
+        **参数解释**：  任务总数，表示满足查询条件的任务记录总数量。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param total_record: The total_record of this ShowJobListResponse.
         :type total_record: int
@@ -73,7 +73,7 @@ class ShowJobListResponse(SdkResponse):
     def jobs(self):
         r"""Gets the jobs of this ShowJobListResponse.
 
-        任务信息列表
+        **参数解释**：  任务信息列表，包含满足查询条件的所有任务详情。详情请参见JobInfo对象定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The jobs of this ShowJobListResponse.
         :rtype: list[:class:`huaweicloudsdkdrs.v3.JobInfo`]
@@ -84,7 +84,7 @@ class ShowJobListResponse(SdkResponse):
     def jobs(self, jobs):
         r"""Sets the jobs of this ShowJobListResponse.
 
-        任务信息列表
+        **参数解释**：  任务信息列表，包含满足查询条件的所有任务详情。详情请参见JobInfo对象定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param jobs: The jobs of this ShowJobListResponse.
         :type jobs: list[:class:`huaweicloudsdkdrs.v3.JobInfo`]

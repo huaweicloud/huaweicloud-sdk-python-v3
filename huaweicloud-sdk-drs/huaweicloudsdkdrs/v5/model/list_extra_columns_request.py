@@ -19,7 +19,8 @@ class ListExtraColumnsRequest:
         'x_language': 'str',
         'is_only_show_sent': 'bool',
         'offset': 'int',
-        'limit': 'int'
+        'limit': 'int',
+        'fetch_all': 'bool'
     }
 
     attribute_map = {
@@ -27,10 +28,11 @@ class ListExtraColumnsRequest:
         'x_language': 'X-Language',
         'is_only_show_sent': 'is_only_show_sent',
         'offset': 'offset',
-        'limit': 'limit'
+        'limit': 'limit',
+        'fetch_all': 'fetch_all'
     }
 
-    def __init__(self, job_id=None, x_language=None, is_only_show_sent=None, offset=None, limit=None):
+    def __init__(self, job_id=None, x_language=None, is_only_show_sent=None, offset=None, limit=None, fetch_all=None):
         r"""ListExtraColumnsRequest
 
         The model defined in huaweicloud sdk
@@ -45,6 +47,8 @@ class ListExtraColumnsRequest:
         :type offset: int
         :param limit: 查询返回记录的数量限制，默认为10。
         :type limit: int
+        :param fetch_all: 是否查询所有数据，值为\&quot;true\&quot;时会使得offset和limit参数失效并返回所有记录，默认值为\&quot;false\&quot;。
+        :type fetch_all: bool
         """
         
         
@@ -54,6 +58,7 @@ class ListExtraColumnsRequest:
         self._is_only_show_sent = None
         self._offset = None
         self._limit = None
+        self._fetch_all = None
         self.discriminator = None
 
         self.job_id = job_id
@@ -65,6 +70,8 @@ class ListExtraColumnsRequest:
             self.offset = offset
         if limit is not None:
             self.limit = limit
+        if fetch_all is not None:
+            self.fetch_all = fetch_all
 
     @property
     def job_id(self):
@@ -175,6 +182,28 @@ class ListExtraColumnsRequest:
         :type limit: int
         """
         self._limit = limit
+
+    @property
+    def fetch_all(self):
+        r"""Gets the fetch_all of this ListExtraColumnsRequest.
+
+        是否查询所有数据，值为\"true\"时会使得offset和limit参数失效并返回所有记录，默认值为\"false\"。
+
+        :return: The fetch_all of this ListExtraColumnsRequest.
+        :rtype: bool
+        """
+        return self._fetch_all
+
+    @fetch_all.setter
+    def fetch_all(self, fetch_all):
+        r"""Sets the fetch_all of this ListExtraColumnsRequest.
+
+        是否查询所有数据，值为\"true\"时会使得offset和limit参数失效并返回所有记录，默认值为\"false\"。
+
+        :param fetch_all: The fetch_all of this ListExtraColumnsRequest.
+        :type fetch_all: bool
+        """
+        self._fetch_all = fetch_all
 
     def to_dict(self):
         result = {}

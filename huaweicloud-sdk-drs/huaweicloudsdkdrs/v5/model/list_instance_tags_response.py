@@ -28,7 +28,7 @@ class ListInstanceTagsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param tags: 标签列表
+        :param tags: **参数解释**：  资源标签列表，包含该实例下所有标签的键值对信息。详情请参见BatchResourceTag。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type tags: list[:class:`huaweicloudsdkdrs.v5.BatchResourceTag`]
         """
         
@@ -44,7 +44,7 @@ class ListInstanceTagsResponse(SdkResponse):
     def tags(self):
         r"""Gets the tags of this ListInstanceTagsResponse.
 
-        标签列表
+        **参数解释**：  资源标签列表，包含该实例下所有标签的键值对信息。详情请参见BatchResourceTag。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The tags of this ListInstanceTagsResponse.
         :rtype: list[:class:`huaweicloudsdkdrs.v5.BatchResourceTag`]
@@ -55,7 +55,7 @@ class ListInstanceTagsResponse(SdkResponse):
     def tags(self, tags):
         r"""Sets the tags of this ListInstanceTagsResponse.
 
-        标签列表
+        **参数解释**：  资源标签列表，包含该实例下所有标签的键值对信息。详情请参见BatchResourceTag。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param tags: The tags of this ListInstanceTagsResponse.
         :type tags: list[:class:`huaweicloudsdkdrs.v5.BatchResourceTag`]

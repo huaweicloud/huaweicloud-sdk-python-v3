@@ -33,13 +33,13 @@ class DeleteJobResp:
 
         The model defined in huaweicloud sdk
 
-        :param id: 任务ID
+        :param id: **参数解释**：  结束或删除操作的任务ID，用于标识该操作结果对应的任务。  **约束限制**：  不涉及。  **取值范围**：  UUID格式字符串。  **默认取值**：  不涉及
         :type id: str
-        :param status: 状态
+        :param status: **参数解释**：  批量结束或删除操作的任务执行结果状态，表示该任务的操作是否成功。  **约束限制**：  不涉及。  **取值范围**：  - success：操作成功 - failed：操作失败  **默认取值**：  不涉及
         :type status: str
-        :param error_code: 错误码
+        :param error_code: **参数解释**：  错误码，当任务操作失败时返回的错误代码。  **约束限制**：  不涉及。  **取值范围**：  格式为DRS.XXXXXX。  **默认取值**：  不涉及
         :type error_code: str
-        :param error_msg: 错误信息
+        :param error_msg: **参数解释**：  错误详细信息，当任务操作失败时返回的具体错误描述。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type error_msg: str
         """
         
@@ -64,7 +64,7 @@ class DeleteJobResp:
     def id(self):
         r"""Gets the id of this DeleteJobResp.
 
-        任务ID
+        **参数解释**：  结束或删除操作的任务ID，用于标识该操作结果对应的任务。  **约束限制**：  不涉及。  **取值范围**：  UUID格式字符串。  **默认取值**：  不涉及
 
         :return: The id of this DeleteJobResp.
         :rtype: str
@@ -75,7 +75,7 @@ class DeleteJobResp:
     def id(self, id):
         r"""Sets the id of this DeleteJobResp.
 
-        任务ID
+        **参数解释**：  结束或删除操作的任务ID，用于标识该操作结果对应的任务。  **约束限制**：  不涉及。  **取值范围**：  UUID格式字符串。  **默认取值**：  不涉及
 
         :param id: The id of this DeleteJobResp.
         :type id: str
@@ -86,7 +86,7 @@ class DeleteJobResp:
     def status(self):
         r"""Gets the status of this DeleteJobResp.
 
-        状态
+        **参数解释**：  批量结束或删除操作的任务执行结果状态，表示该任务的操作是否成功。  **约束限制**：  不涉及。  **取值范围**：  - success：操作成功 - failed：操作失败  **默认取值**：  不涉及
 
         :return: The status of this DeleteJobResp.
         :rtype: str
@@ -97,7 +97,7 @@ class DeleteJobResp:
     def status(self, status):
         r"""Sets the status of this DeleteJobResp.
 
-        状态
+        **参数解释**：  批量结束或删除操作的任务执行结果状态，表示该任务的操作是否成功。  **约束限制**：  不涉及。  **取值范围**：  - success：操作成功 - failed：操作失败  **默认取值**：  不涉及
 
         :param status: The status of this DeleteJobResp.
         :type status: str
@@ -108,7 +108,7 @@ class DeleteJobResp:
     def error_code(self):
         r"""Gets the error_code of this DeleteJobResp.
 
-        错误码
+        **参数解释**：  错误码，当任务操作失败时返回的错误代码。  **约束限制**：  不涉及。  **取值范围**：  格式为DRS.XXXXXX。  **默认取值**：  不涉及
 
         :return: The error_code of this DeleteJobResp.
         :rtype: str
@@ -119,7 +119,7 @@ class DeleteJobResp:
     def error_code(self, error_code):
         r"""Sets the error_code of this DeleteJobResp.
 
-        错误码
+        **参数解释**：  错误码，当任务操作失败时返回的错误代码。  **约束限制**：  不涉及。  **取值范围**：  格式为DRS.XXXXXX。  **默认取值**：  不涉及
 
         :param error_code: The error_code of this DeleteJobResp.
         :type error_code: str
@@ -130,7 +130,7 @@ class DeleteJobResp:
     def error_msg(self):
         r"""Gets the error_msg of this DeleteJobResp.
 
-        错误信息
+        **参数解释**：  错误详细信息，当任务操作失败时返回的具体错误描述。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The error_msg of this DeleteJobResp.
         :rtype: str
@@ -141,7 +141,7 @@ class DeleteJobResp:
     def error_msg(self, error_msg):
         r"""Sets the error_msg of this DeleteJobResp.
 
-        错误信息
+        **参数解释**：  错误详细信息，当任务操作失败时返回的具体错误描述。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param error_msg: The error_msg of this DeleteJobResp.
         :type error_msg: str

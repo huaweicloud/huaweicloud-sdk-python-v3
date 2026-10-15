@@ -30,9 +30,9 @@ class BatchDeleteJobsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param results: 批量结束任务或删除任务的响应体集合。
+        :param results: **参数解释**：  批量结束任务或删除任务的响应体集合，包含每个任务的操作结果。详情请参见DeleteJobResp对象定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type results: list[:class:`huaweicloudsdkdrs.v3.DeleteJobResp`]
-        :param count: 总数
+        :param count: **参数解释**：  批量结束或删除任务的结果总数，与results数组的长度一致。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type count: int
         """
         
@@ -51,7 +51,7 @@ class BatchDeleteJobsResponse(SdkResponse):
     def results(self):
         r"""Gets the results of this BatchDeleteJobsResponse.
 
-        批量结束任务或删除任务的响应体集合。
+        **参数解释**：  批量结束任务或删除任务的响应体集合，包含每个任务的操作结果。详情请参见DeleteJobResp对象定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The results of this BatchDeleteJobsResponse.
         :rtype: list[:class:`huaweicloudsdkdrs.v3.DeleteJobResp`]
@@ -62,7 +62,7 @@ class BatchDeleteJobsResponse(SdkResponse):
     def results(self, results):
         r"""Sets the results of this BatchDeleteJobsResponse.
 
-        批量结束任务或删除任务的响应体集合。
+        **参数解释**：  批量结束任务或删除任务的响应体集合，包含每个任务的操作结果。详情请参见DeleteJobResp对象定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param results: The results of this BatchDeleteJobsResponse.
         :type results: list[:class:`huaweicloudsdkdrs.v3.DeleteJobResp`]
@@ -73,7 +73,7 @@ class BatchDeleteJobsResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this BatchDeleteJobsResponse.
 
-        总数
+        **参数解释**：  批量结束或删除任务的结果总数，与results数组的长度一致。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The count of this BatchDeleteJobsResponse.
         :rtype: int
@@ -84,7 +84,7 @@ class BatchDeleteJobsResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this BatchDeleteJobsResponse.
 
-        总数
+        **参数解释**：  批量结束或删除任务的结果总数，与results数组的长度一致。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param count: The count of this BatchDeleteJobsResponse.
         :type count: int

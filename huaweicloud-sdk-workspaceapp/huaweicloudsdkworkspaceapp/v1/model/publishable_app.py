@@ -34,6 +34,7 @@ class PublishableApp:
         'publishable': 'bool',
         'sandbox_enable': 'bool',
         'is_pre_boot': 'bool',
+        'pre_launch_policy': 'int',
         'app_extended_info': 'AppExtendedInfo',
         'source_image_ids': 'list[str]'
     }
@@ -58,11 +59,12 @@ class PublishableApp:
         'publishable': 'publishable',
         'sandbox_enable': 'sandbox_enable',
         'is_pre_boot': 'is_pre_boot',
+        'pre_launch_policy': 'pre_launch_policy',
         'app_extended_info': 'app_extended_info',
         'source_image_ids': 'source_image_ids'
     }
 
-    def __init__(self, id=None, name=None, version=None, command_param=None, execute_path=None, work_path=None, icon_path=None, icon_index=None, description=None, app_group_id=None, state=None, tenant_id=None, publish_at=None, source_type=None, publisher=None, icon_url=None, publishable=None, sandbox_enable=None, is_pre_boot=None, app_extended_info=None, source_image_ids=None):
+    def __init__(self, id=None, name=None, version=None, command_param=None, execute_path=None, work_path=None, icon_path=None, icon_index=None, description=None, app_group_id=None, state=None, tenant_id=None, publish_at=None, source_type=None, publisher=None, icon_url=None, publishable=None, sandbox_enable=None, is_pre_boot=None, pre_launch_policy=None, app_extended_info=None, source_image_ids=None):
         r"""PublishableApp
 
         The model defined in huaweicloud sdk
@@ -105,6 +107,8 @@ class PublishableApp:
         :type sandbox_enable: bool
         :param is_pre_boot: 是否开启应用预开，取值为： - false: 表示关闭应用预开。 - true: 表示开启应用预开。
         :type is_pre_boot: bool
+        :param pre_launch_policy: 预开状态：0：非预开，1：会话预开，3：应用预开。
+        :type pre_launch_policy: int
         :param app_extended_info: 
         :type app_extended_info: :class:`huaweicloudsdkworkspaceapp.v1.AppExtendedInfo`
         :param source_image_ids: 镜像ids。
@@ -132,6 +136,7 @@ class PublishableApp:
         self._publishable = None
         self._sandbox_enable = None
         self._is_pre_boot = None
+        self._pre_launch_policy = None
         self._app_extended_info = None
         self._source_image_ids = None
         self.discriminator = None
@@ -174,6 +179,8 @@ class PublishableApp:
             self.sandbox_enable = sandbox_enable
         if is_pre_boot is not None:
             self.is_pre_boot = is_pre_boot
+        if pre_launch_policy is not None:
+            self.pre_launch_policy = pre_launch_policy
         if app_extended_info is not None:
             self.app_extended_info = app_extended_info
         if source_image_ids is not None:
@@ -592,6 +599,28 @@ class PublishableApp:
         :type is_pre_boot: bool
         """
         self._is_pre_boot = is_pre_boot
+
+    @property
+    def pre_launch_policy(self):
+        r"""Gets the pre_launch_policy of this PublishableApp.
+
+        预开状态：0：非预开，1：会话预开，3：应用预开。
+
+        :return: The pre_launch_policy of this PublishableApp.
+        :rtype: int
+        """
+        return self._pre_launch_policy
+
+    @pre_launch_policy.setter
+    def pre_launch_policy(self, pre_launch_policy):
+        r"""Sets the pre_launch_policy of this PublishableApp.
+
+        预开状态：0：非预开，1：会话预开，3：应用预开。
+
+        :param pre_launch_policy: The pre_launch_policy of this PublishableApp.
+        :type pre_launch_policy: int
+        """
+        self._pre_launch_policy = pre_launch_policy
 
     @property
     def app_extended_info(self):

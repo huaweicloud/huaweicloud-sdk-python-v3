@@ -1,3 +1,411 @@
+# 3.1.218 2026-10-15
+
+### HuaweiCloud SDK AIDataLake
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the following APIs:
+    - `ListAuraDataframeJob`
+    - `CreateAuraDataframeJob`
+    - `ShowAuraDataframeJob`
+    - `CancelAuraDataframeJob`
+    - `ShowFlinkJob`
+    - `ShowFlinkJobState`
+    - `CancelFlinkJob`
+    - `ListFlinkJobEvents`
+    - `ListFlinkJobs`
+    - `RunFlinkJob`
+    - `ListFlinkSavepoint`
+    - `CreateFlinkSavepoint`
+    - `ShowFlinkSavepoint`
+    - `DeleteFlinkSavepoint`
+    - `ShowFlinkJobAutoscalingPolicy`
+    - `UpdateFlinkJobAutoscalingPolicy`
+    - `ListFlinkJobAutoscalingHistories`
+    - `CreateRaySession`
+    - `CloseRaySession`
+    - `ListFederations`
+    - `CreateFederation`
+    - `ShowFederation`
+    - `UpdateFederation`
+    - `DeleteFederation`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ExecuteAuraSqlStatement**
+    - changes of request param
+      - `+ wait_timeout`
+      - `+ max_retry_times`
+      - `+ statement_type`
+      - `+ statement_name`
+  - **CreateAuraSqlSession**
+    - changes of request param
+      - `+ agency_name`
+      - `+ max_retry_times`
+      - `+ priority`
+      - `+ cpu`
+      - `+ memory`
+
+### HuaweiCloud SDK AS
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListScalingTagInfosByTenantId**
+    - changes of request param
+      - `+ resource_type: enum value [scaling_configuration_tag]`
+  - **ListScalingTagInfosByResourceId**
+    - changes of request param
+      - `+ resource_type: enum value [scaling_configuration_tag]`
+  - **CreateScalingTagInfo**
+    - changes of request param
+      - `+ resource_type: enum value [scaling_configuration_tag]`
+  - **DeleteScalingTagInfo**
+    - changes of request param
+      - `+ resource_type: enum value [scaling_configuration_tag]`
+  - **ListResourceInstances**
+    - changes of request param
+      - `+ resource_type: enum value [scaling_configuration_tag]`
+  - **CreateScalingConfig**
+    - changes of request param
+      - `+ instance_config.tags`
+      - `+ instance_config.tag_transmission_policy`
+  - **ListScalingConfigs**
+    - changes of response param
+      - `+ scaling_configurations.instance_config.tags`
+      - `+ scaling_configurations.instance_config.tag_transmission_policy`
+  - **ShowScalingConfig**
+    - changes of response param
+      - `+ scaling_configuration.instance_config.tags`
+      - `+ scaling_configuration.instance_config.tag_transmission_policy`
+
+### HuaweiCloud SDK DAS
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the following APIs:
+    - `ShowBigKeyHotKeySwitch`
+    - `ChangeBigKeyHotKeySwitch`
+    - `ListBigKeys`
+    - `ListHotKeys`
+    - `ShowKeyTrend`
+    - `ListHealthReportTemplate`
+    - `CreateHealthReportTemplate`
+    - `ShowHealthReportTemplate`
+    - `UpdateHealthReportTemplate`
+    - `DeleteHealthReportTemplate`
+    - `ShowInstanceHealthReportConfig`
+    - `SetInstanceHealthReportConfig`
+    - `BatchSetHealthReportConfig`
+    - `ListHealthReportConfigs`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DRS
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Deprecate the following APIs:
+    - `DeleteCompareJob`
+    - `StartPromptlyDataLevelTableCompareJob`
+    - `DownloadCompareResultFile`
+    - `CreateCompareResultFile`
+    - `SelectGroupAndStream`
+    - `ModifyGroupAndStream`
+    - `BatchValidateClustersConnections`
+    - `BatchCheckJobs`
+    - `UpdateParams`
+    - `BatchStartJobs`
+    - `BatchRestoreTask`
+    - `BatchStopJobs`
+    - `BatchDeleteJobs`
+    - `BatchSetDefiner`
+    - `BatchListJobStatus`
+    - `ListUsers`
+    - `BatchSetPolicy`
+    - `UpdateTuningParams`
+    - `ListAvailableNodeTypes`
+    - `ListDataCompareOverview`
+    - `ListDataCompareDetail`
+    - `ListContentCompareOverview`
+    - `ListContentCompareDetail`
+    - `CreateObjectLevelCompareJob`
+    - `ListObejectLevelCompareOverview`
+    - `ListObejectLevelCompareDetail`
+    - `ListContentCompareDifference`
+    - `QueryTuningParams`
+    - `BatchValidateConnections`
+    - `BatchSetObjects`
+    - `BatchSetSpeed`
+    - `BatchShowParams`
+    - `BatchResetPassword`
+    - `ShowJobList`
+    - `BatchChangeData`
+    - `ShowMonitoringData`
+    - `BatchUpdateUser`
+    - `BatchSetSmn`
+    - `ListDataLevelTableCompareJobs`
+    - `CreateDataLevelTableCompareJob`
+    - `BatchCreateJobs`
+    - `BatchCheckResults`
+    - `BatchUpdateJob`
+    - `CreateCompareTask`
+    - `ListCompareResult`
+    - `BatchSwitchover`
+    - `BatchListStructProcess`
+    - `BatchListJobDetails`
+  - **ListObejectLevelCompareOverview**
+    - changes of response param
+      - `+ database_info`
+  - **BatchListProgresses**
+    - changes of response param
+      - `+ results.apply_rows_rate`
+      - `+ results.apply_bytes_rate`
+  - **ListDataLevelTableCompareJobs**
+    - changes of response param
+      - `+ compare_jobs.database_info`
+  - **BatchSwitchover**
+    - changes of request param
+      - `+ is_pause_job`
+  - **BatchListStructProcess**
+    - changes of response param
+      - `+ results.database_info`
+  - **BatchListJobDetails**
+    - changes of response param
+      - `+ results.sync_mode`
+
+### HuaweiCloud SDK DRS
+
+- _API Version_
+  - V5
+- _Features_
+  - Support the following APIs:
+    - `ListReplaySupportSourceConfig`
+    - `ShowSwitchoverInfo`
+    - `AssociateSmnTopic`
+    - `SaveDataFilterRules`
+    - `CollectDataFilterRules`
+    - `DeleteDataFilterRules`
+    - `ChangeJobFlavor`
+    - `ExportJobList`
+    - `ShowTaskExecuteProgress`
+    - `CheckDataFilterRules`
+    - `ShowDataFilterRulesResult`
+    - `DownloadFile`
+    - `ShowFiles`
+    - `ShowReportFileObsUris`
+    - `ShowSmnSubscriptionDetail`
+    - `ShowLinkFlavors`
+    - `StartSubscription`
+    - `RetrySubscription`
+    - `ResetSubscription`
+    - `ShowReplayExecuteRecord`
+    - `ShowReplayRecord`
+    - `ShowObjectColumnInfo`
+- _Bug Fix_
+  - None
+- _Change_
+  - Deprecate the following APIs:
+    - `UploadJdbcDriver`
+    - `SyncJdbcDriver`
+    - `ListsAgencyPermissions`
+    - `UpdateAgencyPolicy`
+    - `ListLinks`
+    - `ShowDataFilteringResult`
+    - `DeleteJdbcDriver`
+    - `ListJdbcDrivers`
+    - `ShowAgencyInfo`
+    - `CheckDataFilter`
+  - **ShowDbObjectTemplateResult**
+    - changes of request param
+      - `+ type: enum value [compare,compare_key_detail]`
+  - **DownloadDbObjectTemplate**
+    - changes of request param
+      - `+ file_import_db_level: enum value [compare_key]`
+  - **UploadDbObjectTemplate**
+    - changes of request param
+      - `+ file_import_db_level: enum value [compare_key]`
+  - **ShowComparePolicy**
+    - changes of response param
+      - `+ conflict_strategy`
+  - **UpdateComparePolicy**
+    - changes of request param
+      - `+ conflict_strategy`
+  - **ListLinks**
+    - changes of request param
+      - `+ job_type: enum value [replay]`
+  - **ShowHealthCompareJobList**
+    - changes of response param
+      - `+ compare_jobs.database_info`
+  - **ListInstanceTags**
+    - changes of request param
+      - `+ resource_type: enum value [verify]`
+  - **ShowReplayResults**
+    - changes of request param
+      - `+ type: enum value [sql_result_inconsistent,replayed_sql,ugo_error_sql,sql_object_statistic,archive_capture_data]`
+    - changes of response param
+      - `+ compare_results`
+  - **CreateReplicationJob**
+    - changes of request param
+      - `+ options.consistency_check_mode`
+  - **ShowReplicationJob**
+    - changes of response param
+      - `+ options.consistency_check_mode`
+  - **ShowColumnInfos**
+    - changes of response param
+      - `+ column_map_infos.column_info_lists.desensitization_algorithm`
+  - **ModifyColumnInfos**
+    - changes of request param
+      - `+ column_map_infos.column_info_lists.desensitization_algorithm`
+  - **ListExtraColumns**
+    - changes of request param
+      - `+ fetch_all`
+  - **ListJobs**
+    - changes of request param
+      - `+ job_type: enum value [replay]`
+  - **ListAsyncJobDetail**
+    - changes of response param
+      - `+ jobs.sync_mode`
+  - **ShowJobDetail**
+    - changes of request param
+      - `+ type: enum value [db_table_details]`
+      - `+ query_type: enum value [upgradeJob]`
+      - `+ compare_detail_type: enum value [unCompare]`
+      - `+ compare_detail_type: enum value [uncompare]`
+    - changes of response param
+      - `+ job.sync_mode`
+
+### HuaweiCloud SDK IAM
+
+- _API Version_
+  - V5
+- _Features_
+  - Support the API `UpdatePolicyV5`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListUsersV5**
+    - changes of request param
+      - `+ access_key_id`
+
+### HuaweiCloud SDK OptVerse
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UploadFile**
+    - changes of request param
+      - `+ domain_type`
+  - **ListChat**
+    - changes of request param
+      - `+ domain_type`
+      - `+ start_time`
+      - `+ end_time`
+
+### HuaweiCloud SDK RC
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CountAllResources**
+    - changes of request param
+      - `+ group_id`
+
+### HuaweiCloud SDK RDS
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the APIs `ShowVectorStorageConfig`, `UpdateVectorStorageConfig`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK RGC
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the API `ListLandingZoneVersion`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK STS
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **AssumeAgency**
+    - changes of request param
+      - `+ provided_contexts`
+
+### HuaweiCloud SDK WorkspaceApp
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdatePreBootPolicy**
+    - changes of request param
+      - `+ pre_launch_policy`
+  - **ShowAppDetail**
+    - changes of response param
+      - `+ pre_launch_policy`
+  - **UpdateApp**
+    - changes of response param
+      - `+ pre_launch_policy`
+  - **UploadAppIconRaw**
+    - changes of response param
+      - `+ pre_launch_policy`
+  - **UploadAppIcon**
+    - changes of response param
+      - `+ pre_launch_policy`
+  - **ShowPublishableApp**
+    - changes of response param
+      - `+ pre_launch_policy`
+      - `+ items.pre_launch_policy`
+  - **ListPublishedApp**
+    - changes of response param
+      - `+ pre_launch_policy`
+      - `+ items.pre_launch_policy`
+  - **PublishApp**
+    - changes of request param
+      - `+ items.pre_launch_policy`
+    - changes of response param
+      - `+ pre_launch_policy`
+      - `+ items.pre_launch_policy`
+
 # 3.1.217 2026-10-08
 
 ### HuaweiCloud SDK AgentArts

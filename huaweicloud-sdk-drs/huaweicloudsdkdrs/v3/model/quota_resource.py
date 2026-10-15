@@ -35,15 +35,15 @@ class QuotaResource:
 
         The model defined in huaweicloud sdk
 
-        :param type: 配额类型信息 instances：实例的数量配额，cpu：CPU的配额，cores：CPU核心数的配额，server_groups服务器组的配额，mem内存配额，ram主存配额
+        :param type: **参数解释**：  配额类型，用于标识不同维度的资源配额。  **约束限制**：  不涉及。  **取值范围**：  - instances：实例的数量配额  **默认取值**：  不涉及
         :type type: str
-        :param min: 配额最小取值
+        :param min: **参数解释**：  配额允许的最小值，表示该资源配额的下限。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type min: int
-        :param max: 配额最大取值
+        :param max: **参数解释**：  配额允许的最大值，表示该资源配额的上限。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type max: int
-        :param quota: 用户配额的实际值
+        :param quota: **参数解释**：  用户当前配额的实际值，即系统为该用户分配的配额数量。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type quota: int
-        :param used: 已使用的配额值
+        :param used: **参数解释**：  用户已使用的配额值，表示当前已占用的资源数量。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type used: int
         """
         
@@ -71,7 +71,7 @@ class QuotaResource:
     def type(self):
         r"""Gets the type of this QuotaResource.
 
-        配额类型信息 instances：实例的数量配额，cpu：CPU的配额，cores：CPU核心数的配额，server_groups服务器组的配额，mem内存配额，ram主存配额
+        **参数解释**：  配额类型，用于标识不同维度的资源配额。  **约束限制**：  不涉及。  **取值范围**：  - instances：实例的数量配额  **默认取值**：  不涉及
 
         :return: The type of this QuotaResource.
         :rtype: str
@@ -82,7 +82,7 @@ class QuotaResource:
     def type(self, type):
         r"""Sets the type of this QuotaResource.
 
-        配额类型信息 instances：实例的数量配额，cpu：CPU的配额，cores：CPU核心数的配额，server_groups服务器组的配额，mem内存配额，ram主存配额
+        **参数解释**：  配额类型，用于标识不同维度的资源配额。  **约束限制**：  不涉及。  **取值范围**：  - instances：实例的数量配额  **默认取值**：  不涉及
 
         :param type: The type of this QuotaResource.
         :type type: str
@@ -93,7 +93,7 @@ class QuotaResource:
     def min(self):
         r"""Gets the min of this QuotaResource.
 
-        配额最小取值
+        **参数解释**：  配额允许的最小值，表示该资源配额的下限。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The min of this QuotaResource.
         :rtype: int
@@ -104,7 +104,7 @@ class QuotaResource:
     def min(self, min):
         r"""Sets the min of this QuotaResource.
 
-        配额最小取值
+        **参数解释**：  配额允许的最小值，表示该资源配额的下限。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param min: The min of this QuotaResource.
         :type min: int
@@ -115,7 +115,7 @@ class QuotaResource:
     def max(self):
         r"""Gets the max of this QuotaResource.
 
-        配额最大取值
+        **参数解释**：  配额允许的最大值，表示该资源配额的上限。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The max of this QuotaResource.
         :rtype: int
@@ -126,7 +126,7 @@ class QuotaResource:
     def max(self, max):
         r"""Sets the max of this QuotaResource.
 
-        配额最大取值
+        **参数解释**：  配额允许的最大值，表示该资源配额的上限。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param max: The max of this QuotaResource.
         :type max: int
@@ -137,7 +137,7 @@ class QuotaResource:
     def quota(self):
         r"""Gets the quota of this QuotaResource.
 
-        用户配额的实际值
+        **参数解释**：  用户当前配额的实际值，即系统为该用户分配的配额数量。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The quota of this QuotaResource.
         :rtype: int
@@ -148,7 +148,7 @@ class QuotaResource:
     def quota(self, quota):
         r"""Sets the quota of this QuotaResource.
 
-        用户配额的实际值
+        **参数解释**：  用户当前配额的实际值，即系统为该用户分配的配额数量。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param quota: The quota of this QuotaResource.
         :type quota: int
@@ -159,7 +159,7 @@ class QuotaResource:
     def used(self):
         r"""Gets the used of this QuotaResource.
 
-        已使用的配额值
+        **参数解释**：  用户已使用的配额值，表示当前已占用的资源数量。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The used of this QuotaResource.
         :rtype: int
@@ -170,7 +170,7 @@ class QuotaResource:
     def used(self, used):
         r"""Sets the used of this QuotaResource.
 
-        已使用的配额值
+        **参数解释**：  用户已使用的配额值，表示当前已占用的资源数量。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param used: The used of this QuotaResource.
         :type used: int

@@ -31,11 +31,11 @@ class PeriodOrderInfo:
 
         The model defined in huaweicloud sdk
 
-        :param period_type: 订购周期类型。 取值范围： - 2：表示周期类型为月。 - 3：表示周期类型为年。
+        :param period_type: **参数解释**：  订购周期类型。  **约束限制**：  不涉及。  **取值范围**：  - 2：周期类型为月 - 3：周期类型为年  **默认取值**：  不涉及
         :type period_type: int
-        :param period_num: 订购周期数。 取值范围： - period_type&#x3D;2（周期类型为月）时，取值为[1，9]。 - period_type&#x3D;3（周期类型为年）时，取值为[1，3]。
+        :param period_num: **参数解释**：  订购周期数。  **约束限制**：  不涉及。  **取值范围**：  - period_type为2（月）时，取值为1-9 - period_type为3（年）时，取值为1-3  **默认取值**：  不涉及
         :type period_num: int
-        :param is_auto_renew: 是否自动续订。 取值范围： - 0：表示不自动续订。 - 1：表示自动续订。
+        :param is_auto_renew: **参数解释**：  是否自动续订。  **约束限制**：  不涉及。  **取值范围**：  - 0：不自动续订 - 1：自动续订  **默认取值**：  不涉及
         :type is_auto_renew: int
         """
         
@@ -57,7 +57,7 @@ class PeriodOrderInfo:
     def period_type(self):
         r"""Gets the period_type of this PeriodOrderInfo.
 
-        订购周期类型。 取值范围： - 2：表示周期类型为月。 - 3：表示周期类型为年。
+        **参数解释**：  订购周期类型。  **约束限制**：  不涉及。  **取值范围**：  - 2：周期类型为月 - 3：周期类型为年  **默认取值**：  不涉及
 
         :return: The period_type of this PeriodOrderInfo.
         :rtype: int
@@ -68,7 +68,7 @@ class PeriodOrderInfo:
     def period_type(self, period_type):
         r"""Sets the period_type of this PeriodOrderInfo.
 
-        订购周期类型。 取值范围： - 2：表示周期类型为月。 - 3：表示周期类型为年。
+        **参数解释**：  订购周期类型。  **约束限制**：  不涉及。  **取值范围**：  - 2：周期类型为月 - 3：周期类型为年  **默认取值**：  不涉及
 
         :param period_type: The period_type of this PeriodOrderInfo.
         :type period_type: int
@@ -79,7 +79,7 @@ class PeriodOrderInfo:
     def period_num(self):
         r"""Gets the period_num of this PeriodOrderInfo.
 
-        订购周期数。 取值范围： - period_type=2（周期类型为月）时，取值为[1，9]。 - period_type=3（周期类型为年）时，取值为[1，3]。
+        **参数解释**：  订购周期数。  **约束限制**：  不涉及。  **取值范围**：  - period_type为2（月）时，取值为1-9 - period_type为3（年）时，取值为1-3  **默认取值**：  不涉及
 
         :return: The period_num of this PeriodOrderInfo.
         :rtype: int
@@ -90,7 +90,7 @@ class PeriodOrderInfo:
     def period_num(self, period_num):
         r"""Sets the period_num of this PeriodOrderInfo.
 
-        订购周期数。 取值范围： - period_type=2（周期类型为月）时，取值为[1，9]。 - period_type=3（周期类型为年）时，取值为[1，3]。
+        **参数解释**：  订购周期数。  **约束限制**：  不涉及。  **取值范围**：  - period_type为2（月）时，取值为1-9 - period_type为3（年）时，取值为1-3  **默认取值**：  不涉及
 
         :param period_num: The period_num of this PeriodOrderInfo.
         :type period_num: int
@@ -101,7 +101,7 @@ class PeriodOrderInfo:
     def is_auto_renew(self):
         r"""Gets the is_auto_renew of this PeriodOrderInfo.
 
-        是否自动续订。 取值范围： - 0：表示不自动续订。 - 1：表示自动续订。
+        **参数解释**：  是否自动续订。  **约束限制**：  不涉及。  **取值范围**：  - 0：不自动续订 - 1：自动续订  **默认取值**：  不涉及
 
         :return: The is_auto_renew of this PeriodOrderInfo.
         :rtype: int
@@ -112,7 +112,7 @@ class PeriodOrderInfo:
     def is_auto_renew(self, is_auto_renew):
         r"""Sets the is_auto_renew of this PeriodOrderInfo.
 
-        是否自动续订。 取值范围： - 0：表示不自动续订。 - 1：表示自动续订。
+        **参数解释**：  是否自动续订。  **约束限制**：  不涉及。  **取值范围**：  - 0：不自动续订 - 1：自动续订  **默认取值**：  不涉及
 
         :param is_auto_renew: The is_auto_renew of this PeriodOrderInfo.
         :type is_auto_renew: int

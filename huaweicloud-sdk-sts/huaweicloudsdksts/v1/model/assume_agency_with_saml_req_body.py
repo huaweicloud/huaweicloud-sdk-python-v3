@@ -37,17 +37,17 @@ class AssumeAgencyWithSAMLReqBody:
 
         The model defined in huaweicloud sdk
 
-        :param duration_seconds: **参数解释**： 获得的临时安全凭证的有效时间（单位：秒）。  **约束限制**： 获得的临时安全凭证的有效时间（单位：秒）。请注意，该时间需要小于信任委托本身设置的最大会话持续时间。同时最终的会话持续时间以duration_seconds，  SAML身份验证响应中SessionNotOnOrAfter值和SessionDuration值三者中较短的一个为准。  **取值范围**： 取值范围为[900,43200]。  **默认取值**： 默认值为3600。 
+        :param duration_seconds: **参数解释**： 获得的临时安全凭证的有效时间（单位：秒）。  **约束限制**： 请注意，该时间需要小于信任委托本身设置的最大会话持续时间。同时最终的会话持续时间以duration_seconds、 SAML身份验证响应中SessionNotOnOrAfter值和SessionDuration值三者中较短的一个为准。  **取值范围**： 取值范围为[900,43200]。  **默认取值**： 默认值为3600。 
         :type duration_seconds: int
-        :param policy: **参数解释**： 自定义策略，限制本次会话获得的临时安全凭证的权限范围不会超过该自定义策略指定的权限。  **约束限制**： 本次会话获得的临时安全凭证的权限范围不会超过该自定义策略指定的权限。 长度范围为[2,2048]。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
+        :param policy: **参数解释**： 自定义策略，用于进一步限制临时安全凭证的权限范围。  **约束限制**： 本次会话获得的临时安全凭证的权限范围不会超过该自定义策略指定的权限。 长度为2到4096个字符。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
         :type policy: str
-        :param policy_ids: **参数解释**： 预置策略列表，限制本次会话获得的临时安全凭证的权限范围不会超过该预置策略指定的权限。  **约束限制**： 不涉及。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
+        :param policy_ids: **参数解释**： 预置策略列表，限制本次会话获得的临时安全凭证的权限范围不会超过该预置策略指定的权限。 每个元素为预置策略的标识ID，长度限制为1到64个字符，只允许大小写字母、数字、\&quot;_\&quot;、\&quot;-\&quot;，且至少包含一个字符。  **约束限制**： 该数组允许的元素个数最多为20。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
         :type policy_ids: list[str]
-        :param provider_urn: **参数解释**： SAML提供商的URN。  **约束限制**： 长度范围为[0,1500]。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
+        :param provider_urn: **参数解释**： SAML提供商的URN，在IAM新版控制台的「身份提供商」页面中获取。  **约束限制**： 不涉及。  **取值范围**： 长度最大为1500个字符。  **默认取值**： 不涉及。 
         :type provider_urn: str
-        :param agency_urn: **参数解释**： 目标信任委托的URN。  **约束限制**： 长度范围为[0,1500]。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
+        :param agency_urn: **参数解释**： 目标信任委托的URN，在IAM新版控制台的「委托」页面中获取。  **约束限制**： 不涉及。  **取值范围**： 长度最大为1500个字符。  **默认取值**： 不涉及。 
         :type agency_urn: str
-        :param saml_assertion: **参数解释**： 由SAML身份提供商提供的Base64编码的SAML身份验证响应。  **约束限制**： 长度范围为[4,100000]。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
+        :param saml_assertion: **参数解释**： 由SAML身份提供商提供的Base64编码的SAML身份验证响应。  **约束限制**： 不涉及。  **取值范围**： 长度为4到100000个字符，只允许大小写字母、数字、\&quot;+\&quot;、\&quot;/\&quot;，末尾可跟0到2个\&quot;&#x3D;\&quot;。  **默认取值**： 不涉及。 
         :type saml_assertion: str
         """
         
@@ -75,7 +75,7 @@ class AssumeAgencyWithSAMLReqBody:
     def duration_seconds(self):
         r"""Gets the duration_seconds of this AssumeAgencyWithSAMLReqBody.
 
-        **参数解释**： 获得的临时安全凭证的有效时间（单位：秒）。  **约束限制**： 获得的临时安全凭证的有效时间（单位：秒）。请注意，该时间需要小于信任委托本身设置的最大会话持续时间。同时最终的会话持续时间以duration_seconds，  SAML身份验证响应中SessionNotOnOrAfter值和SessionDuration值三者中较短的一个为准。  **取值范围**： 取值范围为[900,43200]。  **默认取值**： 默认值为3600。 
+        **参数解释**： 获得的临时安全凭证的有效时间（单位：秒）。  **约束限制**： 请注意，该时间需要小于信任委托本身设置的最大会话持续时间。同时最终的会话持续时间以duration_seconds、 SAML身份验证响应中SessionNotOnOrAfter值和SessionDuration值三者中较短的一个为准。  **取值范围**： 取值范围为[900,43200]。  **默认取值**： 默认值为3600。 
 
         :return: The duration_seconds of this AssumeAgencyWithSAMLReqBody.
         :rtype: int
@@ -86,7 +86,7 @@ class AssumeAgencyWithSAMLReqBody:
     def duration_seconds(self, duration_seconds):
         r"""Sets the duration_seconds of this AssumeAgencyWithSAMLReqBody.
 
-        **参数解释**： 获得的临时安全凭证的有效时间（单位：秒）。  **约束限制**： 获得的临时安全凭证的有效时间（单位：秒）。请注意，该时间需要小于信任委托本身设置的最大会话持续时间。同时最终的会话持续时间以duration_seconds，  SAML身份验证响应中SessionNotOnOrAfter值和SessionDuration值三者中较短的一个为准。  **取值范围**： 取值范围为[900,43200]。  **默认取值**： 默认值为3600。 
+        **参数解释**： 获得的临时安全凭证的有效时间（单位：秒）。  **约束限制**： 请注意，该时间需要小于信任委托本身设置的最大会话持续时间。同时最终的会话持续时间以duration_seconds、 SAML身份验证响应中SessionNotOnOrAfter值和SessionDuration值三者中较短的一个为准。  **取值范围**： 取值范围为[900,43200]。  **默认取值**： 默认值为3600。 
 
         :param duration_seconds: The duration_seconds of this AssumeAgencyWithSAMLReqBody.
         :type duration_seconds: int
@@ -97,7 +97,7 @@ class AssumeAgencyWithSAMLReqBody:
     def policy(self):
         r"""Gets the policy of this AssumeAgencyWithSAMLReqBody.
 
-        **参数解释**： 自定义策略，限制本次会话获得的临时安全凭证的权限范围不会超过该自定义策略指定的权限。  **约束限制**： 本次会话获得的临时安全凭证的权限范围不会超过该自定义策略指定的权限。 长度范围为[2,2048]。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
+        **参数解释**： 自定义策略，用于进一步限制临时安全凭证的权限范围。  **约束限制**： 本次会话获得的临时安全凭证的权限范围不会超过该自定义策略指定的权限。 长度为2到4096个字符。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
 
         :return: The policy of this AssumeAgencyWithSAMLReqBody.
         :rtype: str
@@ -108,7 +108,7 @@ class AssumeAgencyWithSAMLReqBody:
     def policy(self, policy):
         r"""Sets the policy of this AssumeAgencyWithSAMLReqBody.
 
-        **参数解释**： 自定义策略，限制本次会话获得的临时安全凭证的权限范围不会超过该自定义策略指定的权限。  **约束限制**： 本次会话获得的临时安全凭证的权限范围不会超过该自定义策略指定的权限。 长度范围为[2,2048]。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
+        **参数解释**： 自定义策略，用于进一步限制临时安全凭证的权限范围。  **约束限制**： 本次会话获得的临时安全凭证的权限范围不会超过该自定义策略指定的权限。 长度为2到4096个字符。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
 
         :param policy: The policy of this AssumeAgencyWithSAMLReqBody.
         :type policy: str
@@ -119,7 +119,7 @@ class AssumeAgencyWithSAMLReqBody:
     def policy_ids(self):
         r"""Gets the policy_ids of this AssumeAgencyWithSAMLReqBody.
 
-        **参数解释**： 预置策略列表，限制本次会话获得的临时安全凭证的权限范围不会超过该预置策略指定的权限。  **约束限制**： 不涉及。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
+        **参数解释**： 预置策略列表，限制本次会话获得的临时安全凭证的权限范围不会超过该预置策略指定的权限。 每个元素为预置策略的标识ID，长度限制为1到64个字符，只允许大小写字母、数字、\"_\"、\"-\"，且至少包含一个字符。  **约束限制**： 该数组允许的元素个数最多为20。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
 
         :return: The policy_ids of this AssumeAgencyWithSAMLReqBody.
         :rtype: list[str]
@@ -130,7 +130,7 @@ class AssumeAgencyWithSAMLReqBody:
     def policy_ids(self, policy_ids):
         r"""Sets the policy_ids of this AssumeAgencyWithSAMLReqBody.
 
-        **参数解释**： 预置策略列表，限制本次会话获得的临时安全凭证的权限范围不会超过该预置策略指定的权限。  **约束限制**： 不涉及。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
+        **参数解释**： 预置策略列表，限制本次会话获得的临时安全凭证的权限范围不会超过该预置策略指定的权限。 每个元素为预置策略的标识ID，长度限制为1到64个字符，只允许大小写字母、数字、\"_\"、\"-\"，且至少包含一个字符。  **约束限制**： 该数组允许的元素个数最多为20。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
 
         :param policy_ids: The policy_ids of this AssumeAgencyWithSAMLReqBody.
         :type policy_ids: list[str]
@@ -141,7 +141,7 @@ class AssumeAgencyWithSAMLReqBody:
     def provider_urn(self):
         r"""Gets the provider_urn of this AssumeAgencyWithSAMLReqBody.
 
-        **参数解释**： SAML提供商的URN。  **约束限制**： 长度范围为[0,1500]。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
+        **参数解释**： SAML提供商的URN，在IAM新版控制台的「身份提供商」页面中获取。  **约束限制**： 不涉及。  **取值范围**： 长度最大为1500个字符。  **默认取值**： 不涉及。 
 
         :return: The provider_urn of this AssumeAgencyWithSAMLReqBody.
         :rtype: str
@@ -152,7 +152,7 @@ class AssumeAgencyWithSAMLReqBody:
     def provider_urn(self, provider_urn):
         r"""Sets the provider_urn of this AssumeAgencyWithSAMLReqBody.
 
-        **参数解释**： SAML提供商的URN。  **约束限制**： 长度范围为[0,1500]。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
+        **参数解释**： SAML提供商的URN，在IAM新版控制台的「身份提供商」页面中获取。  **约束限制**： 不涉及。  **取值范围**： 长度最大为1500个字符。  **默认取值**： 不涉及。 
 
         :param provider_urn: The provider_urn of this AssumeAgencyWithSAMLReqBody.
         :type provider_urn: str
@@ -163,7 +163,7 @@ class AssumeAgencyWithSAMLReqBody:
     def agency_urn(self):
         r"""Gets the agency_urn of this AssumeAgencyWithSAMLReqBody.
 
-        **参数解释**： 目标信任委托的URN。  **约束限制**： 长度范围为[0,1500]。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
+        **参数解释**： 目标信任委托的URN，在IAM新版控制台的「委托」页面中获取。  **约束限制**： 不涉及。  **取值范围**： 长度最大为1500个字符。  **默认取值**： 不涉及。 
 
         :return: The agency_urn of this AssumeAgencyWithSAMLReqBody.
         :rtype: str
@@ -174,7 +174,7 @@ class AssumeAgencyWithSAMLReqBody:
     def agency_urn(self, agency_urn):
         r"""Sets the agency_urn of this AssumeAgencyWithSAMLReqBody.
 
-        **参数解释**： 目标信任委托的URN。  **约束限制**： 长度范围为[0,1500]。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
+        **参数解释**： 目标信任委托的URN，在IAM新版控制台的「委托」页面中获取。  **约束限制**： 不涉及。  **取值范围**： 长度最大为1500个字符。  **默认取值**： 不涉及。 
 
         :param agency_urn: The agency_urn of this AssumeAgencyWithSAMLReqBody.
         :type agency_urn: str
@@ -185,7 +185,7 @@ class AssumeAgencyWithSAMLReqBody:
     def saml_assertion(self):
         r"""Gets the saml_assertion of this AssumeAgencyWithSAMLReqBody.
 
-        **参数解释**： 由SAML身份提供商提供的Base64编码的SAML身份验证响应。  **约束限制**： 长度范围为[4,100000]。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
+        **参数解释**： 由SAML身份提供商提供的Base64编码的SAML身份验证响应。  **约束限制**： 不涉及。  **取值范围**： 长度为4到100000个字符，只允许大小写字母、数字、\"+\"、\"/\"，末尾可跟0到2个\"=\"。  **默认取值**： 不涉及。 
 
         :return: The saml_assertion of this AssumeAgencyWithSAMLReqBody.
         :rtype: str
@@ -196,7 +196,7 @@ class AssumeAgencyWithSAMLReqBody:
     def saml_assertion(self, saml_assertion):
         r"""Sets the saml_assertion of this AssumeAgencyWithSAMLReqBody.
 
-        **参数解释**： 由SAML身份提供商提供的Base64编码的SAML身份验证响应。  **约束限制**： 长度范围为[4,100000]。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
+        **参数解释**： 由SAML身份提供商提供的Base64编码的SAML身份验证响应。  **约束限制**： 不涉及。  **取值范围**： 长度为4到100000个字符，只允许大小写字母、数字、\"+\"、\"/\"，末尾可跟0到2个\"=\"。  **默认取值**： 不涉及。 
 
         :param saml_assertion: The saml_assertion of this AssumeAgencyWithSAMLReqBody.
         :type saml_assertion: str

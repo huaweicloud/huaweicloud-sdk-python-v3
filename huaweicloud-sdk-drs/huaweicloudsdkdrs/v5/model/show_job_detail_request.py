@@ -57,7 +57,7 @@ class ShowJobDetailRequest:
         :type job_id: str
         :param x_language: 请求语言类型。
         :type x_language: str
-        :param type: 任务详情类型。取值： - overview：任务概览信息。 - detail：任务基本信息。 - network：测试连接结果信息，需配合query_id参数一起查询。 - precheck：预检查结果信息，需配合query_id参数一起查询。 - progress：任务进度信息。 - log：任务日志信息，支持分页查询参数offset与limit。 - compare：查询对比任务。 - file：对象导入信息。 - is_writable：目标库解除只读结果。 - cloud_connection：录制回放他云连通性测试，需配合query_id参数一起查询。 - diagnosis：查询一键诊断结果，需配合query_id参数一起查询。 - diagnosis_history：查询一键诊断结果历史，需配合query_id参数一起查询。 - repair_progress：数据修复进度，需配合query_id参数一起查询。 - repair_detail：数据修复详情，需配合query_id参数一起查询。 - repair_export_status：查询数据修复SQL导出状态，需配合compare_task_id参数一起查询。
+        :param type: 任务详情类型。取值： - overview：任务概览信息。 - detail：任务基本信息。 - network：测试连接结果信息，需配合query_id参数一起查询。 - precheck：预检查结果信息，需配合query_id参数一起查询。 - progress：任务进度信息。 - log：任务日志信息，支持分页查询参数offset与limit。 - compare：查询对比任务。 - file：对象导入信息。 - is_writable：目标库解除只读结果。 - cloud_connection：录制回放他云连通性测试，需配合query_id参数一起查询。 - diagnosis：查询一键诊断结果，需配合query_id参数一起查询。 - diagnosis_history：查询一键诊断结果历史，需配合query_id参数一起查询。 - repair_progress：数据修复进度，需配合query_id参数一起查询。 - repair_detail：数据修复详情，需配合query_id参数一起查询。 - repair_export_status：查询数据修复SQL导出状态，需配合compare_task_id参数一起查询。 - db_table_details：库表映射概览。
         :type type: str
         :param query_id: 通过指定Query ID查询任务详情。  说明：部分type类型的任务详情，需要通过触发该操作的请求返回的query_id进行操作结果查询。
         :type query_id: str
@@ -67,7 +67,7 @@ class ShowJobDetailRequest:
         :type limit: int
         :param compare_type: 对比任务类型 - object_compare：对象对比。 - line_compare：行对比。 - content_compare：内容对比。 - data_compare：数据对比。
         :type compare_type: str
-        :param query_type: 查询对比内容。取值： - overview：对比任务概览。 - list：数据对比任务列表。 - detail：对比详情。 - diff：不一致详情。
+        :param query_type: 查询对比内容/预检查类型。取值： - overview：对比任务概览。 - list：数据对比任务列表。 - detail：对比详情。 - diff：不一致详情。 - upgradeJob：升级预检查。
         :type query_type: str
         :param object_type: 查询对象对比详情类型。取值： - DB：库级对比详情。 - TABLE：表级对比详情。 - INDEX：索引对比详情。
         :type object_type: str
@@ -176,7 +176,7 @@ class ShowJobDetailRequest:
     def type(self):
         r"""Gets the type of this ShowJobDetailRequest.
 
-        任务详情类型。取值： - overview：任务概览信息。 - detail：任务基本信息。 - network：测试连接结果信息，需配合query_id参数一起查询。 - precheck：预检查结果信息，需配合query_id参数一起查询。 - progress：任务进度信息。 - log：任务日志信息，支持分页查询参数offset与limit。 - compare：查询对比任务。 - file：对象导入信息。 - is_writable：目标库解除只读结果。 - cloud_connection：录制回放他云连通性测试，需配合query_id参数一起查询。 - diagnosis：查询一键诊断结果，需配合query_id参数一起查询。 - diagnosis_history：查询一键诊断结果历史，需配合query_id参数一起查询。 - repair_progress：数据修复进度，需配合query_id参数一起查询。 - repair_detail：数据修复详情，需配合query_id参数一起查询。 - repair_export_status：查询数据修复SQL导出状态，需配合compare_task_id参数一起查询。
+        任务详情类型。取值： - overview：任务概览信息。 - detail：任务基本信息。 - network：测试连接结果信息，需配合query_id参数一起查询。 - precheck：预检查结果信息，需配合query_id参数一起查询。 - progress：任务进度信息。 - log：任务日志信息，支持分页查询参数offset与limit。 - compare：查询对比任务。 - file：对象导入信息。 - is_writable：目标库解除只读结果。 - cloud_connection：录制回放他云连通性测试，需配合query_id参数一起查询。 - diagnosis：查询一键诊断结果，需配合query_id参数一起查询。 - diagnosis_history：查询一键诊断结果历史，需配合query_id参数一起查询。 - repair_progress：数据修复进度，需配合query_id参数一起查询。 - repair_detail：数据修复详情，需配合query_id参数一起查询。 - repair_export_status：查询数据修复SQL导出状态，需配合compare_task_id参数一起查询。 - db_table_details：库表映射概览。
 
         :return: The type of this ShowJobDetailRequest.
         :rtype: str
@@ -187,7 +187,7 @@ class ShowJobDetailRequest:
     def type(self, type):
         r"""Sets the type of this ShowJobDetailRequest.
 
-        任务详情类型。取值： - overview：任务概览信息。 - detail：任务基本信息。 - network：测试连接结果信息，需配合query_id参数一起查询。 - precheck：预检查结果信息，需配合query_id参数一起查询。 - progress：任务进度信息。 - log：任务日志信息，支持分页查询参数offset与limit。 - compare：查询对比任务。 - file：对象导入信息。 - is_writable：目标库解除只读结果。 - cloud_connection：录制回放他云连通性测试，需配合query_id参数一起查询。 - diagnosis：查询一键诊断结果，需配合query_id参数一起查询。 - diagnosis_history：查询一键诊断结果历史，需配合query_id参数一起查询。 - repair_progress：数据修复进度，需配合query_id参数一起查询。 - repair_detail：数据修复详情，需配合query_id参数一起查询。 - repair_export_status：查询数据修复SQL导出状态，需配合compare_task_id参数一起查询。
+        任务详情类型。取值： - overview：任务概览信息。 - detail：任务基本信息。 - network：测试连接结果信息，需配合query_id参数一起查询。 - precheck：预检查结果信息，需配合query_id参数一起查询。 - progress：任务进度信息。 - log：任务日志信息，支持分页查询参数offset与limit。 - compare：查询对比任务。 - file：对象导入信息。 - is_writable：目标库解除只读结果。 - cloud_connection：录制回放他云连通性测试，需配合query_id参数一起查询。 - diagnosis：查询一键诊断结果，需配合query_id参数一起查询。 - diagnosis_history：查询一键诊断结果历史，需配合query_id参数一起查询。 - repair_progress：数据修复进度，需配合query_id参数一起查询。 - repair_detail：数据修复详情，需配合query_id参数一起查询。 - repair_export_status：查询数据修复SQL导出状态，需配合compare_task_id参数一起查询。 - db_table_details：库表映射概览。
 
         :param type: The type of this ShowJobDetailRequest.
         :type type: str
@@ -286,7 +286,7 @@ class ShowJobDetailRequest:
     def query_type(self):
         r"""Gets the query_type of this ShowJobDetailRequest.
 
-        查询对比内容。取值： - overview：对比任务概览。 - list：数据对比任务列表。 - detail：对比详情。 - diff：不一致详情。
+        查询对比内容/预检查类型。取值： - overview：对比任务概览。 - list：数据对比任务列表。 - detail：对比详情。 - diff：不一致详情。 - upgradeJob：升级预检查。
 
         :return: The query_type of this ShowJobDetailRequest.
         :rtype: str
@@ -297,7 +297,7 @@ class ShowJobDetailRequest:
     def query_type(self, query_type):
         r"""Sets the query_type of this ShowJobDetailRequest.
 
-        查询对比内容。取值： - overview：对比任务概览。 - list：数据对比任务列表。 - detail：对比详情。 - diff：不一致详情。
+        查询对比内容/预检查类型。取值： - overview：对比任务概览。 - list：数据对比任务列表。 - detail：对比详情。 - diff：不一致详情。 - upgradeJob：升级预检查。
 
         :param query_type: The query_type of this ShowJobDetailRequest.
         :type query_type: str

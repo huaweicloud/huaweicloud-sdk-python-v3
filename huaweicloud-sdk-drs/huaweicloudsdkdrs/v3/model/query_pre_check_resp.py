@@ -43,23 +43,23 @@ class QueryPreCheckResp:
 
         The model defined in huaweicloud sdk
 
-        :param precheck_id: 预检查id。
+        :param precheck_id: **参数解释**：  查询预检查结果的任务ID，用于唯一标识一个预检查任务。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type precheck_id: str
-        :param result: 返回的预检查结果是否通过。true表示预检查通过，通过后才可进行启动任务。
+        :param result: **参数解释**：  预检查结果是否通过，标识任务预检查的整体通过情况。  **约束限制**：  不涉及。  **取值范围**：  - true：预检查通过，通过后才可进行启动任务 - false：预检查未通过，需查看precheck_result中的具体失败项  **默认取值**：  不涉及
         :type result: bool
-        :param process: 预检查进度百分比。
+        :param process: **参数解释**：  预检查进度百分比，表示预检查任务的执行进度。  **约束限制**：  不涉及。  **取值范围**：  0%-100%。  **默认取值**：  不涉及
         :type process: str
-        :param total_passed_rate: 预检查通过百分比。
+        :param total_passed_rate: **参数解释**：  预检查通过百分比，表示预检查项中通过的占比。  **约束限制**：  不涉及。  **取值范围**：  0%-100%。  **默认取值**：  不涉及
         :type total_passed_rate: str
-        :param rds_instance_id: RDS实例id。
+        :param rds_instance_id: **参数解释**：  RDS实例ID，用于标识关联的华为云RDS数据库实例。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type rds_instance_id: str
-        :param job_direction: 迁移方向。 - up-入云 灾备场景时对应本云为备 - down-出云 灾备场景时对应本云为主 - non-dbs-自建
+        :param job_direction: **参数解释**：  任务的迁移方向。  **约束限制**：  不涉及。  **取值范围**：  - up：入云，灾备场景时对应本云为备 - down：出云，灾备场景时对应本云为主 - non-dbs：自建  **默认取值**：  不涉及
         :type job_direction: str
         :param precheck_result: 预检查各项结果。
         :type precheck_result: list[:class:`huaweicloudsdkdrs.v3.PrecheckResult`]
-        :param error_msg: 错误信息
+        :param error_msg: **参数解释**：  错误详细信息，当任务执行失败时返回的具体错误描述。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type error_msg: str
-        :param error_code: 任务错误码。
+        :param error_code: **参数解释**：  错误码，当任务报错时返回的错误代码。  **约束限制**：  不涉及。  **取值范围**：  格式为DRS.XXXXXX。  **默认取值**：  不涉及
         :type error_code: str
         """
         
@@ -99,7 +99,7 @@ class QueryPreCheckResp:
     def precheck_id(self):
         r"""Gets the precheck_id of this QueryPreCheckResp.
 
-        预检查id。
+        **参数解释**：  查询预检查结果的任务ID，用于唯一标识一个预检查任务。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The precheck_id of this QueryPreCheckResp.
         :rtype: str
@@ -110,7 +110,7 @@ class QueryPreCheckResp:
     def precheck_id(self, precheck_id):
         r"""Sets the precheck_id of this QueryPreCheckResp.
 
-        预检查id。
+        **参数解释**：  查询预检查结果的任务ID，用于唯一标识一个预检查任务。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param precheck_id: The precheck_id of this QueryPreCheckResp.
         :type precheck_id: str
@@ -121,7 +121,7 @@ class QueryPreCheckResp:
     def result(self):
         r"""Gets the result of this QueryPreCheckResp.
 
-        返回的预检查结果是否通过。true表示预检查通过，通过后才可进行启动任务。
+        **参数解释**：  预检查结果是否通过，标识任务预检查的整体通过情况。  **约束限制**：  不涉及。  **取值范围**：  - true：预检查通过，通过后才可进行启动任务 - false：预检查未通过，需查看precheck_result中的具体失败项  **默认取值**：  不涉及
 
         :return: The result of this QueryPreCheckResp.
         :rtype: bool
@@ -132,7 +132,7 @@ class QueryPreCheckResp:
     def result(self, result):
         r"""Sets the result of this QueryPreCheckResp.
 
-        返回的预检查结果是否通过。true表示预检查通过，通过后才可进行启动任务。
+        **参数解释**：  预检查结果是否通过，标识任务预检查的整体通过情况。  **约束限制**：  不涉及。  **取值范围**：  - true：预检查通过，通过后才可进行启动任务 - false：预检查未通过，需查看precheck_result中的具体失败项  **默认取值**：  不涉及
 
         :param result: The result of this QueryPreCheckResp.
         :type result: bool
@@ -143,7 +143,7 @@ class QueryPreCheckResp:
     def process(self):
         r"""Gets the process of this QueryPreCheckResp.
 
-        预检查进度百分比。
+        **参数解释**：  预检查进度百分比，表示预检查任务的执行进度。  **约束限制**：  不涉及。  **取值范围**：  0%-100%。  **默认取值**：  不涉及
 
         :return: The process of this QueryPreCheckResp.
         :rtype: str
@@ -154,7 +154,7 @@ class QueryPreCheckResp:
     def process(self, process):
         r"""Sets the process of this QueryPreCheckResp.
 
-        预检查进度百分比。
+        **参数解释**：  预检查进度百分比，表示预检查任务的执行进度。  **约束限制**：  不涉及。  **取值范围**：  0%-100%。  **默认取值**：  不涉及
 
         :param process: The process of this QueryPreCheckResp.
         :type process: str
@@ -165,7 +165,7 @@ class QueryPreCheckResp:
     def total_passed_rate(self):
         r"""Gets the total_passed_rate of this QueryPreCheckResp.
 
-        预检查通过百分比。
+        **参数解释**：  预检查通过百分比，表示预检查项中通过的占比。  **约束限制**：  不涉及。  **取值范围**：  0%-100%。  **默认取值**：  不涉及
 
         :return: The total_passed_rate of this QueryPreCheckResp.
         :rtype: str
@@ -176,7 +176,7 @@ class QueryPreCheckResp:
     def total_passed_rate(self, total_passed_rate):
         r"""Sets the total_passed_rate of this QueryPreCheckResp.
 
-        预检查通过百分比。
+        **参数解释**：  预检查通过百分比，表示预检查项中通过的占比。  **约束限制**：  不涉及。  **取值范围**：  0%-100%。  **默认取值**：  不涉及
 
         :param total_passed_rate: The total_passed_rate of this QueryPreCheckResp.
         :type total_passed_rate: str
@@ -187,7 +187,7 @@ class QueryPreCheckResp:
     def rds_instance_id(self):
         r"""Gets the rds_instance_id of this QueryPreCheckResp.
 
-        RDS实例id。
+        **参数解释**：  RDS实例ID，用于标识关联的华为云RDS数据库实例。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The rds_instance_id of this QueryPreCheckResp.
         :rtype: str
@@ -198,7 +198,7 @@ class QueryPreCheckResp:
     def rds_instance_id(self, rds_instance_id):
         r"""Sets the rds_instance_id of this QueryPreCheckResp.
 
-        RDS实例id。
+        **参数解释**：  RDS实例ID，用于标识关联的华为云RDS数据库实例。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param rds_instance_id: The rds_instance_id of this QueryPreCheckResp.
         :type rds_instance_id: str
@@ -209,7 +209,7 @@ class QueryPreCheckResp:
     def job_direction(self):
         r"""Gets the job_direction of this QueryPreCheckResp.
 
-        迁移方向。 - up-入云 灾备场景时对应本云为备 - down-出云 灾备场景时对应本云为主 - non-dbs-自建
+        **参数解释**：  任务的迁移方向。  **约束限制**：  不涉及。  **取值范围**：  - up：入云，灾备场景时对应本云为备 - down：出云，灾备场景时对应本云为主 - non-dbs：自建  **默认取值**：  不涉及
 
         :return: The job_direction of this QueryPreCheckResp.
         :rtype: str
@@ -220,7 +220,7 @@ class QueryPreCheckResp:
     def job_direction(self, job_direction):
         r"""Sets the job_direction of this QueryPreCheckResp.
 
-        迁移方向。 - up-入云 灾备场景时对应本云为备 - down-出云 灾备场景时对应本云为主 - non-dbs-自建
+        **参数解释**：  任务的迁移方向。  **约束限制**：  不涉及。  **取值范围**：  - up：入云，灾备场景时对应本云为备 - down：出云，灾备场景时对应本云为主 - non-dbs：自建  **默认取值**：  不涉及
 
         :param job_direction: The job_direction of this QueryPreCheckResp.
         :type job_direction: str
@@ -253,7 +253,7 @@ class QueryPreCheckResp:
     def error_msg(self):
         r"""Gets the error_msg of this QueryPreCheckResp.
 
-        错误信息
+        **参数解释**：  错误详细信息，当任务执行失败时返回的具体错误描述。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The error_msg of this QueryPreCheckResp.
         :rtype: str
@@ -264,7 +264,7 @@ class QueryPreCheckResp:
     def error_msg(self, error_msg):
         r"""Sets the error_msg of this QueryPreCheckResp.
 
-        错误信息
+        **参数解释**：  错误详细信息，当任务执行失败时返回的具体错误描述。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param error_msg: The error_msg of this QueryPreCheckResp.
         :type error_msg: str
@@ -275,7 +275,7 @@ class QueryPreCheckResp:
     def error_code(self):
         r"""Gets the error_code of this QueryPreCheckResp.
 
-        任务错误码。
+        **参数解释**：  错误码，当任务报错时返回的错误代码。  **约束限制**：  不涉及。  **取值范围**：  格式为DRS.XXXXXX。  **默认取值**：  不涉及
 
         :return: The error_code of this QueryPreCheckResp.
         :rtype: str
@@ -286,7 +286,7 @@ class QueryPreCheckResp:
     def error_code(self, error_code):
         r"""Sets the error_code of this QueryPreCheckResp.
 
-        任务错误码。
+        **参数解释**：  错误码，当任务报错时返回的错误代码。  **约束限制**：  不涉及。  **取值范围**：  格式为DRS.XXXXXX。  **默认取值**：  不涉及
 
         :param error_code: The error_code of this QueryPreCheckResp.
         :type error_code: str

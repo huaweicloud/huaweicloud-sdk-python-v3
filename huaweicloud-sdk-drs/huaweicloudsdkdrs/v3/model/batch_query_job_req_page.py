@@ -29,7 +29,7 @@ class BatchQueryJobReqPage:
 
         The model defined in huaweicloud sdk
 
-        :param jobs: 批量查询任务详情
+        :param jobs: **参数解释**：  批量查询任务ID列表，通过该参数指定需要查询的一个或多个任务。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type jobs: list[str]
         :param page_req: 
         :type page_req: :class:`huaweicloudsdkdrs.v3.PageReq`
@@ -49,7 +49,7 @@ class BatchQueryJobReqPage:
     def jobs(self):
         r"""Gets the jobs of this BatchQueryJobReqPage.
 
-        批量查询任务详情
+        **参数解释**：  批量查询任务ID列表，通过该参数指定需要查询的一个或多个任务。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The jobs of this BatchQueryJobReqPage.
         :rtype: list[str]
@@ -60,7 +60,7 @@ class BatchQueryJobReqPage:
     def jobs(self, jobs):
         r"""Sets the jobs of this BatchQueryJobReqPage.
 
-        批量查询任务详情
+        **参数解释**：  批量查询任务ID列表，通过该参数指定需要查询的一个或多个任务。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param jobs: The jobs of this BatchQueryJobReqPage.
         :type jobs: list[str]

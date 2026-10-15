@@ -17,16 +17,18 @@ class UploadFileRequestBody:
     openapi_types = {
         'chat_id': 'str',
         'file': 'file',
-        'agent_type': 'str'
+        'agent_type': 'str',
+        'domain_type': 'str'
     }
 
     attribute_map = {
         'chat_id': 'chat_id',
         'file': 'file',
-        'agent_type': 'agent_type'
+        'agent_type': 'agent_type',
+        'domain_type': 'domain_type'
     }
 
-    def __init__(self, chat_id=None, file=None, agent_type=None):
+    def __init__(self, chat_id=None, file=None, agent_type=None, domain_type=None):
         r"""UploadFileRequestBody
 
         The model defined in huaweicloud sdk
@@ -37,6 +39,8 @@ class UploadFileRequestBody:
         :type file: :class:`huaweicloudsdkcore.http.formdata.FormFile`
         :param agent_type: **参数解释**： 对话ID。 **约束限制**： 不涉及 **取值范围**： 仅支持字母、数字、中划线和下划线，长度为[1-128]个字符。 **默认取值**： 不涉及
         :type agent_type: str
+        :param domain_type: **参数解释**： 领域类型，仅agent_type为optverse时生效。 **约束限制**： 不涉及 **取值范围**： * production-planning：生产计划 * sequence-planning：生产排程 * vrp：运输计划 * optverse：通用数学规划 **默认取值**： optverse
+        :type domain_type: str
         """
         
         
@@ -44,12 +48,15 @@ class UploadFileRequestBody:
         self._chat_id = None
         self._file = None
         self._agent_type = None
+        self._domain_type = None
         self.discriminator = None
 
         if chat_id is not None:
             self.chat_id = chat_id
         self.file = file
         self.agent_type = agent_type
+        if domain_type is not None:
+            self.domain_type = domain_type
 
     @property
     def chat_id(self):
@@ -116,6 +123,28 @@ class UploadFileRequestBody:
         :type agent_type: str
         """
         self._agent_type = agent_type
+
+    @property
+    def domain_type(self):
+        r"""Gets the domain_type of this UploadFileRequestBody.
+
+        **参数解释**： 领域类型，仅agent_type为optverse时生效。 **约束限制**： 不涉及 **取值范围**： * production-planning：生产计划 * sequence-planning：生产排程 * vrp：运输计划 * optverse：通用数学规划 **默认取值**： optverse
+
+        :return: The domain_type of this UploadFileRequestBody.
+        :rtype: str
+        """
+        return self._domain_type
+
+    @domain_type.setter
+    def domain_type(self, domain_type):
+        r"""Sets the domain_type of this UploadFileRequestBody.
+
+        **参数解释**： 领域类型，仅agent_type为optverse时生效。 **约束限制**： 不涉及 **取值范围**： * production-planning：生产计划 * sequence-planning：生产排程 * vrp：运输计划 * optverse：通用数学规划 **默认取值**： optverse
+
+        :param domain_type: The domain_type of this UploadFileRequestBody.
+        :type domain_type: str
+        """
+        self._domain_type = domain_type
 
     def to_dict(self):
         result = {}

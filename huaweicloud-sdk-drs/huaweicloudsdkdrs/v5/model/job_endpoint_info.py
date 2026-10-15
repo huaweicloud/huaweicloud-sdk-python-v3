@@ -43,11 +43,11 @@ class JobEndpointInfo:
 
         The model defined in huaweicloud sdk
 
-        :param db_type: 数据库类型。取值：  - oracle：Oracle。 - gaussdbv5：GaussDB分布式版。 - redis：Redis。 - rediscluster：Redis集群版。 - gaussredis: GeminiDB Redis。 - mysql：MySQL。
+        :param db_type: **参数解释**：  数据库类型，标识源库或目标库的数据库引擎种类。  **约束限制**：  不涉及。  **取值范围**：  - oracle：Oracle - gaussdbv5：GaussDB分布式版 - redis：Redis - rediscluster：Redis集群版 - gaussredis：GeminiDB Redis - mysql：MySQL  **默认取值**：  不涉及
         :type db_type: str
-        :param endpoint_type: 数据库实例类型。取值：  - offline：自建数据库。 - ecs：华为云ECS自建数据库。 - cloud：华为云数据库。
+        :param endpoint_type: **参数解释**：  数据库实例类型，标识数据库的部署方式。  **约束限制**：  不涉及。  **取值范围**：  - offline：自建数据库 - ecs：华为云ECS自建数据库 - cloud：华为云数据库  **默认取值**：  不涉及
         :type endpoint_type: str
-        :param endpoint_role: 数据库实例角色。取值： - so：源库。 - ta：目标库。
+        :param endpoint_role: **参数解释**：  数据库实例角色，标识该数据库在数据复制任务中是源端还是目标端。  **约束限制**：  不涉及。  **取值范围**：  - so：源库 - ta：目标库  **默认取值**：  不涉及
         :type endpoint_role: str
         :param endpoint: 
         :type endpoint: :class:`huaweicloudsdkdrs.v5.BaseEndpoint`
@@ -95,7 +95,7 @@ class JobEndpointInfo:
     def db_type(self):
         r"""Gets the db_type of this JobEndpointInfo.
 
-        数据库类型。取值：  - oracle：Oracle。 - gaussdbv5：GaussDB分布式版。 - redis：Redis。 - rediscluster：Redis集群版。 - gaussredis: GeminiDB Redis。 - mysql：MySQL。
+        **参数解释**：  数据库类型，标识源库或目标库的数据库引擎种类。  **约束限制**：  不涉及。  **取值范围**：  - oracle：Oracle - gaussdbv5：GaussDB分布式版 - redis：Redis - rediscluster：Redis集群版 - gaussredis：GeminiDB Redis - mysql：MySQL  **默认取值**：  不涉及
 
         :return: The db_type of this JobEndpointInfo.
         :rtype: str
@@ -106,7 +106,7 @@ class JobEndpointInfo:
     def db_type(self, db_type):
         r"""Sets the db_type of this JobEndpointInfo.
 
-        数据库类型。取值：  - oracle：Oracle。 - gaussdbv5：GaussDB分布式版。 - redis：Redis。 - rediscluster：Redis集群版。 - gaussredis: GeminiDB Redis。 - mysql：MySQL。
+        **参数解释**：  数据库类型，标识源库或目标库的数据库引擎种类。  **约束限制**：  不涉及。  **取值范围**：  - oracle：Oracle - gaussdbv5：GaussDB分布式版 - redis：Redis - rediscluster：Redis集群版 - gaussredis：GeminiDB Redis - mysql：MySQL  **默认取值**：  不涉及
 
         :param db_type: The db_type of this JobEndpointInfo.
         :type db_type: str
@@ -117,7 +117,7 @@ class JobEndpointInfo:
     def endpoint_type(self):
         r"""Gets the endpoint_type of this JobEndpointInfo.
 
-        数据库实例类型。取值：  - offline：自建数据库。 - ecs：华为云ECS自建数据库。 - cloud：华为云数据库。
+        **参数解释**：  数据库实例类型，标识数据库的部署方式。  **约束限制**：  不涉及。  **取值范围**：  - offline：自建数据库 - ecs：华为云ECS自建数据库 - cloud：华为云数据库  **默认取值**：  不涉及
 
         :return: The endpoint_type of this JobEndpointInfo.
         :rtype: str
@@ -128,7 +128,7 @@ class JobEndpointInfo:
     def endpoint_type(self, endpoint_type):
         r"""Sets the endpoint_type of this JobEndpointInfo.
 
-        数据库实例类型。取值：  - offline：自建数据库。 - ecs：华为云ECS自建数据库。 - cloud：华为云数据库。
+        **参数解释**：  数据库实例类型，标识数据库的部署方式。  **约束限制**：  不涉及。  **取值范围**：  - offline：自建数据库 - ecs：华为云ECS自建数据库 - cloud：华为云数据库  **默认取值**：  不涉及
 
         :param endpoint_type: The endpoint_type of this JobEndpointInfo.
         :type endpoint_type: str
@@ -139,7 +139,7 @@ class JobEndpointInfo:
     def endpoint_role(self):
         r"""Gets the endpoint_role of this JobEndpointInfo.
 
-        数据库实例角色。取值： - so：源库。 - ta：目标库。
+        **参数解释**：  数据库实例角色，标识该数据库在数据复制任务中是源端还是目标端。  **约束限制**：  不涉及。  **取值范围**：  - so：源库 - ta：目标库  **默认取值**：  不涉及
 
         :return: The endpoint_role of this JobEndpointInfo.
         :rtype: str
@@ -150,7 +150,7 @@ class JobEndpointInfo:
     def endpoint_role(self, endpoint_role):
         r"""Sets the endpoint_role of this JobEndpointInfo.
 
-        数据库实例角色。取值： - so：源库。 - ta：目标库。
+        **参数解释**：  数据库实例角色，标识该数据库在数据复制任务中是源端还是目标端。  **约束限制**：  不涉及。  **取值范围**：  - so：源库 - ta：目标库  **默认取值**：  不涉及
 
         :param endpoint_role: The endpoint_role of this JobEndpointInfo.
         :type endpoint_role: str

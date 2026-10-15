@@ -47,9 +47,9 @@ class ListJobHistoryParametersRequest:
         :type offset: int
         :param limit: 每页显示的条目数量。默认为10，取值范围【1-1000】
         :type limit: int
-        :param begin_time: 开始时间，UTC时间，例如：2020-09-01T18:50:20Z
+        :param begin_time: 开始时间，格式为毫秒级时间戳。
         :type begin_time: str
-        :param end_time: 结束时间，UTC时间，例如：2020-09-01T19:50:20Z
+        :param end_time: 结束时间，格式为毫秒级时间戳。
         :type end_time: str
         :param name: 参数名称。
         :type name: str
@@ -172,7 +172,7 @@ class ListJobHistoryParametersRequest:
     def begin_time(self):
         r"""Gets the begin_time of this ListJobHistoryParametersRequest.
 
-        开始时间，UTC时间，例如：2020-09-01T18:50:20Z
+        开始时间，格式为毫秒级时间戳。
 
         :return: The begin_time of this ListJobHistoryParametersRequest.
         :rtype: str
@@ -183,7 +183,7 @@ class ListJobHistoryParametersRequest:
     def begin_time(self, begin_time):
         r"""Sets the begin_time of this ListJobHistoryParametersRequest.
 
-        开始时间，UTC时间，例如：2020-09-01T18:50:20Z
+        开始时间，格式为毫秒级时间戳。
 
         :param begin_time: The begin_time of this ListJobHistoryParametersRequest.
         :type begin_time: str
@@ -194,7 +194,7 @@ class ListJobHistoryParametersRequest:
     def end_time(self):
         r"""Gets the end_time of this ListJobHistoryParametersRequest.
 
-        结束时间，UTC时间，例如：2020-09-01T19:50:20Z
+        结束时间，格式为毫秒级时间戳。
 
         :return: The end_time of this ListJobHistoryParametersRequest.
         :rtype: str
@@ -205,7 +205,7 @@ class ListJobHistoryParametersRequest:
     def end_time(self, end_time):
         r"""Sets the end_time of this ListJobHistoryParametersRequest.
 
-        结束时间，UTC时间，例如：2020-09-01T19:50:20Z
+        结束时间，格式为毫秒级时间戳。
 
         :param end_time: The end_time of this ListJobHistoryParametersRequest.
         :type end_time: str

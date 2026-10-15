@@ -28,7 +28,9 @@ class PublishApp:
         'publisher': 'str',
         'source_image_ids': 'list[str]',
         'sandbox_enable': 'bool',
-        'app_extended_info': 'AppExtendedInfo'
+        'app_extended_info': 'AppExtendedInfo',
+        'is_pre_boot': 'bool',
+        'pre_launch_policy': 'int'
     }
 
     attribute_map = {
@@ -45,10 +47,12 @@ class PublishApp:
         'publisher': 'publisher',
         'source_image_ids': 'source_image_ids',
         'sandbox_enable': 'sandbox_enable',
-        'app_extended_info': 'app_extended_info'
+        'app_extended_info': 'app_extended_info',
+        'is_pre_boot': 'is_pre_boot',
+        'pre_launch_policy': 'pre_launch_policy'
     }
 
-    def __init__(self, name=None, version=None, command_param=None, icon_uri=None, execute_path=None, work_path=None, icon_path=None, icon_index=None, description=None, source_type=None, publisher=None, source_image_ids=None, sandbox_enable=None, app_extended_info=None):
+    def __init__(self, name=None, version=None, command_param=None, icon_uri=None, execute_path=None, work_path=None, icon_path=None, icon_index=None, description=None, source_type=None, publisher=None, source_image_ids=None, sandbox_enable=None, app_extended_info=None, is_pre_boot=None, pre_launch_policy=None):
         r"""PublishApp
 
         The model defined in huaweicloud sdk
@@ -81,6 +85,10 @@ class PublishApp:
         :type sandbox_enable: bool
         :param app_extended_info: 
         :type app_extended_info: :class:`huaweicloudsdkworkspaceapp.v1.AppExtendedInfo`
+        :param is_pre_boot: 是否开启会话预开。
+        :type is_pre_boot: bool
+        :param pre_launch_policy: 预开状态：0：非预开，1：会话预开，3：应用预开。
+        :type pre_launch_policy: int
         """
         
         
@@ -99,6 +107,8 @@ class PublishApp:
         self._source_image_ids = None
         self._sandbox_enable = None
         self._app_extended_info = None
+        self._is_pre_boot = None
+        self._pre_launch_policy = None
         self.discriminator = None
 
         self.name = name
@@ -126,6 +136,10 @@ class PublishApp:
             self.sandbox_enable = sandbox_enable
         if app_extended_info is not None:
             self.app_extended_info = app_extended_info
+        if is_pre_boot is not None:
+            self.is_pre_boot = is_pre_boot
+        if pre_launch_policy is not None:
+            self.pre_launch_policy = pre_launch_policy
 
     @property
     def name(self):
@@ -430,6 +444,50 @@ class PublishApp:
         :type app_extended_info: :class:`huaweicloudsdkworkspaceapp.v1.AppExtendedInfo`
         """
         self._app_extended_info = app_extended_info
+
+    @property
+    def is_pre_boot(self):
+        r"""Gets the is_pre_boot of this PublishApp.
+
+        是否开启会话预开。
+
+        :return: The is_pre_boot of this PublishApp.
+        :rtype: bool
+        """
+        return self._is_pre_boot
+
+    @is_pre_boot.setter
+    def is_pre_boot(self, is_pre_boot):
+        r"""Sets the is_pre_boot of this PublishApp.
+
+        是否开启会话预开。
+
+        :param is_pre_boot: The is_pre_boot of this PublishApp.
+        :type is_pre_boot: bool
+        """
+        self._is_pre_boot = is_pre_boot
+
+    @property
+    def pre_launch_policy(self):
+        r"""Gets the pre_launch_policy of this PublishApp.
+
+        预开状态：0：非预开，1：会话预开，3：应用预开。
+
+        :return: The pre_launch_policy of this PublishApp.
+        :rtype: int
+        """
+        return self._pre_launch_policy
+
+    @pre_launch_policy.setter
+    def pre_launch_policy(self, pre_launch_policy):
+        r"""Sets the pre_launch_policy of this PublishApp.
+
+        预开状态：0：非预开，1：会话预开，3：应用预开。
+
+        :param pre_launch_policy: The pre_launch_policy of this PublishApp.
+        :type pre_launch_policy: int
+        """
+        self._pre_launch_policy = pre_launch_policy
 
     def to_dict(self):
         result = {}

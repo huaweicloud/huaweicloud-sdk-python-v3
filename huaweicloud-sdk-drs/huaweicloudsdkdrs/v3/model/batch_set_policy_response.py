@@ -30,9 +30,9 @@ class BatchSetPolicyResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param results: 批量设置同步策略响应体
+        :param results: 批量设置同步策略返回列表
         :type results: list[:class:`huaweicloudsdkdrs.v3.SyncPolicyResp`]
-        :param count: 总数
+        :param count: **参数解释**：  返回的任务信息总数，表示本次查询成功返回的任务数量，与results数组的长度一致。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type count: int
         """
         
@@ -51,7 +51,7 @@ class BatchSetPolicyResponse(SdkResponse):
     def results(self):
         r"""Gets the results of this BatchSetPolicyResponse.
 
-        批量设置同步策略响应体
+        批量设置同步策略返回列表
 
         :return: The results of this BatchSetPolicyResponse.
         :rtype: list[:class:`huaweicloudsdkdrs.v3.SyncPolicyResp`]
@@ -62,7 +62,7 @@ class BatchSetPolicyResponse(SdkResponse):
     def results(self, results):
         r"""Sets the results of this BatchSetPolicyResponse.
 
-        批量设置同步策略响应体
+        批量设置同步策略返回列表
 
         :param results: The results of this BatchSetPolicyResponse.
         :type results: list[:class:`huaweicloudsdkdrs.v3.SyncPolicyResp`]
@@ -73,7 +73,7 @@ class BatchSetPolicyResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this BatchSetPolicyResponse.
 
-        总数
+        **参数解释**：  返回的任务信息总数，表示本次查询成功返回的任务数量，与results数组的长度一致。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The count of this BatchSetPolicyResponse.
         :rtype: int
@@ -84,7 +84,7 @@ class BatchSetPolicyResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this BatchSetPolicyResponse.
 
-        总数
+        **参数解释**：  返回的任务信息总数，表示本次查询成功返回的任务数量，与results数组的长度一致。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param count: The count of this BatchSetPolicyResponse.
         :type count: int

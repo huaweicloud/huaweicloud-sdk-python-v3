@@ -23,7 +23,8 @@ class ListObejectLevelCompareOverviewResponse(SdkResponse):
         'report_remain_seconds': 'int',
         'compare_job_id': 'str',
         'error_msg': 'str',
-        'compare_result': 'list[ObjectsCompareOverviewInfo]'
+        'compare_result': 'list[ObjectsCompareOverviewInfo]',
+        'database_info': 'object'
     }
 
     attribute_map = {
@@ -34,10 +35,11 @@ class ListObejectLevelCompareOverviewResponse(SdkResponse):
         'report_remain_seconds': 'report_remain_seconds',
         'compare_job_id': 'compare_job_id',
         'error_msg': 'error_msg',
-        'compare_result': 'compare_result'
+        'compare_result': 'compare_result',
+        'database_info': 'database_info'
     }
 
-    def __init__(self, create_time=None, start_time=None, status=None, export_status=None, report_remain_seconds=None, compare_job_id=None, error_msg=None, compare_result=None):
+    def __init__(self, create_time=None, start_time=None, status=None, export_status=None, report_remain_seconds=None, compare_job_id=None, error_msg=None, compare_result=None, database_info=None):
         r"""ListObejectLevelCompareOverviewResponse
 
         The model defined in huaweicloud sdk
@@ -58,6 +60,8 @@ class ListObejectLevelCompareOverviewResponse(SdkResponse):
         :type error_msg: str
         :param compare_result: 对比结果。
         :type compare_result: list[:class:`huaweicloudsdkdrs.v3.ObjectsCompareOverviewInfo`]
+        :param database_info: 灾备数据库信息。
+        :type database_info: object
         """
         
         super().__init__()
@@ -70,6 +74,7 @@ class ListObejectLevelCompareOverviewResponse(SdkResponse):
         self._compare_job_id = None
         self._error_msg = None
         self._compare_result = None
+        self._database_info = None
         self.discriminator = None
 
         if create_time is not None:
@@ -88,6 +93,8 @@ class ListObejectLevelCompareOverviewResponse(SdkResponse):
             self.error_msg = error_msg
         if compare_result is not None:
             self.compare_result = compare_result
+        if database_info is not None:
+            self.database_info = database_info
 
     @property
     def create_time(self):
@@ -264,6 +271,28 @@ class ListObejectLevelCompareOverviewResponse(SdkResponse):
         :type compare_result: list[:class:`huaweicloudsdkdrs.v3.ObjectsCompareOverviewInfo`]
         """
         self._compare_result = compare_result
+
+    @property
+    def database_info(self):
+        r"""Gets the database_info of this ListObejectLevelCompareOverviewResponse.
+
+        灾备数据库信息。
+
+        :return: The database_info of this ListObejectLevelCompareOverviewResponse.
+        :rtype: object
+        """
+        return self._database_info
+
+    @database_info.setter
+    def database_info(self, database_info):
+        r"""Sets the database_info of this ListObejectLevelCompareOverviewResponse.
+
+        灾备数据库信息。
+
+        :param database_info: The database_info of this ListObejectLevelCompareOverviewResponse.
+        :type database_info: object
+        """
+        self._database_info = database_info
 
     def to_dict(self):
         import warnings

@@ -21,7 +21,8 @@ class CountAllResourcesRequest:
         'region_id': 'list[str]',
         'ep_id': 'list[str]',
         'project_id': 'list[str]',
-        'tags': 'list[str]'
+        'tags': 'list[str]',
+        'group_id': 'str'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class CountAllResourcesRequest:
         'region_id': 'region_id',
         'ep_id': 'ep_id',
         'project_id': 'project_id',
-        'tags': 'tags'
+        'tags': 'tags',
+        'group_id': 'group_id'
     }
 
-    def __init__(self, id=None, name=None, type=None, region_id=None, ep_id=None, project_id=None, tags=None):
+    def __init__(self, id=None, name=None, type=None, region_id=None, ep_id=None, project_id=None, tags=None, group_id=None):
         r"""CountAllResourcesRequest
 
         The model defined in huaweicloud sdk
@@ -53,6 +55,8 @@ class CountAllResourcesRequest:
         :type project_id: list[str]
         :param tags: 标签列表
         :type tags: list[str]
+        :param group_id: 资源组ID
+        :type group_id: str
         """
         
         
@@ -64,6 +68,7 @@ class CountAllResourcesRequest:
         self._ep_id = None
         self._project_id = None
         self._tags = None
+        self._group_id = None
         self.discriminator = None
 
         if id is not None:
@@ -80,6 +85,8 @@ class CountAllResourcesRequest:
             self.project_id = project_id
         if tags is not None:
             self.tags = tags
+        if group_id is not None:
+            self.group_id = group_id
 
     @property
     def id(self):
@@ -234,6 +241,28 @@ class CountAllResourcesRequest:
         :type tags: list[str]
         """
         self._tags = tags
+
+    @property
+    def group_id(self):
+        r"""Gets the group_id of this CountAllResourcesRequest.
+
+        资源组ID
+
+        :return: The group_id of this CountAllResourcesRequest.
+        :rtype: str
+        """
+        return self._group_id
+
+    @group_id.setter
+    def group_id(self, group_id):
+        r"""Sets the group_id of this CountAllResourcesRequest.
+
+        资源组ID
+
+        :param group_id: The group_id of this CountAllResourcesRequest.
+        :type group_id: str
+        """
+        self._group_id = group_id
 
     def to_dict(self):
         result = {}

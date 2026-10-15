@@ -1,3 +1,411 @@
+# 3.1.218 2026-10-15
+
+### HuaweiCloud SDK AIDataLake
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持以下接口：
+    - `ListAuraDataframeJob`
+    - `CreateAuraDataframeJob`
+    - `ShowAuraDataframeJob`
+    - `CancelAuraDataframeJob`
+    - `ShowFlinkJob`
+    - `ShowFlinkJobState`
+    - `CancelFlinkJob`
+    - `ListFlinkJobEvents`
+    - `ListFlinkJobs`
+    - `RunFlinkJob`
+    - `ListFlinkSavepoint`
+    - `CreateFlinkSavepoint`
+    - `ShowFlinkSavepoint`
+    - `DeleteFlinkSavepoint`
+    - `ShowFlinkJobAutoscalingPolicy`
+    - `UpdateFlinkJobAutoscalingPolicy`
+    - `ListFlinkJobAutoscalingHistories`
+    - `CreateRaySession`
+    - `CloseRaySession`
+    - `ListFederations`
+    - `CreateFederation`
+    - `ShowFederation`
+    - `UpdateFederation`
+    - `DeleteFederation`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ExecuteAuraSqlStatement**
+    - 请求参数变更
+      - `+ wait_timeout`
+      - `+ max_retry_times`
+      - `+ statement_type`
+      - `+ statement_name`
+  - **CreateAuraSqlSession**
+    - 请求参数变更
+      - `+ agency_name`
+      - `+ max_retry_times`
+      - `+ priority`
+      - `+ cpu`
+      - `+ memory`
+
+### HuaweiCloud SDK AS
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListScalingTagInfosByTenantId**
+    - 请求参数变更
+      - `+ resource_type: enum value [scaling_configuration_tag]`
+  - **ListScalingTagInfosByResourceId**
+    - 请求参数变更
+      - `+ resource_type: enum value [scaling_configuration_tag]`
+  - **CreateScalingTagInfo**
+    - 请求参数变更
+      - `+ resource_type: enum value [scaling_configuration_tag]`
+  - **DeleteScalingTagInfo**
+    - 请求参数变更
+      - `+ resource_type: enum value [scaling_configuration_tag]`
+  - **ListResourceInstances**
+    - 请求参数变更
+      - `+ resource_type: enum value [scaling_configuration_tag]`
+  - **CreateScalingConfig**
+    - 请求参数变更
+      - `+ instance_config.tags`
+      - `+ instance_config.tag_transmission_policy`
+  - **ListScalingConfigs**
+    - 响应参数变更
+      - `+ scaling_configurations.instance_config.tags`
+      - `+ scaling_configurations.instance_config.tag_transmission_policy`
+  - **ShowScalingConfig**
+    - 响应参数变更
+      - `+ scaling_configuration.instance_config.tags`
+      - `+ scaling_configuration.instance_config.tag_transmission_policy`
+
+### HuaweiCloud SDK DAS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持以下接口：
+    - `ShowBigKeyHotKeySwitch`
+    - `ChangeBigKeyHotKeySwitch`
+    - `ListBigKeys`
+    - `ListHotKeys`
+    - `ShowKeyTrend`
+    - `ListHealthReportTemplate`
+    - `CreateHealthReportTemplate`
+    - `ShowHealthReportTemplate`
+    - `UpdateHealthReportTemplate`
+    - `DeleteHealthReportTemplate`
+    - `ShowInstanceHealthReportConfig`
+    - `SetInstanceHealthReportConfig`
+    - `BatchSetHealthReportConfig`
+    - `ListHealthReportConfigs`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DRS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 废弃以下接口：
+    - `DeleteCompareJob`
+    - `StartPromptlyDataLevelTableCompareJob`
+    - `DownloadCompareResultFile`
+    - `CreateCompareResultFile`
+    - `SelectGroupAndStream`
+    - `ModifyGroupAndStream`
+    - `BatchValidateClustersConnections`
+    - `BatchCheckJobs`
+    - `UpdateParams`
+    - `BatchStartJobs`
+    - `BatchRestoreTask`
+    - `BatchStopJobs`
+    - `BatchDeleteJobs`
+    - `BatchSetDefiner`
+    - `BatchListJobStatus`
+    - `ListUsers`
+    - `BatchSetPolicy`
+    - `UpdateTuningParams`
+    - `ListAvailableNodeTypes`
+    - `ListDataCompareOverview`
+    - `ListDataCompareDetail`
+    - `ListContentCompareOverview`
+    - `ListContentCompareDetail`
+    - `CreateObjectLevelCompareJob`
+    - `ListObejectLevelCompareOverview`
+    - `ListObejectLevelCompareDetail`
+    - `ListContentCompareDifference`
+    - `QueryTuningParams`
+    - `BatchValidateConnections`
+    - `BatchSetObjects`
+    - `BatchSetSpeed`
+    - `BatchShowParams`
+    - `BatchResetPassword`
+    - `ShowJobList`
+    - `BatchChangeData`
+    - `ShowMonitoringData`
+    - `BatchUpdateUser`
+    - `BatchSetSmn`
+    - `ListDataLevelTableCompareJobs`
+    - `CreateDataLevelTableCompareJob`
+    - `BatchCreateJobs`
+    - `BatchCheckResults`
+    - `BatchUpdateJob`
+    - `CreateCompareTask`
+    - `ListCompareResult`
+    - `BatchSwitchover`
+    - `BatchListStructProcess`
+    - `BatchListJobDetails`
+  - **ListObejectLevelCompareOverview**
+    - 响应参数变更
+      - `+ database_info`
+  - **BatchListProgresses**
+    - 响应参数变更
+      - `+ results.apply_rows_rate`
+      - `+ results.apply_bytes_rate`
+  - **ListDataLevelTableCompareJobs**
+    - 响应参数变更
+      - `+ compare_jobs.database_info`
+  - **BatchSwitchover**
+    - 请求参数变更
+      - `+ is_pause_job`
+  - **BatchListStructProcess**
+    - 响应参数变更
+      - `+ results.database_info`
+  - **BatchListJobDetails**
+    - 响应参数变更
+      - `+ results.sync_mode`
+
+### HuaweiCloud SDK DRS
+
+- _接口版本_
+  - V5
+- _新增特性_
+  - 支持以下接口：
+    - `ListReplaySupportSourceConfig`
+    - `ShowSwitchoverInfo`
+    - `AssociateSmnTopic`
+    - `SaveDataFilterRules`
+    - `CollectDataFilterRules`
+    - `DeleteDataFilterRules`
+    - `ChangeJobFlavor`
+    - `ExportJobList`
+    - `ShowTaskExecuteProgress`
+    - `CheckDataFilterRules`
+    - `ShowDataFilterRulesResult`
+    - `DownloadFile`
+    - `ShowFiles`
+    - `ShowReportFileObsUris`
+    - `ShowSmnSubscriptionDetail`
+    - `ShowLinkFlavors`
+    - `StartSubscription`
+    - `RetrySubscription`
+    - `ResetSubscription`
+    - `ShowReplayExecuteRecord`
+    - `ShowReplayRecord`
+    - `ShowObjectColumnInfo`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 废弃以下接口：
+    - `UploadJdbcDriver`
+    - `SyncJdbcDriver`
+    - `ListsAgencyPermissions`
+    - `UpdateAgencyPolicy`
+    - `ListLinks`
+    - `ShowDataFilteringResult`
+    - `DeleteJdbcDriver`
+    - `ListJdbcDrivers`
+    - `ShowAgencyInfo`
+    - `CheckDataFilter`
+  - **ShowDbObjectTemplateResult**
+    - 请求参数变更
+      - `+ type: enum value [compare,compare_key_detail]`
+  - **DownloadDbObjectTemplate**
+    - 请求参数变更
+      - `+ file_import_db_level: enum value [compare_key]`
+  - **UploadDbObjectTemplate**
+    - 请求参数变更
+      - `+ file_import_db_level: enum value [compare_key]`
+  - **ShowComparePolicy**
+    - 响应参数变更
+      - `+ conflict_strategy`
+  - **UpdateComparePolicy**
+    - 请求参数变更
+      - `+ conflict_strategy`
+  - **ListLinks**
+    - 请求参数变更
+      - `+ job_type: enum value [replay]`
+  - **ShowHealthCompareJobList**
+    - 响应参数变更
+      - `+ compare_jobs.database_info`
+  - **ListInstanceTags**
+    - 请求参数变更
+      - `+ resource_type: enum value [verify]`
+  - **ShowReplayResults**
+    - 请求参数变更
+      - `+ type: enum value [sql_result_inconsistent,replayed_sql,ugo_error_sql,sql_object_statistic,archive_capture_data]`
+    - 响应参数变更
+      - `+ compare_results`
+  - **CreateReplicationJob**
+    - 请求参数变更
+      - `+ options.consistency_check_mode`
+  - **ShowReplicationJob**
+    - 响应参数变更
+      - `+ options.consistency_check_mode`
+  - **ShowColumnInfos**
+    - 响应参数变更
+      - `+ column_map_infos.column_info_lists.desensitization_algorithm`
+  - **ModifyColumnInfos**
+    - 请求参数变更
+      - `+ column_map_infos.column_info_lists.desensitization_algorithm`
+  - **ListExtraColumns**
+    - 请求参数变更
+      - `+ fetch_all`
+  - **ListJobs**
+    - 请求参数变更
+      - `+ job_type: enum value [replay]`
+  - **ListAsyncJobDetail**
+    - 响应参数变更
+      - `+ jobs.sync_mode`
+  - **ShowJobDetail**
+    - 请求参数变更
+      - `+ type: enum value [db_table_details]`
+      - `+ query_type: enum value [upgradeJob]`
+      - `+ compare_detail_type: enum value [unCompare]`
+      - `+ compare_detail_type: enum value [uncompare]`
+    - 响应参数变更
+      - `+ job.sync_mode`
+
+### HuaweiCloud SDK IAM
+
+- _接口版本_
+  - V5
+- _新增特性_
+  - 支持接口`UpdatePolicyV5`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListUsersV5**
+    - 请求参数变更
+      - `+ access_key_id`
+
+### HuaweiCloud SDK OptVerse
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UploadFile**
+    - 请求参数变更
+      - `+ domain_type`
+  - **ListChat**
+    - 请求参数变更
+      - `+ domain_type`
+      - `+ start_time`
+      - `+ end_time`
+
+### HuaweiCloud SDK RC
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CountAllResources**
+    - 请求参数变更
+      - `+ group_id`
+
+### HuaweiCloud SDK RDS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持接口`ShowVectorStorageConfig`、`UpdateVectorStorageConfig`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK RGC
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`ListLandingZoneVersion`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK STS
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **AssumeAgency**
+    - 请求参数变更
+      - `+ provided_contexts`
+
+### HuaweiCloud SDK WorkspaceApp
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdatePreBootPolicy**
+    - 请求参数变更
+      - `+ pre_launch_policy`
+  - **ShowAppDetail**
+    - 响应参数变更
+      - `+ pre_launch_policy`
+  - **UpdateApp**
+    - 响应参数变更
+      - `+ pre_launch_policy`
+  - **UploadAppIconRaw**
+    - 响应参数变更
+      - `+ pre_launch_policy`
+  - **UploadAppIcon**
+    - 响应参数变更
+      - `+ pre_launch_policy`
+  - **ShowPublishableApp**
+    - 响应参数变更
+      - `+ pre_launch_policy`
+      - `+ items.pre_launch_policy`
+  - **ListPublishedApp**
+    - 响应参数变更
+      - `+ pre_launch_policy`
+      - `+ items.pre_launch_policy`
+  - **PublishApp**
+    - 请求参数变更
+      - `+ items.pre_launch_policy`
+    - 响应参数变更
+      - `+ pre_launch_policy`
+      - `+ items.pre_launch_policy`
+
 # 3.1.217 2026-10-08
 
 ### HuaweiCloud SDK AgentArts

@@ -45,7 +45,7 @@ class ListAuthorizationMailRecordRequest:
         :type app_group_id: str
         :param account: 用户(组)名称。
         :type account: str
-        :param mail_send_type: 授权类型： - ADD_GROUP_AUTHORIZATION 添加组授权 - DEL_GROUP_AUTHORIZATION 删除组授权。
+        :param mail_send_type: 授权类型： - ADD_GROUP_AUTHORIZATION 添加组授权 - DEL_GROUP_AUTHORIZATION 删除组授权 - ADD_GROUP_AUTHORIZATION_SMS 添加组授权短信 - DEL_GROUP_AUTHORIZATION_SMS 删除组授权短信。
         :type mail_send_type: str
         :param mail_send_result: 邮件发送结果(SUCCESS|FAIL)。
         :type mail_send_result: str
@@ -165,7 +165,7 @@ class ListAuthorizationMailRecordRequest:
     def mail_send_type(self):
         r"""Gets the mail_send_type of this ListAuthorizationMailRecordRequest.
 
-        授权类型： - ADD_GROUP_AUTHORIZATION 添加组授权 - DEL_GROUP_AUTHORIZATION 删除组授权。
+        授权类型： - ADD_GROUP_AUTHORIZATION 添加组授权 - DEL_GROUP_AUTHORIZATION 删除组授权 - ADD_GROUP_AUTHORIZATION_SMS 添加组授权短信 - DEL_GROUP_AUTHORIZATION_SMS 删除组授权短信。
 
         :return: The mail_send_type of this ListAuthorizationMailRecordRequest.
         :rtype: str
@@ -176,7 +176,7 @@ class ListAuthorizationMailRecordRequest:
     def mail_send_type(self, mail_send_type):
         r"""Sets the mail_send_type of this ListAuthorizationMailRecordRequest.
 
-        授权类型： - ADD_GROUP_AUTHORIZATION 添加组授权 - DEL_GROUP_AUTHORIZATION 删除组授权。
+        授权类型： - ADD_GROUP_AUTHORIZATION 添加组授权 - DEL_GROUP_AUTHORIZATION 删除组授权 - ADD_GROUP_AUTHORIZATION_SMS 添加组授权短信 - DEL_GROUP_AUTHORIZATION_SMS 删除组授权短信。
 
         :param mail_send_type: The mail_send_type of this ListAuthorizationMailRecordRequest.
         :type mail_send_type: str

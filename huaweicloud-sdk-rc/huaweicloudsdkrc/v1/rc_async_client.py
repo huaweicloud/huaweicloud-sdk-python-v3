@@ -1035,7 +1035,7 @@ class RcAsyncClient(Client):
     def collect_all_resources_summary_async(self, request):
         r"""列举资源概要
 
-        查询当前帐号的资源概览，需要当前用户有rc::listResourceSummary权限。
+        查询当前帐号的资源概览，需要当前用户有resourcecenter::listResourceSummary权限。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1167,6 +1167,8 @@ class RcAsyncClient(Client):
         if 'tags' in local_var_params:
             query_params.append(('tags', local_var_params['tags']))
             collection_formats['tags'] = 'multi'
+        if 'group_id' in local_var_params:
+            query_params.append(('group_id', local_var_params['group_id']))
 
         header_params = {}
 

@@ -29,9 +29,9 @@ class SupportLinksResp:
 
         The model defined in huaweicloud sdk
 
-        :param total_count: 列表中的项目总数，与分页无关。
+        :param total_count: **参数解释**：  列表中的项目总数，与分页无关。表示满足查询条件的记录总数量，用于分页计算。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type total_count: int
-        :param support_links: 支持的链路
+        :param support_links: **参数解释**：  DRS支持的数据复制链路列表，每条链路包含引擎类型、网络类型、迁移模式等组合信息。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type support_links: list[:class:`huaweicloudsdkdrs.v5.SupportLinkInfo`]
         """
         
@@ -50,7 +50,7 @@ class SupportLinksResp:
     def total_count(self):
         r"""Gets the total_count of this SupportLinksResp.
 
-        列表中的项目总数，与分页无关。
+        **参数解释**：  列表中的项目总数，与分页无关。表示满足查询条件的记录总数量，用于分页计算。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The total_count of this SupportLinksResp.
         :rtype: int
@@ -61,7 +61,7 @@ class SupportLinksResp:
     def total_count(self, total_count):
         r"""Sets the total_count of this SupportLinksResp.
 
-        列表中的项目总数，与分页无关。
+        **参数解释**：  列表中的项目总数，与分页无关。表示满足查询条件的记录总数量，用于分页计算。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param total_count: The total_count of this SupportLinksResp.
         :type total_count: int
@@ -72,7 +72,7 @@ class SupportLinksResp:
     def support_links(self):
         r"""Gets the support_links of this SupportLinksResp.
 
-        支持的链路
+        **参数解释**：  DRS支持的数据复制链路列表，每条链路包含引擎类型、网络类型、迁移模式等组合信息。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The support_links of this SupportLinksResp.
         :rtype: list[:class:`huaweicloudsdkdrs.v5.SupportLinkInfo`]
@@ -83,7 +83,7 @@ class SupportLinksResp:
     def support_links(self, support_links):
         r"""Sets the support_links of this SupportLinksResp.
 
-        支持的链路
+        **参数解释**：  DRS支持的数据复制链路列表，每条链路包含引擎类型、网络类型、迁移模式等组合信息。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param support_links: The support_links of this SupportLinksResp.
         :type support_links: list[:class:`huaweicloudsdkdrs.v5.SupportLinkInfo`]

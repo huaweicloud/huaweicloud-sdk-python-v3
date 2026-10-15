@@ -30,9 +30,9 @@ class ListLinksResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param job_links: 可用链路信息。
+        :param job_links: **参数解释**：  可用链路信息列表，包含每条可用链路的详细配置信息，详情请参见JobLinkResp对象定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type job_links: list[:class:`huaweicloudsdkdrs.v5.JobLinkResp`]
-        :param total_count: 可用链路总条数。
+        :param total_count: **参数解释**：  可用链路总条数，表示满足查询条件的链路记录总数量。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type total_count: int
         """
         
@@ -51,7 +51,7 @@ class ListLinksResponse(SdkResponse):
     def job_links(self):
         r"""Gets the job_links of this ListLinksResponse.
 
-        可用链路信息。
+        **参数解释**：  可用链路信息列表，包含每条可用链路的详细配置信息，详情请参见JobLinkResp对象定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The job_links of this ListLinksResponse.
         :rtype: list[:class:`huaweicloudsdkdrs.v5.JobLinkResp`]
@@ -62,7 +62,7 @@ class ListLinksResponse(SdkResponse):
     def job_links(self, job_links):
         r"""Sets the job_links of this ListLinksResponse.
 
-        可用链路信息。
+        **参数解释**：  可用链路信息列表，包含每条可用链路的详细配置信息，详情请参见JobLinkResp对象定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param job_links: The job_links of this ListLinksResponse.
         :type job_links: list[:class:`huaweicloudsdkdrs.v5.JobLinkResp`]
@@ -73,7 +73,7 @@ class ListLinksResponse(SdkResponse):
     def total_count(self):
         r"""Gets the total_count of this ListLinksResponse.
 
-        可用链路总条数。
+        **参数解释**：  可用链路总条数，表示满足查询条件的链路记录总数量。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The total_count of this ListLinksResponse.
         :rtype: int
@@ -84,7 +84,7 @@ class ListLinksResponse(SdkResponse):
     def total_count(self, total_count):
         r"""Sets the total_count of this ListLinksResponse.
 
-        可用链路总条数。
+        **参数解释**：  可用链路总条数，表示满足查询条件的链路记录总数量。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param total_count: The total_count of this ListLinksResponse.
         :type total_count: int

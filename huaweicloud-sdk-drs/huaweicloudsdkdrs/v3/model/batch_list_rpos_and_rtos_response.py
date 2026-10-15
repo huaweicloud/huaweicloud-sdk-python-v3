@@ -30,9 +30,9 @@ class BatchListRposAndRtosResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param count: 总数
+        :param count: **参数解释**：  返回的RPO和RTO查询结果总数，与results数组的长度一致。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type count: int
-        :param results: 批量查询RPO&amp;RTO的响应体集合
+        :param results: **参数解释**：  批量查询RPO和RTO的响应体集合，每个元素包含一个任务的RPO和RTO信息。详情请参见QueryRpoAndRtoResp对象定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type results: list[:class:`huaweicloudsdkdrs.v3.QueryRpoAndRtoResp`]
         """
         
@@ -51,7 +51,7 @@ class BatchListRposAndRtosResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this BatchListRposAndRtosResponse.
 
-        总数
+        **参数解释**：  返回的RPO和RTO查询结果总数，与results数组的长度一致。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The count of this BatchListRposAndRtosResponse.
         :rtype: int
@@ -62,7 +62,7 @@ class BatchListRposAndRtosResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this BatchListRposAndRtosResponse.
 
-        总数
+        **参数解释**：  返回的RPO和RTO查询结果总数，与results数组的长度一致。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param count: The count of this BatchListRposAndRtosResponse.
         :type count: int
@@ -73,7 +73,7 @@ class BatchListRposAndRtosResponse(SdkResponse):
     def results(self):
         r"""Gets the results of this BatchListRposAndRtosResponse.
 
-        批量查询RPO&RTO的响应体集合
+        **参数解释**：  批量查询RPO和RTO的响应体集合，每个元素包含一个任务的RPO和RTO信息。详情请参见QueryRpoAndRtoResp对象定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The results of this BatchListRposAndRtosResponse.
         :rtype: list[:class:`huaweicloudsdkdrs.v3.QueryRpoAndRtoResp`]
@@ -84,7 +84,7 @@ class BatchListRposAndRtosResponse(SdkResponse):
     def results(self, results):
         r"""Sets the results of this BatchListRposAndRtosResponse.
 
-        批量查询RPO&RTO的响应体集合
+        **参数解释**：  批量查询RPO和RTO的响应体集合，每个元素包含一个任务的RPO和RTO信息。详情请参见QueryRpoAndRtoResp对象定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param results: The results of this BatchListRposAndRtosResponse.
         :type results: list[:class:`huaweicloudsdkdrs.v3.QueryRpoAndRtoResp`]

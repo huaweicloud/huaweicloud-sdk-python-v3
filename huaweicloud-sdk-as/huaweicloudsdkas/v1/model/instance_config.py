@@ -30,7 +30,9 @@ class InstanceConfig:
         'dedicated_host_id': 'str',
         'multi_flavor_priority_policy': 'str',
         'market_type': 'str',
-        'cpu_options': 'CpuOptions'
+        'cpu_options': 'CpuOptions',
+        'tags': 'list[TagsSingleValue]',
+        'tag_transmission_policy': 'str'
     }
 
     attribute_map = {
@@ -49,10 +51,12 @@ class InstanceConfig:
         'dedicated_host_id': 'dedicated_host_id',
         'multi_flavor_priority_policy': 'multi_flavor_priority_policy',
         'market_type': 'market_type',
-        'cpu_options': 'cpu_options'
+        'cpu_options': 'cpu_options',
+        'tags': 'tags',
+        'tag_transmission_policy': 'tag_transmission_policy'
     }
 
-    def __init__(self, instance_id=None, flavor_ref=None, image_ref=None, disk=None, key_name=None, personality=None, public_ip=None, user_data=None, metadata=None, security_groups=None, server_group_id=None, tenancy=None, dedicated_host_id=None, multi_flavor_priority_policy=None, market_type=None, cpu_options=None):
+    def __init__(self, instance_id=None, flavor_ref=None, image_ref=None, disk=None, key_name=None, personality=None, public_ip=None, user_data=None, metadata=None, security_groups=None, server_group_id=None, tenancy=None, dedicated_host_id=None, multi_flavor_priority_policy=None, market_type=None, cpu_options=None, tags=None, tag_transmission_policy=None):
         r"""InstanceConfig
 
         The model defined in huaweicloud sdk
@@ -89,6 +93,10 @@ class InstanceConfig:
         :type market_type: str
         :param cpu_options: 
         :type cpu_options: :class:`huaweicloudsdkas.v1.CpuOptions`
+        :param tags: 伸缩配置标签列表。每个伸缩配置最多添加20个标签。
+        :type tags: list[:class:`huaweicloudsdkas.v1.TagsSingleValue`]
+        :param tag_transmission_policy: 标签传递策略，OVERRIDE表示扩容时使用伸缩配置标签，SUPPRESS表示扩容时使用伸缩组标签，默认SUPPRESS
+        :type tag_transmission_policy: str
         """
         
         
@@ -109,6 +117,8 @@ class InstanceConfig:
         self._multi_flavor_priority_policy = None
         self._market_type = None
         self._cpu_options = None
+        self._tags = None
+        self._tag_transmission_policy = None
         self.discriminator = None
 
         if instance_id is not None:
@@ -143,6 +153,10 @@ class InstanceConfig:
             self.market_type = market_type
         if cpu_options is not None:
             self.cpu_options = cpu_options
+        if tags is not None:
+            self.tags = tags
+        if tag_transmission_policy is not None:
+            self.tag_transmission_policy = tag_transmission_policy
 
     @property
     def instance_id(self):
@@ -483,6 +497,50 @@ class InstanceConfig:
         :type cpu_options: :class:`huaweicloudsdkas.v1.CpuOptions`
         """
         self._cpu_options = cpu_options
+
+    @property
+    def tags(self):
+        r"""Gets the tags of this InstanceConfig.
+
+        伸缩配置标签列表。每个伸缩配置最多添加20个标签。
+
+        :return: The tags of this InstanceConfig.
+        :rtype: list[:class:`huaweicloudsdkas.v1.TagsSingleValue`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        r"""Sets the tags of this InstanceConfig.
+
+        伸缩配置标签列表。每个伸缩配置最多添加20个标签。
+
+        :param tags: The tags of this InstanceConfig.
+        :type tags: list[:class:`huaweicloudsdkas.v1.TagsSingleValue`]
+        """
+        self._tags = tags
+
+    @property
+    def tag_transmission_policy(self):
+        r"""Gets the tag_transmission_policy of this InstanceConfig.
+
+        标签传递策略，OVERRIDE表示扩容时使用伸缩配置标签，SUPPRESS表示扩容时使用伸缩组标签，默认SUPPRESS
+
+        :return: The tag_transmission_policy of this InstanceConfig.
+        :rtype: str
+        """
+        return self._tag_transmission_policy
+
+    @tag_transmission_policy.setter
+    def tag_transmission_policy(self, tag_transmission_policy):
+        r"""Sets the tag_transmission_policy of this InstanceConfig.
+
+        标签传递策略，OVERRIDE表示扩容时使用伸缩配置标签，SUPPRESS表示扩容时使用伸缩组标签，默认SUPPRESS
+
+        :param tag_transmission_policy: The tag_transmission_policy of this InstanceConfig.
+        :type tag_transmission_policy: str
+        """
+        self._tag_transmission_policy = tag_transmission_policy
 
     def to_dict(self):
         result = {}

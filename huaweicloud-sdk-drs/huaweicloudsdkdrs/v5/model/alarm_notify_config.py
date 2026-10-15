@@ -35,9 +35,9 @@ class AlarmNotifyConfig:
 
         The model defined in huaweicloud sdk
 
-        :param alarm_to_user: 异常告警是否通知用户。
+        :param alarm_to_user: **参数解释**：  异常告警是否通知用户，指定当任务状态异常时是否向用户发送告警通知。  **约束限制**：  不涉及。  **取值范围**：  - true：异常告警通知用户 - false：异常告警不通知用户  **默认取值**：  false
         :type alarm_to_user: bool
-        :param topic_urn: SMN主题URN。
+        :param topic_urn: **参数解释**：  SMN主题URN，指定异常告警通知发送的目标SMN主题。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type topic_urn: str
         :param delay_time: 时延阈值(单位为s)。取值： - 最小值：1 - 最大值：3600 - 缺省值：0 - 说明： 1.源数据库和目标数据库之间的同步有时会存在一个时间差，称为时延，单位为秒。 2.时延阈值设置是指时延超过一定的值并持续6分钟后，DRS可以发送通知给指定收件人。（初次进入增量迁移阶段，会有较多数据等待同步，存在较大的时延，属于正常情况，不在此功能的监控范围之内。） 3.只有全量+增量的任务支持此选项。
         :type delay_time: int
@@ -70,7 +70,7 @@ class AlarmNotifyConfig:
     def alarm_to_user(self):
         r"""Gets the alarm_to_user of this AlarmNotifyConfig.
 
-        异常告警是否通知用户。
+        **参数解释**：  异常告警是否通知用户，指定当任务状态异常时是否向用户发送告警通知。  **约束限制**：  不涉及。  **取值范围**：  - true：异常告警通知用户 - false：异常告警不通知用户  **默认取值**：  false
 
         :return: The alarm_to_user of this AlarmNotifyConfig.
         :rtype: bool
@@ -81,7 +81,7 @@ class AlarmNotifyConfig:
     def alarm_to_user(self, alarm_to_user):
         r"""Sets the alarm_to_user of this AlarmNotifyConfig.
 
-        异常告警是否通知用户。
+        **参数解释**：  异常告警是否通知用户，指定当任务状态异常时是否向用户发送告警通知。  **约束限制**：  不涉及。  **取值范围**：  - true：异常告警通知用户 - false：异常告警不通知用户  **默认取值**：  false
 
         :param alarm_to_user: The alarm_to_user of this AlarmNotifyConfig.
         :type alarm_to_user: bool
@@ -92,7 +92,7 @@ class AlarmNotifyConfig:
     def topic_urn(self):
         r"""Gets the topic_urn of this AlarmNotifyConfig.
 
-        SMN主题URN。
+        **参数解释**：  SMN主题URN，指定异常告警通知发送的目标SMN主题。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The topic_urn of this AlarmNotifyConfig.
         :rtype: str
@@ -103,7 +103,7 @@ class AlarmNotifyConfig:
     def topic_urn(self, topic_urn):
         r"""Sets the topic_urn of this AlarmNotifyConfig.
 
-        SMN主题URN。
+        **参数解释**：  SMN主题URN，指定异常告警通知发送的目标SMN主题。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param topic_urn: The topic_urn of this AlarmNotifyConfig.
         :type topic_urn: str

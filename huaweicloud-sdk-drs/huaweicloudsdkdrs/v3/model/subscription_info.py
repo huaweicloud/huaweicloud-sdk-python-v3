@@ -29,9 +29,9 @@ class SubscriptionInfo:
 
         The model defined in huaweicloud sdk
 
-        :param endpoints: 短信或者邮件列表
+        :param endpoints: **参数解释**：  手机号或者邮箱列表，用于接收异常告警通知的联系方式。  **约束限制**：  - 最多支持10个。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type endpoints: list[str]
-        :param protocol: 收件方式，sms：短信,email：邮件
+        :param protocol: **参数解释**：  收件方式，指定异常告警的通知渠道。  **约束限制**：  不涉及。  **取值范围**：  - sms：短信 - email：邮件  **默认取值**：  不涉及
         :type protocol: str
         """
         
@@ -50,7 +50,7 @@ class SubscriptionInfo:
     def endpoints(self):
         r"""Gets the endpoints of this SubscriptionInfo.
 
-        短信或者邮件列表
+        **参数解释**：  手机号或者邮箱列表，用于接收异常告警通知的联系方式。  **约束限制**：  - 最多支持10个。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The endpoints of this SubscriptionInfo.
         :rtype: list[str]
@@ -61,7 +61,7 @@ class SubscriptionInfo:
     def endpoints(self, endpoints):
         r"""Sets the endpoints of this SubscriptionInfo.
 
-        短信或者邮件列表
+        **参数解释**：  手机号或者邮箱列表，用于接收异常告警通知的联系方式。  **约束限制**：  - 最多支持10个。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param endpoints: The endpoints of this SubscriptionInfo.
         :type endpoints: list[str]
@@ -72,7 +72,7 @@ class SubscriptionInfo:
     def protocol(self):
         r"""Gets the protocol of this SubscriptionInfo.
 
-        收件方式，sms：短信,email：邮件
+        **参数解释**：  收件方式，指定异常告警的通知渠道。  **约束限制**：  不涉及。  **取值范围**：  - sms：短信 - email：邮件  **默认取值**：  不涉及
 
         :return: The protocol of this SubscriptionInfo.
         :rtype: str
@@ -83,7 +83,7 @@ class SubscriptionInfo:
     def protocol(self, protocol):
         r"""Sets the protocol of this SubscriptionInfo.
 
-        收件方式，sms：短信,email：邮件
+        **参数解释**：  收件方式，指定异常告警的通知渠道。  **约束限制**：  不涉及。  **取值范围**：  - sms：短信 - email：邮件  **默认取值**：  不涉及
 
         :param protocol: The protocol of this SubscriptionInfo.
         :type protocol: str

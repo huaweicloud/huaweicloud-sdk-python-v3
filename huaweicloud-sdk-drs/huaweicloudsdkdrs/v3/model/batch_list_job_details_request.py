@@ -29,7 +29,7 @@ class BatchListJobDetailsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_language: 请求语言类型
+        :param x_language: **参数解释**：  请求语言类型。  **约束限制**：  不涉及。  **取值范围**：  - en-us：英文 - zh-cn：中文  **默认取值**：  en-us
         :type x_language: str
         :param body: Body of the BatchListJobDetailsRequest
         :type body: :class:`huaweicloudsdkdrs.v3.BatchQueryJobReqPage`
@@ -50,7 +50,7 @@ class BatchListJobDetailsRequest:
     def x_language(self):
         r"""Gets the x_language of this BatchListJobDetailsRequest.
 
-        请求语言类型
+        **参数解释**：  请求语言类型。  **约束限制**：  不涉及。  **取值范围**：  - en-us：英文 - zh-cn：中文  **默认取值**：  en-us
 
         :return: The x_language of this BatchListJobDetailsRequest.
         :rtype: str
@@ -61,7 +61,7 @@ class BatchListJobDetailsRequest:
     def x_language(self, x_language):
         r"""Sets the x_language of this BatchListJobDetailsRequest.
 
-        请求语言类型
+        **参数解释**：  请求语言类型。  **约束限制**：  不涉及。  **取值范围**：  - en-us：英文 - zh-cn：中文  **默认取值**：  en-us
 
         :param x_language: The x_language of this BatchListJobDetailsRequest.
         :type x_language: str

@@ -69,7 +69,7 @@ class RayJobInfo:
         :type endpoint_name: str
         :param config: 
         :type config: :class:`huaweicloudsdkaidatalake.v2.RayJobConfig`
-        :param description: **参数解释**：描述信息。 **约束限制**：不涉及。 **取值范围**：0~1024。 **默认取值**：不涉及。 
+        :param description: **参数解释**：描述信息。 **约束限制**：不涉及。 **取值范围**：长度为0-1024的任意字符组合，不包含“!”、“&lt;”、“&gt;”、“&#x3D;”、“&amp;”、“\&quot;”、“&#39;”。 **默认取值**：不涉及。 
         :type description: str
         :param id: **参数解释**：作业ID。 **取值范围**：长度为1~36的英文字符、数字和中划线的组合。 
         :type id: str
@@ -228,7 +228,7 @@ class RayJobInfo:
     def description(self):
         r"""Gets the description of this RayJobInfo.
 
-        **参数解释**：描述信息。 **约束限制**：不涉及。 **取值范围**：0~1024。 **默认取值**：不涉及。 
+        **参数解释**：描述信息。 **约束限制**：不涉及。 **取值范围**：长度为0-1024的任意字符组合，不包含“!”、“<”、“>”、“=”、“&”、“\"”、“'”。 **默认取值**：不涉及。 
 
         :return: The description of this RayJobInfo.
         :rtype: str
@@ -239,7 +239,7 @@ class RayJobInfo:
     def description(self, description):
         r"""Sets the description of this RayJobInfo.
 
-        **参数解释**：描述信息。 **约束限制**：不涉及。 **取值范围**：0~1024。 **默认取值**：不涉及。 
+        **参数解释**：描述信息。 **约束限制**：不涉及。 **取值范围**：长度为0-1024的任意字符组合，不包含“!”、“<”、“>”、“=”、“&”、“\"”、“'”。 **默认取值**：不涉及。 
 
         :param description: The description of this RayJobInfo.
         :type description: str

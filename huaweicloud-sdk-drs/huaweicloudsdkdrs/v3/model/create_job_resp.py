@@ -39,19 +39,19 @@ class CreateJobResp:
 
         The model defined in huaweicloud sdk
 
-        :param id: 任务ID
+        :param id: **参数解释**：  任务ID，用于唯一标识一个数据复制任务，在查询、修改、删除等操作中作为任务的识别凭证。  **约束限制**：  不涉及。  **取值范围**：  UUID格式字符串。  **默认取值**：  不涉及
         :type id: str
-        :param name: 任务名称
+        :param name: **参数解释**：  任务名称。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type name: str
-        :param status: 任务状态 CREATING：创建中，CREATE_FAILED：创建失败，CONFIGURATION：配置中，WAITING_FOR_START：等待启动中，RELEASE_RESOURCE_COMPLETE：已结束，DELETED：已删除，INCRE_TRANSFER_STARTED：增量迁移中，INCRE_TRANSFER_FAILED：增量迁移失败，FULL_TRANSFER_STARTED：全量迁移中，FULL_TRANSFER_COMPLETE：全量迁移完成，PAUSING：暂停中，FULL_TRANSFER_FAILED：全量迁移失败
+        :param status: **参数解释**：  任务当前运行状态。  **约束限制**：  不涉及。  **取值范围**：  - CREATING：创建中 - CREATE_FAILED：创建失败 - CONFIGURATION：配置中 - WAITING_FOR_START：等待启动中 - RELEASE_RESOURCE_COMPLETE：已结束 - DELETED：已删除 - INCRE_TRANSFER_STARTED：增量迁移中 - INCRE_TRANSFER_FAILED：增量迁移失败 - FULL_TRANSFER_STARTED：全量迁移中 - FULL_TRANSFER_COMPLETE：全量迁移完成 - PAUSING：暂停中 - FULL_TRANSFER_FAILED：全量迁移失败  **默认取值**：  不涉及
         :type status: str
-        :param create_time: 创建时间，时间戳
+        :param create_time: **参数解释**：  任务的创建时间，时间戳格式。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type create_time: str
-        :param error_code: 错误码
+        :param error_code: **参数解释**：  错误码，当任务报错时返回的错误代码。  **约束限制**：  不涉及。  **取值范围**：  格式为DRS.XXXXXX。  **默认取值**：  不涉及
         :type error_code: str
-        :param error_msg: 错误信息
+        :param error_msg: **参数解释**：  错误详细信息，当任务执行失败时返回的具体错误描述。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type error_msg: str
-        :param child_ids: 子任务ID，有子任务时返回该字段。
+        :param child_ids: **参数解释**：  子任务ID列表，有子任务时返回该字段。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type child_ids: list[str]
         """
         
@@ -84,7 +84,7 @@ class CreateJobResp:
     def id(self):
         r"""Gets the id of this CreateJobResp.
 
-        任务ID
+        **参数解释**：  任务ID，用于唯一标识一个数据复制任务，在查询、修改、删除等操作中作为任务的识别凭证。  **约束限制**：  不涉及。  **取值范围**：  UUID格式字符串。  **默认取值**：  不涉及
 
         :return: The id of this CreateJobResp.
         :rtype: str
@@ -95,7 +95,7 @@ class CreateJobResp:
     def id(self, id):
         r"""Sets the id of this CreateJobResp.
 
-        任务ID
+        **参数解释**：  任务ID，用于唯一标识一个数据复制任务，在查询、修改、删除等操作中作为任务的识别凭证。  **约束限制**：  不涉及。  **取值范围**：  UUID格式字符串。  **默认取值**：  不涉及
 
         :param id: The id of this CreateJobResp.
         :type id: str
@@ -106,7 +106,7 @@ class CreateJobResp:
     def name(self):
         r"""Gets the name of this CreateJobResp.
 
-        任务名称
+        **参数解释**：  任务名称。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The name of this CreateJobResp.
         :rtype: str
@@ -117,7 +117,7 @@ class CreateJobResp:
     def name(self, name):
         r"""Sets the name of this CreateJobResp.
 
-        任务名称
+        **参数解释**：  任务名称。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param name: The name of this CreateJobResp.
         :type name: str
@@ -128,7 +128,7 @@ class CreateJobResp:
     def status(self):
         r"""Gets the status of this CreateJobResp.
 
-        任务状态 CREATING：创建中，CREATE_FAILED：创建失败，CONFIGURATION：配置中，WAITING_FOR_START：等待启动中，RELEASE_RESOURCE_COMPLETE：已结束，DELETED：已删除，INCRE_TRANSFER_STARTED：增量迁移中，INCRE_TRANSFER_FAILED：增量迁移失败，FULL_TRANSFER_STARTED：全量迁移中，FULL_TRANSFER_COMPLETE：全量迁移完成，PAUSING：暂停中，FULL_TRANSFER_FAILED：全量迁移失败
+        **参数解释**：  任务当前运行状态。  **约束限制**：  不涉及。  **取值范围**：  - CREATING：创建中 - CREATE_FAILED：创建失败 - CONFIGURATION：配置中 - WAITING_FOR_START：等待启动中 - RELEASE_RESOURCE_COMPLETE：已结束 - DELETED：已删除 - INCRE_TRANSFER_STARTED：增量迁移中 - INCRE_TRANSFER_FAILED：增量迁移失败 - FULL_TRANSFER_STARTED：全量迁移中 - FULL_TRANSFER_COMPLETE：全量迁移完成 - PAUSING：暂停中 - FULL_TRANSFER_FAILED：全量迁移失败  **默认取值**：  不涉及
 
         :return: The status of this CreateJobResp.
         :rtype: str
@@ -139,7 +139,7 @@ class CreateJobResp:
     def status(self, status):
         r"""Sets the status of this CreateJobResp.
 
-        任务状态 CREATING：创建中，CREATE_FAILED：创建失败，CONFIGURATION：配置中，WAITING_FOR_START：等待启动中，RELEASE_RESOURCE_COMPLETE：已结束，DELETED：已删除，INCRE_TRANSFER_STARTED：增量迁移中，INCRE_TRANSFER_FAILED：增量迁移失败，FULL_TRANSFER_STARTED：全量迁移中，FULL_TRANSFER_COMPLETE：全量迁移完成，PAUSING：暂停中，FULL_TRANSFER_FAILED：全量迁移失败
+        **参数解释**：  任务当前运行状态。  **约束限制**：  不涉及。  **取值范围**：  - CREATING：创建中 - CREATE_FAILED：创建失败 - CONFIGURATION：配置中 - WAITING_FOR_START：等待启动中 - RELEASE_RESOURCE_COMPLETE：已结束 - DELETED：已删除 - INCRE_TRANSFER_STARTED：增量迁移中 - INCRE_TRANSFER_FAILED：增量迁移失败 - FULL_TRANSFER_STARTED：全量迁移中 - FULL_TRANSFER_COMPLETE：全量迁移完成 - PAUSING：暂停中 - FULL_TRANSFER_FAILED：全量迁移失败  **默认取值**：  不涉及
 
         :param status: The status of this CreateJobResp.
         :type status: str
@@ -150,7 +150,7 @@ class CreateJobResp:
     def create_time(self):
         r"""Gets the create_time of this CreateJobResp.
 
-        创建时间，时间戳
+        **参数解释**：  任务的创建时间，时间戳格式。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The create_time of this CreateJobResp.
         :rtype: str
@@ -161,7 +161,7 @@ class CreateJobResp:
     def create_time(self, create_time):
         r"""Sets the create_time of this CreateJobResp.
 
-        创建时间，时间戳
+        **参数解释**：  任务的创建时间，时间戳格式。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param create_time: The create_time of this CreateJobResp.
         :type create_time: str
@@ -172,7 +172,7 @@ class CreateJobResp:
     def error_code(self):
         r"""Gets the error_code of this CreateJobResp.
 
-        错误码
+        **参数解释**：  错误码，当任务报错时返回的错误代码。  **约束限制**：  不涉及。  **取值范围**：  格式为DRS.XXXXXX。  **默认取值**：  不涉及
 
         :return: The error_code of this CreateJobResp.
         :rtype: str
@@ -183,7 +183,7 @@ class CreateJobResp:
     def error_code(self, error_code):
         r"""Sets the error_code of this CreateJobResp.
 
-        错误码
+        **参数解释**：  错误码，当任务报错时返回的错误代码。  **约束限制**：  不涉及。  **取值范围**：  格式为DRS.XXXXXX。  **默认取值**：  不涉及
 
         :param error_code: The error_code of this CreateJobResp.
         :type error_code: str
@@ -194,7 +194,7 @@ class CreateJobResp:
     def error_msg(self):
         r"""Gets the error_msg of this CreateJobResp.
 
-        错误信息
+        **参数解释**：  错误详细信息，当任务执行失败时返回的具体错误描述。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The error_msg of this CreateJobResp.
         :rtype: str
@@ -205,7 +205,7 @@ class CreateJobResp:
     def error_msg(self, error_msg):
         r"""Sets the error_msg of this CreateJobResp.
 
-        错误信息
+        **参数解释**：  错误详细信息，当任务执行失败时返回的具体错误描述。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param error_msg: The error_msg of this CreateJobResp.
         :type error_msg: str
@@ -216,7 +216,7 @@ class CreateJobResp:
     def child_ids(self):
         r"""Gets the child_ids of this CreateJobResp.
 
-        子任务ID，有子任务时返回该字段。
+        **参数解释**：  子任务ID列表，有子任务时返回该字段。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The child_ids of this CreateJobResp.
         :rtype: list[str]
@@ -227,7 +227,7 @@ class CreateJobResp:
     def child_ids(self, child_ids):
         r"""Sets the child_ids of this CreateJobResp.
 
-        子任务ID，有子任务时返回该字段。
+        **参数解释**：  子任务ID列表，有子任务时返回该字段。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param child_ids: The child_ids of this CreateJobResp.
         :type child_ids: list[str]

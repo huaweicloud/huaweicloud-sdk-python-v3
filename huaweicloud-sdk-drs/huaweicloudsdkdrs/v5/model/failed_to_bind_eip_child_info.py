@@ -29,9 +29,9 @@ class FailedToBindEipChildInfo:
 
         The model defined in huaweicloud sdk
 
-        :param id: 子任务ID
+        :param id: 子任务ID。
         :type id: str
-        :param name: 子任务名称
+        :param name: 子任务名称。
         :type name: str
         """
         
@@ -50,7 +50,7 @@ class FailedToBindEipChildInfo:
     def id(self):
         r"""Gets the id of this FailedToBindEipChildInfo.
 
-        子任务ID
+        子任务ID。
 
         :return: The id of this FailedToBindEipChildInfo.
         :rtype: str
@@ -61,7 +61,7 @@ class FailedToBindEipChildInfo:
     def id(self, id):
         r"""Sets the id of this FailedToBindEipChildInfo.
 
-        子任务ID
+        子任务ID。
 
         :param id: The id of this FailedToBindEipChildInfo.
         :type id: str
@@ -72,7 +72,7 @@ class FailedToBindEipChildInfo:
     def name(self):
         r"""Gets the name of this FailedToBindEipChildInfo.
 
-        子任务名称
+        子任务名称。
 
         :return: The name of this FailedToBindEipChildInfo.
         :rtype: str
@@ -83,7 +83,7 @@ class FailedToBindEipChildInfo:
     def name(self, name):
         r"""Sets the name of this FailedToBindEipChildInfo.
 
-        子任务名称
+        子任务名称。
 
         :param name: The name of this FailedToBindEipChildInfo.
         :type name: str

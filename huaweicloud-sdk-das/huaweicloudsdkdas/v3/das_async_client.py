@@ -14434,6 +14434,73 @@ class DasAsyncClient(Client):
 
         return http_info
 
+    def batch_set_health_report_config_async(self, request):
+        r"""批量设置实例健康报告模板配置
+
+        批量设置实例的健康报告模板配置，用于批量巡检实例组场景。此为实例级配置，修改后将同时影响实例的日报订阅报告内容。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchSetHealthReportConfig
+        :type request: :class:`huaweicloudsdkdas.v3.BatchSetHealthReportConfigRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.BatchSetHealthReportConfigResponse`
+        """
+        http_info = self._batch_set_health_report_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_set_health_report_config_async_invoker(self, request):
+        http_info = self._batch_set_health_report_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_set_health_report_config_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/health-report-configs/batch-set",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchSetHealthReportConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_subscribe_report_async(self, request):
         r"""批量订阅/取消订阅
 
@@ -14537,6 +14604,75 @@ class DasAsyncClient(Client):
         query_params = []
 
         header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def change_big_key_hot_key_switch_async(self, request):
+        r"""开启/关闭Redis大key热key历史数据采集
+
+        开启或关闭GeminiDB Redis实例的大key、热key历史数据采集开关。仅支持GeminiDB Redis引擎，内核版本需≥5.0.7.20。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ChangeBigKeyHotKeySwitch
+        :type request: :class:`huaweicloudsdkdas.v3.ChangeBigKeyHotKeySwitchRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.ChangeBigKeyHotKeySwitchResponse`
+        """
+        http_info = self._change_big_key_hot_key_switch_http_info(request)
+        return self._call_api(**http_info)
+
+    def change_big_key_hot_key_switch_async_invoker(self, request):
+        http_info = self._change_big_key_hot_key_switch_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _change_big_key_hot_key_switch_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/big-key-hot-key/switch",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeBigKeyHotKeySwitchResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
 
         form_params = {}
 
@@ -15239,6 +15375,73 @@ class DasAsyncClient(Client):
 
         return http_info
 
+    def create_health_report_template_async(self, request):
+        r"""创建健康报告模板
+
+        创建健康报告模板，模板为租户级资源。系统预设模板不可创建，每个租户最多创建20个自定义模板。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateHealthReportTemplate
+        :type request: :class:`huaweicloudsdkdas.v3.CreateHealthReportTemplateRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.CreateHealthReportTemplateResponse`
+        """
+        http_info = self._create_health_report_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_health_report_template_async_invoker(self, request):
+        http_info = self._create_health_report_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_health_report_template_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/health-report-templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateHealthReportTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_history_transaction_export_task_async(self, request):
         r"""创建导出历史事务任务
 
@@ -15709,6 +15912,73 @@ class DasAsyncClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_health_report_template_async(self, request):
+        r"""删除健康报告模板
+
+        删除健康报告模板。系统预设模板不可删除，有实例引用时不可删除。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteHealthReportTemplate
+        :type request: :class:`huaweicloudsdkdas.v3.DeleteHealthReportTemplateRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.DeleteHealthReportTemplateResponse`
+        """
+        http_info = self._delete_health_report_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_health_report_template_async_invoker(self, request):
+        http_info = self._delete_health_report_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_health_report_template_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/health-report-templates/{template_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteHealthReportTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'template_id' in local_var_params:
+            path_params['template_id'] = local_var_params['template_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -16875,6 +17145,94 @@ class DasAsyncClient(Client):
 
         return http_info
 
+    def list_big_keys_async(self, request):
+        r"""查询大key列表
+
+        查询GeminiDB Redis实例的历史大key排行列表，支持按长度（size）和存储占用（storage）两个统计维度筛选，返回Top 1000排行。同一key出现多次时进行MAX聚合。仅支持GeminiDB Redis引擎。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListBigKeys
+        :type request: :class:`huaweicloudsdkdas.v3.ListBigKeysRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.ListBigKeysResponse`
+        """
+        http_info = self._list_big_keys_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_big_keys_async_invoker(self, request):
+        http_info = self._list_big_keys_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_big_keys_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/big-key-hot-key/big-keys",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBigKeysResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'stat_type' in local_var_params:
+            query_params.append(('stat_type', local_var_params['stat_type']))
+        if 'start_at' in local_var_params:
+            query_params.append(('start_at', local_var_params['start_at']))
+        if 'end_at' in local_var_params:
+            query_params.append(('end_at', local_var_params['end_at']))
+        if 'key_types' in local_var_params:
+            query_params.append(('key_types', local_var_params['key_types']))
+            collection_formats['key_types'] = 'multi'
+        if 'key_name' in local_var_params:
+            query_params.append(('key_name', local_var_params['key_name']))
+        if 'db_id' in local_var_params:
+            query_params.append(('db_id', local_var_params['db_id']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'sort_field' in local_var_params:
+            query_params.append(('sort_field', local_var_params['sort_field']))
+        if 'asc' in local_var_params:
+            query_params.append(('asc', local_var_params['asc']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_cloud_dba_instances_async(self, request):
         r"""获取DAS云DBA实例列表
 
@@ -17401,6 +17759,73 @@ class DasAsyncClient(Client):
 
         return http_info
 
+    def list_health_report_configs_async(self, request):
+        r"""批量查询实例健康报告模板配置
+
+        批量查询实例的健康报告模板配置，用于批量巡检实例组场景下查看组内实例的模板配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListHealthReportConfigs
+        :type request: :class:`huaweicloudsdkdas.v3.ListHealthReportConfigsRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.ListHealthReportConfigsResponse`
+        """
+        http_info = self._list_health_report_configs_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_health_report_configs_async_invoker(self, request):
+        http_info = self._list_health_report_configs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_health_report_configs_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/health-report-configs/batch-query",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListHealthReportConfigsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_health_report_task_async(self, request):
         r"""查询实例健康诊断报告列表
 
@@ -17476,6 +17901,71 @@ class DasAsyncClient(Client):
 
         return http_info
 
+    def list_health_report_template_async(self, request):
+        r"""查询健康报告模板列表
+
+        查询租户可用的健康报告模板列表，包含系统预设模板和自定义模板。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListHealthReportTemplate
+        :type request: :class:`huaweicloudsdkdas.v3.ListHealthReportTemplateRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.ListHealthReportTemplateResponse`
+        """
+        http_info = self._list_health_report_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_health_report_template_async_invoker(self, request):
+        http_info = self._list_health_report_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_health_report_template_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/health-report-templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListHealthReportTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_history_transaction_export_task_async(self, request):
         r"""查询历史事务导出任务列表
 
@@ -17518,6 +18008,94 @@ class DasAsyncClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_hot_keys_async(self, request):
+        r"""查询热key列表
+
+        查询GeminiDB Redis实例的历史热key排行列表，支持按QPS（qps）和流量（traffic）两个统计维度筛选，返回Top 1000排行。同一key出现多次时进行MAX聚合。仅支持GeminiDB Redis引擎。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListHotKeys
+        :type request: :class:`huaweicloudsdkdas.v3.ListHotKeysRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.ListHotKeysResponse`
+        """
+        http_info = self._list_hot_keys_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_hot_keys_async_invoker(self, request):
+        http_info = self._list_hot_keys_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_hot_keys_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/big-key-hot-key/hot-keys",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListHotKeysResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'stat_type' in local_var_params:
+            query_params.append(('stat_type', local_var_params['stat_type']))
+        if 'start_at' in local_var_params:
+            query_params.append(('start_at', local_var_params['start_at']))
+        if 'end_at' in local_var_params:
+            query_params.append(('end_at', local_var_params['end_at']))
+        if 'key_types' in local_var_params:
+            query_params.append(('key_types', local_var_params['key_types']))
+            collection_formats['key_types'] = 'multi'
+        if 'key_name' in local_var_params:
+            query_params.append(('key_name', local_var_params['key_name']))
+        if 'db_id' in local_var_params:
+            query_params.append(('db_id', local_var_params['db_id']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'sort_field' in local_var_params:
+            query_params.append(('sort_field', local_var_params['sort_field']))
+        if 'asc' in local_var_params:
+            query_params.append(('asc', local_var_params['asc']))
 
         header_params = {}
         if 'x_language' in local_var_params:
@@ -19431,6 +20009,75 @@ class DasAsyncClient(Client):
 
         return http_info
 
+    def set_instance_health_report_config_async(self, request):
+        r"""设置实例健康报告模板配置
+
+        设置实例的健康报告模板配置，此为实例级配置，修改后将同时影响该实例的批量巡检报告内容。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SetInstanceHealthReportConfig
+        :type request: :class:`huaweicloudsdkdas.v3.SetInstanceHealthReportConfigRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.SetInstanceHealthReportConfigResponse`
+        """
+        http_info = self._set_instance_health_report_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def set_instance_health_report_config_async_invoker(self, request):
+        http_info = self._set_instance_health_report_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _set_instance_health_report_config_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/health-report-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetInstanceHealthReportConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def set_lock_blocking_switch_async(self, request):
         r"""设置锁阻塞开关和保存时长
 
@@ -19678,6 +20325,73 @@ class DasAsyncClient(Client):
             query_params.append(('job_id', local_var_params['job_id']))
 
         header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_big_key_hot_key_switch_async(self, request):
+        r"""查询Redis大key热key历史数据采集开关状态
+
+        查询GeminiDB Redis实例的大key、热key历史数据采集开关状态、数据保留时长及是否可开启等信息。仅支持GeminiDB Redis引擎，内核版本需≥5.0.7.20。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowBigKeyHotKeySwitch
+        :type request: :class:`huaweicloudsdkdas.v3.ShowBigKeyHotKeySwitchRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.ShowBigKeyHotKeySwitchResponse`
+        """
+        http_info = self._show_big_key_hot_key_switch_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_big_key_hot_key_switch_async_invoker(self, request):
+        http_info = self._show_big_key_hot_key_switch_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_big_key_hot_key_switch_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/big-key-hot-key/switch",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowBigKeyHotKeySwitchResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
 
         form_params = {}
 
@@ -20575,6 +21289,73 @@ class DasAsyncClient(Client):
 
         return http_info
 
+    def show_health_report_template_async(self, request):
+        r"""查询健康报告模板详情
+
+        查询指定健康报告模板的详细信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowHealthReportTemplate
+        :type request: :class:`huaweicloudsdkdas.v3.ShowHealthReportTemplateRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.ShowHealthReportTemplateResponse`
+        """
+        http_info = self._show_health_report_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_health_report_template_async_invoker(self, request):
+        http_info = self._show_health_report_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_health_report_template_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/health-report-templates/{template_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowHealthReportTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'template_id' in local_var_params:
+            path_params['template_id'] = local_var_params['template_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_history_transaction_export_task_info_async(self, request):
         r"""查询历史事务导出任务详情
 
@@ -20814,6 +21595,148 @@ class DasAsyncClient(Client):
         query_params = []
         if 'task_id' in local_var_params:
             query_params.append(('task_id', local_var_params['task_id']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_instance_health_report_config_async(self, request):
+        r"""查询实例健康报告模板配置
+
+        查询实例的健康报告模板配置，未配置时template_id等字段为null，表示使用完整版模板。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowInstanceHealthReportConfig
+        :type request: :class:`huaweicloudsdkdas.v3.ShowInstanceHealthReportConfigRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.ShowInstanceHealthReportConfigResponse`
+        """
+        http_info = self._show_instance_health_report_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_instance_health_report_config_async_invoker(self, request):
+        http_info = self._show_instance_health_report_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_instance_health_report_config_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/health-report-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowInstanceHealthReportConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_key_trend_async(self, request):
+        r"""查询单key趋势
+
+        查询GeminiDB Redis实例中指定key在所选时间段内的变化曲线，支持自适应时间粒度聚合。traffic维度同时返回入口流量和出口流量双指标趋势。仅支持GeminiDB Redis引擎。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowKeyTrend
+        :type request: :class:`huaweicloudsdkdas.v3.ShowKeyTrendRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.ShowKeyTrendResponse`
+        """
+        http_info = self._show_key_trend_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_key_trend_async_invoker(self, request):
+        http_info = self._show_key_trend_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_key_trend_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/big-key-hot-key/key-trend",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowKeyTrendResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'stat_type' in local_var_params:
+            query_params.append(('stat_type', local_var_params['stat_type']))
+        if 'key' in local_var_params:
+            query_params.append(('key', local_var_params['key']))
+        if 'start_at' in local_var_params:
+            query_params.append(('start_at', local_var_params['start_at']))
+        if 'end_at' in local_var_params:
+            query_params.append(('end_at', local_var_params['end_at']))
 
         header_params = {}
         if 'x_language' in local_var_params:
@@ -22653,6 +23576,75 @@ class DasAsyncClient(Client):
         query_params = []
 
         header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_health_report_template_async(self, request):
+        r"""更新健康报告模板
+
+        更新健康报告模板，采用全量更新语义。系统预设模板不可更新。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateHealthReportTemplate
+        :type request: :class:`huaweicloudsdkdas.v3.UpdateHealthReportTemplateRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.UpdateHealthReportTemplateResponse`
+        """
+        http_info = self._update_health_report_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_health_report_template_async_invoker(self, request):
+        http_info = self._update_health_report_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_health_report_template_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/health-report-templates/{template_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateHealthReportTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'template_id' in local_var_params:
+            path_params['template_id'] = local_var_params['template_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
 
         form_params = {}
 

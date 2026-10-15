@@ -41,17 +41,17 @@ class AssumeAgencyWithOIDCReqBody:
 
         :param duration_seconds: **参数解释**： 获得的临时安全凭证的有效时间（单位：秒）。  **约束限制**： 请注意，该时间需要小于委托本身设置的最大会话持续时间，同时在携带X-Security-Token的Header头时该时间不能超过3600秒。  **取值范围**： 取值范围为[900,43200]。  **默认取值**： 默认值为3600。 
         :type duration_seconds: int
-        :param policy: **参数解释**： 自定义策略，限制本次会话获得的临时安全凭证的权限范围不会超过该自定义策略指定的权限。  **约束限制**： 本次会话获得的临时安全凭证的权限范围不会超过该自定义策略指定的权限。 长度范围为[2,2048]。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
+        :param policy: **参数解释**： 自定义策略，用于进一步限制临时安全凭证的权限范围。  **约束限制**： 本次会话获得的临时安全凭证的权限范围不会超过自定义策略指定的权限。  **取值范围**： 长度为2到4096个字符。  **默认取值**： 不涉及。 
         :type policy: str
-        :param policy_ids: **参数解释**： 预置策略列表，限制本次会话获得的临时安全凭证的权限范围不会超过该预置策略指定的权限。  **约束限制**： 不涉及。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
+        :param policy_ids: **参数解释**： 预置策略列表，限制本次会话获得的临时安全凭证的权限范围不会超过该预置策略指定的权限。 每个元素为预置策略的标识ID，长度限制为1到64个字符，只允许大小写字母、数字、\&quot;_\&quot;、\&quot;-\&quot;，且至少包含一个字符。  **约束限制**： 该数组允许的元素个数最多为20。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
         :type policy_ids: list[str]
-        :param provider_urn: **参数解释**： OIDC提供商的URN。  **约束限制**： 长度范围为[0,1500]。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
+        :param provider_urn: **参数解释**： OIDC提供商的URN，在IAM新版控制台的「身份提供商」页面中获取。  **约束限制**： 不涉及。  **取值范围**： 长度最多为1500个字符。格式为5段，用\&quot;:\&quot;分隔，各段允许大小写字母、数字、\&quot;+\&quot;、\&quot;/\&quot;、\&quot;&#x3D;\&quot;、\&quot;-\&quot;、\&quot;_\&quot;（第2段还额外允许 \&quot;*\&quot;），长度限制为：第1段至少1位，第2段0~255位，第3段1~64位，第4段1~64位，第5段至少1位（任意字符）。  **默认取值**： 不涉及。 
         :type provider_urn: str
-        :param agency_urn: **参数解释**： 目标信任委托的URN。  **约束限制**： 长度范围为[0,1500]。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
+        :param agency_urn: **参数解释**： 目标信任委托的URN，在IAM新版控制台的「委托」页面中获取。  **约束限制**： 不涉及。  **取值范围**： 长度最多为1500个字符。  **默认取值**： 不涉及。 
         :type agency_urn: str
-        :param agency_session_name: **参数解释**： 信任委托会话的会话名。  **约束限制**： 长度范围为[2,128]。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
+        :param agency_session_name: **参数解释**： 信任委托会话的会话名。  **约束限制**： 不涉及。  **取值范围**： 长度为2到128个字符，只允许大小写字母、数字、\&quot;_\&quot;、\&quot;+\&quot;、\&quot;&#x3D;\&quot;、\&quot;,\&quot;、\&quot;.\&quot;、\&quot;@\&quot;、\&quot;-\&quot;。  **默认取值**： 不涉及。 
         :type agency_session_name: str
-        :param id_token: **参数解释**： 由身份提供商提供的OIDC令牌。  **约束限制**： 长度范围为[4,20000]。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
+        :param id_token: **参数解释**： 由身份提供商提供的OIDC令牌。  **约束限制**： 不涉及。  **取值范围**： 长度为4到20000个字符。  **默认取值**： 不涉及。 
         :type id_token: str
         """
         
@@ -103,7 +103,7 @@ class AssumeAgencyWithOIDCReqBody:
     def policy(self):
         r"""Gets the policy of this AssumeAgencyWithOIDCReqBody.
 
-        **参数解释**： 自定义策略，限制本次会话获得的临时安全凭证的权限范围不会超过该自定义策略指定的权限。  **约束限制**： 本次会话获得的临时安全凭证的权限范围不会超过该自定义策略指定的权限。 长度范围为[2,2048]。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
+        **参数解释**： 自定义策略，用于进一步限制临时安全凭证的权限范围。  **约束限制**： 本次会话获得的临时安全凭证的权限范围不会超过自定义策略指定的权限。  **取值范围**： 长度为2到4096个字符。  **默认取值**： 不涉及。 
 
         :return: The policy of this AssumeAgencyWithOIDCReqBody.
         :rtype: str
@@ -114,7 +114,7 @@ class AssumeAgencyWithOIDCReqBody:
     def policy(self, policy):
         r"""Sets the policy of this AssumeAgencyWithOIDCReqBody.
 
-        **参数解释**： 自定义策略，限制本次会话获得的临时安全凭证的权限范围不会超过该自定义策略指定的权限。  **约束限制**： 本次会话获得的临时安全凭证的权限范围不会超过该自定义策略指定的权限。 长度范围为[2,2048]。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
+        **参数解释**： 自定义策略，用于进一步限制临时安全凭证的权限范围。  **约束限制**： 本次会话获得的临时安全凭证的权限范围不会超过自定义策略指定的权限。  **取值范围**： 长度为2到4096个字符。  **默认取值**： 不涉及。 
 
         :param policy: The policy of this AssumeAgencyWithOIDCReqBody.
         :type policy: str
@@ -125,7 +125,7 @@ class AssumeAgencyWithOIDCReqBody:
     def policy_ids(self):
         r"""Gets the policy_ids of this AssumeAgencyWithOIDCReqBody.
 
-        **参数解释**： 预置策略列表，限制本次会话获得的临时安全凭证的权限范围不会超过该预置策略指定的权限。  **约束限制**： 不涉及。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
+        **参数解释**： 预置策略列表，限制本次会话获得的临时安全凭证的权限范围不会超过该预置策略指定的权限。 每个元素为预置策略的标识ID，长度限制为1到64个字符，只允许大小写字母、数字、\"_\"、\"-\"，且至少包含一个字符。  **约束限制**： 该数组允许的元素个数最多为20。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
 
         :return: The policy_ids of this AssumeAgencyWithOIDCReqBody.
         :rtype: list[str]
@@ -136,7 +136,7 @@ class AssumeAgencyWithOIDCReqBody:
     def policy_ids(self, policy_ids):
         r"""Sets the policy_ids of this AssumeAgencyWithOIDCReqBody.
 
-        **参数解释**： 预置策略列表，限制本次会话获得的临时安全凭证的权限范围不会超过该预置策略指定的权限。  **约束限制**： 不涉及。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
+        **参数解释**： 预置策略列表，限制本次会话获得的临时安全凭证的权限范围不会超过该预置策略指定的权限。 每个元素为预置策略的标识ID，长度限制为1到64个字符，只允许大小写字母、数字、\"_\"、\"-\"，且至少包含一个字符。  **约束限制**： 该数组允许的元素个数最多为20。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
 
         :param policy_ids: The policy_ids of this AssumeAgencyWithOIDCReqBody.
         :type policy_ids: list[str]
@@ -147,7 +147,7 @@ class AssumeAgencyWithOIDCReqBody:
     def provider_urn(self):
         r"""Gets the provider_urn of this AssumeAgencyWithOIDCReqBody.
 
-        **参数解释**： OIDC提供商的URN。  **约束限制**： 长度范围为[0,1500]。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
+        **参数解释**： OIDC提供商的URN，在IAM新版控制台的「身份提供商」页面中获取。  **约束限制**： 不涉及。  **取值范围**： 长度最多为1500个字符。格式为5段，用\":\"分隔，各段允许大小写字母、数字、\"+\"、\"/\"、\"=\"、\"-\"、\"_\"（第2段还额外允许 \"*\"），长度限制为：第1段至少1位，第2段0~255位，第3段1~64位，第4段1~64位，第5段至少1位（任意字符）。  **默认取值**： 不涉及。 
 
         :return: The provider_urn of this AssumeAgencyWithOIDCReqBody.
         :rtype: str
@@ -158,7 +158,7 @@ class AssumeAgencyWithOIDCReqBody:
     def provider_urn(self, provider_urn):
         r"""Sets the provider_urn of this AssumeAgencyWithOIDCReqBody.
 
-        **参数解释**： OIDC提供商的URN。  **约束限制**： 长度范围为[0,1500]。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
+        **参数解释**： OIDC提供商的URN，在IAM新版控制台的「身份提供商」页面中获取。  **约束限制**： 不涉及。  **取值范围**： 长度最多为1500个字符。格式为5段，用\":\"分隔，各段允许大小写字母、数字、\"+\"、\"/\"、\"=\"、\"-\"、\"_\"（第2段还额外允许 \"*\"），长度限制为：第1段至少1位，第2段0~255位，第3段1~64位，第4段1~64位，第5段至少1位（任意字符）。  **默认取值**： 不涉及。 
 
         :param provider_urn: The provider_urn of this AssumeAgencyWithOIDCReqBody.
         :type provider_urn: str
@@ -169,7 +169,7 @@ class AssumeAgencyWithOIDCReqBody:
     def agency_urn(self):
         r"""Gets the agency_urn of this AssumeAgencyWithOIDCReqBody.
 
-        **参数解释**： 目标信任委托的URN。  **约束限制**： 长度范围为[0,1500]。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
+        **参数解释**： 目标信任委托的URN，在IAM新版控制台的「委托」页面中获取。  **约束限制**： 不涉及。  **取值范围**： 长度最多为1500个字符。  **默认取值**： 不涉及。 
 
         :return: The agency_urn of this AssumeAgencyWithOIDCReqBody.
         :rtype: str
@@ -180,7 +180,7 @@ class AssumeAgencyWithOIDCReqBody:
     def agency_urn(self, agency_urn):
         r"""Sets the agency_urn of this AssumeAgencyWithOIDCReqBody.
 
-        **参数解释**： 目标信任委托的URN。  **约束限制**： 长度范围为[0,1500]。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
+        **参数解释**： 目标信任委托的URN，在IAM新版控制台的「委托」页面中获取。  **约束限制**： 不涉及。  **取值范围**： 长度最多为1500个字符。  **默认取值**： 不涉及。 
 
         :param agency_urn: The agency_urn of this AssumeAgencyWithOIDCReqBody.
         :type agency_urn: str
@@ -191,7 +191,7 @@ class AssumeAgencyWithOIDCReqBody:
     def agency_session_name(self):
         r"""Gets the agency_session_name of this AssumeAgencyWithOIDCReqBody.
 
-        **参数解释**： 信任委托会话的会话名。  **约束限制**： 长度范围为[2,128]。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
+        **参数解释**： 信任委托会话的会话名。  **约束限制**： 不涉及。  **取值范围**： 长度为2到128个字符，只允许大小写字母、数字、\"_\"、\"+\"、\"=\"、\",\"、\".\"、\"@\"、\"-\"。  **默认取值**： 不涉及。 
 
         :return: The agency_session_name of this AssumeAgencyWithOIDCReqBody.
         :rtype: str
@@ -202,7 +202,7 @@ class AssumeAgencyWithOIDCReqBody:
     def agency_session_name(self, agency_session_name):
         r"""Sets the agency_session_name of this AssumeAgencyWithOIDCReqBody.
 
-        **参数解释**： 信任委托会话的会话名。  **约束限制**： 长度范围为[2,128]。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
+        **参数解释**： 信任委托会话的会话名。  **约束限制**： 不涉及。  **取值范围**： 长度为2到128个字符，只允许大小写字母、数字、\"_\"、\"+\"、\"=\"、\",\"、\".\"、\"@\"、\"-\"。  **默认取值**： 不涉及。 
 
         :param agency_session_name: The agency_session_name of this AssumeAgencyWithOIDCReqBody.
         :type agency_session_name: str
@@ -213,7 +213,7 @@ class AssumeAgencyWithOIDCReqBody:
     def id_token(self):
         r"""Gets the id_token of this AssumeAgencyWithOIDCReqBody.
 
-        **参数解释**： 由身份提供商提供的OIDC令牌。  **约束限制**： 长度范围为[4,20000]。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
+        **参数解释**： 由身份提供商提供的OIDC令牌。  **约束限制**： 不涉及。  **取值范围**： 长度为4到20000个字符。  **默认取值**： 不涉及。 
 
         :return: The id_token of this AssumeAgencyWithOIDCReqBody.
         :rtype: str
@@ -224,7 +224,7 @@ class AssumeAgencyWithOIDCReqBody:
     def id_token(self, id_token):
         r"""Sets the id_token of this AssumeAgencyWithOIDCReqBody.
 
-        **参数解释**： 由身份提供商提供的OIDC令牌。  **约束限制**： 长度范围为[4,20000]。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
+        **参数解释**： 由身份提供商提供的OIDC令牌。  **约束限制**： 不涉及。  **取值范围**： 长度为4到20000个字符。  **默认取值**： 不涉及。 
 
         :param id_token: The id_token of this AssumeAgencyWithOIDCReqBody.
         :type id_token: str

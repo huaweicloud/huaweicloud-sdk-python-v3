@@ -75,55 +75,55 @@ class CreateJobReq:
 
         The model defined in huaweicloud sdk
 
-        :param bind_eip: 是否绑定eip，网络类型为eip时必填且为true
+        :param bind_eip: **参数解释**：  是否绑定EIP（弹性公网IP）。  **约束限制**：  网络类型为EIP时必填且为true。  **取值范围**：  - true：绑定EIP - false：不绑定EIP  **默认取值**：  不涉及
         :type bind_eip: bool
-        :param db_use_type: 迁移场景，migration-实时迁移,sync-实时同步,cloudDataGuard-实时灾备
+        :param db_use_type: **参数解释**：  迁移任务的业务场景类型。  **约束限制**：  不涉及。  **取值范围**：  - migration：实时迁移 - sync：实时同步 - cloudDataGuard：实时灾备  **默认取值**：  不涉及
         :type db_use_type: str
-        :param name: 任务名称，约束：任务名称在4位到50位之间，不区分大小写，可以包含字母、数字、中划线或下划线，不能包括其他特殊字符。
+        :param name: **参数解释**：  任务名称。  **约束限制**：  - 必须以字母开头，不区分大小写，可以包含字母、数字、中划线或下划线，不能包括其他特殊字符。  **取值范围**：  长度为4-50个字符。  **默认取值**：  不涉及
         :type name: str
-        :param description: 任务描述。  **约束**：任务描述不能超过256位，且不能包含!&lt;&gt;&amp;&#39;\&quot;\\特殊字符。
+        :param description: **参数解释**：  任务描述。  **约束限制**：  不能超过256位，且不能包含!&lt;&gt;&amp;&#39;\&quot;特殊字符。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type description: str
-        :param engine_type: 引擎类型 - mysql：MySQL到MySQL迁移，MySQL到MySQL同步 - mongodb：MongoDB到DDS迁移 - cloudDataGuard-mysql：MySQL到MySQL灾备 - gaussdbv5：GaussDB同步 - mysql-to-kafka：MySQL到Kafka同步 - taurus-to-kafka：GaussDB(for MySQL)到Kafka同步 - gaussdbv5ha-to-kafka：GaussDB主备版到Kafka同步 - postgresql：PostgreSQL到PostgreSQL同步
+        :param engine_type: **参数解释**：  DRS任务引擎类型。  **约束限制**：  不涉及。  **取值范围**：  - mysql：MySQL到MySQL迁移，MySQL到MySQL同步 - mongodb：MongoDB到DDS迁移与同步 - cloudDataGuard-mysql：MySQL到MySQL灾备 - gaussdbv5：GaussDB同步 - postgresql：PostgreSQL到PostgreSQL同步 - mysql-to-kafka：MySQL到Kafka同步 - taurus-to-kafka：TaurusDB到Kafka同步 - gaussdbv5ha-to-kafka：GaussDB集中式版到Kafka同步 - oracle-to-gaussdbv5：Oracle-GaussDB分布式版 - oracle-to-gaussdbv5ha：Oracle-GaussDB集中式版 - gaussdbv5-to-oracle：GaussDB分布式版-Oracle - gaussdbv5ha-to-oracle：GaussDB集中式版-Oracle - gaussdbv5-to-kafka：GaussDB分布式版-Kafka  详细取值可参考引擎类型说明。  **默认取值**：  不涉及
         :type engine_type: str
-        :param is_target_readonly: 指定目标实例是否限制为只读，MySQL迁移和灾备，且job_direction为up时设置有效。（灾备场景下，单主灾备且本云为备为必填且为true，不填默认设置为true）。
+        :param is_target_readonly: **参数解释**：  指定目标实例是否限制为只读。  **约束限制**：  - MySQL迁移和灾备，且job_direction为up时设置有效。 - 灾备场景下，单主灾备且本云为备为必填且为true，不填默认设置为true。  **取值范围**：  - true：目标实例限制为只读 - false：目标实例不限制为只读  **默认取值**：  不涉及
         :type is_target_readonly: bool
-        :param job_direction: 迁移方向，up ：入云 ，灾备场景时对应本云为备，down：出云，灾备场景时对应本云为主，non-dbs：自建
+        :param job_direction: **参数解释**：  任务的迁移方向。  **约束限制**：  不涉及。  **取值范围**：  - up：入云，灾备场景时对应本云为备 - down：出云，灾备场景时对应本云为主 - non-dbs：自建  **默认取值**：  不涉及
         :type job_direction: str
-        :param multi_write: - db_use_type 是cloudDataGuard时，必填，灾备类型是双主灾备时 muti_write取值true, 否则为false。 - db_use_type 是其他类型时，muti_write是非必选参数
+        :param multi_write: **参数解释**：  是否为双主灾备模式。  **约束限制**：  - db_use_type为cloudDataGuard时必填。 - db_use_type为其他类型时为非必选参数。  **取值范围**：  - true：双主灾备 - false：非双主灾备  **默认取值**：  false
         :type multi_write: bool
-        :param net_type: 网络类型
+        :param net_type: **参数解释**：  任务使用的网络类型。  **约束限制**：  灾备场景不支持选择VPC网络。  **取值范围**：  - vpn：虚拟专用网络 - vpc：虚拟私有云 - eip：弹性公网IP  **默认取值**：  不涉及
         :type net_type: str
-        :param node_num: 节点个数。MongoDB数据库时对应源端分片个数，源库为集群时必填，[1-32]，MySQL双主灾备时会默认设置为2。
+        :param node_num: **参数解释**：  节点个数。MongoDB数据库时对应源端分片个数，源库为集群时必填。MySQL双主灾备时会默认设置为2。  **约束限制**：  不涉及。  **取值范围**：  1-32  **默认取值**：  不涉及
         :type node_num: int
-        :param node_type: 规格类型。取值： - micro：极小规格。 - small：小规格。 - medium：中规格。 - high：大规格。 - xlarge：超大规格。 - 2xlarge：极大规格。 具体某种场景支持的取值可以通过[查询可用的Node规格接口](https://support.huaweicloud.com/api-drs/drs_03_0239.html)获取。
+        :param node_type: **参数解释**：  DRS任务实例规格编码，决定迁移实例的计算资源大小。  **约束限制**：  不涉及。  **取值范围**：  - micro：极小规格 - small：小规格 - medium：中规格 - high：大规格 - xlarge：超大规格 - 2xlarge：极大规格  具体某种场景支持的取值可以通过查询可用的Node规格接口获取。  **默认取值**：  high
         :type node_type: str
         :param source_endpoint: 
         :type source_endpoint: :class:`huaweicloudsdkdrs.v3.Endpoint`
         :param target_endpoint: 
         :type target_endpoint: :class:`huaweicloudsdkdrs.v3.Endpoint`
-        :param tags: 标签信息。
+        :param tags: **参数解释**：  标签信息列表，详情请参见ResourceTag对象定义。  **约束限制**：  最多添加20个标签。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type tags: list[:class:`huaweicloudsdkdrs.v3.ResourceTag`]
-        :param task_type: 迁移模式，FULL_TRANS 全量,FULL_INCR_TRANS 全量+增量,INCR_TRANS 增量，灾备场景单主灾备仅支持全量加增量（FULL_INCR_TRANS）
+        :param task_type: **参数解释**：  任务迁移模式，指定数据复制任务的执行方式。  **约束限制**：  单主灾备场景仅支持选择全量加增量（FULL_INCR_TRANS）。  **取值范围**：  - FULL_TRANS：全量迁移，仅迁移历史数据 - FULL_INCR_TRANS：全量+增量迁移，先迁移历史数据再持续同步增量 - INCR_TRANS：增量迁移，仅同步数据变更  **默认取值**：  FULL_INCR_TRANS
         :type task_type: str
-        :param customize_sutnet_id: DRS实例所在子网ID，对应目标库相同VPC下已创建的子网（subnet）的网络ID，UUID格式。
+        :param customize_sutnet_id: **参数解释**：  DRS实例所在子网ID，对应目标库相同VPC下已创建的子网（subnet）的网络ID。  **约束限制**：  UUID格式。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type customize_sutnet_id: str
-        :param product_id: 产品id。
+        :param product_id: **参数解释**：  产品ID，用于标识包年包月任务对应的产品。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type product_id: str
-        :param sys_tags: 企业项目，不填默认为default，key值必须为_sys_enterprise_project_id，value为企业项目ID，只能填一个企业项目。
+        :param sys_tags: **参数解释**：  企业项目标签列表，详情请参见ResourceTag对象定义。  **约束限制**：  - 不填默认为default。 - key值必须为_sys_enterprise_project_id，value为企业项目ID。 - 只能填一个企业项目。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type sys_tags: list[:class:`huaweicloudsdkdrs.v3.ResourceTag`]
-        :param expired_days: 任务处于异常状态一段时间后，将会自动结束，单位为天。(范围14-100)，不传默认为14天。
+        :param expired_days: **参数解释**：  任务处于异常状态一段时间后自动结束的天数。  **约束限制**：  不涉及。  **取值范围**：  14-100  **默认取值**：  14
         :type expired_days: str
-        :param master_az: 主备任务主任务所在可用区code，可以通过查询规格未售罄的可用区接口获取 - master_az和slave_az同时填写时生效 - 目前支持mysql，gaussdbv5ha-to-kafka
+        :param master_az: **参数解释**：  主备任务主任务所在可用区编码，可以通过查询规格未售罄的可用区接口获取。  **约束限制**：  - master_az和slave_az同时填写时生效。 - 目前支持mysql，gaussdbv5ha-to-kafka。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type master_az: str
-        :param slave_az: 主备任务备任务所在可用区code，可以通过查询规格未售罄的可用区接口获取 - master_az和slave_az同时填写时生效 - 目前支持mysql，gaussdbv5ha-to-kafka
+        :param slave_az: **参数解释**：  主备任务备任务所在可用区编码，可以通过查询规格未售罄的可用区接口获取。  **约束限制**：  - master_az和slave_az同时填写时生效。 - 目前支持mysql，gaussdbv5ha-to-kafka。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type slave_az: str
-        :param charging_mode: 计费模式，不填默认为按需计费。 取值范围： - period：包年包月。 - on_demand：按需计费。
+        :param charging_mode: **参数解释**：  任务的计费模式，指定数据复制任务的付费方式。  **约束限制**：  - db_use_type为migration时不支持包年包月。 - 支持的engine_type为：mysql，cloudDataGuard-mysql，postgresql，gaussdbv5ha-to-kafka。  **取值范围**：  - period：包年包月 - on_demand：按需计费  **默认取值**：  on_demand
         :type charging_mode: str
         :param period_order: 
         :type period_order: :class:`huaweicloudsdkdrs.v3.PeriodOrderInfo`
-        :param public_ip_list: 指定公网IP的信息。
+        :param public_ip_list: **参数解释**：  指定公网IP的信息列表，详情请参见PublicIpConfig对象定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type public_ip_list: list[:class:`huaweicloudsdkdrs.v3.PublicIpConfig`]
-        :param is_open_fast_clean: 是否开启云数据库RDS for MySQL/MariaDB的binlog快速清理。不传默认为false，不开启快速清理。
+        :param is_open_fast_clean: **参数解释**：  是否开启云数据库RDS for MySQL或MariaDB的Binlog快速清理。  **约束限制**：  不涉及。  **取值范围**：  - true：开启Binlog快速清理 - false：不开启Binlog快速清理  **默认取值**：  false
         :type is_open_fast_clean: bool
         """
         
@@ -201,7 +201,7 @@ class CreateJobReq:
     def bind_eip(self):
         r"""Gets the bind_eip of this CreateJobReq.
 
-        是否绑定eip，网络类型为eip时必填且为true
+        **参数解释**：  是否绑定EIP（弹性公网IP）。  **约束限制**：  网络类型为EIP时必填且为true。  **取值范围**：  - true：绑定EIP - false：不绑定EIP  **默认取值**：  不涉及
 
         :return: The bind_eip of this CreateJobReq.
         :rtype: bool
@@ -212,7 +212,7 @@ class CreateJobReq:
     def bind_eip(self, bind_eip):
         r"""Sets the bind_eip of this CreateJobReq.
 
-        是否绑定eip，网络类型为eip时必填且为true
+        **参数解释**：  是否绑定EIP（弹性公网IP）。  **约束限制**：  网络类型为EIP时必填且为true。  **取值范围**：  - true：绑定EIP - false：不绑定EIP  **默认取值**：  不涉及
 
         :param bind_eip: The bind_eip of this CreateJobReq.
         :type bind_eip: bool
@@ -223,7 +223,7 @@ class CreateJobReq:
     def db_use_type(self):
         r"""Gets the db_use_type of this CreateJobReq.
 
-        迁移场景，migration-实时迁移,sync-实时同步,cloudDataGuard-实时灾备
+        **参数解释**：  迁移任务的业务场景类型。  **约束限制**：  不涉及。  **取值范围**：  - migration：实时迁移 - sync：实时同步 - cloudDataGuard：实时灾备  **默认取值**：  不涉及
 
         :return: The db_use_type of this CreateJobReq.
         :rtype: str
@@ -234,7 +234,7 @@ class CreateJobReq:
     def db_use_type(self, db_use_type):
         r"""Sets the db_use_type of this CreateJobReq.
 
-        迁移场景，migration-实时迁移,sync-实时同步,cloudDataGuard-实时灾备
+        **参数解释**：  迁移任务的业务场景类型。  **约束限制**：  不涉及。  **取值范围**：  - migration：实时迁移 - sync：实时同步 - cloudDataGuard：实时灾备  **默认取值**：  不涉及
 
         :param db_use_type: The db_use_type of this CreateJobReq.
         :type db_use_type: str
@@ -245,7 +245,7 @@ class CreateJobReq:
     def name(self):
         r"""Gets the name of this CreateJobReq.
 
-        任务名称，约束：任务名称在4位到50位之间，不区分大小写，可以包含字母、数字、中划线或下划线，不能包括其他特殊字符。
+        **参数解释**：  任务名称。  **约束限制**：  - 必须以字母开头，不区分大小写，可以包含字母、数字、中划线或下划线，不能包括其他特殊字符。  **取值范围**：  长度为4-50个字符。  **默认取值**：  不涉及
 
         :return: The name of this CreateJobReq.
         :rtype: str
@@ -256,7 +256,7 @@ class CreateJobReq:
     def name(self, name):
         r"""Sets the name of this CreateJobReq.
 
-        任务名称，约束：任务名称在4位到50位之间，不区分大小写，可以包含字母、数字、中划线或下划线，不能包括其他特殊字符。
+        **参数解释**：  任务名称。  **约束限制**：  - 必须以字母开头，不区分大小写，可以包含字母、数字、中划线或下划线，不能包括其他特殊字符。  **取值范围**：  长度为4-50个字符。  **默认取值**：  不涉及
 
         :param name: The name of this CreateJobReq.
         :type name: str
@@ -267,7 +267,7 @@ class CreateJobReq:
     def description(self):
         r"""Gets the description of this CreateJobReq.
 
-        任务描述。  **约束**：任务描述不能超过256位，且不能包含!<>&'\"\\特殊字符。
+        **参数解释**：  任务描述。  **约束限制**：  不能超过256位，且不能包含!<>&'\"特殊字符。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The description of this CreateJobReq.
         :rtype: str
@@ -278,7 +278,7 @@ class CreateJobReq:
     def description(self, description):
         r"""Sets the description of this CreateJobReq.
 
-        任务描述。  **约束**：任务描述不能超过256位，且不能包含!<>&'\"\\特殊字符。
+        **参数解释**：  任务描述。  **约束限制**：  不能超过256位，且不能包含!<>&'\"特殊字符。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param description: The description of this CreateJobReq.
         :type description: str
@@ -289,7 +289,7 @@ class CreateJobReq:
     def engine_type(self):
         r"""Gets the engine_type of this CreateJobReq.
 
-        引擎类型 - mysql：MySQL到MySQL迁移，MySQL到MySQL同步 - mongodb：MongoDB到DDS迁移 - cloudDataGuard-mysql：MySQL到MySQL灾备 - gaussdbv5：GaussDB同步 - mysql-to-kafka：MySQL到Kafka同步 - taurus-to-kafka：GaussDB(for MySQL)到Kafka同步 - gaussdbv5ha-to-kafka：GaussDB主备版到Kafka同步 - postgresql：PostgreSQL到PostgreSQL同步
+        **参数解释**：  DRS任务引擎类型。  **约束限制**：  不涉及。  **取值范围**：  - mysql：MySQL到MySQL迁移，MySQL到MySQL同步 - mongodb：MongoDB到DDS迁移与同步 - cloudDataGuard-mysql：MySQL到MySQL灾备 - gaussdbv5：GaussDB同步 - postgresql：PostgreSQL到PostgreSQL同步 - mysql-to-kafka：MySQL到Kafka同步 - taurus-to-kafka：TaurusDB到Kafka同步 - gaussdbv5ha-to-kafka：GaussDB集中式版到Kafka同步 - oracle-to-gaussdbv5：Oracle-GaussDB分布式版 - oracle-to-gaussdbv5ha：Oracle-GaussDB集中式版 - gaussdbv5-to-oracle：GaussDB分布式版-Oracle - gaussdbv5ha-to-oracle：GaussDB集中式版-Oracle - gaussdbv5-to-kafka：GaussDB分布式版-Kafka  详细取值可参考引擎类型说明。  **默认取值**：  不涉及
 
         :return: The engine_type of this CreateJobReq.
         :rtype: str
@@ -300,7 +300,7 @@ class CreateJobReq:
     def engine_type(self, engine_type):
         r"""Sets the engine_type of this CreateJobReq.
 
-        引擎类型 - mysql：MySQL到MySQL迁移，MySQL到MySQL同步 - mongodb：MongoDB到DDS迁移 - cloudDataGuard-mysql：MySQL到MySQL灾备 - gaussdbv5：GaussDB同步 - mysql-to-kafka：MySQL到Kafka同步 - taurus-to-kafka：GaussDB(for MySQL)到Kafka同步 - gaussdbv5ha-to-kafka：GaussDB主备版到Kafka同步 - postgresql：PostgreSQL到PostgreSQL同步
+        **参数解释**：  DRS任务引擎类型。  **约束限制**：  不涉及。  **取值范围**：  - mysql：MySQL到MySQL迁移，MySQL到MySQL同步 - mongodb：MongoDB到DDS迁移与同步 - cloudDataGuard-mysql：MySQL到MySQL灾备 - gaussdbv5：GaussDB同步 - postgresql：PostgreSQL到PostgreSQL同步 - mysql-to-kafka：MySQL到Kafka同步 - taurus-to-kafka：TaurusDB到Kafka同步 - gaussdbv5ha-to-kafka：GaussDB集中式版到Kafka同步 - oracle-to-gaussdbv5：Oracle-GaussDB分布式版 - oracle-to-gaussdbv5ha：Oracle-GaussDB集中式版 - gaussdbv5-to-oracle：GaussDB分布式版-Oracle - gaussdbv5ha-to-oracle：GaussDB集中式版-Oracle - gaussdbv5-to-kafka：GaussDB分布式版-Kafka  详细取值可参考引擎类型说明。  **默认取值**：  不涉及
 
         :param engine_type: The engine_type of this CreateJobReq.
         :type engine_type: str
@@ -311,7 +311,7 @@ class CreateJobReq:
     def is_target_readonly(self):
         r"""Gets the is_target_readonly of this CreateJobReq.
 
-        指定目标实例是否限制为只读，MySQL迁移和灾备，且job_direction为up时设置有效。（灾备场景下，单主灾备且本云为备为必填且为true，不填默认设置为true）。
+        **参数解释**：  指定目标实例是否限制为只读。  **约束限制**：  - MySQL迁移和灾备，且job_direction为up时设置有效。 - 灾备场景下，单主灾备且本云为备为必填且为true，不填默认设置为true。  **取值范围**：  - true：目标实例限制为只读 - false：目标实例不限制为只读  **默认取值**：  不涉及
 
         :return: The is_target_readonly of this CreateJobReq.
         :rtype: bool
@@ -322,7 +322,7 @@ class CreateJobReq:
     def is_target_readonly(self, is_target_readonly):
         r"""Sets the is_target_readonly of this CreateJobReq.
 
-        指定目标实例是否限制为只读，MySQL迁移和灾备，且job_direction为up时设置有效。（灾备场景下，单主灾备且本云为备为必填且为true，不填默认设置为true）。
+        **参数解释**：  指定目标实例是否限制为只读。  **约束限制**：  - MySQL迁移和灾备，且job_direction为up时设置有效。 - 灾备场景下，单主灾备且本云为备为必填且为true，不填默认设置为true。  **取值范围**：  - true：目标实例限制为只读 - false：目标实例不限制为只读  **默认取值**：  不涉及
 
         :param is_target_readonly: The is_target_readonly of this CreateJobReq.
         :type is_target_readonly: bool
@@ -333,7 +333,7 @@ class CreateJobReq:
     def job_direction(self):
         r"""Gets the job_direction of this CreateJobReq.
 
-        迁移方向，up ：入云 ，灾备场景时对应本云为备，down：出云，灾备场景时对应本云为主，non-dbs：自建
+        **参数解释**：  任务的迁移方向。  **约束限制**：  不涉及。  **取值范围**：  - up：入云，灾备场景时对应本云为备 - down：出云，灾备场景时对应本云为主 - non-dbs：自建  **默认取值**：  不涉及
 
         :return: The job_direction of this CreateJobReq.
         :rtype: str
@@ -344,7 +344,7 @@ class CreateJobReq:
     def job_direction(self, job_direction):
         r"""Sets the job_direction of this CreateJobReq.
 
-        迁移方向，up ：入云 ，灾备场景时对应本云为备，down：出云，灾备场景时对应本云为主，non-dbs：自建
+        **参数解释**：  任务的迁移方向。  **约束限制**：  不涉及。  **取值范围**：  - up：入云，灾备场景时对应本云为备 - down：出云，灾备场景时对应本云为主 - non-dbs：自建  **默认取值**：  不涉及
 
         :param job_direction: The job_direction of this CreateJobReq.
         :type job_direction: str
@@ -355,7 +355,7 @@ class CreateJobReq:
     def multi_write(self):
         r"""Gets the multi_write of this CreateJobReq.
 
-        - db_use_type 是cloudDataGuard时，必填，灾备类型是双主灾备时 muti_write取值true, 否则为false。 - db_use_type 是其他类型时，muti_write是非必选参数
+        **参数解释**：  是否为双主灾备模式。  **约束限制**：  - db_use_type为cloudDataGuard时必填。 - db_use_type为其他类型时为非必选参数。  **取值范围**：  - true：双主灾备 - false：非双主灾备  **默认取值**：  false
 
         :return: The multi_write of this CreateJobReq.
         :rtype: bool
@@ -366,7 +366,7 @@ class CreateJobReq:
     def multi_write(self, multi_write):
         r"""Sets the multi_write of this CreateJobReq.
 
-        - db_use_type 是cloudDataGuard时，必填，灾备类型是双主灾备时 muti_write取值true, 否则为false。 - db_use_type 是其他类型时，muti_write是非必选参数
+        **参数解释**：  是否为双主灾备模式。  **约束限制**：  - db_use_type为cloudDataGuard时必填。 - db_use_type为其他类型时为非必选参数。  **取值范围**：  - true：双主灾备 - false：非双主灾备  **默认取值**：  false
 
         :param multi_write: The multi_write of this CreateJobReq.
         :type multi_write: bool
@@ -377,7 +377,7 @@ class CreateJobReq:
     def net_type(self):
         r"""Gets the net_type of this CreateJobReq.
 
-        网络类型
+        **参数解释**：  任务使用的网络类型。  **约束限制**：  灾备场景不支持选择VPC网络。  **取值范围**：  - vpn：虚拟专用网络 - vpc：虚拟私有云 - eip：弹性公网IP  **默认取值**：  不涉及
 
         :return: The net_type of this CreateJobReq.
         :rtype: str
@@ -388,7 +388,7 @@ class CreateJobReq:
     def net_type(self, net_type):
         r"""Sets the net_type of this CreateJobReq.
 
-        网络类型
+        **参数解释**：  任务使用的网络类型。  **约束限制**：  灾备场景不支持选择VPC网络。  **取值范围**：  - vpn：虚拟专用网络 - vpc：虚拟私有云 - eip：弹性公网IP  **默认取值**：  不涉及
 
         :param net_type: The net_type of this CreateJobReq.
         :type net_type: str
@@ -399,7 +399,7 @@ class CreateJobReq:
     def node_num(self):
         r"""Gets the node_num of this CreateJobReq.
 
-        节点个数。MongoDB数据库时对应源端分片个数，源库为集群时必填，[1-32]，MySQL双主灾备时会默认设置为2。
+        **参数解释**：  节点个数。MongoDB数据库时对应源端分片个数，源库为集群时必填。MySQL双主灾备时会默认设置为2。  **约束限制**：  不涉及。  **取值范围**：  1-32  **默认取值**：  不涉及
 
         :return: The node_num of this CreateJobReq.
         :rtype: int
@@ -410,7 +410,7 @@ class CreateJobReq:
     def node_num(self, node_num):
         r"""Sets the node_num of this CreateJobReq.
 
-        节点个数。MongoDB数据库时对应源端分片个数，源库为集群时必填，[1-32]，MySQL双主灾备时会默认设置为2。
+        **参数解释**：  节点个数。MongoDB数据库时对应源端分片个数，源库为集群时必填。MySQL双主灾备时会默认设置为2。  **约束限制**：  不涉及。  **取值范围**：  1-32  **默认取值**：  不涉及
 
         :param node_num: The node_num of this CreateJobReq.
         :type node_num: int
@@ -421,7 +421,7 @@ class CreateJobReq:
     def node_type(self):
         r"""Gets the node_type of this CreateJobReq.
 
-        规格类型。取值： - micro：极小规格。 - small：小规格。 - medium：中规格。 - high：大规格。 - xlarge：超大规格。 - 2xlarge：极大规格。 具体某种场景支持的取值可以通过[查询可用的Node规格接口](https://support.huaweicloud.com/api-drs/drs_03_0239.html)获取。
+        **参数解释**：  DRS任务实例规格编码，决定迁移实例的计算资源大小。  **约束限制**：  不涉及。  **取值范围**：  - micro：极小规格 - small：小规格 - medium：中规格 - high：大规格 - xlarge：超大规格 - 2xlarge：极大规格  具体某种场景支持的取值可以通过查询可用的Node规格接口获取。  **默认取值**：  high
 
         :return: The node_type of this CreateJobReq.
         :rtype: str
@@ -432,7 +432,7 @@ class CreateJobReq:
     def node_type(self, node_type):
         r"""Sets the node_type of this CreateJobReq.
 
-        规格类型。取值： - micro：极小规格。 - small：小规格。 - medium：中规格。 - high：大规格。 - xlarge：超大规格。 - 2xlarge：极大规格。 具体某种场景支持的取值可以通过[查询可用的Node规格接口](https://support.huaweicloud.com/api-drs/drs_03_0239.html)获取。
+        **参数解释**：  DRS任务实例规格编码，决定迁移实例的计算资源大小。  **约束限制**：  不涉及。  **取值范围**：  - micro：极小规格 - small：小规格 - medium：中规格 - high：大规格 - xlarge：超大规格 - 2xlarge：极大规格  具体某种场景支持的取值可以通过查询可用的Node规格接口获取。  **默认取值**：  high
 
         :param node_type: The node_type of this CreateJobReq.
         :type node_type: str
@@ -479,7 +479,7 @@ class CreateJobReq:
     def tags(self):
         r"""Gets the tags of this CreateJobReq.
 
-        标签信息。
+        **参数解释**：  标签信息列表，详情请参见ResourceTag对象定义。  **约束限制**：  最多添加20个标签。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The tags of this CreateJobReq.
         :rtype: list[:class:`huaweicloudsdkdrs.v3.ResourceTag`]
@@ -490,7 +490,7 @@ class CreateJobReq:
     def tags(self, tags):
         r"""Sets the tags of this CreateJobReq.
 
-        标签信息。
+        **参数解释**：  标签信息列表，详情请参见ResourceTag对象定义。  **约束限制**：  最多添加20个标签。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param tags: The tags of this CreateJobReq.
         :type tags: list[:class:`huaweicloudsdkdrs.v3.ResourceTag`]
@@ -501,7 +501,7 @@ class CreateJobReq:
     def task_type(self):
         r"""Gets the task_type of this CreateJobReq.
 
-        迁移模式，FULL_TRANS 全量,FULL_INCR_TRANS 全量+增量,INCR_TRANS 增量，灾备场景单主灾备仅支持全量加增量（FULL_INCR_TRANS）
+        **参数解释**：  任务迁移模式，指定数据复制任务的执行方式。  **约束限制**：  单主灾备场景仅支持选择全量加增量（FULL_INCR_TRANS）。  **取值范围**：  - FULL_TRANS：全量迁移，仅迁移历史数据 - FULL_INCR_TRANS：全量+增量迁移，先迁移历史数据再持续同步增量 - INCR_TRANS：增量迁移，仅同步数据变更  **默认取值**：  FULL_INCR_TRANS
 
         :return: The task_type of this CreateJobReq.
         :rtype: str
@@ -512,7 +512,7 @@ class CreateJobReq:
     def task_type(self, task_type):
         r"""Sets the task_type of this CreateJobReq.
 
-        迁移模式，FULL_TRANS 全量,FULL_INCR_TRANS 全量+增量,INCR_TRANS 增量，灾备场景单主灾备仅支持全量加增量（FULL_INCR_TRANS）
+        **参数解释**：  任务迁移模式，指定数据复制任务的执行方式。  **约束限制**：  单主灾备场景仅支持选择全量加增量（FULL_INCR_TRANS）。  **取值范围**：  - FULL_TRANS：全量迁移，仅迁移历史数据 - FULL_INCR_TRANS：全量+增量迁移，先迁移历史数据再持续同步增量 - INCR_TRANS：增量迁移，仅同步数据变更  **默认取值**：  FULL_INCR_TRANS
 
         :param task_type: The task_type of this CreateJobReq.
         :type task_type: str
@@ -523,7 +523,7 @@ class CreateJobReq:
     def customize_sutnet_id(self):
         r"""Gets the customize_sutnet_id of this CreateJobReq.
 
-        DRS实例所在子网ID，对应目标库相同VPC下已创建的子网（subnet）的网络ID，UUID格式。
+        **参数解释**：  DRS实例所在子网ID，对应目标库相同VPC下已创建的子网（subnet）的网络ID。  **约束限制**：  UUID格式。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The customize_sutnet_id of this CreateJobReq.
         :rtype: str
@@ -534,7 +534,7 @@ class CreateJobReq:
     def customize_sutnet_id(self, customize_sutnet_id):
         r"""Sets the customize_sutnet_id of this CreateJobReq.
 
-        DRS实例所在子网ID，对应目标库相同VPC下已创建的子网（subnet）的网络ID，UUID格式。
+        **参数解释**：  DRS实例所在子网ID，对应目标库相同VPC下已创建的子网（subnet）的网络ID。  **约束限制**：  UUID格式。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param customize_sutnet_id: The customize_sutnet_id of this CreateJobReq.
         :type customize_sutnet_id: str
@@ -545,7 +545,7 @@ class CreateJobReq:
     def product_id(self):
         r"""Gets the product_id of this CreateJobReq.
 
-        产品id。
+        **参数解释**：  产品ID，用于标识包年包月任务对应的产品。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The product_id of this CreateJobReq.
         :rtype: str
@@ -556,7 +556,7 @@ class CreateJobReq:
     def product_id(self, product_id):
         r"""Sets the product_id of this CreateJobReq.
 
-        产品id。
+        **参数解释**：  产品ID，用于标识包年包月任务对应的产品。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param product_id: The product_id of this CreateJobReq.
         :type product_id: str
@@ -567,7 +567,7 @@ class CreateJobReq:
     def sys_tags(self):
         r"""Gets the sys_tags of this CreateJobReq.
 
-        企业项目，不填默认为default，key值必须为_sys_enterprise_project_id，value为企业项目ID，只能填一个企业项目。
+        **参数解释**：  企业项目标签列表，详情请参见ResourceTag对象定义。  **约束限制**：  - 不填默认为default。 - key值必须为_sys_enterprise_project_id，value为企业项目ID。 - 只能填一个企业项目。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The sys_tags of this CreateJobReq.
         :rtype: list[:class:`huaweicloudsdkdrs.v3.ResourceTag`]
@@ -578,7 +578,7 @@ class CreateJobReq:
     def sys_tags(self, sys_tags):
         r"""Sets the sys_tags of this CreateJobReq.
 
-        企业项目，不填默认为default，key值必须为_sys_enterprise_project_id，value为企业项目ID，只能填一个企业项目。
+        **参数解释**：  企业项目标签列表，详情请参见ResourceTag对象定义。  **约束限制**：  - 不填默认为default。 - key值必须为_sys_enterprise_project_id，value为企业项目ID。 - 只能填一个企业项目。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param sys_tags: The sys_tags of this CreateJobReq.
         :type sys_tags: list[:class:`huaweicloudsdkdrs.v3.ResourceTag`]
@@ -589,7 +589,7 @@ class CreateJobReq:
     def expired_days(self):
         r"""Gets the expired_days of this CreateJobReq.
 
-        任务处于异常状态一段时间后，将会自动结束，单位为天。(范围14-100)，不传默认为14天。
+        **参数解释**：  任务处于异常状态一段时间后自动结束的天数。  **约束限制**：  不涉及。  **取值范围**：  14-100  **默认取值**：  14
 
         :return: The expired_days of this CreateJobReq.
         :rtype: str
@@ -600,7 +600,7 @@ class CreateJobReq:
     def expired_days(self, expired_days):
         r"""Sets the expired_days of this CreateJobReq.
 
-        任务处于异常状态一段时间后，将会自动结束，单位为天。(范围14-100)，不传默认为14天。
+        **参数解释**：  任务处于异常状态一段时间后自动结束的天数。  **约束限制**：  不涉及。  **取值范围**：  14-100  **默认取值**：  14
 
         :param expired_days: The expired_days of this CreateJobReq.
         :type expired_days: str
@@ -611,7 +611,7 @@ class CreateJobReq:
     def master_az(self):
         r"""Gets the master_az of this CreateJobReq.
 
-        主备任务主任务所在可用区code，可以通过查询规格未售罄的可用区接口获取 - master_az和slave_az同时填写时生效 - 目前支持mysql，gaussdbv5ha-to-kafka
+        **参数解释**：  主备任务主任务所在可用区编码，可以通过查询规格未售罄的可用区接口获取。  **约束限制**：  - master_az和slave_az同时填写时生效。 - 目前支持mysql，gaussdbv5ha-to-kafka。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The master_az of this CreateJobReq.
         :rtype: str
@@ -622,7 +622,7 @@ class CreateJobReq:
     def master_az(self, master_az):
         r"""Sets the master_az of this CreateJobReq.
 
-        主备任务主任务所在可用区code，可以通过查询规格未售罄的可用区接口获取 - master_az和slave_az同时填写时生效 - 目前支持mysql，gaussdbv5ha-to-kafka
+        **参数解释**：  主备任务主任务所在可用区编码，可以通过查询规格未售罄的可用区接口获取。  **约束限制**：  - master_az和slave_az同时填写时生效。 - 目前支持mysql，gaussdbv5ha-to-kafka。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param master_az: The master_az of this CreateJobReq.
         :type master_az: str
@@ -633,7 +633,7 @@ class CreateJobReq:
     def slave_az(self):
         r"""Gets the slave_az of this CreateJobReq.
 
-        主备任务备任务所在可用区code，可以通过查询规格未售罄的可用区接口获取 - master_az和slave_az同时填写时生效 - 目前支持mysql，gaussdbv5ha-to-kafka
+        **参数解释**：  主备任务备任务所在可用区编码，可以通过查询规格未售罄的可用区接口获取。  **约束限制**：  - master_az和slave_az同时填写时生效。 - 目前支持mysql，gaussdbv5ha-to-kafka。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The slave_az of this CreateJobReq.
         :rtype: str
@@ -644,7 +644,7 @@ class CreateJobReq:
     def slave_az(self, slave_az):
         r"""Sets the slave_az of this CreateJobReq.
 
-        主备任务备任务所在可用区code，可以通过查询规格未售罄的可用区接口获取 - master_az和slave_az同时填写时生效 - 目前支持mysql，gaussdbv5ha-to-kafka
+        **参数解释**：  主备任务备任务所在可用区编码，可以通过查询规格未售罄的可用区接口获取。  **约束限制**：  - master_az和slave_az同时填写时生效。 - 目前支持mysql，gaussdbv5ha-to-kafka。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param slave_az: The slave_az of this CreateJobReq.
         :type slave_az: str
@@ -655,7 +655,7 @@ class CreateJobReq:
     def charging_mode(self):
         r"""Gets the charging_mode of this CreateJobReq.
 
-        计费模式，不填默认为按需计费。 取值范围： - period：包年包月。 - on_demand：按需计费。
+        **参数解释**：  任务的计费模式，指定数据复制任务的付费方式。  **约束限制**：  - db_use_type为migration时不支持包年包月。 - 支持的engine_type为：mysql，cloudDataGuard-mysql，postgresql，gaussdbv5ha-to-kafka。  **取值范围**：  - period：包年包月 - on_demand：按需计费  **默认取值**：  on_demand
 
         :return: The charging_mode of this CreateJobReq.
         :rtype: str
@@ -666,7 +666,7 @@ class CreateJobReq:
     def charging_mode(self, charging_mode):
         r"""Sets the charging_mode of this CreateJobReq.
 
-        计费模式，不填默认为按需计费。 取值范围： - period：包年包月。 - on_demand：按需计费。
+        **参数解释**：  任务的计费模式，指定数据复制任务的付费方式。  **约束限制**：  - db_use_type为migration时不支持包年包月。 - 支持的engine_type为：mysql，cloudDataGuard-mysql，postgresql，gaussdbv5ha-to-kafka。  **取值范围**：  - period：包年包月 - on_demand：按需计费  **默认取值**：  on_demand
 
         :param charging_mode: The charging_mode of this CreateJobReq.
         :type charging_mode: str
@@ -695,7 +695,7 @@ class CreateJobReq:
     def public_ip_list(self):
         r"""Gets the public_ip_list of this CreateJobReq.
 
-        指定公网IP的信息。
+        **参数解释**：  指定公网IP的信息列表，详情请参见PublicIpConfig对象定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The public_ip_list of this CreateJobReq.
         :rtype: list[:class:`huaweicloudsdkdrs.v3.PublicIpConfig`]
@@ -706,7 +706,7 @@ class CreateJobReq:
     def public_ip_list(self, public_ip_list):
         r"""Sets the public_ip_list of this CreateJobReq.
 
-        指定公网IP的信息。
+        **参数解释**：  指定公网IP的信息列表，详情请参见PublicIpConfig对象定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param public_ip_list: The public_ip_list of this CreateJobReq.
         :type public_ip_list: list[:class:`huaweicloudsdkdrs.v3.PublicIpConfig`]
@@ -717,7 +717,7 @@ class CreateJobReq:
     def is_open_fast_clean(self):
         r"""Gets the is_open_fast_clean of this CreateJobReq.
 
-        是否开启云数据库RDS for MySQL/MariaDB的binlog快速清理。不传默认为false，不开启快速清理。
+        **参数解释**：  是否开启云数据库RDS for MySQL或MariaDB的Binlog快速清理。  **约束限制**：  不涉及。  **取值范围**：  - true：开启Binlog快速清理 - false：不开启Binlog快速清理  **默认取值**：  false
 
         :return: The is_open_fast_clean of this CreateJobReq.
         :rtype: bool
@@ -728,7 +728,7 @@ class CreateJobReq:
     def is_open_fast_clean(self, is_open_fast_clean):
         r"""Sets the is_open_fast_clean of this CreateJobReq.
 
-        是否开启云数据库RDS for MySQL/MariaDB的binlog快速清理。不传默认为false，不开启快速清理。
+        **参数解释**：  是否开启云数据库RDS for MySQL或MariaDB的Binlog快速清理。  **约束限制**：  不涉及。  **取值范围**：  - true：开启Binlog快速清理 - false：不开启Binlog快速清理  **默认取值**：  false
 
         :param is_open_fast_clean: The is_open_fast_clean of this CreateJobReq.
         :type is_open_fast_clean: bool

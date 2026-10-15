@@ -44,10 +44,12 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.BatchChangeDataRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchChangeDataResponse`
         """
+        warnings.warn("Method 'batch_change_data' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._batch_change_data_http_info(request)
         return self._call_api(**http_info)
 
     def batch_change_data_invoker(self, request):
+        warnings.warn("Method 'batch_change_data_invoker' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._batch_change_data_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -111,10 +113,12 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.BatchCheckJobsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchCheckJobsResponse`
         """
+        warnings.warn("Method 'batch_check_jobs' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._batch_check_jobs_http_info(request)
         return self._call_api(**http_info)
 
     def batch_check_jobs_invoker(self, request):
+        warnings.warn("Method 'batch_check_jobs_invoker' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._batch_check_jobs_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -178,10 +182,12 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.BatchCheckResultsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchCheckResultsResponse`
         """
+        warnings.warn("Method 'batch_check_results' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._batch_check_results_http_info(request)
         return self._call_api(**http_info)
 
     def batch_check_results_invoker(self, request):
+        warnings.warn("Method 'batch_check_results_invoker' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._batch_check_results_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -245,10 +251,12 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.BatchCreateJobsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchCreateJobsResponse`
         """
+        warnings.warn("Method 'batch_create_jobs' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._batch_create_jobs_http_info(request)
         return self._call_api(**http_info)
 
     def batch_create_jobs_invoker(self, request):
+        warnings.warn("Method 'batch_create_jobs_invoker' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._batch_create_jobs_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -312,10 +320,12 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.BatchDeleteJobsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchDeleteJobsResponse`
         """
+        warnings.warn("Method 'batch_delete_jobs' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._batch_delete_jobs_http_info(request)
         return self._call_api(**http_info)
 
     def batch_delete_jobs_invoker(self, request):
+        warnings.warn("Method 'batch_delete_jobs_invoker' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._batch_delete_jobs_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -379,10 +389,12 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.BatchListJobDetailsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchListJobDetailsResponse`
         """
+        warnings.warn("Method 'batch_list_job_details' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._batch_list_job_details_http_info(request)
         return self._call_api(**http_info)
 
     def batch_list_job_details_invoker(self, request):
+        warnings.warn("Method 'batch_list_job_details_invoker' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._batch_list_job_details_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -446,10 +458,12 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.BatchListJobStatusRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchListJobStatusResponse`
         """
+        warnings.warn("Method 'batch_list_job_status' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._batch_list_job_status_http_info(request)
         return self._call_api(**http_info)
 
     def batch_list_job_status_invoker(self, request):
+        warnings.warn("Method 'batch_list_job_status_invoker' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._batch_list_job_status_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -716,10 +730,12 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.BatchListStructProcessRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchListStructProcessResponse`
         """
+        warnings.warn("Method 'batch_list_struct_process' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._batch_list_struct_process_http_info(request)
         return self._call_api(**http_info)
 
     def batch_list_struct_process_invoker(self, request):
+        warnings.warn("Method 'batch_list_struct_process_invoker' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._batch_list_struct_process_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -783,10 +799,12 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.BatchResetPasswordRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchResetPasswordResponse`
         """
+        warnings.warn("Method 'batch_reset_password' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._batch_reset_password_http_info(request)
         return self._call_api(**http_info)
 
     def batch_reset_password_invoker(self, request):
+        warnings.warn("Method 'batch_reset_password_invoker' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._batch_reset_password_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -850,10 +868,12 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.BatchRestoreTaskRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchRestoreTaskResponse`
         """
+        warnings.warn("Method 'batch_restore_task' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._batch_restore_task_http_info(request)
         return self._call_api(**http_info)
 
     def batch_restore_task_invoker(self, request):
+        warnings.warn("Method 'batch_restore_task_invoker' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._batch_restore_task_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -919,10 +939,12 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.BatchSetDefinerRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchSetDefinerResponse`
         """
+        warnings.warn("Method 'batch_set_definer' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._batch_set_definer_http_info(request)
         return self._call_api(**http_info)
 
     def batch_set_definer_invoker(self, request):
+        warnings.warn("Method 'batch_set_definer_invoker' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._batch_set_definer_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -986,10 +1008,12 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.BatchSetObjectsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchSetObjectsResponse`
         """
+        warnings.warn("Method 'batch_set_objects' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._batch_set_objects_http_info(request)
         return self._call_api(**http_info)
 
     def batch_set_objects_invoker(self, request):
+        warnings.warn("Method 'batch_set_objects_invoker' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._batch_set_objects_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -1054,10 +1078,12 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.BatchSetPolicyRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchSetPolicyResponse`
         """
+        warnings.warn("Method 'batch_set_policy' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._batch_set_policy_http_info(request)
         return self._call_api(**http_info)
 
     def batch_set_policy_invoker(self, request):
+        warnings.warn("Method 'batch_set_policy_invoker' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._batch_set_policy_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -1122,10 +1148,12 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.BatchSetSmnRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchSetSmnResponse`
         """
+        warnings.warn("Method 'batch_set_smn' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._batch_set_smn_http_info(request)
         return self._call_api(**http_info)
 
     def batch_set_smn_invoker(self, request):
+        warnings.warn("Method 'batch_set_smn_invoker' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._batch_set_smn_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -1191,10 +1219,12 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.BatchSetSpeedRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchSetSpeedResponse`
         """
+        warnings.warn("Method 'batch_set_speed' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._batch_set_speed_http_info(request)
         return self._call_api(**http_info)
 
     def batch_set_speed_invoker(self, request):
+        warnings.warn("Method 'batch_set_speed_invoker' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._batch_set_speed_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -1258,10 +1288,12 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.BatchShowParamsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchShowParamsResponse`
         """
+        warnings.warn("Method 'batch_show_params' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._batch_show_params_http_info(request)
         return self._call_api(**http_info)
 
     def batch_show_params_invoker(self, request):
+        warnings.warn("Method 'batch_show_params_invoker' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._batch_show_params_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -1325,10 +1357,12 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.BatchStartJobsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchStartJobsResponse`
         """
+        warnings.warn("Method 'batch_start_jobs' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._batch_start_jobs_http_info(request)
         return self._call_api(**http_info)
 
     def batch_start_jobs_invoker(self, request):
+        warnings.warn("Method 'batch_start_jobs_invoker' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._batch_start_jobs_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -1392,10 +1426,12 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.BatchStopJobsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchStopJobsResponse`
         """
+        warnings.warn("Method 'batch_stop_jobs' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._batch_stop_jobs_http_info(request)
         return self._call_api(**http_info)
 
     def batch_stop_jobs_invoker(self, request):
+        warnings.warn("Method 'batch_stop_jobs_invoker' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._batch_stop_jobs_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -1459,10 +1495,12 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.BatchSwitchoverRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchSwitchoverResponse`
         """
+        warnings.warn("Method 'batch_switchover' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._batch_switchover_http_info(request)
         return self._call_api(**http_info)
 
     def batch_switchover_invoker(self, request):
+        warnings.warn("Method 'batch_switchover_invoker' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._batch_switchover_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -1526,10 +1564,12 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.BatchUpdateJobRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchUpdateJobResponse`
         """
+        warnings.warn("Method 'batch_update_job' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._batch_update_job_http_info(request)
         return self._call_api(**http_info)
 
     def batch_update_job_invoker(self, request):
+        warnings.warn("Method 'batch_update_job_invoker' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._batch_update_job_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -1593,10 +1633,12 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.BatchUpdateUserRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchUpdateUserResponse`
         """
+        warnings.warn("Method 'batch_update_user' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._batch_update_user_http_info(request)
         return self._call_api(**http_info)
 
     def batch_update_user_invoker(self, request):
+        warnings.warn("Method 'batch_update_user_invoker' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._batch_update_user_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -1661,10 +1703,12 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.BatchValidateClustersConnectionsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchValidateClustersConnectionsResponse`
         """
+        warnings.warn("Method 'batch_validate_clusters_connections' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._batch_validate_clusters_connections_http_info(request)
         return self._call_api(**http_info)
 
     def batch_validate_clusters_connections_invoker(self, request):
+        warnings.warn("Method 'batch_validate_clusters_connections_invoker' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._batch_validate_clusters_connections_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -1728,10 +1772,12 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.BatchValidateConnectionsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchValidateConnectionsResponse`
         """
+        warnings.warn("Method 'batch_validate_connections' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._batch_validate_connections_http_info(request)
         return self._call_api(**http_info)
 
     def batch_validate_connections_invoker(self, request):
+        warnings.warn("Method 'batch_validate_connections_invoker' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._batch_validate_connections_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -1795,10 +1841,12 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.CreateCompareResultFileRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.CreateCompareResultFileResponse`
         """
+        warnings.warn("Method 'create_compare_result_file' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._create_compare_result_file_http_info(request)
         return self._call_api(**http_info)
 
     def create_compare_result_file_invoker(self, request):
+        warnings.warn("Method 'create_compare_result_file_invoker' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._create_compare_result_file_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -1866,10 +1914,12 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.CreateCompareTaskRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.CreateCompareTaskResponse`
         """
+        warnings.warn("Method 'create_compare_task' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._create_compare_task_http_info(request)
         return self._call_api(**http_info)
 
     def create_compare_task_invoker(self, request):
+        warnings.warn("Method 'create_compare_task_invoker' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._create_compare_task_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -1933,10 +1983,12 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.CreateDataLevelTableCompareJobRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.CreateDataLevelTableCompareJobResponse`
         """
+        warnings.warn("Method 'create_data_level_table_compare_job' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._create_data_level_table_compare_job_http_info(request)
         return self._call_api(**http_info)
 
     def create_data_level_table_compare_job_invoker(self, request):
+        warnings.warn("Method 'create_data_level_table_compare_job_invoker' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._create_data_level_table_compare_job_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -2002,10 +2054,12 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.CreateObjectLevelCompareJobRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.CreateObjectLevelCompareJobResponse`
         """
+        warnings.warn("Method 'create_object_level_compare_job' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._create_object_level_compare_job_http_info(request)
         return self._call_api(**http_info)
 
     def create_object_level_compare_job_invoker(self, request):
+        warnings.warn("Method 'create_object_level_compare_job_invoker' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._create_object_level_compare_job_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -2071,10 +2125,12 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.DeleteCompareJobRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.DeleteCompareJobResponse`
         """
+        warnings.warn("Method 'delete_compare_job' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._delete_compare_job_http_info(request)
         return self._call_api(**http_info)
 
     def delete_compare_job_invoker(self, request):
+        warnings.warn("Method 'delete_compare_job_invoker' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._delete_compare_job_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -2140,10 +2196,12 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.DownloadCompareResultFileRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.DownloadCompareResultFileResponse`
         """
+        warnings.warn("Method 'download_compare_result_file' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._download_compare_result_file_http_info(request)
         return self._call_api(**http_info)
 
     def download_compare_result_file_invoker(self, request):
+        warnings.warn("Method 'download_compare_result_file_invoker' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._download_compare_result_file_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -2215,10 +2273,12 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.ListAvailableNodeTypesRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.ListAvailableNodeTypesResponse`
         """
+        warnings.warn("Method 'list_available_node_types' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_available_node_types_http_info(request)
         return self._call_api(**http_info)
 
     def list_available_node_types_invoker(self, request):
+        warnings.warn("Method 'list_available_node_types_invoker' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_available_node_types_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -2357,10 +2417,12 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.ListCompareResultRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.ListCompareResultResponse`
         """
+        warnings.warn("Method 'list_compare_result' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_compare_result_http_info(request)
         return self._call_api(**http_info)
 
     def list_compare_result_invoker(self, request):
+        warnings.warn("Method 'list_compare_result_invoker' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_compare_result_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -2424,10 +2486,12 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.ListContentCompareDetailRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.ListContentCompareDetailResponse`
         """
+        warnings.warn("Method 'list_content_compare_detail' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_content_compare_detail_http_info(request)
         return self._call_api(**http_info)
 
     def list_content_compare_detail_invoker(self, request):
+        warnings.warn("Method 'list_content_compare_detail_invoker' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_content_compare_detail_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -2503,10 +2567,12 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.ListContentCompareDifferenceRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.ListContentCompareDifferenceResponse`
         """
+        warnings.warn("Method 'list_content_compare_difference' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_content_compare_difference_http_info(request)
         return self._call_api(**http_info)
 
     def list_content_compare_difference_invoker(self, request):
+        warnings.warn("Method 'list_content_compare_difference_invoker' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_content_compare_difference_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -2580,10 +2646,12 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.ListContentCompareOverviewRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.ListContentCompareOverviewResponse`
         """
+        warnings.warn("Method 'list_content_compare_overview' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_content_compare_overview_http_info(request)
         return self._call_api(**http_info)
 
     def list_content_compare_overview_invoker(self, request):
+        warnings.warn("Method 'list_content_compare_overview_invoker' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_content_compare_overview_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -2653,10 +2721,12 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.ListDataCompareDetailRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.ListDataCompareDetailResponse`
         """
+        warnings.warn("Method 'list_data_compare_detail' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_data_compare_detail_http_info(request)
         return self._call_api(**http_info)
 
     def list_data_compare_detail_invoker(self, request):
+        warnings.warn("Method 'list_data_compare_detail_invoker' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_data_compare_detail_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -2736,10 +2806,12 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.ListDataCompareOverviewRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.ListDataCompareOverviewResponse`
         """
+        warnings.warn("Method 'list_data_compare_overview' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_data_compare_overview_http_info(request)
         return self._call_api(**http_info)
 
     def list_data_compare_overview_invoker(self, request):
+        warnings.warn("Method 'list_data_compare_overview_invoker' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_data_compare_overview_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -2811,10 +2883,12 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.ListDataLevelTableCompareJobsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.ListDataLevelTableCompareJobsResponse`
         """
+        warnings.warn("Method 'list_data_level_table_compare_jobs' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_data_level_table_compare_jobs_http_info(request)
         return self._call_api(**http_info)
 
     def list_data_level_table_compare_jobs_invoker(self, request):
+        warnings.warn("Method 'list_data_level_table_compare_jobs_invoker' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_data_level_table_compare_jobs_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -2882,10 +2956,12 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.ListObejectLevelCompareDetailRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.ListObejectLevelCompareDetailResponse`
         """
+        warnings.warn("Method 'list_obeject_level_compare_detail' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_obeject_level_compare_detail_http_info(request)
         return self._call_api(**http_info)
 
     def list_obeject_level_compare_detail_invoker(self, request):
+        warnings.warn("Method 'list_obeject_level_compare_detail_invoker' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_obeject_level_compare_detail_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -2957,10 +3033,12 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.ListObejectLevelCompareOverviewRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.ListObejectLevelCompareOverviewResponse`
         """
+        warnings.warn("Method 'list_obeject_level_compare_overview' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_obeject_level_compare_overview_http_info(request)
         return self._call_api(**http_info)
 
     def list_obeject_level_compare_overview_invoker(self, request):
+        warnings.warn("Method 'list_obeject_level_compare_overview_invoker' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_obeject_level_compare_overview_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -3024,10 +3102,12 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.ListUsersRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.ListUsersResponse`
         """
+        warnings.warn("Method 'list_users' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_users_http_info(request)
         return self._call_api(**http_info)
 
     def list_users_invoker(self, request):
+        warnings.warn("Method 'list_users_invoker' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_users_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -3091,10 +3171,12 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.ModifyGroupAndStreamRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.ModifyGroupAndStreamResponse`
         """
+        warnings.warn("Method 'modify_group_and_stream' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._modify_group_and_stream_http_info(request)
         return self._call_api(**http_info)
 
     def modify_group_and_stream_invoker(self, request):
+        warnings.warn("Method 'modify_group_and_stream_invoker' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._modify_group_and_stream_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -3160,10 +3242,12 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.QueryTuningParamsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.QueryTuningParamsResponse`
         """
+        warnings.warn("Method 'query_tuning_params' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._query_tuning_params_http_info(request)
         return self._call_api(**http_info)
 
     def query_tuning_params_invoker(self, request):
+        warnings.warn("Method 'query_tuning_params_invoker' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._query_tuning_params_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -3227,10 +3311,12 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.SelectGroupAndStreamRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.SelectGroupAndStreamResponse`
         """
+        warnings.warn("Method 'select_group_and_stream' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._select_group_and_stream_http_info(request)
         return self._call_api(**http_info)
 
     def select_group_and_stream_invoker(self, request):
+        warnings.warn("Method 'select_group_and_stream_invoker' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._select_group_and_stream_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -3294,10 +3380,12 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.ShowJobListRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.ShowJobListResponse`
         """
+        warnings.warn("Method 'show_job_list' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_job_list_http_info(request)
         return self._call_api(**http_info)
 
     def show_job_list_invoker(self, request):
+        warnings.warn("Method 'show_job_list_invoker' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_job_list_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -3361,10 +3449,12 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.ShowMonitoringDataRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.ShowMonitoringDataResponse`
         """
+        warnings.warn("Method 'show_monitoring_data' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_monitoring_data_http_info(request)
         return self._call_api(**http_info)
 
     def show_monitoring_data_invoker(self, request):
+        warnings.warn("Method 'show_monitoring_data_invoker' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_monitoring_data_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -3493,10 +3583,12 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.StartPromptlyDataLevelTableCompareJobRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.StartPromptlyDataLevelTableCompareJobResponse`
         """
+        warnings.warn("Method 'start_promptly_data_level_table_compare_job' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._start_promptly_data_level_table_compare_job_http_info(request)
         return self._call_api(**http_info)
 
     def start_promptly_data_level_table_compare_job_invoker(self, request):
+        warnings.warn("Method 'start_promptly_data_level_table_compare_job_invoker' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._start_promptly_data_level_table_compare_job_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -3562,10 +3654,12 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.UpdateParamsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.UpdateParamsResponse`
         """
+        warnings.warn("Method 'update_params' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._update_params_http_info(request)
         return self._call_api(**http_info)
 
     def update_params_invoker(self, request):
+        warnings.warn("Method 'update_params_invoker' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._update_params_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -3631,10 +3725,12 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.UpdateTuningParamsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.UpdateTuningParamsResponse`
         """
+        warnings.warn("Method 'update_tuning_params' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._update_tuning_params_http_info(request)
         return self._call_api(**http_info)
 
     def update_tuning_params_invoker(self, request):
+        warnings.warn("Method 'update_tuning_params_invoker' of DrsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._update_tuning_params_http_info(request)
         return SyncInvoker(self, http_info)
 

@@ -31,11 +31,11 @@ class PublicIpConfig:
 
         The model defined in huaweicloud sdk
 
-        :param id: 指定公网IP的ID
+        :param id: **参数解释**：  指定公网IP的ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type id: str
-        :param public_ip: 指定公网IP
+        :param public_ip: **参数解释**：  指定公网IP地址。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type public_ip: str
-        :param type: 指定公网IP绑定任务的类型： - 主备任务：主是master，备是slave - 其他固定传master
+        :param type: **参数解释**：  指定公网IP绑定任务的类型。  **约束限制**：  不涉及。  **取值范围**：  - master：主任务或单任务的公网IP - slave：备任务的公网IP  **默认取值**：  不涉及
         :type type: str
         """
         
@@ -54,7 +54,7 @@ class PublicIpConfig:
     def id(self):
         r"""Gets the id of this PublicIpConfig.
 
-        指定公网IP的ID
+        **参数解释**：  指定公网IP的ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The id of this PublicIpConfig.
         :rtype: str
@@ -65,7 +65,7 @@ class PublicIpConfig:
     def id(self, id):
         r"""Sets the id of this PublicIpConfig.
 
-        指定公网IP的ID
+        **参数解释**：  指定公网IP的ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param id: The id of this PublicIpConfig.
         :type id: str
@@ -76,7 +76,7 @@ class PublicIpConfig:
     def public_ip(self):
         r"""Gets the public_ip of this PublicIpConfig.
 
-        指定公网IP
+        **参数解释**：  指定公网IP地址。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The public_ip of this PublicIpConfig.
         :rtype: str
@@ -87,7 +87,7 @@ class PublicIpConfig:
     def public_ip(self, public_ip):
         r"""Sets the public_ip of this PublicIpConfig.
 
-        指定公网IP
+        **参数解释**：  指定公网IP地址。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param public_ip: The public_ip of this PublicIpConfig.
         :type public_ip: str
@@ -98,7 +98,7 @@ class PublicIpConfig:
     def type(self):
         r"""Gets the type of this PublicIpConfig.
 
-        指定公网IP绑定任务的类型： - 主备任务：主是master，备是slave - 其他固定传master
+        **参数解释**：  指定公网IP绑定任务的类型。  **约束限制**：  不涉及。  **取值范围**：  - master：主任务或单任务的公网IP - slave：备任务的公网IP  **默认取值**：  不涉及
 
         :return: The type of this PublicIpConfig.
         :rtype: str
@@ -109,7 +109,7 @@ class PublicIpConfig:
     def type(self, type):
         r"""Sets the type of this PublicIpConfig.
 
-        指定公网IP绑定任务的类型： - 主备任务：主是master，备是slave - 其他固定传master
+        **参数解释**：  指定公网IP绑定任务的类型。  **约束限制**：  不涉及。  **取值范围**：  - master：主任务或单任务的公网IP - slave：备任务的公网IP  **默认取值**：  不涉及
 
         :param type: The type of this PublicIpConfig.
         :type type: str

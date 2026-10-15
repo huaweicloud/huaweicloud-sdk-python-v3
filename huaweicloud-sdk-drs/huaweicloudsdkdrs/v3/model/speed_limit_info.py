@@ -35,9 +35,9 @@ class SpeedLimitInfo:
 
         :param begin: 开始限速时间, 此时间为UTC时间，开始时间为整时，若有分钟，则会忽略，格式为hh:mm，小时数为两位，例如：01:00。
         :type begin: str
-        :param end: 结束时间,此时间为UTC时间,输入必须为59分结尾，格式为hh:mm，小时数为两位，例如：05:59。
+        :param end: 结束时间，此时间为UTC时间，输入必须为59分结尾，格式为hh:mm，例如：15:59。
         :type end: str
-        :param speed: 限速，取值范围为1~9999 ,单位为MB/s
+        :param speed: 限速，取值范围为1~9999，单位为MB/s。
         :type speed: str
         :param is_utc: 是否为UTC时间
         :type is_utc: bool
@@ -83,7 +83,7 @@ class SpeedLimitInfo:
     def end(self):
         r"""Gets the end of this SpeedLimitInfo.
 
-        结束时间,此时间为UTC时间,输入必须为59分结尾，格式为hh:mm，小时数为两位，例如：05:59。
+        结束时间，此时间为UTC时间，输入必须为59分结尾，格式为hh:mm，例如：15:59。
 
         :return: The end of this SpeedLimitInfo.
         :rtype: str
@@ -94,7 +94,7 @@ class SpeedLimitInfo:
     def end(self, end):
         r"""Sets the end of this SpeedLimitInfo.
 
-        结束时间,此时间为UTC时间,输入必须为59分结尾，格式为hh:mm，小时数为两位，例如：05:59。
+        结束时间，此时间为UTC时间，输入必须为59分结尾，格式为hh:mm，例如：15:59。
 
         :param end: The end of this SpeedLimitInfo.
         :type end: str
@@ -105,7 +105,7 @@ class SpeedLimitInfo:
     def speed(self):
         r"""Gets the speed of this SpeedLimitInfo.
 
-        限速，取值范围为1~9999 ,单位为MB/s
+        限速，取值范围为1~9999，单位为MB/s。
 
         :return: The speed of this SpeedLimitInfo.
         :rtype: str
@@ -116,7 +116,7 @@ class SpeedLimitInfo:
     def speed(self, speed):
         r"""Sets the speed of this SpeedLimitInfo.
 
-        限速，取值范围为1~9999 ,单位为MB/s
+        限速，取值范围为1~9999，单位为MB/s。
 
         :param speed: The speed of this SpeedLimitInfo.
         :type speed: str

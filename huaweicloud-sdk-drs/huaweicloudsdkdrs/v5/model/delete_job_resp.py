@@ -35,9 +35,9 @@ class DeleteJobResp:
 
         The model defined in huaweicloud sdk
 
-        :param error_code: 错误码。
+        :param error_code: **参数解释**：  错误码，当任务报错时返回的错误代码。  **约束限制**：  - 最小长度：12 - 最大长度：12  **取值范围**：  格式为DRS.XXXXXX。  **默认取值**：  不涉及
         :type error_code: str
-        :param error_msg: 错误描述。
+        :param error_msg: **参数解释**：  错误详细信息，当任务执行失败时返回的具体错误描述。  **约束限制**：  - 最小长度：1 - 最大长度：512  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type error_msg: str
         :param id: 任务ID。
         :type id: str
@@ -66,7 +66,7 @@ class DeleteJobResp:
     def error_code(self):
         r"""Gets the error_code of this DeleteJobResp.
 
-        错误码。
+        **参数解释**：  错误码，当任务报错时返回的错误代码。  **约束限制**：  - 最小长度：12 - 最大长度：12  **取值范围**：  格式为DRS.XXXXXX。  **默认取值**：  不涉及
 
         :return: The error_code of this DeleteJobResp.
         :rtype: str
@@ -77,7 +77,7 @@ class DeleteJobResp:
     def error_code(self, error_code):
         r"""Sets the error_code of this DeleteJobResp.
 
-        错误码。
+        **参数解释**：  错误码，当任务报错时返回的错误代码。  **约束限制**：  - 最小长度：12 - 最大长度：12  **取值范围**：  格式为DRS.XXXXXX。  **默认取值**：  不涉及
 
         :param error_code: The error_code of this DeleteJobResp.
         :type error_code: str
@@ -88,7 +88,7 @@ class DeleteJobResp:
     def error_msg(self):
         r"""Gets the error_msg of this DeleteJobResp.
 
-        错误描述。
+        **参数解释**：  错误详细信息，当任务执行失败时返回的具体错误描述。  **约束限制**：  - 最小长度：1 - 最大长度：512  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The error_msg of this DeleteJobResp.
         :rtype: str
@@ -99,7 +99,7 @@ class DeleteJobResp:
     def error_msg(self, error_msg):
         r"""Sets the error_msg of this DeleteJobResp.
 
-        错误描述。
+        **参数解释**：  错误详细信息，当任务执行失败时返回的具体错误描述。  **约束限制**：  - 最小长度：1 - 最大长度：512  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param error_msg: The error_msg of this DeleteJobResp.
         :type error_msg: str

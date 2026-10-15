@@ -35,15 +35,15 @@ class CheckJobResp:
 
         The model defined in huaweicloud sdk
 
-        :param id: 任务id。
+        :param id: **参数解释**：  任务ID，用于唯一标识一个数据复制任务。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type id: str
-        :param status: 测试结果。 - true：成功 - false：失败
+        :param status: **参数解释**：  测试结果状态。  **约束限制**：  不涉及。  **取值范围**：  - true：成功 - false：失败  **默认取值**：  不涉及
         :type status: str
-        :param error_code: 错误码。
+        :param error_code: **参数解释**：  错误码，当任务报错时返回的错误代码。  **约束限制**：  不涉及。  **取值范围**：  格式为DRS.XXXXXX。  **默认取值**：  不涉及
         :type error_code: str
-        :param error_msg: 错误信息。
+        :param error_msg: **参数解释**：  错误详细信息，当任务执行失败时返回的具体错误描述。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type error_msg: str
-        :param success: 是否成功
+        :param success: **参数解释**：  操作是否成功，标识测试连接操作的执行结果。  **约束限制**：  不涉及。  **取值范围**：  - true：操作成功 - false：操作失败  **默认取值**：  不涉及
         :type success: bool
         """
         
@@ -69,7 +69,7 @@ class CheckJobResp:
     def id(self):
         r"""Gets the id of this CheckJobResp.
 
-        任务id。
+        **参数解释**：  任务ID，用于唯一标识一个数据复制任务。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The id of this CheckJobResp.
         :rtype: str
@@ -80,7 +80,7 @@ class CheckJobResp:
     def id(self, id):
         r"""Sets the id of this CheckJobResp.
 
-        任务id。
+        **参数解释**：  任务ID，用于唯一标识一个数据复制任务。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param id: The id of this CheckJobResp.
         :type id: str
@@ -91,7 +91,7 @@ class CheckJobResp:
     def status(self):
         r"""Gets the status of this CheckJobResp.
 
-        测试结果。 - true：成功 - false：失败
+        **参数解释**：  测试结果状态。  **约束限制**：  不涉及。  **取值范围**：  - true：成功 - false：失败  **默认取值**：  不涉及
 
         :return: The status of this CheckJobResp.
         :rtype: str
@@ -102,7 +102,7 @@ class CheckJobResp:
     def status(self, status):
         r"""Sets the status of this CheckJobResp.
 
-        测试结果。 - true：成功 - false：失败
+        **参数解释**：  测试结果状态。  **约束限制**：  不涉及。  **取值范围**：  - true：成功 - false：失败  **默认取值**：  不涉及
 
         :param status: The status of this CheckJobResp.
         :type status: str
@@ -113,7 +113,7 @@ class CheckJobResp:
     def error_code(self):
         r"""Gets the error_code of this CheckJobResp.
 
-        错误码。
+        **参数解释**：  错误码，当任务报错时返回的错误代码。  **约束限制**：  不涉及。  **取值范围**：  格式为DRS.XXXXXX。  **默认取值**：  不涉及
 
         :return: The error_code of this CheckJobResp.
         :rtype: str
@@ -124,7 +124,7 @@ class CheckJobResp:
     def error_code(self, error_code):
         r"""Sets the error_code of this CheckJobResp.
 
-        错误码。
+        **参数解释**：  错误码，当任务报错时返回的错误代码。  **约束限制**：  不涉及。  **取值范围**：  格式为DRS.XXXXXX。  **默认取值**：  不涉及
 
         :param error_code: The error_code of this CheckJobResp.
         :type error_code: str
@@ -135,7 +135,7 @@ class CheckJobResp:
     def error_msg(self):
         r"""Gets the error_msg of this CheckJobResp.
 
-        错误信息。
+        **参数解释**：  错误详细信息，当任务执行失败时返回的具体错误描述。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The error_msg of this CheckJobResp.
         :rtype: str
@@ -146,7 +146,7 @@ class CheckJobResp:
     def error_msg(self, error_msg):
         r"""Sets the error_msg of this CheckJobResp.
 
-        错误信息。
+        **参数解释**：  错误详细信息，当任务执行失败时返回的具体错误描述。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param error_msg: The error_msg of this CheckJobResp.
         :type error_msg: str
@@ -157,7 +157,7 @@ class CheckJobResp:
     def success(self):
         r"""Gets the success of this CheckJobResp.
 
-        是否成功
+        **参数解释**：  操作是否成功，标识测试连接操作的执行结果。  **约束限制**：  不涉及。  **取值范围**：  - true：操作成功 - false：操作失败  **默认取值**：  不涉及
 
         :return: The success of this CheckJobResp.
         :rtype: bool
@@ -168,7 +168,7 @@ class CheckJobResp:
     def success(self, success):
         r"""Sets the success of this CheckJobResp.
 
-        是否成功
+        **参数解释**：  操作是否成功，标识测试连接操作的执行结果。  **约束限制**：  不涉及。  **取值范围**：  - true：操作成功 - false：操作失败  **默认取值**：  不涉及
 
         :param success: The success of this CheckJobResp.
         :type success: bool

@@ -39,19 +39,19 @@ class InstInfo:
 
         The model defined in huaweicloud sdk
 
-        :param engine_type: 引擎类型
+        :param engine_type: **参数解释**：  DRS任务引擎类型。  **约束限制**：  不涉及。  **取值范围**：  - mysql：MySQL到MySQL迁移，MySQL到MySQL同步 - mongodb：MongoDB到DDS迁移与同步 - cloudDataGuard-mysql：MySQL到MySQL灾备 - gaussdbv5：GaussDB同步 - postgresql：PostgreSQL到PostgreSQL同步 - mysql-to-kafka：MySQL到Kafka同步 - taurus-to-kafka：TaurusDB到Kafka同步 - gaussdbv5ha-to-kafka：GaussDB集中式版到Kafka同步  **默认取值**：  不涉及
         :type engine_type: str
-        :param inst_type: 实例类型 取值：common，high，ultrahigh
+        :param inst_type: **参数解释**：  实例规格类型。  **约束限制**：  不涉及。  **取值范围**：  - common：中 - high：大 - ultrahigh：极大  **默认取值**：  不涉及
         :type inst_type: str
-        :param ip: 迁移实例所在的私有IP
+        :param ip: **参数解释**：  迁移实例所在的私有IP地址。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type ip: str
-        :param public_ip: 迁移实例所在的公网IP
+        :param public_ip: **参数解释**：  迁移实例所在的公网IP地址。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type public_ip: str
-        :param start_time: 迁移实例任务定时启动时间
+        :param start_time: **参数解释**：  迁移实例任务定时启动时间。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type start_time: str
-        :param status: 迁移实例的状态
+        :param status: **参数解释**：  迁移实例的状态。  **约束限制**：  不涉及。  **取值范围**：  - active：运行中 - deleted：已删除  **默认取值**：  不涉及
         :type status: str
-        :param volume_size: 迁移实例的磁盘大小
+        :param volume_size: **参数解释**：  迁移实例的磁盘大小，单位为GB。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type volume_size: int
         """
         
@@ -85,7 +85,7 @@ class InstInfo:
     def engine_type(self):
         r"""Gets the engine_type of this InstInfo.
 
-        引擎类型
+        **参数解释**：  DRS任务引擎类型。  **约束限制**：  不涉及。  **取值范围**：  - mysql：MySQL到MySQL迁移，MySQL到MySQL同步 - mongodb：MongoDB到DDS迁移与同步 - cloudDataGuard-mysql：MySQL到MySQL灾备 - gaussdbv5：GaussDB同步 - postgresql：PostgreSQL到PostgreSQL同步 - mysql-to-kafka：MySQL到Kafka同步 - taurus-to-kafka：TaurusDB到Kafka同步 - gaussdbv5ha-to-kafka：GaussDB集中式版到Kafka同步  **默认取值**：  不涉及
 
         :return: The engine_type of this InstInfo.
         :rtype: str
@@ -96,7 +96,7 @@ class InstInfo:
     def engine_type(self, engine_type):
         r"""Sets the engine_type of this InstInfo.
 
-        引擎类型
+        **参数解释**：  DRS任务引擎类型。  **约束限制**：  不涉及。  **取值范围**：  - mysql：MySQL到MySQL迁移，MySQL到MySQL同步 - mongodb：MongoDB到DDS迁移与同步 - cloudDataGuard-mysql：MySQL到MySQL灾备 - gaussdbv5：GaussDB同步 - postgresql：PostgreSQL到PostgreSQL同步 - mysql-to-kafka：MySQL到Kafka同步 - taurus-to-kafka：TaurusDB到Kafka同步 - gaussdbv5ha-to-kafka：GaussDB集中式版到Kafka同步  **默认取值**：  不涉及
 
         :param engine_type: The engine_type of this InstInfo.
         :type engine_type: str
@@ -107,7 +107,7 @@ class InstInfo:
     def inst_type(self):
         r"""Gets the inst_type of this InstInfo.
 
-        实例类型 取值：common，high，ultrahigh
+        **参数解释**：  实例规格类型。  **约束限制**：  不涉及。  **取值范围**：  - common：中 - high：大 - ultrahigh：极大  **默认取值**：  不涉及
 
         :return: The inst_type of this InstInfo.
         :rtype: str
@@ -118,7 +118,7 @@ class InstInfo:
     def inst_type(self, inst_type):
         r"""Sets the inst_type of this InstInfo.
 
-        实例类型 取值：common，high，ultrahigh
+        **参数解释**：  实例规格类型。  **约束限制**：  不涉及。  **取值范围**：  - common：中 - high：大 - ultrahigh：极大  **默认取值**：  不涉及
 
         :param inst_type: The inst_type of this InstInfo.
         :type inst_type: str
@@ -129,7 +129,7 @@ class InstInfo:
     def ip(self):
         r"""Gets the ip of this InstInfo.
 
-        迁移实例所在的私有IP
+        **参数解释**：  迁移实例所在的私有IP地址。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The ip of this InstInfo.
         :rtype: str
@@ -140,7 +140,7 @@ class InstInfo:
     def ip(self, ip):
         r"""Sets the ip of this InstInfo.
 
-        迁移实例所在的私有IP
+        **参数解释**：  迁移实例所在的私有IP地址。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param ip: The ip of this InstInfo.
         :type ip: str
@@ -151,7 +151,7 @@ class InstInfo:
     def public_ip(self):
         r"""Gets the public_ip of this InstInfo.
 
-        迁移实例所在的公网IP
+        **参数解释**：  迁移实例所在的公网IP地址。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The public_ip of this InstInfo.
         :rtype: str
@@ -162,7 +162,7 @@ class InstInfo:
     def public_ip(self, public_ip):
         r"""Sets the public_ip of this InstInfo.
 
-        迁移实例所在的公网IP
+        **参数解释**：  迁移实例所在的公网IP地址。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param public_ip: The public_ip of this InstInfo.
         :type public_ip: str
@@ -173,7 +173,7 @@ class InstInfo:
     def start_time(self):
         r"""Gets the start_time of this InstInfo.
 
-        迁移实例任务定时启动时间
+        **参数解释**：  迁移实例任务定时启动时间。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The start_time of this InstInfo.
         :rtype: str
@@ -184,7 +184,7 @@ class InstInfo:
     def start_time(self, start_time):
         r"""Sets the start_time of this InstInfo.
 
-        迁移实例任务定时启动时间
+        **参数解释**：  迁移实例任务定时启动时间。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param start_time: The start_time of this InstInfo.
         :type start_time: str
@@ -195,7 +195,7 @@ class InstInfo:
     def status(self):
         r"""Gets the status of this InstInfo.
 
-        迁移实例的状态
+        **参数解释**：  迁移实例的状态。  **约束限制**：  不涉及。  **取值范围**：  - active：运行中 - deleted：已删除  **默认取值**：  不涉及
 
         :return: The status of this InstInfo.
         :rtype: str
@@ -206,7 +206,7 @@ class InstInfo:
     def status(self, status):
         r"""Sets the status of this InstInfo.
 
-        迁移实例的状态
+        **参数解释**：  迁移实例的状态。  **约束限制**：  不涉及。  **取值范围**：  - active：运行中 - deleted：已删除  **默认取值**：  不涉及
 
         :param status: The status of this InstInfo.
         :type status: str
@@ -217,7 +217,7 @@ class InstInfo:
     def volume_size(self):
         r"""Gets the volume_size of this InstInfo.
 
-        迁移实例的磁盘大小
+        **参数解释**：  迁移实例的磁盘大小，单位为GB。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The volume_size of this InstInfo.
         :rtype: int
@@ -228,7 +228,7 @@ class InstInfo:
     def volume_size(self, volume_size):
         r"""Sets the volume_size of this InstInfo.
 
-        迁移实例的磁盘大小
+        **参数解释**：  迁移实例的磁盘大小，单位为GB。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param volume_size: The volume_size of this InstInfo.
         :type volume_size: int

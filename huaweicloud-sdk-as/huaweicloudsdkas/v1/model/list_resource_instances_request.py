@@ -29,7 +29,7 @@ class ListResourceInstancesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param resource_type: 资源类型，枚举类：SCALING_GROUP_TAG。
+        :param resource_type: 资源类型，枚举类：SCALING_GROUP_TAG、SCALING_CONFIGURATION_TAG。
         :type resource_type: str
         :param body: Body of the ListResourceInstancesRequest
         :type body: :class:`huaweicloudsdkas.v1.QueryTagsOption`
@@ -49,7 +49,7 @@ class ListResourceInstancesRequest:
     def resource_type(self):
         r"""Gets the resource_type of this ListResourceInstancesRequest.
 
-        资源类型，枚举类：SCALING_GROUP_TAG。
+        资源类型，枚举类：SCALING_GROUP_TAG、SCALING_CONFIGURATION_TAG。
 
         :return: The resource_type of this ListResourceInstancesRequest.
         :rtype: str
@@ -60,7 +60,7 @@ class ListResourceInstancesRequest:
     def resource_type(self, resource_type):
         r"""Sets the resource_type of this ListResourceInstancesRequest.
 
-        资源类型，枚举类：SCALING_GROUP_TAG。
+        资源类型，枚举类：SCALING_GROUP_TAG、SCALING_CONFIGURATION_TAG。
 
         :param resource_type: The resource_type of this ListResourceInstancesRequest.
         :type resource_type: str

@@ -29,9 +29,9 @@ class ProgressInfo:
 
         The model defined in huaweicloud sdk
 
-        :param completed: 完成进度
+        :param completed: **参数解释**：  完成进度，以百分比形式表示，如\&quot;94%\&quot;、\&quot;100%\&quot;。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type completed: str
-        :param remaining_time: 预计剩余时间
+        :param remaining_time: **参数解释**：  该子项迁移的预计剩余时间。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type remaining_time: str
         """
         
@@ -50,7 +50,7 @@ class ProgressInfo:
     def completed(self):
         r"""Gets the completed of this ProgressInfo.
 
-        完成进度
+        **参数解释**：  完成进度，以百分比形式表示，如\"94%\"、\"100%\"。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The completed of this ProgressInfo.
         :rtype: str
@@ -61,7 +61,7 @@ class ProgressInfo:
     def completed(self, completed):
         r"""Sets the completed of this ProgressInfo.
 
-        完成进度
+        **参数解释**：  完成进度，以百分比形式表示，如\"94%\"、\"100%\"。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param completed: The completed of this ProgressInfo.
         :type completed: str
@@ -72,7 +72,7 @@ class ProgressInfo:
     def remaining_time(self):
         r"""Gets the remaining_time of this ProgressInfo.
 
-        预计剩余时间
+        **参数解释**：  该子项迁移的预计剩余时间。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The remaining_time of this ProgressInfo.
         :rtype: str
@@ -83,7 +83,7 @@ class ProgressInfo:
     def remaining_time(self, remaining_time):
         r"""Sets the remaining_time of this ProgressInfo.
 
-        预计剩余时间
+        **参数解释**：  该子项迁移的预计剩余时间。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param remaining_time: The remaining_time of this ProgressInfo.
         :type remaining_time: str

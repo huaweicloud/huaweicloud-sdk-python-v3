@@ -31,11 +31,11 @@ class JobActionResp:
 
         The model defined in huaweicloud sdk
 
-        :param available_actions: 任务可操作命令集合。 取值： CREATE：创建任务 CHOOSE_OBJECT：选择对象 PRE_CHECK：预检查 CHANGE_MODE：修改任务模式 FREE_RESOURCE：释放资源 MODIFY_DB_CONFIG：修改数据库配置 RESET_DB_PWD：重置数据库密码（源库、目标库） MODIFY_CONFIGURATION：修改任务配置 PAUSE：暂停任务 START：启动任务 CHANGE：修改任务 RETRY：重试任务 RESET：重置任务 DELETE：删除任务 QUERY_PRE_CHECK：预检查 SWITCH_OVER：容灾倒换 START_INCR：CASSANDRA启动增量任务 MODIFY_TASK_NUMBER：CASSANDRA修改线程数配置 CONTINUE_JOB：oracle-GaussDB分布式:启动失败或者停止的任务 STOP_JOB：oracle-GaussDB分布式:停止任务 CONTINUE_CAPTURE：oracle-GaussDB分布式:启动抓取 STOP_CAPTURE：oracle-GaussDB分布式:停止抓取 CONTINUE_APPLY：oracle-GaussDB分布式:启动回放 STOP_APPLY：oracle-GaussDB分布式:停止回放 PAY_ORDER：包年包月支付订单 UNSUBSCRIBE：包年包月退订 TO_PERIOD：转包周期 TO_RENEW：包周期续费 ORDER_INFO：订单详情 CHANGE_FLAVOR：规格变更 CLONE：克隆任务
+        :param available_actions: **参数解释**：  任务当前可执行的操作命令集合，表示该任务当前允许进行的操作。  **约束限制**：  不涉及。  **取值范围**：  - CREATE：创建任务 - CHOOSE_OBJECT：选择对象 - PRE_CHECK：预检查 - CHANGE_MODE：修改任务模式 - FREE_RESOURCE：释放资源 - MODIFY_DB_CONFIG：修改数据库配置 - RESET_DB_PWD：重置数据库密码（源库、目标库） - MODIFY_CONFIGURATION：修改任务配置 - PAUSE：暂停任务 - START：启动任务 - CHANGE：修改任务 - RETRY：重试任务 - RESET：重置任务 - DELETE：删除任务 - QUERY_PRE_CHECK：预检查 - SWITCH_OVER：容灾倒换 - START_INCR：CASSANDRA启动增量任务 - MODIFY_TASK_NUMBER：CASSANDRA修改线程数配置 - CONTINUE_JOB：oracle-GaussDB分布式:启动失败或者停止的任务 - STOP_JOB：oracle-GaussDB分布式:停止任务 - CONTINUE_CAPTURE：oracle-GaussDB分布式:启动抓取 - STOP_CAPTURE：oracle-GaussDB分布式:停止抓取 - CONTINUE_APPLY：oracle-GaussDB分布式:启动回放 - STOP_APPLY：oracle-GaussDB分布式:停止回放 - PAY_ORDER：包年包月支付订单 - UNSUBSCRIBE：包年包月退订 - TO_PERIOD：转包周期 - TO_RENEW：包周期续费 - ORDER_INFO：订单详情 - CHANGE_FLAVOR：规格变更 - CLONE：克隆任务  **默认取值**：  不涉及
         :type available_actions: list[str]
-        :param unavailable_actions: 任务不可操作命令集合。 取值： CREATE：创建任务 CHOOSE_OBJECT：选择对象 PRE_CHECK：预检查 CHANGE_MODE：修改任务模式 FREE_RESOURCE：释放资源 MODIFY_DB_CONFIG：修改数据库配置 RESET_DB_PWD：重置数据库密码（源库、目标库） MODIFY_CONFIGURATION：修改任务配置 PAUSE：暂停任务 START：启动任务 CHANGE：修改任务 RETRY：重试任务 RESET：重置任务 DELETE：删除任务 QUERY_PRE_CHECK：预检查 SWITCH_OVER：容灾倒换 START_INCR：CASSANDRA启动增量任务 MODIFY_TASK_NUMBER：CASSANDRA修改线程数配置 CONTINUE_JOB：oracle-GaussDB分布式:启动失败或者停止的任务 STOP_JOB：oracle-GaussDB分布式:停止任务 CONTINUE_CAPTURE：oracle-GaussDB分布式:启动抓取 STOP_CAPTURE：oracle-GaussDB分布式:停止抓取 CONTINUE_APPLY：oracle-GaussDB分布式:启动回放 STOP_APPLY：oracle-GaussDB分布式:停止回放 PAY_ORDER：包年包月支付订单 UNSUBSCRIBE：包年包月退订 TO_PERIOD：转包周期 TO_RENEW：包周期续费 ORDER_INFO：订单详情 CHANGE_FLAVOR：规格变更 CLONE：克隆任务
+        :param unavailable_actions: **参数解释**：  任务当前不可执行的操作命令集合，表示该任务当前不允许进行的操作。  **约束限制**：  不涉及。  **取值范围**：  - CREATE：创建任务 - CHOOSE_OBJECT：选择对象 - PRE_CHECK：预检查 - CHANGE_MODE：修改任务模式 - FREE_RESOURCE：释放资源 - MODIFY_DB_CONFIG：修改数据库配置 - RESET_DB_PWD：重置数据库密码（源库、目标库） - MODIFY_CONFIGURATION：修改任务配置 - PAUSE：暂停任务 - START：启动任务 - CHANGE：修改任务 - RETRY：重试任务 - RESET：重置任务 - DELETE：删除任务 - QUERY_PRE_CHECK：预检查 - SWITCH_OVER：容灾倒换 - START_INCR：CASSANDRA启动增量任务 - MODIFY_TASK_NUMBER：CASSANDRA修改线程数配置 - CONTINUE_JOB：oracle-GaussDB分布式:启动失败或者停止的任务 - STOP_JOB：oracle-GaussDB分布式:停止任务 - CONTINUE_CAPTURE：oracle-GaussDB分布式:启动抓取 - STOP_CAPTURE：oracle-GaussDB分布式:停止抓取 - CONTINUE_APPLY：oracle-GaussDB分布式:启动回放 - STOP_APPLY：oracle-GaussDB分布式:停止回放 - PAY_ORDER：包年包月支付订单 - UNSUBSCRIBE：包年包月退订 - TO_PERIOD：转包周期 - TO_RENEW：包周期续费 - ORDER_INFO：订单详情 - CHANGE_FLAVOR：规格变更 - CLONE：克隆任务  **默认取值**：  不涉及
         :type unavailable_actions: list[str]
-        :param current_action: 示例： SWITCH_OVER：灾备倒换中 STOP_JOB：任务暂停中
+        :param current_action: **参数解释**：  任务当前正在执行的操作命令。  **约束限制**：  不涉及。  **取值范围**：  - SWITCH_OVER：灾备倒换中 - STOP_JOB：任务暂停中  **默认取值**：  不涉及
         :type current_action: str
         """
         
@@ -57,7 +57,7 @@ class JobActionResp:
     def available_actions(self):
         r"""Gets the available_actions of this JobActionResp.
 
-        任务可操作命令集合。 取值： CREATE：创建任务 CHOOSE_OBJECT：选择对象 PRE_CHECK：预检查 CHANGE_MODE：修改任务模式 FREE_RESOURCE：释放资源 MODIFY_DB_CONFIG：修改数据库配置 RESET_DB_PWD：重置数据库密码（源库、目标库） MODIFY_CONFIGURATION：修改任务配置 PAUSE：暂停任务 START：启动任务 CHANGE：修改任务 RETRY：重试任务 RESET：重置任务 DELETE：删除任务 QUERY_PRE_CHECK：预检查 SWITCH_OVER：容灾倒换 START_INCR：CASSANDRA启动增量任务 MODIFY_TASK_NUMBER：CASSANDRA修改线程数配置 CONTINUE_JOB：oracle-GaussDB分布式:启动失败或者停止的任务 STOP_JOB：oracle-GaussDB分布式:停止任务 CONTINUE_CAPTURE：oracle-GaussDB分布式:启动抓取 STOP_CAPTURE：oracle-GaussDB分布式:停止抓取 CONTINUE_APPLY：oracle-GaussDB分布式:启动回放 STOP_APPLY：oracle-GaussDB分布式:停止回放 PAY_ORDER：包年包月支付订单 UNSUBSCRIBE：包年包月退订 TO_PERIOD：转包周期 TO_RENEW：包周期续费 ORDER_INFO：订单详情 CHANGE_FLAVOR：规格变更 CLONE：克隆任务
+        **参数解释**：  任务当前可执行的操作命令集合，表示该任务当前允许进行的操作。  **约束限制**：  不涉及。  **取值范围**：  - CREATE：创建任务 - CHOOSE_OBJECT：选择对象 - PRE_CHECK：预检查 - CHANGE_MODE：修改任务模式 - FREE_RESOURCE：释放资源 - MODIFY_DB_CONFIG：修改数据库配置 - RESET_DB_PWD：重置数据库密码（源库、目标库） - MODIFY_CONFIGURATION：修改任务配置 - PAUSE：暂停任务 - START：启动任务 - CHANGE：修改任务 - RETRY：重试任务 - RESET：重置任务 - DELETE：删除任务 - QUERY_PRE_CHECK：预检查 - SWITCH_OVER：容灾倒换 - START_INCR：CASSANDRA启动增量任务 - MODIFY_TASK_NUMBER：CASSANDRA修改线程数配置 - CONTINUE_JOB：oracle-GaussDB分布式:启动失败或者停止的任务 - STOP_JOB：oracle-GaussDB分布式:停止任务 - CONTINUE_CAPTURE：oracle-GaussDB分布式:启动抓取 - STOP_CAPTURE：oracle-GaussDB分布式:停止抓取 - CONTINUE_APPLY：oracle-GaussDB分布式:启动回放 - STOP_APPLY：oracle-GaussDB分布式:停止回放 - PAY_ORDER：包年包月支付订单 - UNSUBSCRIBE：包年包月退订 - TO_PERIOD：转包周期 - TO_RENEW：包周期续费 - ORDER_INFO：订单详情 - CHANGE_FLAVOR：规格变更 - CLONE：克隆任务  **默认取值**：  不涉及
 
         :return: The available_actions of this JobActionResp.
         :rtype: list[str]
@@ -68,7 +68,7 @@ class JobActionResp:
     def available_actions(self, available_actions):
         r"""Sets the available_actions of this JobActionResp.
 
-        任务可操作命令集合。 取值： CREATE：创建任务 CHOOSE_OBJECT：选择对象 PRE_CHECK：预检查 CHANGE_MODE：修改任务模式 FREE_RESOURCE：释放资源 MODIFY_DB_CONFIG：修改数据库配置 RESET_DB_PWD：重置数据库密码（源库、目标库） MODIFY_CONFIGURATION：修改任务配置 PAUSE：暂停任务 START：启动任务 CHANGE：修改任务 RETRY：重试任务 RESET：重置任务 DELETE：删除任务 QUERY_PRE_CHECK：预检查 SWITCH_OVER：容灾倒换 START_INCR：CASSANDRA启动增量任务 MODIFY_TASK_NUMBER：CASSANDRA修改线程数配置 CONTINUE_JOB：oracle-GaussDB分布式:启动失败或者停止的任务 STOP_JOB：oracle-GaussDB分布式:停止任务 CONTINUE_CAPTURE：oracle-GaussDB分布式:启动抓取 STOP_CAPTURE：oracle-GaussDB分布式:停止抓取 CONTINUE_APPLY：oracle-GaussDB分布式:启动回放 STOP_APPLY：oracle-GaussDB分布式:停止回放 PAY_ORDER：包年包月支付订单 UNSUBSCRIBE：包年包月退订 TO_PERIOD：转包周期 TO_RENEW：包周期续费 ORDER_INFO：订单详情 CHANGE_FLAVOR：规格变更 CLONE：克隆任务
+        **参数解释**：  任务当前可执行的操作命令集合，表示该任务当前允许进行的操作。  **约束限制**：  不涉及。  **取值范围**：  - CREATE：创建任务 - CHOOSE_OBJECT：选择对象 - PRE_CHECK：预检查 - CHANGE_MODE：修改任务模式 - FREE_RESOURCE：释放资源 - MODIFY_DB_CONFIG：修改数据库配置 - RESET_DB_PWD：重置数据库密码（源库、目标库） - MODIFY_CONFIGURATION：修改任务配置 - PAUSE：暂停任务 - START：启动任务 - CHANGE：修改任务 - RETRY：重试任务 - RESET：重置任务 - DELETE：删除任务 - QUERY_PRE_CHECK：预检查 - SWITCH_OVER：容灾倒换 - START_INCR：CASSANDRA启动增量任务 - MODIFY_TASK_NUMBER：CASSANDRA修改线程数配置 - CONTINUE_JOB：oracle-GaussDB分布式:启动失败或者停止的任务 - STOP_JOB：oracle-GaussDB分布式:停止任务 - CONTINUE_CAPTURE：oracle-GaussDB分布式:启动抓取 - STOP_CAPTURE：oracle-GaussDB分布式:停止抓取 - CONTINUE_APPLY：oracle-GaussDB分布式:启动回放 - STOP_APPLY：oracle-GaussDB分布式:停止回放 - PAY_ORDER：包年包月支付订单 - UNSUBSCRIBE：包年包月退订 - TO_PERIOD：转包周期 - TO_RENEW：包周期续费 - ORDER_INFO：订单详情 - CHANGE_FLAVOR：规格变更 - CLONE：克隆任务  **默认取值**：  不涉及
 
         :param available_actions: The available_actions of this JobActionResp.
         :type available_actions: list[str]
@@ -79,7 +79,7 @@ class JobActionResp:
     def unavailable_actions(self):
         r"""Gets the unavailable_actions of this JobActionResp.
 
-        任务不可操作命令集合。 取值： CREATE：创建任务 CHOOSE_OBJECT：选择对象 PRE_CHECK：预检查 CHANGE_MODE：修改任务模式 FREE_RESOURCE：释放资源 MODIFY_DB_CONFIG：修改数据库配置 RESET_DB_PWD：重置数据库密码（源库、目标库） MODIFY_CONFIGURATION：修改任务配置 PAUSE：暂停任务 START：启动任务 CHANGE：修改任务 RETRY：重试任务 RESET：重置任务 DELETE：删除任务 QUERY_PRE_CHECK：预检查 SWITCH_OVER：容灾倒换 START_INCR：CASSANDRA启动增量任务 MODIFY_TASK_NUMBER：CASSANDRA修改线程数配置 CONTINUE_JOB：oracle-GaussDB分布式:启动失败或者停止的任务 STOP_JOB：oracle-GaussDB分布式:停止任务 CONTINUE_CAPTURE：oracle-GaussDB分布式:启动抓取 STOP_CAPTURE：oracle-GaussDB分布式:停止抓取 CONTINUE_APPLY：oracle-GaussDB分布式:启动回放 STOP_APPLY：oracle-GaussDB分布式:停止回放 PAY_ORDER：包年包月支付订单 UNSUBSCRIBE：包年包月退订 TO_PERIOD：转包周期 TO_RENEW：包周期续费 ORDER_INFO：订单详情 CHANGE_FLAVOR：规格变更 CLONE：克隆任务
+        **参数解释**：  任务当前不可执行的操作命令集合，表示该任务当前不允许进行的操作。  **约束限制**：  不涉及。  **取值范围**：  - CREATE：创建任务 - CHOOSE_OBJECT：选择对象 - PRE_CHECK：预检查 - CHANGE_MODE：修改任务模式 - FREE_RESOURCE：释放资源 - MODIFY_DB_CONFIG：修改数据库配置 - RESET_DB_PWD：重置数据库密码（源库、目标库） - MODIFY_CONFIGURATION：修改任务配置 - PAUSE：暂停任务 - START：启动任务 - CHANGE：修改任务 - RETRY：重试任务 - RESET：重置任务 - DELETE：删除任务 - QUERY_PRE_CHECK：预检查 - SWITCH_OVER：容灾倒换 - START_INCR：CASSANDRA启动增量任务 - MODIFY_TASK_NUMBER：CASSANDRA修改线程数配置 - CONTINUE_JOB：oracle-GaussDB分布式:启动失败或者停止的任务 - STOP_JOB：oracle-GaussDB分布式:停止任务 - CONTINUE_CAPTURE：oracle-GaussDB分布式:启动抓取 - STOP_CAPTURE：oracle-GaussDB分布式:停止抓取 - CONTINUE_APPLY：oracle-GaussDB分布式:启动回放 - STOP_APPLY：oracle-GaussDB分布式:停止回放 - PAY_ORDER：包年包月支付订单 - UNSUBSCRIBE：包年包月退订 - TO_PERIOD：转包周期 - TO_RENEW：包周期续费 - ORDER_INFO：订单详情 - CHANGE_FLAVOR：规格变更 - CLONE：克隆任务  **默认取值**：  不涉及
 
         :return: The unavailable_actions of this JobActionResp.
         :rtype: list[str]
@@ -90,7 +90,7 @@ class JobActionResp:
     def unavailable_actions(self, unavailable_actions):
         r"""Sets the unavailable_actions of this JobActionResp.
 
-        任务不可操作命令集合。 取值： CREATE：创建任务 CHOOSE_OBJECT：选择对象 PRE_CHECK：预检查 CHANGE_MODE：修改任务模式 FREE_RESOURCE：释放资源 MODIFY_DB_CONFIG：修改数据库配置 RESET_DB_PWD：重置数据库密码（源库、目标库） MODIFY_CONFIGURATION：修改任务配置 PAUSE：暂停任务 START：启动任务 CHANGE：修改任务 RETRY：重试任务 RESET：重置任务 DELETE：删除任务 QUERY_PRE_CHECK：预检查 SWITCH_OVER：容灾倒换 START_INCR：CASSANDRA启动增量任务 MODIFY_TASK_NUMBER：CASSANDRA修改线程数配置 CONTINUE_JOB：oracle-GaussDB分布式:启动失败或者停止的任务 STOP_JOB：oracle-GaussDB分布式:停止任务 CONTINUE_CAPTURE：oracle-GaussDB分布式:启动抓取 STOP_CAPTURE：oracle-GaussDB分布式:停止抓取 CONTINUE_APPLY：oracle-GaussDB分布式:启动回放 STOP_APPLY：oracle-GaussDB分布式:停止回放 PAY_ORDER：包年包月支付订单 UNSUBSCRIBE：包年包月退订 TO_PERIOD：转包周期 TO_RENEW：包周期续费 ORDER_INFO：订单详情 CHANGE_FLAVOR：规格变更 CLONE：克隆任务
+        **参数解释**：  任务当前不可执行的操作命令集合，表示该任务当前不允许进行的操作。  **约束限制**：  不涉及。  **取值范围**：  - CREATE：创建任务 - CHOOSE_OBJECT：选择对象 - PRE_CHECK：预检查 - CHANGE_MODE：修改任务模式 - FREE_RESOURCE：释放资源 - MODIFY_DB_CONFIG：修改数据库配置 - RESET_DB_PWD：重置数据库密码（源库、目标库） - MODIFY_CONFIGURATION：修改任务配置 - PAUSE：暂停任务 - START：启动任务 - CHANGE：修改任务 - RETRY：重试任务 - RESET：重置任务 - DELETE：删除任务 - QUERY_PRE_CHECK：预检查 - SWITCH_OVER：容灾倒换 - START_INCR：CASSANDRA启动增量任务 - MODIFY_TASK_NUMBER：CASSANDRA修改线程数配置 - CONTINUE_JOB：oracle-GaussDB分布式:启动失败或者停止的任务 - STOP_JOB：oracle-GaussDB分布式:停止任务 - CONTINUE_CAPTURE：oracle-GaussDB分布式:启动抓取 - STOP_CAPTURE：oracle-GaussDB分布式:停止抓取 - CONTINUE_APPLY：oracle-GaussDB分布式:启动回放 - STOP_APPLY：oracle-GaussDB分布式:停止回放 - PAY_ORDER：包年包月支付订单 - UNSUBSCRIBE：包年包月退订 - TO_PERIOD：转包周期 - TO_RENEW：包周期续费 - ORDER_INFO：订单详情 - CHANGE_FLAVOR：规格变更 - CLONE：克隆任务  **默认取值**：  不涉及
 
         :param unavailable_actions: The unavailable_actions of this JobActionResp.
         :type unavailable_actions: list[str]
@@ -101,7 +101,7 @@ class JobActionResp:
     def current_action(self):
         r"""Gets the current_action of this JobActionResp.
 
-        示例： SWITCH_OVER：灾备倒换中 STOP_JOB：任务暂停中
+        **参数解释**：  任务当前正在执行的操作命令。  **约束限制**：  不涉及。  **取值范围**：  - SWITCH_OVER：灾备倒换中 - STOP_JOB：任务暂停中  **默认取值**：  不涉及
 
         :return: The current_action of this JobActionResp.
         :rtype: str
@@ -112,7 +112,7 @@ class JobActionResp:
     def current_action(self, current_action):
         r"""Sets the current_action of this JobActionResp.
 
-        示例： SWITCH_OVER：灾备倒换中 STOP_JOB：任务暂停中
+        **参数解释**：  任务当前正在执行的操作命令。  **约束限制**：  不涉及。  **取值范围**：  - SWITCH_OVER：灾备倒换中 - STOP_JOB：任务暂停中  **默认取值**：  不涉及
 
         :param current_action: The current_action of this JobActionResp.
         :type current_action: str

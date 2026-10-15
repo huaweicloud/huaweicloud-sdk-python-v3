@@ -30,9 +30,9 @@ class BatchListProgressesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param count: 总数
+        :param count: **参数解释**：  返回的任务进度信息总数，表示本次查询成功返回的任务数量，与results数组的长度一致。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type count: int
-        :param results: 批量查询迁移进度的响应体集合
+        :param results: **参数解释**：  批量查询迁移进度的响应体集合，详情请参见QueryProgressResp定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type results: list[:class:`huaweicloudsdkdrs.v3.QueryProgressResp`]
         """
         
@@ -51,7 +51,7 @@ class BatchListProgressesResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this BatchListProgressesResponse.
 
-        总数
+        **参数解释**：  返回的任务进度信息总数，表示本次查询成功返回的任务数量，与results数组的长度一致。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The count of this BatchListProgressesResponse.
         :rtype: int
@@ -62,7 +62,7 @@ class BatchListProgressesResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this BatchListProgressesResponse.
 
-        总数
+        **参数解释**：  返回的任务进度信息总数，表示本次查询成功返回的任务数量，与results数组的长度一致。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param count: The count of this BatchListProgressesResponse.
         :type count: int
@@ -73,7 +73,7 @@ class BatchListProgressesResponse(SdkResponse):
     def results(self):
         r"""Gets the results of this BatchListProgressesResponse.
 
-        批量查询迁移进度的响应体集合
+        **参数解释**：  批量查询迁移进度的响应体集合，详情请参见QueryProgressResp定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The results of this BatchListProgressesResponse.
         :rtype: list[:class:`huaweicloudsdkdrs.v3.QueryProgressResp`]
@@ -84,7 +84,7 @@ class BatchListProgressesResponse(SdkResponse):
     def results(self, results):
         r"""Sets the results of this BatchListProgressesResponse.
 
-        批量查询迁移进度的响应体集合
+        **参数解释**：  批量查询迁移进度的响应体集合，详情请参见QueryProgressResp定义。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param results: The results of this BatchListProgressesResponse.
         :type results: list[:class:`huaweicloudsdkdrs.v3.QueryProgressResp`]

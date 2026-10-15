@@ -35,7 +35,7 @@ class ListAsyncJobDetailRequest:
 
         :param async_job_id: 批量异步创建的任务ID，由创建批量异步任务接口返回。
         :type async_job_id: str
-        :param x_language: 请求语言类型。
+        :param x_language: **参数解释**：  请求语言类型。  **约束限制**：  不涉及。  **取值范围**：  - en-us：英文 - zh-cn：中文  **默认取值**：  en-us
         :type x_language: str
         :param offset: 偏移量，表示查询该偏移量后面的记录。
         :type offset: int
@@ -85,7 +85,7 @@ class ListAsyncJobDetailRequest:
     def x_language(self):
         r"""Gets the x_language of this ListAsyncJobDetailRequest.
 
-        请求语言类型。
+        **参数解释**：  请求语言类型。  **约束限制**：  不涉及。  **取值范围**：  - en-us：英文 - zh-cn：中文  **默认取值**：  en-us
 
         :return: The x_language of this ListAsyncJobDetailRequest.
         :rtype: str
@@ -96,7 +96,7 @@ class ListAsyncJobDetailRequest:
     def x_language(self, x_language):
         r"""Sets the x_language of this ListAsyncJobDetailRequest.
 
-        请求语言类型。
+        **参数解释**：  请求语言类型。  **约束限制**：  不涉及。  **取值范围**：  - en-us：英文 - zh-cn：中文  **默认取值**：  en-us
 
         :param x_language: The x_language of this ListAsyncJobDetailRequest.
         :type x_language: str

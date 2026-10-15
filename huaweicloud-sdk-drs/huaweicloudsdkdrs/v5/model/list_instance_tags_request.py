@@ -31,11 +31,11 @@ class ListInstanceTagsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param resource_type: 资源类型。 - migration：实时迁移 - sync：实时同步 - cloudDataGuard：实时灾备 - subscription：数据订阅 - backupMigration：备份迁移 - replay：录制回放
+        :param resource_type: **参数解释**：  DRS资源类型，用于指定需要操作标签的资源所属的业务类型。不同资源类型对应不同的DRS任务类型，查询标签时需根据实际任务类型传入对应值。  **约束限制**：  不涉及。  **取值范围**：  - migration：实时迁移 - sync：实时同步 - cloudDataGuard：实时灾备 - subscription：数据订阅 - backupMigration：备份迁移 - replay：录制回放 - verify：校验任务  **默认取值**：  不涉及
         :type resource_type: str
-        :param x_language: 请求语言类型。
+        :param x_language: **参数解释**：  请求语言类型。  **约束限制**：  不涉及。  **取值范围**：  - en-us：英文 - zh-cn：中文  **默认取值**：  en-us
         :type x_language: str
-        :param resource_id: 资源ID，即DRS任务ID。
+        :param resource_id: **参数解释**：  资源ID，即DRS任务ID。用于唯一标识一个DRS任务资源，在标签管理接口中用于定位需要查询标签的具体任务。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type resource_id: str
         """
         
@@ -55,7 +55,7 @@ class ListInstanceTagsRequest:
     def resource_type(self):
         r"""Gets the resource_type of this ListInstanceTagsRequest.
 
-        资源类型。 - migration：实时迁移 - sync：实时同步 - cloudDataGuard：实时灾备 - subscription：数据订阅 - backupMigration：备份迁移 - replay：录制回放
+        **参数解释**：  DRS资源类型，用于指定需要操作标签的资源所属的业务类型。不同资源类型对应不同的DRS任务类型，查询标签时需根据实际任务类型传入对应值。  **约束限制**：  不涉及。  **取值范围**：  - migration：实时迁移 - sync：实时同步 - cloudDataGuard：实时灾备 - subscription：数据订阅 - backupMigration：备份迁移 - replay：录制回放 - verify：校验任务  **默认取值**：  不涉及
 
         :return: The resource_type of this ListInstanceTagsRequest.
         :rtype: str
@@ -66,7 +66,7 @@ class ListInstanceTagsRequest:
     def resource_type(self, resource_type):
         r"""Sets the resource_type of this ListInstanceTagsRequest.
 
-        资源类型。 - migration：实时迁移 - sync：实时同步 - cloudDataGuard：实时灾备 - subscription：数据订阅 - backupMigration：备份迁移 - replay：录制回放
+        **参数解释**：  DRS资源类型，用于指定需要操作标签的资源所属的业务类型。不同资源类型对应不同的DRS任务类型，查询标签时需根据实际任务类型传入对应值。  **约束限制**：  不涉及。  **取值范围**：  - migration：实时迁移 - sync：实时同步 - cloudDataGuard：实时灾备 - subscription：数据订阅 - backupMigration：备份迁移 - replay：录制回放 - verify：校验任务  **默认取值**：  不涉及
 
         :param resource_type: The resource_type of this ListInstanceTagsRequest.
         :type resource_type: str
@@ -77,7 +77,7 @@ class ListInstanceTagsRequest:
     def x_language(self):
         r"""Gets the x_language of this ListInstanceTagsRequest.
 
-        请求语言类型。
+        **参数解释**：  请求语言类型。  **约束限制**：  不涉及。  **取值范围**：  - en-us：英文 - zh-cn：中文  **默认取值**：  en-us
 
         :return: The x_language of this ListInstanceTagsRequest.
         :rtype: str
@@ -88,7 +88,7 @@ class ListInstanceTagsRequest:
     def x_language(self, x_language):
         r"""Sets the x_language of this ListInstanceTagsRequest.
 
-        请求语言类型。
+        **参数解释**：  请求语言类型。  **约束限制**：  不涉及。  **取值范围**：  - en-us：英文 - zh-cn：中文  **默认取值**：  en-us
 
         :param x_language: The x_language of this ListInstanceTagsRequest.
         :type x_language: str
@@ -99,7 +99,7 @@ class ListInstanceTagsRequest:
     def resource_id(self):
         r"""Gets the resource_id of this ListInstanceTagsRequest.
 
-        资源ID，即DRS任务ID。
+        **参数解释**：  资源ID，即DRS任务ID。用于唯一标识一个DRS任务资源，在标签管理接口中用于定位需要查询标签的具体任务。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The resource_id of this ListInstanceTagsRequest.
         :rtype: str
@@ -110,7 +110,7 @@ class ListInstanceTagsRequest:
     def resource_id(self, resource_id):
         r"""Sets the resource_id of this ListInstanceTagsRequest.
 
-        资源ID，即DRS任务ID。
+        **参数解释**：  资源ID，即DRS任务ID。用于唯一标识一个DRS任务资源，在标签管理接口中用于定位需要查询标签的具体任务。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param resource_id: The resource_id of this ListInstanceTagsRequest.
         :type resource_id: str

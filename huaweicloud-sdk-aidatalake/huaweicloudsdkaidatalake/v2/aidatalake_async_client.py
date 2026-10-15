@@ -33,6 +33,287 @@ class AIDataLakeAsyncClient(Client):
 
         return client_builder
 
+    def cancel_aura_dataframe_job_async(self, request):
+        r"""取消Aura Dataframe Job
+
+        取消正在运行中的Dataframe Job。
+        此接口为同步接口，无配套使用接口和特殊场景。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CancelAuraDataframeJob
+        :type request: :class:`huaweicloudsdkaidatalake.v2.CancelAuraDataframeJobRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.CancelAuraDataframeJobResponse`
+        """
+        http_info = self._cancel_aura_dataframe_job_http_info(request)
+        return self._call_api(**http_info)
+
+    def cancel_aura_dataframe_job_async_invoker(self, request):
+        http_info = self._cancel_aura_dataframe_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _cancel_aura_dataframe_job_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/workspaces/{workspace_id}/aura-dataframe-jobs/{job_id}/cancel",
+            "request_type": request.__class__.__name__,
+            "response_type": "CancelAuraDataframeJobResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_aura_dataframe_job_async(self, request):
+        r"""创建Aura Dataframe Job
+
+        创建Dataframe Job。
+        用户通过此接口在指定端点创建Dataframe Job。
+        此接口为同步接口，无配套使用接口和特殊场景。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateAuraDataframeJob
+        :type request: :class:`huaweicloudsdkaidatalake.v2.CreateAuraDataframeJobRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.CreateAuraDataframeJobResponse`
+        """
+        http_info = self._create_aura_dataframe_job_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_aura_dataframe_job_async_invoker(self, request):
+        http_info = self._create_aura_dataframe_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_aura_dataframe_job_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/workspaces/{workspace_id}/aura-dataframe-jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAuraDataframeJobResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_aura_dataframe_job_async(self, request):
+        r"""查看Aura Dataframe Job列表
+
+        查询Aura Dataframe Job列表。
+        此接口为同步接口，无配套使用接口和特殊场景。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListAuraDataframeJob
+        :type request: :class:`huaweicloudsdkaidatalake.v2.ListAuraDataframeJobRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.ListAuraDataframeJobResponse`
+        """
+        http_info = self._list_aura_dataframe_job_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_aura_dataframe_job_async_invoker(self, request):
+        http_info = self._list_aura_dataframe_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_aura_dataframe_job_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/workspaces/{workspace_id}/aura-dataframe-jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAuraDataframeJobResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+
+        query_params = []
+        if 'endpoint_id' in local_var_params:
+            query_params.append(('endpoint_id', local_var_params['endpoint_id']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_aura_dataframe_job_async(self, request):
+        r"""查看Aura Dataframe Job详情
+
+        查询Aura Dataframe Job信息。
+        此接口为同步接口，无配套使用接口和特殊场景。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowAuraDataframeJob
+        :type request: :class:`huaweicloudsdkaidatalake.v2.ShowAuraDataframeJobRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.ShowAuraDataframeJobResponse`
+        """
+        http_info = self._show_aura_dataframe_job_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_aura_dataframe_job_async_invoker(self, request):
+        http_info = self._show_aura_dataframe_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_aura_dataframe_job_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/workspaces/{workspace_id}/aura-dataframe-jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAuraDataframeJobResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def cancel_aura_sql_statement_async(self, request):
         r"""取消SQL执行
 
@@ -839,6 +1120,1298 @@ class AIDataLakeAsyncClient(Client):
 
         return http_info
 
+    def list_flink_job_autoscaling_histories_async(self, request):
+        r"""查询Flink作业自动调优历史
+
+        查询Flink作业自动调优历史记录，包含每次扩缩容操作的详细信息。此接口为同步接口，支持分页查询。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListFlinkJobAutoscalingHistories
+        :type request: :class:`huaweicloudsdkaidatalake.v2.ListFlinkJobAutoscalingHistoriesRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.ListFlinkJobAutoscalingHistoriesResponse`
+        """
+        http_info = self._list_flink_job_autoscaling_histories_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_flink_job_autoscaling_histories_async_invoker(self, request):
+        http_info = self._list_flink_job_autoscaling_histories_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_flink_job_autoscaling_histories_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/workspaces/{workspace_id}/flink-jobs/{job_id}/autoscaling-histories",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFlinkJobAutoscalingHistoriesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_flink_job_autoscaling_policy_async(self, request):
+        r"""查询Flink作业自动调优配置
+
+        查询Flink作业当前的自动调优配置。此接口为同步接口。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowFlinkJobAutoscalingPolicy
+        :type request: :class:`huaweicloudsdkaidatalake.v2.ShowFlinkJobAutoscalingPolicyRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.ShowFlinkJobAutoscalingPolicyResponse`
+        """
+        http_info = self._show_flink_job_autoscaling_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_flink_job_autoscaling_policy_async_invoker(self, request):
+        http_info = self._show_flink_job_autoscaling_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_flink_job_autoscaling_policy_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/workspaces/{workspace_id}/flink-jobs/{job_id}/autoscaling-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowFlinkJobAutoscalingPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_flink_job_autoscaling_policy_async(self, request):
+        r"""热更新Flink作业自动调优配置
+
+        热更新Flink作业自动调优配置。此接口为异步接口，作业运行中时配置将自动应用，无需重启作业。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateFlinkJobAutoscalingPolicy
+        :type request: :class:`huaweicloudsdkaidatalake.v2.UpdateFlinkJobAutoscalingPolicyRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.UpdateFlinkJobAutoscalingPolicyResponse`
+        """
+        http_info = self._update_flink_job_autoscaling_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_flink_job_autoscaling_policy_async_invoker(self, request):
+        http_info = self._update_flink_job_autoscaling_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_flink_job_autoscaling_policy_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/workspaces/{workspace_id}/flink-jobs/{job_id}/autoscaling-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateFlinkJobAutoscalingPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def cancel_flink_job_async(self, request):
+        r"""取消Flink作业执行
+
+        取消Flink作业。此接口为异步接口，响应仅表示取消请求已接收，作业实际停止状态可通过[查询Flink作业状态](ShowFlinkJobState.xml)接口查询。
+        支持多种停止策略：
+        - NONE：立即停止不保存状态。
+        - STOP_WITH_SAVEPOINT：停止前创建快照。
+        - STOP_WITH_DRAIN：Drain模式停止，触发窗口计算后再创建快照停止。
+        - FORCE_CANCEL：强制取消，仅当作业已处于CANCELLING状态时可再次触发取消。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CancelFlinkJob
+        :type request: :class:`huaweicloudsdkaidatalake.v2.CancelFlinkJobRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.CancelFlinkJobResponse`
+        """
+        http_info = self._cancel_flink_job_http_info(request)
+        return self._call_api(**http_info)
+
+    def cancel_flink_job_async_invoker(self, request):
+        http_info = self._cancel_flink_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _cancel_flink_job_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/workspaces/{workspace_id}/flink-jobs/{job_id}/cancel",
+            "request_type": request.__class__.__name__,
+            "response_type": "CancelFlinkJobResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_flink_job_events_async(self, request):
+        r"""查询Flink作业事件详情列表
+
+        查询Flink作业的运行事件列表。此接口为同步接口，响应中包含作业运行期间产生的事件详情，可用于问题定位和运行状态追踪。
+        可通过[查看Flink作业详情](ShowFlinkJob.xml)接口获取作业完整信息，或通过[查询Flink作业状态](ShowFlinkJobState.xml)接口获取作业当前运行状态。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListFlinkJobEvents
+        :type request: :class:`huaweicloudsdkaidatalake.v2.ListFlinkJobEventsRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.ListFlinkJobEventsResponse`
+        """
+        http_info = self._list_flink_job_events_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_flink_job_events_async_invoker(self, request):
+        http_info = self._list_flink_job_events_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_flink_job_events_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/workspaces/{workspace_id}/flink-jobs/{job_id}/events",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFlinkJobEventsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'create_time_after' in local_var_params:
+            query_params.append(('create_time_after', local_var_params['create_time_after']))
+        if 'create_time_before' in local_var_params:
+            query_params.append(('create_time_before', local_var_params['create_time_before']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_flink_jobs_async(self, request):
+        r"""查询Flink作业列表
+
+        查询工作空间下Flink作业列表。此接口为同步接口，响应中包含作业的概要信息，支持分页查询和多条件筛选。
+        可通过[查看Flink作业详情](ShowFlinkJob.xml)接口获取指定作业的完整信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListFlinkJobs
+        :type request: :class:`huaweicloudsdkaidatalake.v2.ListFlinkJobsRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.ListFlinkJobsResponse`
+        """
+        http_info = self._list_flink_jobs_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_flink_jobs_async_invoker(self, request):
+        http_info = self._list_flink_jobs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_flink_jobs_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/workspaces/{workspace_id}/flink-jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFlinkJobsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+
+        query_params = []
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'page_reverse' in local_var_params:
+            query_params.append(('page_reverse', local_var_params['page_reverse']))
+        if 'create_time_after' in local_var_params:
+            query_params.append(('create_time_after', local_var_params['create_time_after']))
+        if 'create_time_before' in local_var_params:
+            query_params.append(('create_time_before', local_var_params['create_time_before']))
+        if 'endpoint_id' in local_var_params:
+            query_params.append(('endpoint_id', local_var_params['endpoint_id']))
+        if 'endpoint_name' in local_var_params:
+            query_params.append(('endpoint_name', local_var_params['endpoint_name']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'job_id' in local_var_params:
+            query_params.append(('job_id', local_var_params['job_id']))
+        if 'deployment_id' in local_var_params:
+            query_params.append(('deployment_id', local_var_params['deployment_id']))
+        if 'state' in local_var_params:
+            query_params.append(('state', local_var_params['state']))
+            collection_formats['state'] = 'multi'
+        if 'job_type' in local_var_params:
+            query_params.append(('job_type', local_var_params['job_type']))
+        if 'execution_mode' in local_var_params:
+            query_params.append(('execution_mode', local_var_params['execution_mode']))
+        if 'create_user_id' in local_var_params:
+            query_params.append(('create_user_id', local_var_params['create_user_id']))
+        if 'labels' in local_var_params:
+            query_params.append(('labels', local_var_params['labels']))
+            collection_formats['labels'] = 'multi'
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def run_flink_job_async(self, request):
+        r"""创建Flink作业
+
+        创建并启动Flink作业实例。此接口为异步接口，响应仅表示作业创建请求已接收，作业实际运行状态可通过[查询Flink作业状态](ShowFlinkJobState.xml)接口查询。
+        支持多种作业类型：
+        - FLINK_SQL_JOB：Flink SQL作业，通过SQL脚本定义数据处理逻辑。
+        - FLINK_JAR_JOB：Flink JAR作业，通过自定义JAR包定义数据处理逻辑。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RunFlinkJob
+        :type request: :class:`huaweicloudsdkaidatalake.v2.RunFlinkJobRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.RunFlinkJobResponse`
+        """
+        http_info = self._run_flink_job_http_info(request)
+        return self._call_api(**http_info)
+
+    def run_flink_job_async_invoker(self, request):
+        http_info = self._run_flink_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_flink_job_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/workspaces/{workspace_id}/flink-jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunFlinkJobResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_client_token' in local_var_params:
+            header_params['X-Client-Token'] = local_var_params['x_client_token']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_flink_job_async(self, request):
+        r"""查看Flink作业详情
+
+        获取Flink作业实例的详细信息。此接口为同步接口，响应中包含作业的完整配置和运行状态信息。
+        可通过[查询Flink作业事件详情列表](ListFlinkJobEvents.xml)接口获取作业运行事件。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowFlinkJob
+        :type request: :class:`huaweicloudsdkaidatalake.v2.ShowFlinkJobRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.ShowFlinkJobResponse`
+        """
+        http_info = self._show_flink_job_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_flink_job_async_invoker(self, request):
+        http_info = self._show_flink_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_flink_job_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/workspaces/{workspace_id}/flink-jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowFlinkJobResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_flink_job_state_async(self, request):
+        r"""查询Flink作业状态
+
+        查询Flink作业的运行状态。此接口为同步接口，响应中包含作业当前状态。
+        可通过[查看Flink作业详情](ShowFlinkJob.xml)接口获取作业完整信息，或通过[查询Flink作业事件详情列表](ListFlinkJobEvents.xml)接口获取作业运行事件。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowFlinkJobState
+        :type request: :class:`huaweicloudsdkaidatalake.v2.ShowFlinkJobStateRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.ShowFlinkJobStateResponse`
+        """
+        http_info = self._show_flink_job_state_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_flink_job_state_async_invoker(self, request):
+        http_info = self._show_flink_job_state_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_flink_job_state_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/workspaces/{workspace_id}/flink-jobs/{job_id}/state",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowFlinkJobStateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_flink_savepoint_async(self, request):
+        r"""创建Flink作业Savepoint
+
+        为运行中的Flink作业触发Savepoint，用于保存作业当前状态。此接口为异步接口，响应仅表示快照创建请求已接收，快照实际生成状态可通过[查询Flink作业Savepoint列表](ListFlinkSavepoint.xml)接口查询。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateFlinkSavepoint
+        :type request: :class:`huaweicloudsdkaidatalake.v2.CreateFlinkSavepointRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.CreateFlinkSavepointResponse`
+        """
+        http_info = self._create_flink_savepoint_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_flink_savepoint_async_invoker(self, request):
+        http_info = self._create_flink_savepoint_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_flink_savepoint_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/workspaces/{workspace_id}/flink-jobs/{job_id}/flink-savepoints",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateFlinkSavepointResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_flink_savepoint_async(self, request):
+        r"""删除Flink作业Savepoint
+
+        删除指定Savepoint的元数据记录，不影响OBS中的实际Savepoint数据。该接口为同步接口。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteFlinkSavepoint
+        :type request: :class:`huaweicloudsdkaidatalake.v2.DeleteFlinkSavepointRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.DeleteFlinkSavepointResponse`
+        """
+        http_info = self._delete_flink_savepoint_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_flink_savepoint_async_invoker(self, request):
+        http_info = self._delete_flink_savepoint_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_flink_savepoint_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/workspaces/{workspace_id}/flink-jobs/{job_id}/flink-savepoints/{savepoint_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteFlinkSavepointResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+        if 'savepoint_id' in local_var_params:
+            path_params['savepoint_id'] = local_var_params['savepoint_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_flink_savepoint_async(self, request):
+        r"""查询Flink作业Savepoint列表
+
+        查询指定Flink作业的Savepoint记录，返回分页列表。此接口为同步接口，响应中包含Savepoint的详细信息。
+        可通过[查询Flink作业Savepoint详情](ShowFlinkSavepoint.xml)接口获取指定Savepoint的详细信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListFlinkSavepoint
+        :type request: :class:`huaweicloudsdkaidatalake.v2.ListFlinkSavepointRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.ListFlinkSavepointResponse`
+        """
+        http_info = self._list_flink_savepoint_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_flink_savepoint_async_invoker(self, request):
+        http_info = self._list_flink_savepoint_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_flink_savepoint_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/workspaces/{workspace_id}/flink-jobs/{job_id}/flink-savepoints",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFlinkSavepointResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'create_time_after' in local_var_params:
+            query_params.append(('create_time_after', local_var_params['create_time_after']))
+        if 'create_time_before' in local_var_params:
+            query_params.append(('create_time_before', local_var_params['create_time_before']))
+        if 'state' in local_var_params:
+            query_params.append(('state', local_var_params['state']))
+        if 'trigger_type' in local_var_params:
+            query_params.append(('trigger_type', local_var_params['trigger_type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_flink_savepoint_async(self, request):
+        r"""查询Flink作业Savepoint详情
+
+        获取指定Savepoint的详细信息。此接口为同步接口，响应中包含Savepoint的完整状态和配置信息。
+        可通过[查询Flink作业Savepoint列表](ListFlinkSavepoint.xml)接口获取Savepoint列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowFlinkSavepoint
+        :type request: :class:`huaweicloudsdkaidatalake.v2.ShowFlinkSavepointRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.ShowFlinkSavepointResponse`
+        """
+        http_info = self._show_flink_savepoint_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_flink_savepoint_async_invoker(self, request):
+        http_info = self._show_flink_savepoint_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_flink_savepoint_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/workspaces/{workspace_id}/flink-jobs/{job_id}/flink-savepoints/{savepoint_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowFlinkSavepointResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+        if 'savepoint_id' in local_var_params:
+            path_params['savepoint_id'] = local_var_params['savepoint_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_federation_async(self, request):
+        r"""创建Ray联邦端点
+
+        创建Ray联邦端点。此接口为同步接口。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateFederation
+        :type request: :class:`huaweicloudsdkaidatalake.v2.CreateFederationRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.CreateFederationResponse`
+        """
+        http_info = self._create_federation_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_federation_async_invoker(self, request):
+        http_info = self._create_federation_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_federation_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/workspaces/{workspace_id}/ray-federations",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateFederationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_federation_async(self, request):
+        r"""删除Ray联邦端点
+
+        删除Ray联邦端点。此接口为同步接口。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteFederation
+        :type request: :class:`huaweicloudsdkaidatalake.v2.DeleteFederationRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.DeleteFederationResponse`
+        """
+        http_info = self._delete_federation_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_federation_async_invoker(self, request):
+        http_info = self._delete_federation_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_federation_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/workspaces/{workspace_id}/ray-federations/{ray_federation_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteFederationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'ray_federation_id' in local_var_params:
+            path_params['ray_federation_id'] = local_var_params['ray_federation_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_federations_async(self, request):
+        r"""查询Ray联邦端点列表
+
+        查询工作空间下的Ray联邦端点列表。此接口为同步接口。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListFederations
+        :type request: :class:`huaweicloudsdkaidatalake.v2.ListFederationsRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.ListFederationsResponse`
+        """
+        http_info = self._list_federations_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_federations_async_invoker(self, request):
+        http_info = self._list_federations_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_federations_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/workspaces/{workspace_id}/ray-federations",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFederationsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_federation_async(self, request):
+        r"""查询Ray联邦端点详情
+
+        查询Ray联邦端点详情。此接口为同步接口。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowFederation
+        :type request: :class:`huaweicloudsdkaidatalake.v2.ShowFederationRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.ShowFederationResponse`
+        """
+        http_info = self._show_federation_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_federation_async_invoker(self, request):
+        http_info = self._show_federation_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_federation_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/workspaces/{workspace_id}/ray-federations/{ray_federation_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowFederationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'ray_federation_id' in local_var_params:
+            path_params['ray_federation_id'] = local_var_params['ray_federation_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_federation_async(self, request):
+        r"""更新Ray联邦端点
+
+        更新Ray联邦端点。此接口为同步接口。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateFederation
+        :type request: :class:`huaweicloudsdkaidatalake.v2.UpdateFederationRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.UpdateFederationResponse`
+        """
+        http_info = self._update_federation_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_federation_async_invoker(self, request):
+        http_info = self._update_federation_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_federation_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/workspaces/{workspace_id}/ray-federations/{ray_federation_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateFederationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'ray_federation_id' in local_var_params:
+            path_params['ray_federation_id'] = local_var_params['ray_federation_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def cancel_ray_job_async(self, request):
         r"""取消作业运行
 
@@ -1109,6 +2682,140 @@ class AIDataLakeAsyncClient(Client):
             body = request.get_file_stream()
 
         response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def close_ray_session_async(self, request):
+        r"""关闭交互式会话
+
+        关闭一个已存在的交互式会话，将会话状态设置为成功。本接口为同步接口。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CloseRaySession
+        :type request: :class:`huaweicloudsdkaidatalake.v2.CloseRaySessionRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.CloseRaySessionResponse`
+        """
+        http_info = self._close_ray_session_http_info(request)
+        return self._call_api(**http_info)
+
+    def close_ray_session_async_invoker(self, request):
+        http_info = self._close_ray_session_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _close_ray_session_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/workspaces/{workspace_id}/ray-sessions/{session_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "CloseRaySessionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'session_id' in local_var_params:
+            path_params['session_id'] = local_var_params['session_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_ray_session_async(self, request):
+        r"""创建交互式会话
+
+        创建一个交互式会话。本接口为同步接口，用于Notebook等交互式工具连接Ray集群。联邦用户认证场景下，会返回含联邦用户身份对应的凭据名称。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateRaySession
+        :type request: :class:`huaweicloudsdkaidatalake.v2.CreateRaySessionRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.CreateRaySessionResponse`
+        """
+        http_info = self._create_ray_session_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_ray_session_async_invoker(self, request):
+        http_info = self._create_ray_session_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_ray_session_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/workspaces/{workspace_id}/ray-sessions",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateRaySessionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])

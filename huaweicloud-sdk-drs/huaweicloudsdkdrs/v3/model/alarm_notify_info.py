@@ -35,15 +35,15 @@ class AlarmNotifyInfo:
 
         The model defined in huaweicloud sdk
 
-        :param delay_time: 订阅延迟时间(单位为s)
+        :param delay_time: **参数解释**：  订阅延迟时间，即异常告警通知的延迟时间，单位为秒。  **约束限制**：  不涉及。  **取值范围**：  1-3600。  **默认取值**：  0
         :type delay_time: int
-        :param rto_delay: rto延迟时间
+        :param rto_delay: **参数解释**：  RTO（Recovery Time Objective，恢复时间目标）延迟时间，即容灾恢复时间目标的延迟阈值，单位为秒。  **约束限制**：  不涉及。  **取值范围**：  1-3600。  **默认取值**：  0
         :type rto_delay: int
-        :param rpo_delay: rpo延迟时间
+        :param rpo_delay: **参数解释**：  RPO（Recovery Point Objective，恢复点目标）延迟时间，即容灾恢复点目标的延迟阈值，单位为秒。  **约束限制**：  不涉及。  **取值范围**：  1-3600。  **默认取值**：  0
         :type rpo_delay: int
-        :param alarm_to_user: 异常告警是否通知用户
+        :param alarm_to_user: **参数解释**：  异常告警是否通知用户。  **约束限制**：  不涉及。  **取值范围**：  - true：通知用户 - false：不通知用户  **默认取值**：  false
         :type alarm_to_user: bool
-        :param subscriptions: 收件方式与信息体
+        :param subscriptions: **参数解释**：  收件方式与信息体列表，用于配置异常告警的通知渠道，最多填写两个，详情请参见SubscriptionInfo对象定义。  **约束限制**：  - 最多填写两个。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type subscriptions: list[:class:`huaweicloudsdkdrs.v3.SubscriptionInfo`]
         """
         
@@ -71,7 +71,7 @@ class AlarmNotifyInfo:
     def delay_time(self):
         r"""Gets the delay_time of this AlarmNotifyInfo.
 
-        订阅延迟时间(单位为s)
+        **参数解释**：  订阅延迟时间，即异常告警通知的延迟时间，单位为秒。  **约束限制**：  不涉及。  **取值范围**：  1-3600。  **默认取值**：  0
 
         :return: The delay_time of this AlarmNotifyInfo.
         :rtype: int
@@ -82,7 +82,7 @@ class AlarmNotifyInfo:
     def delay_time(self, delay_time):
         r"""Sets the delay_time of this AlarmNotifyInfo.
 
-        订阅延迟时间(单位为s)
+        **参数解释**：  订阅延迟时间，即异常告警通知的延迟时间，单位为秒。  **约束限制**：  不涉及。  **取值范围**：  1-3600。  **默认取值**：  0
 
         :param delay_time: The delay_time of this AlarmNotifyInfo.
         :type delay_time: int
@@ -93,7 +93,7 @@ class AlarmNotifyInfo:
     def rto_delay(self):
         r"""Gets the rto_delay of this AlarmNotifyInfo.
 
-        rto延迟时间
+        **参数解释**：  RTO（Recovery Time Objective，恢复时间目标）延迟时间，即容灾恢复时间目标的延迟阈值，单位为秒。  **约束限制**：  不涉及。  **取值范围**：  1-3600。  **默认取值**：  0
 
         :return: The rto_delay of this AlarmNotifyInfo.
         :rtype: int
@@ -104,7 +104,7 @@ class AlarmNotifyInfo:
     def rto_delay(self, rto_delay):
         r"""Sets the rto_delay of this AlarmNotifyInfo.
 
-        rto延迟时间
+        **参数解释**：  RTO（Recovery Time Objective，恢复时间目标）延迟时间，即容灾恢复时间目标的延迟阈值，单位为秒。  **约束限制**：  不涉及。  **取值范围**：  1-3600。  **默认取值**：  0
 
         :param rto_delay: The rto_delay of this AlarmNotifyInfo.
         :type rto_delay: int
@@ -115,7 +115,7 @@ class AlarmNotifyInfo:
     def rpo_delay(self):
         r"""Gets the rpo_delay of this AlarmNotifyInfo.
 
-        rpo延迟时间
+        **参数解释**：  RPO（Recovery Point Objective，恢复点目标）延迟时间，即容灾恢复点目标的延迟阈值，单位为秒。  **约束限制**：  不涉及。  **取值范围**：  1-3600。  **默认取值**：  0
 
         :return: The rpo_delay of this AlarmNotifyInfo.
         :rtype: int
@@ -126,7 +126,7 @@ class AlarmNotifyInfo:
     def rpo_delay(self, rpo_delay):
         r"""Sets the rpo_delay of this AlarmNotifyInfo.
 
-        rpo延迟时间
+        **参数解释**：  RPO（Recovery Point Objective，恢复点目标）延迟时间，即容灾恢复点目标的延迟阈值，单位为秒。  **约束限制**：  不涉及。  **取值范围**：  1-3600。  **默认取值**：  0
 
         :param rpo_delay: The rpo_delay of this AlarmNotifyInfo.
         :type rpo_delay: int
@@ -137,7 +137,7 @@ class AlarmNotifyInfo:
     def alarm_to_user(self):
         r"""Gets the alarm_to_user of this AlarmNotifyInfo.
 
-        异常告警是否通知用户
+        **参数解释**：  异常告警是否通知用户。  **约束限制**：  不涉及。  **取值范围**：  - true：通知用户 - false：不通知用户  **默认取值**：  false
 
         :return: The alarm_to_user of this AlarmNotifyInfo.
         :rtype: bool
@@ -148,7 +148,7 @@ class AlarmNotifyInfo:
     def alarm_to_user(self, alarm_to_user):
         r"""Sets the alarm_to_user of this AlarmNotifyInfo.
 
-        异常告警是否通知用户
+        **参数解释**：  异常告警是否通知用户。  **约束限制**：  不涉及。  **取值范围**：  - true：通知用户 - false：不通知用户  **默认取值**：  false
 
         :param alarm_to_user: The alarm_to_user of this AlarmNotifyInfo.
         :type alarm_to_user: bool
@@ -159,7 +159,7 @@ class AlarmNotifyInfo:
     def subscriptions(self):
         r"""Gets the subscriptions of this AlarmNotifyInfo.
 
-        收件方式与信息体
+        **参数解释**：  收件方式与信息体列表，用于配置异常告警的通知渠道，最多填写两个，详情请参见SubscriptionInfo对象定义。  **约束限制**：  - 最多填写两个。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The subscriptions of this AlarmNotifyInfo.
         :rtype: list[:class:`huaweicloudsdkdrs.v3.SubscriptionInfo`]
@@ -170,7 +170,7 @@ class AlarmNotifyInfo:
     def subscriptions(self, subscriptions):
         r"""Sets the subscriptions of this AlarmNotifyInfo.
 
-        收件方式与信息体
+        **参数解释**：  收件方式与信息体列表，用于配置异常告警的通知渠道，最多填写两个，详情请参见SubscriptionInfo对象定义。  **约束限制**：  - 最多填写两个。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param subscriptions: The subscriptions of this AlarmNotifyInfo.
         :type subscriptions: list[:class:`huaweicloudsdkdrs.v3.SubscriptionInfo`]

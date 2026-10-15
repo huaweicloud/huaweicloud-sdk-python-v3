@@ -33,13 +33,13 @@ class UpdateDatabaseObjectReq:
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 任务ID
+        :param job_id: **参数解释**：  迁移任务ID，用于唯一标识一个数据复制任务，在查询、修改、删除等操作中作为任务的识别凭证。  **约束限制**：  不涉及。  **取值范围**：  UUID格式字符串。  **默认取值**：  不涉及
         :type job_id: str
-        :param selected: 是否进行对象选择，是：自定义迁移对象，否：全部迁移，不填默认为否。
+        :param selected: **参数解释**：  是否进行对象选择，决定是自定义选择迁移对象还是迁移全部对象。  **约束限制**：  不涉及。  **取值范围**：  - true：自定义迁移对象，需要通过job字段指定具体迁移对象 - false：全部迁移，迁移源库所有对象  **默认取值**：  false
         :type selected: bool
-        :param sync_database: 是否库级同步
+        :param sync_database: **参数解释**：  是否库级同步，指定同步任务是否以库为粒度进行对象选择。  **约束限制**：  不涉及。  **取值范围**：  - true：库级同步 - false：非库级同步  **默认取值**：  不涉及
         :type sync_database: bool
-        :param job: 数据对象选择信息，selected为true时必填。
+        :param job: **参数解释**：  数据对象选择信息列表，包含需要迁移的数据库、表、视图等对象的详细配置。  **约束限制**：  - selected为true时必填。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type job: list[:class:`huaweicloudsdkdrs.v3.DatabaseInfo`]
         """
         
@@ -63,7 +63,7 @@ class UpdateDatabaseObjectReq:
     def job_id(self):
         r"""Gets the job_id of this UpdateDatabaseObjectReq.
 
-        任务ID
+        **参数解释**：  迁移任务ID，用于唯一标识一个数据复制任务，在查询、修改、删除等操作中作为任务的识别凭证。  **约束限制**：  不涉及。  **取值范围**：  UUID格式字符串。  **默认取值**：  不涉及
 
         :return: The job_id of this UpdateDatabaseObjectReq.
         :rtype: str
@@ -74,7 +74,7 @@ class UpdateDatabaseObjectReq:
     def job_id(self, job_id):
         r"""Sets the job_id of this UpdateDatabaseObjectReq.
 
-        任务ID
+        **参数解释**：  迁移任务ID，用于唯一标识一个数据复制任务，在查询、修改、删除等操作中作为任务的识别凭证。  **约束限制**：  不涉及。  **取值范围**：  UUID格式字符串。  **默认取值**：  不涉及
 
         :param job_id: The job_id of this UpdateDatabaseObjectReq.
         :type job_id: str
@@ -85,7 +85,7 @@ class UpdateDatabaseObjectReq:
     def selected(self):
         r"""Gets the selected of this UpdateDatabaseObjectReq.
 
-        是否进行对象选择，是：自定义迁移对象，否：全部迁移，不填默认为否。
+        **参数解释**：  是否进行对象选择，决定是自定义选择迁移对象还是迁移全部对象。  **约束限制**：  不涉及。  **取值范围**：  - true：自定义迁移对象，需要通过job字段指定具体迁移对象 - false：全部迁移，迁移源库所有对象  **默认取值**：  false
 
         :return: The selected of this UpdateDatabaseObjectReq.
         :rtype: bool
@@ -96,7 +96,7 @@ class UpdateDatabaseObjectReq:
     def selected(self, selected):
         r"""Sets the selected of this UpdateDatabaseObjectReq.
 
-        是否进行对象选择，是：自定义迁移对象，否：全部迁移，不填默认为否。
+        **参数解释**：  是否进行对象选择，决定是自定义选择迁移对象还是迁移全部对象。  **约束限制**：  不涉及。  **取值范围**：  - true：自定义迁移对象，需要通过job字段指定具体迁移对象 - false：全部迁移，迁移源库所有对象  **默认取值**：  false
 
         :param selected: The selected of this UpdateDatabaseObjectReq.
         :type selected: bool
@@ -107,7 +107,7 @@ class UpdateDatabaseObjectReq:
     def sync_database(self):
         r"""Gets the sync_database of this UpdateDatabaseObjectReq.
 
-        是否库级同步
+        **参数解释**：  是否库级同步，指定同步任务是否以库为粒度进行对象选择。  **约束限制**：  不涉及。  **取值范围**：  - true：库级同步 - false：非库级同步  **默认取值**：  不涉及
 
         :return: The sync_database of this UpdateDatabaseObjectReq.
         :rtype: bool
@@ -118,7 +118,7 @@ class UpdateDatabaseObjectReq:
     def sync_database(self, sync_database):
         r"""Sets the sync_database of this UpdateDatabaseObjectReq.
 
-        是否库级同步
+        **参数解释**：  是否库级同步，指定同步任务是否以库为粒度进行对象选择。  **约束限制**：  不涉及。  **取值范围**：  - true：库级同步 - false：非库级同步  **默认取值**：  不涉及
 
         :param sync_database: The sync_database of this UpdateDatabaseObjectReq.
         :type sync_database: bool
@@ -129,7 +129,7 @@ class UpdateDatabaseObjectReq:
     def job(self):
         r"""Gets the job of this UpdateDatabaseObjectReq.
 
-        数据对象选择信息，selected为true时必填。
+        **参数解释**：  数据对象选择信息列表，包含需要迁移的数据库、表、视图等对象的详细配置。  **约束限制**：  - selected为true时必填。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The job of this UpdateDatabaseObjectReq.
         :rtype: list[:class:`huaweicloudsdkdrs.v3.DatabaseInfo`]
@@ -140,7 +140,7 @@ class UpdateDatabaseObjectReq:
     def job(self, job):
         r"""Sets the job of this UpdateDatabaseObjectReq.
 
-        数据对象选择信息，selected为true时必填。
+        **参数解释**：  数据对象选择信息列表，包含需要迁移的数据库、表、视图等对象的详细配置。  **约束限制**：  - selected为true时必填。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param job: The job of this UpdateDatabaseObjectReq.
         :type job: list[:class:`huaweicloudsdkdrs.v3.DatabaseInfo`]

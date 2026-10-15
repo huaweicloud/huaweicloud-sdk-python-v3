@@ -22,7 +22,8 @@ class BackupRestoreOptionInfo:
         'recovery_mode': 'str',
         'db_names': 'list[str]',
         'reset_db_name_map': 'dict(str, str)',
-        'is_delete_backup_file': 'bool'
+        'is_delete_backup_file': 'bool',
+        'consistency_check_mode': 'str'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class BackupRestoreOptionInfo:
         'recovery_mode': 'recovery_mode',
         'db_names': 'db_names',
         'reset_db_name_map': 'reset_db_name_map',
-        'is_delete_backup_file': 'is_delete_backup_file'
+        'is_delete_backup_file': 'is_delete_backup_file',
+        'consistency_check_mode': 'consistency_check_mode'
     }
 
-    def __init__(self, is_cover=None, is_default_restore=None, is_last_backup=None, is_precheck=None, recovery_mode=None, db_names=None, reset_db_name_map=None, is_delete_backup_file=None):
+    def __init__(self, is_cover=None, is_default_restore=None, is_last_backup=None, is_precheck=None, recovery_mode=None, db_names=None, reset_db_name_map=None, is_delete_backup_file=None, consistency_check_mode=None):
         r"""BackupRestoreOptionInfo
 
         The model defined in huaweicloud sdk
@@ -57,6 +59,8 @@ class BackupRestoreOptionInfo:
         :type reset_db_name_map: dict(str, str)
         :param is_delete_backup_file: 该参数控制使用OBS桶中备份文件恢复时，当任务结束时是否删除下载到RDS for SQL server磁盘中的OBS备份文件，默认删除。 - true 删除 - false 不删除
         :type is_delete_backup_file: bool
+        :param consistency_check_mode: DBCC一致性校验模式。 - sync 同步 - async 异步
+        :type consistency_check_mode: str
         """
         
         
@@ -69,6 +73,7 @@ class BackupRestoreOptionInfo:
         self._db_names = None
         self._reset_db_name_map = None
         self._is_delete_backup_file = None
+        self._consistency_check_mode = None
         self.discriminator = None
 
         if is_cover is not None:
@@ -84,6 +89,8 @@ class BackupRestoreOptionInfo:
             self.reset_db_name_map = reset_db_name_map
         if is_delete_backup_file is not None:
             self.is_delete_backup_file = is_delete_backup_file
+        if consistency_check_mode is not None:
+            self.consistency_check_mode = consistency_check_mode
 
     @property
     def is_cover(self):
@@ -260,6 +267,28 @@ class BackupRestoreOptionInfo:
         :type is_delete_backup_file: bool
         """
         self._is_delete_backup_file = is_delete_backup_file
+
+    @property
+    def consistency_check_mode(self):
+        r"""Gets the consistency_check_mode of this BackupRestoreOptionInfo.
+
+        DBCC一致性校验模式。 - sync 同步 - async 异步
+
+        :return: The consistency_check_mode of this BackupRestoreOptionInfo.
+        :rtype: str
+        """
+        return self._consistency_check_mode
+
+    @consistency_check_mode.setter
+    def consistency_check_mode(self, consistency_check_mode):
+        r"""Sets the consistency_check_mode of this BackupRestoreOptionInfo.
+
+        DBCC一致性校验模式。 - sync 同步 - async 异步
+
+        :param consistency_check_mode: The consistency_check_mode of this BackupRestoreOptionInfo.
+        :type consistency_check_mode: str
+        """
+        self._consistency_check_mode = consistency_check_mode
 
     def to_dict(self):
         result = {}

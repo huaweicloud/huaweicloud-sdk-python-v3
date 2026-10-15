@@ -27,7 +27,7 @@ class ShowQuotasRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_language: 请求语言类型。
+        :param x_language: **参数解释**：  请求语言类型。  **约束限制**：  不涉及。  **取值范围**：  - en-us：英文 - zh-cn：中文  **默认取值**：  en-us
         :type x_language: str
         """
         
@@ -43,7 +43,7 @@ class ShowQuotasRequest:
     def x_language(self):
         r"""Gets the x_language of this ShowQuotasRequest.
 
-        请求语言类型。
+        **参数解释**：  请求语言类型。  **约束限制**：  不涉及。  **取值范围**：  - en-us：英文 - zh-cn：中文  **默认取值**：  en-us
 
         :return: The x_language of this ShowQuotasRequest.
         :rtype: str
@@ -54,7 +54,7 @@ class ShowQuotasRequest:
     def x_language(self, x_language):
         r"""Sets the x_language of this ShowQuotasRequest.
 
-        请求语言类型。
+        **参数解释**：  请求语言类型。  **约束限制**：  不涉及。  **取值范围**：  - en-us：英文 - zh-cn：中文  **默认取值**：  en-us
 
         :param x_language: The x_language of this ShowQuotasRequest.
         :type x_language: str

@@ -16,33 +16,40 @@ class UpdatePreBootPolicyReq:
 
     openapi_types = {
         'ids': 'list[str]',
-        'is_pre_boot': 'bool'
+        'is_pre_boot': 'bool',
+        'pre_launch_policy': 'int'
     }
 
     attribute_map = {
         'ids': 'ids',
-        'is_pre_boot': 'is_pre_boot'
+        'is_pre_boot': 'is_pre_boot',
+        'pre_launch_policy': 'pre_launch_policy'
     }
 
-    def __init__(self, ids=None, is_pre_boot=None):
+    def __init__(self, ids=None, is_pre_boot=None, pre_launch_policy=None):
         r"""UpdatePreBootPolicyReq
 
         The model defined in huaweicloud sdk
 
         :param ids: 应用ID,最多同时操作5个。
         :type ids: list[str]
-        :param is_pre_boot: 是否设置应用预启动。
+        :param is_pre_boot: 是否设置会话预启动。
         :type is_pre_boot: bool
+        :param pre_launch_policy: 预开状态：0：非预开，1：会话预开，3：应用预开。
+        :type pre_launch_policy: int
         """
         
         
 
         self._ids = None
         self._is_pre_boot = None
+        self._pre_launch_policy = None
         self.discriminator = None
 
         self.ids = ids
         self.is_pre_boot = is_pre_boot
+        if pre_launch_policy is not None:
+            self.pre_launch_policy = pre_launch_policy
 
     @property
     def ids(self):
@@ -70,7 +77,7 @@ class UpdatePreBootPolicyReq:
     def is_pre_boot(self):
         r"""Gets the is_pre_boot of this UpdatePreBootPolicyReq.
 
-        是否设置应用预启动。
+        是否设置会话预启动。
 
         :return: The is_pre_boot of this UpdatePreBootPolicyReq.
         :rtype: bool
@@ -81,12 +88,34 @@ class UpdatePreBootPolicyReq:
     def is_pre_boot(self, is_pre_boot):
         r"""Sets the is_pre_boot of this UpdatePreBootPolicyReq.
 
-        是否设置应用预启动。
+        是否设置会话预启动。
 
         :param is_pre_boot: The is_pre_boot of this UpdatePreBootPolicyReq.
         :type is_pre_boot: bool
         """
         self._is_pre_boot = is_pre_boot
+
+    @property
+    def pre_launch_policy(self):
+        r"""Gets the pre_launch_policy of this UpdatePreBootPolicyReq.
+
+        预开状态：0：非预开，1：会话预开，3：应用预开。
+
+        :return: The pre_launch_policy of this UpdatePreBootPolicyReq.
+        :rtype: int
+        """
+        return self._pre_launch_policy
+
+    @pre_launch_policy.setter
+    def pre_launch_policy(self, pre_launch_policy):
+        r"""Sets the pre_launch_policy of this UpdatePreBootPolicyReq.
+
+        预开状态：0：非预开，1：会话预开，3：应用预开。
+
+        :param pre_launch_policy: The pre_launch_policy of this UpdatePreBootPolicyReq.
+        :type pre_launch_policy: int
+        """
+        self._pre_launch_policy = pre_launch_policy
 
     def to_dict(self):
         result = {}

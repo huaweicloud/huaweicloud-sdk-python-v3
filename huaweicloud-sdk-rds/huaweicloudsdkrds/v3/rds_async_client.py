@@ -13273,6 +13273,73 @@ class RdsAsyncClient(Client):
 
         return http_info
 
+    def show_vector_storage_config_async(self, request):
+        r"""查询实例的向量存储配置
+
+        查询实例的向量存储配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowVectorStorageConfig
+        :type request: :class:`huaweicloudsdkrds.v3.ShowVectorStorageConfigRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ShowVectorStorageConfigResponse`
+        """
+        http_info = self._show_vector_storage_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_vector_storage_config_async_invoker(self, request):
+        http_info = self._show_vector_storage_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_vector_storage_config_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/vector-storage",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowVectorStorageConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def start_failover_async(self, request):
         r"""手动倒换主备
 
@@ -15279,6 +15346,75 @@ class RdsAsyncClient(Client):
             "resource_path": "/v3/{project_id}/instances/{instance_id}/to-period",
             "request_type": request.__class__.__name__,
             "response_type": "UpdateToPeriodResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_vector_storage_config_async(self, request):
+        r"""修改实例的向量存储配置
+
+        修改实例的向量存储配置，开启或关闭向量存储功能。该接口为异步接口，返回工作流ID。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateVectorStorageConfig
+        :type request: :class:`huaweicloudsdkrds.v3.UpdateVectorStorageConfigRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.UpdateVectorStorageConfigResponse`
+        """
+        http_info = self._update_vector_storage_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_vector_storage_config_async_invoker(self, request):
+        http_info = self._update_vector_storage_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_vector_storage_config_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/vector-storage",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateVectorStorageConfigResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

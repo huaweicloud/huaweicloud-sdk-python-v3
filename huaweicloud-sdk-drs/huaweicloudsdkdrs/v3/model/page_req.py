@@ -29,9 +29,9 @@ class PageReq:
 
         The model defined in huaweicloud sdk
 
-        :param cur_page: 当前页, 不能超过item除每页任务数量的最大页 
+        :param cur_page: **参数解释**：  当前页码，用于分页查询时指定返回第几页的数据。填0可获取全部数据项。  **约束限制**：  - 当per_page填0时，cur_page只能填0或1。 - 不能超过传入jobID数量除每页任务数量的最大页。  **取值范围**：  不涉及。  **默认取值**：  1
         :type cur_page: int
-        :param per_page: 每页item数量，填0获取全部item
+        :param per_page: **参数解释**：  每页返回的记录数，用于分页查询时控制每页数据量。填0可获取全部数据项。  **约束限制**：  - 填0时，cur_page只能填0或1。  **取值范围**：  0-100。  **默认取值**：  5
         :type per_page: int
         """
         
@@ -50,7 +50,7 @@ class PageReq:
     def cur_page(self):
         r"""Gets the cur_page of this PageReq.
 
-        当前页, 不能超过item除每页任务数量的最大页 
+        **参数解释**：  当前页码，用于分页查询时指定返回第几页的数据。填0可获取全部数据项。  **约束限制**：  - 当per_page填0时，cur_page只能填0或1。 - 不能超过传入jobID数量除每页任务数量的最大页。  **取值范围**：  不涉及。  **默认取值**：  1
 
         :return: The cur_page of this PageReq.
         :rtype: int
@@ -61,7 +61,7 @@ class PageReq:
     def cur_page(self, cur_page):
         r"""Sets the cur_page of this PageReq.
 
-        当前页, 不能超过item除每页任务数量的最大页 
+        **参数解释**：  当前页码，用于分页查询时指定返回第几页的数据。填0可获取全部数据项。  **约束限制**：  - 当per_page填0时，cur_page只能填0或1。 - 不能超过传入jobID数量除每页任务数量的最大页。  **取值范围**：  不涉及。  **默认取值**：  1
 
         :param cur_page: The cur_page of this PageReq.
         :type cur_page: int
@@ -72,7 +72,7 @@ class PageReq:
     def per_page(self):
         r"""Gets the per_page of this PageReq.
 
-        每页item数量，填0获取全部item
+        **参数解释**：  每页返回的记录数，用于分页查询时控制每页数据量。填0可获取全部数据项。  **约束限制**：  - 填0时，cur_page只能填0或1。  **取值范围**：  0-100。  **默认取值**：  5
 
         :return: The per_page of this PageReq.
         :rtype: int
@@ -83,7 +83,7 @@ class PageReq:
     def per_page(self, per_page):
         r"""Sets the per_page of this PageReq.
 
-        每页item数量，填0获取全部item
+        **参数解释**：  每页返回的记录数，用于分页查询时控制每页数据量。填0可获取全部数据项。  **约束限制**：  - 填0时，cur_page只能填0或1。  **取值范围**：  0-100。  **默认取值**：  5
 
         :param per_page: The per_page of this PageReq.
         :type per_page: int

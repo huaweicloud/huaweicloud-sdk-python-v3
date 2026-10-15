@@ -24,7 +24,8 @@ class CompareJobInfo:
         'export_status': 'str',
         'report_remain_seconds': 'int',
         'compare_job_tag': 'dict(str, str)',
-        'proportion_value': 'str'
+        'proportion_value': 'str',
+        'database_info': 'object'
     }
 
     attribute_map = {
@@ -37,10 +38,11 @@ class CompareJobInfo:
         'export_status': 'export_status',
         'report_remain_seconds': 'report_remain_seconds',
         'compare_job_tag': 'compare_job_tag',
-        'proportion_value': 'proportion_value'
+        'proportion_value': 'proportion_value',
+        'database_info': 'database_info'
     }
 
-    def __init__(self, id=None, type=None, options=None, start_time=None, end_time=None, status=None, export_status=None, report_remain_seconds=None, compare_job_tag=None, proportion_value=None):
+    def __init__(self, id=None, type=None, options=None, start_time=None, end_time=None, status=None, export_status=None, report_remain_seconds=None, compare_job_tag=None, proportion_value=None, database_info=None):
         r"""CompareJobInfo
 
         The model defined in huaweicloud sdk
@@ -65,6 +67,8 @@ class CompareJobInfo:
         :type compare_job_tag: dict(str, str)
         :param proportion_value: 抽样比例，对比类型为抽样对比时填写。
         :type proportion_value: str
+        :param database_info: 灾备数据库信息。
+        :type database_info: object
         """
         
         
@@ -79,6 +83,7 @@ class CompareJobInfo:
         self._report_remain_seconds = None
         self._compare_job_tag = None
         self._proportion_value = None
+        self._database_info = None
         self.discriminator = None
 
         if id is not None:
@@ -101,6 +106,8 @@ class CompareJobInfo:
             self.compare_job_tag = compare_job_tag
         if proportion_value is not None:
             self.proportion_value = proportion_value
+        if database_info is not None:
+            self.database_info = database_info
 
     @property
     def id(self):
@@ -321,6 +328,28 @@ class CompareJobInfo:
         :type proportion_value: str
         """
         self._proportion_value = proportion_value
+
+    @property
+    def database_info(self):
+        r"""Gets the database_info of this CompareJobInfo.
+
+        灾备数据库信息。
+
+        :return: The database_info of this CompareJobInfo.
+        :rtype: object
+        """
+        return self._database_info
+
+    @database_info.setter
+    def database_info(self, database_info):
+        r"""Sets the database_info of this CompareJobInfo.
+
+        灾备数据库信息。
+
+        :param database_info: The database_info of this CompareJobInfo.
+        :type database_info: object
+        """
+        self._database_info = database_info
 
     def to_dict(self):
         result = {}

@@ -43,23 +43,23 @@ class ListAsyncJobsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_language: 请求语言类型。
+        :param x_language: **参数解释**：  请求语言类型。  **约束限制**：  不涉及。  **取值范围**：  - en-us：英文 - zh-cn：中文  **默认取值**：  en-us
         :type x_language: str
-        :param async_job_id: 批量异步创建的任务ID。
+        :param async_job_id: **参数解释**：  批量异步创建的任务ID，用于按任务ID筛选查询结果。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type async_job_id: str
-        :param status: 批量异步创建的任务状态。
+        :param status: **参数解释**：  批量异步创建的任务状态，用于按任务状态筛选查询结果。  **约束限制**：  不涉及。  **取值范围**：  - ASYNC_JOB_VALIDATING：批量异步任务参数校验中 - ASYNC_JOB_VALIDATE_FAILED：批量异步任务参数校验失败 - AUTO_PARAM_VALIDATE_SUCCESS：批量异步任务参数校验成功 - COMMIT_SUCCESS：批量异步任务提交成功  **默认取值**：  不涉及
         :type status: str
-        :param domain_name: 批量异步创建的任务的租户名。
+        :param domain_name: **参数解释**：  批量异步创建任务的租户名，用于按租户名筛选查询结果。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type domain_name: str
-        :param user_name: 批量异步创建的任务的用户名。
+        :param user_name: **参数解释**：  批量异步创建任务的用户名，用于按用户名筛选查询结果。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type user_name: str
-        :param offset: 偏移量，表示查询该偏移量后面的记录。
+        :param offset: **参数解释**：  偏移量，表示查询该偏移量后面的记录，用于分页查询。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  0
         :type offset: int
-        :param limit: 查询返回记录的数量限制。
+        :param limit: **参数解释**：  查询返回记录的数量限制，用于分页查询时控制每页返回的数据条数。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
         :type limit: int
-        :param sort_key: 返回结果按该关键字排序，默认为“create_time”。
+        :param sort_key: **参数解释**：  返回结果按该关键字排序，指定批量异步任务列表的排序依据。  **约束限制**：  不涉及。  **取值范围**：  - create_time：按创建时间排序  **默认取值**：  create_time
         :type sort_key: str
-        :param sort_dir: 降序或升序（分别对应desc和asc，默认为“desc”）。
+        :param sort_dir: **参数解释**：  排序方向，指定返回结果按升序或降序排列。  **约束限制**：  不涉及。  **取值范围**：  - desc：降序 - asc：升序  **默认取值**：  desc
         :type sort_dir: str
         """
         
@@ -99,7 +99,7 @@ class ListAsyncJobsRequest:
     def x_language(self):
         r"""Gets the x_language of this ListAsyncJobsRequest.
 
-        请求语言类型。
+        **参数解释**：  请求语言类型。  **约束限制**：  不涉及。  **取值范围**：  - en-us：英文 - zh-cn：中文  **默认取值**：  en-us
 
         :return: The x_language of this ListAsyncJobsRequest.
         :rtype: str
@@ -110,7 +110,7 @@ class ListAsyncJobsRequest:
     def x_language(self, x_language):
         r"""Sets the x_language of this ListAsyncJobsRequest.
 
-        请求语言类型。
+        **参数解释**：  请求语言类型。  **约束限制**：  不涉及。  **取值范围**：  - en-us：英文 - zh-cn：中文  **默认取值**：  en-us
 
         :param x_language: The x_language of this ListAsyncJobsRequest.
         :type x_language: str
@@ -121,7 +121,7 @@ class ListAsyncJobsRequest:
     def async_job_id(self):
         r"""Gets the async_job_id of this ListAsyncJobsRequest.
 
-        批量异步创建的任务ID。
+        **参数解释**：  批量异步创建的任务ID，用于按任务ID筛选查询结果。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The async_job_id of this ListAsyncJobsRequest.
         :rtype: str
@@ -132,7 +132,7 @@ class ListAsyncJobsRequest:
     def async_job_id(self, async_job_id):
         r"""Sets the async_job_id of this ListAsyncJobsRequest.
 
-        批量异步创建的任务ID。
+        **参数解释**：  批量异步创建的任务ID，用于按任务ID筛选查询结果。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param async_job_id: The async_job_id of this ListAsyncJobsRequest.
         :type async_job_id: str
@@ -143,7 +143,7 @@ class ListAsyncJobsRequest:
     def status(self):
         r"""Gets the status of this ListAsyncJobsRequest.
 
-        批量异步创建的任务状态。
+        **参数解释**：  批量异步创建的任务状态，用于按任务状态筛选查询结果。  **约束限制**：  不涉及。  **取值范围**：  - ASYNC_JOB_VALIDATING：批量异步任务参数校验中 - ASYNC_JOB_VALIDATE_FAILED：批量异步任务参数校验失败 - AUTO_PARAM_VALIDATE_SUCCESS：批量异步任务参数校验成功 - COMMIT_SUCCESS：批量异步任务提交成功  **默认取值**：  不涉及
 
         :return: The status of this ListAsyncJobsRequest.
         :rtype: str
@@ -154,7 +154,7 @@ class ListAsyncJobsRequest:
     def status(self, status):
         r"""Sets the status of this ListAsyncJobsRequest.
 
-        批量异步创建的任务状态。
+        **参数解释**：  批量异步创建的任务状态，用于按任务状态筛选查询结果。  **约束限制**：  不涉及。  **取值范围**：  - ASYNC_JOB_VALIDATING：批量异步任务参数校验中 - ASYNC_JOB_VALIDATE_FAILED：批量异步任务参数校验失败 - AUTO_PARAM_VALIDATE_SUCCESS：批量异步任务参数校验成功 - COMMIT_SUCCESS：批量异步任务提交成功  **默认取值**：  不涉及
 
         :param status: The status of this ListAsyncJobsRequest.
         :type status: str
@@ -165,7 +165,7 @@ class ListAsyncJobsRequest:
     def domain_name(self):
         r"""Gets the domain_name of this ListAsyncJobsRequest.
 
-        批量异步创建的任务的租户名。
+        **参数解释**：  批量异步创建任务的租户名，用于按租户名筛选查询结果。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The domain_name of this ListAsyncJobsRequest.
         :rtype: str
@@ -176,7 +176,7 @@ class ListAsyncJobsRequest:
     def domain_name(self, domain_name):
         r"""Sets the domain_name of this ListAsyncJobsRequest.
 
-        批量异步创建的任务的租户名。
+        **参数解释**：  批量异步创建任务的租户名，用于按租户名筛选查询结果。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param domain_name: The domain_name of this ListAsyncJobsRequest.
         :type domain_name: str
@@ -187,7 +187,7 @@ class ListAsyncJobsRequest:
     def user_name(self):
         r"""Gets the user_name of this ListAsyncJobsRequest.
 
-        批量异步创建的任务的用户名。
+        **参数解释**：  批量异步创建任务的用户名，用于按用户名筛选查询结果。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The user_name of this ListAsyncJobsRequest.
         :rtype: str
@@ -198,7 +198,7 @@ class ListAsyncJobsRequest:
     def user_name(self, user_name):
         r"""Sets the user_name of this ListAsyncJobsRequest.
 
-        批量异步创建的任务的用户名。
+        **参数解释**：  批量异步创建任务的用户名，用于按用户名筛选查询结果。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param user_name: The user_name of this ListAsyncJobsRequest.
         :type user_name: str
@@ -209,7 +209,7 @@ class ListAsyncJobsRequest:
     def offset(self):
         r"""Gets the offset of this ListAsyncJobsRequest.
 
-        偏移量，表示查询该偏移量后面的记录。
+        **参数解释**：  偏移量，表示查询该偏移量后面的记录，用于分页查询。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  0
 
         :return: The offset of this ListAsyncJobsRequest.
         :rtype: int
@@ -220,7 +220,7 @@ class ListAsyncJobsRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListAsyncJobsRequest.
 
-        偏移量，表示查询该偏移量后面的记录。
+        **参数解释**：  偏移量，表示查询该偏移量后面的记录，用于分页查询。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  0
 
         :param offset: The offset of this ListAsyncJobsRequest.
         :type offset: int
@@ -231,7 +231,7 @@ class ListAsyncJobsRequest:
     def limit(self):
         r"""Gets the limit of this ListAsyncJobsRequest.
 
-        查询返回记录的数量限制。
+        **参数解释**：  查询返回记录的数量限制，用于分页查询时控制每页返回的数据条数。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :return: The limit of this ListAsyncJobsRequest.
         :rtype: int
@@ -242,7 +242,7 @@ class ListAsyncJobsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListAsyncJobsRequest.
 
-        查询返回记录的数量限制。
+        **参数解释**：  查询返回记录的数量限制，用于分页查询时控制每页返回的数据条数。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及
 
         :param limit: The limit of this ListAsyncJobsRequest.
         :type limit: int
@@ -253,7 +253,7 @@ class ListAsyncJobsRequest:
     def sort_key(self):
         r"""Gets the sort_key of this ListAsyncJobsRequest.
 
-        返回结果按该关键字排序，默认为“create_time”。
+        **参数解释**：  返回结果按该关键字排序，指定批量异步任务列表的排序依据。  **约束限制**：  不涉及。  **取值范围**：  - create_time：按创建时间排序  **默认取值**：  create_time
 
         :return: The sort_key of this ListAsyncJobsRequest.
         :rtype: str
@@ -264,7 +264,7 @@ class ListAsyncJobsRequest:
     def sort_key(self, sort_key):
         r"""Sets the sort_key of this ListAsyncJobsRequest.
 
-        返回结果按该关键字排序，默认为“create_time”。
+        **参数解释**：  返回结果按该关键字排序，指定批量异步任务列表的排序依据。  **约束限制**：  不涉及。  **取值范围**：  - create_time：按创建时间排序  **默认取值**：  create_time
 
         :param sort_key: The sort_key of this ListAsyncJobsRequest.
         :type sort_key: str
@@ -275,7 +275,7 @@ class ListAsyncJobsRequest:
     def sort_dir(self):
         r"""Gets the sort_dir of this ListAsyncJobsRequest.
 
-        降序或升序（分别对应desc和asc，默认为“desc”）。
+        **参数解释**：  排序方向，指定返回结果按升序或降序排列。  **约束限制**：  不涉及。  **取值范围**：  - desc：降序 - asc：升序  **默认取值**：  desc
 
         :return: The sort_dir of this ListAsyncJobsRequest.
         :rtype: str
@@ -286,7 +286,7 @@ class ListAsyncJobsRequest:
     def sort_dir(self, sort_dir):
         r"""Sets the sort_dir of this ListAsyncJobsRequest.
 
-        降序或升序（分别对应desc和asc，默认为“desc”）。
+        **参数解释**：  排序方向，指定返回结果按升序或降序排列。  **约束限制**：  不涉及。  **取值范围**：  - desc：降序 - asc：升序  **默认取值**：  desc
 
         :param sort_dir: The sort_dir of this ListAsyncJobsRequest.
         :type sort_dir: str
