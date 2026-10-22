@@ -24,7 +24,8 @@ class ListInferDeploymentPodsRequest:
         'pod_name': 'str',
         'pod_id': 'str',
         'pod_node_ip': 'str',
-        'pod_node_name': 'str'
+        'pod_node_name': 'str',
+        'pod_role_name': 'str'
     }
 
     attribute_map = {
@@ -37,10 +38,11 @@ class ListInferDeploymentPodsRequest:
         'pod_name': 'pod_name',
         'pod_id': 'pod_id',
         'pod_node_ip': 'pod_node_ip',
-        'pod_node_name': 'pod_node_name'
+        'pod_node_name': 'pod_node_name',
+        'pod_role_name': 'pod_role_name'
     }
 
-    def __init__(self, id=None, deployment_name=None, name=None, status=None, limit=None, offset=None, pod_name=None, pod_id=None, pod_node_ip=None, pod_node_name=None):
+    def __init__(self, id=None, deployment_name=None, name=None, status=None, limit=None, offset=None, pod_name=None, pod_id=None, pod_node_ip=None, pod_node_name=None, pod_role_name=None):
         r"""ListInferDeploymentPodsRequest
 
         The model defined in huaweicloud sdk
@@ -65,6 +67,8 @@ class ListInferDeploymentPodsRequest:
         :type pod_node_ip: str
         :param pod_node_name: **参数解释：** pod节点名称。 **取值范围：** 不涉及。
         :type pod_node_name: str
+        :param pod_role_name: **参数解释：** pod所属单元名称。 **取值范围：** 不涉及。
+        :type pod_role_name: str
         """
         
         
@@ -79,6 +83,7 @@ class ListInferDeploymentPodsRequest:
         self._pod_id = None
         self._pod_node_ip = None
         self._pod_node_name = None
+        self._pod_role_name = None
         self.discriminator = None
 
         self.id = id
@@ -98,6 +103,8 @@ class ListInferDeploymentPodsRequest:
             self.pod_node_ip = pod_node_ip
         if pod_node_name is not None:
             self.pod_node_name = pod_node_name
+        if pod_role_name is not None:
+            self.pod_role_name = pod_role_name
 
     @property
     def id(self):
@@ -318,6 +325,28 @@ class ListInferDeploymentPodsRequest:
         :type pod_node_name: str
         """
         self._pod_node_name = pod_node_name
+
+    @property
+    def pod_role_name(self):
+        r"""Gets the pod_role_name of this ListInferDeploymentPodsRequest.
+
+        **参数解释：** pod所属单元名称。 **取值范围：** 不涉及。
+
+        :return: The pod_role_name of this ListInferDeploymentPodsRequest.
+        :rtype: str
+        """
+        return self._pod_role_name
+
+    @pod_role_name.setter
+    def pod_role_name(self, pod_role_name):
+        r"""Sets the pod_role_name of this ListInferDeploymentPodsRequest.
+
+        **参数解释：** pod所属单元名称。 **取值范围：** 不涉及。
+
+        :param pod_role_name: The pod_role_name of this ListInferDeploymentPodsRequest.
+        :type pod_role_name: str
+        """
+        self._pod_role_name = pod_role_name
 
     def to_dict(self):
         result = {}

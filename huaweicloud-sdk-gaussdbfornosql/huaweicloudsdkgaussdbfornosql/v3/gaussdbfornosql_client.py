@@ -2367,6 +2367,81 @@ class GaussDBforNoSQLClient(Client):
 
         return http_info
 
+    def list_biactive_instance_candidates(self, request):
+        r"""查询实例可搭建双活关系的候选实例
+
+        查询实例在目标Region可搭建双活关系的候选实例列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListBiactiveInstanceCandidates
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ListBiactiveInstanceCandidatesRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListBiactiveInstanceCandidatesResponse`
+        """
+        http_info = self._list_biactive_instance_candidates_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_biactive_instance_candidates_invoker(self, request):
+        http_info = self._list_biactive_instance_candidates_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_biactive_instance_candidates_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/disaster-recovery/biactive-instance-candidates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBiactiveInstanceCandidatesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'target_region_code' in local_var_params:
+            query_params.append(('target_region_code', local_var_params['target_region_code']))
+        if 'target_instance_name' in local_var_params:
+            query_params.append(('target_instance_name', local_var_params['target_instance_name']))
+        if 'data_sync_mode' in local_var_params:
+            query_params.append(('data_sync_mode', local_var_params['data_sync_mode']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_cassandra_slow_logs(self, request):
         r"""查询GeminiDB(for Cassandra)数据库慢日志
 

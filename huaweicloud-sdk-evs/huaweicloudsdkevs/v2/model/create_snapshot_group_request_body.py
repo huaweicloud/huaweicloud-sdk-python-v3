@@ -1,0 +1,103 @@
+# coding: utf-8
+
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
+
+
+class CreateSnapshotGroupRequestBody:
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+    sensitive_list = []
+
+    openapi_types = {
+        'snapshot_group': 'SnapshotGroup'
+    }
+
+    attribute_map = {
+        'snapshot_group': 'snapshot_group'
+    }
+
+    def __init__(self, snapshot_group=None):
+        r"""CreateSnapshotGroupRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param snapshot_group: 
+        :type snapshot_group: :class:`huaweicloudsdkevs.v2.SnapshotGroup`
+        """
+        
+        
+
+        self._snapshot_group = None
+        self.discriminator = None
+
+        self.snapshot_group = snapshot_group
+
+    @property
+    def snapshot_group(self):
+        r"""Gets the snapshot_group of this CreateSnapshotGroupRequestBody.
+
+        :return: The snapshot_group of this CreateSnapshotGroupRequestBody.
+        :rtype: :class:`huaweicloudsdkevs.v2.SnapshotGroup`
+        """
+        return self._snapshot_group
+
+    @snapshot_group.setter
+    def snapshot_group(self, snapshot_group):
+        r"""Sets the snapshot_group of this CreateSnapshotGroupRequestBody.
+
+        :param snapshot_group: The snapshot_group of this CreateSnapshotGroupRequestBody.
+        :type snapshot_group: :class:`huaweicloudsdkevs.v2.SnapshotGroup`
+        """
+        self._snapshot_group = snapshot_group
+
+    def to_dict(self):
+        result = {}
+
+        for attr, _ in self.openapi_types.items():
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        import simplejson as json
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
+
+    def __repr__(self):
+        """For `print`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, CreateSnapshotGroupRequestBody):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

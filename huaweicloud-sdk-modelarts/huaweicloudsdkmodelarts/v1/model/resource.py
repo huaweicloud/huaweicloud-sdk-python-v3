@@ -20,6 +20,7 @@ class Resource:
         'flavor_name': 'str',
         'node_count': 'int',
         'pool_id': 'str',
+        'pool_name': 'str',
         'pool_group_id': 'str',
         'flavor_detail': 'FlavorDetail',
         'main_container_allocated_resources': 'MainContainerAllocatedResources',
@@ -32,13 +33,14 @@ class Resource:
         'flavor_name': 'flavor_name',
         'node_count': 'node_count',
         'pool_id': 'pool_id',
+        'pool_name': 'pool_name',
         'pool_group_id': 'pool_group_id',
         'flavor_detail': 'flavor_detail',
         'main_container_allocated_resources': 'main_container_allocated_resources',
         'main_container_customized_flavor': 'main_container_customized_flavor'
     }
 
-    def __init__(self, policy=None, flavor_id=None, flavor_name=None, node_count=None, pool_id=None, pool_group_id=None, flavor_detail=None, main_container_allocated_resources=None, main_container_customized_flavor=None):
+    def __init__(self, policy=None, flavor_id=None, flavor_name=None, node_count=None, pool_id=None, pool_name=None, pool_group_id=None, flavor_detail=None, main_container_allocated_resources=None, main_container_customized_flavor=None):
         r"""Resource
 
         The model defined in huaweicloud sdk
@@ -53,6 +55,8 @@ class Resource:
         :type node_count: int
         :param pool_id: **参数解释**：训练作业选择的资源池ID。 **取值范围**：不涉及。
         :type pool_id: str
+        :param pool_name: **参数解释**：训练作业选择的资源池名称。 **取值范围**：不涉及。
+        :type pool_name: str
         :param pool_group_id: **参数解释**：训练作业选择的资源池联邦ID。 **取值范围**：不涉及。
         :type pool_group_id: str
         :param flavor_detail: 
@@ -70,6 +74,7 @@ class Resource:
         self._flavor_name = None
         self._node_count = None
         self._pool_id = None
+        self._pool_name = None
         self._pool_group_id = None
         self._flavor_detail = None
         self._main_container_allocated_resources = None
@@ -84,6 +89,8 @@ class Resource:
         self.node_count = node_count
         if pool_id is not None:
             self.pool_id = pool_id
+        if pool_name is not None:
+            self.pool_name = pool_name
         if pool_group_id is not None:
             self.pool_group_id = pool_group_id
         if flavor_detail is not None:
@@ -202,6 +209,28 @@ class Resource:
         :type pool_id: str
         """
         self._pool_id = pool_id
+
+    @property
+    def pool_name(self):
+        r"""Gets the pool_name of this Resource.
+
+        **参数解释**：训练作业选择的资源池名称。 **取值范围**：不涉及。
+
+        :return: The pool_name of this Resource.
+        :rtype: str
+        """
+        return self._pool_name
+
+    @pool_name.setter
+    def pool_name(self, pool_name):
+        r"""Sets the pool_name of this Resource.
+
+        **参数解释**：训练作业选择的资源池名称。 **取值范围**：不涉及。
+
+        :param pool_name: The pool_name of this Resource.
+        :type pool_name: str
+        """
+        self._pool_name = pool_name
 
     @property
     def pool_group_id(self):

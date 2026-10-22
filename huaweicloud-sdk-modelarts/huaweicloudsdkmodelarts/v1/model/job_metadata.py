@@ -41,7 +41,7 @@ class JobMetadata:
         :type workspace_id: str
         :param description: 对训练作业的描述，默认为“NULL”，字符串的长度限制为[0, 256]。
         :type description: str
-        :param annotations: 训练作业高级功能配置，可选取值如下： - \&quot;job_template\&quot;: \&quot;Template RL\&quot;（异构作业）。 - \&quot;fault-tolerance/job-retry-num\&quot;: \&quot;3\&quot;（故障自动重启次数）。 - \&quot;jupyter-lab/enable\&quot;: \&quot;true\&quot;（JupyterLab训练应用程序）
+        :param annotations: **参数解释**：训练作业高级功能配置。可选取值如下：   - \&quot;job_template\&quot;: \&quot;Template RL\&quot;（异构作业）   - \&quot;fault-tolerance/job-retry-num\&quot;: \&quot;3\&quot;（故障自动重启次数）   - \&quot;fault-tolerance/job-unconditional-retry\&quot;: \&quot;true\&quot;（无条件重启）   - \&quot;fault-tolerance/hang-retry\&quot;: \&quot;true\&quot;（卡死重启）   - \&quot;jupyter-lab/enable\&quot;: \&quot;true\&quot;（JupyterLab训练应用程序）   - \&quot;tensorboard/enable\&quot;: \&quot;true\&quot;（TensorBoard训练应用程序）   - \&quot;mindstudio-insight/enable\&quot;: \&quot;true\&quot;（MindStudio Insight训练应用程序）   - \&quot;fault-tolerance/hccl_op_retry\&quot;:\&quot;true\&quot;（算子重执行）   - \&quot;performance_diagnosis_enabled\&quot;:\&quot;true\&quot;（性能诊断功能）   - \&quot;record/code-dir\&quot;: \&quot;obs dir\&quot;（代码备份功能）   - \&quot;fault-tolerance/pod-retry-num\&quot;: \&quot;3\&quot;（Pod级故障自动重启次数） **约束限制**：不涉及。
         :type annotations: dict(str, str)
         :param training_experiment_reference: 
         :type training_experiment_reference: :class:`huaweicloudsdkmodelarts.v1.TrainingExperimentRequest`
@@ -136,7 +136,7 @@ class JobMetadata:
     def annotations(self):
         r"""Gets the annotations of this JobMetadata.
 
-        训练作业高级功能配置，可选取值如下： - \"job_template\": \"Template RL\"（异构作业）。 - \"fault-tolerance/job-retry-num\": \"3\"（故障自动重启次数）。 - \"jupyter-lab/enable\": \"true\"（JupyterLab训练应用程序）
+        **参数解释**：训练作业高级功能配置。可选取值如下：   - \"job_template\": \"Template RL\"（异构作业）   - \"fault-tolerance/job-retry-num\": \"3\"（故障自动重启次数）   - \"fault-tolerance/job-unconditional-retry\": \"true\"（无条件重启）   - \"fault-tolerance/hang-retry\": \"true\"（卡死重启）   - \"jupyter-lab/enable\": \"true\"（JupyterLab训练应用程序）   - \"tensorboard/enable\": \"true\"（TensorBoard训练应用程序）   - \"mindstudio-insight/enable\": \"true\"（MindStudio Insight训练应用程序）   - \"fault-tolerance/hccl_op_retry\":\"true\"（算子重执行）   - \"performance_diagnosis_enabled\":\"true\"（性能诊断功能）   - \"record/code-dir\": \"obs dir\"（代码备份功能）   - \"fault-tolerance/pod-retry-num\": \"3\"（Pod级故障自动重启次数） **约束限制**：不涉及。
 
         :return: The annotations of this JobMetadata.
         :rtype: dict(str, str)
@@ -147,7 +147,7 @@ class JobMetadata:
     def annotations(self, annotations):
         r"""Sets the annotations of this JobMetadata.
 
-        训练作业高级功能配置，可选取值如下： - \"job_template\": \"Template RL\"（异构作业）。 - \"fault-tolerance/job-retry-num\": \"3\"（故障自动重启次数）。 - \"jupyter-lab/enable\": \"true\"（JupyterLab训练应用程序）
+        **参数解释**：训练作业高级功能配置。可选取值如下：   - \"job_template\": \"Template RL\"（异构作业）   - \"fault-tolerance/job-retry-num\": \"3\"（故障自动重启次数）   - \"fault-tolerance/job-unconditional-retry\": \"true\"（无条件重启）   - \"fault-tolerance/hang-retry\": \"true\"（卡死重启）   - \"jupyter-lab/enable\": \"true\"（JupyterLab训练应用程序）   - \"tensorboard/enable\": \"true\"（TensorBoard训练应用程序）   - \"mindstudio-insight/enable\": \"true\"（MindStudio Insight训练应用程序）   - \"fault-tolerance/hccl_op_retry\":\"true\"（算子重执行）   - \"performance_diagnosis_enabled\":\"true\"（性能诊断功能）   - \"record/code-dir\": \"obs dir\"（代码备份功能）   - \"fault-tolerance/pod-retry-num\": \"3\"（Pod级故障自动重启次数） **约束限制**：不涉及。
 
         :param annotations: The annotations of this JobMetadata.
         :type annotations: dict(str, str)

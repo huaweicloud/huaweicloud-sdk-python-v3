@@ -15,36 +15,72 @@ class TaskV2RequestBody:
     sensitive_list = []
 
     openapi_types = {
+        'deploy_system': 'str',
         'template_id': 'str',
+        'ansible_type': 'int',
         'operation_list': 'list[DeployV2OperationsDO]'
     }
 
     attribute_map = {
+        'deploy_system': 'deploy_system',
         'template_id': 'template_id',
+        'ansible_type': 'ansible_type',
         'operation_list': 'operation_list'
     }
 
-    def __init__(self, template_id=None, operation_list=None):
+    def __init__(self, deploy_system=None, template_id=None, ansible_type=None, operation_list=None):
         r"""TaskV2RequestBody
 
         The model defined in huaweicloud sdk
 
+        :param deploy_system: 部署系统，deployTemplate：部署模板
+        :type deploy_system: str
         :param template_id: 模板id
         :type template_id: str
+        :param ansible_type: 是否切换新系统支持，1：是 0：否
+        :type ansible_type: int
         :param operation_list: 部署编排列表信息
         :type operation_list: list[:class:`huaweicloudsdkcodeartsdeploy.v2.DeployV2OperationsDO`]
         """
         
         
 
+        self._deploy_system = None
         self._template_id = None
+        self._ansible_type = None
         self._operation_list = None
         self.discriminator = None
 
+        if deploy_system is not None:
+            self.deploy_system = deploy_system
         if template_id is not None:
             self.template_id = template_id
+        if ansible_type is not None:
+            self.ansible_type = ansible_type
         if operation_list is not None:
             self.operation_list = operation_list
+
+    @property
+    def deploy_system(self):
+        r"""Gets the deploy_system of this TaskV2RequestBody.
+
+        部署系统，deployTemplate：部署模板
+
+        :return: The deploy_system of this TaskV2RequestBody.
+        :rtype: str
+        """
+        return self._deploy_system
+
+    @deploy_system.setter
+    def deploy_system(self, deploy_system):
+        r"""Sets the deploy_system of this TaskV2RequestBody.
+
+        部署系统，deployTemplate：部署模板
+
+        :param deploy_system: The deploy_system of this TaskV2RequestBody.
+        :type deploy_system: str
+        """
+        self._deploy_system = deploy_system
 
     @property
     def template_id(self):
@@ -67,6 +103,28 @@ class TaskV2RequestBody:
         :type template_id: str
         """
         self._template_id = template_id
+
+    @property
+    def ansible_type(self):
+        r"""Gets the ansible_type of this TaskV2RequestBody.
+
+        是否切换新系统支持，1：是 0：否
+
+        :return: The ansible_type of this TaskV2RequestBody.
+        :rtype: int
+        """
+        return self._ansible_type
+
+    @ansible_type.setter
+    def ansible_type(self, ansible_type):
+        r"""Sets the ansible_type of this TaskV2RequestBody.
+
+        是否切换新系统支持，1：是 0：否
+
+        :param ansible_type: The ansible_type of this TaskV2RequestBody.
+        :type ansible_type: int
+        """
+        self._ansible_type = ansible_type
 
     @property
     def operation_list(self):

@@ -21,7 +21,8 @@ class ServicePodResponse:
         'pod_node_name': 'str',
         'pod_role': 'str',
         'status': 'str',
-        'update_time': 'int'
+        'update_time': 'int',
+        'pod_role_name': 'str'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class ServicePodResponse:
         'pod_node_name': 'pod_node_name',
         'pod_role': 'pod_role',
         'status': 'status',
-        'update_time': 'update_time'
+        'update_time': 'update_time',
+        'pod_role_name': 'pod_role_name'
     }
 
-    def __init__(self, pod_id=None, pod_name=None, pod_node_ip=None, pod_node_name=None, pod_role=None, status=None, update_time=None):
+    def __init__(self, pod_id=None, pod_name=None, pod_node_ip=None, pod_node_name=None, pod_role=None, status=None, update_time=None, pod_role_name=None):
         r"""ServicePodResponse
 
         The model defined in huaweicloud sdk
@@ -53,6 +55,8 @@ class ServicePodResponse:
         :type status: str
         :param update_time: **参数解释：** 最近更新时间。 **取值范围：** 不涉及。
         :type update_time: int
+        :param pod_role_name: **参数解释：** pod所属单元名称。 **取值范围：** 不涉及。
+        :type pod_role_name: str
         """
         
         
@@ -64,6 +68,7 @@ class ServicePodResponse:
         self._pod_role = None
         self._status = None
         self._update_time = None
+        self._pod_role_name = None
         self.discriminator = None
 
         if pod_id is not None:
@@ -80,6 +85,8 @@ class ServicePodResponse:
             self.status = status
         if update_time is not None:
             self.update_time = update_time
+        if pod_role_name is not None:
+            self.pod_role_name = pod_role_name
 
     @property
     def pod_id(self):
@@ -234,6 +241,28 @@ class ServicePodResponse:
         :type update_time: int
         """
         self._update_time = update_time
+
+    @property
+    def pod_role_name(self):
+        r"""Gets the pod_role_name of this ServicePodResponse.
+
+        **参数解释：** pod所属单元名称。 **取值范围：** 不涉及。
+
+        :return: The pod_role_name of this ServicePodResponse.
+        :rtype: str
+        """
+        return self._pod_role_name
+
+    @pod_role_name.setter
+    def pod_role_name(self, pod_role_name):
+        r"""Sets the pod_role_name of this ServicePodResponse.
+
+        **参数解释：** pod所属单元名称。 **取值范围：** 不涉及。
+
+        :param pod_role_name: The pod_role_name of this ServicePodResponse.
+        :type pod_role_name: str
+        """
+        self._pod_role_name = pod_role_name
 
     def to_dict(self):
         result = {}

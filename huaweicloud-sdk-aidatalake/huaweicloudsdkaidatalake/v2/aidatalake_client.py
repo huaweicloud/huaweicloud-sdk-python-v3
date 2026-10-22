@@ -33,6 +33,2969 @@ class AIDataLakeClient(Client):
 
         return client_builder
 
+    def add_v2_tenant_image_version(self, request):
+        r"""添加自定义镜像版本
+
+        为已有镜像添加新版本。用户通过该接口为已注册的镜像添加新的版本。此接口为同步接口，无配套使用接口和特殊场景。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for AddV2TenantImageVersion
+        :type request: :class:`huaweicloudsdkaidatalake.v2.AddV2TenantImageVersionRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.AddV2TenantImageVersionResponse`
+        """
+        http_info = self._add_v2_tenant_image_version_http_info(request)
+        return self._call_api(**http_info)
+
+    def add_v2_tenant_image_version_invoker(self, request):
+        http_info = self._add_v2_tenant_image_version_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_v2_tenant_image_version_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/images/{image_id}/versions",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddV2TenantImageVersionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'image_id' in local_var_params:
+            path_params['image_id'] = local_var_params['image_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def attach_v2_agency_policy(self, request):
+        r"""附加策略
+
+        为委托附加策略。此接口为同步接口，无配套使用接口和特殊场景。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for AttachV2AgencyPolicy
+        :type request: :class:`huaweicloudsdkaidatalake.v2.AttachV2AgencyPolicyRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.AttachV2AgencyPolicyResponse`
+        """
+        http_info = self._attach_v2_agency_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def attach_v2_agency_policy_invoker(self, request):
+        http_info = self._attach_v2_agency_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _attach_v2_agency_policy_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/agencies/{agency_name}/policies",
+            "request_type": request.__class__.__name__,
+            "response_type": "AttachV2AgencyPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'agency_name' in local_var_params:
+            path_params['agency_name'] = local_var_params['agency_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_v2_agency(self, request):
+        r"""创建服务委托
+
+        创建服务委托，将指定权限策略授权给AI DataLake服务。用户可通过传入支持的委托权限策略，选择性地授予相应权限。此接口为同步接口，无配套使用接口和特殊场景。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateV2Agency
+        :type request: :class:`huaweicloudsdkaidatalake.v2.CreateV2AgencyRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.CreateV2AgencyResponse`
+        """
+        http_info = self._create_v2_agency_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_v2_agency_invoker(self, request):
+        http_info = self._create_v2_agency_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_v2_agency_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/agencies",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateV2AgencyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_v2_compute(self, request):
+        r"""创建计算资源
+
+        创建计算资源。此接口为异步接口，可通过[查询计算资源操作记录列表](ListV2ComputeVersions.xml)接口获取操作结果。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateV2Compute
+        :type request: :class:`huaweicloudsdkaidatalake.v2.CreateV2ComputeRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.CreateV2ComputeResponse`
+        """
+        http_info = self._create_v2_compute_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_v2_compute_invoker(self, request):
+        http_info = self._create_v2_compute_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_v2_compute_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/workspaces/{workspace_id}/computes",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateV2ComputeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_v2_endpoint(self, request):
+        r"""创建端点
+
+        在工作空间下创建端点。此接口为异步接口，可通过[查询端点详情](ShowV2Endpoint.xml)接口获取操作结果。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateV2Endpoint
+        :type request: :class:`huaweicloudsdkaidatalake.v2.CreateV2EndpointRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.CreateV2EndpointResponse`
+        """
+        http_info = self._create_v2_endpoint_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_v2_endpoint_invoker(self, request):
+        http_info = self._create_v2_endpoint_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_v2_endpoint_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/workspaces/{workspace_id}/endpoints",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateV2EndpointResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_v2_network(self, request):
+        r"""创建网络配置
+
+        创建网络配置，该工作空间下的资源都将使用该网络配置。此接口是同步接口。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateV2Network
+        :type request: :class:`huaweicloudsdkaidatalake.v2.CreateV2NetworkRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.CreateV2NetworkResponse`
+        """
+        http_info = self._create_v2_network_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_v2_network_invoker(self, request):
+        http_info = self._create_v2_network_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_v2_network_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/workspaces/{workspace_id}/networks",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateV2NetworkResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_v2_tenant_image_snapshot(self, request):
+        r"""创建镜像快照
+
+        为指定镜像版本创建快照。此接口为异步接口，一个镜像版本最多创建一个快照，创建后状态为Creating，可通过[查询镜像快照列表](ListV2TenantImageSnapshots.xml)获得镜像快照创建结果。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateV2TenantImageSnapshot
+        :type request: :class:`huaweicloudsdkaidatalake.v2.CreateV2TenantImageSnapshotRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.CreateV2TenantImageSnapshotResponse`
+        """
+        http_info = self._create_v2_tenant_image_snapshot_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_v2_tenant_image_snapshot_invoker(self, request):
+        http_info = self._create_v2_tenant_image_snapshot_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_v2_tenant_image_snapshot_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/images/{image_id}/versions/{version_id}/image-snapshots",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateV2TenantImageSnapshotResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'image_id' in local_var_params:
+            path_params['image_id'] = local_var_params['image_id']
+        if 'version_id' in local_var_params:
+            path_params['version_id'] = local_var_params['version_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_v2_workspace(self, request):
+        r"""创建工作空间
+
+        创建工作空间。创建工作空间接口存在同名校验，不支持创建重复名称的工作空间，并且同一账户下最多可创建5个工作空间。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateV2Workspace
+        :type request: :class:`huaweicloudsdkaidatalake.v2.CreateV2WorkspaceRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.CreateV2WorkspaceResponse`
+        """
+        http_info = self._create_v2_workspace_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_v2_workspace_invoker(self, request):
+        http_info = self._create_v2_workspace_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_v2_workspace_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/workspaces",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateV2WorkspaceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_v2_agency(self, request):
+        r"""删除服务委托
+
+        取消授权给AI DataLake服务的委托。此接口为同步接口，无配套使用接口和特殊场景。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteV2Agency
+        :type request: :class:`huaweicloudsdkaidatalake.v2.DeleteV2AgencyRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.DeleteV2AgencyResponse`
+        """
+        http_info = self._delete_v2_agency_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_v2_agency_invoker(self, request):
+        http_info = self._delete_v2_agency_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_v2_agency_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/agencies/{agency_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteV2AgencyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'agency_name' in local_var_params:
+            path_params['agency_name'] = local_var_params['agency_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_v2_agreement(self, request):
+        r"""删除用户签署协议
+
+        删除用户签署的协议。此接口为同步接口，无配套使用接口和特殊场景。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteV2Agreement
+        :type request: :class:`huaweicloudsdkaidatalake.v2.DeleteV2AgreementRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.DeleteV2AgreementResponse`
+        """
+        http_info = self._delete_v2_agreement_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_v2_agreement_invoker(self, request):
+        http_info = self._delete_v2_agreement_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_v2_agreement_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/agreement",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteV2AgreementResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_v2_compute(self, request):
+        r"""删除计算资源
+
+        删除计算资源，通过输入计算资源ID，返回操作结果。此接口为异步接口，可通过[查询计算资源操作记录列表](ListV2ComputeVersions.xml)接口获取操作结果。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteV2Compute
+        :type request: :class:`huaweicloudsdkaidatalake.v2.DeleteV2ComputeRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.DeleteV2ComputeResponse`
+        """
+        http_info = self._delete_v2_compute_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_v2_compute_invoker(self, request):
+        http_info = self._delete_v2_compute_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_v2_compute_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/workspaces/{workspace_id}/computes/{compute_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteV2ComputeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'compute_id' in local_var_params:
+            path_params['compute_id'] = local_var_params['compute_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_v2_endpoint(self, request):
+        r"""删除端点
+
+        删除端点。此接口为异步接口，可通过[查询端点详情](ShowV2Endpoint.xml)接口获取操作结果。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteV2Endpoint
+        :type request: :class:`huaweicloudsdkaidatalake.v2.DeleteV2EndpointRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.DeleteV2EndpointResponse`
+        """
+        http_info = self._delete_v2_endpoint_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_v2_endpoint_invoker(self, request):
+        http_info = self._delete_v2_endpoint_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_v2_endpoint_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/workspaces/{workspace_id}/endpoints/{endpoint_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteV2EndpointResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'endpoint_id' in local_var_params:
+            path_params['endpoint_id'] = local_var_params['endpoint_id']
+
+        query_params = []
+        if 'force' in local_var_params:
+            query_params.append(('force', local_var_params['force']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_v2_tenant_image(self, request):
+        r"""删除镜像下所有版本
+
+        删除指定镜像下的所有版本。此接口为同步接口，无配套使用接口和特殊场景。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteV2TenantImage
+        :type request: :class:`huaweicloudsdkaidatalake.v2.DeleteV2TenantImageRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.DeleteV2TenantImageResponse`
+        """
+        http_info = self._delete_v2_tenant_image_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_v2_tenant_image_invoker(self, request):
+        http_info = self._delete_v2_tenant_image_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_v2_tenant_image_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/images/{image_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteV2TenantImageResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'image_id' in local_var_params:
+            path_params['image_id'] = local_var_params['image_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_v2_tenant_image_snapshot(self, request):
+        r"""删除镜像快照
+
+        删除指定的镜像快照。创建中的快照不允许删除。此接口为同步接口，无配套使用接口和特殊场景。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteV2TenantImageSnapshot
+        :type request: :class:`huaweicloudsdkaidatalake.v2.DeleteV2TenantImageSnapshotRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.DeleteV2TenantImageSnapshotResponse`
+        """
+        http_info = self._delete_v2_tenant_image_snapshot_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_v2_tenant_image_snapshot_invoker(self, request):
+        http_info = self._delete_v2_tenant_image_snapshot_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_v2_tenant_image_snapshot_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/images/{image_id}/versions/{version_id}/image-snapshots/{image_snapshot_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteV2TenantImageSnapshotResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'image_id' in local_var_params:
+            path_params['image_id'] = local_var_params['image_id']
+        if 'version_id' in local_var_params:
+            path_params['version_id'] = local_var_params['version_id']
+        if 'image_snapshot_id' in local_var_params:
+            path_params['image_snapshot_id'] = local_var_params['image_snapshot_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_v2_tenant_image_version(self, request):
+        r"""删除指定镜像版本
+
+        删除指定镜像版本。此接口为同步接口，无配套使用接口和特殊场景。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteV2TenantImageVersion
+        :type request: :class:`huaweicloudsdkaidatalake.v2.DeleteV2TenantImageVersionRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.DeleteV2TenantImageVersionResponse`
+        """
+        http_info = self._delete_v2_tenant_image_version_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_v2_tenant_image_version_invoker(self, request):
+        http_info = self._delete_v2_tenant_image_version_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_v2_tenant_image_version_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/images/{image_id}/versions/{version_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteV2TenantImageVersionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'image_id' in local_var_params:
+            path_params['image_id'] = local_var_params['image_id']
+        if 'version_id' in local_var_params:
+            path_params['version_id'] = local_var_params['version_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_v2_workspace(self, request):
+        r"""删除工作空间
+
+        删除工作空间。此接口为同步接口，无配套使用接口。在该工作空间下存在计算资源、端点以及App的情况下无法删除，需要先清除该工作空间下创建的各种资源后才能删除。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteV2Workspace
+        :type request: :class:`huaweicloudsdkaidatalake.v2.DeleteV2WorkspaceRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.DeleteV2WorkspaceResponse`
+        """
+        http_info = self._delete_v2_workspace_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_v2_workspace_invoker(self, request):
+        http_info = self._delete_v2_workspace_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_v2_workspace_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/workspaces/{workspace_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteV2WorkspaceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def detach_v2_agency_policy(self, request):
+        r"""移除策略
+
+        为委托移除关联策略。此接口为同步接口，无配套使用接口和特殊场景。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DetachV2AgencyPolicy
+        :type request: :class:`huaweicloudsdkaidatalake.v2.DetachV2AgencyPolicyRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.DetachV2AgencyPolicyResponse`
+        """
+        http_info = self._detach_v2_agency_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def detach_v2_agency_policy_invoker(self, request):
+        http_info = self._detach_v2_agency_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _detach_v2_agency_policy_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/agencies/{agency_name}/policies/{policy_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DetachV2AgencyPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'agency_name' in local_var_params:
+            path_params['agency_name'] = local_var_params['agency_name']
+        if 'policy_name' in local_var_params:
+            path_params['policy_name'] = local_var_params['policy_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_v2_agreement_rule(self, request):
+        r"""查询系统协议
+
+        查询系统内置的租户协议内容列表，用户可从中了解协议名称、版本等信息。该接口为同步接口，无配套使用接口和特殊场景。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListV2AgreementRule
+        :type request: :class:`huaweicloudsdkaidatalake.v2.ListV2AgreementRuleRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.ListV2AgreementRuleResponse`
+        """
+        http_info = self._list_v2_agreement_rule_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_v2_agreement_rule_invoker(self, request):
+        http_info = self._list_v2_agreement_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_v2_agreement_rule_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/agreement/rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListV2AgreementRuleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_v2_all_endpoints(self, request):
+        r"""查询所有端点列表
+
+        列举该租户所有端点列表。此接口为同步接口。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListV2AllEndpoints
+        :type request: :class:`huaweicloudsdkaidatalake.v2.ListV2AllEndpointsRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.ListV2AllEndpointsResponse`
+        """
+        http_info = self._list_v2_all_endpoints_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_v2_all_endpoints_invoker(self, request):
+        http_info = self._list_v2_all_endpoints_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_v2_all_endpoints_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/endpoints",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListV2AllEndpointsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'engine_types' in local_var_params:
+            query_params.append(('engine_types', local_var_params['engine_types']))
+            collection_formats['engine_types'] = 'multi'
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
+            collection_formats['tags'] = 'multi'
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_v2_compute_versions(self, request):
+        r"""查询计算资源操作记录列表
+
+        查询计算资源操作记录列表。此接口为同步接口。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListV2ComputeVersions
+        :type request: :class:`huaweicloudsdkaidatalake.v2.ListV2ComputeVersionsRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.ListV2ComputeVersionsResponse`
+        """
+        http_info = self._list_v2_compute_versions_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_v2_compute_versions_invoker(self, request):
+        http_info = self._list_v2_compute_versions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_v2_compute_versions_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/workspaces/{workspace_id}/computes/versions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListV2ComputeVersionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+
+        query_params = []
+        if 'compute_id' in local_var_params:
+            query_params.append(('compute_id', local_var_params['compute_id']))
+        if 'operation_result' in local_var_params:
+            query_params.append(('operation_result', local_var_params['operation_result']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_v2_computes(self, request):
+        r"""查询计算资源列表
+
+        查询工作空间下的计算资源列表。此接口为同步接口。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListV2Computes
+        :type request: :class:`huaweicloudsdkaidatalake.v2.ListV2ComputesRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.ListV2ComputesResponse`
+        """
+        http_info = self._list_v2_computes_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_v2_computes_invoker(self, request):
+        http_info = self._list_v2_computes_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_v2_computes_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/workspaces/{workspace_id}/computes",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListV2ComputesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'compute_id' in local_var_params:
+            query_params.append(('compute_id', local_var_params['compute_id']))
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
+            collection_formats['tags'] = 'multi'
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_v2_endpoints(self, request):
+        r"""查询端点列表
+
+        列举工作空间下的端点列表。用户可使用该接口列举指定工作空间下的端点列表，支持输入名称、id等参数过滤，支持分页查询。此接口为同步接口。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListV2Endpoints
+        :type request: :class:`huaweicloudsdkaidatalake.v2.ListV2EndpointsRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.ListV2EndpointsResponse`
+        """
+        http_info = self._list_v2_endpoints_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_v2_endpoints_invoker(self, request):
+        http_info = self._list_v2_endpoints_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_v2_endpoints_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/workspaces/{workspace_id}/endpoints",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListV2EndpointsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+
+        query_params = []
+        if 'engine_types' in local_var_params:
+            query_params.append(('engine_types', local_var_params['engine_types']))
+            collection_formats['engine_types'] = 'multi'
+        if 'compute_id' in local_var_params:
+            query_params.append(('compute_id', local_var_params['compute_id']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'storage_id' in local_var_params:
+            query_params.append(('storage_id', local_var_params['storage_id']))
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
+            collection_formats['tags'] = 'multi'
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_v2_networks(self, request):
+        r"""查询网络配置列表
+
+        查询工作空间下的网络配置列表。接口支持分页查询。此接口为同步接口。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListV2Networks
+        :type request: :class:`huaweicloudsdkaidatalake.v2.ListV2NetworksRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.ListV2NetworksResponse`
+        """
+        http_info = self._list_v2_networks_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_v2_networks_invoker(self, request):
+        http_info = self._list_v2_networks_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_v2_networks_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/workspaces/{workspace_id}/networks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListV2NetworksResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_v2_tenant_image_snapshots(self, request):
+        r"""查询镜像快照列表
+
+        查询当前租户下的全部镜像快照列表。此接口为同步接口，无配套使用接口和特殊场景。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListV2TenantImageSnapshots
+        :type request: :class:`huaweicloudsdkaidatalake.v2.ListV2TenantImageSnapshotsRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.ListV2TenantImageSnapshotsResponse`
+        """
+        http_info = self._list_v2_tenant_image_snapshots_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_v2_tenant_image_snapshots_invoker(self, request):
+        http_info = self._list_v2_tenant_image_snapshots_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_v2_tenant_image_snapshots_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/image-snapshots",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListV2TenantImageSnapshotsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_v2_tenant_image_versions(self, request):
+        r"""查询自定义镜像版本列表
+
+        查询自定义镜像版本列表。用户可查询指定镜像下的所有版本信息。此接口为同步接口，无配套使用接口和特殊场景。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListV2TenantImageVersions
+        :type request: :class:`huaweicloudsdkaidatalake.v2.ListV2TenantImageVersionsRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.ListV2TenantImageVersionsResponse`
+        """
+        http_info = self._list_v2_tenant_image_versions_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_v2_tenant_image_versions_invoker(self, request):
+        http_info = self._list_v2_tenant_image_versions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_v2_tenant_image_versions_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/images/{image_id}/versions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListV2TenantImageVersionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'image_id' in local_var_params:
+            path_params['image_id'] = local_var_params['image_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'version' in local_var_params:
+            query_params.append(('version', local_var_params['version']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'architectures' in local_var_params:
+            query_params.append(('architectures', local_var_params['architectures']))
+        if 'workspace_id' in local_var_params:
+            query_params.append(('workspace_id', local_var_params['workspace_id']))
+        if 'endpoint_id' in local_var_params:
+            query_params.append(('endpoint_id', local_var_params['endpoint_id']))
+        if 'sort_by' in local_var_params:
+            query_params.append(('sort_by', local_var_params['sort_by']))
+        if 'order_by' in local_var_params:
+            query_params.append(('order_by', local_var_params['order_by']))
+        if 'tenant_id' in local_var_params:
+            query_params.append(('tenantId', local_var_params['tenant_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_v2_tenant_images(self, request):
+        r"""查询自定义镜像列表。
+
+        查询自定义镜像列表。用户可查询已创建的自定义镜像列表。此接口为同步接口，无配套使用接口和特殊场景。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListV2TenantImages
+        :type request: :class:`huaweicloudsdkaidatalake.v2.ListV2TenantImagesRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.ListV2TenantImagesResponse`
+        """
+        http_info = self._list_v2_tenant_images_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_v2_tenant_images_invoker(self, request):
+        http_info = self._list_v2_tenant_images_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_v2_tenant_images_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/images",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListV2TenantImagesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'sort_by' in local_var_params:
+            query_params.append(('sort_by', local_var_params['sort_by']))
+        if 'order_by' in local_var_params:
+            query_params.append(('order_by', local_var_params['order_by']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'category' in local_var_params:
+            query_params.append(('category', local_var_params['category']))
+        if 'namespace' in local_var_params:
+            query_params.append(('namespace', local_var_params['namespace']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'visibility' in local_var_params:
+            query_params.append(('visibility', local_var_params['visibility']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_v2_workspaces(self, request):
+        r"""查询工作空间列表
+
+        查询工作空间列表。此接口为同步接口。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListV2Workspaces
+        :type request: :class:`huaweicloudsdkaidatalake.v2.ListV2WorkspacesRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.ListV2WorkspacesResponse`
+        """
+        http_info = self._list_v2_workspaces_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_v2_workspaces_invoker(self, request):
+        http_info = self._list_v2_workspaces_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_v2_workspaces_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/workspaces",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListV2WorkspacesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
+            collection_formats['tags'] = 'multi'
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def register_v2_tenant_image(self, request):
+        r"""注册自定义镜像
+
+        注册自定义镜像。用户通过该接口将外部镜像仓库中的镜像注册到租户中，以便后续使用。与[添加自定义镜像版本](AddV2ImageVersion.xml)接口配合完成镜像版本的添加。此接口为同步接口。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for RegisterV2TenantImage
+        :type request: :class:`huaweicloudsdkaidatalake.v2.RegisterV2TenantImageRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.RegisterV2TenantImageResponse`
+        """
+        http_info = self._register_v2_tenant_image_http_info(request)
+        return self._call_api(**http_info)
+
+    def register_v2_tenant_image_invoker(self, request):
+        http_info = self._register_v2_tenant_image_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _register_v2_tenant_image_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/images",
+            "request_type": request.__class__.__name__,
+            "response_type": "RegisterV2TenantImageResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_v2_agency(self, request):
+        r"""查询服务委托
+
+        查询授权给AI DataLake服务的委托。用户调用该接口查询已授权给AI DataLake的委托，以及委托中具体的权限内容。此接口为同步接口，无配套使用接口和特殊场景。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowV2Agency
+        :type request: :class:`huaweicloudsdkaidatalake.v2.ShowV2AgencyRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.ShowV2AgencyResponse`
+        """
+        http_info = self._show_v2_agency_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_v2_agency_invoker(self, request):
+        http_info = self._show_v2_agency_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_v2_agency_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/agencies/{agency_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowV2AgencyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'agency_name' in local_var_params:
+            path_params['agency_name'] = local_var_params['agency_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_v2_agreement(self, request):
+        r"""查询用户是否签署协议
+
+        查询用户是否签署协议。此接口为同步接口，无配套使用接口和特殊场景。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowV2Agreement
+        :type request: :class:`huaweicloudsdkaidatalake.v2.ShowV2AgreementRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.ShowV2AgreementResponse`
+        """
+        http_info = self._show_v2_agreement_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_v2_agreement_invoker(self, request):
+        http_info = self._show_v2_agreement_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_v2_agreement_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/agreement",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowV2AgreementResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_v2_compute(self, request):
+        r"""查看计算资源详情
+
+        查看指定计算资源的详细信息。此接口为同步接口。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowV2Compute
+        :type request: :class:`huaweicloudsdkaidatalake.v2.ShowV2ComputeRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.ShowV2ComputeResponse`
+        """
+        http_info = self._show_v2_compute_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_v2_compute_invoker(self, request):
+        http_info = self._show_v2_compute_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_v2_compute_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/workspaces/{workspace_id}/computes/{compute_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowV2ComputeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'compute_id' in local_var_params:
+            path_params['compute_id'] = local_var_params['compute_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_v2_computes_metrics(self, request):
+        r"""查询资源池监控
+
+        查询资源池监控CPU、MEM、NPU、GPU数据。此接口为同步接口，无配套使用接口和特殊场景。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowV2ComputesMetrics
+        :type request: :class:`huaweicloudsdkaidatalake.v2.ShowV2ComputesMetricsRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.ShowV2ComputesMetricsResponse`
+        """
+        http_info = self._show_v2_computes_metrics_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_v2_computes_metrics_invoker(self, request):
+        http_info = self._show_v2_computes_metrics_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_v2_computes_metrics_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/workspaces/{workspace_id}/computes/metrics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowV2ComputesMetricsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+
+        query_params = []
+        if 'step' in local_var_params:
+            query_params.append(('step', local_var_params['step']))
+        if 'metric_name' in local_var_params:
+            query_params.append(('metric_name', local_var_params['metric_name']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'compute_ids' in local_var_params:
+            query_params.append(('compute_ids', local_var_params['compute_ids']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_v2_endpoint(self, request):
+        r"""查询端点详情
+
+        列举工作空间下的端点详情。此接口为同步接口，无配套使用接口和特殊场景。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowV2Endpoint
+        :type request: :class:`huaweicloudsdkaidatalake.v2.ShowV2EndpointRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.ShowV2EndpointResponse`
+        """
+        http_info = self._show_v2_endpoint_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_v2_endpoint_invoker(self, request):
+        http_info = self._show_v2_endpoint_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_v2_endpoint_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/workspaces/{workspace_id}/endpoints/{endpoint_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowV2EndpointResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'endpoint_id' in local_var_params:
+            path_params['endpoint_id'] = local_var_params['endpoint_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_v2_endpoint_resource_limit(self, request):
+        r"""查询端点配置限制
+
+        查询指定资源池各规格的端点配置限制。此接口为同步接口，无配套使用接口和特殊场景。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowV2EndpointResourceLimit
+        :type request: :class:`huaweicloudsdkaidatalake.v2.ShowV2EndpointResourceLimitRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.ShowV2EndpointResourceLimitResponse`
+        """
+        http_info = self._show_v2_endpoint_resource_limit_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_v2_endpoint_resource_limit_invoker(self, request):
+        http_info = self._show_v2_endpoint_resource_limit_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_v2_endpoint_resource_limit_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/workspaces/{workspace_id}/endpoint-limit",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowV2EndpointResourceLimitResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+
+        query_params = []
+        if 'engine_type' in local_var_params:
+            query_params.append(('engine_type', local_var_params['engine_type']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'compute_id' in local_var_params:
+            query_params.append(('compute_id', local_var_params['compute_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_v2_endpoints_metrics(self, request):
+        r"""查询端点监控
+
+        查询端点CPU、MEM、NPU、GPU监控数据。此接口为同步接口。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowV2EndpointsMetrics
+        :type request: :class:`huaweicloudsdkaidatalake.v2.ShowV2EndpointsMetricsRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.ShowV2EndpointsMetricsResponse`
+        """
+        http_info = self._show_v2_endpoints_metrics_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_v2_endpoints_metrics_invoker(self, request):
+        http_info = self._show_v2_endpoints_metrics_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_v2_endpoints_metrics_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/workspaces/{workspace_id}/endpoints/{endpoint_id}/metrics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowV2EndpointsMetricsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'endpoint_id' in local_var_params:
+            path_params['endpoint_id'] = local_var_params['endpoint_id']
+
+        query_params = []
+        if 'step' in local_var_params:
+            query_params.append(('step', local_var_params['step']))
+        if 'metric_name' in local_var_params:
+            query_params.append(('metric_name', local_var_params['metric_name']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_v2_tenant_image(self, request):
+        r"""查询镜像详情
+
+        查询指定镜像的详细信息。此接口为同步接口，无配套使用接口和特殊场景。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowV2TenantImage
+        :type request: :class:`huaweicloudsdkaidatalake.v2.ShowV2TenantImageRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.ShowV2TenantImageResponse`
+        """
+        http_info = self._show_v2_tenant_image_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_v2_tenant_image_invoker(self, request):
+        http_info = self._show_v2_tenant_image_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_v2_tenant_image_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/images/{image_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowV2TenantImageResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'image_id' in local_var_params:
+            path_params['image_id'] = local_var_params['image_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_v2_tenant_image_version(self, request):
+        r"""查询自定义镜像版本
+
+        查询自定义镜像版本。用户可查询指定镜像版本的详细信息。此接口为同步接口，无配套使用接口和特殊场景。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowV2TenantImageVersion
+        :type request: :class:`huaweicloudsdkaidatalake.v2.ShowV2TenantImageVersionRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.ShowV2TenantImageVersionResponse`
+        """
+        http_info = self._show_v2_tenant_image_version_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_v2_tenant_image_version_invoker(self, request):
+        http_info = self._show_v2_tenant_image_version_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_v2_tenant_image_version_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/images/{image_id}/versions/{version_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowV2TenantImageVersionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'image_id' in local_var_params:
+            path_params['image_id'] = local_var_params['image_id']
+        if 'version_id' in local_var_params:
+            path_params['version_id'] = local_var_params['version_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_v2_workspace(self, request):
+        r"""查询工作空间详细信息
+
+        查询工作空间详细信息。用户可通过该接口查询某工作空间详情，输入为工作空间ID，返回对应工作空间详情。此接口为同步接口，无配套使用接口和特殊场景。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowV2Workspace
+        :type request: :class:`huaweicloudsdkaidatalake.v2.ShowV2WorkspaceRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.ShowV2WorkspaceResponse`
+        """
+        http_info = self._show_v2_workspace_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_v2_workspace_invoker(self, request):
+        http_info = self._show_v2_workspace_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_v2_workspace_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/workspaces/{workspace_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowV2WorkspaceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def sign_v2_agreement(self, request):
+        r"""签署租户协议
+
+        签署租户协议，用户通过该接口签署租户协议。此接口为同步接口，无配套使用接口和特殊场景。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for SignV2Agreement
+        :type request: :class:`huaweicloudsdkaidatalake.v2.SignV2AgreementRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.SignV2AgreementResponse`
+        """
+        http_info = self._sign_v2_agreement_http_info(request)
+        return self._call_api(**http_info)
+
+    def sign_v2_agreement_invoker(self, request):
+        http_info = self._sign_v2_agreement_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _sign_v2_agreement_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/agreement",
+            "request_type": request.__class__.__name__,
+            "response_type": "SignV2AgreementResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_v2_compute(self, request):
+        r"""更新计算资源
+
+        更新指定计算资源的配置信息。此接口为异步接口，可通过[查询计算资源操作记录列表](ListV2ComputeVersions.xml)接口获取操作结果。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateV2Compute
+        :type request: :class:`huaweicloudsdkaidatalake.v2.UpdateV2ComputeRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.UpdateV2ComputeResponse`
+        """
+        http_info = self._update_v2_compute_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_v2_compute_invoker(self, request):
+        http_info = self._update_v2_compute_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_v2_compute_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/workspaces/{workspace_id}/computes/{compute_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateV2ComputeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'compute_id' in local_var_params:
+            path_params['compute_id'] = local_var_params['compute_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_v2_endpoint(self, request):
+        r"""更新端点
+
+        更新端点。此接口为异步接口，可通过[查询端点详情](ShowV2Endpoint.xml)接口获取操作结果。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateV2Endpoint
+        :type request: :class:`huaweicloudsdkaidatalake.v2.UpdateV2EndpointRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.UpdateV2EndpointResponse`
+        """
+        http_info = self._update_v2_endpoint_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_v2_endpoint_invoker(self, request):
+        http_info = self._update_v2_endpoint_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_v2_endpoint_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/workspaces/{workspace_id}/endpoints/{endpoint_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateV2EndpointResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'endpoint_id' in local_var_params:
+            path_params['endpoint_id'] = local_var_params['endpoint_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_v2_tenant_image_version(self, request):
+        r"""更新自定义镜像版本
+
+        更新自定义镜像版本信息。用户通过该接口更新指定镜像版本的描述、架构、容器软件、分类等信息。与[注册自定义镜像](RegisterV2Image.xml)接口配合完成镜像版本管理。此接口为同步接口。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateV2TenantImageVersion
+        :type request: :class:`huaweicloudsdkaidatalake.v2.UpdateV2TenantImageVersionRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.UpdateV2TenantImageVersionResponse`
+        """
+        http_info = self._update_v2_tenant_image_version_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_v2_tenant_image_version_invoker(self, request):
+        http_info = self._update_v2_tenant_image_version_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_v2_tenant_image_version_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/images/{image_id}/versions/{version_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateV2TenantImageVersionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'image_id' in local_var_params:
+            path_params['image_id'] = local_var_params['image_id']
+        if 'version_id' in local_var_params:
+            path_params['version_id'] = local_var_params['version_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_v2_workspace(self, request):
+        r"""更新工作空间
+
+        更新工作空间。此接口为同步接口，无配套使用接口和特殊场景。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateV2Workspace
+        :type request: :class:`huaweicloudsdkaidatalake.v2.UpdateV2WorkspaceRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.UpdateV2WorkspaceResponse`
+        """
+        http_info = self._update_v2_workspace_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_v2_workspace_invoker(self, request):
+        http_info = self._update_v2_workspace_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_v2_workspace_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/workspaces/{workspace_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateV2WorkspaceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def cancel_aura_dataframe_job(self, request):
         r"""取消Aura Dataframe Job
 
@@ -906,7 +3869,7 @@ class AIDataLakeClient(Client):
         return http_info
 
     def show_aura_sql_statement_result(self, request):
-        r"""查看SQL执行结果。
+        r"""查看SQL执行结果
 
         查询SQL语句执行结果。
         用户可通过该接口查询SQL语句执行结果，输入为SQL Session id、statement id，返回执行结果。
@@ -2071,31 +5034,31 @@ class AIDataLakeClient(Client):
 
         return http_info
 
-    def create_federation(self, request):
+    def create_v2_ray_federation(self, request):
         r"""创建Ray联邦端点
 
         创建Ray联邦端点。此接口为同步接口。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
-        :param request: Request instance for CreateFederation
-        :type request: :class:`huaweicloudsdkaidatalake.v2.CreateFederationRequest`
-        :rtype: :class:`huaweicloudsdkaidatalake.v2.CreateFederationResponse`
+        :param request: Request instance for CreateV2RayFederation
+        :type request: :class:`huaweicloudsdkaidatalake.v2.CreateV2RayFederationRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.CreateV2RayFederationResponse`
         """
-        http_info = self._create_federation_http_info(request)
+        http_info = self._create_v2_ray_federation_http_info(request)
         return self._call_api(**http_info)
 
-    def create_federation_invoker(self, request):
-        http_info = self._create_federation_http_info(request)
+    def create_v2_ray_federation_invoker(self, request):
+        http_info = self._create_v2_ray_federation_http_info(request)
         return SyncInvoker(self, http_info)
 
     @classmethod
-    def _create_federation_http_info(cls, request):
+    def _create_v2_ray_federation_http_info(cls, request):
         http_info = {
             "method": "POST",
             "resource_path": "/v2/workspaces/{workspace_id}/ray-federations",
             "request_type": request.__class__.__name__,
-            "response_type": "CreateFederationResponse"
+            "response_type": "CreateV2RayFederationResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -2138,31 +5101,31 @@ class AIDataLakeClient(Client):
 
         return http_info
 
-    def delete_federation(self, request):
+    def delete_v2_ray_federation(self, request):
         r"""删除Ray联邦端点
 
         删除Ray联邦端点。此接口为同步接口。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
-        :param request: Request instance for DeleteFederation
-        :type request: :class:`huaweicloudsdkaidatalake.v2.DeleteFederationRequest`
-        :rtype: :class:`huaweicloudsdkaidatalake.v2.DeleteFederationResponse`
+        :param request: Request instance for DeleteV2RayFederation
+        :type request: :class:`huaweicloudsdkaidatalake.v2.DeleteV2RayFederationRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.DeleteV2RayFederationResponse`
         """
-        http_info = self._delete_federation_http_info(request)
+        http_info = self._delete_v2_ray_federation_http_info(request)
         return self._call_api(**http_info)
 
-    def delete_federation_invoker(self, request):
-        http_info = self._delete_federation_http_info(request)
+    def delete_v2_ray_federation_invoker(self, request):
+        http_info = self._delete_v2_ray_federation_http_info(request)
         return SyncInvoker(self, http_info)
 
     @classmethod
-    def _delete_federation_http_info(cls, request):
+    def _delete_v2_ray_federation_http_info(cls, request):
         http_info = {
             "method": "DELETE",
             "resource_path": "/v2/workspaces/{workspace_id}/ray-federations/{ray_federation_id}",
             "request_type": request.__class__.__name__,
-            "response_type": "DeleteFederationResponse"
+            "response_type": "DeleteV2RayFederationResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -2205,31 +5168,31 @@ class AIDataLakeClient(Client):
 
         return http_info
 
-    def list_federations(self, request):
+    def list_v2_ray_federations(self, request):
         r"""查询Ray联邦端点列表
 
         查询工作空间下的Ray联邦端点列表。此接口为同步接口。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
-        :param request: Request instance for ListFederations
-        :type request: :class:`huaweicloudsdkaidatalake.v2.ListFederationsRequest`
-        :rtype: :class:`huaweicloudsdkaidatalake.v2.ListFederationsResponse`
+        :param request: Request instance for ListV2RayFederations
+        :type request: :class:`huaweicloudsdkaidatalake.v2.ListV2RayFederationsRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.ListV2RayFederationsResponse`
         """
-        http_info = self._list_federations_http_info(request)
+        http_info = self._list_v2_ray_federations_http_info(request)
         return self._call_api(**http_info)
 
-    def list_federations_invoker(self, request):
-        http_info = self._list_federations_http_info(request)
+    def list_v2_ray_federations_invoker(self, request):
+        http_info = self._list_v2_ray_federations_http_info(request)
         return SyncInvoker(self, http_info)
 
     @classmethod
-    def _list_federations_http_info(cls, request):
+    def _list_v2_ray_federations_http_info(cls, request):
         http_info = {
             "method": "GET",
             "resource_path": "/v2/workspaces/{workspace_id}/ray-federations",
             "request_type": request.__class__.__name__,
-            "response_type": "ListFederationsResponse"
+            "response_type": "ListV2RayFederationsResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -2276,31 +5239,31 @@ class AIDataLakeClient(Client):
 
         return http_info
 
-    def show_federation(self, request):
+    def show_v2_ray_federation(self, request):
         r"""查询Ray联邦端点详情
 
         查询Ray联邦端点详情。此接口为同步接口。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
-        :param request: Request instance for ShowFederation
-        :type request: :class:`huaweicloudsdkaidatalake.v2.ShowFederationRequest`
-        :rtype: :class:`huaweicloudsdkaidatalake.v2.ShowFederationResponse`
+        :param request: Request instance for ShowV2RayFederation
+        :type request: :class:`huaweicloudsdkaidatalake.v2.ShowV2RayFederationRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.ShowV2RayFederationResponse`
         """
-        http_info = self._show_federation_http_info(request)
+        http_info = self._show_v2_ray_federation_http_info(request)
         return self._call_api(**http_info)
 
-    def show_federation_invoker(self, request):
-        http_info = self._show_federation_http_info(request)
+    def show_v2_ray_federation_invoker(self, request):
+        http_info = self._show_v2_ray_federation_http_info(request)
         return SyncInvoker(self, http_info)
 
     @classmethod
-    def _show_federation_http_info(cls, request):
+    def _show_v2_ray_federation_http_info(cls, request):
         http_info = {
             "method": "GET",
             "resource_path": "/v2/workspaces/{workspace_id}/ray-federations/{ray_federation_id}",
             "request_type": request.__class__.__name__,
-            "response_type": "ShowFederationResponse"
+            "response_type": "ShowV2RayFederationResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -2343,31 +5306,31 @@ class AIDataLakeClient(Client):
 
         return http_info
 
-    def update_federation(self, request):
+    def update_v2_ray_federation(self, request):
         r"""更新Ray联邦端点
 
         更新Ray联邦端点。此接口为同步接口。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
-        :param request: Request instance for UpdateFederation
-        :type request: :class:`huaweicloudsdkaidatalake.v2.UpdateFederationRequest`
-        :rtype: :class:`huaweicloudsdkaidatalake.v2.UpdateFederationResponse`
+        :param request: Request instance for UpdateV2RayFederation
+        :type request: :class:`huaweicloudsdkaidatalake.v2.UpdateV2RayFederationRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.UpdateV2RayFederationResponse`
         """
-        http_info = self._update_federation_http_info(request)
+        http_info = self._update_v2_ray_federation_http_info(request)
         return self._call_api(**http_info)
 
-    def update_federation_invoker(self, request):
-        http_info = self._update_federation_http_info(request)
+    def update_v2_ray_federation_invoker(self, request):
+        http_info = self._update_v2_ray_federation_http_info(request)
         return SyncInvoker(self, http_info)
 
     @classmethod
-    def _update_federation_http_info(cls, request):
+    def _update_v2_ray_federation_http_info(cls, request):
         http_info = {
             "method": "PUT",
             "resource_path": "/v2/workspaces/{workspace_id}/ray-federations/{ray_federation_id}",
             "request_type": request.__class__.__name__,
-            "response_type": "UpdateFederationResponse"
+            "response_type": "UpdateV2RayFederationResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -3744,6 +6707,445 @@ class AIDataLakeClient(Client):
             body = request.get_file_stream()
 
         response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_create_v2_resource_tags(self, request):
+        r"""批量添加资源标签
+
+        资源批量添加标签。此接口为同步接口，无配套使用接口。创建时，不允许设置重复key数据，如果数据库已存在该key，就覆盖value的值。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchCreateV2ResourceTags
+        :type request: :class:`huaweicloudsdkaidatalake.v2.BatchCreateV2ResourceTagsRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.BatchCreateV2ResourceTagsResponse`
+        """
+        http_info = self._batch_create_v2_resource_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_create_v2_resource_tags_invoker(self, request):
+        http_info = self._batch_create_v2_resource_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_create_v2_resource_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/{resource_type}/{resource_id}/tags/create",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateV2ResourceTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_delete_v2_resource_tags(self, request):
+        r"""批量删除资源标签
+
+        标签资源批量删除标签。此接口为同步接口，无配套使用接口。删除时，如果删除的标签不存在，默认处理成功，删除时不对标签字符集范围做校验。删除时tags结构体不能缺失，key不能为空或者空字符串。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchDeleteV2ResourceTags
+        :type request: :class:`huaweicloudsdkaidatalake.v2.BatchDeleteV2ResourceTagsRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.BatchDeleteV2ResourceTagsResponse`
+        """
+        http_info = self._batch_delete_v2_resource_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_v2_resource_tags_invoker(self, request):
+        http_info = self._batch_delete_v2_resource_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_v2_resource_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/{resource_type}/{resource_id}/tags/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteV2ResourceTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def count_v2_tag_resources(self, request):
+        r"""查询资源实例数量
+
+        通过标签查询资源实例数量。此接口为同步接口，无配套使用接口和特殊场景。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CountV2TagResources
+        :type request: :class:`huaweicloudsdkaidatalake.v2.CountV2TagResourcesRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.CountV2TagResourcesResponse`
+        """
+        http_info = self._count_v2_tag_resources_http_info(request)
+        return self._call_api(**http_info)
+
+    def count_v2_tag_resources_invoker(self, request):
+        http_info = self._count_v2_tag_resources_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _count_v2_tag_resources_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/{resource_type}/resource-instances/count",
+            "request_type": request.__class__.__name__,
+            "response_type": "CountV2TagResourcesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
+
+        query_params = []
+        if 'engine_types' in local_var_params:
+            query_params.append(('engine_types', local_var_params['engine_types']))
+            collection_formats['engine_types'] = 'multi'
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_v2_project_tags(self, request):
+        r"""查询项目标签
+
+        查询指定项目关联的标签列表。此接口为同步接口，无配套使用接口和特殊场景。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListV2ProjectTags
+        :type request: :class:`huaweicloudsdkaidatalake.v2.ListV2ProjectTagsRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.ListV2ProjectTagsResponse`
+        """
+        http_info = self._list_v2_project_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_v2_project_tags_invoker(self, request):
+        http_info = self._list_v2_project_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_v2_project_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/{resource_type}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListV2ProjectTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
+
+        query_params = []
+        if 'use_predefine_tags' in local_var_params:
+            query_params.append(('use_predefine_tags', local_var_params['use_predefine_tags']))
+        if 'engine_types' in local_var_params:
+            query_params.append(('engine_types', local_var_params['engine_types']))
+            collection_formats['engine_types'] = 'multi'
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_v2_resource_tags(self, request):
+        r"""查询资源标签
+
+        查询资源的标签。用于查询资源的标签，返回对应资源的标签。此接口为同步接口，无配套使用接口和特殊场景。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListV2ResourceTags
+        :type request: :class:`huaweicloudsdkaidatalake.v2.ListV2ResourceTagsRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.ListV2ResourceTagsResponse`
+        """
+        http_info = self._list_v2_resource_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_v2_resource_tags_invoker(self, request):
+        http_info = self._list_v2_resource_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_v2_resource_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/{resource_type}/{resource_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListV2ResourceTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_v2_tag_resources(self, request):
+        r"""查询资源实例列表
+
+        通过标签查询资源列表。此接口为同步接口，无配套使用接口和特殊场景。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListV2TagResources
+        :type request: :class:`huaweicloudsdkaidatalake.v2.ListV2TagResourcesRequest`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.ListV2TagResourcesResponse`
+        """
+        http_info = self._list_v2_tag_resources_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_v2_tag_resources_invoker(self, request):
+        http_info = self._list_v2_tag_resources_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_v2_tag_resources_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/{resource_type}/resource-instances/filter",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListV2TagResourcesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
+
+        query_params = []
+        if 'engine_types' in local_var_params:
+            query_params.append(('engine_types', local_var_params['engine_types']))
+            collection_formats['engine_types'] = 'multi'
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])

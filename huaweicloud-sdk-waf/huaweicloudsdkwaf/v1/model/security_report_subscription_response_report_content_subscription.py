@@ -26,7 +26,7 @@ class SecurityReportSubscriptionResponseReportContentSubscription:
         'top_attack_source_ips_enable': 'bool',
         'top_attacked_urls_enable': 'bool',
         'top_attack_source_locations_enable': 'bool',
-        'top_abnormal_urls_enable': 'bool'
+        'top_error_pages_enable': 'bool'
     }
 
     attribute_map = {
@@ -41,10 +41,10 @@ class SecurityReportSubscriptionResponseReportContentSubscription:
         'top_attack_source_ips_enable': 'top_attack_source_ips_enable',
         'top_attacked_urls_enable': 'top_attacked_urls_enable',
         'top_attack_source_locations_enable': 'top_attack_source_locations_enable',
-        'top_abnormal_urls_enable': 'top_abnormal_urls_enable'
+        'top_error_pages_enable': 'top_error_pages_enable'
     }
 
-    def __init__(self, overview_statistics_enable=None, group_by_day_enable=None, request_statistics_enable=None, qps_statistics_enable=None, bandwidth_statistics_enable=None, response_code_statistics_enable=None, attack_type_distribution_enable=None, top_attacked_domains_enable=None, top_attack_source_ips_enable=None, top_attacked_urls_enable=None, top_attack_source_locations_enable=None, top_abnormal_urls_enable=None):
+    def __init__(self, overview_statistics_enable=None, group_by_day_enable=None, request_statistics_enable=None, qps_statistics_enable=None, bandwidth_statistics_enable=None, response_code_statistics_enable=None, attack_type_distribution_enable=None, top_attacked_domains_enable=None, top_attack_source_ips_enable=None, top_attacked_urls_enable=None, top_attack_source_locations_enable=None, top_error_pages_enable=None):
         r"""SecurityReportSubscriptionResponseReportContentSubscription
 
         The model defined in huaweicloud sdk
@@ -71,8 +71,8 @@ class SecurityReportSubscriptionResponseReportContentSubscription:
         :type top_attacked_urls_enable: bool
         :param top_attack_source_locations_enable: **参数解释：** 是否启用TOP攻击源地理位置统计（true表示启用，false表示禁用）。 **约束限制：** 不涉及 **取值范围：** 仅支持true、false两个布尔值 **默认取值：** true
         :type top_attack_source_locations_enable: bool
-        :param top_abnormal_urls_enable: **参数解释：** 是否启用TOP异常URL统计（true表示启用，false表示禁用）。 **约束限制：** 不涉及 **取值范围：** 仅支持true、false两个布尔值 **默认取值：** true
-        :type top_abnormal_urls_enable: bool
+        :param top_error_pages_enable: **参数解释：** 是否启用TOP异常页面统计（true表示启用，false表示禁用）。 **约束限制：** 不涉及 **取值范围：** 仅支持true、false两个布尔值 **默认取值：** true
+        :type top_error_pages_enable: bool
         """
         
         
@@ -88,7 +88,7 @@ class SecurityReportSubscriptionResponseReportContentSubscription:
         self._top_attack_source_ips_enable = None
         self._top_attacked_urls_enable = None
         self._top_attack_source_locations_enable = None
-        self._top_abnormal_urls_enable = None
+        self._top_error_pages_enable = None
         self.discriminator = None
 
         if overview_statistics_enable is not None:
@@ -113,8 +113,8 @@ class SecurityReportSubscriptionResponseReportContentSubscription:
             self.top_attacked_urls_enable = top_attacked_urls_enable
         if top_attack_source_locations_enable is not None:
             self.top_attack_source_locations_enable = top_attack_source_locations_enable
-        if top_abnormal_urls_enable is not None:
-            self.top_abnormal_urls_enable = top_abnormal_urls_enable
+        if top_error_pages_enable is not None:
+            self.top_error_pages_enable = top_error_pages_enable
 
     @property
     def overview_statistics_enable(self):
@@ -359,26 +359,26 @@ class SecurityReportSubscriptionResponseReportContentSubscription:
         self._top_attack_source_locations_enable = top_attack_source_locations_enable
 
     @property
-    def top_abnormal_urls_enable(self):
-        r"""Gets the top_abnormal_urls_enable of this SecurityReportSubscriptionResponseReportContentSubscription.
+    def top_error_pages_enable(self):
+        r"""Gets the top_error_pages_enable of this SecurityReportSubscriptionResponseReportContentSubscription.
 
-        **参数解释：** 是否启用TOP异常URL统计（true表示启用，false表示禁用）。 **约束限制：** 不涉及 **取值范围：** 仅支持true、false两个布尔值 **默认取值：** true
+        **参数解释：** 是否启用TOP异常页面统计（true表示启用，false表示禁用）。 **约束限制：** 不涉及 **取值范围：** 仅支持true、false两个布尔值 **默认取值：** true
 
-        :return: The top_abnormal_urls_enable of this SecurityReportSubscriptionResponseReportContentSubscription.
+        :return: The top_error_pages_enable of this SecurityReportSubscriptionResponseReportContentSubscription.
         :rtype: bool
         """
-        return self._top_abnormal_urls_enable
+        return self._top_error_pages_enable
 
-    @top_abnormal_urls_enable.setter
-    def top_abnormal_urls_enable(self, top_abnormal_urls_enable):
-        r"""Sets the top_abnormal_urls_enable of this SecurityReportSubscriptionResponseReportContentSubscription.
+    @top_error_pages_enable.setter
+    def top_error_pages_enable(self, top_error_pages_enable):
+        r"""Sets the top_error_pages_enable of this SecurityReportSubscriptionResponseReportContentSubscription.
 
-        **参数解释：** 是否启用TOP异常URL统计（true表示启用，false表示禁用）。 **约束限制：** 不涉及 **取值范围：** 仅支持true、false两个布尔值 **默认取值：** true
+        **参数解释：** 是否启用TOP异常页面统计（true表示启用，false表示禁用）。 **约束限制：** 不涉及 **取值范围：** 仅支持true、false两个布尔值 **默认取值：** true
 
-        :param top_abnormal_urls_enable: The top_abnormal_urls_enable of this SecurityReportSubscriptionResponseReportContentSubscription.
-        :type top_abnormal_urls_enable: bool
+        :param top_error_pages_enable: The top_error_pages_enable of this SecurityReportSubscriptionResponseReportContentSubscription.
+        :type top_error_pages_enable: bool
         """
-        self._top_abnormal_urls_enable = top_abnormal_urls_enable
+        self._top_error_pages_enable = top_error_pages_enable
 
     def to_dict(self):
         result = {}

@@ -16,7 +16,7 @@ class ChangeTrainingJobDescriptionRequest:
 
     openapi_types = {
         'training_job_id': 'str',
-        'body': 'JobDescription'
+        'body': 'JobUpdateRequestBody'
     }
 
     attribute_map = {
@@ -32,7 +32,7 @@ class ChangeTrainingJobDescriptionRequest:
         :param training_job_id: 训练作业ID。获取方法请参见[查询训练作业列表](ListTrainingJobs.xml)。
         :type training_job_id: str
         :param body: Body of the ChangeTrainingJobDescriptionRequest
-        :type body: :class:`huaweicloudsdkmodelarts.v1.JobDescription`
+        :type body: :class:`huaweicloudsdkmodelarts.v1.JobUpdateRequestBody`
         """
         
         
@@ -72,7 +72,7 @@ class ChangeTrainingJobDescriptionRequest:
         r"""Gets the body of this ChangeTrainingJobDescriptionRequest.
 
         :return: The body of this ChangeTrainingJobDescriptionRequest.
-        :rtype: :class:`huaweicloudsdkmodelarts.v1.JobDescription`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.JobUpdateRequestBody`
         """
         return self._body
 
@@ -81,7 +81,7 @@ class ChangeTrainingJobDescriptionRequest:
         r"""Sets the body of this ChangeTrainingJobDescriptionRequest.
 
         :param body: The body of this ChangeTrainingJobDescriptionRequest.
-        :type body: :class:`huaweicloudsdkmodelarts.v1.JobDescription`
+        :type body: :class:`huaweicloudsdkmodelarts.v1.JobUpdateRequestBody`
         """
         self._body = body
 

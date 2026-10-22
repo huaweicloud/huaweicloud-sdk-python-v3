@@ -33,9 +33,9 @@ class ErrorMessage:
 
         :param error_code: **参数解释**：错误码。 **取值范围**：长度为8~36个字符。
         :type error_code: str
-        :param error_msg: **参数解释**：错误描述。 **取值范围**：长度为2~4096个字符。
+        :param error_msg: **参数解释**：错误描述。 **取值范围**：长度为2~512个字符。
         :type error_msg: str
-        :param solution_msg: **参数解释**：解决方案描述。 **取值范围**：长度为2~4096个字符。
+        :param solution_msg: **参数解释**：解决方案。 **取值范围**：长度为0~4096个字符。
         :type solution_msg: str
         """
         
@@ -77,7 +77,7 @@ class ErrorMessage:
     def error_msg(self):
         r"""Gets the error_msg of this ErrorMessage.
 
-        **参数解释**：错误描述。 **取值范围**：长度为2~4096个字符。
+        **参数解释**：错误描述。 **取值范围**：长度为2~512个字符。
 
         :return: The error_msg of this ErrorMessage.
         :rtype: str
@@ -88,7 +88,7 @@ class ErrorMessage:
     def error_msg(self, error_msg):
         r"""Sets the error_msg of this ErrorMessage.
 
-        **参数解释**：错误描述。 **取值范围**：长度为2~4096个字符。
+        **参数解释**：错误描述。 **取值范围**：长度为2~512个字符。
 
         :param error_msg: The error_msg of this ErrorMessage.
         :type error_msg: str
@@ -99,7 +99,7 @@ class ErrorMessage:
     def solution_msg(self):
         r"""Gets the solution_msg of this ErrorMessage.
 
-        **参数解释**：解决方案描述。 **取值范围**：长度为2~4096个字符。
+        **参数解释**：解决方案。 **取值范围**：长度为0~4096个字符。
 
         :return: The solution_msg of this ErrorMessage.
         :rtype: str
@@ -110,7 +110,7 @@ class ErrorMessage:
     def solution_msg(self, solution_msg):
         r"""Sets the solution_msg of this ErrorMessage.
 
-        **参数解释**：解决方案描述。 **取值范围**：长度为2~4096个字符。
+        **参数解释**：解决方案。 **取值范围**：长度为0~4096个字符。
 
         :param solution_msg: The solution_msg of this ErrorMessage.
         :type solution_msg: str

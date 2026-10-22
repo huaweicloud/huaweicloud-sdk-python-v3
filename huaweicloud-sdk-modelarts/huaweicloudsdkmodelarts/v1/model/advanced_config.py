@@ -15,7 +15,7 @@ class AdvancedConfig:
     sensitive_list = []
 
     openapi_types = {
-        'deploy_timeout_minutes': 'str',
+        'deploy_timeout_minutes': 'int',
         'upgrade_config': 'UpgradeConfig',
         'service_secret': 'ServiceSecret',
         'dynamic_routing_enable': 'bool',
@@ -25,6 +25,7 @@ class AdvancedConfig:
         'metric_api_port': 'str',
         'metric_api_path': 'str',
         'custom_metrics_path': 'str',
+        'mooncake_enable': 'bool',
         'port': 'int',
         'protocol': 'str'
     }
@@ -40,17 +41,18 @@ class AdvancedConfig:
         'metric_api_port': 'metric_api_port',
         'metric_api_path': 'metric_api_path',
         'custom_metrics_path': 'custom_metrics_path',
+        'mooncake_enable': 'mooncake_enable',
         'port': 'port',
         'protocol': 'protocol'
     }
 
-    def __init__(self, deploy_timeout_minutes=None, upgrade_config=None, service_secret=None, dynamic_routing_enable=None, strategy=None, ems_enable=None, metric_api_scheme=None, metric_api_port=None, metric_api_path=None, custom_metrics_path=None, port=None, protocol=None):
+    def __init__(self, deploy_timeout_minutes=None, upgrade_config=None, service_secret=None, dynamic_routing_enable=None, strategy=None, ems_enable=None, metric_api_scheme=None, metric_api_port=None, metric_api_path=None, custom_metrics_path=None, mooncake_enable=None, port=None, protocol=None):
         r"""AdvancedConfig
 
         The model defined in huaweicloud sdk
 
         :param deploy_timeout_minutes: **参数解释：** 部署超时时间
-        :type deploy_timeout_minutes: str
+        :type deploy_timeout_minutes: int
         :param upgrade_config: 
         :type upgrade_config: :class:`huaweicloudsdkmodelarts.v1.UpgradeConfig`
         :param service_secret: 
@@ -69,6 +71,8 @@ class AdvancedConfig:
         :type metric_api_path: str
         :param custom_metrics_path: **参数解释：** 自定义监控采集指标地址
         :type custom_metrics_path: str
+        :param mooncake_enable: **参数解释：** Mooncake缓存开关。 **约束限制：** 不涉及。 **取值范围：** - true：开启Mooncake缓存开关。 - false：关闭Mooncake缓存开关。 **默认取值：** false
+        :type mooncake_enable: bool
         :param port: **参数解释：** 容器端口
         :type port: int
         :param protocol: **参数解释：** 容器请求协议。当选择WSS与WS时，服务接口会升级为WebSocket。开启WebSocket时，不支持同时设置“服务流量限制”。 **取值范围：** - HTTP：HTTP协议。 - HTTPS：HTTPS协议。 - WSS：WebSocket Secure协议。 - WS：WebSocket协议。 - TCP：传输控制协议。 - NA：不使用任何协议。
@@ -87,6 +91,7 @@ class AdvancedConfig:
         self._metric_api_port = None
         self._metric_api_path = None
         self._custom_metrics_path = None
+        self._mooncake_enable = None
         self._port = None
         self._protocol = None
         self.discriminator = None
@@ -110,6 +115,8 @@ class AdvancedConfig:
             self.metric_api_path = metric_api_path
         if custom_metrics_path is not None:
             self.custom_metrics_path = custom_metrics_path
+        if mooncake_enable is not None:
+            self.mooncake_enable = mooncake_enable
         self.port = port
         self.protocol = protocol
 
@@ -120,7 +127,7 @@ class AdvancedConfig:
         **参数解释：** 部署超时时间
 
         :return: The deploy_timeout_minutes of this AdvancedConfig.
-        :rtype: str
+        :rtype: int
         """
         return self._deploy_timeout_minutes
 
@@ -131,7 +138,7 @@ class AdvancedConfig:
         **参数解释：** 部署超时时间
 
         :param deploy_timeout_minutes: The deploy_timeout_minutes of this AdvancedConfig.
-        :type deploy_timeout_minutes: str
+        :type deploy_timeout_minutes: int
         """
         self._deploy_timeout_minutes = deploy_timeout_minutes
 
@@ -324,6 +331,28 @@ class AdvancedConfig:
         :type custom_metrics_path: str
         """
         self._custom_metrics_path = custom_metrics_path
+
+    @property
+    def mooncake_enable(self):
+        r"""Gets the mooncake_enable of this AdvancedConfig.
+
+        **参数解释：** Mooncake缓存开关。 **约束限制：** 不涉及。 **取值范围：** - true：开启Mooncake缓存开关。 - false：关闭Mooncake缓存开关。 **默认取值：** false
+
+        :return: The mooncake_enable of this AdvancedConfig.
+        :rtype: bool
+        """
+        return self._mooncake_enable
+
+    @mooncake_enable.setter
+    def mooncake_enable(self, mooncake_enable):
+        r"""Sets the mooncake_enable of this AdvancedConfig.
+
+        **参数解释：** Mooncake缓存开关。 **约束限制：** 不涉及。 **取值范围：** - true：开启Mooncake缓存开关。 - false：关闭Mooncake缓存开关。 **默认取值：** false
+
+        :param mooncake_enable: The mooncake_enable of this AdvancedConfig.
+        :type mooncake_enable: bool
+        """
+        self._mooncake_enable = mooncake_enable
 
     @property
     def port(self):

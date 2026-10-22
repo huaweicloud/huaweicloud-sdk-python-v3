@@ -33,6 +33,207 @@ class EvsClient(Client):
 
         return client_builder
 
+    def associate_auto_snapshot_policy(self, request):
+        r"""绑定自动快照策略
+
+        绑定自动快照策略。标准快照当前只在部分区域支持，具体的区域列表请通过控制台查询。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for AssociateAutoSnapshotPolicy
+        :type request: :class:`huaweicloudsdkevs.v2.AssociateAutoSnapshotPolicyRequest`
+        :rtype: :class:`huaweicloudsdkevs.v2.AssociateAutoSnapshotPolicyResponse`
+        """
+        http_info = self._associate_auto_snapshot_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def associate_auto_snapshot_policy_invoker(self, request):
+        http_info = self._associate_auto_snapshot_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _associate_auto_snapshot_policy_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/snapshot-policies/{snapshot_policy_id}/associate",
+            "request_type": request.__class__.__name__,
+            "response_type": "AssociateAutoSnapshotPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'snapshot_policy_id' in local_var_params:
+            path_params['snapshot_policy_id'] = local_var_params['snapshot_policy_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_create_snapshot_group_tag(self, request):
+        r"""为指定快照组添加标签
+
+        为指定快照组添加标签。标准快照当前只在部分区域支持，具体的区域列表请通过控制台查询详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchCreateSnapshotGroupTag
+        :type request: :class:`huaweicloudsdkevs.v2.BatchCreateSnapshotGroupTagRequest`
+        :rtype: :class:`huaweicloudsdkevs.v2.BatchCreateSnapshotGroupTagResponse`
+        """
+        http_info = self._batch_create_snapshot_group_tag_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_create_snapshot_group_tag_invoker(self, request):
+        http_info = self._batch_create_snapshot_group_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_create_snapshot_group_tag_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/snapshot-groups/{snapshot_group_id}/tags/create",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateSnapshotGroupTagResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'snapshot_group_id' in local_var_params:
+            path_params['snapshot_group_id'] = local_var_params['snapshot_group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_create_snapshot_tags(self, request):
+        r"""为指定快照添加标签
+
+        为指定快照添加标签。标准快照当前只在部分区域支持，具体的区域列表请通过控制台查询详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchCreateSnapshotTags
+        :type request: :class:`huaweicloudsdkevs.v2.BatchCreateSnapshotTagsRequest`
+        :rtype: :class:`huaweicloudsdkevs.v2.BatchCreateSnapshotTagsResponse`
+        """
+        http_info = self._batch_create_snapshot_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_create_snapshot_tags_invoker(self, request):
+        http_info = self._batch_create_snapshot_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_create_snapshot_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/snapshots/{snapshot_id}/tags/create",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateSnapshotTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'snapshot_id' in local_var_params:
+            path_params['snapshot_id'] = local_var_params['snapshot_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_create_volume_tags(self, request):
         r"""为指定云硬盘批量添加标签
 
@@ -72,6 +273,140 @@ class EvsClient(Client):
         path_params = {}
         if 'volume_id' in local_var_params:
             path_params['volume_id'] = local_var_params['volume_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_delete_snapshot_group_tag(self, request):
+        r"""为指定快照组删除标签
+
+        为指定快照组删除标签。标准快照当前只在部分区域支持，具体的区域列表请通过控制台查询详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchDeleteSnapshotGroupTag
+        :type request: :class:`huaweicloudsdkevs.v2.BatchDeleteSnapshotGroupTagRequest`
+        :rtype: :class:`huaweicloudsdkevs.v2.BatchDeleteSnapshotGroupTagResponse`
+        """
+        http_info = self._batch_delete_snapshot_group_tag_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_snapshot_group_tag_invoker(self, request):
+        http_info = self._batch_delete_snapshot_group_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_snapshot_group_tag_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/snapshot-groups/{snapshot_group_id}/tags/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteSnapshotGroupTagResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'snapshot_group_id' in local_var_params:
+            path_params['snapshot_group_id'] = local_var_params['snapshot_group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_delete_snapshot_tags(self, request):
+        r"""为指定快照删除标签
+
+        为指定快照删除标签。标准快照当前只在部分区域支持，具体的区域列表请通过控制台查询详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchDeleteSnapshotTags
+        :type request: :class:`huaweicloudsdkevs.v2.BatchDeleteSnapshotTagsRequest`
+        :rtype: :class:`huaweicloudsdkevs.v2.BatchDeleteSnapshotTagsResponse`
+        """
+        http_info = self._batch_delete_snapshot_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_snapshot_tags_invoker(self, request):
+        http_info = self._batch_delete_snapshot_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_snapshot_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/snapshots/{snapshot_id}/tags/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteSnapshotTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'snapshot_id' in local_var_params:
+            path_params['snapshot_id'] = local_var_params['snapshot_id']
 
         query_params = []
 
@@ -827,6 +1162,373 @@ class EvsClient(Client):
 
         return http_info
 
+    def count_auto_snapshot_policies(self, request):
+        r"""查询自动快照策略总数
+
+        查询自动快照策略总数。标准快照当前只在部分区域支持，具体的区域列表请通过控制台查询。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CountAutoSnapshotPolicies
+        :type request: :class:`huaweicloudsdkevs.v2.CountAutoSnapshotPoliciesRequest`
+        :rtype: :class:`huaweicloudsdkevs.v2.CountAutoSnapshotPoliciesResponse`
+        """
+        http_info = self._count_auto_snapshot_policies_http_info(request)
+        return self._call_api(**http_info)
+
+    def count_auto_snapshot_policies_invoker(self, request):
+        http_info = self._count_auto_snapshot_policies_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _count_auto_snapshot_policies_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/snapshot-policies/count",
+            "request_type": request.__class__.__name__,
+            "response_type": "CountAutoSnapshotPoliciesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'tag_key' in local_var_params:
+            query_params.append(('tag_key', local_var_params['tag_key']))
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def count_snapshot_chains(self, request):
+        r"""查询快照链个数
+
+        查询快照链个数。标准快照当前只在部分区域支持，具体的区域列表请通过控制台查询。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CountSnapshotChains
+        :type request: :class:`huaweicloudsdkevs.v2.CountSnapshotChainsRequest`
+        :rtype: :class:`huaweicloudsdkevs.v2.CountSnapshotChainsResponse`
+        """
+        http_info = self._count_snapshot_chains_http_info(request)
+        return self._call_api(**http_info)
+
+    def count_snapshot_chains_invoker(self, request):
+        http_info = self._count_snapshot_chains_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _count_snapshot_chains_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/snapshot-chains/count",
+            "request_type": request.__class__.__name__,
+            "response_type": "CountSnapshotChainsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'volume_id' in local_var_params:
+            query_params.append(('volume_id', local_var_params['volume_id']))
+        if 'availability_zone' in local_var_params:
+            query_params.append(('availability_zone', local_var_params['availability_zone']))
+        if 'category' in local_var_params:
+            query_params.append(('category', local_var_params['category']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def count_snapshots(self, request):
+        r"""查询快照个数
+
+        查询快照个数。标准快照当前只在部分区域支持，具体的区域列表请通过控制台查询。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CountSnapshots
+        :type request: :class:`huaweicloudsdkevs.v2.CountSnapshotsRequest`
+        :rtype: :class:`huaweicloudsdkevs.v2.CountSnapshotsResponse`
+        """
+        http_info = self._count_snapshots_http_info(request)
+        return self._call_api(**http_info)
+
+    def count_snapshots_invoker(self, request):
+        http_info = self._count_snapshots_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _count_snapshots_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/snapshots/count",
+            "request_type": request.__class__.__name__,
+            "response_type": "CountSnapshotsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'volume_id' in local_var_params:
+            query_params.append(('volume_id', local_var_params['volume_id']))
+        if 'availability_zone' in local_var_params:
+            query_params.append(('availability_zone', local_var_params['availability_zone']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'snapshot_type' in local_var_params:
+            query_params.append(('snapshot_type', local_var_params['snapshot_type']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'tag_key' in local_var_params:
+            query_params.append(('tag_key', local_var_params['tag_key']))
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
+        if 'snapshot_chain_id' in local_var_params:
+            query_params.append(('snapshot_chain_id', local_var_params['snapshot_chain_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def count_snapshots_group(self, request):
+        r"""查询快照一致性组个数
+
+        查询快照一致性组个数。标准快照当前只在部分区域支持，具体的区域列表请通过控制台查询。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CountSnapshotsGroup
+        :type request: :class:`huaweicloudsdkevs.v2.CountSnapshotsGroupRequest`
+        :rtype: :class:`huaweicloudsdkevs.v2.CountSnapshotsGroupResponse`
+        """
+        http_info = self._count_snapshots_group_http_info(request)
+        return self._call_api(**http_info)
+
+    def count_snapshots_group_invoker(self, request):
+        http_info = self._count_snapshots_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _count_snapshots_group_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/snapshot-groups/count",
+            "request_type": request.__class__.__name__,
+            "response_type": "CountSnapshotsGroupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'tag_key' in local_var_params:
+            query_params.append(('tag_key', local_var_params['tag_key']))
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_auto_snapshot_policy(self, request):
+        r"""创建自动快照策略
+
+        创建自动快照策略。标准快照当前只在部分区域支持，具体的区域列表请通过控制台查询。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateAutoSnapshotPolicy
+        :type request: :class:`huaweicloudsdkevs.v2.CreateAutoSnapshotPolicyRequest`
+        :rtype: :class:`huaweicloudsdkevs.v2.CreateAutoSnapshotPolicyResponse`
+        """
+        http_info = self._create_auto_snapshot_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_auto_snapshot_policy_invoker(self, request):
+        http_info = self._create_auto_snapshot_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_auto_snapshot_policy_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/snapshot-policies",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAutoSnapshotPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_snapshot(self, request):
         r"""创建云硬盘快照
 
@@ -852,6 +1554,136 @@ class EvsClient(Client):
             "resource_path": "/v2/{project_id}/cloudsnapshots",
             "request_type": request.__class__.__name__,
             "response_type": "CreateSnapshotResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_snapshot_group(self, request):
+        r"""创建快照一致性组
+
+        创建快照一致性组。标准快照当前只在部分区域支持，具体的区域列表请通过控制台查询。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateSnapshotGroup
+        :type request: :class:`huaweicloudsdkevs.v2.CreateSnapshotGroupRequest`
+        :rtype: :class:`huaweicloudsdkevs.v2.CreateSnapshotGroupResponse`
+        """
+        http_info = self._create_snapshot_group_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_snapshot_group_invoker(self, request):
+        http_info = self._create_snapshot_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_snapshot_group_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/snapshot-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSnapshotGroupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_standard_snapshot(self, request):
+        r"""创建快照
+
+        创建标准快照。标准快照当前只在部分区域支持，具体的区域列表请通过控制台查询。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateStandardSnapshot
+        :type request: :class:`huaweicloudsdkevs.v2.CreateStandardSnapshotRequest`
+        :rtype: :class:`huaweicloudsdkevs.v2.CreateStandardSnapshotResponse`
+        """
+        http_info = self._create_standard_snapshot_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_standard_snapshot_invoker(self, request):
+        http_info = self._create_standard_snapshot_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_standard_snapshot_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/snapshots",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateStandardSnapshotResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -964,6 +1796,71 @@ class EvsClient(Client):
 
         return http_info
 
+    def delete_auto_snapshot_policy(self, request):
+        r"""删除单个自动快照策略
+
+        删除单个自动快照策略。标准快照当前只在部分区域支持，具体的区域列表请通过控制台查询。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteAutoSnapshotPolicy
+        :type request: :class:`huaweicloudsdkevs.v2.DeleteAutoSnapshotPolicyRequest`
+        :rtype: :class:`huaweicloudsdkevs.v2.DeleteAutoSnapshotPolicyResponse`
+        """
+        http_info = self._delete_auto_snapshot_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_auto_snapshot_policy_invoker(self, request):
+        http_info = self._delete_auto_snapshot_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_auto_snapshot_policy_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v5/{project_id}/snapshot-policies/{snapshot_policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAutoSnapshotPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'snapshot_policy_id' in local_var_params:
+            path_params['snapshot_policy_id'] = local_var_params['snapshot_policy_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_snapshot(self, request):
         r"""删除云硬盘快照
 
@@ -989,6 +1886,136 @@ class EvsClient(Client):
             "resource_path": "/v2/{project_id}/cloudsnapshots/{snapshot_id}",
             "request_type": request.__class__.__name__,
             "response_type": "DeleteSnapshotResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'snapshot_id' in local_var_params:
+            path_params['snapshot_id'] = local_var_params['snapshot_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_snapshot_group(self, request):
+        r"""删除快照一致性组
+
+        删除快照一致性组。标准快照当前只在部分区域支持，具体的区域列表请通过控制台查询。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteSnapshotGroup
+        :type request: :class:`huaweicloudsdkevs.v2.DeleteSnapshotGroupRequest`
+        :rtype: :class:`huaweicloudsdkevs.v2.DeleteSnapshotGroupResponse`
+        """
+        http_info = self._delete_snapshot_group_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_snapshot_group_invoker(self, request):
+        http_info = self._delete_snapshot_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_snapshot_group_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v5/{project_id}/snapshot-groups/{snapshot_group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSnapshotGroupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'snapshot_group_id' in local_var_params:
+            path_params['snapshot_group_id'] = local_var_params['snapshot_group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_standard_snapshot(self, request):
+        r"""删除快照
+
+        删除快照。标准快照当前只在部分区域支持，具体的区域列表请通过控制台查询。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteStandardSnapshot
+        :type request: :class:`huaweicloudsdkevs.v2.DeleteStandardSnapshotRequest`
+        :rtype: :class:`huaweicloudsdkevs.v2.DeleteStandardSnapshotResponse`
+        """
+        http_info = self._delete_standard_snapshot_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_standard_snapshot_invoker(self, request):
+        http_info = self._delete_standard_snapshot_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_standard_snapshot_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v5/{project_id}/snapshots/{snapshot_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteStandardSnapshotResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -1159,6 +2186,438 @@ class EvsClient(Client):
 
         return http_info
 
+    def disassociate_auto_snapshot_policy(self, request):
+        r"""解绑自动快照策略
+
+        解绑自动快照策略。标准快照当前只在部分区域支持，具体的区域列表请通过控制台查询。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DisassociateAutoSnapshotPolicy
+        :type request: :class:`huaweicloudsdkevs.v2.DisassociateAutoSnapshotPolicyRequest`
+        :rtype: :class:`huaweicloudsdkevs.v2.DisassociateAutoSnapshotPolicyResponse`
+        """
+        http_info = self._disassociate_auto_snapshot_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def disassociate_auto_snapshot_policy_invoker(self, request):
+        http_info = self._disassociate_auto_snapshot_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _disassociate_auto_snapshot_policy_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/snapshot-policies/{snapshot_policy_id}/disassociate",
+            "request_type": request.__class__.__name__,
+            "response_type": "DisassociateAutoSnapshotPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'snapshot_policy_id' in local_var_params:
+            path_params['snapshot_policy_id'] = local_var_params['snapshot_policy_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_auto_snapshot_policy(self, request):
+        r"""查询自动快照策略
+
+        查询自动快照策略。标准快照当前只在部分区域支持，具体的区域列表请通过控制台查询。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListAutoSnapshotPolicy
+        :type request: :class:`huaweicloudsdkevs.v2.ListAutoSnapshotPolicyRequest`
+        :rtype: :class:`huaweicloudsdkevs.v2.ListAutoSnapshotPolicyResponse`
+        """
+        http_info = self._list_auto_snapshot_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_auto_snapshot_policy_invoker(self, request):
+        http_info = self._list_auto_snapshot_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_auto_snapshot_policy_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/snapshot-policies",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAutoSnapshotPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
+        if 'tag_key' in local_var_params:
+            query_params.append(('tag_key', local_var_params['tag_key']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_snapshot_chains(self, request):
+        r"""查询快照链列表
+
+        查询快照链的列表。标准快照当前只在部分区域支持，具体的区域列表请通过控制台查询。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListSnapshotChains
+        :type request: :class:`huaweicloudsdkevs.v2.ListSnapshotChainsRequest`
+        :rtype: :class:`huaweicloudsdkevs.v2.ListSnapshotChainsResponse`
+        """
+        http_info = self._list_snapshot_chains_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_snapshot_chains_invoker(self, request):
+        http_info = self._list_snapshot_chains_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_snapshot_chains_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/snapshot-chains",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSnapshotChainsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'volume_id' in local_var_params:
+            query_params.append(('volume_id', local_var_params['volume_id']))
+        if 'category' in local_var_params:
+            query_params.append(('category', local_var_params['category']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_snapshot_group(self, request):
+        r"""查询快照一致性组列表
+
+        查询快照一致性组列表。标准快照当前只在部分区域支持，具体的区域列表请通过控制台查询。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListSnapshotGroup
+        :type request: :class:`huaweicloudsdkevs.v2.ListSnapshotGroupRequest`
+        :rtype: :class:`huaweicloudsdkevs.v2.ListSnapshotGroupResponse`
+        """
+        http_info = self._list_snapshot_group_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_snapshot_group_invoker(self, request):
+        http_info = self._list_snapshot_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_snapshot_group_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/snapshot-groups/detail",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSnapshotGroupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'tag_key' in local_var_params:
+            query_params.append(('tag_key', local_var_params['tag_key']))
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+        if 'server_id' in local_var_params:
+            query_params.append(('server_id', local_var_params['server_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_snapshot_group_tags(self, request):
+        r"""查询快照组的所有标签
+
+        查询快照组的所有标签。标准快照当前只在部分区域支持，具体的区域列表请通过控制台查询详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListSnapshotGroupTags
+        :type request: :class:`huaweicloudsdkevs.v2.ListSnapshotGroupTagsRequest`
+        :rtype: :class:`huaweicloudsdkevs.v2.ListSnapshotGroupTagsResponse`
+        """
+        http_info = self._list_snapshot_group_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_snapshot_group_tags_invoker(self, request):
+        http_info = self._list_snapshot_group_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_snapshot_group_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/snapshot-groups/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSnapshotGroupTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_snapshot_tags(self, request):
+        r"""查询快照资源的所有标签
+
+        查询快照资源的所有标签。标准快照当前只在部分区域支持，具体的区域列表请通过控制台查询详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListSnapshotTags
+        :type request: :class:`huaweicloudsdkevs.v2.ListSnapshotTagsRequest`
+        :rtype: :class:`huaweicloudsdkevs.v2.ListSnapshotTagsResponse`
+        """
+        http_info = self._list_snapshot_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_snapshot_tags_invoker(self, request):
+        http_info = self._list_snapshot_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_snapshot_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/snapshots/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSnapshotTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_snapshots(self, request):
         r"""查询云硬盘快照详情列表
 
@@ -1217,6 +2676,103 @@ class EvsClient(Client):
             query_params.append(('service_type', local_var_params['service_type']))
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_snapshots_details(self, request):
+        r"""查询快照详情列表
+
+        查询快照详情列表。标准快照当前只在部分区域支持，具体的区域列表请通过控制台查询。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListSnapshotsDetails
+        :type request: :class:`huaweicloudsdkevs.v2.ListSnapshotsDetailsRequest`
+        :rtype: :class:`huaweicloudsdkevs.v2.ListSnapshotsDetailsResponse`
+        """
+        http_info = self._list_snapshots_details_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_snapshots_details_invoker(self, request):
+        http_info = self._list_snapshots_details_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_snapshots_details_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/snapshots/detail",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSnapshotsDetailsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'volume_id' in local_var_params:
+            query_params.append(('volume_id', local_var_params['volume_id']))
+        if 'availability_zone' in local_var_params:
+            query_params.append(('availability_zone', local_var_params['availability_zone']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'ids' in local_var_params:
+            query_params.append(('ids', local_var_params['ids']))
+        if 'snapshot_type' in local_var_params:
+            query_params.append(('snapshot_type', local_var_params['snapshot_type']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'tag_key' in local_var_params:
+            query_params.append(('tag_key', local_var_params['tag_key']))
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
+        if 'snapshot_chain_id' in local_var_params:
+            query_params.append(('snapshot_chain_id', local_var_params['snapshot_chain_id']))
+        if 'snapshot_group_id' in local_var_params:
+            query_params.append(('snapshot_group_id', local_var_params['snapshot_group_id']))
 
         header_params = {}
 
@@ -1891,6 +3447,138 @@ class EvsClient(Client):
 
         return http_info
 
+    def rollback_standard_snapshot(self, request):
+        r"""快照回滚
+
+        将快照数据回滚到云硬盘。标准快照当前只在部分区域支持，具体的区域列表请通过控制台查询。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for RollbackStandardSnapshot
+        :type request: :class:`huaweicloudsdkevs.v2.RollbackStandardSnapshotRequest`
+        :rtype: :class:`huaweicloudsdkevs.v2.RollbackStandardSnapshotResponse`
+        """
+        http_info = self._rollback_standard_snapshot_http_info(request)
+        return self._call_api(**http_info)
+
+    def rollback_standard_snapshot_invoker(self, request):
+        http_info = self._rollback_standard_snapshot_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _rollback_standard_snapshot_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/snapshots/{snapshot_id}/rollback",
+            "request_type": request.__class__.__name__,
+            "response_type": "RollbackStandardSnapshotResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'snapshot_id' in local_var_params:
+            path_params['snapshot_id'] = local_var_params['snapshot_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_auto_snapshot_policy(self, request):
+        r"""查询单个自动快照策略
+
+        查询单个自动快照策略。标准快照当前只在部分区域支持，具体的区域列表请通过控制台查询。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowAutoSnapshotPolicy
+        :type request: :class:`huaweicloudsdkevs.v2.ShowAutoSnapshotPolicyRequest`
+        :rtype: :class:`huaweicloudsdkevs.v2.ShowAutoSnapshotPolicyResponse`
+        """
+        http_info = self._show_auto_snapshot_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_auto_snapshot_policy_invoker(self, request):
+        http_info = self._show_auto_snapshot_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_auto_snapshot_policy_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/snapshot-policies/{snapshot_policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAutoSnapshotPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'snapshot_policy_id' in local_var_params:
+            path_params['snapshot_policy_id'] = local_var_params['snapshot_policy_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_job(self, request):
         r"""查询job的状态
 
@@ -2045,6 +3733,136 @@ class EvsClient(Client):
             "resource_path": "/v2/{project_id}/cloudsnapshots/{snapshot_id}",
             "request_type": request.__class__.__name__,
             "response_type": "ShowSnapshotResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'snapshot_id' in local_var_params:
+            path_params['snapshot_id'] = local_var_params['snapshot_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_snapshot_group(self, request):
+        r"""查询单个快照一致性组
+
+        查询单个快照一致性组。标准快照当前只在部分区域支持，具体的区域列表请通过控制台查询。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowSnapshotGroup
+        :type request: :class:`huaweicloudsdkevs.v2.ShowSnapshotGroupRequest`
+        :rtype: :class:`huaweicloudsdkevs.v2.ShowSnapshotGroupResponse`
+        """
+        http_info = self._show_snapshot_group_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_snapshot_group_invoker(self, request):
+        http_info = self._show_snapshot_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_snapshot_group_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/snapshot-groups/{snapshot_group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSnapshotGroupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'snapshot_group_id' in local_var_params:
+            path_params['snapshot_group_id'] = local_var_params['snapshot_group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_standard_snapshot(self, request):
+        r"""查询单个快照信息
+
+        查询单个快照信息。标准快照当前只在部分区域支持，具体的区域列表请通过控制台查询。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowStandardSnapshot
+        :type request: :class:`huaweicloudsdkevs.v2.ShowStandardSnapshotRequest`
+        :rtype: :class:`huaweicloudsdkevs.v2.ShowStandardSnapshotResponse`
+        """
+        http_info = self._show_standard_snapshot_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_standard_snapshot_invoker(self, request):
+        http_info = self._show_standard_snapshot_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_standard_snapshot_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/snapshots/{snapshot_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowStandardSnapshotResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -2347,6 +4165,73 @@ class EvsClient(Client):
 
         return http_info
 
+    def update_auto_snapshot_policy(self, request):
+        r"""更新自动快照策略
+
+        更新自动快照策略。标准快照当前只在部分区域支持，具体的区域列表请通过控制台查询。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateAutoSnapshotPolicy
+        :type request: :class:`huaweicloudsdkevs.v2.UpdateAutoSnapshotPolicyRequest`
+        :rtype: :class:`huaweicloudsdkevs.v2.UpdateAutoSnapshotPolicyResponse`
+        """
+        http_info = self._update_auto_snapshot_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_auto_snapshot_policy_invoker(self, request):
+        http_info = self._update_auto_snapshot_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_auto_snapshot_policy_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v5/{project_id}/snapshot-policies/{snapshot_policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAutoSnapshotPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'snapshot_policy_id' in local_var_params:
+            path_params['snapshot_policy_id'] = local_var_params['snapshot_policy_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def update_recycle_policy(self, request):
         r"""更新回收站策略
 
@@ -2437,6 +4322,140 @@ class EvsClient(Client):
             "resource_path": "/v2/{project_id}/cloudsnapshots/{snapshot_id}",
             "request_type": request.__class__.__name__,
             "response_type": "UpdateSnapshotResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'snapshot_id' in local_var_params:
+            path_params['snapshot_id'] = local_var_params['snapshot_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_snapshot_group(self, request):
+        r"""更新快照一致性组
+
+        更新快照一致性组。标准快照当前只在部分区域支持，具体的区域列表请通过控制台查询。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateSnapshotGroup
+        :type request: :class:`huaweicloudsdkevs.v2.UpdateSnapshotGroupRequest`
+        :rtype: :class:`huaweicloudsdkevs.v2.UpdateSnapshotGroupResponse`
+        """
+        http_info = self._update_snapshot_group_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_snapshot_group_invoker(self, request):
+        http_info = self._update_snapshot_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_snapshot_group_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v5/{project_id}/snapshot-groups/{snapshot_group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSnapshotGroupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'snapshot_group_id' in local_var_params:
+            path_params['snapshot_group_id'] = local_var_params['snapshot_group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_standard_snapshot(self, request):
+        r"""更新快照信息
+
+        更新快照信息。标准快照当前只在部分区域支持，具体的区域列表请通过控制台查询。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateStandardSnapshot
+        :type request: :class:`huaweicloudsdkevs.v2.UpdateStandardSnapshotRequest`
+        :rtype: :class:`huaweicloudsdkevs.v2.UpdateStandardSnapshotResponse`
+        """
+        http_info = self._update_standard_snapshot_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_standard_snapshot_invoker(self, request):
+        http_info = self._update_standard_snapshot_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_standard_snapshot_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v5/{project_id}/snapshots/{snapshot_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateStandardSnapshotResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

@@ -55,7 +55,7 @@ class StatementRecord:
 
         :param id: **参数解释**：Sql执行StatementID。 **取值范围**：不涉及。
         :type id: str
-        :param workspace_id: **参数解释**：工作空间ID。 **取值范围**：长度为1~36个字符，支持大小写英文字母、数字、连字符。
+        :param workspace_id: **参数解释**：工作空间ID。 **取值范围**：长度为1~36的英文字母、数字和中划线的组合。 
         :type workspace_id: str
         :param endpoint_id: **参数解释**：端点ID。 **取值范围**：长度为1~64个字符，支持大小写英文字母、数字、连字符。
         :type endpoint_id: str
@@ -156,7 +156,7 @@ class StatementRecord:
     def workspace_id(self):
         r"""Gets the workspace_id of this StatementRecord.
 
-        **参数解释**：工作空间ID。 **取值范围**：长度为1~36个字符，支持大小写英文字母、数字、连字符。
+        **参数解释**：工作空间ID。 **取值范围**：长度为1~36的英文字母、数字和中划线的组合。 
 
         :return: The workspace_id of this StatementRecord.
         :rtype: str
@@ -167,7 +167,7 @@ class StatementRecord:
     def workspace_id(self, workspace_id):
         r"""Sets the workspace_id of this StatementRecord.
 
-        **参数解释**：工作空间ID。 **取值范围**：长度为1~36个字符，支持大小写英文字母、数字、连字符。
+        **参数解释**：工作空间ID。 **取值范围**：长度为1~36的英文字母、数字和中划线的组合。 
 
         :param workspace_id: The workspace_id of this StatementRecord.
         :type workspace_id: str

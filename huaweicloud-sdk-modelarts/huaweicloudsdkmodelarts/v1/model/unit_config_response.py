@@ -26,6 +26,7 @@ class UnitConfigResponse:
         'codes': 'list[CodeResponse]',
         'dumps': 'list[DumpResponse]',
         'count': 'int',
+        'cpu_affinity': 'bool',
         'group_count': 'int',
         'cmd': 'str',
         'envs': 'dict(str, str)',
@@ -39,7 +40,8 @@ class UnitConfigResponse:
         'flavor_display_name': 'str',
         'termination_grace': 'TerminationGrace',
         'security_config': 'ServiceSecurityConfig',
-        'pool_resource_flavor': 'str'
+        'pool_resource_flavor': 'str',
+        'group_policy': 'UnitGroupPolicyResponse'
     }
 
     attribute_map = {
@@ -54,6 +56,7 @@ class UnitConfigResponse:
         'codes': 'codes',
         'dumps': 'dumps',
         'count': 'count',
+        'cpu_affinity': 'cpu_affinity',
         'group_count': 'group_count',
         'cmd': 'cmd',
         'envs': 'envs',
@@ -67,10 +70,11 @@ class UnitConfigResponse:
         'flavor_display_name': 'flavor_display_name',
         'termination_grace': 'termination_grace',
         'security_config': 'security_config',
-        'pool_resource_flavor': 'pool_resource_flavor'
+        'pool_resource_flavor': 'pool_resource_flavor',
+        'group_policy': 'group_policy'
     }
 
-    def __init__(self, id=None, name=None, role=None, custom_spec=None, flavor=None, image=None, models=None, files=None, codes=None, dumps=None, count=None, group_count=None, cmd=None, envs=None, readiness_health=None, startup_health=None, liveness_health=None, port=None, recovery=None, npu_reset_enable=None, affinity=None, flavor_display_name=None, termination_grace=None, security_config=None, pool_resource_flavor=None):
+    def __init__(self, id=None, name=None, role=None, custom_spec=None, flavor=None, image=None, models=None, files=None, codes=None, dumps=None, count=None, cpu_affinity=None, group_count=None, cmd=None, envs=None, readiness_health=None, startup_health=None, liveness_health=None, port=None, recovery=None, npu_reset_enable=None, affinity=None, flavor_display_name=None, termination_grace=None, security_config=None, pool_resource_flavor=None, group_policy=None):
         r"""UnitConfigResponse
 
         The model defined in huaweicloud sdk
@@ -97,6 +101,8 @@ class UnitConfigResponse:
         :type dumps: list[:class:`huaweicloudsdkmodelarts.v1.DumpResponse`]
         :param count: **参数解释：** 配置实例个数。 **取值范围：** 不涉及。
         :type count: int
+        :param cpu_affinity: **参数解释：** 表示是否启用绑核加速。 **取值范围：** - true：启用绑核加速。 - false：不启用绑核加速。
+        :type cpu_affinity: bool
         :param group_count: **参数解释：** 单元副本数，当部署类型deploy_type为SINGLE或工作负载类型workload_type为DEPLOYMENT时，该参数无效。 **取值范围：** [1, 100] 或者为空。 **默认取值：** 默认值为1。
         :type group_count: int
         :param cmd: **参数解释：** 启动命令。 **取值范围：** 不涉及。
@@ -125,6 +131,8 @@ class UnitConfigResponse:
         :type security_config: :class:`huaweicloudsdkmodelarts.v1.ServiceSecurityConfig`
         :param pool_resource_flavor: **参数解释：** 节点池资源规格。 **约束限制：** 只能包含字母、数字、点、中划线和下划线。 **取值范围：** 长度不超过128字符。 **默认取值：** 不涉及。
         :type pool_resource_flavor: str
+        :param group_policy: 
+        :type group_policy: :class:`huaweicloudsdkmodelarts.v1.UnitGroupPolicyResponse`
         """
         
         
@@ -140,6 +148,7 @@ class UnitConfigResponse:
         self._codes = None
         self._dumps = None
         self._count = None
+        self._cpu_affinity = None
         self._group_count = None
         self._cmd = None
         self._envs = None
@@ -154,6 +163,7 @@ class UnitConfigResponse:
         self._termination_grace = None
         self._security_config = None
         self._pool_resource_flavor = None
+        self._group_policy = None
         self.discriminator = None
 
         if id is not None:
@@ -177,6 +187,8 @@ class UnitConfigResponse:
             self.dumps = dumps
         if count is not None:
             self.count = count
+        if cpu_affinity is not None:
+            self.cpu_affinity = cpu_affinity
         if group_count is not None:
             self.group_count = group_count
         if cmd is not None:
@@ -205,6 +217,8 @@ class UnitConfigResponse:
             self.security_config = security_config
         if pool_resource_flavor is not None:
             self.pool_resource_flavor = pool_resource_flavor
+        if group_policy is not None:
+            self.group_policy = group_policy
 
     @property
     def id(self):
@@ -439,6 +453,28 @@ class UnitConfigResponse:
         :type count: int
         """
         self._count = count
+
+    @property
+    def cpu_affinity(self):
+        r"""Gets the cpu_affinity of this UnitConfigResponse.
+
+        **参数解释：** 表示是否启用绑核加速。 **取值范围：** - true：启用绑核加速。 - false：不启用绑核加速。
+
+        :return: The cpu_affinity of this UnitConfigResponse.
+        :rtype: bool
+        """
+        return self._cpu_affinity
+
+    @cpu_affinity.setter
+    def cpu_affinity(self, cpu_affinity):
+        r"""Sets the cpu_affinity of this UnitConfigResponse.
+
+        **参数解释：** 表示是否启用绑核加速。 **取值范围：** - true：启用绑核加速。 - false：不启用绑核加速。
+
+        :param cpu_affinity: The cpu_affinity of this UnitConfigResponse.
+        :type cpu_affinity: bool
+        """
+        self._cpu_affinity = cpu_affinity
 
     @property
     def group_count(self):
@@ -723,6 +759,24 @@ class UnitConfigResponse:
         :type pool_resource_flavor: str
         """
         self._pool_resource_flavor = pool_resource_flavor
+
+    @property
+    def group_policy(self):
+        r"""Gets the group_policy of this UnitConfigResponse.
+
+        :return: The group_policy of this UnitConfigResponse.
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.UnitGroupPolicyResponse`
+        """
+        return self._group_policy
+
+    @group_policy.setter
+    def group_policy(self, group_policy):
+        r"""Sets the group_policy of this UnitConfigResponse.
+
+        :param group_policy: The group_policy of this UnitConfigResponse.
+        :type group_policy: :class:`huaweicloudsdkmodelarts.v1.UnitGroupPolicyResponse`
+        """
+        self._group_policy = group_policy
 
     def to_dict(self):
         result = {}

@@ -1,0 +1,137 @@
+# coding: utf-8
+
+from huaweicloudsdkcore.sdk_response import SdkResponse
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
+
+
+class CreateV2AgencyResponse(SdkResponse):
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+    sensitive_list = []
+
+    openapi_types = {
+        'agency_name': 'str',
+        'x_request_id': 'str'
+    }
+
+    attribute_map = {
+        'agency_name': 'agency_name',
+        'x_request_id': 'X-request-id'
+    }
+
+    def __init__(self, agency_name=None, x_request_id=None):
+        r"""CreateV2AgencyResponse
+
+        The model defined in huaweicloud sdk
+
+        :param agency_name: **参数解释**：委托名称。 **取值范围**：长度1~128个字符，只能由英文字母、数字及下划线组成。
+        :type agency_name: str
+        :param x_request_id: 
+        :type x_request_id: str
+        """
+        
+        super().__init__()
+
+        self._agency_name = None
+        self._x_request_id = None
+        self.discriminator = None
+
+        if agency_name is not None:
+            self.agency_name = agency_name
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
+
+    @property
+    def agency_name(self):
+        r"""Gets the agency_name of this CreateV2AgencyResponse.
+
+        **参数解释**：委托名称。 **取值范围**：长度1~128个字符，只能由英文字母、数字及下划线组成。
+
+        :return: The agency_name of this CreateV2AgencyResponse.
+        :rtype: str
+        """
+        return self._agency_name
+
+    @agency_name.setter
+    def agency_name(self, agency_name):
+        r"""Sets the agency_name of this CreateV2AgencyResponse.
+
+        **参数解释**：委托名称。 **取值范围**：长度1~128个字符，只能由英文字母、数字及下划线组成。
+
+        :param agency_name: The agency_name of this CreateV2AgencyResponse.
+        :type agency_name: str
+        """
+        self._agency_name = agency_name
+
+    @property
+    def x_request_id(self):
+        r"""Gets the x_request_id of this CreateV2AgencyResponse.
+
+        :return: The x_request_id of this CreateV2AgencyResponse.
+        :rtype: str
+        """
+        return self._x_request_id
+
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        r"""Sets the x_request_id of this CreateV2AgencyResponse.
+
+        :param x_request_id: The x_request_id of this CreateV2AgencyResponse.
+        :type x_request_id: str
+        """
+        self._x_request_id = x_request_id
+
+    def to_dict(self):
+        import warnings
+        warnings.warn("CreateV2AgencyResponse.to_dict() is deprecated and no longer maintained, "
+                      "use to_json_object() to get the response content.", DeprecationWarning)
+        result = {}
+
+        for attr, _ in self.openapi_types.items():
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        import simplejson as json
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
+
+    def __repr__(self):
+        """For `print`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, CreateV2AgencyResponse):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

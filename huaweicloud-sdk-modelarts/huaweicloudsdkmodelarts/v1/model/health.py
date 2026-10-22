@@ -41,7 +41,7 @@ class Health:
 
         The model defined in huaweicloud sdk
 
-        :param check_method: **参数解释：** 健康检查方式：HTTP 或者 EXEC（命令行）。 **约束限制：** 不涉及。 **取值范围：** - HTTP：超文本传输协议。 - EXEC：命令行。 **默认取值：** 创建的时候，check_method不传值，默认：check_method。 更新的时候，check_method不传值，会报错。
+        :param check_method: **参数解释：** 健康检查方式：HTTP 或者 EXEC（命令行）。 **约束限制：** 不涉及。 **取值范围：** - HTTP：超文本传输协议。 - EXEC：命令行。 **默认取值：** 创建的时候，check_method不传值，默认：HTTP。 更新的时候，check_method不传值，会报错。
         :type check_method: str
         :param cmd: **参数解释：** 当健康检查方式为EXEC时必填，配置的命令行。 **约束限制：** 字符长度限制[0, 1024]，不能包含字符：#~^$|%&amp;*&lt;&gt;()&#39;\&quot;[]{} **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type cmd: str
@@ -88,7 +88,7 @@ class Health:
     def check_method(self):
         r"""Gets the check_method of this Health.
 
-        **参数解释：** 健康检查方式：HTTP 或者 EXEC（命令行）。 **约束限制：** 不涉及。 **取值范围：** - HTTP：超文本传输协议。 - EXEC：命令行。 **默认取值：** 创建的时候，check_method不传值，默认：check_method。 更新的时候，check_method不传值，会报错。
+        **参数解释：** 健康检查方式：HTTP 或者 EXEC（命令行）。 **约束限制：** 不涉及。 **取值范围：** - HTTP：超文本传输协议。 - EXEC：命令行。 **默认取值：** 创建的时候，check_method不传值，默认：HTTP。 更新的时候，check_method不传值，会报错。
 
         :return: The check_method of this Health.
         :rtype: str
@@ -99,7 +99,7 @@ class Health:
     def check_method(self, check_method):
         r"""Sets the check_method of this Health.
 
-        **参数解释：** 健康检查方式：HTTP 或者 EXEC（命令行）。 **约束限制：** 不涉及。 **取值范围：** - HTTP：超文本传输协议。 - EXEC：命令行。 **默认取值：** 创建的时候，check_method不传值，默认：check_method。 更新的时候，check_method不传值，会报错。
+        **参数解释：** 健康检查方式：HTTP 或者 EXEC（命令行）。 **约束限制：** 不涉及。 **取值范围：** - HTTP：超文本传输协议。 - EXEC：命令行。 **默认取值：** 创建的时候，check_method不传值，默认：HTTP。 更新的时候，check_method不传值，会报错。
 
         :param check_method: The check_method of this Health.
         :type check_method: str

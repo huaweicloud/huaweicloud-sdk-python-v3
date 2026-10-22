@@ -20,6 +20,7 @@ class CreateSecurityReportSubscriptionRequestBody:
         'report_category': 'str',
         'topic_urn': 'str',
         'subscription_type': 'str',
+        'report_status': 'str',
         'report_content_subscription': 'CreateSecurityReportSubscriptionRequestBodyReportContentSubscription',
         'stat_period': 'CreateSecurityReportSubscriptionRequestBodyStatPeriod',
         'console_url_prefix': 'str'
@@ -31,26 +32,29 @@ class CreateSecurityReportSubscriptionRequestBody:
         'report_category': 'report_category',
         'topic_urn': 'topic_urn',
         'subscription_type': 'subscription_type',
+        'report_status': 'report_status',
         'report_content_subscription': 'report_content_subscription',
         'stat_period': 'stat_period',
         'console_url_prefix': 'console_url_prefix'
     }
 
-    def __init__(self, sending_period=None, report_name=None, report_category=None, topic_urn=None, subscription_type=None, report_content_subscription=None, stat_period=None, console_url_prefix=None):
+    def __init__(self, sending_period=None, report_name=None, report_category=None, topic_urn=None, subscription_type=None, report_status=None, report_content_subscription=None, stat_period=None, console_url_prefix=None):
         r"""CreateSecurityReportSubscriptionRequestBody
 
         The model defined in huaweicloud sdk
 
-        :param sending_period: **参数解释：** 发送时间段，设置报告的预设发送时间（如morning表示早晨时段）。 **约束限制：** 不涉及 **取值范围：** - morning : 00:00~06:00 - noon : 06:00~12:00 - afternoon : 12:00~18:00 - evening : 12:00~18:00  **默认取值：** 不涉及
+        :param sending_period: **参数解释：** 发送时间段，设置报告的预设发送时间（如morning表示早晨时段）。 **约束限制：** 不涉及 **取值范围：** - morning : 00:00~06:00 - noon : 06:00~12:00 - afternoon : 12:00~18:00 - evening : 12:00~18:00 **默认取值：** 不涉及
         :type sending_period: str
         :param report_name: **参数解释：** 报告名称，设置订阅报告的名称。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type report_name: str
-        :param report_category: **参数解释：** 报告类别，设置订阅的报告类型（如daily_report表示安全日报）。 **约束限制：** 不涉及 **取值范围：** - daily_report : 日报 - weekly_report : 周报 - monthly_report : 月报 - custom_report : 自定义  **默认取值：** 不涉及
+        :param report_category: **参数解释：** 报告类别，设置订阅的报告类型（如daily_report表示安全日报）。 **约束限制：** 不涉及 **取值范围：** - daily_report : 日报 - weekly_report : 周报 - monthly_report : 月报 - custom_report : 自定义 **默认取值：** 不涉及
         :type report_category: str
         :param topic_urn: **参数解释：** 主题urn，设置报告发送的SMN主题唯一标识。报告接收方式使用消息主题类型时需要填该参数。 查询可使用的主题，通过 云日志服务的“查询SMN主题”接口，返回体中的\&quot;topic_urn\&quot;字段 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type topic_urn: str
-        :param subscription_type: **参数解释：** 订阅类型，接收安全报告的订阅方式（如slient表示静默订阅）。 **约束限制：** 不涉及 **取值范围：** - smn_topic : 消息主题 - silent ： 静默 - message_center ： 消息中心  **默认取值：** 不涉及
+        :param subscription_type: **参数解释：** 订阅类型，接收安全报告的订阅方式（如silent表示静默订阅）。 **约束限制：** 不涉及 **取值范围：** - smn_topic : 消息主题 - silent ： 静默 - message_center ： 消息中心 **默认取值：** 不涉及
         :type subscription_type: str
+        :param report_status: **参数解释：** 报告状态，标识当前订阅的启用状态（如opened表示已开启，closed表示已关闭）。 **约束限制：** 不涉及 **取值范围：** - opened ： 已开启 - closed ： 已关闭 **默认取值：** 不涉及
+        :type report_status: str
         :param report_content_subscription: 
         :type report_content_subscription: :class:`huaweicloudsdkwaf.v1.CreateSecurityReportSubscriptionRequestBodyReportContentSubscription`
         :param stat_period: 
@@ -66,6 +70,7 @@ class CreateSecurityReportSubscriptionRequestBody:
         self._report_category = None
         self._topic_urn = None
         self._subscription_type = None
+        self._report_status = None
         self._report_content_subscription = None
         self._stat_period = None
         self._console_url_prefix = None
@@ -81,6 +86,8 @@ class CreateSecurityReportSubscriptionRequestBody:
             self.topic_urn = topic_urn
         if subscription_type is not None:
             self.subscription_type = subscription_type
+        if report_status is not None:
+            self.report_status = report_status
         if report_content_subscription is not None:
             self.report_content_subscription = report_content_subscription
         if stat_period is not None:
@@ -92,7 +99,7 @@ class CreateSecurityReportSubscriptionRequestBody:
     def sending_period(self):
         r"""Gets the sending_period of this CreateSecurityReportSubscriptionRequestBody.
 
-        **参数解释：** 发送时间段，设置报告的预设发送时间（如morning表示早晨时段）。 **约束限制：** 不涉及 **取值范围：** - morning : 00:00~06:00 - noon : 06:00~12:00 - afternoon : 12:00~18:00 - evening : 12:00~18:00  **默认取值：** 不涉及
+        **参数解释：** 发送时间段，设置报告的预设发送时间（如morning表示早晨时段）。 **约束限制：** 不涉及 **取值范围：** - morning : 00:00~06:00 - noon : 06:00~12:00 - afternoon : 12:00~18:00 - evening : 12:00~18:00 **默认取值：** 不涉及
 
         :return: The sending_period of this CreateSecurityReportSubscriptionRequestBody.
         :rtype: str
@@ -103,7 +110,7 @@ class CreateSecurityReportSubscriptionRequestBody:
     def sending_period(self, sending_period):
         r"""Sets the sending_period of this CreateSecurityReportSubscriptionRequestBody.
 
-        **参数解释：** 发送时间段，设置报告的预设发送时间（如morning表示早晨时段）。 **约束限制：** 不涉及 **取值范围：** - morning : 00:00~06:00 - noon : 06:00~12:00 - afternoon : 12:00~18:00 - evening : 12:00~18:00  **默认取值：** 不涉及
+        **参数解释：** 发送时间段，设置报告的预设发送时间（如morning表示早晨时段）。 **约束限制：** 不涉及 **取值范围：** - morning : 00:00~06:00 - noon : 06:00~12:00 - afternoon : 12:00~18:00 - evening : 12:00~18:00 **默认取值：** 不涉及
 
         :param sending_period: The sending_period of this CreateSecurityReportSubscriptionRequestBody.
         :type sending_period: str
@@ -136,7 +143,7 @@ class CreateSecurityReportSubscriptionRequestBody:
     def report_category(self):
         r"""Gets the report_category of this CreateSecurityReportSubscriptionRequestBody.
 
-        **参数解释：** 报告类别，设置订阅的报告类型（如daily_report表示安全日报）。 **约束限制：** 不涉及 **取值范围：** - daily_report : 日报 - weekly_report : 周报 - monthly_report : 月报 - custom_report : 自定义  **默认取值：** 不涉及
+        **参数解释：** 报告类别，设置订阅的报告类型（如daily_report表示安全日报）。 **约束限制：** 不涉及 **取值范围：** - daily_report : 日报 - weekly_report : 周报 - monthly_report : 月报 - custom_report : 自定义 **默认取值：** 不涉及
 
         :return: The report_category of this CreateSecurityReportSubscriptionRequestBody.
         :rtype: str
@@ -147,7 +154,7 @@ class CreateSecurityReportSubscriptionRequestBody:
     def report_category(self, report_category):
         r"""Sets the report_category of this CreateSecurityReportSubscriptionRequestBody.
 
-        **参数解释：** 报告类别，设置订阅的报告类型（如daily_report表示安全日报）。 **约束限制：** 不涉及 **取值范围：** - daily_report : 日报 - weekly_report : 周报 - monthly_report : 月报 - custom_report : 自定义  **默认取值：** 不涉及
+        **参数解释：** 报告类别，设置订阅的报告类型（如daily_report表示安全日报）。 **约束限制：** 不涉及 **取值范围：** - daily_report : 日报 - weekly_report : 周报 - monthly_report : 月报 - custom_report : 自定义 **默认取值：** 不涉及
 
         :param report_category: The report_category of this CreateSecurityReportSubscriptionRequestBody.
         :type report_category: str
@@ -180,7 +187,7 @@ class CreateSecurityReportSubscriptionRequestBody:
     def subscription_type(self):
         r"""Gets the subscription_type of this CreateSecurityReportSubscriptionRequestBody.
 
-        **参数解释：** 订阅类型，接收安全报告的订阅方式（如slient表示静默订阅）。 **约束限制：** 不涉及 **取值范围：** - smn_topic : 消息主题 - silent ： 静默 - message_center ： 消息中心  **默认取值：** 不涉及
+        **参数解释：** 订阅类型，接收安全报告的订阅方式（如silent表示静默订阅）。 **约束限制：** 不涉及 **取值范围：** - smn_topic : 消息主题 - silent ： 静默 - message_center ： 消息中心 **默认取值：** 不涉及
 
         :return: The subscription_type of this CreateSecurityReportSubscriptionRequestBody.
         :rtype: str
@@ -191,12 +198,34 @@ class CreateSecurityReportSubscriptionRequestBody:
     def subscription_type(self, subscription_type):
         r"""Sets the subscription_type of this CreateSecurityReportSubscriptionRequestBody.
 
-        **参数解释：** 订阅类型，接收安全报告的订阅方式（如slient表示静默订阅）。 **约束限制：** 不涉及 **取值范围：** - smn_topic : 消息主题 - silent ： 静默 - message_center ： 消息中心  **默认取值：** 不涉及
+        **参数解释：** 订阅类型，接收安全报告的订阅方式（如silent表示静默订阅）。 **约束限制：** 不涉及 **取值范围：** - smn_topic : 消息主题 - silent ： 静默 - message_center ： 消息中心 **默认取值：** 不涉及
 
         :param subscription_type: The subscription_type of this CreateSecurityReportSubscriptionRequestBody.
         :type subscription_type: str
         """
         self._subscription_type = subscription_type
+
+    @property
+    def report_status(self):
+        r"""Gets the report_status of this CreateSecurityReportSubscriptionRequestBody.
+
+        **参数解释：** 报告状态，标识当前订阅的启用状态（如opened表示已开启，closed表示已关闭）。 **约束限制：** 不涉及 **取值范围：** - opened ： 已开启 - closed ： 已关闭 **默认取值：** 不涉及
+
+        :return: The report_status of this CreateSecurityReportSubscriptionRequestBody.
+        :rtype: str
+        """
+        return self._report_status
+
+    @report_status.setter
+    def report_status(self, report_status):
+        r"""Sets the report_status of this CreateSecurityReportSubscriptionRequestBody.
+
+        **参数解释：** 报告状态，标识当前订阅的启用状态（如opened表示已开启，closed表示已关闭）。 **约束限制：** 不涉及 **取值范围：** - opened ： 已开启 - closed ： 已关闭 **默认取值：** 不涉及
+
+        :param report_status: The report_status of this CreateSecurityReportSubscriptionRequestBody.
+        :type report_status: str
+        """
+        self._report_status = report_status
 
     @property
     def report_content_subscription(self):

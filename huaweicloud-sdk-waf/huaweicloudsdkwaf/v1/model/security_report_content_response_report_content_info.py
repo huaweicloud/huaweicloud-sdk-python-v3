@@ -15,7 +15,7 @@ class SecurityReportContentResponseReportContentInfo:
     sensitive_list = []
 
     openapi_types = {
-        'overview_statistics_list_info': 'list[SecurityReportContentResponseReportContentInfoOverviewStatisticsListInfo]',
+        'overview_statistics_info_list': 'list[SecurityReportContentResponseReportContentInfoOverviewStatisticsInfoList]',
         'request_statistics_info_list': 'list[SecurityReportContentResponseReportContentInfoRequestStatisticsInfoList]',
         'qps_statistics_info': 'SecurityReportContentResponseReportContentInfoQpsStatisticsInfo',
         'bandwidth_statistics_info': 'SecurityReportContentResponseReportContentInfoBandwidthStatisticsInfo',
@@ -25,11 +25,11 @@ class SecurityReportContentResponseReportContentInfo:
         'top_attack_source_ips_info_list': 'list[SecurityReportContentResponseReportContentInfoTopAttackSourceIpsInfoList]',
         'top_attacked_urls_info_list': 'list[SecurityReportContentResponseReportContentInfoTopAttackedUrlsInfoList]',
         'top_attack_source_locations_info_list': 'list[SecurityReportContentResponseReportContentInfoTopAttackSourceLocationsInfoList]',
-        'top_abnormal_urls_info': 'SecurityReportContentResponseReportContentInfoTopAbnormalUrlsInfo'
+        'top_error_pages_info': 'SecurityReportContentResponseReportContentInfoTopErrorPagesInfo'
     }
 
     attribute_map = {
-        'overview_statistics_list_info': 'overview_statistics_list_info',
+        'overview_statistics_info_list': 'overview_statistics_info_list',
         'request_statistics_info_list': 'request_statistics_info_list',
         'qps_statistics_info': 'qps_statistics_info',
         'bandwidth_statistics_info': 'bandwidth_statistics_info',
@@ -39,16 +39,16 @@ class SecurityReportContentResponseReportContentInfo:
         'top_attack_source_ips_info_list': 'top_attack_source_ips_info_list',
         'top_attacked_urls_info_list': 'top_attacked_urls_info_list',
         'top_attack_source_locations_info_list': 'top_attack_source_locations_info_list',
-        'top_abnormal_urls_info': 'top_abnormal_urls_info'
+        'top_error_pages_info': 'top_error_pages_info'
     }
 
-    def __init__(self, overview_statistics_list_info=None, request_statistics_info_list=None, qps_statistics_info=None, bandwidth_statistics_info=None, response_code_statistics_info=None, attack_type_distribution_info_list=None, top_attacked_domains_info_list=None, top_attack_source_ips_info_list=None, top_attacked_urls_info_list=None, top_attack_source_locations_info_list=None, top_abnormal_urls_info=None):
+    def __init__(self, overview_statistics_info_list=None, request_statistics_info_list=None, qps_statistics_info=None, bandwidth_statistics_info=None, response_code_statistics_info=None, attack_type_distribution_info_list=None, top_attacked_domains_info_list=None, top_attack_source_ips_info_list=None, top_attacked_urls_info_list=None, top_attack_source_locations_info_list=None, top_error_pages_info=None):
         r"""SecurityReportContentResponseReportContentInfo
 
         The model defined in huaweicloud sdk
 
-        :param overview_statistics_list_info: **参数解释：** 总览统计信息，包含各维度的汇总统计数据及TOP域名详情。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
-        :type overview_statistics_list_info: list[:class:`huaweicloudsdkwaf.v1.SecurityReportContentResponseReportContentInfoOverviewStatisticsListInfo`]
+        :param overview_statistics_info_list: **参数解释：** 总览统计信息，包含各维度的汇总统计数据及TOP域名详情。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :type overview_statistics_info_list: list[:class:`huaweicloudsdkwaf.v1.SecurityReportContentResponseReportContentInfoOverviewStatisticsInfoList`]
         :param request_statistics_info_list: **参数解释：** 请求次数统计信息，包含各维度按时间线的请求数量统计。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type request_statistics_info_list: list[:class:`huaweicloudsdkwaf.v1.SecurityReportContentResponseReportContentInfoRequestStatisticsInfoList`]
         :param qps_statistics_info: 
@@ -67,13 +67,13 @@ class SecurityReportContentResponseReportContentInfo:
         :type top_attacked_urls_info_list: list[:class:`huaweicloudsdkwaf.v1.SecurityReportContentResponseReportContentInfoTopAttackedUrlsInfoList`]
         :param top_attack_source_locations_info_list: **参数解释：** TOP攻击的源地理位置信息，按攻击次数排序的地理位置列表。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type top_attack_source_locations_info_list: list[:class:`huaweicloudsdkwaf.v1.SecurityReportContentResponseReportContentInfoTopAttackSourceLocationsInfoList`]
-        :param top_abnormal_urls_info: 
-        :type top_abnormal_urls_info: :class:`huaweicloudsdkwaf.v1.SecurityReportContentResponseReportContentInfoTopAbnormalUrlsInfo`
+        :param top_error_pages_info: 
+        :type top_error_pages_info: :class:`huaweicloudsdkwaf.v1.SecurityReportContentResponseReportContentInfoTopErrorPagesInfo`
         """
         
         
 
-        self._overview_statistics_list_info = None
+        self._overview_statistics_info_list = None
         self._request_statistics_info_list = None
         self._qps_statistics_info = None
         self._bandwidth_statistics_info = None
@@ -83,11 +83,11 @@ class SecurityReportContentResponseReportContentInfo:
         self._top_attack_source_ips_info_list = None
         self._top_attacked_urls_info_list = None
         self._top_attack_source_locations_info_list = None
-        self._top_abnormal_urls_info = None
+        self._top_error_pages_info = None
         self.discriminator = None
 
-        if overview_statistics_list_info is not None:
-            self.overview_statistics_list_info = overview_statistics_list_info
+        if overview_statistics_info_list is not None:
+            self.overview_statistics_info_list = overview_statistics_info_list
         if request_statistics_info_list is not None:
             self.request_statistics_info_list = request_statistics_info_list
         if qps_statistics_info is not None:
@@ -106,30 +106,30 @@ class SecurityReportContentResponseReportContentInfo:
             self.top_attacked_urls_info_list = top_attacked_urls_info_list
         if top_attack_source_locations_info_list is not None:
             self.top_attack_source_locations_info_list = top_attack_source_locations_info_list
-        if top_abnormal_urls_info is not None:
-            self.top_abnormal_urls_info = top_abnormal_urls_info
+        if top_error_pages_info is not None:
+            self.top_error_pages_info = top_error_pages_info
 
     @property
-    def overview_statistics_list_info(self):
-        r"""Gets the overview_statistics_list_info of this SecurityReportContentResponseReportContentInfo.
+    def overview_statistics_info_list(self):
+        r"""Gets the overview_statistics_info_list of this SecurityReportContentResponseReportContentInfo.
 
         **参数解释：** 总览统计信息，包含各维度的汇总统计数据及TOP域名详情。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
-        :return: The overview_statistics_list_info of this SecurityReportContentResponseReportContentInfo.
-        :rtype: list[:class:`huaweicloudsdkwaf.v1.SecurityReportContentResponseReportContentInfoOverviewStatisticsListInfo`]
+        :return: The overview_statistics_info_list of this SecurityReportContentResponseReportContentInfo.
+        :rtype: list[:class:`huaweicloudsdkwaf.v1.SecurityReportContentResponseReportContentInfoOverviewStatisticsInfoList`]
         """
-        return self._overview_statistics_list_info
+        return self._overview_statistics_info_list
 
-    @overview_statistics_list_info.setter
-    def overview_statistics_list_info(self, overview_statistics_list_info):
-        r"""Sets the overview_statistics_list_info of this SecurityReportContentResponseReportContentInfo.
+    @overview_statistics_info_list.setter
+    def overview_statistics_info_list(self, overview_statistics_info_list):
+        r"""Sets the overview_statistics_info_list of this SecurityReportContentResponseReportContentInfo.
 
         **参数解释：** 总览统计信息，包含各维度的汇总统计数据及TOP域名详情。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
-        :param overview_statistics_list_info: The overview_statistics_list_info of this SecurityReportContentResponseReportContentInfo.
-        :type overview_statistics_list_info: list[:class:`huaweicloudsdkwaf.v1.SecurityReportContentResponseReportContentInfoOverviewStatisticsListInfo`]
+        :param overview_statistics_info_list: The overview_statistics_info_list of this SecurityReportContentResponseReportContentInfo.
+        :type overview_statistics_info_list: list[:class:`huaweicloudsdkwaf.v1.SecurityReportContentResponseReportContentInfoOverviewStatisticsInfoList`]
         """
-        self._overview_statistics_list_info = overview_statistics_list_info
+        self._overview_statistics_info_list = overview_statistics_info_list
 
     @property
     def request_statistics_info_list(self):
@@ -318,22 +318,22 @@ class SecurityReportContentResponseReportContentInfo:
         self._top_attack_source_locations_info_list = top_attack_source_locations_info_list
 
     @property
-    def top_abnormal_urls_info(self):
-        r"""Gets the top_abnormal_urls_info of this SecurityReportContentResponseReportContentInfo.
+    def top_error_pages_info(self):
+        r"""Gets the top_error_pages_info of this SecurityReportContentResponseReportContentInfo.
 
-        :return: The top_abnormal_urls_info of this SecurityReportContentResponseReportContentInfo.
-        :rtype: :class:`huaweicloudsdkwaf.v1.SecurityReportContentResponseReportContentInfoTopAbnormalUrlsInfo`
+        :return: The top_error_pages_info of this SecurityReportContentResponseReportContentInfo.
+        :rtype: :class:`huaweicloudsdkwaf.v1.SecurityReportContentResponseReportContentInfoTopErrorPagesInfo`
         """
-        return self._top_abnormal_urls_info
+        return self._top_error_pages_info
 
-    @top_abnormal_urls_info.setter
-    def top_abnormal_urls_info(self, top_abnormal_urls_info):
-        r"""Sets the top_abnormal_urls_info of this SecurityReportContentResponseReportContentInfo.
+    @top_error_pages_info.setter
+    def top_error_pages_info(self, top_error_pages_info):
+        r"""Sets the top_error_pages_info of this SecurityReportContentResponseReportContentInfo.
 
-        :param top_abnormal_urls_info: The top_abnormal_urls_info of this SecurityReportContentResponseReportContentInfo.
-        :type top_abnormal_urls_info: :class:`huaweicloudsdkwaf.v1.SecurityReportContentResponseReportContentInfoTopAbnormalUrlsInfo`
+        :param top_error_pages_info: The top_error_pages_info of this SecurityReportContentResponseReportContentInfo.
+        :type top_error_pages_info: :class:`huaweicloudsdkwaf.v1.SecurityReportContentResponseReportContentInfoTopErrorPagesInfo`
         """
-        self._top_abnormal_urls_info = top_abnormal_urls_info
+        self._top_error_pages_info = top_error_pages_info
 
     def to_dict(self):
         result = {}

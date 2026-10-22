@@ -1981,7 +1981,8 @@ class ModelArtsAsyncClient(Client):
     def change_training_job_description_async(self, request):
         r"""更新训练作业描述
 
-        更新训练作业描述。
+        更新训练作业接口用于修改已存在的训练作业的描述、事件通知、作业优先级、允许被抢占等信息。
+        该接口适用于以下场景：当用户需要更新训练作业的描述、事件通知、作业优先级、允许被抢占等信息时，可以通过此接口进行修改。使用该接口的前提条件是训练作业已存在且用户具有相应的权限。更新操作完成后，训练作业的描述、事件通知、作业优先级、允许被抢占等信息将被更新。若训练作业不存在或用户无权限操作，接口将返回相应的错误信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2601,6 +2602,71 @@ class ModelArtsAsyncClient(Client):
             "resource_path": "/v1/{project_id}/dev-servers/hyper-clusters",
             "request_type": request.__class__.__name__,
             "response_type": "CreateHyperClusterResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_hyperinstance_group_async(self, request):
+        r"""创建hyperinstance-group
+
+        创建Hyper Group接口用于在系统中创建一个新的Hyper Group。该接口适用于以下场景：当用户需要使用超平面网络时，可以通过此接口创建Hyper Group。使用该接口的前提条件是用户已登录并具有创建Hyper Group的权限，且系统中已配置了必要的资源。创建操作完成后，将生成一个新的超平面网络，并返回超平面网络的详细信息，包括ID、名称、参数面网络ID。若用户无权限操作、系统中缺少必要的资源或配置参数无效，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateHyperinstanceGroup
+        :type request: :class:`huaweicloudsdkmodelarts.v1.CreateHyperinstanceGroupRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.CreateHyperinstanceGroupResponse`
+        """
+        http_info = self._create_hyperinstance_group_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_hyperinstance_group_async_invoker(self, request):
+        http_info = self._create_hyperinstance_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_hyperinstance_group_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/dev-servers/hyperinstance/groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateHyperinstanceGroupResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -4287,6 +4353,71 @@ class ModelArtsAsyncClient(Client):
             body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_hyperinstance_group_async(self, request):
+        r"""删除hyperinstance-group
+
+        删除hyperinstance-group
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteHyperinstanceGroup
+        :type request: :class:`huaweicloudsdkmodelarts.v1.DeleteHyperinstanceGroupRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.DeleteHyperinstanceGroupResponse`
+        """
+        http_info = self._delete_hyperinstance_group_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_hyperinstance_group_async_invoker(self, request):
+        http_info = self._delete_hyperinstance_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_hyperinstance_group_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/dev-servers/hyperinstance/groups/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteHyperinstanceGroupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -6119,6 +6250,71 @@ class ModelArtsAsyncClient(Client):
 
         return http_info
 
+    def get_hyperinstance_group_async(self, request):
+        r"""查询hyperinstance-group详情
+
+        查询HyperGroup详情接口用于在系统中查询Hyper Group详情。该接口适用于以下场景：当用户需要查询Hyper Group详情，可以通过此接口完成。使用该接口的前提条件是用户已登录并具有查询Hyper Group的权限，且系统中已配置了必要的资源。查询会返回超平面网络的详细信息，包括ID、名称、参数面网络ID等。若用户无权限操作、系统中缺少必要的资源或配置参数无效，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for GetHyperinstanceGroup
+        :type request: :class:`huaweicloudsdkmodelarts.v1.GetHyperinstanceGroupRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.GetHyperinstanceGroupResponse`
+        """
+        http_info = self._get_hyperinstance_group_http_info(request)
+        return self._call_api(**http_info)
+
+    def get_hyperinstance_group_async_invoker(self, request):
+        http_info = self._get_hyperinstance_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _get_hyperinstance_group_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/dev-servers/hyperinstance/groups/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "GetHyperinstanceGroupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def get_hyperinstance_operation_async(self, request):
         r"""查询超节点Operation详情
 
@@ -7355,6 +7551,199 @@ class ModelArtsAsyncClient(Client):
 
         return http_info
 
+    def list_hyperinstance_group_async(self, request):
+        r"""查询hyperinstance-group详情列表
+
+        查询hyperinstance-group详情列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListHyperinstanceGroup
+        :type request: :class:`huaweicloudsdkmodelarts.v1.ListHyperinstanceGroupRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.ListHyperinstanceGroupResponse`
+        """
+        http_info = self._list_hyperinstance_group_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_hyperinstance_group_async_invoker(self, request):
+        http_info = self._list_hyperinstance_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_hyperinstance_group_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/dev-servers/hyperinstance/groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListHyperinstanceGroupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_hyperinstance_groups_capacity_async(self, request):
+        r"""查询超节点hyperinstance-groups容量测算结果
+
+        查询超节点hyperinstance-groups容量测算结果
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListHyperinstanceGroupsCapacity
+        :type request: :class:`huaweicloudsdkmodelarts.v1.ListHyperinstanceGroupsCapacityRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.ListHyperinstanceGroupsCapacityResponse`
+        """
+        http_info = self._list_hyperinstance_groups_capacity_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_hyperinstance_groups_capacity_async_invoker(self, request):
+        http_info = self._list_hyperinstance_groups_capacity_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_hyperinstance_groups_capacity_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/dev-servers/hyperinstance/group-capacity-evaluations",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListHyperinstanceGroupsCapacityResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_hyperinstance_servers_async(self, request):
+        r"""查询超节点的所有子节点
+
+        查询指定超节点下的所有节点实例列表接口用于获取用户名下指定超节点所有Lite Server实例的详细信息。该接口适用于以下场景：用户需要查看其指定超节点下的所有Lite Server实例的状态、配置等信息，以便进行资源管理。使用该接口的前提条件是用户已登录且具有查询指定超节点下的所有节点实例列表接口的权限。调用此接口后，系统将返回指定超节点下所有Lite Server实例的列表，包括实例ID、名称、状态、创建时间等信息。若用户无权限或未登录，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListHyperinstanceServers
+        :type request: :class:`huaweicloudsdkmodelarts.v1.ListHyperinstanceServersRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.ListHyperinstanceServersResponse`
+        """
+        http_info = self._list_hyperinstance_servers_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_hyperinstance_servers_async_invoker(self, request):
+        http_info = self._list_hyperinstance_servers_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_hyperinstance_servers_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/dev-servers/hyperinstance/{id}/servers",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListHyperinstanceServersResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_hyperinstances_async(self, request):
         r"""查询用户所有超节点实例详情
 
@@ -7789,8 +8178,8 @@ class ModelArtsAsyncClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
-        if 'pod_name' in local_var_params:
-            query_params.append(('pod_name', local_var_params['pod_name']))
+        if 'instance_name' in local_var_params:
+            query_params.append(('instance_name', local_var_params['instance_name']))
 
         header_params = {}
 
@@ -7950,6 +8339,8 @@ class ModelArtsAsyncClient(Client):
             query_params.append(('pod_node_ip', local_var_params['pod_node_ip']))
         if 'pod_node_name' in local_var_params:
             query_params.append(('pod_node_name', local_var_params['pod_node_name']))
+        if 'pod_role_name' in local_var_params:
+            query_params.append(('pod_role_name', local_var_params['pod_role_name']))
 
         header_params = {}
 
@@ -15119,6 +15510,73 @@ class ModelArtsAsyncClient(Client):
         path_params = {}
         if 'image_id' in local_var_params:
             path_params['image_id'] = local_var_params['image_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def unbind_dev_server_public_ip_async(self, request):
+        r"""Lite Server解绑EIP
+
+        Lite Server解绑EIP
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UnbindDevServerPublicIP
+        :type request: :class:`huaweicloudsdkmodelarts.v1.UnbindDevServerPublicIPRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.UnbindDevServerPublicIPResponse`
+        """
+        http_info = self._unbind_dev_server_public_ip_http_info(request)
+        return self._call_api(**http_info)
+
+    def unbind_dev_server_public_ip_async_invoker(self, request):
+        http_info = self._unbind_dev_server_public_ip_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _unbind_dev_server_public_ip_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/dev-servers/{id}/publicips/{publicip_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UnbindDevServerPublicIPResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+        if 'publicip_id' in local_var_params:
+            path_params['publicip_id'] = local_var_params['publicip_id']
 
         query_params = []
 

@@ -33,9 +33,13 @@ class PolicyOption:
         'antitamper': 'bool',
         'antileakage': 'bool',
         'bot_enable': 'bool',
+        'bot_manager_enable': 'bool',
         'modulex_enabled': 'bool',
         'followed_action': 'bool',
-        'anticrawler': 'bool'
+        'anticrawler': 'bool',
+        'scan_protection': 'bool',
+        'high_frequency_scan_blocking': 'bool',
+        'directory_traversal_protection': 'bool'
     }
 
     attribute_map = {
@@ -57,12 +61,16 @@ class PolicyOption:
         'antitamper': 'antitamper',
         'antileakage': 'antileakage',
         'bot_enable': 'bot_enable',
+        'bot_manager_enable': 'bot_manager_enable',
         'modulex_enabled': 'modulex_enabled',
         'followed_action': 'followed_action',
-        'anticrawler': 'anticrawler'
+        'anticrawler': 'anticrawler',
+        'scan_protection': 'scan_protection',
+        'high_frequency_scan_blocking': 'high_frequency_scan_blocking',
+        'directory_traversal_protection': 'directory_traversal_protection'
     }
 
-    def __init__(self, webattack=None, common=None, crawler=None, crawler_engine=None, crawler_scanner=None, crawler_script=None, crawler_other=None, webshell=None, cc=None, custom=None, precise=None, whiteblackip=None, geoip=None, ignore=None, privacy=None, antitamper=None, antileakage=None, bot_enable=None, modulex_enabled=None, followed_action=None, anticrawler=None):
+    def __init__(self, webattack=None, common=None, crawler=None, crawler_engine=None, crawler_scanner=None, crawler_script=None, crawler_other=None, webshell=None, cc=None, custom=None, precise=None, whiteblackip=None, geoip=None, ignore=None, privacy=None, antitamper=None, antileakage=None, bot_enable=None, bot_manager_enable=None, modulex_enabled=None, followed_action=None, anticrawler=None, scan_protection=None, high_frequency_scan_blocking=None, directory_traversal_protection=None):
         r"""PolicyOption
 
         The model defined in huaweicloud sdk
@@ -103,12 +111,20 @@ class PolicyOption:
         :type antileakage: bool
         :param bot_enable: 网站反爬虫总开关是否开启
         :type bot_enable: bool
+        :param bot_manager_enable: BOT管理是否开启
+        :type bot_manager_enable: bool
         :param modulex_enabled: modulex智能cc防护是否开启，该特性是公测特性，在公测期间，只支持仅记录模式。
         :type modulex_enabled: bool
         :param followed_action: 攻击惩罚规则是否开启
         :type followed_action: bool
         :param anticrawler: 反爬虫规则是否开启
         :type anticrawler: bool
+        :param scan_protection: 扫描防护总开关是否开启
+        :type scan_protection: bool
+        :param high_frequency_scan_blocking: 高频扫描封禁是否开启
+        :type high_frequency_scan_blocking: bool
+        :param directory_traversal_protection: 目录遍历防护是否开启
+        :type directory_traversal_protection: bool
         """
         
         
@@ -131,9 +147,13 @@ class PolicyOption:
         self._antitamper = None
         self._antileakage = None
         self._bot_enable = None
+        self._bot_manager_enable = None
         self._modulex_enabled = None
         self._followed_action = None
         self._anticrawler = None
+        self._scan_protection = None
+        self._high_frequency_scan_blocking = None
+        self._directory_traversal_protection = None
         self.discriminator = None
 
         if webattack is not None:
@@ -172,12 +192,20 @@ class PolicyOption:
             self.antileakage = antileakage
         if bot_enable is not None:
             self.bot_enable = bot_enable
+        if bot_manager_enable is not None:
+            self.bot_manager_enable = bot_manager_enable
         if modulex_enabled is not None:
             self.modulex_enabled = modulex_enabled
         if followed_action is not None:
             self.followed_action = followed_action
         if anticrawler is not None:
             self.anticrawler = anticrawler
+        if scan_protection is not None:
+            self.scan_protection = scan_protection
+        if high_frequency_scan_blocking is not None:
+            self.high_frequency_scan_blocking = high_frequency_scan_blocking
+        if directory_traversal_protection is not None:
+            self.directory_traversal_protection = directory_traversal_protection
 
     @property
     def webattack(self):
@@ -576,6 +604,28 @@ class PolicyOption:
         self._bot_enable = bot_enable
 
     @property
+    def bot_manager_enable(self):
+        r"""Gets the bot_manager_enable of this PolicyOption.
+
+        BOT管理是否开启
+
+        :return: The bot_manager_enable of this PolicyOption.
+        :rtype: bool
+        """
+        return self._bot_manager_enable
+
+    @bot_manager_enable.setter
+    def bot_manager_enable(self, bot_manager_enable):
+        r"""Sets the bot_manager_enable of this PolicyOption.
+
+        BOT管理是否开启
+
+        :param bot_manager_enable: The bot_manager_enable of this PolicyOption.
+        :type bot_manager_enable: bool
+        """
+        self._bot_manager_enable = bot_manager_enable
+
+    @property
     def modulex_enabled(self):
         r"""Gets the modulex_enabled of this PolicyOption.
 
@@ -640,6 +690,72 @@ class PolicyOption:
         :type anticrawler: bool
         """
         self._anticrawler = anticrawler
+
+    @property
+    def scan_protection(self):
+        r"""Gets the scan_protection of this PolicyOption.
+
+        扫描防护总开关是否开启
+
+        :return: The scan_protection of this PolicyOption.
+        :rtype: bool
+        """
+        return self._scan_protection
+
+    @scan_protection.setter
+    def scan_protection(self, scan_protection):
+        r"""Sets the scan_protection of this PolicyOption.
+
+        扫描防护总开关是否开启
+
+        :param scan_protection: The scan_protection of this PolicyOption.
+        :type scan_protection: bool
+        """
+        self._scan_protection = scan_protection
+
+    @property
+    def high_frequency_scan_blocking(self):
+        r"""Gets the high_frequency_scan_blocking of this PolicyOption.
+
+        高频扫描封禁是否开启
+
+        :return: The high_frequency_scan_blocking of this PolicyOption.
+        :rtype: bool
+        """
+        return self._high_frequency_scan_blocking
+
+    @high_frequency_scan_blocking.setter
+    def high_frequency_scan_blocking(self, high_frequency_scan_blocking):
+        r"""Sets the high_frequency_scan_blocking of this PolicyOption.
+
+        高频扫描封禁是否开启
+
+        :param high_frequency_scan_blocking: The high_frequency_scan_blocking of this PolicyOption.
+        :type high_frequency_scan_blocking: bool
+        """
+        self._high_frequency_scan_blocking = high_frequency_scan_blocking
+
+    @property
+    def directory_traversal_protection(self):
+        r"""Gets the directory_traversal_protection of this PolicyOption.
+
+        目录遍历防护是否开启
+
+        :return: The directory_traversal_protection of this PolicyOption.
+        :rtype: bool
+        """
+        return self._directory_traversal_protection
+
+    @directory_traversal_protection.setter
+    def directory_traversal_protection(self, directory_traversal_protection):
+        r"""Sets the directory_traversal_protection of this PolicyOption.
+
+        目录遍历防护是否开启
+
+        :param directory_traversal_protection: The directory_traversal_protection of this PolicyOption.
+        :type directory_traversal_protection: bool
+        """
+        self._directory_traversal_protection = directory_traversal_protection
 
     def to_dict(self):
         result = {}

@@ -21,9 +21,13 @@ class UpdateAppInfoRequestBody:
         'description': 'str',
         'is_draft': 'bool',
         'create_type': 'str',
+        'group_id': 'str',
         'slave_cluster_id': 'str',
         'trigger': 'TaskTriggerVO',
-        'arrange_infos': 'list[UpdateTaskV2RequestBody]'
+        'arrange_infos': 'list[UpdateTaskV2RequestBody]',
+        'agency_urn': 'str',
+        'slave_resource_type': 'str',
+        'timeout': 'int'
     }
 
     attribute_map = {
@@ -33,12 +37,16 @@ class UpdateAppInfoRequestBody:
         'description': 'description',
         'is_draft': 'is_draft',
         'create_type': 'create_type',
+        'group_id': 'group_id',
         'slave_cluster_id': 'slave_cluster_id',
         'trigger': 'trigger',
-        'arrange_infos': 'arrange_infos'
+        'arrange_infos': 'arrange_infos',
+        'agency_urn': 'agency_urn',
+        'slave_resource_type': 'slave_resource_type',
+        'timeout': 'timeout'
     }
 
-    def __init__(self, id=None, project_id=None, name=None, description=None, is_draft=None, create_type=None, slave_cluster_id=None, trigger=None, arrange_infos=None):
+    def __init__(self, id=None, project_id=None, name=None, description=None, is_draft=None, create_type=None, group_id=None, slave_cluster_id=None, trigger=None, arrange_infos=None, agency_urn=None, slave_resource_type=None, timeout=None):
         r"""UpdateAppInfoRequestBody
 
         The model defined in huaweicloud sdk
@@ -55,12 +63,20 @@ class UpdateAppInfoRequestBody:
         :type is_draft: bool
         :param create_type: 创建类型，template：部署模板创建
         :type create_type: str
+        :param group_id: 分组id
+        :type group_id: str
         :param slave_cluster_id: 自定义slave资源池id
         :type slave_cluster_id: str
         :param trigger: 
         :type trigger: :class:`huaweicloudsdkcodeartsdeploy.v2.TaskTriggerVO`
         :param arrange_infos: 部署任务列表信息
         :type arrange_infos: list[:class:`huaweicloudsdkcodeartsdeploy.v2.UpdateTaskV2RequestBody`]
+        :param agency_urn: 委托URN
+        :type agency_urn: str
+        :param slave_resource_type: 资源池类型
+        :type slave_resource_type: str
+        :param timeout: 任务执行超时时间
+        :type timeout: int
         """
         
         
@@ -71,9 +87,13 @@ class UpdateAppInfoRequestBody:
         self._description = None
         self._is_draft = None
         self._create_type = None
+        self._group_id = None
         self._slave_cluster_id = None
         self._trigger = None
         self._arrange_infos = None
+        self._agency_urn = None
+        self._slave_resource_type = None
+        self._timeout = None
         self.discriminator = None
 
         self.id = id
@@ -83,12 +103,20 @@ class UpdateAppInfoRequestBody:
             self.description = description
         self.is_draft = is_draft
         self.create_type = create_type
+        if group_id is not None:
+            self.group_id = group_id
         if slave_cluster_id is not None:
             self.slave_cluster_id = slave_cluster_id
         if trigger is not None:
             self.trigger = trigger
         if arrange_infos is not None:
             self.arrange_infos = arrange_infos
+        if agency_urn is not None:
+            self.agency_urn = agency_urn
+        if slave_resource_type is not None:
+            self.slave_resource_type = slave_resource_type
+        if timeout is not None:
+            self.timeout = timeout
 
     @property
     def id(self):
@@ -223,6 +251,28 @@ class UpdateAppInfoRequestBody:
         self._create_type = create_type
 
     @property
+    def group_id(self):
+        r"""Gets the group_id of this UpdateAppInfoRequestBody.
+
+        分组id
+
+        :return: The group_id of this UpdateAppInfoRequestBody.
+        :rtype: str
+        """
+        return self._group_id
+
+    @group_id.setter
+    def group_id(self, group_id):
+        r"""Sets the group_id of this UpdateAppInfoRequestBody.
+
+        分组id
+
+        :param group_id: The group_id of this UpdateAppInfoRequestBody.
+        :type group_id: str
+        """
+        self._group_id = group_id
+
+    @property
     def slave_cluster_id(self):
         r"""Gets the slave_cluster_id of this UpdateAppInfoRequestBody.
 
@@ -283,6 +333,72 @@ class UpdateAppInfoRequestBody:
         :type arrange_infos: list[:class:`huaweicloudsdkcodeartsdeploy.v2.UpdateTaskV2RequestBody`]
         """
         self._arrange_infos = arrange_infos
+
+    @property
+    def agency_urn(self):
+        r"""Gets the agency_urn of this UpdateAppInfoRequestBody.
+
+        委托URN
+
+        :return: The agency_urn of this UpdateAppInfoRequestBody.
+        :rtype: str
+        """
+        return self._agency_urn
+
+    @agency_urn.setter
+    def agency_urn(self, agency_urn):
+        r"""Sets the agency_urn of this UpdateAppInfoRequestBody.
+
+        委托URN
+
+        :param agency_urn: The agency_urn of this UpdateAppInfoRequestBody.
+        :type agency_urn: str
+        """
+        self._agency_urn = agency_urn
+
+    @property
+    def slave_resource_type(self):
+        r"""Gets the slave_resource_type of this UpdateAppInfoRequestBody.
+
+        资源池类型
+
+        :return: The slave_resource_type of this UpdateAppInfoRequestBody.
+        :rtype: str
+        """
+        return self._slave_resource_type
+
+    @slave_resource_type.setter
+    def slave_resource_type(self, slave_resource_type):
+        r"""Sets the slave_resource_type of this UpdateAppInfoRequestBody.
+
+        资源池类型
+
+        :param slave_resource_type: The slave_resource_type of this UpdateAppInfoRequestBody.
+        :type slave_resource_type: str
+        """
+        self._slave_resource_type = slave_resource_type
+
+    @property
+    def timeout(self):
+        r"""Gets the timeout of this UpdateAppInfoRequestBody.
+
+        任务执行超时时间
+
+        :return: The timeout of this UpdateAppInfoRequestBody.
+        :rtype: int
+        """
+        return self._timeout
+
+    @timeout.setter
+    def timeout(self, timeout):
+        r"""Sets the timeout of this UpdateAppInfoRequestBody.
+
+        任务执行超时时间
+
+        :param timeout: The timeout of this UpdateAppInfoRequestBody.
+        :type timeout: int
+        """
+        self._timeout = timeout
 
     def to_dict(self):
         result = {}

@@ -24,7 +24,7 @@ class ServiceCreateRequest:
         'runtime_config': 'RuntimeConfigCreateRequest',
         'upgrade_config': 'UpgradeConfig',
         'lts_strategy': 'str',
-        'log_configs': 'list[LtsConfiguration]',
+        'log_configs': 'list[LtsConfigurationV2]',
         'tags': 'list[ServiceCreateRequestTags]',
         'workspace_id': 'str',
         'schedule': 'list[ScheduleConfig]',
@@ -78,7 +78,7 @@ class ServiceCreateRequest:
         :param lts_strategy: **参数解释：** 日志策略。 **约束限制：** 不涉及。 **取值范围：** - POOL：使用资源池日志插件配置的日志流。 - AUTO_CREATE：自动创建日志流。 - DEFAULT: 由系统决定日志策略 **默认取值：** AUTO_CREATE：自动创建日志流。
         :type lts_strategy: str
         :param log_configs: **参数解释：** 服务日志配置。 **约束限制：** 数量上限为[3](tag:hws,hws_hk,fcs,fcs_super)[2](tag:hcs,hcs_sm)个，且每种类型只可配置一个。
-        :type log_configs: list[:class:`huaweicloudsdkmodelarts.v1.LtsConfiguration`]
+        :type log_configs: list[:class:`huaweicloudsdkmodelarts.v1.LtsConfigurationV2`]
         :param tags: **参数解释：** 服务标签。 **约束限制：** 上限20个。
         :type tags: list[:class:`huaweicloudsdkmodelarts.v1.ServiceCreateRequestTags`]
         :param workspace_id: **参数解释：** 工作空间ID。 **约束限制：** 不涉及。 **取值范围：** - 0：默认空间ID。 - 由数字和小写字母组成的32位字符：其他空间ID，可参考[工作空间创建](CreateWorkspace.xml)。 **默认取值：** 不涉及。
@@ -342,7 +342,7 @@ class ServiceCreateRequest:
         **参数解释：** 服务日志配置。 **约束限制：** 数量上限为[3](tag:hws,hws_hk,fcs,fcs_super)[2](tag:hcs,hcs_sm)个，且每种类型只可配置一个。
 
         :return: The log_configs of this ServiceCreateRequest.
-        :rtype: list[:class:`huaweicloudsdkmodelarts.v1.LtsConfiguration`]
+        :rtype: list[:class:`huaweicloudsdkmodelarts.v1.LtsConfigurationV2`]
         """
         return self._log_configs
 
@@ -353,7 +353,7 @@ class ServiceCreateRequest:
         **参数解释：** 服务日志配置。 **约束限制：** 数量上限为[3](tag:hws,hws_hk,fcs,fcs_super)[2](tag:hcs,hcs_sm)个，且每种类型只可配置一个。
 
         :param log_configs: The log_configs of this ServiceCreateRequest.
-        :type log_configs: list[:class:`huaweicloudsdkmodelarts.v1.LtsConfiguration`]
+        :type log_configs: list[:class:`huaweicloudsdkmodelarts.v1.LtsConfigurationV2`]
         """
         self._log_configs = log_configs
 

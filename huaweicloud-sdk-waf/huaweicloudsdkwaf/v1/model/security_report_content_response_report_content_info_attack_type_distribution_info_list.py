@@ -16,15 +16,17 @@ class SecurityReportContentResponseReportContentInfoAttackTypeDistributionInfoLi
 
     openapi_types = {
         'key': 'str',
-        'num': 'int'
+        'num': 'int',
+        'detail': 'list[SecurityReportContentResponseReportContentInfoDetail]'
     }
 
     attribute_map = {
         'key': 'key',
-        'num': 'num'
+        'num': 'num',
+        'detail': 'detail'
     }
 
-    def __init__(self, key=None, num=None):
+    def __init__(self, key=None, num=None, detail=None):
         r"""SecurityReportContentResponseReportContentInfoAttackTypeDistributionInfoList
 
         The model defined in huaweicloud sdk
@@ -33,18 +35,23 @@ class SecurityReportContentResponseReportContentInfoAttackTypeDistributionInfoLi
         :type key: str
         :param num: **参数解释：** 该攻击类型的总数量。 **约束限制：** 不涉及 **取值范围：** ≥0 **默认取值：** 0
         :type num: int
+        :param detail: **参数解释：** 该攻击类型的详细分布信息。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :type detail: list[:class:`huaweicloudsdkwaf.v1.SecurityReportContentResponseReportContentInfoDetail`]
         """
         
         
 
         self._key = None
         self._num = None
+        self._detail = None
         self.discriminator = None
 
         if key is not None:
             self.key = key
         if num is not None:
             self.num = num
+        if detail is not None:
+            self.detail = detail
 
     @property
     def key(self):
@@ -89,6 +96,28 @@ class SecurityReportContentResponseReportContentInfoAttackTypeDistributionInfoLi
         :type num: int
         """
         self._num = num
+
+    @property
+    def detail(self):
+        r"""Gets the detail of this SecurityReportContentResponseReportContentInfoAttackTypeDistributionInfoList.
+
+        **参数解释：** 该攻击类型的详细分布信息。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+
+        :return: The detail of this SecurityReportContentResponseReportContentInfoAttackTypeDistributionInfoList.
+        :rtype: list[:class:`huaweicloudsdkwaf.v1.SecurityReportContentResponseReportContentInfoDetail`]
+        """
+        return self._detail
+
+    @detail.setter
+    def detail(self, detail):
+        r"""Sets the detail of this SecurityReportContentResponseReportContentInfoAttackTypeDistributionInfoList.
+
+        **参数解释：** 该攻击类型的详细分布信息。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+
+        :param detail: The detail of this SecurityReportContentResponseReportContentInfoAttackTypeDistributionInfoList.
+        :type detail: list[:class:`huaweicloudsdkwaf.v1.SecurityReportContentResponseReportContentInfoDetail`]
+        """
+        self._detail = detail
 
     def to_dict(self):
         result = {}

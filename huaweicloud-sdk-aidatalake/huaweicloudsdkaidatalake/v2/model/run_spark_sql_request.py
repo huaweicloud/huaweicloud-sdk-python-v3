@@ -32,7 +32,7 @@ class RunSparkSqlRequest:
 
         The model defined in huaweicloud sdk
 
-        :param workspace_id: **参数解释**：工作空间的ID。 **约束限制**：不涉及。 **取值范围**：长度为1~36个字符，支持大小写英文字母、数字、连字符。 **默认取值**：不涉及。
+        :param workspace_id: **参数解释**：工作空间ID，可通过[获取工作空间ID](aidatalake_02_0044.xml)获取。 **约束限制**：不涉及。 **取值范围**：长度为32~36的英文字符、数字和中划线的组合。 **默认取值**：不涉及。
         :type workspace_id: str
         :param x_client_token: **参数解释**：服务事务ID，用于链路追踪和问题定位。 **约束限制**：不涉及。 **取值范围**：不涉及。 **默认取值**：不涉及。 
         :type x_client_token: str
@@ -57,7 +57,7 @@ class RunSparkSqlRequest:
     def workspace_id(self):
         r"""Gets the workspace_id of this RunSparkSqlRequest.
 
-        **参数解释**：工作空间的ID。 **约束限制**：不涉及。 **取值范围**：长度为1~36个字符，支持大小写英文字母、数字、连字符。 **默认取值**：不涉及。
+        **参数解释**：工作空间ID，可通过[获取工作空间ID](aidatalake_02_0044.xml)获取。 **约束限制**：不涉及。 **取值范围**：长度为32~36的英文字符、数字和中划线的组合。 **默认取值**：不涉及。
 
         :return: The workspace_id of this RunSparkSqlRequest.
         :rtype: str
@@ -68,7 +68,7 @@ class RunSparkSqlRequest:
     def workspace_id(self, workspace_id):
         r"""Sets the workspace_id of this RunSparkSqlRequest.
 
-        **参数解释**：工作空间的ID。 **约束限制**：不涉及。 **取值范围**：长度为1~36个字符，支持大小写英文字母、数字、连字符。 **默认取值**：不涉及。
+        **参数解释**：工作空间ID，可通过[获取工作空间ID](aidatalake_02_0044.xml)获取。 **约束限制**：不涉及。 **取值范围**：长度为32~36的英文字符、数字和中划线的组合。 **默认取值**：不涉及。
 
         :param workspace_id: The workspace_id of this RunSparkSqlRequest.
         :type workspace_id: str

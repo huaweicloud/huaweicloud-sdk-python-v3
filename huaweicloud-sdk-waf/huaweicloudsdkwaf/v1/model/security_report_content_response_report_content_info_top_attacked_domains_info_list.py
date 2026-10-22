@@ -17,16 +17,18 @@ class SecurityReportContentResponseReportContentInfoTopAttackedDomainsInfoList:
     openapi_types = {
         'key': 'str',
         'num': 'int',
-        'web_tag': 'str'
+        'web_tag': 'str',
+        'host': 'str'
     }
 
     attribute_map = {
         'key': 'key',
         'num': 'num',
-        'web_tag': 'web_tag'
+        'web_tag': 'web_tag',
+        'host': 'host'
     }
 
-    def __init__(self, key=None, num=None, web_tag=None):
+    def __init__(self, key=None, num=None, web_tag=None, host=None):
         r"""SecurityReportContentResponseReportContentInfoTopAttackedDomainsInfoList
 
         The model defined in huaweicloud sdk
@@ -37,6 +39,8 @@ class SecurityReportContentResponseReportContentInfoTopAttackedDomainsInfoList:
         :type num: int
         :param web_tag: **参数解释：** 域名的Web标签，用于标识域名所属业务类型。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type web_tag: str
+        :param host: **参数解释：** 域名标识，包含域名及关联标识。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :type host: str
         """
         
         
@@ -44,6 +48,7 @@ class SecurityReportContentResponseReportContentInfoTopAttackedDomainsInfoList:
         self._key = None
         self._num = None
         self._web_tag = None
+        self._host = None
         self.discriminator = None
 
         if key is not None:
@@ -52,6 +57,8 @@ class SecurityReportContentResponseReportContentInfoTopAttackedDomainsInfoList:
             self.num = num
         if web_tag is not None:
             self.web_tag = web_tag
+        if host is not None:
+            self.host = host
 
     @property
     def key(self):
@@ -118,6 +125,28 @@ class SecurityReportContentResponseReportContentInfoTopAttackedDomainsInfoList:
         :type web_tag: str
         """
         self._web_tag = web_tag
+
+    @property
+    def host(self):
+        r"""Gets the host of this SecurityReportContentResponseReportContentInfoTopAttackedDomainsInfoList.
+
+        **参数解释：** 域名标识，包含域名及关联标识。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+
+        :return: The host of this SecurityReportContentResponseReportContentInfoTopAttackedDomainsInfoList.
+        :rtype: str
+        """
+        return self._host
+
+    @host.setter
+    def host(self, host):
+        r"""Sets the host of this SecurityReportContentResponseReportContentInfoTopAttackedDomainsInfoList.
+
+        **参数解释：** 域名标识，包含域名及关联标识。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+
+        :param host: The host of this SecurityReportContentResponseReportContentInfoTopAttackedDomainsInfoList.
+        :type host: str
+        """
+        self._host = host
 
     def to_dict(self):
         result = {}

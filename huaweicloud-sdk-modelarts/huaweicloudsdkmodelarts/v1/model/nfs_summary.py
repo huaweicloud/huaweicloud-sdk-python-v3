@@ -27,7 +27,7 @@ class NFSSummary:
 
         The model defined in huaweicloud sdk
 
-        :param nfs_path: **参数解释**：sfsTurbo弹性文件系统url。 **约束限制**：不涉及。 **取值范围**：不涉及。 **默认取值**：不涉及。
+        :param nfs_path: **参数解释**：sfsTurbo弹性文件系统url，如“140f956f-c31-*****.150f886f-c37-*****.sfsturbo.internal:/”。 **约束限制**：不涉及。 **取值范围**：不涉及。 **默认取值**：不涉及。
         :type nfs_path: str
         """
         
@@ -42,7 +42,7 @@ class NFSSummary:
     def nfs_path(self):
         r"""Gets the nfs_path of this NFSSummary.
 
-        **参数解释**：sfsTurbo弹性文件系统url。 **约束限制**：不涉及。 **取值范围**：不涉及。 **默认取值**：不涉及。
+        **参数解释**：sfsTurbo弹性文件系统url，如“140f956f-c31-*****.150f886f-c37-*****.sfsturbo.internal:/”。 **约束限制**：不涉及。 **取值范围**：不涉及。 **默认取值**：不涉及。
 
         :return: The nfs_path of this NFSSummary.
         :rtype: str
@@ -53,7 +53,7 @@ class NFSSummary:
     def nfs_path(self, nfs_path):
         r"""Sets the nfs_path of this NFSSummary.
 
-        **参数解释**：sfsTurbo弹性文件系统url。 **约束限制**：不涉及。 **取值范围**：不涉及。 **默认取值**：不涉及。
+        **参数解释**：sfsTurbo弹性文件系统url，如“140f956f-c31-*****.150f886f-c37-*****.sfsturbo.internal:/”。 **约束限制**：不涉及。 **取值范围**：不涉及。 **默认取值**：不涉及。
 
         :param nfs_path: The nfs_path of this NFSSummary.
         :type nfs_path: str

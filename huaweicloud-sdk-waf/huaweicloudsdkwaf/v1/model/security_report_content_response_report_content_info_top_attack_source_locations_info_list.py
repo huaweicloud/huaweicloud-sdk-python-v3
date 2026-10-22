@@ -16,15 +16,19 @@ class SecurityReportContentResponseReportContentInfoTopAttackSourceLocationsInfo
 
     openapi_types = {
         'key': 'str',
-        'num': 'int'
+        'num': 'int',
+        'host': 'str',
+        'web_tag': 'str'
     }
 
     attribute_map = {
         'key': 'key',
-        'num': 'num'
+        'num': 'num',
+        'host': 'host',
+        'web_tag': 'web_tag'
     }
 
-    def __init__(self, key=None, num=None):
+    def __init__(self, key=None, num=None, host=None, web_tag=None):
         r"""SecurityReportContentResponseReportContentInfoTopAttackSourceLocationsInfoList
 
         The model defined in huaweicloud sdk
@@ -33,18 +37,28 @@ class SecurityReportContentResponseReportContentInfoTopAttackSourceLocationsInfo
         :type key: str
         :param num: **参数解释：** 该地理位置发起攻击的总次数。 **约束限制：** 不涉及 **取值范围：** ≥0 **默认取值：** 0
         :type num: int
+        :param host: **参数解释：** 域名标识。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :type host: str
+        :param web_tag: **参数解释：** 域名的Web标签。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :type web_tag: str
         """
         
         
 
         self._key = None
         self._num = None
+        self._host = None
+        self._web_tag = None
         self.discriminator = None
 
         if key is not None:
             self.key = key
         if num is not None:
             self.num = num
+        if host is not None:
+            self.host = host
+        if web_tag is not None:
+            self.web_tag = web_tag
 
     @property
     def key(self):
@@ -89,6 +103,50 @@ class SecurityReportContentResponseReportContentInfoTopAttackSourceLocationsInfo
         :type num: int
         """
         self._num = num
+
+    @property
+    def host(self):
+        r"""Gets the host of this SecurityReportContentResponseReportContentInfoTopAttackSourceLocationsInfoList.
+
+        **参数解释：** 域名标识。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+
+        :return: The host of this SecurityReportContentResponseReportContentInfoTopAttackSourceLocationsInfoList.
+        :rtype: str
+        """
+        return self._host
+
+    @host.setter
+    def host(self, host):
+        r"""Sets the host of this SecurityReportContentResponseReportContentInfoTopAttackSourceLocationsInfoList.
+
+        **参数解释：** 域名标识。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+
+        :param host: The host of this SecurityReportContentResponseReportContentInfoTopAttackSourceLocationsInfoList.
+        :type host: str
+        """
+        self._host = host
+
+    @property
+    def web_tag(self):
+        r"""Gets the web_tag of this SecurityReportContentResponseReportContentInfoTopAttackSourceLocationsInfoList.
+
+        **参数解释：** 域名的Web标签。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+
+        :return: The web_tag of this SecurityReportContentResponseReportContentInfoTopAttackSourceLocationsInfoList.
+        :rtype: str
+        """
+        return self._web_tag
+
+    @web_tag.setter
+    def web_tag(self, web_tag):
+        r"""Sets the web_tag of this SecurityReportContentResponseReportContentInfoTopAttackSourceLocationsInfoList.
+
+        **参数解释：** 域名的Web标签。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+
+        :param web_tag: The web_tag of this SecurityReportContentResponseReportContentInfoTopAttackSourceLocationsInfoList.
+        :type web_tag: str
+        """
+        self._web_tag = web_tag
 
     def to_dict(self):
         result = {}

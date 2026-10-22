@@ -21,7 +21,8 @@ class ServerNetwork:
         'subnet_id': 'str',
         'vpc_id': 'str',
         'hyper_cluster': 'ServerNetworkHyperCluster',
-        'allowed_address_pairs': 'list[AllowedAddressPairs]'
+        'allowed_address_pairs': 'list[AllowedAddressPairs]',
+        'hyper_group': 'HyperGroup'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class ServerNetwork:
         'subnet_id': 'subnet_id',
         'vpc_id': 'vpc_id',
         'hyper_cluster': 'hyper_cluster',
-        'allowed_address_pairs': 'allowed_address_pairs'
+        'allowed_address_pairs': 'allowed_address_pairs',
+        'hyper_group': 'hyper_group'
     }
 
-    def __init__(self, ipv6_enable=None, roce_id=None, security_group_id=None, subnet_id=None, vpc_id=None, hyper_cluster=None, allowed_address_pairs=None):
+    def __init__(self, ipv6_enable=None, roce_id=None, security_group_id=None, subnet_id=None, vpc_id=None, hyper_cluster=None, allowed_address_pairs=None, hyper_group=None):
         r"""ServerNetwork
 
         The model defined in huaweicloud sdk
@@ -53,6 +55,8 @@ class ServerNetwork:
         :type hyper_cluster: :class:`huaweicloudsdkmodelarts.v1.ServerNetworkHyperCluster`
         :param allowed_address_pairs: **参数解释：** IP/Mac对列表。 **约束限制：** - IP地址不允许为 “0.0.0.0/0”。 - 如果allowed_address_pairs配置地址池较大的CIDR（掩码小于24位），建议为该port配置一个单独的安全组。 - 如果allowed_address_pairs为“1.1.1.1/0”，表示关闭源目的地址检查开关。 - 如果是虚拟IP绑定云服务器，       则mac_address可为空或者填写被绑定云服务器网卡的Mac地址。       被绑定的云服务器网卡allowed_address_pairs的IP地址填“1.1.1.1/0”。 **取值范围：** 不涉及 **默认取值：** 不涉及\&quot;
         :type allowed_address_pairs: list[:class:`huaweicloudsdkmodelarts.v1.AllowedAddressPairs`]
+        :param hyper_group: 
+        :type hyper_group: :class:`huaweicloudsdkmodelarts.v1.HyperGroup`
         """
         
         
@@ -64,6 +68,7 @@ class ServerNetwork:
         self._vpc_id = None
         self._hyper_cluster = None
         self._allowed_address_pairs = None
+        self._hyper_group = None
         self.discriminator = None
 
         if ipv6_enable is not None:
@@ -77,6 +82,8 @@ class ServerNetwork:
             self.hyper_cluster = hyper_cluster
         if allowed_address_pairs is not None:
             self.allowed_address_pairs = allowed_address_pairs
+        if hyper_group is not None:
+            self.hyper_group = hyper_group
 
     @property
     def ipv6_enable(self):
@@ -227,6 +234,24 @@ class ServerNetwork:
         :type allowed_address_pairs: list[:class:`huaweicloudsdkmodelarts.v1.AllowedAddressPairs`]
         """
         self._allowed_address_pairs = allowed_address_pairs
+
+    @property
+    def hyper_group(self):
+        r"""Gets the hyper_group of this ServerNetwork.
+
+        :return: The hyper_group of this ServerNetwork.
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.HyperGroup`
+        """
+        return self._hyper_group
+
+    @hyper_group.setter
+    def hyper_group(self, hyper_group):
+        r"""Sets the hyper_group of this ServerNetwork.
+
+        :param hyper_group: The hyper_group of this ServerNetwork.
+        :type hyper_group: :class:`huaweicloudsdkmodelarts.v1.HyperGroup`
+        """
+        self._hyper_group = hyper_group
 
     def to_dict(self):
         result = {}

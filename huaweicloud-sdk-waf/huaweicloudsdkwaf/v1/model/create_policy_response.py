@@ -24,6 +24,7 @@ class CreatePolicyResponse(SdkResponse):
         'action': 'PolicyAction',
         'options': 'PolicyOption',
         'modulex_options': 'dict(str, object)',
+        'scan_protection_options': 'ScanProtectionOption',
         'hosts': 'list[str]',
         'bind_host': 'list[BindHost]',
         'extend': 'dict(str, str)',
@@ -39,13 +40,14 @@ class CreatePolicyResponse(SdkResponse):
         'action': 'action',
         'options': 'options',
         'modulex_options': 'modulex_options',
+        'scan_protection_options': 'scan_protection_options',
         'hosts': 'hosts',
         'bind_host': 'bind_host',
         'extend': 'extend',
         'timestamp': 'timestamp'
     }
 
-    def __init__(self, id=None, name=None, level=None, full_detection=None, robot_action=None, action=None, options=None, modulex_options=None, hosts=None, bind_host=None, extend=None, timestamp=None):
+    def __init__(self, id=None, name=None, level=None, full_detection=None, robot_action=None, action=None, options=None, modulex_options=None, scan_protection_options=None, hosts=None, bind_host=None, extend=None, timestamp=None):
         r"""CreatePolicyResponse
 
         The model defined in huaweicloud sdk
@@ -66,6 +68,8 @@ class CreatePolicyResponse(SdkResponse):
         :type options: :class:`huaweicloudsdkwaf.v1.PolicyOption`
         :param modulex_options: 智能访问控制防护项相关配置信息，目前该特性还处于公测阶段，只有部分局点支持该特性
         :type modulex_options: dict(str, object)
+        :param scan_protection_options: 
+        :type scan_protection_options: :class:`huaweicloudsdkwaf.v1.ScanProtectionOption`
         :param hosts: 与防护策略绑定的防护的域名id数组
         :type hosts: list[str]
         :param bind_host: 与防护策略绑定的防护的域名信息数组，相对于hosts字段，包含更详细的域名信息
@@ -86,6 +90,7 @@ class CreatePolicyResponse(SdkResponse):
         self._action = None
         self._options = None
         self._modulex_options = None
+        self._scan_protection_options = None
         self._hosts = None
         self._bind_host = None
         self._extend = None
@@ -108,6 +113,8 @@ class CreatePolicyResponse(SdkResponse):
             self.options = options
         if modulex_options is not None:
             self.modulex_options = modulex_options
+        if scan_protection_options is not None:
+            self.scan_protection_options = scan_protection_options
         if hosts is not None:
             self.hosts = hosts
         if bind_host is not None:
@@ -280,6 +287,24 @@ class CreatePolicyResponse(SdkResponse):
         :type modulex_options: dict(str, object)
         """
         self._modulex_options = modulex_options
+
+    @property
+    def scan_protection_options(self):
+        r"""Gets the scan_protection_options of this CreatePolicyResponse.
+
+        :return: The scan_protection_options of this CreatePolicyResponse.
+        :rtype: :class:`huaweicloudsdkwaf.v1.ScanProtectionOption`
+        """
+        return self._scan_protection_options
+
+    @scan_protection_options.setter
+    def scan_protection_options(self, scan_protection_options):
+        r"""Sets the scan_protection_options of this CreatePolicyResponse.
+
+        :param scan_protection_options: The scan_protection_options of this CreatePolicyResponse.
+        :type scan_protection_options: :class:`huaweicloudsdkwaf.v1.ScanProtectionOption`
+        """
+        self._scan_protection_options = scan_protection_options
 
     @property
     def hosts(self):

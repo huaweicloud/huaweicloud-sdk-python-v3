@@ -29,9 +29,9 @@ class FrozenInfo:
 
         The model defined in huaweicloud sdk
 
-        :param scene: 冻结场景。可选值如下： - ARREAR：欠费冻结 - POLICE：公安冻结 - ILLEGAL：违规冻结
+        :param scene: **参数解释：**冻结场景。可选值如下： - ARREAR：欠费冻结 - POLICE：公安冻结 - ILLEGAL：违规冻结
         :type scene: str
-        :param effect: 冻结后的影响。可选值如下： - 1：冻结后可释放 - 2：冻结后不可释放
+        :param effect: **参数解释：**冻结后的影响。可选值如下： - 1：冻结后可释放 - 2：冻结后不可释放
         :type effect: int
         """
         
@@ -50,7 +50,7 @@ class FrozenInfo:
     def scene(self):
         r"""Gets the scene of this FrozenInfo.
 
-        冻结场景。可选值如下： - ARREAR：欠费冻结 - POLICE：公安冻结 - ILLEGAL：违规冻结
+        **参数解释：**冻结场景。可选值如下： - ARREAR：欠费冻结 - POLICE：公安冻结 - ILLEGAL：违规冻结
 
         :return: The scene of this FrozenInfo.
         :rtype: str
@@ -61,7 +61,7 @@ class FrozenInfo:
     def scene(self, scene):
         r"""Sets the scene of this FrozenInfo.
 
-        冻结场景。可选值如下： - ARREAR：欠费冻结 - POLICE：公安冻结 - ILLEGAL：违规冻结
+        **参数解释：**冻结场景。可选值如下： - ARREAR：欠费冻结 - POLICE：公安冻结 - ILLEGAL：违规冻结
 
         :param scene: The scene of this FrozenInfo.
         :type scene: str
@@ -72,7 +72,7 @@ class FrozenInfo:
     def effect(self):
         r"""Gets the effect of this FrozenInfo.
 
-        冻结后的影响。可选值如下： - 1：冻结后可释放 - 2：冻结后不可释放
+        **参数解释：**冻结后的影响。可选值如下： - 1：冻结后可释放 - 2：冻结后不可释放
 
         :return: The effect of this FrozenInfo.
         :rtype: int
@@ -83,7 +83,7 @@ class FrozenInfo:
     def effect(self, effect):
         r"""Sets the effect of this FrozenInfo.
 
-        冻结后的影响。可选值如下： - 1：冻结后可释放 - 2：冻结后不可释放
+        **参数解释：**冻结后的影响。可选值如下： - 1：冻结后可释放 - 2：冻结后不可释放
 
         :param effect: The effect of this FrozenInfo.
         :type effect: int

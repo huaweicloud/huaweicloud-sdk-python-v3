@@ -19,6 +19,8 @@ class CreateHostClusterRequestBody:
         'project_id': 'str',
         'os': 'str',
         'slave_cluster_id': 'str',
+        'slave_resource_type': 'str',
+        'ansible_type': 'int',
         'description': 'str',
         'is_proxy_mode': 'int'
     }
@@ -28,11 +30,13 @@ class CreateHostClusterRequestBody:
         'project_id': 'project_id',
         'os': 'os',
         'slave_cluster_id': 'slave_cluster_id',
+        'slave_resource_type': 'slave_resource_type',
+        'ansible_type': 'ansible_type',
         'description': 'description',
         'is_proxy_mode': 'is_proxy_mode'
     }
 
-    def __init__(self, name=None, project_id=None, os=None, slave_cluster_id=None, description=None, is_proxy_mode=None):
+    def __init__(self, name=None, project_id=None, os=None, slave_cluster_id=None, slave_resource_type=None, ansible_type=None, description=None, is_proxy_mode=None):
         r"""CreateHostClusterRequestBody
 
         The model defined in huaweicloud sdk
@@ -45,6 +49,10 @@ class CreateHostClusterRequestBody:
         :type os: str
         :param slave_cluster_id: slave集群id，默认为null时使用默认slave集群，用户自定义slave时为slave集群id
         :type slave_cluster_id: str
+        :param slave_resource_type: 资源池类型，self-hosted 自托管资源池，exclusive 独享资源池
+        :type slave_resource_type: str
+        :param ansible_type: 是否切换新系统支持，1：是 0：否
+        :type ansible_type: int
         :param description: 描述
         :type description: str
         :param is_proxy_mode: 主机集群是否为代理机接入模式， 1：是 0：否
@@ -57,6 +65,8 @@ class CreateHostClusterRequestBody:
         self._project_id = None
         self._os = None
         self._slave_cluster_id = None
+        self._slave_resource_type = None
+        self._ansible_type = None
         self._description = None
         self._is_proxy_mode = None
         self.discriminator = None
@@ -66,6 +76,10 @@ class CreateHostClusterRequestBody:
         self.os = os
         if slave_cluster_id is not None:
             self.slave_cluster_id = slave_cluster_id
+        if slave_resource_type is not None:
+            self.slave_resource_type = slave_resource_type
+        if ansible_type is not None:
+            self.ansible_type = ansible_type
         if description is not None:
             self.description = description
         self.is_proxy_mode = is_proxy_mode
@@ -157,6 +171,50 @@ class CreateHostClusterRequestBody:
         :type slave_cluster_id: str
         """
         self._slave_cluster_id = slave_cluster_id
+
+    @property
+    def slave_resource_type(self):
+        r"""Gets the slave_resource_type of this CreateHostClusterRequestBody.
+
+        资源池类型，self-hosted 自托管资源池，exclusive 独享资源池
+
+        :return: The slave_resource_type of this CreateHostClusterRequestBody.
+        :rtype: str
+        """
+        return self._slave_resource_type
+
+    @slave_resource_type.setter
+    def slave_resource_type(self, slave_resource_type):
+        r"""Sets the slave_resource_type of this CreateHostClusterRequestBody.
+
+        资源池类型，self-hosted 自托管资源池，exclusive 独享资源池
+
+        :param slave_resource_type: The slave_resource_type of this CreateHostClusterRequestBody.
+        :type slave_resource_type: str
+        """
+        self._slave_resource_type = slave_resource_type
+
+    @property
+    def ansible_type(self):
+        r"""Gets the ansible_type of this CreateHostClusterRequestBody.
+
+        是否切换新系统支持，1：是 0：否
+
+        :return: The ansible_type of this CreateHostClusterRequestBody.
+        :rtype: int
+        """
+        return self._ansible_type
+
+    @ansible_type.setter
+    def ansible_type(self, ansible_type):
+        r"""Sets the ansible_type of this CreateHostClusterRequestBody.
+
+        是否切换新系统支持，1：是 0：否
+
+        :param ansible_type: The ansible_type of this CreateHostClusterRequestBody.
+        :type ansible_type: int
+        """
+        self._ansible_type = ansible_type
 
     @property
     def description(self):

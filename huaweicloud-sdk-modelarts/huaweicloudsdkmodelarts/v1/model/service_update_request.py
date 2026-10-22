@@ -24,7 +24,7 @@ class ServiceUpdateRequest:
         'runtime_config': 'RuntimeConfigUpdateRequest',
         'upgrade_config': 'UpgradeConfig',
         'lts_strategy': 'str',
-        'log_configs': 'list[LtsConfiguration]',
+        'log_configs': 'list[LtsConfigurationV2]',
         'tags': 'str',
         'workspace_id': 'str',
         'schedule': 'list[ScheduleConfig]',
@@ -74,7 +74,7 @@ class ServiceUpdateRequest:
         :param lts_strategy: **参数解释：** 日志策略。 **约束限制：** 不填保留原有值。 **取值范围：** - POOL：使用资源池日志插件配置的日志流。 - AUTO_CREATE：自动创建日志流。 - DEFAULT: 由系统决定日志策略 **默认取值：** 不涉及。
         :type lts_strategy: str
         :param log_configs: **参数解释：** 服务日志配置。 **约束限制：** 1.不填保留原有值 2.数量上限为[3](tag:hws,hws_hk,fcs,fcs_super)[2](tag:hcs,hcs_sm)个，且每种类型只可配置一个。
-        :type log_configs: list[:class:`huaweicloudsdkmodelarts.v1.LtsConfiguration`]
+        :type log_configs: list[:class:`huaweicloudsdkmodelarts.v1.LtsConfigurationV2`]
         :param tags: **参数解释：** 服务标签,上限20个 **约束限制：** 不填保留原有值。 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type tags: str
         :param workspace_id: **参数解释：** 工作空间id，默认是“0” **约束限制：** 不填保留原有值。 **取值范围：** 不涉及 **默认取值：** 不涉及
@@ -334,7 +334,7 @@ class ServiceUpdateRequest:
         **参数解释：** 服务日志配置。 **约束限制：** 1.不填保留原有值 2.数量上限为[3](tag:hws,hws_hk,fcs,fcs_super)[2](tag:hcs,hcs_sm)个，且每种类型只可配置一个。
 
         :return: The log_configs of this ServiceUpdateRequest.
-        :rtype: list[:class:`huaweicloudsdkmodelarts.v1.LtsConfiguration`]
+        :rtype: list[:class:`huaweicloudsdkmodelarts.v1.LtsConfigurationV2`]
         """
         return self._log_configs
 
@@ -345,7 +345,7 @@ class ServiceUpdateRequest:
         **参数解释：** 服务日志配置。 **约束限制：** 1.不填保留原有值 2.数量上限为[3](tag:hws,hws_hk,fcs,fcs_super)[2](tag:hcs,hcs_sm)个，且每种类型只可配置一个。
 
         :param log_configs: The log_configs of this ServiceUpdateRequest.
-        :type log_configs: list[:class:`huaweicloudsdkmodelarts.v1.LtsConfiguration`]
+        :type log_configs: list[:class:`huaweicloudsdkmodelarts.v1.LtsConfigurationV2`]
         """
         self._log_configs = log_configs
 

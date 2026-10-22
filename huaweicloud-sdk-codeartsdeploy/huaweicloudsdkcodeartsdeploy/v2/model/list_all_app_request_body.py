@@ -16,6 +16,7 @@ class ListAllAppRequestBody:
 
     openapi_types = {
         'project_id': 'str',
+        'search': 'str',
         'page': 'int',
         'size': 'int',
         'sort_name': 'str',
@@ -26,6 +27,7 @@ class ListAllAppRequestBody:
 
     attribute_map = {
         'project_id': 'project_id',
+        'search': 'search',
         'page': 'page',
         'size': 'size',
         'sort_name': 'sort_name',
@@ -34,13 +36,15 @@ class ListAllAppRequestBody:
         'group_id': 'group_id'
     }
 
-    def __init__(self, project_id=None, page=None, size=None, sort_name=None, sort_by=None, states=None, group_id=None):
+    def __init__(self, project_id=None, search=None, page=None, size=None, sort_name=None, sort_by=None, states=None, group_id=None):
         r"""ListAllAppRequestBody
 
         The model defined in huaweicloud sdk
 
         :param project_id: 项目id
         :type project_id: str
+        :param search: 检索关键字，应用名称模糊匹配
+        :type search: str
         :param page: 分页页码， 表示从此页开始查询， page大于等于1
         :type page: int
         :param size: 每页显示的条目数量，size小于等于100
@@ -58,6 +62,7 @@ class ListAllAppRequestBody:
         
 
         self._project_id = None
+        self._search = None
         self._page = None
         self._size = None
         self._sort_name = None
@@ -67,6 +72,8 @@ class ListAllAppRequestBody:
         self.discriminator = None
 
         self.project_id = project_id
+        if search is not None:
+            self.search = search
         self.page = page
         self.size = size
         if sort_name is not None:
@@ -99,6 +106,28 @@ class ListAllAppRequestBody:
         :type project_id: str
         """
         self._project_id = project_id
+
+    @property
+    def search(self):
+        r"""Gets the search of this ListAllAppRequestBody.
+
+        检索关键字，应用名称模糊匹配
+
+        :return: The search of this ListAllAppRequestBody.
+        :rtype: str
+        """
+        return self._search
+
+    @search.setter
+    def search(self, search):
+        r"""Sets the search of this ListAllAppRequestBody.
+
+        检索关键字，应用名称模糊匹配
+
+        :param search: The search of this ListAllAppRequestBody.
+        :type search: str
+        """
+        self._search = search
 
     @property
     def page(self):

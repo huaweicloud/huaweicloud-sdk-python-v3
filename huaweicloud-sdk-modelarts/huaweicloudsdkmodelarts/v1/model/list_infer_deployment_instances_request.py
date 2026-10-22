@@ -20,7 +20,7 @@ class ListInferDeploymentInstancesRequest:
         'status': 'list[str]',
         'limit': 'int',
         'offset': 'str',
-        'pod_name': 'str'
+        'instance_name': 'str'
     }
 
     attribute_map = {
@@ -29,10 +29,10 @@ class ListInferDeploymentInstancesRequest:
         'status': 'status',
         'limit': 'limit',
         'offset': 'offset',
-        'pod_name': 'pod_name'
+        'instance_name': 'instance_name'
     }
 
-    def __init__(self, id=None, name=None, status=None, limit=None, offset=None, pod_name=None):
+    def __init__(self, id=None, name=None, status=None, limit=None, offset=None, instance_name=None):
         r"""ListInferDeploymentInstancesRequest
 
         The model defined in huaweicloud sdk
@@ -47,8 +47,8 @@ class ListInferDeploymentInstancesRequest:
         :type limit: int
         :param offset: **参数解释：** 分页列表的起始页。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 0。
         :type offset: str
-        :param pod_name: **参数解释：** pod名字。 **取值范围：** 不涉及。
-        :type pod_name: str
+        :param instance_name: **参数解释：** 服务实例名字。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
+        :type instance_name: str
         """
         
         
@@ -58,7 +58,7 @@ class ListInferDeploymentInstancesRequest:
         self._status = None
         self._limit = None
         self._offset = None
-        self._pod_name = None
+        self._instance_name = None
         self.discriminator = None
 
         self.id = id
@@ -69,8 +69,8 @@ class ListInferDeploymentInstancesRequest:
             self.limit = limit
         if offset is not None:
             self.offset = offset
-        if pod_name is not None:
-            self.pod_name = pod_name
+        if instance_name is not None:
+            self.instance_name = instance_name
 
     @property
     def id(self):
@@ -183,26 +183,26 @@ class ListInferDeploymentInstancesRequest:
         self._offset = offset
 
     @property
-    def pod_name(self):
-        r"""Gets the pod_name of this ListInferDeploymentInstancesRequest.
+    def instance_name(self):
+        r"""Gets the instance_name of this ListInferDeploymentInstancesRequest.
 
-        **参数解释：** pod名字。 **取值范围：** 不涉及。
+        **参数解释：** 服务实例名字。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
-        :return: The pod_name of this ListInferDeploymentInstancesRequest.
+        :return: The instance_name of this ListInferDeploymentInstancesRequest.
         :rtype: str
         """
-        return self._pod_name
+        return self._instance_name
 
-    @pod_name.setter
-    def pod_name(self, pod_name):
-        r"""Sets the pod_name of this ListInferDeploymentInstancesRequest.
+    @instance_name.setter
+    def instance_name(self, instance_name):
+        r"""Sets the instance_name of this ListInferDeploymentInstancesRequest.
 
-        **参数解释：** pod名字。 **取值范围：** 不涉及。
+        **参数解释：** 服务实例名字。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
-        :param pod_name: The pod_name of this ListInferDeploymentInstancesRequest.
-        :type pod_name: str
+        :param instance_name: The instance_name of this ListInferDeploymentInstancesRequest.
+        :type instance_name: str
         """
-        self._pod_name = pod_name
+        self._instance_name = instance_name
 
     def to_dict(self):
         result = {}

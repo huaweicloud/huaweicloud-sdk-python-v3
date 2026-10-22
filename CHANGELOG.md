@@ -1,3 +1,713 @@
+# 3.1.219 2026-10-22
+
+### HuaweiCloud SDK AIDataLake
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the following APIs:
+    - `ShowV2Agreement`
+    - `SignV2Agreement`
+    - `DeleteV2Agreement`
+    - `ListV2AgreementRule`
+    - `ListV2Workspaces`
+    - `CreateV2Workspace`
+    - `ShowV2Workspace`
+    - `UpdateV2Workspace`
+    - `DeleteV2Workspace`
+    - `CreateV2Agency`
+    - `ShowV2Agency`
+    - `DeleteV2Agency`
+    - `AttachV2AgencyPolicy`
+    - `DetachV2AgencyPolicy`
+    - `ListV2ComputeVersions`
+    - `ListV2Computes`
+    - `CreateV2Compute`
+    - `ShowV2Compute`
+    - `UpdateV2Compute`
+    - `DeleteV2Compute`
+    - `ListV2AllEndpoints`
+    - `ListV2Endpoints`
+    - `CreateV2Endpoint`
+    - `ShowV2Endpoint`
+    - `UpdateV2Endpoint`
+    - `DeleteV2Endpoint`
+    - `ShowV2EndpointsMetrics`
+    - `ListV2Networks`
+    - `CreateV2Network`
+    - `ListV2TenantImages`
+    - `RegisterV2TenantImage`
+    - `ShowV2TenantImage`
+    - `DeleteV2TenantImage`
+    - `ListV2TenantImageVersions`
+    - `AddV2TenantImageVersion`
+    - `ShowV2TenantImageVersion`
+    - `UpdateV2TenantImageVersion`
+    - `DeleteV2TenantImageVersion`
+    - `ListV2TenantImageSnapshots`
+    - `CreateV2TenantImageSnapshot`
+    - `DeleteV2TenantImageSnapshot`
+    - `ShowV2ComputesMetrics`
+    - `ShowV2EndpointResourceLimit`
+    - `ListV2ProjectTags`
+    - `ListV2TagResources`
+    - `CountV2TagResources`
+    - `ListV2ResourceTags`
+    - `BatchCreateV2ResourceTags`
+    - `BatchDeleteV2ResourceTags`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowV2RayFederation**
+    - changes of response param
+      - `- error.solution_msg`
+      - `* error: object<ErrorMessage> -> object<Error>`
+      - `* ray_cluster_list: list<RayFederationRayClusterResponse> -> list<V2RayFederationRayClusterResponse>`
+      - `* creator: object<User> -> object<Creator>`
+  - **UpdateV2RayFederation**
+    - changes of request param
+      - `* ray_cluster_list: list<RayFederationRayClusterRequest> -> list<V2RayFederationRayClusterRequest>`
+      - `* body: object<UpdateRayFederationRequestBody> -> object<UpdateV2RayFederationRequestBody>`
+    - changes of response param
+      - `- error.solution_msg`
+      - `* error: object<ErrorMessage> -> object<Error>`
+      - `* ray_cluster_list: list<RayFederationRayClusterResponse> -> list<V2RayFederationRayClusterResponse>`
+      - `* creator: object<User> -> object<Creator>`
+  - **CreateV2RayFederation**
+    - changes of request param
+      - `* ray_cluster_list: list<RayFederationRayClusterRequest> -> list<V2RayFederationRayClusterRequest>`
+      - `* body: object<CreateRayFederationRequestBody> -> object<CreateV2RayFederationRequestBody>`
+    - changes of response param
+      - `- error.solution_msg`
+      - `* error: object<ErrorMessage> -> object<Error>`
+      - `* ray_cluster_list: list<RayFederationRayClusterResponse> -> list<V2RayFederationRayClusterResponse>`
+      - `* creator: object<User> -> object<Creator>`
+  - **ListV2RayFederations**
+    - changes of response param
+      - `- ray_federations.error.solution_msg`
+      - `* ray_federations.error: object<ErrorMessage> -> object<Error>`
+      - `* ray_federations.ray_cluster_list: list<RayFederationRayClusterResponse> -> list<V2RayFederationRayClusterResponse>`
+      - `* ray_federations.creator: object<User> -> object<Creator>`
+      - `* ray_federations: list<RayFederationInfo> -> list<V2RayFederationInfo>`
+
+### HuaweiCloud SDK CodeArtsDeploy
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateHostCluster**
+    - changes of request param
+      - `+ slave_resource_type`
+      - `+ ansible_type`
+  - **UpdateHostCluster**
+    - changes of request param
+      - `+ slave_resource_type`
+      - `+ ansible_type`
+  - **ListAllApp**
+    - changes of request param
+      - `+ search`
+  - **UpdateAppInfo**
+    - changes of request param
+      - `+ group_id`
+      - `+ agency_urn`
+      - `+ slave_resource_type`
+      - `+ timeout`
+  - **CreateApp**
+    - changes of request param
+      - `+ agency_urn`
+      - `+ slave_resource_type`
+      - `+ timeout`
+      - `+ arrange_infos.deploy_system`
+      - `+ arrange_infos.ansible_type`
+
+### HuaweiCloud SDK EVS
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the following APIs:
+    - `BatchCreateSnapshotTags`
+    - `BatchDeleteSnapshotTags`
+    - `ListSnapshotTags`
+    - `BatchCreateSnapshotGroupTag`
+    - `BatchDeleteSnapshotGroupTag`
+    - `ListSnapshotGroupTags`
+    - `CreateStandardSnapshot`
+    - `ShowStandardSnapshot`
+    - `UpdateStandardSnapshot`
+    - `DeleteStandardSnapshot`
+    - `ListSnapshotsDetails`
+    - `ListSnapshotChains`
+    - `CountSnapshots`
+    - `CountSnapshotChains`
+    - `RollbackStandardSnapshot`
+    - `CreateSnapshotGroup`
+    - `ListSnapshotGroup`
+    - `CountSnapshotsGroup`
+    - `ShowSnapshotGroup`
+    - `UpdateSnapshotGroup`
+    - `DeleteSnapshotGroup`
+    - `ListAutoSnapshotPolicy`
+    - `CreateAutoSnapshotPolicy`
+    - `CountAutoSnapshotPolicies`
+    - `ShowAutoSnapshotPolicy`
+    - `UpdateAutoSnapshotPolicy`
+    - `DeleteAutoSnapshotPolicy`
+    - `AssociateAutoSnapshotPolicy`
+    - `DisassociateAutoSnapshotPolicy`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the API `ListBiactiveInstanceCandidates`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK ModelArts
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `ListHyperinstanceServers`
+    - `GetHyperinstanceGroup`
+    - `DeleteHyperinstanceGroup`
+    - `ListHyperinstanceGroup`
+    - `CreateHyperinstanceGroup`
+    - `ListHyperinstanceGroupsCapacity`
+    - `UnbindDevServerPublicIP`
+- _Bug Fix_
+  - None
+- _Change_
+  - **GetDevServerJob**
+    - changes of response param
+      - `* create_at: string -> int64`
+      - `* update_at: string -> int64`
+  - **ListDevServerJobs**
+    - changes of response param
+      - `* data.create_at: string -> int64`
+      - `* data.update_at: string -> int64`
+  - **CreateDevServerJob**
+    - changes of response param
+      - `* create_at: string -> int64`
+      - `* update_at: string -> int64`
+  - **DeleteDevServerJobs**
+    - changes of response param
+      - `* data.create_at: string -> int64`
+      - `* data.update_at: string -> int64`
+  - **ListInferDeploymentInstances**
+    - changes of request param
+      - `+ instance_name`
+      - `- pod_name`
+  - **ListInferDeploymentPods**
+    - changes of request param
+      - `+ pod_role_name`
+    - changes of response param
+      - `+ data.pod_role_name`
+  - **CreateDevServer**
+    - changes of request param
+      - `+ network.hyper_group`
+  - **StartInferDeployment**
+    - changes of response param
+      - `+ unit_configs.cpu_affinity`
+      - `+ unit_configs.group_policy`
+      - `+ advanced_config.mooncake_enable`
+      - `* advanced_config.deploy_timeout_minutes: string -> int32`
+  - **StopInferDeployment**
+    - changes of response param
+      - `+ user_name`
+      - `+ deployment_task_limit`
+      - `+ frozen_infos`
+      - `+ last_used_time`
+      - `+ agency_name`
+      - `+ deployment_name`
+      - `- lts_state`
+      - `- traffic_ratio`
+      - `- running_count`
+      - `* mirror_traffic_weight: string -> int32`
+      - `* update_at: int64 -> date-time`
+      - `* create_at: string -> date-time`
+      - `- model.source_id`
+      - `* model: object<InferModelResponse> -> object<GroupModel>`
+      - `+ unit_configs.cpu_affinity`
+      - `+ unit_configs.group_policy`
+      - `* unit_configs.models: list<InferModelResponse> -> list<ModelResource>`
+      - `* unit_configs.image: object<ImageInfoResponse> -> object<ImageInfo>`
+      - `* unit_configs.files: list<FileResponse> -> list<FileInfo>`
+      - `* unit_configs.codes: list<CodeResponse> -> list<Code>`
+      - `- unit_configs.dumps.type`
+      - `- unit_configs.dumps.source: enum value [OBS,OBSFS]`
+      - `* unit_configs.dumps: list<DumpResponse> -> list<Dump>`
+      - `* unit_configs.readiness_health: object<HealthResponse> -> object<Health>`
+      - `* unit_configs.affinity: object<AffinityResponse> -> object<Affinity>`
+      - `* unit_configs: list<UnitConfigResponse> -> list<UnitConfig>`
+      - `+ advanced_config.mooncake_enable`
+      - `* advanced_config.deploy_timeout_minutes: string -> int32`
+  - **CancelInferDeployment**
+    - changes of response param
+      - `+ user_name`
+      - `+ deployment_task_limit`
+      - `+ frozen_infos`
+      - `+ last_used_time`
+      - `+ agency_name`
+      - `+ deployment_name`
+      - `- lts_state`
+      - `- traffic_ratio`
+      - `- running_count`
+      - `* mirror_traffic_weight: string -> int32`
+      - `* update_at: int64 -> date-time`
+      - `* create_at: string -> date-time`
+      - `- model.source_id`
+      - `* model: object<InferModelResponse> -> object<GroupModel>`
+      - `+ unit_configs.cpu_affinity`
+      - `+ unit_configs.group_policy`
+      - `* unit_configs.models: list<InferModelResponse> -> list<ModelResource>`
+      - `* unit_configs.image: object<ImageInfoResponse> -> object<ImageInfo>`
+      - `* unit_configs.files: list<FileResponse> -> list<FileInfo>`
+      - `* unit_configs.codes: list<CodeResponse> -> list<Code>`
+      - `- unit_configs.dumps.type`
+      - `- unit_configs.dumps.source: enum value [OBS,OBSFS]`
+      - `* unit_configs.dumps: list<DumpResponse> -> list<Dump>`
+      - `* unit_configs.readiness_health: object<HealthResponse> -> object<Health>`
+      - `* unit_configs.affinity: object<AffinityResponse> -> object<Affinity>`
+      - `* unit_configs: list<UnitConfigResponse> -> list<UnitConfig>`
+      - `+ advanced_config.mooncake_enable`
+      - `* advanced_config.deploy_timeout_minutes: string -> int32`
+  - **CreateInferDeployment**
+    - changes of request param
+      - `+ unit_configs.cpu_affinity`
+      - `+ unit_configs.group_policy`
+      - `+ advanced_config.mooncake_enable`
+      - `* advanced_config.deploy_timeout_minutes: string -> int32`
+    - changes of response param
+      - `+ user_name`
+      - `+ deployment_task_limit`
+      - `+ frozen_infos`
+      - `+ last_used_time`
+      - `+ agency_name`
+      - `+ deployment_name`
+      - `- lts_state`
+      - `- traffic_ratio`
+      - `- running_count`
+      - `* mirror_traffic_weight: string -> int32`
+      - `* update_at: int64 -> date-time`
+      - `* create_at: string -> date-time`
+      - `- model.source_id`
+      - `* model: object<InferModelResponse> -> object<GroupModel>`
+      - `+ unit_configs.cpu_affinity`
+      - `+ unit_configs.group_policy`
+      - `* unit_configs.models: list<InferModelResponse> -> list<ModelResource>`
+      - `* unit_configs.image: object<ImageInfoResponse> -> object<ImageInfo>`
+      - `* unit_configs.files: list<FileResponse> -> list<FileInfo>`
+      - `* unit_configs.codes: list<CodeResponse> -> list<Code>`
+      - `- unit_configs.dumps.type`
+      - `- unit_configs.dumps.source: enum value [OBS,OBSFS]`
+      - `* unit_configs.dumps: list<DumpResponse> -> list<Dump>`
+      - `* unit_configs.readiness_health: object<HealthResponse> -> object<Health>`
+      - `* unit_configs.affinity: object<AffinityResponse> -> object<Affinity>`
+      - `* unit_configs: list<UnitConfigResponse> -> list<UnitConfig>`
+      - `+ advanced_config.mooncake_enable`
+      - `* advanced_config.deploy_timeout_minutes: string -> int32`
+  - **ShowInferDeployment**
+    - changes of response param
+      - `+ user_name`
+      - `+ deployment_task_limit`
+      - `+ frozen_infos`
+      - `+ last_used_time`
+      - `+ agency_name`
+      - `+ deployment_name`
+      - `- lts_state`
+      - `- traffic_ratio`
+      - `- running_count`
+      - `* mirror_traffic_weight: string -> int32`
+      - `* update_at: int64 -> date-time`
+      - `* create_at: string -> date-time`
+      - `- model.source_id`
+      - `* model: object<InferModelResponse> -> object<GroupModel>`
+      - `+ unit_configs.cpu_affinity`
+      - `+ unit_configs.group_policy`
+      - `* unit_configs.models: list<InferModelResponse> -> list<ModelResource>`
+      - `* unit_configs.image: object<ImageInfoResponse> -> object<ImageInfo>`
+      - `* unit_configs.files: list<FileResponse> -> list<FileInfo>`
+      - `* unit_configs.codes: list<CodeResponse> -> list<Code>`
+      - `- unit_configs.dumps.type`
+      - `- unit_configs.dumps.source: enum value [OBS,OBSFS]`
+      - `* unit_configs.dumps: list<DumpResponse> -> list<Dump>`
+      - `* unit_configs.readiness_health: object<HealthResponse> -> object<Health>`
+      - `* unit_configs.affinity: object<AffinityResponse> -> object<Affinity>`
+      - `* unit_configs: list<UnitConfigResponse> -> list<UnitConfig>`
+      - `+ advanced_config.mooncake_enable`
+      - `* advanced_config.deploy_timeout_minutes: string -> int32`
+  - **UpdateInferDeployment**
+    - changes of request param
+      - `+ unit_configs.cpu_affinity`
+      - `+ unit_configs.group_policy`
+      - `+ advanced_config.mooncake_enable`
+      - `* advanced_config.deploy_timeout_minutes: string -> int32`
+    - changes of response param
+      - `+ secret_type`
+      - `+ user_name`
+      - `+ description`
+      - `+ deployment_task_limit`
+      - `+ workload_type`
+      - `+ mirror_traffic_enable`
+      - `+ secret_name`
+      - `+ infer_name`
+      - `+ system_log_dump_enable`
+      - `+ last_used_time`
+      - `+ model`
+      - `+ version_count`
+      - `+ high_avail_switch`
+      - `+ unit_configs`
+      - `+ agency_name`
+      - `+ deployment_name`
+      - `+ count`
+      - `+ weight`
+      - `+ version_id`
+      - `+ mirror_traffic_weight`
+      - `+ pool_id`
+      - `+ priority`
+      - `+ framework`
+      - `+ advanced_config`
+      - `+ schedule_strategy`
+      - `- failure_reason`
+      - `- type`
+      - `- predict_url`
+      - `- dispatcher_group_id`
+      - `- tags`
+      - `- workspace_id`
+      - `- schedule`
+      - `- deploy_timeout_minutes`
+      - `- provider`
+      - `- task_type`
+      - `* version: object<ServiceVersionResponse> -> string`
+      - `* create_at: string -> date-time`
+      - `* update_at: string -> date-time`
+  - **DeleteInferDeployment**
+    - changes of response param
+      - `+ user_name`
+      - `+ deployment_task_limit`
+      - `+ frozen_infos`
+      - `+ last_used_time`
+      - `+ agency_name`
+      - `+ deployment_name`
+      - `- lts_state`
+      - `- traffic_ratio`
+      - `- running_count`
+      - `* mirror_traffic_weight: string -> int32`
+      - `* update_at: int64 -> date-time`
+      - `* create_at: string -> date-time`
+      - `- model.source_id`
+      - `* model: object<InferModelResponse> -> object<GroupModel>`
+      - `+ unit_configs.cpu_affinity`
+      - `+ unit_configs.group_policy`
+      - `* unit_configs.models: list<InferModelResponse> -> list<ModelResource>`
+      - `* unit_configs.image: object<ImageInfoResponse> -> object<ImageInfo>`
+      - `* unit_configs.files: list<FileResponse> -> list<FileInfo>`
+      - `* unit_configs.codes: list<CodeResponse> -> list<Code>`
+      - `- unit_configs.dumps.type`
+      - `- unit_configs.dumps.source: enum value [OBS,OBSFS]`
+      - `* unit_configs.dumps: list<DumpResponse> -> list<Dump>`
+      - `* unit_configs.readiness_health: object<HealthResponse> -> object<Health>`
+      - `* unit_configs.affinity: object<AffinityResponse> -> object<Affinity>`
+      - `* unit_configs: list<UnitConfigResponse> -> list<UnitConfig>`
+      - `+ advanced_config.mooncake_enable`
+      - `* advanced_config.deploy_timeout_minutes: string -> int32`
+  - **ShowInferDeploymentVersion**
+    - changes of response param
+      - `+ user_name`
+      - `+ deployment_task_limit`
+      - `+ workload_type`
+      - `+ mirror_traffic_enable`
+      - `+ secret_name`
+      - `+ last_used_time`
+      - `+ model`
+      - `+ agency_name`
+      - `+ version_id`
+      - `+ mirror_traffic_weight`
+      - `+ deploy_type`
+      - `+ schedule_strategy`
+      - `- job_id`
+      - `* priority: string -> int32`
+      - `* high_avail_switch: string -> boolean`
+      - `* system_log_dump_enable: string -> boolean`
+      - `+ unit_configs.cpu_affinity`
+      - `+ unit_configs.group_policy`
+      - `+ advanced_config.mooncake_enable`
+      - `* advanced_config.deploy_timeout_minutes: string -> int32`
+  - **UpdateInferDeploymentScale**
+    - changes of response param
+      - `+ user_name`
+      - `+ deployment_task_limit`
+      - `+ workload_type`
+      - `+ mirror_traffic_enable`
+      - `+ secret_name`
+      - `+ last_used_time`
+      - `+ model`
+      - `+ agency_name`
+      - `+ version_id`
+      - `+ mirror_traffic_weight`
+      - `+ deploy_type`
+      - `+ schedule_strategy`
+      - `- job_id`
+      - `* priority: string -> int32`
+      - `* high_avail_switch: string -> boolean`
+      - `* system_log_dump_enable: string -> boolean`
+      - `+ unit_configs.cpu_affinity`
+      - `+ unit_configs.group_policy`
+      - `+ advanced_config.mooncake_enable`
+      - `* advanced_config.deploy_timeout_minutes: string -> int32`
+  - **ChangeTrainingJobDescription**
+    - changes of request param
+      - `* body: object<JobDescription> -> object<JobUpdateRequestBody>`
+  - **StopInferService**
+    - changes of response param
+      - `+ version.runtime_config.smart_routing_enable`
+      - `+ version.instance_groups.unit_configs.cpu_affinity`
+      - `+ version.instance_groups.unit_configs.group_policy`
+      - `+ version.instance_groups.advanced_config.mooncake_enable`
+      - `* version.instance_groups.advanced_config.deploy_timeout_minutes: string -> int32`
+  - **StartInferService**
+    - changes of response param
+      - `+ version.runtime_config.smart_routing_enable`
+      - `+ version.instance_groups.unit_configs.cpu_affinity`
+      - `+ version.instance_groups.unit_configs.group_policy`
+      - `+ version.instance_groups.advanced_config.mooncake_enable`
+      - `* version.instance_groups.advanced_config.deploy_timeout_minutes: string -> int32`
+  - **CreateInferService**
+    - changes of request param
+      - `+ group_configs.advanced_config.mooncake_enable`
+      - `* group_configs.advanced_config.deploy_timeout_minutes: string -> int32`
+      - `+ group_configs.unit_configs.cpu_affinity`
+      - `+ group_configs.unit_configs.group_policy`
+      - `+ runtime_config.smart_routing_enable`
+    - changes of response param
+      - `+ version.runtime_config.smart_routing_enable`
+      - `+ version.instance_groups.unit_configs.cpu_affinity`
+      - `+ version.instance_groups.unit_configs.group_policy`
+      - `+ version.instance_groups.advanced_config.mooncake_enable`
+      - `* version.instance_groups.advanced_config.deploy_timeout_minutes: string -> int32`
+  - **ShowInferService**
+    - changes of response param
+      - `+ version.runtime_config.smart_routing_enable`
+      - `+ version.instance_groups.unit_configs.cpu_affinity`
+      - `+ version.instance_groups.unit_configs.group_policy`
+      - `+ version.instance_groups.advanced_config.mooncake_enable`
+      - `* version.instance_groups.advanced_config.deploy_timeout_minutes: string -> int32`
+  - **UpdateInferService**
+    - changes of request param
+      - `+ group_configs.advanced_config.mooncake_enable`
+      - `* group_configs.advanced_config.deploy_timeout_minutes: string -> int32`
+      - `+ group_configs.unit_configs.cpu_affinity`
+      - `+ group_configs.unit_configs.group_policy`
+      - `+ runtime_config.smart_routing_enable`
+    - changes of response param
+      - `+ version.runtime_config.smart_routing_enable`
+      - `+ version.instance_groups.unit_configs.cpu_affinity`
+      - `+ version.instance_groups.unit_configs.group_policy`
+      - `+ version.instance_groups.advanced_config.mooncake_enable`
+      - `* version.instance_groups.advanced_config.deploy_timeout_minutes: string -> int32`
+  - **BatchDeleteInferServices**
+    - changes of response param
+      - `+ service_responses.version.runtime_config.smart_routing_enable`
+      - `+ service_responses.version.instance_groups.unit_configs.cpu_affinity`
+      - `+ service_responses.version.instance_groups.unit_configs.group_policy`
+      - `+ service_responses.version.instance_groups.advanced_config.mooncake_enable`
+      - `* service_responses.version.instance_groups.advanced_config.deploy_timeout_minutes: string -> int32`
+
+### HuaweiCloud SDK WAF
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `ShowAiGuardLtsConfig`
+    - `UpdateAiGuardLtsConfig`
+    - `ListAiGuardOverviewSummary`
+    - `ShowAiGuardRequestTimeline`
+    - `ShowAiGuardAttackDistribution`
+    - `ListAiAppsLogs`
+    - `ListSystemLexicons`
+    - `ListPiiCategories`
+    - `ListCustomAnswers`
+    - `CreateCustomAnswers`
+    - `ShowCustomAnswers`
+    - `UpdateCustomAnswers`
+    - `DeleteCustomAnswers`
+    - `BatchDeleteCustomAnswers`
+    - `ListCustomLlm`
+    - `CreateCustomLlm`
+    - `ShowCustomLlm`
+    - `UpdateCustomLlm`
+    - `DeleteCustomLlm`
+    - `ShowPresignedUrl`
+    - `BatchDeleteCustomLlm`
+    - `ListAiGuardPolicy`
+    - `CreateAiGuardPolicy`
+    - `ShowAiGuardPolicy`
+    - `UpdateAiGuardPolicy`
+    - `DeleteAiGuardPolicy`
+    - `BatchDeleteAiGuardPolicy`
+    - `BindAiApps`
+    - `BatchDeleteAiGuardRule`
+    - `UpdateAiGuardRuleStatus`
+    - `BatchUpdateAiGuardRuleStatus`
+    - `ListAiGuardRule`
+    - `CreateAiGuardRule`
+    - `ShowAiGuardRule`
+    - `UpdateAiGuardRule`
+    - `DeleteAiGuardRule`
+    - `CreateAiguardTemplateRule`
+    - `ListAiApps`
+    - `CreateAiApp`
+    - `ShowAiAppSetting`
+    - `SetAiAppSetting`
+    - `BatchDeleteAiApps`
+    - `ShowAiApp`
+    - `UpdateAiApp`
+    - `DeleteAiApp`
+    - `UpdateAiAppPolicy`
+    - `UpdateAiAppProtectStatus`
+    - `ListBotMRules`
+    - `UpdateBotMTenantPolicy`
+    - `UpdateBotMRuleStatus`
+    - `UpdateBotMRuleAction`
+    - `BatchUpdateBotMRuleStatus`
+    - `BatchUpdateBotMRuleAction`
+    - `UpdateBotMRuleDefenseStrategy`
+    - `UpdateBotMCategoryStatus`
+    - `ShowBotMRule`
+    - `CreateBotMTrafficDetectionCondition`
+    - `UpdateBotMTrafficDetectionCondition`
+    - `DeleteBotMTrafficDetectionCondition`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowSecurityReportContent**
+    - changes of response param
+      - `+ report_content_info.overview_statistics_info_list`
+      - `+ report_content_info.top_error_pages_info`
+      - `- report_content_info.overview_statistics_list_info`
+      - `- report_content_info.top_abnormal_urls_info`
+      - `+ report_content_info.request_statistics_info_list.timeline.docCountItems`
+      - `+ report_content_info.qps_statistics_info.average_info_list.timeline.docCountItems`
+      - `+ report_content_info.qps_statistics_info.peak_info_list.timeline.docCountItems`
+      - `+ report_content_info.bandwidth_statistics_info.average_info_list.timeline.docCountItems`
+      - `+ report_content_info.bandwidth_statistics_info.peak_info_list.timeline.docCountItems`
+      - `+ report_content_info.response_code_statistics_info.response_source_waf_info_list.timeline.docCountItems`
+      - `+ report_content_info.response_code_statistics_info.response_source_upstream_info_list.timeline.docCountItems`
+      - `+ report_content_info.attack_type_distribution_info_list.detail`
+      - `+ report_content_info.top_attacked_domains_info_list.host`
+      - `+ report_content_info.top_attack_source_ips_info_list.host`
+      - `+ report_content_info.top_attack_source_ips_info_list.web_tag`
+      - `+ report_content_info.top_attacked_urls_info_list.web_tag`
+      - `+ report_content_info.top_attack_source_locations_info_list.host`
+      - `+ report_content_info.top_attack_source_locations_info_list.web_tag`
+  - **ShowSecurityReportSubscription**
+    - changes of response param
+      - `+ report_status`
+      - `+ latest_create_time`
+      - `+ report_id`
+      - `+ template_eps_id`
+      - `+ is_report_created`
+      - `+ report_content_subscription.top_error_pages_enable`
+      - `- report_content_subscription.top_abnormal_urls_enable`
+  - **UpdateSecurityReportSubscription**
+    - changes of response param
+      - `+ report_status`
+      - `+ latest_create_time`
+      - `+ report_id`
+      - `+ template_eps_id`
+      - `+ is_report_created`
+      - `+ report_content_subscription.top_error_pages_enable`
+      - `- report_content_subscription.top_abnormal_urls_enable`
+  - **DeleteSecurityReportSubscription**
+    - changes of response param
+      - `+ report_status`
+      - `+ latest_create_time`
+      - `+ report_id`
+      - `+ template_eps_id`
+      - `+ is_report_created`
+      - `+ report_content_subscription.top_error_pages_enable`
+      - `- report_content_subscription.top_abnormal_urls_enable`
+  - **ShowPolicy**
+    - changes of response param
+      - `+ scan_protection_options`
+      - `+ options.bot_manager_enable`
+      - `+ options.scan_protection`
+      - `+ options.high_frequency_scan_blocking`
+      - `+ options.directory_traversal_protection`
+  - **UpdatePolicyProtectHost**
+    - changes of response param
+      - `+ scan_protection_options`
+      - `+ options.bot_manager_enable`
+      - `+ options.scan_protection`
+      - `+ options.high_frequency_scan_blocking`
+      - `+ options.directory_traversal_protection`
+  - **DeletePolicy**
+    - changes of response param
+      - `+ scan_protection_options`
+      - `+ options.bot_manager_enable`
+      - `+ options.scan_protection`
+      - `+ options.high_frequency_scan_blocking`
+      - `+ options.directory_traversal_protection`
+  - **UpdatePolicy**
+    - changes of request param
+      - `+ options.bot_manager_enable`
+      - `+ options.scan_protection`
+      - `+ options.high_frequency_scan_blocking`
+      - `+ options.directory_traversal_protection`
+    - changes of response param
+      - `+ options.bot_manager_enable`
+      - `+ options.scan_protection`
+      - `+ options.high_frequency_scan_blocking`
+      - `+ options.directory_traversal_protection`
+  - **CopyPolicyById**
+    - changes of response param
+      - `+ scan_protection_options`
+      - `+ options.bot_manager_enable`
+      - `+ options.scan_protection`
+      - `+ options.high_frequency_scan_blocking`
+      - `+ options.directory_traversal_protection`
+  - **CreateSecurityReportSubscription**
+    - changes of request param
+      - `+ report_status`
+    - changes of response param
+      - `+ report_status`
+      - `+ latest_create_time`
+      - `+ report_id`
+      - `+ template_eps_id`
+      - `+ is_report_created`
+      - `+ report_content_subscription.top_error_pages_enable`
+      - `- report_content_subscription.top_abnormal_urls_enable`
+  - **CreatePolicy**
+    - changes of response param
+      - `+ scan_protection_options`
+      - `+ options.bot_manager_enable`
+      - `+ options.scan_protection`
+      - `+ options.high_frequency_scan_blocking`
+      - `+ options.directory_traversal_protection`
+  - **ListPolicy**
+    - changes of response param
+      - `+ scan_protection_options`
+      - `+ items.scan_protection_options`
+      - `+ items.options.bot_manager_enable`
+      - `+ items.options.scan_protection`
+      - `+ items.options.high_frequency_scan_blocking`
+      - `+ items.options.directory_traversal_protection`
+
 # 3.1.218 2026-10-15
 
 ### HuaweiCloud SDK AIDataLake

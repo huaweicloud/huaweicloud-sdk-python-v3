@@ -22,8 +22,8 @@ class DevServerJobListResponse:
         'type': 'str',
         'status': 'str',
         'abnormal_count': 'int',
-        'create_at': 'str',
-        'update_at': 'str'
+        'create_at': 'int',
+        'update_at': 'int'
     }
 
     attribute_map = {
@@ -58,9 +58,9 @@ class DevServerJobListResponse:
         :param abnormal_count: **参数解释**：task失败的节点数量。 **取值范围**：不涉及。
         :type abnormal_count: int
         :param create_at: **参数解释**：创建时间。 **取值范围**：不涉及。
-        :type create_at: str
+        :type create_at: int
         :param update_at: **参数解释**：更新时间。 **取值范围**：不涉及。
-        :type update_at: str
+        :type update_at: int
         """
         
         
@@ -256,7 +256,7 @@ class DevServerJobListResponse:
         **参数解释**：创建时间。 **取值范围**：不涉及。
 
         :return: The create_at of this DevServerJobListResponse.
-        :rtype: str
+        :rtype: int
         """
         return self._create_at
 
@@ -267,7 +267,7 @@ class DevServerJobListResponse:
         **参数解释**：创建时间。 **取值范围**：不涉及。
 
         :param create_at: The create_at of this DevServerJobListResponse.
-        :type create_at: str
+        :type create_at: int
         """
         self._create_at = create_at
 
@@ -278,7 +278,7 @@ class DevServerJobListResponse:
         **参数解释**：更新时间。 **取值范围**：不涉及。
 
         :return: The update_at of this DevServerJobListResponse.
-        :rtype: str
+        :rtype: int
         """
         return self._update_at
 
@@ -289,7 +289,7 @@ class DevServerJobListResponse:
         **参数解释**：更新时间。 **取值范围**：不涉及。
 
         :param update_at: The update_at of this DevServerJobListResponse.
-        :type update_at: str
+        :type update_at: int
         """
         self._update_at = update_at
 

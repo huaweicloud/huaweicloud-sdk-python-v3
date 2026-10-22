@@ -16,15 +16,17 @@ class SecurityReportContentResponseReportContentInfoResponseCodeStatisticsInfoTi
 
     openapi_types = {
         'time': 'int',
-        'num': 'int'
+        'num': 'int',
+        'doc_count_items': 'list[SecurityReportContentResponseReportContentInfoResponseCodeStatisticsInfoDocCountItems]'
     }
 
     attribute_map = {
         'time': 'time',
-        'num': 'num'
+        'num': 'num',
+        'doc_count_items': 'docCountItems'
     }
 
-    def __init__(self, time=None, num=None):
+    def __init__(self, time=None, num=None, doc_count_items=None):
         r"""SecurityReportContentResponseReportContentInfoResponseCodeStatisticsInfoTimeline
 
         The model defined in huaweicloud sdk
@@ -33,18 +35,23 @@ class SecurityReportContentResponseReportContentInfoResponseCodeStatisticsInfoTi
         :type time: int
         :param num: **参数解释：** 该时间点WAF返回该响应码的数量。 **约束限制：** 不涉及 **取值范围：** ≥0 **默认取值：** 0
         :type num: int
+        :param doc_count_items: **参数解释：** 该时间点各响应码的详细统计项。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :type doc_count_items: list[:class:`huaweicloudsdkwaf.v1.SecurityReportContentResponseReportContentInfoResponseCodeStatisticsInfoDocCountItems`]
         """
         
         
 
         self._time = None
         self._num = None
+        self._doc_count_items = None
         self.discriminator = None
 
         if time is not None:
             self.time = time
         if num is not None:
             self.num = num
+        if doc_count_items is not None:
+            self.doc_count_items = doc_count_items
 
     @property
     def time(self):
@@ -89,6 +96,28 @@ class SecurityReportContentResponseReportContentInfoResponseCodeStatisticsInfoTi
         :type num: int
         """
         self._num = num
+
+    @property
+    def doc_count_items(self):
+        r"""Gets the doc_count_items of this SecurityReportContentResponseReportContentInfoResponseCodeStatisticsInfoTimeline.
+
+        **参数解释：** 该时间点各响应码的详细统计项。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+
+        :return: The doc_count_items of this SecurityReportContentResponseReportContentInfoResponseCodeStatisticsInfoTimeline.
+        :rtype: list[:class:`huaweicloudsdkwaf.v1.SecurityReportContentResponseReportContentInfoResponseCodeStatisticsInfoDocCountItems`]
+        """
+        return self._doc_count_items
+
+    @doc_count_items.setter
+    def doc_count_items(self, doc_count_items):
+        r"""Sets the doc_count_items of this SecurityReportContentResponseReportContentInfoResponseCodeStatisticsInfoTimeline.
+
+        **参数解释：** 该时间点各响应码的详细统计项。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+
+        :param doc_count_items: The doc_count_items of this SecurityReportContentResponseReportContentInfoResponseCodeStatisticsInfoTimeline.
+        :type doc_count_items: list[:class:`huaweicloudsdkwaf.v1.SecurityReportContentResponseReportContentInfoResponseCodeStatisticsInfoDocCountItems`]
+        """
+        self._doc_count_items = doc_count_items
 
     def to_dict(self):
         result = {}

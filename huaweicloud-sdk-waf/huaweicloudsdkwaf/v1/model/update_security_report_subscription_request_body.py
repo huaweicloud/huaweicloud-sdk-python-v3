@@ -57,7 +57,7 @@ class UpdateSecurityReportSubscriptionRequestBody:
         :type topic_urn: str
         :param display_name: **参数解释：** 主题的显示名 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type display_name: str
-        :param subscription_type: **参数解释：** 订阅类型，接收安全报告的订阅方式（如slient表示静默订阅）。 **约束限制：** 不涉及 **取值范围：** - smn_topic : 消息主题 - silent ： 静默 - message_center ： 消息中心  **默认取值：** 不涉及
+        :param subscription_type: **参数解释：** 订阅类型，接收安全报告的订阅方式（如silent表示静默订阅）。 **约束限制：** 不涉及 **取值范围：** - smn_topic : 消息主题 - silent ： 静默 - message_center ： 消息中心  **默认取值：** 不涉及
         :type subscription_type: str
         :param report_content_subscription: 
         :type report_content_subscription: :class:`huaweicloudsdkwaf.v1.CreateSecurityReportSubscriptionRequestBodyReportContentSubscription`
@@ -233,7 +233,7 @@ class UpdateSecurityReportSubscriptionRequestBody:
     def subscription_type(self):
         r"""Gets the subscription_type of this UpdateSecurityReportSubscriptionRequestBody.
 
-        **参数解释：** 订阅类型，接收安全报告的订阅方式（如slient表示静默订阅）。 **约束限制：** 不涉及 **取值范围：** - smn_topic : 消息主题 - silent ： 静默 - message_center ： 消息中心  **默认取值：** 不涉及
+        **参数解释：** 订阅类型，接收安全报告的订阅方式（如silent表示静默订阅）。 **约束限制：** 不涉及 **取值范围：** - smn_topic : 消息主题 - silent ： 静默 - message_center ： 消息中心  **默认取值：** 不涉及
 
         :return: The subscription_type of this UpdateSecurityReportSubscriptionRequestBody.
         :rtype: str
@@ -244,7 +244,7 @@ class UpdateSecurityReportSubscriptionRequestBody:
     def subscription_type(self, subscription_type):
         r"""Sets the subscription_type of this UpdateSecurityReportSubscriptionRequestBody.
 
-        **参数解释：** 订阅类型，接收安全报告的订阅方式（如slient表示静默订阅）。 **约束限制：** 不涉及 **取值范围：** - smn_topic : 消息主题 - silent ： 静默 - message_center ： 消息中心  **默认取值：** 不涉及
+        **参数解释：** 订阅类型，接收安全报告的订阅方式（如silent表示静默订阅）。 **约束限制：** 不涉及 **取值范围：** - smn_topic : 消息主题 - silent ： 静默 - message_center ： 消息中心  **默认取值：** 不涉及
 
         :param subscription_type: The subscription_type of this UpdateSecurityReportSubscriptionRequestBody.
         :type subscription_type: str

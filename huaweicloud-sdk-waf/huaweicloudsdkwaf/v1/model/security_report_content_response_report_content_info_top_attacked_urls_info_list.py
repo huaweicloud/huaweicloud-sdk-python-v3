@@ -17,16 +17,18 @@ class SecurityReportContentResponseReportContentInfoTopAttackedUrlsInfoList:
     openapi_types = {
         'key': 'str',
         'num': 'int',
-        'host': 'str'
+        'host': 'str',
+        'web_tag': 'str'
     }
 
     attribute_map = {
         'key': 'key',
         'num': 'num',
-        'host': 'host'
+        'host': 'host',
+        'web_tag': 'web_tag'
     }
 
-    def __init__(self, key=None, num=None, host=None):
+    def __init__(self, key=None, num=None, host=None, web_tag=None):
         r"""SecurityReportContentResponseReportContentInfoTopAttackedUrlsInfoList
 
         The model defined in huaweicloud sdk
@@ -37,6 +39,8 @@ class SecurityReportContentResponseReportContentInfoTopAttackedUrlsInfoList:
         :type num: int
         :param host: **参数解释：** 该URL所属的域名标识（如*:80表示所有域名的80端口）。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type host: str
+        :param web_tag: **参数解释：** 域名的Web标签。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :type web_tag: str
         """
         
         
@@ -44,6 +48,7 @@ class SecurityReportContentResponseReportContentInfoTopAttackedUrlsInfoList:
         self._key = None
         self._num = None
         self._host = None
+        self._web_tag = None
         self.discriminator = None
 
         if key is not None:
@@ -52,6 +57,8 @@ class SecurityReportContentResponseReportContentInfoTopAttackedUrlsInfoList:
             self.num = num
         if host is not None:
             self.host = host
+        if web_tag is not None:
+            self.web_tag = web_tag
 
     @property
     def key(self):
@@ -118,6 +125,28 @@ class SecurityReportContentResponseReportContentInfoTopAttackedUrlsInfoList:
         :type host: str
         """
         self._host = host
+
+    @property
+    def web_tag(self):
+        r"""Gets the web_tag of this SecurityReportContentResponseReportContentInfoTopAttackedUrlsInfoList.
+
+        **参数解释：** 域名的Web标签。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+
+        :return: The web_tag of this SecurityReportContentResponseReportContentInfoTopAttackedUrlsInfoList.
+        :rtype: str
+        """
+        return self._web_tag
+
+    @web_tag.setter
+    def web_tag(self, web_tag):
+        r"""Sets the web_tag of this SecurityReportContentResponseReportContentInfoTopAttackedUrlsInfoList.
+
+        **参数解释：** 域名的Web标签。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+
+        :param web_tag: The web_tag of this SecurityReportContentResponseReportContentInfoTopAttackedUrlsInfoList.
+        :type web_tag: str
+        """
+        self._web_tag = web_tag
 
     def to_dict(self):
         result = {}

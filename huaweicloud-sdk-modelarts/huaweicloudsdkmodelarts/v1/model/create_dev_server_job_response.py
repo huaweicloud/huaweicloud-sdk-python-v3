@@ -16,8 +16,8 @@ class CreateDevServerJobResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'create_at': 'str',
-        'update_at': 'str',
+        'create_at': 'int',
+        'update_at': 'int',
         'id': 'str',
         'name': 'str',
         'type': 'str',
@@ -51,9 +51,9 @@ class CreateDevServerJobResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param create_at: **参数解释**：创建时间。 **取值范围**：不涉及。
-        :type create_at: str
+        :type create_at: int
         :param update_at: **参数解释**：更新时间。 **取值范围**：不涉及。
-        :type update_at: str
+        :type update_at: int
         :param id: **参数解释**：任务ID。 **取值范围**：不涉及。
         :type id: str
         :param name: **参数解释**：任务名称。 **取值范围**：不涉及。
@@ -124,7 +124,7 @@ class CreateDevServerJobResponse(SdkResponse):
         **参数解释**：创建时间。 **取值范围**：不涉及。
 
         :return: The create_at of this CreateDevServerJobResponse.
-        :rtype: str
+        :rtype: int
         """
         return self._create_at
 
@@ -135,7 +135,7 @@ class CreateDevServerJobResponse(SdkResponse):
         **参数解释**：创建时间。 **取值范围**：不涉及。
 
         :param create_at: The create_at of this CreateDevServerJobResponse.
-        :type create_at: str
+        :type create_at: int
         """
         self._create_at = create_at
 
@@ -146,7 +146,7 @@ class CreateDevServerJobResponse(SdkResponse):
         **参数解释**：更新时间。 **取值范围**：不涉及。
 
         :return: The update_at of this CreateDevServerJobResponse.
-        :rtype: str
+        :rtype: int
         """
         return self._update_at
 
@@ -157,7 +157,7 @@ class CreateDevServerJobResponse(SdkResponse):
         **参数解释**：更新时间。 **取值范围**：不涉及。
 
         :param update_at: The update_at of this CreateDevServerJobResponse.
-        :type update_at: str
+        :type update_at: int
         """
         self._update_at = update_at
 

@@ -85,9 +85,9 @@ class RayJobInfo:
         :type federation_id: str
         :param federation_name: **参数解释**：联邦名称。 **约束限制**：不涉及。 **取值范围**：长度为1~63个字符。 **默认取值**：不涉及。
         :type federation_name: str
-        :param create_time: **参数解释**：创建时间。使用UTC时间格式，格式为yyyy-MM-ddTHH:mm:ssZ，例如2023-05-30T12:24:30.401Z。 **约束限制**：不涉及。 **取值范围**：不涉及。 **默认取值**：不涉及。 
+        :param create_time: **参数解释**：资源创建时间，使用UTC时间，ISO 8601格式，yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSSXXX，例如：2025-01-10T03:37:12.000+00:00。 **取值范围**：不涉及。 
         :type create_time: datetime
-        :param update_time: **参数解释**：更新时间。使用UTC时间格式，格式为yyyy-MM-ddTHH:mm:ssZ，例如2023-05-30T12:24:30.401Z。 **约束限制**：不涉及。 **取值范围**：不涉及。 **默认取值**：不涉及。 
+        :param update_time: **参数解释**：资源更新时间，使用UTC时间，ISO 8601格式，例如：2025-01-10T03:37:12.000+00:00。 **取值范围**：不涉及。 
         :type update_time: datetime
         :param start_time: **参数解释**：作业开始执行的时间。使用UTC时间格式，格式为yyyy-MM-ddTHH:mm:ssZ，例如2023-05-30T12:24:30.401Z。 **约束限制**：不涉及。 **取值范围**：不涉及。 **默认取值**：不涉及。 
         :type start_time: datetime
@@ -404,7 +404,7 @@ class RayJobInfo:
     def create_time(self):
         r"""Gets the create_time of this RayJobInfo.
 
-        **参数解释**：创建时间。使用UTC时间格式，格式为yyyy-MM-ddTHH:mm:ssZ，例如2023-05-30T12:24:30.401Z。 **约束限制**：不涉及。 **取值范围**：不涉及。 **默认取值**：不涉及。 
+        **参数解释**：资源创建时间，使用UTC时间，ISO 8601格式，yyyy-MM-dd'T'HH:mm:ss.SSSXXX，例如：2025-01-10T03:37:12.000+00:00。 **取值范围**：不涉及。 
 
         :return: The create_time of this RayJobInfo.
         :rtype: datetime
@@ -415,7 +415,7 @@ class RayJobInfo:
     def create_time(self, create_time):
         r"""Sets the create_time of this RayJobInfo.
 
-        **参数解释**：创建时间。使用UTC时间格式，格式为yyyy-MM-ddTHH:mm:ssZ，例如2023-05-30T12:24:30.401Z。 **约束限制**：不涉及。 **取值范围**：不涉及。 **默认取值**：不涉及。 
+        **参数解释**：资源创建时间，使用UTC时间，ISO 8601格式，yyyy-MM-dd'T'HH:mm:ss.SSSXXX，例如：2025-01-10T03:37:12.000+00:00。 **取值范围**：不涉及。 
 
         :param create_time: The create_time of this RayJobInfo.
         :type create_time: datetime
@@ -426,7 +426,7 @@ class RayJobInfo:
     def update_time(self):
         r"""Gets the update_time of this RayJobInfo.
 
-        **参数解释**：更新时间。使用UTC时间格式，格式为yyyy-MM-ddTHH:mm:ssZ，例如2023-05-30T12:24:30.401Z。 **约束限制**：不涉及。 **取值范围**：不涉及。 **默认取值**：不涉及。 
+        **参数解释**：资源更新时间，使用UTC时间，ISO 8601格式，例如：2025-01-10T03:37:12.000+00:00。 **取值范围**：不涉及。 
 
         :return: The update_time of this RayJobInfo.
         :rtype: datetime
@@ -437,7 +437,7 @@ class RayJobInfo:
     def update_time(self, update_time):
         r"""Sets the update_time of this RayJobInfo.
 
-        **参数解释**：更新时间。使用UTC时间格式，格式为yyyy-MM-ddTHH:mm:ssZ，例如2023-05-30T12:24:30.401Z。 **约束限制**：不涉及。 **取值范围**：不涉及。 **默认取值**：不涉及。 
+        **参数解释**：资源更新时间，使用UTC时间，ISO 8601格式，例如：2025-01-10T03:37:12.000+00:00。 **取值范围**：不涉及。 
 
         :param update_time: The update_time of this RayJobInfo.
         :type update_time: datetime

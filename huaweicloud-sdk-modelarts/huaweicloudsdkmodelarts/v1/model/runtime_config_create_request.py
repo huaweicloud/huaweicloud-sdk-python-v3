@@ -18,17 +18,19 @@ class RuntimeConfigCreateRequest:
         'service_invoke': 'ServiceInvokeCreateRequest',
         'service_limit': 'ServiceLimit',
         'service_secret': 'ServiceSecret',
-        'server_task_limit': 'ServerTaskLimit'
+        'server_task_limit': 'ServerTaskLimit',
+        'smart_routing_enable': 'bool'
     }
 
     attribute_map = {
         'service_invoke': 'service_invoke',
         'service_limit': 'service_limit',
         'service_secret': 'service_secret',
-        'server_task_limit': 'server_task_limit'
+        'server_task_limit': 'server_task_limit',
+        'smart_routing_enable': 'smart_routing_enable'
     }
 
-    def __init__(self, service_invoke=None, service_limit=None, service_secret=None, server_task_limit=None):
+    def __init__(self, service_invoke=None, service_limit=None, service_secret=None, server_task_limit=None, smart_routing_enable=None):
         r"""RuntimeConfigCreateRequest
 
         The model defined in huaweicloud sdk
@@ -41,6 +43,8 @@ class RuntimeConfigCreateRequest:
         :type service_secret: :class:`huaweicloudsdkmodelarts.v1.ServiceSecret`
         :param server_task_limit: 
         :type server_task_limit: :class:`huaweicloudsdkmodelarts.v1.ServerTaskLimit`
+        :param smart_routing_enable: **参数解释：** 智能分流开启字段。 **取值范围：** [true, false]。
+        :type smart_routing_enable: bool
         """
         
         
@@ -49,6 +53,7 @@ class RuntimeConfigCreateRequest:
         self._service_limit = None
         self._service_secret = None
         self._server_task_limit = None
+        self._smart_routing_enable = None
         self.discriminator = None
 
         self.service_invoke = service_invoke
@@ -57,6 +62,8 @@ class RuntimeConfigCreateRequest:
             self.service_secret = service_secret
         if server_task_limit is not None:
             self.server_task_limit = server_task_limit
+        if smart_routing_enable is not None:
+            self.smart_routing_enable = smart_routing_enable
 
     @property
     def service_invoke(self):
@@ -129,6 +136,28 @@ class RuntimeConfigCreateRequest:
         :type server_task_limit: :class:`huaweicloudsdkmodelarts.v1.ServerTaskLimit`
         """
         self._server_task_limit = server_task_limit
+
+    @property
+    def smart_routing_enable(self):
+        r"""Gets the smart_routing_enable of this RuntimeConfigCreateRequest.
+
+        **参数解释：** 智能分流开启字段。 **取值范围：** [true, false]。
+
+        :return: The smart_routing_enable of this RuntimeConfigCreateRequest.
+        :rtype: bool
+        """
+        return self._smart_routing_enable
+
+    @smart_routing_enable.setter
+    def smart_routing_enable(self, smart_routing_enable):
+        r"""Sets the smart_routing_enable of this RuntimeConfigCreateRequest.
+
+        **参数解释：** 智能分流开启字段。 **取值范围：** [true, false]。
+
+        :param smart_routing_enable: The smart_routing_enable of this RuntimeConfigCreateRequest.
+        :type smart_routing_enable: bool
+        """
+        self._smart_routing_enable = smart_routing_enable
 
     def to_dict(self):
         result = {}

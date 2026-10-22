@@ -16,7 +16,7 @@ class SqlSessionInfo:
 
     openapi_types = {
         'session_id': 'str',
-        'status': 'SqlSessionStatus',
+        'status': 'SqlSessionStatusAdmin',
         'create_time': 'datetime',
         'endpoint_info': 'object'
     }
@@ -36,7 +36,7 @@ class SqlSessionInfo:
         :param session_id: **参数解释**：Session的ID。 **取值范围**：长度为1~36个字符，支持大小写英文字母、数字、连字符。
         :type session_id: str
         :param status: 
-        :type status: :class:`huaweicloudsdkaidatalake.v2.SqlSessionStatus`
+        :type status: :class:`huaweicloudsdkaidatalake.v2.SqlSessionStatusAdmin`
         :param create_time: **参数解释**：session创建时间。 **取值范围**：不涉及。
         :type create_time: datetime
         :param endpoint_info: **参数解释**：端点信息。
@@ -87,7 +87,7 @@ class SqlSessionInfo:
         r"""Gets the status of this SqlSessionInfo.
 
         :return: The status of this SqlSessionInfo.
-        :rtype: :class:`huaweicloudsdkaidatalake.v2.SqlSessionStatus`
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.SqlSessionStatusAdmin`
         """
         return self._status
 
@@ -96,7 +96,7 @@ class SqlSessionInfo:
         r"""Sets the status of this SqlSessionInfo.
 
         :param status: The status of this SqlSessionInfo.
-        :type status: :class:`huaweicloudsdkaidatalake.v2.SqlSessionStatus`
+        :type status: :class:`huaweicloudsdkaidatalake.v2.SqlSessionStatusAdmin`
         """
         self._status = status
 
