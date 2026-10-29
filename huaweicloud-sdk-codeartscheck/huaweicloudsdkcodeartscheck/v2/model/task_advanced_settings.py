@@ -33,13 +33,13 @@ class TaskAdvancedSettings:
 
         The model defined in huaweicloud sdk
 
-        :param key: 高级选项对应的名称
+        :param key: **参数解释：** 高级配置对应的名称。 **取值范围：** 不涉及。
         :type key: str
-        :param value: 高级选项对应的取值
+        :param value: **参数解释：** 高级配置对应的取值。 **取值范围：** 不涉及。
         :type value: str
-        :param option_value: 高级选项对应的可选项
+        :param option_value: **参数解释：** 高级配置对应的可选项。 **取值范围：** 不涉及。
         :type option_value: str
-        :param description: 高级选项对应的中文描述
+        :param description: **参数解释：** 高级配置对应的中文描述。 **取值范围：** 不涉及。
         :type description: str
         """
         
@@ -64,7 +64,7 @@ class TaskAdvancedSettings:
     def key(self):
         r"""Gets the key of this TaskAdvancedSettings.
 
-        高级选项对应的名称
+        **参数解释：** 高级配置对应的名称。 **取值范围：** 不涉及。
 
         :return: The key of this TaskAdvancedSettings.
         :rtype: str
@@ -75,7 +75,7 @@ class TaskAdvancedSettings:
     def key(self, key):
         r"""Sets the key of this TaskAdvancedSettings.
 
-        高级选项对应的名称
+        **参数解释：** 高级配置对应的名称。 **取值范围：** 不涉及。
 
         :param key: The key of this TaskAdvancedSettings.
         :type key: str
@@ -86,7 +86,7 @@ class TaskAdvancedSettings:
     def value(self):
         r"""Gets the value of this TaskAdvancedSettings.
 
-        高级选项对应的取值
+        **参数解释：** 高级配置对应的取值。 **取值范围：** 不涉及。
 
         :return: The value of this TaskAdvancedSettings.
         :rtype: str
@@ -97,7 +97,7 @@ class TaskAdvancedSettings:
     def value(self, value):
         r"""Sets the value of this TaskAdvancedSettings.
 
-        高级选项对应的取值
+        **参数解释：** 高级配置对应的取值。 **取值范围：** 不涉及。
 
         :param value: The value of this TaskAdvancedSettings.
         :type value: str
@@ -108,7 +108,7 @@ class TaskAdvancedSettings:
     def option_value(self):
         r"""Gets the option_value of this TaskAdvancedSettings.
 
-        高级选项对应的可选项
+        **参数解释：** 高级配置对应的可选项。 **取值范围：** 不涉及。
 
         :return: The option_value of this TaskAdvancedSettings.
         :rtype: str
@@ -119,7 +119,7 @@ class TaskAdvancedSettings:
     def option_value(self, option_value):
         r"""Sets the option_value of this TaskAdvancedSettings.
 
-        高级选项对应的可选项
+        **参数解释：** 高级配置对应的可选项。 **取值范围：** 不涉及。
 
         :param option_value: The option_value of this TaskAdvancedSettings.
         :type option_value: str
@@ -130,7 +130,7 @@ class TaskAdvancedSettings:
     def description(self):
         r"""Gets the description of this TaskAdvancedSettings.
 
-        高级选项对应的中文描述
+        **参数解释：** 高级配置对应的中文描述。 **取值范围：** 不涉及。
 
         :return: The description of this TaskAdvancedSettings.
         :rtype: str
@@ -141,7 +141,7 @@ class TaskAdvancedSettings:
     def description(self, description):
         r"""Sets the description of this TaskAdvancedSettings.
 
-        高级选项对应的中文描述
+        **参数解释：** 高级配置对应的中文描述。 **取值范围：** 不涉及。
 
         :param description: The description of this TaskAdvancedSettings.
         :type description: str

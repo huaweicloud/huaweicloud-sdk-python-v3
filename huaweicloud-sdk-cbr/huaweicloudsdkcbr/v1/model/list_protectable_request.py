@@ -22,7 +22,8 @@ class ListProtectableRequest:
         'protectable_type': 'str',
         'status': 'str',
         'id': 'str',
-        'server_id': 'str'
+        'server_id': 'str',
+        'enterprise_project_id': 'str'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class ListProtectableRequest:
         'protectable_type': 'protectable_type',
         'status': 'status',
         'id': 'id',
-        'server_id': 'server_id'
+        'server_id': 'server_id',
+        'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, limit=None, marker=None, name=None, offset=None, protectable_type=None, status=None, id=None, server_id=None):
+    def __init__(self, limit=None, marker=None, name=None, offset=None, protectable_type=None, status=None, id=None, server_id=None, enterprise_project_id=None):
         r"""ListProtectableRequest
 
         The model defined in huaweicloud sdk
@@ -57,6 +59,8 @@ class ListProtectableRequest:
         :type id: str
         :param server_id: 根据该id过滤属于该服务器的所有磁盘，支持企业多项目的用户才能传入此参数
         :type server_id: str
+        :param enterprise_project_id: **参数解释：** 企业项目ID，获取企业项目ID请参考[查询企业项目列表](https://support.huaweicloud.com/api-em/zh-cn_topic_0121230880.html)(tag:hws)[查询企业项目列表](https://support.huaweicloud.com/intl/zh-cn/api-em/zh-cn_topic_0121230880.html)(tag:hws_hk)[《企业管理API参考》“查询企业项目列表”章节](tag:ctc,dt,tm,sbc,hws_eu,fcs_vm,hcso_dt,srg) **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :type enterprise_project_id: str
         """
         
         
@@ -69,6 +73,7 @@ class ListProtectableRequest:
         self._status = None
         self._id = None
         self._server_id = None
+        self._enterprise_project_id = None
         self.discriminator = None
 
         if limit is not None:
@@ -86,6 +91,8 @@ class ListProtectableRequest:
             self.id = id
         if server_id is not None:
             self.server_id = server_id
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
 
     @property
     def limit(self):
@@ -262,6 +269,28 @@ class ListProtectableRequest:
         :type server_id: str
         """
         self._server_id = server_id
+
+    @property
+    def enterprise_project_id(self):
+        r"""Gets the enterprise_project_id of this ListProtectableRequest.
+
+        **参数解释：** 企业项目ID，获取企业项目ID请参考[查询企业项目列表](https://support.huaweicloud.com/api-em/zh-cn_topic_0121230880.html)(tag:hws)[查询企业项目列表](https://support.huaweicloud.com/intl/zh-cn/api-em/zh-cn_topic_0121230880.html)(tag:hws_hk)[《企业管理API参考》“查询企业项目列表”章节](tag:ctc,dt,tm,sbc,hws_eu,fcs_vm,hcso_dt,srg) **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+
+        :return: The enterprise_project_id of this ListProtectableRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        r"""Sets the enterprise_project_id of this ListProtectableRequest.
+
+        **参数解释：** 企业项目ID，获取企业项目ID请参考[查询企业项目列表](https://support.huaweicloud.com/api-em/zh-cn_topic_0121230880.html)(tag:hws)[查询企业项目列表](https://support.huaweicloud.com/intl/zh-cn/api-em/zh-cn_topic_0121230880.html)(tag:hws_hk)[《企业管理API参考》“查询企业项目列表”章节](tag:ctc,dt,tm,sbc,hws_eu,fcs_vm,hcso_dt,srg) **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+
+        :param enterprise_project_id: The enterprise_project_id of this ListProtectableRequest.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
         result = {}

@@ -35,7 +35,8 @@ class ShowSparkSqlResponse(SdkResponse):
         'start_time': 'int',
         'end_time': 'int',
         'create_user': 'SparkCreateUser',
-        'labels': 'list[SparkSqlLabelRes]'
+        'labels': 'list[SparkSqlLabelRes]',
+        'spark_ui': 'SparkUiSharedInfo'
     }
 
     attribute_map = {
@@ -58,10 +59,11 @@ class ShowSparkSqlResponse(SdkResponse):
         'start_time': 'start_time',
         'end_time': 'end_time',
         'create_user': 'create_user',
-        'labels': 'labels'
+        'labels': 'labels',
+        'spark_ui': 'spark_ui'
     }
 
-    def __init__(self, endpoint_name=None, client_token=None, catalog_context=None, statement=None, parameters=None, statement_type=None, statement_id=None, state=None, error=None, spark_config=None, image=None, result=None, metric_statistics=None, timeout=None, log_url=None, create_time=None, start_time=None, end_time=None, create_user=None, labels=None):
+    def __init__(self, endpoint_name=None, client_token=None, catalog_context=None, statement=None, parameters=None, statement_type=None, statement_id=None, state=None, error=None, spark_config=None, image=None, result=None, metric_statistics=None, timeout=None, log_url=None, create_time=None, start_time=None, end_time=None, create_user=None, labels=None, spark_ui=None):
         r"""ShowSparkSqlResponse
 
         The model defined in huaweicloud sdk
@@ -106,6 +108,8 @@ class ShowSparkSqlResponse(SdkResponse):
         :type create_user: :class:`huaweicloudsdkaidatalake.v2.SparkCreateUser`
         :param labels: **参数解释**：作业标签列表，用于标识和分类作业。数组中的每个元素为SparkSqlLabelRes对象，包含标签的键和值。
         :type labels: list[:class:`huaweicloudsdkaidatalake.v2.SparkSqlLabelRes`]
+        :param spark_ui: 
+        :type spark_ui: :class:`huaweicloudsdkaidatalake.v2.SparkUiSharedInfo`
         """
         
         super().__init__()
@@ -130,6 +134,7 @@ class ShowSparkSqlResponse(SdkResponse):
         self._end_time = None
         self._create_user = None
         self._labels = None
+        self._spark_ui = None
         self.discriminator = None
 
         if endpoint_name is not None:
@@ -172,6 +177,8 @@ class ShowSparkSqlResponse(SdkResponse):
             self.create_user = create_user
         if labels is not None:
             self.labels = labels
+        if spark_ui is not None:
+            self.spark_ui = spark_ui
 
     @property
     def endpoint_name(self):
@@ -584,6 +591,24 @@ class ShowSparkSqlResponse(SdkResponse):
         :type labels: list[:class:`huaweicloudsdkaidatalake.v2.SparkSqlLabelRes`]
         """
         self._labels = labels
+
+    @property
+    def spark_ui(self):
+        r"""Gets the spark_ui of this ShowSparkSqlResponse.
+
+        :return: The spark_ui of this ShowSparkSqlResponse.
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.SparkUiSharedInfo`
+        """
+        return self._spark_ui
+
+    @spark_ui.setter
+    def spark_ui(self, spark_ui):
+        r"""Sets the spark_ui of this ShowSparkSqlResponse.
+
+        :param spark_ui: The spark_ui of this ShowSparkSqlResponse.
+        :type spark_ui: :class:`huaweicloudsdkaidatalake.v2.SparkUiSharedInfo`
+        """
+        self._spark_ui = spark_ui
 
     def to_dict(self):
         import warnings

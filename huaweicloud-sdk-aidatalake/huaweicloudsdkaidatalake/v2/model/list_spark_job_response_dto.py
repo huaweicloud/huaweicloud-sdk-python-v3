@@ -22,6 +22,7 @@ class ListSparkJobResponseDto:
         'job_type': 'str',
         'state': 'str',
         'state_message': 'str',
+        'metric_statistics': 'SparkJobMetricStatistics',
         'retry_times': 'int',
         'create_time': 'int',
         'start_time': 'int',
@@ -38,6 +39,7 @@ class ListSparkJobResponseDto:
         'job_type': 'job_type',
         'state': 'state',
         'state_message': 'state_message',
+        'metric_statistics': 'metric_statistics',
         'retry_times': 'retry_times',
         'create_time': 'create_time',
         'start_time': 'start_time',
@@ -46,7 +48,7 @@ class ListSparkJobResponseDto:
         'log_url': 'log_url'
     }
 
-    def __init__(self, job_id=None, client_token=None, name=None, endpoint_name=None, job_type=None, state=None, state_message=None, retry_times=None, create_time=None, start_time=None, end_time=None, create_user=None, log_url=None):
+    def __init__(self, job_id=None, client_token=None, name=None, endpoint_name=None, job_type=None, state=None, state_message=None, metric_statistics=None, retry_times=None, create_time=None, start_time=None, end_time=None, create_user=None, log_url=None):
         r"""ListSparkJobResponseDto
 
         The model defined in huaweicloud sdk
@@ -65,6 +67,8 @@ class ListSparkJobResponseDto:
         :type state: str
         :param state_message: **参数解释**：作业状态消息，当作业异常结束时显示相关信息。 **取值范围**：长度为0~512个字符。
         :type state_message: str
+        :param metric_statistics: 
+        :type metric_statistics: :class:`huaweicloudsdkaidatalake.v2.SparkJobMetricStatistics`
         :param retry_times: **参数解释**：作业重试次数，用于记录作业失败后的重试次数。 **取值范围**：最小值为0。
         :type retry_times: int
         :param create_time: **参数解释**：作业创建时间，用于记录作业提交时间。 **取值范围**：unix时间戳，单位为毫秒。
@@ -88,6 +92,7 @@ class ListSparkJobResponseDto:
         self._job_type = None
         self._state = None
         self._state_message = None
+        self._metric_statistics = None
         self._retry_times = None
         self._create_time = None
         self._start_time = None
@@ -105,6 +110,8 @@ class ListSparkJobResponseDto:
         self.state = state
         if state_message is not None:
             self.state_message = state_message
+        if metric_statistics is not None:
+            self.metric_statistics = metric_statistics
         if retry_times is not None:
             self.retry_times = retry_times
         self.create_time = create_time
@@ -269,6 +276,24 @@ class ListSparkJobResponseDto:
         :type state_message: str
         """
         self._state_message = state_message
+
+    @property
+    def metric_statistics(self):
+        r"""Gets the metric_statistics of this ListSparkJobResponseDto.
+
+        :return: The metric_statistics of this ListSparkJobResponseDto.
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.SparkJobMetricStatistics`
+        """
+        return self._metric_statistics
+
+    @metric_statistics.setter
+    def metric_statistics(self, metric_statistics):
+        r"""Sets the metric_statistics of this ListSparkJobResponseDto.
+
+        :param metric_statistics: The metric_statistics of this ListSparkJobResponseDto.
+        :type metric_statistics: :class:`huaweicloudsdkaidatalake.v2.SparkJobMetricStatistics`
+        """
+        self._metric_statistics = metric_statistics
 
     @property
     def retry_times(self):

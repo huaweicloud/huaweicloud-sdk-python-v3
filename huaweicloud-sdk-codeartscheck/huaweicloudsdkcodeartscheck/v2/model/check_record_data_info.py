@@ -31,9 +31,9 @@ class CheckRecordDataInfo:
 
         The model defined in huaweicloud sdk
 
-        :param check_time: 检查任务执行开始时间
+        :param check_time: **参数解释：** 检查任务执行开始时间，使用UTC时间，格式为yyyy-MM-ddTHH:mm:ssZ。例如：2020-09-25T12:05:00Z。 **取值范围：** 不涉及。
         :type check_time: str
-        :param check_end_time: 检查任务执行结束时间
+        :param check_end_time: **参数解释：** 检查任务执行结束时间，使用UTC时间，格式为yyyy-MM-ddTHH:mm:ssZ。例如：2020-09-25T12:05:00Z。 **取值范围：** 不涉及。
         :type check_end_time: str
         :param issue_counts: 
         :type issue_counts: :class:`huaweicloudsdkcodeartscheck.v2.CheckRecordIssueCountsInfo`
@@ -57,7 +57,7 @@ class CheckRecordDataInfo:
     def check_time(self):
         r"""Gets the check_time of this CheckRecordDataInfo.
 
-        检查任务执行开始时间
+        **参数解释：** 检查任务执行开始时间，使用UTC时间，格式为yyyy-MM-ddTHH:mm:ssZ。例如：2020-09-25T12:05:00Z。 **取值范围：** 不涉及。
 
         :return: The check_time of this CheckRecordDataInfo.
         :rtype: str
@@ -68,7 +68,7 @@ class CheckRecordDataInfo:
     def check_time(self, check_time):
         r"""Sets the check_time of this CheckRecordDataInfo.
 
-        检查任务执行开始时间
+        **参数解释：** 检查任务执行开始时间，使用UTC时间，格式为yyyy-MM-ddTHH:mm:ssZ。例如：2020-09-25T12:05:00Z。 **取值范围：** 不涉及。
 
         :param check_time: The check_time of this CheckRecordDataInfo.
         :type check_time: str
@@ -79,7 +79,7 @@ class CheckRecordDataInfo:
     def check_end_time(self):
         r"""Gets the check_end_time of this CheckRecordDataInfo.
 
-        检查任务执行结束时间
+        **参数解释：** 检查任务执行结束时间，使用UTC时间，格式为yyyy-MM-ddTHH:mm:ssZ。例如：2020-09-25T12:05:00Z。 **取值范围：** 不涉及。
 
         :return: The check_end_time of this CheckRecordDataInfo.
         :rtype: str
@@ -90,7 +90,7 @@ class CheckRecordDataInfo:
     def check_end_time(self, check_end_time):
         r"""Sets the check_end_time of this CheckRecordDataInfo.
 
-        检查任务执行结束时间
+        **参数解释：** 检查任务执行结束时间，使用UTC时间，格式为yyyy-MM-ddTHH:mm:ssZ。例如：2020-09-25T12:05:00Z。 **取值范围：** 不涉及。
 
         :param check_end_time: The check_end_time of this CheckRecordDataInfo.
         :type check_end_time: str

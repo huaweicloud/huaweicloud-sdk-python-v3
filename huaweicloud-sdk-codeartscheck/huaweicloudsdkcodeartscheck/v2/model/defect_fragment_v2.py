@@ -33,13 +33,13 @@ class DefectFragmentV2:
 
         The model defined in huaweicloud sdk
 
-        :param line_num: 行号
+        :param line_num: **参数解释：** 行号。 **取值范围：** 不涉及。
         :type line_num: str
-        :param line_content: 该行代码内容
+        :param line_content: **参数解释：** 行代码内容。 **取值范围：** 不涉及。
         :type line_content: str
-        :param start_offset: 缺陷开始列号
+        :param start_offset: **参数解释：** 废弃字段。 **取值范围：** 不涉及。
         :type start_offset: int
-        :param end_offset: 缺陷结束列号
+        :param end_offset: **参数解释：** 废弃字段。 **取值范围：** 不涉及。
         :type end_offset: int
         """
         
@@ -64,7 +64,7 @@ class DefectFragmentV2:
     def line_num(self):
         r"""Gets the line_num of this DefectFragmentV2.
 
-        行号
+        **参数解释：** 行号。 **取值范围：** 不涉及。
 
         :return: The line_num of this DefectFragmentV2.
         :rtype: str
@@ -75,7 +75,7 @@ class DefectFragmentV2:
     def line_num(self, line_num):
         r"""Sets the line_num of this DefectFragmentV2.
 
-        行号
+        **参数解释：** 行号。 **取值范围：** 不涉及。
 
         :param line_num: The line_num of this DefectFragmentV2.
         :type line_num: str
@@ -86,7 +86,7 @@ class DefectFragmentV2:
     def line_content(self):
         r"""Gets the line_content of this DefectFragmentV2.
 
-        该行代码内容
+        **参数解释：** 行代码内容。 **取值范围：** 不涉及。
 
         :return: The line_content of this DefectFragmentV2.
         :rtype: str
@@ -97,7 +97,7 @@ class DefectFragmentV2:
     def line_content(self, line_content):
         r"""Sets the line_content of this DefectFragmentV2.
 
-        该行代码内容
+        **参数解释：** 行代码内容。 **取值范围：** 不涉及。
 
         :param line_content: The line_content of this DefectFragmentV2.
         :type line_content: str
@@ -108,7 +108,7 @@ class DefectFragmentV2:
     def start_offset(self):
         r"""Gets the start_offset of this DefectFragmentV2.
 
-        缺陷开始列号
+        **参数解释：** 废弃字段。 **取值范围：** 不涉及。
 
         :return: The start_offset of this DefectFragmentV2.
         :rtype: int
@@ -119,7 +119,7 @@ class DefectFragmentV2:
     def start_offset(self, start_offset):
         r"""Sets the start_offset of this DefectFragmentV2.
 
-        缺陷开始列号
+        **参数解释：** 废弃字段。 **取值范围：** 不涉及。
 
         :param start_offset: The start_offset of this DefectFragmentV2.
         :type start_offset: int
@@ -130,7 +130,7 @@ class DefectFragmentV2:
     def end_offset(self):
         r"""Gets the end_offset of this DefectFragmentV2.
 
-        缺陷结束列号
+        **参数解释：** 废弃字段。 **取值范围：** 不涉及。
 
         :return: The end_offset of this DefectFragmentV2.
         :rtype: int
@@ -141,7 +141,7 @@ class DefectFragmentV2:
     def end_offset(self, end_offset):
         r"""Sets the end_offset of this DefectFragmentV2.
 
-        缺陷结束列号
+        **参数解释：** 废弃字段。 **取值范围：** 不涉及。
 
         :param end_offset: The end_offset of this DefectFragmentV2.
         :type end_offset: int

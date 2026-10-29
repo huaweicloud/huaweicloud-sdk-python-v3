@@ -39,19 +39,19 @@ class IncConfigV2:
 
         The model defined in huaweicloud sdk
 
-        :param parent_task_id: 需要关联的父任务ID，流水线创建或MR创建任务需要该参数
+        :param parent_task_id: **参数解释：** 需要关联的任务ID。 **约束限制：** 32位UUID。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type parent_task_id: str
-        :param git_source_branch: 增量检查代码源分支
+        :param git_source_branch: **参数解释：** MR增量任务的源分支。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type git_source_branch: str
-        :param git_target_branch: 增量检查代码目标分支
+        :param git_target_branch: **参数解释：** MR增量任务的目标分支。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type git_target_branch: str
-        :param merge_id: MR唯一标示ID
+        :param merge_id: **参数解释：** MR编号。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type merge_id: str
-        :param event_type: webhook触发事件类型,merge_request/push_request
+        :param event_type: **参数解释：** 创建MR增量任务时需传。 **约束限制：** 不涉及。 **取值范围：** merge_request。 **默认取值：** 不涉及。
         :type event_type: str
-        :param action: webhook事件状态，open/close/update
+        :param action: **参数解释：** 创建MR增量任务时需传。 **约束限制：** 不涉及。 **取值范围：** open。 **默认取值：** 不涉及。
         :type action: str
-        :param title: MR标题
+        :param title: **参数解释：** 创建MR增量任务时需传，MR标题。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type title: str
         """
         
@@ -85,7 +85,7 @@ class IncConfigV2:
     def parent_task_id(self):
         r"""Gets the parent_task_id of this IncConfigV2.
 
-        需要关联的父任务ID，流水线创建或MR创建任务需要该参数
+        **参数解释：** 需要关联的任务ID。 **约束限制：** 32位UUID。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The parent_task_id of this IncConfigV2.
         :rtype: str
@@ -96,7 +96,7 @@ class IncConfigV2:
     def parent_task_id(self, parent_task_id):
         r"""Sets the parent_task_id of this IncConfigV2.
 
-        需要关联的父任务ID，流水线创建或MR创建任务需要该参数
+        **参数解释：** 需要关联的任务ID。 **约束限制：** 32位UUID。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param parent_task_id: The parent_task_id of this IncConfigV2.
         :type parent_task_id: str
@@ -107,7 +107,7 @@ class IncConfigV2:
     def git_source_branch(self):
         r"""Gets the git_source_branch of this IncConfigV2.
 
-        增量检查代码源分支
+        **参数解释：** MR增量任务的源分支。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The git_source_branch of this IncConfigV2.
         :rtype: str
@@ -118,7 +118,7 @@ class IncConfigV2:
     def git_source_branch(self, git_source_branch):
         r"""Sets the git_source_branch of this IncConfigV2.
 
-        增量检查代码源分支
+        **参数解释：** MR增量任务的源分支。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param git_source_branch: The git_source_branch of this IncConfigV2.
         :type git_source_branch: str
@@ -129,7 +129,7 @@ class IncConfigV2:
     def git_target_branch(self):
         r"""Gets the git_target_branch of this IncConfigV2.
 
-        增量检查代码目标分支
+        **参数解释：** MR增量任务的目标分支。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The git_target_branch of this IncConfigV2.
         :rtype: str
@@ -140,7 +140,7 @@ class IncConfigV2:
     def git_target_branch(self, git_target_branch):
         r"""Sets the git_target_branch of this IncConfigV2.
 
-        增量检查代码目标分支
+        **参数解释：** MR增量任务的目标分支。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param git_target_branch: The git_target_branch of this IncConfigV2.
         :type git_target_branch: str
@@ -151,7 +151,7 @@ class IncConfigV2:
     def merge_id(self):
         r"""Gets the merge_id of this IncConfigV2.
 
-        MR唯一标示ID
+        **参数解释：** MR编号。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The merge_id of this IncConfigV2.
         :rtype: str
@@ -162,7 +162,7 @@ class IncConfigV2:
     def merge_id(self, merge_id):
         r"""Sets the merge_id of this IncConfigV2.
 
-        MR唯一标示ID
+        **参数解释：** MR编号。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param merge_id: The merge_id of this IncConfigV2.
         :type merge_id: str
@@ -173,7 +173,7 @@ class IncConfigV2:
     def event_type(self):
         r"""Gets the event_type of this IncConfigV2.
 
-        webhook触发事件类型,merge_request/push_request
+        **参数解释：** 创建MR增量任务时需传。 **约束限制：** 不涉及。 **取值范围：** merge_request。 **默认取值：** 不涉及。
 
         :return: The event_type of this IncConfigV2.
         :rtype: str
@@ -184,7 +184,7 @@ class IncConfigV2:
     def event_type(self, event_type):
         r"""Sets the event_type of this IncConfigV2.
 
-        webhook触发事件类型,merge_request/push_request
+        **参数解释：** 创建MR增量任务时需传。 **约束限制：** 不涉及。 **取值范围：** merge_request。 **默认取值：** 不涉及。
 
         :param event_type: The event_type of this IncConfigV2.
         :type event_type: str
@@ -195,7 +195,7 @@ class IncConfigV2:
     def action(self):
         r"""Gets the action of this IncConfigV2.
 
-        webhook事件状态，open/close/update
+        **参数解释：** 创建MR增量任务时需传。 **约束限制：** 不涉及。 **取值范围：** open。 **默认取值：** 不涉及。
 
         :return: The action of this IncConfigV2.
         :rtype: str
@@ -206,7 +206,7 @@ class IncConfigV2:
     def action(self, action):
         r"""Sets the action of this IncConfigV2.
 
-        webhook事件状态，open/close/update
+        **参数解释：** 创建MR增量任务时需传。 **约束限制：** 不涉及。 **取值范围：** open。 **默认取值：** 不涉及。
 
         :param action: The action of this IncConfigV2.
         :type action: str
@@ -217,7 +217,7 @@ class IncConfigV2:
     def title(self):
         r"""Gets the title of this IncConfigV2.
 
-        MR标题
+        **参数解释：** 创建MR增量任务时需传，MR标题。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The title of this IncConfigV2.
         :rtype: str
@@ -228,7 +228,7 @@ class IncConfigV2:
     def title(self, title):
         r"""Sets the title of this IncConfigV2.
 
-        MR标题
+        **参数解释：** 创建MR增量任务时需传，MR标题。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param title: The title of this IncConfigV2.
         :type title: str

@@ -33,13 +33,13 @@ class CheckRecordIssueCountsInfo:
 
         The model defined in huaweicloud sdk
 
-        :param critical: 致命问题
+        :param critical: **参数解释：** 致命问题数量。不包括已忽略和已修复问题。 **取值范围：** 不涉及。
         :type critical: int
-        :param serious: 严重问题
+        :param serious: **参数解释：** 严重问题数量。不包括已忽略和已修复问题。 **取值范围：** 不涉及。
         :type serious: int
-        :param normal: 常规问题
+        :param normal: **参数解释：** 一般问题数量。不包括已忽略和已修复问题。 **取值范围：** 不涉及。
         :type normal: int
-        :param prompt: 提示问题
+        :param prompt: **参数解释：** 提示问题数量。不包括已忽略和已修复问题。 **取值范围：** 不涉及。
         :type prompt: int
         """
         
@@ -64,7 +64,7 @@ class CheckRecordIssueCountsInfo:
     def critical(self):
         r"""Gets the critical of this CheckRecordIssueCountsInfo.
 
-        致命问题
+        **参数解释：** 致命问题数量。不包括已忽略和已修复问题。 **取值范围：** 不涉及。
 
         :return: The critical of this CheckRecordIssueCountsInfo.
         :rtype: int
@@ -75,7 +75,7 @@ class CheckRecordIssueCountsInfo:
     def critical(self, critical):
         r"""Sets the critical of this CheckRecordIssueCountsInfo.
 
-        致命问题
+        **参数解释：** 致命问题数量。不包括已忽略和已修复问题。 **取值范围：** 不涉及。
 
         :param critical: The critical of this CheckRecordIssueCountsInfo.
         :type critical: int
@@ -86,7 +86,7 @@ class CheckRecordIssueCountsInfo:
     def serious(self):
         r"""Gets the serious of this CheckRecordIssueCountsInfo.
 
-        严重问题
+        **参数解释：** 严重问题数量。不包括已忽略和已修复问题。 **取值范围：** 不涉及。
 
         :return: The serious of this CheckRecordIssueCountsInfo.
         :rtype: int
@@ -97,7 +97,7 @@ class CheckRecordIssueCountsInfo:
     def serious(self, serious):
         r"""Sets the serious of this CheckRecordIssueCountsInfo.
 
-        严重问题
+        **参数解释：** 严重问题数量。不包括已忽略和已修复问题。 **取值范围：** 不涉及。
 
         :param serious: The serious of this CheckRecordIssueCountsInfo.
         :type serious: int
@@ -108,7 +108,7 @@ class CheckRecordIssueCountsInfo:
     def normal(self):
         r"""Gets the normal of this CheckRecordIssueCountsInfo.
 
-        常规问题
+        **参数解释：** 一般问题数量。不包括已忽略和已修复问题。 **取值范围：** 不涉及。
 
         :return: The normal of this CheckRecordIssueCountsInfo.
         :rtype: int
@@ -119,7 +119,7 @@ class CheckRecordIssueCountsInfo:
     def normal(self, normal):
         r"""Sets the normal of this CheckRecordIssueCountsInfo.
 
-        常规问题
+        **参数解释：** 一般问题数量。不包括已忽略和已修复问题。 **取值范围：** 不涉及。
 
         :param normal: The normal of this CheckRecordIssueCountsInfo.
         :type normal: int
@@ -130,7 +130,7 @@ class CheckRecordIssueCountsInfo:
     def prompt(self):
         r"""Gets the prompt of this CheckRecordIssueCountsInfo.
 
-        提示问题
+        **参数解释：** 提示问题数量。不包括已忽略和已修复问题。 **取值范围：** 不涉及。
 
         :return: The prompt of this CheckRecordIssueCountsInfo.
         :rtype: int
@@ -141,7 +141,7 @@ class CheckRecordIssueCountsInfo:
     def prompt(self, prompt):
         r"""Sets the prompt of this CheckRecordIssueCountsInfo.
 
-        提示问题
+        **参数解释：** 提示问题数量。不包括已忽略和已修复问题。 **取值范围：** 不涉及。
 
         :param prompt: The prompt of this CheckRecordIssueCountsInfo.
         :type prompt: int

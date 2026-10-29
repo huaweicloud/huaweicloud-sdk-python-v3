@@ -16,7 +16,7 @@ class CheckRulesetParametersResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'data': 'list[TaskCheckParamters]',
+        'data': 'list[TaskCheckParameters]',
         'total': 'int'
     }
 
@@ -30,9 +30,9 @@ class CheckRulesetParametersResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param data: 历史记录数据
-        :type data: list[:class:`huaweicloudsdkcodeartscheck.v2.TaskCheckParamters`]
-        :param total: 总数
+        :param data: **参数解释：** 历史记录数据。
+        :type data: list[:class:`huaweicloudsdkcodeartscheck.v2.TaskCheckParameters`]
+        :param total: **参数解释：** 总数。 **取值范围:** ≥0
         :type total: int
         """
         
@@ -51,10 +51,10 @@ class CheckRulesetParametersResponse(SdkResponse):
     def data(self):
         r"""Gets the data of this CheckRulesetParametersResponse.
 
-        历史记录数据
+        **参数解释：** 历史记录数据。
 
         :return: The data of this CheckRulesetParametersResponse.
-        :rtype: list[:class:`huaweicloudsdkcodeartscheck.v2.TaskCheckParamters`]
+        :rtype: list[:class:`huaweicloudsdkcodeartscheck.v2.TaskCheckParameters`]
         """
         return self._data
 
@@ -62,10 +62,10 @@ class CheckRulesetParametersResponse(SdkResponse):
     def data(self, data):
         r"""Sets the data of this CheckRulesetParametersResponse.
 
-        历史记录数据
+        **参数解释：** 历史记录数据。
 
         :param data: The data of this CheckRulesetParametersResponse.
-        :type data: list[:class:`huaweicloudsdkcodeartscheck.v2.TaskCheckParamters`]
+        :type data: list[:class:`huaweicloudsdkcodeartscheck.v2.TaskCheckParameters`]
         """
         self._data = data
 
@@ -73,7 +73,7 @@ class CheckRulesetParametersResponse(SdkResponse):
     def total(self):
         r"""Gets the total of this CheckRulesetParametersResponse.
 
-        总数
+        **参数解释：** 总数。 **取值范围:** ≥0
 
         :return: The total of this CheckRulesetParametersResponse.
         :rtype: int
@@ -84,7 +84,7 @@ class CheckRulesetParametersResponse(SdkResponse):
     def total(self, total):
         r"""Sets the total of this CheckRulesetParametersResponse.
 
-        总数
+        **参数解释：** 总数。 **取值范围:** ≥0
 
         :param total: The total of this CheckRulesetParametersResponse.
         :type total: int

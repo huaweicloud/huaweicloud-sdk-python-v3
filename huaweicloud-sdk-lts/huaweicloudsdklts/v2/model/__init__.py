@@ -22,6 +22,7 @@ from huaweicloudsdklts.v2.model.access_config_time_offset import AccessConfigTim
 from huaweicloudsdklts.v2.model.access_config_time_offset_create import AccessConfigTimeOffsetCreate
 from huaweicloudsdklts.v2.model.access_config_windows_log_info_create import AccessConfigWindowsLogInfoCreate
 from huaweicloudsdklts.v2.model.access_config_windows_log_info_update import AccessConfigWindowsLogInfoUpdate
+from huaweicloudsdklts.v2.model.alarm_condition import AlarmCondition
 from huaweicloudsdklts.v2.model.annotations import Annotations
 from huaweicloudsdklts.v2.model.aom_mapping_log_stream_info import AomMappingLogStreamInfo
 from huaweicloudsdklts.v2.model.aom_mapping_request_info import AomMappingRequestInfo
@@ -158,6 +159,7 @@ from huaweicloudsdklts.v2.model.get_host_list_info import GetHostListInfo
 from huaweicloudsdklts.v2.model.get_host_list_request_body import GetHostListRequestBody
 from huaweicloudsdklts.v2.model.get_query_search_criterias_body import GetQuerySearchCriteriasBody
 from huaweicloudsdklts.v2.model.host_group_tag import HostGroupTag
+from huaweicloudsdklts.v2.model.keywords_alarm_conditions import KeywordsAlarmConditions
 from huaweicloudsdklts.v2.model.keywords_alarm_rule_resp_list import KeywordsAlarmRuleRespList
 from huaweicloudsdklts.v2.model.keywords_request import KeywordsRequest
 from huaweicloudsdklts.v2.model.keywords_request_response import KeywordsRequestResponse
@@ -229,6 +231,7 @@ from huaweicloudsdklts.v2.model.list_topn_traffic_statistics_response import Lis
 from huaweicloudsdklts.v2.model.list_transfers_request import ListTransfersRequest
 from huaweicloudsdklts.v2.model.list_transfers_response import ListTransfersResponse
 from huaweicloudsdklts.v2.model.log_contents import LogContents
+from huaweicloudsdklts.v2.model.log_counts import LogCounts
 from huaweicloudsdklts.v2.model.log_group import LogGroup
 from huaweicloudsdklts.v2.model.log_mapping_config import LogMappingConfig
 from huaweicloudsdklts.v2.model.log_mapping_stream_info import LogMappingStreamInfo

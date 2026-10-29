@@ -21,7 +21,10 @@ class PriceItem:
         'charging_mode': 'str',
         'period_type': 'int',
         'period_nums': 'list[int]',
-        'billing_usage_factor': 'str'
+        'billing_usage_factor': 'str',
+        'policy_mode': 'str',
+        'division_pattern': 'DivisionPattern',
+        'condition_nodes': 'list[ConditionSelectPattern]'
     }
 
     attribute_map = {
@@ -31,10 +34,13 @@ class PriceItem:
         'charging_mode': 'charging_mode',
         'period_type': 'period_type',
         'period_nums': 'period_nums',
-        'billing_usage_factor': 'billing_usage_factor'
+        'billing_usage_factor': 'billing_usage_factor',
+        'policy_mode': 'policy_mode',
+        'division_pattern': 'division_pattern',
+        'condition_nodes': 'condition_nodes'
     }
 
-    def __init__(self, offering_id=None, currency=None, official_price=None, charging_mode=None, period_type=None, period_nums=None, billing_usage_factor=None):
+    def __init__(self, offering_id=None, currency=None, official_price=None, charging_mode=None, period_type=None, period_nums=None, billing_usage_factor=None, policy_mode=None, division_pattern=None, condition_nodes=None):
         r"""PriceItem
 
         The model defined in huaweicloud sdk
@@ -53,6 +59,12 @@ class PriceItem:
         :type period_nums: list[int]
         :param billing_usage_factor: 计费因子编码
         :type billing_usage_factor: str
+        :param policy_mode: 定价策略模式，SIMPLE：简单定价、DIVISION：阶梯定价、CONDITION：条件选择定价
+        :type policy_mode: str
+        :param division_pattern: 
+        :type division_pattern: :class:`huaweicloudsdkbssintl.v2.DivisionPattern`
+        :param condition_nodes: 条件选择定价结构，policy_mode&#x3D;CONDITION 时有效
+        :type condition_nodes: list[:class:`huaweicloudsdkbssintl.v2.ConditionSelectPattern`]
         """
         
         
@@ -64,6 +76,9 @@ class PriceItem:
         self._period_type = None
         self._period_nums = None
         self._billing_usage_factor = None
+        self._policy_mode = None
+        self._division_pattern = None
+        self._condition_nodes = None
         self.discriminator = None
 
         if offering_id is not None:
@@ -80,6 +95,12 @@ class PriceItem:
             self.period_nums = period_nums
         if billing_usage_factor is not None:
             self.billing_usage_factor = billing_usage_factor
+        if policy_mode is not None:
+            self.policy_mode = policy_mode
+        if division_pattern is not None:
+            self.division_pattern = division_pattern
+        if condition_nodes is not None:
+            self.condition_nodes = condition_nodes
 
     @property
     def offering_id(self):
@@ -234,6 +255,68 @@ class PriceItem:
         :type billing_usage_factor: str
         """
         self._billing_usage_factor = billing_usage_factor
+
+    @property
+    def policy_mode(self):
+        r"""Gets the policy_mode of this PriceItem.
+
+        定价策略模式，SIMPLE：简单定价、DIVISION：阶梯定价、CONDITION：条件选择定价
+
+        :return: The policy_mode of this PriceItem.
+        :rtype: str
+        """
+        return self._policy_mode
+
+    @policy_mode.setter
+    def policy_mode(self, policy_mode):
+        r"""Sets the policy_mode of this PriceItem.
+
+        定价策略模式，SIMPLE：简单定价、DIVISION：阶梯定价、CONDITION：条件选择定价
+
+        :param policy_mode: The policy_mode of this PriceItem.
+        :type policy_mode: str
+        """
+        self._policy_mode = policy_mode
+
+    @property
+    def division_pattern(self):
+        r"""Gets the division_pattern of this PriceItem.
+
+        :return: The division_pattern of this PriceItem.
+        :rtype: :class:`huaweicloudsdkbssintl.v2.DivisionPattern`
+        """
+        return self._division_pattern
+
+    @division_pattern.setter
+    def division_pattern(self, division_pattern):
+        r"""Sets the division_pattern of this PriceItem.
+
+        :param division_pattern: The division_pattern of this PriceItem.
+        :type division_pattern: :class:`huaweicloudsdkbssintl.v2.DivisionPattern`
+        """
+        self._division_pattern = division_pattern
+
+    @property
+    def condition_nodes(self):
+        r"""Gets the condition_nodes of this PriceItem.
+
+        条件选择定价结构，policy_mode=CONDITION 时有效
+
+        :return: The condition_nodes of this PriceItem.
+        :rtype: list[:class:`huaweicloudsdkbssintl.v2.ConditionSelectPattern`]
+        """
+        return self._condition_nodes
+
+    @condition_nodes.setter
+    def condition_nodes(self, condition_nodes):
+        r"""Sets the condition_nodes of this PriceItem.
+
+        条件选择定价结构，policy_mode=CONDITION 时有效
+
+        :param condition_nodes: The condition_nodes of this PriceItem.
+        :type condition_nodes: list[:class:`huaweicloudsdkbssintl.v2.ConditionSelectPattern`]
+        """
+        self._condition_nodes = condition_nodes
 
     def to_dict(self):
         result = {}

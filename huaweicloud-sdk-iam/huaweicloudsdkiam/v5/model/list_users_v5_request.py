@@ -18,17 +18,19 @@ class ListUsersV5Request:
         'limit': 'int',
         'marker': 'str',
         'group_id': 'str',
-        'access_key_id': 'str'
+        'access_key_id': 'str',
+        'service_specific_credential_id': 'str'
     }
 
     attribute_map = {
         'limit': 'limit',
         'marker': 'marker',
         'group_id': 'group_id',
-        'access_key_id': 'access_key_id'
+        'access_key_id': 'access_key_id',
+        'service_specific_credential_id': 'service_specific_credential_id'
     }
 
-    def __init__(self, limit=None, marker=None, group_id=None, access_key_id=None):
+    def __init__(self, limit=None, marker=None, group_id=None, access_key_id=None, service_specific_credential_id=None):
         r"""ListUsersV5Request
 
         The model defined in huaweicloud sdk
@@ -41,6 +43,8 @@ class ListUsersV5Request:
         :type group_id: str
         :param access_key_id: 永久访问密钥ID，即AK。
         :type access_key_id: str
+        :param service_specific_credential_id: **参数解释**： 服务专属凭证的标识符 ID。  **约束限制**： 不涉及。  **取值范围**： 长度固定为20，格式为HSSC + 16位随机字符，只能包含大小写字母和数字。  **默认取值**： 不涉及。 
+        :type service_specific_credential_id: str
         """
         
         
@@ -49,6 +53,7 @@ class ListUsersV5Request:
         self._marker = None
         self._group_id = None
         self._access_key_id = None
+        self._service_specific_credential_id = None
         self.discriminator = None
 
         if limit is not None:
@@ -59,6 +64,8 @@ class ListUsersV5Request:
             self.group_id = group_id
         if access_key_id is not None:
             self.access_key_id = access_key_id
+        if service_specific_credential_id is not None:
+            self.service_specific_credential_id = service_specific_credential_id
 
     @property
     def limit(self):
@@ -147,6 +154,28 @@ class ListUsersV5Request:
         :type access_key_id: str
         """
         self._access_key_id = access_key_id
+
+    @property
+    def service_specific_credential_id(self):
+        r"""Gets the service_specific_credential_id of this ListUsersV5Request.
+
+        **参数解释**： 服务专属凭证的标识符 ID。  **约束限制**： 不涉及。  **取值范围**： 长度固定为20，格式为HSSC + 16位随机字符，只能包含大小写字母和数字。  **默认取值**： 不涉及。 
+
+        :return: The service_specific_credential_id of this ListUsersV5Request.
+        :rtype: str
+        """
+        return self._service_specific_credential_id
+
+    @service_specific_credential_id.setter
+    def service_specific_credential_id(self, service_specific_credential_id):
+        r"""Sets the service_specific_credential_id of this ListUsersV5Request.
+
+        **参数解释**： 服务专属凭证的标识符 ID。  **约束限制**： 不涉及。  **取值范围**： 长度固定为20，格式为HSSC + 16位随机字符，只能包含大小写字母和数字。  **默认取值**： 不涉及。 
+
+        :param service_specific_credential_id: The service_specific_credential_id of this ListUsersV5Request.
+        :type service_specific_credential_id: str
+        """
+        self._service_specific_credential_id = service_specific_credential_id
 
     def to_dict(self):
         result = {}

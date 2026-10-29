@@ -20,7 +20,7 @@ class ListExternalVaultRequest:
         'offset': 'int',
         'protect_type': 'str',
         'region_id': 'str',
-        'objcet_type': 'str',
+        'object_type': 'str',
         'cloud_type': 'str',
         'vault_id': 'str'
     }
@@ -31,12 +31,12 @@ class ListExternalVaultRequest:
         'offset': 'offset',
         'protect_type': 'protect_type',
         'region_id': 'region_id',
-        'objcet_type': 'objcet_type',
+        'object_type': 'object_type',
         'cloud_type': 'cloud_type',
         'vault_id': 'vault_id'
     }
 
-    def __init__(self, external_project_id=None, limit=None, offset=None, protect_type=None, region_id=None, objcet_type=None, cloud_type=None, vault_id=None):
+    def __init__(self, external_project_id=None, limit=None, offset=None, protect_type=None, region_id=None, object_type=None, cloud_type=None, vault_id=None):
         r"""ListExternalVaultRequest
 
         The model defined in huaweicloud sdk
@@ -51,8 +51,8 @@ class ListExternalVaultRequest:
         :type protect_type: str
         :param region_id: 区域ID
         :type region_id: str
-        :param objcet_type: 资源类型
-        :type objcet_type: str
+        :param object_type: 资源类型
+        :type object_type: str
         :param cloud_type: [云类型。取值为public和hybrid。](tag:hws,hws_hk) [云类型。取值为public。](tag:g42,hk-g42,sbc,dt,fcs_vm,ctc,ocb,tm,tlf,cmcc,hcso_dt)
         :type cloud_type: str
         :param vault_id: 存储库ID，指定存储ID时其他过滤条件不生效。
@@ -66,7 +66,7 @@ class ListExternalVaultRequest:
         self._offset = None
         self._protect_type = None
         self._region_id = None
-        self._objcet_type = None
+        self._object_type = None
         self._cloud_type = None
         self._vault_id = None
         self.discriminator = None
@@ -79,8 +79,8 @@ class ListExternalVaultRequest:
         if protect_type is not None:
             self.protect_type = protect_type
         self.region_id = region_id
-        if objcet_type is not None:
-            self.objcet_type = objcet_type
+        if object_type is not None:
+            self.object_type = object_type
         if cloud_type is not None:
             self.cloud_type = cloud_type
         if vault_id is not None:
@@ -197,26 +197,26 @@ class ListExternalVaultRequest:
         self._region_id = region_id
 
     @property
-    def objcet_type(self):
-        r"""Gets the objcet_type of this ListExternalVaultRequest.
+    def object_type(self):
+        r"""Gets the object_type of this ListExternalVaultRequest.
 
         资源类型
 
-        :return: The objcet_type of this ListExternalVaultRequest.
+        :return: The object_type of this ListExternalVaultRequest.
         :rtype: str
         """
-        return self._objcet_type
+        return self._object_type
 
-    @objcet_type.setter
-    def objcet_type(self, objcet_type):
-        r"""Sets the objcet_type of this ListExternalVaultRequest.
+    @object_type.setter
+    def object_type(self, object_type):
+        r"""Sets the object_type of this ListExternalVaultRequest.
 
         资源类型
 
-        :param objcet_type: The objcet_type of this ListExternalVaultRequest.
-        :type objcet_type: str
+        :param object_type: The object_type of this ListExternalVaultRequest.
+        :type object_type: str
         """
-        self._objcet_type = objcet_type
+        self._object_type = object_type
 
     @property
     def cloud_type(self):

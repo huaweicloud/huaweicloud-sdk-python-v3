@@ -31,7 +31,7 @@ class UpdateTaskRulesetRequest:
 
         :param task_id: 任务ID
         :type task_id: str
-        :param body: 修改任务规则集
+        :param body: **参数解释：** 规则集信息。 **约束限制：** 不涉及。
         :type body: list[:class:`huaweicloudsdkcodeartscheck.v2.UpdateTaskRulesetItem`]
         """
         
@@ -71,7 +71,7 @@ class UpdateTaskRulesetRequest:
     def body(self):
         r"""Gets the body of this UpdateTaskRulesetRequest.
 
-        修改任务规则集
+        **参数解释：** 规则集信息。 **约束限制：** 不涉及。
 
         :return: The body of this UpdateTaskRulesetRequest.
         :rtype: list[:class:`huaweicloudsdkcodeartscheck.v2.UpdateTaskRulesetItem`]
@@ -82,7 +82,7 @@ class UpdateTaskRulesetRequest:
     def body(self, body):
         r"""Sets the body of this UpdateTaskRulesetRequest.
 
-        修改任务规则集
+        **参数解释：** 规则集信息。 **约束限制：** 不涉及。
 
         :param body: The body of this UpdateTaskRulesetRequest.
         :type body: list[:class:`huaweicloudsdkcodeartscheck.v2.UpdateTaskRulesetItem`]

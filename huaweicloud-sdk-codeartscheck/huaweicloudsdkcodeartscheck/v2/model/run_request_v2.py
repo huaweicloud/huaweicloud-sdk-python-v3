@@ -18,29 +18,33 @@ class RunRequestV2:
         'username': 'str',
         'access_token': 'str',
         'git_url': 'str',
-        'git_branch': 'str'
+        'git_branch': 'str',
+        'ref': 'str'
     }
 
     attribute_map = {
         'username': 'username',
         'access_token': 'access_token',
         'git_url': 'git_url',
-        'git_branch': 'git_branch'
+        'git_branch': 'git_branch',
+        'ref': 'ref'
     }
 
-    def __init__(self, username=None, access_token=None, git_url=None, git_branch=None):
+    def __init__(self, username=None, access_token=None, git_url=None, git_branch=None, ref=None):
         r"""RunRequestV2
 
         The model defined in huaweicloud sdk
 
-        :param username: 该任务对应临时仓库有权限的用户名
+        :param username: **参数解释：** 废弃参数。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type username: str
-        :param access_token: 该任务对应临时仓库有权限的用户token
+        :param access_token: **参数解释：** 废弃参数。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type access_token: str
-        :param git_url: 该任务对应的临时仓库地址
+        :param git_url: **参数解释：** 废弃参数。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type git_url: str
-        :param git_branch: 该任务对应的临时仓库分支
+        :param git_branch: **参数解释：** 废弃参数。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type git_branch: str
+        :param ref: **参数解释：** 代码仓拉取MR代码的方式，推荐在检查阶段拉取MR代码失败时使用此参数进行拉取方式的指定。 **约束限制：** 不涉及。 **取值范围：** - pull：以pull/xx/xx方式进行拉取。 - merge_request：以merge_request/xx/xx方式进行拉取。 **默认取值：** 后台自动识别代码仓类型以进行MR代码的拉取。 gitee仓：以pull/xx/xx方式进行拉取。 非gitee仓：以merge_request/xx/xx方式进行拉取。
+        :type ref: str
         """
         
         
@@ -49,6 +53,7 @@ class RunRequestV2:
         self._access_token = None
         self._git_url = None
         self._git_branch = None
+        self._ref = None
         self.discriminator = None
 
         if username is not None:
@@ -59,12 +64,14 @@ class RunRequestV2:
             self.git_url = git_url
         if git_branch is not None:
             self.git_branch = git_branch
+        if ref is not None:
+            self.ref = ref
 
     @property
     def username(self):
         r"""Gets the username of this RunRequestV2.
 
-        该任务对应临时仓库有权限的用户名
+        **参数解释：** 废弃参数。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The username of this RunRequestV2.
         :rtype: str
@@ -75,7 +82,7 @@ class RunRequestV2:
     def username(self, username):
         r"""Sets the username of this RunRequestV2.
 
-        该任务对应临时仓库有权限的用户名
+        **参数解释：** 废弃参数。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param username: The username of this RunRequestV2.
         :type username: str
@@ -86,7 +93,7 @@ class RunRequestV2:
     def access_token(self):
         r"""Gets the access_token of this RunRequestV2.
 
-        该任务对应临时仓库有权限的用户token
+        **参数解释：** 废弃参数。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The access_token of this RunRequestV2.
         :rtype: str
@@ -97,7 +104,7 @@ class RunRequestV2:
     def access_token(self, access_token):
         r"""Sets the access_token of this RunRequestV2.
 
-        该任务对应临时仓库有权限的用户token
+        **参数解释：** 废弃参数。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param access_token: The access_token of this RunRequestV2.
         :type access_token: str
@@ -108,7 +115,7 @@ class RunRequestV2:
     def git_url(self):
         r"""Gets the git_url of this RunRequestV2.
 
-        该任务对应的临时仓库地址
+        **参数解释：** 废弃参数。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The git_url of this RunRequestV2.
         :rtype: str
@@ -119,7 +126,7 @@ class RunRequestV2:
     def git_url(self, git_url):
         r"""Sets the git_url of this RunRequestV2.
 
-        该任务对应的临时仓库地址
+        **参数解释：** 废弃参数。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param git_url: The git_url of this RunRequestV2.
         :type git_url: str
@@ -130,7 +137,7 @@ class RunRequestV2:
     def git_branch(self):
         r"""Gets the git_branch of this RunRequestV2.
 
-        该任务对应的临时仓库分支
+        **参数解释：** 废弃参数。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The git_branch of this RunRequestV2.
         :rtype: str
@@ -141,12 +148,34 @@ class RunRequestV2:
     def git_branch(self, git_branch):
         r"""Sets the git_branch of this RunRequestV2.
 
-        该任务对应的临时仓库分支
+        **参数解释：** 废弃参数。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param git_branch: The git_branch of this RunRequestV2.
         :type git_branch: str
         """
         self._git_branch = git_branch
+
+    @property
+    def ref(self):
+        r"""Gets the ref of this RunRequestV2.
+
+        **参数解释：** 代码仓拉取MR代码的方式，推荐在检查阶段拉取MR代码失败时使用此参数进行拉取方式的指定。 **约束限制：** 不涉及。 **取值范围：** - pull：以pull/xx/xx方式进行拉取。 - merge_request：以merge_request/xx/xx方式进行拉取。 **默认取值：** 后台自动识别代码仓类型以进行MR代码的拉取。 gitee仓：以pull/xx/xx方式进行拉取。 非gitee仓：以merge_request/xx/xx方式进行拉取。
+
+        :return: The ref of this RunRequestV2.
+        :rtype: str
+        """
+        return self._ref
+
+    @ref.setter
+    def ref(self, ref):
+        r"""Sets the ref of this RunRequestV2.
+
+        **参数解释：** 代码仓拉取MR代码的方式，推荐在检查阶段拉取MR代码失败时使用此参数进行拉取方式的指定。 **约束限制：** 不涉及。 **取值范围：** - pull：以pull/xx/xx方式进行拉取。 - merge_request：以merge_request/xx/xx方式进行拉取。 **默认取值：** 后台自动识别代码仓类型以进行MR代码的拉取。 gitee仓：以pull/xx/xx方式进行拉取。 非gitee仓：以merge_request/xx/xx方式进行拉取。
+
+        :param ref: The ref of this RunRequestV2.
+        :type ref: str
+        """
+        self._ref = ref
 
     def to_dict(self):
         result = {}

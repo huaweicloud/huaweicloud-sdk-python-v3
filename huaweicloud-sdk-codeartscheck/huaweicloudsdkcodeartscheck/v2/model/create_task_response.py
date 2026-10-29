@@ -28,7 +28,7 @@ class CreateTaskResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param task_id: 检查任务id
+        :param task_id: **参数解释：** 任务ID。 **取值范围：** 全量任务为32位UUID，MR增量任务为\&quot;MR_\&quot;+32位UUID。
         :type task_id: str
         """
         
@@ -44,7 +44,7 @@ class CreateTaskResponse(SdkResponse):
     def task_id(self):
         r"""Gets the task_id of this CreateTaskResponse.
 
-        检查任务id
+        **参数解释：** 任务ID。 **取值范围：** 全量任务为32位UUID，MR增量任务为\"MR_\"+32位UUID。
 
         :return: The task_id of this CreateTaskResponse.
         :rtype: str
@@ -55,7 +55,7 @@ class CreateTaskResponse(SdkResponse):
     def task_id(self, task_id):
         r"""Sets the task_id of this CreateTaskResponse.
 
-        检查任务id
+        **参数解释：** 任务ID。 **取值范围：** 全量任务为32位UUID，MR增量任务为\"MR_\"+32位UUID。
 
         :param task_id: The task_id of this CreateTaskResponse.
         :type task_id: str

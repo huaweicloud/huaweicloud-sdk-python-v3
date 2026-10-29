@@ -17,7 +17,7 @@ class OpExtendInfoRemoveResources:
     openapi_types = {
         'fail_count': 'int',
         'total_count': 'int',
-        'resources': 'list[Resource]'
+        'resources': 'list[OpResourceResp]'
     }
 
     attribute_map = {
@@ -36,7 +36,7 @@ class OpExtendInfoRemoveResources:
         :param total_count: 删除的备份数量
         :type total_count: int
         :param resources: 
-        :type resources: list[:class:`huaweicloudsdkcbr.v1.Resource`]
+        :type resources: list[:class:`huaweicloudsdkcbr.v1.OpResourceResp`]
         """
         
         
@@ -104,7 +104,7 @@ class OpExtendInfoRemoveResources:
         
 
         :return: The resources of this OpExtendInfoRemoveResources.
-        :rtype: list[:class:`huaweicloudsdkcbr.v1.Resource`]
+        :rtype: list[:class:`huaweicloudsdkcbr.v1.OpResourceResp`]
         """
         return self._resources
 
@@ -115,7 +115,7 @@ class OpExtendInfoRemoveResources:
         
 
         :param resources: The resources of this OpExtendInfoRemoveResources.
-        :type resources: list[:class:`huaweicloudsdkcbr.v1.Resource`]
+        :type resources: list[:class:`huaweicloudsdkcbr.v1.OpResourceResp`]
         """
         self._resources = resources
 

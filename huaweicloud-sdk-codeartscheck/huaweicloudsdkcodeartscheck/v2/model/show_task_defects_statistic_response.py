@@ -17,15 +17,19 @@ class ShowTaskDefectsStatisticResponse(SdkResponse):
 
     openapi_types = {
         'severity': 'StatisticSeverityV2',
-        'status': 'StatisticStatusV2'
+        'status': 'StatisticStatusV2',
+        'last_check_time': 'str',
+        'last_check_finish_time': 'str'
     }
 
     attribute_map = {
         'severity': 'severity',
-        'status': 'status'
+        'status': 'status',
+        'last_check_time': 'last_check_time',
+        'last_check_finish_time': 'last_check_finish_time'
     }
 
-    def __init__(self, severity=None, status=None):
+    def __init__(self, severity=None, status=None, last_check_time=None, last_check_finish_time=None):
         r"""ShowTaskDefectsStatisticResponse
 
         The model defined in huaweicloud sdk
@@ -34,18 +38,28 @@ class ShowTaskDefectsStatisticResponse(SdkResponse):
         :type severity: :class:`huaweicloudsdkcodeartscheck.v2.StatisticSeverityV2`
         :param status: 
         :type status: :class:`huaweicloudsdkcodeartscheck.v2.StatisticStatusV2`
+        :param last_check_time: **参数解释：** 检查开始时间，使用UTC时间，格式为yyyy-MM-ddTHH:mm:ssZ。例如：2020-09-25T12:05:00Z。 **取值范围：** 不涉及。
+        :type last_check_time: str
+        :param last_check_finish_time: **参数解释：** 检查结束时间，使用UTC时间，格式为yyyy-MM-ddTHH:mm:ssZ。例如：2020-09-25T12:05:00Z。 **取值范围：** 不涉及。
+        :type last_check_finish_time: str
         """
         
         super().__init__()
 
         self._severity = None
         self._status = None
+        self._last_check_time = None
+        self._last_check_finish_time = None
         self.discriminator = None
 
         if severity is not None:
             self.severity = severity
         if status is not None:
             self.status = status
+        if last_check_time is not None:
+            self.last_check_time = last_check_time
+        if last_check_finish_time is not None:
+            self.last_check_finish_time = last_check_finish_time
 
     @property
     def severity(self):
@@ -82,6 +96,50 @@ class ShowTaskDefectsStatisticResponse(SdkResponse):
         :type status: :class:`huaweicloudsdkcodeartscheck.v2.StatisticStatusV2`
         """
         self._status = status
+
+    @property
+    def last_check_time(self):
+        r"""Gets the last_check_time of this ShowTaskDefectsStatisticResponse.
+
+        **参数解释：** 检查开始时间，使用UTC时间，格式为yyyy-MM-ddTHH:mm:ssZ。例如：2020-09-25T12:05:00Z。 **取值范围：** 不涉及。
+
+        :return: The last_check_time of this ShowTaskDefectsStatisticResponse.
+        :rtype: str
+        """
+        return self._last_check_time
+
+    @last_check_time.setter
+    def last_check_time(self, last_check_time):
+        r"""Sets the last_check_time of this ShowTaskDefectsStatisticResponse.
+
+        **参数解释：** 检查开始时间，使用UTC时间，格式为yyyy-MM-ddTHH:mm:ssZ。例如：2020-09-25T12:05:00Z。 **取值范围：** 不涉及。
+
+        :param last_check_time: The last_check_time of this ShowTaskDefectsStatisticResponse.
+        :type last_check_time: str
+        """
+        self._last_check_time = last_check_time
+
+    @property
+    def last_check_finish_time(self):
+        r"""Gets the last_check_finish_time of this ShowTaskDefectsStatisticResponse.
+
+        **参数解释：** 检查结束时间，使用UTC时间，格式为yyyy-MM-ddTHH:mm:ssZ。例如：2020-09-25T12:05:00Z。 **取值范围：** 不涉及。
+
+        :return: The last_check_finish_time of this ShowTaskDefectsStatisticResponse.
+        :rtype: str
+        """
+        return self._last_check_finish_time
+
+    @last_check_finish_time.setter
+    def last_check_finish_time(self, last_check_finish_time):
+        r"""Sets the last_check_finish_time of this ShowTaskDefectsStatisticResponse.
+
+        **参数解释：** 检查结束时间，使用UTC时间，格式为yyyy-MM-ddTHH:mm:ssZ。例如：2020-09-25T12:05:00Z。 **取值范围：** 不涉及。
+
+        :param last_check_finish_time: The last_check_finish_time of this ShowTaskDefectsStatisticResponse.
+        :type last_check_finish_time: str
+        """
+        self._last_check_finish_time = last_check_finish_time
 
     def to_dict(self):
         import warnings

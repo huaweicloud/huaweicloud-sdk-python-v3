@@ -35,7 +35,7 @@ class PortList:
         :type client_port: int
         :param server_port: 终端节点服务的端口。 终端节点服务绑定了后端资源，作为提供服务的端口，范围1-65535。
         :type server_port: int
-        :param protocol: 端口映射协议，支持TCP。
+        :param protocol: 端口映射协议，支持TCP、UDP。
         :type protocol: str
         """
         
@@ -101,7 +101,7 @@ class PortList:
     def protocol(self):
         r"""Gets the protocol of this PortList.
 
-        端口映射协议，支持TCP。
+        端口映射协议，支持TCP、UDP。
 
         :return: The protocol of this PortList.
         :rtype: str
@@ -112,7 +112,7 @@ class PortList:
     def protocol(self, protocol):
         r"""Sets the protocol of this PortList.
 
-        端口映射协议，支持TCP。
+        端口映射协议，支持TCP、UDP。
 
         :param protocol: The protocol of this PortList.
         :type protocol: str

@@ -33,13 +33,13 @@ class StatisticSeverityV2:
 
         The model defined in huaweicloud sdk
 
-        :param critical: 致命问题数
+        :param critical: **参数解释：** 致命问题数。不包括已忽略和已修复问题。 **取值范围：** 不涉及。
         :type critical: int
-        :param major: 严重问题数
+        :param major: **参数解释：** 严重问题数。不包括已忽略和已修复问题。 **取值范围：** 不涉及。
         :type major: int
-        :param minor: 一般问题数
+        :param minor: **参数解释：** 一般问题数。不包括已忽略和已修复问题。 **取值范围：** 不涉及。
         :type minor: int
-        :param suggestion: 提示问题数
+        :param suggestion: **参数解释：** 提示问题数。不包括已忽略和已修复问题。 **取值范围：** 不涉及。
         :type suggestion: int
         """
         
@@ -64,7 +64,7 @@ class StatisticSeverityV2:
     def critical(self):
         r"""Gets the critical of this StatisticSeverityV2.
 
-        致命问题数
+        **参数解释：** 致命问题数。不包括已忽略和已修复问题。 **取值范围：** 不涉及。
 
         :return: The critical of this StatisticSeverityV2.
         :rtype: int
@@ -75,7 +75,7 @@ class StatisticSeverityV2:
     def critical(self, critical):
         r"""Sets the critical of this StatisticSeverityV2.
 
-        致命问题数
+        **参数解释：** 致命问题数。不包括已忽略和已修复问题。 **取值范围：** 不涉及。
 
         :param critical: The critical of this StatisticSeverityV2.
         :type critical: int
@@ -86,7 +86,7 @@ class StatisticSeverityV2:
     def major(self):
         r"""Gets the major of this StatisticSeverityV2.
 
-        严重问题数
+        **参数解释：** 严重问题数。不包括已忽略和已修复问题。 **取值范围：** 不涉及。
 
         :return: The major of this StatisticSeverityV2.
         :rtype: int
@@ -97,7 +97,7 @@ class StatisticSeverityV2:
     def major(self, major):
         r"""Sets the major of this StatisticSeverityV2.
 
-        严重问题数
+        **参数解释：** 严重问题数。不包括已忽略和已修复问题。 **取值范围：** 不涉及。
 
         :param major: The major of this StatisticSeverityV2.
         :type major: int
@@ -108,7 +108,7 @@ class StatisticSeverityV2:
     def minor(self):
         r"""Gets the minor of this StatisticSeverityV2.
 
-        一般问题数
+        **参数解释：** 一般问题数。不包括已忽略和已修复问题。 **取值范围：** 不涉及。
 
         :return: The minor of this StatisticSeverityV2.
         :rtype: int
@@ -119,7 +119,7 @@ class StatisticSeverityV2:
     def minor(self, minor):
         r"""Sets the minor of this StatisticSeverityV2.
 
-        一般问题数
+        **参数解释：** 一般问题数。不包括已忽略和已修复问题。 **取值范围：** 不涉及。
 
         :param minor: The minor of this StatisticSeverityV2.
         :type minor: int
@@ -130,7 +130,7 @@ class StatisticSeverityV2:
     def suggestion(self):
         r"""Gets the suggestion of this StatisticSeverityV2.
 
-        提示问题数
+        **参数解释：** 提示问题数。不包括已忽略和已修复问题。 **取值范围：** 不涉及。
 
         :return: The suggestion of this StatisticSeverityV2.
         :rtype: int
@@ -141,7 +141,7 @@ class StatisticSeverityV2:
     def suggestion(self, suggestion):
         r"""Sets the suggestion of this StatisticSeverityV2.
 
-        提示问题数
+        **参数解释：** 提示问题数。不包括已忽略和已修复问题。 **取值范围：** 不涉及。
 
         :param suggestion: The suggestion of this StatisticSeverityV2.
         :type suggestion: int

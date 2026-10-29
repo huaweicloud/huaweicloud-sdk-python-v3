@@ -39,19 +39,19 @@ class ParamInfo:
 
         The model defined in huaweicloud sdk
 
-        :param url: 仓库地址
+        :param url: **参数解释：** 代码仓地址。 **取值范围:** 不涉及。
         :type url: str
-        :param branch: 仓库分支
+        :param branch: **参数解释：** 任务本次扫描的代码仓分支。 **取值范围:** 不涉及。
         :type branch: str
-        :param language: 仓库语言
+        :param language: **参数解释：** 任务本次扫描的规则语言。 **取值范围:** 不涉及。
         :type language: str
-        :param exclude_dir: 排除的目录
+        :param exclude_dir: **参数解释：** 任务配置的排除目录信息。 **取值范围:** 不涉及。
         :type exclude_dir: str
-        :param encode: 编码格式
+        :param encode: **参数解释：** 废弃字段。 **取值范围:** 不涉及。
         :type encode: str
-        :param compile_config: 编译配置信息
+        :param compile_config: **参数解释：** 任务的部分检查参数json格式信息。 **取值范围:** 不涉及。
         :type compile_config: str
-        :param rule_template: g规则集名称
+        :param rule_template: **参数解释：** 废弃字段。 **取值范围:** 不涉及。
         :type rule_template: str
         """
         
@@ -85,7 +85,7 @@ class ParamInfo:
     def url(self):
         r"""Gets the url of this ParamInfo.
 
-        仓库地址
+        **参数解释：** 代码仓地址。 **取值范围:** 不涉及。
 
         :return: The url of this ParamInfo.
         :rtype: str
@@ -96,7 +96,7 @@ class ParamInfo:
     def url(self, url):
         r"""Sets the url of this ParamInfo.
 
-        仓库地址
+        **参数解释：** 代码仓地址。 **取值范围:** 不涉及。
 
         :param url: The url of this ParamInfo.
         :type url: str
@@ -107,7 +107,7 @@ class ParamInfo:
     def branch(self):
         r"""Gets the branch of this ParamInfo.
 
-        仓库分支
+        **参数解释：** 任务本次扫描的代码仓分支。 **取值范围:** 不涉及。
 
         :return: The branch of this ParamInfo.
         :rtype: str
@@ -118,7 +118,7 @@ class ParamInfo:
     def branch(self, branch):
         r"""Sets the branch of this ParamInfo.
 
-        仓库分支
+        **参数解释：** 任务本次扫描的代码仓分支。 **取值范围:** 不涉及。
 
         :param branch: The branch of this ParamInfo.
         :type branch: str
@@ -129,7 +129,7 @@ class ParamInfo:
     def language(self):
         r"""Gets the language of this ParamInfo.
 
-        仓库语言
+        **参数解释：** 任务本次扫描的规则语言。 **取值范围:** 不涉及。
 
         :return: The language of this ParamInfo.
         :rtype: str
@@ -140,7 +140,7 @@ class ParamInfo:
     def language(self, language):
         r"""Sets the language of this ParamInfo.
 
-        仓库语言
+        **参数解释：** 任务本次扫描的规则语言。 **取值范围:** 不涉及。
 
         :param language: The language of this ParamInfo.
         :type language: str
@@ -151,7 +151,7 @@ class ParamInfo:
     def exclude_dir(self):
         r"""Gets the exclude_dir of this ParamInfo.
 
-        排除的目录
+        **参数解释：** 任务配置的排除目录信息。 **取值范围:** 不涉及。
 
         :return: The exclude_dir of this ParamInfo.
         :rtype: str
@@ -162,7 +162,7 @@ class ParamInfo:
     def exclude_dir(self, exclude_dir):
         r"""Sets the exclude_dir of this ParamInfo.
 
-        排除的目录
+        **参数解释：** 任务配置的排除目录信息。 **取值范围:** 不涉及。
 
         :param exclude_dir: The exclude_dir of this ParamInfo.
         :type exclude_dir: str
@@ -173,7 +173,7 @@ class ParamInfo:
     def encode(self):
         r"""Gets the encode of this ParamInfo.
 
-        编码格式
+        **参数解释：** 废弃字段。 **取值范围:** 不涉及。
 
         :return: The encode of this ParamInfo.
         :rtype: str
@@ -184,7 +184,7 @@ class ParamInfo:
     def encode(self, encode):
         r"""Sets the encode of this ParamInfo.
 
-        编码格式
+        **参数解释：** 废弃字段。 **取值范围:** 不涉及。
 
         :param encode: The encode of this ParamInfo.
         :type encode: str
@@ -195,7 +195,7 @@ class ParamInfo:
     def compile_config(self):
         r"""Gets the compile_config of this ParamInfo.
 
-        编译配置信息
+        **参数解释：** 任务的部分检查参数json格式信息。 **取值范围:** 不涉及。
 
         :return: The compile_config of this ParamInfo.
         :rtype: str
@@ -206,7 +206,7 @@ class ParamInfo:
     def compile_config(self, compile_config):
         r"""Sets the compile_config of this ParamInfo.
 
-        编译配置信息
+        **参数解释：** 任务的部分检查参数json格式信息。 **取值范围:** 不涉及。
 
         :param compile_config: The compile_config of this ParamInfo.
         :type compile_config: str
@@ -217,7 +217,7 @@ class ParamInfo:
     def rule_template(self):
         r"""Gets the rule_template of this ParamInfo.
 
-        g规则集名称
+        **参数解释：** 废弃字段。 **取值范围:** 不涉及。
 
         :return: The rule_template of this ParamInfo.
         :rtype: str
@@ -228,7 +228,7 @@ class ParamInfo:
     def rule_template(self, rule_template):
         r"""Sets the rule_template of this ParamInfo.
 
-        g规则集名称
+        **参数解释：** 废弃字段。 **取值范围:** 不涉及。
 
         :param rule_template: The rule_template of this ParamInfo.
         :type rule_template: str

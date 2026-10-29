@@ -34,7 +34,10 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
         'trigger_condition_frequency': 'int',
         'whether_recovery_policy': 'bool',
         'recovery_policy': 'int',
-        'tags': 'list[TagsResBody]'
+        'tags': 'list[TagsResBody]',
+        'create_time': 'int',
+        'update_time': 'int',
+        'condition_expressions': 'list[AlarmCondition]'
     }
 
     attribute_map = {
@@ -56,10 +59,13 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
         'trigger_condition_frequency': 'trigger_condition_frequency',
         'whether_recovery_policy': 'whether_recovery_policy',
         'recovery_policy': 'recovery_policy',
-        'tags': 'tags'
+        'tags': 'tags',
+        'create_time': 'create_time',
+        'update_time': 'update_time',
+        'condition_expressions': 'condition_expressions'
     }
 
-    def __init__(self, sql_alarm_rule_name=None, alarm_rule_alias=None, is_css_sql=None, project_id=None, sql_alarm_rule_id=None, sql_alarm_rule_description=None, sql_requests=None, frequency=None, condition_expression=None, sql_alarm_level=None, sql_alarm_send=None, domain_id=None, notification_frequency=None, alarm_action_rule_name=None, trigger_condition_count=None, trigger_condition_frequency=None, whether_recovery_policy=None, recovery_policy=None, tags=None):
+    def __init__(self, sql_alarm_rule_name=None, alarm_rule_alias=None, is_css_sql=None, project_id=None, sql_alarm_rule_id=None, sql_alarm_rule_description=None, sql_requests=None, frequency=None, condition_expression=None, sql_alarm_level=None, sql_alarm_send=None, domain_id=None, notification_frequency=None, alarm_action_rule_name=None, trigger_condition_count=None, trigger_condition_frequency=None, whether_recovery_policy=None, recovery_policy=None, tags=None, create_time=None, update_time=None, condition_expressions=None):
         r"""UpdateSqlAlarmRuleResponse
 
         The model defined in huaweicloud sdk
@@ -102,6 +108,12 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
         :type recovery_policy: int
         :param tags: **参数解释：** 告警标签信息。标签是以键值对（key-value）的形式表示，key和value为一一对应关系。
         :type tags: list[:class:`huaweicloudsdklts.v2.TagsResBody`]
+        :param create_time: **参数解释：** 告警规则创建的时间，毫秒级的时间戳。 **取值范围** 不涉及。
+        :type create_time: int
+        :param update_time: **参数解释：** 告警规则最后一次修改的时间，毫秒级的时间戳。 **取值范围：** 不涉及。
+        :type update_time: int
+        :param condition_expressions: **参数解释：** 支持根据不同条件触发不同级别的告警。当使用该参数时，将优先使用该参数中的条件触发告警，无视condition_expression、sql_alarm_level参数。 **约束限制：** 不涉及。
+        :type condition_expressions: list[:class:`huaweicloudsdklts.v2.AlarmCondition`]
         """
         
         super().__init__()
@@ -125,6 +137,9 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
         self._whether_recovery_policy = None
         self._recovery_policy = None
         self._tags = None
+        self._create_time = None
+        self._update_time = None
+        self._condition_expressions = None
         self.discriminator = None
 
         if sql_alarm_rule_name is not None:
@@ -165,6 +180,12 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
             self.recovery_policy = recovery_policy
         if tags is not None:
             self.tags = tags
+        if create_time is not None:
+            self.create_time = create_time
+        if update_time is not None:
+            self.update_time = update_time
+        if condition_expressions is not None:
+            self.condition_expressions = condition_expressions
 
     @property
     def sql_alarm_rule_name(self):
@@ -579,6 +600,72 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
         :type tags: list[:class:`huaweicloudsdklts.v2.TagsResBody`]
         """
         self._tags = tags
+
+    @property
+    def create_time(self):
+        r"""Gets the create_time of this UpdateSqlAlarmRuleResponse.
+
+        **参数解释：** 告警规则创建的时间，毫秒级的时间戳。 **取值范围** 不涉及。
+
+        :return: The create_time of this UpdateSqlAlarmRuleResponse.
+        :rtype: int
+        """
+        return self._create_time
+
+    @create_time.setter
+    def create_time(self, create_time):
+        r"""Sets the create_time of this UpdateSqlAlarmRuleResponse.
+
+        **参数解释：** 告警规则创建的时间，毫秒级的时间戳。 **取值范围** 不涉及。
+
+        :param create_time: The create_time of this UpdateSqlAlarmRuleResponse.
+        :type create_time: int
+        """
+        self._create_time = create_time
+
+    @property
+    def update_time(self):
+        r"""Gets the update_time of this UpdateSqlAlarmRuleResponse.
+
+        **参数解释：** 告警规则最后一次修改的时间，毫秒级的时间戳。 **取值范围：** 不涉及。
+
+        :return: The update_time of this UpdateSqlAlarmRuleResponse.
+        :rtype: int
+        """
+        return self._update_time
+
+    @update_time.setter
+    def update_time(self, update_time):
+        r"""Sets the update_time of this UpdateSqlAlarmRuleResponse.
+
+        **参数解释：** 告警规则最后一次修改的时间，毫秒级的时间戳。 **取值范围：** 不涉及。
+
+        :param update_time: The update_time of this UpdateSqlAlarmRuleResponse.
+        :type update_time: int
+        """
+        self._update_time = update_time
+
+    @property
+    def condition_expressions(self):
+        r"""Gets the condition_expressions of this UpdateSqlAlarmRuleResponse.
+
+        **参数解释：** 支持根据不同条件触发不同级别的告警。当使用该参数时，将优先使用该参数中的条件触发告警，无视condition_expression、sql_alarm_level参数。 **约束限制：** 不涉及。
+
+        :return: The condition_expressions of this UpdateSqlAlarmRuleResponse.
+        :rtype: list[:class:`huaweicloudsdklts.v2.AlarmCondition`]
+        """
+        return self._condition_expressions
+
+    @condition_expressions.setter
+    def condition_expressions(self, condition_expressions):
+        r"""Sets the condition_expressions of this UpdateSqlAlarmRuleResponse.
+
+        **参数解释：** 支持根据不同条件触发不同级别的告警。当使用该参数时，将优先使用该参数中的条件触发告警，无视condition_expression、sql_alarm_level参数。 **约束限制：** 不涉及。
+
+        :param condition_expressions: The condition_expressions of this UpdateSqlAlarmRuleResponse.
+        :type condition_expressions: list[:class:`huaweicloudsdklts.v2.AlarmCondition`]
+        """
+        self._condition_expressions = condition_expressions
 
     def to_dict(self):
         import warnings

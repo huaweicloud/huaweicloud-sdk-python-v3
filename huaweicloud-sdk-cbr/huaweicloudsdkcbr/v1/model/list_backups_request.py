@@ -37,7 +37,8 @@ class ListBackupsRequest:
         'parent_id': 'str',
         'used_percent': 'str',
         'show_replication': 'bool',
-        'incremental': 'bool'
+        'incremental': 'bool',
+        'existed_quantity_based_retention_backups': 'bool'
     }
 
     attribute_map = {
@@ -63,10 +64,11 @@ class ListBackupsRequest:
         'parent_id': 'parent_id',
         'used_percent': 'used_percent',
         'show_replication': 'show_replication',
-        'incremental': 'incremental'
+        'incremental': 'incremental',
+        'existed_quantity_based_retention_backups': 'existed_quantity_based_retention_backups'
     }
 
-    def __init__(self, checkpoint_id=None, dec=None, end_time=None, image_type=None, limit=None, marker=None, name=None, offset=None, resource_az=None, resource_id=None, resource_name=None, resource_type=None, sort=None, start_time=None, status=None, vault_id=None, enterprise_project_id=None, own_type=None, member_status=None, parent_id=None, used_percent=None, show_replication=None, incremental=None):
+    def __init__(self, checkpoint_id=None, dec=None, end_time=None, image_type=None, limit=None, marker=None, name=None, offset=None, resource_az=None, resource_id=None, resource_name=None, resource_type=None, sort=None, start_time=None, status=None, vault_id=None, enterprise_project_id=None, own_type=None, member_status=None, parent_id=None, used_percent=None, show_replication=None, incremental=None, existed_quantity_based_retention_backups=None):
         r"""ListBackupsRequest
 
         The model defined in huaweicloud sdk
@@ -117,6 +119,8 @@ class ListBackupsRequest:
         :type show_replication: bool
         :param incremental: 是否是增备
         :type incremental: bool
+        :param existed_quantity_based_retention_backups: **参数解释：** 是否查询按数量保留或永久保留自动备份 **约束限制：** 不涉及 **取值范围：** - true：返回按数量保留或永久保留自动备份  - false：返回按时间保留自动备份 **默认取值：** 不涉及
+        :type existed_quantity_based_retention_backups: bool
         """
         
         
@@ -144,6 +148,7 @@ class ListBackupsRequest:
         self._used_percent = None
         self._show_replication = None
         self._incremental = None
+        self._existed_quantity_based_retention_backups = None
         self.discriminator = None
 
         if checkpoint_id is not None:
@@ -192,6 +197,8 @@ class ListBackupsRequest:
             self.show_replication = show_replication
         if incremental is not None:
             self.incremental = incremental
+        if existed_quantity_based_retention_backups is not None:
+            self.existed_quantity_based_retention_backups = existed_quantity_based_retention_backups
 
     @property
     def checkpoint_id(self):
@@ -698,6 +705,28 @@ class ListBackupsRequest:
         :type incremental: bool
         """
         self._incremental = incremental
+
+    @property
+    def existed_quantity_based_retention_backups(self):
+        r"""Gets the existed_quantity_based_retention_backups of this ListBackupsRequest.
+
+        **参数解释：** 是否查询按数量保留或永久保留自动备份 **约束限制：** 不涉及 **取值范围：** - true：返回按数量保留或永久保留自动备份  - false：返回按时间保留自动备份 **默认取值：** 不涉及
+
+        :return: The existed_quantity_based_retention_backups of this ListBackupsRequest.
+        :rtype: bool
+        """
+        return self._existed_quantity_based_retention_backups
+
+    @existed_quantity_based_retention_backups.setter
+    def existed_quantity_based_retention_backups(self, existed_quantity_based_retention_backups):
+        r"""Sets the existed_quantity_based_retention_backups of this ListBackupsRequest.
+
+        **参数解释：** 是否查询按数量保留或永久保留自动备份 **约束限制：** 不涉及 **取值范围：** - true：返回按数量保留或永久保留自动备份  - false：返回按时间保留自动备份 **默认取值：** 不涉及
+
+        :param existed_quantity_based_retention_backups: The existed_quantity_based_retention_backups of this ListBackupsRequest.
+        :type existed_quantity_based_retention_backups: bool
+        """
+        self._existed_quantity_based_retention_backups = existed_quantity_based_retention_backups
 
     def to_dict(self):
         result = {}

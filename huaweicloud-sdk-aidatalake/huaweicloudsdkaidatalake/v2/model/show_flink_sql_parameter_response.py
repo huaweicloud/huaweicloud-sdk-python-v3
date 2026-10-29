@@ -17,26 +17,34 @@ class ShowFlinkSqlParameterResponse:
     openapi_types = {
         'type': 'str',
         'sql_script_file': 'str',
-        'dependency_jars': 'list[str]'
+        'dependency_jars': 'list[str]',
+        'dependency_files': 'list[str]',
+        'python_parameter': 'ShowFlinkPythonDependencyParameterResponse'
     }
 
     attribute_map = {
         'type': 'type',
         'sql_script_file': 'sql_script_file',
-        'dependency_jars': 'dependency_jars'
+        'dependency_jars': 'dependency_jars',
+        'dependency_files': 'dependency_files',
+        'python_parameter': 'python_parameter'
     }
 
-    def __init__(self, type=None, sql_script_file=None, dependency_jars=None):
+    def __init__(self, type=None, sql_script_file=None, dependency_jars=None, dependency_files=None, python_parameter=None):
         r"""ShowFlinkSqlParameterResponse
 
         The model defined in huaweicloud sdk
 
-        :param type: **参数解释**：作业类型。 **约束限制**：不涉及。 **取值范围**：   - FLINK_SQL_JOB：Flink SQL作业。 
+        :param type: **参数解释**：作业类型，用于区分SQL作业、Jar作业和SQL Gateway作业。 **约束限制**：不涉及。 **取值范围**：   - FLINK_SQL_JOB：SQL作业。 
         :type type: str
         :param sql_script_file: **参数解释**：SQL脚本所在的OBS文件路径，用于指定SQL作业的脚本文件。 **取值范围**：OBS URL格式，长度为1~512个字符，以obs://开头。
         :type sql_script_file: str
         :param dependency_jars: **参数解释**：SQL作业依赖的JAR包OBS路径列表，用于指定作业运行所需的依赖JAR包，单个路径为OBS URL格式，长度为1~512个字符，以obs://开头。
         :type dependency_jars: list[str]
+        :param dependency_files: **参数解释**：SQL作业依赖文件的OBS路径列表，用于指定作业运行所需的依赖文件。
+        :type dependency_files: list[str]
+        :param python_parameter: 
+        :type python_parameter: :class:`huaweicloudsdkaidatalake.v2.ShowFlinkPythonDependencyParameterResponse`
         """
         
         
@@ -44,6 +52,8 @@ class ShowFlinkSqlParameterResponse:
         self._type = None
         self._sql_script_file = None
         self._dependency_jars = None
+        self._dependency_files = None
+        self._python_parameter = None
         self.discriminator = None
 
         if type is not None:
@@ -52,12 +62,16 @@ class ShowFlinkSqlParameterResponse:
             self.sql_script_file = sql_script_file
         if dependency_jars is not None:
             self.dependency_jars = dependency_jars
+        if dependency_files is not None:
+            self.dependency_files = dependency_files
+        if python_parameter is not None:
+            self.python_parameter = python_parameter
 
     @property
     def type(self):
         r"""Gets the type of this ShowFlinkSqlParameterResponse.
 
-        **参数解释**：作业类型。 **约束限制**：不涉及。 **取值范围**：   - FLINK_SQL_JOB：Flink SQL作业。 
+        **参数解释**：作业类型，用于区分SQL作业、Jar作业和SQL Gateway作业。 **约束限制**：不涉及。 **取值范围**：   - FLINK_SQL_JOB：SQL作业。 
 
         :return: The type of this ShowFlinkSqlParameterResponse.
         :rtype: str
@@ -68,7 +82,7 @@ class ShowFlinkSqlParameterResponse:
     def type(self, type):
         r"""Sets the type of this ShowFlinkSqlParameterResponse.
 
-        **参数解释**：作业类型。 **约束限制**：不涉及。 **取值范围**：   - FLINK_SQL_JOB：Flink SQL作业。 
+        **参数解释**：作业类型，用于区分SQL作业、Jar作业和SQL Gateway作业。 **约束限制**：不涉及。 **取值范围**：   - FLINK_SQL_JOB：SQL作业。 
 
         :param type: The type of this ShowFlinkSqlParameterResponse.
         :type type: str
@@ -118,6 +132,46 @@ class ShowFlinkSqlParameterResponse:
         :type dependency_jars: list[str]
         """
         self._dependency_jars = dependency_jars
+
+    @property
+    def dependency_files(self):
+        r"""Gets the dependency_files of this ShowFlinkSqlParameterResponse.
+
+        **参数解释**：SQL作业依赖文件的OBS路径列表，用于指定作业运行所需的依赖文件。
+
+        :return: The dependency_files of this ShowFlinkSqlParameterResponse.
+        :rtype: list[str]
+        """
+        return self._dependency_files
+
+    @dependency_files.setter
+    def dependency_files(self, dependency_files):
+        r"""Sets the dependency_files of this ShowFlinkSqlParameterResponse.
+
+        **参数解释**：SQL作业依赖文件的OBS路径列表，用于指定作业运行所需的依赖文件。
+
+        :param dependency_files: The dependency_files of this ShowFlinkSqlParameterResponse.
+        :type dependency_files: list[str]
+        """
+        self._dependency_files = dependency_files
+
+    @property
+    def python_parameter(self):
+        r"""Gets the python_parameter of this ShowFlinkSqlParameterResponse.
+
+        :return: The python_parameter of this ShowFlinkSqlParameterResponse.
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.ShowFlinkPythonDependencyParameterResponse`
+        """
+        return self._python_parameter
+
+    @python_parameter.setter
+    def python_parameter(self, python_parameter):
+        r"""Sets the python_parameter of this ShowFlinkSqlParameterResponse.
+
+        :param python_parameter: The python_parameter of this ShowFlinkSqlParameterResponse.
+        :type python_parameter: :class:`huaweicloudsdkaidatalake.v2.ShowFlinkPythonDependencyParameterResponse`
+        """
+        self._python_parameter = python_parameter
 
     def to_dict(self):
         result = {}

@@ -29,9 +29,9 @@ class TaskAdvancedSettingsItem:
 
         The model defined in huaweicloud sdk
 
-        :param key: 高级选项对应的名称
+        :param key: **参数解释：** 高级配置对应的名称。 **约束限制：** 不涉及。 **取值范围：** - customImage：自定义镜像。 - includePaths：检查目录。 **默认取值：** 不涉及。
         :type key: str
-        :param value: 高级选项对应的取值
+        :param value: **参数解释：** 高级配置对应的取值。 **约束限制：** 不涉及。 **取值范围：** 长度为[1~1000]个字符。 **默认取值：** 不涉及。
         :type value: str
         """
         
@@ -41,14 +41,16 @@ class TaskAdvancedSettingsItem:
         self._value = None
         self.discriminator = None
 
-        self.key = key
-        self.value = value
+        if key is not None:
+            self.key = key
+        if value is not None:
+            self.value = value
 
     @property
     def key(self):
         r"""Gets the key of this TaskAdvancedSettingsItem.
 
-        高级选项对应的名称
+        **参数解释：** 高级配置对应的名称。 **约束限制：** 不涉及。 **取值范围：** - customImage：自定义镜像。 - includePaths：检查目录。 **默认取值：** 不涉及。
 
         :return: The key of this TaskAdvancedSettingsItem.
         :rtype: str
@@ -59,7 +61,7 @@ class TaskAdvancedSettingsItem:
     def key(self, key):
         r"""Sets the key of this TaskAdvancedSettingsItem.
 
-        高级选项对应的名称
+        **参数解释：** 高级配置对应的名称。 **约束限制：** 不涉及。 **取值范围：** - customImage：自定义镜像。 - includePaths：检查目录。 **默认取值：** 不涉及。
 
         :param key: The key of this TaskAdvancedSettingsItem.
         :type key: str
@@ -70,7 +72,7 @@ class TaskAdvancedSettingsItem:
     def value(self):
         r"""Gets the value of this TaskAdvancedSettingsItem.
 
-        高级选项对应的取值
+        **参数解释：** 高级配置对应的取值。 **约束限制：** 不涉及。 **取值范围：** 长度为[1~1000]个字符。 **默认取值：** 不涉及。
 
         :return: The value of this TaskAdvancedSettingsItem.
         :rtype: str
@@ -81,7 +83,7 @@ class TaskAdvancedSettingsItem:
     def value(self, value):
         r"""Sets the value of this TaskAdvancedSettingsItem.
 
-        高级选项对应的取值
+        **参数解释：** 高级配置对应的取值。 **约束限制：** 不涉及。 **取值范围：** 长度为[1~1000]个字符。 **默认取值：** 不涉及。
 
         :param value: The value of this TaskAdvancedSettingsItem.
         :type value: str

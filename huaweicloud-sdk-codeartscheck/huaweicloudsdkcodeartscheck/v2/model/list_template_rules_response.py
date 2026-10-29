@@ -30,9 +30,9 @@ class ListTemplateRulesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param info: 规则集的规则列表信息
+        :param info: **参数解释:** 规则集的规则列表信息。
         :type info: list[:class:`huaweicloudsdkcodeartscheck.v2.RuleItem`]
-        :param total: 总数
+        :param total: **参数解释:** 总数。 **取值范围:** ≥0
         :type total: int
         """
         
@@ -51,7 +51,7 @@ class ListTemplateRulesResponse(SdkResponse):
     def info(self):
         r"""Gets the info of this ListTemplateRulesResponse.
 
-        规则集的规则列表信息
+        **参数解释:** 规则集的规则列表信息。
 
         :return: The info of this ListTemplateRulesResponse.
         :rtype: list[:class:`huaweicloudsdkcodeartscheck.v2.RuleItem`]
@@ -62,7 +62,7 @@ class ListTemplateRulesResponse(SdkResponse):
     def info(self, info):
         r"""Sets the info of this ListTemplateRulesResponse.
 
-        规则集的规则列表信息
+        **参数解释:** 规则集的规则列表信息。
 
         :param info: The info of this ListTemplateRulesResponse.
         :type info: list[:class:`huaweicloudsdkcodeartscheck.v2.RuleItem`]
@@ -73,7 +73,7 @@ class ListTemplateRulesResponse(SdkResponse):
     def total(self):
         r"""Gets the total of this ListTemplateRulesResponse.
 
-        总数
+        **参数解释:** 总数。 **取值范围:** ≥0
 
         :return: The total of this ListTemplateRulesResponse.
         :rtype: int
@@ -84,7 +84,7 @@ class ListTemplateRulesResponse(SdkResponse):
     def total(self, total):
         r"""Sets the total of this ListTemplateRulesResponse.
 
-        总数
+        **参数解释:** 总数。 **取值范围:** ≥0
 
         :param total: The total of this ListTemplateRulesResponse.
         :type total: int

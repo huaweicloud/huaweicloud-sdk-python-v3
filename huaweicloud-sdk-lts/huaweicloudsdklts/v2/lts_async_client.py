@@ -904,10 +904,12 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.CreateStructTemplateRequest`
         :rtype: :class:`huaweicloudsdklts.v2.CreateStructTemplateResponse`
         """
+        warnings.warn("Method 'create_struct_template_async' of LtsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._create_struct_template_http_info(request)
         return self._call_api(**http_info)
 
     def create_struct_template_async_invoker(self, request):
+        warnings.warn("Method 'create_struct_template_async_invoker' of LtsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._create_struct_template_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -3420,10 +3422,12 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.ListQueryStructuredLogsRequest`
         :rtype: :class:`huaweicloudsdklts.v2.ListQueryStructuredLogsResponse`
         """
+        warnings.warn("Method 'list_query_structured_logs_async' of LtsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_query_structured_logs_http_info(request)
         return self._call_api(**http_info)
 
     def list_query_structured_logs_async_invoker(self, request):
+        warnings.warn("Method 'list_query_structured_logs_async_invoker' of LtsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_query_structured_logs_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -3554,10 +3558,12 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.ListStructuredLogsWithTimeRangeRequest`
         :rtype: :class:`huaweicloudsdklts.v2.ListStructuredLogsWithTimeRangeResponse`
         """
+        warnings.warn("Method 'list_structured_logs_with_time_range_async' of LtsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_structured_logs_with_time_range_http_info(request)
         return self._call_api(**http_info)
 
     def list_structured_logs_with_time_range_async_invoker(self, request):
+        warnings.warn("Method 'list_structured_logs_with_time_range_async_invoker' of LtsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_structured_logs_with_time_range_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -4742,10 +4748,12 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.UpdateStructTemplateRequest`
         :rtype: :class:`huaweicloudsdklts.v2.UpdateStructTemplateResponse`
         """
+        warnings.warn("Method 'update_struct_template_async' of LtsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._update_struct_template_http_info(request)
         return self._call_api(**http_info)
 
     def update_struct_template_async_invoker(self, request):
+        warnings.warn("Method 'update_struct_template_async_invoker' of LtsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._update_struct_template_http_info(request)
         return AsyncInvoker(self, http_info)
 

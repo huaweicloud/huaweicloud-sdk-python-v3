@@ -34,7 +34,8 @@ class CreateAccessConfigRequestBody:
         'environment_id': 'str',
         'component_id': 'list[str]',
         'access_config_type_source': 'str',
-        'recursive_depth': 'int'
+        'recursive_depth': 'int',
+        'disable_labels_prefix': 'bool'
     }
 
     attribute_map = {
@@ -57,10 +58,11 @@ class CreateAccessConfigRequestBody:
         'environment_id': 'environment_id',
         'component_id': 'component_id',
         'access_config_type_source': 'access_config_type_source',
-        'recursive_depth': 'recursive_depth'
+        'recursive_depth': 'recursive_depth',
+        'disable_labels_prefix': 'disable_labels_prefix'
     }
 
-    def __init__(self, access_config_name=None, access_config_type=None, access_config_detail=None, log_info=None, host_group_info=None, access_config_tag=None, binary_collect=None, log_split=None, cluster_id=None, incremental_collect=None, encoding_format=None, processor_type=None, demo_log=None, demo_fields=None, processors=None, application_id=None, environment_id=None, component_id=None, access_config_type_source=None, recursive_depth=None):
+    def __init__(self, access_config_name=None, access_config_type=None, access_config_detail=None, log_info=None, host_group_info=None, access_config_tag=None, binary_collect=None, log_split=None, cluster_id=None, incremental_collect=None, encoding_format=None, processor_type=None, demo_log=None, demo_fields=None, processors=None, application_id=None, environment_id=None, component_id=None, access_config_type_source=None, recursive_depth=None, disable_labels_prefix=None):
         r"""CreateAccessConfigRequestBody
 
         The model defined in huaweicloud sdk
@@ -105,6 +107,8 @@ class CreateAccessConfigRequestBody:
         :type access_config_type_source: str
         :param recursive_depth: **参数解释：** 采集路径递归最大深度。 **取值范围：** 不涉及。
         :type recursive_depth: int
+        :param disable_labels_prefix: **参数解释：** 是否对结构化上报方式中labels字段中非内置字段添加__labels__.前缀的行为进行禁用。 **约束限制：** 不涉及。 **取值范围：** - true：禁用，不添加__labels__.前缀。 - false：不禁用，即添加__labels__.前缀。 **默认取值：** 不涉及。
+        :type disable_labels_prefix: bool
         """
         
         
@@ -129,6 +133,7 @@ class CreateAccessConfigRequestBody:
         self._component_id = None
         self._access_config_type_source = None
         self._recursive_depth = None
+        self._disable_labels_prefix = None
         self.discriminator = None
 
         self.access_config_name = access_config_name
@@ -167,6 +172,8 @@ class CreateAccessConfigRequestBody:
             self.access_config_type_source = access_config_type_source
         if recursive_depth is not None:
             self.recursive_depth = recursive_depth
+        if disable_labels_prefix is not None:
+            self.disable_labels_prefix = disable_labels_prefix
 
     @property
     def access_config_name(self):
@@ -595,6 +602,28 @@ class CreateAccessConfigRequestBody:
         :type recursive_depth: int
         """
         self._recursive_depth = recursive_depth
+
+    @property
+    def disable_labels_prefix(self):
+        r"""Gets the disable_labels_prefix of this CreateAccessConfigRequestBody.
+
+        **参数解释：** 是否对结构化上报方式中labels字段中非内置字段添加__labels__.前缀的行为进行禁用。 **约束限制：** 不涉及。 **取值范围：** - true：禁用，不添加__labels__.前缀。 - false：不禁用，即添加__labels__.前缀。 **默认取值：** 不涉及。
+
+        :return: The disable_labels_prefix of this CreateAccessConfigRequestBody.
+        :rtype: bool
+        """
+        return self._disable_labels_prefix
+
+    @disable_labels_prefix.setter
+    def disable_labels_prefix(self, disable_labels_prefix):
+        r"""Sets the disable_labels_prefix of this CreateAccessConfigRequestBody.
+
+        **参数解释：** 是否对结构化上报方式中labels字段中非内置字段添加__labels__.前缀的行为进行禁用。 **约束限制：** 不涉及。 **取值范围：** - true：禁用，不添加__labels__.前缀。 - false：不禁用，即添加__labels__.前缀。 **默认取值：** 不涉及。
+
+        :param disable_labels_prefix: The disable_labels_prefix of this CreateAccessConfigRequestBody.
+        :type disable_labels_prefix: bool
+        """
+        self._disable_labels_prefix = disable_labels_prefix
 
     def to_dict(self):
         result = {}

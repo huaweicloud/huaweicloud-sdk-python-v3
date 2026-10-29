@@ -5096,6 +5096,8 @@ class IamAsyncClient(Client):
             query_params.append(('group_id', local_var_params['group_id']))
         if 'access_key_id' in local_var_params:
             query_params.append(('access_key_id', local_var_params['access_key_id']))
+        if 'service_specific_credential_id' in local_var_params:
+            query_params.append(('service_specific_credential_id', local_var_params['service_specific_credential_id']))
 
         header_params = {}
 

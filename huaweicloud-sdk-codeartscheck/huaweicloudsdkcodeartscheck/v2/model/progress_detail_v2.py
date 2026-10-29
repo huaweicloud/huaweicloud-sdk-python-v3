@@ -29,9 +29,9 @@ class ProgressDetailV2:
 
         The model defined in huaweicloud sdk
 
-        :param ratio: 进度百分比
+        :param ratio: **参数解释:** 检查进度百分比。 **取值范围:** 检查中、检查成功时，为0%-100%； 检查失败、任务中止、未检查时，为null。
         :type ratio: str
-        :param info: 中文信息
+        :param info: **参数解释:** 检查执行状态。 **取值范围:** - running：检查中。 - success：检查成功。 - null：检查失败、任务中止、未检查。
         :type info: str
         """
         
@@ -50,7 +50,7 @@ class ProgressDetailV2:
     def ratio(self):
         r"""Gets the ratio of this ProgressDetailV2.
 
-        进度百分比
+        **参数解释:** 检查进度百分比。 **取值范围:** 检查中、检查成功时，为0%-100%； 检查失败、任务中止、未检查时，为null。
 
         :return: The ratio of this ProgressDetailV2.
         :rtype: str
@@ -61,7 +61,7 @@ class ProgressDetailV2:
     def ratio(self, ratio):
         r"""Sets the ratio of this ProgressDetailV2.
 
-        进度百分比
+        **参数解释:** 检查进度百分比。 **取值范围:** 检查中、检查成功时，为0%-100%； 检查失败、任务中止、未检查时，为null。
 
         :param ratio: The ratio of this ProgressDetailV2.
         :type ratio: str
@@ -72,7 +72,7 @@ class ProgressDetailV2:
     def info(self):
         r"""Gets the info of this ProgressDetailV2.
 
-        中文信息
+        **参数解释:** 检查执行状态。 **取值范围:** - running：检查中。 - success：检查成功。 - null：检查失败、任务中止、未检查。
 
         :return: The info of this ProgressDetailV2.
         :rtype: str
@@ -83,7 +83,7 @@ class ProgressDetailV2:
     def info(self, info):
         r"""Sets the info of this ProgressDetailV2.
 
-        中文信息
+        **参数解释:** 检查执行状态。 **取值范围:** - running：检查中。 - success：检查成功。 - null：检查失败、任务中止、未检查。
 
         :param info: The info of this ProgressDetailV2.
         :type info: str

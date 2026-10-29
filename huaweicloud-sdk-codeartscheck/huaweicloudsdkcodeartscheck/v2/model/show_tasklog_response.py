@@ -32,7 +32,7 @@ class ShowTasklogResponse(SdkResponse):
 
         :param param_info: 
         :type param_info: :class:`huaweicloudsdkcodeartscheck.v2.ParamInfo`
-        :param log_info: 日志信息
+        :param log_info: **参数解释：** 失败日志详情。
         :type log_info: list[:class:`huaweicloudsdkcodeartscheck.v2.LogInfo`]
         """
         
@@ -69,7 +69,7 @@ class ShowTasklogResponse(SdkResponse):
     def log_info(self):
         r"""Gets the log_info of this ShowTasklogResponse.
 
-        日志信息
+        **参数解释：** 失败日志详情。
 
         :return: The log_info of this ShowTasklogResponse.
         :rtype: list[:class:`huaweicloudsdkcodeartscheck.v2.LogInfo`]
@@ -80,7 +80,7 @@ class ShowTasklogResponse(SdkResponse):
     def log_info(self, log_info):
         r"""Sets the log_info of this ShowTasklogResponse.
 
-        日志信息
+        **参数解释：** 失败日志详情。
 
         :param log_info: The log_info of this ShowTasklogResponse.
         :type log_info: list[:class:`huaweicloudsdkcodeartscheck.v2.LogInfo`]

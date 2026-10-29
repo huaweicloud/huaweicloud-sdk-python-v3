@@ -16,64 +16,64 @@ class ShowTasksRulesetsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'info': 'list[TaskRulesetInfo]',
+        'data': 'list[TaskRulesetInfo]',
         'total': 'int'
     }
 
     attribute_map = {
-        'info': 'info',
+        'data': 'data',
         'total': 'total'
     }
 
-    def __init__(self, info=None, total=None):
+    def __init__(self, data=None, total=None):
         r"""ShowTasksRulesetsResponse
 
         The model defined in huaweicloud sdk
 
-        :param info: 规则集信息
-        :type info: list[:class:`huaweicloudsdkcodeartscheck.v2.TaskRulesetInfo`]
-        :param total: 总数
+        :param data: **参数解释：** 规则集信息。
+        :type data: list[:class:`huaweicloudsdkcodeartscheck.v2.TaskRulesetInfo`]
+        :param total: **参数解释：** 总数。 **取值范围:** 不涉及。
         :type total: int
         """
         
         super().__init__()
 
-        self._info = None
+        self._data = None
         self._total = None
         self.discriminator = None
 
-        if info is not None:
-            self.info = info
+        if data is not None:
+            self.data = data
         if total is not None:
             self.total = total
 
     @property
-    def info(self):
-        r"""Gets the info of this ShowTasksRulesetsResponse.
+    def data(self):
+        r"""Gets the data of this ShowTasksRulesetsResponse.
 
-        规则集信息
+        **参数解释：** 规则集信息。
 
-        :return: The info of this ShowTasksRulesetsResponse.
+        :return: The data of this ShowTasksRulesetsResponse.
         :rtype: list[:class:`huaweicloudsdkcodeartscheck.v2.TaskRulesetInfo`]
         """
-        return self._info
+        return self._data
 
-    @info.setter
-    def info(self, info):
-        r"""Sets the info of this ShowTasksRulesetsResponse.
+    @data.setter
+    def data(self, data):
+        r"""Sets the data of this ShowTasksRulesetsResponse.
 
-        规则集信息
+        **参数解释：** 规则集信息。
 
-        :param info: The info of this ShowTasksRulesetsResponse.
-        :type info: list[:class:`huaweicloudsdkcodeartscheck.v2.TaskRulesetInfo`]
+        :param data: The data of this ShowTasksRulesetsResponse.
+        :type data: list[:class:`huaweicloudsdkcodeartscheck.v2.TaskRulesetInfo`]
         """
-        self._info = info
+        self._data = data
 
     @property
     def total(self):
         r"""Gets the total of this ShowTasksRulesetsResponse.
 
-        总数
+        **参数解释：** 总数。 **取值范围:** 不涉及。
 
         :return: The total of this ShowTasksRulesetsResponse.
         :rtype: int
@@ -84,7 +84,7 @@ class ShowTasksRulesetsResponse(SdkResponse):
     def total(self, total):
         r"""Sets the total of this ShowTasksRulesetsResponse.
 
-        总数
+        **参数解释：** 总数。 **取值范围:** 不涉及。
 
         :param total: The total of this ShowTasksRulesetsResponse.
         :type total: int

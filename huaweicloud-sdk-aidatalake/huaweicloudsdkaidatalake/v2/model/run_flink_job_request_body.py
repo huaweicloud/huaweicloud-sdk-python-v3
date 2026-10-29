@@ -28,7 +28,8 @@ class RunFlinkJobRequestBody:
         'restore_strategy': 'RestoreStrategy',
         'logging_config': 'FlinkLoggingConfig',
         'labels': 'list[FlinkLabel]',
-        'description': 'str'
+        'description': 'str',
+        'alert_enabled': 'bool'
     }
 
     attribute_map = {
@@ -45,10 +46,11 @@ class RunFlinkJobRequestBody:
         'restore_strategy': 'restore_strategy',
         'logging_config': 'logging_config',
         'labels': 'labels',
-        'description': 'description'
+        'description': 'description',
+        'alert_enabled': 'alert_enabled'
     }
 
-    def __init__(self, name=None, endpoint_name=None, job_config=None, deployment_id=None, job_agency=None, flink_config=None, autoscaling_policy=None, image_config=None, resource_config=None, execution_mode=None, restore_strategy=None, logging_config=None, labels=None, description=None):
+    def __init__(self, name=None, endpoint_name=None, job_config=None, deployment_id=None, job_agency=None, flink_config=None, autoscaling_policy=None, image_config=None, resource_config=None, execution_mode=None, restore_strategy=None, logging_config=None, labels=None, description=None, alert_enabled=None):
         r"""RunFlinkJobRequestBody
 
         The model defined in huaweicloud sdk
@@ -81,6 +83,8 @@ class RunFlinkJobRequestBody:
         :type labels: list[:class:`huaweicloudsdkaidatalake.v2.FlinkLabel`]
         :param description: **参数解释**：描述信息，用于说明作业用途。 **约束限制**：不涉及。 **取值范围**：长度为1~512个字符。 **默认取值**：不涉及。
         :type description: str
+        :param alert_enabled: **参数解释**：是否对该作业开启失败告警通知，用于按作业控制是否向客户发送告警消息。 **约束限制**：仅提交作业时指定，作业运行期间不支持修改。 **取值范围**：   - true：开启。作业运行失败或提交失败时，通过消息中心向客户发送告警通知。   - false：关闭。该作业失败时不发送告警通知。 **默认取值**：false，不指定时默认关闭（不发送该作业的失败告警通知），需要告警时显式指定为 true。
+        :type alert_enabled: bool
         """
         
         
@@ -99,6 +103,7 @@ class RunFlinkJobRequestBody:
         self._logging_config = None
         self._labels = None
         self._description = None
+        self._alert_enabled = None
         self.discriminator = None
 
         self.name = name
@@ -126,6 +131,8 @@ class RunFlinkJobRequestBody:
             self.labels = labels
         if description is not None:
             self.description = description
+        if alert_enabled is not None:
+            self.alert_enabled = alert_enabled
 
     @property
     def name(self):
@@ -406,6 +413,28 @@ class RunFlinkJobRequestBody:
         :type description: str
         """
         self._description = description
+
+    @property
+    def alert_enabled(self):
+        r"""Gets the alert_enabled of this RunFlinkJobRequestBody.
+
+        **参数解释**：是否对该作业开启失败告警通知，用于按作业控制是否向客户发送告警消息。 **约束限制**：仅提交作业时指定，作业运行期间不支持修改。 **取值范围**：   - true：开启。作业运行失败或提交失败时，通过消息中心向客户发送告警通知。   - false：关闭。该作业失败时不发送告警通知。 **默认取值**：false，不指定时默认关闭（不发送该作业的失败告警通知），需要告警时显式指定为 true。
+
+        :return: The alert_enabled of this RunFlinkJobRequestBody.
+        :rtype: bool
+        """
+        return self._alert_enabled
+
+    @alert_enabled.setter
+    def alert_enabled(self, alert_enabled):
+        r"""Sets the alert_enabled of this RunFlinkJobRequestBody.
+
+        **参数解释**：是否对该作业开启失败告警通知，用于按作业控制是否向客户发送告警消息。 **约束限制**：仅提交作业时指定，作业运行期间不支持修改。 **取值范围**：   - true：开启。作业运行失败或提交失败时，通过消息中心向客户发送告警通知。   - false：关闭。该作业失败时不发送告警通知。 **默认取值**：false，不指定时默认关闭（不发送该作业的失败告警通知），需要告警时显式指定为 true。
+
+        :param alert_enabled: The alert_enabled of this RunFlinkJobRequestBody.
+        :type alert_enabled: bool
+        """
+        self._alert_enabled = alert_enabled
 
     def to_dict(self):
         result = {}

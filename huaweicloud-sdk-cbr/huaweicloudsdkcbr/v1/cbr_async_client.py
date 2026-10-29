@@ -1900,6 +1900,8 @@ class CbrAsyncClient(Client):
             query_params.append(('show_replication', local_var_params['show_replication']))
         if 'incremental' in local_var_params:
             query_params.append(('incremental', local_var_params['incremental']))
+        if 'existed_quantity_based_retention_backups' in local_var_params:
+            query_params.append(('existed_quantity_based_retention_backups', local_var_params['existed_quantity_based_retention_backups']))
 
         header_params = {}
 
@@ -2038,8 +2040,8 @@ class CbrAsyncClient(Client):
             query_params.append(('protect_type', local_var_params['protect_type']))
         if 'region_id' in local_var_params:
             query_params.append(('region_id', local_var_params['region_id']))
-        if 'objcet_type' in local_var_params:
-            query_params.append(('objcet_type', local_var_params['objcet_type']))
+        if 'object_type' in local_var_params:
+            query_params.append(('object_type', local_var_params['object_type']))
         if 'cloud_type' in local_var_params:
             query_params.append(('cloud_type', local_var_params['cloud_type']))
         if 'vault_id' in local_var_params:
@@ -2199,6 +2201,10 @@ class CbrAsyncClient(Client):
             query_params.append(('vault_name', local_var_params['vault_name']))
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'destination_region' in local_var_params:
+            query_params.append(('destination_region', local_var_params['destination_region']))
+        if 'destination_project_id' in local_var_params:
+            query_params.append(('destination_project_id', local_var_params['destination_project_id']))
 
         header_params = {}
 
@@ -2542,6 +2548,8 @@ class CbrAsyncClient(Client):
             query_params.append(('id', local_var_params['id']))
         if 'server_id' in local_var_params:
             query_params.append(('server_id', local_var_params['server_id']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -2628,6 +2636,8 @@ class CbrAsyncClient(Client):
             query_params.append(('status', local_var_params['status']))
         if 'resource_ids' in local_var_params:
             query_params.append(('resource_ids', local_var_params['resource_ids']))
+        if 'availability_zone' in local_var_params:
+            query_params.append(('availability_zone', local_var_params['availability_zone']))
 
         header_params = {}
 
@@ -4351,6 +4361,8 @@ class CbrAsyncClient(Client):
         path_params = {}
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -4792,10 +4804,12 @@ class CbrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.UpdateOrderRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.UpdateOrderResponse`
         """
+        warnings.warn("Method 'update_order_async' of CbrAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._update_order_http_info(request)
         return self._call_api(**http_info)
 
     def update_order_async_invoker(self, request):
+        warnings.warn("Method 'update_order_async_invoker' of CbrAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._update_order_http_info(request)
         return AsyncInvoker(self, http_info)
 

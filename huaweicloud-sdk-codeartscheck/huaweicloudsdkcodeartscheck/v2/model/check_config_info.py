@@ -43,23 +43,23 @@ class CheckConfigInfo:
 
         The model defined in huaweicloud sdk
 
-        :param name: 检查参数名称
+        :param name: **参数解释：** 检查参数名称。 **取值范围:** 不涉及。
         :type name: str
-        :param cfg_key: 检查参数对应的key值
+        :param cfg_key: **参数解释：** 检查参数对应的Key值。 **取值范围:** 不涉及。
         :type cfg_key: str
-        :param default_value: 检查参数默认值
+        :param default_value: **参数解释：** 检查参数默认值。 **取值范围:** 不涉及。
         :type default_value: str
-        :param option_value: 检查参数可选项
+        :param option_value: **参数解释：** 检查参数可选项。 **取值范围:** 不涉及。
         :type option_value: str
-        :param is_required: 0：非必填，1：必填
+        :param is_required: **参数解释：** 是否必填参数。 **取值范围:** - 0：非必填。 - 1：必填。
         :type is_required: int
-        :param description: 检查参数说明
+        :param description: **参数解释：** 检查参数说明。 **取值范围:** 不涉及。
         :type description: str
-        :param type: 参数类型，0：文本，2：有可选项
+        :param type: **参数解释：** 参数类型。 **取值范围:** - 0：文本。 - 2：有可选项。
         :type type: int
-        :param status: 参数状态，on：启用，off：未启用
+        :param status: **参数解释：** 参数状态。 **取值范围:** - on：启用。 - off：未启用。
         :type status: str
-        :param value: 检查参数值
+        :param value: **参数解释：** 检查参数值。 **取值范围:** 不涉及。
         :type value: str
         """
         
@@ -99,7 +99,7 @@ class CheckConfigInfo:
     def name(self):
         r"""Gets the name of this CheckConfigInfo.
 
-        检查参数名称
+        **参数解释：** 检查参数名称。 **取值范围:** 不涉及。
 
         :return: The name of this CheckConfigInfo.
         :rtype: str
@@ -110,7 +110,7 @@ class CheckConfigInfo:
     def name(self, name):
         r"""Sets the name of this CheckConfigInfo.
 
-        检查参数名称
+        **参数解释：** 检查参数名称。 **取值范围:** 不涉及。
 
         :param name: The name of this CheckConfigInfo.
         :type name: str
@@ -121,7 +121,7 @@ class CheckConfigInfo:
     def cfg_key(self):
         r"""Gets the cfg_key of this CheckConfigInfo.
 
-        检查参数对应的key值
+        **参数解释：** 检查参数对应的Key值。 **取值范围:** 不涉及。
 
         :return: The cfg_key of this CheckConfigInfo.
         :rtype: str
@@ -132,7 +132,7 @@ class CheckConfigInfo:
     def cfg_key(self, cfg_key):
         r"""Sets the cfg_key of this CheckConfigInfo.
 
-        检查参数对应的key值
+        **参数解释：** 检查参数对应的Key值。 **取值范围:** 不涉及。
 
         :param cfg_key: The cfg_key of this CheckConfigInfo.
         :type cfg_key: str
@@ -143,7 +143,7 @@ class CheckConfigInfo:
     def default_value(self):
         r"""Gets the default_value of this CheckConfigInfo.
 
-        检查参数默认值
+        **参数解释：** 检查参数默认值。 **取值范围:** 不涉及。
 
         :return: The default_value of this CheckConfigInfo.
         :rtype: str
@@ -154,7 +154,7 @@ class CheckConfigInfo:
     def default_value(self, default_value):
         r"""Sets the default_value of this CheckConfigInfo.
 
-        检查参数默认值
+        **参数解释：** 检查参数默认值。 **取值范围:** 不涉及。
 
         :param default_value: The default_value of this CheckConfigInfo.
         :type default_value: str
@@ -165,7 +165,7 @@ class CheckConfigInfo:
     def option_value(self):
         r"""Gets the option_value of this CheckConfigInfo.
 
-        检查参数可选项
+        **参数解释：** 检查参数可选项。 **取值范围:** 不涉及。
 
         :return: The option_value of this CheckConfigInfo.
         :rtype: str
@@ -176,7 +176,7 @@ class CheckConfigInfo:
     def option_value(self, option_value):
         r"""Sets the option_value of this CheckConfigInfo.
 
-        检查参数可选项
+        **参数解释：** 检查参数可选项。 **取值范围:** 不涉及。
 
         :param option_value: The option_value of this CheckConfigInfo.
         :type option_value: str
@@ -187,7 +187,7 @@ class CheckConfigInfo:
     def is_required(self):
         r"""Gets the is_required of this CheckConfigInfo.
 
-        0：非必填，1：必填
+        **参数解释：** 是否必填参数。 **取值范围:** - 0：非必填。 - 1：必填。
 
         :return: The is_required of this CheckConfigInfo.
         :rtype: int
@@ -198,7 +198,7 @@ class CheckConfigInfo:
     def is_required(self, is_required):
         r"""Sets the is_required of this CheckConfigInfo.
 
-        0：非必填，1：必填
+        **参数解释：** 是否必填参数。 **取值范围:** - 0：非必填。 - 1：必填。
 
         :param is_required: The is_required of this CheckConfigInfo.
         :type is_required: int
@@ -209,7 +209,7 @@ class CheckConfigInfo:
     def description(self):
         r"""Gets the description of this CheckConfigInfo.
 
-        检查参数说明
+        **参数解释：** 检查参数说明。 **取值范围:** 不涉及。
 
         :return: The description of this CheckConfigInfo.
         :rtype: str
@@ -220,7 +220,7 @@ class CheckConfigInfo:
     def description(self, description):
         r"""Sets the description of this CheckConfigInfo.
 
-        检查参数说明
+        **参数解释：** 检查参数说明。 **取值范围:** 不涉及。
 
         :param description: The description of this CheckConfigInfo.
         :type description: str
@@ -231,7 +231,7 @@ class CheckConfigInfo:
     def type(self):
         r"""Gets the type of this CheckConfigInfo.
 
-        参数类型，0：文本，2：有可选项
+        **参数解释：** 参数类型。 **取值范围:** - 0：文本。 - 2：有可选项。
 
         :return: The type of this CheckConfigInfo.
         :rtype: int
@@ -242,7 +242,7 @@ class CheckConfigInfo:
     def type(self, type):
         r"""Sets the type of this CheckConfigInfo.
 
-        参数类型，0：文本，2：有可选项
+        **参数解释：** 参数类型。 **取值范围:** - 0：文本。 - 2：有可选项。
 
         :param type: The type of this CheckConfigInfo.
         :type type: int
@@ -253,7 +253,7 @@ class CheckConfigInfo:
     def status(self):
         r"""Gets the status of this CheckConfigInfo.
 
-        参数状态，on：启用，off：未启用
+        **参数解释：** 参数状态。 **取值范围:** - on：启用。 - off：未启用。
 
         :return: The status of this CheckConfigInfo.
         :rtype: str
@@ -264,7 +264,7 @@ class CheckConfigInfo:
     def status(self, status):
         r"""Sets the status of this CheckConfigInfo.
 
-        参数状态，on：启用，off：未启用
+        **参数解释：** 参数状态。 **取值范围:** - on：启用。 - off：未启用。
 
         :param status: The status of this CheckConfigInfo.
         :type status: str
@@ -275,7 +275,7 @@ class CheckConfigInfo:
     def value(self):
         r"""Gets the value of this CheckConfigInfo.
 
-        检查参数值
+        **参数解释：** 检查参数值。 **取值范围:** 不涉及。
 
         :return: The value of this CheckConfigInfo.
         :rtype: str
@@ -286,7 +286,7 @@ class CheckConfigInfo:
     def value(self, value):
         r"""Sets the value of this CheckConfigInfo.
 
-        检查参数值
+        **参数解释：** 检查参数值。 **取值范围:** 不涉及。
 
         :param value: The value of this CheckConfigInfo.
         :type value: str

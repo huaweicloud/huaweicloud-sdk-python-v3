@@ -45,25 +45,25 @@ class RuleListItem:
 
         The model defined in huaweicloud sdk
 
-        :param rule_set: 规则集规范分类
+        :param rule_set: **参数解释：** 业务类型分类。 **取值范围:** - common：通用。 - common_standard_recommend：通用建议。 - common_standard_rule：通用规则。 - security：安全。 - security_standard_recommend：安全建议。 - security_standard_rule：安全规则。
         :type rule_set: str
-        :param rule_id: 规则id
+        :param rule_id: **参数解释:** 规则ID。 **取值范围:** 32位UUID。
         :type rule_id: str
-        :param rule_language: 规则所属语言
+        :param rule_language: **参数解释:** 规则所属语言。 **取值范围:** 当前支持的语言有： - ARKTS - C# - CANGJIE - C++ - CSS - GO - HTML - JAVA - JAVASCRIPT - KOTLIN - LUA - PHP - PYTHON - RUST - SCALA - SHELL - SQL - TERRAFORM - TYPESCRIPT - AZURERESOURCEMANAGER - DOCKER - KUBERNETES
         :type rule_language: str
-        :param rule_name: 规则名称
+        :param rule_name: **参数解释:** 规则名称。 **取值范围:** 不涉及。
         :type rule_name: str
-        :param rule_severity: 规则问题级别
+        :param rule_severity: **参数解释:** 规则问题级别。 **取值范围:** - 0：致命。 - 1：严重。 - 2：一般。 - 3：提示。
         :type rule_severity: str
-        :param rule_tages: 规则标签
+        :param rule_tages: **参数解释:** 规则标签。 **取值范围:** - huawei - iso5055 - cert - cwe - top10 - top25 - misra - GJB - autosar - PCI DSS
         :type rule_tages: str
-        :param right_example: 正确示例
+        :param right_example: **参数解释:** 正确示例。 **取值范围:** 代码块或者文字示例等。
         :type right_example: str
-        :param error_example: 错误示例
+        :param error_example: **参数解释:** 错误示例。 **取值范围:** 代码块或者文字示例等。
         :type error_example: str
-        :param revise_opinion: 修改建议
+        :param revise_opinion: **参数解释:** 修改建议。 **取值范围:** 代码块或者文字示例等。
         :type revise_opinion: str
-        :param rule_desc: 规则描述
+        :param rule_desc: **参数解释:** 规则描述。 **取值范围:** 不涉及。
         :type rule_desc: str
         """
         
@@ -106,7 +106,7 @@ class RuleListItem:
     def rule_set(self):
         r"""Gets the rule_set of this RuleListItem.
 
-        规则集规范分类
+        **参数解释：** 业务类型分类。 **取值范围:** - common：通用。 - common_standard_recommend：通用建议。 - common_standard_rule：通用规则。 - security：安全。 - security_standard_recommend：安全建议。 - security_standard_rule：安全规则。
 
         :return: The rule_set of this RuleListItem.
         :rtype: str
@@ -117,7 +117,7 @@ class RuleListItem:
     def rule_set(self, rule_set):
         r"""Sets the rule_set of this RuleListItem.
 
-        规则集规范分类
+        **参数解释：** 业务类型分类。 **取值范围:** - common：通用。 - common_standard_recommend：通用建议。 - common_standard_rule：通用规则。 - security：安全。 - security_standard_recommend：安全建议。 - security_standard_rule：安全规则。
 
         :param rule_set: The rule_set of this RuleListItem.
         :type rule_set: str
@@ -128,7 +128,7 @@ class RuleListItem:
     def rule_id(self):
         r"""Gets the rule_id of this RuleListItem.
 
-        规则id
+        **参数解释:** 规则ID。 **取值范围:** 32位UUID。
 
         :return: The rule_id of this RuleListItem.
         :rtype: str
@@ -139,7 +139,7 @@ class RuleListItem:
     def rule_id(self, rule_id):
         r"""Sets the rule_id of this RuleListItem.
 
-        规则id
+        **参数解释:** 规则ID。 **取值范围:** 32位UUID。
 
         :param rule_id: The rule_id of this RuleListItem.
         :type rule_id: str
@@ -150,7 +150,7 @@ class RuleListItem:
     def rule_language(self):
         r"""Gets the rule_language of this RuleListItem.
 
-        规则所属语言
+        **参数解释:** 规则所属语言。 **取值范围:** 当前支持的语言有： - ARKTS - C# - CANGJIE - C++ - CSS - GO - HTML - JAVA - JAVASCRIPT - KOTLIN - LUA - PHP - PYTHON - RUST - SCALA - SHELL - SQL - TERRAFORM - TYPESCRIPT - AZURERESOURCEMANAGER - DOCKER - KUBERNETES
 
         :return: The rule_language of this RuleListItem.
         :rtype: str
@@ -161,7 +161,7 @@ class RuleListItem:
     def rule_language(self, rule_language):
         r"""Sets the rule_language of this RuleListItem.
 
-        规则所属语言
+        **参数解释:** 规则所属语言。 **取值范围:** 当前支持的语言有： - ARKTS - C# - CANGJIE - C++ - CSS - GO - HTML - JAVA - JAVASCRIPT - KOTLIN - LUA - PHP - PYTHON - RUST - SCALA - SHELL - SQL - TERRAFORM - TYPESCRIPT - AZURERESOURCEMANAGER - DOCKER - KUBERNETES
 
         :param rule_language: The rule_language of this RuleListItem.
         :type rule_language: str
@@ -172,7 +172,7 @@ class RuleListItem:
     def rule_name(self):
         r"""Gets the rule_name of this RuleListItem.
 
-        规则名称
+        **参数解释:** 规则名称。 **取值范围:** 不涉及。
 
         :return: The rule_name of this RuleListItem.
         :rtype: str
@@ -183,7 +183,7 @@ class RuleListItem:
     def rule_name(self, rule_name):
         r"""Sets the rule_name of this RuleListItem.
 
-        规则名称
+        **参数解释:** 规则名称。 **取值范围:** 不涉及。
 
         :param rule_name: The rule_name of this RuleListItem.
         :type rule_name: str
@@ -194,7 +194,7 @@ class RuleListItem:
     def rule_severity(self):
         r"""Gets the rule_severity of this RuleListItem.
 
-        规则问题级别
+        **参数解释:** 规则问题级别。 **取值范围:** - 0：致命。 - 1：严重。 - 2：一般。 - 3：提示。
 
         :return: The rule_severity of this RuleListItem.
         :rtype: str
@@ -205,7 +205,7 @@ class RuleListItem:
     def rule_severity(self, rule_severity):
         r"""Sets the rule_severity of this RuleListItem.
 
-        规则问题级别
+        **参数解释:** 规则问题级别。 **取值范围:** - 0：致命。 - 1：严重。 - 2：一般。 - 3：提示。
 
         :param rule_severity: The rule_severity of this RuleListItem.
         :type rule_severity: str
@@ -216,7 +216,7 @@ class RuleListItem:
     def rule_tages(self):
         r"""Gets the rule_tages of this RuleListItem.
 
-        规则标签
+        **参数解释:** 规则标签。 **取值范围:** - huawei - iso5055 - cert - cwe - top10 - top25 - misra - GJB - autosar - PCI DSS
 
         :return: The rule_tages of this RuleListItem.
         :rtype: str
@@ -227,7 +227,7 @@ class RuleListItem:
     def rule_tages(self, rule_tages):
         r"""Sets the rule_tages of this RuleListItem.
 
-        规则标签
+        **参数解释:** 规则标签。 **取值范围:** - huawei - iso5055 - cert - cwe - top10 - top25 - misra - GJB - autosar - PCI DSS
 
         :param rule_tages: The rule_tages of this RuleListItem.
         :type rule_tages: str
@@ -238,7 +238,7 @@ class RuleListItem:
     def right_example(self):
         r"""Gets the right_example of this RuleListItem.
 
-        正确示例
+        **参数解释:** 正确示例。 **取值范围:** 代码块或者文字示例等。
 
         :return: The right_example of this RuleListItem.
         :rtype: str
@@ -249,7 +249,7 @@ class RuleListItem:
     def right_example(self, right_example):
         r"""Sets the right_example of this RuleListItem.
 
-        正确示例
+        **参数解释:** 正确示例。 **取值范围:** 代码块或者文字示例等。
 
         :param right_example: The right_example of this RuleListItem.
         :type right_example: str
@@ -260,7 +260,7 @@ class RuleListItem:
     def error_example(self):
         r"""Gets the error_example of this RuleListItem.
 
-        错误示例
+        **参数解释:** 错误示例。 **取值范围:** 代码块或者文字示例等。
 
         :return: The error_example of this RuleListItem.
         :rtype: str
@@ -271,7 +271,7 @@ class RuleListItem:
     def error_example(self, error_example):
         r"""Sets the error_example of this RuleListItem.
 
-        错误示例
+        **参数解释:** 错误示例。 **取值范围:** 代码块或者文字示例等。
 
         :param error_example: The error_example of this RuleListItem.
         :type error_example: str
@@ -282,7 +282,7 @@ class RuleListItem:
     def revise_opinion(self):
         r"""Gets the revise_opinion of this RuleListItem.
 
-        修改建议
+        **参数解释:** 修改建议。 **取值范围:** 代码块或者文字示例等。
 
         :return: The revise_opinion of this RuleListItem.
         :rtype: str
@@ -293,7 +293,7 @@ class RuleListItem:
     def revise_opinion(self, revise_opinion):
         r"""Sets the revise_opinion of this RuleListItem.
 
-        修改建议
+        **参数解释:** 修改建议。 **取值范围:** 代码块或者文字示例等。
 
         :param revise_opinion: The revise_opinion of this RuleListItem.
         :type revise_opinion: str
@@ -304,7 +304,7 @@ class RuleListItem:
     def rule_desc(self):
         r"""Gets the rule_desc of this RuleListItem.
 
-        规则描述
+        **参数解释:** 规则描述。 **取值范围:** 不涉及。
 
         :return: The rule_desc of this RuleListItem.
         :rtype: str
@@ -315,7 +315,7 @@ class RuleListItem:
     def rule_desc(self, rule_desc):
         r"""Sets the rule_desc of this RuleListItem.
 
-        规则描述
+        **参数解释:** 规则描述。 **取值范围:** 不涉及。
 
         :param rule_desc: The rule_desc of this RuleListItem.
         :type rule_desc: str

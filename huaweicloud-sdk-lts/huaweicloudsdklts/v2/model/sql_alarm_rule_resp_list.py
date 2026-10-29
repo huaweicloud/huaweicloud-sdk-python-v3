@@ -35,7 +35,8 @@ class SqlAlarmRuleRespList:
         'recovery_policy': 'int',
         'notification_frequency': 'int',
         'alarm_action_rule_name': 'str',
-        'tags': 'list[TagsResBody]'
+        'tags': 'list[TagsResBody]',
+        'condition_expressions': 'list[AlarmCondition]'
     }
 
     attribute_map = {
@@ -59,10 +60,11 @@ class SqlAlarmRuleRespList:
         'recovery_policy': 'recovery_policy',
         'notification_frequency': 'notification_frequency',
         'alarm_action_rule_name': 'alarm_action_rule_name',
-        'tags': 'tags'
+        'tags': 'tags',
+        'condition_expressions': 'condition_expressions'
     }
 
-    def __init__(self, sql_alarm_rule_name=None, is_css_sql=None, sql_alarm_rule_id=None, sql_alarm_rule_description=None, sql_requests=None, frequency=None, condition_expression=None, topics=None, sql_alarm_level=None, domain_id=None, create_time=None, update_time=None, template_name=None, status=None, trigger_condition_count=None, trigger_condition_frequency=None, whether_recovery_policy=None, recovery_policy=None, notification_frequency=None, alarm_action_rule_name=None, tags=None):
+    def __init__(self, sql_alarm_rule_name=None, is_css_sql=None, sql_alarm_rule_id=None, sql_alarm_rule_description=None, sql_requests=None, frequency=None, condition_expression=None, topics=None, sql_alarm_level=None, domain_id=None, create_time=None, update_time=None, template_name=None, status=None, trigger_condition_count=None, trigger_condition_frequency=None, whether_recovery_policy=None, recovery_policy=None, notification_frequency=None, alarm_action_rule_name=None, tags=None, condition_expressions=None):
         r"""SqlAlarmRuleRespList
 
         The model defined in huaweicloud sdk
@@ -109,6 +111,8 @@ class SqlAlarmRuleRespList:
         :type alarm_action_rule_name: str
         :param tags: **参数解释：** 告警标签信息。
         :type tags: list[:class:`huaweicloudsdklts.v2.TagsResBody`]
+        :param condition_expressions: **参数解释：** 支持根据不同条件触发不同级别的告警。当使用该参数时，将优先使用该参数中的条件触发告警，无视condition_expression、sql_alarm_level参数。
+        :type condition_expressions: list[:class:`huaweicloudsdklts.v2.AlarmCondition`]
         """
         
         
@@ -134,6 +138,7 @@ class SqlAlarmRuleRespList:
         self._notification_frequency = None
         self._alarm_action_rule_name = None
         self._tags = None
+        self._condition_expressions = None
         self.discriminator = None
 
         self.sql_alarm_rule_name = sql_alarm_rule_name
@@ -166,6 +171,8 @@ class SqlAlarmRuleRespList:
             self.alarm_action_rule_name = alarm_action_rule_name
         if tags is not None:
             self.tags = tags
+        if condition_expressions is not None:
+            self.condition_expressions = condition_expressions
 
     @property
     def sql_alarm_rule_name(self):
@@ -624,6 +631,28 @@ class SqlAlarmRuleRespList:
         :type tags: list[:class:`huaweicloudsdklts.v2.TagsResBody`]
         """
         self._tags = tags
+
+    @property
+    def condition_expressions(self):
+        r"""Gets the condition_expressions of this SqlAlarmRuleRespList.
+
+        **参数解释：** 支持根据不同条件触发不同级别的告警。当使用该参数时，将优先使用该参数中的条件触发告警，无视condition_expression、sql_alarm_level参数。
+
+        :return: The condition_expressions of this SqlAlarmRuleRespList.
+        :rtype: list[:class:`huaweicloudsdklts.v2.AlarmCondition`]
+        """
+        return self._condition_expressions
+
+    @condition_expressions.setter
+    def condition_expressions(self, condition_expressions):
+        r"""Sets the condition_expressions of this SqlAlarmRuleRespList.
+
+        **参数解释：** 支持根据不同条件触发不同级别的告警。当使用该参数时，将优先使用该参数中的条件触发告警，无视condition_expression、sql_alarm_level参数。
+
+        :param condition_expressions: The condition_expressions of this SqlAlarmRuleRespList.
+        :type condition_expressions: list[:class:`huaweicloudsdklts.v2.AlarmCondition`]
+        """
+        self._condition_expressions = condition_expressions
 
     def to_dict(self):
         result = {}

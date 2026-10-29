@@ -28,7 +28,7 @@ class RunTaskResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param exec_id: 执行id
+        :param exec_id: **参数解释:** 1次代码检查对应的执行记录ID。 **取值范围:** 32位UUID。
         :type exec_id: str
         """
         
@@ -44,7 +44,7 @@ class RunTaskResponse(SdkResponse):
     def exec_id(self):
         r"""Gets the exec_id of this RunTaskResponse.
 
-        执行id
+        **参数解释:** 1次代码检查对应的执行记录ID。 **取值范围:** 32位UUID。
 
         :return: The exec_id of this RunTaskResponse.
         :rtype: str
@@ -55,7 +55,7 @@ class RunTaskResponse(SdkResponse):
     def exec_id(self, exec_id):
         r"""Sets the exec_id of this RunTaskResponse.
 
-        执行id
+        **参数解释:** 1次代码检查对应的执行记录ID。 **取值范围:** 32位UUID。
 
         :param exec_id: The exec_id of this RunTaskResponse.
         :type exec_id: str

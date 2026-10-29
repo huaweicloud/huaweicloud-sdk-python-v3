@@ -40,6 +40,7 @@ class ShowFlinkJobResponse(SdkResponse):
         'log_url': 'str',
         'labels': 'list[FlinkLabel]',
         'description': 'str',
+        'alert_enabled': 'bool',
         'start_time': 'int',
         'end_time': 'int'
     }
@@ -69,11 +70,12 @@ class ShowFlinkJobResponse(SdkResponse):
         'log_url': 'log_url',
         'labels': 'labels',
         'description': 'description',
+        'alert_enabled': 'alert_enabled',
         'start_time': 'start_time',
         'end_time': 'end_time'
     }
 
-    def __init__(self, job_id=None, client_token=None, name=None, deployment_id=None, endpoint_id=None, endpoint_name=None, status=None, job_agency=None, obs_bucket_name=None, job_config=None, resource_config=None, image_config=None, flink_config=None, execution_mode=None, restore_strategy=None, logging_config=None, metric=None, create_time=None, create_user=None, update_time=None, update_user=None, log_url=None, labels=None, description=None, start_time=None, end_time=None):
+    def __init__(self, job_id=None, client_token=None, name=None, deployment_id=None, endpoint_id=None, endpoint_name=None, status=None, job_agency=None, obs_bucket_name=None, job_config=None, resource_config=None, image_config=None, flink_config=None, execution_mode=None, restore_strategy=None, logging_config=None, metric=None, create_time=None, create_user=None, update_time=None, update_user=None, log_url=None, labels=None, description=None, alert_enabled=None, start_time=None, end_time=None):
         r"""ShowFlinkJobResponse
 
         The model defined in huaweicloud sdk
@@ -126,6 +128,8 @@ class ShowFlinkJobResponse(SdkResponse):
         :type labels: list[:class:`huaweicloudsdkaidatalake.v2.FlinkLabel`]
         :param description: **参数解释**：描述信息。 **取值范围**：1~512个字符。 
         :type description: str
+        :param alert_enabled: **参数解释**：该作业是否开启失败告警通知。 **取值范围**：   - true：开启。作业运行失败或提交失败时会向客户发送告警通知。   - false：关闭。作业失败时不发送告警通知。 **默认取值**：false，不指定时默认关闭。 
+        :type alert_enabled: bool
         :param start_time: **参数解释**：作业开始运行的时间戳（进入RUNNING状态的时间）。 **取值范围**：0 ~ 4102416000000，13位毫秒时间戳。 
         :type start_time: int
         :param end_time: **参数解释**：作业结束时间戳（进入终态 FINISHED/CANCELLED/FAILED的时间）。 **取值范围**：0 ~ 4102416000000，13位毫秒时间戳。 
@@ -158,6 +162,7 @@ class ShowFlinkJobResponse(SdkResponse):
         self._log_url = None
         self._labels = None
         self._description = None
+        self._alert_enabled = None
         self._start_time = None
         self._end_time = None
         self.discriminator = None
@@ -210,6 +215,8 @@ class ShowFlinkJobResponse(SdkResponse):
             self.labels = labels
         if description is not None:
             self.description = description
+        if alert_enabled is not None:
+            self.alert_enabled = alert_enabled
         if start_time is not None:
             self.start_time = start_time
         if end_time is not None:
@@ -702,6 +709,28 @@ class ShowFlinkJobResponse(SdkResponse):
         :type description: str
         """
         self._description = description
+
+    @property
+    def alert_enabled(self):
+        r"""Gets the alert_enabled of this ShowFlinkJobResponse.
+
+        **参数解释**：该作业是否开启失败告警通知。 **取值范围**：   - true：开启。作业运行失败或提交失败时会向客户发送告警通知。   - false：关闭。作业失败时不发送告警通知。 **默认取值**：false，不指定时默认关闭。 
+
+        :return: The alert_enabled of this ShowFlinkJobResponse.
+        :rtype: bool
+        """
+        return self._alert_enabled
+
+    @alert_enabled.setter
+    def alert_enabled(self, alert_enabled):
+        r"""Sets the alert_enabled of this ShowFlinkJobResponse.
+
+        **参数解释**：该作业是否开启失败告警通知。 **取值范围**：   - true：开启。作业运行失败或提交失败时会向客户发送告警通知。   - false：关闭。作业失败时不发送告警通知。 **默认取值**：false，不指定时默认关闭。 
+
+        :param alert_enabled: The alert_enabled of this ShowFlinkJobResponse.
+        :type alert_enabled: bool
+        """
+        self._alert_enabled = alert_enabled
 
     @property
     def start_time(self):

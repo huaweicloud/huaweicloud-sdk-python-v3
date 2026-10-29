@@ -20,7 +20,8 @@ class ShowFlinkJarParameterResponse:
         'main_class': 'str',
         'main_args': 'list[str]',
         'dependency_jars': 'list[str]',
-        'dependency_files': 'list[str]'
+        'dependency_files': 'list[str]',
+        'python_parameter': 'ShowFlinkPythonDependencyParameterResponse'
     }
 
     attribute_map = {
@@ -29,15 +30,16 @@ class ShowFlinkJarParameterResponse:
         'main_class': 'main_class',
         'main_args': 'main_args',
         'dependency_jars': 'dependency_jars',
-        'dependency_files': 'dependency_files'
+        'dependency_files': 'dependency_files',
+        'python_parameter': 'python_parameter'
     }
 
-    def __init__(self, type=None, main_jar=None, main_class=None, main_args=None, dependency_jars=None, dependency_files=None):
+    def __init__(self, type=None, main_jar=None, main_class=None, main_args=None, dependency_jars=None, dependency_files=None, python_parameter=None):
         r"""ShowFlinkJarParameterResponse
 
         The model defined in huaweicloud sdk
 
-        :param type: **参数解释**：作业类型。 **约束限制**：不涉及。 **取值范围**：   - FLINK_JAR_JOB：Flink Jar作业。 
+        :param type: **参数解释**：作业类型，用于区分SQL作业、Jar作业和SQL Gateway作业。 **约束限制**：不涉及。 **取值范围**：   - FLINK_JAR_JOB：Jar作业。 
         :type type: str
         :param main_jar: **参数解释**：JAR作业主类所在JAR包的OBS路径，用于指定作业的入口JAR包。 **取值范围**：长度为1~512个字符，以obs://开头。
         :type main_jar: str
@@ -49,6 +51,8 @@ class ShowFlinkJarParameterResponse:
         :type dependency_jars: list[str]
         :param dependency_files: **参数解释**：JAR作业依赖文件的OBS路径列表，用于指定作业运行所需的依赖文件。
         :type dependency_files: list[str]
+        :param python_parameter: 
+        :type python_parameter: :class:`huaweicloudsdkaidatalake.v2.ShowFlinkPythonDependencyParameterResponse`
         """
         
         
@@ -59,6 +63,7 @@ class ShowFlinkJarParameterResponse:
         self._main_args = None
         self._dependency_jars = None
         self._dependency_files = None
+        self._python_parameter = None
         self.discriminator = None
 
         if type is not None:
@@ -73,12 +78,14 @@ class ShowFlinkJarParameterResponse:
             self.dependency_jars = dependency_jars
         if dependency_files is not None:
             self.dependency_files = dependency_files
+        if python_parameter is not None:
+            self.python_parameter = python_parameter
 
     @property
     def type(self):
         r"""Gets the type of this ShowFlinkJarParameterResponse.
 
-        **参数解释**：作业类型。 **约束限制**：不涉及。 **取值范围**：   - FLINK_JAR_JOB：Flink Jar作业。 
+        **参数解释**：作业类型，用于区分SQL作业、Jar作业和SQL Gateway作业。 **约束限制**：不涉及。 **取值范围**：   - FLINK_JAR_JOB：Jar作业。 
 
         :return: The type of this ShowFlinkJarParameterResponse.
         :rtype: str
@@ -89,7 +96,7 @@ class ShowFlinkJarParameterResponse:
     def type(self, type):
         r"""Sets the type of this ShowFlinkJarParameterResponse.
 
-        **参数解释**：作业类型。 **约束限制**：不涉及。 **取值范围**：   - FLINK_JAR_JOB：Flink Jar作业。 
+        **参数解释**：作业类型，用于区分SQL作业、Jar作业和SQL Gateway作业。 **约束限制**：不涉及。 **取值范围**：   - FLINK_JAR_JOB：Jar作业。 
 
         :param type: The type of this ShowFlinkJarParameterResponse.
         :type type: str
@@ -205,6 +212,24 @@ class ShowFlinkJarParameterResponse:
         :type dependency_files: list[str]
         """
         self._dependency_files = dependency_files
+
+    @property
+    def python_parameter(self):
+        r"""Gets the python_parameter of this ShowFlinkJarParameterResponse.
+
+        :return: The python_parameter of this ShowFlinkJarParameterResponse.
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.ShowFlinkPythonDependencyParameterResponse`
+        """
+        return self._python_parameter
+
+    @python_parameter.setter
+    def python_parameter(self, python_parameter):
+        r"""Sets the python_parameter of this ShowFlinkJarParameterResponse.
+
+        :param python_parameter: The python_parameter of this ShowFlinkJarParameterResponse.
+        :type python_parameter: :class:`huaweicloudsdkaidatalake.v2.ShowFlinkPythonDependencyParameterResponse`
+        """
+        self._python_parameter = python_parameter
 
     def to_dict(self):
         result = {}

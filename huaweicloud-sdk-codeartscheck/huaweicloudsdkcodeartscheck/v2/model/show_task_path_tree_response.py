@@ -30,9 +30,9 @@ class ShowTaskPathTreeResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param info: 任务的目录树信息
+        :param info: **参数解释:** 任务的目录树信息。
         :type info: list[:class:`huaweicloudsdkcodeartscheck.v2.TreeNode`]
-        :param total: 数目
+        :param total: **参数解释:** 数目。 **取值范围:** ≥0
         :type total: int
         """
         
@@ -51,7 +51,7 @@ class ShowTaskPathTreeResponse(SdkResponse):
     def info(self):
         r"""Gets the info of this ShowTaskPathTreeResponse.
 
-        任务的目录树信息
+        **参数解释:** 任务的目录树信息。
 
         :return: The info of this ShowTaskPathTreeResponse.
         :rtype: list[:class:`huaweicloudsdkcodeartscheck.v2.TreeNode`]
@@ -62,7 +62,7 @@ class ShowTaskPathTreeResponse(SdkResponse):
     def info(self, info):
         r"""Sets the info of this ShowTaskPathTreeResponse.
 
-        任务的目录树信息
+        **参数解释:** 任务的目录树信息。
 
         :param info: The info of this ShowTaskPathTreeResponse.
         :type info: list[:class:`huaweicloudsdkcodeartscheck.v2.TreeNode`]
@@ -73,7 +73,7 @@ class ShowTaskPathTreeResponse(SdkResponse):
     def total(self):
         r"""Gets the total of this ShowTaskPathTreeResponse.
 
-        数目
+        **参数解释:** 数目。 **取值范围:** ≥0
 
         :return: The total of this ShowTaskPathTreeResponse.
         :rtype: int
@@ -84,7 +84,7 @@ class ShowTaskPathTreeResponse(SdkResponse):
     def total(self, total):
         r"""Sets the total of this ShowTaskPathTreeResponse.
 
-        数目
+        **参数解释:** 数目。 **取值范围:** ≥0
 
         :param total: The total of this ShowTaskPathTreeResponse.
         :type total: int

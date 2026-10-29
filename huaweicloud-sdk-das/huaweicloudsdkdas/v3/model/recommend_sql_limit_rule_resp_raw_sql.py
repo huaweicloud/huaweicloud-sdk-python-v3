@@ -15,7 +15,7 @@ class RecommendSqlLimitRuleRespRawSql:
     sensitive_list = []
 
     openapi_types = {
-        'session_id': 'float',
+        'session_id': 'int',
         'host': 'str',
         'sql': 'str',
         'db': 'str',
@@ -40,7 +40,7 @@ class RecommendSqlLimitRuleRespRawSql:
         The model defined in huaweicloud sdk
 
         :param session_id: 会话id
-        :type session_id: float
+        :type session_id: int
         :param host: 主机ip
         :type host: str
         :param sql: sql
@@ -88,7 +88,7 @@ class RecommendSqlLimitRuleRespRawSql:
         会话id
 
         :return: The session_id of this RecommendSqlLimitRuleRespRawSql.
-        :rtype: float
+        :rtype: int
         """
         return self._session_id
 
@@ -99,7 +99,7 @@ class RecommendSqlLimitRuleRespRawSql:
         会话id
 
         :param session_id: The session_id of this RecommendSqlLimitRuleRespRawSql.
-        :type session_id: float
+        :type session_id: int
         """
         self._session_id = session_id
 

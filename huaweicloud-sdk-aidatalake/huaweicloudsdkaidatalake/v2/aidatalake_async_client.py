@@ -4543,8 +4543,10 @@ class AIDataLakeAsyncClient(Client):
 
         创建并启动Flink作业实例。此接口为异步接口，响应仅表示作业创建请求已接收，作业实际运行状态可通过[查询Flink作业状态](ShowFlinkJobState.xml)接口查询。
         支持多种作业类型：
-        - FLINK_SQL_JOB：Flink SQL作业，通过SQL脚本定义数据处理逻辑。
-        - FLINK_JAR_JOB：Flink JAR作业，通过自定义JAR包定义数据处理逻辑。
+        - FLINK_SQL_JOB：SQL作业。
+        - FLINK_JAR_JOB：JAR作业。
+        - FLINK_SQL_GATEWAY：SQL Gateway作业。
+        - FLINK_PYTHON_JOB：Python作业。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

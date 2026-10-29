@@ -25,7 +25,6 @@ class ShowLogConvergeConfigResponse(SdkResponse):
         'organization_id': 'str',
         'management_account_id': 'str',
         'management_project_id': 'str',
-        'version': 'str',
         'log_mapping_config': 'list[LogMappingConfig]'
     }
 
@@ -39,11 +38,10 @@ class ShowLogConvergeConfigResponse(SdkResponse):
         'organization_id': 'organization_id',
         'management_account_id': 'management_account_id',
         'management_project_id': 'management_project_id',
-        'version': 'version',
         'log_mapping_config': 'log_mapping_config'
     }
 
-    def __init__(self, id=None, member_account_id=None, member_project_id=None, create_time=None, update_time=None, status=None, organization_id=None, management_account_id=None, management_project_id=None, version=None, log_mapping_config=None):
+    def __init__(self, id=None, member_account_id=None, member_project_id=None, create_time=None, update_time=None, status=None, organization_id=None, management_account_id=None, management_project_id=None, log_mapping_config=None):
         r"""ShowLogConvergeConfigResponse
 
         The model defined in huaweicloud sdk
@@ -66,8 +64,6 @@ class ShowLogConvergeConfigResponse(SdkResponse):
         :type management_account_id: str
         :param management_project_id: 管理员项目id
         :type management_project_id: str
-        :param version: 版本
-        :type version: str
         :param log_mapping_config: 日志汇聚配置
         :type log_mapping_config: list[:class:`huaweicloudsdklts.v2.LogMappingConfig`]
         """
@@ -83,7 +79,6 @@ class ShowLogConvergeConfigResponse(SdkResponse):
         self._organization_id = None
         self._management_account_id = None
         self._management_project_id = None
-        self._version = None
         self._log_mapping_config = None
         self.discriminator = None
 
@@ -105,8 +100,6 @@ class ShowLogConvergeConfigResponse(SdkResponse):
             self.management_account_id = management_account_id
         if management_project_id is not None:
             self.management_project_id = management_project_id
-        if version is not None:
-            self.version = version
         if log_mapping_config is not None:
             self.log_mapping_config = log_mapping_config
 
@@ -307,28 +300,6 @@ class ShowLogConvergeConfigResponse(SdkResponse):
         :type management_project_id: str
         """
         self._management_project_id = management_project_id
-
-    @property
-    def version(self):
-        r"""Gets the version of this ShowLogConvergeConfigResponse.
-
-        版本
-
-        :return: The version of this ShowLogConvergeConfigResponse.
-        :rtype: str
-        """
-        return self._version
-
-    @version.setter
-    def version(self, version):
-        r"""Sets the version of this ShowLogConvergeConfigResponse.
-
-        版本
-
-        :param version: The version of this ShowLogConvergeConfigResponse.
-        :type version: str
-        """
-        self._version = version
 
     @property
     def log_mapping_config(self):

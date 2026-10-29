@@ -35,15 +35,15 @@ class LogInfo:
 
         The model defined in huaweicloud sdk
 
-        :param display_name: 日志标题
+        :param display_name: **参数解释：** 检查日志页面所显示的子任务阶段名称。 **取值范围:** 不涉及。
         :type display_name: str
-        :param log: 日志内容
+        :param log: **参数解释：** 扫描日志内容。 **取值范围:** 不涉及。
         :type log: str
-        :param level: 日志级别
+        :param level: **参数解释：** 废弃字段。 **取值范围:** 不涉及。
         :type level: str
-        :param analysis: 日志分析
+        :param analysis: **参数解释：** 任务失败的简要原因。 **取值范围:** 不涉及。
         :type analysis: str
-        :param faq: 常见问题解答
+        :param faq: **参数解释：** 废弃字段。 **取值范围:** 不涉及。
         :type faq: str
         """
         
@@ -71,7 +71,7 @@ class LogInfo:
     def display_name(self):
         r"""Gets the display_name of this LogInfo.
 
-        日志标题
+        **参数解释：** 检查日志页面所显示的子任务阶段名称。 **取值范围:** 不涉及。
 
         :return: The display_name of this LogInfo.
         :rtype: str
@@ -82,7 +82,7 @@ class LogInfo:
     def display_name(self, display_name):
         r"""Sets the display_name of this LogInfo.
 
-        日志标题
+        **参数解释：** 检查日志页面所显示的子任务阶段名称。 **取值范围:** 不涉及。
 
         :param display_name: The display_name of this LogInfo.
         :type display_name: str
@@ -93,7 +93,7 @@ class LogInfo:
     def log(self):
         r"""Gets the log of this LogInfo.
 
-        日志内容
+        **参数解释：** 扫描日志内容。 **取值范围:** 不涉及。
 
         :return: The log of this LogInfo.
         :rtype: str
@@ -104,7 +104,7 @@ class LogInfo:
     def log(self, log):
         r"""Sets the log of this LogInfo.
 
-        日志内容
+        **参数解释：** 扫描日志内容。 **取值范围:** 不涉及。
 
         :param log: The log of this LogInfo.
         :type log: str
@@ -115,7 +115,7 @@ class LogInfo:
     def level(self):
         r"""Gets the level of this LogInfo.
 
-        日志级别
+        **参数解释：** 废弃字段。 **取值范围:** 不涉及。
 
         :return: The level of this LogInfo.
         :rtype: str
@@ -126,7 +126,7 @@ class LogInfo:
     def level(self, level):
         r"""Sets the level of this LogInfo.
 
-        日志级别
+        **参数解释：** 废弃字段。 **取值范围:** 不涉及。
 
         :param level: The level of this LogInfo.
         :type level: str
@@ -137,7 +137,7 @@ class LogInfo:
     def analysis(self):
         r"""Gets the analysis of this LogInfo.
 
-        日志分析
+        **参数解释：** 任务失败的简要原因。 **取值范围:** 不涉及。
 
         :return: The analysis of this LogInfo.
         :rtype: str
@@ -148,7 +148,7 @@ class LogInfo:
     def analysis(self, analysis):
         r"""Sets the analysis of this LogInfo.
 
-        日志分析
+        **参数解释：** 任务失败的简要原因。 **取值范围:** 不涉及。
 
         :param analysis: The analysis of this LogInfo.
         :type analysis: str
@@ -159,7 +159,7 @@ class LogInfo:
     def faq(self):
         r"""Gets the faq of this LogInfo.
 
-        常见问题解答
+        **参数解释：** 废弃字段。 **取值范围:** 不涉及。
 
         :return: The faq of this LogInfo.
         :rtype: str
@@ -170,7 +170,7 @@ class LogInfo:
     def faq(self, faq):
         r"""Sets the faq of this LogInfo.
 
-        常见问题解答
+        **参数解释：** 废弃字段。 **取值范围:** 不涉及。
 
         :param faq: The faq of this LogInfo.
         :type faq: str

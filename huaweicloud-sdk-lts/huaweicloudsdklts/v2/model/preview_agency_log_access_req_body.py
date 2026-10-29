@@ -16,6 +16,7 @@ class PreviewAgencyLogAccessReqBody:
 
     openapi_types = {
         'agency_access_type': 'str',
+        'agency_access_config_id': 'str',
         'agency_log_access': 'str',
         'log_agency_stream_name': 'str',
         'log_agency_stream_id': 'str',
@@ -33,6 +34,7 @@ class PreviewAgencyLogAccessReqBody:
 
     attribute_map = {
         'agency_access_type': 'agency_access_type',
+        'agency_access_config_id': 'agency_accessConfig_id',
         'agency_log_access': 'agency_log_access',
         'log_agency_stream_name': 'log_agencyStream_name',
         'log_agency_stream_id': 'log_agencyStream_id',
@@ -48,13 +50,15 @@ class PreviewAgencyLogAccessReqBody:
         'agency_name': 'agency_name'
     }
 
-    def __init__(self, agency_access_type=None, agency_log_access=None, log_agency_stream_name=None, log_agency_stream_id=None, log_agency_group_name=None, log_agency_group_id=None, log_be_agencystream_name=None, log_be_agencystream_id=None, log_be_agencygroup_name=None, log_be_agencygroup_id=None, be_agency_project_id=None, agency_project_id=None, agency_domain_name=None, agency_name=None):
+    def __init__(self, agency_access_type=None, agency_access_config_id=None, agency_log_access=None, log_agency_stream_name=None, log_agency_stream_id=None, log_agency_group_name=None, log_agency_group_id=None, log_be_agencystream_name=None, log_be_agencystream_id=None, log_be_agencygroup_name=None, log_be_agencygroup_id=None, be_agency_project_id=None, agency_project_id=None, agency_domain_name=None, agency_name=None):
         r"""PreviewAgencyLogAccessReqBody
 
         The model defined in huaweicloud sdk
 
         :param agency_access_type: 日志访问类型
         :type agency_access_type: str
+        :param agency_access_config_id: 跨账号日志接入配置id
+        :type agency_access_config_id: str
         :param agency_log_access: 跨账号日志接入配置名称
         :type agency_log_access: str
         :param log_agency_stream_name: 委托日志流名称
@@ -86,6 +90,7 @@ class PreviewAgencyLogAccessReqBody:
         
 
         self._agency_access_type = None
+        self._agency_access_config_id = None
         self._agency_log_access = None
         self._log_agency_stream_name = None
         self._log_agency_stream_id = None
@@ -102,6 +107,8 @@ class PreviewAgencyLogAccessReqBody:
         self.discriminator = None
 
         self.agency_access_type = agency_access_type
+        if agency_access_config_id is not None:
+            self.agency_access_config_id = agency_access_config_id
         self.agency_log_access = agency_log_access
         self.log_agency_stream_name = log_agency_stream_name
         self.log_agency_stream_id = log_agency_stream_id
@@ -137,6 +144,28 @@ class PreviewAgencyLogAccessReqBody:
         :type agency_access_type: str
         """
         self._agency_access_type = agency_access_type
+
+    @property
+    def agency_access_config_id(self):
+        r"""Gets the agency_access_config_id of this PreviewAgencyLogAccessReqBody.
+
+        跨账号日志接入配置id
+
+        :return: The agency_access_config_id of this PreviewAgencyLogAccessReqBody.
+        :rtype: str
+        """
+        return self._agency_access_config_id
+
+    @agency_access_config_id.setter
+    def agency_access_config_id(self, agency_access_config_id):
+        r"""Sets the agency_access_config_id of this PreviewAgencyLogAccessReqBody.
+
+        跨账号日志接入配置id
+
+        :param agency_access_config_id: The agency_access_config_id of this PreviewAgencyLogAccessReqBody.
+        :type agency_access_config_id: str
+        """
+        self._agency_access_config_id = agency_access_config_id
 
     @property
     def agency_log_access(self):

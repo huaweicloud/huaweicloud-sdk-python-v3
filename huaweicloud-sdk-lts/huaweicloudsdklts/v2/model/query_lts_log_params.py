@@ -29,7 +29,8 @@ class QueryLtsLogParams:
         'highlight': 'bool',
         'is_iterative': 'bool',
         'query': 'str',
-        'is_analysis_query': 'bool'
+        'is_analysis_query': 'bool',
+        'sql_timezone': 'str'
     }
 
     attribute_map = {
@@ -47,10 +48,11 @@ class QueryLtsLogParams:
         'highlight': 'highlight',
         'is_iterative': 'is_iterative',
         'query': 'query',
-        'is_analysis_query': 'is_analysis_query'
+        'is_analysis_query': 'is_analysis_query',
+        'sql_timezone': 'sql_timezone'
     }
 
-    def __init__(self, start_time=None, end_time=None, labels=None, is_count=None, keywords=None, line_num=None, time__=None, is_desc=None, scroll_id=None, search_type=None, limit=None, highlight=None, is_iterative=None, query=None, is_analysis_query=None):
+    def __init__(self, start_time=None, end_time=None, labels=None, is_count=None, keywords=None, line_num=None, time__=None, is_desc=None, scroll_id=None, search_type=None, limit=None, highlight=None, is_iterative=None, query=None, is_analysis_query=None, sql_timezone=None):
         r"""QueryLtsLogParams
 
         The model defined in huaweicloud sdk
@@ -85,6 +87,8 @@ class QueryLtsLogParams:
         :type query: str
         :param is_analysis_query: 是否为带管道符的sql分析语句。当该参数为true时，将依照body体中的query参数内容进行查询，且body体中除start_time与end_time以外的参数失效，分页、排序、查询结果条数等功能请依照sql语法规则实现。查询结果的响应体不同于未启用时的查询方式，将以默认列存的形式返回查询结果。当前仅对内测用户开放。响应示例：{\&quot;analysisLogs\&quot;:[{\&quot;field1\&quot;:\&quot;1\&quot;,\&quot;field2\&quot;:\&quot;2\&quot;,\&quot;field3\&quot;:\&quot;3\&quot;},{\&quot;field1\&quot;:\&quot;1\&quot;,\&quot;field2\&quot;:\&quot;2\&quot;,\&quot;field3\&quot;:\&quot;3\&quot;},{\&quot;field1\&quot;:\&quot;1\&quot;,\&quot;field2\&quot;:\&quot;2\&quot;,\&quot;field3\&quot;:\&quot;3\&quot;}]}
         :type is_analysis_query: bool
+        :param sql_timezone: **参数解释：** 查询时区。 当开启管道符语句查询功能时，将会按照sql_timezone中的时区信息对时间算子进行处理。 **约束限制：** 不涉及。 **取值范围：** 标准时区值 **默认取值：** UTC
+        :type sql_timezone: str
         """
         
         
@@ -104,6 +108,7 @@ class QueryLtsLogParams:
         self._is_iterative = None
         self._query = None
         self._is_analysis_query = None
+        self._sql_timezone = None
         self.discriminator = None
 
         self.start_time = start_time
@@ -134,6 +139,8 @@ class QueryLtsLogParams:
             self.query = query
         if is_analysis_query is not None:
             self.is_analysis_query = is_analysis_query
+        if sql_timezone is not None:
+            self.sql_timezone = sql_timezone
 
     @property
     def start_time(self):
@@ -464,6 +471,28 @@ class QueryLtsLogParams:
         :type is_analysis_query: bool
         """
         self._is_analysis_query = is_analysis_query
+
+    @property
+    def sql_timezone(self):
+        r"""Gets the sql_timezone of this QueryLtsLogParams.
+
+        **参数解释：** 查询时区。 当开启管道符语句查询功能时，将会按照sql_timezone中的时区信息对时间算子进行处理。 **约束限制：** 不涉及。 **取值范围：** 标准时区值 **默认取值：** UTC
+
+        :return: The sql_timezone of this QueryLtsLogParams.
+        :rtype: str
+        """
+        return self._sql_timezone
+
+    @sql_timezone.setter
+    def sql_timezone(self, sql_timezone):
+        r"""Sets the sql_timezone of this QueryLtsLogParams.
+
+        **参数解释：** 查询时区。 当开启管道符语句查询功能时，将会按照sql_timezone中的时区信息对时间算子进行处理。 **约束限制：** 不涉及。 **取值范围：** 标准时区值 **默认取值：** UTC
+
+        :param sql_timezone: The sql_timezone of this QueryLtsLogParams.
+        :type sql_timezone: str
+        """
+        self._sql_timezone = sql_timezone
 
     def to_dict(self):
         result = {}

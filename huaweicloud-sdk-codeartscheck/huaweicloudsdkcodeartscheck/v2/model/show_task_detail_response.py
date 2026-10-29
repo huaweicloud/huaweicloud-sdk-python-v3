@@ -43,8 +43,17 @@ class ShowTaskDetailResponse(SdkResponse):
         'minor_count': 'str',
         'suggestion_count': 'str',
         'is_access': 'str',
+        'review_result': 'str',
         'trigger_type': 'str',
-        'file_duplication_ratio': 'str'
+        'file_duplication_ratio': 'str',
+        'new_count': 'int',
+        'solve_count': 'int',
+        'dismissed_count': 'int',
+        'duplicated_files': 'int',
+        'new_critical_count': 'str',
+        'new_major_count': 'str',
+        'new_minor_count': 'str',
+        'new_suggestion_count': 'str'
     }
 
     attribute_map = {
@@ -75,73 +84,100 @@ class ShowTaskDetailResponse(SdkResponse):
         'minor_count': 'minor_count',
         'suggestion_count': 'suggestion_count',
         'is_access': 'is_access',
+        'review_result': 'review_result',
         'trigger_type': 'trigger_type',
-        'file_duplication_ratio': 'file_duplication_ratio'
+        'file_duplication_ratio': 'file_duplication_ratio',
+        'new_count': 'new_count',
+        'solve_count': 'solve_count',
+        'dismissed_count': 'dismissed_count',
+        'duplicated_files': 'duplicated_files',
+        'new_critical_count': 'new_critical_count',
+        'new_major_count': 'new_major_count',
+        'new_minor_count': 'new_minor_count',
+        'new_suggestion_count': 'new_suggestion_count'
     }
 
-    def __init__(self, task_id=None, task_name=None, creator_id=None, git_url=None, git_branch=None, last_check_time=None, code_line_total=None, code_line=None, code_quality=None, issue_count=None, risk_coefficient=None, duplication_ratio=None, complexity_count=None, duplicated_lines=None, comment_lines=None, comment_ratio=None, duplicated_blocks=None, last_exec_time=None, check_type=None, created_at=None, cyclomatic_complexity_per_method=None, cyclomatic_complexity_per_file=None, critical_count=None, major_count=None, minor_count=None, suggestion_count=None, is_access=None, trigger_type=None, file_duplication_ratio=None):
+    def __init__(self, task_id=None, task_name=None, creator_id=None, git_url=None, git_branch=None, last_check_time=None, code_line_total=None, code_line=None, code_quality=None, issue_count=None, risk_coefficient=None, duplication_ratio=None, complexity_count=None, duplicated_lines=None, comment_lines=None, comment_ratio=None, duplicated_blocks=None, last_exec_time=None, check_type=None, created_at=None, cyclomatic_complexity_per_method=None, cyclomatic_complexity_per_file=None, critical_count=None, major_count=None, minor_count=None, suggestion_count=None, is_access=None, review_result=None, trigger_type=None, file_duplication_ratio=None, new_count=None, solve_count=None, dismissed_count=None, duplicated_files=None, new_critical_count=None, new_major_count=None, new_minor_count=None, new_suggestion_count=None):
         r"""ShowTaskDetailResponse
 
         The model defined in huaweicloud sdk
 
-        :param task_id: 任务id
+        :param task_id: **参数解释：** 旧版任务ID。即新建检查任务接口的返回值，每个代码检查任务及其下的分支任务、通过API创建的增量任务都有唯一的任务ID。 **取值范围：** 不涉及。
         :type task_id: str
-        :param task_name: 任务名字
+        :param task_name: **参数解释：** 任务名称。 **取值范围：** 不涉及。
         :type task_name: str
-        :param creator_id: 创建者id
+        :param creator_id: **参数解释：** 任务创建者用户ID。 **取值范围：** 不涉及。
         :type creator_id: str
-        :param git_url: 代码仓地址
+        :param git_url: **参数解释：** 代码仓地址。 **取值范围：** 不涉及。
         :type git_url: str
-        :param git_branch: 代码仓分支,如果是MR模式，为源分支
+        :param git_branch: **参数解释：** 代码仓分支，如果是MR模式，为源分支。 **取值范围：** 不涉及。
         :type git_branch: str
-        :param last_check_time: 上一次检查时间
+        :param last_check_time: **参数解释：** 上一次检查时间。使用UTC时间，格式为yyyy-MM-ddTHH:mm:ssZ。例如：2020-09-25T12:05:00Z。 **取值范围：** 不涉及。
         :type last_check_time: str
-        :param code_line_total: 代码总行数
+        :param code_line_total: **参数解释：** 原始代码行数，包含空行和注释行。 **取值范围：** 不涉及。
         :type code_line_total: int
-        :param code_line: 代码有效行数
+        :param code_line: **参数解释：** 有效代码行数，不包含空行和注释行。 **取值范围：** 不涉及。
         :type code_line: int
-        :param code_quality: 代码质量
+        :param code_quality: **参数解释：** 代码质量。 **取值范围：** 不涉及。
         :type code_quality: float
-        :param issue_count: 问题数
+        :param issue_count: **参数解释：** [待处理问题数。](tag:hws,hws_hk)[待处理和重新打开（需打开忽略审核开关）问题数。](tag:fcs,hcs,hcs_sm,hcs_site,hcs_sitesm) **取值范围：** 不涉及。
         :type issue_count: int
-        :param risk_coefficient: 危险系数
+        :param risk_coefficient: **参数解释：** 危险系数。 **取值范围：** 不涉及。
         :type risk_coefficient: float
-        :param duplication_ratio: 重复比例
+        :param duplication_ratio: **参数解释：** 代码重复率。 **取值范围：** 不涉及。
         :type duplication_ratio: str
-        :param complexity_count: 复杂度
+        :param complexity_count: **参数解释：** 圈复杂度总数。 **取值范围：** 不涉及。
         :type complexity_count: int
-        :param duplicated_lines: 重复行数
+        :param duplicated_lines: **参数解释：** 重复行数总数。 **取值范围：** 不涉及。
         :type duplicated_lines: int
-        :param comment_lines: 注释行数
+        :param comment_lines: **参数解释：** 注释行数。 **取值范围：** 不涉及。
         :type comment_lines: int
-        :param comment_ratio: 注释比例
+        :param comment_ratio: **参数解释：** 注释率。 **取值范围：** 不涉及。
         :type comment_ratio: str
-        :param duplicated_blocks: 重复块
+        :param duplicated_blocks: **参数解释：** 重复块个数。 **取值范围：** 不涉及。
         :type duplicated_blocks: int
-        :param last_exec_time: 上次执行时间
+        :param last_exec_time: **参数解释：** 上一次执行时间。使用UTC时间，格式为yyyy-MM-ddTHH:mm:ssZ。例如：2020-09-25T12:05:00Z。 **取值范围：** 不涉及。
         :type last_exec_time: str
-        :param check_type: 检查类型
+        :param check_type: **参数解释：** 废弃字段。 **约束限制：** 不涉及。 **取值范围：** 不涉及。
         :type check_type: str
-        :param created_at: 创建时间
+        :param created_at: **参数解释：** 创建时间。使用UTC时间，格式为yyyy-MM-ddTHH:mm:ssZ。例如：2020-09-25T12:05:00Z。 **取值范围：** 不涉及。
         :type created_at: str
-        :param cyclomatic_complexity_per_method: 代码平均复杂度
+        :param cyclomatic_complexity_per_method: **参数解释：** 平均圈复杂度（方法）。 **取值范围：** 不涉及。
         :type cyclomatic_complexity_per_method: str
-        :param cyclomatic_complexity_per_file: 代码平均复杂度(文件)
+        :param cyclomatic_complexity_per_file: **参数解释：** 平均圈复杂度（文件）。 **取值范围：** 不涉及。
         :type cyclomatic_complexity_per_file: str
-        :param critical_count: 致命问题数
+        :param critical_count: **参数解释：** 致命问题数。不包括已忽略和已修复问题。 **取值范围：** 不涉及。
         :type critical_count: str
-        :param major_count: 严重问题数
+        :param major_count: **参数解释：** 严重问题数。不包括已忽略和已修复问题。 **取值范围：** 不涉及。
         :type major_count: str
-        :param minor_count: 一般问题数
+        :param minor_count: **参数解释：** 一般问题数。不包括已忽略和已修复问题。 **取值范围：** 不涉及。
         :type minor_count: str
-        :param suggestion_count: 提示问题数
+        :param suggestion_count: **参数解释：** 提示问题数。不包括已忽略和已修复问题。 **取值范围：** 不涉及。
         :type suggestion_count: str
-        :param is_access: 门禁质量是否通过
+        :param is_access: **参数解释：** 门禁质量是否通过。 **取值范围：** - 1：门禁通过。 - 0：门禁不通过。
         :type is_access: str
-        :param trigger_type: 任务触发方式
+        :param review_result: **参数解释：** 门禁质量是否通过。 **取值范围：** 不涉及。
+        :type review_result: str
+        :param trigger_type: **参数解释：** 任务触发方式。 **取值范围：** - 0：手动触发。 - 1：定时触发。 - 2：代码提交触发。 - 3：合并请求触发。
         :type trigger_type: str
-        :param file_duplication_ratio: 文件重复率
+        :param file_duplication_ratio: **参数解释：** 文件重复率。 **取值范围：** 不涉及。
         :type file_duplication_ratio: str
+        :param new_count: **参数解释：** 新发现问题数。不包括已忽略和已修复问题。 **取值范围：** 不涉及。
+        :type new_count: int
+        :param solve_count: **参数解释：** 已解决和已修复问题数。 **取值范围：** 不涉及。
+        :type solve_count: int
+        :param dismissed_count: **参数解释：** 已忽略问题数。 **取值范围：** 不涉及。
+        :type dismissed_count: int
+        :param duplicated_files: **参数解释：** 重复文件数量。 **取值范围：** 不涉及。
+        :type duplicated_files: int
+        :param new_critical_count: **参数解释：** 新增致命问题数。不包括已忽略和已修复问题。 **取值范围：** 不涉及。
+        :type new_critical_count: str
+        :param new_major_count: **参数解释：** 新增严重问题数。不包括已忽略和已修复问题。 **取值范围：** 不涉及。
+        :type new_major_count: str
+        :param new_minor_count: **参数解释：** 新增一般问题数。不包括已忽略和已修复问题。 **取值范围：** 不涉及。
+        :type new_minor_count: str
+        :param new_suggestion_count: **参数解释：** 新增提示问题数。不包括已忽略和已修复问题。 **取值范围：** 不涉及。
+        :type new_suggestion_count: str
         """
         
         super().__init__()
@@ -173,8 +209,17 @@ class ShowTaskDetailResponse(SdkResponse):
         self._minor_count = None
         self._suggestion_count = None
         self._is_access = None
+        self._review_result = None
         self._trigger_type = None
         self._file_duplication_ratio = None
+        self._new_count = None
+        self._solve_count = None
+        self._dismissed_count = None
+        self._duplicated_files = None
+        self._new_critical_count = None
+        self._new_major_count = None
+        self._new_minor_count = None
+        self._new_suggestion_count = None
         self.discriminator = None
 
         if task_id is not None:
@@ -231,16 +276,34 @@ class ShowTaskDetailResponse(SdkResponse):
             self.suggestion_count = suggestion_count
         if is_access is not None:
             self.is_access = is_access
+        if review_result is not None:
+            self.review_result = review_result
         if trigger_type is not None:
             self.trigger_type = trigger_type
         if file_duplication_ratio is not None:
             self.file_duplication_ratio = file_duplication_ratio
+        if new_count is not None:
+            self.new_count = new_count
+        if solve_count is not None:
+            self.solve_count = solve_count
+        if dismissed_count is not None:
+            self.dismissed_count = dismissed_count
+        if duplicated_files is not None:
+            self.duplicated_files = duplicated_files
+        if new_critical_count is not None:
+            self.new_critical_count = new_critical_count
+        if new_major_count is not None:
+            self.new_major_count = new_major_count
+        if new_minor_count is not None:
+            self.new_minor_count = new_minor_count
+        if new_suggestion_count is not None:
+            self.new_suggestion_count = new_suggestion_count
 
     @property
     def task_id(self):
         r"""Gets the task_id of this ShowTaskDetailResponse.
 
-        任务id
+        **参数解释：** 旧版任务ID。即新建检查任务接口的返回值，每个代码检查任务及其下的分支任务、通过API创建的增量任务都有唯一的任务ID。 **取值范围：** 不涉及。
 
         :return: The task_id of this ShowTaskDetailResponse.
         :rtype: str
@@ -251,7 +314,7 @@ class ShowTaskDetailResponse(SdkResponse):
     def task_id(self, task_id):
         r"""Sets the task_id of this ShowTaskDetailResponse.
 
-        任务id
+        **参数解释：** 旧版任务ID。即新建检查任务接口的返回值，每个代码检查任务及其下的分支任务、通过API创建的增量任务都有唯一的任务ID。 **取值范围：** 不涉及。
 
         :param task_id: The task_id of this ShowTaskDetailResponse.
         :type task_id: str
@@ -262,7 +325,7 @@ class ShowTaskDetailResponse(SdkResponse):
     def task_name(self):
         r"""Gets the task_name of this ShowTaskDetailResponse.
 
-        任务名字
+        **参数解释：** 任务名称。 **取值范围：** 不涉及。
 
         :return: The task_name of this ShowTaskDetailResponse.
         :rtype: str
@@ -273,7 +336,7 @@ class ShowTaskDetailResponse(SdkResponse):
     def task_name(self, task_name):
         r"""Sets the task_name of this ShowTaskDetailResponse.
 
-        任务名字
+        **参数解释：** 任务名称。 **取值范围：** 不涉及。
 
         :param task_name: The task_name of this ShowTaskDetailResponse.
         :type task_name: str
@@ -284,7 +347,7 @@ class ShowTaskDetailResponse(SdkResponse):
     def creator_id(self):
         r"""Gets the creator_id of this ShowTaskDetailResponse.
 
-        创建者id
+        **参数解释：** 任务创建者用户ID。 **取值范围：** 不涉及。
 
         :return: The creator_id of this ShowTaskDetailResponse.
         :rtype: str
@@ -295,7 +358,7 @@ class ShowTaskDetailResponse(SdkResponse):
     def creator_id(self, creator_id):
         r"""Sets the creator_id of this ShowTaskDetailResponse.
 
-        创建者id
+        **参数解释：** 任务创建者用户ID。 **取值范围：** 不涉及。
 
         :param creator_id: The creator_id of this ShowTaskDetailResponse.
         :type creator_id: str
@@ -306,7 +369,7 @@ class ShowTaskDetailResponse(SdkResponse):
     def git_url(self):
         r"""Gets the git_url of this ShowTaskDetailResponse.
 
-        代码仓地址
+        **参数解释：** 代码仓地址。 **取值范围：** 不涉及。
 
         :return: The git_url of this ShowTaskDetailResponse.
         :rtype: str
@@ -317,7 +380,7 @@ class ShowTaskDetailResponse(SdkResponse):
     def git_url(self, git_url):
         r"""Sets the git_url of this ShowTaskDetailResponse.
 
-        代码仓地址
+        **参数解释：** 代码仓地址。 **取值范围：** 不涉及。
 
         :param git_url: The git_url of this ShowTaskDetailResponse.
         :type git_url: str
@@ -328,7 +391,7 @@ class ShowTaskDetailResponse(SdkResponse):
     def git_branch(self):
         r"""Gets the git_branch of this ShowTaskDetailResponse.
 
-        代码仓分支,如果是MR模式，为源分支
+        **参数解释：** 代码仓分支，如果是MR模式，为源分支。 **取值范围：** 不涉及。
 
         :return: The git_branch of this ShowTaskDetailResponse.
         :rtype: str
@@ -339,7 +402,7 @@ class ShowTaskDetailResponse(SdkResponse):
     def git_branch(self, git_branch):
         r"""Sets the git_branch of this ShowTaskDetailResponse.
 
-        代码仓分支,如果是MR模式，为源分支
+        **参数解释：** 代码仓分支，如果是MR模式，为源分支。 **取值范围：** 不涉及。
 
         :param git_branch: The git_branch of this ShowTaskDetailResponse.
         :type git_branch: str
@@ -350,7 +413,7 @@ class ShowTaskDetailResponse(SdkResponse):
     def last_check_time(self):
         r"""Gets the last_check_time of this ShowTaskDetailResponse.
 
-        上一次检查时间
+        **参数解释：** 上一次检查时间。使用UTC时间，格式为yyyy-MM-ddTHH:mm:ssZ。例如：2020-09-25T12:05:00Z。 **取值范围：** 不涉及。
 
         :return: The last_check_time of this ShowTaskDetailResponse.
         :rtype: str
@@ -361,7 +424,7 @@ class ShowTaskDetailResponse(SdkResponse):
     def last_check_time(self, last_check_time):
         r"""Sets the last_check_time of this ShowTaskDetailResponse.
 
-        上一次检查时间
+        **参数解释：** 上一次检查时间。使用UTC时间，格式为yyyy-MM-ddTHH:mm:ssZ。例如：2020-09-25T12:05:00Z。 **取值范围：** 不涉及。
 
         :param last_check_time: The last_check_time of this ShowTaskDetailResponse.
         :type last_check_time: str
@@ -372,7 +435,7 @@ class ShowTaskDetailResponse(SdkResponse):
     def code_line_total(self):
         r"""Gets the code_line_total of this ShowTaskDetailResponse.
 
-        代码总行数
+        **参数解释：** 原始代码行数，包含空行和注释行。 **取值范围：** 不涉及。
 
         :return: The code_line_total of this ShowTaskDetailResponse.
         :rtype: int
@@ -383,7 +446,7 @@ class ShowTaskDetailResponse(SdkResponse):
     def code_line_total(self, code_line_total):
         r"""Sets the code_line_total of this ShowTaskDetailResponse.
 
-        代码总行数
+        **参数解释：** 原始代码行数，包含空行和注释行。 **取值范围：** 不涉及。
 
         :param code_line_total: The code_line_total of this ShowTaskDetailResponse.
         :type code_line_total: int
@@ -394,7 +457,7 @@ class ShowTaskDetailResponse(SdkResponse):
     def code_line(self):
         r"""Gets the code_line of this ShowTaskDetailResponse.
 
-        代码有效行数
+        **参数解释：** 有效代码行数，不包含空行和注释行。 **取值范围：** 不涉及。
 
         :return: The code_line of this ShowTaskDetailResponse.
         :rtype: int
@@ -405,7 +468,7 @@ class ShowTaskDetailResponse(SdkResponse):
     def code_line(self, code_line):
         r"""Sets the code_line of this ShowTaskDetailResponse.
 
-        代码有效行数
+        **参数解释：** 有效代码行数，不包含空行和注释行。 **取值范围：** 不涉及。
 
         :param code_line: The code_line of this ShowTaskDetailResponse.
         :type code_line: int
@@ -416,7 +479,7 @@ class ShowTaskDetailResponse(SdkResponse):
     def code_quality(self):
         r"""Gets the code_quality of this ShowTaskDetailResponse.
 
-        代码质量
+        **参数解释：** 代码质量。 **取值范围：** 不涉及。
 
         :return: The code_quality of this ShowTaskDetailResponse.
         :rtype: float
@@ -427,7 +490,7 @@ class ShowTaskDetailResponse(SdkResponse):
     def code_quality(self, code_quality):
         r"""Sets the code_quality of this ShowTaskDetailResponse.
 
-        代码质量
+        **参数解释：** 代码质量。 **取值范围：** 不涉及。
 
         :param code_quality: The code_quality of this ShowTaskDetailResponse.
         :type code_quality: float
@@ -438,7 +501,7 @@ class ShowTaskDetailResponse(SdkResponse):
     def issue_count(self):
         r"""Gets the issue_count of this ShowTaskDetailResponse.
 
-        问题数
+        **参数解释：** [待处理问题数。](tag:hws,hws_hk)[待处理和重新打开（需打开忽略审核开关）问题数。](tag:fcs,hcs,hcs_sm,hcs_site,hcs_sitesm) **取值范围：** 不涉及。
 
         :return: The issue_count of this ShowTaskDetailResponse.
         :rtype: int
@@ -449,7 +512,7 @@ class ShowTaskDetailResponse(SdkResponse):
     def issue_count(self, issue_count):
         r"""Sets the issue_count of this ShowTaskDetailResponse.
 
-        问题数
+        **参数解释：** [待处理问题数。](tag:hws,hws_hk)[待处理和重新打开（需打开忽略审核开关）问题数。](tag:fcs,hcs,hcs_sm,hcs_site,hcs_sitesm) **取值范围：** 不涉及。
 
         :param issue_count: The issue_count of this ShowTaskDetailResponse.
         :type issue_count: int
@@ -460,7 +523,7 @@ class ShowTaskDetailResponse(SdkResponse):
     def risk_coefficient(self):
         r"""Gets the risk_coefficient of this ShowTaskDetailResponse.
 
-        危险系数
+        **参数解释：** 危险系数。 **取值范围：** 不涉及。
 
         :return: The risk_coefficient of this ShowTaskDetailResponse.
         :rtype: float
@@ -471,7 +534,7 @@ class ShowTaskDetailResponse(SdkResponse):
     def risk_coefficient(self, risk_coefficient):
         r"""Sets the risk_coefficient of this ShowTaskDetailResponse.
 
-        危险系数
+        **参数解释：** 危险系数。 **取值范围：** 不涉及。
 
         :param risk_coefficient: The risk_coefficient of this ShowTaskDetailResponse.
         :type risk_coefficient: float
@@ -482,7 +545,7 @@ class ShowTaskDetailResponse(SdkResponse):
     def duplication_ratio(self):
         r"""Gets the duplication_ratio of this ShowTaskDetailResponse.
 
-        重复比例
+        **参数解释：** 代码重复率。 **取值范围：** 不涉及。
 
         :return: The duplication_ratio of this ShowTaskDetailResponse.
         :rtype: str
@@ -493,7 +556,7 @@ class ShowTaskDetailResponse(SdkResponse):
     def duplication_ratio(self, duplication_ratio):
         r"""Sets the duplication_ratio of this ShowTaskDetailResponse.
 
-        重复比例
+        **参数解释：** 代码重复率。 **取值范围：** 不涉及。
 
         :param duplication_ratio: The duplication_ratio of this ShowTaskDetailResponse.
         :type duplication_ratio: str
@@ -504,7 +567,7 @@ class ShowTaskDetailResponse(SdkResponse):
     def complexity_count(self):
         r"""Gets the complexity_count of this ShowTaskDetailResponse.
 
-        复杂度
+        **参数解释：** 圈复杂度总数。 **取值范围：** 不涉及。
 
         :return: The complexity_count of this ShowTaskDetailResponse.
         :rtype: int
@@ -515,7 +578,7 @@ class ShowTaskDetailResponse(SdkResponse):
     def complexity_count(self, complexity_count):
         r"""Sets the complexity_count of this ShowTaskDetailResponse.
 
-        复杂度
+        **参数解释：** 圈复杂度总数。 **取值范围：** 不涉及。
 
         :param complexity_count: The complexity_count of this ShowTaskDetailResponse.
         :type complexity_count: int
@@ -526,7 +589,7 @@ class ShowTaskDetailResponse(SdkResponse):
     def duplicated_lines(self):
         r"""Gets the duplicated_lines of this ShowTaskDetailResponse.
 
-        重复行数
+        **参数解释：** 重复行数总数。 **取值范围：** 不涉及。
 
         :return: The duplicated_lines of this ShowTaskDetailResponse.
         :rtype: int
@@ -537,7 +600,7 @@ class ShowTaskDetailResponse(SdkResponse):
     def duplicated_lines(self, duplicated_lines):
         r"""Sets the duplicated_lines of this ShowTaskDetailResponse.
 
-        重复行数
+        **参数解释：** 重复行数总数。 **取值范围：** 不涉及。
 
         :param duplicated_lines: The duplicated_lines of this ShowTaskDetailResponse.
         :type duplicated_lines: int
@@ -548,7 +611,7 @@ class ShowTaskDetailResponse(SdkResponse):
     def comment_lines(self):
         r"""Gets the comment_lines of this ShowTaskDetailResponse.
 
-        注释行数
+        **参数解释：** 注释行数。 **取值范围：** 不涉及。
 
         :return: The comment_lines of this ShowTaskDetailResponse.
         :rtype: int
@@ -559,7 +622,7 @@ class ShowTaskDetailResponse(SdkResponse):
     def comment_lines(self, comment_lines):
         r"""Sets the comment_lines of this ShowTaskDetailResponse.
 
-        注释行数
+        **参数解释：** 注释行数。 **取值范围：** 不涉及。
 
         :param comment_lines: The comment_lines of this ShowTaskDetailResponse.
         :type comment_lines: int
@@ -570,7 +633,7 @@ class ShowTaskDetailResponse(SdkResponse):
     def comment_ratio(self):
         r"""Gets the comment_ratio of this ShowTaskDetailResponse.
 
-        注释比例
+        **参数解释：** 注释率。 **取值范围：** 不涉及。
 
         :return: The comment_ratio of this ShowTaskDetailResponse.
         :rtype: str
@@ -581,7 +644,7 @@ class ShowTaskDetailResponse(SdkResponse):
     def comment_ratio(self, comment_ratio):
         r"""Sets the comment_ratio of this ShowTaskDetailResponse.
 
-        注释比例
+        **参数解释：** 注释率。 **取值范围：** 不涉及。
 
         :param comment_ratio: The comment_ratio of this ShowTaskDetailResponse.
         :type comment_ratio: str
@@ -592,7 +655,7 @@ class ShowTaskDetailResponse(SdkResponse):
     def duplicated_blocks(self):
         r"""Gets the duplicated_blocks of this ShowTaskDetailResponse.
 
-        重复块
+        **参数解释：** 重复块个数。 **取值范围：** 不涉及。
 
         :return: The duplicated_blocks of this ShowTaskDetailResponse.
         :rtype: int
@@ -603,7 +666,7 @@ class ShowTaskDetailResponse(SdkResponse):
     def duplicated_blocks(self, duplicated_blocks):
         r"""Sets the duplicated_blocks of this ShowTaskDetailResponse.
 
-        重复块
+        **参数解释：** 重复块个数。 **取值范围：** 不涉及。
 
         :param duplicated_blocks: The duplicated_blocks of this ShowTaskDetailResponse.
         :type duplicated_blocks: int
@@ -614,7 +677,7 @@ class ShowTaskDetailResponse(SdkResponse):
     def last_exec_time(self):
         r"""Gets the last_exec_time of this ShowTaskDetailResponse.
 
-        上次执行时间
+        **参数解释：** 上一次执行时间。使用UTC时间，格式为yyyy-MM-ddTHH:mm:ssZ。例如：2020-09-25T12:05:00Z。 **取值范围：** 不涉及。
 
         :return: The last_exec_time of this ShowTaskDetailResponse.
         :rtype: str
@@ -625,7 +688,7 @@ class ShowTaskDetailResponse(SdkResponse):
     def last_exec_time(self, last_exec_time):
         r"""Sets the last_exec_time of this ShowTaskDetailResponse.
 
-        上次执行时间
+        **参数解释：** 上一次执行时间。使用UTC时间，格式为yyyy-MM-ddTHH:mm:ssZ。例如：2020-09-25T12:05:00Z。 **取值范围：** 不涉及。
 
         :param last_exec_time: The last_exec_time of this ShowTaskDetailResponse.
         :type last_exec_time: str
@@ -636,7 +699,7 @@ class ShowTaskDetailResponse(SdkResponse):
     def check_type(self):
         r"""Gets the check_type of this ShowTaskDetailResponse.
 
-        检查类型
+        **参数解释：** 废弃字段。 **约束限制：** 不涉及。 **取值范围：** 不涉及。
 
         :return: The check_type of this ShowTaskDetailResponse.
         :rtype: str
@@ -647,7 +710,7 @@ class ShowTaskDetailResponse(SdkResponse):
     def check_type(self, check_type):
         r"""Sets the check_type of this ShowTaskDetailResponse.
 
-        检查类型
+        **参数解释：** 废弃字段。 **约束限制：** 不涉及。 **取值范围：** 不涉及。
 
         :param check_type: The check_type of this ShowTaskDetailResponse.
         :type check_type: str
@@ -658,7 +721,7 @@ class ShowTaskDetailResponse(SdkResponse):
     def created_at(self):
         r"""Gets the created_at of this ShowTaskDetailResponse.
 
-        创建时间
+        **参数解释：** 创建时间。使用UTC时间，格式为yyyy-MM-ddTHH:mm:ssZ。例如：2020-09-25T12:05:00Z。 **取值范围：** 不涉及。
 
         :return: The created_at of this ShowTaskDetailResponse.
         :rtype: str
@@ -669,7 +732,7 @@ class ShowTaskDetailResponse(SdkResponse):
     def created_at(self, created_at):
         r"""Sets the created_at of this ShowTaskDetailResponse.
 
-        创建时间
+        **参数解释：** 创建时间。使用UTC时间，格式为yyyy-MM-ddTHH:mm:ssZ。例如：2020-09-25T12:05:00Z。 **取值范围：** 不涉及。
 
         :param created_at: The created_at of this ShowTaskDetailResponse.
         :type created_at: str
@@ -680,7 +743,7 @@ class ShowTaskDetailResponse(SdkResponse):
     def cyclomatic_complexity_per_method(self):
         r"""Gets the cyclomatic_complexity_per_method of this ShowTaskDetailResponse.
 
-        代码平均复杂度
+        **参数解释：** 平均圈复杂度（方法）。 **取值范围：** 不涉及。
 
         :return: The cyclomatic_complexity_per_method of this ShowTaskDetailResponse.
         :rtype: str
@@ -691,7 +754,7 @@ class ShowTaskDetailResponse(SdkResponse):
     def cyclomatic_complexity_per_method(self, cyclomatic_complexity_per_method):
         r"""Sets the cyclomatic_complexity_per_method of this ShowTaskDetailResponse.
 
-        代码平均复杂度
+        **参数解释：** 平均圈复杂度（方法）。 **取值范围：** 不涉及。
 
         :param cyclomatic_complexity_per_method: The cyclomatic_complexity_per_method of this ShowTaskDetailResponse.
         :type cyclomatic_complexity_per_method: str
@@ -702,7 +765,7 @@ class ShowTaskDetailResponse(SdkResponse):
     def cyclomatic_complexity_per_file(self):
         r"""Gets the cyclomatic_complexity_per_file of this ShowTaskDetailResponse.
 
-        代码平均复杂度(文件)
+        **参数解释：** 平均圈复杂度（文件）。 **取值范围：** 不涉及。
 
         :return: The cyclomatic_complexity_per_file of this ShowTaskDetailResponse.
         :rtype: str
@@ -713,7 +776,7 @@ class ShowTaskDetailResponse(SdkResponse):
     def cyclomatic_complexity_per_file(self, cyclomatic_complexity_per_file):
         r"""Sets the cyclomatic_complexity_per_file of this ShowTaskDetailResponse.
 
-        代码平均复杂度(文件)
+        **参数解释：** 平均圈复杂度（文件）。 **取值范围：** 不涉及。
 
         :param cyclomatic_complexity_per_file: The cyclomatic_complexity_per_file of this ShowTaskDetailResponse.
         :type cyclomatic_complexity_per_file: str
@@ -724,7 +787,7 @@ class ShowTaskDetailResponse(SdkResponse):
     def critical_count(self):
         r"""Gets the critical_count of this ShowTaskDetailResponse.
 
-        致命问题数
+        **参数解释：** 致命问题数。不包括已忽略和已修复问题。 **取值范围：** 不涉及。
 
         :return: The critical_count of this ShowTaskDetailResponse.
         :rtype: str
@@ -735,7 +798,7 @@ class ShowTaskDetailResponse(SdkResponse):
     def critical_count(self, critical_count):
         r"""Sets the critical_count of this ShowTaskDetailResponse.
 
-        致命问题数
+        **参数解释：** 致命问题数。不包括已忽略和已修复问题。 **取值范围：** 不涉及。
 
         :param critical_count: The critical_count of this ShowTaskDetailResponse.
         :type critical_count: str
@@ -746,7 +809,7 @@ class ShowTaskDetailResponse(SdkResponse):
     def major_count(self):
         r"""Gets the major_count of this ShowTaskDetailResponse.
 
-        严重问题数
+        **参数解释：** 严重问题数。不包括已忽略和已修复问题。 **取值范围：** 不涉及。
 
         :return: The major_count of this ShowTaskDetailResponse.
         :rtype: str
@@ -757,7 +820,7 @@ class ShowTaskDetailResponse(SdkResponse):
     def major_count(self, major_count):
         r"""Sets the major_count of this ShowTaskDetailResponse.
 
-        严重问题数
+        **参数解释：** 严重问题数。不包括已忽略和已修复问题。 **取值范围：** 不涉及。
 
         :param major_count: The major_count of this ShowTaskDetailResponse.
         :type major_count: str
@@ -768,7 +831,7 @@ class ShowTaskDetailResponse(SdkResponse):
     def minor_count(self):
         r"""Gets the minor_count of this ShowTaskDetailResponse.
 
-        一般问题数
+        **参数解释：** 一般问题数。不包括已忽略和已修复问题。 **取值范围：** 不涉及。
 
         :return: The minor_count of this ShowTaskDetailResponse.
         :rtype: str
@@ -779,7 +842,7 @@ class ShowTaskDetailResponse(SdkResponse):
     def minor_count(self, minor_count):
         r"""Sets the minor_count of this ShowTaskDetailResponse.
 
-        一般问题数
+        **参数解释：** 一般问题数。不包括已忽略和已修复问题。 **取值范围：** 不涉及。
 
         :param minor_count: The minor_count of this ShowTaskDetailResponse.
         :type minor_count: str
@@ -790,7 +853,7 @@ class ShowTaskDetailResponse(SdkResponse):
     def suggestion_count(self):
         r"""Gets the suggestion_count of this ShowTaskDetailResponse.
 
-        提示问题数
+        **参数解释：** 提示问题数。不包括已忽略和已修复问题。 **取值范围：** 不涉及。
 
         :return: The suggestion_count of this ShowTaskDetailResponse.
         :rtype: str
@@ -801,7 +864,7 @@ class ShowTaskDetailResponse(SdkResponse):
     def suggestion_count(self, suggestion_count):
         r"""Sets the suggestion_count of this ShowTaskDetailResponse.
 
-        提示问题数
+        **参数解释：** 提示问题数。不包括已忽略和已修复问题。 **取值范围：** 不涉及。
 
         :param suggestion_count: The suggestion_count of this ShowTaskDetailResponse.
         :type suggestion_count: str
@@ -812,7 +875,7 @@ class ShowTaskDetailResponse(SdkResponse):
     def is_access(self):
         r"""Gets the is_access of this ShowTaskDetailResponse.
 
-        门禁质量是否通过
+        **参数解释：** 门禁质量是否通过。 **取值范围：** - 1：门禁通过。 - 0：门禁不通过。
 
         :return: The is_access of this ShowTaskDetailResponse.
         :rtype: str
@@ -823,7 +886,7 @@ class ShowTaskDetailResponse(SdkResponse):
     def is_access(self, is_access):
         r"""Sets the is_access of this ShowTaskDetailResponse.
 
-        门禁质量是否通过
+        **参数解释：** 门禁质量是否通过。 **取值范围：** - 1：门禁通过。 - 0：门禁不通过。
 
         :param is_access: The is_access of this ShowTaskDetailResponse.
         :type is_access: str
@@ -831,10 +894,32 @@ class ShowTaskDetailResponse(SdkResponse):
         self._is_access = is_access
 
     @property
+    def review_result(self):
+        r"""Gets the review_result of this ShowTaskDetailResponse.
+
+        **参数解释：** 门禁质量是否通过。 **取值范围：** 不涉及。
+
+        :return: The review_result of this ShowTaskDetailResponse.
+        :rtype: str
+        """
+        return self._review_result
+
+    @review_result.setter
+    def review_result(self, review_result):
+        r"""Sets the review_result of this ShowTaskDetailResponse.
+
+        **参数解释：** 门禁质量是否通过。 **取值范围：** 不涉及。
+
+        :param review_result: The review_result of this ShowTaskDetailResponse.
+        :type review_result: str
+        """
+        self._review_result = review_result
+
+    @property
     def trigger_type(self):
         r"""Gets the trigger_type of this ShowTaskDetailResponse.
 
-        任务触发方式
+        **参数解释：** 任务触发方式。 **取值范围：** - 0：手动触发。 - 1：定时触发。 - 2：代码提交触发。 - 3：合并请求触发。
 
         :return: The trigger_type of this ShowTaskDetailResponse.
         :rtype: str
@@ -845,7 +930,7 @@ class ShowTaskDetailResponse(SdkResponse):
     def trigger_type(self, trigger_type):
         r"""Sets the trigger_type of this ShowTaskDetailResponse.
 
-        任务触发方式
+        **参数解释：** 任务触发方式。 **取值范围：** - 0：手动触发。 - 1：定时触发。 - 2：代码提交触发。 - 3：合并请求触发。
 
         :param trigger_type: The trigger_type of this ShowTaskDetailResponse.
         :type trigger_type: str
@@ -856,7 +941,7 @@ class ShowTaskDetailResponse(SdkResponse):
     def file_duplication_ratio(self):
         r"""Gets the file_duplication_ratio of this ShowTaskDetailResponse.
 
-        文件重复率
+        **参数解释：** 文件重复率。 **取值范围：** 不涉及。
 
         :return: The file_duplication_ratio of this ShowTaskDetailResponse.
         :rtype: str
@@ -867,12 +952,188 @@ class ShowTaskDetailResponse(SdkResponse):
     def file_duplication_ratio(self, file_duplication_ratio):
         r"""Sets the file_duplication_ratio of this ShowTaskDetailResponse.
 
-        文件重复率
+        **参数解释：** 文件重复率。 **取值范围：** 不涉及。
 
         :param file_duplication_ratio: The file_duplication_ratio of this ShowTaskDetailResponse.
         :type file_duplication_ratio: str
         """
         self._file_duplication_ratio = file_duplication_ratio
+
+    @property
+    def new_count(self):
+        r"""Gets the new_count of this ShowTaskDetailResponse.
+
+        **参数解释：** 新发现问题数。不包括已忽略和已修复问题。 **取值范围：** 不涉及。
+
+        :return: The new_count of this ShowTaskDetailResponse.
+        :rtype: int
+        """
+        return self._new_count
+
+    @new_count.setter
+    def new_count(self, new_count):
+        r"""Sets the new_count of this ShowTaskDetailResponse.
+
+        **参数解释：** 新发现问题数。不包括已忽略和已修复问题。 **取值范围：** 不涉及。
+
+        :param new_count: The new_count of this ShowTaskDetailResponse.
+        :type new_count: int
+        """
+        self._new_count = new_count
+
+    @property
+    def solve_count(self):
+        r"""Gets the solve_count of this ShowTaskDetailResponse.
+
+        **参数解释：** 已解决和已修复问题数。 **取值范围：** 不涉及。
+
+        :return: The solve_count of this ShowTaskDetailResponse.
+        :rtype: int
+        """
+        return self._solve_count
+
+    @solve_count.setter
+    def solve_count(self, solve_count):
+        r"""Sets the solve_count of this ShowTaskDetailResponse.
+
+        **参数解释：** 已解决和已修复问题数。 **取值范围：** 不涉及。
+
+        :param solve_count: The solve_count of this ShowTaskDetailResponse.
+        :type solve_count: int
+        """
+        self._solve_count = solve_count
+
+    @property
+    def dismissed_count(self):
+        r"""Gets the dismissed_count of this ShowTaskDetailResponse.
+
+        **参数解释：** 已忽略问题数。 **取值范围：** 不涉及。
+
+        :return: The dismissed_count of this ShowTaskDetailResponse.
+        :rtype: int
+        """
+        return self._dismissed_count
+
+    @dismissed_count.setter
+    def dismissed_count(self, dismissed_count):
+        r"""Sets the dismissed_count of this ShowTaskDetailResponse.
+
+        **参数解释：** 已忽略问题数。 **取值范围：** 不涉及。
+
+        :param dismissed_count: The dismissed_count of this ShowTaskDetailResponse.
+        :type dismissed_count: int
+        """
+        self._dismissed_count = dismissed_count
+
+    @property
+    def duplicated_files(self):
+        r"""Gets the duplicated_files of this ShowTaskDetailResponse.
+
+        **参数解释：** 重复文件数量。 **取值范围：** 不涉及。
+
+        :return: The duplicated_files of this ShowTaskDetailResponse.
+        :rtype: int
+        """
+        return self._duplicated_files
+
+    @duplicated_files.setter
+    def duplicated_files(self, duplicated_files):
+        r"""Sets the duplicated_files of this ShowTaskDetailResponse.
+
+        **参数解释：** 重复文件数量。 **取值范围：** 不涉及。
+
+        :param duplicated_files: The duplicated_files of this ShowTaskDetailResponse.
+        :type duplicated_files: int
+        """
+        self._duplicated_files = duplicated_files
+
+    @property
+    def new_critical_count(self):
+        r"""Gets the new_critical_count of this ShowTaskDetailResponse.
+
+        **参数解释：** 新增致命问题数。不包括已忽略和已修复问题。 **取值范围：** 不涉及。
+
+        :return: The new_critical_count of this ShowTaskDetailResponse.
+        :rtype: str
+        """
+        return self._new_critical_count
+
+    @new_critical_count.setter
+    def new_critical_count(self, new_critical_count):
+        r"""Sets the new_critical_count of this ShowTaskDetailResponse.
+
+        **参数解释：** 新增致命问题数。不包括已忽略和已修复问题。 **取值范围：** 不涉及。
+
+        :param new_critical_count: The new_critical_count of this ShowTaskDetailResponse.
+        :type new_critical_count: str
+        """
+        self._new_critical_count = new_critical_count
+
+    @property
+    def new_major_count(self):
+        r"""Gets the new_major_count of this ShowTaskDetailResponse.
+
+        **参数解释：** 新增严重问题数。不包括已忽略和已修复问题。 **取值范围：** 不涉及。
+
+        :return: The new_major_count of this ShowTaskDetailResponse.
+        :rtype: str
+        """
+        return self._new_major_count
+
+    @new_major_count.setter
+    def new_major_count(self, new_major_count):
+        r"""Sets the new_major_count of this ShowTaskDetailResponse.
+
+        **参数解释：** 新增严重问题数。不包括已忽略和已修复问题。 **取值范围：** 不涉及。
+
+        :param new_major_count: The new_major_count of this ShowTaskDetailResponse.
+        :type new_major_count: str
+        """
+        self._new_major_count = new_major_count
+
+    @property
+    def new_minor_count(self):
+        r"""Gets the new_minor_count of this ShowTaskDetailResponse.
+
+        **参数解释：** 新增一般问题数。不包括已忽略和已修复问题。 **取值范围：** 不涉及。
+
+        :return: The new_minor_count of this ShowTaskDetailResponse.
+        :rtype: str
+        """
+        return self._new_minor_count
+
+    @new_minor_count.setter
+    def new_minor_count(self, new_minor_count):
+        r"""Sets the new_minor_count of this ShowTaskDetailResponse.
+
+        **参数解释：** 新增一般问题数。不包括已忽略和已修复问题。 **取值范围：** 不涉及。
+
+        :param new_minor_count: The new_minor_count of this ShowTaskDetailResponse.
+        :type new_minor_count: str
+        """
+        self._new_minor_count = new_minor_count
+
+    @property
+    def new_suggestion_count(self):
+        r"""Gets the new_suggestion_count of this ShowTaskDetailResponse.
+
+        **参数解释：** 新增提示问题数。不包括已忽略和已修复问题。 **取值范围：** 不涉及。
+
+        :return: The new_suggestion_count of this ShowTaskDetailResponse.
+        :rtype: str
+        """
+        return self._new_suggestion_count
+
+    @new_suggestion_count.setter
+    def new_suggestion_count(self, new_suggestion_count):
+        r"""Sets the new_suggestion_count of this ShowTaskDetailResponse.
+
+        **参数解释：** 新增提示问题数。不包括已忽略和已修复问题。 **取值范围：** 不涉及。
+
+        :param new_suggestion_count: The new_suggestion_count of this ShowTaskDetailResponse.
+        :type new_suggestion_count: str
+        """
+        self._new_suggestion_count = new_suggestion_count
 
     def to_dict(self):
         import warnings

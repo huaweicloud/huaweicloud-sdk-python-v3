@@ -33,13 +33,13 @@ class TreeNode:
 
         The model defined in huaweicloud sdk
 
-        :param file_name: 目录或文件名
+        :param file_name: **参数解释:** 目录或文件名。 **取值范围:** 不涉及。
         :type file_name: str
-        :param file_path: 目录或文件路径
+        :param file_path: **参数解释:** 目录或文件路径。 **取值范围:** 不涉及。
         :type file_path: str
-        :param is_leaf: 是否为叶子节点，true是，false不是
+        :param is_leaf: **参数解释:** 是否为叶子节点。 **取值范围:** - true：叶子节点。 - false：非叶子节点。
         :type is_leaf: bool
-        :param checkbox_status: 屏蔽状态，包括unchecked(不屏蔽)、all(全屏蔽)、half(半屏蔽)
+        :param checkbox_status: **参数解释:** 屏蔽状态。 **取值范围:** - unchecked：不屏蔽。 - all：全屏蔽。 - half: 半屏蔽。
         :type checkbox_status: str
         """
         
@@ -64,7 +64,7 @@ class TreeNode:
     def file_name(self):
         r"""Gets the file_name of this TreeNode.
 
-        目录或文件名
+        **参数解释:** 目录或文件名。 **取值范围:** 不涉及。
 
         :return: The file_name of this TreeNode.
         :rtype: str
@@ -75,7 +75,7 @@ class TreeNode:
     def file_name(self, file_name):
         r"""Sets the file_name of this TreeNode.
 
-        目录或文件名
+        **参数解释:** 目录或文件名。 **取值范围:** 不涉及。
 
         :param file_name: The file_name of this TreeNode.
         :type file_name: str
@@ -86,7 +86,7 @@ class TreeNode:
     def file_path(self):
         r"""Gets the file_path of this TreeNode.
 
-        目录或文件路径
+        **参数解释:** 目录或文件路径。 **取值范围:** 不涉及。
 
         :return: The file_path of this TreeNode.
         :rtype: str
@@ -97,7 +97,7 @@ class TreeNode:
     def file_path(self, file_path):
         r"""Sets the file_path of this TreeNode.
 
-        目录或文件路径
+        **参数解释:** 目录或文件路径。 **取值范围:** 不涉及。
 
         :param file_path: The file_path of this TreeNode.
         :type file_path: str
@@ -108,7 +108,7 @@ class TreeNode:
     def is_leaf(self):
         r"""Gets the is_leaf of this TreeNode.
 
-        是否为叶子节点，true是，false不是
+        **参数解释:** 是否为叶子节点。 **取值范围:** - true：叶子节点。 - false：非叶子节点。
 
         :return: The is_leaf of this TreeNode.
         :rtype: bool
@@ -119,7 +119,7 @@ class TreeNode:
     def is_leaf(self, is_leaf):
         r"""Sets the is_leaf of this TreeNode.
 
-        是否为叶子节点，true是，false不是
+        **参数解释:** 是否为叶子节点。 **取值范围:** - true：叶子节点。 - false：非叶子节点。
 
         :param is_leaf: The is_leaf of this TreeNode.
         :type is_leaf: bool
@@ -130,7 +130,7 @@ class TreeNode:
     def checkbox_status(self):
         r"""Gets the checkbox_status of this TreeNode.
 
-        屏蔽状态，包括unchecked(不屏蔽)、all(全屏蔽)、half(半屏蔽)
+        **参数解释:** 屏蔽状态。 **取值范围:** - unchecked：不屏蔽。 - all：全屏蔽。 - half: 半屏蔽。
 
         :return: The checkbox_status of this TreeNode.
         :rtype: str
@@ -141,7 +141,7 @@ class TreeNode:
     def checkbox_status(self, checkbox_status):
         r"""Sets the checkbox_status of this TreeNode.
 
-        屏蔽状态，包括unchecked(不屏蔽)、all(全屏蔽)、half(半屏蔽)
+        **参数解释:** 屏蔽状态。 **取值范围:** - unchecked：不屏蔽。 - all：全屏蔽。 - half: 半屏蔽。
 
         :param checkbox_status: The checkbox_status of this TreeNode.
         :type checkbox_status: str

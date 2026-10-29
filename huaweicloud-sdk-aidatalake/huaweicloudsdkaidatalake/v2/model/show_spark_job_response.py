@@ -28,6 +28,7 @@ class ShowSparkJobResponse(SdkResponse):
         'resource_config': 'ShowSparkResourceConfigResponse',
         'restore_strategy': 'ShowSparkRestoreStrategyResponse',
         'spark_config': 'dict(str, str)',
+        'metric_statistics': 'SparkJobMetricStatistics',
         'logging_config': 'ShowSparkLoggingConfigResponse',
         'image': 'ShowSparkJobImageConfigResponse',
         'retry_times': 'int',
@@ -37,7 +38,8 @@ class ShowSparkJobResponse(SdkResponse):
         'end_time': 'int',
         'create_user': 'SparkCreateUser',
         'log_url': 'str',
-        'description': 'str'
+        'description': 'str',
+        'spark_ui': 'SparkUiSharedInfo'
     }
 
     attribute_map = {
@@ -53,6 +55,7 @@ class ShowSparkJobResponse(SdkResponse):
         'resource_config': 'resource_config',
         'restore_strategy': 'restore_strategy',
         'spark_config': 'spark_config',
+        'metric_statistics': 'metric_statistics',
         'logging_config': 'logging_config',
         'image': 'image',
         'retry_times': 'retry_times',
@@ -62,10 +65,11 @@ class ShowSparkJobResponse(SdkResponse):
         'end_time': 'end_time',
         'create_user': 'create_user',
         'log_url': 'log_url',
-        'description': 'description'
+        'description': 'description',
+        'spark_ui': 'spark_ui'
     }
 
-    def __init__(self, job_id=None, client_token=None, name=None, endpoint_name=None, catalog_name=None, job_agency=None, state=None, state_message=None, job_config=None, resource_config=None, restore_strategy=None, spark_config=None, logging_config=None, image=None, retry_times=None, labels=None, create_time=None, start_time=None, end_time=None, create_user=None, log_url=None, description=None):
+    def __init__(self, job_id=None, client_token=None, name=None, endpoint_name=None, catalog_name=None, job_agency=None, state=None, state_message=None, job_config=None, resource_config=None, restore_strategy=None, spark_config=None, metric_statistics=None, logging_config=None, image=None, retry_times=None, labels=None, create_time=None, start_time=None, end_time=None, create_user=None, log_url=None, description=None, spark_ui=None):
         r"""ShowSparkJobResponse
 
         The model defined in huaweicloud sdk
@@ -94,6 +98,8 @@ class ShowSparkJobResponse(SdkResponse):
         :type restore_strategy: :class:`huaweicloudsdkaidatalake.v2.ShowSparkRestoreStrategyResponse`
         :param spark_config: **参数解释**：用户自定义Spark参数配置。 **取值范围**：长度为0~1024个字符。
         :type spark_config: dict(str, str)
+        :param metric_statistics: 
+        :type metric_statistics: :class:`huaweicloudsdkaidatalake.v2.SparkJobMetricStatistics`
         :param logging_config: 
         :type logging_config: :class:`huaweicloudsdkaidatalake.v2.ShowSparkLoggingConfigResponse`
         :param image: 
@@ -114,6 +120,8 @@ class ShowSparkJobResponse(SdkResponse):
         :type log_url: str
         :param description: **参数解释**：Spark作业描述信息，用于说明作业用途。 **取值范围**：长度为0~512个字符。
         :type description: str
+        :param spark_ui: 
+        :type spark_ui: :class:`huaweicloudsdkaidatalake.v2.SparkUiSharedInfo`
         """
         
         super().__init__()
@@ -130,6 +138,7 @@ class ShowSparkJobResponse(SdkResponse):
         self._resource_config = None
         self._restore_strategy = None
         self._spark_config = None
+        self._metric_statistics = None
         self._logging_config = None
         self._image = None
         self._retry_times = None
@@ -140,6 +149,7 @@ class ShowSparkJobResponse(SdkResponse):
         self._create_user = None
         self._log_url = None
         self._description = None
+        self._spark_ui = None
         self.discriminator = None
 
         if job_id is not None:
@@ -166,6 +176,8 @@ class ShowSparkJobResponse(SdkResponse):
             self.restore_strategy = restore_strategy
         if spark_config is not None:
             self.spark_config = spark_config
+        if metric_statistics is not None:
+            self.metric_statistics = metric_statistics
         if logging_config is not None:
             self.logging_config = logging_config
         if image is not None:
@@ -186,6 +198,8 @@ class ShowSparkJobResponse(SdkResponse):
             self.log_url = log_url
         if description is not None:
             self.description = description
+        if spark_ui is not None:
+            self.spark_ui = spark_ui
 
     @property
     def job_id(self):
@@ -440,6 +454,24 @@ class ShowSparkJobResponse(SdkResponse):
         self._spark_config = spark_config
 
     @property
+    def metric_statistics(self):
+        r"""Gets the metric_statistics of this ShowSparkJobResponse.
+
+        :return: The metric_statistics of this ShowSparkJobResponse.
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.SparkJobMetricStatistics`
+        """
+        return self._metric_statistics
+
+    @metric_statistics.setter
+    def metric_statistics(self, metric_statistics):
+        r"""Sets the metric_statistics of this ShowSparkJobResponse.
+
+        :param metric_statistics: The metric_statistics of this ShowSparkJobResponse.
+        :type metric_statistics: :class:`huaweicloudsdkaidatalake.v2.SparkJobMetricStatistics`
+        """
+        self._metric_statistics = metric_statistics
+
+    @property
     def logging_config(self):
         r"""Gets the logging_config of this ShowSparkJobResponse.
 
@@ -646,6 +678,24 @@ class ShowSparkJobResponse(SdkResponse):
         :type description: str
         """
         self._description = description
+
+    @property
+    def spark_ui(self):
+        r"""Gets the spark_ui of this ShowSparkJobResponse.
+
+        :return: The spark_ui of this ShowSparkJobResponse.
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.SparkUiSharedInfo`
+        """
+        return self._spark_ui
+
+    @spark_ui.setter
+    def spark_ui(self, spark_ui):
+        r"""Sets the spark_ui of this ShowSparkJobResponse.
+
+        :param spark_ui: The spark_ui of this ShowSparkJobResponse.
+        :type spark_ui: :class:`huaweicloudsdkaidatalake.v2.SparkUiSharedInfo`
+        """
+        self._spark_ui = spark_ui
 
     def to_dict(self):
         import warnings

@@ -33,13 +33,13 @@ class UpdateTaskRulesetItem:
 
         The model defined in huaweicloud sdk
 
-        :param language: 规则集语言
+        :param language: **参数解释：** 检查语言，支持的语言请关注服务更新特性文档。 **约束限制:** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type language: str
-        :param rule_set_id: 规则集ID,通过调用ListTaskRuleset接口，根据响应参数中的template_id获得
+        :param rule_set_id: **参数解释：** 规则集ID。 **约束限制:** 长度为[1~32]个字符。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type rule_set_id: str
-        :param if_use: 任务语言和规则集的关系是否启用，1是启用，0是未启用
+        :param if_use: **参数解释：** 是否启用。 **约束限制:** 不涉及。 **取值范围：** - 0：不启用。 - 1：启用。 **默认取值：** 不涉及。
         :type if_use: str
-        :param status: 新/老数据表示，默认1
+        :param status: **参数解释：** 新/老数据。 **约束限制:** 不涉及。 **取值范围：** 1 **默认取值：** 不涉及。
         :type status: str
         """
         
@@ -60,7 +60,7 @@ class UpdateTaskRulesetItem:
     def language(self):
         r"""Gets the language of this UpdateTaskRulesetItem.
 
-        规则集语言
+        **参数解释：** 检查语言，支持的语言请关注服务更新特性文档。 **约束限制:** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The language of this UpdateTaskRulesetItem.
         :rtype: str
@@ -71,7 +71,7 @@ class UpdateTaskRulesetItem:
     def language(self, language):
         r"""Sets the language of this UpdateTaskRulesetItem.
 
-        规则集语言
+        **参数解释：** 检查语言，支持的语言请关注服务更新特性文档。 **约束限制:** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param language: The language of this UpdateTaskRulesetItem.
         :type language: str
@@ -82,7 +82,7 @@ class UpdateTaskRulesetItem:
     def rule_set_id(self):
         r"""Gets the rule_set_id of this UpdateTaskRulesetItem.
 
-        规则集ID,通过调用ListTaskRuleset接口，根据响应参数中的template_id获得
+        **参数解释：** 规则集ID。 **约束限制:** 长度为[1~32]个字符。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The rule_set_id of this UpdateTaskRulesetItem.
         :rtype: str
@@ -93,7 +93,7 @@ class UpdateTaskRulesetItem:
     def rule_set_id(self, rule_set_id):
         r"""Sets the rule_set_id of this UpdateTaskRulesetItem.
 
-        规则集ID,通过调用ListTaskRuleset接口，根据响应参数中的template_id获得
+        **参数解释：** 规则集ID。 **约束限制:** 长度为[1~32]个字符。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param rule_set_id: The rule_set_id of this UpdateTaskRulesetItem.
         :type rule_set_id: str
@@ -104,7 +104,7 @@ class UpdateTaskRulesetItem:
     def if_use(self):
         r"""Gets the if_use of this UpdateTaskRulesetItem.
 
-        任务语言和规则集的关系是否启用，1是启用，0是未启用
+        **参数解释：** 是否启用。 **约束限制:** 不涉及。 **取值范围：** - 0：不启用。 - 1：启用。 **默认取值：** 不涉及。
 
         :return: The if_use of this UpdateTaskRulesetItem.
         :rtype: str
@@ -115,7 +115,7 @@ class UpdateTaskRulesetItem:
     def if_use(self, if_use):
         r"""Sets the if_use of this UpdateTaskRulesetItem.
 
-        任务语言和规则集的关系是否启用，1是启用，0是未启用
+        **参数解释：** 是否启用。 **约束限制:** 不涉及。 **取值范围：** - 0：不启用。 - 1：启用。 **默认取值：** 不涉及。
 
         :param if_use: The if_use of this UpdateTaskRulesetItem.
         :type if_use: str
@@ -126,7 +126,7 @@ class UpdateTaskRulesetItem:
     def status(self):
         r"""Gets the status of this UpdateTaskRulesetItem.
 
-        新/老数据表示，默认1
+        **参数解释：** 新/老数据。 **约束限制:** 不涉及。 **取值范围：** 1 **默认取值：** 不涉及。
 
         :return: The status of this UpdateTaskRulesetItem.
         :rtype: str
@@ -137,7 +137,7 @@ class UpdateTaskRulesetItem:
     def status(self, status):
         r"""Sets the status of this UpdateTaskRulesetItem.
 
-        新/老数据表示，默认1
+        **参数解释：** 新/老数据。 **约束限制:** 不涉及。 **取值范围：** 1 **默认取值：** 不涉及。
 
         :param status: The status of this UpdateTaskRulesetItem.
         :type status: str

@@ -31,11 +31,11 @@ class CustomAttributesRule:
 
         The model defined in huaweicloud sdk
 
-        :param rule_id: 规则ID
+        :param rule_id: **参数解释:** 规则ID。可调用[[获取规则列表接口](https://support.huaweicloud.com/api-codecheck/ListRules.html)](tag:hws)[[获取规则列表接口](https://support.huaweicloud.com/intl/zh-cn/api-codecheck/ListRules.html)](tag:hws_hk)[获取规则列表接口](tag:hcs,hcs_sm,hcs_site,hcs_sitesm,fcs)获取。 **约束限制:** 不涉及。 **取值范围:** 32位项目ID。 **默认取值:** 不涉及。
         :type rule_id: str
-        :param value: attribute的问题级别，0致命，1严重，2一般，3提示
+        :param value: **参数解释:** attribute的告警等级。 **约束限制:** 不涉及。 **取值范围:** - 0：致命。 - 1：严重。 - 2：一般。 - 3：提示。 **默认取值:** 不涉及。
         :type value: str
-        :param rule_config_list: 规则阈值详细
+        :param rule_config_list: **参数解释:** 规则阈值详细。
         :type rule_config_list: list[:class:`huaweicloudsdkcodeartscheck.v2.RuleConfig`]
         """
         
@@ -57,7 +57,7 @@ class CustomAttributesRule:
     def rule_id(self):
         r"""Gets the rule_id of this CustomAttributesRule.
 
-        规则ID
+        **参数解释:** 规则ID。可调用[[获取规则列表接口](https://support.huaweicloud.com/api-codecheck/ListRules.html)](tag:hws)[[获取规则列表接口](https://support.huaweicloud.com/intl/zh-cn/api-codecheck/ListRules.html)](tag:hws_hk)[获取规则列表接口](tag:hcs,hcs_sm,hcs_site,hcs_sitesm,fcs)获取。 **约束限制:** 不涉及。 **取值范围:** 32位项目ID。 **默认取值:** 不涉及。
 
         :return: The rule_id of this CustomAttributesRule.
         :rtype: str
@@ -68,7 +68,7 @@ class CustomAttributesRule:
     def rule_id(self, rule_id):
         r"""Sets the rule_id of this CustomAttributesRule.
 
-        规则ID
+        **参数解释:** 规则ID。可调用[[获取规则列表接口](https://support.huaweicloud.com/api-codecheck/ListRules.html)](tag:hws)[[获取规则列表接口](https://support.huaweicloud.com/intl/zh-cn/api-codecheck/ListRules.html)](tag:hws_hk)[获取规则列表接口](tag:hcs,hcs_sm,hcs_site,hcs_sitesm,fcs)获取。 **约束限制:** 不涉及。 **取值范围:** 32位项目ID。 **默认取值:** 不涉及。
 
         :param rule_id: The rule_id of this CustomAttributesRule.
         :type rule_id: str
@@ -79,7 +79,7 @@ class CustomAttributesRule:
     def value(self):
         r"""Gets the value of this CustomAttributesRule.
 
-        attribute的问题级别，0致命，1严重，2一般，3提示
+        **参数解释:** attribute的告警等级。 **约束限制:** 不涉及。 **取值范围:** - 0：致命。 - 1：严重。 - 2：一般。 - 3：提示。 **默认取值:** 不涉及。
 
         :return: The value of this CustomAttributesRule.
         :rtype: str
@@ -90,7 +90,7 @@ class CustomAttributesRule:
     def value(self, value):
         r"""Sets the value of this CustomAttributesRule.
 
-        attribute的问题级别，0致命，1严重，2一般，3提示
+        **参数解释:** attribute的告警等级。 **约束限制:** 不涉及。 **取值范围:** - 0：致命。 - 1：严重。 - 2：一般。 - 3：提示。 **默认取值:** 不涉及。
 
         :param value: The value of this CustomAttributesRule.
         :type value: str
@@ -101,7 +101,7 @@ class CustomAttributesRule:
     def rule_config_list(self):
         r"""Gets the rule_config_list of this CustomAttributesRule.
 
-        规则阈值详细
+        **参数解释:** 规则阈值详细。
 
         :return: The rule_config_list of this CustomAttributesRule.
         :rtype: list[:class:`huaweicloudsdkcodeartscheck.v2.RuleConfig`]
@@ -112,7 +112,7 @@ class CustomAttributesRule:
     def rule_config_list(self, rule_config_list):
         r"""Sets the rule_config_list of this CustomAttributesRule.
 
-        规则阈值详细
+        **参数解释:** 规则阈值详细。
 
         :param rule_config_list: The rule_config_list of this CustomAttributesRule.
         :type rule_config_list: list[:class:`huaweicloudsdkcodeartscheck.v2.RuleConfig`]

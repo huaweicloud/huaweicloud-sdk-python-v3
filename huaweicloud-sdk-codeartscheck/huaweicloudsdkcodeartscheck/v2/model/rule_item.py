@@ -21,7 +21,7 @@ class RuleItem:
         'rule_severity': 'str',
         'rule_tages': 'str',
         'checked': 'str',
-        'rule_config_list': 'list[RuleConfig]'
+        'rule_config_list': 'list[RuleConfigParam]'
     }
 
     attribute_map = {
@@ -39,20 +39,20 @@ class RuleItem:
 
         The model defined in huaweicloud sdk
 
-        :param rule_id: 规则id
+        :param rule_id: **参数解释:** 规则ID。 **取值范围:** 32位ID。
         :type rule_id: str
-        :param rule_language: 规则所属语言
+        :param rule_language: **参数解释:** 规则所属语言。 **取值范围:** 当前支持的语言有： - ARKTS - C# - CANGJIE - C++ - CSS - GO - HTML - JAVA - JAVASCRIPT - KOTLIN - LUA - PHP - PYTHON - RUST - SCALA - SHELL - SQL - TERRAFORM - TYPESCRIPT - AZURERESOURCEMANAGER - DOCKER - KUBERNETES
         :type rule_language: str
-        :param rule_name: 规则名称
+        :param rule_name: **参数解释:** 规则名称。 **取值范围:** 不涉及。
         :type rule_name: str
-        :param rule_severity: 规则问题级别
+        :param rule_severity: **参数解释:** 规则问题级别。 **取值范围：** - 0：致命。 - 1：严重。 - 2：一般。 - 3：提示。
         :type rule_severity: str
-        :param rule_tages: 规则标签
+        :param rule_tages: **参数解释:** 规则标签。 **取值范围:** - huawei - iso5055 - cert - cwe - top10 - top25 - misra - GJB - autosar - PCI DSS
         :type rule_tages: str
-        :param checked: 规则状态0：未启用，1：已启用
+        :param checked: **参数解释:** 规则状态。 **取值范围:** - 0：未启用。 - 1：已启用。
         :type checked: str
-        :param rule_config_list: 规则配置参数阈值相关信息
-        :type rule_config_list: list[:class:`huaweicloudsdkcodeartscheck.v2.RuleConfig`]
+        :param rule_config_list: **参数解释:** 规则配置参数阈值相关信息。
+        :type rule_config_list: list[:class:`huaweicloudsdkcodeartscheck.v2.RuleConfigParam`]
         """
         
         
@@ -85,7 +85,7 @@ class RuleItem:
     def rule_id(self):
         r"""Gets the rule_id of this RuleItem.
 
-        规则id
+        **参数解释:** 规则ID。 **取值范围:** 32位ID。
 
         :return: The rule_id of this RuleItem.
         :rtype: str
@@ -96,7 +96,7 @@ class RuleItem:
     def rule_id(self, rule_id):
         r"""Sets the rule_id of this RuleItem.
 
-        规则id
+        **参数解释:** 规则ID。 **取值范围:** 32位ID。
 
         :param rule_id: The rule_id of this RuleItem.
         :type rule_id: str
@@ -107,7 +107,7 @@ class RuleItem:
     def rule_language(self):
         r"""Gets the rule_language of this RuleItem.
 
-        规则所属语言
+        **参数解释:** 规则所属语言。 **取值范围:** 当前支持的语言有： - ARKTS - C# - CANGJIE - C++ - CSS - GO - HTML - JAVA - JAVASCRIPT - KOTLIN - LUA - PHP - PYTHON - RUST - SCALA - SHELL - SQL - TERRAFORM - TYPESCRIPT - AZURERESOURCEMANAGER - DOCKER - KUBERNETES
 
         :return: The rule_language of this RuleItem.
         :rtype: str
@@ -118,7 +118,7 @@ class RuleItem:
     def rule_language(self, rule_language):
         r"""Sets the rule_language of this RuleItem.
 
-        规则所属语言
+        **参数解释:** 规则所属语言。 **取值范围:** 当前支持的语言有： - ARKTS - C# - CANGJIE - C++ - CSS - GO - HTML - JAVA - JAVASCRIPT - KOTLIN - LUA - PHP - PYTHON - RUST - SCALA - SHELL - SQL - TERRAFORM - TYPESCRIPT - AZURERESOURCEMANAGER - DOCKER - KUBERNETES
 
         :param rule_language: The rule_language of this RuleItem.
         :type rule_language: str
@@ -129,7 +129,7 @@ class RuleItem:
     def rule_name(self):
         r"""Gets the rule_name of this RuleItem.
 
-        规则名称
+        **参数解释:** 规则名称。 **取值范围:** 不涉及。
 
         :return: The rule_name of this RuleItem.
         :rtype: str
@@ -140,7 +140,7 @@ class RuleItem:
     def rule_name(self, rule_name):
         r"""Sets the rule_name of this RuleItem.
 
-        规则名称
+        **参数解释:** 规则名称。 **取值范围:** 不涉及。
 
         :param rule_name: The rule_name of this RuleItem.
         :type rule_name: str
@@ -151,7 +151,7 @@ class RuleItem:
     def rule_severity(self):
         r"""Gets the rule_severity of this RuleItem.
 
-        规则问题级别
+        **参数解释:** 规则问题级别。 **取值范围：** - 0：致命。 - 1：严重。 - 2：一般。 - 3：提示。
 
         :return: The rule_severity of this RuleItem.
         :rtype: str
@@ -162,7 +162,7 @@ class RuleItem:
     def rule_severity(self, rule_severity):
         r"""Sets the rule_severity of this RuleItem.
 
-        规则问题级别
+        **参数解释:** 规则问题级别。 **取值范围：** - 0：致命。 - 1：严重。 - 2：一般。 - 3：提示。
 
         :param rule_severity: The rule_severity of this RuleItem.
         :type rule_severity: str
@@ -173,7 +173,7 @@ class RuleItem:
     def rule_tages(self):
         r"""Gets the rule_tages of this RuleItem.
 
-        规则标签
+        **参数解释:** 规则标签。 **取值范围:** - huawei - iso5055 - cert - cwe - top10 - top25 - misra - GJB - autosar - PCI DSS
 
         :return: The rule_tages of this RuleItem.
         :rtype: str
@@ -184,7 +184,7 @@ class RuleItem:
     def rule_tages(self, rule_tages):
         r"""Sets the rule_tages of this RuleItem.
 
-        规则标签
+        **参数解释:** 规则标签。 **取值范围:** - huawei - iso5055 - cert - cwe - top10 - top25 - misra - GJB - autosar - PCI DSS
 
         :param rule_tages: The rule_tages of this RuleItem.
         :type rule_tages: str
@@ -195,7 +195,7 @@ class RuleItem:
     def checked(self):
         r"""Gets the checked of this RuleItem.
 
-        规则状态0：未启用，1：已启用
+        **参数解释:** 规则状态。 **取值范围:** - 0：未启用。 - 1：已启用。
 
         :return: The checked of this RuleItem.
         :rtype: str
@@ -206,7 +206,7 @@ class RuleItem:
     def checked(self, checked):
         r"""Sets the checked of this RuleItem.
 
-        规则状态0：未启用，1：已启用
+        **参数解释:** 规则状态。 **取值范围:** - 0：未启用。 - 1：已启用。
 
         :param checked: The checked of this RuleItem.
         :type checked: str
@@ -217,10 +217,10 @@ class RuleItem:
     def rule_config_list(self):
         r"""Gets the rule_config_list of this RuleItem.
 
-        规则配置参数阈值相关信息
+        **参数解释:** 规则配置参数阈值相关信息。
 
         :return: The rule_config_list of this RuleItem.
-        :rtype: list[:class:`huaweicloudsdkcodeartscheck.v2.RuleConfig`]
+        :rtype: list[:class:`huaweicloudsdkcodeartscheck.v2.RuleConfigParam`]
         """
         return self._rule_config_list
 
@@ -228,10 +228,10 @@ class RuleItem:
     def rule_config_list(self, rule_config_list):
         r"""Sets the rule_config_list of this RuleItem.
 
-        规则配置参数阈值相关信息
+        **参数解释:** 规则配置参数阈值相关信息。
 
         :param rule_config_list: The rule_config_list of this RuleItem.
-        :type rule_config_list: list[:class:`huaweicloudsdkcodeartscheck.v2.RuleConfig`]
+        :type rule_config_list: list[:class:`huaweicloudsdkcodeartscheck.v2.RuleConfigParam`]
         """
         self._rule_config_list = rule_config_list
 

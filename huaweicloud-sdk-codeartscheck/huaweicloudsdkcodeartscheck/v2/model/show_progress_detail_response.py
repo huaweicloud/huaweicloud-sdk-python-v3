@@ -30,7 +30,7 @@ class ShowProgressDetailResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param task_status: 任务状态,0表示检查中，1表示检查失败，2表示检查成功，3表示任务中止
+        :param task_status: **参数解释:** 检查任务的执行状态。 **取值范围:** - 0：检查中。 - 1：检查失败。 - 2：检查成功。 - 3：任务中止。 - null：未检查。
         :type task_status: int
         :param progress: 
         :type progress: :class:`huaweicloudsdkcodeartscheck.v2.ProgressDetailV2`
@@ -51,7 +51,7 @@ class ShowProgressDetailResponse(SdkResponse):
     def task_status(self):
         r"""Gets the task_status of this ShowProgressDetailResponse.
 
-        任务状态,0表示检查中，1表示检查失败，2表示检查成功，3表示任务中止
+        **参数解释:** 检查任务的执行状态。 **取值范围:** - 0：检查中。 - 1：检查失败。 - 2：检查成功。 - 3：任务中止。 - null：未检查。
 
         :return: The task_status of this ShowProgressDetailResponse.
         :rtype: int
@@ -62,7 +62,7 @@ class ShowProgressDetailResponse(SdkResponse):
     def task_status(self, task_status):
         r"""Sets the task_status of this ShowProgressDetailResponse.
 
-        任务状态,0表示检查中，1表示检查失败，2表示检查成功，3表示任务中止
+        **参数解释:** 检查任务的执行状态。 **取值范围:** - 0：检查中。 - 1：检查失败。 - 2：检查成功。 - 3：任务中止。 - null：未检查。
 
         :param task_status: The task_status of this ShowProgressDetailResponse.
         :type task_status: int

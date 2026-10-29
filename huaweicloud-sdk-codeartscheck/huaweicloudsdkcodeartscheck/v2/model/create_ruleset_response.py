@@ -28,7 +28,7 @@ class CreateRulesetResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param template_id: 规则集ID
+        :param template_id: **参数解释:** 规则集ID。 **取值范围:** 32位UUID。
         :type template_id: str
         """
         
@@ -44,7 +44,7 @@ class CreateRulesetResponse(SdkResponse):
     def template_id(self):
         r"""Gets the template_id of this CreateRulesetResponse.
 
-        规则集ID
+        **参数解释:** 规则集ID。 **取值范围:** 32位UUID。
 
         :return: The template_id of this CreateRulesetResponse.
         :rtype: str
@@ -55,7 +55,7 @@ class CreateRulesetResponse(SdkResponse):
     def template_id(self, template_id):
         r"""Sets the template_id of this CreateRulesetResponse.
 
-        规则集ID
+        **参数解释:** 规则集ID。 **取值范围:** 32位UUID。
 
         :param template_id: The template_id of this CreateRulesetResponse.
         :type template_id: str

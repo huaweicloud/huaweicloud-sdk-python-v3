@@ -24,7 +24,9 @@ class SqlRequestResponse:
         'search_time_range': 'int',
         'search_time_range_unit': 'str',
         'custom_date': 'CustomDate',
-        'is_time_range_relative': 'bool'
+        'is_time_range_relative': 'bool',
+        'log_group_name_alias': 'str',
+        'log_stream_name_alias': 'str'
     }
 
     attribute_map = {
@@ -37,10 +39,12 @@ class SqlRequestResponse:
         'search_time_range': 'search_time_range',
         'search_time_range_unit': 'search_time_range_unit',
         'custom_date': 'custom_date',
-        'is_time_range_relative': 'is_time_range_relative'
+        'is_time_range_relative': 'is_time_range_relative',
+        'log_group_name_alias': 'log_group_name_alias',
+        'log_stream_name_alias': 'log_stream_name_alias'
     }
 
-    def __init__(self, log_stream_id=None, log_stream_name=None, log_group_id=None, log_group_name=None, sql=None, sql_request_title=None, search_time_range=None, search_time_range_unit=None, custom_date=None, is_time_range_relative=None):
+    def __init__(self, log_stream_id=None, log_stream_name=None, log_group_id=None, log_group_name=None, sql=None, sql_request_title=None, search_time_range=None, search_time_range_unit=None, custom_date=None, is_time_range_relative=None, log_group_name_alias=None, log_stream_name_alias=None):
         r"""SqlRequestResponse
 
         The model defined in huaweicloud sdk
@@ -65,6 +69,10 @@ class SqlRequestResponse:
         :type custom_date: :class:`huaweicloudsdklts.v2.CustomDate`
         :param is_time_range_relative: **参数解释：** 告警查询日志的时间区间为相对时间还是整点时间。 **约束限制：** 不涉及。 **取值范围：** - true: 相对时间。 - false: 整点时间。 **默认取值：** true
         :type is_time_range_relative: bool
+        :param log_group_name_alias: **参数解释：** 日志组别名。 **约束限制：** 不涉及。
+        :type log_group_name_alias: str
+        :param log_stream_name_alias: **参数解释：** 日志流别名。 **约束限制：** 不涉及。
+        :type log_stream_name_alias: str
         """
         
         
@@ -79,6 +87,8 @@ class SqlRequestResponse:
         self._search_time_range_unit = None
         self._custom_date = None
         self._is_time_range_relative = None
+        self._log_group_name_alias = None
+        self._log_stream_name_alias = None
         self.discriminator = None
 
         self.log_stream_id = log_stream_id
@@ -95,6 +105,10 @@ class SqlRequestResponse:
             self.custom_date = custom_date
         if is_time_range_relative is not None:
             self.is_time_range_relative = is_time_range_relative
+        if log_group_name_alias is not None:
+            self.log_group_name_alias = log_group_name_alias
+        if log_stream_name_alias is not None:
+            self.log_stream_name_alias = log_stream_name_alias
 
     @property
     def log_stream_id(self):
@@ -311,6 +325,50 @@ class SqlRequestResponse:
         :type is_time_range_relative: bool
         """
         self._is_time_range_relative = is_time_range_relative
+
+    @property
+    def log_group_name_alias(self):
+        r"""Gets the log_group_name_alias of this SqlRequestResponse.
+
+        **参数解释：** 日志组别名。 **约束限制：** 不涉及。
+
+        :return: The log_group_name_alias of this SqlRequestResponse.
+        :rtype: str
+        """
+        return self._log_group_name_alias
+
+    @log_group_name_alias.setter
+    def log_group_name_alias(self, log_group_name_alias):
+        r"""Sets the log_group_name_alias of this SqlRequestResponse.
+
+        **参数解释：** 日志组别名。 **约束限制：** 不涉及。
+
+        :param log_group_name_alias: The log_group_name_alias of this SqlRequestResponse.
+        :type log_group_name_alias: str
+        """
+        self._log_group_name_alias = log_group_name_alias
+
+    @property
+    def log_stream_name_alias(self):
+        r"""Gets the log_stream_name_alias of this SqlRequestResponse.
+
+        **参数解释：** 日志流别名。 **约束限制：** 不涉及。
+
+        :return: The log_stream_name_alias of this SqlRequestResponse.
+        :rtype: str
+        """
+        return self._log_stream_name_alias
+
+    @log_stream_name_alias.setter
+    def log_stream_name_alias(self, log_stream_name_alias):
+        r"""Sets the log_stream_name_alias of this SqlRequestResponse.
+
+        **参数解释：** 日志流别名。 **约束限制：** 不涉及。
+
+        :param log_stream_name_alias: The log_stream_name_alias of this SqlRequestResponse.
+        :type log_stream_name_alias: str
+        """
+        self._log_stream_name_alias = log_stream_name_alias
 
     def to_dict(self):
         result = {}

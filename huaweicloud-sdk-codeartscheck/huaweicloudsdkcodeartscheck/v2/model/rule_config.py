@@ -16,7 +16,7 @@ class RuleConfig:
 
     openapi_types = {
         'id': 'int',
-        'rule_id': 'int',
+        'rule_id': 'str',
         'default_value': 'str',
         'option_value': 'str',
         'option_key': 'str',
@@ -41,21 +41,21 @@ class RuleConfig:
 
         The model defined in huaweicloud sdk
 
-        :param id: 规则配置ID
+        :param id: **参数解释:** 规则配置ID。可调用[[获取规则列表接口](https://support.huaweicloud.com/api-codecheck/ListRules.html)](tag:hws)[[获取规则列表接口](https://support.huaweicloud.com/intl/zh-cn/api-codecheck/ListRules.html)](tag:hws_hk)[获取规则列表接口](tag:hcs,hcs_sm,hcs_site,hcs_sitesm,fcs)获取规则配置ID。 **约束限制:** 不涉及。 **取值范围:** 32位UUID。 **默认取值:** 不涉及。
         :type id: int
-        :param rule_id: 规则ID
-        :type rule_id: int
-        :param default_value: 默认值
+        :param rule_id: **参数解释:** 工具规则ID，即可配置阈值规则的各种阈值对应的ID，当前无便利手段获取，请联系客服咨询。 **约束限制:** 不涉及。 **取值范围:** 32位UUID。 **默认取值:** 不涉及。
+        :type rule_id: str
+        :param default_value: **参数解释:** 配置参数默认阈值。 **约束限制:** 不涉及。 **取值范围:** 不涉及。 **默认取值:** 不涉及。
         :type default_value: str
-        :param option_value: 当前
+        :param option_value: **参数解释:** 配置参数新阈值。 **约束限制:** 不涉及。 **取值范围:** 不涉及。 **默认取值:** 不涉及。
         :type option_value: str
-        :param option_key: 当前规则配置项key
+        :param option_key: **参数解释:** 当前规则配置项key。可调用[[获取规则列表接口](https://support.huaweicloud.com/api-codecheck/ListRules.html)](tag:hws)[[获取规则列表接口](https://support.huaweicloud.com/intl/zh-cn/api-codecheck/ListRules.html)](tag:hws_hk)[获取规则列表接口](tag:hcs,hcs_sm,hcs_site,hcs_sitesm,fcs)获取规则配置ID。 **约束限制:** 需要和规则ID相匹配。 **取值范围:** 不涉及。 **默认取值:** 不涉及。
         :type option_key: str
-        :param option_name: 当前规则配置项名称
+        :param option_name: **参数解释:** 当前规则配置项key。可调用[[获取规则列表接口](https://support.huaweicloud.com/api-codecheck/ListRules.html)](tag:hws)[[获取规则列表接口](https://support.huaweicloud.com/intl/zh-cn/api-codecheck/ListRules.html)](tag:hws_hk)[获取规则列表接口](tag:hcs,hcs_sm,hcs_site,hcs_sitesm,fcs)获取规则配置ID。 **约束限制:** 需要和规则ID相匹配。 **取值范围:** 不涉及。 **默认取值:** 不涉及。
         :type option_name: str
-        :param template_id: 规则集id
+        :param template_id: **参数解释:** 规则集ID。可调用[[查询规则集列表](https://support.huaweicloud.com/api-codecheck/ListRulesets.html)](tag:hws)[[查询规则集列表](https://support.huaweicloud.com/intl/zh-cn/api-codecheck/ListRulesets.html)](tag:hws_hk)[查询规则集列表](tag:hcs,hcs_sm,hcs_site,hcs_sitesm,fcs)获取规则集ID。 **约束限制:** 不涉及。 **取值范围:** 32位UUID。 **默认取值:** 不涉及。
         :type template_id: str
-        :param description: 描述
+        :param description: **参数解释:** 配置参数的描述。可不填。 **约束限制:** 不涉及。 **取值范围:** 不涉及。 **默认取值:** 不涉及。
         :type description: str
         """
         
@@ -92,7 +92,7 @@ class RuleConfig:
     def id(self):
         r"""Gets the id of this RuleConfig.
 
-        规则配置ID
+        **参数解释:** 规则配置ID。可调用[[获取规则列表接口](https://support.huaweicloud.com/api-codecheck/ListRules.html)](tag:hws)[[获取规则列表接口](https://support.huaweicloud.com/intl/zh-cn/api-codecheck/ListRules.html)](tag:hws_hk)[获取规则列表接口](tag:hcs,hcs_sm,hcs_site,hcs_sitesm,fcs)获取规则配置ID。 **约束限制:** 不涉及。 **取值范围:** 32位UUID。 **默认取值:** 不涉及。
 
         :return: The id of this RuleConfig.
         :rtype: int
@@ -103,7 +103,7 @@ class RuleConfig:
     def id(self, id):
         r"""Sets the id of this RuleConfig.
 
-        规则配置ID
+        **参数解释:** 规则配置ID。可调用[[获取规则列表接口](https://support.huaweicloud.com/api-codecheck/ListRules.html)](tag:hws)[[获取规则列表接口](https://support.huaweicloud.com/intl/zh-cn/api-codecheck/ListRules.html)](tag:hws_hk)[获取规则列表接口](tag:hcs,hcs_sm,hcs_site,hcs_sitesm,fcs)获取规则配置ID。 **约束限制:** 不涉及。 **取值范围:** 32位UUID。 **默认取值:** 不涉及。
 
         :param id: The id of this RuleConfig.
         :type id: int
@@ -114,10 +114,10 @@ class RuleConfig:
     def rule_id(self):
         r"""Gets the rule_id of this RuleConfig.
 
-        规则ID
+        **参数解释:** 工具规则ID，即可配置阈值规则的各种阈值对应的ID，当前无便利手段获取，请联系客服咨询。 **约束限制:** 不涉及。 **取值范围:** 32位UUID。 **默认取值:** 不涉及。
 
         :return: The rule_id of this RuleConfig.
-        :rtype: int
+        :rtype: str
         """
         return self._rule_id
 
@@ -125,10 +125,10 @@ class RuleConfig:
     def rule_id(self, rule_id):
         r"""Sets the rule_id of this RuleConfig.
 
-        规则ID
+        **参数解释:** 工具规则ID，即可配置阈值规则的各种阈值对应的ID，当前无便利手段获取，请联系客服咨询。 **约束限制:** 不涉及。 **取值范围:** 32位UUID。 **默认取值:** 不涉及。
 
         :param rule_id: The rule_id of this RuleConfig.
-        :type rule_id: int
+        :type rule_id: str
         """
         self._rule_id = rule_id
 
@@ -136,7 +136,7 @@ class RuleConfig:
     def default_value(self):
         r"""Gets the default_value of this RuleConfig.
 
-        默认值
+        **参数解释:** 配置参数默认阈值。 **约束限制:** 不涉及。 **取值范围:** 不涉及。 **默认取值:** 不涉及。
 
         :return: The default_value of this RuleConfig.
         :rtype: str
@@ -147,7 +147,7 @@ class RuleConfig:
     def default_value(self, default_value):
         r"""Sets the default_value of this RuleConfig.
 
-        默认值
+        **参数解释:** 配置参数默认阈值。 **约束限制:** 不涉及。 **取值范围:** 不涉及。 **默认取值:** 不涉及。
 
         :param default_value: The default_value of this RuleConfig.
         :type default_value: str
@@ -158,7 +158,7 @@ class RuleConfig:
     def option_value(self):
         r"""Gets the option_value of this RuleConfig.
 
-        当前
+        **参数解释:** 配置参数新阈值。 **约束限制:** 不涉及。 **取值范围:** 不涉及。 **默认取值:** 不涉及。
 
         :return: The option_value of this RuleConfig.
         :rtype: str
@@ -169,7 +169,7 @@ class RuleConfig:
     def option_value(self, option_value):
         r"""Sets the option_value of this RuleConfig.
 
-        当前
+        **参数解释:** 配置参数新阈值。 **约束限制:** 不涉及。 **取值范围:** 不涉及。 **默认取值:** 不涉及。
 
         :param option_value: The option_value of this RuleConfig.
         :type option_value: str
@@ -180,7 +180,7 @@ class RuleConfig:
     def option_key(self):
         r"""Gets the option_key of this RuleConfig.
 
-        当前规则配置项key
+        **参数解释:** 当前规则配置项key。可调用[[获取规则列表接口](https://support.huaweicloud.com/api-codecheck/ListRules.html)](tag:hws)[[获取规则列表接口](https://support.huaweicloud.com/intl/zh-cn/api-codecheck/ListRules.html)](tag:hws_hk)[获取规则列表接口](tag:hcs,hcs_sm,hcs_site,hcs_sitesm,fcs)获取规则配置ID。 **约束限制:** 需要和规则ID相匹配。 **取值范围:** 不涉及。 **默认取值:** 不涉及。
 
         :return: The option_key of this RuleConfig.
         :rtype: str
@@ -191,7 +191,7 @@ class RuleConfig:
     def option_key(self, option_key):
         r"""Sets the option_key of this RuleConfig.
 
-        当前规则配置项key
+        **参数解释:** 当前规则配置项key。可调用[[获取规则列表接口](https://support.huaweicloud.com/api-codecheck/ListRules.html)](tag:hws)[[获取规则列表接口](https://support.huaweicloud.com/intl/zh-cn/api-codecheck/ListRules.html)](tag:hws_hk)[获取规则列表接口](tag:hcs,hcs_sm,hcs_site,hcs_sitesm,fcs)获取规则配置ID。 **约束限制:** 需要和规则ID相匹配。 **取值范围:** 不涉及。 **默认取值:** 不涉及。
 
         :param option_key: The option_key of this RuleConfig.
         :type option_key: str
@@ -202,7 +202,7 @@ class RuleConfig:
     def option_name(self):
         r"""Gets the option_name of this RuleConfig.
 
-        当前规则配置项名称
+        **参数解释:** 当前规则配置项key。可调用[[获取规则列表接口](https://support.huaweicloud.com/api-codecheck/ListRules.html)](tag:hws)[[获取规则列表接口](https://support.huaweicloud.com/intl/zh-cn/api-codecheck/ListRules.html)](tag:hws_hk)[获取规则列表接口](tag:hcs,hcs_sm,hcs_site,hcs_sitesm,fcs)获取规则配置ID。 **约束限制:** 需要和规则ID相匹配。 **取值范围:** 不涉及。 **默认取值:** 不涉及。
 
         :return: The option_name of this RuleConfig.
         :rtype: str
@@ -213,7 +213,7 @@ class RuleConfig:
     def option_name(self, option_name):
         r"""Sets the option_name of this RuleConfig.
 
-        当前规则配置项名称
+        **参数解释:** 当前规则配置项key。可调用[[获取规则列表接口](https://support.huaweicloud.com/api-codecheck/ListRules.html)](tag:hws)[[获取规则列表接口](https://support.huaweicloud.com/intl/zh-cn/api-codecheck/ListRules.html)](tag:hws_hk)[获取规则列表接口](tag:hcs,hcs_sm,hcs_site,hcs_sitesm,fcs)获取规则配置ID。 **约束限制:** 需要和规则ID相匹配。 **取值范围:** 不涉及。 **默认取值:** 不涉及。
 
         :param option_name: The option_name of this RuleConfig.
         :type option_name: str
@@ -224,7 +224,7 @@ class RuleConfig:
     def template_id(self):
         r"""Gets the template_id of this RuleConfig.
 
-        规则集id
+        **参数解释:** 规则集ID。可调用[[查询规则集列表](https://support.huaweicloud.com/api-codecheck/ListRulesets.html)](tag:hws)[[查询规则集列表](https://support.huaweicloud.com/intl/zh-cn/api-codecheck/ListRulesets.html)](tag:hws_hk)[查询规则集列表](tag:hcs,hcs_sm,hcs_site,hcs_sitesm,fcs)获取规则集ID。 **约束限制:** 不涉及。 **取值范围:** 32位UUID。 **默认取值:** 不涉及。
 
         :return: The template_id of this RuleConfig.
         :rtype: str
@@ -235,7 +235,7 @@ class RuleConfig:
     def template_id(self, template_id):
         r"""Sets the template_id of this RuleConfig.
 
-        规则集id
+        **参数解释:** 规则集ID。可调用[[查询规则集列表](https://support.huaweicloud.com/api-codecheck/ListRulesets.html)](tag:hws)[[查询规则集列表](https://support.huaweicloud.com/intl/zh-cn/api-codecheck/ListRulesets.html)](tag:hws_hk)[查询规则集列表](tag:hcs,hcs_sm,hcs_site,hcs_sitesm,fcs)获取规则集ID。 **约束限制:** 不涉及。 **取值范围:** 32位UUID。 **默认取值:** 不涉及。
 
         :param template_id: The template_id of this RuleConfig.
         :type template_id: str
@@ -246,7 +246,7 @@ class RuleConfig:
     def description(self):
         r"""Gets the description of this RuleConfig.
 
-        描述
+        **参数解释:** 配置参数的描述。可不填。 **约束限制:** 不涉及。 **取值范围:** 不涉及。 **默认取值:** 不涉及。
 
         :return: The description of this RuleConfig.
         :rtype: str
@@ -257,7 +257,7 @@ class RuleConfig:
     def description(self, description):
         r"""Sets the description of this RuleConfig.
 
-        描述
+        **参数解释:** 配置参数的描述。可不填。 **约束限制:** 不涉及。 **取值范围:** 不涉及。 **默认取值:** 不涉及。
 
         :param description: The description of this RuleConfig.
         :type description: str

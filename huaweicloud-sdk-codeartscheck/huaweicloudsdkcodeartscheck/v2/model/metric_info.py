@@ -111,91 +111,91 @@ class MetricInfo:
 
         The model defined in huaweicloud sdk
 
-        :param code_size: 代码规模
+        :param code_size: **参数解释：** 有效代码行数，不包含空行和注释行。 **取值范围：** 不涉及。
         :type code_size: str
-        :param raw_lines: 原始代码行数
+        :param raw_lines: **参数解释：** 原始代码行数，包含空行和注释行。 **取值范围：** 不涉及。
         :type raw_lines: str
-        :param methods_total: 函数总数
+        :param methods_total: **参数解释：** 函数总数。 **取值范围：** 不涉及。
         :type methods_total: str
-        :param cyclomatic_complexity_total: 圈复杂度总数
+        :param cyclomatic_complexity_total: **参数解释：** 圈复杂度总数。 **取值范围：** 不涉及。
         :type cyclomatic_complexity_total: str
-        :param cyclomatic_complexity_per_method: 平均圈复杂度
+        :param cyclomatic_complexity_per_method: **参数解释：** 平均圈复杂度。 **取值范围：** 不涉及。
         :type cyclomatic_complexity_per_method: str
-        :param maximum_cyclomatic_complexity: 最大圈复杂度
+        :param maximum_cyclomatic_complexity: **参数解释：** 最大圈复杂度。 **取值范围：** 不涉及。
         :type maximum_cyclomatic_complexity: str
-        :param huge_cyclomatic_complexity_total: 超大圈复杂度数
+        :param huge_cyclomatic_complexity_total: **参数解释：** 超大圈复杂度函数总数。 **取值范围：** 不涉及。
         :type huge_cyclomatic_complexity_total: str
-        :param huge_cyclomatic_complexity_ratio: 超大圈复杂度比例
+        :param huge_cyclomatic_complexity_ratio: **参数解释：** 超大圈复杂度函数占比。 **取值范围：** 不涉及。
         :type huge_cyclomatic_complexity_ratio: str
-        :param cca_cyclomatic_complexity_total: cca圈复杂度总数
+        :param cca_cyclomatic_complexity_total: **参数解释：** CCA圈复杂度总数。 **取值范围：** 不涉及。
         :type cca_cyclomatic_complexity_total: str
-        :param cca_cyclomatic_complexity_per_method: cca平均圈复杂度
+        :param cca_cyclomatic_complexity_per_method: **参数解释：** CCA平均圈复杂度。 **取值范围：** 不涉及。
         :type cca_cyclomatic_complexity_per_method: str
-        :param maximum_cca_cyclomatic_complexity: cca最大圈复杂度
+        :param maximum_cca_cyclomatic_complexity: **参数解释：** CCA最大圈复杂度。 **取值范围：** 不涉及。
         :type maximum_cca_cyclomatic_complexity: str
-        :param huge_cca_cyclomatic_complexity_total: 超大圈复杂度函数总数
+        :param huge_cca_cyclomatic_complexity_total: **参数解释：** 超大CCA圈复杂度函数总数。 **取值范围：** 不涉及。
         :type huge_cca_cyclomatic_complexity_total: str
-        :param cyclomatic_complexity_adequacy: 圈复杂度满足度
+        :param cyclomatic_complexity_adequacy: **参数解释：** 圈复杂度阈值遵从度。 **取值范围：** 不涉及。
         :type cyclomatic_complexity_adequacy: str
-        :param maximum_depth: 最大深度
+        :param maximum_depth: **参数解释：** 最大深度。 **取值范围：** 不涉及。
         :type maximum_depth: str
-        :param huge_depth_total: 超大深度数
+        :param huge_depth_total: **参数解释：** 超大深度个数。 **取值范围：** 不涉及。
         :type huge_depth_total: str
-        :param huge_depth_ratio: 超大深度占比
+        :param huge_depth_ratio: **参数解释：** 超大深度占比。 **取值范围：** 不涉及。
         :type huge_depth_ratio: str
-        :param method_lines: 函数总行数
+        :param method_lines: **参数解释：** 函数总行数。 **取值范围：** 不涉及。
         :type method_lines: str
-        :param lines_per_method: 函数平均代码行
+        :param lines_per_method: **参数解释：** 平均函数代码行。 **取值范围：** 不涉及。
         :type lines_per_method: str
-        :param huge_method_total: 超大函数数
+        :param huge_method_total: **参数解释：** 超大代码行函数数。 **取值范围：** 不涉及。
         :type huge_method_total: str
-        :param huge_method_ratio: 超大函数占比
+        :param huge_method_ratio: **参数解释：** 超大代码行函数占比。 **取值范围：** 不涉及。
         :type huge_method_ratio: str
-        :param files_total: 文件总数
+        :param files_total: **参数解释：** 文件总数。 **取值范围：** 不涉及。
         :type files_total: str
-        :param folders_total: 目录总数
+        :param folders_total: **参数解释：** 目录总数。 **取值范围：** 不涉及。
         :type folders_total: str
-        :param lines_per_file: 文件平均代码行
+        :param lines_per_file: **参数解释：** 平均文件代码行。 **取值范围：** 不涉及。
         :type lines_per_file: str
-        :param huge_headerfile_total: 超大头文件数
+        :param huge_headerfile_total: **参数解释：** 超大头文件数。 **取值范围：** 不涉及。
         :type huge_headerfile_total: str
-        :param huge_headerfile_ratio: 超大头文件占比
+        :param huge_headerfile_ratio: **参数解释：** 超大头文件占比。 **取值范围：** 不涉及。
         :type huge_headerfile_ratio: str
-        :param huge_non_headerfile_total: 超大源文件数
+        :param huge_non_headerfile_total: **参数解释：** 超大源文件数。 **取值范围：** 不涉及。
         :type huge_non_headerfile_total: str
-        :param huge_non_headerfile_ratio: 超大源文件占比
+        :param huge_non_headerfile_ratio: **参数解释：** 超大源文件占比。 **取值范围：** 不涉及。
         :type huge_non_headerfile_ratio: str
-        :param huge_folder_total: 超大目录数
+        :param huge_folder_total: **参数解释：** 超大目录数。 **取值范围：** 不涉及。
         :type huge_folder_total: str
-        :param huge_folder_ratio: 超大目录占比
+        :param huge_folder_ratio: **参数解释：** 超大目录占比。 **取值范围：** 不涉及。
         :type huge_folder_ratio: str
-        :param file_duplication_total: 重复文件数
+        :param file_duplication_total: **参数解释：** 重复文件数。 **取值范围：** 不涉及。
         :type file_duplication_total: str
-        :param file_duplication_ratio: 文件重复率
+        :param file_duplication_ratio: **参数解释：** 文件重复率。 **取值范围：** 不涉及。
         :type file_duplication_ratio: str
-        :param non_hfile_duplication_total: 重复源文件数
+        :param non_hfile_duplication_total: **参数解释：** 重复源文件数。 **取值范围：** 不涉及。
         :type non_hfile_duplication_total: str
-        :param non_hfile_duplication_ratio: 源文件重复率
+        :param non_hfile_duplication_ratio: **参数解释：** 源文件重复率。 **取值范围：** 不涉及。
         :type non_hfile_duplication_ratio: str
-        :param code_duplication_total: 代码重复数
+        :param code_duplication_total: **参数解释：** 代码重复数。 **取值范围：** 不涉及。
         :type code_duplication_total: str
-        :param code_duplication_ratio: 代码重复率
+        :param code_duplication_ratio: **参数解释：** 代码重复率。 **取值范围：** 不涉及。
         :type code_duplication_ratio: str
-        :param non_hfile_code_duplication_total: 源文件代码重复数
+        :param non_hfile_code_duplication_total: **参数解释：** 源文件代码重复数。 **取值范围：** 不涉及。
         :type non_hfile_code_duplication_total: str
-        :param non_hfile_code_duplication_ratio: 源文件代码重复率
+        :param non_hfile_code_duplication_ratio: **参数解释：** 源文件代码重复率。 **取值范围：** 不涉及。
         :type non_hfile_code_duplication_ratio: str
-        :param unsafe_functions_total: 危险函数总数
+        :param unsafe_functions_total: **参数解释：** 危险函数总数。 **取值范围：** 不涉及。
         :type unsafe_functions_total: str
-        :param unsafe_functions_kloc: 危险函数密度
+        :param unsafe_functions_kloc: **参数解释：** 危险函数密度。 **取值范围：** 不涉及。
         :type unsafe_functions_kloc: str
-        :param redundant_code_total: 冗余代码数
+        :param redundant_code_total: **参数解释：** 冗余代码数。 **取值范围：** 不涉及。
         :type redundant_code_total: str
-        :param redundant_code_kloc: 冗余代码块密度
+        :param redundant_code_kloc: **参数解释：** 冗余代码密度。 **取值范围：** 不涉及。
         :type redundant_code_kloc: str
-        :param warning_suppression_total: 抑制告警数
+        :param warning_suppression_total: **参数解释：** 抑制告警数。 **取值范围：** 不涉及。
         :type warning_suppression_total: str
-        :param warning_suppression_kloc: 抑制告警密度
+        :param warning_suppression_kloc: **参数解释：** 抑制告警密度。 **取值范围：** 不涉及。
         :type warning_suppression_kloc: str
         """
         
@@ -337,7 +337,7 @@ class MetricInfo:
     def code_size(self):
         r"""Gets the code_size of this MetricInfo.
 
-        代码规模
+        **参数解释：** 有效代码行数，不包含空行和注释行。 **取值范围：** 不涉及。
 
         :return: The code_size of this MetricInfo.
         :rtype: str
@@ -348,7 +348,7 @@ class MetricInfo:
     def code_size(self, code_size):
         r"""Sets the code_size of this MetricInfo.
 
-        代码规模
+        **参数解释：** 有效代码行数，不包含空行和注释行。 **取值范围：** 不涉及。
 
         :param code_size: The code_size of this MetricInfo.
         :type code_size: str
@@ -359,7 +359,7 @@ class MetricInfo:
     def raw_lines(self):
         r"""Gets the raw_lines of this MetricInfo.
 
-        原始代码行数
+        **参数解释：** 原始代码行数，包含空行和注释行。 **取值范围：** 不涉及。
 
         :return: The raw_lines of this MetricInfo.
         :rtype: str
@@ -370,7 +370,7 @@ class MetricInfo:
     def raw_lines(self, raw_lines):
         r"""Sets the raw_lines of this MetricInfo.
 
-        原始代码行数
+        **参数解释：** 原始代码行数，包含空行和注释行。 **取值范围：** 不涉及。
 
         :param raw_lines: The raw_lines of this MetricInfo.
         :type raw_lines: str
@@ -381,7 +381,7 @@ class MetricInfo:
     def methods_total(self):
         r"""Gets the methods_total of this MetricInfo.
 
-        函数总数
+        **参数解释：** 函数总数。 **取值范围：** 不涉及。
 
         :return: The methods_total of this MetricInfo.
         :rtype: str
@@ -392,7 +392,7 @@ class MetricInfo:
     def methods_total(self, methods_total):
         r"""Sets the methods_total of this MetricInfo.
 
-        函数总数
+        **参数解释：** 函数总数。 **取值范围：** 不涉及。
 
         :param methods_total: The methods_total of this MetricInfo.
         :type methods_total: str
@@ -403,7 +403,7 @@ class MetricInfo:
     def cyclomatic_complexity_total(self):
         r"""Gets the cyclomatic_complexity_total of this MetricInfo.
 
-        圈复杂度总数
+        **参数解释：** 圈复杂度总数。 **取值范围：** 不涉及。
 
         :return: The cyclomatic_complexity_total of this MetricInfo.
         :rtype: str
@@ -414,7 +414,7 @@ class MetricInfo:
     def cyclomatic_complexity_total(self, cyclomatic_complexity_total):
         r"""Sets the cyclomatic_complexity_total of this MetricInfo.
 
-        圈复杂度总数
+        **参数解释：** 圈复杂度总数。 **取值范围：** 不涉及。
 
         :param cyclomatic_complexity_total: The cyclomatic_complexity_total of this MetricInfo.
         :type cyclomatic_complexity_total: str
@@ -425,7 +425,7 @@ class MetricInfo:
     def cyclomatic_complexity_per_method(self):
         r"""Gets the cyclomatic_complexity_per_method of this MetricInfo.
 
-        平均圈复杂度
+        **参数解释：** 平均圈复杂度。 **取值范围：** 不涉及。
 
         :return: The cyclomatic_complexity_per_method of this MetricInfo.
         :rtype: str
@@ -436,7 +436,7 @@ class MetricInfo:
     def cyclomatic_complexity_per_method(self, cyclomatic_complexity_per_method):
         r"""Sets the cyclomatic_complexity_per_method of this MetricInfo.
 
-        平均圈复杂度
+        **参数解释：** 平均圈复杂度。 **取值范围：** 不涉及。
 
         :param cyclomatic_complexity_per_method: The cyclomatic_complexity_per_method of this MetricInfo.
         :type cyclomatic_complexity_per_method: str
@@ -447,7 +447,7 @@ class MetricInfo:
     def maximum_cyclomatic_complexity(self):
         r"""Gets the maximum_cyclomatic_complexity of this MetricInfo.
 
-        最大圈复杂度
+        **参数解释：** 最大圈复杂度。 **取值范围：** 不涉及。
 
         :return: The maximum_cyclomatic_complexity of this MetricInfo.
         :rtype: str
@@ -458,7 +458,7 @@ class MetricInfo:
     def maximum_cyclomatic_complexity(self, maximum_cyclomatic_complexity):
         r"""Sets the maximum_cyclomatic_complexity of this MetricInfo.
 
-        最大圈复杂度
+        **参数解释：** 最大圈复杂度。 **取值范围：** 不涉及。
 
         :param maximum_cyclomatic_complexity: The maximum_cyclomatic_complexity of this MetricInfo.
         :type maximum_cyclomatic_complexity: str
@@ -469,7 +469,7 @@ class MetricInfo:
     def huge_cyclomatic_complexity_total(self):
         r"""Gets the huge_cyclomatic_complexity_total of this MetricInfo.
 
-        超大圈复杂度数
+        **参数解释：** 超大圈复杂度函数总数。 **取值范围：** 不涉及。
 
         :return: The huge_cyclomatic_complexity_total of this MetricInfo.
         :rtype: str
@@ -480,7 +480,7 @@ class MetricInfo:
     def huge_cyclomatic_complexity_total(self, huge_cyclomatic_complexity_total):
         r"""Sets the huge_cyclomatic_complexity_total of this MetricInfo.
 
-        超大圈复杂度数
+        **参数解释：** 超大圈复杂度函数总数。 **取值范围：** 不涉及。
 
         :param huge_cyclomatic_complexity_total: The huge_cyclomatic_complexity_total of this MetricInfo.
         :type huge_cyclomatic_complexity_total: str
@@ -491,7 +491,7 @@ class MetricInfo:
     def huge_cyclomatic_complexity_ratio(self):
         r"""Gets the huge_cyclomatic_complexity_ratio of this MetricInfo.
 
-        超大圈复杂度比例
+        **参数解释：** 超大圈复杂度函数占比。 **取值范围：** 不涉及。
 
         :return: The huge_cyclomatic_complexity_ratio of this MetricInfo.
         :rtype: str
@@ -502,7 +502,7 @@ class MetricInfo:
     def huge_cyclomatic_complexity_ratio(self, huge_cyclomatic_complexity_ratio):
         r"""Sets the huge_cyclomatic_complexity_ratio of this MetricInfo.
 
-        超大圈复杂度比例
+        **参数解释：** 超大圈复杂度函数占比。 **取值范围：** 不涉及。
 
         :param huge_cyclomatic_complexity_ratio: The huge_cyclomatic_complexity_ratio of this MetricInfo.
         :type huge_cyclomatic_complexity_ratio: str
@@ -513,7 +513,7 @@ class MetricInfo:
     def cca_cyclomatic_complexity_total(self):
         r"""Gets the cca_cyclomatic_complexity_total of this MetricInfo.
 
-        cca圈复杂度总数
+        **参数解释：** CCA圈复杂度总数。 **取值范围：** 不涉及。
 
         :return: The cca_cyclomatic_complexity_total of this MetricInfo.
         :rtype: str
@@ -524,7 +524,7 @@ class MetricInfo:
     def cca_cyclomatic_complexity_total(self, cca_cyclomatic_complexity_total):
         r"""Sets the cca_cyclomatic_complexity_total of this MetricInfo.
 
-        cca圈复杂度总数
+        **参数解释：** CCA圈复杂度总数。 **取值范围：** 不涉及。
 
         :param cca_cyclomatic_complexity_total: The cca_cyclomatic_complexity_total of this MetricInfo.
         :type cca_cyclomatic_complexity_total: str
@@ -535,7 +535,7 @@ class MetricInfo:
     def cca_cyclomatic_complexity_per_method(self):
         r"""Gets the cca_cyclomatic_complexity_per_method of this MetricInfo.
 
-        cca平均圈复杂度
+        **参数解释：** CCA平均圈复杂度。 **取值范围：** 不涉及。
 
         :return: The cca_cyclomatic_complexity_per_method of this MetricInfo.
         :rtype: str
@@ -546,7 +546,7 @@ class MetricInfo:
     def cca_cyclomatic_complexity_per_method(self, cca_cyclomatic_complexity_per_method):
         r"""Sets the cca_cyclomatic_complexity_per_method of this MetricInfo.
 
-        cca平均圈复杂度
+        **参数解释：** CCA平均圈复杂度。 **取值范围：** 不涉及。
 
         :param cca_cyclomatic_complexity_per_method: The cca_cyclomatic_complexity_per_method of this MetricInfo.
         :type cca_cyclomatic_complexity_per_method: str
@@ -557,7 +557,7 @@ class MetricInfo:
     def maximum_cca_cyclomatic_complexity(self):
         r"""Gets the maximum_cca_cyclomatic_complexity of this MetricInfo.
 
-        cca最大圈复杂度
+        **参数解释：** CCA最大圈复杂度。 **取值范围：** 不涉及。
 
         :return: The maximum_cca_cyclomatic_complexity of this MetricInfo.
         :rtype: str
@@ -568,7 +568,7 @@ class MetricInfo:
     def maximum_cca_cyclomatic_complexity(self, maximum_cca_cyclomatic_complexity):
         r"""Sets the maximum_cca_cyclomatic_complexity of this MetricInfo.
 
-        cca最大圈复杂度
+        **参数解释：** CCA最大圈复杂度。 **取值范围：** 不涉及。
 
         :param maximum_cca_cyclomatic_complexity: The maximum_cca_cyclomatic_complexity of this MetricInfo.
         :type maximum_cca_cyclomatic_complexity: str
@@ -579,7 +579,7 @@ class MetricInfo:
     def huge_cca_cyclomatic_complexity_total(self):
         r"""Gets the huge_cca_cyclomatic_complexity_total of this MetricInfo.
 
-        超大圈复杂度函数总数
+        **参数解释：** 超大CCA圈复杂度函数总数。 **取值范围：** 不涉及。
 
         :return: The huge_cca_cyclomatic_complexity_total of this MetricInfo.
         :rtype: str
@@ -590,7 +590,7 @@ class MetricInfo:
     def huge_cca_cyclomatic_complexity_total(self, huge_cca_cyclomatic_complexity_total):
         r"""Sets the huge_cca_cyclomatic_complexity_total of this MetricInfo.
 
-        超大圈复杂度函数总数
+        **参数解释：** 超大CCA圈复杂度函数总数。 **取值范围：** 不涉及。
 
         :param huge_cca_cyclomatic_complexity_total: The huge_cca_cyclomatic_complexity_total of this MetricInfo.
         :type huge_cca_cyclomatic_complexity_total: str
@@ -601,7 +601,7 @@ class MetricInfo:
     def cyclomatic_complexity_adequacy(self):
         r"""Gets the cyclomatic_complexity_adequacy of this MetricInfo.
 
-        圈复杂度满足度
+        **参数解释：** 圈复杂度阈值遵从度。 **取值范围：** 不涉及。
 
         :return: The cyclomatic_complexity_adequacy of this MetricInfo.
         :rtype: str
@@ -612,7 +612,7 @@ class MetricInfo:
     def cyclomatic_complexity_adequacy(self, cyclomatic_complexity_adequacy):
         r"""Sets the cyclomatic_complexity_adequacy of this MetricInfo.
 
-        圈复杂度满足度
+        **参数解释：** 圈复杂度阈值遵从度。 **取值范围：** 不涉及。
 
         :param cyclomatic_complexity_adequacy: The cyclomatic_complexity_adequacy of this MetricInfo.
         :type cyclomatic_complexity_adequacy: str
@@ -623,7 +623,7 @@ class MetricInfo:
     def maximum_depth(self):
         r"""Gets the maximum_depth of this MetricInfo.
 
-        最大深度
+        **参数解释：** 最大深度。 **取值范围：** 不涉及。
 
         :return: The maximum_depth of this MetricInfo.
         :rtype: str
@@ -634,7 +634,7 @@ class MetricInfo:
     def maximum_depth(self, maximum_depth):
         r"""Sets the maximum_depth of this MetricInfo.
 
-        最大深度
+        **参数解释：** 最大深度。 **取值范围：** 不涉及。
 
         :param maximum_depth: The maximum_depth of this MetricInfo.
         :type maximum_depth: str
@@ -645,7 +645,7 @@ class MetricInfo:
     def huge_depth_total(self):
         r"""Gets the huge_depth_total of this MetricInfo.
 
-        超大深度数
+        **参数解释：** 超大深度个数。 **取值范围：** 不涉及。
 
         :return: The huge_depth_total of this MetricInfo.
         :rtype: str
@@ -656,7 +656,7 @@ class MetricInfo:
     def huge_depth_total(self, huge_depth_total):
         r"""Sets the huge_depth_total of this MetricInfo.
 
-        超大深度数
+        **参数解释：** 超大深度个数。 **取值范围：** 不涉及。
 
         :param huge_depth_total: The huge_depth_total of this MetricInfo.
         :type huge_depth_total: str
@@ -667,7 +667,7 @@ class MetricInfo:
     def huge_depth_ratio(self):
         r"""Gets the huge_depth_ratio of this MetricInfo.
 
-        超大深度占比
+        **参数解释：** 超大深度占比。 **取值范围：** 不涉及。
 
         :return: The huge_depth_ratio of this MetricInfo.
         :rtype: str
@@ -678,7 +678,7 @@ class MetricInfo:
     def huge_depth_ratio(self, huge_depth_ratio):
         r"""Sets the huge_depth_ratio of this MetricInfo.
 
-        超大深度占比
+        **参数解释：** 超大深度占比。 **取值范围：** 不涉及。
 
         :param huge_depth_ratio: The huge_depth_ratio of this MetricInfo.
         :type huge_depth_ratio: str
@@ -689,7 +689,7 @@ class MetricInfo:
     def method_lines(self):
         r"""Gets the method_lines of this MetricInfo.
 
-        函数总行数
+        **参数解释：** 函数总行数。 **取值范围：** 不涉及。
 
         :return: The method_lines of this MetricInfo.
         :rtype: str
@@ -700,7 +700,7 @@ class MetricInfo:
     def method_lines(self, method_lines):
         r"""Sets the method_lines of this MetricInfo.
 
-        函数总行数
+        **参数解释：** 函数总行数。 **取值范围：** 不涉及。
 
         :param method_lines: The method_lines of this MetricInfo.
         :type method_lines: str
@@ -711,7 +711,7 @@ class MetricInfo:
     def lines_per_method(self):
         r"""Gets the lines_per_method of this MetricInfo.
 
-        函数平均代码行
+        **参数解释：** 平均函数代码行。 **取值范围：** 不涉及。
 
         :return: The lines_per_method of this MetricInfo.
         :rtype: str
@@ -722,7 +722,7 @@ class MetricInfo:
     def lines_per_method(self, lines_per_method):
         r"""Sets the lines_per_method of this MetricInfo.
 
-        函数平均代码行
+        **参数解释：** 平均函数代码行。 **取值范围：** 不涉及。
 
         :param lines_per_method: The lines_per_method of this MetricInfo.
         :type lines_per_method: str
@@ -733,7 +733,7 @@ class MetricInfo:
     def huge_method_total(self):
         r"""Gets the huge_method_total of this MetricInfo.
 
-        超大函数数
+        **参数解释：** 超大代码行函数数。 **取值范围：** 不涉及。
 
         :return: The huge_method_total of this MetricInfo.
         :rtype: str
@@ -744,7 +744,7 @@ class MetricInfo:
     def huge_method_total(self, huge_method_total):
         r"""Sets the huge_method_total of this MetricInfo.
 
-        超大函数数
+        **参数解释：** 超大代码行函数数。 **取值范围：** 不涉及。
 
         :param huge_method_total: The huge_method_total of this MetricInfo.
         :type huge_method_total: str
@@ -755,7 +755,7 @@ class MetricInfo:
     def huge_method_ratio(self):
         r"""Gets the huge_method_ratio of this MetricInfo.
 
-        超大函数占比
+        **参数解释：** 超大代码行函数占比。 **取值范围：** 不涉及。
 
         :return: The huge_method_ratio of this MetricInfo.
         :rtype: str
@@ -766,7 +766,7 @@ class MetricInfo:
     def huge_method_ratio(self, huge_method_ratio):
         r"""Sets the huge_method_ratio of this MetricInfo.
 
-        超大函数占比
+        **参数解释：** 超大代码行函数占比。 **取值范围：** 不涉及。
 
         :param huge_method_ratio: The huge_method_ratio of this MetricInfo.
         :type huge_method_ratio: str
@@ -777,7 +777,7 @@ class MetricInfo:
     def files_total(self):
         r"""Gets the files_total of this MetricInfo.
 
-        文件总数
+        **参数解释：** 文件总数。 **取值范围：** 不涉及。
 
         :return: The files_total of this MetricInfo.
         :rtype: str
@@ -788,7 +788,7 @@ class MetricInfo:
     def files_total(self, files_total):
         r"""Sets the files_total of this MetricInfo.
 
-        文件总数
+        **参数解释：** 文件总数。 **取值范围：** 不涉及。
 
         :param files_total: The files_total of this MetricInfo.
         :type files_total: str
@@ -799,7 +799,7 @@ class MetricInfo:
     def folders_total(self):
         r"""Gets the folders_total of this MetricInfo.
 
-        目录总数
+        **参数解释：** 目录总数。 **取值范围：** 不涉及。
 
         :return: The folders_total of this MetricInfo.
         :rtype: str
@@ -810,7 +810,7 @@ class MetricInfo:
     def folders_total(self, folders_total):
         r"""Sets the folders_total of this MetricInfo.
 
-        目录总数
+        **参数解释：** 目录总数。 **取值范围：** 不涉及。
 
         :param folders_total: The folders_total of this MetricInfo.
         :type folders_total: str
@@ -821,7 +821,7 @@ class MetricInfo:
     def lines_per_file(self):
         r"""Gets the lines_per_file of this MetricInfo.
 
-        文件平均代码行
+        **参数解释：** 平均文件代码行。 **取值范围：** 不涉及。
 
         :return: The lines_per_file of this MetricInfo.
         :rtype: str
@@ -832,7 +832,7 @@ class MetricInfo:
     def lines_per_file(self, lines_per_file):
         r"""Sets the lines_per_file of this MetricInfo.
 
-        文件平均代码行
+        **参数解释：** 平均文件代码行。 **取值范围：** 不涉及。
 
         :param lines_per_file: The lines_per_file of this MetricInfo.
         :type lines_per_file: str
@@ -843,7 +843,7 @@ class MetricInfo:
     def huge_headerfile_total(self):
         r"""Gets the huge_headerfile_total of this MetricInfo.
 
-        超大头文件数
+        **参数解释：** 超大头文件数。 **取值范围：** 不涉及。
 
         :return: The huge_headerfile_total of this MetricInfo.
         :rtype: str
@@ -854,7 +854,7 @@ class MetricInfo:
     def huge_headerfile_total(self, huge_headerfile_total):
         r"""Sets the huge_headerfile_total of this MetricInfo.
 
-        超大头文件数
+        **参数解释：** 超大头文件数。 **取值范围：** 不涉及。
 
         :param huge_headerfile_total: The huge_headerfile_total of this MetricInfo.
         :type huge_headerfile_total: str
@@ -865,7 +865,7 @@ class MetricInfo:
     def huge_headerfile_ratio(self):
         r"""Gets the huge_headerfile_ratio of this MetricInfo.
 
-        超大头文件占比
+        **参数解释：** 超大头文件占比。 **取值范围：** 不涉及。
 
         :return: The huge_headerfile_ratio of this MetricInfo.
         :rtype: str
@@ -876,7 +876,7 @@ class MetricInfo:
     def huge_headerfile_ratio(self, huge_headerfile_ratio):
         r"""Sets the huge_headerfile_ratio of this MetricInfo.
 
-        超大头文件占比
+        **参数解释：** 超大头文件占比。 **取值范围：** 不涉及。
 
         :param huge_headerfile_ratio: The huge_headerfile_ratio of this MetricInfo.
         :type huge_headerfile_ratio: str
@@ -887,7 +887,7 @@ class MetricInfo:
     def huge_non_headerfile_total(self):
         r"""Gets the huge_non_headerfile_total of this MetricInfo.
 
-        超大源文件数
+        **参数解释：** 超大源文件数。 **取值范围：** 不涉及。
 
         :return: The huge_non_headerfile_total of this MetricInfo.
         :rtype: str
@@ -898,7 +898,7 @@ class MetricInfo:
     def huge_non_headerfile_total(self, huge_non_headerfile_total):
         r"""Sets the huge_non_headerfile_total of this MetricInfo.
 
-        超大源文件数
+        **参数解释：** 超大源文件数。 **取值范围：** 不涉及。
 
         :param huge_non_headerfile_total: The huge_non_headerfile_total of this MetricInfo.
         :type huge_non_headerfile_total: str
@@ -909,7 +909,7 @@ class MetricInfo:
     def huge_non_headerfile_ratio(self):
         r"""Gets the huge_non_headerfile_ratio of this MetricInfo.
 
-        超大源文件占比
+        **参数解释：** 超大源文件占比。 **取值范围：** 不涉及。
 
         :return: The huge_non_headerfile_ratio of this MetricInfo.
         :rtype: str
@@ -920,7 +920,7 @@ class MetricInfo:
     def huge_non_headerfile_ratio(self, huge_non_headerfile_ratio):
         r"""Sets the huge_non_headerfile_ratio of this MetricInfo.
 
-        超大源文件占比
+        **参数解释：** 超大源文件占比。 **取值范围：** 不涉及。
 
         :param huge_non_headerfile_ratio: The huge_non_headerfile_ratio of this MetricInfo.
         :type huge_non_headerfile_ratio: str
@@ -931,7 +931,7 @@ class MetricInfo:
     def huge_folder_total(self):
         r"""Gets the huge_folder_total of this MetricInfo.
 
-        超大目录数
+        **参数解释：** 超大目录数。 **取值范围：** 不涉及。
 
         :return: The huge_folder_total of this MetricInfo.
         :rtype: str
@@ -942,7 +942,7 @@ class MetricInfo:
     def huge_folder_total(self, huge_folder_total):
         r"""Sets the huge_folder_total of this MetricInfo.
 
-        超大目录数
+        **参数解释：** 超大目录数。 **取值范围：** 不涉及。
 
         :param huge_folder_total: The huge_folder_total of this MetricInfo.
         :type huge_folder_total: str
@@ -953,7 +953,7 @@ class MetricInfo:
     def huge_folder_ratio(self):
         r"""Gets the huge_folder_ratio of this MetricInfo.
 
-        超大目录占比
+        **参数解释：** 超大目录占比。 **取值范围：** 不涉及。
 
         :return: The huge_folder_ratio of this MetricInfo.
         :rtype: str
@@ -964,7 +964,7 @@ class MetricInfo:
     def huge_folder_ratio(self, huge_folder_ratio):
         r"""Sets the huge_folder_ratio of this MetricInfo.
 
-        超大目录占比
+        **参数解释：** 超大目录占比。 **取值范围：** 不涉及。
 
         :param huge_folder_ratio: The huge_folder_ratio of this MetricInfo.
         :type huge_folder_ratio: str
@@ -975,7 +975,7 @@ class MetricInfo:
     def file_duplication_total(self):
         r"""Gets the file_duplication_total of this MetricInfo.
 
-        重复文件数
+        **参数解释：** 重复文件数。 **取值范围：** 不涉及。
 
         :return: The file_duplication_total of this MetricInfo.
         :rtype: str
@@ -986,7 +986,7 @@ class MetricInfo:
     def file_duplication_total(self, file_duplication_total):
         r"""Sets the file_duplication_total of this MetricInfo.
 
-        重复文件数
+        **参数解释：** 重复文件数。 **取值范围：** 不涉及。
 
         :param file_duplication_total: The file_duplication_total of this MetricInfo.
         :type file_duplication_total: str
@@ -997,7 +997,7 @@ class MetricInfo:
     def file_duplication_ratio(self):
         r"""Gets the file_duplication_ratio of this MetricInfo.
 
-        文件重复率
+        **参数解释：** 文件重复率。 **取值范围：** 不涉及。
 
         :return: The file_duplication_ratio of this MetricInfo.
         :rtype: str
@@ -1008,7 +1008,7 @@ class MetricInfo:
     def file_duplication_ratio(self, file_duplication_ratio):
         r"""Sets the file_duplication_ratio of this MetricInfo.
 
-        文件重复率
+        **参数解释：** 文件重复率。 **取值范围：** 不涉及。
 
         :param file_duplication_ratio: The file_duplication_ratio of this MetricInfo.
         :type file_duplication_ratio: str
@@ -1019,7 +1019,7 @@ class MetricInfo:
     def non_hfile_duplication_total(self):
         r"""Gets the non_hfile_duplication_total of this MetricInfo.
 
-        重复源文件数
+        **参数解释：** 重复源文件数。 **取值范围：** 不涉及。
 
         :return: The non_hfile_duplication_total of this MetricInfo.
         :rtype: str
@@ -1030,7 +1030,7 @@ class MetricInfo:
     def non_hfile_duplication_total(self, non_hfile_duplication_total):
         r"""Sets the non_hfile_duplication_total of this MetricInfo.
 
-        重复源文件数
+        **参数解释：** 重复源文件数。 **取值范围：** 不涉及。
 
         :param non_hfile_duplication_total: The non_hfile_duplication_total of this MetricInfo.
         :type non_hfile_duplication_total: str
@@ -1041,7 +1041,7 @@ class MetricInfo:
     def non_hfile_duplication_ratio(self):
         r"""Gets the non_hfile_duplication_ratio of this MetricInfo.
 
-        源文件重复率
+        **参数解释：** 源文件重复率。 **取值范围：** 不涉及。
 
         :return: The non_hfile_duplication_ratio of this MetricInfo.
         :rtype: str
@@ -1052,7 +1052,7 @@ class MetricInfo:
     def non_hfile_duplication_ratio(self, non_hfile_duplication_ratio):
         r"""Sets the non_hfile_duplication_ratio of this MetricInfo.
 
-        源文件重复率
+        **参数解释：** 源文件重复率。 **取值范围：** 不涉及。
 
         :param non_hfile_duplication_ratio: The non_hfile_duplication_ratio of this MetricInfo.
         :type non_hfile_duplication_ratio: str
@@ -1063,7 +1063,7 @@ class MetricInfo:
     def code_duplication_total(self):
         r"""Gets the code_duplication_total of this MetricInfo.
 
-        代码重复数
+        **参数解释：** 代码重复数。 **取值范围：** 不涉及。
 
         :return: The code_duplication_total of this MetricInfo.
         :rtype: str
@@ -1074,7 +1074,7 @@ class MetricInfo:
     def code_duplication_total(self, code_duplication_total):
         r"""Sets the code_duplication_total of this MetricInfo.
 
-        代码重复数
+        **参数解释：** 代码重复数。 **取值范围：** 不涉及。
 
         :param code_duplication_total: The code_duplication_total of this MetricInfo.
         :type code_duplication_total: str
@@ -1085,7 +1085,7 @@ class MetricInfo:
     def code_duplication_ratio(self):
         r"""Gets the code_duplication_ratio of this MetricInfo.
 
-        代码重复率
+        **参数解释：** 代码重复率。 **取值范围：** 不涉及。
 
         :return: The code_duplication_ratio of this MetricInfo.
         :rtype: str
@@ -1096,7 +1096,7 @@ class MetricInfo:
     def code_duplication_ratio(self, code_duplication_ratio):
         r"""Sets the code_duplication_ratio of this MetricInfo.
 
-        代码重复率
+        **参数解释：** 代码重复率。 **取值范围：** 不涉及。
 
         :param code_duplication_ratio: The code_duplication_ratio of this MetricInfo.
         :type code_duplication_ratio: str
@@ -1107,7 +1107,7 @@ class MetricInfo:
     def non_hfile_code_duplication_total(self):
         r"""Gets the non_hfile_code_duplication_total of this MetricInfo.
 
-        源文件代码重复数
+        **参数解释：** 源文件代码重复数。 **取值范围：** 不涉及。
 
         :return: The non_hfile_code_duplication_total of this MetricInfo.
         :rtype: str
@@ -1118,7 +1118,7 @@ class MetricInfo:
     def non_hfile_code_duplication_total(self, non_hfile_code_duplication_total):
         r"""Sets the non_hfile_code_duplication_total of this MetricInfo.
 
-        源文件代码重复数
+        **参数解释：** 源文件代码重复数。 **取值范围：** 不涉及。
 
         :param non_hfile_code_duplication_total: The non_hfile_code_duplication_total of this MetricInfo.
         :type non_hfile_code_duplication_total: str
@@ -1129,7 +1129,7 @@ class MetricInfo:
     def non_hfile_code_duplication_ratio(self):
         r"""Gets the non_hfile_code_duplication_ratio of this MetricInfo.
 
-        源文件代码重复率
+        **参数解释：** 源文件代码重复率。 **取值范围：** 不涉及。
 
         :return: The non_hfile_code_duplication_ratio of this MetricInfo.
         :rtype: str
@@ -1140,7 +1140,7 @@ class MetricInfo:
     def non_hfile_code_duplication_ratio(self, non_hfile_code_duplication_ratio):
         r"""Sets the non_hfile_code_duplication_ratio of this MetricInfo.
 
-        源文件代码重复率
+        **参数解释：** 源文件代码重复率。 **取值范围：** 不涉及。
 
         :param non_hfile_code_duplication_ratio: The non_hfile_code_duplication_ratio of this MetricInfo.
         :type non_hfile_code_duplication_ratio: str
@@ -1151,7 +1151,7 @@ class MetricInfo:
     def unsafe_functions_total(self):
         r"""Gets the unsafe_functions_total of this MetricInfo.
 
-        危险函数总数
+        **参数解释：** 危险函数总数。 **取值范围：** 不涉及。
 
         :return: The unsafe_functions_total of this MetricInfo.
         :rtype: str
@@ -1162,7 +1162,7 @@ class MetricInfo:
     def unsafe_functions_total(self, unsafe_functions_total):
         r"""Sets the unsafe_functions_total of this MetricInfo.
 
-        危险函数总数
+        **参数解释：** 危险函数总数。 **取值范围：** 不涉及。
 
         :param unsafe_functions_total: The unsafe_functions_total of this MetricInfo.
         :type unsafe_functions_total: str
@@ -1173,7 +1173,7 @@ class MetricInfo:
     def unsafe_functions_kloc(self):
         r"""Gets the unsafe_functions_kloc of this MetricInfo.
 
-        危险函数密度
+        **参数解释：** 危险函数密度。 **取值范围：** 不涉及。
 
         :return: The unsafe_functions_kloc of this MetricInfo.
         :rtype: str
@@ -1184,7 +1184,7 @@ class MetricInfo:
     def unsafe_functions_kloc(self, unsafe_functions_kloc):
         r"""Sets the unsafe_functions_kloc of this MetricInfo.
 
-        危险函数密度
+        **参数解释：** 危险函数密度。 **取值范围：** 不涉及。
 
         :param unsafe_functions_kloc: The unsafe_functions_kloc of this MetricInfo.
         :type unsafe_functions_kloc: str
@@ -1195,7 +1195,7 @@ class MetricInfo:
     def redundant_code_total(self):
         r"""Gets the redundant_code_total of this MetricInfo.
 
-        冗余代码数
+        **参数解释：** 冗余代码数。 **取值范围：** 不涉及。
 
         :return: The redundant_code_total of this MetricInfo.
         :rtype: str
@@ -1206,7 +1206,7 @@ class MetricInfo:
     def redundant_code_total(self, redundant_code_total):
         r"""Sets the redundant_code_total of this MetricInfo.
 
-        冗余代码数
+        **参数解释：** 冗余代码数。 **取值范围：** 不涉及。
 
         :param redundant_code_total: The redundant_code_total of this MetricInfo.
         :type redundant_code_total: str
@@ -1217,7 +1217,7 @@ class MetricInfo:
     def redundant_code_kloc(self):
         r"""Gets the redundant_code_kloc of this MetricInfo.
 
-        冗余代码块密度
+        **参数解释：** 冗余代码密度。 **取值范围：** 不涉及。
 
         :return: The redundant_code_kloc of this MetricInfo.
         :rtype: str
@@ -1228,7 +1228,7 @@ class MetricInfo:
     def redundant_code_kloc(self, redundant_code_kloc):
         r"""Sets the redundant_code_kloc of this MetricInfo.
 
-        冗余代码块密度
+        **参数解释：** 冗余代码密度。 **取值范围：** 不涉及。
 
         :param redundant_code_kloc: The redundant_code_kloc of this MetricInfo.
         :type redundant_code_kloc: str
@@ -1239,7 +1239,7 @@ class MetricInfo:
     def warning_suppression_total(self):
         r"""Gets the warning_suppression_total of this MetricInfo.
 
-        抑制告警数
+        **参数解释：** 抑制告警数。 **取值范围：** 不涉及。
 
         :return: The warning_suppression_total of this MetricInfo.
         :rtype: str
@@ -1250,7 +1250,7 @@ class MetricInfo:
     def warning_suppression_total(self, warning_suppression_total):
         r"""Sets the warning_suppression_total of this MetricInfo.
 
-        抑制告警数
+        **参数解释：** 抑制告警数。 **取值范围：** 不涉及。
 
         :param warning_suppression_total: The warning_suppression_total of this MetricInfo.
         :type warning_suppression_total: str
@@ -1261,7 +1261,7 @@ class MetricInfo:
     def warning_suppression_kloc(self):
         r"""Gets the warning_suppression_kloc of this MetricInfo.
 
-        抑制告警密度
+        **参数解释：** 抑制告警密度。 **取值范围：** 不涉及。
 
         :return: The warning_suppression_kloc of this MetricInfo.
         :rtype: str
@@ -1272,7 +1272,7 @@ class MetricInfo:
     def warning_suppression_kloc(self, warning_suppression_kloc):
         r"""Sets the warning_suppression_kloc of this MetricInfo.
 
-        抑制告警密度
+        **参数解释：** 抑制告警密度。 **取值范围：** 不涉及。
 
         :param warning_suppression_kloc: The warning_suppression_kloc of this MetricInfo.
         :type warning_suppression_kloc: str

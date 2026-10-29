@@ -26,7 +26,9 @@ class ListOpLogsRequest:
         'status': 'str',
         'vault_id': 'str',
         'vault_name': 'str',
-        'enterprise_project_id': 'str'
+        'enterprise_project_id': 'str',
+        'destination_region': 'str',
+        'destination_project_id': 'str'
     }
 
     attribute_map = {
@@ -41,10 +43,12 @@ class ListOpLogsRequest:
         'status': 'status',
         'vault_id': 'vault_id',
         'vault_name': 'vault_name',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'destination_region': 'destination_region',
+        'destination_project_id': 'destination_project_id'
     }
 
-    def __init__(self, end_time=None, limit=None, offset=None, operation_type=None, provider_id=None, resource_id=None, resource_name=None, start_time=None, status=None, vault_id=None, vault_name=None, enterprise_project_id=None):
+    def __init__(self, end_time=None, limit=None, offset=None, operation_type=None, provider_id=None, resource_id=None, resource_name=None, start_time=None, status=None, vault_id=None, vault_name=None, enterprise_project_id=None, destination_region=None, destination_project_id=None):
         r"""ListOpLogsRequest
 
         The model defined in huaweicloud sdk
@@ -73,6 +77,10 @@ class ListOpLogsRequest:
         :type vault_name: str
         :param enterprise_project_id: 企业项目id或all_granted_eps，all_granted_eps表示查询用户有权限的所有企业项目id
         :type enterprise_project_id: str
+        :param destination_region: **参数解释：** 复制的目标区域 [获取方法请参见\&quot;[地区和终端节点查询](https://console.huaweicloud.com/apiexplorer/#/endpoint/CBR)\&quot;。 ](tag:hws) [获取方法请参见\&quot;[地区和终端节点查询](https://console-intl.huaweicloud.com/apiexplorer/#/endpoint/CBR)\&quot;。](tag:hws_hk) **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :type destination_region: str
+        :param destination_project_id: **参数解释：** 复制的目标区域项目ID，获取方法请参见[获取项目ID](cbr_04_0022.xml) **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :type destination_project_id: str
         """
         
         
@@ -89,6 +97,8 @@ class ListOpLogsRequest:
         self._vault_id = None
         self._vault_name = None
         self._enterprise_project_id = None
+        self._destination_region = None
+        self._destination_project_id = None
         self.discriminator = None
 
         if end_time is not None:
@@ -115,6 +125,10 @@ class ListOpLogsRequest:
             self.vault_name = vault_name
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if destination_region is not None:
+            self.destination_region = destination_region
+        if destination_project_id is not None:
+            self.destination_project_id = destination_project_id
 
     @property
     def end_time(self):
@@ -379,6 +393,50 @@ class ListOpLogsRequest:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def destination_region(self):
+        r"""Gets the destination_region of this ListOpLogsRequest.
+
+        **参数解释：** 复制的目标区域 [获取方法请参见\"[地区和终端节点查询](https://console.huaweicloud.com/apiexplorer/#/endpoint/CBR)\"。 ](tag:hws) [获取方法请参见\"[地区和终端节点查询](https://console-intl.huaweicloud.com/apiexplorer/#/endpoint/CBR)\"。](tag:hws_hk) **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+
+        :return: The destination_region of this ListOpLogsRequest.
+        :rtype: str
+        """
+        return self._destination_region
+
+    @destination_region.setter
+    def destination_region(self, destination_region):
+        r"""Sets the destination_region of this ListOpLogsRequest.
+
+        **参数解释：** 复制的目标区域 [获取方法请参见\"[地区和终端节点查询](https://console.huaweicloud.com/apiexplorer/#/endpoint/CBR)\"。 ](tag:hws) [获取方法请参见\"[地区和终端节点查询](https://console-intl.huaweicloud.com/apiexplorer/#/endpoint/CBR)\"。](tag:hws_hk) **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+
+        :param destination_region: The destination_region of this ListOpLogsRequest.
+        :type destination_region: str
+        """
+        self._destination_region = destination_region
+
+    @property
+    def destination_project_id(self):
+        r"""Gets the destination_project_id of this ListOpLogsRequest.
+
+        **参数解释：** 复制的目标区域项目ID，获取方法请参见[获取项目ID](cbr_04_0022.xml) **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+
+        :return: The destination_project_id of this ListOpLogsRequest.
+        :rtype: str
+        """
+        return self._destination_project_id
+
+    @destination_project_id.setter
+    def destination_project_id(self, destination_project_id):
+        r"""Sets the destination_project_id of this ListOpLogsRequest.
+
+        **参数解释：** 复制的目标区域项目ID，获取方法请参见[获取项目ID](cbr_04_0022.xml) **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+
+        :param destination_project_id: The destination_project_id of this ListOpLogsRequest.
+        :type destination_project_id: str
+        """
+        self._destination_project_id = destination_project_id
 
     def to_dict(self):
         result = {}

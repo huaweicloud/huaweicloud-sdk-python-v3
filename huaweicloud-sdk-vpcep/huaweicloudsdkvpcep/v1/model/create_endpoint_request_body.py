@@ -28,7 +28,8 @@ class CreateEndpointRequestBody:
         'policy_statement': 'list[PolicyStatement]',
         'policy_document': 'object',
         'ip_version': 'str',
-        'ipv6_address': 'str'
+        'ipv6_address': 'str',
+        'edition': 'str'
     }
 
     attribute_map = {
@@ -45,10 +46,11 @@ class CreateEndpointRequestBody:
         'policy_statement': 'policy_statement',
         'policy_document': 'policy_document',
         'ip_version': 'ip_version',
-        'ipv6_address': 'ipv6_address'
+        'ipv6_address': 'ipv6_address',
+        'edition': 'edition'
     }
 
-    def __init__(self, subnet_id=None, endpoint_service_id=None, vpc_id=None, enable_dns=None, tags=None, routetables=None, port_ip=None, whitelist=None, enable_whitelist=None, description=None, policy_statement=None, policy_document=None, ip_version=None, ipv6_address=None):
+    def __init__(self, subnet_id=None, endpoint_service_id=None, vpc_id=None, enable_dns=None, tags=None, routetables=None, port_ip=None, whitelist=None, enable_whitelist=None, description=None, policy_statement=None, policy_document=None, ip_version=None, ipv6_address=None, edition=None):
         r"""CreateEndpointRequestBody
 
         The model defined in huaweicloud sdk
@@ -81,6 +83,8 @@ class CreateEndpointRequestBody:
         :type ip_version: str
         :param ipv6_address: 访问所连接的终端节点服务的IPv6的地址。  创建终端节点时，可以指定访问所连接的终端节点服务的IP，不指定的情况下，会使用系统生成的一个地址。  仅专业型终端节点支持此参数。
         :type ipv6_address: str
+        :param edition: 终端节点的商用类型。 - profession：专业版 - basic：基础版 不传时默认为基础版。
+        :type edition: str
         """
         
         
@@ -99,6 +103,7 @@ class CreateEndpointRequestBody:
         self._policy_document = None
         self._ip_version = None
         self._ipv6_address = None
+        self._edition = None
         self.discriminator = None
 
         if subnet_id is not None:
@@ -127,6 +132,8 @@ class CreateEndpointRequestBody:
             self.ip_version = ip_version
         if ipv6_address is not None:
             self.ipv6_address = ipv6_address
+        if edition is not None:
+            self.edition = edition
 
     @property
     def subnet_id(self):
@@ -435,6 +442,28 @@ class CreateEndpointRequestBody:
         :type ipv6_address: str
         """
         self._ipv6_address = ipv6_address
+
+    @property
+    def edition(self):
+        r"""Gets the edition of this CreateEndpointRequestBody.
+
+        终端节点的商用类型。 - profession：专业版 - basic：基础版 不传时默认为基础版。
+
+        :return: The edition of this CreateEndpointRequestBody.
+        :rtype: str
+        """
+        return self._edition
+
+    @edition.setter
+    def edition(self, edition):
+        r"""Sets the edition of this CreateEndpointRequestBody.
+
+        终端节点的商用类型。 - profession：专业版 - basic：基础版 不传时默认为基础版。
+
+        :param edition: The edition of this CreateEndpointRequestBody.
+        :type edition: str
+        """
+        self._edition = edition
 
     def to_dict(self):
         result = {}

@@ -29,9 +29,9 @@ class CustomAttributes:
 
         The model defined in huaweicloud sdk
 
-        :param attribute: 配置项属性，severity：为问题级别
+        :param attribute: **参数解释:** 配置项属性，severity：为规则告警等级。 **约束限制:** 不涉及。 **取值范围:** severity。 **默认取值:** 不涉及。
         :type attribute: str
-        :param rules: 规则详细
+        :param rules: **参数解释:** 规则详细。
         :type rules: list[:class:`huaweicloudsdkcodeartscheck.v2.CustomAttributesRule`]
         """
         
@@ -50,7 +50,7 @@ class CustomAttributes:
     def attribute(self):
         r"""Gets the attribute of this CustomAttributes.
 
-        配置项属性，severity：为问题级别
+        **参数解释:** 配置项属性，severity：为规则告警等级。 **约束限制:** 不涉及。 **取值范围:** severity。 **默认取值:** 不涉及。
 
         :return: The attribute of this CustomAttributes.
         :rtype: str
@@ -61,7 +61,7 @@ class CustomAttributes:
     def attribute(self, attribute):
         r"""Sets the attribute of this CustomAttributes.
 
-        配置项属性，severity：为问题级别
+        **参数解释:** 配置项属性，severity：为规则告警等级。 **约束限制:** 不涉及。 **取值范围:** severity。 **默认取值:** 不涉及。
 
         :param attribute: The attribute of this CustomAttributes.
         :type attribute: str
@@ -72,7 +72,7 @@ class CustomAttributes:
     def rules(self):
         r"""Gets the rules of this CustomAttributes.
 
-        规则详细
+        **参数解释:** 规则详细。
 
         :return: The rules of this CustomAttributes.
         :rtype: list[:class:`huaweicloudsdkcodeartscheck.v2.CustomAttributesRule`]
@@ -83,7 +83,7 @@ class CustomAttributes:
     def rules(self, rules):
         r"""Sets the rules of this CustomAttributes.
 
-        规则详细
+        **参数解释:** 规则详细。
 
         :param rules: The rules of this CustomAttributes.
         :type rules: list[:class:`huaweicloudsdkcodeartscheck.v2.CustomAttributesRule`]

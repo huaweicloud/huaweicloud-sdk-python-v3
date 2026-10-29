@@ -29,9 +29,9 @@ class ShowFlinkSqlGatewayResourceSpecResponseBody:
 
         The model defined in huaweicloud sdk
 
-        :param cpu: **参数解释**：SQL Gateway的CPU配额，单位为毫核。 **取值范围**：100~48000。
+        :param cpu: **参数解释**：CPU毫核数，单位为毫核。 **取值范围**：500~47500。
         :type cpu: int
-        :param memory: **参数解释**：SQL Gateway的内存配额，单位为MB。 **取值范围**：128~393216。
+        :param memory: **参数解释**：内存大小，单位为MB。 **取值范围**：2048~391168。
         :type memory: int
         """
         
@@ -41,16 +41,14 @@ class ShowFlinkSqlGatewayResourceSpecResponseBody:
         self._memory = None
         self.discriminator = None
 
-        if cpu is not None:
-            self.cpu = cpu
-        if memory is not None:
-            self.memory = memory
+        self.cpu = cpu
+        self.memory = memory
 
     @property
     def cpu(self):
         r"""Gets the cpu of this ShowFlinkSqlGatewayResourceSpecResponseBody.
 
-        **参数解释**：SQL Gateway的CPU配额，单位为毫核。 **取值范围**：100~48000。
+        **参数解释**：CPU毫核数，单位为毫核。 **取值范围**：500~47500。
 
         :return: The cpu of this ShowFlinkSqlGatewayResourceSpecResponseBody.
         :rtype: int
@@ -61,7 +59,7 @@ class ShowFlinkSqlGatewayResourceSpecResponseBody:
     def cpu(self, cpu):
         r"""Sets the cpu of this ShowFlinkSqlGatewayResourceSpecResponseBody.
 
-        **参数解释**：SQL Gateway的CPU配额，单位为毫核。 **取值范围**：100~48000。
+        **参数解释**：CPU毫核数，单位为毫核。 **取值范围**：500~47500。
 
         :param cpu: The cpu of this ShowFlinkSqlGatewayResourceSpecResponseBody.
         :type cpu: int
@@ -72,7 +70,7 @@ class ShowFlinkSqlGatewayResourceSpecResponseBody:
     def memory(self):
         r"""Gets the memory of this ShowFlinkSqlGatewayResourceSpecResponseBody.
 
-        **参数解释**：SQL Gateway的内存配额，单位为MB。 **取值范围**：128~393216。
+        **参数解释**：内存大小，单位为MB。 **取值范围**：2048~391168。
 
         :return: The memory of this ShowFlinkSqlGatewayResourceSpecResponseBody.
         :rtype: int
@@ -83,7 +81,7 @@ class ShowFlinkSqlGatewayResourceSpecResponseBody:
     def memory(self, memory):
         r"""Sets the memory of this ShowFlinkSqlGatewayResourceSpecResponseBody.
 
-        **参数解释**：SQL Gateway的内存配额，单位为MB。 **取值范围**：128~393216。
+        **参数解释**：内存大小，单位为MB。 **取值范围**：2048~391168。
 
         :param memory: The memory of this ShowFlinkSqlGatewayResourceSpecResponseBody.
         :type memory: int

@@ -81,7 +81,7 @@ class ListFlinkJobsRequest:
         :type deployment_id: str
         :param state: **参数解释**：Flink作业状态，用于按状态筛选作业列表。数组元素为FlinkJobState枚举，取值如下：   - CREATED：已创建。   - STARTING：启动中。   - RUNNING：运行中。   - CANCELLING：停止中。   - FAILED：已失败。   - CANCELLED：已停止。   - FINISHED：已完成。 **约束限制**：不涉及。
         :type state: list[:class:`huaweicloudsdkaidatalake.v2.FlinkJobState`]
-        :param job_type: **参数解释**：作业类型，用于按作业类型筛选列表。 **约束限制**：不涉及。 **取值范围**：   - FLINK_SQL_JOB：SQL作业。   - FLINK_JAR_JOB：JAR作业。 **默认取值**：不涉及。
+        :param job_type: **参数解释**：作业类型，用于按作业类型筛选列表。 **约束限制**：不涉及。 **取值范围**：   - FLINK_SQL_JOB：SQL作业。   - FLINK_JAR_JOB：JAR作业。   - FLINK_SQL_GATEWAY：SQL Gateway作业。   - FLINK_PYTHON_JOB：Python作业。 **默认取值**：不涉及。
         :type job_type: str
         :param execution_mode: **参数解释**：执行模式，用于按执行模式筛选作业列表。 **约束限制**：不涉及。 **取值范围**：   - STREAMING：流模式。   - BATCH：批模式。 **默认取值**：不涉及。
         :type execution_mode: str
@@ -411,7 +411,7 @@ class ListFlinkJobsRequest:
     def job_type(self):
         r"""Gets the job_type of this ListFlinkJobsRequest.
 
-        **参数解释**：作业类型，用于按作业类型筛选列表。 **约束限制**：不涉及。 **取值范围**：   - FLINK_SQL_JOB：SQL作业。   - FLINK_JAR_JOB：JAR作业。 **默认取值**：不涉及。
+        **参数解释**：作业类型，用于按作业类型筛选列表。 **约束限制**：不涉及。 **取值范围**：   - FLINK_SQL_JOB：SQL作业。   - FLINK_JAR_JOB：JAR作业。   - FLINK_SQL_GATEWAY：SQL Gateway作业。   - FLINK_PYTHON_JOB：Python作业。 **默认取值**：不涉及。
 
         :return: The job_type of this ListFlinkJobsRequest.
         :rtype: str
@@ -422,7 +422,7 @@ class ListFlinkJobsRequest:
     def job_type(self, job_type):
         r"""Sets the job_type of this ListFlinkJobsRequest.
 
-        **参数解释**：作业类型，用于按作业类型筛选列表。 **约束限制**：不涉及。 **取值范围**：   - FLINK_SQL_JOB：SQL作业。   - FLINK_JAR_JOB：JAR作业。 **默认取值**：不涉及。
+        **参数解释**：作业类型，用于按作业类型筛选列表。 **约束限制**：不涉及。 **取值范围**：   - FLINK_SQL_JOB：SQL作业。   - FLINK_JAR_JOB：JAR作业。   - FLINK_SQL_GATEWAY：SQL Gateway作业。   - FLINK_PYTHON_JOB：Python作业。 **默认取值**：不涉及。
 
         :param job_type: The job_type of this ListFlinkJobsRequest.
         :type job_type: str

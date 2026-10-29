@@ -27,7 +27,8 @@ class UpdatePolicyResponse(SdkResponse):
         'hosts': 'list[str]',
         'bind_host': 'list[BindHost]',
         'extend': 'dict(str, str)',
-        'timestamp': 'int'
+        'timestamp': 'int',
+        'scan_protection_options': 'ScanProtectionOption'
     }
 
     attribute_map = {
@@ -42,10 +43,11 @@ class UpdatePolicyResponse(SdkResponse):
         'hosts': 'hosts',
         'bind_host': 'bind_host',
         'extend': 'extend',
-        'timestamp': 'timestamp'
+        'timestamp': 'timestamp',
+        'scan_protection_options': 'scan_protection_options'
     }
 
-    def __init__(self, id=None, name=None, level=None, full_detection=None, robot_action=None, action=None, options=None, modulex_options=None, hosts=None, bind_host=None, extend=None, timestamp=None):
+    def __init__(self, id=None, name=None, level=None, full_detection=None, robot_action=None, action=None, options=None, modulex_options=None, hosts=None, bind_host=None, extend=None, timestamp=None, scan_protection_options=None):
         r"""UpdatePolicyResponse
 
         The model defined in huaweicloud sdk
@@ -74,6 +76,8 @@ class UpdatePolicyResponse(SdkResponse):
         :type extend: dict(str, str)
         :param timestamp: 创建防护策略的时间
         :type timestamp: int
+        :param scan_protection_options: 
+        :type scan_protection_options: :class:`huaweicloudsdkwaf.v1.ScanProtectionOption`
         """
         
         super().__init__()
@@ -90,6 +94,7 @@ class UpdatePolicyResponse(SdkResponse):
         self._bind_host = None
         self._extend = None
         self._timestamp = None
+        self._scan_protection_options = None
         self.discriminator = None
 
         if id is not None:
@@ -116,6 +121,8 @@ class UpdatePolicyResponse(SdkResponse):
             self.extend = extend
         if timestamp is not None:
             self.timestamp = timestamp
+        if scan_protection_options is not None:
+            self.scan_protection_options = scan_protection_options
 
     @property
     def id(self):
@@ -368,6 +375,24 @@ class UpdatePolicyResponse(SdkResponse):
         :type timestamp: int
         """
         self._timestamp = timestamp
+
+    @property
+    def scan_protection_options(self):
+        r"""Gets the scan_protection_options of this UpdatePolicyResponse.
+
+        :return: The scan_protection_options of this UpdatePolicyResponse.
+        :rtype: :class:`huaweicloudsdkwaf.v1.ScanProtectionOption`
+        """
+        return self._scan_protection_options
+
+    @scan_protection_options.setter
+    def scan_protection_options(self, scan_protection_options):
+        r"""Sets the scan_protection_options of this UpdatePolicyResponse.
+
+        :param scan_protection_options: The scan_protection_options of this UpdatePolicyResponse.
+        :type scan_protection_options: :class:`huaweicloudsdkwaf.v1.ScanProtectionOption`
+        """
+        self._scan_protection_options = scan_protection_options
 
     def to_dict(self):
         import warnings

@@ -25,7 +25,8 @@ class ListVaultRequest:
         'id': 'list[str]',
         'policy_id': 'str',
         'status': 'str',
-        'resource_ids': 'str'
+        'resource_ids': 'str',
+        'availability_zone': 'str'
     }
 
     attribute_map = {
@@ -39,10 +40,11 @@ class ListVaultRequest:
         'id': 'id',
         'policy_id': 'policy_id',
         'status': 'status',
-        'resource_ids': 'resource_ids'
+        'resource_ids': 'resource_ids',
+        'availability_zone': 'availability_zone'
     }
 
-    def __init__(self, limit=None, name=None, offset=None, cloud_type=None, protect_type=None, object_type=None, enterprise_project_id=None, id=None, policy_id=None, status=None, resource_ids=None):
+    def __init__(self, limit=None, name=None, offset=None, cloud_type=None, protect_type=None, object_type=None, enterprise_project_id=None, id=None, policy_id=None, status=None, resource_ids=None, availability_zone=None):
         r"""ListVaultRequest
 
         The model defined in huaweicloud sdk
@@ -69,6 +71,8 @@ class ListVaultRequest:
         :type status: str
         :param resource_ids: 资源id，支持多资源，以英文逗号分隔
         :type resource_ids: str
+        :param availability_zone: **参数解释：** 存储库可用区信息 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :type availability_zone: str
         """
         
         
@@ -84,6 +88,7 @@ class ListVaultRequest:
         self._policy_id = None
         self._status = None
         self._resource_ids = None
+        self._availability_zone = None
         self.discriminator = None
 
         if limit is not None:
@@ -108,6 +113,8 @@ class ListVaultRequest:
             self.status = status
         if resource_ids is not None:
             self.resource_ids = resource_ids
+        if availability_zone is not None:
+            self.availability_zone = availability_zone
 
     @property
     def limit(self):
@@ -350,6 +357,28 @@ class ListVaultRequest:
         :type resource_ids: str
         """
         self._resource_ids = resource_ids
+
+    @property
+    def availability_zone(self):
+        r"""Gets the availability_zone of this ListVaultRequest.
+
+        **参数解释：** 存储库可用区信息 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+
+        :return: The availability_zone of this ListVaultRequest.
+        :rtype: str
+        """
+        return self._availability_zone
+
+    @availability_zone.setter
+    def availability_zone(self, availability_zone):
+        r"""Sets the availability_zone of this ListVaultRequest.
+
+        **参数解释：** 存储库可用区信息 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+
+        :param availability_zone: The availability_zone of this ListVaultRequest.
+        :type availability_zone: str
+        """
+        self._availability_zone = availability_zone
 
     def to_dict(self):
         result = {}

@@ -30,9 +30,9 @@ class ShowTaskDefectsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param defects: 缺陷详情信息
+        :param defects: **参数解释：** 缺陷详情列表，注意这里和入参中的limit数据不一定一致，服务会重新对响应数据拆分。
         :type defects: list[:class:`huaweicloudsdkcodeartscheck.v2.DefectInfoV2`]
-        :param total: 总数
+        :param total: **参数解释：** 缺陷详情总数。 **取值范围：** 不涉及。
         :type total: int
         """
         
@@ -51,7 +51,7 @@ class ShowTaskDefectsResponse(SdkResponse):
     def defects(self):
         r"""Gets the defects of this ShowTaskDefectsResponse.
 
-        缺陷详情信息
+        **参数解释：** 缺陷详情列表，注意这里和入参中的limit数据不一定一致，服务会重新对响应数据拆分。
 
         :return: The defects of this ShowTaskDefectsResponse.
         :rtype: list[:class:`huaweicloudsdkcodeartscheck.v2.DefectInfoV2`]
@@ -62,7 +62,7 @@ class ShowTaskDefectsResponse(SdkResponse):
     def defects(self, defects):
         r"""Sets the defects of this ShowTaskDefectsResponse.
 
-        缺陷详情信息
+        **参数解释：** 缺陷详情列表，注意这里和入参中的limit数据不一定一致，服务会重新对响应数据拆分。
 
         :param defects: The defects of this ShowTaskDefectsResponse.
         :type defects: list[:class:`huaweicloudsdkcodeartscheck.v2.DefectInfoV2`]
@@ -73,7 +73,7 @@ class ShowTaskDefectsResponse(SdkResponse):
     def total(self):
         r"""Gets the total of this ShowTaskDefectsResponse.
 
-        总数
+        **参数解释：** 缺陷详情总数。 **取值范围：** 不涉及。
 
         :return: The total of this ShowTaskDefectsResponse.
         :rtype: int
@@ -84,7 +84,7 @@ class ShowTaskDefectsResponse(SdkResponse):
     def total(self, total):
         r"""Sets the total of this ShowTaskDefectsResponse.
 
-        总数
+        **参数解释：** 缺陷详情总数。 **取值范围：** 不涉及。
 
         :param total: The total of this ShowTaskDefectsResponse.
         :type total: int

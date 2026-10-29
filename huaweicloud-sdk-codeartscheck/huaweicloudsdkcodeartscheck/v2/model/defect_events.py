@@ -20,12 +20,12 @@ class DefectEvents:
         'fix_suggestions': 'list[str]',
         'line': 'int',
         'end_line': 'int',
-        'code_context_start_line': 'int',
         'main': 'bool',
         'path': 'str',
         'tag': 'str',
         'main_buggy_code': 'str',
-        'code_context': 'str'
+        'code_context': 'str',
+        'code_context_start_line': 'int'
     }
 
     attribute_map = {
@@ -34,41 +34,41 @@ class DefectEvents:
         'fix_suggestions': 'fix_suggestions',
         'line': 'line',
         'end_line': 'end_line',
-        'code_context_start_line': 'code_context_start_line',
         'main': 'main',
         'path': 'path',
         'tag': 'tag',
         'main_buggy_code': 'main_buggy_code',
-        'code_context': 'code_context'
+        'code_context': 'code_context',
+        'code_context_start_line': 'code_context_start_line'
     }
 
-    def __init__(self, events=None, description=None, fix_suggestions=None, line=None, end_line=None, code_context_start_line=None, main=None, path=None, tag=None, main_buggy_code=None, code_context=None):
+    def __init__(self, events=None, description=None, fix_suggestions=None, line=None, end_line=None, main=None, path=None, tag=None, main_buggy_code=None, code_context=None, code_context_start_line=None):
         r"""DefectEvents
 
         The model defined in huaweicloud sdk
 
-        :param events: 调用链信息
+        :param events: **参数解释：** 调用链信息。
         :type events: list[:class:`huaweicloudsdkcodeartscheck.v2.DefectEvents`]
-        :param description: 描述
+        :param description: **参数解释：** 问题详细描述。 **取值范围：** 不涉及。
         :type description: str
-        :param fix_suggestions: fix suggestions
+        :param fix_suggestions: **参数解释：** 修复建议。
         :type fix_suggestions: list[str]
-        :param line: 缺陷所在行
+        :param line: **参数解释：** 问题所在文件行号。 **取值范围：** 不涉及。
         :type line: int
-        :param end_line: 缺陷结束行
+        :param end_line: **参数解释：** 废弃字段。 **取值范围：** 不涉及。
         :type end_line: int
-        :param code_context_start_line: 缺陷开始行
-        :type code_context_start_line: int
-        :param main: 代码片段
+        :param main: **参数解释：** 废弃字段。 **取值范围：** 不涉及。
         :type main: bool
-        :param path: file path
+        :param path: **参数解释：** 文件路径。 **取值范围：** 不涉及。
         :type path: str
-        :param tag: 标签
+        :param tag: **参数解释：** 废弃字段。 **取值范围：** 不涉及。
         :type tag: str
-        :param main_buggy_code: main buggy code
+        :param main_buggy_code: **参数解释：** 问题主事件对应的代码片段内容。 **取值范围：** 不涉及。
         :type main_buggy_code: str
-        :param code_context: code context
+        :param code_context: **参数解释：** 代码上下文。 **取值范围：** 不涉及。
         :type code_context: str
+        :param code_context_start_line: **参数解释：** 代码上下文起始行号。 **取值范围：** 不涉及。
+        :type code_context_start_line: int
         """
         
         
@@ -78,12 +78,12 @@ class DefectEvents:
         self._fix_suggestions = None
         self._line = None
         self._end_line = None
-        self._code_context_start_line = None
         self._main = None
         self._path = None
         self._tag = None
         self._main_buggy_code = None
         self._code_context = None
+        self._code_context_start_line = None
         self.discriminator = None
 
         if events is not None:
@@ -96,8 +96,6 @@ class DefectEvents:
             self.line = line
         if end_line is not None:
             self.end_line = end_line
-        if code_context_start_line is not None:
-            self.code_context_start_line = code_context_start_line
         if main is not None:
             self.main = main
         if path is not None:
@@ -108,12 +106,14 @@ class DefectEvents:
             self.main_buggy_code = main_buggy_code
         if code_context is not None:
             self.code_context = code_context
+        if code_context_start_line is not None:
+            self.code_context_start_line = code_context_start_line
 
     @property
     def events(self):
         r"""Gets the events of this DefectEvents.
 
-        调用链信息
+        **参数解释：** 调用链信息。
 
         :return: The events of this DefectEvents.
         :rtype: list[:class:`huaweicloudsdkcodeartscheck.v2.DefectEvents`]
@@ -124,7 +124,7 @@ class DefectEvents:
     def events(self, events):
         r"""Sets the events of this DefectEvents.
 
-        调用链信息
+        **参数解释：** 调用链信息。
 
         :param events: The events of this DefectEvents.
         :type events: list[:class:`huaweicloudsdkcodeartscheck.v2.DefectEvents`]
@@ -135,7 +135,7 @@ class DefectEvents:
     def description(self):
         r"""Gets the description of this DefectEvents.
 
-        描述
+        **参数解释：** 问题详细描述。 **取值范围：** 不涉及。
 
         :return: The description of this DefectEvents.
         :rtype: str
@@ -146,7 +146,7 @@ class DefectEvents:
     def description(self, description):
         r"""Sets the description of this DefectEvents.
 
-        描述
+        **参数解释：** 问题详细描述。 **取值范围：** 不涉及。
 
         :param description: The description of this DefectEvents.
         :type description: str
@@ -157,7 +157,7 @@ class DefectEvents:
     def fix_suggestions(self):
         r"""Gets the fix_suggestions of this DefectEvents.
 
-        fix suggestions
+        **参数解释：** 修复建议。
 
         :return: The fix_suggestions of this DefectEvents.
         :rtype: list[str]
@@ -168,7 +168,7 @@ class DefectEvents:
     def fix_suggestions(self, fix_suggestions):
         r"""Sets the fix_suggestions of this DefectEvents.
 
-        fix suggestions
+        **参数解释：** 修复建议。
 
         :param fix_suggestions: The fix_suggestions of this DefectEvents.
         :type fix_suggestions: list[str]
@@ -179,7 +179,7 @@ class DefectEvents:
     def line(self):
         r"""Gets the line of this DefectEvents.
 
-        缺陷所在行
+        **参数解释：** 问题所在文件行号。 **取值范围：** 不涉及。
 
         :return: The line of this DefectEvents.
         :rtype: int
@@ -190,7 +190,7 @@ class DefectEvents:
     def line(self, line):
         r"""Sets the line of this DefectEvents.
 
-        缺陷所在行
+        **参数解释：** 问题所在文件行号。 **取值范围：** 不涉及。
 
         :param line: The line of this DefectEvents.
         :type line: int
@@ -201,7 +201,7 @@ class DefectEvents:
     def end_line(self):
         r"""Gets the end_line of this DefectEvents.
 
-        缺陷结束行
+        **参数解释：** 废弃字段。 **取值范围：** 不涉及。
 
         :return: The end_line of this DefectEvents.
         :rtype: int
@@ -212,7 +212,7 @@ class DefectEvents:
     def end_line(self, end_line):
         r"""Sets the end_line of this DefectEvents.
 
-        缺陷结束行
+        **参数解释：** 废弃字段。 **取值范围：** 不涉及。
 
         :param end_line: The end_line of this DefectEvents.
         :type end_line: int
@@ -220,32 +220,10 @@ class DefectEvents:
         self._end_line = end_line
 
     @property
-    def code_context_start_line(self):
-        r"""Gets the code_context_start_line of this DefectEvents.
-
-        缺陷开始行
-
-        :return: The code_context_start_line of this DefectEvents.
-        :rtype: int
-        """
-        return self._code_context_start_line
-
-    @code_context_start_line.setter
-    def code_context_start_line(self, code_context_start_line):
-        r"""Sets the code_context_start_line of this DefectEvents.
-
-        缺陷开始行
-
-        :param code_context_start_line: The code_context_start_line of this DefectEvents.
-        :type code_context_start_line: int
-        """
-        self._code_context_start_line = code_context_start_line
-
-    @property
     def main(self):
         r"""Gets the main of this DefectEvents.
 
-        代码片段
+        **参数解释：** 废弃字段。 **取值范围：** 不涉及。
 
         :return: The main of this DefectEvents.
         :rtype: bool
@@ -256,7 +234,7 @@ class DefectEvents:
     def main(self, main):
         r"""Sets the main of this DefectEvents.
 
-        代码片段
+        **参数解释：** 废弃字段。 **取值范围：** 不涉及。
 
         :param main: The main of this DefectEvents.
         :type main: bool
@@ -267,7 +245,7 @@ class DefectEvents:
     def path(self):
         r"""Gets the path of this DefectEvents.
 
-        file path
+        **参数解释：** 文件路径。 **取值范围：** 不涉及。
 
         :return: The path of this DefectEvents.
         :rtype: str
@@ -278,7 +256,7 @@ class DefectEvents:
     def path(self, path):
         r"""Sets the path of this DefectEvents.
 
-        file path
+        **参数解释：** 文件路径。 **取值范围：** 不涉及。
 
         :param path: The path of this DefectEvents.
         :type path: str
@@ -289,7 +267,7 @@ class DefectEvents:
     def tag(self):
         r"""Gets the tag of this DefectEvents.
 
-        标签
+        **参数解释：** 废弃字段。 **取值范围：** 不涉及。
 
         :return: The tag of this DefectEvents.
         :rtype: str
@@ -300,7 +278,7 @@ class DefectEvents:
     def tag(self, tag):
         r"""Sets the tag of this DefectEvents.
 
-        标签
+        **参数解释：** 废弃字段。 **取值范围：** 不涉及。
 
         :param tag: The tag of this DefectEvents.
         :type tag: str
@@ -311,7 +289,7 @@ class DefectEvents:
     def main_buggy_code(self):
         r"""Gets the main_buggy_code of this DefectEvents.
 
-        main buggy code
+        **参数解释：** 问题主事件对应的代码片段内容。 **取值范围：** 不涉及。
 
         :return: The main_buggy_code of this DefectEvents.
         :rtype: str
@@ -322,7 +300,7 @@ class DefectEvents:
     def main_buggy_code(self, main_buggy_code):
         r"""Sets the main_buggy_code of this DefectEvents.
 
-        main buggy code
+        **参数解释：** 问题主事件对应的代码片段内容。 **取值范围：** 不涉及。
 
         :param main_buggy_code: The main_buggy_code of this DefectEvents.
         :type main_buggy_code: str
@@ -333,7 +311,7 @@ class DefectEvents:
     def code_context(self):
         r"""Gets the code_context of this DefectEvents.
 
-        code context
+        **参数解释：** 代码上下文。 **取值范围：** 不涉及。
 
         :return: The code_context of this DefectEvents.
         :rtype: str
@@ -344,12 +322,34 @@ class DefectEvents:
     def code_context(self, code_context):
         r"""Sets the code_context of this DefectEvents.
 
-        code context
+        **参数解释：** 代码上下文。 **取值范围：** 不涉及。
 
         :param code_context: The code_context of this DefectEvents.
         :type code_context: str
         """
         self._code_context = code_context
+
+    @property
+    def code_context_start_line(self):
+        r"""Gets the code_context_start_line of this DefectEvents.
+
+        **参数解释：** 代码上下文起始行号。 **取值范围：** 不涉及。
+
+        :return: The code_context_start_line of this DefectEvents.
+        :rtype: int
+        """
+        return self._code_context_start_line
+
+    @code_context_start_line.setter
+    def code_context_start_line(self, code_context_start_line):
+        r"""Sets the code_context_start_line of this DefectEvents.
+
+        **参数解释：** 代码上下文起始行号。 **取值范围：** 不涉及。
+
+        :param code_context_start_line: The code_context_start_line of this DefectEvents.
+        :type code_context_start_line: int
+        """
+        self._code_context_start_line = code_context_start_line
 
     def to_dict(self):
         result = {}

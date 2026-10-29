@@ -29,9 +29,9 @@ class IgnorePathSettingItem:
 
         The model defined in huaweicloud sdk
 
-        :param file_path: 目录或文件路径
+        :param file_path: **参数解释：** 需要屏蔽的目录或文件路径。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type file_path: str
-        :param checkbox_status: 屏蔽状态，包括unchecked(不屏蔽)、all(全屏蔽)、half(半屏蔽)
+        :param checkbox_status: **参数解释：** 屏蔽状态。 **约束限制：** 不涉及。 **取值范围：** - unchecked：取消屏蔽 - all：全部屏蔽 - half：半屏蔽，用于目录，表示目录下部分子目录、文件需要屏蔽 **默认取值：** 不涉及。
         :type checkbox_status: str
         """
         
@@ -41,14 +41,16 @@ class IgnorePathSettingItem:
         self._checkbox_status = None
         self.discriminator = None
 
-        self.file_path = file_path
-        self.checkbox_status = checkbox_status
+        if file_path is not None:
+            self.file_path = file_path
+        if checkbox_status is not None:
+            self.checkbox_status = checkbox_status
 
     @property
     def file_path(self):
         r"""Gets the file_path of this IgnorePathSettingItem.
 
-        目录或文件路径
+        **参数解释：** 需要屏蔽的目录或文件路径。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The file_path of this IgnorePathSettingItem.
         :rtype: str
@@ -59,7 +61,7 @@ class IgnorePathSettingItem:
     def file_path(self, file_path):
         r"""Sets the file_path of this IgnorePathSettingItem.
 
-        目录或文件路径
+        **参数解释：** 需要屏蔽的目录或文件路径。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param file_path: The file_path of this IgnorePathSettingItem.
         :type file_path: str
@@ -70,7 +72,7 @@ class IgnorePathSettingItem:
     def checkbox_status(self):
         r"""Gets the checkbox_status of this IgnorePathSettingItem.
 
-        屏蔽状态，包括unchecked(不屏蔽)、all(全屏蔽)、half(半屏蔽)
+        **参数解释：** 屏蔽状态。 **约束限制：** 不涉及。 **取值范围：** - unchecked：取消屏蔽 - all：全部屏蔽 - half：半屏蔽，用于目录，表示目录下部分子目录、文件需要屏蔽 **默认取值：** 不涉及。
 
         :return: The checkbox_status of this IgnorePathSettingItem.
         :rtype: str
@@ -81,7 +83,7 @@ class IgnorePathSettingItem:
     def checkbox_status(self, checkbox_status):
         r"""Sets the checkbox_status of this IgnorePathSettingItem.
 
-        屏蔽状态，包括unchecked(不屏蔽)、all(全屏蔽)、half(半屏蔽)
+        **参数解释：** 屏蔽状态。 **约束限制：** 不涉及。 **取值范围：** - unchecked：取消屏蔽 - all：全部屏蔽 - half：半屏蔽，用于目录，表示目录下部分子目录、文件需要屏蔽 **默认取值：** 不涉及。
 
         :param checkbox_status: The checkbox_status of this IgnorePathSettingItem.
         :type checkbox_status: str

@@ -148,6 +148,8 @@ from huaweicloudsdkcbr.v1.model.op_extend_info_sync import OpExtendInfoSync
 from huaweicloudsdkcbr.v1.model.op_extend_info_update_expiration_time import OpExtendInfoUpdateExpirationTime
 from huaweicloudsdkcbr.v1.model.op_extend_info_vault_delete import OpExtendInfoVaultDelete
 from huaweicloudsdkcbr.v1.model.op_extra_info import OpExtraInfo
+from huaweicloudsdkcbr.v1.model.op_resource_extra_info_resp import OpResourceExtraInfoResp
+from huaweicloudsdkcbr.v1.model.op_resource_resp import OpResourceResp
 from huaweicloudsdkcbr.v1.model.operation_log import OperationLog
 from huaweicloudsdkcbr.v1.model.organization_policy import OrganizationPolicy
 from huaweicloudsdkcbr.v1.model.organization_policy_create import OrganizationPolicyCreate
@@ -194,6 +196,7 @@ from huaweicloudsdkcbr.v1.model.resource import Resource
 from huaweicloudsdkcbr.v1.model.resource_create import ResourceCreate
 from huaweicloudsdkcbr.v1.model.resource_extra_info import ResourceExtraInfo
 from huaweicloudsdkcbr.v1.model.resource_extra_info_include_volumes import ResourceExtraInfoIncludeVolumes
+from huaweicloudsdkcbr.v1.model.resource_extra_info_include_volumes_resp import ResourceExtraInfoIncludeVolumesResp
 from huaweicloudsdkcbr.v1.model.resource_resp import ResourceResp
 from huaweicloudsdkcbr.v1.model.restore_backup_request import RestoreBackupRequest
 from huaweicloudsdkcbr.v1.model.restore_backup_response import RestoreBackupResponse

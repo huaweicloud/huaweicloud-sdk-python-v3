@@ -518,6 +518,81 @@ class CodeArtsCheckClient(Client):
 
         return http_info
 
+    def list_criterion_sets_by_language(self, request):
+        r"""根据语言查询规则集
+
+        该API用于查询项目下某一语言的规则集列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListCriterionSetsByLanguage
+        :type request: :class:`huaweicloudsdkcodeartscheck.v2.ListCriterionSetsByLanguageRequest`
+        :rtype: :class:`huaweicloudsdkcodeartscheck.v2.ListCriterionSetsByLanguageResponse`
+        """
+        http_info = self._list_criterion_sets_by_language_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_criterion_sets_by_language_invoker(self, request):
+        http_info = self._list_criterion_sets_by_language_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_criterion_sets_by_language_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/criterionsets/language",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCriterionSetsByLanguageResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'language' in local_var_params:
+            query_params.append(('language', local_var_params['language']))
+        if 'search' in local_var_params:
+            query_params.append(('search', local_var_params['search']))
+        if 'page_size' in local_var_params:
+            query_params.append(('page_size', local_var_params['page_size']))
+        if 'page' in local_var_params:
+            query_params.append(('page', local_var_params['page']))
+        if 'project_id' in local_var_params:
+            query_params.append(('project_id', local_var_params['project_id']))
+        if 'is_reliable' in local_var_params:
+            query_params.append(('is_reliable', local_var_params['is_reliable']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_rules(self, request):
         r"""获取规则列表接口
 
@@ -1344,6 +1419,77 @@ class CodeArtsCheckClient(Client):
 
         return http_info
 
+    def show_task_info_by_id(self, request):
+        r"""根据任务ID查询检查任务
+
+        根据任务ID查询代码检查任务的基本信息，返回任务ID、任务名、项目ID、项目名、代码仓地址、分支和配置模板ID等信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowTaskInfoById
+        :type request: :class:`huaweicloudsdkcodeartscheck.v2.ShowTaskInfoByIdRequest`
+        :rtype: :class:`huaweicloudsdkcodeartscheck.v2.ShowTaskInfoByIdResponse`
+        """
+        http_info = self._show_task_info_by_id_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_task_info_by_id_invoker(self, request):
+        http_info = self._show_task_info_by_id_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_task_info_by_id_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/task/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTaskInfoByIdResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+        if 'merge_id' in local_var_params:
+            query_params.append(('merge_id', local_var_params['merge_id']))
+        if 'job_id' in local_var_params:
+            query_params.append(('job_id', local_var_params['job_id']))
+
+        header_params = {}
+        if 'operator' in local_var_params:
+            header_params['operator'] = local_var_params['operator']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_task_list_by_project_id(self, request):
         r"""查询任务列表
 
@@ -1626,6 +1772,101 @@ class CodeArtsCheckClient(Client):
 
         return http_info
 
+    def show_tasks_list(self, request):
+        r"""查询任务列表
+
+        根据项目ID、需要搜索的任务名、任务分组ID和任务执行状态分页查询项目下的代码检查任务，返回任务名称、代码仓地址、分支、配置模板ID和规则集等信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowTasksList
+        :type request: :class:`huaweicloudsdkcodeartscheck.v2.ShowTasksListRequest`
+        :rtype: :class:`huaweicloudsdkcodeartscheck.v2.ShowTasksListResponse`
+        """
+        http_info = self._show_tasks_list_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_tasks_list_invoker(self, request):
+        http_info = self._show_tasks_list_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_tasks_list_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTasksListResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'page' in local_var_params:
+            query_params.append(('page', local_var_params['page']))
+        if 'page_size' in local_var_params:
+            query_params.append(('page_size', local_var_params['page_size']))
+        if 'search' in local_var_params:
+            query_params.append(('search', local_var_params['search']))
+        if 'project_id' in local_var_params:
+            query_params.append(('project_id', local_var_params['project_id']))
+        if 'review_result_types' in local_var_params:
+            query_params.append(('review_result_types', local_var_params['review_result_types']))
+        if 'job_status_types' in local_var_params:
+            query_params.append(('job_status_types', local_var_params['job_status_types']))
+        if 'order_by_execute_time' in local_var_params:
+            query_params.append(('order_by_execute_time', local_var_params['order_by_execute_time']))
+        if 'task_classification_id' in local_var_params:
+            query_params.append(('task_classification_id', local_var_params['task_classification_id']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'sort_field' in local_var_params:
+            query_params.append(('sort_field', local_var_params['sort_field']))
+        if 'sort_order' in local_var_params:
+            query_params.append(('sort_order', local_var_params['sort_order']))
+        if 'repo_url' in local_var_params:
+            query_params.append(('repo_url', local_var_params['repo_url']))
+        if 'branch' in local_var_params:
+            query_params.append(('branch', local_var_params['branch']))
+        if 'repo_url_full_match' in local_var_params:
+            query_params.append(('repo_url_full_match', local_var_params['repo_url_full_match']))
+
+        header_params = {}
+        if 'operator' in local_var_params:
+            header_params['operator'] = local_var_params['operator']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_tasks_rulesets(self, request):
         r"""查询任务的已选规则集列表
 
@@ -1750,6 +1991,73 @@ class CodeArtsCheckClient(Client):
             ['application/json'])
 
         auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_code_gate(self, request):
+        r"""更新门禁配置
+
+        根据任务ID设置任务的致命问题数、严重问题数、一般问题数和提示问题数的质量门禁，在检查完成后，超过门禁阈值将提示门禁结果为Failed。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateCodeGate
+        :type request: :class:`huaweicloudsdkcodeartscheck.v2.UpdateCodeGateRequest`
+        :rtype: :class:`huaweicloudsdkcodeartscheck.v2.UpdateCodeGateResponse`
+        """
+        http_info = self._update_code_gate_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_code_gate_invoker(self, request):
+        http_info = self._update_code_gate_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_code_gate_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/task/code-gate",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateCodeGateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'operator' in local_var_params:
+            header_params['operator'] = local_var_params['operator']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats

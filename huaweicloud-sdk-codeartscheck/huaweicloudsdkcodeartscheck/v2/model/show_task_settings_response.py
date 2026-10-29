@@ -30,9 +30,9 @@ class ShowTaskSettingsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param info: 高级选项的相关信息
+        :param info: **参数解释：** 高级配置的相关信息。
         :type info: list[:class:`huaweicloudsdkcodeartscheck.v2.TaskAdvancedSettings`]
-        :param total: 总数
+        :param total: **参数解释：** 总数。 **取值范围：** ≥0
         :type total: int
         """
         
@@ -51,7 +51,7 @@ class ShowTaskSettingsResponse(SdkResponse):
     def info(self):
         r"""Gets the info of this ShowTaskSettingsResponse.
 
-        高级选项的相关信息
+        **参数解释：** 高级配置的相关信息。
 
         :return: The info of this ShowTaskSettingsResponse.
         :rtype: list[:class:`huaweicloudsdkcodeartscheck.v2.TaskAdvancedSettings`]
@@ -62,7 +62,7 @@ class ShowTaskSettingsResponse(SdkResponse):
     def info(self, info):
         r"""Sets the info of this ShowTaskSettingsResponse.
 
-        高级选项的相关信息
+        **参数解释：** 高级配置的相关信息。
 
         :param info: The info of this ShowTaskSettingsResponse.
         :type info: list[:class:`huaweicloudsdkcodeartscheck.v2.TaskAdvancedSettings`]
@@ -73,7 +73,7 @@ class ShowTaskSettingsResponse(SdkResponse):
     def total(self):
         r"""Gets the total of this ShowTaskSettingsResponse.
 
-        总数
+        **参数解释：** 总数。 **取值范围：** ≥0
 
         :return: The total of this ShowTaskSettingsResponse.
         :rtype: int
@@ -84,7 +84,7 @@ class ShowTaskSettingsResponse(SdkResponse):
     def total(self, total):
         r"""Sets the total of this ShowTaskSettingsResponse.
 
-        总数
+        **参数解释：** 总数。 **取值范围：** ≥0
 
         :param total: The total of this ShowTaskSettingsResponse.
         :type total: int

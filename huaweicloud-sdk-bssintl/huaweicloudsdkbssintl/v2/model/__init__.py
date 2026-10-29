@@ -31,6 +31,7 @@ from huaweicloudsdkbssintl.v2.model.check_subcustomer_user_req import CheckSubcu
 from huaweicloudsdkbssintl.v2.model.check_user_identity_request import CheckUserIdentityRequest
 from huaweicloudsdkbssintl.v2.model.check_user_identity_response import CheckUserIdentityResponse
 from huaweicloudsdkbssintl.v2.model.cloud_service_basic import CloudServiceBasic
+from huaweicloudsdkbssintl.v2.model.condition_select_pattern import ConditionSelectPattern
 from huaweicloudsdkbssintl.v2.model.conversion import Conversion
 from huaweicloudsdkbssintl.v2.model.cost import Cost
 from huaweicloudsdkbssintl.v2.model.cost_data_by_dimension import CostDataByDimension
@@ -56,6 +57,8 @@ from huaweicloudsdkbssintl.v2.model.dimension_group import DimensionGroup
 from huaweicloudsdkbssintl.v2.model.discount_info_v3 import DiscountInfoV3
 from huaweicloudsdkbssintl.v2.model.discount_item_v2 import DiscountItemV2
 from huaweicloudsdkbssintl.v2.model.discount_simple_info_v3 import DiscountSimpleInfoV3
+from huaweicloudsdkbssintl.v2.model.division import Division
+from huaweicloudsdkbssintl.v2.model.division_pattern import DivisionPattern
 from huaweicloudsdkbssintl.v2.model.enterprise_person_new import EnterprisePersonNew
 from huaweicloudsdkbssintl.v2.model.enterprise_project import EnterpriseProject
 from huaweicloudsdkbssintl.v2.model.error_detail import ErrorDetail

@@ -23,6 +23,7 @@ class ShowTaskCmetricsResponse(SdkResponse):
         'git_branch': 'str',
         'last_check_time': 'str',
         'last_exec_time': 'str',
+        'last_check_finish_time': 'str',
         'check_type': 'str',
         'created_at': 'str',
         'metric_info': 'MetricInfo'
@@ -36,33 +37,36 @@ class ShowTaskCmetricsResponse(SdkResponse):
         'git_branch': 'git_branch',
         'last_check_time': 'last_check_time',
         'last_exec_time': 'last_exec_time',
+        'last_check_finish_time': 'last_check_finish_time',
         'check_type': 'check_type',
         'created_at': 'created_at',
         'metric_info': 'metric_info'
     }
 
-    def __init__(self, task_id=None, task_name=None, creator_id=None, git_url=None, git_branch=None, last_check_time=None, last_exec_time=None, check_type=None, created_at=None, metric_info=None):
+    def __init__(self, task_id=None, task_name=None, creator_id=None, git_url=None, git_branch=None, last_check_time=None, last_exec_time=None, last_check_finish_time=None, check_type=None, created_at=None, metric_info=None):
         r"""ShowTaskCmetricsResponse
 
         The model defined in huaweicloud sdk
 
-        :param task_id: 任务id
+        :param task_id: **参数解释：** 旧版任务ID。即新建检查任务接口的返回值，每个代码检查任务及其下的分支任务、通过API创建的增量任务都有唯一的任务ID。 **取值范围：** 不涉及。
         :type task_id: str
-        :param task_name: 任务名字
+        :param task_name: **参数解释：** 任务名称。 **取值范围：** 不涉及。
         :type task_name: str
-        :param creator_id: 创建者id
+        :param creator_id: **参数解释：** 任务创建者用户ID。 **取值范围：** 不涉及。
         :type creator_id: str
-        :param git_url: 代码仓地址
+        :param git_url: **参数解释：** 代码仓地址。 **取值范围：** 不涉及。
         :type git_url: str
-        :param git_branch: 代码仓分支
+        :param git_branch: **参数解释：** 代码仓分支。 **取值范围：** 不涉及。
         :type git_branch: str
-        :param last_check_time: 上一次检查时间
+        :param last_check_time: **参数解释：** 上一次检查时间。使用UTC时间，格式为yyyy-MM-ddTHH:mm:ssZ。例如：2020-09-25T12:05:00Z。 **取值范围：** 不涉及。
         :type last_check_time: str
-        :param last_exec_time: 上次执行时间
+        :param last_exec_time: **参数解释：** 上一次执行时间。使用UTC时间，格式为yyyy-MM-ddTHH:mm:ssZ。例如：2020-09-25T12:05:00Z。 **取值范围：** 不涉及。
         :type last_exec_time: str
-        :param check_type: 检查类型
+        :param last_check_finish_time: **参数解释：** 上次执行结束时间。使用UTC时间，格式为yyyy-MM-ddTHH:mm:ssZ。例如：2020-09-25T12:05:00Z。 **取值范围：** 不涉及。
+        :type last_check_finish_time: str
+        :param check_type: **参数解释：** 废弃字段。 **约束限制：** 不涉及。 **取值范围：** 不涉及。
         :type check_type: str
-        :param created_at: 创建时间
+        :param created_at: **参数解释：** 任务创建时间。使用UTC时间，格式为yyyy-MM-ddTHH:mm:ssZ。例如：2020-09-25T12:05:00Z。 **取值范围：** 不涉及。
         :type created_at: str
         :param metric_info: 
         :type metric_info: :class:`huaweicloudsdkcodeartscheck.v2.MetricInfo`
@@ -77,6 +81,7 @@ class ShowTaskCmetricsResponse(SdkResponse):
         self._git_branch = None
         self._last_check_time = None
         self._last_exec_time = None
+        self._last_check_finish_time = None
         self._check_type = None
         self._created_at = None
         self._metric_info = None
@@ -96,6 +101,8 @@ class ShowTaskCmetricsResponse(SdkResponse):
             self.last_check_time = last_check_time
         if last_exec_time is not None:
             self.last_exec_time = last_exec_time
+        if last_check_finish_time is not None:
+            self.last_check_finish_time = last_check_finish_time
         if check_type is not None:
             self.check_type = check_type
         if created_at is not None:
@@ -107,7 +114,7 @@ class ShowTaskCmetricsResponse(SdkResponse):
     def task_id(self):
         r"""Gets the task_id of this ShowTaskCmetricsResponse.
 
-        任务id
+        **参数解释：** 旧版任务ID。即新建检查任务接口的返回值，每个代码检查任务及其下的分支任务、通过API创建的增量任务都有唯一的任务ID。 **取值范围：** 不涉及。
 
         :return: The task_id of this ShowTaskCmetricsResponse.
         :rtype: str
@@ -118,7 +125,7 @@ class ShowTaskCmetricsResponse(SdkResponse):
     def task_id(self, task_id):
         r"""Sets the task_id of this ShowTaskCmetricsResponse.
 
-        任务id
+        **参数解释：** 旧版任务ID。即新建检查任务接口的返回值，每个代码检查任务及其下的分支任务、通过API创建的增量任务都有唯一的任务ID。 **取值范围：** 不涉及。
 
         :param task_id: The task_id of this ShowTaskCmetricsResponse.
         :type task_id: str
@@ -129,7 +136,7 @@ class ShowTaskCmetricsResponse(SdkResponse):
     def task_name(self):
         r"""Gets the task_name of this ShowTaskCmetricsResponse.
 
-        任务名字
+        **参数解释：** 任务名称。 **取值范围：** 不涉及。
 
         :return: The task_name of this ShowTaskCmetricsResponse.
         :rtype: str
@@ -140,7 +147,7 @@ class ShowTaskCmetricsResponse(SdkResponse):
     def task_name(self, task_name):
         r"""Sets the task_name of this ShowTaskCmetricsResponse.
 
-        任务名字
+        **参数解释：** 任务名称。 **取值范围：** 不涉及。
 
         :param task_name: The task_name of this ShowTaskCmetricsResponse.
         :type task_name: str
@@ -151,7 +158,7 @@ class ShowTaskCmetricsResponse(SdkResponse):
     def creator_id(self):
         r"""Gets the creator_id of this ShowTaskCmetricsResponse.
 
-        创建者id
+        **参数解释：** 任务创建者用户ID。 **取值范围：** 不涉及。
 
         :return: The creator_id of this ShowTaskCmetricsResponse.
         :rtype: str
@@ -162,7 +169,7 @@ class ShowTaskCmetricsResponse(SdkResponse):
     def creator_id(self, creator_id):
         r"""Sets the creator_id of this ShowTaskCmetricsResponse.
 
-        创建者id
+        **参数解释：** 任务创建者用户ID。 **取值范围：** 不涉及。
 
         :param creator_id: The creator_id of this ShowTaskCmetricsResponse.
         :type creator_id: str
@@ -173,7 +180,7 @@ class ShowTaskCmetricsResponse(SdkResponse):
     def git_url(self):
         r"""Gets the git_url of this ShowTaskCmetricsResponse.
 
-        代码仓地址
+        **参数解释：** 代码仓地址。 **取值范围：** 不涉及。
 
         :return: The git_url of this ShowTaskCmetricsResponse.
         :rtype: str
@@ -184,7 +191,7 @@ class ShowTaskCmetricsResponse(SdkResponse):
     def git_url(self, git_url):
         r"""Sets the git_url of this ShowTaskCmetricsResponse.
 
-        代码仓地址
+        **参数解释：** 代码仓地址。 **取值范围：** 不涉及。
 
         :param git_url: The git_url of this ShowTaskCmetricsResponse.
         :type git_url: str
@@ -195,7 +202,7 @@ class ShowTaskCmetricsResponse(SdkResponse):
     def git_branch(self):
         r"""Gets the git_branch of this ShowTaskCmetricsResponse.
 
-        代码仓分支
+        **参数解释：** 代码仓分支。 **取值范围：** 不涉及。
 
         :return: The git_branch of this ShowTaskCmetricsResponse.
         :rtype: str
@@ -206,7 +213,7 @@ class ShowTaskCmetricsResponse(SdkResponse):
     def git_branch(self, git_branch):
         r"""Sets the git_branch of this ShowTaskCmetricsResponse.
 
-        代码仓分支
+        **参数解释：** 代码仓分支。 **取值范围：** 不涉及。
 
         :param git_branch: The git_branch of this ShowTaskCmetricsResponse.
         :type git_branch: str
@@ -217,7 +224,7 @@ class ShowTaskCmetricsResponse(SdkResponse):
     def last_check_time(self):
         r"""Gets the last_check_time of this ShowTaskCmetricsResponse.
 
-        上一次检查时间
+        **参数解释：** 上一次检查时间。使用UTC时间，格式为yyyy-MM-ddTHH:mm:ssZ。例如：2020-09-25T12:05:00Z。 **取值范围：** 不涉及。
 
         :return: The last_check_time of this ShowTaskCmetricsResponse.
         :rtype: str
@@ -228,7 +235,7 @@ class ShowTaskCmetricsResponse(SdkResponse):
     def last_check_time(self, last_check_time):
         r"""Sets the last_check_time of this ShowTaskCmetricsResponse.
 
-        上一次检查时间
+        **参数解释：** 上一次检查时间。使用UTC时间，格式为yyyy-MM-ddTHH:mm:ssZ。例如：2020-09-25T12:05:00Z。 **取值范围：** 不涉及。
 
         :param last_check_time: The last_check_time of this ShowTaskCmetricsResponse.
         :type last_check_time: str
@@ -239,7 +246,7 @@ class ShowTaskCmetricsResponse(SdkResponse):
     def last_exec_time(self):
         r"""Gets the last_exec_time of this ShowTaskCmetricsResponse.
 
-        上次执行时间
+        **参数解释：** 上一次执行时间。使用UTC时间，格式为yyyy-MM-ddTHH:mm:ssZ。例如：2020-09-25T12:05:00Z。 **取值范围：** 不涉及。
 
         :return: The last_exec_time of this ShowTaskCmetricsResponse.
         :rtype: str
@@ -250,7 +257,7 @@ class ShowTaskCmetricsResponse(SdkResponse):
     def last_exec_time(self, last_exec_time):
         r"""Sets the last_exec_time of this ShowTaskCmetricsResponse.
 
-        上次执行时间
+        **参数解释：** 上一次执行时间。使用UTC时间，格式为yyyy-MM-ddTHH:mm:ssZ。例如：2020-09-25T12:05:00Z。 **取值范围：** 不涉及。
 
         :param last_exec_time: The last_exec_time of this ShowTaskCmetricsResponse.
         :type last_exec_time: str
@@ -258,10 +265,32 @@ class ShowTaskCmetricsResponse(SdkResponse):
         self._last_exec_time = last_exec_time
 
     @property
+    def last_check_finish_time(self):
+        r"""Gets the last_check_finish_time of this ShowTaskCmetricsResponse.
+
+        **参数解释：** 上次执行结束时间。使用UTC时间，格式为yyyy-MM-ddTHH:mm:ssZ。例如：2020-09-25T12:05:00Z。 **取值范围：** 不涉及。
+
+        :return: The last_check_finish_time of this ShowTaskCmetricsResponse.
+        :rtype: str
+        """
+        return self._last_check_finish_time
+
+    @last_check_finish_time.setter
+    def last_check_finish_time(self, last_check_finish_time):
+        r"""Sets the last_check_finish_time of this ShowTaskCmetricsResponse.
+
+        **参数解释：** 上次执行结束时间。使用UTC时间，格式为yyyy-MM-ddTHH:mm:ssZ。例如：2020-09-25T12:05:00Z。 **取值范围：** 不涉及。
+
+        :param last_check_finish_time: The last_check_finish_time of this ShowTaskCmetricsResponse.
+        :type last_check_finish_time: str
+        """
+        self._last_check_finish_time = last_check_finish_time
+
+    @property
     def check_type(self):
         r"""Gets the check_type of this ShowTaskCmetricsResponse.
 
-        检查类型
+        **参数解释：** 废弃字段。 **约束限制：** 不涉及。 **取值范围：** 不涉及。
 
         :return: The check_type of this ShowTaskCmetricsResponse.
         :rtype: str
@@ -272,7 +301,7 @@ class ShowTaskCmetricsResponse(SdkResponse):
     def check_type(self, check_type):
         r"""Sets the check_type of this ShowTaskCmetricsResponse.
 
-        检查类型
+        **参数解释：** 废弃字段。 **约束限制：** 不涉及。 **取值范围：** 不涉及。
 
         :param check_type: The check_type of this ShowTaskCmetricsResponse.
         :type check_type: str
@@ -283,7 +312,7 @@ class ShowTaskCmetricsResponse(SdkResponse):
     def created_at(self):
         r"""Gets the created_at of this ShowTaskCmetricsResponse.
 
-        创建时间
+        **参数解释：** 任务创建时间。使用UTC时间，格式为yyyy-MM-ddTHH:mm:ssZ。例如：2020-09-25T12:05:00Z。 **取值范围：** 不涉及。
 
         :return: The created_at of this ShowTaskCmetricsResponse.
         :rtype: str
@@ -294,7 +323,7 @@ class ShowTaskCmetricsResponse(SdkResponse):
     def created_at(self, created_at):
         r"""Sets the created_at of this ShowTaskCmetricsResponse.
 
-        创建时间
+        **参数解释：** 任务创建时间。使用UTC时间，格式为yyyy-MM-ddTHH:mm:ssZ。例如：2020-09-25T12:05:00Z。 **取值范围：** 不涉及。
 
         :param created_at: The created_at of this ShowTaskCmetricsResponse.
         :type created_at: str

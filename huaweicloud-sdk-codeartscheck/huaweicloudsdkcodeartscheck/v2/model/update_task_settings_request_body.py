@@ -27,7 +27,7 @@ class UpdateTaskSettingsRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param task_advanced_settings: 高级选项参数的相关信息
+        :param task_advanced_settings: **参数解释：** 高级配置参数的相关信息，数组不能为空。 **约束限制：** 不涉及。
         :type task_advanced_settings: list[:class:`huaweicloudsdkcodeartscheck.v2.TaskAdvancedSettingsItem`]
         """
         
@@ -42,7 +42,7 @@ class UpdateTaskSettingsRequestBody:
     def task_advanced_settings(self):
         r"""Gets the task_advanced_settings of this UpdateTaskSettingsRequestBody.
 
-        高级选项参数的相关信息
+        **参数解释：** 高级配置参数的相关信息，数组不能为空。 **约束限制：** 不涉及。
 
         :return: The task_advanced_settings of this UpdateTaskSettingsRequestBody.
         :rtype: list[:class:`huaweicloudsdkcodeartscheck.v2.TaskAdvancedSettingsItem`]
@@ -53,7 +53,7 @@ class UpdateTaskSettingsRequestBody:
     def task_advanced_settings(self, task_advanced_settings):
         r"""Sets the task_advanced_settings of this UpdateTaskSettingsRequestBody.
 
-        高级选项参数的相关信息
+        **参数解释：** 高级配置参数的相关信息，数组不能为空。 **约束限制：** 不涉及。
 
         :param task_advanced_settings: The task_advanced_settings of this UpdateTaskSettingsRequestBody.
         :type task_advanced_settings: list[:class:`huaweicloudsdkcodeartscheck.v2.TaskAdvancedSettingsItem`]

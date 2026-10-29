@@ -47,27 +47,27 @@ class RulesetItem:
 
         The model defined in huaweicloud sdk
 
-        :param template_id: 规则集id
+        :param template_id: **参数解释:** 规则集ID。 **取值范围:** 32位UUID。
         :type template_id: str
-        :param language: 规则集语言
+        :param language: **参数解释:** 规则集语言。 **取值范围:** 当前支持的语言有： - ARKTS - C# - CANGJIE - C++ - CSS - GO - HTML - JAVA - JAVASCRIPT - KOTLIN - LUA - PHP - PYTHON - RUST - SCALA - SHELL - SQL - TERRAFORM - TYPESCRIPT - AZURERESOURCEMANAGER - DOCKER - KUBERNETES
         :type language: str
-        :param template_name: 规则集名称
+        :param template_name: **参数解释:** 规则集语言。 **取值范围:** 任意中英文，数字，点，连字符-及下划线_。长度为[1~128]个字符。
         :type template_name: str
-        :param creator_id: 创建人ID
+        :param creator_id: **参数解释:** 创建者的user_id，值来源于IAM的用户ID。 **取值范围:** 32位UUID。
         :type creator_id: str
-        :param creator_name: 创建人名称
+        :param creator_name: **参数解释:** 创建人名称，值来源于IAM用户名称。 **取值范围:** IAM用户名称。
         :type creator_name: str
-        :param template_create_time: 创建人时间
+        :param template_create_time: **参数解释:** 创建时间，时区统一为0时区。 **取值范围:** 0时区时间。
         :type template_create_time: str
-        :param is_used: 使用状态1使用中，0空闲中
+        :param is_used: **参数解释:** 使用状态。 **取值范围:** - 0：空闲中。 - 1：使用中。
         :type is_used: str
-        :param rule_ids: 规则集包含的规则id
+        :param rule_ids: **参数解释:** 规则集包含的规则ID，每条规则都有唯一的规则ID。 **取值范围:** 32位UUID列表，多个UUID以英文逗号分隔。
         :type rule_ids: str
-        :param is_default: 是否该语言默认规则集，0不是，1是
+        :param is_default: **参数解释:** 规则集是否是该语言默认规则集。 **取值范围:** - 0：不是。 - 1：是。
         :type is_default: str
-        :param is_devcloud_project_default: 是否是项目下语言默认规则集，0不是，1是
+        :param is_devcloud_project_default: **参数解释:** 规则集是否是项目下该语言默认规则集。 **取值范围:** - 0：不是。 - 1：是。
         :type is_devcloud_project_default: str
-        :param is_default_template: 是否是系统规则集，0不是，1是
+        :param is_default_template: **参数解释:** 规则集是否是系统规则集。 **取值范围:** - 0：不是。 - 1：是。
         :type is_default_template: str
         """
         
@@ -113,7 +113,7 @@ class RulesetItem:
     def template_id(self):
         r"""Gets the template_id of this RulesetItem.
 
-        规则集id
+        **参数解释:** 规则集ID。 **取值范围:** 32位UUID。
 
         :return: The template_id of this RulesetItem.
         :rtype: str
@@ -124,7 +124,7 @@ class RulesetItem:
     def template_id(self, template_id):
         r"""Sets the template_id of this RulesetItem.
 
-        规则集id
+        **参数解释:** 规则集ID。 **取值范围:** 32位UUID。
 
         :param template_id: The template_id of this RulesetItem.
         :type template_id: str
@@ -135,7 +135,7 @@ class RulesetItem:
     def language(self):
         r"""Gets the language of this RulesetItem.
 
-        规则集语言
+        **参数解释:** 规则集语言。 **取值范围:** 当前支持的语言有： - ARKTS - C# - CANGJIE - C++ - CSS - GO - HTML - JAVA - JAVASCRIPT - KOTLIN - LUA - PHP - PYTHON - RUST - SCALA - SHELL - SQL - TERRAFORM - TYPESCRIPT - AZURERESOURCEMANAGER - DOCKER - KUBERNETES
 
         :return: The language of this RulesetItem.
         :rtype: str
@@ -146,7 +146,7 @@ class RulesetItem:
     def language(self, language):
         r"""Sets the language of this RulesetItem.
 
-        规则集语言
+        **参数解释:** 规则集语言。 **取值范围:** 当前支持的语言有： - ARKTS - C# - CANGJIE - C++ - CSS - GO - HTML - JAVA - JAVASCRIPT - KOTLIN - LUA - PHP - PYTHON - RUST - SCALA - SHELL - SQL - TERRAFORM - TYPESCRIPT - AZURERESOURCEMANAGER - DOCKER - KUBERNETES
 
         :param language: The language of this RulesetItem.
         :type language: str
@@ -157,7 +157,7 @@ class RulesetItem:
     def template_name(self):
         r"""Gets the template_name of this RulesetItem.
 
-        规则集名称
+        **参数解释:** 规则集语言。 **取值范围:** 任意中英文，数字，点，连字符-及下划线_。长度为[1~128]个字符。
 
         :return: The template_name of this RulesetItem.
         :rtype: str
@@ -168,7 +168,7 @@ class RulesetItem:
     def template_name(self, template_name):
         r"""Sets the template_name of this RulesetItem.
 
-        规则集名称
+        **参数解释:** 规则集语言。 **取值范围:** 任意中英文，数字，点，连字符-及下划线_。长度为[1~128]个字符。
 
         :param template_name: The template_name of this RulesetItem.
         :type template_name: str
@@ -179,7 +179,7 @@ class RulesetItem:
     def creator_id(self):
         r"""Gets the creator_id of this RulesetItem.
 
-        创建人ID
+        **参数解释:** 创建者的user_id，值来源于IAM的用户ID。 **取值范围:** 32位UUID。
 
         :return: The creator_id of this RulesetItem.
         :rtype: str
@@ -190,7 +190,7 @@ class RulesetItem:
     def creator_id(self, creator_id):
         r"""Sets the creator_id of this RulesetItem.
 
-        创建人ID
+        **参数解释:** 创建者的user_id，值来源于IAM的用户ID。 **取值范围:** 32位UUID。
 
         :param creator_id: The creator_id of this RulesetItem.
         :type creator_id: str
@@ -201,7 +201,7 @@ class RulesetItem:
     def creator_name(self):
         r"""Gets the creator_name of this RulesetItem.
 
-        创建人名称
+        **参数解释:** 创建人名称，值来源于IAM用户名称。 **取值范围:** IAM用户名称。
 
         :return: The creator_name of this RulesetItem.
         :rtype: str
@@ -212,7 +212,7 @@ class RulesetItem:
     def creator_name(self, creator_name):
         r"""Sets the creator_name of this RulesetItem.
 
-        创建人名称
+        **参数解释:** 创建人名称，值来源于IAM用户名称。 **取值范围:** IAM用户名称。
 
         :param creator_name: The creator_name of this RulesetItem.
         :type creator_name: str
@@ -223,7 +223,7 @@ class RulesetItem:
     def template_create_time(self):
         r"""Gets the template_create_time of this RulesetItem.
 
-        创建人时间
+        **参数解释:** 创建时间，时区统一为0时区。 **取值范围:** 0时区时间。
 
         :return: The template_create_time of this RulesetItem.
         :rtype: str
@@ -234,7 +234,7 @@ class RulesetItem:
     def template_create_time(self, template_create_time):
         r"""Sets the template_create_time of this RulesetItem.
 
-        创建人时间
+        **参数解释:** 创建时间，时区统一为0时区。 **取值范围:** 0时区时间。
 
         :param template_create_time: The template_create_time of this RulesetItem.
         :type template_create_time: str
@@ -245,7 +245,7 @@ class RulesetItem:
     def is_used(self):
         r"""Gets the is_used of this RulesetItem.
 
-        使用状态1使用中，0空闲中
+        **参数解释:** 使用状态。 **取值范围:** - 0：空闲中。 - 1：使用中。
 
         :return: The is_used of this RulesetItem.
         :rtype: str
@@ -256,7 +256,7 @@ class RulesetItem:
     def is_used(self, is_used):
         r"""Sets the is_used of this RulesetItem.
 
-        使用状态1使用中，0空闲中
+        **参数解释:** 使用状态。 **取值范围:** - 0：空闲中。 - 1：使用中。
 
         :param is_used: The is_used of this RulesetItem.
         :type is_used: str
@@ -267,7 +267,7 @@ class RulesetItem:
     def rule_ids(self):
         r"""Gets the rule_ids of this RulesetItem.
 
-        规则集包含的规则id
+        **参数解释:** 规则集包含的规则ID，每条规则都有唯一的规则ID。 **取值范围:** 32位UUID列表，多个UUID以英文逗号分隔。
 
         :return: The rule_ids of this RulesetItem.
         :rtype: str
@@ -278,7 +278,7 @@ class RulesetItem:
     def rule_ids(self, rule_ids):
         r"""Sets the rule_ids of this RulesetItem.
 
-        规则集包含的规则id
+        **参数解释:** 规则集包含的规则ID，每条规则都有唯一的规则ID。 **取值范围:** 32位UUID列表，多个UUID以英文逗号分隔。
 
         :param rule_ids: The rule_ids of this RulesetItem.
         :type rule_ids: str
@@ -289,7 +289,7 @@ class RulesetItem:
     def is_default(self):
         r"""Gets the is_default of this RulesetItem.
 
-        是否该语言默认规则集，0不是，1是
+        **参数解释:** 规则集是否是该语言默认规则集。 **取值范围:** - 0：不是。 - 1：是。
 
         :return: The is_default of this RulesetItem.
         :rtype: str
@@ -300,7 +300,7 @@ class RulesetItem:
     def is_default(self, is_default):
         r"""Sets the is_default of this RulesetItem.
 
-        是否该语言默认规则集，0不是，1是
+        **参数解释:** 规则集是否是该语言默认规则集。 **取值范围:** - 0：不是。 - 1：是。
 
         :param is_default: The is_default of this RulesetItem.
         :type is_default: str
@@ -311,7 +311,7 @@ class RulesetItem:
     def is_devcloud_project_default(self):
         r"""Gets the is_devcloud_project_default of this RulesetItem.
 
-        是否是项目下语言默认规则集，0不是，1是
+        **参数解释:** 规则集是否是项目下该语言默认规则集。 **取值范围:** - 0：不是。 - 1：是。
 
         :return: The is_devcloud_project_default of this RulesetItem.
         :rtype: str
@@ -322,7 +322,7 @@ class RulesetItem:
     def is_devcloud_project_default(self, is_devcloud_project_default):
         r"""Sets the is_devcloud_project_default of this RulesetItem.
 
-        是否是项目下语言默认规则集，0不是，1是
+        **参数解释:** 规则集是否是项目下该语言默认规则集。 **取值范围:** - 0：不是。 - 1：是。
 
         :param is_devcloud_project_default: The is_devcloud_project_default of this RulesetItem.
         :type is_devcloud_project_default: str
@@ -333,7 +333,7 @@ class RulesetItem:
     def is_default_template(self):
         r"""Gets the is_default_template of this RulesetItem.
 
-        是否是系统规则集，0不是，1是
+        **参数解释:** 规则集是否是系统规则集。 **取值范围:** - 0：不是。 - 1：是。
 
         :return: The is_default_template of this RulesetItem.
         :rtype: str
@@ -344,7 +344,7 @@ class RulesetItem:
     def is_default_template(self, is_default_template):
         r"""Sets the is_default_template of this RulesetItem.
 
-        是否是系统规则集，0不是，1是
+        **参数解释:** 规则集是否是系统规则集。 **取值范围:** - 0：不是。 - 1：是。
 
         :param is_default_template: The is_default_template of this RulesetItem.
         :type is_default_template: str

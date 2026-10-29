@@ -16,15 +16,19 @@ class ShowFlinkSqlGatewayParameterResponse:
 
     openapi_types = {
         'type': 'str',
-        'sql_gateway_config': 'ShowFlinkSqlGatewayConfigResponseBody'
+        'sql_gateway_config': 'ShowFlinkSqlGatewayConfigResponseBody',
+        'idle_enabled': 'bool',
+        'idle_timeout': 'int'
     }
 
     attribute_map = {
         'type': 'type',
-        'sql_gateway_config': 'sql_gateway_config'
+        'sql_gateway_config': 'sql_gateway_config',
+        'idle_enabled': 'idle_enabled',
+        'idle_timeout': 'idle_timeout'
     }
 
-    def __init__(self, type=None, sql_gateway_config=None):
+    def __init__(self, type=None, sql_gateway_config=None, idle_enabled=None, idle_timeout=None):
         r"""ShowFlinkSqlGatewayParameterResponse
 
         The model defined in huaweicloud sdk
@@ -33,18 +37,28 @@ class ShowFlinkSqlGatewayParameterResponse:
         :type type: str
         :param sql_gateway_config: 
         :type sql_gateway_config: :class:`huaweicloudsdkaidatalake.v2.ShowFlinkSqlGatewayConfigResponseBody`
+        :param idle_enabled: **参数解释**：是否开启空闲自动释放。 **取值范围**：   - true：开启空闲自动释放。   - false：关闭空闲自动释放。
+        :type idle_enabled: bool
+        :param idle_timeout: **参数解释**：最大空闲时长，单位为分钟。空闲指会话内没有正在运行的作业，创建会话等其他操作不计为非空闲。 **取值范围**：10~1440。
+        :type idle_timeout: int
         """
         
         
 
         self._type = None
         self._sql_gateway_config = None
+        self._idle_enabled = None
+        self._idle_timeout = None
         self.discriminator = None
 
         if type is not None:
             self.type = type
         if sql_gateway_config is not None:
             self.sql_gateway_config = sql_gateway_config
+        if idle_enabled is not None:
+            self.idle_enabled = idle_enabled
+        if idle_timeout is not None:
+            self.idle_timeout = idle_timeout
 
     @property
     def type(self):
@@ -85,6 +99,50 @@ class ShowFlinkSqlGatewayParameterResponse:
         :type sql_gateway_config: :class:`huaweicloudsdkaidatalake.v2.ShowFlinkSqlGatewayConfigResponseBody`
         """
         self._sql_gateway_config = sql_gateway_config
+
+    @property
+    def idle_enabled(self):
+        r"""Gets the idle_enabled of this ShowFlinkSqlGatewayParameterResponse.
+
+        **参数解释**：是否开启空闲自动释放。 **取值范围**：   - true：开启空闲自动释放。   - false：关闭空闲自动释放。
+
+        :return: The idle_enabled of this ShowFlinkSqlGatewayParameterResponse.
+        :rtype: bool
+        """
+        return self._idle_enabled
+
+    @idle_enabled.setter
+    def idle_enabled(self, idle_enabled):
+        r"""Sets the idle_enabled of this ShowFlinkSqlGatewayParameterResponse.
+
+        **参数解释**：是否开启空闲自动释放。 **取值范围**：   - true：开启空闲自动释放。   - false：关闭空闲自动释放。
+
+        :param idle_enabled: The idle_enabled of this ShowFlinkSqlGatewayParameterResponse.
+        :type idle_enabled: bool
+        """
+        self._idle_enabled = idle_enabled
+
+    @property
+    def idle_timeout(self):
+        r"""Gets the idle_timeout of this ShowFlinkSqlGatewayParameterResponse.
+
+        **参数解释**：最大空闲时长，单位为分钟。空闲指会话内没有正在运行的作业，创建会话等其他操作不计为非空闲。 **取值范围**：10~1440。
+
+        :return: The idle_timeout of this ShowFlinkSqlGatewayParameterResponse.
+        :rtype: int
+        """
+        return self._idle_timeout
+
+    @idle_timeout.setter
+    def idle_timeout(self, idle_timeout):
+        r"""Sets the idle_timeout of this ShowFlinkSqlGatewayParameterResponse.
+
+        **参数解释**：最大空闲时长，单位为分钟。空闲指会话内没有正在运行的作业，创建会话等其他操作不计为非空闲。 **取值范围**：10~1440。
+
+        :param idle_timeout: The idle_timeout of this ShowFlinkSqlGatewayParameterResponse.
+        :type idle_timeout: int
+        """
+        self._idle_timeout = idle_timeout
 
     def to_dict(self):
         result = {}

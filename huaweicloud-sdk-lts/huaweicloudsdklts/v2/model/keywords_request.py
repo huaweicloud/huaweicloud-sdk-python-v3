@@ -25,7 +25,8 @@ class KeywordsRequest:
         'search_time_range': 'int',
         'search_time_range_unit': 'str',
         'custom_date': 'CustomDate',
-        'is_time_range_relative': 'bool'
+        'is_time_range_relative': 'bool',
+        'conditions': 'list[KeywordsAlarmConditions]'
     }
 
     attribute_map = {
@@ -39,10 +40,11 @@ class KeywordsRequest:
         'search_time_range': 'search_time_range',
         'search_time_range_unit': 'search_time_range_unit',
         'custom_date': 'custom_date',
-        'is_time_range_relative': 'is_time_range_relative'
+        'is_time_range_relative': 'is_time_range_relative',
+        'conditions': 'conditions'
     }
 
-    def __init__(self, log_stream_id=None, log_stream_name=None, log_group_id=None, log_group_name=None, keywords=None, condition=None, number=None, search_time_range=None, search_time_range_unit=None, custom_date=None, is_time_range_relative=None):
+    def __init__(self, log_stream_id=None, log_stream_name=None, log_group_id=None, log_group_name=None, keywords=None, condition=None, number=None, search_time_range=None, search_time_range_unit=None, custom_date=None, is_time_range_relative=None, conditions=None):
         r"""KeywordsRequest
 
         The model defined in huaweicloud sdk
@@ -69,6 +71,8 @@ class KeywordsRequest:
         :type custom_date: :class:`huaweicloudsdklts.v2.CustomDate`
         :param is_time_range_relative: **参数解释：** 是否是相对时间。（暂不开放，后续aom上线该功能后一起开放） **约束限制：** 不涉及。 **取值范围：** - true - false **默认取值：** true
         :type is_time_range_relative: bool
+        :param conditions: **参数解释：** 支持根据不同条件触发不同级别的告警。当使用该参数时，将优先使用该参数中的条件触发告警，无视keywords_alarm_level参数以及keywords_requests中的condition、number参数。 **约束限制：** 不涉及。
+        :type conditions: list[:class:`huaweicloudsdklts.v2.KeywordsAlarmConditions`]
         """
         
         
@@ -84,6 +88,7 @@ class KeywordsRequest:
         self._search_time_range_unit = None
         self._custom_date = None
         self._is_time_range_relative = None
+        self._conditions = None
         self.discriminator = None
 
         self.log_stream_id = log_stream_id
@@ -101,6 +106,8 @@ class KeywordsRequest:
             self.custom_date = custom_date
         if is_time_range_relative is not None:
             self.is_time_range_relative = is_time_range_relative
+        if conditions is not None:
+            self.conditions = conditions
 
     @property
     def log_stream_id(self):
@@ -339,6 +346,28 @@ class KeywordsRequest:
         :type is_time_range_relative: bool
         """
         self._is_time_range_relative = is_time_range_relative
+
+    @property
+    def conditions(self):
+        r"""Gets the conditions of this KeywordsRequest.
+
+        **参数解释：** 支持根据不同条件触发不同级别的告警。当使用该参数时，将优先使用该参数中的条件触发告警，无视keywords_alarm_level参数以及keywords_requests中的condition、number参数。 **约束限制：** 不涉及。
+
+        :return: The conditions of this KeywordsRequest.
+        :rtype: list[:class:`huaweicloudsdklts.v2.KeywordsAlarmConditions`]
+        """
+        return self._conditions
+
+    @conditions.setter
+    def conditions(self, conditions):
+        r"""Sets the conditions of this KeywordsRequest.
+
+        **参数解释：** 支持根据不同条件触发不同级别的告警。当使用该参数时，将优先使用该参数中的条件触发告警，无视keywords_alarm_level参数以及keywords_requests中的condition、number参数。 **约束限制：** 不涉及。
+
+        :param conditions: The conditions of this KeywordsRequest.
+        :type conditions: list[:class:`huaweicloudsdklts.v2.KeywordsAlarmConditions`]
+        """
+        self._conditions = conditions
 
     def to_dict(self):
         result = {}

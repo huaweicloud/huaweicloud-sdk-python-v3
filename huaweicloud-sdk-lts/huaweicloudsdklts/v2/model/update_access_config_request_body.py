@@ -31,7 +31,8 @@ class UpdateAccessConfigRequestBody:
         'processors': 'list[Processor]',
         'application_id': 'str',
         'environment_id': 'str',
-        'component_id': 'list[str]'
+        'component_id': 'list[str]',
+        'disable_labels_prefix': 'bool'
     }
 
     attribute_map = {
@@ -51,10 +52,11 @@ class UpdateAccessConfigRequestBody:
         'processors': 'processors',
         'application_id': 'application_id',
         'environment_id': 'environment_id',
-        'component_id': 'component_id'
+        'component_id': 'component_id',
+        'disable_labels_prefix': 'disable_labels_prefix'
     }
 
-    def __init__(self, access_config_id=None, access_config_name=None, access_config_detail=None, host_group_info=None, access_config_tag=None, log_split=None, binary_collect=None, cluster_id=None, incremental_collect=None, encoding_format=None, processor_type=None, demo_log=None, demo_fields=None, processors=None, application_id=None, environment_id=None, component_id=None):
+    def __init__(self, access_config_id=None, access_config_name=None, access_config_detail=None, host_group_info=None, access_config_tag=None, log_split=None, binary_collect=None, cluster_id=None, incremental_collect=None, encoding_format=None, processor_type=None, demo_log=None, demo_fields=None, processors=None, application_id=None, environment_id=None, component_id=None, disable_labels_prefix=None):
         r"""UpdateAccessConfigRequestBody
 
         The model defined in huaweicloud sdk
@@ -93,6 +95,8 @@ class UpdateAccessConfigRequestBody:
         :type environment_id: str
         :param component_id: ServiceStage组件ID
         :type component_id: list[str]
+        :param disable_labels_prefix: **参数解释：** 是否对结构化上报方式中labels字段中非内置字段添加__labels__.前缀的行为进行禁用。 **约束限制：** 不涉及。 **取值范围：** - true：禁用，不添加__labels__.前缀。 - false：不禁用，即添加__labels__.前缀。 **默认取值：** 不涉及。
+        :type disable_labels_prefix: bool
         """
         
         
@@ -114,6 +118,7 @@ class UpdateAccessConfigRequestBody:
         self._application_id = None
         self._environment_id = None
         self._component_id = None
+        self._disable_labels_prefix = None
         self.discriminator = None
 
         self.access_config_id = access_config_id
@@ -149,6 +154,8 @@ class UpdateAccessConfigRequestBody:
             self.environment_id = environment_id
         if component_id is not None:
             self.component_id = component_id
+        if disable_labels_prefix is not None:
+            self.disable_labels_prefix = disable_labels_prefix
 
     @property
     def access_config_id(self):
@@ -515,6 +522,28 @@ class UpdateAccessConfigRequestBody:
         :type component_id: list[str]
         """
         self._component_id = component_id
+
+    @property
+    def disable_labels_prefix(self):
+        r"""Gets the disable_labels_prefix of this UpdateAccessConfigRequestBody.
+
+        **参数解释：** 是否对结构化上报方式中labels字段中非内置字段添加__labels__.前缀的行为进行禁用。 **约束限制：** 不涉及。 **取值范围：** - true：禁用，不添加__labels__.前缀。 - false：不禁用，即添加__labels__.前缀。 **默认取值：** 不涉及。
+
+        :return: The disable_labels_prefix of this UpdateAccessConfigRequestBody.
+        :rtype: bool
+        """
+        return self._disable_labels_prefix
+
+    @disable_labels_prefix.setter
+    def disable_labels_prefix(self, disable_labels_prefix):
+        r"""Sets the disable_labels_prefix of this UpdateAccessConfigRequestBody.
+
+        **参数解释：** 是否对结构化上报方式中labels字段中非内置字段添加__labels__.前缀的行为进行禁用。 **约束限制：** 不涉及。 **取值范围：** - true：禁用，不添加__labels__.前缀。 - false：不禁用，即添加__labels__.前缀。 **默认取值：** 不涉及。
+
+        :param disable_labels_prefix: The disable_labels_prefix of this UpdateAccessConfigRequestBody.
+        :type disable_labels_prefix: bool
+        """
+        self._disable_labels_prefix = disable_labels_prefix
 
     def to_dict(self):
         result = {}

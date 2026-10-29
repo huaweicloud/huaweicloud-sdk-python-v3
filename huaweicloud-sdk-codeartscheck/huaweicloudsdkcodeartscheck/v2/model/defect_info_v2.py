@@ -18,7 +18,9 @@ class DefectInfoV2:
         'defect_id': 'str',
         'defect_checker_name': 'str',
         'defect_status': 'str',
+        'defect_owner': 'str',
         'rule_system_tags': 'str',
+        'rule_id': 'str',
         'rule_name': 'str',
         'line_number': 'str',
         'defect_content': 'str',
@@ -34,7 +36,9 @@ class DefectInfoV2:
         'defect_id': 'defect_id',
         'defect_checker_name': 'defect_checker_name',
         'defect_status': 'defect_status',
+        'defect_owner': 'defect_owner',
         'rule_system_tags': 'rule_system_tags',
+        'rule_id': 'rule_id',
         'rule_name': 'rule_name',
         'line_number': 'line_number',
         'defect_content': 'defect_content',
@@ -46,36 +50,40 @@ class DefectInfoV2:
         'events': 'events'
     }
 
-    def __init__(self, defect_id=None, defect_checker_name=None, defect_status=None, rule_system_tags=None, rule_name=None, line_number=None, defect_content=None, defect_level=None, file_path=None, created_at=None, issue_key=None, fragment=None, events=None):
+    def __init__(self, defect_id=None, defect_checker_name=None, defect_status=None, defect_owner=None, rule_system_tags=None, rule_id=None, rule_name=None, line_number=None, defect_content=None, defect_level=None, file_path=None, created_at=None, issue_key=None, fragment=None, events=None):
         r"""DefectInfoV2
 
         The model defined in huaweicloud sdk
 
-        :param defect_id: 缺陷的id
+        :param defect_id: **参数解释：** MergeKey，问题ID。 **取值范围：** 不涉及。
         :type defect_id: str
-        :param defect_checker_name: 缺陷对应检查项的名称
+        :param defect_checker_name: **参数解释：** 废弃字段。 **取值范围：** 不涉及。
         :type defect_checker_name: str
-        :param defect_status: 缺陷的状态0为解决 1已解决 2已忽略
+        :param defect_status: **参数解释：** 问题状态。 **取值范围：** - 0：待处理。 - 1：已解决。 - 2：已忽略。 [- 3：重新打开（需打开忽略审核开关）。](tag:fcs,hcs,hcs_sm,hcs_site,hcs_sitesm) [- 4：待审核（需打开忽略审核开关）。](tag:fcs,hcs,hcs_sm,hcs_site,hcs_sitesm)
         :type defect_status: str
-        :param rule_system_tags: 规则标签,多个标签用逗号隔开
+        :param defect_owner: **参数解释：** 问题责任人。 **取值范围：** 不涉及。
+        :type defect_owner: str
+        :param rule_system_tags: **参数解释：** 标签，多个标签用逗号隔开。 **取值范围：** 不涉及。
         :type rule_system_tags: str
-        :param rule_name: 规则名
+        :param rule_id: **参数解释：** 规则ID。 **取值范围：** 不涉及。
+        :type rule_id: str
+        :param rule_name: **参数解释：** 规则名称。 **取值范围：** 不涉及。
         :type rule_name: str
-        :param line_number: 缺陷所在文件行号
+        :param line_number: **参数解释：** 问题所在文件行号。 **取值范围：** 不涉及。
         :type line_number: str
-        :param defect_content: 缺陷描述
+        :param defect_content: **参数解释：** 问题详细描述。 **取值范围：** 不涉及。
         :type defect_content: str
-        :param defect_level: 缺陷等级，0致命，1严重，2一般，3提示
+        :param defect_level: **参数解释：** 问题级别。 **取值范围：** - 0：致命。 - 1：严重。 - 2：一般。 - 3：提示。
         :type defect_level: str
-        :param file_path: 缺陷文件路径
+        :param file_path: **参数解释：** 问题文件路径。 **取值范围：** 不涉及。
         :type file_path: str
-        :param created_at: 创建时间
+        :param created_at: **参数解释：** 问题发现时间。使用UTC时间，格式为yyyy-MM-ddTHH:mm:ssZ。例如：2020-09-25T12:05:00Z。 **取值范围：** 不涉及。
         :type created_at: str
-        :param issue_key: 问题唯一标识
+        :param issue_key: **参数解释：** 废弃字段。 **取值范围：** 不涉及。
         :type issue_key: str
-        :param fragment: 缺陷代码片段详情
+        :param fragment: **参数解释：** 代码片段内容。
         :type fragment: list[:class:`huaweicloudsdkcodeartscheck.v2.DefectFragmentV2`]
-        :param events: 调用链信息
+        :param events: **参数解释：** 调用链信息。
         :type events: list[:class:`huaweicloudsdkcodeartscheck.v2.DefectEvents`]
         """
         
@@ -84,7 +92,9 @@ class DefectInfoV2:
         self._defect_id = None
         self._defect_checker_name = None
         self._defect_status = None
+        self._defect_owner = None
         self._rule_system_tags = None
+        self._rule_id = None
         self._rule_name = None
         self._line_number = None
         self._defect_content = None
@@ -102,8 +112,12 @@ class DefectInfoV2:
             self.defect_checker_name = defect_checker_name
         if defect_status is not None:
             self.defect_status = defect_status
+        if defect_owner is not None:
+            self.defect_owner = defect_owner
         if rule_system_tags is not None:
             self.rule_system_tags = rule_system_tags
+        if rule_id is not None:
+            self.rule_id = rule_id
         if rule_name is not None:
             self.rule_name = rule_name
         if line_number is not None:
@@ -127,7 +141,7 @@ class DefectInfoV2:
     def defect_id(self):
         r"""Gets the defect_id of this DefectInfoV2.
 
-        缺陷的id
+        **参数解释：** MergeKey，问题ID。 **取值范围：** 不涉及。
 
         :return: The defect_id of this DefectInfoV2.
         :rtype: str
@@ -138,7 +152,7 @@ class DefectInfoV2:
     def defect_id(self, defect_id):
         r"""Sets the defect_id of this DefectInfoV2.
 
-        缺陷的id
+        **参数解释：** MergeKey，问题ID。 **取值范围：** 不涉及。
 
         :param defect_id: The defect_id of this DefectInfoV2.
         :type defect_id: str
@@ -149,7 +163,7 @@ class DefectInfoV2:
     def defect_checker_name(self):
         r"""Gets the defect_checker_name of this DefectInfoV2.
 
-        缺陷对应检查项的名称
+        **参数解释：** 废弃字段。 **取值范围：** 不涉及。
 
         :return: The defect_checker_name of this DefectInfoV2.
         :rtype: str
@@ -160,7 +174,7 @@ class DefectInfoV2:
     def defect_checker_name(self, defect_checker_name):
         r"""Sets the defect_checker_name of this DefectInfoV2.
 
-        缺陷对应检查项的名称
+        **参数解释：** 废弃字段。 **取值范围：** 不涉及。
 
         :param defect_checker_name: The defect_checker_name of this DefectInfoV2.
         :type defect_checker_name: str
@@ -171,7 +185,7 @@ class DefectInfoV2:
     def defect_status(self):
         r"""Gets the defect_status of this DefectInfoV2.
 
-        缺陷的状态0为解决 1已解决 2已忽略
+        **参数解释：** 问题状态。 **取值范围：** - 0：待处理。 - 1：已解决。 - 2：已忽略。 [- 3：重新打开（需打开忽略审核开关）。](tag:fcs,hcs,hcs_sm,hcs_site,hcs_sitesm) [- 4：待审核（需打开忽略审核开关）。](tag:fcs,hcs,hcs_sm,hcs_site,hcs_sitesm)
 
         :return: The defect_status of this DefectInfoV2.
         :rtype: str
@@ -182,7 +196,7 @@ class DefectInfoV2:
     def defect_status(self, defect_status):
         r"""Sets the defect_status of this DefectInfoV2.
 
-        缺陷的状态0为解决 1已解决 2已忽略
+        **参数解释：** 问题状态。 **取值范围：** - 0：待处理。 - 1：已解决。 - 2：已忽略。 [- 3：重新打开（需打开忽略审核开关）。](tag:fcs,hcs,hcs_sm,hcs_site,hcs_sitesm) [- 4：待审核（需打开忽略审核开关）。](tag:fcs,hcs,hcs_sm,hcs_site,hcs_sitesm)
 
         :param defect_status: The defect_status of this DefectInfoV2.
         :type defect_status: str
@@ -190,10 +204,32 @@ class DefectInfoV2:
         self._defect_status = defect_status
 
     @property
+    def defect_owner(self):
+        r"""Gets the defect_owner of this DefectInfoV2.
+
+        **参数解释：** 问题责任人。 **取值范围：** 不涉及。
+
+        :return: The defect_owner of this DefectInfoV2.
+        :rtype: str
+        """
+        return self._defect_owner
+
+    @defect_owner.setter
+    def defect_owner(self, defect_owner):
+        r"""Sets the defect_owner of this DefectInfoV2.
+
+        **参数解释：** 问题责任人。 **取值范围：** 不涉及。
+
+        :param defect_owner: The defect_owner of this DefectInfoV2.
+        :type defect_owner: str
+        """
+        self._defect_owner = defect_owner
+
+    @property
     def rule_system_tags(self):
         r"""Gets the rule_system_tags of this DefectInfoV2.
 
-        规则标签,多个标签用逗号隔开
+        **参数解释：** 标签，多个标签用逗号隔开。 **取值范围：** 不涉及。
 
         :return: The rule_system_tags of this DefectInfoV2.
         :rtype: str
@@ -204,7 +240,7 @@ class DefectInfoV2:
     def rule_system_tags(self, rule_system_tags):
         r"""Sets the rule_system_tags of this DefectInfoV2.
 
-        规则标签,多个标签用逗号隔开
+        **参数解释：** 标签，多个标签用逗号隔开。 **取值范围：** 不涉及。
 
         :param rule_system_tags: The rule_system_tags of this DefectInfoV2.
         :type rule_system_tags: str
@@ -212,10 +248,32 @@ class DefectInfoV2:
         self._rule_system_tags = rule_system_tags
 
     @property
+    def rule_id(self):
+        r"""Gets the rule_id of this DefectInfoV2.
+
+        **参数解释：** 规则ID。 **取值范围：** 不涉及。
+
+        :return: The rule_id of this DefectInfoV2.
+        :rtype: str
+        """
+        return self._rule_id
+
+    @rule_id.setter
+    def rule_id(self, rule_id):
+        r"""Sets the rule_id of this DefectInfoV2.
+
+        **参数解释：** 规则ID。 **取值范围：** 不涉及。
+
+        :param rule_id: The rule_id of this DefectInfoV2.
+        :type rule_id: str
+        """
+        self._rule_id = rule_id
+
+    @property
     def rule_name(self):
         r"""Gets the rule_name of this DefectInfoV2.
 
-        规则名
+        **参数解释：** 规则名称。 **取值范围：** 不涉及。
 
         :return: The rule_name of this DefectInfoV2.
         :rtype: str
@@ -226,7 +284,7 @@ class DefectInfoV2:
     def rule_name(self, rule_name):
         r"""Sets the rule_name of this DefectInfoV2.
 
-        规则名
+        **参数解释：** 规则名称。 **取值范围：** 不涉及。
 
         :param rule_name: The rule_name of this DefectInfoV2.
         :type rule_name: str
@@ -237,7 +295,7 @@ class DefectInfoV2:
     def line_number(self):
         r"""Gets the line_number of this DefectInfoV2.
 
-        缺陷所在文件行号
+        **参数解释：** 问题所在文件行号。 **取值范围：** 不涉及。
 
         :return: The line_number of this DefectInfoV2.
         :rtype: str
@@ -248,7 +306,7 @@ class DefectInfoV2:
     def line_number(self, line_number):
         r"""Sets the line_number of this DefectInfoV2.
 
-        缺陷所在文件行号
+        **参数解释：** 问题所在文件行号。 **取值范围：** 不涉及。
 
         :param line_number: The line_number of this DefectInfoV2.
         :type line_number: str
@@ -259,7 +317,7 @@ class DefectInfoV2:
     def defect_content(self):
         r"""Gets the defect_content of this DefectInfoV2.
 
-        缺陷描述
+        **参数解释：** 问题详细描述。 **取值范围：** 不涉及。
 
         :return: The defect_content of this DefectInfoV2.
         :rtype: str
@@ -270,7 +328,7 @@ class DefectInfoV2:
     def defect_content(self, defect_content):
         r"""Sets the defect_content of this DefectInfoV2.
 
-        缺陷描述
+        **参数解释：** 问题详细描述。 **取值范围：** 不涉及。
 
         :param defect_content: The defect_content of this DefectInfoV2.
         :type defect_content: str
@@ -281,7 +339,7 @@ class DefectInfoV2:
     def defect_level(self):
         r"""Gets the defect_level of this DefectInfoV2.
 
-        缺陷等级，0致命，1严重，2一般，3提示
+        **参数解释：** 问题级别。 **取值范围：** - 0：致命。 - 1：严重。 - 2：一般。 - 3：提示。
 
         :return: The defect_level of this DefectInfoV2.
         :rtype: str
@@ -292,7 +350,7 @@ class DefectInfoV2:
     def defect_level(self, defect_level):
         r"""Sets the defect_level of this DefectInfoV2.
 
-        缺陷等级，0致命，1严重，2一般，3提示
+        **参数解释：** 问题级别。 **取值范围：** - 0：致命。 - 1：严重。 - 2：一般。 - 3：提示。
 
         :param defect_level: The defect_level of this DefectInfoV2.
         :type defect_level: str
@@ -303,7 +361,7 @@ class DefectInfoV2:
     def file_path(self):
         r"""Gets the file_path of this DefectInfoV2.
 
-        缺陷文件路径
+        **参数解释：** 问题文件路径。 **取值范围：** 不涉及。
 
         :return: The file_path of this DefectInfoV2.
         :rtype: str
@@ -314,7 +372,7 @@ class DefectInfoV2:
     def file_path(self, file_path):
         r"""Sets the file_path of this DefectInfoV2.
 
-        缺陷文件路径
+        **参数解释：** 问题文件路径。 **取值范围：** 不涉及。
 
         :param file_path: The file_path of this DefectInfoV2.
         :type file_path: str
@@ -325,7 +383,7 @@ class DefectInfoV2:
     def created_at(self):
         r"""Gets the created_at of this DefectInfoV2.
 
-        创建时间
+        **参数解释：** 问题发现时间。使用UTC时间，格式为yyyy-MM-ddTHH:mm:ssZ。例如：2020-09-25T12:05:00Z。 **取值范围：** 不涉及。
 
         :return: The created_at of this DefectInfoV2.
         :rtype: str
@@ -336,7 +394,7 @@ class DefectInfoV2:
     def created_at(self, created_at):
         r"""Sets the created_at of this DefectInfoV2.
 
-        创建时间
+        **参数解释：** 问题发现时间。使用UTC时间，格式为yyyy-MM-ddTHH:mm:ssZ。例如：2020-09-25T12:05:00Z。 **取值范围：** 不涉及。
 
         :param created_at: The created_at of this DefectInfoV2.
         :type created_at: str
@@ -347,7 +405,7 @@ class DefectInfoV2:
     def issue_key(self):
         r"""Gets the issue_key of this DefectInfoV2.
 
-        问题唯一标识
+        **参数解释：** 废弃字段。 **取值范围：** 不涉及。
 
         :return: The issue_key of this DefectInfoV2.
         :rtype: str
@@ -358,7 +416,7 @@ class DefectInfoV2:
     def issue_key(self, issue_key):
         r"""Sets the issue_key of this DefectInfoV2.
 
-        问题唯一标识
+        **参数解释：** 废弃字段。 **取值范围：** 不涉及。
 
         :param issue_key: The issue_key of this DefectInfoV2.
         :type issue_key: str
@@ -369,7 +427,7 @@ class DefectInfoV2:
     def fragment(self):
         r"""Gets the fragment of this DefectInfoV2.
 
-        缺陷代码片段详情
+        **参数解释：** 代码片段内容。
 
         :return: The fragment of this DefectInfoV2.
         :rtype: list[:class:`huaweicloudsdkcodeartscheck.v2.DefectFragmentV2`]
@@ -380,7 +438,7 @@ class DefectInfoV2:
     def fragment(self, fragment):
         r"""Sets the fragment of this DefectInfoV2.
 
-        缺陷代码片段详情
+        **参数解释：** 代码片段内容。
 
         :param fragment: The fragment of this DefectInfoV2.
         :type fragment: list[:class:`huaweicloudsdkcodeartscheck.v2.DefectFragmentV2`]
@@ -391,7 +449,7 @@ class DefectInfoV2:
     def events(self):
         r"""Gets the events of this DefectInfoV2.
 
-        调用链信息
+        **参数解释：** 调用链信息。
 
         :return: The events of this DefectInfoV2.
         :rtype: list[:class:`huaweicloudsdkcodeartscheck.v2.DefectEvents`]
@@ -402,7 +460,7 @@ class DefectInfoV2:
     def events(self, events):
         r"""Sets the events of this DefectInfoV2.
 
-        调用链信息
+        **参数解释：** 调用链信息。
 
         :param events: The events of this DefectInfoV2.
         :type events: list[:class:`huaweicloudsdkcodeartscheck.v2.DefectEvents`]

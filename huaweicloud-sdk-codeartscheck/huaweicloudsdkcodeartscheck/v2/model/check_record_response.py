@@ -30,9 +30,9 @@ class CheckRecordResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param data: 历史记录数据
+        :param data: **参数解释：** 每次扫描的各个问题级别的问题数量。
         :type data: list[:class:`huaweicloudsdkcodeartscheck.v2.CheckRecordDataInfo`]
-        :param total: 总数
+        :param total: **参数解释：** 扫描次数总数。 **取值范围：** 不涉及。
         :type total: int
         """
         
@@ -51,7 +51,7 @@ class CheckRecordResponse(SdkResponse):
     def data(self):
         r"""Gets the data of this CheckRecordResponse.
 
-        历史记录数据
+        **参数解释：** 每次扫描的各个问题级别的问题数量。
 
         :return: The data of this CheckRecordResponse.
         :rtype: list[:class:`huaweicloudsdkcodeartscheck.v2.CheckRecordDataInfo`]
@@ -62,7 +62,7 @@ class CheckRecordResponse(SdkResponse):
     def data(self, data):
         r"""Sets the data of this CheckRecordResponse.
 
-        历史记录数据
+        **参数解释：** 每次扫描的各个问题级别的问题数量。
 
         :param data: The data of this CheckRecordResponse.
         :type data: list[:class:`huaweicloudsdkcodeartscheck.v2.CheckRecordDataInfo`]
@@ -73,7 +73,7 @@ class CheckRecordResponse(SdkResponse):
     def total(self):
         r"""Gets the total of this CheckRecordResponse.
 
-        总数
+        **参数解释：** 扫描次数总数。 **取值范围：** 不涉及。
 
         :return: The total of this CheckRecordResponse.
         :rtype: int
@@ -84,7 +84,7 @@ class CheckRecordResponse(SdkResponse):
     def total(self, total):
         r"""Sets the total of this CheckRecordResponse.
 
-        总数
+        **参数解释：** 扫描次数总数。 **取值范围：** 不涉及。
 
         :param total: The total of this CheckRecordResponse.
         :type total: int

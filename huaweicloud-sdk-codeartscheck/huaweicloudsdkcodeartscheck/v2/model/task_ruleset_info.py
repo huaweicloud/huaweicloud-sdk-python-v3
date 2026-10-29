@@ -35,15 +35,15 @@ class TaskRulesetInfo:
 
         The model defined in huaweicloud sdk
 
-        :param template_id: 规则集id
+        :param template_id: **参数解释：** 规则集ID。 **取值范围:** 长度为[1~32]个字符。
         :type template_id: str
-        :param language: 规则集语言
+        :param language: **参数解释：** 规则集语言。 **取值范围:** 自定义语言或者系统内置语言，当前支持的系统内置语言有： - ARKTS - C# - CANGJIE - C++ - CSS - GO - HTML - JAVA - JAVASCRIPT - KOTLIN - LUA - PHP - PYTHON - RUST - SCALA - SHELL - SQL - TERRAFORM - TYPESCRIPT - AZURERESOURCEMANAGER - DOCKER - KUBERNETES
         :type language: str
-        :param template_name: 规则集名称
+        :param template_name: **参数解释：** 规则集名称。 **取值范围:** 任意中英文，数字，点，连字符-及下划线_。长度为[1~128]个字符。
         :type template_name: str
-        :param type: 规则集状态optional：可选，selected：已选
+        :param type: **参数解释：** 规则集选取状态。 **取值范围:** - selected：已选。 - optional：可选，指未开启的语言在当前项目下的默认规则集。
         :type type: str
-        :param status: 规则集属性0 是默认用户规则集,1 是系统默认规则集
+        :param status: **参数解释：** 规则集属性。 **取值范围:** - 0：用户自定义规则集。 - 1：系统规则集。
         :type status: str
         """
         
@@ -71,7 +71,7 @@ class TaskRulesetInfo:
     def template_id(self):
         r"""Gets the template_id of this TaskRulesetInfo.
 
-        规则集id
+        **参数解释：** 规则集ID。 **取值范围:** 长度为[1~32]个字符。
 
         :return: The template_id of this TaskRulesetInfo.
         :rtype: str
@@ -82,7 +82,7 @@ class TaskRulesetInfo:
     def template_id(self, template_id):
         r"""Sets the template_id of this TaskRulesetInfo.
 
-        规则集id
+        **参数解释：** 规则集ID。 **取值范围:** 长度为[1~32]个字符。
 
         :param template_id: The template_id of this TaskRulesetInfo.
         :type template_id: str
@@ -93,7 +93,7 @@ class TaskRulesetInfo:
     def language(self):
         r"""Gets the language of this TaskRulesetInfo.
 
-        规则集语言
+        **参数解释：** 规则集语言。 **取值范围:** 自定义语言或者系统内置语言，当前支持的系统内置语言有： - ARKTS - C# - CANGJIE - C++ - CSS - GO - HTML - JAVA - JAVASCRIPT - KOTLIN - LUA - PHP - PYTHON - RUST - SCALA - SHELL - SQL - TERRAFORM - TYPESCRIPT - AZURERESOURCEMANAGER - DOCKER - KUBERNETES
 
         :return: The language of this TaskRulesetInfo.
         :rtype: str
@@ -104,7 +104,7 @@ class TaskRulesetInfo:
     def language(self, language):
         r"""Sets the language of this TaskRulesetInfo.
 
-        规则集语言
+        **参数解释：** 规则集语言。 **取值范围:** 自定义语言或者系统内置语言，当前支持的系统内置语言有： - ARKTS - C# - CANGJIE - C++ - CSS - GO - HTML - JAVA - JAVASCRIPT - KOTLIN - LUA - PHP - PYTHON - RUST - SCALA - SHELL - SQL - TERRAFORM - TYPESCRIPT - AZURERESOURCEMANAGER - DOCKER - KUBERNETES
 
         :param language: The language of this TaskRulesetInfo.
         :type language: str
@@ -115,7 +115,7 @@ class TaskRulesetInfo:
     def template_name(self):
         r"""Gets the template_name of this TaskRulesetInfo.
 
-        规则集名称
+        **参数解释：** 规则集名称。 **取值范围:** 任意中英文，数字，点，连字符-及下划线_。长度为[1~128]个字符。
 
         :return: The template_name of this TaskRulesetInfo.
         :rtype: str
@@ -126,7 +126,7 @@ class TaskRulesetInfo:
     def template_name(self, template_name):
         r"""Sets the template_name of this TaskRulesetInfo.
 
-        规则集名称
+        **参数解释：** 规则集名称。 **取值范围:** 任意中英文，数字，点，连字符-及下划线_。长度为[1~128]个字符。
 
         :param template_name: The template_name of this TaskRulesetInfo.
         :type template_name: str
@@ -137,7 +137,7 @@ class TaskRulesetInfo:
     def type(self):
         r"""Gets the type of this TaskRulesetInfo.
 
-        规则集状态optional：可选，selected：已选
+        **参数解释：** 规则集选取状态。 **取值范围:** - selected：已选。 - optional：可选，指未开启的语言在当前项目下的默认规则集。
 
         :return: The type of this TaskRulesetInfo.
         :rtype: str
@@ -148,7 +148,7 @@ class TaskRulesetInfo:
     def type(self, type):
         r"""Sets the type of this TaskRulesetInfo.
 
-        规则集状态optional：可选，selected：已选
+        **参数解释：** 规则集选取状态。 **取值范围:** - selected：已选。 - optional：可选，指未开启的语言在当前项目下的默认规则集。
 
         :param type: The type of this TaskRulesetInfo.
         :type type: str
@@ -159,7 +159,7 @@ class TaskRulesetInfo:
     def status(self):
         r"""Gets the status of this TaskRulesetInfo.
 
-        规则集属性0 是默认用户规则集,1 是系统默认规则集
+        **参数解释：** 规则集属性。 **取值范围:** - 0：用户自定义规则集。 - 1：系统规则集。
 
         :return: The status of this TaskRulesetInfo.
         :rtype: str
@@ -170,7 +170,7 @@ class TaskRulesetInfo:
     def status(self, status):
         r"""Sets the status of this TaskRulesetInfo.
 
-        规则集属性0 是默认用户规则集,1 是系统默认规则集
+        **参数解释：** 规则集属性。 **取值范围:** - 0：用户自定义规则集。 - 1：系统规则集。
 
         :param status: The status of this TaskRulesetInfo.
         :type status: str

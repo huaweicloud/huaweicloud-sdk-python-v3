@@ -29,7 +29,7 @@ class ShowFlinkSqlGatewayConfigResponseBody:
 
         The model defined in huaweicloud sdk
 
-        :param host: **参数解释**：SQL Gateway的Ingress访问域名，格式为sql-gateway-{jobId}。 **取值范围**：长度为1~253个字符。
+        :param host: **参数解释**：SQL Gateway的访问Host，格式为sql-gateway-{jobId}。 **取值范围**：长度为1~253个字符。
         :type host: str
         :param sql_gateway_token: **参数解释**：SQL Gateway鉴权Token。 **取值范围**：已配置时固定返回 ******；未配置时不返回该字段。
         :type sql_gateway_token: str
@@ -50,7 +50,7 @@ class ShowFlinkSqlGatewayConfigResponseBody:
     def host(self):
         r"""Gets the host of this ShowFlinkSqlGatewayConfigResponseBody.
 
-        **参数解释**：SQL Gateway的Ingress访问域名，格式为sql-gateway-{jobId}。 **取值范围**：长度为1~253个字符。
+        **参数解释**：SQL Gateway的访问Host，格式为sql-gateway-{jobId}。 **取值范围**：长度为1~253个字符。
 
         :return: The host of this ShowFlinkSqlGatewayConfigResponseBody.
         :rtype: str
@@ -61,7 +61,7 @@ class ShowFlinkSqlGatewayConfigResponseBody:
     def host(self, host):
         r"""Sets the host of this ShowFlinkSqlGatewayConfigResponseBody.
 
-        **参数解释**：SQL Gateway的Ingress访问域名，格式为sql-gateway-{jobId}。 **取值范围**：长度为1~253个字符。
+        **参数解释**：SQL Gateway的访问Host，格式为sql-gateway-{jobId}。 **取值范围**：长度为1~253个字符。
 
         :param host: The host of this ShowFlinkSqlGatewayConfigResponseBody.
         :type host: str

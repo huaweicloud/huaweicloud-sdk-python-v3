@@ -3,7 +3,7 @@
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class TaskCheckParamters:
+class TaskCheckParameters:
 
     """
     Attributes:
@@ -27,15 +27,15 @@ class TaskCheckParamters:
     }
 
     def __init__(self, check_id=None, name=None, checker_configs=None):
-        r"""TaskCheckParamters
+        r"""TaskCheckParameters
 
         The model defined in huaweicloud sdk
 
-        :param check_id: 检查工具ID
+        :param check_id: **参数解释：** 检查工具ID。 **取值范围:** ≥0
         :type check_id: int
-        :param name: 编译参数名称
+        :param name: **参数解释：** 编译参数名称。 **取值范围:** 不涉及。
         :type name: str
-        :param checker_configs: 检查参数配置信息
+        :param checker_configs: **参数解释：** 检查参数配置信息。
         :type checker_configs: list[:class:`huaweicloudsdkcodeartscheck.v2.CheckConfigInfo`]
         """
         
@@ -55,66 +55,66 @@ class TaskCheckParamters:
 
     @property
     def check_id(self):
-        r"""Gets the check_id of this TaskCheckParamters.
+        r"""Gets the check_id of this TaskCheckParameters.
 
-        检查工具ID
+        **参数解释：** 检查工具ID。 **取值范围:** ≥0
 
-        :return: The check_id of this TaskCheckParamters.
+        :return: The check_id of this TaskCheckParameters.
         :rtype: int
         """
         return self._check_id
 
     @check_id.setter
     def check_id(self, check_id):
-        r"""Sets the check_id of this TaskCheckParamters.
+        r"""Sets the check_id of this TaskCheckParameters.
 
-        检查工具ID
+        **参数解释：** 检查工具ID。 **取值范围:** ≥0
 
-        :param check_id: The check_id of this TaskCheckParamters.
+        :param check_id: The check_id of this TaskCheckParameters.
         :type check_id: int
         """
         self._check_id = check_id
 
     @property
     def name(self):
-        r"""Gets the name of this TaskCheckParamters.
+        r"""Gets the name of this TaskCheckParameters.
 
-        编译参数名称
+        **参数解释：** 编译参数名称。 **取值范围:** 不涉及。
 
-        :return: The name of this TaskCheckParamters.
+        :return: The name of this TaskCheckParameters.
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        r"""Sets the name of this TaskCheckParamters.
+        r"""Sets the name of this TaskCheckParameters.
 
-        编译参数名称
+        **参数解释：** 编译参数名称。 **取值范围:** 不涉及。
 
-        :param name: The name of this TaskCheckParamters.
+        :param name: The name of this TaskCheckParameters.
         :type name: str
         """
         self._name = name
 
     @property
     def checker_configs(self):
-        r"""Gets the checker_configs of this TaskCheckParamters.
+        r"""Gets the checker_configs of this TaskCheckParameters.
 
-        检查参数配置信息
+        **参数解释：** 检查参数配置信息。
 
-        :return: The checker_configs of this TaskCheckParamters.
+        :return: The checker_configs of this TaskCheckParameters.
         :rtype: list[:class:`huaweicloudsdkcodeartscheck.v2.CheckConfigInfo`]
         """
         return self._checker_configs
 
     @checker_configs.setter
     def checker_configs(self, checker_configs):
-        r"""Sets the checker_configs of this TaskCheckParamters.
+        r"""Sets the checker_configs of this TaskCheckParameters.
 
-        检查参数配置信息
+        **参数解释：** 检查参数配置信息。
 
-        :param checker_configs: The checker_configs of this TaskCheckParamters.
+        :param checker_configs: The checker_configs of this TaskCheckParameters.
         :type checker_configs: list[:class:`huaweicloudsdkcodeartscheck.v2.CheckConfigInfo`]
         """
         self._checker_configs = checker_configs
@@ -156,7 +156,7 @@ class TaskCheckParamters:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, TaskCheckParamters):
+        if not isinstance(other, TaskCheckParameters):
             return False
 
         return self.__dict__ == other.__dict__

@@ -32,7 +32,8 @@ class UpdateSqlAlarmRuleRequestBody:
         'notification_frequency': 'int',
         'alarm_action_rule_name': 'str',
         'tags': 'list[TagsRequestBody]',
-        'enterprise_project_id': 'str'
+        'enterprise_project_id': 'str',
+        'condition_expressions': 'list[AlarmCondition]'
     }
 
     attribute_map = {
@@ -53,10 +54,11 @@ class UpdateSqlAlarmRuleRequestBody:
         'notification_frequency': 'notification_frequency',
         'alarm_action_rule_name': 'alarm_action_rule_name',
         'tags': 'tags',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'condition_expressions': 'condition_expressions'
     }
 
-    def __init__(self, sql_alarm_rule_id=None, sql_alarm_rule_name=None, alarm_rule_alias=None, is_css_sql=None, sql_alarm_rule_description=None, sql_requests=None, frequency=None, condition_expression=None, sql_alarm_level=None, domain_id=None, trigger_condition_count=None, trigger_condition_frequency=None, whether_recovery_policy=None, recovery_policy=None, notification_frequency=None, alarm_action_rule_name=None, tags=None, enterprise_project_id=None):
+    def __init__(self, sql_alarm_rule_id=None, sql_alarm_rule_name=None, alarm_rule_alias=None, is_css_sql=None, sql_alarm_rule_description=None, sql_requests=None, frequency=None, condition_expression=None, sql_alarm_level=None, domain_id=None, trigger_condition_count=None, trigger_condition_frequency=None, whether_recovery_policy=None, recovery_policy=None, notification_frequency=None, alarm_action_rule_name=None, tags=None, enterprise_project_id=None, condition_expressions=None):
         r"""UpdateSqlAlarmRuleRequestBody
 
         The model defined in huaweicloud sdk
@@ -97,6 +99,8 @@ class UpdateSqlAlarmRuleRequestBody:
         :type tags: list[:class:`huaweicloudsdklts.v2.TagsRequestBody`]
         :param enterprise_project_id: **参数解释：** 企业项目id信息。 **约束限制：** 不涉及。
         :type enterprise_project_id: str
+        :param condition_expressions: **参数解释：** 支持根据不同条件触发不同级别的告警。当使用该参数时，将优先使用该参数中的条件触发告警，无视condition_expression、sql_alarm_level参数。 **约束限制：** 不涉及。
+        :type condition_expressions: list[:class:`huaweicloudsdklts.v2.AlarmCondition`]
         """
         
         
@@ -119,6 +123,7 @@ class UpdateSqlAlarmRuleRequestBody:
         self._alarm_action_rule_name = None
         self._tags = None
         self._enterprise_project_id = None
+        self._condition_expressions = None
         self.discriminator = None
 
         self.sql_alarm_rule_id = sql_alarm_rule_id
@@ -131,8 +136,10 @@ class UpdateSqlAlarmRuleRequestBody:
             self.sql_alarm_rule_description = sql_alarm_rule_description
         self.sql_requests = sql_requests
         self.frequency = frequency
-        self.condition_expression = condition_expression
-        self.sql_alarm_level = sql_alarm_level
+        if condition_expression is not None:
+            self.condition_expression = condition_expression
+        if sql_alarm_level is not None:
+            self.sql_alarm_level = sql_alarm_level
         self.domain_id = domain_id
         if trigger_condition_count is not None:
             self.trigger_condition_count = trigger_condition_count
@@ -149,6 +156,8 @@ class UpdateSqlAlarmRuleRequestBody:
             self.tags = tags
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if condition_expressions is not None:
+            self.condition_expressions = condition_expressions
 
     @property
     def sql_alarm_rule_id(self):
@@ -541,6 +550,28 @@ class UpdateSqlAlarmRuleRequestBody:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def condition_expressions(self):
+        r"""Gets the condition_expressions of this UpdateSqlAlarmRuleRequestBody.
+
+        **参数解释：** 支持根据不同条件触发不同级别的告警。当使用该参数时，将优先使用该参数中的条件触发告警，无视condition_expression、sql_alarm_level参数。 **约束限制：** 不涉及。
+
+        :return: The condition_expressions of this UpdateSqlAlarmRuleRequestBody.
+        :rtype: list[:class:`huaweicloudsdklts.v2.AlarmCondition`]
+        """
+        return self._condition_expressions
+
+    @condition_expressions.setter
+    def condition_expressions(self, condition_expressions):
+        r"""Sets the condition_expressions of this UpdateSqlAlarmRuleRequestBody.
+
+        **参数解释：** 支持根据不同条件触发不同级别的告警。当使用该参数时，将优先使用该参数中的条件触发告警，无视condition_expression、sql_alarm_level参数。 **约束限制：** 不涉及。
+
+        :param condition_expressions: The condition_expressions of this UpdateSqlAlarmRuleRequestBody.
+        :type condition_expressions: list[:class:`huaweicloudsdklts.v2.AlarmCondition`]
+        """
+        self._condition_expressions = condition_expressions
 
     def to_dict(self):
         result = {}

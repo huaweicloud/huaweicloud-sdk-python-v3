@@ -17,7 +17,7 @@ class ChangePaymentModeNewResponse(SdkResponse):
 
     openapi_types = {
         'success': 'bool',
-        'can_set_free_time': 'float',
+        'can_set_free_time': 'int',
         'error_msg': 'str'
     }
 
@@ -35,7 +35,7 @@ class ChangePaymentModeNewResponse(SdkResponse):
         :param success: 是否成功
         :type success: bool
         :param can_set_free_time: 可恢复为免费实例的时间
-        :type can_set_free_time: float
+        :type can_set_free_time: int
         :param error_msg: 错误信息
         :type error_msg: str
         """
@@ -83,7 +83,7 @@ class ChangePaymentModeNewResponse(SdkResponse):
         可恢复为免费实例的时间
 
         :return: The can_set_free_time of this ChangePaymentModeNewResponse.
-        :rtype: float
+        :rtype: int
         """
         return self._can_set_free_time
 
@@ -94,7 +94,7 @@ class ChangePaymentModeNewResponse(SdkResponse):
         可恢复为免费实例的时间
 
         :param can_set_free_time: The can_set_free_time of this ChangePaymentModeNewResponse.
-        :type can_set_free_time: float
+        :type can_set_free_time: int
         """
         self._can_set_free_time = can_set_free_time
 

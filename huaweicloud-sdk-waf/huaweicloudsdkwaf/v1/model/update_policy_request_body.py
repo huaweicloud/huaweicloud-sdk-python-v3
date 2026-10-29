@@ -24,7 +24,8 @@ class UpdatePolicyRequestBody:
         'modulex_options': 'dict(str, object)',
         'hosts': 'list[str]',
         'bind_host': 'list[BindHost]',
-        'extend': 'dict(str, str)'
+        'extend': 'dict(str, str)',
+        'scan_protection_options': 'ScanProtectionOption'
     }
 
     attribute_map = {
@@ -37,10 +38,11 @@ class UpdatePolicyRequestBody:
         'modulex_options': 'modulex_options',
         'hosts': 'hosts',
         'bind_host': 'bind_host',
-        'extend': 'extend'
+        'extend': 'extend',
+        'scan_protection_options': 'scan_protection_options'
     }
 
-    def __init__(self, name=None, level=None, full_detection=None, robot_action=None, action=None, options=None, modulex_options=None, hosts=None, bind_host=None, extend=None):
+    def __init__(self, name=None, level=None, full_detection=None, robot_action=None, action=None, options=None, modulex_options=None, hosts=None, bind_host=None, extend=None, scan_protection_options=None):
         r"""UpdatePolicyRequestBody
 
         The model defined in huaweicloud sdk
@@ -65,6 +67,8 @@ class UpdatePolicyRequestBody:
         :type bind_host: list[:class:`huaweicloudsdkwaf.v1.BindHost`]
         :param extend: 扩展字段，用于存放Web基础防护中一些开关配置等信息，当修改字段为 shiro_rememberMe_enable,deep_decode,check_all_headers 时，需要额外增加一层extend字段嵌套.示例 key为 extend，value为 {\&quot;shiro_rememberMe_enable\&quot;:true}
         :type extend: dict(str, str)
+        :param scan_protection_options: 
+        :type scan_protection_options: :class:`huaweicloudsdkwaf.v1.ScanProtectionOption`
         """
         
         
@@ -79,6 +83,7 @@ class UpdatePolicyRequestBody:
         self._hosts = None
         self._bind_host = None
         self._extend = None
+        self._scan_protection_options = None
         self.discriminator = None
 
         if name is not None:
@@ -101,6 +106,8 @@ class UpdatePolicyRequestBody:
             self.bind_host = bind_host
         if extend is not None:
             self.extend = extend
+        if scan_protection_options is not None:
+            self.scan_protection_options = scan_protection_options
 
     @property
     def name(self):
@@ -309,6 +316,24 @@ class UpdatePolicyRequestBody:
         :type extend: dict(str, str)
         """
         self._extend = extend
+
+    @property
+    def scan_protection_options(self):
+        r"""Gets the scan_protection_options of this UpdatePolicyRequestBody.
+
+        :return: The scan_protection_options of this UpdatePolicyRequestBody.
+        :rtype: :class:`huaweicloudsdkwaf.v1.ScanProtectionOption`
+        """
+        return self._scan_protection_options
+
+    @scan_protection_options.setter
+    def scan_protection_options(self, scan_protection_options):
+        r"""Sets the scan_protection_options of this UpdatePolicyRequestBody.
+
+        :param scan_protection_options: The scan_protection_options of this UpdatePolicyRequestBody.
+        :type scan_protection_options: :class:`huaweicloudsdkwaf.v1.ScanProtectionOption`
+        """
+        self._scan_protection_options = scan_protection_options
 
     def to_dict(self):
         result = {}

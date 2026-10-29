@@ -17,26 +17,34 @@ class StatisticStatusV2:
     openapi_types = {
         'unresolved': 'int',
         'resolved': 'int',
-        'dismissed': 'int'
+        'dismissed': 'int',
+        'fixed': 'int',
+        'solved': 'int'
     }
 
     attribute_map = {
         'unresolved': 'unresolved',
         'resolved': 'resolved',
-        'dismissed': 'dismissed'
+        'dismissed': 'dismissed',
+        'fixed': 'fixed',
+        'solved': 'solved'
     }
 
-    def __init__(self, unresolved=None, resolved=None, dismissed=None):
+    def __init__(self, unresolved=None, resolved=None, dismissed=None, fixed=None, solved=None):
         r"""StatisticStatusV2
 
         The model defined in huaweicloud sdk
 
-        :param unresolved: 未解决
+        :param unresolved: **参数解释：** [待处理问题数。](tag:hws,hws_hk)[待处理和重新打开（需打开忽略审核开关）问题数。](tag:fcs,hcs,hcs_sm,hcs_site,hcs_sitesm) **取值范围：** 不涉及。
         :type unresolved: int
-        :param resolved: 已解决
+        :param resolved: **参数解释：** 已解决和已修复问题数。 **取值范围：** 不涉及。
         :type resolved: int
-        :param dismissed: 已忽略
+        :param dismissed: **参数解释：** 已忽略问题数。 **取值范围：** 不涉及。
         :type dismissed: int
+        :param fixed: **参数解释：** 已修复问题数。 **取值范围：** 不涉及。
+        :type fixed: int
+        :param solved: **参数解释：** 已解决问题数。 **取值范围：** 不涉及。
+        :type solved: int
         """
         
         
@@ -44,6 +52,8 @@ class StatisticStatusV2:
         self._unresolved = None
         self._resolved = None
         self._dismissed = None
+        self._fixed = None
+        self._solved = None
         self.discriminator = None
 
         if unresolved is not None:
@@ -52,12 +62,16 @@ class StatisticStatusV2:
             self.resolved = resolved
         if dismissed is not None:
             self.dismissed = dismissed
+        if fixed is not None:
+            self.fixed = fixed
+        if solved is not None:
+            self.solved = solved
 
     @property
     def unresolved(self):
         r"""Gets the unresolved of this StatisticStatusV2.
 
-        未解决
+        **参数解释：** [待处理问题数。](tag:hws,hws_hk)[待处理和重新打开（需打开忽略审核开关）问题数。](tag:fcs,hcs,hcs_sm,hcs_site,hcs_sitesm) **取值范围：** 不涉及。
 
         :return: The unresolved of this StatisticStatusV2.
         :rtype: int
@@ -68,7 +82,7 @@ class StatisticStatusV2:
     def unresolved(self, unresolved):
         r"""Sets the unresolved of this StatisticStatusV2.
 
-        未解决
+        **参数解释：** [待处理问题数。](tag:hws,hws_hk)[待处理和重新打开（需打开忽略审核开关）问题数。](tag:fcs,hcs,hcs_sm,hcs_site,hcs_sitesm) **取值范围：** 不涉及。
 
         :param unresolved: The unresolved of this StatisticStatusV2.
         :type unresolved: int
@@ -79,7 +93,7 @@ class StatisticStatusV2:
     def resolved(self):
         r"""Gets the resolved of this StatisticStatusV2.
 
-        已解决
+        **参数解释：** 已解决和已修复问题数。 **取值范围：** 不涉及。
 
         :return: The resolved of this StatisticStatusV2.
         :rtype: int
@@ -90,7 +104,7 @@ class StatisticStatusV2:
     def resolved(self, resolved):
         r"""Sets the resolved of this StatisticStatusV2.
 
-        已解决
+        **参数解释：** 已解决和已修复问题数。 **取值范围：** 不涉及。
 
         :param resolved: The resolved of this StatisticStatusV2.
         :type resolved: int
@@ -101,7 +115,7 @@ class StatisticStatusV2:
     def dismissed(self):
         r"""Gets the dismissed of this StatisticStatusV2.
 
-        已忽略
+        **参数解释：** 已忽略问题数。 **取值范围：** 不涉及。
 
         :return: The dismissed of this StatisticStatusV2.
         :rtype: int
@@ -112,12 +126,56 @@ class StatisticStatusV2:
     def dismissed(self, dismissed):
         r"""Sets the dismissed of this StatisticStatusV2.
 
-        已忽略
+        **参数解释：** 已忽略问题数。 **取值范围：** 不涉及。
 
         :param dismissed: The dismissed of this StatisticStatusV2.
         :type dismissed: int
         """
         self._dismissed = dismissed
+
+    @property
+    def fixed(self):
+        r"""Gets the fixed of this StatisticStatusV2.
+
+        **参数解释：** 已修复问题数。 **取值范围：** 不涉及。
+
+        :return: The fixed of this StatisticStatusV2.
+        :rtype: int
+        """
+        return self._fixed
+
+    @fixed.setter
+    def fixed(self, fixed):
+        r"""Sets the fixed of this StatisticStatusV2.
+
+        **参数解释：** 已修复问题数。 **取值范围：** 不涉及。
+
+        :param fixed: The fixed of this StatisticStatusV2.
+        :type fixed: int
+        """
+        self._fixed = fixed
+
+    @property
+    def solved(self):
+        r"""Gets the solved of this StatisticStatusV2.
+
+        **参数解释：** 已解决问题数。 **取值范围：** 不涉及。
+
+        :return: The solved of this StatisticStatusV2.
+        :rtype: int
+        """
+        return self._solved
+
+    @solved.setter
+    def solved(self, solved):
+        r"""Sets the solved of this StatisticStatusV2.
+
+        **参数解释：** 已解决问题数。 **取值范围：** 不涉及。
+
+        :param solved: The solved of this StatisticStatusV2.
+        :type solved: int
+        """
+        self._solved = solved
 
     def to_dict(self):
         result = {}

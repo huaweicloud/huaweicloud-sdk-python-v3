@@ -29,9 +29,9 @@ class RuleSetV2:
 
         The model defined in huaweicloud sdk
 
-        :param ruleset_id: 规则集id，需要从web界面获取
+        :param ruleset_id: **参数解释：** 规则集ID。 **约束限制:** 长度为[1~32]个字符。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type ruleset_id: str
-        :param language: 检查语言，支持cpp,java,js,python,php,css,html,go,typescript
+        :param language: **参数解释：** 检查语言，支持的语言请关注服务更新特性文档。 **约束限制:** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type language: str
         """
         
@@ -49,7 +49,7 @@ class RuleSetV2:
     def ruleset_id(self):
         r"""Gets the ruleset_id of this RuleSetV2.
 
-        规则集id，需要从web界面获取
+        **参数解释：** 规则集ID。 **约束限制:** 长度为[1~32]个字符。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The ruleset_id of this RuleSetV2.
         :rtype: str
@@ -60,7 +60,7 @@ class RuleSetV2:
     def ruleset_id(self, ruleset_id):
         r"""Sets the ruleset_id of this RuleSetV2.
 
-        规则集id，需要从web界面获取
+        **参数解释：** 规则集ID。 **约束限制:** 长度为[1~32]个字符。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param ruleset_id: The ruleset_id of this RuleSetV2.
         :type ruleset_id: str
@@ -71,7 +71,7 @@ class RuleSetV2:
     def language(self):
         r"""Gets the language of this RuleSetV2.
 
-        检查语言，支持cpp,java,js,python,php,css,html,go,typescript
+        **参数解释：** 检查语言，支持的语言请关注服务更新特性文档。 **约束限制:** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The language of this RuleSetV2.
         :rtype: str
@@ -82,7 +82,7 @@ class RuleSetV2:
     def language(self, language):
         r"""Sets the language of this RuleSetV2.
 
-        检查语言，支持cpp,java,js,python,php,css,html,go,typescript
+        **参数解释：** 检查语言，支持的语言请关注服务更新特性文档。 **约束限制:** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param language: The language of this RuleSetV2.
         :type language: str

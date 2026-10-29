@@ -18,7 +18,7 @@ class LTSAccessConfigInfoRespon200:
         'access_config_id': 'str',
         'project_id': 'str',
         'access_config_name': 'str',
-        'access_config_type': 'object',
+        'access_config_type': 'str',
         'group_id': 'str',
         'log_group_name': 'str',
         'log_stream_id': 'str',
@@ -51,8 +51,8 @@ class LTSAccessConfigInfoRespon200:
         :type project_id: str
         :param access_config_name: 跨账号日志接入名称
         :type access_config_name: str
-        :param access_config_type: 跨账号日志接入类型
-        :type access_config_type: object
+        :param access_config_type: **参数解释：** 委托接入类型。 **约束限制：** 不涉及。 **取值范围：** - AGENCYACCESS：委托接入。
+        :type access_config_type: str
         :param group_id: 日志组ID
         :type group_id: str
         :param log_group_name: 日志组名称
@@ -172,10 +172,10 @@ class LTSAccessConfigInfoRespon200:
     def access_config_type(self):
         r"""Gets the access_config_type of this LTSAccessConfigInfoRespon200.
 
-        跨账号日志接入类型
+        **参数解释：** 委托接入类型。 **约束限制：** 不涉及。 **取值范围：** - AGENCYACCESS：委托接入。
 
         :return: The access_config_type of this LTSAccessConfigInfoRespon200.
-        :rtype: object
+        :rtype: str
         """
         return self._access_config_type
 
@@ -183,10 +183,10 @@ class LTSAccessConfigInfoRespon200:
     def access_config_type(self, access_config_type):
         r"""Sets the access_config_type of this LTSAccessConfigInfoRespon200.
 
-        跨账号日志接入类型
+        **参数解释：** 委托接入类型。 **约束限制：** 不涉及。 **取值范围：** - AGENCYACCESS：委托接入。
 
         :param access_config_type: The access_config_type of this LTSAccessConfigInfoRespon200.
-        :type access_config_type: object
+        :type access_config_type: str
         """
         self._access_config_type = access_config_type
 

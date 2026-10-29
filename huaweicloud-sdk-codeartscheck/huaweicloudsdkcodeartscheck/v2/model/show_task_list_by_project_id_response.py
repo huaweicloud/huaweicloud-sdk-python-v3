@@ -30,9 +30,9 @@ class ShowTaskListByProjectIdResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param tasks: 任务信息
+        :param tasks: **参数解释：** 任务信息。
         :type tasks: list[:class:`huaweicloudsdkcodeartscheck.v2.SimpleTaskInfoV2`]
-        :param total: 总数
+        :param total: **参数解释：** 项目下的任务总数。 **取值范围：** 不涉及。
         :type total: int
         """
         
@@ -51,7 +51,7 @@ class ShowTaskListByProjectIdResponse(SdkResponse):
     def tasks(self):
         r"""Gets the tasks of this ShowTaskListByProjectIdResponse.
 
-        任务信息
+        **参数解释：** 任务信息。
 
         :return: The tasks of this ShowTaskListByProjectIdResponse.
         :rtype: list[:class:`huaweicloudsdkcodeartscheck.v2.SimpleTaskInfoV2`]
@@ -62,7 +62,7 @@ class ShowTaskListByProjectIdResponse(SdkResponse):
     def tasks(self, tasks):
         r"""Sets the tasks of this ShowTaskListByProjectIdResponse.
 
-        任务信息
+        **参数解释：** 任务信息。
 
         :param tasks: The tasks of this ShowTaskListByProjectIdResponse.
         :type tasks: list[:class:`huaweicloudsdkcodeartscheck.v2.SimpleTaskInfoV2`]
@@ -73,7 +73,7 @@ class ShowTaskListByProjectIdResponse(SdkResponse):
     def total(self):
         r"""Gets the total of this ShowTaskListByProjectIdResponse.
 
-        总数
+        **参数解释：** 项目下的任务总数。 **取值范围：** 不涉及。
 
         :return: The total of this ShowTaskListByProjectIdResponse.
         :rtype: int
@@ -84,7 +84,7 @@ class ShowTaskListByProjectIdResponse(SdkResponse):
     def total(self, total):
         r"""Sets the total of this ShowTaskListByProjectIdResponse.
 
-        总数
+        **参数解释：** 项目下的任务总数。 **取值范围：** 不涉及。
 
         :param total: The total of this ShowTaskListByProjectIdResponse.
         :type total: int

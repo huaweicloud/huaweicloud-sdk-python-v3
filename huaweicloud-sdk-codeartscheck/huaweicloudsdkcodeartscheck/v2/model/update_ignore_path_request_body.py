@@ -27,7 +27,7 @@ class UpdateIgnorePathRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param ignore_path_settings: 屏蔽目录的节点信息列表
+        :param ignore_path_settings: **参数解释：** 屏蔽目录的节点信息列表。 **约束限制：** 不涉及。
         :type ignore_path_settings: list[:class:`huaweicloudsdkcodeartscheck.v2.IgnorePathSettingItem`]
         """
         
@@ -36,13 +36,14 @@ class UpdateIgnorePathRequestBody:
         self._ignore_path_settings = None
         self.discriminator = None
 
-        self.ignore_path_settings = ignore_path_settings
+        if ignore_path_settings is not None:
+            self.ignore_path_settings = ignore_path_settings
 
     @property
     def ignore_path_settings(self):
         r"""Gets the ignore_path_settings of this UpdateIgnorePathRequestBody.
 
-        屏蔽目录的节点信息列表
+        **参数解释：** 屏蔽目录的节点信息列表。 **约束限制：** 不涉及。
 
         :return: The ignore_path_settings of this UpdateIgnorePathRequestBody.
         :rtype: list[:class:`huaweicloudsdkcodeartscheck.v2.IgnorePathSettingItem`]
@@ -53,7 +54,7 @@ class UpdateIgnorePathRequestBody:
     def ignore_path_settings(self, ignore_path_settings):
         r"""Sets the ignore_path_settings of this UpdateIgnorePathRequestBody.
 
-        屏蔽目录的节点信息列表
+        **参数解释：** 屏蔽目录的节点信息列表。 **约束限制：** 不涉及。
 
         :param ignore_path_settings: The ignore_path_settings of this UpdateIgnorePathRequestBody.
         :type ignore_path_settings: list[:class:`huaweicloudsdkcodeartscheck.v2.IgnorePathSettingItem`]

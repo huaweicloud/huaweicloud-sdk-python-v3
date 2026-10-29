@@ -19,7 +19,9 @@ class CreateLogStreamParams:
         'ttl_in_days': 'int',
         'tags': 'list[TagsBody]',
         'log_stream_name_alias': 'str',
-        'enterprise_project_name': 'str'
+        'enterprise_project_name': 'str',
+        'hot_cold_separation': 'bool',
+        'hot_storage_days': 'int'
     }
 
     attribute_map = {
@@ -27,10 +29,12 @@ class CreateLogStreamParams:
         'ttl_in_days': 'ttl_in_days',
         'tags': 'tags',
         'log_stream_name_alias': 'log_stream_name_alias',
-        'enterprise_project_name': 'enterprise_project_name'
+        'enterprise_project_name': 'enterprise_project_name',
+        'hot_cold_separation': 'hot_cold_separation',
+        'hot_storage_days': 'hot_storage_days'
     }
 
-    def __init__(self, log_stream_name=None, ttl_in_days=None, tags=None, log_stream_name_alias=None, enterprise_project_name=None):
+    def __init__(self, log_stream_name=None, ttl_in_days=None, tags=None, log_stream_name_alias=None, enterprise_project_name=None, hot_cold_separation=None, hot_storage_days=None):
         r"""CreateLogStreamParams
 
         The model defined in huaweicloud sdk
@@ -45,6 +49,10 @@ class CreateLogStreamParams:
         :type log_stream_name_alias: str
         :param enterprise_project_name: 企业项目名称 &gt;只能由中文、英文字母、数字、下划线、中划线组成，且不能使用任何大小写形式的“default”； 描述不超过512个字符。
         :type enterprise_project_name: str
+        :param hot_cold_separation: **参数解释：** 是否开启智能冷存储。 **约束限制：** 开启智能冷存储需要日志存储时间大于7天。开启智能冷存储后，需要设置标准存储层数据的保存时间。标准存储至少需保存7天才能转换为智能冷存储层数据。当日志保存时间大于标准存储层数据保存时间，且小于日志存储时间时，日志数据将自动转换为智能冷存储层数据存储。 **取值范围：** true/false。 **默认取值：** false
+        :type hot_cold_separation: bool
+        :param hot_storage_days: **参数解释：** 日志流标准存储时间（单位：天），即日志上报到LTS后日志标准存储的时间。 **约束限制：** 开启智能冷存储需要日志总存储时间大于7天。 **取值范围：** 最小值：7天 最大值：365天 **默认取值：** 不涉及。        
+        :type hot_storage_days: int
         """
         
         
@@ -54,6 +62,8 @@ class CreateLogStreamParams:
         self._tags = None
         self._log_stream_name_alias = None
         self._enterprise_project_name = None
+        self._hot_cold_separation = None
+        self._hot_storage_days = None
         self.discriminator = None
 
         self.log_stream_name = log_stream_name
@@ -65,6 +75,10 @@ class CreateLogStreamParams:
             self.log_stream_name_alias = log_stream_name_alias
         if enterprise_project_name is not None:
             self.enterprise_project_name = enterprise_project_name
+        if hot_cold_separation is not None:
+            self.hot_cold_separation = hot_cold_separation
+        if hot_storage_days is not None:
+            self.hot_storage_days = hot_storage_days
 
     @property
     def log_stream_name(self):
@@ -175,6 +189,50 @@ class CreateLogStreamParams:
         :type enterprise_project_name: str
         """
         self._enterprise_project_name = enterprise_project_name
+
+    @property
+    def hot_cold_separation(self):
+        r"""Gets the hot_cold_separation of this CreateLogStreamParams.
+
+        **参数解释：** 是否开启智能冷存储。 **约束限制：** 开启智能冷存储需要日志存储时间大于7天。开启智能冷存储后，需要设置标准存储层数据的保存时间。标准存储至少需保存7天才能转换为智能冷存储层数据。当日志保存时间大于标准存储层数据保存时间，且小于日志存储时间时，日志数据将自动转换为智能冷存储层数据存储。 **取值范围：** true/false。 **默认取值：** false
+
+        :return: The hot_cold_separation of this CreateLogStreamParams.
+        :rtype: bool
+        """
+        return self._hot_cold_separation
+
+    @hot_cold_separation.setter
+    def hot_cold_separation(self, hot_cold_separation):
+        r"""Sets the hot_cold_separation of this CreateLogStreamParams.
+
+        **参数解释：** 是否开启智能冷存储。 **约束限制：** 开启智能冷存储需要日志存储时间大于7天。开启智能冷存储后，需要设置标准存储层数据的保存时间。标准存储至少需保存7天才能转换为智能冷存储层数据。当日志保存时间大于标准存储层数据保存时间，且小于日志存储时间时，日志数据将自动转换为智能冷存储层数据存储。 **取值范围：** true/false。 **默认取值：** false
+
+        :param hot_cold_separation: The hot_cold_separation of this CreateLogStreamParams.
+        :type hot_cold_separation: bool
+        """
+        self._hot_cold_separation = hot_cold_separation
+
+    @property
+    def hot_storage_days(self):
+        r"""Gets the hot_storage_days of this CreateLogStreamParams.
+
+        **参数解释：** 日志流标准存储时间（单位：天），即日志上报到LTS后日志标准存储的时间。 **约束限制：** 开启智能冷存储需要日志总存储时间大于7天。 **取值范围：** 最小值：7天 最大值：365天 **默认取值：** 不涉及。        
+
+        :return: The hot_storage_days of this CreateLogStreamParams.
+        :rtype: int
+        """
+        return self._hot_storage_days
+
+    @hot_storage_days.setter
+    def hot_storage_days(self, hot_storage_days):
+        r"""Sets the hot_storage_days of this CreateLogStreamParams.
+
+        **参数解释：** 日志流标准存储时间（单位：天），即日志上报到LTS后日志标准存储的时间。 **约束限制：** 开启智能冷存储需要日志总存储时间大于7天。 **取值范围：** 最小值：7天 最大值：365天 **默认取值：** 不涉及。        
+
+        :param hot_storage_days: The hot_storage_days of this CreateLogStreamParams.
+        :type hot_storage_days: int
+        """
+        self._hot_storage_days = hot_storage_days
 
     def to_dict(self):
         result = {}

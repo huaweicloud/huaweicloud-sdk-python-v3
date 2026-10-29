@@ -16,7 +16,7 @@ class ListLogHistogramResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'histogram': 'str',
+        'histogram': 'list[LogCounts]',
         'count': 'int',
         'is_query_complete': 'bool'
     }
@@ -32,8 +32,8 @@ class ListLogHistogramResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param histogram: 直方图结果
-        :type histogram: str
+        :param histogram: **参数解释：** 直方图结果。 **取值范围：** 不涉及。
+        :type histogram: list[:class:`huaweicloudsdklts.v2.LogCounts`]
         :param count: 日志条数
         :type count: int
         :param is_query_complete: 是否查询完成。
@@ -58,10 +58,10 @@ class ListLogHistogramResponse(SdkResponse):
     def histogram(self):
         r"""Gets the histogram of this ListLogHistogramResponse.
 
-        直方图结果
+        **参数解释：** 直方图结果。 **取值范围：** 不涉及。
 
         :return: The histogram of this ListLogHistogramResponse.
-        :rtype: str
+        :rtype: list[:class:`huaweicloudsdklts.v2.LogCounts`]
         """
         return self._histogram
 
@@ -69,10 +69,10 @@ class ListLogHistogramResponse(SdkResponse):
     def histogram(self, histogram):
         r"""Sets the histogram of this ListLogHistogramResponse.
 
-        直方图结果
+        **参数解释：** 直方图结果。 **取值范围：** 不涉及。
 
         :param histogram: The histogram of this ListLogHistogramResponse.
-        :type histogram: str
+        :type histogram: list[:class:`huaweicloudsdklts.v2.LogCounts`]
         """
         self._histogram = histogram
 

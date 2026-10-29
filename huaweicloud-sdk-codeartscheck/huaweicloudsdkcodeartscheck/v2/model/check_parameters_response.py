@@ -16,7 +16,7 @@ class CheckParametersResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'list[TaskCheckParamters]'
+        'body': 'list[TaskCheckParameters]'
     }
 
     attribute_map = {
@@ -29,7 +29,7 @@ class CheckParametersResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param body: 
-        :type body: list[:class:`huaweicloudsdkcodeartscheck.v2.TaskCheckParamters`]
+        :type body: list[:class:`huaweicloudsdkcodeartscheck.v2.TaskCheckParameters`]
         """
         
         super().__init__()
@@ -45,7 +45,7 @@ class CheckParametersResponse(SdkResponse):
         r"""Gets the body of this CheckParametersResponse.
 
         :return: The body of this CheckParametersResponse.
-        :rtype: list[:class:`huaweicloudsdkcodeartscheck.v2.TaskCheckParamters`]
+        :rtype: list[:class:`huaweicloudsdkcodeartscheck.v2.TaskCheckParameters`]
         """
         return self._body
 
@@ -54,7 +54,7 @@ class CheckParametersResponse(SdkResponse):
         r"""Sets the body of this CheckParametersResponse.
 
         :param body: The body of this CheckParametersResponse.
-        :type body: list[:class:`huaweicloudsdkcodeartscheck.v2.TaskCheckParamters`]
+        :type body: list[:class:`huaweicloudsdkcodeartscheck.v2.TaskCheckParameters`]
         """
         self._body = body
 
