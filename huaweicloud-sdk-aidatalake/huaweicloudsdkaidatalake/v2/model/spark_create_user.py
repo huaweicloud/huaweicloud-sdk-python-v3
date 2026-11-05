@@ -29,9 +29,9 @@ class SparkCreateUser:
 
         The model defined in huaweicloud sdk
 
-        :param user_id: **参数解释**：创建作业的用户ID，用于标识作业创建者。 **取值范围**：长度为1~256个字符。 
+        :param user_id: **参数解释**：创建作业的用户ID，用于标识作业创建者。 **取值范围**：长度为1~256个字符，不涉及字符类型限制。 
         :type user_id: str
-        :param user_name: **参数解释**：创建作业的用户名称，用于标识作业创建者。 **取值范围**：长度为1~256个字符。 
+        :param user_name: **参数解释**：创建作业的用户名称，用于标识作业创建者。 **取值范围**：长度为1~256个字符，不涉及字符类型限制。 
         :type user_name: str
         """
         
@@ -50,7 +50,7 @@ class SparkCreateUser:
     def user_id(self):
         r"""Gets the user_id of this SparkCreateUser.
 
-        **参数解释**：创建作业的用户ID，用于标识作业创建者。 **取值范围**：长度为1~256个字符。 
+        **参数解释**：创建作业的用户ID，用于标识作业创建者。 **取值范围**：长度为1~256个字符，不涉及字符类型限制。 
 
         :return: The user_id of this SparkCreateUser.
         :rtype: str
@@ -61,7 +61,7 @@ class SparkCreateUser:
     def user_id(self, user_id):
         r"""Sets the user_id of this SparkCreateUser.
 
-        **参数解释**：创建作业的用户ID，用于标识作业创建者。 **取值范围**：长度为1~256个字符。 
+        **参数解释**：创建作业的用户ID，用于标识作业创建者。 **取值范围**：长度为1~256个字符，不涉及字符类型限制。 
 
         :param user_id: The user_id of this SparkCreateUser.
         :type user_id: str
@@ -72,7 +72,7 @@ class SparkCreateUser:
     def user_name(self):
         r"""Gets the user_name of this SparkCreateUser.
 
-        **参数解释**：创建作业的用户名称，用于标识作业创建者。 **取值范围**：长度为1~256个字符。 
+        **参数解释**：创建作业的用户名称，用于标识作业创建者。 **取值范围**：长度为1~256个字符，不涉及字符类型限制。 
 
         :return: The user_name of this SparkCreateUser.
         :rtype: str
@@ -83,7 +83,7 @@ class SparkCreateUser:
     def user_name(self, user_name):
         r"""Sets the user_name of this SparkCreateUser.
 
-        **参数解释**：创建作业的用户名称，用于标识作业创建者。 **取值范围**：长度为1~256个字符。 
+        **参数解释**：创建作业的用户名称，用于标识作业创建者。 **取值范围**：长度为1~256个字符，不涉及字符类型限制。 
 
         :param user_name: The user_name of this SparkCreateUser.
         :type user_name: str

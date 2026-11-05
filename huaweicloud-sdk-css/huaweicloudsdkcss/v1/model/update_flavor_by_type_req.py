@@ -43,7 +43,7 @@ class UpdateFlavorByTypeReq:
         :type operation_type: str
         :param need_check_replica: 是否需要检查副本，取值范围为true或false。默认开启校验。 - true: 开启副本校验。 - false: 忽略副本校验。  &gt;Master和Client节点不是数据节点，因此不需要进行副本校验。即使选择true，也不会进行副本校验。
         :type need_check_replica: bool
-        :param is_auto_pay: 是否自动支付。下单订购后，是否自动从客户的华为云账户中支付，而不需要客户手动去进行支付。该参数适用于包周期集群。  - 1: 是（会自动选择折扣和优惠券进行优惠，然后自动从客户华为云账户中支付），自动支付失败后会生成订单成功(该订单应付金额是优惠后金额)、但订单状态为“待支付”，等待客户手动支付(手动支付时，客户还可以修改系统自动选择的折扣和优惠券)。  - 0: 否（需要客户手动去支付，客户可以选择折扣和优惠券）。默认值为“0”。
+        :param is_auto_pay: 
         :type is_auto_pay: int
         :param need_check_cluster_status: 是否需要检查集群状态，取值范围为true或false。默认开启校验。
         :type need_check_cluster_status: bool
@@ -143,8 +143,6 @@ class UpdateFlavorByTypeReq:
     def is_auto_pay(self):
         r"""Gets the is_auto_pay of this UpdateFlavorByTypeReq.
 
-        是否自动支付。下单订购后，是否自动从客户的华为云账户中支付，而不需要客户手动去进行支付。该参数适用于包周期集群。  - 1: 是（会自动选择折扣和优惠券进行优惠，然后自动从客户华为云账户中支付），自动支付失败后会生成订单成功(该订单应付金额是优惠后金额)、但订单状态为“待支付”，等待客户手动支付(手动支付时，客户还可以修改系统自动选择的折扣和优惠券)。  - 0: 否（需要客户手动去支付，客户可以选择折扣和优惠券）。默认值为“0”。
-
         :return: The is_auto_pay of this UpdateFlavorByTypeReq.
         :rtype: int
         """
@@ -153,8 +151,6 @@ class UpdateFlavorByTypeReq:
     @is_auto_pay.setter
     def is_auto_pay(self, is_auto_pay):
         r"""Sets the is_auto_pay of this UpdateFlavorByTypeReq.
-
-        是否自动支付。下单订购后，是否自动从客户的华为云账户中支付，而不需要客户手动去进行支付。该参数适用于包周期集群。  - 1: 是（会自动选择折扣和优惠券进行优惠，然后自动从客户华为云账户中支付），自动支付失败后会生成订单成功(该订单应付金额是优惠后金额)、但订单状态为“待支付”，等待客户手动支付(手动支付时，客户还可以修改系统自动选择的折扣和优惠券)。  - 0: 否（需要客户手动去支付，客户可以选择折扣和优惠券）。默认值为“0”。
 
         :param is_auto_pay: The is_auto_pay of this UpdateFlavorByTypeReq.
         :type is_auto_pay: int

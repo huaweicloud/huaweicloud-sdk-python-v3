@@ -15,101 +15,43 @@ class SparkJobMetricStatistics:
     sensitive_list = []
 
     openapi_types = {
-        'retry_attempt': 'int',
-        'metric_time': 'int',
         'current_cpu': 'int',
         'current_memory': 'int',
-        'total_cu_hours': 'float'
+        'total_cu_seconds': 'int'
     }
 
     attribute_map = {
-        'retry_attempt': 'retry_attempt',
-        'metric_time': 'metric_time',
         'current_cpu': 'current_cpu',
         'current_memory': 'current_memory',
-        'total_cu_hours': 'total_cu_hours'
+        'total_cu_seconds': 'total_cu_seconds'
     }
 
-    def __init__(self, retry_attempt=None, metric_time=None, current_cpu=None, current_memory=None, total_cu_hours=None):
+    def __init__(self, current_cpu=None, current_memory=None, total_cu_seconds=None):
         r"""SparkJobMetricStatistics
 
         The model defined in huaweicloud sdk
 
-        :param retry_attempt: **参数解释**：当前第几次重试，用于区分同一作业不同重试批次的指标 **取值范围**：最小值为1。
-        :type retry_attempt: int
-        :param metric_time: **参数解释**：指标生成时间。 **取值范围**：unix时间戳，单位为毫秒。
-        :type metric_time: int
         :param current_cpu: **参数解释**：当前CPU使用量，单位毫核。 **取值范围**：大于等于1000。
         :type current_cpu: int
         :param current_memory: **参数解释**：当前内存使用量，单位MB。 **取值范围**：大于等于1024。
         :type current_memory: int
-        :param total_cu_hours: **参数解释**：估算 CU 时（折算后的小时数，保留4位小数，如 2.3500）。 **取值范围**：大于等于0。
-        :type total_cu_hours: float
+        :param total_cu_seconds: **参数解释**：估算 CU 秒（折算后的秒数，四舍五入取整，如 262）。
+        :type total_cu_seconds: int
         """
         
         
 
-        self._retry_attempt = None
-        self._metric_time = None
         self._current_cpu = None
         self._current_memory = None
-        self._total_cu_hours = None
+        self._total_cu_seconds = None
         self.discriminator = None
 
-        if retry_attempt is not None:
-            self.retry_attempt = retry_attempt
-        if metric_time is not None:
-            self.metric_time = metric_time
         if current_cpu is not None:
             self.current_cpu = current_cpu
         if current_memory is not None:
             self.current_memory = current_memory
-        if total_cu_hours is not None:
-            self.total_cu_hours = total_cu_hours
-
-    @property
-    def retry_attempt(self):
-        r"""Gets the retry_attempt of this SparkJobMetricStatistics.
-
-        **参数解释**：当前第几次重试，用于区分同一作业不同重试批次的指标 **取值范围**：最小值为1。
-
-        :return: The retry_attempt of this SparkJobMetricStatistics.
-        :rtype: int
-        """
-        return self._retry_attempt
-
-    @retry_attempt.setter
-    def retry_attempt(self, retry_attempt):
-        r"""Sets the retry_attempt of this SparkJobMetricStatistics.
-
-        **参数解释**：当前第几次重试，用于区分同一作业不同重试批次的指标 **取值范围**：最小值为1。
-
-        :param retry_attempt: The retry_attempt of this SparkJobMetricStatistics.
-        :type retry_attempt: int
-        """
-        self._retry_attempt = retry_attempt
-
-    @property
-    def metric_time(self):
-        r"""Gets the metric_time of this SparkJobMetricStatistics.
-
-        **参数解释**：指标生成时间。 **取值范围**：unix时间戳，单位为毫秒。
-
-        :return: The metric_time of this SparkJobMetricStatistics.
-        :rtype: int
-        """
-        return self._metric_time
-
-    @metric_time.setter
-    def metric_time(self, metric_time):
-        r"""Sets the metric_time of this SparkJobMetricStatistics.
-
-        **参数解释**：指标生成时间。 **取值范围**：unix时间戳，单位为毫秒。
-
-        :param metric_time: The metric_time of this SparkJobMetricStatistics.
-        :type metric_time: int
-        """
-        self._metric_time = metric_time
+        if total_cu_seconds is not None:
+            self.total_cu_seconds = total_cu_seconds
 
     @property
     def current_cpu(self):
@@ -156,26 +98,26 @@ class SparkJobMetricStatistics:
         self._current_memory = current_memory
 
     @property
-    def total_cu_hours(self):
-        r"""Gets the total_cu_hours of this SparkJobMetricStatistics.
+    def total_cu_seconds(self):
+        r"""Gets the total_cu_seconds of this SparkJobMetricStatistics.
 
-        **参数解释**：估算 CU 时（折算后的小时数，保留4位小数，如 2.3500）。 **取值范围**：大于等于0。
+        **参数解释**：估算 CU 秒（折算后的秒数，四舍五入取整，如 262）。
 
-        :return: The total_cu_hours of this SparkJobMetricStatistics.
-        :rtype: float
+        :return: The total_cu_seconds of this SparkJobMetricStatistics.
+        :rtype: int
         """
-        return self._total_cu_hours
+        return self._total_cu_seconds
 
-    @total_cu_hours.setter
-    def total_cu_hours(self, total_cu_hours):
-        r"""Sets the total_cu_hours of this SparkJobMetricStatistics.
+    @total_cu_seconds.setter
+    def total_cu_seconds(self, total_cu_seconds):
+        r"""Sets the total_cu_seconds of this SparkJobMetricStatistics.
 
-        **参数解释**：估算 CU 时（折算后的小时数，保留4位小数，如 2.3500）。 **取值范围**：大于等于0。
+        **参数解释**：估算 CU 秒（折算后的秒数，四舍五入取整，如 262）。
 
-        :param total_cu_hours: The total_cu_hours of this SparkJobMetricStatistics.
-        :type total_cu_hours: float
+        :param total_cu_seconds: The total_cu_seconds of this SparkJobMetricStatistics.
+        :type total_cu_seconds: int
         """
-        self._total_cu_hours = total_cu_hours
+        self._total_cu_seconds = total_cu_seconds
 
     def to_dict(self):
         result = {}

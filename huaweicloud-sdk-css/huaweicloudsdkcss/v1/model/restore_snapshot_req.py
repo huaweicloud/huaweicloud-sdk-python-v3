@@ -43,7 +43,7 @@ class RestoreSnapshotReq:
         :type rename_pattern: str
         :param rename_replacement: 索引重命名的规则。0～1024个字符，不能包含空格和大写字母，且不能包含\\\&quot;\\\\&lt;|&gt;/?,特殊字符。例如，“restored_index_$1”表示在所有恢复的索引名称前面加上“restored_”。    renamePattern参数与renameReplacement参数必须同时设置才能生效。
         :type rename_replacement: str
-        :param replace_exist_indices: 替换已存在的索引。    
+        :param replace_exist_indices: 替换已存在的索引。
         :type replace_exist_indices: bool
         """
         
@@ -158,7 +158,7 @@ class RestoreSnapshotReq:
     def replace_exist_indices(self):
         r"""Gets the replace_exist_indices of this RestoreSnapshotReq.
 
-        替换已存在的索引。    
+        替换已存在的索引。
 
         :return: The replace_exist_indices of this RestoreSnapshotReq.
         :rtype: bool
@@ -169,7 +169,7 @@ class RestoreSnapshotReq:
     def replace_exist_indices(self, replace_exist_indices):
         r"""Sets the replace_exist_indices of this RestoreSnapshotReq.
 
-        替换已存在的索引。    
+        替换已存在的索引。
 
         :param replace_exist_indices: The replace_exist_indices of this RestoreSnapshotReq.
         :type replace_exist_indices: bool

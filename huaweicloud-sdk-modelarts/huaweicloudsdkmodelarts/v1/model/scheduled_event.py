@@ -17,123 +17,145 @@ class ScheduledEvent:
     openapi_types = {
         'id': 'str',
         'catalog': 'str',
+        'is_hyper_node': 'str',
         'type': 'str',
         'description': 'str',
         'state': 'str',
-        'instance_type': 'str',
-        'instance_id': 'str',
-        'node_name': 'str',
-        'pool_name': 'str',
-        'pool_display_name': 'str',
         'publish_time': 'str',
         'start_time': 'str',
         'finish_time': 'str',
         'not_before': 'str',
         'probe_msg': 'str',
-        'job_progress': 'str',
+        'execute_options': 'ExecuteOptions',
         'redeploy_type': 'list[str]',
-        'under_lying_instance_id': 'str'
+        'auto_recovery_check_time': 'str',
+        'nodes': 'list[NodeEvent]',
+        'instance_id': 'str',
+        'node_name': 'str',
+        'instance_type': 'str',
+        'under_lying_instance_id': 'str',
+        'flavor_support_redeploy': 'bool',
+        'pool_name': 'str',
+        'pool_display_name': 'str',
+        'job_progress': 'str'
     }
 
     attribute_map = {
         'id': 'id',
         'catalog': 'catalog',
+        'is_hyper_node': 'isHyperNode',
         'type': 'type',
         'description': 'description',
         'state': 'state',
-        'instance_type': 'instanceType',
-        'instance_id': 'instanceId',
-        'node_name': 'nodeName',
-        'pool_name': 'poolName',
-        'pool_display_name': 'poolDisplayName',
         'publish_time': 'publishTime',
         'start_time': 'startTime',
         'finish_time': 'finishTime',
         'not_before': 'notBefore',
         'probe_msg': 'probeMsg',
-        'job_progress': 'jobProgress',
+        'execute_options': 'executeOptions',
         'redeploy_type': 'redeployType',
-        'under_lying_instance_id': 'underLyingInstanceId'
+        'auto_recovery_check_time': 'autoRecoveryCheckTime',
+        'nodes': 'nodes',
+        'instance_id': 'instanceId',
+        'node_name': 'nodeName',
+        'instance_type': 'instanceType',
+        'under_lying_instance_id': 'underLyingInstanceId',
+        'flavor_support_redeploy': 'flavorSupportRedeploy',
+        'pool_name': 'poolName',
+        'pool_display_name': 'poolDisplayName',
+        'job_progress': 'jobProgress'
     }
 
-    def __init__(self, id=None, catalog=None, type=None, description=None, state=None, instance_type=None, instance_id=None, node_name=None, pool_name=None, pool_display_name=None, publish_time=None, start_time=None, finish_time=None, not_before=None, probe_msg=None, job_progress=None, redeploy_type=None, under_lying_instance_id=None):
+    def __init__(self, id=None, catalog=None, is_hyper_node=None, type=None, description=None, state=None, publish_time=None, start_time=None, finish_time=None, not_before=None, probe_msg=None, execute_options=None, redeploy_type=None, auto_recovery_check_time=None, nodes=None, instance_id=None, node_name=None, instance_type=None, under_lying_instance_id=None, flavor_support_redeploy=None, pool_name=None, pool_display_name=None, job_progress=None):
         r"""ScheduledEvent
 
         The model defined in huaweicloud sdk
 
         :param id: **参数解释**：计划事件ID，取值查询计划事件列表接口的event_id字段。 系统自动生成，只能以小写字母开头，数字、中划线组成，不能以中划线结尾，长度小于63。 **取值范围**：不涉及。
         :type id: str
-        :param catalog: **参数解释**：事件分类。 **取值范围**：可选值如下： - hardware：硬件维修。 - software：软件维修。
+        :param catalog: **参数解释**：事件分类。 **取值范围**：不涉及。
         :type catalog: str
-        :param type: **参数解释**：事件类型。 **取值范围**：可选值如下： - system-maintenance：系统维护 - localdisk-recovery：本地盘恢复 - node_reboot：节点重启 - operation-request：运维授权 - node_maintenance：超节点维护 - node_redeploy：超节点重部署 - node_localdisk_recovery 超节点本地盘恢复。
+        :param is_hyper_node: **参数解释**：超节点标识。 **约束限制**：不涉及。 **取值范围**：true / false **默认取值**：false
+        :type is_hyper_node: str
+        :param type: **参数解释**：事件类型。 **取值范围**：可选值如下： - system-maintenance：系统维护 - localdisk-recovery：本地盘恢复 - node_reboot：节点重启 - operation-request：运维授权 - node_maintenance：超节点维护 - node_redeploy：超节点重部署 - node_localdisk_recovery 超节点本地盘恢复
         :type type: str
         :param description: **参数解释**：对计划事件的描述信息。系统自动生成。 **取值范围**：不涉及。
         :type description: str
-        :param state: **参数解释**：事件状态。 **取值范围**：可选择值如下： - inquiring: 待授权, - scheduled: 待执行, - executing: 执行中, - completed: 执行成功 - failed: 执行失败 - canceled: 取消
+        :param state: **参数解释**：事件状态。 **取值范围**：可选择值如下： - inquiring: 待授权 - scheduled: 待执行 - executing: 执行中 - completed: 执行成功 - failed: 执行失败 - canceled: 取消 - part-completed: 部分成功
         :type state: str
-        :param instance_type: **参数解释**：节点类型归属。 **取值范围**可选择值如下： - devserver：lite-server节点 - lite-cluster lite池 - standard 标准池
-        :type instance_type: str
-        :param instance_id: **参数解释**：服务器ID。计算服务系统自动生成的实例ID，长度小于63。 **取值范围**：不涉及。
-        :type instance_id: str
-        :param node_name: **参数解释**：节点名称，取值自节点详情的metadata.name字段。系统自动生成，只能以小写字母开头，数字、中划线组成，不能以中划线结尾，小于63个字符。 **取值范围**：不涉及。
-        :type node_name: str
-        :param pool_name: **参数解释**：资源池名称, lite-cluster、standard才具有，取值自资源池详情的metadata.name字段。系统自动生成，只能以小写字母开头，数字、中划线组成，不能以中划线结尾，小于63个字符。 **取值范围**：不涉及。
-        :type pool_name: str
-        :param pool_display_name: **参数解释**：资源池对外显示的名称, lite-cluster、standard才具有，取值自资源池详情的metadata.name字段。只能以小写字母开头，数字、中划线组成，不能以中划线结尾，且长度为[36-63]个字符。 **取值范围**：不涉及。
-        :type pool_display_name: str
-        :param publish_time: **参数解释**：事件发布时间。 **约束限制**：格式为UTC时间字符串：2025-09-15T07:02:30Z。 **取值范围**：不涉及。 **默认取值**：不涉及。
+        :param publish_time: **参数解释**：事件发布时间。 **取值范围**：不涉及。
         :type publish_time: str
-        :param start_time: **参数解释**：事件开始时间。 **约束限制**：格式为UTC时间字符串：2025-09-15T07:02:30Z。 **取值范围**：不涉及。 **默认取值**：不涉及。
+        :param start_time: **参数解释**：事件开始时间。 **取值范围**：不涉及。
         :type start_time: str
-        :param finish_time: **参数解释**：事件完成时间。 **约束限制**：格式为UTC时间字符串：2025-09-15T07:02:30Z。 **取值范围**：不涉及。 **默认取值**：不涉及。
+        :param finish_time: **参数解释**：事件完成时间。 **取值范围**：不涉及。
         :type finish_time: str
-        :param not_before: **参数解释**：事件计划执行开始时间，格式为UTC时间字符串：2025-09-15T07:02:30Z。 **约束限制**：大于当前时间。 **取值范围**：不涉及。 **默认取值**：不填表示立即执行。
+        :param not_before: **参数解释**：事件计划执行开始时间，格式为UTC时间字符串：2025-09-15T07:02:30Z。 **取值范围**：不涉及。
         :type not_before: str
-        :param probe_msg: **参数解释**：提示信息。 **约束限制**：系统自动生成，只能以小写字母开头，数字、中划线组成，不能以中划线结尾，长度小于63字符。 **取值范围**：不涉及。 **默认取值**：不涉及。
+        :param probe_msg: **参数解释**：提示信息。 **取值范围**：不涉及。
         :type probe_msg: str
-        :param job_progress: **参数解释**：计划事件执行的实时进度信息，系统自动生成。 **约束限制**：不涉及。 **取值范围**：不涉及。 **默认取值**：不涉及。
-        :type job_progress: str
-        :param redeploy_type: **参数解释**：节点的重部署类型。 **约束限制**：不涉及。 **取值范围**：可选值如下：- HARD：表示支持强制重部署, - SOFT：表示支持重部署 **默认取值**：不涉及。
+        :param execute_options: 
+        :type execute_options: :class:`huaweicloudsdkmodelarts.v1.ExecuteOptions`
+        :param redeploy_type: **参数解释**：节点重部署类型列表，标识该计划事件支持的重部署方式。 **约束限制**：不涉及。 **取值范围**：可选值如下： - SOFT：表示支持重部署 - HARD：表示支持强制重部署 **默认取值**：不涉及。
         :type redeploy_type: list[str]
-        :param under_lying_instance_id: **参数解释**：snt9b23 场景对应ECS服务器ID。计算服务系统自动生成的实例ID，长度小于63。  **取值范围**：snt9b23 涉及, snt9b 不涉及。
+        :param auto_recovery_check_time: **参数解释**：事件系统自动授权执行时间，格式为UTC时间字符串：2025-09-15T07:02:30Z。 **取值范围**：不涉及。
+        :type auto_recovery_check_time: str
+        :param nodes: **参数解释**：事件关联节点信息列表。 **取值范围**：不涉及。
+        :type nodes: list[:class:`huaweicloudsdkmodelarts.v1.NodeEvent`]
+        :param instance_id: **参数解释**：节点ID。计算服务系统自动生成的实例ID，长度小于63。 **取值范围**：不涉及。 **约束限制**：待废弃: 请使用 nodes[0].InstanceId。
+        :type instance_id: str
+        :param node_name: **参数解释**：节点名称，取值自节点详情的metadata.name字段。系统自动生成，只能以小写字母开头，数字、中划线组成，不能以中划线结尾，小于63个字符。 **取值范围**：不涉及。 **约束限制**：待废弃: 请使用 nodes[0].nodeName。
+        :type node_name: str
+        :param instance_type: **参数解释**：节点类型归属。 **取值范围**可选择值如下： - devserver：lite-server节点  - lite-cluster lite池  - standard 标准池 **约束限制**：待废弃: 请使用 nodes[0].instanceType。
+        :type instance_type: str
+        :param under_lying_instance_id: **参数解释**：超节点场景对应ECS服务器ID。计算服务系统自动生成的实例ID，长度小于63。  **取值范围**：超节点涉及, snt9b 不涉及。 **约束限制**：待废弃: 请使用 nodes[0].underLyingInstanceId。
         :type under_lying_instance_id: str
+        :param flavor_support_redeploy: **参数解释**：规格是否支持重部署。 **取值范围**：true/false。 **约束限制**：待废弃: 请使用 nodes[0].flavorSupportRedeploy。
+        :type flavor_support_redeploy: bool
+        :param pool_name: **参数解释**：资源池名称, lite-cluster、standard才具有，取值自资源池详情的metadata.name字段。系统自动生成，只能以小写字母开头，数字、中划线组成，不能以中划线结尾，小于63个字符。 **取值范围**：不涉及。 **约束限制**：待废弃: 请使用 nodes[0].poolName。
+        :type pool_name: str
+        :param pool_display_name: **参数解释**：资源池对外显示的名称, lite-cluster、standard才具有，取值自资源池详情的metadata.labels字段。只能以小写字母开头，数字、中划线组成，不能以中划线结尾，且长度为[36-63]个字符。 **取值范围**：不涉及。 **约束限制**：待废弃: 请使用 nodes[0].poolDisplayName。
+        :type pool_display_name: str
+        :param job_progress: **参数解释**：重部署执行的实时进度信息，系统自动生成。 **约束限制**：不涉及。 **取值范围**：不涉及。 **默认取值**：不涉及。 **约束限制**：待废弃: 请使用 nodes[0].jobProgress。
+        :type job_progress: str
         """
         
         
 
         self._id = None
         self._catalog = None
+        self._is_hyper_node = None
         self._type = None
         self._description = None
         self._state = None
-        self._instance_type = None
-        self._instance_id = None
-        self._node_name = None
-        self._pool_name = None
-        self._pool_display_name = None
         self._publish_time = None
         self._start_time = None
         self._finish_time = None
         self._not_before = None
         self._probe_msg = None
-        self._job_progress = None
+        self._execute_options = None
         self._redeploy_type = None
+        self._auto_recovery_check_time = None
+        self._nodes = None
+        self._instance_id = None
+        self._node_name = None
+        self._instance_type = None
         self._under_lying_instance_id = None
+        self._flavor_support_redeploy = None
+        self._pool_name = None
+        self._pool_display_name = None
+        self._job_progress = None
         self.discriminator = None
 
         self.id = id
-        self.catalog = catalog
-        self.type = type
+        if catalog is not None:
+            self.catalog = catalog
+        if is_hyper_node is not None:
+            self.is_hyper_node = is_hyper_node
+        if type is not None:
+            self.type = type
         if description is not None:
             self.description = description
         self.state = state
-        self.instance_type = instance_type
-        self.instance_id = instance_id
-        self.node_name = node_name
-        if pool_name is not None:
-            self.pool_name = pool_name
-        if pool_display_name is not None:
-            self.pool_display_name = pool_display_name
         self.publish_time = publish_time
         if start_time is not None:
             self.start_time = start_time
@@ -143,11 +165,26 @@ class ScheduledEvent:
             self.not_before = not_before
         if probe_msg is not None:
             self.probe_msg = probe_msg
-        if job_progress is not None:
-            self.job_progress = job_progress
+        if execute_options is not None:
+            self.execute_options = execute_options
         self.redeploy_type = redeploy_type
+        if auto_recovery_check_time is not None:
+            self.auto_recovery_check_time = auto_recovery_check_time
+        if nodes is not None:
+            self.nodes = nodes
+        self.instance_id = instance_id
+        self.node_name = node_name
+        self.instance_type = instance_type
         if under_lying_instance_id is not None:
             self.under_lying_instance_id = under_lying_instance_id
+        if flavor_support_redeploy is not None:
+            self.flavor_support_redeploy = flavor_support_redeploy
+        if pool_name is not None:
+            self.pool_name = pool_name
+        if pool_display_name is not None:
+            self.pool_display_name = pool_display_name
+        if job_progress is not None:
+            self.job_progress = job_progress
 
     @property
     def id(self):
@@ -175,7 +212,7 @@ class ScheduledEvent:
     def catalog(self):
         r"""Gets the catalog of this ScheduledEvent.
 
-        **参数解释**：事件分类。 **取值范围**：可选值如下： - hardware：硬件维修。 - software：软件维修。
+        **参数解释**：事件分类。 **取值范围**：不涉及。
 
         :return: The catalog of this ScheduledEvent.
         :rtype: str
@@ -186,7 +223,7 @@ class ScheduledEvent:
     def catalog(self, catalog):
         r"""Sets the catalog of this ScheduledEvent.
 
-        **参数解释**：事件分类。 **取值范围**：可选值如下： - hardware：硬件维修。 - software：软件维修。
+        **参数解释**：事件分类。 **取值范围**：不涉及。
 
         :param catalog: The catalog of this ScheduledEvent.
         :type catalog: str
@@ -194,10 +231,32 @@ class ScheduledEvent:
         self._catalog = catalog
 
     @property
+    def is_hyper_node(self):
+        r"""Gets the is_hyper_node of this ScheduledEvent.
+
+        **参数解释**：超节点标识。 **约束限制**：不涉及。 **取值范围**：true / false **默认取值**：false
+
+        :return: The is_hyper_node of this ScheduledEvent.
+        :rtype: str
+        """
+        return self._is_hyper_node
+
+    @is_hyper_node.setter
+    def is_hyper_node(self, is_hyper_node):
+        r"""Sets the is_hyper_node of this ScheduledEvent.
+
+        **参数解释**：超节点标识。 **约束限制**：不涉及。 **取值范围**：true / false **默认取值**：false
+
+        :param is_hyper_node: The is_hyper_node of this ScheduledEvent.
+        :type is_hyper_node: str
+        """
+        self._is_hyper_node = is_hyper_node
+
+    @property
     def type(self):
         r"""Gets the type of this ScheduledEvent.
 
-        **参数解释**：事件类型。 **取值范围**：可选值如下： - system-maintenance：系统维护 - localdisk-recovery：本地盘恢复 - node_reboot：节点重启 - operation-request：运维授权 - node_maintenance：超节点维护 - node_redeploy：超节点重部署 - node_localdisk_recovery 超节点本地盘恢复。
+        **参数解释**：事件类型。 **取值范围**：可选值如下： - system-maintenance：系统维护 - localdisk-recovery：本地盘恢复 - node_reboot：节点重启 - operation-request：运维授权 - node_maintenance：超节点维护 - node_redeploy：超节点重部署 - node_localdisk_recovery 超节点本地盘恢复
 
         :return: The type of this ScheduledEvent.
         :rtype: str
@@ -208,7 +267,7 @@ class ScheduledEvent:
     def type(self, type):
         r"""Sets the type of this ScheduledEvent.
 
-        **参数解释**：事件类型。 **取值范围**：可选值如下： - system-maintenance：系统维护 - localdisk-recovery：本地盘恢复 - node_reboot：节点重启 - operation-request：运维授权 - node_maintenance：超节点维护 - node_redeploy：超节点重部署 - node_localdisk_recovery 超节点本地盘恢复。
+        **参数解释**：事件类型。 **取值范围**：可选值如下： - system-maintenance：系统维护 - localdisk-recovery：本地盘恢复 - node_reboot：节点重启 - operation-request：运维授权 - node_maintenance：超节点维护 - node_redeploy：超节点重部署 - node_localdisk_recovery 超节点本地盘恢复
 
         :param type: The type of this ScheduledEvent.
         :type type: str
@@ -241,7 +300,7 @@ class ScheduledEvent:
     def state(self):
         r"""Gets the state of this ScheduledEvent.
 
-        **参数解释**：事件状态。 **取值范围**：可选择值如下： - inquiring: 待授权, - scheduled: 待执行, - executing: 执行中, - completed: 执行成功 - failed: 执行失败 - canceled: 取消
+        **参数解释**：事件状态。 **取值范围**：可选择值如下： - inquiring: 待授权 - scheduled: 待执行 - executing: 执行中 - completed: 执行成功 - failed: 执行失败 - canceled: 取消 - part-completed: 部分成功
 
         :return: The state of this ScheduledEvent.
         :rtype: str
@@ -252,7 +311,7 @@ class ScheduledEvent:
     def state(self, state):
         r"""Sets the state of this ScheduledEvent.
 
-        **参数解释**：事件状态。 **取值范围**：可选择值如下： - inquiring: 待授权, - scheduled: 待执行, - executing: 执行中, - completed: 执行成功 - failed: 执行失败 - canceled: 取消
+        **参数解释**：事件状态。 **取值范围**：可选择值如下： - inquiring: 待授权 - scheduled: 待执行 - executing: 执行中 - completed: 执行成功 - failed: 执行失败 - canceled: 取消 - part-completed: 部分成功
 
         :param state: The state of this ScheduledEvent.
         :type state: str
@@ -260,120 +319,10 @@ class ScheduledEvent:
         self._state = state
 
     @property
-    def instance_type(self):
-        r"""Gets the instance_type of this ScheduledEvent.
-
-        **参数解释**：节点类型归属。 **取值范围**可选择值如下： - devserver：lite-server节点 - lite-cluster lite池 - standard 标准池
-
-        :return: The instance_type of this ScheduledEvent.
-        :rtype: str
-        """
-        return self._instance_type
-
-    @instance_type.setter
-    def instance_type(self, instance_type):
-        r"""Sets the instance_type of this ScheduledEvent.
-
-        **参数解释**：节点类型归属。 **取值范围**可选择值如下： - devserver：lite-server节点 - lite-cluster lite池 - standard 标准池
-
-        :param instance_type: The instance_type of this ScheduledEvent.
-        :type instance_type: str
-        """
-        self._instance_type = instance_type
-
-    @property
-    def instance_id(self):
-        r"""Gets the instance_id of this ScheduledEvent.
-
-        **参数解释**：服务器ID。计算服务系统自动生成的实例ID，长度小于63。 **取值范围**：不涉及。
-
-        :return: The instance_id of this ScheduledEvent.
-        :rtype: str
-        """
-        return self._instance_id
-
-    @instance_id.setter
-    def instance_id(self, instance_id):
-        r"""Sets the instance_id of this ScheduledEvent.
-
-        **参数解释**：服务器ID。计算服务系统自动生成的实例ID，长度小于63。 **取值范围**：不涉及。
-
-        :param instance_id: The instance_id of this ScheduledEvent.
-        :type instance_id: str
-        """
-        self._instance_id = instance_id
-
-    @property
-    def node_name(self):
-        r"""Gets the node_name of this ScheduledEvent.
-
-        **参数解释**：节点名称，取值自节点详情的metadata.name字段。系统自动生成，只能以小写字母开头，数字、中划线组成，不能以中划线结尾，小于63个字符。 **取值范围**：不涉及。
-
-        :return: The node_name of this ScheduledEvent.
-        :rtype: str
-        """
-        return self._node_name
-
-    @node_name.setter
-    def node_name(self, node_name):
-        r"""Sets the node_name of this ScheduledEvent.
-
-        **参数解释**：节点名称，取值自节点详情的metadata.name字段。系统自动生成，只能以小写字母开头，数字、中划线组成，不能以中划线结尾，小于63个字符。 **取值范围**：不涉及。
-
-        :param node_name: The node_name of this ScheduledEvent.
-        :type node_name: str
-        """
-        self._node_name = node_name
-
-    @property
-    def pool_name(self):
-        r"""Gets the pool_name of this ScheduledEvent.
-
-        **参数解释**：资源池名称, lite-cluster、standard才具有，取值自资源池详情的metadata.name字段。系统自动生成，只能以小写字母开头，数字、中划线组成，不能以中划线结尾，小于63个字符。 **取值范围**：不涉及。
-
-        :return: The pool_name of this ScheduledEvent.
-        :rtype: str
-        """
-        return self._pool_name
-
-    @pool_name.setter
-    def pool_name(self, pool_name):
-        r"""Sets the pool_name of this ScheduledEvent.
-
-        **参数解释**：资源池名称, lite-cluster、standard才具有，取值自资源池详情的metadata.name字段。系统自动生成，只能以小写字母开头，数字、中划线组成，不能以中划线结尾，小于63个字符。 **取值范围**：不涉及。
-
-        :param pool_name: The pool_name of this ScheduledEvent.
-        :type pool_name: str
-        """
-        self._pool_name = pool_name
-
-    @property
-    def pool_display_name(self):
-        r"""Gets the pool_display_name of this ScheduledEvent.
-
-        **参数解释**：资源池对外显示的名称, lite-cluster、standard才具有，取值自资源池详情的metadata.name字段。只能以小写字母开头，数字、中划线组成，不能以中划线结尾，且长度为[36-63]个字符。 **取值范围**：不涉及。
-
-        :return: The pool_display_name of this ScheduledEvent.
-        :rtype: str
-        """
-        return self._pool_display_name
-
-    @pool_display_name.setter
-    def pool_display_name(self, pool_display_name):
-        r"""Sets the pool_display_name of this ScheduledEvent.
-
-        **参数解释**：资源池对外显示的名称, lite-cluster、standard才具有，取值自资源池详情的metadata.name字段。只能以小写字母开头，数字、中划线组成，不能以中划线结尾，且长度为[36-63]个字符。 **取值范围**：不涉及。
-
-        :param pool_display_name: The pool_display_name of this ScheduledEvent.
-        :type pool_display_name: str
-        """
-        self._pool_display_name = pool_display_name
-
-    @property
     def publish_time(self):
         r"""Gets the publish_time of this ScheduledEvent.
 
-        **参数解释**：事件发布时间。 **约束限制**：格式为UTC时间字符串：2025-09-15T07:02:30Z。 **取值范围**：不涉及。 **默认取值**：不涉及。
+        **参数解释**：事件发布时间。 **取值范围**：不涉及。
 
         :return: The publish_time of this ScheduledEvent.
         :rtype: str
@@ -384,7 +333,7 @@ class ScheduledEvent:
     def publish_time(self, publish_time):
         r"""Sets the publish_time of this ScheduledEvent.
 
-        **参数解释**：事件发布时间。 **约束限制**：格式为UTC时间字符串：2025-09-15T07:02:30Z。 **取值范围**：不涉及。 **默认取值**：不涉及。
+        **参数解释**：事件发布时间。 **取值范围**：不涉及。
 
         :param publish_time: The publish_time of this ScheduledEvent.
         :type publish_time: str
@@ -395,7 +344,7 @@ class ScheduledEvent:
     def start_time(self):
         r"""Gets the start_time of this ScheduledEvent.
 
-        **参数解释**：事件开始时间。 **约束限制**：格式为UTC时间字符串：2025-09-15T07:02:30Z。 **取值范围**：不涉及。 **默认取值**：不涉及。
+        **参数解释**：事件开始时间。 **取值范围**：不涉及。
 
         :return: The start_time of this ScheduledEvent.
         :rtype: str
@@ -406,7 +355,7 @@ class ScheduledEvent:
     def start_time(self, start_time):
         r"""Sets the start_time of this ScheduledEvent.
 
-        **参数解释**：事件开始时间。 **约束限制**：格式为UTC时间字符串：2025-09-15T07:02:30Z。 **取值范围**：不涉及。 **默认取值**：不涉及。
+        **参数解释**：事件开始时间。 **取值范围**：不涉及。
 
         :param start_time: The start_time of this ScheduledEvent.
         :type start_time: str
@@ -417,7 +366,7 @@ class ScheduledEvent:
     def finish_time(self):
         r"""Gets the finish_time of this ScheduledEvent.
 
-        **参数解释**：事件完成时间。 **约束限制**：格式为UTC时间字符串：2025-09-15T07:02:30Z。 **取值范围**：不涉及。 **默认取值**：不涉及。
+        **参数解释**：事件完成时间。 **取值范围**：不涉及。
 
         :return: The finish_time of this ScheduledEvent.
         :rtype: str
@@ -428,7 +377,7 @@ class ScheduledEvent:
     def finish_time(self, finish_time):
         r"""Sets the finish_time of this ScheduledEvent.
 
-        **参数解释**：事件完成时间。 **约束限制**：格式为UTC时间字符串：2025-09-15T07:02:30Z。 **取值范围**：不涉及。 **默认取值**：不涉及。
+        **参数解释**：事件完成时间。 **取值范围**：不涉及。
 
         :param finish_time: The finish_time of this ScheduledEvent.
         :type finish_time: str
@@ -439,7 +388,7 @@ class ScheduledEvent:
     def not_before(self):
         r"""Gets the not_before of this ScheduledEvent.
 
-        **参数解释**：事件计划执行开始时间，格式为UTC时间字符串：2025-09-15T07:02:30Z。 **约束限制**：大于当前时间。 **取值范围**：不涉及。 **默认取值**：不填表示立即执行。
+        **参数解释**：事件计划执行开始时间，格式为UTC时间字符串：2025-09-15T07:02:30Z。 **取值范围**：不涉及。
 
         :return: The not_before of this ScheduledEvent.
         :rtype: str
@@ -450,7 +399,7 @@ class ScheduledEvent:
     def not_before(self, not_before):
         r"""Sets the not_before of this ScheduledEvent.
 
-        **参数解释**：事件计划执行开始时间，格式为UTC时间字符串：2025-09-15T07:02:30Z。 **约束限制**：大于当前时间。 **取值范围**：不涉及。 **默认取值**：不填表示立即执行。
+        **参数解释**：事件计划执行开始时间，格式为UTC时间字符串：2025-09-15T07:02:30Z。 **取值范围**：不涉及。
 
         :param not_before: The not_before of this ScheduledEvent.
         :type not_before: str
@@ -461,7 +410,7 @@ class ScheduledEvent:
     def probe_msg(self):
         r"""Gets the probe_msg of this ScheduledEvent.
 
-        **参数解释**：提示信息。 **约束限制**：系统自动生成，只能以小写字母开头，数字、中划线组成，不能以中划线结尾，长度小于63字符。 **取值范围**：不涉及。 **默认取值**：不涉及。
+        **参数解释**：提示信息。 **取值范围**：不涉及。
 
         :return: The probe_msg of this ScheduledEvent.
         :rtype: str
@@ -472,7 +421,7 @@ class ScheduledEvent:
     def probe_msg(self, probe_msg):
         r"""Sets the probe_msg of this ScheduledEvent.
 
-        **参数解释**：提示信息。 **约束限制**：系统自动生成，只能以小写字母开头，数字、中划线组成，不能以中划线结尾，长度小于63字符。 **取值范围**：不涉及。 **默认取值**：不涉及。
+        **参数解释**：提示信息。 **取值范围**：不涉及。
 
         :param probe_msg: The probe_msg of this ScheduledEvent.
         :type probe_msg: str
@@ -480,32 +429,28 @@ class ScheduledEvent:
         self._probe_msg = probe_msg
 
     @property
-    def job_progress(self):
-        r"""Gets the job_progress of this ScheduledEvent.
+    def execute_options(self):
+        r"""Gets the execute_options of this ScheduledEvent.
 
-        **参数解释**：计划事件执行的实时进度信息，系统自动生成。 **约束限制**：不涉及。 **取值范围**：不涉及。 **默认取值**：不涉及。
-
-        :return: The job_progress of this ScheduledEvent.
-        :rtype: str
+        :return: The execute_options of this ScheduledEvent.
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.ExecuteOptions`
         """
-        return self._job_progress
+        return self._execute_options
 
-    @job_progress.setter
-    def job_progress(self, job_progress):
-        r"""Sets the job_progress of this ScheduledEvent.
+    @execute_options.setter
+    def execute_options(self, execute_options):
+        r"""Sets the execute_options of this ScheduledEvent.
 
-        **参数解释**：计划事件执行的实时进度信息，系统自动生成。 **约束限制**：不涉及。 **取值范围**：不涉及。 **默认取值**：不涉及。
-
-        :param job_progress: The job_progress of this ScheduledEvent.
-        :type job_progress: str
+        :param execute_options: The execute_options of this ScheduledEvent.
+        :type execute_options: :class:`huaweicloudsdkmodelarts.v1.ExecuteOptions`
         """
-        self._job_progress = job_progress
+        self._execute_options = execute_options
 
     @property
     def redeploy_type(self):
         r"""Gets the redeploy_type of this ScheduledEvent.
 
-        **参数解释**：节点的重部署类型。 **约束限制**：不涉及。 **取值范围**：可选值如下：- HARD：表示支持强制重部署, - SOFT：表示支持重部署 **默认取值**：不涉及。
+        **参数解释**：节点重部署类型列表，标识该计划事件支持的重部署方式。 **约束限制**：不涉及。 **取值范围**：可选值如下： - SOFT：表示支持重部署 - HARD：表示支持强制重部署 **默认取值**：不涉及。
 
         :return: The redeploy_type of this ScheduledEvent.
         :rtype: list[str]
@@ -516,7 +461,7 @@ class ScheduledEvent:
     def redeploy_type(self, redeploy_type):
         r"""Sets the redeploy_type of this ScheduledEvent.
 
-        **参数解释**：节点的重部署类型。 **约束限制**：不涉及。 **取值范围**：可选值如下：- HARD：表示支持强制重部署, - SOFT：表示支持重部署 **默认取值**：不涉及。
+        **参数解释**：节点重部署类型列表，标识该计划事件支持的重部署方式。 **约束限制**：不涉及。 **取值范围**：可选值如下： - SOFT：表示支持重部署 - HARD：表示支持强制重部署 **默认取值**：不涉及。
 
         :param redeploy_type: The redeploy_type of this ScheduledEvent.
         :type redeploy_type: list[str]
@@ -524,10 +469,120 @@ class ScheduledEvent:
         self._redeploy_type = redeploy_type
 
     @property
+    def auto_recovery_check_time(self):
+        r"""Gets the auto_recovery_check_time of this ScheduledEvent.
+
+        **参数解释**：事件系统自动授权执行时间，格式为UTC时间字符串：2025-09-15T07:02:30Z。 **取值范围**：不涉及。
+
+        :return: The auto_recovery_check_time of this ScheduledEvent.
+        :rtype: str
+        """
+        return self._auto_recovery_check_time
+
+    @auto_recovery_check_time.setter
+    def auto_recovery_check_time(self, auto_recovery_check_time):
+        r"""Sets the auto_recovery_check_time of this ScheduledEvent.
+
+        **参数解释**：事件系统自动授权执行时间，格式为UTC时间字符串：2025-09-15T07:02:30Z。 **取值范围**：不涉及。
+
+        :param auto_recovery_check_time: The auto_recovery_check_time of this ScheduledEvent.
+        :type auto_recovery_check_time: str
+        """
+        self._auto_recovery_check_time = auto_recovery_check_time
+
+    @property
+    def nodes(self):
+        r"""Gets the nodes of this ScheduledEvent.
+
+        **参数解释**：事件关联节点信息列表。 **取值范围**：不涉及。
+
+        :return: The nodes of this ScheduledEvent.
+        :rtype: list[:class:`huaweicloudsdkmodelarts.v1.NodeEvent`]
+        """
+        return self._nodes
+
+    @nodes.setter
+    def nodes(self, nodes):
+        r"""Sets the nodes of this ScheduledEvent.
+
+        **参数解释**：事件关联节点信息列表。 **取值范围**：不涉及。
+
+        :param nodes: The nodes of this ScheduledEvent.
+        :type nodes: list[:class:`huaweicloudsdkmodelarts.v1.NodeEvent`]
+        """
+        self._nodes = nodes
+
+    @property
+    def instance_id(self):
+        r"""Gets the instance_id of this ScheduledEvent.
+
+        **参数解释**：节点ID。计算服务系统自动生成的实例ID，长度小于63。 **取值范围**：不涉及。 **约束限制**：待废弃: 请使用 nodes[0].InstanceId。
+
+        :return: The instance_id of this ScheduledEvent.
+        :rtype: str
+        """
+        return self._instance_id
+
+    @instance_id.setter
+    def instance_id(self, instance_id):
+        r"""Sets the instance_id of this ScheduledEvent.
+
+        **参数解释**：节点ID。计算服务系统自动生成的实例ID，长度小于63。 **取值范围**：不涉及。 **约束限制**：待废弃: 请使用 nodes[0].InstanceId。
+
+        :param instance_id: The instance_id of this ScheduledEvent.
+        :type instance_id: str
+        """
+        self._instance_id = instance_id
+
+    @property
+    def node_name(self):
+        r"""Gets the node_name of this ScheduledEvent.
+
+        **参数解释**：节点名称，取值自节点详情的metadata.name字段。系统自动生成，只能以小写字母开头，数字、中划线组成，不能以中划线结尾，小于63个字符。 **取值范围**：不涉及。 **约束限制**：待废弃: 请使用 nodes[0].nodeName。
+
+        :return: The node_name of this ScheduledEvent.
+        :rtype: str
+        """
+        return self._node_name
+
+    @node_name.setter
+    def node_name(self, node_name):
+        r"""Sets the node_name of this ScheduledEvent.
+
+        **参数解释**：节点名称，取值自节点详情的metadata.name字段。系统自动生成，只能以小写字母开头，数字、中划线组成，不能以中划线结尾，小于63个字符。 **取值范围**：不涉及。 **约束限制**：待废弃: 请使用 nodes[0].nodeName。
+
+        :param node_name: The node_name of this ScheduledEvent.
+        :type node_name: str
+        """
+        self._node_name = node_name
+
+    @property
+    def instance_type(self):
+        r"""Gets the instance_type of this ScheduledEvent.
+
+        **参数解释**：节点类型归属。 **取值范围**可选择值如下： - devserver：lite-server节点  - lite-cluster lite池  - standard 标准池 **约束限制**：待废弃: 请使用 nodes[0].instanceType。
+
+        :return: The instance_type of this ScheduledEvent.
+        :rtype: str
+        """
+        return self._instance_type
+
+    @instance_type.setter
+    def instance_type(self, instance_type):
+        r"""Sets the instance_type of this ScheduledEvent.
+
+        **参数解释**：节点类型归属。 **取值范围**可选择值如下： - devserver：lite-server节点  - lite-cluster lite池  - standard 标准池 **约束限制**：待废弃: 请使用 nodes[0].instanceType。
+
+        :param instance_type: The instance_type of this ScheduledEvent.
+        :type instance_type: str
+        """
+        self._instance_type = instance_type
+
+    @property
     def under_lying_instance_id(self):
         r"""Gets the under_lying_instance_id of this ScheduledEvent.
 
-        **参数解释**：snt9b23 场景对应ECS服务器ID。计算服务系统自动生成的实例ID，长度小于63。  **取值范围**：snt9b23 涉及, snt9b 不涉及。
+        **参数解释**：超节点场景对应ECS服务器ID。计算服务系统自动生成的实例ID，长度小于63。  **取值范围**：超节点涉及, snt9b 不涉及。 **约束限制**：待废弃: 请使用 nodes[0].underLyingInstanceId。
 
         :return: The under_lying_instance_id of this ScheduledEvent.
         :rtype: str
@@ -538,12 +593,100 @@ class ScheduledEvent:
     def under_lying_instance_id(self, under_lying_instance_id):
         r"""Sets the under_lying_instance_id of this ScheduledEvent.
 
-        **参数解释**：snt9b23 场景对应ECS服务器ID。计算服务系统自动生成的实例ID，长度小于63。  **取值范围**：snt9b23 涉及, snt9b 不涉及。
+        **参数解释**：超节点场景对应ECS服务器ID。计算服务系统自动生成的实例ID，长度小于63。  **取值范围**：超节点涉及, snt9b 不涉及。 **约束限制**：待废弃: 请使用 nodes[0].underLyingInstanceId。
 
         :param under_lying_instance_id: The under_lying_instance_id of this ScheduledEvent.
         :type under_lying_instance_id: str
         """
         self._under_lying_instance_id = under_lying_instance_id
+
+    @property
+    def flavor_support_redeploy(self):
+        r"""Gets the flavor_support_redeploy of this ScheduledEvent.
+
+        **参数解释**：规格是否支持重部署。 **取值范围**：true/false。 **约束限制**：待废弃: 请使用 nodes[0].flavorSupportRedeploy。
+
+        :return: The flavor_support_redeploy of this ScheduledEvent.
+        :rtype: bool
+        """
+        return self._flavor_support_redeploy
+
+    @flavor_support_redeploy.setter
+    def flavor_support_redeploy(self, flavor_support_redeploy):
+        r"""Sets the flavor_support_redeploy of this ScheduledEvent.
+
+        **参数解释**：规格是否支持重部署。 **取值范围**：true/false。 **约束限制**：待废弃: 请使用 nodes[0].flavorSupportRedeploy。
+
+        :param flavor_support_redeploy: The flavor_support_redeploy of this ScheduledEvent.
+        :type flavor_support_redeploy: bool
+        """
+        self._flavor_support_redeploy = flavor_support_redeploy
+
+    @property
+    def pool_name(self):
+        r"""Gets the pool_name of this ScheduledEvent.
+
+        **参数解释**：资源池名称, lite-cluster、standard才具有，取值自资源池详情的metadata.name字段。系统自动生成，只能以小写字母开头，数字、中划线组成，不能以中划线结尾，小于63个字符。 **取值范围**：不涉及。 **约束限制**：待废弃: 请使用 nodes[0].poolName。
+
+        :return: The pool_name of this ScheduledEvent.
+        :rtype: str
+        """
+        return self._pool_name
+
+    @pool_name.setter
+    def pool_name(self, pool_name):
+        r"""Sets the pool_name of this ScheduledEvent.
+
+        **参数解释**：资源池名称, lite-cluster、standard才具有，取值自资源池详情的metadata.name字段。系统自动生成，只能以小写字母开头，数字、中划线组成，不能以中划线结尾，小于63个字符。 **取值范围**：不涉及。 **约束限制**：待废弃: 请使用 nodes[0].poolName。
+
+        :param pool_name: The pool_name of this ScheduledEvent.
+        :type pool_name: str
+        """
+        self._pool_name = pool_name
+
+    @property
+    def pool_display_name(self):
+        r"""Gets the pool_display_name of this ScheduledEvent.
+
+        **参数解释**：资源池对外显示的名称, lite-cluster、standard才具有，取值自资源池详情的metadata.labels字段。只能以小写字母开头，数字、中划线组成，不能以中划线结尾，且长度为[36-63]个字符。 **取值范围**：不涉及。 **约束限制**：待废弃: 请使用 nodes[0].poolDisplayName。
+
+        :return: The pool_display_name of this ScheduledEvent.
+        :rtype: str
+        """
+        return self._pool_display_name
+
+    @pool_display_name.setter
+    def pool_display_name(self, pool_display_name):
+        r"""Sets the pool_display_name of this ScheduledEvent.
+
+        **参数解释**：资源池对外显示的名称, lite-cluster、standard才具有，取值自资源池详情的metadata.labels字段。只能以小写字母开头，数字、中划线组成，不能以中划线结尾，且长度为[36-63]个字符。 **取值范围**：不涉及。 **约束限制**：待废弃: 请使用 nodes[0].poolDisplayName。
+
+        :param pool_display_name: The pool_display_name of this ScheduledEvent.
+        :type pool_display_name: str
+        """
+        self._pool_display_name = pool_display_name
+
+    @property
+    def job_progress(self):
+        r"""Gets the job_progress of this ScheduledEvent.
+
+        **参数解释**：重部署执行的实时进度信息，系统自动生成。 **约束限制**：不涉及。 **取值范围**：不涉及。 **默认取值**：不涉及。 **约束限制**：待废弃: 请使用 nodes[0].jobProgress。
+
+        :return: The job_progress of this ScheduledEvent.
+        :rtype: str
+        """
+        return self._job_progress
+
+    @job_progress.setter
+    def job_progress(self, job_progress):
+        r"""Sets the job_progress of this ScheduledEvent.
+
+        **参数解释**：重部署执行的实时进度信息，系统自动生成。 **约束限制**：不涉及。 **取值范围**：不涉及。 **默认取值**：不涉及。 **约束限制**：待废弃: 请使用 nodes[0].jobProgress。
+
+        :param job_progress: The job_progress of this ScheduledEvent.
+        :type job_progress: str
+        """
+        self._job_progress = job_progress
 
     def to_dict(self):
         result = {}

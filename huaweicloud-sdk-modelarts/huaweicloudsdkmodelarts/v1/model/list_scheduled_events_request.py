@@ -18,7 +18,7 @@ class ListScheduledEventsRequest:
         'workspace_id': 'str',
         'state': 'list[str]',
         'type': 'list[str]',
-        'id': 'str',
+        'id': 'list[str]',
         'node_name': 'str',
         'pool_name': 'str',
         'publish_start_time': 'str',
@@ -47,12 +47,12 @@ class ListScheduledEventsRequest:
 
         :param workspace_id: **参数解释**：工作空间ID，默认值为0，取值于查询workspaces列表的接口的id字段。 **约束限制**：系统自动生成，只能以小写字母开头，数字、中划线组成，不能以中划线结尾，且长小于63个字符。 **取值范围**：不涉及。 **默认取值**：不涉及。
         :type workspace_id: str
-        :param state: **参数解释**：事件状态。 **约束限制**：不涉及。 **取值范围**：可选择值如下： - inquiring: 待授权, - scheduled: 待执行 - executing: 执行中 - completed: 执行成功 - failed: 执行失败 - canceled: 取消 **默认取值**：不涉及。
+        :param state: **参数解释**：事件状态。 **约束限制**：不涉及。 **取值范围**：可选择值如下： - inquiring: 待授权 - scheduled: 待执行 - executing: 执行中 - completed: 执行成功 - failed: 执行失败 - canceled: 取消 **默认取值**：不涉及。
         :type state: list[str]
         :param type: **参数解释**：事件类型。 **约束限制**：不涉及。 **取值范围**：可选择值如下： - system-maintenance：系统维护 - localdisk-recovery：本地盘恢复 - node_reboot：节点重启 - operation-request：运维授权 - node_maintenance：超节点维护 - node_redeploy：超节点重部署 - node_localdisk_recovery 超节点本地盘恢复 **默认取值**：不涉及。
         :type type: list[str]
-        :param id: **参数解释**：计划事件ID，取值查询计划事件列表接口的event_id字段。 **约束限制**：系统自动生成，只能以小写字母开头，数字、中划线组成，不能以中划线结尾，长度小于63。 **取值范围**：不涉及。 **默认取值**：不涉及。
-        :type id: str
+        :param id: **参数解释**：计划事件ID，取值查询计划事件列表接口的event_id字段。 支持批量筛选，批量筛选时传递多个参数，且最多支持100个。 **约束限制**：系统自动生成，只能以小写字母开头，数字、中划线组成，不能以中划线结尾，长度小于63。 **取值范围**：不涉及。 **默认取值**：不涉及。
+        :type id: list[str]
         :param node_name: **参数解释**：节点名称，取值自节点详情的metadata.name字段。 **约束限制**：系统自动生成，只能以小写字母开头，数字、中划线组成，不能以中划线结尾，小于63个字符。 **取值范围**：不涉及。 **默认取值**：不涉及。
         :type node_name: str
         :param pool_name: **参数解释**：资源池名称, lite-cluster、standard才具有，取值自资源池详情的metadata.name字段。查询指定standard cluster和lite cluster下节点的计划事件时可传递该参数。 **约束限制**：系统自动生成，只能以小写字母开头，数字、中划线组成，不能以中划线结尾，小于63个字符。 **取值范围**：不涉及。 **默认取值**：不涉及。
@@ -128,7 +128,7 @@ class ListScheduledEventsRequest:
     def state(self):
         r"""Gets the state of this ListScheduledEventsRequest.
 
-        **参数解释**：事件状态。 **约束限制**：不涉及。 **取值范围**：可选择值如下： - inquiring: 待授权, - scheduled: 待执行 - executing: 执行中 - completed: 执行成功 - failed: 执行失败 - canceled: 取消 **默认取值**：不涉及。
+        **参数解释**：事件状态。 **约束限制**：不涉及。 **取值范围**：可选择值如下： - inquiring: 待授权 - scheduled: 待执行 - executing: 执行中 - completed: 执行成功 - failed: 执行失败 - canceled: 取消 **默认取值**：不涉及。
 
         :return: The state of this ListScheduledEventsRequest.
         :rtype: list[str]
@@ -139,7 +139,7 @@ class ListScheduledEventsRequest:
     def state(self, state):
         r"""Sets the state of this ListScheduledEventsRequest.
 
-        **参数解释**：事件状态。 **约束限制**：不涉及。 **取值范围**：可选择值如下： - inquiring: 待授权, - scheduled: 待执行 - executing: 执行中 - completed: 执行成功 - failed: 执行失败 - canceled: 取消 **默认取值**：不涉及。
+        **参数解释**：事件状态。 **约束限制**：不涉及。 **取值范围**：可选择值如下： - inquiring: 待授权 - scheduled: 待执行 - executing: 执行中 - completed: 执行成功 - failed: 执行失败 - canceled: 取消 **默认取值**：不涉及。
 
         :param state: The state of this ListScheduledEventsRequest.
         :type state: list[str]
@@ -172,10 +172,10 @@ class ListScheduledEventsRequest:
     def id(self):
         r"""Gets the id of this ListScheduledEventsRequest.
 
-        **参数解释**：计划事件ID，取值查询计划事件列表接口的event_id字段。 **约束限制**：系统自动生成，只能以小写字母开头，数字、中划线组成，不能以中划线结尾，长度小于63。 **取值范围**：不涉及。 **默认取值**：不涉及。
+        **参数解释**：计划事件ID，取值查询计划事件列表接口的event_id字段。 支持批量筛选，批量筛选时传递多个参数，且最多支持100个。 **约束限制**：系统自动生成，只能以小写字母开头，数字、中划线组成，不能以中划线结尾，长度小于63。 **取值范围**：不涉及。 **默认取值**：不涉及。
 
         :return: The id of this ListScheduledEventsRequest.
-        :rtype: str
+        :rtype: list[str]
         """
         return self._id
 
@@ -183,10 +183,10 @@ class ListScheduledEventsRequest:
     def id(self, id):
         r"""Sets the id of this ListScheduledEventsRequest.
 
-        **参数解释**：计划事件ID，取值查询计划事件列表接口的event_id字段。 **约束限制**：系统自动生成，只能以小写字母开头，数字、中划线组成，不能以中划线结尾，长度小于63。 **取值范围**：不涉及。 **默认取值**：不涉及。
+        **参数解释**：计划事件ID，取值查询计划事件列表接口的event_id字段。 支持批量筛选，批量筛选时传递多个参数，且最多支持100个。 **约束限制**：系统自动生成，只能以小写字母开头，数字、中划线组成，不能以中划线结尾，长度小于63。 **取值范围**：不涉及。 **默认取值**：不涉及。
 
         :param id: The id of this ListScheduledEventsRequest.
-        :type id: str
+        :type id: list[str]
         """
         self._id = id
 

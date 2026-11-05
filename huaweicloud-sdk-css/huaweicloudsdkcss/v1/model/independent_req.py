@@ -31,7 +31,7 @@ class IndependentReq:
 
         :param type: 
         :type type: :class:`huaweicloudsdkcss.v1.IndependentBodyReq`
-        :param is_auto_pay: 是否自动支付。下单订购后，是否自动从客户的华为云账户中支付，而不需要客户手动去进行支付。
+        :param is_auto_pay: 
         :type is_auto_pay: int
         """
         
@@ -67,8 +67,6 @@ class IndependentReq:
     def is_auto_pay(self):
         r"""Gets the is_auto_pay of this IndependentReq.
 
-        是否自动支付。下单订购后，是否自动从客户的华为云账户中支付，而不需要客户手动去进行支付。
-
         :return: The is_auto_pay of this IndependentReq.
         :rtype: int
         """
@@ -77,8 +75,6 @@ class IndependentReq:
     @is_auto_pay.setter
     def is_auto_pay(self, is_auto_pay):
         r"""Sets the is_auto_pay of this IndependentReq.
-
-        是否自动支付。下单订购后，是否自动从客户的华为云账户中支付，而不需要客户手动去进行支付。
 
         :param is_auto_pay: The is_auto_pay of this IndependentReq.
         :type is_auto_pay: int

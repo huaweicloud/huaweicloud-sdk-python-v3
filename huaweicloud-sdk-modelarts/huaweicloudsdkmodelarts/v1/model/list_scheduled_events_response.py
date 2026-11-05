@@ -32,7 +32,7 @@ class ListScheduledEventsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param events: **参数解释**：计划事件列表
+        :param events: &#39;**参数解释**：计划事件列表&#39;。
         :type events: list[:class:`huaweicloudsdkmodelarts.v1.ScheduledEvent`]
         :param count: **参数解释**：计划事件总数。 **取值范围**：不涉及。
         :type count: int
@@ -58,7 +58,7 @@ class ListScheduledEventsResponse(SdkResponse):
     def events(self):
         r"""Gets the events of this ListScheduledEventsResponse.
 
-        **参数解释**：计划事件列表
+        '**参数解释**：计划事件列表'。
 
         :return: The events of this ListScheduledEventsResponse.
         :rtype: list[:class:`huaweicloudsdkmodelarts.v1.ScheduledEvent`]
@@ -69,7 +69,7 @@ class ListScheduledEventsResponse(SdkResponse):
     def events(self, events):
         r"""Sets the events of this ListScheduledEventsResponse.
 
-        **参数解释**：计划事件列表
+        '**参数解释**：计划事件列表'。
 
         :param events: The events of this ListScheduledEventsResponse.
         :type events: list[:class:`huaweicloudsdkmodelarts.v1.ScheduledEvent`]

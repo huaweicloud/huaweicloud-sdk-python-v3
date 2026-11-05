@@ -16,15 +16,17 @@ class EventUpdate:
 
     openapi_types = {
         'not_before': 'str',
-        'redeploy_config': 'RedeployConfig'
+        'redeploy_config': 'RedeployConfig',
+        'instance_id': 'list[str]'
     }
 
     attribute_map = {
         'not_before': 'notBefore',
-        'redeploy_config': 'redeployConfig'
+        'redeploy_config': 'redeployConfig',
+        'instance_id': 'instanceId'
     }
 
-    def __init__(self, not_before=None, redeploy_config=None):
+    def __init__(self, not_before=None, redeploy_config=None, instance_id=None):
         r"""EventUpdate
 
         The model defined in huaweicloud sdk
@@ -33,18 +35,23 @@ class EventUpdate:
         :type not_before: str
         :param redeploy_config: 
         :type redeploy_config: :class:`huaweicloudsdkmodelarts.v1.RedeployConfig`
+        :param instance_id: **参数解释**：授权节点ID列表。授权重部处理时可选填,支持填入单个故障节点ID。 **约束限制**：不涉及。 **取值范围**：计划事件故障节点列表。 **默认取值**：不填表示授权所有节点。
+        :type instance_id: list[str]
         """
         
         
 
         self._not_before = None
         self._redeploy_config = None
+        self._instance_id = None
         self.discriminator = None
 
         if not_before is not None:
             self.not_before = not_before
         if redeploy_config is not None:
             self.redeploy_config = redeploy_config
+        if instance_id is not None:
+            self.instance_id = instance_id
 
     @property
     def not_before(self):
@@ -85,6 +92,28 @@ class EventUpdate:
         :type redeploy_config: :class:`huaweicloudsdkmodelarts.v1.RedeployConfig`
         """
         self._redeploy_config = redeploy_config
+
+    @property
+    def instance_id(self):
+        r"""Gets the instance_id of this EventUpdate.
+
+        **参数解释**：授权节点ID列表。授权重部处理时可选填,支持填入单个故障节点ID。 **约束限制**：不涉及。 **取值范围**：计划事件故障节点列表。 **默认取值**：不填表示授权所有节点。
+
+        :return: The instance_id of this EventUpdate.
+        :rtype: list[str]
+        """
+        return self._instance_id
+
+    @instance_id.setter
+    def instance_id(self, instance_id):
+        r"""Sets the instance_id of this EventUpdate.
+
+        **参数解释**：授权节点ID列表。授权重部处理时可选填,支持填入单个故障节点ID。 **约束限制**：不涉及。 **取值范围**：计划事件故障节点列表。 **默认取值**：不填表示授权所有节点。
+
+        :param instance_id: The instance_id of this EventUpdate.
+        :type instance_id: list[str]
+        """
+        self._instance_id = instance_id
 
     def to_dict(self):
         result = {}

@@ -833,6 +833,79 @@ class CodeArtsDeployAsyncClient(Client):
 
         return http_info
 
+    def show_task_logs_async(self, request):
+        r"""查询部署记录的执行日志
+
+        查询部署记录的执行日志。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowTaskLogs
+        :type request: :class:`huaweicloudsdkcodeartsdeploy.v2.ShowTaskLogsRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.ShowTaskLogsResponse`
+        """
+        http_info = self._show_task_logs_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_task_logs_async_invoker(self, request):
+        http_info = self._show_task_logs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_task_logs_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/applications/{app_id}/records/{record_id}/logs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTaskLogsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'app_id' in local_var_params:
+            path_params['app_id'] = local_var_params['app_id']
+        if 'record_id' in local_var_params:
+            path_params['record_id'] = local_var_params['record_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'end_offset' in local_var_params:
+            query_params.append(('end_offset', local_var_params['end_offset']))
+        if 'step_id' in local_var_params:
+            query_params.append(('step_id', local_var_params['step_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_delete_app_async(self, request):
         r"""批量删除项目下应用
 

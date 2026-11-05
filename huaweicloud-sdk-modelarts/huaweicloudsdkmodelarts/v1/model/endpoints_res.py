@@ -18,17 +18,19 @@ class EndpointsRes:
         'dev_service': 'str',
         'service': 'str',
         'uri': 'str',
-        'key_pair_names': 'list[str]'
+        'key_pair_names': 'list[str]',
+        'extensions': 'dict(str, str)'
     }
 
     attribute_map = {
         'dev_service': 'dev_service',
         'service': 'service',
         'uri': 'uri',
-        'key_pair_names': 'key_pair_names'
+        'key_pair_names': 'key_pair_names',
+        'extensions': 'extensions'
     }
 
-    def __init__(self, dev_service=None, service=None, uri=None, key_pair_names=None):
+    def __init__(self, dev_service=None, service=None, uri=None, key_pair_names=None, extensions=None):
         r"""EndpointsRes
 
         The model defined in huaweicloud sdk
@@ -41,6 +43,8 @@ class EndpointsRes:
         :type uri: str
         :param key_pair_names: **参数解释**：SSH密钥对名称列表，允许设置多个密钥对实现同时对SSH实例的访问。 **取值范围**：不涉及。
         :type key_pair_names: list[str]
+        :param extensions: **参数解释**：通过应用专属URL直接打开应用进入远程开发模式。包含应用的各种扩展配置。key表示扩展配置名称，value表示扩展配置值。
+        :type extensions: dict(str, str)
         """
         
         
@@ -49,6 +53,7 @@ class EndpointsRes:
         self._service = None
         self._uri = None
         self._key_pair_names = None
+        self._extensions = None
         self.discriminator = None
 
         if dev_service is not None:
@@ -59,6 +64,8 @@ class EndpointsRes:
             self.uri = uri
         if key_pair_names is not None:
             self.key_pair_names = key_pair_names
+        if extensions is not None:
+            self.extensions = extensions
 
     @property
     def dev_service(self):
@@ -147,6 +154,28 @@ class EndpointsRes:
         :type key_pair_names: list[str]
         """
         self._key_pair_names = key_pair_names
+
+    @property
+    def extensions(self):
+        r"""Gets the extensions of this EndpointsRes.
+
+        **参数解释**：通过应用专属URL直接打开应用进入远程开发模式。包含应用的各种扩展配置。key表示扩展配置名称，value表示扩展配置值。
+
+        :return: The extensions of this EndpointsRes.
+        :rtype: dict(str, str)
+        """
+        return self._extensions
+
+    @extensions.setter
+    def extensions(self, extensions):
+        r"""Sets the extensions of this EndpointsRes.
+
+        **参数解释**：通过应用专属URL直接打开应用进入远程开发模式。包含应用的各种扩展配置。key表示扩展配置名称，value表示扩展配置值。
+
+        :param extensions: The extensions of this EndpointsRes.
+        :type extensions: dict(str, str)
+        """
+        self._extensions = extensions
 
     def to_dict(self):
         result = {}

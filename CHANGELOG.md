@@ -1,3 +1,465 @@
+# 3.1.221 2026-11-05
+
+### HuaweiCloud SDK AgentArts
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `ListCustomModelProvidersByTags`
+    - `ShowCustomModelProviderNumsByTags`
+    - `BatchCreateCustomModelProviderTags`
+    - `BatchDeleteCustomModelProviderTags`
+    - `ListCustomModelProviderTags`
+    - `ListAllCustomModelProviderTags`
+    - `UpdateModelProxy`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowOpsAgentMetricTopN**
+    - changes of request param
+      - `+ group_by`
+      - `+ top_number`
+  - **ShowOpsAgentMetricTrend**
+    - changes of request param
+      - `+ top_number`
+
+### HuaweiCloud SDK AIDataLake
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowSparkSql**
+    - changes of response param
+      - `+ shared_spark_ui`
+      - `- spark_ui`
+  - **ListSparkJobs**
+    - changes of response param
+      - `+ jobs.metric_statistics.total_cu_seconds`
+      - `- jobs.metric_statistics.retry_attempt`
+      - `- jobs.metric_statistics.metric_time`
+      - `- jobs.metric_statistics.total_cu_hours`
+  - **ShowSparkJob**
+    - changes of response param
+      - `+ shared_spark_ui`
+      - `- spark_ui`
+      - `+ metric_statistics.total_cu_seconds`
+      - `- metric_statistics.retry_attempt`
+      - `- metric_statistics.metric_time`
+      - `- metric_statistics.total_cu_hours`
+
+### HuaweiCloud SDK CodeArtsDeploy
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the API `ShowTaskLogs`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CSS
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **DownloadCert**
+    - changes of response param
+      - `- file`
+  - **ShowIkThesaurus**
+    - changes of response param
+      - `* updateTime: string -> int32`
+  - **ListCerts**
+    - changes of response param
+      - `* certsRecords: object<CertsRecordsDatastore> -> list<CertsRecordsDatastore>`
+  - **ListLogsJob**
+    - changes of response param
+      - `* clusterLogRecord.createAt: string -> int32`
+  - **ListConfs**
+    - changes of response param
+      - `- name`
+      - `- sensitiveWordsShielding`
+      - `- updateAt`
+      - `- confContent`
+      - `- status`
+      - `- setting`
+      - `- desc`
+      - `+ confs.setting.batchSize`
+      - `+ confs.setting.batchDelayMs`
+      - `+ confs.setting.queueType`
+      - `+ confs.setting.queueCheckPointWrites`
+      - `+ confs.setting.queueMaxBytesMb`
+      - `- confs.setting.batch_size`
+      - `- confs.setting.batch_delay_ms`
+      - `- confs.setting.queue_type`
+      - `- confs.setting.queue_check_point_writes`
+      - `- confs.setting.queue_max_bytes_mb`
+      - `* confs.setting: object<setting> -> object<ListConfsRespConfsSetting>`
+      - `* confs: list<confs> -> list<ListConfsRespConfs>`
+  - **UpdateYmls**
+    - changes of request param
+      - `+ edit.modify.system.config`
+  - **ShowElbDetail**
+    - changes of response param
+      - `+ listener.default_tls_container_ref`
+      - `+ listener.client_ca_tls_container_ref`
+  - **UpdateEsListener**
+    - changes of response param
+      - `* listener.protocol_port: string -> int32`
+  - **ListAiOps**
+    - changes of response param
+      - `* aiops_list.create_time: date -> int32`
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the API `SearchFactoryJobBaselineInfo`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK ModelArts
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **GetHyperinstanceGroup**
+    - changes of response param
+      - `* npu_count_limit: string -> int32`
+      - `* npu_count: string -> int32`
+  - **ShowPoolNodeConfig**
+    - changes of response param
+      - `+ spec.configs.image_warm_up`
+      - `+ spec.configs.cpu_manager`
+      - `+ spec.configs.drop_cache`
+      - `+ spec.configs.transparent_hugepage`
+      - `+ status.configsStatus`
+  - **PatchNodeConfig**
+    - changes of request param
+      - `* spec.configs: string -> object`
+    - changes of response param
+      - `+ spec.configs.image_warm_up`
+      - `+ spec.configs.cpu_manager`
+      - `+ spec.configs.drop_cache`
+      - `+ spec.configs.transparent_hugepage`
+      - `+ status.configsStatus`
+  - **AcceptScheduledEvent**
+    - changes of request param
+      - `- workspaceId`
+      - `+ instanceId`
+      - `* redeployConfig.autoFlow: string -> boolean`
+    - changes of response param
+      - `+ flavorSupportRedeploy`
+      - `+ autoRecoveryCheckTime`
+      - `+ executeOptions`
+      - `+ isHyperNode`
+      - `+ nodes`
+      - `+ state: enum value [part-completed]`
+  - **ListScheduledEvents**
+    - changes of request param
+      - `* id: string -> list<string>`
+    - changes of response param
+      - `+ flavorSupportRedeploy`
+      - `+ autoRecoveryCheckTime`
+      - `+ executeOptions`
+      - `+ isHyperNode`
+      - `+ nodes`
+      - `+ events.isHyperNode`
+      - `+ events.executeOptions`
+      - `+ events.autoRecoveryCheckTime`
+      - `+ events.nodes`
+      - `+ events.flavorSupportRedeploy`
+      - `+ events.state: enum value [part-completed]`
+  - **ShowDevServer**
+    - changes of response param
+      - `- endpoints_response`
+      - `+ endpoints.extensions`
+  - **UpdateDevServer**
+    - changes of response param
+      - `- endpoints_response`
+      - `+ endpoints.extensions`
+  - **DeleteDevServer**
+    - changes of response param
+      - `- endpoints_response`
+      - `+ endpoints.extensions`
+  - **StartDevServer**
+    - changes of response param
+      - `- endpoints_response`
+      - `+ endpoints.extensions`
+  - **StopDevServer**
+    - changes of response param
+      - `- endpoints_response`
+      - `+ endpoints.extensions`
+  - **ReinstallDevServerOS**
+    - changes of response param
+      - `- endpoints_response`
+      - `+ endpoints.extensions`
+  - **ChangeDevServerOS**
+    - changes of response param
+      - `- endpoints_response`
+      - `+ endpoints.extensions`
+  - **RebootDevServer**
+    - changes of response param
+      - `- endpoints_response`
+      - `+ endpoints.extensions`
+  - **GetDevServerJob**
+    - changes of response param
+      - `* tasks.create_at: string -> int64`
+      - `* tasks.update_at: string -> int64`
+  - **CreateDevServerJob**
+    - changes of response param
+      - `* tasks.create_at: string -> int64`
+      - `* tasks.update_at: string -> int64`
+  - **CreateHyperinstanceGroup**
+    - changes of response param
+      - `* npu_count_limit: string -> int32`
+      - `* npu_count: string -> int32`
+  - **ListHyperinstanceGroup**
+    - changes of request param
+      - `+ limit`
+      - `+ offset`
+      - `+ sort_key`
+      - `+ sort_dir`
+    - changes of response param
+      - `* data.npu_count_limit: string -> int32`
+      - `* data.npu_count: string -> int32`
+  - **ShowPool**
+    - changes of response param
+      - `+ metadata.annotations.os.modelarts.pool/scheduler.queue.strategy.config`
+  - **DeletePool**
+    - changes of response param
+      - `+ metadata.annotations.os.modelarts.pool/scheduler.queue.strategy.config`
+  - **PatchPool**
+    - changes of request param
+      - `+ metadata.annotations.os.modelarts.pool/scheduler.queue.strategy`
+      - `+ metadata.annotations.os.modelarts.pool/scheduler.queue.strategy.config`
+    - changes of response param
+      - `+ metadata.annotations.os.modelarts.pool/scheduler.queue.strategy.config`
+  - **ListDevServers**
+    - changes of response param
+      - `- endpoints_response`
+      - `- data.endpoints_response`
+      - `+ data.endpoints.extensions`
+  - **CreateDevServer**
+    - changes of response param
+      - `- endpoints_response`
+      - `+ endpoints.extensions`
+  - **SyncDevServers**
+    - changes of response param
+      - `- endpoints_response`
+      - `- data.endpoints_response`
+      - `+ data.endpoints.extensions`
+  - **ChangeHyperinstanceOS**
+    - changes of response param
+      - `- endpoints_response`
+      - `- servers.endpoints_response`
+      - `+ servers.endpoints.extensions`
+  - **GetHyperinstance**
+    - changes of response param
+      - `- endpoints_response`
+      - `- servers.endpoints_response`
+      - `+ servers.endpoints.extensions`
+  - **DeleteHyperinstance**
+    - changes of response param
+      - `- endpoints_response`
+      - `- servers.endpoints_response`
+      - `+ servers.endpoints.extensions`
+  - **StartHyperinstance**
+    - changes of response param
+      - `- endpoints_response`
+      - `- servers.endpoints_response`
+      - `+ servers.endpoints.extensions`
+  - **StopHyperinstance**
+    - changes of response param
+      - `- endpoints_response`
+      - `- servers.endpoints_response`
+      - `+ servers.endpoints.extensions`
+  - **ListAllDevServers**
+    - changes of response param
+      - `- endpoints_response`
+      - `- data.endpoints_response`
+      - `+ data.endpoints.extensions`
+  - **ScaleUpHyperinstance**
+    - changes of response param
+      - `- endpoints_response`
+      - `- servers.endpoints_response`
+      - `+ servers.endpoints.extensions`
+  - **ScaleDownHyperinstance**
+    - changes of response param
+      - `- endpoints_response`
+      - `- servers.endpoints_response`
+      - `+ servers.endpoints.extensions`
+  - **BatchDevServersAction**
+    - changes of response param
+      - `- endpoints_response`
+      - `- data.endpoints_response`
+      - `+ data.endpoints.extensions`
+  - **ListHyperinstanceServers**
+    - changes of request param
+      - `+ limit`
+      - `+ offset`
+      - `+ sort_key`
+      - `+ sort_dir`
+    - changes of response param
+      - `- endpoints_response`
+      - `- data.endpoints_response`
+      - `+ data.endpoints.extensions`
+  - **StartNotebook**
+    - changes of response param
+      - `+ endpoints.extensions`
+  - **StopNotebook**
+    - changes of response param
+      - `+ endpoints.extensions`
+  - **ListPools**
+    - changes of response param
+      - `+ items.metadata.annotations.os.modelarts.pool/scheduler.queue.strategy.config`
+  - **CreatePool**
+    - changes of request param
+      - `+ metadata.annotations.os.modelarts.pool/scheduler.queue.strategy`
+      - `+ metadata.annotations.os.modelarts.pool/scheduler.queue.strategy.config`
+    - changes of response param
+      - `+ metadata.annotations.os.modelarts.pool/scheduler.queue.strategy.config`
+  - **ShowNetwork**
+    - changes of response param
+      - `+ metadata.deletionTimestamp`
+  - **DeleteNetwork**
+    - changes of response param
+      - `+ metadata.deletionTimestamp`
+  - **PatchNetwork**
+    - changes of response param
+      - `+ metadata.deletionTimestamp`
+  - **ListHyperinstances**
+    - changes of response param
+      - `- endpoints_response`
+      - `- data.servers.endpoints_response`
+      - `+ data.servers.endpoints.extensions`
+  - **ListAllHyperinstances**
+    - changes of response param
+      - `- endpoints_response`
+      - `- data.servers.endpoints_response`
+      - `+ data.servers.endpoints.extensions`
+  - **ListNotebooks**
+    - changes of response param
+      - `+ data.endpoints.extensions`
+  - **CreateNotebook**
+    - changes of response param
+      - `+ endpoints.extensions`
+  - **ListAllNotebooks**
+    - changes of response param
+      - `+ data.endpoints.extensions`
+  - **ShowNotebook**
+    - changes of response param
+      - `+ endpoints.extensions`
+  - **DeleteNotebook**
+    - changes of response param
+      - `+ endpoints.extensions`
+  - **UpdateNotebook**
+    - changes of response param
+      - `+ endpoints.extensions`
+  - **CreateNetwork**
+    - changes of response param
+      - `+ metadata.deletionTimestamp`
+  - **ListNetworks**
+    - changes of response param
+      - `+ items.metadata.deletionTimestamp`
+
+### HuaweiCloud SDK RDS
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the following APIs:
+    - `CreateSupabaseApplication`
+    - `ShowSupabaseApplication`
+    - `DeleteSupabaseApplication`
+    - `ListSupabaseApplicationApiKeys`
+    - `ShowSupabaseApplicationApiKeyValue`
+    - `ResetSupabaseApplicationApiKey`
+    - `SwitchSupabaseApplicationSsl`
+    - `SwitchSupabaseApplicationEipBind`
+    - `ModifySupabaseApplicationPassword`
+    - `ShowSupabaseApplicationAuthConfig`
+    - `ModifySupabaseApplicationAuthConfig`
+    - `ModifySupabaseApplicationStorage`
+    - `ListSupabaseApplicationFlavors`
+    - `ListAiApplications`
+    - `StartSupabaseApplication`
+    - `StopSupabaseApplication`
+    - `RestartSupabaseApplication`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK VPC
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateClouddcnSubnet**
+    - changes of request param
+      - `+ clouddcn_subnet.dns_nameservers`
+  - **ListVirsubnets**
+    - changes of response param
+      - `+ virsubnets.enable_network_address_usage_metrics`
+      - `+ virsubnets.available_ip_address_count`
+  - **ShowVirsubnet**
+    - changes of response param
+      - `+ virsubnet.enable_network_address_usage_metrics`
+      - `+ virsubnet.available_ip_address_count`
+
+### HuaweiCloud SDK WAF
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `ListAtlases`
+    - `CreateAtlas`
+    - `ShowAtlas`
+    - `UpdateAtlas`
+    - `DeleteAtlas`
+    - `BatchDeleteAtlases`
+    - `ListImages`
+    - `AddImages`
+    - `RemoveImages`
+    - `CreatePresignedUploadUrl`
+    - `ListCustomRegexSet`
+    - `CreateCustomRegexSet`
+    - `BatchDeleteCustomRegexSet`
+    - `ShowCustomRegexSet`
+    - `UpdateCustomRegexSet`
+    - `DeleteCustomRegexSet`
+    - `ListCustomRegex`
+    - `CreateCustomRegex`
+    - `UpdateCustomRegex`
+    - `DeleteCustomRegex`
+    - `CreateRegexTest`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
 # 3.1.220 2026-10-29
 
 ### HuaweiCloud SDK AgentArts

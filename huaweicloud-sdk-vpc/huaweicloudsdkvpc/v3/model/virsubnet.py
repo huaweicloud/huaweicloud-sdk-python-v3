@@ -27,6 +27,8 @@ class Virsubnet:
         'subnet_cidrs': 'list[SubnetCidr]',
         'tags': 'list[ResponseTag]',
         'extra_dhcp_opts': 'list[SubnetExtraDhcpOpt]',
+        'enable_network_address_usage_metrics': 'bool',
+        'available_ip_address_count': 'int',
         'created_at': 'datetime',
         'updated_at': 'datetime'
     }
@@ -44,11 +46,13 @@ class Virsubnet:
         'subnet_cidrs': 'subnet_cidrs',
         'tags': 'tags',
         'extra_dhcp_opts': 'extra_dhcp_opts',
+        'enable_network_address_usage_metrics': 'enable_network_address_usage_metrics',
+        'available_ip_address_count': 'available_ip_address_count',
         'created_at': 'created_at',
         'updated_at': 'updated_at'
     }
 
-    def __init__(self, id=None, name=None, description=None, dns_nameservers=None, zone_id=None, vpc_id=None, status=None, project_id=None, scope=None, subnet_cidrs=None, tags=None, extra_dhcp_opts=None, created_at=None, updated_at=None):
+    def __init__(self, id=None, name=None, description=None, dns_nameservers=None, zone_id=None, vpc_id=None, status=None, project_id=None, scope=None, subnet_cidrs=None, tags=None, extra_dhcp_opts=None, enable_network_address_usage_metrics=None, available_ip_address_count=None, created_at=None, updated_at=None):
         r"""Virsubnet
 
         The model defined in huaweicloud sdk
@@ -77,6 +81,10 @@ class Virsubnet:
         :type tags: list[:class:`huaweicloudsdkvpc.v3.ResponseTag`]
         :param extra_dhcp_opts: **参数解释**： 子网的DHCP属性，支持配置NTP地址、DNS域名或租约到期时间。 **取值范围**： 不涉及。
         :type extra_dhcp_opts: list[:class:`huaweicloudsdkvpc.v3.SubnetExtraDhcpOpt`]
+        :param enable_network_address_usage_metrics: **参数解释**： 是否开启当前子网的IPv4地址使用量指标监控。 **取值范围**： true：开启。 false：不开启。
+        :type enable_network_address_usage_metrics: bool
+        :param available_ip_address_count: **参数解释**： 子网内剩余可用的IPv4地址数量。 **取值范围**： 不涉及。
+        :type available_ip_address_count: int
         :param created_at: **参数解释**： 子网的创建时间。 **取值范围**： UTC时间格式，yyyy-MM-ddTHH:mm:ss。
         :type created_at: datetime
         :param updated_at: **参数解释**： 子网的更新时间。 **取值范围**： UTC时间格式，yyyy-MM-ddTHH:mm:ss。
@@ -97,6 +105,8 @@ class Virsubnet:
         self._subnet_cidrs = None
         self._tags = None
         self._extra_dhcp_opts = None
+        self._enable_network_address_usage_metrics = None
+        self._available_ip_address_count = None
         self._created_at = None
         self._updated_at = None
         self.discriminator = None
@@ -113,6 +123,8 @@ class Virsubnet:
         self.subnet_cidrs = subnet_cidrs
         self.tags = tags
         self.extra_dhcp_opts = extra_dhcp_opts
+        self.enable_network_address_usage_metrics = enable_network_address_usage_metrics
+        self.available_ip_address_count = available_ip_address_count
         self.created_at = created_at
         self.updated_at = updated_at
 
@@ -379,6 +391,50 @@ class Virsubnet:
         :type extra_dhcp_opts: list[:class:`huaweicloudsdkvpc.v3.SubnetExtraDhcpOpt`]
         """
         self._extra_dhcp_opts = extra_dhcp_opts
+
+    @property
+    def enable_network_address_usage_metrics(self):
+        r"""Gets the enable_network_address_usage_metrics of this Virsubnet.
+
+        **参数解释**： 是否开启当前子网的IPv4地址使用量指标监控。 **取值范围**： true：开启。 false：不开启。
+
+        :return: The enable_network_address_usage_metrics of this Virsubnet.
+        :rtype: bool
+        """
+        return self._enable_network_address_usage_metrics
+
+    @enable_network_address_usage_metrics.setter
+    def enable_network_address_usage_metrics(self, enable_network_address_usage_metrics):
+        r"""Sets the enable_network_address_usage_metrics of this Virsubnet.
+
+        **参数解释**： 是否开启当前子网的IPv4地址使用量指标监控。 **取值范围**： true：开启。 false：不开启。
+
+        :param enable_network_address_usage_metrics: The enable_network_address_usage_metrics of this Virsubnet.
+        :type enable_network_address_usage_metrics: bool
+        """
+        self._enable_network_address_usage_metrics = enable_network_address_usage_metrics
+
+    @property
+    def available_ip_address_count(self):
+        r"""Gets the available_ip_address_count of this Virsubnet.
+
+        **参数解释**： 子网内剩余可用的IPv4地址数量。 **取值范围**： 不涉及。
+
+        :return: The available_ip_address_count of this Virsubnet.
+        :rtype: int
+        """
+        return self._available_ip_address_count
+
+    @available_ip_address_count.setter
+    def available_ip_address_count(self, available_ip_address_count):
+        r"""Sets the available_ip_address_count of this Virsubnet.
+
+        **参数解释**： 子网内剩余可用的IPv4地址数量。 **取值范围**： 不涉及。
+
+        :param available_ip_address_count: The available_ip_address_count of this Virsubnet.
+        :type available_ip_address_count: int
+        """
+        self._available_ip_address_count = available_ip_address_count
 
     @property
     def created_at(self):

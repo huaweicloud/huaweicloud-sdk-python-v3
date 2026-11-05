@@ -16,15 +16,17 @@ class UpdateYmlsReqEditModify:
 
     openapi_types = {
         'elasticsearch_yml': 'object',
-        'kibana_yml': 'object'
+        'kibana_yml': 'object',
+        'system_config': 'object'
     }
 
     attribute_map = {
         'elasticsearch_yml': 'elasticsearch.yml',
-        'kibana_yml': 'kibana.yml'
+        'kibana_yml': 'kibana.yml',
+        'system_config': 'system.config'
     }
 
-    def __init__(self, elasticsearch_yml=None, kibana_yml=None):
+    def __init__(self, elasticsearch_yml=None, kibana_yml=None, system_config=None):
         r"""UpdateYmlsReqEditModify
 
         The model defined in huaweicloud sdk
@@ -33,18 +35,23 @@ class UpdateYmlsReqEditModify:
         :type elasticsearch_yml: object
         :param kibana_yml: **参数解释**： 参数配置列表，值为需要修改的json数据。OpenSearch集群也使用此参数，即修改opensearch_dashboards.yml时，这里也是填写kibana.yml。 **约束限制**： 不涉及
         :type kibana_yml: object
+        :param system_config: 
+        :type system_config: object
         """
         
         
 
         self._elasticsearch_yml = None
         self._kibana_yml = None
+        self._system_config = None
         self.discriminator = None
 
         if elasticsearch_yml is not None:
             self.elasticsearch_yml = elasticsearch_yml
         if kibana_yml is not None:
             self.kibana_yml = kibana_yml
+        if system_config is not None:
+            self.system_config = system_config
 
     @property
     def elasticsearch_yml(self):
@@ -89,6 +96,24 @@ class UpdateYmlsReqEditModify:
         :type kibana_yml: object
         """
         self._kibana_yml = kibana_yml
+
+    @property
+    def system_config(self):
+        r"""Gets the system_config of this UpdateYmlsReqEditModify.
+
+        :return: The system_config of this UpdateYmlsReqEditModify.
+        :rtype: object
+        """
+        return self._system_config
+
+    @system_config.setter
+    def system_config(self, system_config):
+        r"""Sets the system_config of this UpdateYmlsReqEditModify.
+
+        :param system_config: The system_config of this UpdateYmlsReqEditModify.
+        :type system_config: object
+        """
+        self._system_config = system_config
 
     def to_dict(self):
         result = {}

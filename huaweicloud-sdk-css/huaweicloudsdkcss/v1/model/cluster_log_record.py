@@ -17,7 +17,7 @@ class ClusterLogRecord:
     openapi_types = {
         'id': 'str',
         'cluster_id': 'str',
-        'create_at': 'str',
+        'create_at': 'int',
         'log_path': 'str',
         'status': 'str',
         'finished_at': 'int',
@@ -48,7 +48,7 @@ class ClusterLogRecord:
         :param cluster_id: 集群ID。
         :type cluster_id: str
         :param create_at: 创建时间。格式：Unix时间戳格式。
-        :type create_at: str
+        :type create_at: int
         :param log_path: 日志在OBS桶中的备份路径。
         :type log_path: str
         :param status: 任务状态。 - RUNNING: 备份行中。 - SUCCESS: 备份成功。 - FAIL: 备份失败。
@@ -146,7 +146,7 @@ class ClusterLogRecord:
         创建时间。格式：Unix时间戳格式。
 
         :return: The create_at of this ClusterLogRecord.
-        :rtype: str
+        :rtype: int
         """
         return self._create_at
 
@@ -157,7 +157,7 @@ class ClusterLogRecord:
         创建时间。格式：Unix时间戳格式。
 
         :param create_at: The create_at of this ClusterLogRecord.
-        :type create_at: str
+        :type create_at: int
         """
         self._create_at = create_at
 

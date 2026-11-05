@@ -20,7 +20,6 @@ class UpdateDevServerResponse(SdkResponse):
         'update_at': 'int',
         'charging_mode': 'str',
         'cloud_server': 'CloudServer',
-        'endpoints_response': 'list[Endpoints]',
         'flavor': 'str',
         'id': 'str',
         'key_pair_name': 'str',
@@ -41,7 +40,6 @@ class UpdateDevServerResponse(SdkResponse):
         'update_at': 'update_at',
         'charging_mode': 'charging_mode',
         'cloud_server': 'cloud_server',
-        'endpoints_response': 'endpoints_response',
         'flavor': 'flavor',
         'id': 'id',
         'key_pair_name': 'key_pair_name',
@@ -57,7 +55,7 @@ class UpdateDevServerResponse(SdkResponse):
         'subnet_id': 'subnet_id'
     }
 
-    def __init__(self, create_at=None, update_at=None, charging_mode=None, cloud_server=None, endpoints_response=None, flavor=None, id=None, key_pair_name=None, name=None, order_id=None, status=None, vpc_id=None, endpoints=None, volumes=None, image=None, category=None, server_hps=None, subnet_id=None):
+    def __init__(self, create_at=None, update_at=None, charging_mode=None, cloud_server=None, flavor=None, id=None, key_pair_name=None, name=None, order_id=None, status=None, vpc_id=None, endpoints=None, volumes=None, image=None, category=None, server_hps=None, subnet_id=None):
         r"""UpdateDevServerResponse
 
         The model defined in huaweicloud sdk
@@ -70,8 +68,6 @@ class UpdateDevServerResponse(SdkResponse):
         :type charging_mode: str
         :param cloud_server: 
         :type cloud_server: :class:`huaweicloudsdkmodelarts.v1.CloudServer`
-        :param endpoints_response: **参数解释**：实例私有IP信息。
-        :type endpoints_response: list[:class:`huaweicloudsdkmodelarts.v1.Endpoints`]
         :param flavor: **参数解释**：实例规格名称。 **取值范围**：^.{1,128}$。
         :type flavor: str
         :param id: **参数解释**：实例ID。 **取值范围**：^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$。
@@ -106,7 +102,6 @@ class UpdateDevServerResponse(SdkResponse):
         self._update_at = None
         self._charging_mode = None
         self._cloud_server = None
-        self._endpoints_response = None
         self._flavor = None
         self._id = None
         self._key_pair_name = None
@@ -130,8 +125,6 @@ class UpdateDevServerResponse(SdkResponse):
             self.charging_mode = charging_mode
         if cloud_server is not None:
             self.cloud_server = cloud_server
-        if endpoints_response is not None:
-            self.endpoints_response = endpoints_response
         if flavor is not None:
             self.flavor = flavor
         if id is not None:
@@ -242,28 +235,6 @@ class UpdateDevServerResponse(SdkResponse):
         :type cloud_server: :class:`huaweicloudsdkmodelarts.v1.CloudServer`
         """
         self._cloud_server = cloud_server
-
-    @property
-    def endpoints_response(self):
-        r"""Gets the endpoints_response of this UpdateDevServerResponse.
-
-        **参数解释**：实例私有IP信息。
-
-        :return: The endpoints_response of this UpdateDevServerResponse.
-        :rtype: list[:class:`huaweicloudsdkmodelarts.v1.Endpoints`]
-        """
-        return self._endpoints_response
-
-    @endpoints_response.setter
-    def endpoints_response(self, endpoints_response):
-        r"""Sets the endpoints_response of this UpdateDevServerResponse.
-
-        **参数解释**：实例私有IP信息。
-
-        :param endpoints_response: The endpoints_response of this UpdateDevServerResponse.
-        :type endpoints_response: list[:class:`huaweicloudsdkmodelarts.v1.Endpoints`]
-        """
-        self._endpoints_response = endpoints_response
 
     @property
     def flavor(self):

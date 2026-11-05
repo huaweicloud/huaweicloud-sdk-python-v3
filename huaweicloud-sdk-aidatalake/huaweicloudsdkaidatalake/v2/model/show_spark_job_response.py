@@ -39,7 +39,7 @@ class ShowSparkJobResponse(SdkResponse):
         'create_user': 'SparkCreateUser',
         'log_url': 'str',
         'description': 'str',
-        'spark_ui': 'SparkUiSharedInfo'
+        'shared_spark_ui': 'SharedSparkUiInfo'
     }
 
     attribute_map = {
@@ -66,10 +66,10 @@ class ShowSparkJobResponse(SdkResponse):
         'create_user': 'create_user',
         'log_url': 'log_url',
         'description': 'description',
-        'spark_ui': 'spark_ui'
+        'shared_spark_ui': 'shared_spark_ui'
     }
 
-    def __init__(self, job_id=None, client_token=None, name=None, endpoint_name=None, catalog_name=None, job_agency=None, state=None, state_message=None, job_config=None, resource_config=None, restore_strategy=None, spark_config=None, metric_statistics=None, logging_config=None, image=None, retry_times=None, labels=None, create_time=None, start_time=None, end_time=None, create_user=None, log_url=None, description=None, spark_ui=None):
+    def __init__(self, job_id=None, client_token=None, name=None, endpoint_name=None, catalog_name=None, job_agency=None, state=None, state_message=None, job_config=None, resource_config=None, restore_strategy=None, spark_config=None, metric_statistics=None, logging_config=None, image=None, retry_times=None, labels=None, create_time=None, start_time=None, end_time=None, create_user=None, log_url=None, description=None, shared_spark_ui=None):
         r"""ShowSparkJobResponse
 
         The model defined in huaweicloud sdk
@@ -120,8 +120,8 @@ class ShowSparkJobResponse(SdkResponse):
         :type log_url: str
         :param description: **参数解释**：Spark作业描述信息，用于说明作业用途。 **取值范围**：长度为0~512个字符。
         :type description: str
-        :param spark_ui: 
-        :type spark_ui: :class:`huaweicloudsdkaidatalake.v2.SparkUiSharedInfo`
+        :param shared_spark_ui: 
+        :type shared_spark_ui: :class:`huaweicloudsdkaidatalake.v2.SharedSparkUiInfo`
         """
         
         super().__init__()
@@ -149,7 +149,7 @@ class ShowSparkJobResponse(SdkResponse):
         self._create_user = None
         self._log_url = None
         self._description = None
-        self._spark_ui = None
+        self._shared_spark_ui = None
         self.discriminator = None
 
         if job_id is not None:
@@ -198,8 +198,8 @@ class ShowSparkJobResponse(SdkResponse):
             self.log_url = log_url
         if description is not None:
             self.description = description
-        if spark_ui is not None:
-            self.spark_ui = spark_ui
+        if shared_spark_ui is not None:
+            self.shared_spark_ui = shared_spark_ui
 
     @property
     def job_id(self):
@@ -680,22 +680,22 @@ class ShowSparkJobResponse(SdkResponse):
         self._description = description
 
     @property
-    def spark_ui(self):
-        r"""Gets the spark_ui of this ShowSparkJobResponse.
+    def shared_spark_ui(self):
+        r"""Gets the shared_spark_ui of this ShowSparkJobResponse.
 
-        :return: The spark_ui of this ShowSparkJobResponse.
-        :rtype: :class:`huaweicloudsdkaidatalake.v2.SparkUiSharedInfo`
+        :return: The shared_spark_ui of this ShowSparkJobResponse.
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.SharedSparkUiInfo`
         """
-        return self._spark_ui
+        return self._shared_spark_ui
 
-    @spark_ui.setter
-    def spark_ui(self, spark_ui):
-        r"""Sets the spark_ui of this ShowSparkJobResponse.
+    @shared_spark_ui.setter
+    def shared_spark_ui(self, shared_spark_ui):
+        r"""Sets the shared_spark_ui of this ShowSparkJobResponse.
 
-        :param spark_ui: The spark_ui of this ShowSparkJobResponse.
-        :type spark_ui: :class:`huaweicloudsdkaidatalake.v2.SparkUiSharedInfo`
+        :param shared_spark_ui: The shared_spark_ui of this ShowSparkJobResponse.
+        :type shared_spark_ui: :class:`huaweicloudsdkaidatalake.v2.SharedSparkUiInfo`
         """
-        self._spark_ui = spark_ui
+        self._shared_spark_ui = shared_spark_ui
 
     def to_dict(self):
         import warnings

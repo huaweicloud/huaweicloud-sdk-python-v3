@@ -19599,6 +19599,1225 @@ class RdsClient(Client):
 
         return http_info
 
+    def create_supabase_application(self, request):
+        r"""创建Supabase应用
+
+        创建Supabase应用。支持两类路径：
+        1) 同时创建托管的PostgreSQL实例（manage_type&#x3D;newly_instance）；
+        2) 关联已有PostgreSQL实例（manage_type&#x3D;existed_instance）。
+        异步接口，返回job_id（按需）或order_id（包周期）。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateSupabaseApplication
+        :type request: :class:`huaweicloudsdkrds.v3.CreateSupabaseApplicationRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.CreateSupabaseApplicationResponse`
+        """
+        http_info = self._create_supabase_application_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_supabase_application_invoker(self, request):
+        http_info = self._create_supabase_application_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_supabase_application_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/ai-application/supabases",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSupabaseApplicationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+        if 'x_client_token' in local_var_params:
+            header_params['X-Client-Token'] = local_var_params['x_client_token']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_supabase_application(self, request):
+        r"""删除Supabase应用
+
+        删除Supabase应用。仅删除应用本身，保留底层PG实例及关联关系。
+        注：HTTP无请求体，delete_instance字段不对外暴露，恒为仅删应用。
+        PG级联删除为反向触发（PG删→自动删关联Supabase）。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteSupabaseApplication
+        :type request: :class:`huaweicloudsdkrds.v3.DeleteSupabaseApplicationRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.DeleteSupabaseApplicationResponse`
+        """
+        http_info = self._delete_supabase_application_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_supabase_application_invoker(self, request):
+        http_info = self._delete_supabase_application_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_supabase_application_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/ai-application/{application_id}/supabase",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSupabaseApplicationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'application_id' in local_var_params:
+            path_params['application_id'] = local_var_params['application_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_ai_applications(self, request):
+        r"""查询AI应用列表
+
+        查询AI应用列表，含应用状态和关联PG实例信息。删除应用前通常先调此接口定位目标。支持按type过滤Supabase应用。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListAiApplications
+        :type request: :class:`huaweicloudsdkrds.v3.ListAiApplicationsRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListAiApplicationsResponse`
+        """
+        http_info = self._list_ai_applications_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_ai_applications_invoker(self, request):
+        http_info = self._list_ai_applications_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_ai_applications_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/ai-application/applications",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAiApplicationsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'mode' in local_var_params:
+            query_params.append(('mode', local_var_params['mode']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'managed_instance_id' in local_var_params:
+            query_params.append(('managed_instance_id', local_var_params['managed_instance_id']))
+        if 'managed_instance_name' in local_var_params:
+            query_params.append(('managed_instance_name', local_var_params['managed_instance_name']))
+        if 'enable_ssl' in local_var_params:
+            query_params.append(('enable_ssl', local_var_params['enable_ssl']))
+        if 'start_created_time' in local_var_params:
+            query_params.append(('start_created_time', local_var_params['start_created_time']))
+        if 'end_created_time' in local_var_params:
+            query_params.append(('end_created_time', local_var_params['end_created_time']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_supabase_application_api_keys(self, request):
+        r"""查询Supabase应用ApiKey列表
+
+        分页查询ApiKey元数据。列表不含明文。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListSupabaseApplicationApiKeys
+        :type request: :class:`huaweicloudsdkrds.v3.ListSupabaseApplicationApiKeysRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListSupabaseApplicationApiKeysResponse`
+        """
+        http_info = self._list_supabase_application_api_keys_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_supabase_application_api_keys_invoker(self, request):
+        http_info = self._list_supabase_application_api_keys_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_supabase_application_api_keys_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/ai-application/{application_id}/supabase/api-keys",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSupabaseApplicationApiKeysResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'application_id' in local_var_params:
+            path_params['application_id'] = local_var_params['application_id']
+
+        query_params = []
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'start_created_time' in local_var_params:
+            query_params.append(('start_created_time', local_var_params['start_created_time']))
+        if 'end_created_time' in local_var_params:
+            query_params.append(('end_created_time', local_var_params['end_created_time']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_supabase_application_flavors(self, request):
+        r"""查询Supabase应用规格列表
+
+        查询可用规格，含每个AZ的可售状态和支持版本。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListSupabaseApplicationFlavors
+        :type request: :class:`huaweicloudsdkrds.v3.ListSupabaseApplicationFlavorsRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListSupabaseApplicationFlavorsResponse`
+        """
+        http_info = self._list_supabase_application_flavors_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_supabase_application_flavors_invoker(self, request):
+        http_info = self._list_supabase_application_flavors_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_supabase_application_flavors_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/ai-application/supabase/flavors",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSupabaseApplicationFlavorsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'version' in local_var_params:
+            query_params.append(('version', local_var_params['version']))
+        if 'spec_code' in local_var_params:
+            query_params.append(('spec_code', local_var_params['spec_code']))
+        if 'az_code' in local_var_params:
+            query_params.append(('az_code', local_var_params['az_code']))
+        if 'is_free' in local_var_params:
+            query_params.append(('is_free', local_var_params['is_free']))
+        if 'mode' in local_var_params:
+            query_params.append(('mode', local_var_params['mode']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def modify_supabase_application_auth_config(self, request):
+        r"""修改Supabase应用Auth配置
+
+        部分更新：仅更新传入的非空字段，省略字段保留原值（@JsonInclude NON_EMPTY）。
+        enable_github&#x3D;false时清空github子字段；enable_email_sign_up&#x3D;false时清空smtp_config子字段。
+        秘密字段（smtp_pwd、oauth_client_secret）需通过受控方式输入，show不返回故不会回显覆盖。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ModifySupabaseApplicationAuthConfig
+        :type request: :class:`huaweicloudsdkrds.v3.ModifySupabaseApplicationAuthConfigRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ModifySupabaseApplicationAuthConfigResponse`
+        """
+        http_info = self._modify_supabase_application_auth_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def modify_supabase_application_auth_config_invoker(self, request):
+        http_info = self._modify_supabase_application_auth_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _modify_supabase_application_auth_config_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/ai-application/{application_id}/supabase/auth-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "ModifySupabaseApplicationAuthConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'application_id' in local_var_params:
+            path_params['application_id'] = local_var_params['application_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def modify_supabase_application_password(self, request):
+        r"""修改Supabase应用密码
+
+        可单独修改应用密码或实例密码，但不能同时为空。不修改底层PG其他账号。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ModifySupabaseApplicationPassword
+        :type request: :class:`huaweicloudsdkrds.v3.ModifySupabaseApplicationPasswordRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ModifySupabaseApplicationPasswordResponse`
+        """
+        http_info = self._modify_supabase_application_password_http_info(request)
+        return self._call_api(**http_info)
+
+    def modify_supabase_application_password_invoker(self, request):
+        http_info = self._modify_supabase_application_password_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _modify_supabase_application_password_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/ai-application/{application_id}/supabase/password",
+            "request_type": request.__class__.__name__,
+            "response_type": "ModifySupabaseApplicationPasswordResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'application_id' in local_var_params:
+            path_params['application_id'] = local_var_params['application_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def modify_supabase_application_storage(self, request):
+        r"""修改Supabase应用Storage配置
+
+        enabled&#x3D;false时bucket_name/ak/sk必须全空；enabled&#x3D;true时全必填。
+        show不返回sk，故部分更新省略sk即保留。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ModifySupabaseApplicationStorage
+        :type request: :class:`huaweicloudsdkrds.v3.ModifySupabaseApplicationStorageRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ModifySupabaseApplicationStorageResponse`
+        """
+        http_info = self._modify_supabase_application_storage_http_info(request)
+        return self._call_api(**http_info)
+
+    def modify_supabase_application_storage_invoker(self, request):
+        http_info = self._modify_supabase_application_storage_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _modify_supabase_application_storage_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/ai-application/{application_id}/supabase/storage",
+            "request_type": request.__class__.__name__,
+            "response_type": "ModifySupabaseApplicationStorageResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'application_id' in local_var_params:
+            path_params['application_id'] = local_var_params['application_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def reset_supabase_application_api_key(self, request):
+        r"""重置Supabase应用ApiKey
+
+        异步重置ApiKey。agent异步动作成功后，旧Key置deleted、新Key置normal，同事务原子切换。
+        新Key不沿用旧Key ID。返回job_id，需轮询list_job_info。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ResetSupabaseApplicationApiKey
+        :type request: :class:`huaweicloudsdkrds.v3.ResetSupabaseApplicationApiKeyRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ResetSupabaseApplicationApiKeyResponse`
+        """
+        http_info = self._reset_supabase_application_api_key_http_info(request)
+        return self._call_api(**http_info)
+
+    def reset_supabase_application_api_key_invoker(self, request):
+        http_info = self._reset_supabase_application_api_key_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _reset_supabase_application_api_key_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/ai-application/{application_id}/supabase/api-key/{key_id}/reset",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResetSupabaseApplicationApiKeyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'application_id' in local_var_params:
+            path_params['application_id'] = local_var_params['application_id']
+        if 'key_id' in local_var_params:
+            path_params['key_id'] = local_var_params['key_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def restart_supabase_application(self, request):
+        r"""重启Supabase应用
+
+        异步重启Supabase应用。返回job_id，需轮询list_job_info。无requestBody。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for RestartSupabaseApplication
+        :type request: :class:`huaweicloudsdkrds.v3.RestartSupabaseApplicationRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.RestartSupabaseApplicationResponse`
+        """
+        http_info = self._restart_supabase_application_http_info(request)
+        return self._call_api(**http_info)
+
+    def restart_supabase_application_invoker(self, request):
+        http_info = self._restart_supabase_application_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _restart_supabase_application_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/ai-application/{application_id}/restart",
+            "request_type": request.__class__.__name__,
+            "response_type": "RestartSupabaseApplicationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'application_id' in local_var_params:
+            path_params['application_id'] = local_var_params['application_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_supabase_application(self, request):
+        r"""查询Supabase应用详情
+
+        查询Supabase应用详情，含运行状态、关联PG、SSL/EIP/Storage配置等。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowSupabaseApplication
+        :type request: :class:`huaweicloudsdkrds.v3.ShowSupabaseApplicationRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ShowSupabaseApplicationResponse`
+        """
+        http_info = self._show_supabase_application_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_supabase_application_invoker(self, request):
+        http_info = self._show_supabase_application_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_supabase_application_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/ai-application/{application_id}/supabase",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSupabaseApplicationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'application_id' in local_var_params:
+            path_params['application_id'] = local_var_params['application_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_supabase_application_api_key_value(self, request):
+        r"""查询Supabase应用ApiKey明文值
+
+        受控查看指定ApiKey的明文值。敏感操作，需明确授权。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowSupabaseApplicationApiKeyValue
+        :type request: :class:`huaweicloudsdkrds.v3.ShowSupabaseApplicationApiKeyValueRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ShowSupabaseApplicationApiKeyValueResponse`
+        """
+        http_info = self._show_supabase_application_api_key_value_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_supabase_application_api_key_value_invoker(self, request):
+        http_info = self._show_supabase_application_api_key_value_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_supabase_application_api_key_value_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/ai-application/{application_id}/supabase/api-key/{key_id}/value",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSupabaseApplicationApiKeyValueResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'application_id' in local_var_params:
+            path_params['application_id'] = local_var_params['application_id']
+        if 'key_id' in local_var_params:
+            path_params['key_id'] = local_var_params['key_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_supabase_application_auth_config(self, request):
+        r"""查询Supabase应用Auth配置
+
+        查询Auth配置。敏感秘密（smtp_pwd、oauth_client_secret）在响应中省略，非脱敏占位。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowSupabaseApplicationAuthConfig
+        :type request: :class:`huaweicloudsdkrds.v3.ShowSupabaseApplicationAuthConfigRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ShowSupabaseApplicationAuthConfigResponse`
+        """
+        http_info = self._show_supabase_application_auth_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_supabase_application_auth_config_invoker(self, request):
+        http_info = self._show_supabase_application_auth_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_supabase_application_auth_config_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/ai-application/{application_id}/supabase/auth-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSupabaseApplicationAuthConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'application_id' in local_var_params:
+            path_params['application_id'] = local_var_params['application_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def start_supabase_application(self, request):
+        r"""启动Supabase应用
+
+        异步启动Supabase应用。返回job_id，需轮询list_job_info。无requestBody。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for StartSupabaseApplication
+        :type request: :class:`huaweicloudsdkrds.v3.StartSupabaseApplicationRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.StartSupabaseApplicationResponse`
+        """
+        http_info = self._start_supabase_application_http_info(request)
+        return self._call_api(**http_info)
+
+    def start_supabase_application_invoker(self, request):
+        http_info = self._start_supabase_application_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _start_supabase_application_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/ai-application/{application_id}/start",
+            "request_type": request.__class__.__name__,
+            "response_type": "StartSupabaseApplicationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'application_id' in local_var_params:
+            path_params['application_id'] = local_var_params['application_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def stop_supabase_application(self, request):
+        r"""停止Supabase应用
+
+        异步停止Supabase应用。返回job_id，需轮询list_job_info。无requestBody。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for StopSupabaseApplication
+        :type request: :class:`huaweicloudsdkrds.v3.StopSupabaseApplicationRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.StopSupabaseApplicationResponse`
+        """
+        http_info = self._stop_supabase_application_http_info(request)
+        return self._call_api(**http_info)
+
+    def stop_supabase_application_invoker(self, request):
+        http_info = self._stop_supabase_application_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _stop_supabase_application_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/ai-application/{application_id}/stop",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopSupabaseApplicationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'application_id' in local_var_params:
+            path_params['application_id'] = local_var_params['application_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def switch_supabase_application_eip_bind(self, request):
+        r"""绑定或解绑Supabase应用EIP
+
+        异步绑定/解绑EIP。is_bind&#x3D;true时public_ip_id和public_ip_address必填。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for SwitchSupabaseApplicationEipBind
+        :type request: :class:`huaweicloudsdkrds.v3.SwitchSupabaseApplicationEipBindRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.SwitchSupabaseApplicationEipBindResponse`
+        """
+        http_info = self._switch_supabase_application_eip_bind_http_info(request)
+        return self._call_api(**http_info)
+
+    def switch_supabase_application_eip_bind_invoker(self, request):
+        http_info = self._switch_supabase_application_eip_bind_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _switch_supabase_application_eip_bind_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/ai-application/{application_id}/supabase/public-eip",
+            "request_type": request.__class__.__name__,
+            "response_type": "SwitchSupabaseApplicationEipBindResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'application_id' in local_var_params:
+            path_params['application_id'] = local_var_params['application_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def switch_supabase_application_ssl(self, request):
+        r"""开启或关闭Supabase应用SSL
+
+        异步开关SSL。enable_ssl&#x3D;false时cert_id必须为空；enable_ssl&#x3D;true时cert_id必填。
+        SSL切换后需手动同步Auth相关URL协议（http&lt;-&gt;https），否则认证可能故障。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for SwitchSupabaseApplicationSsl
+        :type request: :class:`huaweicloudsdkrds.v3.SwitchSupabaseApplicationSslRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.SwitchSupabaseApplicationSslResponse`
+        """
+        http_info = self._switch_supabase_application_ssl_http_info(request)
+        return self._call_api(**http_info)
+
+    def switch_supabase_application_ssl_invoker(self, request):
+        http_info = self._switch_supabase_application_ssl_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _switch_supabase_application_ssl_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/ai-application/{application_id}/supabase/switch-ssl",
+            "request_type": request.__class__.__name__,
+            "response_type": "SwitchSupabaseApplicationSslResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'application_id' in local_var_params:
+            path_params['application_id'] = local_var_params['application_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def get_available_vpcs(self, request):
         r"""根据实例ID和管理网子网信息，返回可用的数据子网
 

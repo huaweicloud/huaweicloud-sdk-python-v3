@@ -37,7 +37,7 @@ from urllib.parse import quote, urlparse
 
 import bson
 import simplejson as json
-from requests_toolbelt import MultipartEncoder
+from huaweicloudsdkcore.http.multipart import MultipartEncoder
 
 from huaweicloudsdkcore.auth.credentials import BasicCredentials, DerivedCredentials, Credentials
 from huaweicloudsdkcore.auth.provider import CredentialProviderChain

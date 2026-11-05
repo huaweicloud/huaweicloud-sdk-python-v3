@@ -26,6 +26,7 @@ class PoolMetaAnnotations:
         'os_modelarts_flavor_resource_ids': 'str',
         'os_modelarts_tms_tags': 'str',
         'os_modelarts_pool_scheduler_queue_strategy': 'str',
+        'os_modelarts_pool_scheduler_queue_strategy_config': 'str',
         'os_modelarts_pool_subpools_count': 'str',
         'os_modelarts_tenant_domain_name': 'str',
         'os_modelarts_pool_scope_external_dependency_train': 'str'
@@ -43,12 +44,13 @@ class PoolMetaAnnotations:
         'os_modelarts_flavor_resource_ids': 'os.modelarts/flavor.resource.ids',
         'os_modelarts_tms_tags': 'os.modelarts/tms.tags',
         'os_modelarts_pool_scheduler_queue_strategy': 'os.modelarts.pool/scheduler.queue.strategy',
+        'os_modelarts_pool_scheduler_queue_strategy_config': 'os.modelarts.pool/scheduler.queue.strategy.config',
         'os_modelarts_pool_subpools_count': 'os.modelarts.pool/subpools.count',
         'os_modelarts_tenant_domain_name': 'os.modelarts/tenant.domain.name',
         'os_modelarts_pool_scope_external_dependency_train': 'os.modelarts.pool/scope.external.dependency.train'
     }
 
-    def __init__(self, os_modelarts_description=None, os_modelarts_billing_mode=None, os_modelarts_period_num=None, os_modelarts_period_type=None, os_modelarts_auto_renew=None, os_modelarts_promotion_info=None, os_modelarts_service_console_url=None, os_modelarts_order_id=None, os_modelarts_flavor_resource_ids=None, os_modelarts_tms_tags=None, os_modelarts_pool_scheduler_queue_strategy=None, os_modelarts_pool_subpools_count=None, os_modelarts_tenant_domain_name=None, os_modelarts_pool_scope_external_dependency_train=None):
+    def __init__(self, os_modelarts_description=None, os_modelarts_billing_mode=None, os_modelarts_period_num=None, os_modelarts_period_type=None, os_modelarts_auto_renew=None, os_modelarts_promotion_info=None, os_modelarts_service_console_url=None, os_modelarts_order_id=None, os_modelarts_flavor_resource_ids=None, os_modelarts_tms_tags=None, os_modelarts_pool_scheduler_queue_strategy=None, os_modelarts_pool_scheduler_queue_strategy_config=None, os_modelarts_pool_subpools_count=None, os_modelarts_tenant_domain_name=None, os_modelarts_pool_scope_external_dependency_train=None):
         r"""PoolMetaAnnotations
 
         The model defined in huaweicloud sdk
@@ -73,8 +75,10 @@ class PoolMetaAnnotations:
         :type os_modelarts_flavor_resource_ids: str
         :param os_modelarts_tms_tags: **参数解释**：资源池上的资源标签。 **约束限制**：不涉及。 **取值范围**：不涉及。 **默认取值**：不涉及。
         :type os_modelarts_tms_tags: str
-        :param os_modelarts_pool_scheduler_queue_strategy: **参数解释**：资源池调度队列的策略，用于定义任务调度的规则。 **约束限制**：不涉及。 **取值范围**：不涉及。 **默认取值**：不涉及。
+        :param os_modelarts_pool_scheduler_queue_strategy: **参数解释**：资源池调度队列的策略，用于定义任务调度的规则。 **取值范围**：枚举：FIFO、Range、Step、Rank。
         :type os_modelarts_pool_scheduler_queue_strategy: str
+        :param os_modelarts_pool_scheduler_queue_strategy_config: **参数解释**：资源池的调度策略配置。 **约束限制**：仅当调度策略为Step或Rank时生效。 **取值范围**：Json字符串，自行配置，示例如下： - Step: {\&quot;step_config\&quot;:{\&quot;timeout\&quot;:300}} - Rank: {\&quot;rank_config\&quot;:[{\&quot;max_priority\&quot;:3,\&quot;min_priority\&quot;:3,\&quot;rank_strategy\&quot;:\&quot;Step\&quot;,\&quot;step_config\&quot;:{\&quot;timeout\&quot;:300}},{\&quot;max_priority\&quot;:2,\&quot;min_priority\&quot;:1,\&quot;rank_strategy\&quot;:\&quot;Range\&quot;}]} **默认取值**：不涉及。
+        :type os_modelarts_pool_scheduler_queue_strategy_config: str
         :param os_modelarts_pool_subpools_count: **参数解释**：资源池包含的逻辑子池的数量。 **约束限制**：不涉及。 **取值范围**：不涉及。 **默认取值**：不涉及。
         :type os_modelarts_pool_subpools_count: str
         :param os_modelarts_tenant_domain_name: **参数解释**：资源池的租户账号 **约束限制**：不涉及。 **取值范围**：不涉及。 **默认取值**：不涉及。
@@ -96,6 +100,7 @@ class PoolMetaAnnotations:
         self._os_modelarts_flavor_resource_ids = None
         self._os_modelarts_tms_tags = None
         self._os_modelarts_pool_scheduler_queue_strategy = None
+        self._os_modelarts_pool_scheduler_queue_strategy_config = None
         self._os_modelarts_pool_subpools_count = None
         self._os_modelarts_tenant_domain_name = None
         self._os_modelarts_pool_scope_external_dependency_train = None
@@ -123,6 +128,8 @@ class PoolMetaAnnotations:
             self.os_modelarts_tms_tags = os_modelarts_tms_tags
         if os_modelarts_pool_scheduler_queue_strategy is not None:
             self.os_modelarts_pool_scheduler_queue_strategy = os_modelarts_pool_scheduler_queue_strategy
+        if os_modelarts_pool_scheduler_queue_strategy_config is not None:
+            self.os_modelarts_pool_scheduler_queue_strategy_config = os_modelarts_pool_scheduler_queue_strategy_config
         if os_modelarts_pool_subpools_count is not None:
             self.os_modelarts_pool_subpools_count = os_modelarts_pool_subpools_count
         if os_modelarts_tenant_domain_name is not None:
@@ -354,7 +361,7 @@ class PoolMetaAnnotations:
     def os_modelarts_pool_scheduler_queue_strategy(self):
         r"""Gets the os_modelarts_pool_scheduler_queue_strategy of this PoolMetaAnnotations.
 
-        **参数解释**：资源池调度队列的策略，用于定义任务调度的规则。 **约束限制**：不涉及。 **取值范围**：不涉及。 **默认取值**：不涉及。
+        **参数解释**：资源池调度队列的策略，用于定义任务调度的规则。 **取值范围**：枚举：FIFO、Range、Step、Rank。
 
         :return: The os_modelarts_pool_scheduler_queue_strategy of this PoolMetaAnnotations.
         :rtype: str
@@ -365,12 +372,34 @@ class PoolMetaAnnotations:
     def os_modelarts_pool_scheduler_queue_strategy(self, os_modelarts_pool_scheduler_queue_strategy):
         r"""Sets the os_modelarts_pool_scheduler_queue_strategy of this PoolMetaAnnotations.
 
-        **参数解释**：资源池调度队列的策略，用于定义任务调度的规则。 **约束限制**：不涉及。 **取值范围**：不涉及。 **默认取值**：不涉及。
+        **参数解释**：资源池调度队列的策略，用于定义任务调度的规则。 **取值范围**：枚举：FIFO、Range、Step、Rank。
 
         :param os_modelarts_pool_scheduler_queue_strategy: The os_modelarts_pool_scheduler_queue_strategy of this PoolMetaAnnotations.
         :type os_modelarts_pool_scheduler_queue_strategy: str
         """
         self._os_modelarts_pool_scheduler_queue_strategy = os_modelarts_pool_scheduler_queue_strategy
+
+    @property
+    def os_modelarts_pool_scheduler_queue_strategy_config(self):
+        r"""Gets the os_modelarts_pool_scheduler_queue_strategy_config of this PoolMetaAnnotations.
+
+        **参数解释**：资源池的调度策略配置。 **约束限制**：仅当调度策略为Step或Rank时生效。 **取值范围**：Json字符串，自行配置，示例如下： - Step: {\"step_config\":{\"timeout\":300}} - Rank: {\"rank_config\":[{\"max_priority\":3,\"min_priority\":3,\"rank_strategy\":\"Step\",\"step_config\":{\"timeout\":300}},{\"max_priority\":2,\"min_priority\":1,\"rank_strategy\":\"Range\"}]} **默认取值**：不涉及。
+
+        :return: The os_modelarts_pool_scheduler_queue_strategy_config of this PoolMetaAnnotations.
+        :rtype: str
+        """
+        return self._os_modelarts_pool_scheduler_queue_strategy_config
+
+    @os_modelarts_pool_scheduler_queue_strategy_config.setter
+    def os_modelarts_pool_scheduler_queue_strategy_config(self, os_modelarts_pool_scheduler_queue_strategy_config):
+        r"""Sets the os_modelarts_pool_scheduler_queue_strategy_config of this PoolMetaAnnotations.
+
+        **参数解释**：资源池的调度策略配置。 **约束限制**：仅当调度策略为Step或Rank时生效。 **取值范围**：Json字符串，自行配置，示例如下： - Step: {\"step_config\":{\"timeout\":300}} - Rank: {\"rank_config\":[{\"max_priority\":3,\"min_priority\":3,\"rank_strategy\":\"Step\",\"step_config\":{\"timeout\":300}},{\"max_priority\":2,\"min_priority\":1,\"rank_strategy\":\"Range\"}]} **默认取值**：不涉及。
+
+        :param os_modelarts_pool_scheduler_queue_strategy_config: The os_modelarts_pool_scheduler_queue_strategy_config of this PoolMetaAnnotations.
+        :type os_modelarts_pool_scheduler_queue_strategy_config: str
+        """
+        self._os_modelarts_pool_scheduler_queue_strategy_config = os_modelarts_pool_scheduler_queue_strategy_config
 
     @property
     def os_modelarts_pool_subpools_count(self):

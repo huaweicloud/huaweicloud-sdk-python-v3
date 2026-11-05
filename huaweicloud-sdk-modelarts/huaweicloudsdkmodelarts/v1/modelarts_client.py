@@ -73,8 +73,6 @@ class ModelArtsClient(Client):
         query_params = []
         if 'workspace_id' in local_var_params:
             query_params.append(('workspaceId', local_var_params['workspace_id']))
-        if 'workspace_id2' in local_var_params:
-            query_params.append(('workspaceId', local_var_params['workspace_id2']))
 
         header_params = {}
 
@@ -480,6 +478,71 @@ class ModelArtsClient(Client):
         path_params = {}
         if 'pool_name' in local_var_params:
             path_params['pool_name'] = local_var_params['pool_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_create_service_opens(self, request):
+        r"""一键开通依赖服务
+
+        一键开通依赖服务接口用于一键开通AOM、CCE、CES、SWR-EE等依赖服务。该接口适用于以下场景：当用户首次使用ModelArts服务或需要批量开通相关依赖服务时，可通过此接口一键完成多个依赖服务的开通操作。使用该接口的前提条件是用户已登录系统、具有相应操作权限且账号余额充足。执行一键开通后，系统将自动为用户开通指定的依赖服务，服务开通后即可正常使用。若用户无权限操作、账号余额不足或服务开通失败，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchCreateServiceOpens
+        :type request: :class:`huaweicloudsdkmodelarts.v1.BatchCreateServiceOpensRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.BatchCreateServiceOpensResponse`
+        """
+        http_info = self._batch_create_service_opens_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_create_service_opens_invoker(self, request):
+        http_info = self._batch_create_service_opens_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_create_service_opens_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/services/batch-open",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateServiceOpensResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
 
         query_params = []
 
@@ -2368,6 +2431,71 @@ class ModelArtsClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_auth_grant(self, request):
+        r"""一键授权或重置授权
+
+        一键授权或重置授权接口用于一键创建ModelArts委托授权或重置已有委托。该接口适用于以下场景：当用户首次使用ModelArts服务需要开通委托授权时，或当现有委托授权出现异常、过期需要重新配置时，可通过此接口一键完成授权操作。使用该接口的前提条件是用户已登录系统且具有相应的操作权限。执行一键授权后，系统将自动创建委托授权关系；执行重置操作后，原有委托将被替换为新的授权。若用户无权限操作或服务异常，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateAuthGrant
+        :type request: :class:`huaweicloudsdkmodelarts.v1.CreateAuthGrantRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.CreateAuthGrantResponse`
+        """
+        http_info = self._create_auth_grant_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_auth_grant_invoker(self, request):
+        http_info = self._create_auth_grant_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_auth_grant_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/auth/grant",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAuthGrantResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = ['ApiTokenAuth']
 
@@ -7587,6 +7715,14 @@ class ModelArtsClient(Client):
         path_params = {}
 
         query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
 
         header_params = {}
 
@@ -7717,6 +7853,14 @@ class ModelArtsClient(Client):
             path_params['id'] = local_var_params['id']
 
         query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
 
         header_params = {}
 
@@ -9746,6 +9890,7 @@ class ModelArtsClient(Client):
             collection_formats['type'] = 'csv'
         if 'id' in local_var_params:
             query_params.append(('id', local_var_params['id']))
+            collection_formats['id'] = 'csv'
         if 'node_name' in local_var_params:
             query_params.append(('nodeName', local_var_params['node_name']))
         if 'pool_name' in local_var_params:
@@ -9768,6 +9913,71 @@ class ModelArtsClient(Client):
             body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_service_statuses(self, request):
+        r"""查询依赖服务开通状态
+
+        查询依赖服务开通状态接口用于查询AOM、CCE、CES、SWR-EE等依赖服务的开通状态。该接口适用于以下场景：当用户需要确认ModelArts相关依赖服务是否已开通时，可通过此接口批量查询各依赖服务的当前状态。使用该接口的前提条件是用户已登录系统且具有相应的查询权限。查询结果将返回各依赖服务的开通状态（已开通或未开通），若用户无权限查询或服务异常，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListServiceStatuses
+        :type request: :class:`huaweicloudsdkmodelarts.v1.ListServiceStatusesRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.ListServiceStatusesResponse`
+        """
+        http_info = self._list_service_statuses_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_service_statuses_invoker(self, request):
+        http_info = self._list_service_statuses_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_service_statuses_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/services/status",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListServiceStatusesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'service_codes' in local_var_params:
+            query_params.append(('service_codes', local_var_params['service_codes']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -10767,6 +10977,73 @@ class ModelArtsClient(Client):
 
         return http_info
 
+    def patch_node_config(self, request):
+        r"""更新资源池节点自定义配置
+
+        更新资源池节点自定义配置接口用于修改资源池节点的个性化设置。该接口适用于以下场景：当资源池节点需要调整资源分配策略、更新性能参数、创建/删除镜像预热任务或变更其他自定义配置时，用户可通过此接口更新指定资源池节点的自定义配置信息。使用该接口的前提条件是资源池节点已存在且用户具有管理员权限。更新操作完成后，资源池节点的自定义配置将被更新并生效，相关变更将被记录以便后续查询。若资源池节点不存在、用户无权限操作或配置参数格式不正确，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for PatchNodeConfig
+        :type request: :class:`huaweicloudsdkmodelarts.v1.PatchNodeConfigRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.PatchNodeConfigResponse`
+        """
+        http_info = self._patch_node_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def patch_node_config_invoker(self, request):
+        http_info = self._patch_node_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _patch_node_config_http_info(cls, request):
+        http_info = {
+            "method": "PATCH",
+            "resource_path": "/v2/{project_id}/pools/{pool_name}/node-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "PatchNodeConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'pool_name' in local_var_params:
+            path_params['pool_name'] = local_var_params['pool_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def patch_node_pool(self, request):
         r"""更新节点池
 
@@ -11404,6 +11681,69 @@ class ModelArtsClient(Client):
         path_params = {}
         if 'algorithm_id' in local_var_params:
             path_params['algorithm_id'] = local_var_params['algorithm_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_auth_grant(self, request):
+        r"""查询委托授权状态
+
+        查询委托授权状态接口用于查询ModelArts服务的委托授权是否已开通。该接口适用于以下场景：当用户需要确认是否已开通ModelArts委托授权以进行后续操作（如模型训练、部署等）时，可通过此接口查询当前授权状态。使用该接口的前提条件是用户已登录系统且具有相应的查询权限。查询结果将返回委托授权的当前状态（已开通或未开通），若用户无权限查询或服务异常，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowAuthGrant
+        :type request: :class:`huaweicloudsdkmodelarts.v1.ShowAuthGrantRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.ShowAuthGrantResponse`
+        """
+        http_info = self._show_auth_grant_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_auth_grant_invoker(self, request):
+        http_info = self._show_auth_grant_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_auth_grant_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/auth/grant",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAuthGrantResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
 
         query_params = []
 
@@ -16399,6 +16739,71 @@ class ModelArtsClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def verify_agency(self, request):
+        r"""校验委托使用权限
+
+        校验当前用户是否有权使用指定委托，仅支持委托给ModelArts服务的委托，通过PDP5的iam:agencies:pass鉴权判定
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for VerifyAgency
+        :type request: :class:`huaweicloudsdkmodelarts.v1.VerifyAgencyRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.VerifyAgencyResponse`
+        """
+        http_info = self._verify_agency_http_info(request)
+        return self._call_api(**http_info)
+
+    def verify_agency_invoker(self, request):
+        http_info = self._verify_agency_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _verify_agency_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/atelier/agency/verify",
+            "request_type": request.__class__.__name__,
+            "response_type": "VerifyAgencyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
 
         auth_settings = ['ApiTokenAuth']
 

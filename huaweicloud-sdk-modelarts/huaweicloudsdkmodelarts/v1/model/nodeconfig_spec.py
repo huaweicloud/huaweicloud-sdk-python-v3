@@ -15,7 +15,7 @@ class NodeconfigSpec:
     sensitive_list = []
 
     openapi_types = {
-        'configs': 'object'
+        'configs': 'NodeconfigSpecConfigs'
     }
 
     attribute_map = {
@@ -27,8 +27,8 @@ class NodeconfigSpec:
 
         The model defined in huaweicloud sdk
 
-        :param configs: **参数解释**： 节点自定义配置；当前支持节点绑核、是否启用缓存清理、是否启用透明大页。 \&quot;configs\&quot;: {    \&quot;cpu_manager\&quot;: {     \&quot;mode\&quot;: \&quot;static/none\&quot; //static为启用绑核, none为不启用绑核    },    \&quot;drop_cache\&quot;: {     \&quot;mode\&quot;: \&quot;enable/disable\&quot; // enable启用缓存清理    },    \&quot;transparent_hugepage\&quot;: {     \&quot;mode\&quot;: \&quot;always/madvise/never\&quot; // always为启用透明大页，never为关闭透明大页，madvice交给系统选择。    } }
-        :type configs: object
+        :param configs: 
+        :type configs: :class:`huaweicloudsdkmodelarts.v1.NodeconfigSpecConfigs`
         """
         
         
@@ -42,10 +42,8 @@ class NodeconfigSpec:
     def configs(self):
         r"""Gets the configs of this NodeconfigSpec.
 
-        **参数解释**： 节点自定义配置；当前支持节点绑核、是否启用缓存清理、是否启用透明大页。 \"configs\": {    \"cpu_manager\": {     \"mode\": \"static/none\" //static为启用绑核, none为不启用绑核    },    \"drop_cache\": {     \"mode\": \"enable/disable\" // enable启用缓存清理    },    \"transparent_hugepage\": {     \"mode\": \"always/madvise/never\" // always为启用透明大页，never为关闭透明大页，madvice交给系统选择。    } }
-
         :return: The configs of this NodeconfigSpec.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.NodeconfigSpecConfigs`
         """
         return self._configs
 
@@ -53,10 +51,8 @@ class NodeconfigSpec:
     def configs(self, configs):
         r"""Sets the configs of this NodeconfigSpec.
 
-        **参数解释**： 节点自定义配置；当前支持节点绑核、是否启用缓存清理、是否启用透明大页。 \"configs\": {    \"cpu_manager\": {     \"mode\": \"static/none\" //static为启用绑核, none为不启用绑核    },    \"drop_cache\": {     \"mode\": \"enable/disable\" // enable启用缓存清理    },    \"transparent_hugepage\": {     \"mode\": \"always/madvise/never\" // always为启用透明大页，never为关闭透明大页，madvice交给系统选择。    } }
-
         :param configs: The configs of this NodeconfigSpec.
-        :type configs: object
+        :type configs: :class:`huaweicloudsdkmodelarts.v1.NodeconfigSpecConfigs`
         """
         self._configs = configs
 

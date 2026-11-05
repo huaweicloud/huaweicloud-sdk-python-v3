@@ -15,34 +15,41 @@ class NodeconfigStatus:
     sensitive_list = []
 
     openapi_types = {
-        'phase': 'str'
+        'phase': 'str',
+        'configs_status': 'NodeconfigStatusConfigsStatus'
     }
 
     attribute_map = {
-        'phase': 'phase'
+        'phase': 'phase',
+        'configs_status': 'configsStatus'
     }
 
-    def __init__(self, phase=None):
+    def __init__(self, phase=None, configs_status=None):
         r"""NodeconfigStatus
 
         The model defined in huaweicloud sdk
 
-        :param phase: **参数解释**： 插件实例的状态。 **取值范围**： 可选值如下： - Pending：安装中，表示插件正在安装中。 - Running：运行中，表示插件全部实例状态都在运行中，插件正常使用。 - Updating：升级中，表示插件正在更新中。 - Abnormal：不可用，表示插件状态异常，插件不可使用。可单击状态查看失败原因。 - Deleting：删除中，表示插件正在删除中。
+        :param phase: **参数解释**： 节点配置的执行状态。 **约束限制**：不涉及。 **取值范围**： 可选值如下： - Pending：安装中，表示插件正在安装中。 - Running：运行中，表示插件全部实例状态都在运行中，插件正常使用。 - Updating：升级中，表示插件正在更新中。 - Abnormal：不可用，表示插件状态异常，插件不可使用。可单击状态查看失败原因。 - Deleting：删除中，表示插件正在删除中。 **默认取值**：不涉及。
         :type phase: str
+        :param configs_status: 
+        :type configs_status: :class:`huaweicloudsdkmodelarts.v1.NodeconfigStatusConfigsStatus`
         """
         
         
 
         self._phase = None
+        self._configs_status = None
         self.discriminator = None
 
         self.phase = phase
+        if configs_status is not None:
+            self.configs_status = configs_status
 
     @property
     def phase(self):
         r"""Gets the phase of this NodeconfigStatus.
 
-        **参数解释**： 插件实例的状态。 **取值范围**： 可选值如下： - Pending：安装中，表示插件正在安装中。 - Running：运行中，表示插件全部实例状态都在运行中，插件正常使用。 - Updating：升级中，表示插件正在更新中。 - Abnormal：不可用，表示插件状态异常，插件不可使用。可单击状态查看失败原因。 - Deleting：删除中，表示插件正在删除中。
+        **参数解释**： 节点配置的执行状态。 **约束限制**：不涉及。 **取值范围**： 可选值如下： - Pending：安装中，表示插件正在安装中。 - Running：运行中，表示插件全部实例状态都在运行中，插件正常使用。 - Updating：升级中，表示插件正在更新中。 - Abnormal：不可用，表示插件状态异常，插件不可使用。可单击状态查看失败原因。 - Deleting：删除中，表示插件正在删除中。 **默认取值**：不涉及。
 
         :return: The phase of this NodeconfigStatus.
         :rtype: str
@@ -53,12 +60,30 @@ class NodeconfigStatus:
     def phase(self, phase):
         r"""Sets the phase of this NodeconfigStatus.
 
-        **参数解释**： 插件实例的状态。 **取值范围**： 可选值如下： - Pending：安装中，表示插件正在安装中。 - Running：运行中，表示插件全部实例状态都在运行中，插件正常使用。 - Updating：升级中，表示插件正在更新中。 - Abnormal：不可用，表示插件状态异常，插件不可使用。可单击状态查看失败原因。 - Deleting：删除中，表示插件正在删除中。
+        **参数解释**： 节点配置的执行状态。 **约束限制**：不涉及。 **取值范围**： 可选值如下： - Pending：安装中，表示插件正在安装中。 - Running：运行中，表示插件全部实例状态都在运行中，插件正常使用。 - Updating：升级中，表示插件正在更新中。 - Abnormal：不可用，表示插件状态异常，插件不可使用。可单击状态查看失败原因。 - Deleting：删除中，表示插件正在删除中。 **默认取值**：不涉及。
 
         :param phase: The phase of this NodeconfigStatus.
         :type phase: str
         """
         self._phase = phase
+
+    @property
+    def configs_status(self):
+        r"""Gets the configs_status of this NodeconfigStatus.
+
+        :return: The configs_status of this NodeconfigStatus.
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.NodeconfigStatusConfigsStatus`
+        """
+        return self._configs_status
+
+    @configs_status.setter
+    def configs_status(self, configs_status):
+        r"""Sets the configs_status of this NodeconfigStatus.
+
+        :param configs_status: The configs_status of this NodeconfigStatus.
+        :type configs_status: :class:`huaweicloudsdkmodelarts.v1.NodeconfigStatusConfigsStatus`
+        """
+        self._configs_status = configs_status
 
     def to_dict(self):
         result = {}

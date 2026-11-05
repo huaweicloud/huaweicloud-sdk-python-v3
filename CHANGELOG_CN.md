@@ -1,3 +1,465 @@
+# 3.1.221 2026-11-05
+
+### HuaweiCloud SDK AgentArts
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `ListCustomModelProvidersByTags`
+    - `ShowCustomModelProviderNumsByTags`
+    - `BatchCreateCustomModelProviderTags`
+    - `BatchDeleteCustomModelProviderTags`
+    - `ListCustomModelProviderTags`
+    - `ListAllCustomModelProviderTags`
+    - `UpdateModelProxy`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowOpsAgentMetricTopN**
+    - 请求参数变更
+      - `+ group_by`
+      - `+ top_number`
+  - **ShowOpsAgentMetricTrend**
+    - 请求参数变更
+      - `+ top_number`
+
+### HuaweiCloud SDK AIDataLake
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowSparkSql**
+    - 响应参数变更
+      - `+ shared_spark_ui`
+      - `- spark_ui`
+  - **ListSparkJobs**
+    - 响应参数变更
+      - `+ jobs.metric_statistics.total_cu_seconds`
+      - `- jobs.metric_statistics.retry_attempt`
+      - `- jobs.metric_statistics.metric_time`
+      - `- jobs.metric_statistics.total_cu_hours`
+  - **ShowSparkJob**
+    - 响应参数变更
+      - `+ shared_spark_ui`
+      - `- spark_ui`
+      - `+ metric_statistics.total_cu_seconds`
+      - `- metric_statistics.retry_attempt`
+      - `- metric_statistics.metric_time`
+      - `- metric_statistics.total_cu_hours`
+
+### HuaweiCloud SDK CodeArtsDeploy
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持接口`ShowTaskLogs`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CSS
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **DownloadCert**
+    - 响应参数变更
+      - `- file`
+  - **ShowIkThesaurus**
+    - 响应参数变更
+      - `* updateTime: string -> int32`
+  - **ListCerts**
+    - 响应参数变更
+      - `* certsRecords: object<CertsRecordsDatastore> -> list<CertsRecordsDatastore>`
+  - **ListLogsJob**
+    - 响应参数变更
+      - `* clusterLogRecord.createAt: string -> int32`
+  - **ListConfs**
+    - 响应参数变更
+      - `- name`
+      - `- sensitiveWordsShielding`
+      - `- updateAt`
+      - `- confContent`
+      - `- status`
+      - `- setting`
+      - `- desc`
+      - `+ confs.setting.batchSize`
+      - `+ confs.setting.batchDelayMs`
+      - `+ confs.setting.queueType`
+      - `+ confs.setting.queueCheckPointWrites`
+      - `+ confs.setting.queueMaxBytesMb`
+      - `- confs.setting.batch_size`
+      - `- confs.setting.batch_delay_ms`
+      - `- confs.setting.queue_type`
+      - `- confs.setting.queue_check_point_writes`
+      - `- confs.setting.queue_max_bytes_mb`
+      - `* confs.setting: object<setting> -> object<ListConfsRespConfsSetting>`
+      - `* confs: list<confs> -> list<ListConfsRespConfs>`
+  - **UpdateYmls**
+    - 请求参数变更
+      - `+ edit.modify.system.config`
+  - **ShowElbDetail**
+    - 响应参数变更
+      - `+ listener.default_tls_container_ref`
+      - `+ listener.client_ca_tls_container_ref`
+  - **UpdateEsListener**
+    - 响应参数变更
+      - `* listener.protocol_port: string -> int32`
+  - **ListAiOps**
+    - 响应参数变更
+      - `* aiops_list.create_time: date -> int32`
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`SearchFactoryJobBaselineInfo`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK ModelArts
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **GetHyperinstanceGroup**
+    - 响应参数变更
+      - `* npu_count_limit: string -> int32`
+      - `* npu_count: string -> int32`
+  - **ShowPoolNodeConfig**
+    - 响应参数变更
+      - `+ spec.configs.image_warm_up`
+      - `+ spec.configs.cpu_manager`
+      - `+ spec.configs.drop_cache`
+      - `+ spec.configs.transparent_hugepage`
+      - `+ status.configsStatus`
+  - **PatchNodeConfig**
+    - 请求参数变更
+      - `* spec.configs: string -> object`
+    - 响应参数变更
+      - `+ spec.configs.image_warm_up`
+      - `+ spec.configs.cpu_manager`
+      - `+ spec.configs.drop_cache`
+      - `+ spec.configs.transparent_hugepage`
+      - `+ status.configsStatus`
+  - **AcceptScheduledEvent**
+    - 请求参数变更
+      - `- workspaceId`
+      - `+ instanceId`
+      - `* redeployConfig.autoFlow: string -> boolean`
+    - 响应参数变更
+      - `+ flavorSupportRedeploy`
+      - `+ autoRecoveryCheckTime`
+      - `+ executeOptions`
+      - `+ isHyperNode`
+      - `+ nodes`
+      - `+ state: enum value [part-completed]`
+  - **ListScheduledEvents**
+    - 请求参数变更
+      - `* id: string -> list<string>`
+    - 响应参数变更
+      - `+ flavorSupportRedeploy`
+      - `+ autoRecoveryCheckTime`
+      - `+ executeOptions`
+      - `+ isHyperNode`
+      - `+ nodes`
+      - `+ events.isHyperNode`
+      - `+ events.executeOptions`
+      - `+ events.autoRecoveryCheckTime`
+      - `+ events.nodes`
+      - `+ events.flavorSupportRedeploy`
+      - `+ events.state: enum value [part-completed]`
+  - **ShowDevServer**
+    - 响应参数变更
+      - `- endpoints_response`
+      - `+ endpoints.extensions`
+  - **UpdateDevServer**
+    - 响应参数变更
+      - `- endpoints_response`
+      - `+ endpoints.extensions`
+  - **DeleteDevServer**
+    - 响应参数变更
+      - `- endpoints_response`
+      - `+ endpoints.extensions`
+  - **StartDevServer**
+    - 响应参数变更
+      - `- endpoints_response`
+      - `+ endpoints.extensions`
+  - **StopDevServer**
+    - 响应参数变更
+      - `- endpoints_response`
+      - `+ endpoints.extensions`
+  - **ReinstallDevServerOS**
+    - 响应参数变更
+      - `- endpoints_response`
+      - `+ endpoints.extensions`
+  - **ChangeDevServerOS**
+    - 响应参数变更
+      - `- endpoints_response`
+      - `+ endpoints.extensions`
+  - **RebootDevServer**
+    - 响应参数变更
+      - `- endpoints_response`
+      - `+ endpoints.extensions`
+  - **GetDevServerJob**
+    - 响应参数变更
+      - `* tasks.create_at: string -> int64`
+      - `* tasks.update_at: string -> int64`
+  - **CreateDevServerJob**
+    - 响应参数变更
+      - `* tasks.create_at: string -> int64`
+      - `* tasks.update_at: string -> int64`
+  - **CreateHyperinstanceGroup**
+    - 响应参数变更
+      - `* npu_count_limit: string -> int32`
+      - `* npu_count: string -> int32`
+  - **ListHyperinstanceGroup**
+    - 请求参数变更
+      - `+ limit`
+      - `+ offset`
+      - `+ sort_key`
+      - `+ sort_dir`
+    - 响应参数变更
+      - `* data.npu_count_limit: string -> int32`
+      - `* data.npu_count: string -> int32`
+  - **ShowPool**
+    - 响应参数变更
+      - `+ metadata.annotations.os.modelarts.pool/scheduler.queue.strategy.config`
+  - **DeletePool**
+    - 响应参数变更
+      - `+ metadata.annotations.os.modelarts.pool/scheduler.queue.strategy.config`
+  - **PatchPool**
+    - 请求参数变更
+      - `+ metadata.annotations.os.modelarts.pool/scheduler.queue.strategy`
+      - `+ metadata.annotations.os.modelarts.pool/scheduler.queue.strategy.config`
+    - 响应参数变更
+      - `+ metadata.annotations.os.modelarts.pool/scheduler.queue.strategy.config`
+  - **ListDevServers**
+    - 响应参数变更
+      - `- endpoints_response`
+      - `- data.endpoints_response`
+      - `+ data.endpoints.extensions`
+  - **CreateDevServer**
+    - 响应参数变更
+      - `- endpoints_response`
+      - `+ endpoints.extensions`
+  - **SyncDevServers**
+    - 响应参数变更
+      - `- endpoints_response`
+      - `- data.endpoints_response`
+      - `+ data.endpoints.extensions`
+  - **ChangeHyperinstanceOS**
+    - 响应参数变更
+      - `- endpoints_response`
+      - `- servers.endpoints_response`
+      - `+ servers.endpoints.extensions`
+  - **GetHyperinstance**
+    - 响应参数变更
+      - `- endpoints_response`
+      - `- servers.endpoints_response`
+      - `+ servers.endpoints.extensions`
+  - **DeleteHyperinstance**
+    - 响应参数变更
+      - `- endpoints_response`
+      - `- servers.endpoints_response`
+      - `+ servers.endpoints.extensions`
+  - **StartHyperinstance**
+    - 响应参数变更
+      - `- endpoints_response`
+      - `- servers.endpoints_response`
+      - `+ servers.endpoints.extensions`
+  - **StopHyperinstance**
+    - 响应参数变更
+      - `- endpoints_response`
+      - `- servers.endpoints_response`
+      - `+ servers.endpoints.extensions`
+  - **ListAllDevServers**
+    - 响应参数变更
+      - `- endpoints_response`
+      - `- data.endpoints_response`
+      - `+ data.endpoints.extensions`
+  - **ScaleUpHyperinstance**
+    - 响应参数变更
+      - `- endpoints_response`
+      - `- servers.endpoints_response`
+      - `+ servers.endpoints.extensions`
+  - **ScaleDownHyperinstance**
+    - 响应参数变更
+      - `- endpoints_response`
+      - `- servers.endpoints_response`
+      - `+ servers.endpoints.extensions`
+  - **BatchDevServersAction**
+    - 响应参数变更
+      - `- endpoints_response`
+      - `- data.endpoints_response`
+      - `+ data.endpoints.extensions`
+  - **ListHyperinstanceServers**
+    - 请求参数变更
+      - `+ limit`
+      - `+ offset`
+      - `+ sort_key`
+      - `+ sort_dir`
+    - 响应参数变更
+      - `- endpoints_response`
+      - `- data.endpoints_response`
+      - `+ data.endpoints.extensions`
+  - **StartNotebook**
+    - 响应参数变更
+      - `+ endpoints.extensions`
+  - **StopNotebook**
+    - 响应参数变更
+      - `+ endpoints.extensions`
+  - **ListPools**
+    - 响应参数变更
+      - `+ items.metadata.annotations.os.modelarts.pool/scheduler.queue.strategy.config`
+  - **CreatePool**
+    - 请求参数变更
+      - `+ metadata.annotations.os.modelarts.pool/scheduler.queue.strategy`
+      - `+ metadata.annotations.os.modelarts.pool/scheduler.queue.strategy.config`
+    - 响应参数变更
+      - `+ metadata.annotations.os.modelarts.pool/scheduler.queue.strategy.config`
+  - **ShowNetwork**
+    - 响应参数变更
+      - `+ metadata.deletionTimestamp`
+  - **DeleteNetwork**
+    - 响应参数变更
+      - `+ metadata.deletionTimestamp`
+  - **PatchNetwork**
+    - 响应参数变更
+      - `+ metadata.deletionTimestamp`
+  - **ListHyperinstances**
+    - 响应参数变更
+      - `- endpoints_response`
+      - `- data.servers.endpoints_response`
+      - `+ data.servers.endpoints.extensions`
+  - **ListAllHyperinstances**
+    - 响应参数变更
+      - `- endpoints_response`
+      - `- data.servers.endpoints_response`
+      - `+ data.servers.endpoints.extensions`
+  - **ListNotebooks**
+    - 响应参数变更
+      - `+ data.endpoints.extensions`
+  - **CreateNotebook**
+    - 响应参数变更
+      - `+ endpoints.extensions`
+  - **ListAllNotebooks**
+    - 响应参数变更
+      - `+ data.endpoints.extensions`
+  - **ShowNotebook**
+    - 响应参数变更
+      - `+ endpoints.extensions`
+  - **DeleteNotebook**
+    - 响应参数变更
+      - `+ endpoints.extensions`
+  - **UpdateNotebook**
+    - 响应参数变更
+      - `+ endpoints.extensions`
+  - **CreateNetwork**
+    - 响应参数变更
+      - `+ metadata.deletionTimestamp`
+  - **ListNetworks**
+    - 响应参数变更
+      - `+ items.metadata.deletionTimestamp`
+
+### HuaweiCloud SDK RDS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持以下接口：
+    - `CreateSupabaseApplication`
+    - `ShowSupabaseApplication`
+    - `DeleteSupabaseApplication`
+    - `ListSupabaseApplicationApiKeys`
+    - `ShowSupabaseApplicationApiKeyValue`
+    - `ResetSupabaseApplicationApiKey`
+    - `SwitchSupabaseApplicationSsl`
+    - `SwitchSupabaseApplicationEipBind`
+    - `ModifySupabaseApplicationPassword`
+    - `ShowSupabaseApplicationAuthConfig`
+    - `ModifySupabaseApplicationAuthConfig`
+    - `ModifySupabaseApplicationStorage`
+    - `ListSupabaseApplicationFlavors`
+    - `ListAiApplications`
+    - `StartSupabaseApplication`
+    - `StopSupabaseApplication`
+    - `RestartSupabaseApplication`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK VPC
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateClouddcnSubnet**
+    - 请求参数变更
+      - `+ clouddcn_subnet.dns_nameservers`
+  - **ListVirsubnets**
+    - 响应参数变更
+      - `+ virsubnets.enable_network_address_usage_metrics`
+      - `+ virsubnets.available_ip_address_count`
+  - **ShowVirsubnet**
+    - 响应参数变更
+      - `+ virsubnet.enable_network_address_usage_metrics`
+      - `+ virsubnet.available_ip_address_count`
+
+### HuaweiCloud SDK WAF
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `ListAtlases`
+    - `CreateAtlas`
+    - `ShowAtlas`
+    - `UpdateAtlas`
+    - `DeleteAtlas`
+    - `BatchDeleteAtlases`
+    - `ListImages`
+    - `AddImages`
+    - `RemoveImages`
+    - `CreatePresignedUploadUrl`
+    - `ListCustomRegexSet`
+    - `CreateCustomRegexSet`
+    - `BatchDeleteCustomRegexSet`
+    - `ShowCustomRegexSet`
+    - `UpdateCustomRegexSet`
+    - `DeleteCustomRegexSet`
+    - `ListCustomRegex`
+    - `CreateCustomRegex`
+    - `UpdateCustomRegex`
+    - `DeleteCustomRegex`
+    - `CreateRegexTest`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
 # 3.1.220 2026-10-29
 
 ### HuaweiCloud SDK AgentArts

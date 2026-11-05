@@ -49,7 +49,6 @@ from huaweicloudsdkcss.v1.model.cluster_list_tags import ClusterListTags
 from huaweicloudsdkcss.v1.model.cluster_log_record import ClusterLogRecord
 from huaweicloudsdkcss.v1.model.cluster_volume_rsp import ClusterVolumeRsp
 from huaweicloudsdkcss.v1.model.config_list_rsp import ConfigListRsp
-from huaweicloudsdkcss.v1.model.confs import Confs
 from huaweicloudsdkcss.v1.model.connections import Connections
 from huaweicloudsdkcss.v1.model.create_agency_request import CreateAgencyRequest
 from huaweicloudsdkcss.v1.model.create_agency_response import CreateAgencyResponse
@@ -141,6 +140,8 @@ from huaweicloudsdkcss.v1.model.list_clusters_details_response import ListCluste
 from huaweicloudsdkcss.v1.model.list_clusters_tags_request import ListClustersTagsRequest
 from huaweicloudsdkcss.v1.model.list_clusters_tags_response import ListClustersTagsResponse
 from huaweicloudsdkcss.v1.model.list_confs_request import ListConfsRequest
+from huaweicloudsdkcss.v1.model.list_confs_resp_confs import ListConfsRespConfs
+from huaweicloudsdkcss.v1.model.list_confs_resp_confs_setting import ListConfsRespConfsSetting
 from huaweicloudsdkcss.v1.model.list_confs_response import ListConfsResponse
 from huaweicloudsdkcss.v1.model.list_disk_type_request import ListDiskTypeRequest
 from huaweicloudsdkcss.v1.model.list_disk_type_response import ListDiskTypeResponse

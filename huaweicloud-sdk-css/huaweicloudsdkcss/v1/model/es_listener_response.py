@@ -18,7 +18,7 @@ class EsListenerResponse:
         'protocol': 'str',
         'id': 'str',
         'name': 'str',
-        'protocol_port': 'str',
+        'protocol_port': 'int',
         'default_tls_container_ref': 'str',
         'client_ca_tls_container_ref': 'str',
         'ipgroup': 'EsIpgroupResource'
@@ -46,7 +46,7 @@ class EsListenerResponse:
         :param name: 监听器的名称。
         :type name: str
         :param protocol_port: 监听器的前端监听端口。
-        :type protocol_port: str
+        :type protocol_port: int
         :param default_tls_container_ref: **参数解释**： 监听器使用的服务器证书ID。 **取值范围**： 不涉及。
         :type default_tls_container_ref: str
         :param client_ca_tls_container_ref: **参数解释**： 监听器使用的CA证书ID。 **取值范围**： 不涉及。
@@ -154,7 +154,7 @@ class EsListenerResponse:
         监听器的前端监听端口。
 
         :return: The protocol_port of this EsListenerResponse.
-        :rtype: str
+        :rtype: int
         """
         return self._protocol_port
 
@@ -165,7 +165,7 @@ class EsListenerResponse:
         监听器的前端监听端口。
 
         :param protocol_port: The protocol_port of this EsListenerResponse.
-        :type protocol_port: str
+        :type protocol_port: int
         """
         self._protocol_port = protocol_port
 

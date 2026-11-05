@@ -1,10 +1,10 @@
 # coding: utf-8
 
-from huaweicloudsdkcore.sdk_response import SdkResponse
+from huaweicloudsdkcore.sdk_stream_response import SdkStreamResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class DownloadCertResponse(SdkResponse):
+class DownloadCertResponse(SdkStreamResponse):
 
     """
     Attributes:
@@ -16,51 +16,20 @@ class DownloadCertResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'file': 'str'
     }
 
     attribute_map = {
-        'file': 'file'
     }
 
-    def __init__(self, file=None):
+    def __init__(self, response):
         r"""DownloadCertResponse
 
         The model defined in huaweicloud sdk
 
-        :param file: 文件流
-        :type file: str
         """
         
-        super().__init__()
-
-        self._file = None
+        super().__init__(response)
         self.discriminator = None
-
-        if file is not None:
-            self.file = file
-
-    @property
-    def file(self):
-        r"""Gets the file of this DownloadCertResponse.
-
-        文件流
-
-        :return: The file of this DownloadCertResponse.
-        :rtype: str
-        """
-        return self._file
-
-    @file.setter
-    def file(self, file):
-        r"""Sets the file of this DownloadCertResponse.
-
-        文件流
-
-        :param file: The file of this DownloadCertResponse.
-        :type file: str
-        """
-        self._file = file
 
     def to_dict(self):
         import warnings

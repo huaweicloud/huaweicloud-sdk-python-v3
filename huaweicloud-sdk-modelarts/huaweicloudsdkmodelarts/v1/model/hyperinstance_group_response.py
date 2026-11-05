@@ -17,8 +17,8 @@ class HyperinstanceGroupResponse:
     openapi_types = {
         'id': 'str',
         'name': 'str',
-        'npu_count_limit': 'str',
-        'npu_count': 'str',
+        'npu_count_limit': 'int',
+        'npu_count': 'int',
         'hyperinstance_cluster_id': 'str',
         'created_at': 'int',
         'updated_at': 'int'
@@ -44,9 +44,9 @@ class HyperinstanceGroupResponse:
         :param name: **参数解释**：hyperinstance-group名称。 **默认取值**：不涉及。
         :type name: str
         :param npu_count_limit: **参数解释**：npu数量限制。 **默认取值**：不涉及。
-        :type npu_count_limit: str
+        :type npu_count_limit: int
         :param npu_count: **参数解释**：npu数量。 **默认取值**：不涉及。
-        :type npu_count: str
+        :type npu_count: int
         :param hyperinstance_cluster_id: **参数解释**：超节点集群ID。 **默认取值**：不涉及。
         :type hyperinstance_cluster_id: str
         :param created_at: **参数解释**：创建时间。 **默认取值**：不涉及。
@@ -132,7 +132,7 @@ class HyperinstanceGroupResponse:
         **参数解释**：npu数量限制。 **默认取值**：不涉及。
 
         :return: The npu_count_limit of this HyperinstanceGroupResponse.
-        :rtype: str
+        :rtype: int
         """
         return self._npu_count_limit
 
@@ -143,7 +143,7 @@ class HyperinstanceGroupResponse:
         **参数解释**：npu数量限制。 **默认取值**：不涉及。
 
         :param npu_count_limit: The npu_count_limit of this HyperinstanceGroupResponse.
-        :type npu_count_limit: str
+        :type npu_count_limit: int
         """
         self._npu_count_limit = npu_count_limit
 
@@ -154,7 +154,7 @@ class HyperinstanceGroupResponse:
         **参数解释**：npu数量。 **默认取值**：不涉及。
 
         :return: The npu_count of this HyperinstanceGroupResponse.
-        :rtype: str
+        :rtype: int
         """
         return self._npu_count
 
@@ -165,7 +165,7 @@ class HyperinstanceGroupResponse:
         **参数解释**：npu数量。 **默认取值**：不涉及。
 
         :param npu_count: The npu_count of this HyperinstanceGroupResponse.
-        :type npu_count: str
+        :type npu_count: int
         """
         self._npu_count = npu_count
 

@@ -291,6 +291,7 @@ from huaweicloudsdkaidatalake.v2.model.serve_deployment import ServeDeployment
 from huaweicloudsdkaidatalake.v2.model.serve_ray_actor_options import ServeRayActorOptions
 from huaweicloudsdkaidatalake.v2.model.serve_runtime_env import ServeRuntimeEnv
 from huaweicloudsdkaidatalake.v2.model.session_statement_record import SessionStatementRecord
+from huaweicloudsdkaidatalake.v2.model.shared_spark_ui_info import SharedSparkUiInfo
 from huaweicloudsdkaidatalake.v2.model.show_aura_dataframe_job_request import ShowAuraDataframeJobRequest
 from huaweicloudsdkaidatalake.v2.model.show_aura_dataframe_job_response import ShowAuraDataframeJobResponse
 from huaweicloudsdkaidatalake.v2.model.show_aura_sql_session_request import ShowAuraSqlSessionRequest
@@ -407,7 +408,6 @@ from huaweicloudsdkaidatalake.v2.model.spark_sql_schema_item import SparkSqlSche
 from huaweicloudsdkaidatalake.v2.model.spark_sql_script_parameter import SparkSqlScriptParameter
 from huaweicloudsdkaidatalake.v2.model.spark_sql_scripting_result_response import SparkSqlScriptingResultResponse
 from huaweicloudsdkaidatalake.v2.model.spark_sql_timeout import SparkSqlTimeout
-from huaweicloudsdkaidatalake.v2.model.spark_ui_shared_info import SparkUiSharedInfo
 from huaweicloudsdkaidatalake.v2.model.spec_code import SpecCode
 from huaweicloudsdkaidatalake.v2.model.sql_restart_cluster import SqlRestartCluster
 from huaweicloudsdkaidatalake.v2.model.sql_session_id import SqlSessionId

@@ -21,7 +21,7 @@ class AiOps:
         'name': 'str',
         'desc': 'str',
         'status': 'int',
-        'create_time': 'date',
+        'create_time': 'int',
         'summary': 'SummaryInfo',
         'task_risks': 'list[AiOpsRiskObject]'
     }
@@ -56,7 +56,7 @@ class AiOps:
         :param status: **参数解释**： 任务执行状态。 **取值范围**： - 150：未开启。 - 200：已开启。 - 300：已发送。
         :type status: int
         :param create_time: **参数解释**： 集群风险检测任务创建时间。 **取值范围**： 格式：Unix时间戳格式。
-        :type create_time: date
+        :type create_time: int
         :param summary: 
         :type summary: :class:`huaweicloudsdkcss.v1.SummaryInfo`
         :param task_risks: **参数解释**： 集群风险项详情。 **取值范围**： 不涉及
@@ -234,7 +234,7 @@ class AiOps:
         **参数解释**： 集群风险检测任务创建时间。 **取值范围**： 格式：Unix时间戳格式。
 
         :return: The create_time of this AiOps.
-        :rtype: date
+        :rtype: int
         """
         return self._create_time
 
@@ -245,7 +245,7 @@ class AiOps:
         **参数解释**： 集群风险检测任务创建时间。 **取值范围**： 格式：Unix时间戳格式。
 
         :param create_time: The create_time of this AiOps.
-        :type create_time: date
+        :type create_time: int
         """
         self._create_time = create_time
 

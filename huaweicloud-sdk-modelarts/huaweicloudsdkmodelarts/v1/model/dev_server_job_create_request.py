@@ -39,7 +39,7 @@ class DevServerJobCreateRequest:
 
         :param name: **参数解释**：任务名称。 **约束限制**：^[-_.a-zA-Z0-9]{1,64}$。 **取值范围**：不涉及。 **默认取值**：不涉及。
         :type name: str
-        :param description: **参数解释**：任务描述。 **约束限制**：^[-_.a-zA-Z0-9]{1,64}$。 **取值范围**：不涉及。 **默认取值**：不涉及。
+        :param description: **参数解释**：任务描述。 **约束限制**：长度限制为512字符，不可包含特殊字符&amp;&lt;&gt;\&quot;&#39;/。 **取值范围**：不涉及。 **默认取值**：不涉及。
         :type description: str
         :param server_ids: **参数解释**：DevServer实例id列表。 **取值范围**：不涉及。
         :type server_ids: list[str]
@@ -96,7 +96,7 @@ class DevServerJobCreateRequest:
     def description(self):
         r"""Gets the description of this DevServerJobCreateRequest.
 
-        **参数解释**：任务描述。 **约束限制**：^[-_.a-zA-Z0-9]{1,64}$。 **取值范围**：不涉及。 **默认取值**：不涉及。
+        **参数解释**：任务描述。 **约束限制**：长度限制为512字符，不可包含特殊字符&<>\"'/。 **取值范围**：不涉及。 **默认取值**：不涉及。
 
         :return: The description of this DevServerJobCreateRequest.
         :rtype: str
@@ -107,7 +107,7 @@ class DevServerJobCreateRequest:
     def description(self, description):
         r"""Sets the description of this DevServerJobCreateRequest.
 
-        **参数解释**：任务描述。 **约束限制**：^[-_.a-zA-Z0-9]{1,64}$。 **取值范围**：不涉及。 **默认取值**：不涉及。
+        **参数解释**：任务描述。 **约束限制**：长度限制为512字符，不可包含特殊字符&<>\"'/。 **取值范围**：不涉及。 **默认取值**：不涉及。
 
         :param description: The description of this DevServerJobCreateRequest.
         :type description: str

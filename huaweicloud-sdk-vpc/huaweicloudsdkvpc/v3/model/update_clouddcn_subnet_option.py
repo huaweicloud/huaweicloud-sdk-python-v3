@@ -16,35 +16,42 @@ class UpdateClouddcnSubnetOption:
 
     openapi_types = {
         'name': 'str',
-        'description': 'str'
+        'description': 'str',
+        'dns_nameservers': 'list[str]'
     }
 
     attribute_map = {
         'name': 'name',
-        'description': 'description'
+        'description': 'description',
+        'dns_nameservers': 'dns_nameservers'
     }
 
-    def __init__(self, name=None, description=None):
+    def __init__(self, name=None, description=None, dns_nameservers=None):
         r"""UpdateClouddcnSubnetOption
 
         The model defined in huaweicloud sdk
 
         :param name: 功能说明：子网名称 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
         :type name: str
-        :param description: 功能说明：子网描述 取值范围：0-255个字符，不能包含“&lt;”和“&gt;”。
+        :param description: 功能说明：子网描述 取值范围：0-255个字符，不能包含\&quot;&lt;\&quot;和\&quot;&gt;\&quot;。
         :type description: str
+        :param dns_nameservers: 功能说明：子网关联的DNS服务器信息。
+        :type dns_nameservers: list[str]
         """
         
         
 
         self._name = None
         self._description = None
+        self._dns_nameservers = None
         self.discriminator = None
 
         if name is not None:
             self.name = name
         if description is not None:
             self.description = description
+        if dns_nameservers is not None:
+            self.dns_nameservers = dns_nameservers
 
     @property
     def name(self):
@@ -72,7 +79,7 @@ class UpdateClouddcnSubnetOption:
     def description(self):
         r"""Gets the description of this UpdateClouddcnSubnetOption.
 
-        功能说明：子网描述 取值范围：0-255个字符，不能包含“<”和“>”。
+        功能说明：子网描述 取值范围：0-255个字符，不能包含\"<\"和\">\"。
 
         :return: The description of this UpdateClouddcnSubnetOption.
         :rtype: str
@@ -83,12 +90,34 @@ class UpdateClouddcnSubnetOption:
     def description(self, description):
         r"""Sets the description of this UpdateClouddcnSubnetOption.
 
-        功能说明：子网描述 取值范围：0-255个字符，不能包含“<”和“>”。
+        功能说明：子网描述 取值范围：0-255个字符，不能包含\"<\"和\">\"。
 
         :param description: The description of this UpdateClouddcnSubnetOption.
         :type description: str
         """
         self._description = description
+
+    @property
+    def dns_nameservers(self):
+        r"""Gets the dns_nameservers of this UpdateClouddcnSubnetOption.
+
+        功能说明：子网关联的DNS服务器信息。
+
+        :return: The dns_nameservers of this UpdateClouddcnSubnetOption.
+        :rtype: list[str]
+        """
+        return self._dns_nameservers
+
+    @dns_nameservers.setter
+    def dns_nameservers(self, dns_nameservers):
+        r"""Sets the dns_nameservers of this UpdateClouddcnSubnetOption.
+
+        功能说明：子网关联的DNS服务器信息。
+
+        :param dns_nameservers: The dns_nameservers of this UpdateClouddcnSubnetOption.
+        :type dns_nameservers: list[str]
+        """
+        self._dns_nameservers = dns_nameservers
 
     def to_dict(self):
         result = {}

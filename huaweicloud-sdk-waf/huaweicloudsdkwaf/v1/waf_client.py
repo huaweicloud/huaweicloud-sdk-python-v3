@@ -10135,6 +10135,676 @@ class WafClient(Client):
 
         return http_info
 
+    def add_images(self, request):
+        r"""加入图库
+
+        加入图库（批量 + 拉取原图真实校验大小/格式 + 置status&#x3D;0 + 逐个返回结果）
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for AddImages
+        :type request: :class:`huaweicloudsdkwaf.v1.AddImagesRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.AddImagesResponse`
+        """
+        http_info = self._add_images_http_info(request)
+        return self._call_api(**http_info)
+
+    def add_images_invoker(self, request):
+        http_info = self._add_images_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_images_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/aiguard/atlases/{atlas_id}/images",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddImagesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'atlas_id' in local_var_params:
+            path_params['atlas_id'] = local_var_params['atlas_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_delete_atlases(self, request):
+        r"""批量删除图库
+
+        批量删除图库
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchDeleteAtlases
+        :type request: :class:`huaweicloudsdkwaf.v1.BatchDeleteAtlasesRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.BatchDeleteAtlasesResponse`
+        """
+        http_info = self._batch_delete_atlases_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_atlases_invoker(self, request):
+        http_info = self._batch_delete_atlases_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_atlases_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/aiguard/atlases/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteAtlasesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_atlas(self, request):
+        r"""创建图库
+
+        创建图库（0&#x3D;白库/豁免/可信样本，1&#x3D;黑库/敏感/拦截样本）
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateAtlas
+        :type request: :class:`huaweicloudsdkwaf.v1.CreateAtlasRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.CreateAtlasResponse`
+        """
+        http_info = self._create_atlas_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_atlas_invoker(self, request):
+        http_info = self._create_atlas_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_atlas_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/aiguard/atlases",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAtlasResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_presigned_upload_url(self, request):
+        r"""批量获取预签名上传地址
+
+        批量获取OBS PUT预签名上传地址（前端直传图片到OBS，后端不转发二进制；逐项校验、部分成功、保序返回）
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreatePresignedUploadUrl
+        :type request: :class:`huaweicloudsdkwaf.v1.CreatePresignedUploadUrlRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.CreatePresignedUploadUrlResponse`
+        """
+        http_info = self._create_presigned_upload_url_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_presigned_upload_url_invoker(self, request):
+        http_info = self._create_presigned_upload_url_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_presigned_upload_url_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/aiguard/atlases/{atlas_id}/images/presigned-upload-url",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePresignedUploadUrlResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'atlas_id' in local_var_params:
+            path_params['atlas_id'] = local_var_params['atlas_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_atlas(self, request):
+        r"""删除图库
+
+        删除图库
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteAtlas
+        :type request: :class:`huaweicloudsdkwaf.v1.DeleteAtlasRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.DeleteAtlasResponse`
+        """
+        http_info = self._delete_atlas_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_atlas_invoker(self, request):
+        http_info = self._delete_atlas_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_atlas_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/aiguard/atlases/{atlas_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAtlasResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'atlas_id' in local_var_params:
+            path_params['atlas_id'] = local_var_params['atlas_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_atlases(self, request):
+        r"""查询图库列表
+
+        查询图库列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListAtlases
+        :type request: :class:`huaweicloudsdkwaf.v1.ListAtlasesRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.ListAtlasesResponse`
+        """
+        http_info = self._list_atlases_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_atlases_invoker(self, request):
+        http_info = self._list_atlases_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_atlases_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/aiguard/atlases",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAtlasesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_images(self, request):
+        r"""查询图库图片列表
+
+        查询图库图片列表（按status返回缩略图/原图预签名 + status/message）
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListImages
+        :type request: :class:`huaweicloudsdkwaf.v1.ListImagesRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.ListImagesResponse`
+        """
+        http_info = self._list_images_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_images_invoker(self, request):
+        http_info = self._list_images_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_images_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/aiguard/atlases/{atlas_id}/images",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListImagesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'atlas_id' in local_var_params:
+            path_params['atlas_id'] = local_var_params['atlas_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def remove_images(self, request):
+        r"""移除图片
+
+        移除图片（批量软删）
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for RemoveImages
+        :type request: :class:`huaweicloudsdkwaf.v1.RemoveImagesRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.RemoveImagesResponse`
+        """
+        http_info = self._remove_images_http_info(request)
+        return self._call_api(**http_info)
+
+    def remove_images_invoker(self, request):
+        http_info = self._remove_images_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _remove_images_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/aiguard/atlases/{atlas_id}/images",
+            "request_type": request.__class__.__name__,
+            "response_type": "RemoveImagesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'atlas_id' in local_var_params:
+            path_params['atlas_id'] = local_var_params['atlas_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_atlas(self, request):
+        r"""查询图库详情
+
+        查询图库详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowAtlas
+        :type request: :class:`huaweicloudsdkwaf.v1.ShowAtlasRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.ShowAtlasResponse`
+        """
+        http_info = self._show_atlas_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_atlas_invoker(self, request):
+        http_info = self._show_atlas_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_atlas_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/aiguard/atlases/{atlas_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAtlasResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'atlas_id' in local_var_params:
+            path_params['atlas_id'] = local_var_params['atlas_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_atlas(self, request):
+        r"""更新图库
+
+        更新图库（不支持修改type，图库类型创建后不可变更）
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateAtlas
+        :type request: :class:`huaweicloudsdkwaf.v1.UpdateAtlasRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.UpdateAtlasResponse`
+        """
+        http_info = self._update_atlas_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_atlas_invoker(self, request):
+        http_info = self._update_atlas_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_atlas_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/aiguard/atlases/{atlas_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAtlasResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'atlas_id' in local_var_params:
+            path_params['atlas_id'] = local_var_params['atlas_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_delete_custom_answers(self, request):
         r"""批量删除自定义代答库
 
@@ -10961,6 +11631,741 @@ class WafClient(Client):
         path_params = {}
         if 'llm_id' in local_var_params:
             path_params['llmId'] = local_var_params['llm_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_delete_custom_regex_set(self, request):
+        r"""批量删除自定义正则库
+
+        批量删除自定义正则库
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchDeleteCustomRegexSet
+        :type request: :class:`huaweicloudsdkwaf.v1.BatchDeleteCustomRegexSetRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.BatchDeleteCustomRegexSetResponse`
+        """
+        http_info = self._batch_delete_custom_regex_set_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_custom_regex_set_invoker(self, request):
+        http_info = self._batch_delete_custom_regex_set_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_custom_regex_set_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/aiguard/custom-regex-sets/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteCustomRegexSetResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_custom_regex(self, request):
+        r"""添加正则
+
+        向指定正则库添加正则条目
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateCustomRegex
+        :type request: :class:`huaweicloudsdkwaf.v1.CreateCustomRegexRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.CreateCustomRegexResponse`
+        """
+        http_info = self._create_custom_regex_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_custom_regex_invoker(self, request):
+        http_info = self._create_custom_regex_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_custom_regex_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/aiguard/custom-regex-sets/{regex_set_id}/regexes",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCustomRegexResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'regex_set_id' in local_var_params:
+            path_params['regex_set_id'] = local_var_params['regex_set_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_custom_regex_set(self, request):
+        r"""创建自定义正则库
+
+        创建自定义正则库
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateCustomRegexSet
+        :type request: :class:`huaweicloudsdkwaf.v1.CreateCustomRegexSetRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.CreateCustomRegexSetResponse`
+        """
+        http_info = self._create_custom_regex_set_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_custom_regex_set_invoker(self, request):
+        http_info = self._create_custom_regex_set_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_custom_regex_set_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/aiguard/custom-regex-sets",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCustomRegexSetResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_regex_test(self, request):
+        r"""正则拨测
+
+        拨测正则表达式有效性，校验正则语法及匹配效果（内部转发至引擎PII检测接口）
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateRegexTest
+        :type request: :class:`huaweicloudsdkwaf.v1.CreateRegexTestRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.CreateRegexTestResponse`
+        """
+        http_info = self._create_regex_test_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_regex_test_invoker(self, request):
+        http_info = self._create_regex_test_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_regex_test_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/aiguard/regex-test/test",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateRegexTestResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_custom_regex(self, request):
+        r"""删除正则
+
+        删除正则条目
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteCustomRegex
+        :type request: :class:`huaweicloudsdkwaf.v1.DeleteCustomRegexRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.DeleteCustomRegexResponse`
+        """
+        http_info = self._delete_custom_regex_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_custom_regex_invoker(self, request):
+        http_info = self._delete_custom_regex_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_custom_regex_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/aiguard/custom-regex-sets/{regex_set_id}/regexes/{regex_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteCustomRegexResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'regex_set_id' in local_var_params:
+            path_params['regex_set_id'] = local_var_params['regex_set_id']
+        if 'regex_id' in local_var_params:
+            path_params['regex_id'] = local_var_params['regex_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_custom_regex_set(self, request):
+        r"""删除自定义正则库
+
+        删除自定义正则库
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteCustomRegexSet
+        :type request: :class:`huaweicloudsdkwaf.v1.DeleteCustomRegexSetRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.DeleteCustomRegexSetResponse`
+        """
+        http_info = self._delete_custom_regex_set_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_custom_regex_set_invoker(self, request):
+        http_info = self._delete_custom_regex_set_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_custom_regex_set_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/aiguard/custom-regex-sets/{regex_set_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteCustomRegexSetResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'regex_set_id' in local_var_params:
+            path_params['regex_set_id'] = local_var_params['regex_set_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_custom_regex(self, request):
+        r"""查询正则列表
+
+        查询正则库下正则列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListCustomRegex
+        :type request: :class:`huaweicloudsdkwaf.v1.ListCustomRegexRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.ListCustomRegexResponse`
+        """
+        http_info = self._list_custom_regex_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_custom_regex_invoker(self, request):
+        http_info = self._list_custom_regex_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_custom_regex_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/aiguard/custom-regex-sets/{regex_set_id}/regexes",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCustomRegexResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'regex_set_id' in local_var_params:
+            path_params['regex_set_id'] = local_var_params['regex_set_id']
+
+        query_params = []
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_custom_regex_set(self, request):
+        r"""查询自定义正则库列表
+
+        查询自定义正则库列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListCustomRegexSet
+        :type request: :class:`huaweicloudsdkwaf.v1.ListCustomRegexSetRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.ListCustomRegexSetResponse`
+        """
+        http_info = self._list_custom_regex_set_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_custom_regex_set_invoker(self, request):
+        http_info = self._list_custom_regex_set_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_custom_regex_set_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/aiguard/custom-regex-sets",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCustomRegexSetResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_custom_regex_set(self, request):
+        r"""查询自定义正则库详情
+
+        查询自定义正则库详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowCustomRegexSet
+        :type request: :class:`huaweicloudsdkwaf.v1.ShowCustomRegexSetRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.ShowCustomRegexSetResponse`
+        """
+        http_info = self._show_custom_regex_set_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_custom_regex_set_invoker(self, request):
+        http_info = self._show_custom_regex_set_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_custom_regex_set_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/aiguard/custom-regex-sets/{regex_set_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCustomRegexSetResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'regex_set_id' in local_var_params:
+            path_params['regex_set_id'] = local_var_params['regex_set_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_custom_regex(self, request):
+        r"""更新正则
+
+        更新正则条目（仅更新传入的字段，未传字段保持不变）
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateCustomRegex
+        :type request: :class:`huaweicloudsdkwaf.v1.UpdateCustomRegexRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.UpdateCustomRegexResponse`
+        """
+        http_info = self._update_custom_regex_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_custom_regex_invoker(self, request):
+        http_info = self._update_custom_regex_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_custom_regex_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/aiguard/custom-regex-sets/{regex_set_id}/regexes/{regex_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateCustomRegexResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'regex_set_id' in local_var_params:
+            path_params['regex_set_id'] = local_var_params['regex_set_id']
+        if 'regex_id' in local_var_params:
+            path_params['regex_id'] = local_var_params['regex_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_custom_regex_set(self, request):
+        r"""更新自定义正则库
+
+        更新自定义正则库
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateCustomRegexSet
+        :type request: :class:`huaweicloudsdkwaf.v1.UpdateCustomRegexSetRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.UpdateCustomRegexSetResponse`
+        """
+        http_info = self._update_custom_regex_set_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_custom_regex_set_invoker(self, request):
+        http_info = self._update_custom_regex_set_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_custom_regex_set_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/aiguard/custom-regex-sets/{regex_set_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateCustomRegexSetResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'regex_set_id' in local_var_params:
+            path_params['regex_set_id'] = local_var_params['regex_set_id']
 
         query_params = []
 

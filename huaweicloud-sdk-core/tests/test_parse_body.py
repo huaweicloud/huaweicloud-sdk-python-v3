@@ -21,12 +21,17 @@ import bson
 import pytest
 from bson import MaxKey, MinKey, Regex, ObjectId, Code, Decimal128, Timestamp
 from huaweicloudsdkcore.utils import http_utils
+from huaweicloudsdkcore.http.formdata import FormFile
+from huaweicloudsdkcore.http.multipart import MultipartEncoder
 
 from huaweicloudsdkcore.client import Client
 from tests.model.kvs import BsonBody
 from tests.model.kvs import GetKvRequest
 from tests.model.vpc import Vpc
 import datetime
+import os
+import tempfile
+from io import BytesIO
 
 
 class CustomIter:
@@ -138,6 +143,70 @@ def test_parse_bson_type(mocked_client):
     )
     assert http_utils.sanitize_for_bson_serialization(body) == bson_dict
     assert parse_bson_body(body) == bson.encode(bson_dict)
+
+
+def test_parse_form_data_body(mocked_client):
+    parse_form_data_body = getattr(mocked_client, "_parse_form_data_body")
+
+    body = parse_form_data_body(None)
+    assert body is not None
+    assert "multipart/form-data" in body.content_type
+
+    body = parse_form_data_body({"name": "test", "value": "123"})
+    assert body is not None
+    assert "multipart/form-data" in body.content_type
+    content = body.read()
+    assert b'name="name"' in content
+    assert b'test' in content
+    assert b'name="value"' in content
+    assert b'123' in content
+
+    with tempfile.NamedTemporaryFile(mode="wb", delete=False, suffix=".txt") as f:
+        f.write(b"file content")
+        tmp_path = f.name
+    try:
+        with open(tmp_path, "rb") as f:
+            form_file = FormFile(f, content_type="text/plain")
+            body = parse_form_data_body({"file": form_file})
+            assert body is not None
+            assert "multipart/form-data" in body.content_type
+            content = body.read()
+            assert b'filename=' in content
+            assert b'file content' in content
+    finally:
+        os.unlink(tmp_path)
+
+
+def test_multipart_encoder_plain_fields():
+    from collections import OrderedDict
+    fields = OrderedDict([("name", "test"), ("type", "demo")])
+    encoder = MultipartEncoder(fields=fields)
+    assert "multipart/form-data" in encoder.content_type
+    assert "boundary=" in encoder.content_type
+    content = encoder.read()
+    assert b'name="name"' in content
+    assert b'test' in content
+    assert b'name="type"' in content
+    assert b'demo' in content
+
+
+def test_multipart_encoder_with_file():
+    from collections import OrderedDict
+    file_obj = BytesIO(b"hello world")
+    fields = OrderedDict([("name", "test"), ("file", ("test.txt", file_obj, "text/plain"))])
+    encoder = MultipartEncoder(fields=fields)
+    assert "multipart/form-data" in encoder.content_type
+    content = encoder.read()
+    assert b'filename="test.txt"' in content
+    assert b"hello world" in content
+    assert b'name="name"' in content
+
+
+def test_multipart_encoder_len():
+    from collections import OrderedDict
+    fields = OrderedDict([("key", "value")])
+    encoder = MultipartEncoder(fields=fields)
+    assert encoder.len > 0
 
 
 if __name__ == "__main__":

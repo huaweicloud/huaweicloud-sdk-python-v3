@@ -3,7 +3,7 @@
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class SparkUiSharedInfo:
+class SharedSparkUiInfo:
 
     """
     Attributes:
@@ -15,75 +15,75 @@ class SparkUiSharedInfo:
     sensitive_list = []
 
     openapi_types = {
-        'shared_url': 'str',
+        'url': 'str',
         'expired_at': 'int'
     }
 
     attribute_map = {
-        'shared_url': 'shared_url',
+        'url': 'url',
         'expired_at': 'expired_at'
     }
 
-    def __init__(self, shared_url=None, expired_at=None):
-        r"""SparkUiSharedInfo
+    def __init__(self, url=None, expired_at=None):
+        r"""SharedSparkUiInfo
 
         The model defined in huaweicloud sdk
 
-        :param shared_url: **参数解释**：共享链接凭证。 **约束限制**：不涉及。 **取值范围**：共享URL格式，长度为1~1024个字符。 **默认取值**：不涉及。
-        :type shared_url: str
+        :param url: **参数解释**：共享链接凭证。 **约束限制**：不涉及。 **取值范围**：共享URL格式，长度为1~1024个字符。 **默认取值**：不涉及。
+        :type url: str
         :param expired_at: **参数解释**：过期时间时间戳，共享链接使用到该时间之后不可用，毫秒。 **约束限制**：毫秒时间戳。 **取值范围**：不涉及。 **默认取值**：不涉及。
         :type expired_at: int
         """
         
         
 
-        self._shared_url = None
+        self._url = None
         self._expired_at = None
         self.discriminator = None
 
-        self.shared_url = shared_url
+        self.url = url
         self.expired_at = expired_at
 
     @property
-    def shared_url(self):
-        r"""Gets the shared_url of this SparkUiSharedInfo.
+    def url(self):
+        r"""Gets the url of this SharedSparkUiInfo.
 
         **参数解释**：共享链接凭证。 **约束限制**：不涉及。 **取值范围**：共享URL格式，长度为1~1024个字符。 **默认取值**：不涉及。
 
-        :return: The shared_url of this SparkUiSharedInfo.
+        :return: The url of this SharedSparkUiInfo.
         :rtype: str
         """
-        return self._shared_url
+        return self._url
 
-    @shared_url.setter
-    def shared_url(self, shared_url):
-        r"""Sets the shared_url of this SparkUiSharedInfo.
+    @url.setter
+    def url(self, url):
+        r"""Sets the url of this SharedSparkUiInfo.
 
         **参数解释**：共享链接凭证。 **约束限制**：不涉及。 **取值范围**：共享URL格式，长度为1~1024个字符。 **默认取值**：不涉及。
 
-        :param shared_url: The shared_url of this SparkUiSharedInfo.
-        :type shared_url: str
+        :param url: The url of this SharedSparkUiInfo.
+        :type url: str
         """
-        self._shared_url = shared_url
+        self._url = url
 
     @property
     def expired_at(self):
-        r"""Gets the expired_at of this SparkUiSharedInfo.
+        r"""Gets the expired_at of this SharedSparkUiInfo.
 
         **参数解释**：过期时间时间戳，共享链接使用到该时间之后不可用，毫秒。 **约束限制**：毫秒时间戳。 **取值范围**：不涉及。 **默认取值**：不涉及。
 
-        :return: The expired_at of this SparkUiSharedInfo.
+        :return: The expired_at of this SharedSparkUiInfo.
         :rtype: int
         """
         return self._expired_at
 
     @expired_at.setter
     def expired_at(self, expired_at):
-        r"""Sets the expired_at of this SparkUiSharedInfo.
+        r"""Sets the expired_at of this SharedSparkUiInfo.
 
         **参数解释**：过期时间时间戳，共享链接使用到该时间之后不可用，毫秒。 **约束限制**：毫秒时间戳。 **取值范围**：不涉及。 **默认取值**：不涉及。
 
-        :param expired_at: The expired_at of this SparkUiSharedInfo.
+        :param expired_at: The expired_at of this SharedSparkUiInfo.
         :type expired_at: int
         """
         self._expired_at = expired_at
@@ -125,7 +125,7 @@ class SparkUiSharedInfo:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, SparkUiSharedInfo):
+        if not isinstance(other, SharedSparkUiInfo):
             return False
 
         return self.__dict__ == other.__dict__

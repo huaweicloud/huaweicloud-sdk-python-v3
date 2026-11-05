@@ -16,7 +16,7 @@ class ListCertsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'certs_records': 'CertsRecordsDatastore',
+        'certs_records': 'list[CertsRecordsDatastore]',
         'total_size': 'int'
     }
 
@@ -31,7 +31,7 @@ class ListCertsResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param certs_records: 
-        :type certs_records: :class:`huaweicloudsdkcss.v1.CertsRecordsDatastore`
+        :type certs_records: list[:class:`huaweicloudsdkcss.v1.CertsRecordsDatastore`]
         :param total_size: 证书记录数量。
         :type total_size: int
         """
@@ -52,7 +52,7 @@ class ListCertsResponse(SdkResponse):
         r"""Gets the certs_records of this ListCertsResponse.
 
         :return: The certs_records of this ListCertsResponse.
-        :rtype: :class:`huaweicloudsdkcss.v1.CertsRecordsDatastore`
+        :rtype: list[:class:`huaweicloudsdkcss.v1.CertsRecordsDatastore`]
         """
         return self._certs_records
 
@@ -61,7 +61,7 @@ class ListCertsResponse(SdkResponse):
         r"""Sets the certs_records of this ListCertsResponse.
 
         :param certs_records: The certs_records of this ListCertsResponse.
-        :type certs_records: :class:`huaweicloudsdkcss.v1.CertsRecordsDatastore`
+        :type certs_records: list[:class:`huaweicloudsdkcss.v1.CertsRecordsDatastore`]
         """
         self._certs_records = certs_records
 

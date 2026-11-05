@@ -17,6 +17,7 @@ class NetworkMetadata:
     openapi_types = {
         'name': 'str',
         'creation_timestamp': 'str',
+        'deletion_timestamp': 'str',
         'labels': 'NetworkMetadataLabels',
         'annotations': 'NetworkMetadataAnnotations'
     }
@@ -24,11 +25,12 @@ class NetworkMetadata:
     attribute_map = {
         'name': 'name',
         'creation_timestamp': 'creationTimestamp',
+        'deletion_timestamp': 'deletionTimestamp',
         'labels': 'labels',
         'annotations': 'annotations'
     }
 
-    def __init__(self, name=None, creation_timestamp=None, labels=None, annotations=None):
+    def __init__(self, name=None, creation_timestamp=None, deletion_timestamp=None, labels=None, annotations=None):
         r"""NetworkMetadata
 
         The model defined in huaweicloud sdk
@@ -37,6 +39,8 @@ class NetworkMetadata:
         :type name: str
         :param creation_timestamp: **参数解释**：网络的创建时间。例如\&quot;2025-11-01T03:49:41Z\&quot;。 **取值范围**：不涉及。
         :type creation_timestamp: str
+        :param deletion_timestamp: **参数解释**：网络的删除时间。例如\&quot;2025-12-01T03:49:41Z\&quot;。 **取值范围**：不涉及。
+        :type deletion_timestamp: str
         :param labels: 
         :type labels: :class:`huaweicloudsdkmodelarts.v1.NetworkMetadataLabels`
         :param annotations: 
@@ -47,12 +51,15 @@ class NetworkMetadata:
 
         self._name = None
         self._creation_timestamp = None
+        self._deletion_timestamp = None
         self._labels = None
         self._annotations = None
         self.discriminator = None
 
         self.name = name
         self.creation_timestamp = creation_timestamp
+        if deletion_timestamp is not None:
+            self.deletion_timestamp = deletion_timestamp
         self.labels = labels
         if annotations is not None:
             self.annotations = annotations
@@ -100,6 +107,28 @@ class NetworkMetadata:
         :type creation_timestamp: str
         """
         self._creation_timestamp = creation_timestamp
+
+    @property
+    def deletion_timestamp(self):
+        r"""Gets the deletion_timestamp of this NetworkMetadata.
+
+        **参数解释**：网络的删除时间。例如\"2025-12-01T03:49:41Z\"。 **取值范围**：不涉及。
+
+        :return: The deletion_timestamp of this NetworkMetadata.
+        :rtype: str
+        """
+        return self._deletion_timestamp
+
+    @deletion_timestamp.setter
+    def deletion_timestamp(self, deletion_timestamp):
+        r"""Sets the deletion_timestamp of this NetworkMetadata.
+
+        **参数解释**：网络的删除时间。例如\"2025-12-01T03:49:41Z\"。 **取值范围**：不涉及。
+
+        :param deletion_timestamp: The deletion_timestamp of this NetworkMetadata.
+        :type deletion_timestamp: str
+        """
+        self._deletion_timestamp = deletion_timestamp
 
     @property
     def labels(self):

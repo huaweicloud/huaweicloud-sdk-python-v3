@@ -25,7 +25,7 @@ class ShowIkThesaurusResponse(SdkResponse):
         'static_stop_obj': 'str',
         'extra_main_obj': 'str',
         'extra_stop_obj': 'str',
-        'update_time': 'str',
+        'update_time': 'int',
         'update_details': 'str',
         'cluster_id': 'str',
         'id': 'str'
@@ -71,7 +71,7 @@ class ShowIkThesaurusResponse(SdkResponse):
         :param extra_stop_obj: Extra停词词库对象。
         :type extra_stop_obj: str
         :param update_time: 词库最近更新时间。
-        :type update_time: str
+        :type update_time: int
         :param update_details: 更新详情。
         :type update_details: str
         :param cluster_id: 指定配置自定义词库的集群ID。
@@ -329,7 +329,7 @@ class ShowIkThesaurusResponse(SdkResponse):
         词库最近更新时间。
 
         :return: The update_time of this ShowIkThesaurusResponse.
-        :rtype: str
+        :rtype: int
         """
         return self._update_time
 
@@ -340,7 +340,7 @@ class ShowIkThesaurusResponse(SdkResponse):
         词库最近更新时间。
 
         :param update_time: The update_time of this ShowIkThesaurusResponse.
-        :type update_time: str
+        :type update_time: int
         """
         self._update_time = update_time
 

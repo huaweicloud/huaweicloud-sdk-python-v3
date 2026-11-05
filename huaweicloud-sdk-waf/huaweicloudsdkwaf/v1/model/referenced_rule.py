@@ -37,13 +37,13 @@ class ReferencedRule:
 
         :param rule_id: 规则ID
         :type rule_id: str
-        :param rule_name: 策略名称
+        :param rule_name: 规则名称
         :type rule_name: str
-        :param policy_id: 引用该代答库的规则所属策略ID
+        :param policy_id: 引用该规则的规则所属策略ID
         :type policy_id: str
-        :param policy_name: 引用该代答库的规则所属策略名称
+        :param policy_name: 引用该规则的规则所属策略名称
         :type policy_name: str
-        :param detect_opts_type: 规则检测选项类型，可选：lexicon(词库检测), compliance(合规检测), inject(注入检测), immunity_lexicon(豁免词库), supported_language(语言检测), pii(PII检测), abuse(算力滥用检测), topic_detect(话题检测)等
+        :param detect_opts_type: 规则检测选项类型，可选：atlas(黑库图库检测), immunity_atlas(白库图库豁免检测), lexicon(词库检测), compliance(合规检测), inject(注入检测), immunity_lexicon(豁免词库), supported_language(语言检测), pii(PII检测), abuse(算力滥用检测), topic_detect(话题检测)等
         :type detect_opts_type: str
         """
         
@@ -93,7 +93,7 @@ class ReferencedRule:
     def rule_name(self):
         r"""Gets the rule_name of this ReferencedRule.
 
-        策略名称
+        规则名称
 
         :return: The rule_name of this ReferencedRule.
         :rtype: str
@@ -104,7 +104,7 @@ class ReferencedRule:
     def rule_name(self, rule_name):
         r"""Sets the rule_name of this ReferencedRule.
 
-        策略名称
+        规则名称
 
         :param rule_name: The rule_name of this ReferencedRule.
         :type rule_name: str
@@ -115,7 +115,7 @@ class ReferencedRule:
     def policy_id(self):
         r"""Gets the policy_id of this ReferencedRule.
 
-        引用该代答库的规则所属策略ID
+        引用该规则的规则所属策略ID
 
         :return: The policy_id of this ReferencedRule.
         :rtype: str
@@ -126,7 +126,7 @@ class ReferencedRule:
     def policy_id(self, policy_id):
         r"""Sets the policy_id of this ReferencedRule.
 
-        引用该代答库的规则所属策略ID
+        引用该规则的规则所属策略ID
 
         :param policy_id: The policy_id of this ReferencedRule.
         :type policy_id: str
@@ -137,7 +137,7 @@ class ReferencedRule:
     def policy_name(self):
         r"""Gets the policy_name of this ReferencedRule.
 
-        引用该代答库的规则所属策略名称
+        引用该规则的规则所属策略名称
 
         :return: The policy_name of this ReferencedRule.
         :rtype: str
@@ -148,7 +148,7 @@ class ReferencedRule:
     def policy_name(self, policy_name):
         r"""Sets the policy_name of this ReferencedRule.
 
-        引用该代答库的规则所属策略名称
+        引用该规则的规则所属策略名称
 
         :param policy_name: The policy_name of this ReferencedRule.
         :type policy_name: str
@@ -159,7 +159,7 @@ class ReferencedRule:
     def detect_opts_type(self):
         r"""Gets the detect_opts_type of this ReferencedRule.
 
-        规则检测选项类型，可选：lexicon(词库检测), compliance(合规检测), inject(注入检测), immunity_lexicon(豁免词库), supported_language(语言检测), pii(PII检测), abuse(算力滥用检测), topic_detect(话题检测)等
+        规则检测选项类型，可选：atlas(黑库图库检测), immunity_atlas(白库图库豁免检测), lexicon(词库检测), compliance(合规检测), inject(注入检测), immunity_lexicon(豁免词库), supported_language(语言检测), pii(PII检测), abuse(算力滥用检测), topic_detect(话题检测)等
 
         :return: The detect_opts_type of this ReferencedRule.
         :rtype: str
@@ -170,7 +170,7 @@ class ReferencedRule:
     def detect_opts_type(self, detect_opts_type):
         r"""Sets the detect_opts_type of this ReferencedRule.
 
-        规则检测选项类型，可选：lexicon(词库检测), compliance(合规检测), inject(注入检测), immunity_lexicon(豁免词库), supported_language(语言检测), pii(PII检测), abuse(算力滥用检测), topic_detect(话题检测)等
+        规则检测选项类型，可选：atlas(黑库图库检测), immunity_atlas(白库图库豁免检测), lexicon(词库检测), compliance(合规检测), inject(注入检测), immunity_lexicon(豁免词库), supported_language(语言检测), pii(PII检测), abuse(算力滥用检测), topic_detect(话题检测)等
 
         :param detect_opts_type: The detect_opts_type of this ReferencedRule.
         :type detect_opts_type: str

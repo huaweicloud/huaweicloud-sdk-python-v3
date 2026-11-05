@@ -21,7 +21,7 @@
 """
 
 from xml.etree import ElementTree
-from defusedxml.ElementTree import fromstring
+from huaweicloudsdkcore.utils.defused_xml import fromstring
 from decimal import Decimal
 import re
 

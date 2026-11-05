@@ -100,6 +100,73 @@ class AgentArtsClient(Client):
 
         return http_info
 
+    def batch_create_custom_model_provider_tags(self, request):
+        r"""批量添加模型提供商标签
+
+        批量添加模型提供商标签。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchCreateCustomModelProviderTags
+        :type request: :class:`huaweicloudsdkagentarts.v1.BatchCreateCustomModelProviderTagsRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.BatchCreateCustomModelProviderTagsResponse`
+        """
+        http_info = self._batch_create_custom_model_provider_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_create_custom_model_provider_tags_invoker(self, request):
+        http_info = self._batch_create_custom_model_provider_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_create_custom_model_provider_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/custom-model-providers/{custom_model_provider_id}/tags/create",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateCustomModelProviderTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'custom_model_provider_id' in local_var_params:
+            path_params['custom_model_provider_id'] = local_var_params['custom_model_provider_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_delete_core_gateway_tags(self, request):
         r"""批量删除网关标签
 
@@ -136,6 +203,73 @@ class AgentArtsClient(Client):
         path_params = {}
         if 'gateway_id' in local_var_params:
             path_params['gateway_id'] = local_var_params['gateway_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_delete_custom_model_provider_tags(self, request):
+        r"""批量删除模型提供商标签
+
+        批量删除模型提供商标签。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchDeleteCustomModelProviderTags
+        :type request: :class:`huaweicloudsdkagentarts.v1.BatchDeleteCustomModelProviderTagsRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.BatchDeleteCustomModelProviderTagsResponse`
+        """
+        http_info = self._batch_delete_custom_model_provider_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_custom_model_provider_tags_invoker(self, request):
+        http_info = self._batch_delete_custom_model_provider_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_custom_model_provider_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/custom-model-providers/{custom_model_provider_id}/tags/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteCustomModelProviderTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'custom_model_provider_id' in local_var_params:
+            path_params['custom_model_provider_id'] = local_var_params['custom_model_provider_id']
 
         query_params = []
 
@@ -1894,6 +2028,73 @@ class AgentArtsClient(Client):
 
         return http_info
 
+    def list_all_custom_model_provider_tags(self, request):
+        r"""查询账号下所有模型提供商标签列表
+
+        查询账号下所有模型提供商标签列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListAllCustomModelProviderTags
+        :type request: :class:`huaweicloudsdkagentarts.v1.ListAllCustomModelProviderTagsRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ListAllCustomModelProviderTagsResponse`
+        """
+        http_info = self._list_all_custom_model_provider_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_all_custom_model_provider_tags_invoker(self, request):
+        http_info = self._list_all_custom_model_provider_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_all_custom_model_provider_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/custom-model-providers/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAllCustomModelProviderTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_core_code_interpreters(self, request):
         r"""查询代码解释器列表
 
@@ -3209,6 +3410,71 @@ class AgentArtsClient(Client):
 
         return http_info
 
+    def list_custom_model_provider_tags(self, request):
+        r"""查询模型提供商标签列表
+
+        查询模型提供商标签列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListCustomModelProviderTags
+        :type request: :class:`huaweicloudsdkagentarts.v1.ListCustomModelProviderTagsRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ListCustomModelProviderTagsResponse`
+        """
+        http_info = self._list_custom_model_provider_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_custom_model_provider_tags_invoker(self, request):
+        http_info = self._list_custom_model_provider_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_custom_model_provider_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/custom-model-providers/{custom_model_provider_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCustomModelProviderTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'custom_model_provider_id' in local_var_params:
+            path_params['custom_model_provider_id'] = local_var_params['custom_model_provider_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_custom_model_providers(self, request):
         r"""列出所有模型提供商
 
@@ -3291,10 +3557,79 @@ class AgentArtsClient(Client):
 
         return http_info
 
+    def list_custom_model_providers_by_tags(self, request):
+        r"""根据标签查询模型提供商列表
+
+        根据标签过滤条件查询模型提供商列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListCustomModelProvidersByTags
+        :type request: :class:`huaweicloudsdkagentarts.v1.ListCustomModelProvidersByTagsRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ListCustomModelProvidersByTagsResponse`
+        """
+        http_info = self._list_custom_model_providers_by_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_custom_model_providers_by_tags_invoker(self, request):
+        http_info = self._list_custom_model_providers_by_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_custom_model_providers_by_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/custom-model-providers/resource-instances/filter",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCustomModelProvidersByTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_model_management_quotas(self, request):
         r"""查询模型管理配额
 
-        获取当前认证账号的模型提供商、模型代理、模型的有效配额信息，包括配额类型、最小值、最大值、配额值和已使用数量。
+        获取当前认证账号的模型提供商、模型代理、模型服务的有效配额信息，包括配额类型、最小值、最大值、配额值和已使用数量。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4294,6 +4629,71 @@ class AgentArtsClient(Client):
 
         return http_info
 
+    def show_custom_model_provider_nums_by_tags(self, request):
+        r"""根据标签查询模型提供商数量
+
+        根据标签查询模型提供商数量。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowCustomModelProviderNumsByTags
+        :type request: :class:`huaweicloudsdkagentarts.v1.ShowCustomModelProviderNumsByTagsRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ShowCustomModelProviderNumsByTagsResponse`
+        """
+        http_info = self._show_custom_model_provider_nums_by_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_custom_model_provider_nums_by_tags_invoker(self, request):
+        http_info = self._show_custom_model_provider_nums_by_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_custom_model_provider_nums_by_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/custom-model-providers/resource-instances/count",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCustomModelProviderNumsByTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def sync_core_gateway_targets(self, request):
         r"""同步网关目标工具列表
 
@@ -5078,6 +5478,73 @@ class AgentArtsClient(Client):
             path_params['model_id'] = local_var_params['model_id']
         if 'custom_model_provider_id' in local_var_params:
             path_params['custom_model_provider_id'] = local_var_params['custom_model_provider_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_model_proxy(self, request):
+        r"""修改模型代理
+
+        修改模型代理。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateModelProxy
+        :type request: :class:`huaweicloudsdkagentarts.v1.UpdateModelProxyRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.UpdateModelProxyResponse`
+        """
+        http_info = self._update_model_proxy_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_model_proxy_invoker(self, request):
+        http_info = self._update_model_proxy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_model_proxy_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/core/model-proxy/{gateway_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateModelProxyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'gateway_id' in local_var_params:
+            path_params['gateway_id'] = local_var_params['gateway_id']
 
         query_params = []
 
@@ -14958,9 +15425,9 @@ class AgentArtsClient(Client):
         return http_info
 
     def create_ops_agent_observation(self, request):
-        r"""同步agent信息
+        r"""将智能体信息同步至观测页面
 
-        同步agent信息
+        将智能体信息同步至观测页面
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -15023,9 +15490,9 @@ class AgentArtsClient(Client):
         return http_info
 
     def delete_ops_agent_observation(self, request):
-        r"""删除agent可观测信息
+        r"""将智能体信息在观测页面删除
 
-        删除agent可观测信息
+        将智能体信息在观测页面删除
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -15087,10 +15554,75 @@ class AgentArtsClient(Client):
 
         return http_info
 
-    def list_ops_agent_observation(self, request):
-        r"""查询智能体可观测信息列表接口
+    def list_ops_agent_metric_label_values(self, request):
+        r"""查询组件列表，包括工具，模型，skill列表
 
-        查询应用列表接口
+        查询组件列表，包括工具，模型，skill列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListOpsAgentMetricLabelValues
+        :type request: :class:`huaweicloudsdkagentarts.v1.ListOpsAgentMetricLabelValuesRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ListOpsAgentMetricLabelValuesResponse`
+        """
+        http_info = self._list_ops_agent_metric_label_values_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_ops_agent_metric_label_values_invoker(self, request):
+        http_info = self._list_ops_agent_metric_label_values_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_ops_agent_metric_label_values_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/ops/observation/agents/metric/label-values",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListOpsAgentMetricLabelValuesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_ops_agent_observation(self, request):
+        r"""查询智能体列表
+
+        查询智能体列表
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -15161,9 +15693,9 @@ class AgentArtsClient(Client):
         return http_info
 
     def update_ops_agent_observation(self, request):
-        r"""更新agent可观测信息
+        r"""更新智能体信息
 
-        更新agent可观测信息
+        更新智能体信息
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -15391,71 +15923,6 @@ class AgentArtsClient(Client):
 
         return http_info
 
-    def list_ops_agent_metric_label_values(self, request):
-        r"""查询组件列表，包括工具，模型，skill列表
-
-        查询组件列表，包括工具，模型，skill列表
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for ListOpsAgentMetricLabelValues
-        :type request: :class:`huaweicloudsdkagentarts.v1.ListOpsAgentMetricLabelValuesRequest`
-        :rtype: :class:`huaweicloudsdkagentarts.v1.ListOpsAgentMetricLabelValuesResponse`
-        """
-        http_info = self._list_ops_agent_metric_label_values_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_ops_agent_metric_label_values_invoker(self, request):
-        http_info = self._list_ops_agent_metric_label_values_http_info(request)
-        return SyncInvoker(self, http_info)
-
-    @classmethod
-    def _list_ops_agent_metric_label_values_http_info(cls, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v1/ops/observation/agents/metric/label-values",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListOpsAgentMetricLabelValuesResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def list_ops_agent_span_metric(self, request):
         r"""查询调用链span指标
 
@@ -15526,9 +15993,9 @@ class AgentArtsClient(Client):
         return http_info
 
     def show_ops_agent_metric(self, request):
-        r"""查询时间范围内智能体的总数 草稿数 发布态数
+        r"""查询时间范围内智能体的总数、草稿数、发布态数
 
-        查询时间范围内智能体的总数 草稿数 发布态数
+        查询时间范围内智能体的总数、草稿数、发布态数
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -15593,7 +16060,7 @@ class AgentArtsClient(Client):
         return http_info
 
     def show_ops_agent_metric_gauge(self, request):
-        r"""查询单个指标的仪表盘接口
+        r"""查询指标的数据
 
         查询单个指标的仪表盘接口
         
@@ -16044,9 +16511,9 @@ class AgentArtsClient(Client):
         return http_info
 
     def show_ops_subscription_info(self, request):
-        r"""查询租户关联的AOM APM LTS信息
+        r"""查询租户关联的AOM /APM /LTS信息
 
-        查询租户关联的AOM APM LTS信息
+        查询租户关联的AOM /APM /LTS信息
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -16107,7 +16574,7 @@ class AgentArtsClient(Client):
         return http_info
 
     def show_ops_subscription_lts_info(self, request):
-        r"""查询租户关联的日志组日志流信息
+        r"""查询租户关联的LTS信息
 
         查询租户关联的日志组日志流信息
         

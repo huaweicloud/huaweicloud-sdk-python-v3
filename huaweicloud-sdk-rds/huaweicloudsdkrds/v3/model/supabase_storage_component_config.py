@@ -1,0 +1,223 @@
+# coding: utf-8
+
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
+
+
+class SupabaseStorageComponentConfig:
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+    sensitive_list = []
+
+    openapi_types = {
+        'enabled': 'bool',
+        'type': 'str',
+        'bucket_name': 'str',
+        'ak': 'str',
+        'sk': 'str'
+    }
+
+    attribute_map = {
+        'enabled': 'enabled',
+        'type': 'type',
+        'bucket_name': 'bucket_name',
+        'ak': 'ak',
+        'sk': 'sk'
+    }
+
+    def __init__(self, enabled=None, type=None, bucket_name=None, ak=None, sk=None):
+        r"""SupabaseStorageComponentConfig
+
+        The model defined in huaweicloud sdk
+
+        :param enabled: 是否启用Storage组件。enabled&#x3D;false时bucket_name/ak/sk必须全空；enabled&#x3D;true时全必填。
+        :type enabled: bool
+        :param type: 对象存储类型。
+        :type type: str
+        :param bucket_name: 桶名称，3~64字符。enabled&#x3D;true时必填。
+        :type bucket_name: str
+        :param ak: 访问密钥ID，1~32字符。enabled&#x3D;true时必填。
+        :type ak: str
+        :param sk: 秘密访问密钥，1~64字符。enabled&#x3D;true时必填。
+        :type sk: str
+        """
+        
+        
+
+        self._enabled = None
+        self._type = None
+        self._bucket_name = None
+        self._ak = None
+        self._sk = None
+        self.discriminator = None
+
+        self.enabled = enabled
+        if type is not None:
+            self.type = type
+        if bucket_name is not None:
+            self.bucket_name = bucket_name
+        if ak is not None:
+            self.ak = ak
+        if sk is not None:
+            self.sk = sk
+
+    @property
+    def enabled(self):
+        r"""Gets the enabled of this SupabaseStorageComponentConfig.
+
+        是否启用Storage组件。enabled=false时bucket_name/ak/sk必须全空；enabled=true时全必填。
+
+        :return: The enabled of this SupabaseStorageComponentConfig.
+        :rtype: bool
+        """
+        return self._enabled
+
+    @enabled.setter
+    def enabled(self, enabled):
+        r"""Sets the enabled of this SupabaseStorageComponentConfig.
+
+        是否启用Storage组件。enabled=false时bucket_name/ak/sk必须全空；enabled=true时全必填。
+
+        :param enabled: The enabled of this SupabaseStorageComponentConfig.
+        :type enabled: bool
+        """
+        self._enabled = enabled
+
+    @property
+    def type(self):
+        r"""Gets the type of this SupabaseStorageComponentConfig.
+
+        对象存储类型。
+
+        :return: The type of this SupabaseStorageComponentConfig.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        r"""Sets the type of this SupabaseStorageComponentConfig.
+
+        对象存储类型。
+
+        :param type: The type of this SupabaseStorageComponentConfig.
+        :type type: str
+        """
+        self._type = type
+
+    @property
+    def bucket_name(self):
+        r"""Gets the bucket_name of this SupabaseStorageComponentConfig.
+
+        桶名称，3~64字符。enabled=true时必填。
+
+        :return: The bucket_name of this SupabaseStorageComponentConfig.
+        :rtype: str
+        """
+        return self._bucket_name
+
+    @bucket_name.setter
+    def bucket_name(self, bucket_name):
+        r"""Sets the bucket_name of this SupabaseStorageComponentConfig.
+
+        桶名称，3~64字符。enabled=true时必填。
+
+        :param bucket_name: The bucket_name of this SupabaseStorageComponentConfig.
+        :type bucket_name: str
+        """
+        self._bucket_name = bucket_name
+
+    @property
+    def ak(self):
+        r"""Gets the ak of this SupabaseStorageComponentConfig.
+
+        访问密钥ID，1~32字符。enabled=true时必填。
+
+        :return: The ak of this SupabaseStorageComponentConfig.
+        :rtype: str
+        """
+        return self._ak
+
+    @ak.setter
+    def ak(self, ak):
+        r"""Sets the ak of this SupabaseStorageComponentConfig.
+
+        访问密钥ID，1~32字符。enabled=true时必填。
+
+        :param ak: The ak of this SupabaseStorageComponentConfig.
+        :type ak: str
+        """
+        self._ak = ak
+
+    @property
+    def sk(self):
+        r"""Gets the sk of this SupabaseStorageComponentConfig.
+
+        秘密访问密钥，1~64字符。enabled=true时必填。
+
+        :return: The sk of this SupabaseStorageComponentConfig.
+        :rtype: str
+        """
+        return self._sk
+
+    @sk.setter
+    def sk(self, sk):
+        r"""Sets the sk of this SupabaseStorageComponentConfig.
+
+        秘密访问密钥，1~64字符。enabled=true时必填。
+
+        :param sk: The sk of this SupabaseStorageComponentConfig.
+        :type sk: str
+        """
+        self._sk = sk
+
+    def to_dict(self):
+        result = {}
+
+        for attr, _ in self.openapi_types.items():
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        import simplejson as json
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
+
+    def __repr__(self):
+        """For `print`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, SupabaseStorageComponentConfig):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

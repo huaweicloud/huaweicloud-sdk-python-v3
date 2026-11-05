@@ -16,7 +16,7 @@ class ListConfsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'confs': 'list[Confs]',
+        'confs': 'list[ListConfsRespConfs]',
         'total_size': 'int'
     }
 
@@ -31,7 +31,7 @@ class ListConfsResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param confs: 配置文件列表。
-        :type confs: list[:class:`huaweicloudsdkcss.v1.Confs`]
+        :type confs: list[:class:`huaweicloudsdkcss.v1.ListConfsRespConfs`]
         :param total_size: 
         :type total_size: int
         """
@@ -54,7 +54,7 @@ class ListConfsResponse(SdkResponse):
         配置文件列表。
 
         :return: The confs of this ListConfsResponse.
-        :rtype: list[:class:`huaweicloudsdkcss.v1.Confs`]
+        :rtype: list[:class:`huaweicloudsdkcss.v1.ListConfsRespConfs`]
         """
         return self._confs
 
@@ -65,7 +65,7 @@ class ListConfsResponse(SdkResponse):
         配置文件列表。
 
         :param confs: The confs of this ListConfsResponse.
-        :type confs: list[:class:`huaweicloudsdkcss.v1.Confs`]
+        :type confs: list[:class:`huaweicloudsdkcss.v1.ListConfsRespConfs`]
         """
         self._confs = confs
 

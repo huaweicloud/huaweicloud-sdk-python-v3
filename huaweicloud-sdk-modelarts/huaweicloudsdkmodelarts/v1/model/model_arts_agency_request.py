@@ -15,29 +15,36 @@ class ModelArtsAgencyRequest:
     sensitive_list = []
 
     openapi_types = {
-        'agency_name_suffix': 'str'
+        'agency_name_suffix': 'str',
+        'agency_services': 'list[AgencyServices]'
     }
 
     attribute_map = {
-        'agency_name_suffix': 'agency_name_suffix'
+        'agency_name_suffix': 'agency_name_suffix',
+        'agency_services': 'agency_services'
     }
 
-    def __init__(self, agency_name_suffix=None):
+    def __init__(self, agency_name_suffix=None, agency_services=None):
         r"""ModelArtsAgencyRequest
 
         The model defined in huaweicloud sdk
 
         :param agency_name_suffix: 委托名称后缀。  长度不大于50位。  委托名称前缀固定为ma_agency。  如该字段为iam-user01，则创建出来的委托名称为ma_agency_iam-user01。  默认为空，表示创建名称为modelarts_agency的委托。
         :type agency_name_suffix: str
+        :param agency_services: **参数解释**：细粒度权限列表。
+        :type agency_services: list[:class:`huaweicloudsdkmodelarts.v1.AgencyServices`]
         """
         
         
 
         self._agency_name_suffix = None
+        self._agency_services = None
         self.discriminator = None
 
         if agency_name_suffix is not None:
             self.agency_name_suffix = agency_name_suffix
+        if agency_services is not None:
+            self.agency_services = agency_services
 
     @property
     def agency_name_suffix(self):
@@ -60,6 +67,28 @@ class ModelArtsAgencyRequest:
         :type agency_name_suffix: str
         """
         self._agency_name_suffix = agency_name_suffix
+
+    @property
+    def agency_services(self):
+        r"""Gets the agency_services of this ModelArtsAgencyRequest.
+
+        **参数解释**：细粒度权限列表。
+
+        :return: The agency_services of this ModelArtsAgencyRequest.
+        :rtype: list[:class:`huaweicloudsdkmodelarts.v1.AgencyServices`]
+        """
+        return self._agency_services
+
+    @agency_services.setter
+    def agency_services(self, agency_services):
+        r"""Sets the agency_services of this ModelArtsAgencyRequest.
+
+        **参数解释**：细粒度权限列表。
+
+        :param agency_services: The agency_services of this ModelArtsAgencyRequest.
+        :type agency_services: list[:class:`huaweicloudsdkmodelarts.v1.AgencyServices`]
+        """
+        self._agency_services = agency_services
 
     def to_dict(self):
         result = {}

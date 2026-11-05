@@ -3,7 +3,7 @@
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class Confs:
+class ListConfsRespConfs:
 
     """
     Attributes:
@@ -18,7 +18,7 @@ class Confs:
         'name': 'str',
         'status': 'str',
         'conf_content': 'str',
-        'setting': 'Setting',
+        'setting': 'ListConfsRespConfsSetting',
         'update_at': 'str',
         'desc': 'str',
         'sensitive_words_shielding': 'bool'
@@ -35,23 +35,23 @@ class Confs:
     }
 
     def __init__(self, name=None, status=None, conf_content=None, setting=None, update_at=None, desc=None, sensitive_words_shielding=None):
-        r"""Confs
+        r"""ListConfsRespConfs
 
         The model defined in huaweicloud sdk
 
-        :param name: 配置文件名称。
+        :param name: **参数解释**： 配置文件名称。 **取值范围**： 不涉及
         :type name: str
-        :param status: 配置文件状态。
+        :param status: **参数解释**： 配置文件状态。 **取值范围**： - checking：正在检查中。 - available：可用。 - unavailable：不可用。 - starting：正开始。 - working：工作中。 - stopping：正在停止。 - stopped：已经停止。 - restoring：正在回滚。
         :type status: str
-        :param conf_content: 配置文件内容。
+        :param conf_content: **参数解释**： 配置文件内容。 **取值范围**： 不涉及
         :type conf_content: str
         :param setting: 
-        :type setting: :class:`huaweicloudsdkcss.v1.Setting`
-        :param update_at: 更新时间。
+        :type setting: :class:`huaweicloudsdkcss.v1.ListConfsRespConfsSetting`
+        :param update_at: **参数解释**： 更新时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss。 **取值范围**： 不涉及
         :type update_at: str
         :param desc: **参数解释**： 配置文件描述。 **取值范围**： 长度不超过128个字符。
         :type desc: str
-        :param sensitive_words_shielding: 是否隐藏敏感词
+        :param sensitive_words_shielding: **参数解释**： 是否隐藏敏感词。 **取值范围**： - true：隐藏敏感词。 - false：未隐藏敏感词。
         :type sensitive_words_shielding: bool
         """
         
@@ -83,150 +83,150 @@ class Confs:
 
     @property
     def name(self):
-        r"""Gets the name of this Confs.
+        r"""Gets the name of this ListConfsRespConfs.
 
-        配置文件名称。
+        **参数解释**： 配置文件名称。 **取值范围**： 不涉及
 
-        :return: The name of this Confs.
+        :return: The name of this ListConfsRespConfs.
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        r"""Sets the name of this Confs.
+        r"""Sets the name of this ListConfsRespConfs.
 
-        配置文件名称。
+        **参数解释**： 配置文件名称。 **取值范围**： 不涉及
 
-        :param name: The name of this Confs.
+        :param name: The name of this ListConfsRespConfs.
         :type name: str
         """
         self._name = name
 
     @property
     def status(self):
-        r"""Gets the status of this Confs.
+        r"""Gets the status of this ListConfsRespConfs.
 
-        配置文件状态。
+        **参数解释**： 配置文件状态。 **取值范围**： - checking：正在检查中。 - available：可用。 - unavailable：不可用。 - starting：正开始。 - working：工作中。 - stopping：正在停止。 - stopped：已经停止。 - restoring：正在回滚。
 
-        :return: The status of this Confs.
+        :return: The status of this ListConfsRespConfs.
         :rtype: str
         """
         return self._status
 
     @status.setter
     def status(self, status):
-        r"""Sets the status of this Confs.
+        r"""Sets the status of this ListConfsRespConfs.
 
-        配置文件状态。
+        **参数解释**： 配置文件状态。 **取值范围**： - checking：正在检查中。 - available：可用。 - unavailable：不可用。 - starting：正开始。 - working：工作中。 - stopping：正在停止。 - stopped：已经停止。 - restoring：正在回滚。
 
-        :param status: The status of this Confs.
+        :param status: The status of this ListConfsRespConfs.
         :type status: str
         """
         self._status = status
 
     @property
     def conf_content(self):
-        r"""Gets the conf_content of this Confs.
+        r"""Gets the conf_content of this ListConfsRespConfs.
 
-        配置文件内容。
+        **参数解释**： 配置文件内容。 **取值范围**： 不涉及
 
-        :return: The conf_content of this Confs.
+        :return: The conf_content of this ListConfsRespConfs.
         :rtype: str
         """
         return self._conf_content
 
     @conf_content.setter
     def conf_content(self, conf_content):
-        r"""Sets the conf_content of this Confs.
+        r"""Sets the conf_content of this ListConfsRespConfs.
 
-        配置文件内容。
+        **参数解释**： 配置文件内容。 **取值范围**： 不涉及
 
-        :param conf_content: The conf_content of this Confs.
+        :param conf_content: The conf_content of this ListConfsRespConfs.
         :type conf_content: str
         """
         self._conf_content = conf_content
 
     @property
     def setting(self):
-        r"""Gets the setting of this Confs.
+        r"""Gets the setting of this ListConfsRespConfs.
 
-        :return: The setting of this Confs.
-        :rtype: :class:`huaweicloudsdkcss.v1.Setting`
+        :return: The setting of this ListConfsRespConfs.
+        :rtype: :class:`huaweicloudsdkcss.v1.ListConfsRespConfsSetting`
         """
         return self._setting
 
     @setting.setter
     def setting(self, setting):
-        r"""Sets the setting of this Confs.
+        r"""Sets the setting of this ListConfsRespConfs.
 
-        :param setting: The setting of this Confs.
-        :type setting: :class:`huaweicloudsdkcss.v1.Setting`
+        :param setting: The setting of this ListConfsRespConfs.
+        :type setting: :class:`huaweicloudsdkcss.v1.ListConfsRespConfsSetting`
         """
         self._setting = setting
 
     @property
     def update_at(self):
-        r"""Gets the update_at of this Confs.
+        r"""Gets the update_at of this ListConfsRespConfs.
 
-        更新时间。
+        **参数解释**： 更新时间，格式：yyyy-MM-dd'T'HH:mm:ss。 **取值范围**： 不涉及
 
-        :return: The update_at of this Confs.
+        :return: The update_at of this ListConfsRespConfs.
         :rtype: str
         """
         return self._update_at
 
     @update_at.setter
     def update_at(self, update_at):
-        r"""Sets the update_at of this Confs.
+        r"""Sets the update_at of this ListConfsRespConfs.
 
-        更新时间。
+        **参数解释**： 更新时间，格式：yyyy-MM-dd'T'HH:mm:ss。 **取值范围**： 不涉及
 
-        :param update_at: The update_at of this Confs.
+        :param update_at: The update_at of this ListConfsRespConfs.
         :type update_at: str
         """
         self._update_at = update_at
 
     @property
     def desc(self):
-        r"""Gets the desc of this Confs.
+        r"""Gets the desc of this ListConfsRespConfs.
 
         **参数解释**： 配置文件描述。 **取值范围**： 长度不超过128个字符。
 
-        :return: The desc of this Confs.
+        :return: The desc of this ListConfsRespConfs.
         :rtype: str
         """
         return self._desc
 
     @desc.setter
     def desc(self, desc):
-        r"""Sets the desc of this Confs.
+        r"""Sets the desc of this ListConfsRespConfs.
 
         **参数解释**： 配置文件描述。 **取值范围**： 长度不超过128个字符。
 
-        :param desc: The desc of this Confs.
+        :param desc: The desc of this ListConfsRespConfs.
         :type desc: str
         """
         self._desc = desc
 
     @property
     def sensitive_words_shielding(self):
-        r"""Gets the sensitive_words_shielding of this Confs.
+        r"""Gets the sensitive_words_shielding of this ListConfsRespConfs.
 
-        是否隐藏敏感词
+        **参数解释**： 是否隐藏敏感词。 **取值范围**： - true：隐藏敏感词。 - false：未隐藏敏感词。
 
-        :return: The sensitive_words_shielding of this Confs.
+        :return: The sensitive_words_shielding of this ListConfsRespConfs.
         :rtype: bool
         """
         return self._sensitive_words_shielding
 
     @sensitive_words_shielding.setter
     def sensitive_words_shielding(self, sensitive_words_shielding):
-        r"""Sets the sensitive_words_shielding of this Confs.
+        r"""Sets the sensitive_words_shielding of this ListConfsRespConfs.
 
-        是否隐藏敏感词
+        **参数解释**： 是否隐藏敏感词。 **取值范围**： - true：隐藏敏感词。 - false：未隐藏敏感词。
 
-        :param sensitive_words_shielding: The sensitive_words_shielding of this Confs.
+        :param sensitive_words_shielding: The sensitive_words_shielding of this ListConfsRespConfs.
         :type sensitive_words_shielding: bool
         """
         self._sensitive_words_shielding = sensitive_words_shielding
@@ -268,7 +268,7 @@ class Confs:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, Confs):
+        if not isinstance(other, ListConfsRespConfs):
             return False
 
         return self.__dict__ == other.__dict__
