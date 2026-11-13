@@ -36,8 +36,7 @@ class ChangeQuotaNewRequestBody:
         self._open_num = None
         self.discriminator = None
 
-        if open_num is not None:
-            self.open_num = open_num
+        self.open_num = open_num
 
     @property
     def open_num(self):

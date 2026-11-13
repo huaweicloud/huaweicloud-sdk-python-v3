@@ -20,7 +20,6 @@ class SupabaseInstanceCreateRequest:
         'flavor_ref': 'str',
         'volume': 'SupabaseVolumeConfig',
         'availability_zone': 'str',
-        'ha': 'SupabaseHaConfig',
         'configuration_id': 'str',
         'port': 'int',
         'security_group_id': 'str',
@@ -36,7 +35,6 @@ class SupabaseInstanceCreateRequest:
         'flavor_ref': 'flavor_ref',
         'volume': 'volume',
         'availability_zone': 'availability_zone',
-        'ha': 'ha',
         'configuration_id': 'configuration_id',
         'port': 'port',
         'security_group_id': 'security_group_id',
@@ -46,7 +44,7 @@ class SupabaseInstanceCreateRequest:
         'tags': 'tags'
     }
 
-    def __init__(self, datastore=None, charge_info=None, flavor_ref=None, volume=None, availability_zone=None, ha=None, configuration_id=None, port=None, security_group_id=None, password=None, data_vip=None, enterprise_project_id=None, tags=None):
+    def __init__(self, datastore=None, charge_info=None, flavor_ref=None, volume=None, availability_zone=None, configuration_id=None, port=None, security_group_id=None, password=None, data_vip=None, enterprise_project_id=None, tags=None):
         r"""SupabaseInstanceCreateRequest
 
         The model defined in huaweicloud sdk
@@ -59,10 +57,8 @@ class SupabaseInstanceCreateRequest:
         :type flavor_ref: str
         :param volume: 
         :type volume: :class:`huaweicloudsdkrds.v3.SupabaseVolumeConfig`
-        :param availability_zone: 可用区，≤2个逗号分隔，首个&#x3D;顶层主AZ。
+        :param availability_zone: 可用区，Single模式下为1个，需与顶层主AZ一致。
         :type availability_zone: str
-        :param ha: 
-        :type ha: :class:`huaweicloudsdkrds.v3.SupabaseHaConfig`
         :param configuration_id: 参数模板ID（可选）。
         :type configuration_id: str
         :param port: 数据库端口，2100~9500，默认5432。
@@ -86,7 +82,6 @@ class SupabaseInstanceCreateRequest:
         self._flavor_ref = None
         self._volume = None
         self._availability_zone = None
-        self._ha = None
         self._configuration_id = None
         self._port = None
         self._security_group_id = None
@@ -101,7 +96,6 @@ class SupabaseInstanceCreateRequest:
         self.flavor_ref = flavor_ref
         self.volume = volume
         self.availability_zone = availability_zone
-        self.ha = ha
         if configuration_id is not None:
             self.configuration_id = configuration_id
         if port is not None:
@@ -194,7 +188,7 @@ class SupabaseInstanceCreateRequest:
     def availability_zone(self):
         r"""Gets the availability_zone of this SupabaseInstanceCreateRequest.
 
-        可用区，≤2个逗号分隔，首个=顶层主AZ。
+        可用区，Single模式下为1个，需与顶层主AZ一致。
 
         :return: The availability_zone of this SupabaseInstanceCreateRequest.
         :rtype: str
@@ -205,30 +199,12 @@ class SupabaseInstanceCreateRequest:
     def availability_zone(self, availability_zone):
         r"""Sets the availability_zone of this SupabaseInstanceCreateRequest.
 
-        可用区，≤2个逗号分隔，首个=顶层主AZ。
+        可用区，Single模式下为1个，需与顶层主AZ一致。
 
         :param availability_zone: The availability_zone of this SupabaseInstanceCreateRequest.
         :type availability_zone: str
         """
         self._availability_zone = availability_zone
-
-    @property
-    def ha(self):
-        r"""Gets the ha of this SupabaseInstanceCreateRequest.
-
-        :return: The ha of this SupabaseInstanceCreateRequest.
-        :rtype: :class:`huaweicloudsdkrds.v3.SupabaseHaConfig`
-        """
-        return self._ha
-
-    @ha.setter
-    def ha(self, ha):
-        r"""Sets the ha of this SupabaseInstanceCreateRequest.
-
-        :param ha: The ha of this SupabaseInstanceCreateRequest.
-        :type ha: :class:`huaweicloudsdkrds.v3.SupabaseHaConfig`
-        """
-        self._ha = ha
 
     @property
     def configuration_id(self):

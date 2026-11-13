@@ -1,0 +1,195 @@
+# coding: utf-8
+
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
+
+
+class InnodbLockWaitsInfo:
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+    sensitive_list = []
+
+    openapi_types = {
+        'requesting_trx_id': 'str',
+        'requested_lock_id': 'str',
+        'blocking_trx_id': 'str',
+        'blocking_lock_id': 'str'
+    }
+
+    attribute_map = {
+        'requesting_trx_id': 'requesting_trx_id',
+        'requested_lock_id': 'requested_lock_id',
+        'blocking_trx_id': 'blocking_trx_id',
+        'blocking_lock_id': 'blocking_lock_id'
+    }
+
+    def __init__(self, requesting_trx_id=None, requested_lock_id=None, blocking_trx_id=None, blocking_lock_id=None):
+        r"""InnodbLockWaitsInfo
+
+        The model defined in huaweicloud sdk
+
+        :param requesting_trx_id: 请求事务的ID
+        :type requesting_trx_id: str
+        :param requested_lock_id: 等待的锁ID
+        :type requested_lock_id: str
+        :param blocking_trx_id: 阻塞事务的ID
+        :type blocking_trx_id: str
+        :param blocking_lock_id: 持有的锁ID
+        :type blocking_lock_id: str
+        """
+        
+        
+
+        self._requesting_trx_id = None
+        self._requested_lock_id = None
+        self._blocking_trx_id = None
+        self._blocking_lock_id = None
+        self.discriminator = None
+
+        if requesting_trx_id is not None:
+            self.requesting_trx_id = requesting_trx_id
+        if requested_lock_id is not None:
+            self.requested_lock_id = requested_lock_id
+        if blocking_trx_id is not None:
+            self.blocking_trx_id = blocking_trx_id
+        if blocking_lock_id is not None:
+            self.blocking_lock_id = blocking_lock_id
+
+    @property
+    def requesting_trx_id(self):
+        r"""Gets the requesting_trx_id of this InnodbLockWaitsInfo.
+
+        请求事务的ID
+
+        :return: The requesting_trx_id of this InnodbLockWaitsInfo.
+        :rtype: str
+        """
+        return self._requesting_trx_id
+
+    @requesting_trx_id.setter
+    def requesting_trx_id(self, requesting_trx_id):
+        r"""Sets the requesting_trx_id of this InnodbLockWaitsInfo.
+
+        请求事务的ID
+
+        :param requesting_trx_id: The requesting_trx_id of this InnodbLockWaitsInfo.
+        :type requesting_trx_id: str
+        """
+        self._requesting_trx_id = requesting_trx_id
+
+    @property
+    def requested_lock_id(self):
+        r"""Gets the requested_lock_id of this InnodbLockWaitsInfo.
+
+        等待的锁ID
+
+        :return: The requested_lock_id of this InnodbLockWaitsInfo.
+        :rtype: str
+        """
+        return self._requested_lock_id
+
+    @requested_lock_id.setter
+    def requested_lock_id(self, requested_lock_id):
+        r"""Sets the requested_lock_id of this InnodbLockWaitsInfo.
+
+        等待的锁ID
+
+        :param requested_lock_id: The requested_lock_id of this InnodbLockWaitsInfo.
+        :type requested_lock_id: str
+        """
+        self._requested_lock_id = requested_lock_id
+
+    @property
+    def blocking_trx_id(self):
+        r"""Gets the blocking_trx_id of this InnodbLockWaitsInfo.
+
+        阻塞事务的ID
+
+        :return: The blocking_trx_id of this InnodbLockWaitsInfo.
+        :rtype: str
+        """
+        return self._blocking_trx_id
+
+    @blocking_trx_id.setter
+    def blocking_trx_id(self, blocking_trx_id):
+        r"""Sets the blocking_trx_id of this InnodbLockWaitsInfo.
+
+        阻塞事务的ID
+
+        :param blocking_trx_id: The blocking_trx_id of this InnodbLockWaitsInfo.
+        :type blocking_trx_id: str
+        """
+        self._blocking_trx_id = blocking_trx_id
+
+    @property
+    def blocking_lock_id(self):
+        r"""Gets the blocking_lock_id of this InnodbLockWaitsInfo.
+
+        持有的锁ID
+
+        :return: The blocking_lock_id of this InnodbLockWaitsInfo.
+        :rtype: str
+        """
+        return self._blocking_lock_id
+
+    @blocking_lock_id.setter
+    def blocking_lock_id(self, blocking_lock_id):
+        r"""Sets the blocking_lock_id of this InnodbLockWaitsInfo.
+
+        持有的锁ID
+
+        :param blocking_lock_id: The blocking_lock_id of this InnodbLockWaitsInfo.
+        :type blocking_lock_id: str
+        """
+        self._blocking_lock_id = blocking_lock_id
+
+    def to_dict(self):
+        result = {}
+
+        for attr, _ in self.openapi_types.items():
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        import simplejson as json
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
+
+    def __repr__(self):
+        """For `print`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, InnodbLockWaitsInfo):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

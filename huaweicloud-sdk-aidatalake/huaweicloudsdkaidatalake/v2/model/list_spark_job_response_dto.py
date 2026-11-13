@@ -28,7 +28,9 @@ class ListSparkJobResponseDto:
         'start_time': 'int',
         'end_time': 'int',
         'create_user': 'SparkCreateUser',
-        'log_url': 'str'
+        'log_url': 'str',
+        'spark_config': 'dict(str, str)',
+        'labels': 'list[SparkJobLabel]'
     }
 
     attribute_map = {
@@ -45,10 +47,12 @@ class ListSparkJobResponseDto:
         'start_time': 'start_time',
         'end_time': 'end_time',
         'create_user': 'create_user',
-        'log_url': 'log_url'
+        'log_url': 'log_url',
+        'spark_config': 'spark_config',
+        'labels': 'labels'
     }
 
-    def __init__(self, job_id=None, client_token=None, name=None, endpoint_name=None, job_type=None, state=None, state_message=None, metric_statistics=None, retry_times=None, create_time=None, start_time=None, end_time=None, create_user=None, log_url=None):
+    def __init__(self, job_id=None, client_token=None, name=None, endpoint_name=None, job_type=None, state=None, state_message=None, metric_statistics=None, retry_times=None, create_time=None, start_time=None, end_time=None, create_user=None, log_url=None, spark_config=None, labels=None):
         r"""ListSparkJobResponseDto
 
         The model defined in huaweicloud sdk
@@ -81,6 +85,10 @@ class ListSparkJobResponseDto:
         :type create_user: :class:`huaweicloudsdkaidatalake.v2.SparkCreateUser`
         :param log_url: **参数解释**：日志归档路径OBS URL，用于查看作业执行日志。 **取值范围**：OBS URL格式，长度为1~1024个字符。
         :type log_url: str
+        :param spark_config: **参数解释**：用户自定义Spark参数配置，敏感配置项已脱敏。Map中的key为Spark配置项名称（如spark.executor.memory），value为对应的配置值，key和value均为字符串，单个长度不超过10240个字符。
+        :type spark_config: dict(str, str)
+        :param labels: **参数解释**：作业标签列表，用于标识和分类作业。
+        :type labels: list[:class:`huaweicloudsdkaidatalake.v2.SparkJobLabel`]
         """
         
         
@@ -99,6 +107,8 @@ class ListSparkJobResponseDto:
         self._end_time = None
         self._create_user = None
         self._log_url = None
+        self._spark_config = None
+        self._labels = None
         self.discriminator = None
 
         self.job_id = job_id
@@ -122,6 +132,10 @@ class ListSparkJobResponseDto:
         self.create_user = create_user
         if log_url is not None:
             self.log_url = log_url
+        if spark_config is not None:
+            self.spark_config = spark_config
+        if labels is not None:
+            self.labels = labels
 
     @property
     def job_id(self):
@@ -422,6 +436,50 @@ class ListSparkJobResponseDto:
         :type log_url: str
         """
         self._log_url = log_url
+
+    @property
+    def spark_config(self):
+        r"""Gets the spark_config of this ListSparkJobResponseDto.
+
+        **参数解释**：用户自定义Spark参数配置，敏感配置项已脱敏。Map中的key为Spark配置项名称（如spark.executor.memory），value为对应的配置值，key和value均为字符串，单个长度不超过10240个字符。
+
+        :return: The spark_config of this ListSparkJobResponseDto.
+        :rtype: dict(str, str)
+        """
+        return self._spark_config
+
+    @spark_config.setter
+    def spark_config(self, spark_config):
+        r"""Sets the spark_config of this ListSparkJobResponseDto.
+
+        **参数解释**：用户自定义Spark参数配置，敏感配置项已脱敏。Map中的key为Spark配置项名称（如spark.executor.memory），value为对应的配置值，key和value均为字符串，单个长度不超过10240个字符。
+
+        :param spark_config: The spark_config of this ListSparkJobResponseDto.
+        :type spark_config: dict(str, str)
+        """
+        self._spark_config = spark_config
+
+    @property
+    def labels(self):
+        r"""Gets the labels of this ListSparkJobResponseDto.
+
+        **参数解释**：作业标签列表，用于标识和分类作业。
+
+        :return: The labels of this ListSparkJobResponseDto.
+        :rtype: list[:class:`huaweicloudsdkaidatalake.v2.SparkJobLabel`]
+        """
+        return self._labels
+
+    @labels.setter
+    def labels(self, labels):
+        r"""Sets the labels of this ListSparkJobResponseDto.
+
+        **参数解释**：作业标签列表，用于标识和分类作业。
+
+        :param labels: The labels of this ListSparkJobResponseDto.
+        :type labels: list[:class:`huaweicloudsdkaidatalake.v2.SparkJobLabel`]
+        """
+        self._labels = labels
 
     def to_dict(self):
         result = {}

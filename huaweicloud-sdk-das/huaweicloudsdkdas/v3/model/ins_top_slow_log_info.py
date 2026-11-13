@@ -18,7 +18,7 @@ class InsTopSlowLogInfo:
         'template_id': 'str',
         'template': 'str',
         'databases': 'list[str]',
-        'time': 'int',
+        'times': 'int',
         'avg_query_time': 'float',
         'max_query_time': 'float',
         'avg_rows_examined': 'float',
@@ -32,7 +32,7 @@ class InsTopSlowLogInfo:
         'template_id': 'template_id',
         'template': 'template',
         'databases': 'databases',
-        'time': 'time',
+        'times': 'times',
         'avg_query_time': 'avg_query_time',
         'max_query_time': 'max_query_time',
         'avg_rows_examined': 'avg_rows_examined',
@@ -42,7 +42,7 @@ class InsTopSlowLogInfo:
         'max_rows_sent': 'max_rows_sent'
     }
 
-    def __init__(self, template_id=None, template=None, databases=None, time=None, avg_query_time=None, max_query_time=None, avg_rows_examined=None, max_rows_examined=None, sum_rows_examined=None, avg_rows_sent=None, max_rows_sent=None):
+    def __init__(self, template_id=None, template=None, databases=None, times=None, avg_query_time=None, max_query_time=None, avg_rows_examined=None, max_rows_examined=None, sum_rows_examined=None, avg_rows_sent=None, max_rows_sent=None):
         r"""InsTopSlowLogInfo
 
         The model defined in huaweicloud sdk
@@ -53,8 +53,8 @@ class InsTopSlowLogInfo:
         :type template: str
         :param databases: 数据库名
         :type databases: list[str]
-        :param time: 执行次数
-        :type time: int
+        :param times: 执行次数
+        :type times: int
         :param avg_query_time: 平均执行时间
         :type avg_query_time: float
         :param max_query_time: 最大执行时间
@@ -76,7 +76,7 @@ class InsTopSlowLogInfo:
         self._template_id = None
         self._template = None
         self._databases = None
-        self._time = None
+        self._times = None
         self._avg_query_time = None
         self._max_query_time = None
         self._avg_rows_examined = None
@@ -92,8 +92,8 @@ class InsTopSlowLogInfo:
             self.template = template
         if databases is not None:
             self.databases = databases
-        if time is not None:
-            self.time = time
+        if times is not None:
+            self.times = times
         if avg_query_time is not None:
             self.avg_query_time = avg_query_time
         if max_query_time is not None:
@@ -176,26 +176,26 @@ class InsTopSlowLogInfo:
         self._databases = databases
 
     @property
-    def time(self):
-        r"""Gets the time of this InsTopSlowLogInfo.
+    def times(self):
+        r"""Gets the times of this InsTopSlowLogInfo.
 
         执行次数
 
-        :return: The time of this InsTopSlowLogInfo.
+        :return: The times of this InsTopSlowLogInfo.
         :rtype: int
         """
-        return self._time
+        return self._times
 
-    @time.setter
-    def time(self, time):
-        r"""Sets the time of this InsTopSlowLogInfo.
+    @times.setter
+    def times(self, times):
+        r"""Sets the times of this InsTopSlowLogInfo.
 
         执行次数
 
-        :param time: The time of this InsTopSlowLogInfo.
-        :type time: int
+        :param times: The times of this InsTopSlowLogInfo.
+        :type times: int
         """
-        self._time = time
+        self._times = times
 
     @property
     def avg_query_time(self):

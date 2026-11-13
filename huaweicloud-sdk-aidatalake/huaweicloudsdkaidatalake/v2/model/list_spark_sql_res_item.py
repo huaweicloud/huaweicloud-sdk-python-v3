@@ -30,7 +30,9 @@ class ListSparkSqlResItem:
         'create_time': 'int',
         'start_time': 'int',
         'end_time': 'int',
-        'create_user': 'SparkCreateUser'
+        'create_user': 'SparkCreateUser',
+        'spark_config': 'dict(str, str)',
+        'labels': 'list[SparkSqlLabelRes]'
     }
 
     attribute_map = {
@@ -49,10 +51,12 @@ class ListSparkSqlResItem:
         'create_time': 'create_time',
         'start_time': 'start_time',
         'end_time': 'end_time',
-        'create_user': 'create_user'
+        'create_user': 'create_user',
+        'spark_config': 'spark_config',
+        'labels': 'labels'
     }
 
-    def __init__(self, statement_id=None, client_token=None, endpoint_name=None, catalog_context=None, statement=None, parameters=None, state=None, statement_type=None, error=None, result=None, metric_statistics=None, log_url=None, create_time=None, start_time=None, end_time=None, create_user=None):
+    def __init__(self, statement_id=None, client_token=None, endpoint_name=None, catalog_context=None, statement=None, parameters=None, state=None, statement_type=None, error=None, result=None, metric_statistics=None, log_url=None, create_time=None, start_time=None, end_time=None, create_user=None, spark_config=None, labels=None):
         r"""ListSparkSqlResItem
 
         The model defined in huaweicloud sdk
@@ -89,6 +93,10 @@ class ListSparkSqlResItem:
         :type end_time: int
         :param create_user: 
         :type create_user: :class:`huaweicloudsdkaidatalake.v2.SparkCreateUser`
+        :param spark_config: **参数解释**：用户自定义Spark参数配置。Map中的key为Spark配置项名称（如spark.executor.memory），value为对应的配置值，key和value均为字符串，单个长度不超过10240个字符。
+        :type spark_config: dict(str, str)
+        :param labels: **参数解释**：作业标签列表，用于标识和分类作业。
+        :type labels: list[:class:`huaweicloudsdkaidatalake.v2.SparkSqlLabelRes`]
         """
         
         
@@ -109,6 +117,8 @@ class ListSparkSqlResItem:
         self._start_time = None
         self._end_time = None
         self._create_user = None
+        self._spark_config = None
+        self._labels = None
         self.discriminator = None
 
         self.statement_id = statement_id
@@ -135,6 +145,10 @@ class ListSparkSqlResItem:
         if end_time is not None:
             self.end_time = end_time
         self.create_user = create_user
+        if spark_config is not None:
+            self.spark_config = spark_config
+        if labels is not None:
+            self.labels = labels
 
     @property
     def statement_id(self):
@@ -467,6 +481,50 @@ class ListSparkSqlResItem:
         :type create_user: :class:`huaweicloudsdkaidatalake.v2.SparkCreateUser`
         """
         self._create_user = create_user
+
+    @property
+    def spark_config(self):
+        r"""Gets the spark_config of this ListSparkSqlResItem.
+
+        **参数解释**：用户自定义Spark参数配置。Map中的key为Spark配置项名称（如spark.executor.memory），value为对应的配置值，key和value均为字符串，单个长度不超过10240个字符。
+
+        :return: The spark_config of this ListSparkSqlResItem.
+        :rtype: dict(str, str)
+        """
+        return self._spark_config
+
+    @spark_config.setter
+    def spark_config(self, spark_config):
+        r"""Sets the spark_config of this ListSparkSqlResItem.
+
+        **参数解释**：用户自定义Spark参数配置。Map中的key为Spark配置项名称（如spark.executor.memory），value为对应的配置值，key和value均为字符串，单个长度不超过10240个字符。
+
+        :param spark_config: The spark_config of this ListSparkSqlResItem.
+        :type spark_config: dict(str, str)
+        """
+        self._spark_config = spark_config
+
+    @property
+    def labels(self):
+        r"""Gets the labels of this ListSparkSqlResItem.
+
+        **参数解释**：作业标签列表，用于标识和分类作业。
+
+        :return: The labels of this ListSparkSqlResItem.
+        :rtype: list[:class:`huaweicloudsdkaidatalake.v2.SparkSqlLabelRes`]
+        """
+        return self._labels
+
+    @labels.setter
+    def labels(self, labels):
+        r"""Sets the labels of this ListSparkSqlResItem.
+
+        **参数解释**：作业标签列表，用于标识和分类作业。
+
+        :param labels: The labels of this ListSparkSqlResItem.
+        :type labels: list[:class:`huaweicloudsdkaidatalake.v2.SparkSqlLabelRes`]
+        """
+        self._labels = labels
 
     def to_dict(self):
         result = {}

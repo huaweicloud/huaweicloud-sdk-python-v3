@@ -21,6 +21,7 @@ from huaweicloudsdkworkspaceapp.v1.model.app_server_task_status import AppServer
 from huaweicloudsdkworkspaceapp.v1.model.app_session import AppSession
 from huaweicloudsdkworkspaceapp.v1.model.app_state_enum import AppStateEnum
 from huaweicloudsdkworkspaceapp.v1.model.app_type_enum import AppTypeEnum
+from huaweicloudsdkworkspaceapp.v1.model.aps_job_resource_info import ApsJobResourceInfo
 from huaweicloudsdkworkspaceapp.v1.model.assign_share_folder_req import AssignShareFolderReq
 from huaweicloudsdkworkspaceapp.v1.model.assign_user_folder_req import AssignUserFolderReq
 from huaweicloudsdkworkspaceapp.v1.model.assignment import Assignment

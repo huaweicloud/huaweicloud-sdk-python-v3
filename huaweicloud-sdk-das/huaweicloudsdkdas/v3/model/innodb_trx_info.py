@@ -33,7 +33,14 @@ class InnodbTrxInfo:
         'trx_rows_locked': 'str',
         'trx_rows_modified': 'str',
         'trx_concurrency_tickets': 'str',
-        'trx_isolation_level': 'str'
+        'trx_isolation_level': 'str',
+        'trx_unique_checks': 'str',
+        'trx_foreign_key_checks': 'str',
+        'trx_last_foreign_key_error': 'str',
+        'trx_adaptive_hash_latched': 'str',
+        'trx_adaptive_hash_timeout': 'str',
+        'wait_locks': 'list[InnodbLock]',
+        'hold_locks': 'list[InnodbLock]'
     }
 
     attribute_map = {
@@ -55,10 +62,17 @@ class InnodbTrxInfo:
         'trx_rows_locked': 'trx_rows_locked',
         'trx_rows_modified': 'trx_rows_modified',
         'trx_concurrency_tickets': 'trx_concurrency_tickets',
-        'trx_isolation_level': 'trx_isolation_level'
+        'trx_isolation_level': 'trx_isolation_level',
+        'trx_unique_checks': 'trx_unique_checks',
+        'trx_foreign_key_checks': 'trx_foreign_key_checks',
+        'trx_last_foreign_key_error': 'trx_last_foreign_key_error',
+        'trx_adaptive_hash_latched': 'trx_adaptive_hash_latched',
+        'trx_adaptive_hash_timeout': 'trx_adaptive_hash_timeout',
+        'wait_locks': 'wait_locks',
+        'hold_locks': 'hold_locks'
     }
 
-    def __init__(self, trx_id=None, trx_state=None, trx_started=None, trx_started_timestamp=None, trx_requested_lock_id=None, trx_wait_started=None, trx_wait_started_timestamp=None, trx_weight=None, trx_mysql_thread_id=None, trx_query=None, trx_operation_state=None, trx_tables_in_use=None, trx_tables_locked=None, trx_lock_structs=None, trx_lock_memory_bytes=None, trx_rows_locked=None, trx_rows_modified=None, trx_concurrency_tickets=None, trx_isolation_level=None):
+    def __init__(self, trx_id=None, trx_state=None, trx_started=None, trx_started_timestamp=None, trx_requested_lock_id=None, trx_wait_started=None, trx_wait_started_timestamp=None, trx_weight=None, trx_mysql_thread_id=None, trx_query=None, trx_operation_state=None, trx_tables_in_use=None, trx_tables_locked=None, trx_lock_structs=None, trx_lock_memory_bytes=None, trx_rows_locked=None, trx_rows_modified=None, trx_concurrency_tickets=None, trx_isolation_level=None, trx_unique_checks=None, trx_foreign_key_checks=None, trx_last_foreign_key_error=None, trx_adaptive_hash_latched=None, trx_adaptive_hash_timeout=None, wait_locks=None, hold_locks=None):
         r"""InnodbTrxInfo
 
         The model defined in huaweicloud sdk
@@ -101,6 +115,20 @@ class InnodbTrxInfo:
         :type trx_concurrency_tickets: str
         :param trx_isolation_level: 事务隔离级别
         :type trx_isolation_level: str
+        :param trx_unique_checks: 是否打开唯一性检查的标识
+        :type trx_unique_checks: str
+        :param trx_foreign_key_checks: 是否打开外键检查的标识
+        :type trx_foreign_key_checks: str
+        :param trx_last_foreign_key_error: 最后一次的外键错误信息
+        :type trx_last_foreign_key_error: str
+        :param trx_adaptive_hash_latched: 自适应散列索引是否被当前事务锁住的标识
+        :type trx_adaptive_hash_latched: str
+        :param trx_adaptive_hash_timeout: 是否立刻放弃为自适应散列索引搜索 LATCH 的标识
+        :type trx_adaptive_hash_timeout: str
+        :param wait_locks: 等待的锁列表
+        :type wait_locks: list[:class:`huaweicloudsdkdas.v3.InnodbLock`]
+        :param hold_locks: 持有的锁列表
+        :type hold_locks: list[:class:`huaweicloudsdkdas.v3.InnodbLock`]
         """
         
         
@@ -124,6 +152,13 @@ class InnodbTrxInfo:
         self._trx_rows_modified = None
         self._trx_concurrency_tickets = None
         self._trx_isolation_level = None
+        self._trx_unique_checks = None
+        self._trx_foreign_key_checks = None
+        self._trx_last_foreign_key_error = None
+        self._trx_adaptive_hash_latched = None
+        self._trx_adaptive_hash_timeout = None
+        self._wait_locks = None
+        self._hold_locks = None
         self.discriminator = None
 
         if trx_id is not None:
@@ -164,6 +199,20 @@ class InnodbTrxInfo:
             self.trx_concurrency_tickets = trx_concurrency_tickets
         if trx_isolation_level is not None:
             self.trx_isolation_level = trx_isolation_level
+        if trx_unique_checks is not None:
+            self.trx_unique_checks = trx_unique_checks
+        if trx_foreign_key_checks is not None:
+            self.trx_foreign_key_checks = trx_foreign_key_checks
+        if trx_last_foreign_key_error is not None:
+            self.trx_last_foreign_key_error = trx_last_foreign_key_error
+        if trx_adaptive_hash_latched is not None:
+            self.trx_adaptive_hash_latched = trx_adaptive_hash_latched
+        if trx_adaptive_hash_timeout is not None:
+            self.trx_adaptive_hash_timeout = trx_adaptive_hash_timeout
+        if wait_locks is not None:
+            self.wait_locks = wait_locks
+        if hold_locks is not None:
+            self.hold_locks = hold_locks
 
     @property
     def trx_id(self):
@@ -582,6 +631,160 @@ class InnodbTrxInfo:
         :type trx_isolation_level: str
         """
         self._trx_isolation_level = trx_isolation_level
+
+    @property
+    def trx_unique_checks(self):
+        r"""Gets the trx_unique_checks of this InnodbTrxInfo.
+
+        是否打开唯一性检查的标识
+
+        :return: The trx_unique_checks of this InnodbTrxInfo.
+        :rtype: str
+        """
+        return self._trx_unique_checks
+
+    @trx_unique_checks.setter
+    def trx_unique_checks(self, trx_unique_checks):
+        r"""Sets the trx_unique_checks of this InnodbTrxInfo.
+
+        是否打开唯一性检查的标识
+
+        :param trx_unique_checks: The trx_unique_checks of this InnodbTrxInfo.
+        :type trx_unique_checks: str
+        """
+        self._trx_unique_checks = trx_unique_checks
+
+    @property
+    def trx_foreign_key_checks(self):
+        r"""Gets the trx_foreign_key_checks of this InnodbTrxInfo.
+
+        是否打开外键检查的标识
+
+        :return: The trx_foreign_key_checks of this InnodbTrxInfo.
+        :rtype: str
+        """
+        return self._trx_foreign_key_checks
+
+    @trx_foreign_key_checks.setter
+    def trx_foreign_key_checks(self, trx_foreign_key_checks):
+        r"""Sets the trx_foreign_key_checks of this InnodbTrxInfo.
+
+        是否打开外键检查的标识
+
+        :param trx_foreign_key_checks: The trx_foreign_key_checks of this InnodbTrxInfo.
+        :type trx_foreign_key_checks: str
+        """
+        self._trx_foreign_key_checks = trx_foreign_key_checks
+
+    @property
+    def trx_last_foreign_key_error(self):
+        r"""Gets the trx_last_foreign_key_error of this InnodbTrxInfo.
+
+        最后一次的外键错误信息
+
+        :return: The trx_last_foreign_key_error of this InnodbTrxInfo.
+        :rtype: str
+        """
+        return self._trx_last_foreign_key_error
+
+    @trx_last_foreign_key_error.setter
+    def trx_last_foreign_key_error(self, trx_last_foreign_key_error):
+        r"""Sets the trx_last_foreign_key_error of this InnodbTrxInfo.
+
+        最后一次的外键错误信息
+
+        :param trx_last_foreign_key_error: The trx_last_foreign_key_error of this InnodbTrxInfo.
+        :type trx_last_foreign_key_error: str
+        """
+        self._trx_last_foreign_key_error = trx_last_foreign_key_error
+
+    @property
+    def trx_adaptive_hash_latched(self):
+        r"""Gets the trx_adaptive_hash_latched of this InnodbTrxInfo.
+
+        自适应散列索引是否被当前事务锁住的标识
+
+        :return: The trx_adaptive_hash_latched of this InnodbTrxInfo.
+        :rtype: str
+        """
+        return self._trx_adaptive_hash_latched
+
+    @trx_adaptive_hash_latched.setter
+    def trx_adaptive_hash_latched(self, trx_adaptive_hash_latched):
+        r"""Sets the trx_adaptive_hash_latched of this InnodbTrxInfo.
+
+        自适应散列索引是否被当前事务锁住的标识
+
+        :param trx_adaptive_hash_latched: The trx_adaptive_hash_latched of this InnodbTrxInfo.
+        :type trx_adaptive_hash_latched: str
+        """
+        self._trx_adaptive_hash_latched = trx_adaptive_hash_latched
+
+    @property
+    def trx_adaptive_hash_timeout(self):
+        r"""Gets the trx_adaptive_hash_timeout of this InnodbTrxInfo.
+
+        是否立刻放弃为自适应散列索引搜索 LATCH 的标识
+
+        :return: The trx_adaptive_hash_timeout of this InnodbTrxInfo.
+        :rtype: str
+        """
+        return self._trx_adaptive_hash_timeout
+
+    @trx_adaptive_hash_timeout.setter
+    def trx_adaptive_hash_timeout(self, trx_adaptive_hash_timeout):
+        r"""Sets the trx_adaptive_hash_timeout of this InnodbTrxInfo.
+
+        是否立刻放弃为自适应散列索引搜索 LATCH 的标识
+
+        :param trx_adaptive_hash_timeout: The trx_adaptive_hash_timeout of this InnodbTrxInfo.
+        :type trx_adaptive_hash_timeout: str
+        """
+        self._trx_adaptive_hash_timeout = trx_adaptive_hash_timeout
+
+    @property
+    def wait_locks(self):
+        r"""Gets the wait_locks of this InnodbTrxInfo.
+
+        等待的锁列表
+
+        :return: The wait_locks of this InnodbTrxInfo.
+        :rtype: list[:class:`huaweicloudsdkdas.v3.InnodbLock`]
+        """
+        return self._wait_locks
+
+    @wait_locks.setter
+    def wait_locks(self, wait_locks):
+        r"""Sets the wait_locks of this InnodbTrxInfo.
+
+        等待的锁列表
+
+        :param wait_locks: The wait_locks of this InnodbTrxInfo.
+        :type wait_locks: list[:class:`huaweicloudsdkdas.v3.InnodbLock`]
+        """
+        self._wait_locks = wait_locks
+
+    @property
+    def hold_locks(self):
+        r"""Gets the hold_locks of this InnodbTrxInfo.
+
+        持有的锁列表
+
+        :return: The hold_locks of this InnodbTrxInfo.
+        :rtype: list[:class:`huaweicloudsdkdas.v3.InnodbLock`]
+        """
+        return self._hold_locks
+
+    @hold_locks.setter
+    def hold_locks(self, hold_locks):
+        r"""Sets the hold_locks of this InnodbTrxInfo.
+
+        持有的锁列表
+
+        :param hold_locks: The hold_locks of this InnodbTrxInfo.
+        :type hold_locks: list[:class:`huaweicloudsdkdas.v3.InnodbLock`]
+        """
+        self._hold_locks = hold_locks
 
     def to_dict(self):
         result = {}

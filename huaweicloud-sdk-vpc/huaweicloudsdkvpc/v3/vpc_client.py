@@ -501,6 +501,73 @@ class VpcClient(Client):
 
         return http_info
 
+    def batch_create_traffic_mirror_filter_rules(self, request):
+        r"""批量创建流量镜像筛选规则
+
+        批量创建流量镜像筛选规则
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchCreateTrafficMirrorFilterRules
+        :type request: :class:`huaweicloudsdkvpc.v3.BatchCreateTrafficMirrorFilterRulesRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.BatchCreateTrafficMirrorFilterRulesResponse`
+        """
+        http_info = self._batch_create_traffic_mirror_filter_rules_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_create_traffic_mirror_filter_rules_invoker(self, request):
+        http_info = self._batch_create_traffic_mirror_filter_rules_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_create_traffic_mirror_filter_rules_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/vpc/traffic-mirror-filters/{traffic_mirror_filter_id}/traffic-mirror-filter-rules/batch-create",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateTrafficMirrorFilterRulesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'traffic_mirror_filter_id' in local_var_params:
+            path_params['traffic_mirror_filter_id'] = local_var_params['traffic_mirror_filter_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_delete_port_tags(self, request):
         r"""批量删除端口资源标签
 
@@ -2242,6 +2309,85 @@ class VpcClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_resource_associations(self, request):
+        r"""查询资源关联的实例信息列表
+
+        网卡等资源可以关联高阶服务的资源实例，如ELB，您可以通过此接口查询资源关联的实例信息列表，包括资源和实例的类型、ID和所属的项目ID。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListResourceAssociations
+        :type request: :class:`huaweicloudsdkvpc.v3.ListResourceAssociationsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.ListResourceAssociationsResponse`
+        """
+        http_info = self._list_resource_associations_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_resource_associations_invoker(self, request):
+        http_info = self._list_resource_associations_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_resource_associations_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/vpc/resource-associations",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListResourceAssociationsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'resource_id' in local_var_params:
+            query_params.append(('resource_id', local_var_params['resource_id']))
+            collection_formats['resource_id'] = 'csv'
+        if 'resource_type' in local_var_params:
+            query_params.append(('resource_type', local_var_params['resource_type']))
+            collection_formats['resource_type'] = 'csv'
+        if 'resource_project_id' in local_var_params:
+            query_params.append(('resource_project_id', local_var_params['resource_project_id']))
+        if 'instance_id' in local_var_params:
+            query_params.append(('instance_id', local_var_params['instance_id']))
+            collection_formats['instance_id'] = 'csv'
+        if 'instance_type' in local_var_params:
+            query_params.append(('instance_type', local_var_params['instance_type']))
+            collection_formats['instance_type'] = 'csv'
+        if 'instance_project_id' in local_var_params:
+            query_params.append(('instance_project_id', local_var_params['instance_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 

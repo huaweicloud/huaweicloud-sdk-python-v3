@@ -1,0 +1,36 @@
+# coding: utf-8
+
+from __future__ import absolute_import
+
+# import models into model package
+from huaweicloudsdkdoczip.v1.model.application import Application
+from huaweicloudsdkdoczip.v1.model.application_basic_info import ApplicationBasicInfo
+from huaweicloudsdkdoczip.v1.model.application_basic_info_rsp import ApplicationBasicInfoRsp
+from huaweicloudsdkdoczip.v1.model.create_app_req import CreateAppReq
+from huaweicloudsdkdoczip.v1.model.create_application_request import CreateApplicationRequest
+from huaweicloudsdkdoczip.v1.model.create_application_response import CreateApplicationResponse
+from huaweicloudsdkdoczip.v1.model.delete_application_request import DeleteApplicationRequest
+from huaweicloudsdkdoczip.v1.model.delete_application_response import DeleteApplicationResponse
+from huaweicloudsdkdoczip.v1.model.idp_detail_info import IDPDetailInfo
+from huaweicloudsdkdoczip.v1.model.idp_detail_vo import IDPDetailVo
+from huaweicloudsdkdoczip.v1.model.idp_info import IDPInfo
+from huaweicloudsdkdoczip.v1.model.list_application_details_request import ListApplicationDetailsRequest
+from huaweicloudsdkdoczip.v1.model.list_application_details_response import ListApplicationDetailsResponse
+from huaweicloudsdkdoczip.v1.model.list_applications_request import ListApplicationsRequest
+from huaweicloudsdkdoczip.v1.model.list_applications_response import ListApplicationsResponse
+from huaweicloudsdkdoczip.v1.model.public_info import PublicInfo
+from huaweicloudsdkdoczip.v1.model.public_update_info import PublicUpdateInfo
+from huaweicloudsdkdoczip.v1.model.publish_application_request import PublishApplicationRequest
+from huaweicloudsdkdoczip.v1.model.publish_application_response import PublishApplicationResponse
+from huaweicloudsdkdoczip.v1.model.release_app_info import ReleaseAppInfo
+from huaweicloudsdkdoczip.v1.model.release_app_req import ReleaseAppReq
+from huaweicloudsdkdoczip.v1.model.show_app_resource_limit_request import ShowAppResourceLimitRequest
+from huaweicloudsdkdoczip.v1.model.show_app_resource_limit_response import ShowAppResourceLimitResponse
+from huaweicloudsdkdoczip.v1.model.show_app_secret_key_request import ShowAppSecretKeyRequest
+from huaweicloudsdkdoczip.v1.model.show_app_secret_key_response import ShowAppSecretKeyResponse
+from huaweicloudsdkdoczip.v1.model.show_blocks_request import ShowBlocksRequest
+from huaweicloudsdkdoczip.v1.model.show_blocks_response import ShowBlocksResponse
+from huaweicloudsdkdoczip.v1.model.sysconfig_info import SysconfigInfo
+from huaweicloudsdkdoczip.v1.model.update_app_req import UpdateAppReq
+from huaweicloudsdkdoczip.v1.model.update_application_request import UpdateApplicationRequest
+from huaweicloudsdkdoczip.v1.model.update_application_response import UpdateApplicationResponse

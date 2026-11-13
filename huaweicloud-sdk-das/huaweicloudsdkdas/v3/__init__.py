@@ -362,6 +362,7 @@ from huaweicloudsdkdas.v3.model.index_usage_percent import IndexUsagePercent
 from huaweicloudsdkdas.v3.model.index_usage_trend_point import IndexUsageTrendPoint
 from huaweicloudsdkdas.v3.model.innodb_lock import InnodbLock
 from huaweicloudsdkdas.v3.model.innodb_lock_waits import InnodbLockWaits
+from huaweicloudsdkdas.v3.model.innodb_lock_waits_info import InnodbLockWaitsInfo
 from huaweicloudsdkdas.v3.model.innodb_trx import InnodbTrx
 from huaweicloudsdkdas.v3.model.innodb_trx_info import InnodbTrxInfo
 from huaweicloudsdkdas.v3.model.ins_top_slow_log_info import InsTopSlowLogInfo
@@ -976,6 +977,7 @@ from huaweicloudsdkdas.v3.model.slow_log_tpl_contrast import SlowLogTplContrast
 from huaweicloudsdkdas.v3.model.slow_log_trend_point import SlowLogTrendPoint
 from huaweicloudsdkdas.v3.model.slow_sql_statistics import SlowSqlStatistics
 from huaweicloudsdkdas.v3.model.slow_sql_template import SlowSqlTemplate
+from huaweicloudsdkdas.v3.model.slow_sql_tpl_template import SlowSqlTplTemplate
 from huaweicloudsdkdas.v3.model.slow_sql_trend_item import SlowSqlTrendItem
 from huaweicloudsdkdas.v3.model.smn_topic_info import SmnTopicInfo
 from huaweicloudsdkdas.v3.model.snapshot import Snapshot

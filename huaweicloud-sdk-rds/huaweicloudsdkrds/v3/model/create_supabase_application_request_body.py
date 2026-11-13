@@ -57,11 +57,11 @@ class CreateSupabaseApplicationRequestBody:
         :type basic_config: :class:`huaweicloudsdkrds.v3.SupabaseAppBasicConfig`
         :param version: Supabase版本号，格式 x.y.z。
         :type version: str
-        :param mode: 部署模式。
+        :param mode: 部署模式。当前仅支持Single。
         :type mode: str
-        :param flavor_ref: 规格码，格式 rds.supabase.{...}。Ha模式必须以.ha结尾，Single不得以.ha结尾。
+        :param flavor_ref: 规格码，格式 rds.supabase.{...}。
         :type flavor_ref: str
-        :param availability_zone: 可用区ID。Single&#x3D;1个，Ha&#x3D;2个逗号分隔。
+        :param availability_zone: 可用区ID。Single模式下为1个可用区。
         :type availability_zone: str
         :param data_vip: 指定实例内网IP（可选）。IPv4格式。
         :type data_vip: str
@@ -181,7 +181,7 @@ class CreateSupabaseApplicationRequestBody:
     def mode(self):
         r"""Gets the mode of this CreateSupabaseApplicationRequestBody.
 
-        部署模式。
+        部署模式。当前仅支持Single。
 
         :return: The mode of this CreateSupabaseApplicationRequestBody.
         :rtype: str
@@ -192,7 +192,7 @@ class CreateSupabaseApplicationRequestBody:
     def mode(self, mode):
         r"""Sets the mode of this CreateSupabaseApplicationRequestBody.
 
-        部署模式。
+        部署模式。当前仅支持Single。
 
         :param mode: The mode of this CreateSupabaseApplicationRequestBody.
         :type mode: str
@@ -203,7 +203,7 @@ class CreateSupabaseApplicationRequestBody:
     def flavor_ref(self):
         r"""Gets the flavor_ref of this CreateSupabaseApplicationRequestBody.
 
-        规格码，格式 rds.supabase.{...}。Ha模式必须以.ha结尾，Single不得以.ha结尾。
+        规格码，格式 rds.supabase.{...}。
 
         :return: The flavor_ref of this CreateSupabaseApplicationRequestBody.
         :rtype: str
@@ -214,7 +214,7 @@ class CreateSupabaseApplicationRequestBody:
     def flavor_ref(self, flavor_ref):
         r"""Sets the flavor_ref of this CreateSupabaseApplicationRequestBody.
 
-        规格码，格式 rds.supabase.{...}。Ha模式必须以.ha结尾，Single不得以.ha结尾。
+        规格码，格式 rds.supabase.{...}。
 
         :param flavor_ref: The flavor_ref of this CreateSupabaseApplicationRequestBody.
         :type flavor_ref: str
@@ -225,7 +225,7 @@ class CreateSupabaseApplicationRequestBody:
     def availability_zone(self):
         r"""Gets the availability_zone of this CreateSupabaseApplicationRequestBody.
 
-        可用区ID。Single=1个，Ha=2个逗号分隔。
+        可用区ID。Single模式下为1个可用区。
 
         :return: The availability_zone of this CreateSupabaseApplicationRequestBody.
         :rtype: str
@@ -236,7 +236,7 @@ class CreateSupabaseApplicationRequestBody:
     def availability_zone(self, availability_zone):
         r"""Sets the availability_zone of this CreateSupabaseApplicationRequestBody.
 
-        可用区ID。Single=1个，Ha=2个逗号分隔。
+        可用区ID。Single模式下为1个可用区。
 
         :param availability_zone: The availability_zone of this CreateSupabaseApplicationRequestBody.
         :type availability_zone: str

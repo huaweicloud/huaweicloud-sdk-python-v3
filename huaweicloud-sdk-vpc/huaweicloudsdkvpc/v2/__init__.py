@@ -147,6 +147,8 @@ from huaweicloudsdkvpc.v2.model.list_subnets_by_tags_response import ListSubnets
 from huaweicloudsdkvpc.v2.model.list_subnets_request import ListSubnetsRequest
 from huaweicloudsdkvpc.v2.model.list_subnets_response import ListSubnetsResponse
 from huaweicloudsdkvpc.v2.model.list_tag import ListTag
+from huaweicloudsdkvpc.v2.model.list_vpc_peering_infos_request import ListVpcPeeringInfosRequest
+from huaweicloudsdkvpc.v2.model.list_vpc_peering_infos_response import ListVpcPeeringInfosResponse
 from huaweicloudsdkvpc.v2.model.list_vpc_peerings_request import ListVpcPeeringsRequest
 from huaweicloudsdkvpc.v2.model.list_vpc_peerings_response import ListVpcPeeringsResponse
 from huaweicloudsdkvpc.v2.model.list_vpc_routes_request import ListVpcRoutesRequest

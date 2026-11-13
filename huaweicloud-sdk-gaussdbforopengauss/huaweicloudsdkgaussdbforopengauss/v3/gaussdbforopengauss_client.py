@@ -12694,7 +12694,7 @@ class GaussDBforopenGaussClient(Client):
     def _switch_logger_replica_availability_zones_http_info(cls, request):
         http_info = {
             "method": "GET",
-            "resource_path": "/v3/{project_id}/instances/{instance_id}/switch-logger-replica/availability_zones",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/switch-logger-replica/availability-zones",
             "request_type": request.__class__.__name__,
             "response_type": "SwitchLoggerReplicaAvailabilityZonesResponse"
             }

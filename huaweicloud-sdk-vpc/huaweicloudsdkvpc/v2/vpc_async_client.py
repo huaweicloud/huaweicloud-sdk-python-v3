@@ -2414,6 +2414,86 @@ class VpcAsyncClient(Client):
 
         return http_info
 
+    def list_vpc_peering_infos_async(self, request):
+        r"""查询对等连接信息列表
+
+        当您的对等连接创建成功后，您可以通过该接口查询所有对等连接信息，包括对等连接的名称、两端vpc的信息等
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListVpcPeeringInfos
+        :type request: :class:`huaweicloudsdkvpc.v2.ListVpcPeeringInfosRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.ListVpcPeeringInfosResponse`
+        """
+        http_info = self._list_vpc_peering_infos_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_vpc_peering_infos_async_invoker(self, request):
+        http_info = self._list_vpc_peering_infos_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_vpc_peering_infos_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.0/vpc/peering-infos",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListVpcPeeringInfosResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+            collection_formats['id'] = 'csv'
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+            collection_formats['name'] = 'csv'
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'tenant_id' in local_var_params:
+            query_params.append(('tenant_id', local_var_params['tenant_id']))
+        if 'vpc_id' in local_var_params:
+            query_params.append(('vpc_id', local_var_params['vpc_id']))
+            collection_formats['vpc_id'] = 'csv'
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_vpc_peerings_async(self, request):
         r"""查询对等连接列表
 

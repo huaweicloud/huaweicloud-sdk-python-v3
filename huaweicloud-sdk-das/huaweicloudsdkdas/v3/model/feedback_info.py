@@ -15,7 +15,7 @@ class FeedbackInfo:
     sensitive_list = []
 
     openapi_types = {
-        'id': 'str',
+        'id': 'int',
         'project_id': 'str',
         'message_id': 'str',
         'feedback_grade': 'str',
@@ -40,7 +40,7 @@ class FeedbackInfo:
         The model defined in huaweicloud sdk
 
         :param id: 编号
-        :type id: str
+        :type id: int
         :param project_id: 项目Id
         :type project_id: str
         :param message_id: 任务消息唯一Id
@@ -88,7 +88,7 @@ class FeedbackInfo:
         编号
 
         :return: The id of this FeedbackInfo.
-        :rtype: str
+        :rtype: int
         """
         return self._id
 
@@ -99,7 +99,7 @@ class FeedbackInfo:
         编号
 
         :param id: The id of this FeedbackInfo.
-        :type id: str
+        :type id: int
         """
         self._id = id
 

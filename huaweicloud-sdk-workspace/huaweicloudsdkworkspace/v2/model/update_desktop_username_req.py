@@ -43,7 +43,7 @@ class UpdateDesktopUsernameReq:
         :type new_username: str
         :param new_user_domain: 桌面关联新用户名的域。
         :type new_user_domain: str
-        :param is_reboot: 桌面关联新用户名后是否重启虚拟机，默认不重启。
+        :param is_reboot: 桌面关联新用户名后是否重启虚拟机，默认为true，表示需要重启虚拟机。若用户此前已登录过云桌面，建议设置为true，以确保会话资源彻底释放、避免旧会话残留占用，并保障用户名修改后能正常接入新桌面。
         :type is_reboot: bool
         """
         
@@ -157,7 +157,7 @@ class UpdateDesktopUsernameReq:
     def is_reboot(self):
         r"""Gets the is_reboot of this UpdateDesktopUsernameReq.
 
-        桌面关联新用户名后是否重启虚拟机，默认不重启。
+        桌面关联新用户名后是否重启虚拟机，默认为true，表示需要重启虚拟机。若用户此前已登录过云桌面，建议设置为true，以确保会话资源彻底释放、避免旧会话残留占用，并保障用户名修改后能正常接入新桌面。
 
         :return: The is_reboot of this UpdateDesktopUsernameReq.
         :rtype: bool
@@ -168,7 +168,7 @@ class UpdateDesktopUsernameReq:
     def is_reboot(self, is_reboot):
         r"""Sets the is_reboot of this UpdateDesktopUsernameReq.
 
-        桌面关联新用户名后是否重启虚拟机，默认不重启。
+        桌面关联新用户名后是否重启虚拟机，默认为true，表示需要重启虚拟机。若用户此前已登录过云桌面，建议设置为true，以确保会话资源彻底释放、避免旧会话残留占用，并保障用户名修改后能正常接入新桌面。
 
         :param is_reboot: The is_reboot of this UpdateDesktopUsernameReq.
         :type is_reboot: bool

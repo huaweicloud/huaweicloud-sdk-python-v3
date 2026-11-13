@@ -1,3 +1,147 @@
+# 3.1.222 2026-11-12
+
+### HuaweiCloud SDK AIDataLake
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListSparkJobs**
+    - 响应参数变更
+      - `+ jobs.spark_config`
+      - `+ jobs.labels`
+  - **ListSparkSqls**
+    - 响应参数变更
+      - `+ statements.spark_config`
+      - `+ statements.labels`
+
+### HuaweiCloud SDK DAS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListAllTypeInstances**
+    - 响应参数变更
+      - `+ instances`
+      - `+ total_count`
+      - `- entry_names`
+  - **ChangeQuotaNew**
+    - 响应参数变更
+      - `+ success`
+      - `- instances`
+      - `- total_count`
+  - **ShowWaitingLocksSnapshot**
+    - 响应参数变更
+      - `+ lock_waits_infos.requesting_trx_id`
+      - `+ lock_waits_infos.requested_lock_id`
+      - `+ lock_waits_infos.blocking_trx_id`
+      - `+ lock_waits_infos.blocking_lock_id`
+      - `* lock_waits_infos: list<object> -> list<InnodbLockWaitsInfo>`
+      - `+ trx.trx_unique_checks`
+      - `+ trx.trx_foreign_key_checks`
+      - `+ trx.trx_last_foreign_key_error`
+      - `+ trx.trx_adaptive_hash_latched`
+      - `+ trx.trx_adaptive_hash_timeout`
+      - `+ trx.wait_locks`
+      - `+ trx.hold_locks`
+  - **ShowInstanceTopSlowLog**
+    - 响应参数变更
+      - `+ top_execute_slow_logs.times`
+      - `- top_execute_slow_logs.time`
+  - **ShowTuning**
+    - 响应参数变更
+      - `- tune_result.tb_pos_infos.schema_name`
+      - `* tune_result.feedback_infos.id: string -> int64`
+  - **ShowTuningResult**
+    - 响应参数变更
+      - `- tune_result.tb_pos_infos.schema_name`
+      - `* tune_result.feedback_infos.id: string -> int64`
+  - **CompareSlowLogTemplates**
+    - 响应参数变更
+      - `- contrasts.template_of_pre_day.sql_sample_user`
+      - `* contrasts.template_of_pre_day: list<SlowSqlTemplate> -> list<SlowSqlTplTemplate>`
+
+### HuaweiCloud SDK RDS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateSupabaseApplication**
+    - 请求参数变更
+      - `- mode: enum value [Ha]`
+      - `- managed_instance.ha`
+
+### HuaweiCloud SDK VPC
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持接口`ListVpcPeeringInfos`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK VPC
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持接口`ListResourceAssociations`、`BatchCreateTrafficMirrorFilterRules`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK Workspace
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 废弃接口`ExportUserLoginInfoNew`、`ListDesktopByTags`
+
+### HuaweiCloud SDK WorkspaceApp
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 废弃接口`ShowSessionTypes`、`ShowJob`
+  - **ListSubJobs**
+    - 响应参数变更
+      - `- items.job_resource_info.cloud_service_type`
+      - `- items.job_resource_info.resource_type`
+      - `- items.job_resource_info.resource_spec_code`
+      - `- items.job_resource_info.spec_type`
+      - `- items.job_resource_info.spec_size`
+      - `- items.job_resource_info.measure`
+      - `- items.job_resource_info.processed_time`
+      - `- items.job_resource_info.is_main_resource`
+      - `- items.job_resource_info.main_resources`
+      - `- items.job_resource_info.extend_params`
+      - `- items.job_resource_info.old_resource_id`
+      - `- items.job_resource_info.old_cloud_service_type`
+      - `- items.job_resource_info.old_resource_type`
+      - `* items.job_resource_info: object<JobResourceInfo> -> object<ApsJobResourceInfo>`
+
 # 3.1.221 2026-11-05
 
 ### HuaweiCloud SDK AgentArts

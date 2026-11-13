@@ -15,8 +15,8 @@ class SlowLogTplContrast:
     sensitive_list = []
 
     openapi_types = {
-        'template_of_pre_day': 'list[SlowSqlTemplate]',
-        'template_of_cur_day': 'list[SlowSqlTemplate]',
+        'template_of_pre_day': 'list[SlowSqlTplTemplate]',
+        'template_of_cur_day': 'list[SlowSqlTplTemplate]',
         'execute_time_increase': 'bool',
         'lock_wait_increase': 'bool',
         'new_template': 'bool'
@@ -36,9 +36,9 @@ class SlowLogTplContrast:
         The model defined in huaweicloud sdk
 
         :param template_of_pre_day: 前一日慢日志模板数据列表
-        :type template_of_pre_day: list[:class:`huaweicloudsdkdas.v3.SlowSqlTemplate`]
+        :type template_of_pre_day: list[:class:`huaweicloudsdkdas.v3.SlowSqlTplTemplate`]
         :param template_of_cur_day: 当日慢日志模板数据列表
-        :type template_of_cur_day: list[:class:`huaweicloudsdkdas.v3.SlowSqlTemplate`]
+        :type template_of_cur_day: list[:class:`huaweicloudsdkdas.v3.SlowSqlTplTemplate`]
         :param execute_time_increase: 执行耗时是否增长
         :type execute_time_increase: bool
         :param lock_wait_increase: 锁等待耗时是否增长
@@ -74,7 +74,7 @@ class SlowLogTplContrast:
         前一日慢日志模板数据列表
 
         :return: The template_of_pre_day of this SlowLogTplContrast.
-        :rtype: list[:class:`huaweicloudsdkdas.v3.SlowSqlTemplate`]
+        :rtype: list[:class:`huaweicloudsdkdas.v3.SlowSqlTplTemplate`]
         """
         return self._template_of_pre_day
 
@@ -85,7 +85,7 @@ class SlowLogTplContrast:
         前一日慢日志模板数据列表
 
         :param template_of_pre_day: The template_of_pre_day of this SlowLogTplContrast.
-        :type template_of_pre_day: list[:class:`huaweicloudsdkdas.v3.SlowSqlTemplate`]
+        :type template_of_pre_day: list[:class:`huaweicloudsdkdas.v3.SlowSqlTplTemplate`]
         """
         self._template_of_pre_day = template_of_pre_day
 
@@ -96,7 +96,7 @@ class SlowLogTplContrast:
         当日慢日志模板数据列表
 
         :return: The template_of_cur_day of this SlowLogTplContrast.
-        :rtype: list[:class:`huaweicloudsdkdas.v3.SlowSqlTemplate`]
+        :rtype: list[:class:`huaweicloudsdkdas.v3.SlowSqlTplTemplate`]
         """
         return self._template_of_cur_day
 
@@ -107,7 +107,7 @@ class SlowLogTplContrast:
         当日慢日志模板数据列表
 
         :param template_of_cur_day: The template_of_cur_day of this SlowLogTplContrast.
-        :type template_of_cur_day: list[:class:`huaweicloudsdkdas.v3.SlowSqlTemplate`]
+        :type template_of_cur_day: list[:class:`huaweicloudsdkdas.v3.SlowSqlTplTemplate`]
         """
         self._template_of_cur_day = template_of_cur_day
 

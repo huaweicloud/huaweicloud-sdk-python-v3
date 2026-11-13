@@ -16,80 +16,51 @@ class ChangeQuotaNewResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'instances': 'list[DasCommonInstanceDto]',
-        'total_count': 'int'
+        'success': 'bool'
     }
 
     attribute_map = {
-        'instances': 'instances',
-        'total_count': 'total_count'
+        'success': 'success'
     }
 
-    def __init__(self, instances=None, total_count=None):
+    def __init__(self, success=None):
         r"""ChangeQuotaNewResponse
 
         The model defined in huaweicloud sdk
 
-        :param instances: 实例列表
-        :type instances: list[:class:`huaweicloudsdkdas.v3.DasCommonInstanceDto`]
-        :param total_count: 总记录数
-        :type total_count: int
+        :param success: 是否成功
+        :type success: bool
         """
         
         super().__init__()
 
-        self._instances = None
-        self._total_count = None
+        self._success = None
         self.discriminator = None
 
-        if instances is not None:
-            self.instances = instances
-        if total_count is not None:
-            self.total_count = total_count
+        if success is not None:
+            self.success = success
 
     @property
-    def instances(self):
-        r"""Gets the instances of this ChangeQuotaNewResponse.
+    def success(self):
+        r"""Gets the success of this ChangeQuotaNewResponse.
 
-        实例列表
+        是否成功
 
-        :return: The instances of this ChangeQuotaNewResponse.
-        :rtype: list[:class:`huaweicloudsdkdas.v3.DasCommonInstanceDto`]
+        :return: The success of this ChangeQuotaNewResponse.
+        :rtype: bool
         """
-        return self._instances
+        return self._success
 
-    @instances.setter
-    def instances(self, instances):
-        r"""Sets the instances of this ChangeQuotaNewResponse.
+    @success.setter
+    def success(self, success):
+        r"""Sets the success of this ChangeQuotaNewResponse.
 
-        实例列表
+        是否成功
 
-        :param instances: The instances of this ChangeQuotaNewResponse.
-        :type instances: list[:class:`huaweicloudsdkdas.v3.DasCommonInstanceDto`]
+        :param success: The success of this ChangeQuotaNewResponse.
+        :type success: bool
         """
-        self._instances = instances
-
-    @property
-    def total_count(self):
-        r"""Gets the total_count of this ChangeQuotaNewResponse.
-
-        总记录数
-
-        :return: The total_count of this ChangeQuotaNewResponse.
-        :rtype: int
-        """
-        return self._total_count
-
-    @total_count.setter
-    def total_count(self, total_count):
-        r"""Sets the total_count of this ChangeQuotaNewResponse.
-
-        总记录数
-
-        :param total_count: The total_count of this ChangeQuotaNewResponse.
-        :type total_count: int
-        """
-        self._total_count = total_count
+        self._success = success
 
     def to_dict(self):
         import warnings

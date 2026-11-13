@@ -16,51 +16,80 @@ class ListAllTypeInstancesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'entry_names': 'list[str]'
+        'instances': 'list[DasCommonInstanceDto]',
+        'total_count': 'int'
     }
 
     attribute_map = {
-        'entry_names': 'entry_names'
+        'instances': 'instances',
+        'total_count': 'total_count'
     }
 
-    def __init__(self, entry_names=None):
+    def __init__(self, instances=None, total_count=None):
         r"""ListAllTypeInstancesResponse
 
         The model defined in huaweicloud sdk
 
-        :param entry_names: 错误信息条件列表
-        :type entry_names: list[str]
+        :param instances: 实例列表
+        :type instances: list[:class:`huaweicloudsdkdas.v3.DasCommonInstanceDto`]
+        :param total_count: 总记录数
+        :type total_count: int
         """
         
         super().__init__()
 
-        self._entry_names = None
+        self._instances = None
+        self._total_count = None
         self.discriminator = None
 
-        if entry_names is not None:
-            self.entry_names = entry_names
+        if instances is not None:
+            self.instances = instances
+        if total_count is not None:
+            self.total_count = total_count
 
     @property
-    def entry_names(self):
-        r"""Gets the entry_names of this ListAllTypeInstancesResponse.
+    def instances(self):
+        r"""Gets the instances of this ListAllTypeInstancesResponse.
 
-        错误信息条件列表
+        实例列表
 
-        :return: The entry_names of this ListAllTypeInstancesResponse.
-        :rtype: list[str]
+        :return: The instances of this ListAllTypeInstancesResponse.
+        :rtype: list[:class:`huaweicloudsdkdas.v3.DasCommonInstanceDto`]
         """
-        return self._entry_names
+        return self._instances
 
-    @entry_names.setter
-    def entry_names(self, entry_names):
-        r"""Sets the entry_names of this ListAllTypeInstancesResponse.
+    @instances.setter
+    def instances(self, instances):
+        r"""Sets the instances of this ListAllTypeInstancesResponse.
 
-        错误信息条件列表
+        实例列表
 
-        :param entry_names: The entry_names of this ListAllTypeInstancesResponse.
-        :type entry_names: list[str]
+        :param instances: The instances of this ListAllTypeInstancesResponse.
+        :type instances: list[:class:`huaweicloudsdkdas.v3.DasCommonInstanceDto`]
         """
-        self._entry_names = entry_names
+        self._instances = instances
+
+    @property
+    def total_count(self):
+        r"""Gets the total_count of this ListAllTypeInstancesResponse.
+
+        总记录数
+
+        :return: The total_count of this ListAllTypeInstancesResponse.
+        :rtype: int
+        """
+        return self._total_count
+
+    @total_count.setter
+    def total_count(self, total_count):
+        r"""Sets the total_count of this ListAllTypeInstancesResponse.
+
+        总记录数
+
+        :param total_count: The total_count of this ListAllTypeInstancesResponse.
+        :type total_count: int
+        """
+        self._total_count = total_count
 
     def to_dict(self):
         import warnings

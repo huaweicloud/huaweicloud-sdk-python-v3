@@ -17,7 +17,7 @@ class SubJobDetailInfo:
     openapi_types = {
         'id': 'str',
         'job_type': 'JobType',
-        'job_resource_info': 'JobResourceInfo',
+        'job_resource_info': 'ApsJobResourceInfo',
         'begin_time': 'datetime',
         'end_time': 'datetime',
         'status': 'JobDetailStatus',
@@ -50,7 +50,7 @@ class SubJobDetailInfo:
         :param job_type: 
         :type job_type: :class:`huaweicloudsdkworkspaceapp.v1.JobType`
         :param job_resource_info: 
-        :type job_resource_info: :class:`huaweicloudsdkworkspaceapp.v1.JobResourceInfo`
+        :type job_resource_info: :class:`huaweicloudsdkworkspaceapp.v1.ApsJobResourceInfo`
         :param begin_time: 任务创建时间。
         :type begin_time: datetime
         :param end_time: 任务结束时间。
@@ -147,7 +147,7 @@ class SubJobDetailInfo:
         r"""Gets the job_resource_info of this SubJobDetailInfo.
 
         :return: The job_resource_info of this SubJobDetailInfo.
-        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.JobResourceInfo`
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ApsJobResourceInfo`
         """
         return self._job_resource_info
 
@@ -156,7 +156,7 @@ class SubJobDetailInfo:
         r"""Sets the job_resource_info of this SubJobDetailInfo.
 
         :param job_resource_info: The job_resource_info of this SubJobDetailInfo.
-        :type job_resource_info: :class:`huaweicloudsdkworkspaceapp.v1.JobResourceInfo`
+        :type job_resource_info: :class:`huaweicloudsdkworkspaceapp.v1.ApsJobResourceInfo`
         """
         self._job_resource_info = job_resource_info
 

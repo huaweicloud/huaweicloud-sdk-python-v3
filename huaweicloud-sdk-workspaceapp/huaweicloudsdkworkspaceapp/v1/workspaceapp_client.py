@@ -2527,10 +2527,12 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.ShowSessionTypesRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ShowSessionTypesResponse`
         """
+        warnings.warn("Method 'show_session_types' of WorkspaceAppClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_session_types_http_info(request)
         return self._call_api(**http_info)
 
     def show_session_types_invoker(self, request):
+        warnings.warn("Method 'show_session_types_invoker' of WorkspaceAppClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_session_types_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -5044,10 +5046,12 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.ShowJobRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ShowJobResponse`
         """
+        warnings.warn("Method 'show_job' of WorkspaceAppClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_job_http_info(request)
         return self._call_api(**http_info)
 
     def show_job_invoker(self, request):
+        warnings.warn("Method 'show_job_invoker' of WorkspaceAppClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_job_http_info(request)
         return SyncInvoker(self, http_info)
 

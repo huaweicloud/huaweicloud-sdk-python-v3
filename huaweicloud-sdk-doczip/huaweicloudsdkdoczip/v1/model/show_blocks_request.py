@@ -3,7 +3,7 @@
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class SupabaseHaConfig:
+class ShowBlocksRequest:
 
     """
     Attributes:
@@ -15,72 +15,50 @@ class SupabaseHaConfig:
     sensitive_list = []
 
     openapi_types = {
-        'mode': 'str',
-        'replication_mode': 'str'
+        'tenant_id': 'str'
     }
 
     attribute_map = {
-        'mode': 'mode',
-        'replication_mode': 'replication_mode'
+        'tenant_id': 'tenant_id'
     }
 
-    def __init__(self, mode=None, replication_mode=None):
-        r"""SupabaseHaConfig
+    def __init__(self, tenant_id=None):
+        r"""ShowBlocksRequest
 
         The model defined in huaweicloud sdk
 
-        :param mode: 
-        :type mode: str
-        :param replication_mode: 
-        :type replication_mode: str
+        :param tenant_id: **参数解释**： 租户ID。 **约束限制**： 不涉及。 **取值范围**： [1-50]个字符。 **默认取值**： 不涉及。
+        :type tenant_id: str
         """
         
         
 
-        self._mode = None
-        self._replication_mode = None
+        self._tenant_id = None
         self.discriminator = None
 
-        if mode is not None:
-            self.mode = mode
-        if replication_mode is not None:
-            self.replication_mode = replication_mode
+        self.tenant_id = tenant_id
 
     @property
-    def mode(self):
-        r"""Gets the mode of this SupabaseHaConfig.
+    def tenant_id(self):
+        r"""Gets the tenant_id of this ShowBlocksRequest.
 
-        :return: The mode of this SupabaseHaConfig.
+        **参数解释**： 租户ID。 **约束限制**： 不涉及。 **取值范围**： [1-50]个字符。 **默认取值**： 不涉及。
+
+        :return: The tenant_id of this ShowBlocksRequest.
         :rtype: str
         """
-        return self._mode
+        return self._tenant_id
 
-    @mode.setter
-    def mode(self, mode):
-        r"""Sets the mode of this SupabaseHaConfig.
+    @tenant_id.setter
+    def tenant_id(self, tenant_id):
+        r"""Sets the tenant_id of this ShowBlocksRequest.
 
-        :param mode: The mode of this SupabaseHaConfig.
-        :type mode: str
+        **参数解释**： 租户ID。 **约束限制**： 不涉及。 **取值范围**： [1-50]个字符。 **默认取值**： 不涉及。
+
+        :param tenant_id: The tenant_id of this ShowBlocksRequest.
+        :type tenant_id: str
         """
-        self._mode = mode
-
-    @property
-    def replication_mode(self):
-        r"""Gets the replication_mode of this SupabaseHaConfig.
-
-        :return: The replication_mode of this SupabaseHaConfig.
-        :rtype: str
-        """
-        return self._replication_mode
-
-    @replication_mode.setter
-    def replication_mode(self, replication_mode):
-        r"""Sets the replication_mode of this SupabaseHaConfig.
-
-        :param replication_mode: The replication_mode of this SupabaseHaConfig.
-        :type replication_mode: str
-        """
-        self._replication_mode = replication_mode
+        self._tenant_id = tenant_id
 
     def to_dict(self):
         result = {}
@@ -119,7 +97,7 @@ class SupabaseHaConfig:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, SupabaseHaConfig):
+        if not isinstance(other, ShowBlocksRequest):
             return False
 
         return self.__dict__ == other.__dict__

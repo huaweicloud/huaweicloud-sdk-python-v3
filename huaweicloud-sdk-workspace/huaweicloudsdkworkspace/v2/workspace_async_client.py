@@ -5178,10 +5178,12 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ExportUserLoginInfoNewRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ExportUserLoginInfoNewResponse`
         """
+        warnings.warn("Method 'export_user_login_info_new_async' of WorkspaceAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._export_user_login_info_new_http_info(request)
         return self._call_api(**http_info)
 
     def export_user_login_info_new_async_invoker(self, request):
+        warnings.warn("Method 'export_user_login_info_new_async_invoker' of WorkspaceAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._export_user_login_info_new_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -10520,10 +10522,12 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ListDesktopByTagsRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ListDesktopByTagsResponse`
         """
+        warnings.warn("Method 'list_desktop_by_tags_async' of WorkspaceAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_desktop_by_tags_http_info(request)
         return self._call_api(**http_info)
 
     def list_desktop_by_tags_async_invoker(self, request):
+        warnings.warn("Method 'list_desktop_by_tags_async_invoker' of WorkspaceAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_desktop_by_tags_http_info(request)
         return AsyncInvoker(self, http_info)
 

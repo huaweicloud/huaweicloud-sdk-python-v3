@@ -17,7 +17,7 @@ class ShowWaitingLocksSnapshotResponse(SdkResponse):
 
     openapi_types = {
         'trx': 'list[InnodbTrxInfo]',
-        'lock_waits_infos': 'list[object]',
+        'lock_waits_infos': 'list[InnodbLockWaitsInfo]',
         'wait_lock_count': 'int',
         'hold_lock_count': 'int',
         'time_greater_than_count': 'int',
@@ -41,7 +41,7 @@ class ShowWaitingLocksSnapshotResponse(SdkResponse):
         :param trx: InnoDB锁对应的事务的信息
         :type trx: list[:class:`huaweicloudsdkdas.v3.InnodbTrxInfo`]
         :param lock_waits_infos: InnoDB锁等待信息
-        :type lock_waits_infos: list[object]
+        :type lock_waits_infos: list[:class:`huaweicloudsdkdas.v3.InnodbLockWaitsInfo`]
         :param wait_lock_count: 等待锁的会话的数量
         :type wait_lock_count: int
         :param hold_lock_count: 持有锁的会话的数量
@@ -104,7 +104,7 @@ class ShowWaitingLocksSnapshotResponse(SdkResponse):
         InnoDB锁等待信息
 
         :return: The lock_waits_infos of this ShowWaitingLocksSnapshotResponse.
-        :rtype: list[object]
+        :rtype: list[:class:`huaweicloudsdkdas.v3.InnodbLockWaitsInfo`]
         """
         return self._lock_waits_infos
 
@@ -115,7 +115,7 @@ class ShowWaitingLocksSnapshotResponse(SdkResponse):
         InnoDB锁等待信息
 
         :param lock_waits_infos: The lock_waits_infos of this ShowWaitingLocksSnapshotResponse.
-        :type lock_waits_infos: list[object]
+        :type lock_waits_infos: list[:class:`huaweicloudsdkdas.v3.InnodbLockWaitsInfo`]
         """
         self._lock_waits_infos = lock_waits_infos
 
