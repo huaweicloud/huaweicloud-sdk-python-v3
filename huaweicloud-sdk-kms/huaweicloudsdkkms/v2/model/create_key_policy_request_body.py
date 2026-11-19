@@ -33,7 +33,7 @@ class CreateKeyPolicyRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param keyspace_id: **参数解释：** 密钥策略归属的可信密钥空间ID **约束限制：** 满足正则表达式^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$ **取值范围：** 不涉及 **默认取值：** 不涉及
+        :param keyspace_id: **参数解释：** 密钥策略归属的密钥空间ID **约束限制：** 满足正则表达式^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$ **取值范围：** 不涉及 **默认取值：** 不涉及
         :type keyspace_id: str
         :param policy_name: **参数解释：** 策略策略名称 **约束限制：** 满足正则表达式^[a-zA-Z0-9:/_-]{1,255}$ **取值范围：** 1-255 **默认取值：** 不涉及
         :type policy_name: str
@@ -61,7 +61,7 @@ class CreateKeyPolicyRequestBody:
     def keyspace_id(self):
         r"""Gets the keyspace_id of this CreateKeyPolicyRequestBody.
 
-        **参数解释：** 密钥策略归属的可信密钥空间ID **约束限制：** 满足正则表达式^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$ **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 密钥策略归属的密钥空间ID **约束限制：** 满足正则表达式^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$ **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The keyspace_id of this CreateKeyPolicyRequestBody.
         :rtype: str
@@ -72,7 +72,7 @@ class CreateKeyPolicyRequestBody:
     def keyspace_id(self, keyspace_id):
         r"""Sets the keyspace_id of this CreateKeyPolicyRequestBody.
 
-        **参数解释：** 密钥策略归属的可信密钥空间ID **约束限制：** 满足正则表达式^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$ **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 密钥策略归属的密钥空间ID **约束限制：** 满足正则表达式^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$ **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param keyspace_id: The keyspace_id of this CreateKeyPolicyRequestBody.
         :type keyspace_id: str

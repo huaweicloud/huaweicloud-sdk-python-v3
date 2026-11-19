@@ -1353,6 +1353,71 @@ class KmsClient(Client):
 
         return http_info
 
+    def create_trusted_key_space(self, request):
+        r"""创建密钥空间
+
+        用于创建密钥空间
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateTrustedKeySpace
+        :type request: :class:`huaweicloudsdkkms.v2.CreateTrustedKeySpaceRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.CreateTrustedKeySpaceResponse`
+        """
+        http_info = self._create_trusted_key_space_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_trusted_key_space_invoker(self, request):
+        http_info = self._create_trusted_key_space_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_trusted_key_space_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/kms/key-spaces",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTrustedKeySpaceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def decrypt_data(self, request):
         r"""解密数据
 
@@ -1976,6 +2041,71 @@ class KmsClient(Client):
             path_params['key_id'] = local_var_params['key_id']
         if 'key' in local_var_params:
             path_params['key'] = local_var_params['key']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_trusted_key_space(self, request):
+        r"""删除密钥空间
+
+        用于删除密钥空间
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteTrustedKeySpace
+        :type request: :class:`huaweicloudsdkkms.v2.DeleteTrustedKeySpaceRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.DeleteTrustedKeySpaceResponse`
+        """
+        http_info = self._delete_trusted_key_space_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_trusted_key_space_invoker(self, request):
+        http_info = self._delete_trusted_key_space_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_trusted_key_space_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1.0/{project_id}/kms/key-spaces/{keyspace_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTrustedKeySpaceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'keyspace_id' in local_var_params:
+            path_params['keyspace_id'] = local_var_params['keyspace_id']
 
         query_params = []
 
@@ -3651,6 +3781,77 @@ class KmsClient(Client):
 
         return http_info
 
+    def list_trusted_key_space(self, request):
+        r"""查询密钥空间列表
+
+        用于查询密钥空间列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListTrustedKeySpace
+        :type request: :class:`huaweicloudsdkkms.v2.ListTrustedKeySpaceRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.ListTrustedKeySpaceResponse`
+        """
+        http_info = self._list_trusted_key_space_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_trusted_key_space_invoker(self, request):
+        http_info = self._list_trusted_key_space_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_trusted_key_space_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/kms/key-spaces",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTrustedKeySpaceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'keyspace_id' in local_var_params:
+            query_params.append(('keyspace_id', local_var_params['keyspace_id']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def re_encrypt(self, request):
         r"""重加密
 
@@ -4045,6 +4246,76 @@ class KmsClient(Client):
 
         return http_info
 
+    def show_key_usage_flow(self, request):
+        r"""查询密钥使用流
+
+        查询指定密钥空间下指定密钥的使用流关系图，返回节点和边的图结构。
+        - 节点按类型分组：vpc（VPC节点，含ECS、CCE子节点）、custom（接入点节点）、modelarts（ModelArts节点）、policy（策略节点）、unknown_node（未知起点节点）、key（密钥节点）。
+        - 边表示使用流关系：起点节点到策略节点、策略节点到密钥节点。
+        - 该接口仅支持查询已记录使用流关系的密钥，若密钥不存在使用流记录，则返回空的节点和边。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowKeyUsageFlow
+        :type request: :class:`huaweicloudsdkkms.v2.ShowKeyUsageFlowRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.ShowKeyUsageFlowResponse`
+        """
+        http_info = self._show_key_usage_flow_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_key_usage_flow_invoker(self, request):
+        http_info = self._show_key_usage_flow_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_key_usage_flow_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/kms/key-spaces/usage-flow",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowKeyUsageFlowResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'keyspace_id' in local_var_params:
+            query_params.append(('keyspace_id', local_var_params['keyspace_id']))
+        if 'key_id' in local_var_params:
+            query_params.append(('key_id', local_var_params['key_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_kms_tags(self, request):
         r"""查询密钥标签
 
@@ -4366,6 +4637,72 @@ class KmsClient(Client):
 
         return http_info
 
+    def transfer_key(self, request):
+        r"""转移密钥
+
+        用于将密钥从一个密钥空间转移到另一个密钥空间
+        - ASSIGN：将密钥分配给目标密钥空间，仅支持对称密钥，且密钥必须未属于任何密钥空间。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for TransferKey
+        :type request: :class:`huaweicloudsdkkms.v2.TransferKeyRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.TransferKeyResponse`
+        """
+        http_info = self._transfer_key_http_info(request)
+        return self._call_api(**http_info)
+
+    def transfer_key_invoker(self, request):
+        http_info = self._transfer_key_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _transfer_key_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/kms/key-spaces/transfer-key",
+            "request_type": request.__class__.__name__,
+            "response_type": "TransferKeyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def update_key_alias(self, request):
         r"""修改密钥别名
 
@@ -4603,6 +4940,73 @@ class KmsClient(Client):
         collection_formats = {}
 
         path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_key_store(self, request):
+        r"""更新专属密钥库
+
+        仅XKS类型的密钥库支持更新访问凭证信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateKeyStore
+        :type request: :class:`huaweicloudsdkkms.v2.UpdateKeyStoreRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.UpdateKeyStoreResponse`
+        """
+        http_info = self._update_key_store_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_key_store_invoker(self, request):
+        http_info = self._update_key_store_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_key_store_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.0/{project_id}/keystores/{keystore_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateKeyStoreResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'keystore_id' in local_var_params:
+            path_params['keystore_id'] = local_var_params['keystore_id']
 
         query_params = []
 

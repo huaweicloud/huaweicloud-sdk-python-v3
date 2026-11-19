@@ -17,15 +17,17 @@ class KeystoneListGroupsResponse(SdkResponse):
 
     openapi_types = {
         'groups': 'list[KeystoneGroupResult]',
-        'links': 'Links'
+        'links': 'Links',
+        'total_number': 'int'
     }
 
     attribute_map = {
         'groups': 'groups',
-        'links': 'links'
+        'links': 'links',
+        'total_number': 'total_number'
     }
 
-    def __init__(self, groups=None, links=None):
+    def __init__(self, groups=None, links=None, total_number=None):
         r"""KeystoneListGroupsResponse
 
         The model defined in huaweicloud sdk
@@ -34,18 +36,23 @@ class KeystoneListGroupsResponse(SdkResponse):
         :type groups: list[:class:`huaweicloudsdkiam.v3.KeystoneGroupResult`]
         :param links: 
         :type links: :class:`huaweicloudsdkiam.v3.Links`
+        :param total_number: 满足查询条件的用户组总数。
+        :type total_number: int
         """
         
         super().__init__()
 
         self._groups = None
         self._links = None
+        self._total_number = None
         self.discriminator = None
 
         if groups is not None:
             self.groups = groups
         if links is not None:
             self.links = links
+        if total_number is not None:
+            self.total_number = total_number
 
     @property
     def groups(self):
@@ -86,6 +93,28 @@ class KeystoneListGroupsResponse(SdkResponse):
         :type links: :class:`huaweicloudsdkiam.v3.Links`
         """
         self._links = links
+
+    @property
+    def total_number(self):
+        r"""Gets the total_number of this KeystoneListGroupsResponse.
+
+        满足查询条件的用户组总数。
+
+        :return: The total_number of this KeystoneListGroupsResponse.
+        :rtype: int
+        """
+        return self._total_number
+
+    @total_number.setter
+    def total_number(self, total_number):
+        r"""Sets the total_number of this KeystoneListGroupsResponse.
+
+        满足查询条件的用户组总数。
+
+        :param total_number: The total_number of this KeystoneListGroupsResponse.
+        :type total_number: int
+        """
+        self._total_number = total_number
 
     def to_dict(self):
         import warnings

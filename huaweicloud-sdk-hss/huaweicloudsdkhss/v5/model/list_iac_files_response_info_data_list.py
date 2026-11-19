@@ -53,7 +53,7 @@ class ListIacFilesResponseInfoDataList:
         :type file_name: str
         :param file_type: **参数解释**: 文件类型 **约束限制**: 不涉及 **取值范围**: - dockerfile：Dockerfile文件 - k8s_yaml：k8s yaml文件  **默认取值**: 不涉及 
         :type file_type: str
-        :param risky: **参数解释**: 是否有风险 **约束限制**: 不涉及 **取值范围**: - true：有风险 - false：无风险 **默认取值**: 不涉及 
+        :param risky: **参数解释**: 是否有风险 **约束限制**: 不涉及 **取值范围**: - true：有风险 - false：无风险  **默认取值**: 不涉及 
         :type risky: bool
         :param risk_num: 风险项数量
         :type risk_num: int
@@ -67,7 +67,7 @@ class ListIacFilesResponseInfoDataList:
         :type cicd_id: str
         :param cicd_name: **参数解释**: CI/CD名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-128 **默认取值**: 不涉及 
         :type cicd_name: str
-        :param scan_type: **参数解释**: 扫描方式 **约束限制**: 不涉及 **取值范围**: - manual_scan：手动扫描 - cicd_scan：cicd扫描 **默认取值**: 不涉及 
+        :param scan_type: **参数解释**: 扫描方式 **约束限制**: 不涉及 **取值范围**: - manual_scan：手动扫描 - cicd_scan：cicd扫描  **默认取值**: 不涉及 
         :type scan_type: str
         """
         
@@ -179,7 +179,7 @@ class ListIacFilesResponseInfoDataList:
     def risky(self):
         r"""Gets the risky of this ListIacFilesResponseInfoDataList.
 
-        **参数解释**: 是否有风险 **约束限制**: 不涉及 **取值范围**: - true：有风险 - false：无风险 **默认取值**: 不涉及 
+        **参数解释**: 是否有风险 **约束限制**: 不涉及 **取值范围**: - true：有风险 - false：无风险  **默认取值**: 不涉及 
 
         :return: The risky of this ListIacFilesResponseInfoDataList.
         :rtype: bool
@@ -190,7 +190,7 @@ class ListIacFilesResponseInfoDataList:
     def risky(self, risky):
         r"""Sets the risky of this ListIacFilesResponseInfoDataList.
 
-        **参数解释**: 是否有风险 **约束限制**: 不涉及 **取值范围**: - true：有风险 - false：无风险 **默认取值**: 不涉及 
+        **参数解释**: 是否有风险 **约束限制**: 不涉及 **取值范围**: - true：有风险 - false：无风险  **默认取值**: 不涉及 
 
         :param risky: The risky of this ListIacFilesResponseInfoDataList.
         :type risky: bool
@@ -333,7 +333,7 @@ class ListIacFilesResponseInfoDataList:
     def scan_type(self):
         r"""Gets the scan_type of this ListIacFilesResponseInfoDataList.
 
-        **参数解释**: 扫描方式 **约束限制**: 不涉及 **取值范围**: - manual_scan：手动扫描 - cicd_scan：cicd扫描 **默认取值**: 不涉及 
+        **参数解释**: 扫描方式 **约束限制**: 不涉及 **取值范围**: - manual_scan：手动扫描 - cicd_scan：cicd扫描  **默认取值**: 不涉及 
 
         :return: The scan_type of this ListIacFilesResponseInfoDataList.
         :rtype: str
@@ -344,7 +344,7 @@ class ListIacFilesResponseInfoDataList:
     def scan_type(self, scan_type):
         r"""Sets the scan_type of this ListIacFilesResponseInfoDataList.
 
-        **参数解释**: 扫描方式 **约束限制**: 不涉及 **取值范围**: - manual_scan：手动扫描 - cicd_scan：cicd扫描 **默认取值**: 不涉及 
+        **参数解释**: 扫描方式 **约束限制**: 不涉及 **取值范围**: - manual_scan：手动扫描 - cicd_scan：cicd扫描  **默认取值**: 不涉及 
 
         :param scan_type: The scan_type of this ListIacFilesResponseInfoDataList.
         :type scan_type: str

@@ -51,7 +51,7 @@ class ListIacFilesRequest:
         :type offset: int
         :param limit: **参数解释**: 每页显示个数 **约束限制**: 必填 **取值范围**: 取值10-200 **默认取值**: 10 
         :type limit: int
-        :param scan_type: **参数解释**: 扫描方式 **约束限制**: 不涉及 **取值范围**: - manual_scan：手动扫描 - cicd_scan：cicd扫描 **默认取值**: 不涉及 
+        :param scan_type: **参数解释**: 扫描方式 **约束限制**: 不涉及 **取值范围**: - manual_scan：手动扫描 - cicd_scan：cicd扫描  **默认取值**: 不涉及 
         :type scan_type: str
         :param file_id: **参数解释**: 文件ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64  **默认取值**: 不涉及 
         :type file_id: str
@@ -169,7 +169,7 @@ class ListIacFilesRequest:
     def scan_type(self):
         r"""Gets the scan_type of this ListIacFilesRequest.
 
-        **参数解释**: 扫描方式 **约束限制**: 不涉及 **取值范围**: - manual_scan：手动扫描 - cicd_scan：cicd扫描 **默认取值**: 不涉及 
+        **参数解释**: 扫描方式 **约束限制**: 不涉及 **取值范围**: - manual_scan：手动扫描 - cicd_scan：cicd扫描  **默认取值**: 不涉及 
 
         :return: The scan_type of this ListIacFilesRequest.
         :rtype: str
@@ -180,7 +180,7 @@ class ListIacFilesRequest:
     def scan_type(self, scan_type):
         r"""Sets the scan_type of this ListIacFilesRequest.
 
-        **参数解释**: 扫描方式 **约束限制**: 不涉及 **取值范围**: - manual_scan：手动扫描 - cicd_scan：cicd扫描 **默认取值**: 不涉及 
+        **参数解释**: 扫描方式 **约束限制**: 不涉及 **取值范围**: - manual_scan：手动扫描 - cicd_scan：cicd扫描  **默认取值**: 不涉及 
 
         :param scan_type: The scan_type of this ListIacFilesRequest.
         :type scan_type: str

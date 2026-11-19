@@ -63,9 +63,9 @@ class ListAiComponentDetailRequest:
         :type limit: int
         :param offset: **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
         :type offset: int
-        :param category: **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产  **默认取值**: host 
+        :param category: **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产 - serverless：Serverless安全场景  **默认取值**: host 
         :type category: str
-        :param catalogue: **参数解释**: AI组件类别 **约束限制**: 不涉及 **取值范围**: - app：应用 - tool：工具  **默认取值**: 不涉及
+        :param catalogue: **参数解释**: AI组件类别 **约束限制**: 不涉及 **取值范围**: - app：应用 - tool：工具 - service：服务  **默认取值**: 不涉及
         :type catalogue: str
         :param server_name: **参数解释**: category&#x3D;&#x3D;host时 表示服务器名称 category&#x3D;&#x3D;container时 表示节点名称 category&#x3D;&#x3D;serverless时 表示实例名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 不涉及 
         :type server_name: str
@@ -197,7 +197,7 @@ class ListAiComponentDetailRequest:
     def category(self):
         r"""Gets the category of this ListAiComponentDetailRequest.
 
-        **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产  **默认取值**: host 
+        **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产 - serverless：Serverless安全场景  **默认取值**: host 
 
         :return: The category of this ListAiComponentDetailRequest.
         :rtype: str
@@ -208,7 +208,7 @@ class ListAiComponentDetailRequest:
     def category(self, category):
         r"""Sets the category of this ListAiComponentDetailRequest.
 
-        **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产  **默认取值**: host 
+        **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产 - serverless：Serverless安全场景  **默认取值**: host 
 
         :param category: The category of this ListAiComponentDetailRequest.
         :type category: str
@@ -219,7 +219,7 @@ class ListAiComponentDetailRequest:
     def catalogue(self):
         r"""Gets the catalogue of this ListAiComponentDetailRequest.
 
-        **参数解释**: AI组件类别 **约束限制**: 不涉及 **取值范围**: - app：应用 - tool：工具  **默认取值**: 不涉及
+        **参数解释**: AI组件类别 **约束限制**: 不涉及 **取值范围**: - app：应用 - tool：工具 - service：服务  **默认取值**: 不涉及
 
         :return: The catalogue of this ListAiComponentDetailRequest.
         :rtype: str
@@ -230,7 +230,7 @@ class ListAiComponentDetailRequest:
     def catalogue(self, catalogue):
         r"""Sets the catalogue of this ListAiComponentDetailRequest.
 
-        **参数解释**: AI组件类别 **约束限制**: 不涉及 **取值范围**: - app：应用 - tool：工具  **默认取值**: 不涉及
+        **参数解释**: AI组件类别 **约束限制**: 不涉及 **取值范围**: - app：应用 - tool：工具 - service：服务  **默认取值**: 不涉及
 
         :param catalogue: The catalogue of this ListAiComponentDetailRequest.
         :type catalogue: str

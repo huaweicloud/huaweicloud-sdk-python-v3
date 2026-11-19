@@ -20,7 +20,9 @@ class ListResourceAssociationsRequest:
         'resource_project_id': 'str',
         'instance_id': 'list[str]',
         'instance_type': 'list[str]',
-        'instance_project_id': 'str'
+        'instance_project_id': 'str',
+        'limit': 'int',
+        'marker': 'str'
     }
 
     attribute_map = {
@@ -29,10 +31,12 @@ class ListResourceAssociationsRequest:
         'resource_project_id': 'resource_project_id',
         'instance_id': 'instance_id',
         'instance_type': 'instance_type',
-        'instance_project_id': 'instance_project_id'
+        'instance_project_id': 'instance_project_id',
+        'limit': 'limit',
+        'marker': 'marker'
     }
 
-    def __init__(self, resource_id=None, resource_type=None, resource_project_id=None, instance_id=None, instance_type=None, instance_project_id=None):
+    def __init__(self, resource_id=None, resource_type=None, resource_project_id=None, instance_id=None, instance_type=None, instance_project_id=None, limit=None, marker=None):
         r"""ListResourceAssociationsRequest
 
         The model defined in huaweicloud sdk
@@ -49,6 +53,10 @@ class ListResourceAssociationsRequest:
         :type instance_type: list[str]
         :param instance_project_id: **参数解释**： 实例所属的项目ID，填写后按照项目ID进行过滤。 **取值范围**： 不涉及。
         :type instance_project_id: str
+        :param limit: **参数解释**： 每页返回的个数。 **取值范围**： 0-2000。
+        :type limit: int
+        :param marker: **参数解释**： 分页查询起始的资源ID，为空时查询第一页。 **取值范围**： 带“-”的标准UUID格式。
+        :type marker: str
         """
         
         
@@ -59,6 +67,8 @@ class ListResourceAssociationsRequest:
         self._instance_id = None
         self._instance_type = None
         self._instance_project_id = None
+        self._limit = None
+        self._marker = None
         self.discriminator = None
 
         if resource_id is not None:
@@ -73,6 +83,10 @@ class ListResourceAssociationsRequest:
             self.instance_type = instance_type
         if instance_project_id is not None:
             self.instance_project_id = instance_project_id
+        if limit is not None:
+            self.limit = limit
+        if marker is not None:
+            self.marker = marker
 
     @property
     def resource_id(self):
@@ -205,6 +219,50 @@ class ListResourceAssociationsRequest:
         :type instance_project_id: str
         """
         self._instance_project_id = instance_project_id
+
+    @property
+    def limit(self):
+        r"""Gets the limit of this ListResourceAssociationsRequest.
+
+        **参数解释**： 每页返回的个数。 **取值范围**： 0-2000。
+
+        :return: The limit of this ListResourceAssociationsRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this ListResourceAssociationsRequest.
+
+        **参数解释**： 每页返回的个数。 **取值范围**： 0-2000。
+
+        :param limit: The limit of this ListResourceAssociationsRequest.
+        :type limit: int
+        """
+        self._limit = limit
+
+    @property
+    def marker(self):
+        r"""Gets the marker of this ListResourceAssociationsRequest.
+
+        **参数解释**： 分页查询起始的资源ID，为空时查询第一页。 **取值范围**： 带“-”的标准UUID格式。
+
+        :return: The marker of this ListResourceAssociationsRequest.
+        :rtype: str
+        """
+        return self._marker
+
+    @marker.setter
+    def marker(self, marker):
+        r"""Sets the marker of this ListResourceAssociationsRequest.
+
+        **参数解释**： 分页查询起始的资源ID，为空时查询第一页。 **取值范围**： 带“-”的标准UUID格式。
+
+        :param marker: The marker of this ListResourceAssociationsRequest.
+        :type marker: str
+        """
+        self._marker = marker
 
     def to_dict(self):
         result = {}

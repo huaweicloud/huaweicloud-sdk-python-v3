@@ -47,13 +47,13 @@ class ListRiskConfigCheckRulesRequest:
         :type enterprise_project_id: str
         :param check_name: **参数解释**: 配置检查（基线）的名称，例如SSH、CentOS 7、Windows **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 不涉及 
         :type check_name: str
-        :param standard: **参数解释**: 标准类型 **约束限制**: 不涉及 **取值范围**: - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准 **默认取值**: 不涉及 
+        :param standard: **参数解释**: 标准类型 **约束限制**: 不涉及 **取值范围**: - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准  **默认取值**: 不涉及 
         :type standard: str
-        :param result_type: **参数解释**: 结果类型 **约束限制**: 不涉及 **取值范围**: - safe : 已通过 - unhandled : 未通过，且未忽略的 - ignored : 未通过，且已忽略的 **默认取值**: unhandled 
+        :param result_type: **参数解释**: 结果类型 **约束限制**: 不涉及 **取值范围**: - safe : 已通过 - unhandled : 未通过，且未忽略的 - ignored : 未通过，且已忽略的  **默认取值**: unhandled 
         :type result_type: str
         :param check_rule_name: **参数解释**: 检查项（检查规则）名称，支持模糊匹配 **约束限制**: 不涉及 **取值范围**: 字符长度0-2048位 **默认取值**: 不涉及 
         :type check_rule_name: str
-        :param severity: **参数解释**: 风险等级 **约束限制**: 不涉及 **取值范围**: - Security : 安全 - Low : 低危 - Medium : 中危 - High : 高危 - Critical : 危急 **默认取值**: 不涉及 
+        :param severity: **参数解释**: 风险等级 **约束限制**: 不涉及 **取值范围**: - Security : 安全 - Low : 低危 - Medium : 中危 - High : 高危 - Critical : 危急  **默认取值**: 不涉及 
         :type severity: str
         :param host_id: **参数解释**: 主机ID，不赋值时，查租户所有主机 **约束限制**: 不涉及 **取值范围**: 字符长度0-64位 **默认取值**: 不涉及 
         :type host_id: str
@@ -141,7 +141,7 @@ class ListRiskConfigCheckRulesRequest:
     def standard(self):
         r"""Gets the standard of this ListRiskConfigCheckRulesRequest.
 
-        **参数解释**: 标准类型 **约束限制**: 不涉及 **取值范围**: - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准 **默认取值**: 不涉及 
+        **参数解释**: 标准类型 **约束限制**: 不涉及 **取值范围**: - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准  **默认取值**: 不涉及 
 
         :return: The standard of this ListRiskConfigCheckRulesRequest.
         :rtype: str
@@ -152,7 +152,7 @@ class ListRiskConfigCheckRulesRequest:
     def standard(self, standard):
         r"""Sets the standard of this ListRiskConfigCheckRulesRequest.
 
-        **参数解释**: 标准类型 **约束限制**: 不涉及 **取值范围**: - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准 **默认取值**: 不涉及 
+        **参数解释**: 标准类型 **约束限制**: 不涉及 **取值范围**: - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准  **默认取值**: 不涉及 
 
         :param standard: The standard of this ListRiskConfigCheckRulesRequest.
         :type standard: str
@@ -163,7 +163,7 @@ class ListRiskConfigCheckRulesRequest:
     def result_type(self):
         r"""Gets the result_type of this ListRiskConfigCheckRulesRequest.
 
-        **参数解释**: 结果类型 **约束限制**: 不涉及 **取值范围**: - safe : 已通过 - unhandled : 未通过，且未忽略的 - ignored : 未通过，且已忽略的 **默认取值**: unhandled 
+        **参数解释**: 结果类型 **约束限制**: 不涉及 **取值范围**: - safe : 已通过 - unhandled : 未通过，且未忽略的 - ignored : 未通过，且已忽略的  **默认取值**: unhandled 
 
         :return: The result_type of this ListRiskConfigCheckRulesRequest.
         :rtype: str
@@ -174,7 +174,7 @@ class ListRiskConfigCheckRulesRequest:
     def result_type(self, result_type):
         r"""Sets the result_type of this ListRiskConfigCheckRulesRequest.
 
-        **参数解释**: 结果类型 **约束限制**: 不涉及 **取值范围**: - safe : 已通过 - unhandled : 未通过，且未忽略的 - ignored : 未通过，且已忽略的 **默认取值**: unhandled 
+        **参数解释**: 结果类型 **约束限制**: 不涉及 **取值范围**: - safe : 已通过 - unhandled : 未通过，且未忽略的 - ignored : 未通过，且已忽略的  **默认取值**: unhandled 
 
         :param result_type: The result_type of this ListRiskConfigCheckRulesRequest.
         :type result_type: str
@@ -207,7 +207,7 @@ class ListRiskConfigCheckRulesRequest:
     def severity(self):
         r"""Gets the severity of this ListRiskConfigCheckRulesRequest.
 
-        **参数解释**: 风险等级 **约束限制**: 不涉及 **取值范围**: - Security : 安全 - Low : 低危 - Medium : 中危 - High : 高危 - Critical : 危急 **默认取值**: 不涉及 
+        **参数解释**: 风险等级 **约束限制**: 不涉及 **取值范围**: - Security : 安全 - Low : 低危 - Medium : 中危 - High : 高危 - Critical : 危急  **默认取值**: 不涉及 
 
         :return: The severity of this ListRiskConfigCheckRulesRequest.
         :rtype: str
@@ -218,7 +218,7 @@ class ListRiskConfigCheckRulesRequest:
     def severity(self, severity):
         r"""Sets the severity of this ListRiskConfigCheckRulesRequest.
 
-        **参数解释**: 风险等级 **约束限制**: 不涉及 **取值范围**: - Security : 安全 - Low : 低危 - Medium : 中危 - High : 高危 - Critical : 危急 **默认取值**: 不涉及 
+        **参数解释**: 风险等级 **约束限制**: 不涉及 **取值范围**: - Security : 安全 - Low : 低危 - Medium : 中危 - High : 高危 - Critical : 危急  **默认取值**: 不涉及 
 
         :param severity: The severity of this ListRiskConfigCheckRulesRequest.
         :type severity: str

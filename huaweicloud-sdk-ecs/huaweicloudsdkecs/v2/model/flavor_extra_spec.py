@@ -55,7 +55,9 @@ class FlavorExtraSpec:
         'securityenclave_supported': 'str',
         'infogpus': 'str',
         'infoasic_accelerators': 'str',
-        'infofeatures': 'str'
+        'infofeatures': 'str',
+        'hwcpu_policy': 'str',
+        'hwcpu_threads': 'str'
     }
 
     attribute_map = {
@@ -99,10 +101,12 @@ class FlavorExtraSpec:
         'securityenclave_supported': 'security:enclave_supported',
         'infogpus': 'info:gpus',
         'infoasic_accelerators': 'info:asic_accelerators',
-        'infofeatures': 'info:features'
+        'infofeatures': 'info:features',
+        'hwcpu_policy': 'hw:cpu_policy',
+        'hwcpu_threads': 'hw:cpu_threads'
     }
 
-    def __init__(self, ecsperformancetype=None, hwnuma_nodes=None, resource_type=None, hpet_support=None, instance_vnictype=None, instance_vnicinstance_bandwidth=None, instance_vnicmax_count=None, quotalocal_disk=None, quotanvme_ssd=None, extra_speciopersistent_grant=None, ecsgeneration=None, ecsvirtualization_env_types=None, pci_passthroughenable_gpu=None, pci_passthroughgpu_specs=None, pci_passthroughalias=None, condoperationstatus=None, condoperationaz=None, quotamax_rate=None, quotamin_rate=None, quotamax_pps=None, condoperationcharge=None, condoperationchargestop=None, condspotoperationaz=None, condoperationroles=None, condspotoperationstatus=None, condnetwork=None, condstorage=None, condstoragetype=None, condcomputelive_resizable=None, condcompute=None, infogpuname=None, infocpuname=None, quotagpu=None, quotavif_max_num=None, quotasub_network_interface_max_num=None, ecsinstance_architecture=None, network_interfacetraffic_mirroring_supported=None, securityenclave_supported=None, infogpus=None, infoasic_accelerators=None, infofeatures=None):
+    def __init__(self, ecsperformancetype=None, hwnuma_nodes=None, resource_type=None, hpet_support=None, instance_vnictype=None, instance_vnicinstance_bandwidth=None, instance_vnicmax_count=None, quotalocal_disk=None, quotanvme_ssd=None, extra_speciopersistent_grant=None, ecsgeneration=None, ecsvirtualization_env_types=None, pci_passthroughenable_gpu=None, pci_passthroughgpu_specs=None, pci_passthroughalias=None, condoperationstatus=None, condoperationaz=None, quotamax_rate=None, quotamin_rate=None, quotamax_pps=None, condoperationcharge=None, condoperationchargestop=None, condspotoperationaz=None, condoperationroles=None, condspotoperationstatus=None, condnetwork=None, condstorage=None, condstoragetype=None, condcomputelive_resizable=None, condcompute=None, infogpuname=None, infocpuname=None, quotagpu=None, quotavif_max_num=None, quotasub_network_interface_max_num=None, ecsinstance_architecture=None, network_interfacetraffic_mirroring_supported=None, securityenclave_supported=None, infogpus=None, infoasic_accelerators=None, infofeatures=None, hwcpu_policy=None, hwcpu_threads=None):
         r"""FlavorExtraSpec
 
         The model defined in huaweicloud sdk
@@ -189,6 +193,10 @@ class FlavorExtraSpec:
         :type infoasic_accelerators: str
         :param infofeatures: 规格特性
         :type infofeatures: str
+        :param hwcpu_policy: 规格的CPU资源绑定策略。（该字段是否返回根据云服务器规格而定）  - dedicated，CPU资源独占绑定。
+        :type hwcpu_policy: str
+        :param hwcpu_threads: 规格的CPU超线程数（每核线程数）。（该字段是否返回根据云服务器规格而定）  - 1，每核1线程，未开启超线程。 - 2，每核2线程，开启超线程。
+        :type hwcpu_threads: str
         """
         
         
@@ -234,6 +242,8 @@ class FlavorExtraSpec:
         self._infogpus = None
         self._infoasic_accelerators = None
         self._infofeatures = None
+        self._hwcpu_policy = None
+        self._hwcpu_threads = None
         self.discriminator = None
 
         if ecsperformancetype is not None:
@@ -318,6 +328,10 @@ class FlavorExtraSpec:
             self.infoasic_accelerators = infoasic_accelerators
         if infofeatures is not None:
             self.infofeatures = infofeatures
+        if hwcpu_policy is not None:
+            self.hwcpu_policy = hwcpu_policy
+        if hwcpu_threads is not None:
+            self.hwcpu_threads = hwcpu_threads
 
     @property
     def ecsperformancetype(self):
@@ -1220,6 +1234,50 @@ class FlavorExtraSpec:
         :type infofeatures: str
         """
         self._infofeatures = infofeatures
+
+    @property
+    def hwcpu_policy(self):
+        r"""Gets the hwcpu_policy of this FlavorExtraSpec.
+
+        规格的CPU资源绑定策略。（该字段是否返回根据云服务器规格而定）  - dedicated，CPU资源独占绑定。
+
+        :return: The hwcpu_policy of this FlavorExtraSpec.
+        :rtype: str
+        """
+        return self._hwcpu_policy
+
+    @hwcpu_policy.setter
+    def hwcpu_policy(self, hwcpu_policy):
+        r"""Sets the hwcpu_policy of this FlavorExtraSpec.
+
+        规格的CPU资源绑定策略。（该字段是否返回根据云服务器规格而定）  - dedicated，CPU资源独占绑定。
+
+        :param hwcpu_policy: The hwcpu_policy of this FlavorExtraSpec.
+        :type hwcpu_policy: str
+        """
+        self._hwcpu_policy = hwcpu_policy
+
+    @property
+    def hwcpu_threads(self):
+        r"""Gets the hwcpu_threads of this FlavorExtraSpec.
+
+        规格的CPU超线程数（每核线程数）。（该字段是否返回根据云服务器规格而定）  - 1，每核1线程，未开启超线程。 - 2，每核2线程，开启超线程。
+
+        :return: The hwcpu_threads of this FlavorExtraSpec.
+        :rtype: str
+        """
+        return self._hwcpu_threads
+
+    @hwcpu_threads.setter
+    def hwcpu_threads(self, hwcpu_threads):
+        r"""Sets the hwcpu_threads of this FlavorExtraSpec.
+
+        规格的CPU超线程数（每核线程数）。（该字段是否返回根据云服务器规格而定）  - 1，每核1线程，未开启超线程。 - 2，每核2线程，开启超线程。
+
+        :param hwcpu_threads: The hwcpu_threads of this FlavorExtraSpec.
+        :type hwcpu_threads: str
+        """
+        self._hwcpu_threads = hwcpu_threads
 
     def to_dict(self):
         result = {}

@@ -43,7 +43,7 @@ class ListAntiVirusPolicyRequest:
         :type limit: int
         :param policy_name: 策略名称
         :type policy_name: str
-        :param scan_type: **参数解释**: 任务类型 **约束限制**: 不涉及 **取值范围**: - quick ：快速扫描 - full：全盘扫描 - custom : 自定义扫描 **默认取值**: 不涉及 
+        :param scan_type: **参数解释**: 任务类型 **约束限制**: 不涉及 **取值范围**: - quick ：快速扫描 - full：全盘扫描 - custom : 自定义扫描  **默认取值**: 不涉及 
         :type scan_type: str
         """
         
@@ -157,7 +157,7 @@ class ListAntiVirusPolicyRequest:
     def scan_type(self):
         r"""Gets the scan_type of this ListAntiVirusPolicyRequest.
 
-        **参数解释**: 任务类型 **约束限制**: 不涉及 **取值范围**: - quick ：快速扫描 - full：全盘扫描 - custom : 自定义扫描 **默认取值**: 不涉及 
+        **参数解释**: 任务类型 **约束限制**: 不涉及 **取值范围**: - quick ：快速扫描 - full：全盘扫描 - custom : 自定义扫描  **默认取值**: 不涉及 
 
         :return: The scan_type of this ListAntiVirusPolicyRequest.
         :rtype: str
@@ -168,7 +168,7 @@ class ListAntiVirusPolicyRequest:
     def scan_type(self, scan_type):
         r"""Sets the scan_type of this ListAntiVirusPolicyRequest.
 
-        **参数解释**: 任务类型 **约束限制**: 不涉及 **取值范围**: - quick ：快速扫描 - full：全盘扫描 - custom : 自定义扫描 **默认取值**: 不涉及 
+        **参数解释**: 任务类型 **约束限制**: 不涉及 **取值范围**: - quick ：快速扫描 - full：全盘扫描 - custom : 自定义扫描  **默认取值**: 不涉及 
 
         :param scan_type: The scan_type of this ListAntiVirusPolicyRequest.
         :type scan_type: str

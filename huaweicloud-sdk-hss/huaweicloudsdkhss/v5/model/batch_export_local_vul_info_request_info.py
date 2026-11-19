@@ -61,7 +61,7 @@ class BatchExportLocalVulInfoRequestInfo:
         :type vul_type: str
         :param handle_status: 漏洞处置状态，包含如下:   - unhandled ：未处理   - handled : 已处理
         :type handle_status: str
-        :param scan_status: **参数解释**: 扫描状态 **约束限制**: 不涉及 **取值范围**:   - unscan : 未扫描。   - success : 扫描完成。   - scanning : 扫描中。   - failed : 扫描失败。   - download_failed : 下载失败。   - image_oversized : 镜像超大。   - waiting_for_scan : 等待扫描。   - image_scan_stop : 扫描终止。 **默认取值**: 不涉及 
+        :param scan_status: **参数解释**: 扫描状态 **约束限制**: 不涉及 **取值范围**:   - unscan : 未扫描。   - success : 扫描完成。   - scanning : 扫描中。   - failed : 扫描失败。   - download_failed : 下载失败。   - image_oversized : 镜像超大。   - waiting_for_scan : 等待扫描。   - image_scan_stop : 扫描终止。  **默认取值**: 不涉及 
         :type scan_status: str
         :param image_name: 镜像名称
         :type image_name: str
@@ -222,7 +222,7 @@ class BatchExportLocalVulInfoRequestInfo:
     def scan_status(self):
         r"""Gets the scan_status of this BatchExportLocalVulInfoRequestInfo.
 
-        **参数解释**: 扫描状态 **约束限制**: 不涉及 **取值范围**:   - unscan : 未扫描。   - success : 扫描完成。   - scanning : 扫描中。   - failed : 扫描失败。   - download_failed : 下载失败。   - image_oversized : 镜像超大。   - waiting_for_scan : 等待扫描。   - image_scan_stop : 扫描终止。 **默认取值**: 不涉及 
+        **参数解释**: 扫描状态 **约束限制**: 不涉及 **取值范围**:   - unscan : 未扫描。   - success : 扫描完成。   - scanning : 扫描中。   - failed : 扫描失败。   - download_failed : 下载失败。   - image_oversized : 镜像超大。   - waiting_for_scan : 等待扫描。   - image_scan_stop : 扫描终止。  **默认取值**: 不涉及 
 
         :return: The scan_status of this BatchExportLocalVulInfoRequestInfo.
         :rtype: str
@@ -233,7 +233,7 @@ class BatchExportLocalVulInfoRequestInfo:
     def scan_status(self, scan_status):
         r"""Sets the scan_status of this BatchExportLocalVulInfoRequestInfo.
 
-        **参数解释**: 扫描状态 **约束限制**: 不涉及 **取值范围**:   - unscan : 未扫描。   - success : 扫描完成。   - scanning : 扫描中。   - failed : 扫描失败。   - download_failed : 下载失败。   - image_oversized : 镜像超大。   - waiting_for_scan : 等待扫描。   - image_scan_stop : 扫描终止。 **默认取值**: 不涉及 
+        **参数解释**: 扫描状态 **约束限制**: 不涉及 **取值范围**:   - unscan : 未扫描。   - success : 扫描完成。   - scanning : 扫描中。   - failed : 扫描失败。   - download_failed : 下载失败。   - image_oversized : 镜像超大。   - waiting_for_scan : 等待扫描。   - image_scan_stop : 扫描终止。  **默认取值**: 不涉及 
 
         :param scan_status: The scan_status of this BatchExportLocalVulInfoRequestInfo.
         :type scan_status: str

@@ -55,7 +55,7 @@ class ChangeAppWhitelistPolicyRequestInfo:
         :type policy_type: str
         :param learning_days: **参数解释**: 策略学习天数 **取值范围**: 最小值3，最大值30 
         :type learning_days: int
-        :param specified_dir: **参数解释**： 是否指定学习目录 **约束限制**： 不涉及 **取值范围**: - true：是 - false：否 **默认取值**： 不涉及 
+        :param specified_dir: **参数解释**： 是否指定学习目录 **约束限制**： 不涉及 **取值范围**: - true：是 - false：否  **默认取值**： 不涉及 
         :type specified_dir: bool
         :param intercept: **参数解释**： 是否开启阻断 **取值范围**: - true：是 - false：否 
         :type intercept: bool
@@ -193,7 +193,7 @@ class ChangeAppWhitelistPolicyRequestInfo:
     def specified_dir(self):
         r"""Gets the specified_dir of this ChangeAppWhitelistPolicyRequestInfo.
 
-        **参数解释**： 是否指定学习目录 **约束限制**： 不涉及 **取值范围**: - true：是 - false：否 **默认取值**： 不涉及 
+        **参数解释**： 是否指定学习目录 **约束限制**： 不涉及 **取值范围**: - true：是 - false：否  **默认取值**： 不涉及 
 
         :return: The specified_dir of this ChangeAppWhitelistPolicyRequestInfo.
         :rtype: bool
@@ -204,7 +204,7 @@ class ChangeAppWhitelistPolicyRequestInfo:
     def specified_dir(self, specified_dir):
         r"""Sets the specified_dir of this ChangeAppWhitelistPolicyRequestInfo.
 
-        **参数解释**： 是否指定学习目录 **约束限制**： 不涉及 **取值范围**: - true：是 - false：否 **默认取值**： 不涉及 
+        **参数解释**： 是否指定学习目录 **约束限制**： 不涉及 **取值范围**: - true：是 - false：否  **默认取值**： 不涉及 
 
         :param specified_dir: The specified_dir of this ChangeAppWhitelistPolicyRequestInfo.
         :type specified_dir: bool

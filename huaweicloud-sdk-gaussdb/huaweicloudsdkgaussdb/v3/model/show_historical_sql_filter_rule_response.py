@@ -16,29 +16,58 @@ class ShowHistoricalSqlFilterRuleResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'total_count': 'int',
         'sql_filter_rules': 'list[HistoricalSqlFilterRule]'
     }
 
     attribute_map = {
+        'total_count': 'total_count',
         'sql_filter_rules': 'sql_filter_rules'
     }
 
-    def __init__(self, sql_filter_rules=None):
+    def __init__(self, total_count=None, sql_filter_rules=None):
         r"""ShowHistoricalSqlFilterRuleResponse
 
         The model defined in huaweicloud sdk
 
+        :param total_count: **参数解释**：  总记录数。  **取值范围**：  大于等于0。
+        :type total_count: int
         :param sql_filter_rules: **参数解释**：  历史SQL限流规则。
         :type sql_filter_rules: list[:class:`huaweicloudsdkgaussdb.v3.HistoricalSqlFilterRule`]
         """
         
         super().__init__()
 
+        self._total_count = None
         self._sql_filter_rules = None
         self.discriminator = None
 
+        if total_count is not None:
+            self.total_count = total_count
         if sql_filter_rules is not None:
             self.sql_filter_rules = sql_filter_rules
+
+    @property
+    def total_count(self):
+        r"""Gets the total_count of this ShowHistoricalSqlFilterRuleResponse.
+
+        **参数解释**：  总记录数。  **取值范围**：  大于等于0。
+
+        :return: The total_count of this ShowHistoricalSqlFilterRuleResponse.
+        :rtype: int
+        """
+        return self._total_count
+
+    @total_count.setter
+    def total_count(self, total_count):
+        r"""Sets the total_count of this ShowHistoricalSqlFilterRuleResponse.
+
+        **参数解释**：  总记录数。  **取值范围**：  大于等于0。
+
+        :param total_count: The total_count of this ShowHistoricalSqlFilterRuleResponse.
+        :type total_count: int
+        """
+        self._total_count = total_count
 
     @property
     def sql_filter_rules(self):

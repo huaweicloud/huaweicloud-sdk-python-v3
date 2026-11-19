@@ -29,9 +29,9 @@ class CCEClusterIdListRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id_list: 集群id列表
+        :param cluster_id_list: **参数解释**： 集群ID列表 **约束限制**： 不涉及 **取值范围**： 数组长度0-200，每个元素字符长度0-128位 **默认取值**： 不涉及 
         :type cluster_id_list: list[str]
-        :param detect_type: 查询类型，包含如下:     - image : 镜像风险     - baseline : 基线风险     - vul : 漏洞风险     - event : 入侵风险
+        :param detect_type: **参数解释**： 查询类型 **约束限制**： 不涉及 **取值范围**： - image：镜像风险 - baseline：基线风险 - vul：漏洞风险 - event：入侵风险  **默认取值**： 不涉及 
         :type detect_type: str
         """
         
@@ -49,7 +49,7 @@ class CCEClusterIdListRequestBody:
     def cluster_id_list(self):
         r"""Gets the cluster_id_list of this CCEClusterIdListRequestBody.
 
-        集群id列表
+        **参数解释**： 集群ID列表 **约束限制**： 不涉及 **取值范围**： 数组长度0-200，每个元素字符长度0-128位 **默认取值**： 不涉及 
 
         :return: The cluster_id_list of this CCEClusterIdListRequestBody.
         :rtype: list[str]
@@ -60,7 +60,7 @@ class CCEClusterIdListRequestBody:
     def cluster_id_list(self, cluster_id_list):
         r"""Sets the cluster_id_list of this CCEClusterIdListRequestBody.
 
-        集群id列表
+        **参数解释**： 集群ID列表 **约束限制**： 不涉及 **取值范围**： 数组长度0-200，每个元素字符长度0-128位 **默认取值**： 不涉及 
 
         :param cluster_id_list: The cluster_id_list of this CCEClusterIdListRequestBody.
         :type cluster_id_list: list[str]
@@ -71,7 +71,7 @@ class CCEClusterIdListRequestBody:
     def detect_type(self):
         r"""Gets the detect_type of this CCEClusterIdListRequestBody.
 
-        查询类型，包含如下:     - image : 镜像风险     - baseline : 基线风险     - vul : 漏洞风险     - event : 入侵风险
+        **参数解释**： 查询类型 **约束限制**： 不涉及 **取值范围**： - image：镜像风险 - baseline：基线风险 - vul：漏洞风险 - event：入侵风险  **默认取值**： 不涉及 
 
         :return: The detect_type of this CCEClusterIdListRequestBody.
         :rtype: str
@@ -82,7 +82,7 @@ class CCEClusterIdListRequestBody:
     def detect_type(self, detect_type):
         r"""Sets the detect_type of this CCEClusterIdListRequestBody.
 
-        查询类型，包含如下:     - image : 镜像风险     - baseline : 基线风险     - vul : 漏洞风险     - event : 入侵风险
+        **参数解释**： 查询类型 **约束限制**： 不涉及 **取值范围**： - image：镜像风险 - baseline：基线风险 - vul：漏洞风险 - event：入侵风险  **默认取值**： 不涉及 
 
         :param detect_type: The detect_type of this CCEClusterIdListRequestBody.
         :type detect_type: str

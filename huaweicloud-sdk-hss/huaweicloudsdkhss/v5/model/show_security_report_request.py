@@ -3,7 +3,7 @@
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ListCceClusterDetectRiskRequest:
+class ShowSecurityReportRequest:
 
     """
     Attributes:
@@ -16,75 +16,106 @@ class ListCceClusterDetectRiskRequest:
 
     openapi_types = {
         'enterprise_project_id': 'str',
-        'body': 'CCEClusterIdListRequestBody'
+        'report_id': 'int',
+        'report_sub_id': 'int'
     }
 
     attribute_map = {
         'enterprise_project_id': 'enterprise_project_id',
-        'body': 'body'
+        'report_id': 'report_id',
+        'report_sub_id': 'report_sub_id'
     }
 
-    def __init__(self, enterprise_project_id=None, body=None):
-        r"""ListCceClusterDetectRiskRequest
+    def __init__(self, enterprise_project_id=None, report_id=None, report_sub_id=None):
+        r"""ShowSecurityReportRequest
 
         The model defined in huaweicloud sdk
 
         :param enterprise_project_id: **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
         :type enterprise_project_id: str
-        :param body: Body of the ListCceClusterDetectRiskRequest
-        :type body: :class:`huaweicloudsdkhss.v5.CCEClusterIdListRequestBody`
+        :param report_id: **参数解释**: 报告ID **约束限制**: 必填 **取值范围**: 最小值0，最大值2147483647 **默认取值**: 0 
+        :type report_id: int
+        :param report_sub_id: **参数解释**: 报告子ID **约束限制**: 必填 **取值范围**: 最小值0，最大值2147483647 **默认取值**: 0 
+        :type report_sub_id: int
         """
         
         
 
         self._enterprise_project_id = None
-        self._body = None
+        self._report_id = None
+        self._report_sub_id = None
         self.discriminator = None
 
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
-        if body is not None:
-            self.body = body
+        self.report_id = report_id
+        self.report_sub_id = report_sub_id
 
     @property
     def enterprise_project_id(self):
-        r"""Gets the enterprise_project_id of this ListCceClusterDetectRiskRequest.
+        r"""Gets the enterprise_project_id of this ShowSecurityReportRequest.
 
         **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
 
-        :return: The enterprise_project_id of this ListCceClusterDetectRiskRequest.
+        :return: The enterprise_project_id of this ShowSecurityReportRequest.
         :rtype: str
         """
         return self._enterprise_project_id
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        r"""Sets the enterprise_project_id of this ListCceClusterDetectRiskRequest.
+        r"""Sets the enterprise_project_id of this ShowSecurityReportRequest.
 
         **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
 
-        :param enterprise_project_id: The enterprise_project_id of this ListCceClusterDetectRiskRequest.
+        :param enterprise_project_id: The enterprise_project_id of this ShowSecurityReportRequest.
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
     @property
-    def body(self):
-        r"""Gets the body of this ListCceClusterDetectRiskRequest.
+    def report_id(self):
+        r"""Gets the report_id of this ShowSecurityReportRequest.
 
-        :return: The body of this ListCceClusterDetectRiskRequest.
-        :rtype: :class:`huaweicloudsdkhss.v5.CCEClusterIdListRequestBody`
+        **参数解释**: 报告ID **约束限制**: 必填 **取值范围**: 最小值0，最大值2147483647 **默认取值**: 0 
+
+        :return: The report_id of this ShowSecurityReportRequest.
+        :rtype: int
         """
-        return self._body
+        return self._report_id
 
-    @body.setter
-    def body(self, body):
-        r"""Sets the body of this ListCceClusterDetectRiskRequest.
+    @report_id.setter
+    def report_id(self, report_id):
+        r"""Sets the report_id of this ShowSecurityReportRequest.
 
-        :param body: The body of this ListCceClusterDetectRiskRequest.
-        :type body: :class:`huaweicloudsdkhss.v5.CCEClusterIdListRequestBody`
+        **参数解释**: 报告ID **约束限制**: 必填 **取值范围**: 最小值0，最大值2147483647 **默认取值**: 0 
+
+        :param report_id: The report_id of this ShowSecurityReportRequest.
+        :type report_id: int
         """
-        self._body = body
+        self._report_id = report_id
+
+    @property
+    def report_sub_id(self):
+        r"""Gets the report_sub_id of this ShowSecurityReportRequest.
+
+        **参数解释**: 报告子ID **约束限制**: 必填 **取值范围**: 最小值0，最大值2147483647 **默认取值**: 0 
+
+        :return: The report_sub_id of this ShowSecurityReportRequest.
+        :rtype: int
+        """
+        return self._report_sub_id
+
+    @report_sub_id.setter
+    def report_sub_id(self, report_sub_id):
+        r"""Sets the report_sub_id of this ShowSecurityReportRequest.
+
+        **参数解释**: 报告子ID **约束限制**: 必填 **取值范围**: 最小值0，最大值2147483647 **默认取值**: 0 
+
+        :param report_sub_id: The report_sub_id of this ShowSecurityReportRequest.
+        :type report_sub_id: int
+        """
+        self._report_sub_id = report_sub_id
 
     def to_dict(self):
         result = {}
@@ -123,7 +154,7 @@ class ListCceClusterDetectRiskRequest:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ListCceClusterDetectRiskRequest):
+        if not isinstance(other, ShowSecurityReportRequest):
             return False
 
         return self.__dict__ == other.__dict__

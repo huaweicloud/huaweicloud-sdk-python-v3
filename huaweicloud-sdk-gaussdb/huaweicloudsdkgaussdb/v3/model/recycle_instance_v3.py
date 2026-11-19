@@ -23,8 +23,6 @@ class RecycleInstanceV3:
         'pay_model': 'str',
         'create_at': 'int',
         'deleted_at': 'int',
-        'volume_type': 'str',
-        'volume_size': 'str',
         'data_vip': 'str',
         'data_vip_ipv6': 'str',
         'enterprise_project_id': 'str',
@@ -32,6 +30,7 @@ class RecycleInstanceV3:
         'backup_level': 'str',
         'recycle_backup_id': 'str',
         'recycle_status': 'str',
+        'retention_days': 'int',
         'recycle_backups': 'list[RecycleBackupV3]'
     }
 
@@ -44,8 +43,6 @@ class RecycleInstanceV3:
         'pay_model': 'pay_model',
         'create_at': 'create_at',
         'deleted_at': 'deleted_at',
-        'volume_type': 'volume_type',
-        'volume_size': 'volume_size',
         'data_vip': 'data_vip',
         'data_vip_ipv6': 'data_vip_ipv6',
         'enterprise_project_id': 'enterprise_project_id',
@@ -53,10 +50,11 @@ class RecycleInstanceV3:
         'backup_level': 'backup_level',
         'recycle_backup_id': 'recycle_backup_id',
         'recycle_status': 'recycle_status',
+        'retention_days': 'retention_days',
         'recycle_backups': 'recycle_backups'
     }
 
-    def __init__(self, id=None, name=None, ha_mode=None, engine_name=None, engine_version=None, pay_model=None, create_at=None, deleted_at=None, volume_type=None, volume_size=None, data_vip=None, data_vip_ipv6=None, enterprise_project_id=None, enterprise_project_name=None, backup_level=None, recycle_backup_id=None, recycle_status=None, recycle_backups=None):
+    def __init__(self, id=None, name=None, ha_mode=None, engine_name=None, engine_version=None, pay_model=None, create_at=None, deleted_at=None, data_vip=None, data_vip_ipv6=None, enterprise_project_id=None, enterprise_project_name=None, backup_level=None, recycle_backup_id=None, recycle_status=None, retention_days=None, recycle_backups=None):
         r"""RecycleInstanceV3
 
         The model defined in huaweicloud sdk
@@ -77,10 +75,6 @@ class RecycleInstanceV3:
         :type create_at: int
         :param deleted_at: 删除时间。
         :type deleted_at: int
-        :param volume_type: 磁盘类型。
-        :type volume_type: str
-        :param volume_size: 磁盘大小。
-        :type volume_size: str
         :param data_vip: 数据面VIP。
         :type data_vip: str
         :param data_vip_ipv6: 数据面IPV6。
@@ -95,6 +89,8 @@ class RecycleInstanceV3:
         :type recycle_backup_id: str
         :param recycle_status: 回收状态。
         :type recycle_status: str
+        :param retention_days: **参数解释**：  回收站备份剩余保留天数。由总保留天数减去实例删除后已过天数得出，为0表示即将清理。  **取值范围**：  - 0：回收站备份即将被清理。 - -1：永久保留（retain_all 策略，不主动清理）。 - 其他值：剩余保留天数。  **默认取值**： 不涉及。
+        :type retention_days: int
         :param recycle_backups: **参数解释**：  实例所有的回收站备份列表。
         :type recycle_backups: list[:class:`huaweicloudsdkgaussdb.v3.RecycleBackupV3`]
         """
@@ -109,8 +105,6 @@ class RecycleInstanceV3:
         self._pay_model = None
         self._create_at = None
         self._deleted_at = None
-        self._volume_type = None
-        self._volume_size = None
         self._data_vip = None
         self._data_vip_ipv6 = None
         self._enterprise_project_id = None
@@ -118,6 +112,7 @@ class RecycleInstanceV3:
         self._backup_level = None
         self._recycle_backup_id = None
         self._recycle_status = None
+        self._retention_days = None
         self._recycle_backups = None
         self.discriminator = None
 
@@ -137,10 +132,6 @@ class RecycleInstanceV3:
             self.create_at = create_at
         if deleted_at is not None:
             self.deleted_at = deleted_at
-        if volume_type is not None:
-            self.volume_type = volume_type
-        if volume_size is not None:
-            self.volume_size = volume_size
         if data_vip is not None:
             self.data_vip = data_vip
         if data_vip_ipv6 is not None:
@@ -155,6 +146,8 @@ class RecycleInstanceV3:
             self.recycle_backup_id = recycle_backup_id
         if recycle_status is not None:
             self.recycle_status = recycle_status
+        if retention_days is not None:
+            self.retention_days = retention_days
         if recycle_backups is not None:
             self.recycle_backups = recycle_backups
 
@@ -335,50 +328,6 @@ class RecycleInstanceV3:
         self._deleted_at = deleted_at
 
     @property
-    def volume_type(self):
-        r"""Gets the volume_type of this RecycleInstanceV3.
-
-        磁盘类型。
-
-        :return: The volume_type of this RecycleInstanceV3.
-        :rtype: str
-        """
-        return self._volume_type
-
-    @volume_type.setter
-    def volume_type(self, volume_type):
-        r"""Sets the volume_type of this RecycleInstanceV3.
-
-        磁盘类型。
-
-        :param volume_type: The volume_type of this RecycleInstanceV3.
-        :type volume_type: str
-        """
-        self._volume_type = volume_type
-
-    @property
-    def volume_size(self):
-        r"""Gets the volume_size of this RecycleInstanceV3.
-
-        磁盘大小。
-
-        :return: The volume_size of this RecycleInstanceV3.
-        :rtype: str
-        """
-        return self._volume_size
-
-    @volume_size.setter
-    def volume_size(self, volume_size):
-        r"""Sets the volume_size of this RecycleInstanceV3.
-
-        磁盘大小。
-
-        :param volume_size: The volume_size of this RecycleInstanceV3.
-        :type volume_size: str
-        """
-        self._volume_size = volume_size
-
-    @property
     def data_vip(self):
         r"""Gets the data_vip of this RecycleInstanceV3.
 
@@ -531,6 +480,28 @@ class RecycleInstanceV3:
         :type recycle_status: str
         """
         self._recycle_status = recycle_status
+
+    @property
+    def retention_days(self):
+        r"""Gets the retention_days of this RecycleInstanceV3.
+
+        **参数解释**：  回收站备份剩余保留天数。由总保留天数减去实例删除后已过天数得出，为0表示即将清理。  **取值范围**：  - 0：回收站备份即将被清理。 - -1：永久保留（retain_all 策略，不主动清理）。 - 其他值：剩余保留天数。  **默认取值**： 不涉及。
+
+        :return: The retention_days of this RecycleInstanceV3.
+        :rtype: int
+        """
+        return self._retention_days
+
+    @retention_days.setter
+    def retention_days(self, retention_days):
+        r"""Sets the retention_days of this RecycleInstanceV3.
+
+        **参数解释**：  回收站备份剩余保留天数。由总保留天数减去实例删除后已过天数得出，为0表示即将清理。  **取值范围**：  - 0：回收站备份即将被清理。 - -1：永久保留（retain_all 策略，不主动清理）。 - 其他值：剩余保留天数。  **默认取值**： 不涉及。
+
+        :param retention_days: The retention_days of this RecycleInstanceV3.
+        :type retention_days: int
+        """
+        self._retention_days = retention_days
 
     @property
     def recycle_backups(self):

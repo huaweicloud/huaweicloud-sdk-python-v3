@@ -53,7 +53,7 @@ class ShowVulAffectedStaticsRequest:
         :type cluster_id: str
         :param container_ids: **参数解释**: 容器id集合 **约束限制**: 不涉及 **取值范围**: 最小值1，最大值1000 **默认取值**: 不涉及 
         :type container_ids: list[str]
-        :param is_container: **参数解释**: 是否是容器场景 **约束限制**: 不涉及 **取值范围**: - true：是容器场景 - false：不是容器场景 **默认取值**: false 
+        :param is_container: **参数解释**: 是否是容器场景 **约束限制**: 不涉及 **取值范围**: - true：是容器场景 - false：不是容器场景  **默认取值**: false 
         :type is_container: bool
         :param vul_ids: **参数解释**: 漏洞id集合 **约束限制**: 不涉及 **取值范围**: 最小值1，最大值1000 **默认取值**: 不涉及 
         :type vul_ids: list[str]
@@ -209,7 +209,7 @@ class ShowVulAffectedStaticsRequest:
     def is_container(self):
         r"""Gets the is_container of this ShowVulAffectedStaticsRequest.
 
-        **参数解释**: 是否是容器场景 **约束限制**: 不涉及 **取值范围**: - true：是容器场景 - false：不是容器场景 **默认取值**: false 
+        **参数解释**: 是否是容器场景 **约束限制**: 不涉及 **取值范围**: - true：是容器场景 - false：不是容器场景  **默认取值**: false 
 
         :return: The is_container of this ShowVulAffectedStaticsRequest.
         :rtype: bool
@@ -220,7 +220,7 @@ class ShowVulAffectedStaticsRequest:
     def is_container(self, is_container):
         r"""Sets the is_container of this ShowVulAffectedStaticsRequest.
 
-        **参数解释**: 是否是容器场景 **约束限制**: 不涉及 **取值范围**: - true：是容器场景 - false：不是容器场景 **默认取值**: false 
+        **参数解释**: 是否是容器场景 **约束限制**: 不涉及 **取值范围**: - true：是容器场景 - false：不是容器场景  **默认取值**: false 
 
         :param is_container: The is_container of this ShowVulAffectedStaticsRequest.
         :type is_container: bool

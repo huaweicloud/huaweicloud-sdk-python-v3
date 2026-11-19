@@ -24,7 +24,8 @@ class CreateSubNetworkInterfaceOption:
         'ipv6_ip_address': 'str',
         'security_groups': 'list[str]',
         'project_id': 'str',
-        'allowed_address_pairs': 'list[AllowedAddressPair]'
+        'allowed_address_pairs': 'list[AllowedAddressPair]',
+        'tags': 'list[ResourceTag]'
     }
 
     attribute_map = {
@@ -37,10 +38,11 @@ class CreateSubNetworkInterfaceOption:
         'ipv6_ip_address': 'ipv6_ip_address',
         'security_groups': 'security_groups',
         'project_id': 'project_id',
-        'allowed_address_pairs': 'allowed_address_pairs'
+        'allowed_address_pairs': 'allowed_address_pairs',
+        'tags': 'tags'
     }
 
-    def __init__(self, virsubnet_id=None, vlan_id=None, parent_id=None, description=None, ipv6_enable=None, private_ip_address=None, ipv6_ip_address=None, security_groups=None, project_id=None, allowed_address_pairs=None):
+    def __init__(self, virsubnet_id=None, vlan_id=None, parent_id=None, description=None, ipv6_enable=None, private_ip_address=None, ipv6_ip_address=None, security_groups=None, project_id=None, allowed_address_pairs=None, tags=None):
         r"""CreateSubNetworkInterfaceOption
 
         The model defined in huaweicloud sdk
@@ -65,6 +67,8 @@ class CreateSubNetworkInterfaceOption:
         :type project_id: str
         :param allowed_address_pairs: 1. 扩展属性：IP/Mac对列表，allowed_address_pair参见“allowed_address_pair对象” 2. 使用说明: IP地址不允许为 “0.0.0.0”如果allowed_address_pairs配置地址池较大的CIDR（掩码小于24位），建议为该port配置一个单独的安全组硬件SDN环境不支持ip_address属性配置为CIDR格式。
         :type allowed_address_pairs: list[:class:`huaweicloudsdkvpc.v3.AllowedAddressPair`]
+        :param tags: 辅助弹性网卡资源标签
+        :type tags: list[:class:`huaweicloudsdkvpc.v3.ResourceTag`]
         """
         
         
@@ -79,6 +83,7 @@ class CreateSubNetworkInterfaceOption:
         self._security_groups = None
         self._project_id = None
         self._allowed_address_pairs = None
+        self._tags = None
         self.discriminator = None
 
         self.virsubnet_id = virsubnet_id
@@ -99,6 +104,8 @@ class CreateSubNetworkInterfaceOption:
             self.project_id = project_id
         if allowed_address_pairs is not None:
             self.allowed_address_pairs = allowed_address_pairs
+        if tags is not None:
+            self.tags = tags
 
     @property
     def virsubnet_id(self):
@@ -319,6 +326,28 @@ class CreateSubNetworkInterfaceOption:
         :type allowed_address_pairs: list[:class:`huaweicloudsdkvpc.v3.AllowedAddressPair`]
         """
         self._allowed_address_pairs = allowed_address_pairs
+
+    @property
+    def tags(self):
+        r"""Gets the tags of this CreateSubNetworkInterfaceOption.
+
+        辅助弹性网卡资源标签
+
+        :return: The tags of this CreateSubNetworkInterfaceOption.
+        :rtype: list[:class:`huaweicloudsdkvpc.v3.ResourceTag`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        r"""Sets the tags of this CreateSubNetworkInterfaceOption.
+
+        辅助弹性网卡资源标签
+
+        :param tags: The tags of this CreateSubNetworkInterfaceOption.
+        :type tags: list[:class:`huaweicloudsdkvpc.v3.ResourceTag`]
+        """
+        self._tags = tags
 
     def to_dict(self):
         result = {}

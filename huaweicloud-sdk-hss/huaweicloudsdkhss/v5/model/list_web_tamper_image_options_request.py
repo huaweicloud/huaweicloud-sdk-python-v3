@@ -53,7 +53,7 @@ class ListWebTamperImageOptionsRequest:
         :type image_namespace: str
         :param registry_name: **参数解释**: 仓库镜像镜像仓名称 **约束限制**: 不涉及。 **取值范围**: 字符长度1-512位 **默认取值**: 不涉及 
         :type registry_name: str
-        :param image_type: **参数解释**: 查询镜像类型 **约束限制**: 不涉及。 **取值范围**: - registry：仓库镜像。 - local：本地镜像。 **默认取值**: 不涉及 
+        :param image_type: **参数解释**: 查询镜像类型 **约束限制**: 不涉及。 **取值范围**: - registry：仓库镜像。 - local：本地镜像。  **默认取值**: 不涉及 
         :type image_type: str
         :param image_name: **参数解释**: 镜像名称 **约束限制**: 不涉及。 **取值范围**: 字符长度1-512位 **默认取值**: 不涉及 
         :type image_name: str
@@ -223,7 +223,7 @@ class ListWebTamperImageOptionsRequest:
     def image_type(self):
         r"""Gets the image_type of this ListWebTamperImageOptionsRequest.
 
-        **参数解释**: 查询镜像类型 **约束限制**: 不涉及。 **取值范围**: - registry：仓库镜像。 - local：本地镜像。 **默认取值**: 不涉及 
+        **参数解释**: 查询镜像类型 **约束限制**: 不涉及。 **取值范围**: - registry：仓库镜像。 - local：本地镜像。  **默认取值**: 不涉及 
 
         :return: The image_type of this ListWebTamperImageOptionsRequest.
         :rtype: str
@@ -234,7 +234,7 @@ class ListWebTamperImageOptionsRequest:
     def image_type(self, image_type):
         r"""Sets the image_type of this ListWebTamperImageOptionsRequest.
 
-        **参数解释**: 查询镜像类型 **约束限制**: 不涉及。 **取值范围**: - registry：仓库镜像。 - local：本地镜像。 **默认取值**: 不涉及 
+        **参数解释**: 查询镜像类型 **约束限制**: 不涉及。 **取值范围**: - registry：仓库镜像。 - local：本地镜像。  **默认取值**: 不涉及 
 
         :param image_type: The image_type of this ListWebTamperImageOptionsRequest.
         :type image_type: str

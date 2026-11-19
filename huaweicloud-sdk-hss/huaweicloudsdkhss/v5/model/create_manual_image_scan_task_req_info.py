@@ -39,7 +39,7 @@ class CreateManualImageScanTaskReqInfo:
         :type scan_scope: int
         :param rate_limit: **参数解释**: 三方镜像仓扫描限速,其他镜像仓不生效 单位：个/h **约束限制**: 不涉及 **取值范围**: 0-1000，0表示不限制。  **默认取值**: 不涉及 
         :type rate_limit: int
-        :param is_all: **参数解释**: 扫描全部镜像 **约束限制**: 不涉及 **取值范围**: - true：扫描全部镜像。支持全部镜像扫描或者指定镜像仓类型扫描，若为指定镜像仓类型扫描，需要填写query_info的image_type类型。 - false：指定镜像扫描,需要填写详细的镜像信息image_info字段。 **默认取值**: 不涉及 
+        :param is_all: **参数解释**: 扫描全部镜像 **约束限制**: 不涉及 **取值范围**: - true：扫描全部镜像。支持全部镜像扫描或者指定镜像仓类型扫描，若为指定镜像仓类型扫描，需要填写query_info的image_type类型。 - false：指定镜像扫描,需要填写详细的镜像信息image_info字段。  **默认取值**: 不涉及 
         :type is_all: bool
         :param query_info: 
         :type query_info: :class:`huaweicloudsdkhss.v5.CreateManualImageScanTaskReqInfoQueryInfo`
@@ -115,7 +115,7 @@ class CreateManualImageScanTaskReqInfo:
     def is_all(self):
         r"""Gets the is_all of this CreateManualImageScanTaskReqInfo.
 
-        **参数解释**: 扫描全部镜像 **约束限制**: 不涉及 **取值范围**: - true：扫描全部镜像。支持全部镜像扫描或者指定镜像仓类型扫描，若为指定镜像仓类型扫描，需要填写query_info的image_type类型。 - false：指定镜像扫描,需要填写详细的镜像信息image_info字段。 **默认取值**: 不涉及 
+        **参数解释**: 扫描全部镜像 **约束限制**: 不涉及 **取值范围**: - true：扫描全部镜像。支持全部镜像扫描或者指定镜像仓类型扫描，若为指定镜像仓类型扫描，需要填写query_info的image_type类型。 - false：指定镜像扫描,需要填写详细的镜像信息image_info字段。  **默认取值**: 不涉及 
 
         :return: The is_all of this CreateManualImageScanTaskReqInfo.
         :rtype: bool
@@ -126,7 +126,7 @@ class CreateManualImageScanTaskReqInfo:
     def is_all(self, is_all):
         r"""Sets the is_all of this CreateManualImageScanTaskReqInfo.
 
-        **参数解释**: 扫描全部镜像 **约束限制**: 不涉及 **取值范围**: - true：扫描全部镜像。支持全部镜像扫描或者指定镜像仓类型扫描，若为指定镜像仓类型扫描，需要填写query_info的image_type类型。 - false：指定镜像扫描,需要填写详细的镜像信息image_info字段。 **默认取值**: 不涉及 
+        **参数解释**: 扫描全部镜像 **约束限制**: 不涉及 **取值范围**: - true：扫描全部镜像。支持全部镜像扫描或者指定镜像仓类型扫描，若为指定镜像仓类型扫描，需要填写query_info的image_type类型。 - false：指定镜像扫描,需要填写详细的镜像信息image_info字段。  **默认取值**: 不涉及 
 
         :param is_all: The is_all of this CreateManualImageScanTaskReqInfo.
         :type is_all: bool

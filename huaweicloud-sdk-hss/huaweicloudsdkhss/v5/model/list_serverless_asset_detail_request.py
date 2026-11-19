@@ -33,7 +33,7 @@ class ListServerlessAssetDetailRequest:
 
         :param enterprise_project_id: **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
         :type enterprise_project_id: str
-        :param category: **参数解释**： 资产维度 **约束限制**： 不涉及 **取值范围**： - container : 容器维度 **默认取值**： container
+        :param category: **参数解释**： 资产维度 **约束限制**： 不涉及 **取值范围**： - container : 容器维度  **默认取值**： container
         :type category: str
         :param asset_id: **参数解释**: 资产ID，基于参数category决定维度（比如category&#x3D;container时，asset_id为容器id） **约束限制**： 不涉及 **取值范围**: 字符长度0-255位 **默认取值**： 不涉及 
         :type asset_id: str
@@ -77,7 +77,7 @@ class ListServerlessAssetDetailRequest:
     def category(self):
         r"""Gets the category of this ListServerlessAssetDetailRequest.
 
-        **参数解释**： 资产维度 **约束限制**： 不涉及 **取值范围**： - container : 容器维度 **默认取值**： container
+        **参数解释**： 资产维度 **约束限制**： 不涉及 **取值范围**： - container : 容器维度  **默认取值**： container
 
         :return: The category of this ListServerlessAssetDetailRequest.
         :rtype: str
@@ -88,7 +88,7 @@ class ListServerlessAssetDetailRequest:
     def category(self, category):
         r"""Sets the category of this ListServerlessAssetDetailRequest.
 
-        **参数解释**： 资产维度 **约束限制**： 不涉及 **取值范围**： - container : 容器维度 **默认取值**： container
+        **参数解释**： 资产维度 **约束限制**： 不涉及 **取值范围**： - container : 容器维度  **默认取值**： container
 
         :param category: The category of this ListServerlessAssetDetailRequest.
         :type category: str

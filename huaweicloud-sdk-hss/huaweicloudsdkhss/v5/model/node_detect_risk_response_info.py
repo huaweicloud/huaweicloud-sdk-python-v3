@@ -41,21 +41,21 @@ class NodeDetectRiskResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param images_num: 有风险镜像数量
+        :param images_num: **参数解释**： 有风险镜像数量 **取值范围**： 0~2147483647 
         :type images_num: int
-        :param baseline_risk_num: 基线检查风险项总和
+        :param baseline_risk_num: **参数解释**： 基线检查风险项总和 **取值范围**： 0~2147483647 
         :type baseline_risk_num: int
-        :param vul_num: 漏洞数量
+        :param vul_num: **参数解释**： 漏洞数量 **取值范围**： 0~2147483647 
         :type vul_num: int
-        :param event_num: 告警数量
+        :param event_num: **参数解释**： 告警数量 **取值范围**： 0~2147483647 
         :type event_num: int
-        :param protect_node_num: 集群开启防护节点数量
+        :param protect_node_num: **参数解释**： 集群开启防护节点数量 **取值范围**： 0~2147483647 
         :type protect_node_num: int
-        :param node_total_num: 集群节点总数
+        :param node_total_num: **参数解释**： 集群节点总数 **取值范围**： 0~2147483647 
         :type node_total_num: int
-        :param cluster_id: 集群id
+        :param cluster_id: **参数解释**： 集群ID **取值范围**： 字符长度0-128位 
         :type cluster_id: str
-        :param charging_mode: 付费模式包括： - on_demand：按需 - free：免费
+        :param charging_mode: **参数解释**： 付费模式 **取值范围**： - on_demand：按需 - free：免费 
         :type charging_mode: str
         """
         
@@ -92,7 +92,7 @@ class NodeDetectRiskResponseInfo:
     def images_num(self):
         r"""Gets the images_num of this NodeDetectRiskResponseInfo.
 
-        有风险镜像数量
+        **参数解释**： 有风险镜像数量 **取值范围**： 0~2147483647 
 
         :return: The images_num of this NodeDetectRiskResponseInfo.
         :rtype: int
@@ -103,7 +103,7 @@ class NodeDetectRiskResponseInfo:
     def images_num(self, images_num):
         r"""Sets the images_num of this NodeDetectRiskResponseInfo.
 
-        有风险镜像数量
+        **参数解释**： 有风险镜像数量 **取值范围**： 0~2147483647 
 
         :param images_num: The images_num of this NodeDetectRiskResponseInfo.
         :type images_num: int
@@ -114,7 +114,7 @@ class NodeDetectRiskResponseInfo:
     def baseline_risk_num(self):
         r"""Gets the baseline_risk_num of this NodeDetectRiskResponseInfo.
 
-        基线检查风险项总和
+        **参数解释**： 基线检查风险项总和 **取值范围**： 0~2147483647 
 
         :return: The baseline_risk_num of this NodeDetectRiskResponseInfo.
         :rtype: int
@@ -125,7 +125,7 @@ class NodeDetectRiskResponseInfo:
     def baseline_risk_num(self, baseline_risk_num):
         r"""Sets the baseline_risk_num of this NodeDetectRiskResponseInfo.
 
-        基线检查风险项总和
+        **参数解释**： 基线检查风险项总和 **取值范围**： 0~2147483647 
 
         :param baseline_risk_num: The baseline_risk_num of this NodeDetectRiskResponseInfo.
         :type baseline_risk_num: int
@@ -136,7 +136,7 @@ class NodeDetectRiskResponseInfo:
     def vul_num(self):
         r"""Gets the vul_num of this NodeDetectRiskResponseInfo.
 
-        漏洞数量
+        **参数解释**： 漏洞数量 **取值范围**： 0~2147483647 
 
         :return: The vul_num of this NodeDetectRiskResponseInfo.
         :rtype: int
@@ -147,7 +147,7 @@ class NodeDetectRiskResponseInfo:
     def vul_num(self, vul_num):
         r"""Sets the vul_num of this NodeDetectRiskResponseInfo.
 
-        漏洞数量
+        **参数解释**： 漏洞数量 **取值范围**： 0~2147483647 
 
         :param vul_num: The vul_num of this NodeDetectRiskResponseInfo.
         :type vul_num: int
@@ -158,7 +158,7 @@ class NodeDetectRiskResponseInfo:
     def event_num(self):
         r"""Gets the event_num of this NodeDetectRiskResponseInfo.
 
-        告警数量
+        **参数解释**： 告警数量 **取值范围**： 0~2147483647 
 
         :return: The event_num of this NodeDetectRiskResponseInfo.
         :rtype: int
@@ -169,7 +169,7 @@ class NodeDetectRiskResponseInfo:
     def event_num(self, event_num):
         r"""Sets the event_num of this NodeDetectRiskResponseInfo.
 
-        告警数量
+        **参数解释**： 告警数量 **取值范围**： 0~2147483647 
 
         :param event_num: The event_num of this NodeDetectRiskResponseInfo.
         :type event_num: int
@@ -180,7 +180,7 @@ class NodeDetectRiskResponseInfo:
     def protect_node_num(self):
         r"""Gets the protect_node_num of this NodeDetectRiskResponseInfo.
 
-        集群开启防护节点数量
+        **参数解释**： 集群开启防护节点数量 **取值范围**： 0~2147483647 
 
         :return: The protect_node_num of this NodeDetectRiskResponseInfo.
         :rtype: int
@@ -191,7 +191,7 @@ class NodeDetectRiskResponseInfo:
     def protect_node_num(self, protect_node_num):
         r"""Sets the protect_node_num of this NodeDetectRiskResponseInfo.
 
-        集群开启防护节点数量
+        **参数解释**： 集群开启防护节点数量 **取值范围**： 0~2147483647 
 
         :param protect_node_num: The protect_node_num of this NodeDetectRiskResponseInfo.
         :type protect_node_num: int
@@ -202,7 +202,7 @@ class NodeDetectRiskResponseInfo:
     def node_total_num(self):
         r"""Gets the node_total_num of this NodeDetectRiskResponseInfo.
 
-        集群节点总数
+        **参数解释**： 集群节点总数 **取值范围**： 0~2147483647 
 
         :return: The node_total_num of this NodeDetectRiskResponseInfo.
         :rtype: int
@@ -213,7 +213,7 @@ class NodeDetectRiskResponseInfo:
     def node_total_num(self, node_total_num):
         r"""Sets the node_total_num of this NodeDetectRiskResponseInfo.
 
-        集群节点总数
+        **参数解释**： 集群节点总数 **取值范围**： 0~2147483647 
 
         :param node_total_num: The node_total_num of this NodeDetectRiskResponseInfo.
         :type node_total_num: int
@@ -224,7 +224,7 @@ class NodeDetectRiskResponseInfo:
     def cluster_id(self):
         r"""Gets the cluster_id of this NodeDetectRiskResponseInfo.
 
-        集群id
+        **参数解释**： 集群ID **取值范围**： 字符长度0-128位 
 
         :return: The cluster_id of this NodeDetectRiskResponseInfo.
         :rtype: str
@@ -235,7 +235,7 @@ class NodeDetectRiskResponseInfo:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this NodeDetectRiskResponseInfo.
 
-        集群id
+        **参数解释**： 集群ID **取值范围**： 字符长度0-128位 
 
         :param cluster_id: The cluster_id of this NodeDetectRiskResponseInfo.
         :type cluster_id: str
@@ -246,7 +246,7 @@ class NodeDetectRiskResponseInfo:
     def charging_mode(self):
         r"""Gets the charging_mode of this NodeDetectRiskResponseInfo.
 
-        付费模式包括： - on_demand：按需 - free：免费
+        **参数解释**： 付费模式 **取值范围**： - on_demand：按需 - free：免费 
 
         :return: The charging_mode of this NodeDetectRiskResponseInfo.
         :rtype: str
@@ -257,7 +257,7 @@ class NodeDetectRiskResponseInfo:
     def charging_mode(self, charging_mode):
         r"""Sets the charging_mode of this NodeDetectRiskResponseInfo.
 
-        付费模式包括： - on_demand：按需 - free：免费
+        **参数解释**： 付费模式 **取值范围**： - on_demand：按需 - free：免费 
 
         :param charging_mode: The charging_mode of this NodeDetectRiskResponseInfo.
         :type charging_mode: str

@@ -43,7 +43,7 @@ class ListWebAppAndServiceStatisticsRequest:
         :type offset: int
         :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
         :type limit: int
-        :param category: **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产  **默认取值**: host 
+        :param category: **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产 - serverless：Serverless安全场景  **默认取值**: host 
         :type category: str
         :param name: **参数解释**: web应用，web服务或数据库名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-64 **默认取值**: 不涉及 
         :type name: str
@@ -142,7 +142,7 @@ class ListWebAppAndServiceStatisticsRequest:
     def category(self):
         r"""Gets the category of this ListWebAppAndServiceStatisticsRequest.
 
-        **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产  **默认取值**: host 
+        **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产 - serverless：Serverless安全场景  **默认取值**: host 
 
         :return: The category of this ListWebAppAndServiceStatisticsRequest.
         :rtype: str
@@ -153,7 +153,7 @@ class ListWebAppAndServiceStatisticsRequest:
     def category(self, category):
         r"""Sets the category of this ListWebAppAndServiceStatisticsRequest.
 
-        **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产  **默认取值**: host 
+        **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产 - serverless：Serverless安全场景  **默认取值**: host 
 
         :param category: The category of this ListWebAppAndServiceStatisticsRequest.
         :type category: str

@@ -71,7 +71,7 @@ class ListAntivirusHandleHistoryRequest:
         :type malware_name: str
         :param file_path: **参数解释**： 文件路径 **约束限制**： 不涉及 **取值范围**： 字符数1-512位 **默认取值**： 不涉及 
         :type file_path: str
-        :param severity_list: **参数解释**: 威胁等级，已废弃 **约束限制**: 不涉及 **取值范围**: 威胁等级，包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命 **默认取值**: 不涉及 
+        :param severity_list: **参数解释**: 威胁等级，已废弃 **约束限制**: 不涉及 **取值范围**: 威胁等级，包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命  **默认取值**: 不涉及 
         :type severity_list: list[str]
         :param severities: 威胁等级，包含如下:   - Low : 低危   - Medium : 中危   - High : 高危   - Critical : 危急
         :type severities: str
@@ -83,7 +83,7 @@ class ListAntivirusHandleHistoryRequest:
         :type public_ip: str
         :param asset_value: **参数解释**: 资产重要性 **约束限制**: 不涉及 **取值范围**： - important：重要资产 - common：一般资产 - test：测试资产  **默认取值**: 不涉及 
         :type asset_value: str
-        :param handle_method: **参数解释**: 处理方式 **约束限制**: 不涉及 **取值范围**: 处理方式，包含如下:   - mark_as_handled：手动处理   - ignore：忽略   - add_to_alarm_whitelist：加入告警白名单   - manual_isolate_and_kill：手动隔离查杀   - auto_isolate_and_kill：自动隔离查杀   - unhandle：取消手动处理   - do_not_ignore：取消忽略   - remove_from_alarm_whitelist：删除告警白名单   - do_not_isolate_or_kill：取消隔离文件 **默认取值**: 不涉及 
+        :param handle_method: **参数解释**: 处理方式 **约束限制**: 不涉及 **取值范围**: 处理方式，包含如下:   - mark_as_handled：手动处理   - ignore：忽略   - add_to_alarm_whitelist：加入告警白名单   - manual_isolate_and_kill：手动隔离查杀   - auto_isolate_and_kill：自动隔离查杀   - unhandle：取消手动处理   - do_not_ignore：取消忽略   - remove_from_alarm_whitelist：删除告警白名单   - do_not_isolate_or_kill：取消隔离文件  **默认取值**: 不涉及 
         :type handle_method: str
         :param user_name: **参数解释**: 用户名 **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type user_name: str
@@ -285,7 +285,7 @@ class ListAntivirusHandleHistoryRequest:
     def severity_list(self):
         r"""Gets the severity_list of this ListAntivirusHandleHistoryRequest.
 
-        **参数解释**: 威胁等级，已废弃 **约束限制**: 不涉及 **取值范围**: 威胁等级，包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命 **默认取值**: 不涉及 
+        **参数解释**: 威胁等级，已废弃 **约束限制**: 不涉及 **取值范围**: 威胁等级，包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命  **默认取值**: 不涉及 
 
         :return: The severity_list of this ListAntivirusHandleHistoryRequest.
         :rtype: list[str]
@@ -296,7 +296,7 @@ class ListAntivirusHandleHistoryRequest:
     def severity_list(self, severity_list):
         r"""Sets the severity_list of this ListAntivirusHandleHistoryRequest.
 
-        **参数解释**: 威胁等级，已废弃 **约束限制**: 不涉及 **取值范围**: 威胁等级，包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命 **默认取值**: 不涉及 
+        **参数解释**: 威胁等级，已废弃 **约束限制**: 不涉及 **取值范围**: 威胁等级，包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命  **默认取值**: 不涉及 
 
         :param severity_list: The severity_list of this ListAntivirusHandleHistoryRequest.
         :type severity_list: list[str]
@@ -417,7 +417,7 @@ class ListAntivirusHandleHistoryRequest:
     def handle_method(self):
         r"""Gets the handle_method of this ListAntivirusHandleHistoryRequest.
 
-        **参数解释**: 处理方式 **约束限制**: 不涉及 **取值范围**: 处理方式，包含如下:   - mark_as_handled：手动处理   - ignore：忽略   - add_to_alarm_whitelist：加入告警白名单   - manual_isolate_and_kill：手动隔离查杀   - auto_isolate_and_kill：自动隔离查杀   - unhandle：取消手动处理   - do_not_ignore：取消忽略   - remove_from_alarm_whitelist：删除告警白名单   - do_not_isolate_or_kill：取消隔离文件 **默认取值**: 不涉及 
+        **参数解释**: 处理方式 **约束限制**: 不涉及 **取值范围**: 处理方式，包含如下:   - mark_as_handled：手动处理   - ignore：忽略   - add_to_alarm_whitelist：加入告警白名单   - manual_isolate_and_kill：手动隔离查杀   - auto_isolate_and_kill：自动隔离查杀   - unhandle：取消手动处理   - do_not_ignore：取消忽略   - remove_from_alarm_whitelist：删除告警白名单   - do_not_isolate_or_kill：取消隔离文件  **默认取值**: 不涉及 
 
         :return: The handle_method of this ListAntivirusHandleHistoryRequest.
         :rtype: str
@@ -428,7 +428,7 @@ class ListAntivirusHandleHistoryRequest:
     def handle_method(self, handle_method):
         r"""Sets the handle_method of this ListAntivirusHandleHistoryRequest.
 
-        **参数解释**: 处理方式 **约束限制**: 不涉及 **取值范围**: 处理方式，包含如下:   - mark_as_handled：手动处理   - ignore：忽略   - add_to_alarm_whitelist：加入告警白名单   - manual_isolate_and_kill：手动隔离查杀   - auto_isolate_and_kill：自动隔离查杀   - unhandle：取消手动处理   - do_not_ignore：取消忽略   - remove_from_alarm_whitelist：删除告警白名单   - do_not_isolate_or_kill：取消隔离文件 **默认取值**: 不涉及 
+        **参数解释**: 处理方式 **约束限制**: 不涉及 **取值范围**: 处理方式，包含如下:   - mark_as_handled：手动处理   - ignore：忽略   - add_to_alarm_whitelist：加入告警白名单   - manual_isolate_and_kill：手动隔离查杀   - auto_isolate_and_kill：自动隔离查杀   - unhandle：取消手动处理   - do_not_ignore：取消忽略   - remove_from_alarm_whitelist：删除告警白名单   - do_not_isolate_or_kill：取消隔离文件  **默认取值**: 不涉及 
 
         :param handle_method: The handle_method of this ListAntivirusHandleHistoryRequest.
         :type handle_method: str

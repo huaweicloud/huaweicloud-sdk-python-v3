@@ -1,3 +1,426 @@
+# 3.1.223 2026-11-19
+
+### HuaweiCloud SDK AIDataLake
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowAuraDataframeJob**
+    - 响应参数变更
+      - `+ sessions`
+      - `+ error`
+  - **ListAuraSqlSessions**
+    - 响应参数变更
+      - `+ sessions.error`
+      - `+ sessions.start_time`
+      - `+ sessions.end_time`
+      - `+ sessions.wait_timeout`
+      - `+ sessions.max_retry_times`
+      - `+ sessions.priority`
+  - **ListAuraDataframeJob**
+    - 响应参数变更
+      - `+ sessions`
+      - `+ error`
+      - `+ job_list.error`
+      - `+ job_list.sessions`
+
+### HuaweiCloud SDK ECS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListFlavors**
+    - 响应参数变更
+      - `+ flavors.os_extra_specs.hw:cpu_policy`
+      - `+ flavors.os_extra_specs.hw:cpu_threads`
+  - **ListResizeFlavors**
+    - 响应参数变更
+      - `+ flavors.extra_specs.hw:cpu_policy`
+      - `+ flavors.extra_specs.hw:cpu_threads`
+
+### HuaweiCloud SDK GaussDB
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持以下接口：
+    - `ListRetainedBackups`
+    - `DeleteRetainedBackup`
+    - `ListColdTableWaitingTasks`
+    - `CancelColdTableWaitingTasks`
+    - `ShowColdTableSwitch`
+    - `SwitchOnColdTable`
+    - `ListColdTableTasks`
+    - `CollectColdTableMetas`
+    - `ListArchivableTables`
+    - `DeleteColdTableData`
+    - `SwitchColdTableStorage`
+    - `ShowReplicaBinlogReadConfig`
+    - `BatchUpdateTaurusSlowProcessThreshold`
+    - `ShowTaurusDbSlowProcessThreshold`
+    - `ShowInstanceStorageInfo`
+    - `SwitchGaussMySqlProxyBinlogPull`
+    - `ExchangeInstanceVipProxyIp`
+    - `ListBinlogDownloadLink`
+    - `ShowBinlogSwitch`
+    - `UpdateBinlogSwitch`
+    - `ListBinlogs`
+    - `ShowKillProcessTask`
+    - `StopKillProcessTask`
+    - `AddKillProcessTask`
+    - `ExecuteKillAllProcess`
+    - `ShowExceptionSnapshotStatus`
+    - `SwitchExceptionSnapshotStatus`
+    - `ShowKillProcessHistory`
+    - `ShowKillProcessStatus`
+    - `UpdateAutoKillProcessStatus`
+    - `ShowKillProcessTaskPreview`
+    - `ShowMigrateInfo`
+    - `UpdateServerlessScaleToZeroPolicy`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowServerlessComputeAbilityPolicy**
+    - 响应参数变更
+      - `+ scale_to_zero`
+      - `+ scale_to_zero_status`
+      - `+ idle_duration_seconds`
+  - **RestartGaussMySqlInstance**
+    - 请求参数变更
+      - `+ max_connections`
+  - **InvokeGaussMySqlInstanceSwitchOver**
+    - 请求参数变更
+      - `+ force`
+  - **CheckScheduleTaskExist**
+    - 响应参数变更
+      - `- scheduled_tasks.datastore_type`
+      - `- scheduled_tasks.instance_name`
+      - `- scheduled_tasks.instance_status`
+      - `- scheduled_tasks.target_config`
+      - `- scheduled_tasks.task_order`
+  - **ShowHistoricalSqlFilterRule**
+    - 请求参数变更
+      - `+ offset`
+      - `+ limit`
+    - 响应参数变更
+      - `+ total_count`
+  - **ListRecycleInstances**
+    - 响应参数变更
+      - `+ instances.retention_days`
+      - `- instances.volume_type`
+      - `- instances.volume_size`
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持接口`ListApplicableInstancesWithEntities`、`ListAppliedHistoriesWithEntities`、`ApplyConfigurationWithEntities`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK HSS
+
+- _接口版本_
+  - V5
+- _新增特性_
+  - 支持以下接口：
+    - `ListDelegatedAccounts`
+    - `BatchRegisterDefenderPlugin`
+    - `ShowDefenderPluginManualCommand`
+    - `ListDefenderPlugins`
+    - `ShowAiFeatureStatus`
+    - `UpdateAiInstanceProtection`
+    - `ListAiInstances`
+    - `ShowAiOverviewStatistics`
+    - `ShowAiFirewallConfig`
+    - `UpdateAiFirewallConfig`
+    - `ListAiSessions`
+    - `ListProcesses`
+    - `ListSecurityCheckPolicyGroupHosts`
+    - `ShowVersionNewService`
+    - `BatchUploadFiles`
+    - `ShowEventStatistics`
+    - `ExportCommonInterface`
+    - `ShowDecoyPortStatistics`
+    - `ShowHoneypotEventStatistics`
+    - `ListHoneypotEvents`
+    - `ListIgnoreHosts`
+    - `ListLocalImageVul`
+    - `ListImageScanOverview`
+    - `ShowQuotaHostStatistics`
+    - `ShowProtectionStatusStatistics`
+    - `ShowSecurityRisk`
+    - `ShowSecurityScore`
+    - `ShowStatistics`
+    - `ShowTrialsStatistics`
+    - `ListPolicyGroupDetail`
+    - `ShowPolicyDetail`
+    - `UpdateSnapshotPolicy`
+    - `ShowBackupsStatistics`
+    - `ShowProtectionStatistics`
+    - `ListRaspPatches`
+    - `ShowSecurityReportLogo`
+    - `ListHistoryPeriod`
+    - `ShowReportSubscription`
+    - `ShowSecurityReport`
+    - `ChangeSecurityReport`
+    - `AddSecurityReport`
+    - `DeleteSecurityReport`
+    - `ListSecurityCheckHostResult`
+    - `ShowSecurityCheckOverview`
+    - `ShowSecurityCheckStatistic`
+    - `InstalledInstanceAgentList`
+    - `ListInstanceProtections`
+    - `ShowServerlessVulStatistics`
+    - `InstallAgent`
+    - `SetRemindersConfig`
+    - `ShowTemplate`
+    - `ListHostsUpgrade`
+    - `ShowVulAffectInfo`
+    - `ListVulHandleTaskDetail`
+    - `ListVulHandleTask`
+    - `ShowVulIndividualStatistics`
+    - `ExportVulReport`
+    - `ShowVulScanTaskStatistics`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowHostAssetManualCollectStatus**
+    - 请求参数变更
+      - `* host_id: required -> optional`
+  - **ListAlarmWhiteListHostDetail**
+    - 请求参数变更
+      - `- region`
+  - **ListImageVulnerabilities**
+    - 响应参数变更
+      - `+ data_list.vul_name`
+      - `+ data_list.data_list`
+      - `+ data_list.status`
+      - `+ data_list.severity_level`
+  - **ListSecurityReport**
+    - 请求参数变更
+      - `- region`
+  - **ListEventForensic**
+    - 请求参数变更
+      - `* event_type: required -> optional`
+
+### HuaweiCloud SDK IAM
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowDomainLoginPolicy**
+    - 响应参数变更
+      - `+ login_policy.allow_sms_login`
+  - **UpdateDomainLoginPolicy**
+    - 请求参数变更
+      - `+ login_policy.allow_sms_login`
+    - 响应参数变更
+      - `+ login_policy.allow_sms_login`
+  - **KeystoneListGroups**
+    - 响应参数变更
+      - `+ total_number`
+
+### HuaweiCloud SDK IAM
+
+- _接口版本_
+  - V5
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListPoliciesV5**
+    - 响应参数变更
+      - `+ policies.tags`
+  - **CreatePolicyV5**
+    - 响应参数变更
+      - `+ policy.tags`
+  - **GetPolicyV5**
+    - 响应参数变更
+      - `+ policy.tags`
+
+### HuaweiCloud SDK KMS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持以下接口：
+    - `ListTrustedKeySpace`
+    - `CreateTrustedKeySpace`
+    - `TransferKey`
+    - `DeleteTrustedKeySpace`
+    - `ShowKeyUsageFlow`
+    - `UpdateKeyStore`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateKeyStore**
+    - 请求参数变更
+      - `+ proxy_uri_endpoint`
+      - `+ proxy_uri_path`
+      - `+ proxy_access_key_id`
+      - `+ proxy_secret_access_key`
+      - `+ proxy_vpc_endpoint_service_name`
+      - `+ proxy_vpc_endpoint_service_owner`
+      - `+ keystore_type: enum value [XKS]`
+
+### HuaweiCloud SDK LakeFormation
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowCredential**
+    - 请求参数变更
+      - `+ location`
+  - **ListTableMeta**
+    - 响应参数变更
+      - `+ table_metas.columns.advance_column_type`
+  - **ListTablesByName**
+    - 响应参数变更
+      - `+ external_table_id`
+      - `+ table_id`
+      - `+ version_id`
+      - `+ catalog_id`
+      - `+ table_status`
+      - `+ database_id`
+      - `+ data_statistic_enable`
+      - `+ partition_keys.advance_column_type`
+  - **BatchDeletePartition**
+    - 响应参数变更
+      - `+ storage_descriptor.columns.advance_column_type`
+  - **BatchListPartitionByValues**
+    - 响应参数变更
+      - `+ storage_descriptor.columns.advance_column_type`
+  - **ListPartitions**
+    - 响应参数变更
+      - `+ partitions.storage_descriptor.columns.advance_column_type`
+  - **AddPartitions**
+    - 请求参数变更
+      - `+ partitions.storage_descriptor.columns.advance_column_type`
+    - 响应参数变更
+      - `+ storage_descriptor.columns.advance_column_type`
+  - **ShowTable**
+    - 响应参数变更
+      - `+ external_table_id`
+      - `+ table_id`
+      - `+ version_id`
+      - `+ catalog_id`
+      - `+ table_status`
+      - `+ database_id`
+      - `+ data_statistic_enable`
+      - `+ partition_keys.advance_column_type`
+  - **UpdateTable**
+    - 请求参数变更
+      - `+ table.partition_keys.advance_column_type`
+    - 响应参数变更
+      - `+ external_table_id`
+      - `+ table_id`
+      - `+ version_id`
+      - `+ catalog_id`
+      - `+ table_status`
+      - `+ database_id`
+      - `+ data_statistic_enable`
+      - `+ partition_keys.advance_column_type`
+  - **BatchUpdatePartition**
+    - 请求参数变更
+      - `+ partition_inputs.partition.storage_descriptor.columns.advance_column_type`
+    - 响应参数变更
+      - `+ storage_descriptor.columns.advance_column_type`
+  - **ListTables**
+    - 响应参数变更
+      - `+ external_table_id`
+      - `+ table_id`
+      - `+ version_id`
+      - `+ catalog_id`
+      - `+ table_status`
+      - `+ database_id`
+      - `+ data_statistic_enable`
+      - `+ tables.catalog_id`
+      - `+ tables.database_id`
+      - `+ tables.table_id`
+      - `+ tables.table_status`
+      - `+ tables.external_table_id`
+      - `+ tables.data_statistic_enable`
+      - `+ tables.version_id`
+      - `+ tables.partition_keys.advance_column_type`
+  - **CreateTable**
+    - 请求参数变更
+      - `+ partition_keys.advance_column_type`
+    - 响应参数变更
+      - `+ external_table_id`
+      - `+ table_id`
+      - `+ version_id`
+      - `+ catalog_id`
+      - `+ table_status`
+      - `+ database_id`
+      - `+ data_statistic_enable`
+      - `+ partition_keys.advance_column_type`
+
+### HuaweiCloud SDK RDS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持接口`UpgradeDbVersionFinalConfirm`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpgradeDbVersionNew**
+    - 请求参数变更
+      - `+ support_rollback`
+
+### HuaweiCloud SDK VPC
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **BatchCreateTrafficMirrorFilterRules**
+    - 响应参数变更
+      - `- page_info`
+  - **ListResourceAssociations**
+    - 请求参数变更
+      - `+ limit`
+      - `+ marker`
+  - **ListSubNetworkInterfaces**
+    - 请求参数变更
+      - `+ enable_eip`
+      - `+ scope`
+      - `+ security_groups`
+      - `+ enterprise_project_id`
+      - `+ parent_device_id`
+      - `+ vlan_id`
+      - `+ state`
+      - `+ ipv6_ip_address`
+      - `+ instance_id`
+      - `+ instance_type`
+  - **CreateSubNetworkInterface**
+    - 请求参数变更
+      - `+ sub_network_interface.tags`
+
 # 3.1.222 2026-11-12
 
 ### HuaweiCloud SDK AIDataLake

@@ -65,7 +65,7 @@ class ListWebTamperEventRequest:
 
         :param enterprise_project_id: **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
         :type enterprise_project_id: str
-        :param type: **参数解释**: 网页防篡改类型 **约束限制**: 不涉及。 **取值范围**: - container_wtp：容器网页防篡改 **默认取值**: 不涉及 
+        :param type: **参数解释**: 网页防篡改类型 **约束限制**: 不涉及。 **取值范围**: - container_wtp：容器网页防篡改  **默认取值**: 不涉及 
         :type type: str
         :param offset: **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
         :type offset: int
@@ -93,7 +93,7 @@ class ListWebTamperEventRequest:
         :type file_path: str
         :param process_path: **参数解释**: 进程路径 **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 不涉及 
         :type process_path: str
-        :param process_env: **参数解释**: 进程环境，是指在容器内的进程或者宿主机的进程 **约束限制**: 不涉及 **取值范围**: - host：主机进程 - container：容器进程 **默认取值**: 不涉及 
+        :param process_env: **参数解释**: 进程环境，是指在容器内的进程或者宿主机的进程 **约束限制**: 不涉及 **取值范围**: - host：主机进程 - container：容器进程  **默认取值**: 不涉及 
         :type process_env: str
         :param web_app_name: **参数解释**: 网站应用名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
         :type web_app_name: str
@@ -190,7 +190,7 @@ class ListWebTamperEventRequest:
     def type(self):
         r"""Gets the type of this ListWebTamperEventRequest.
 
-        **参数解释**: 网页防篡改类型 **约束限制**: 不涉及。 **取值范围**: - container_wtp：容器网页防篡改 **默认取值**: 不涉及 
+        **参数解释**: 网页防篡改类型 **约束限制**: 不涉及。 **取值范围**: - container_wtp：容器网页防篡改  **默认取值**: 不涉及 
 
         :return: The type of this ListWebTamperEventRequest.
         :rtype: str
@@ -201,7 +201,7 @@ class ListWebTamperEventRequest:
     def type(self, type):
         r"""Sets the type of this ListWebTamperEventRequest.
 
-        **参数解释**: 网页防篡改类型 **约束限制**: 不涉及。 **取值范围**: - container_wtp：容器网页防篡改 **默认取值**: 不涉及 
+        **参数解释**: 网页防篡改类型 **约束限制**: 不涉及。 **取值范围**: - container_wtp：容器网页防篡改  **默认取值**: 不涉及 
 
         :param type: The type of this ListWebTamperEventRequest.
         :type type: str
@@ -498,7 +498,7 @@ class ListWebTamperEventRequest:
     def process_env(self):
         r"""Gets the process_env of this ListWebTamperEventRequest.
 
-        **参数解释**: 进程环境，是指在容器内的进程或者宿主机的进程 **约束限制**: 不涉及 **取值范围**: - host：主机进程 - container：容器进程 **默认取值**: 不涉及 
+        **参数解释**: 进程环境，是指在容器内的进程或者宿主机的进程 **约束限制**: 不涉及 **取值范围**: - host：主机进程 - container：容器进程  **默认取值**: 不涉及 
 
         :return: The process_env of this ListWebTamperEventRequest.
         :rtype: str
@@ -509,7 +509,7 @@ class ListWebTamperEventRequest:
     def process_env(self, process_env):
         r"""Sets the process_env of this ListWebTamperEventRequest.
 
-        **参数解释**: 进程环境，是指在容器内的进程或者宿主机的进程 **约束限制**: 不涉及 **取值范围**: - host：主机进程 - container：容器进程 **默认取值**: 不涉及 
+        **参数解释**: 进程环境，是指在容器内的进程或者宿主机的进程 **约束限制**: 不涉及 **取值范围**: - host：主机进程 - container：容器进程  **默认取值**: 不涉及 
 
         :param process_env: The process_env of this ListWebTamperEventRequest.
         :type process_env: str

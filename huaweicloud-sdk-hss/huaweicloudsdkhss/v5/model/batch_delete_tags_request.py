@@ -31,7 +31,7 @@ class BatchDeleteTagsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param resource_type: **参数解释**: 由标签管理服务定义的资源类别，企业主机安全服务调用此接口时资源类别为hss **约束限制**: 不涉及 **取值范围**: - hss：hss **默认取值**: 不涉及 
+        :param resource_type: **参数解释**: 由标签管理服务定义的资源类别，企业主机安全服务调用此接口时资源类别为hss **约束限制**: 不涉及 **取值范围**: - hss：hss  **默认取值**: 不涉及 
         :type resource_type: str
         :param resource_id: **参数解释**: 资源ID **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
         :type resource_id: str
@@ -55,7 +55,7 @@ class BatchDeleteTagsRequest:
     def resource_type(self):
         r"""Gets the resource_type of this BatchDeleteTagsRequest.
 
-        **参数解释**: 由标签管理服务定义的资源类别，企业主机安全服务调用此接口时资源类别为hss **约束限制**: 不涉及 **取值范围**: - hss：hss **默认取值**: 不涉及 
+        **参数解释**: 由标签管理服务定义的资源类别，企业主机安全服务调用此接口时资源类别为hss **约束限制**: 不涉及 **取值范围**: - hss：hss  **默认取值**: 不涉及 
 
         :return: The resource_type of this BatchDeleteTagsRequest.
         :rtype: str
@@ -66,7 +66,7 @@ class BatchDeleteTagsRequest:
     def resource_type(self, resource_type):
         r"""Sets the resource_type of this BatchDeleteTagsRequest.
 
-        **参数解释**: 由标签管理服务定义的资源类别，企业主机安全服务调用此接口时资源类别为hss **约束限制**: 不涉及 **取值范围**: - hss：hss **默认取值**: 不涉及 
+        **参数解释**: 由标签管理服务定义的资源类别，企业主机安全服务调用此接口时资源类别为hss **约束限制**: 不涉及 **取值范围**: - hss：hss  **默认取值**: 不涉及 
 
         :param resource_type: The resource_type of this BatchDeleteTagsRequest.
         :type resource_type: str

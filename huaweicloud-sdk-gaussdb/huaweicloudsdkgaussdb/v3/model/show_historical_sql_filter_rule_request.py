@@ -18,17 +18,21 @@ class ShowHistoricalSqlFilterRuleRequest:
         'x_language': 'str',
         'instance_id': 'str',
         'node_id': 'str',
-        'sql_type': 'str'
+        'sql_type': 'str',
+        'offset': 'int',
+        'limit': 'int'
     }
 
     attribute_map = {
         'x_language': 'X-Language',
         'instance_id': 'instance_id',
         'node_id': 'node_id',
-        'sql_type': 'sql_type'
+        'sql_type': 'sql_type',
+        'offset': 'offset',
+        'limit': 'limit'
     }
 
-    def __init__(self, x_language=None, instance_id=None, node_id=None, sql_type=None):
+    def __init__(self, x_language=None, instance_id=None, node_id=None, sql_type=None, offset=None, limit=None):
         r"""ShowHistoricalSqlFilterRuleRequest
 
         The model defined in huaweicloud sdk
@@ -41,6 +45,10 @@ class ShowHistoricalSqlFilterRuleRequest:
         :type node_id: str
         :param sql_type: **参数解释**：  SQL限流类型。  **约束限制**：  不涉及。  **取值范围**：  - SELECT：查询语句。 - UPDATE：更新语句。 - DELETE：删除语句。 - INSERT：插入语句。  **默认取值**：  不传则默认查询所有类型的限流规则。
         :type sql_type: str
+        :param offset: **参数解释**：  索引位置，偏移量。从第一条数据偏移offset条数据后开始查询。  **约束限制**：  必须为整数，不能为负数。  **取值范围**：  ≥0。  **默认取值**：  0。
+        :type offset: int
+        :param limit: **参数解释**：  查询记录数。  **约束限制**：  必须为整数，不能为负数。  **取值范围**：  1-100。  **默认取值**：  100。
+        :type limit: int
         """
         
         
@@ -49,6 +57,8 @@ class ShowHistoricalSqlFilterRuleRequest:
         self._instance_id = None
         self._node_id = None
         self._sql_type = None
+        self._offset = None
+        self._limit = None
         self.discriminator = None
 
         if x_language is not None:
@@ -57,6 +67,10 @@ class ShowHistoricalSqlFilterRuleRequest:
         self.node_id = node_id
         if sql_type is not None:
             self.sql_type = sql_type
+        if offset is not None:
+            self.offset = offset
+        if limit is not None:
+            self.limit = limit
 
     @property
     def x_language(self):
@@ -145,6 +159,50 @@ class ShowHistoricalSqlFilterRuleRequest:
         :type sql_type: str
         """
         self._sql_type = sql_type
+
+    @property
+    def offset(self):
+        r"""Gets the offset of this ShowHistoricalSqlFilterRuleRequest.
+
+        **参数解释**：  索引位置，偏移量。从第一条数据偏移offset条数据后开始查询。  **约束限制**：  必须为整数，不能为负数。  **取值范围**：  ≥0。  **默认取值**：  0。
+
+        :return: The offset of this ShowHistoricalSqlFilterRuleRequest.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        r"""Sets the offset of this ShowHistoricalSqlFilterRuleRequest.
+
+        **参数解释**：  索引位置，偏移量。从第一条数据偏移offset条数据后开始查询。  **约束限制**：  必须为整数，不能为负数。  **取值范围**：  ≥0。  **默认取值**：  0。
+
+        :param offset: The offset of this ShowHistoricalSqlFilterRuleRequest.
+        :type offset: int
+        """
+        self._offset = offset
+
+    @property
+    def limit(self):
+        r"""Gets the limit of this ShowHistoricalSqlFilterRuleRequest.
+
+        **参数解释**：  查询记录数。  **约束限制**：  必须为整数，不能为负数。  **取值范围**：  1-100。  **默认取值**：  100。
+
+        :return: The limit of this ShowHistoricalSqlFilterRuleRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this ShowHistoricalSqlFilterRuleRequest.
+
+        **参数解释**：  查询记录数。  **约束限制**：  必须为整数，不能为负数。  **取值范围**：  1-100。  **默认取值**：  100。
+
+        :param limit: The limit of this ShowHistoricalSqlFilterRuleRequest.
+        :type limit: int
+        """
+        self._limit = limit
 
     def to_dict(self):
         result = {}

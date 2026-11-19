@@ -109,6 +109,8 @@ from huaweicloudsdkaidatalake.v2.model.creator import Creator
 from huaweicloudsdkaidatalake.v2.model.credential_config import CredentialConfig
 from huaweicloudsdkaidatalake.v2.model.data_info import DataInfo
 from huaweicloudsdkaidatalake.v2.model.dataframe_job_config import DataframeJobConfig
+from huaweicloudsdkaidatalake.v2.model.dataframe_job_session_resp import DataframeJobSessionResp
+from huaweicloudsdkaidatalake.v2.model.dataframe_job_statement_resp import DataframeJobStatementResp
 from huaweicloudsdkaidatalake.v2.model.delete_flink_savepoint_request import DeleteFlinkSavepointRequest
 from huaweicloudsdkaidatalake.v2.model.delete_flink_savepoint_response import DeleteFlinkSavepointResponse
 from huaweicloudsdkaidatalake.v2.model.delete_v2_agency_request import DeleteV2AgencyRequest

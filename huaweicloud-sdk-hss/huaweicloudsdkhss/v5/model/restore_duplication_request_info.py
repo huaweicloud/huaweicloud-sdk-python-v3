@@ -33,7 +33,7 @@ class RestoreDuplicationRequestInfo:
 
         :param server_id: **参数解释**: 恢复的目标虚拟机ID **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
         :type server_id: str
-        :param power_on: **参数解释**： 恢复后是否开机, 默认开机。 **约束限制**: 不涉及 **取值范围**: - true：开机 - false: 不开机 **默认取值**: true 
+        :param power_on: **参数解释**： 恢复后是否开机, 默认开机。 **约束限制**: 不涉及 **取值范围**: - true：开机 - false: 不开机  **默认取值**: true 
         :type power_on: bool
         :param mappings: **参数解释**： 恢复的映射关系（整机恢复时必填，卷恢复时可选但是不会用到填写的值） **取值范围**: 不涉及 
         :type mappings: list[:class:`huaweicloudsdkhss.v5.BackupRestoreServerMappingInfo`]
@@ -79,7 +79,7 @@ class RestoreDuplicationRequestInfo:
     def power_on(self):
         r"""Gets the power_on of this RestoreDuplicationRequestInfo.
 
-        **参数解释**： 恢复后是否开机, 默认开机。 **约束限制**: 不涉及 **取值范围**: - true：开机 - false: 不开机 **默认取值**: true 
+        **参数解释**： 恢复后是否开机, 默认开机。 **约束限制**: 不涉及 **取值范围**: - true：开机 - false: 不开机  **默认取值**: true 
 
         :return: The power_on of this RestoreDuplicationRequestInfo.
         :rtype: bool
@@ -90,7 +90,7 @@ class RestoreDuplicationRequestInfo:
     def power_on(self, power_on):
         r"""Sets the power_on of this RestoreDuplicationRequestInfo.
 
-        **参数解释**： 恢复后是否开机, 默认开机。 **约束限制**: 不涉及 **取值范围**: - true：开机 - false: 不开机 **默认取值**: true 
+        **参数解释**： 恢复后是否开机, 默认开机。 **约束限制**: 不涉及 **取值范围**: - true：开机 - false: 不开机  **默认取值**: true 
 
         :param power_on: The power_on of this RestoreDuplicationRequestInfo.
         :type power_on: bool

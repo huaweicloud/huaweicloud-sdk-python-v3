@@ -39,15 +39,15 @@ class ListAiComponentStatisticsRequest:
 
         :param enterprise_project_id: **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
         :type enterprise_project_id: str
-        :param category: **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产  **默认取值**: host 
+        :param category: **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产 - serverless：Serverless安全场景  **默认取值**: host 
         :type category: str
-        :param catalogue: **参数解释**: AI组件类别 **约束限制**: 不涉及 **取值范围**: - app：应用 - tool：工具  **默认取值**: 不涉及
+        :param catalogue: **参数解释**: AI组件类别 **约束限制**: 不涉及 **取值范围**: - app：应用 - tool：工具 - service：服务  **默认取值**: 不涉及
         :type catalogue: str
         :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
         :type limit: int
         :param offset: **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
         :type offset: int
-        :param ai_component_name: **参数解释**： AI组件对应类型的名称 **取值范围**： 字符长度1-256位 **约束限制**: 不涉及 **默认取值**: 不涉及 
+        :param ai_component_name: **参数解释**： AI组件对应类型的名称 **取值范围**： 字符长度1-256位 **约束限制**: 不涉及 **默认取值**: 不涉及         
         :type ai_component_name: str
         """
         
@@ -98,7 +98,7 @@ class ListAiComponentStatisticsRequest:
     def category(self):
         r"""Gets the category of this ListAiComponentStatisticsRequest.
 
-        **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产  **默认取值**: host 
+        **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产 - serverless：Serverless安全场景  **默认取值**: host 
 
         :return: The category of this ListAiComponentStatisticsRequest.
         :rtype: str
@@ -109,7 +109,7 @@ class ListAiComponentStatisticsRequest:
     def category(self, category):
         r"""Sets the category of this ListAiComponentStatisticsRequest.
 
-        **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产  **默认取值**: host 
+        **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产 - serverless：Serverless安全场景  **默认取值**: host 
 
         :param category: The category of this ListAiComponentStatisticsRequest.
         :type category: str
@@ -120,7 +120,7 @@ class ListAiComponentStatisticsRequest:
     def catalogue(self):
         r"""Gets the catalogue of this ListAiComponentStatisticsRequest.
 
-        **参数解释**: AI组件类别 **约束限制**: 不涉及 **取值范围**: - app：应用 - tool：工具  **默认取值**: 不涉及
+        **参数解释**: AI组件类别 **约束限制**: 不涉及 **取值范围**: - app：应用 - tool：工具 - service：服务  **默认取值**: 不涉及
 
         :return: The catalogue of this ListAiComponentStatisticsRequest.
         :rtype: str
@@ -131,7 +131,7 @@ class ListAiComponentStatisticsRequest:
     def catalogue(self, catalogue):
         r"""Sets the catalogue of this ListAiComponentStatisticsRequest.
 
-        **参数解释**: AI组件类别 **约束限制**: 不涉及 **取值范围**: - app：应用 - tool：工具  **默认取值**: 不涉及
+        **参数解释**: AI组件类别 **约束限制**: 不涉及 **取值范围**: - app：应用 - tool：工具 - service：服务  **默认取值**: 不涉及
 
         :param catalogue: The catalogue of this ListAiComponentStatisticsRequest.
         :type catalogue: str
@@ -186,7 +186,7 @@ class ListAiComponentStatisticsRequest:
     def ai_component_name(self):
         r"""Gets the ai_component_name of this ListAiComponentStatisticsRequest.
 
-        **参数解释**： AI组件对应类型的名称 **取值范围**： 字符长度1-256位 **约束限制**: 不涉及 **默认取值**: 不涉及 
+        **参数解释**： AI组件对应类型的名称 **取值范围**： 字符长度1-256位 **约束限制**: 不涉及 **默认取值**: 不涉及         
 
         :return: The ai_component_name of this ListAiComponentStatisticsRequest.
         :rtype: str
@@ -197,7 +197,7 @@ class ListAiComponentStatisticsRequest:
     def ai_component_name(self, ai_component_name):
         r"""Sets the ai_component_name of this ListAiComponentStatisticsRequest.
 
-        **参数解释**： AI组件对应类型的名称 **取值范围**： 字符长度1-256位 **约束限制**: 不涉及 **默认取值**: 不涉及 
+        **参数解释**： AI组件对应类型的名称 **取值范围**： 字符长度1-256位 **约束限制**: 不涉及 **默认取值**: 不涉及         
 
         :param ai_component_name: The ai_component_name of this ListAiComponentStatisticsRequest.
         :type ai_component_name: str

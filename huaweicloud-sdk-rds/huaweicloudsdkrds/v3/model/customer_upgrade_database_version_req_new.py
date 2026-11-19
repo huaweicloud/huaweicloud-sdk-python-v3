@@ -16,15 +16,17 @@ class CustomerUpgradeDatabaseVersionReqNew:
 
     openapi_types = {
         'is_delayed': 'bool',
-        'second_switch': 'bool'
+        'second_switch': 'bool',
+        'support_rollback': 'bool'
     }
 
     attribute_map = {
         'is_delayed': 'is_delayed',
-        'second_switch': 'second_switch'
+        'second_switch': 'second_switch',
+        'support_rollback': 'support_rollback'
     }
 
-    def __init__(self, is_delayed=None, second_switch=None):
+    def __init__(self, is_delayed=None, second_switch=None, support_rollback=None):
         r"""CustomerUpgradeDatabaseVersionReqNew
 
         The model defined in huaweicloud sdk
@@ -33,18 +35,23 @@ class CustomerUpgradeDatabaseVersionReqNew:
         :type is_delayed: bool
         :param second_switch: 设置仅对RDS for MySQL数据库实例（主备）生效。主备实例升级过程中，备机升级成功后，会触发主备倒换继续升级主机，主机升级完成后，若主备可用区不同则触发第二次倒换，保证可用区不变。若主备可用区相同，该选项无效。 取值范围： - true：默认该方式。表示升级过程中会进行二次倒换保证主备实例可用区不变。 - false：升级过程中不进行第二次主备倒换，适合对主备所在可用区不敏感，对业务连续性敏感的客户。
         :type second_switch: bool
+        :param support_rollback: **参数解释**： 是否支持升级成功后能够回滚。  **约束限制**： 该配置仅对RDS for MySQL 8.0 和5.7实例生效。  **取值范围**： - true：支持小版本升级成功后回滚，小版本升级时长会增加。升级完成后实例会进入观察状态，期间数据库可以正常读写。如果确认无误，需要确认完成。如果出现问题，可以回滚，恢复到原始小版本。 - false：小版本升级后不支持回滚。  **默认取值**： false
+        :type support_rollback: bool
         """
         
         
 
         self._is_delayed = None
         self._second_switch = None
+        self._support_rollback = None
         self.discriminator = None
 
         if is_delayed is not None:
             self.is_delayed = is_delayed
         if second_switch is not None:
             self.second_switch = second_switch
+        if support_rollback is not None:
+            self.support_rollback = support_rollback
 
     @property
     def is_delayed(self):
@@ -89,6 +96,28 @@ class CustomerUpgradeDatabaseVersionReqNew:
         :type second_switch: bool
         """
         self._second_switch = second_switch
+
+    @property
+    def support_rollback(self):
+        r"""Gets the support_rollback of this CustomerUpgradeDatabaseVersionReqNew.
+
+        **参数解释**： 是否支持升级成功后能够回滚。  **约束限制**： 该配置仅对RDS for MySQL 8.0 和5.7实例生效。  **取值范围**： - true：支持小版本升级成功后回滚，小版本升级时长会增加。升级完成后实例会进入观察状态，期间数据库可以正常读写。如果确认无误，需要确认完成。如果出现问题，可以回滚，恢复到原始小版本。 - false：小版本升级后不支持回滚。  **默认取值**： false
+
+        :return: The support_rollback of this CustomerUpgradeDatabaseVersionReqNew.
+        :rtype: bool
+        """
+        return self._support_rollback
+
+    @support_rollback.setter
+    def support_rollback(self, support_rollback):
+        r"""Sets the support_rollback of this CustomerUpgradeDatabaseVersionReqNew.
+
+        **参数解释**： 是否支持升级成功后能够回滚。  **约束限制**： 该配置仅对RDS for MySQL 8.0 和5.7实例生效。  **取值范围**： - true：支持小版本升级成功后回滚，小版本升级时长会增加。升级完成后实例会进入观察状态，期间数据库可以正常读写。如果确认无误，需要确认完成。如果出现问题，可以回滚，恢复到原始小版本。 - false：小版本升级后不支持回滚。  **默认取值**： false
+
+        :param support_rollback: The support_rollback of this CustomerUpgradeDatabaseVersionReqNew.
+        :type support_rollback: bool
+        """
+        self._support_rollback = support_rollback
 
     def to_dict(self):
         result = {}

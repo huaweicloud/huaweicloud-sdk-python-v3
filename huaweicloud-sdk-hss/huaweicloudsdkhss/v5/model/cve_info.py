@@ -33,13 +33,13 @@ class CveInfo:
 
         The model defined in huaweicloud sdk
 
-        :param cve_id: **参数解释** CVE id **取值范围** 字符长度0-128位 
+        :param cve_id: **参数解释**: CVE id **取值范围**: 字符长度0-64位 
         :type cve_id: str
-        :param cvss_score: **参数解释** CVSS分数 **取值范围** 取值0-100 
+        :param cvss_score: **参数解释**: CVSS分数 **取值范围**: 最小值0，最大值10 
         :type cvss_score: float
-        :param publish_time: **参数解释** CVE公布时间，时间单位：毫秒（ms） **取值范围** 取值0-3857960855552
+        :param publish_time: **参数解释**: CVE公布时间，毫秒级时间戳 **取值范围**: 最小值0，最大值9223372036854775807 
         :type publish_time: int
-        :param description: **参数解释** CVE描述 **取值范围** 字符长度0-256位
+        :param description: **参数解释**: CVE描述 **取值范围**: 字符长度0-4096位 
         :type description: str
         """
         
@@ -64,7 +64,7 @@ class CveInfo:
     def cve_id(self):
         r"""Gets the cve_id of this CveInfo.
 
-        **参数解释** CVE id **取值范围** 字符长度0-128位 
+        **参数解释**: CVE id **取值范围**: 字符长度0-64位 
 
         :return: The cve_id of this CveInfo.
         :rtype: str
@@ -75,7 +75,7 @@ class CveInfo:
     def cve_id(self, cve_id):
         r"""Sets the cve_id of this CveInfo.
 
-        **参数解释** CVE id **取值范围** 字符长度0-128位 
+        **参数解释**: CVE id **取值范围**: 字符长度0-64位 
 
         :param cve_id: The cve_id of this CveInfo.
         :type cve_id: str
@@ -86,7 +86,7 @@ class CveInfo:
     def cvss_score(self):
         r"""Gets the cvss_score of this CveInfo.
 
-        **参数解释** CVSS分数 **取值范围** 取值0-100 
+        **参数解释**: CVSS分数 **取值范围**: 最小值0，最大值10 
 
         :return: The cvss_score of this CveInfo.
         :rtype: float
@@ -97,7 +97,7 @@ class CveInfo:
     def cvss_score(self, cvss_score):
         r"""Sets the cvss_score of this CveInfo.
 
-        **参数解释** CVSS分数 **取值范围** 取值0-100 
+        **参数解释**: CVSS分数 **取值范围**: 最小值0，最大值10 
 
         :param cvss_score: The cvss_score of this CveInfo.
         :type cvss_score: float
@@ -108,7 +108,7 @@ class CveInfo:
     def publish_time(self):
         r"""Gets the publish_time of this CveInfo.
 
-        **参数解释** CVE公布时间，时间单位：毫秒（ms） **取值范围** 取值0-3857960855552
+        **参数解释**: CVE公布时间，毫秒级时间戳 **取值范围**: 最小值0，最大值9223372036854775807 
 
         :return: The publish_time of this CveInfo.
         :rtype: int
@@ -119,7 +119,7 @@ class CveInfo:
     def publish_time(self, publish_time):
         r"""Sets the publish_time of this CveInfo.
 
-        **参数解释** CVE公布时间，时间单位：毫秒（ms） **取值范围** 取值0-3857960855552
+        **参数解释**: CVE公布时间，毫秒级时间戳 **取值范围**: 最小值0，最大值9223372036854775807 
 
         :param publish_time: The publish_time of this CveInfo.
         :type publish_time: int
@@ -130,7 +130,7 @@ class CveInfo:
     def description(self):
         r"""Gets the description of this CveInfo.
 
-        **参数解释** CVE描述 **取值范围** 字符长度0-256位
+        **参数解释**: CVE描述 **取值范围**: 字符长度0-4096位 
 
         :return: The description of this CveInfo.
         :rtype: str
@@ -141,7 +141,7 @@ class CveInfo:
     def description(self, description):
         r"""Sets the description of this CveInfo.
 
-        **参数解释** CVE描述 **取值范围** 字符长度0-256位
+        **参数解释**: CVE描述 **取值范围**: 字符长度0-4096位 
 
         :param description: The description of this CveInfo.
         :type description: str

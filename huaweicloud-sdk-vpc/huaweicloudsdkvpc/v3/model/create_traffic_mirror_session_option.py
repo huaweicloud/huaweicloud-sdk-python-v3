@@ -90,7 +90,8 @@ class CreateTrafficMirrorSessionOption:
         if description is not None:
             self.description = description
         self.traffic_mirror_filter_id = traffic_mirror_filter_id
-        self.traffic_mirror_sources = traffic_mirror_sources
+        if traffic_mirror_sources is not None:
+            self.traffic_mirror_sources = traffic_mirror_sources
         self.traffic_mirror_target_id = traffic_mirror_target_id
         self.traffic_mirror_target_type = traffic_mirror_target_type
         if virtual_network_id is not None:

@@ -36,7 +36,7 @@ class ListAlarmWhiteListHostDetailResponse(SdkResponse):
 
         :param rule_id: **参数解释**： 规则ID **取值范围**： 字符长度1-36位 
         :type rule_id: str
-        :param scope: **参数解释**: 是否选择所有主机 **约束限制**: 不涉及 **取值范围**: - true：是 - false：否 **默认取值**: false 
+        :param scope: **参数解释**: 是否选择所有主机 **约束限制**: 不涉及 **取值范围**: - true：是 - false：否  **默认取值**: false 
         :type scope: bool
         :param agent_ids: **参数解释**: agent列表 **约束限制**: 不涉及 **取值范围**: 1-1000个agentID **默认取值**: 不涉及 
         :type agent_ids: list[str]
@@ -87,7 +87,7 @@ class ListAlarmWhiteListHostDetailResponse(SdkResponse):
     def scope(self):
         r"""Gets the scope of this ListAlarmWhiteListHostDetailResponse.
 
-        **参数解释**: 是否选择所有主机 **约束限制**: 不涉及 **取值范围**: - true：是 - false：否 **默认取值**: false 
+        **参数解释**: 是否选择所有主机 **约束限制**: 不涉及 **取值范围**: - true：是 - false：否  **默认取值**: false 
 
         :return: The scope of this ListAlarmWhiteListHostDetailResponse.
         :rtype: bool
@@ -98,7 +98,7 @@ class ListAlarmWhiteListHostDetailResponse(SdkResponse):
     def scope(self, scope):
         r"""Sets the scope of this ListAlarmWhiteListHostDetailResponse.
 
-        **参数解释**: 是否选择所有主机 **约束限制**: 不涉及 **取值范围**: - true：是 - false：否 **默认取值**: false 
+        **参数解释**: 是否选择所有主机 **约束限制**: 不涉及 **取值范围**: - true：是 - false：否  **默认取值**: false 
 
         :param scope: The scope of this ListAlarmWhiteListHostDetailResponse.
         :type scope: bool

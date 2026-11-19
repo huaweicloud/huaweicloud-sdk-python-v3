@@ -24,7 +24,8 @@ class Policy:
         'attachment_count': 'int',
         'description': 'str',
         'created_at': 'datetime',
-        'updated_at': 'datetime'
+        'updated_at': 'datetime',
+        'tags': 'list[Tag]'
     }
 
     attribute_map = {
@@ -37,10 +38,11 @@ class Policy:
         'attachment_count': 'attachment_count',
         'description': 'description',
         'created_at': 'created_at',
-        'updated_at': 'updated_at'
+        'updated_at': 'updated_at',
+        'tags': 'tags'
     }
 
-    def __init__(self, policy_type=None, policy_name=None, policy_id=None, urn=None, path=None, default_version_id=None, attachment_count=None, description=None, created_at=None, updated_at=None):
+    def __init__(self, policy_type=None, policy_name=None, policy_id=None, urn=None, path=None, default_version_id=None, attachment_count=None, description=None, created_at=None, updated_at=None, tags=None):
         r"""Policy
 
         The model defined in huaweicloud sdk
@@ -65,6 +67,8 @@ class Policy:
         :type created_at: datetime
         :param updated_at: 身份策略默认版本最近一次的更新时间。
         :type updated_at: datetime
+        :param tags: 身份策略标签列表。
+        :type tags: list[:class:`huaweicloudsdkiam.v5.Tag`]
         """
         
         
@@ -79,6 +83,7 @@ class Policy:
         self._description = None
         self._created_at = None
         self._updated_at = None
+        self._tags = None
         self.discriminator = None
 
         self.policy_type = policy_type
@@ -92,6 +97,7 @@ class Policy:
             self.description = description
         self.created_at = created_at
         self.updated_at = updated_at
+        self.tags = tags
 
     @property
     def policy_type(self):
@@ -308,6 +314,28 @@ class Policy:
         :type updated_at: datetime
         """
         self._updated_at = updated_at
+
+    @property
+    def tags(self):
+        r"""Gets the tags of this Policy.
+
+        身份策略标签列表。
+
+        :return: The tags of this Policy.
+        :rtype: list[:class:`huaweicloudsdkiam.v5.Tag`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        r"""Sets the tags of this Policy.
+
+        身份策略标签列表。
+
+        :param tags: The tags of this Policy.
+        :type tags: list[:class:`huaweicloudsdkiam.v5.Tag`]
+        """
+        self._tags = tags
 
     def to_dict(self):
         result = {}

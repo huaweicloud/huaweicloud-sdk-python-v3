@@ -89,7 +89,7 @@ class ListDockerPluginsRequest:
         :type public_ip: str
         :param group_id: 服务器组的唯一标识ID
         :type group_id: str
-        :param asset_value: **参数解释**： 资产重要性 **约束限制**： 不涉及 **取值范围**： - important：重要资产 - common：一般资产 - test：测试资产 **默认取值**： 无 
+        :param asset_value: **参数解释**： 资产重要性 **约束限制**： 不涉及 **取值范围**： - important：重要资产 - common：一般资产 - test：测试资产  **默认取值**： 无 
         :type asset_value: str
         :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
         :type limit: int
@@ -349,7 +349,7 @@ class ListDockerPluginsRequest:
     def asset_value(self):
         r"""Gets the asset_value of this ListDockerPluginsRequest.
 
-        **参数解释**： 资产重要性 **约束限制**： 不涉及 **取值范围**： - important：重要资产 - common：一般资产 - test：测试资产 **默认取值**： 无 
+        **参数解释**： 资产重要性 **约束限制**： 不涉及 **取值范围**： - important：重要资产 - common：一般资产 - test：测试资产  **默认取值**： 无 
 
         :return: The asset_value of this ListDockerPluginsRequest.
         :rtype: str
@@ -360,7 +360,7 @@ class ListDockerPluginsRequest:
     def asset_value(self, asset_value):
         r"""Sets the asset_value of this ListDockerPluginsRequest.
 
-        **参数解释**： 资产重要性 **约束限制**： 不涉及 **取值范围**： - important：重要资产 - common：一般资产 - test：测试资产 **默认取值**： 无 
+        **参数解释**： 资产重要性 **约束限制**： 不涉及 **取值范围**： - important：重要资产 - common：一般资产 - test：测试资产  **默认取值**： 无 
 
         :param asset_value: The asset_value of this ListDockerPluginsRequest.
         :type asset_value: str

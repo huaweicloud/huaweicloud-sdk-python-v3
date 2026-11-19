@@ -35,7 +35,7 @@ class AssociateHostsGroupRequestInfo:
         :type group_id: str
         :param host_id_list: **参数解释**： 服务器ID列表 **约束限制**： 不涉及 **取值范围**： 列表长度1-200条 **默认取值**： 不涉及 
         :type host_id_list: list[str]
-        :param operate_all: **参数解释**: 是否要对全量主机分配到组，如果为true的话，将所有主机分配到组，不需填写host_id_list，如果为false的话，需要填写host_id_list **约束限制**: 不涉及 **取值范围**: - true: 将所有主机分配到组，不需填写host_id_list。 - false: 非全量分配到组，仅对指定的主机列表分配到组，需要填写host_id_list。 **默认取值**: 不涉及 
+        :param operate_all: **参数解释**: 是否要对全量主机分配到组，如果为true的话，将所有主机分配到组，不需填写host_id_list，如果为false的话，需要填写host_id_list **约束限制**: 不涉及 **取值范围**: - true: 将所有主机分配到组，不需填写host_id_list。 - false: 非全量分配到组，仅对指定的主机列表分配到组，需要填写host_id_list。  **默认取值**: 不涉及 
         :type operate_all: bool
         """
         
@@ -99,7 +99,7 @@ class AssociateHostsGroupRequestInfo:
     def operate_all(self):
         r"""Gets the operate_all of this AssociateHostsGroupRequestInfo.
 
-        **参数解释**: 是否要对全量主机分配到组，如果为true的话，将所有主机分配到组，不需填写host_id_list，如果为false的话，需要填写host_id_list **约束限制**: 不涉及 **取值范围**: - true: 将所有主机分配到组，不需填写host_id_list。 - false: 非全量分配到组，仅对指定的主机列表分配到组，需要填写host_id_list。 **默认取值**: 不涉及 
+        **参数解释**: 是否要对全量主机分配到组，如果为true的话，将所有主机分配到组，不需填写host_id_list，如果为false的话，需要填写host_id_list **约束限制**: 不涉及 **取值范围**: - true: 将所有主机分配到组，不需填写host_id_list。 - false: 非全量分配到组，仅对指定的主机列表分配到组，需要填写host_id_list。  **默认取值**: 不涉及 
 
         :return: The operate_all of this AssociateHostsGroupRequestInfo.
         :rtype: bool
@@ -110,7 +110,7 @@ class AssociateHostsGroupRequestInfo:
     def operate_all(self, operate_all):
         r"""Sets the operate_all of this AssociateHostsGroupRequestInfo.
 
-        **参数解释**: 是否要对全量主机分配到组，如果为true的话，将所有主机分配到组，不需填写host_id_list，如果为false的话，需要填写host_id_list **约束限制**: 不涉及 **取值范围**: - true: 将所有主机分配到组，不需填写host_id_list。 - false: 非全量分配到组，仅对指定的主机列表分配到组，需要填写host_id_list。 **默认取值**: 不涉及 
+        **参数解释**: 是否要对全量主机分配到组，如果为true的话，将所有主机分配到组，不需填写host_id_list，如果为false的话，需要填写host_id_list **约束限制**: 不涉及 **取值范围**: - true: 将所有主机分配到组，不需填写host_id_list。 - false: 非全量分配到组，仅对指定的主机列表分配到组，需要填写host_id_list。  **默认取值**: 不涉及 
 
         :param operate_all: The operate_all of this AssociateHostsGroupRequestInfo.
         :type operate_all: bool

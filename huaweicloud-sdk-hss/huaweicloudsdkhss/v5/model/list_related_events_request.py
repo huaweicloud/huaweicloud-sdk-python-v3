@@ -47,7 +47,7 @@ class ListRelatedEventsRequest:
         :type limit: int
         :param region: **参数解释**: 区域ID，用于查询目的区域内的资产。获取方式请参见[获取区域ID](hss_02_0026.xml)。 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
         :type region: str
-        :param category: **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产  **默认取值**: host 
+        :param category: **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产 - serverless：Serverless安全场景  **默认取值**: host 
         :type category: str
         :param event_id: **参数解释**： 事件编号 **约束限制**： 必填 **取值范围**： 字符长度1-256位 **默认取值**： 不涉及 
         :type event_id: str
@@ -168,7 +168,7 @@ class ListRelatedEventsRequest:
     def category(self):
         r"""Gets the category of this ListRelatedEventsRequest.
 
-        **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产  **默认取值**: host 
+        **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产 - serverless：Serverless安全场景  **默认取值**: host 
 
         :return: The category of this ListRelatedEventsRequest.
         :rtype: str
@@ -179,7 +179,7 @@ class ListRelatedEventsRequest:
     def category(self, category):
         r"""Sets the category of this ListRelatedEventsRequest.
 
-        **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产  **默认取值**: host 
+        **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产 - serverless：Serverless安全场景  **默认取值**: host 
 
         :param category: The category of this ListRelatedEventsRequest.
         :type category: str

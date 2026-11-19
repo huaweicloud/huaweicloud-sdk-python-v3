@@ -31,7 +31,7 @@ class ShowWebAppAndServiceTopRequest:
 
         :param enterprise_project_id: **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
         :type enterprise_project_id: str
-        :param catalogue: **参数解释**: web类型 **约束限制**: 不涉及 **取值范围**: - web_cms：web应用 - web_service：web服务 - database：数据库 **默认取值**: 不涉及 
+        :param catalogue: **参数解释**: web类型 **约束限制**: 不涉及 **取值范围**: - web_cms：web应用 - web_service：web服务 - database：数据库  **默认取值**: 不涉及 
         :type catalogue: str
         """
         
@@ -71,7 +71,7 @@ class ShowWebAppAndServiceTopRequest:
     def catalogue(self):
         r"""Gets the catalogue of this ShowWebAppAndServiceTopRequest.
 
-        **参数解释**: web类型 **约束限制**: 不涉及 **取值范围**: - web_cms：web应用 - web_service：web服务 - database：数据库 **默认取值**: 不涉及 
+        **参数解释**: web类型 **约束限制**: 不涉及 **取值范围**: - web_cms：web应用 - web_service：web服务 - database：数据库  **默认取值**: 不涉及 
 
         :return: The catalogue of this ShowWebAppAndServiceTopRequest.
         :rtype: str
@@ -82,7 +82,7 @@ class ShowWebAppAndServiceTopRequest:
     def catalogue(self, catalogue):
         r"""Sets the catalogue of this ShowWebAppAndServiceTopRequest.
 
-        **参数解释**: web类型 **约束限制**: 不涉及 **取值范围**: - web_cms：web应用 - web_service：web服务 - database：数据库 **默认取值**: 不涉及 
+        **参数解释**: web类型 **约束限制**: 不涉及 **取值范围**: - web_cms：web应用 - web_service：web服务 - database：数据库  **默认取值**: 不涉及 
 
         :param catalogue: The catalogue of this ShowWebAppAndServiceTopRequest.
         :type catalogue: str

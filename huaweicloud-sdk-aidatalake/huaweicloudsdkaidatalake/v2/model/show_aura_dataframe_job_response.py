@@ -26,7 +26,9 @@ class ShowAuraDataframeJobResponse(SdkResponse):
         'create_time': 'datetime',
         'start_time': 'datetime',
         'end_time': 'datetime',
-        'execution_result': 'ExecutionResult'
+        'execution_result': 'ExecutionResult',
+        'error': 'ErrorMessage',
+        'sessions': 'list[DataframeJobSessionResp]'
     }
 
     attribute_map = {
@@ -40,10 +42,12 @@ class ShowAuraDataframeJobResponse(SdkResponse):
         'create_time': 'create_time',
         'start_time': 'start_time',
         'end_time': 'end_time',
-        'execution_result': 'execution_result'
+        'execution_result': 'execution_result',
+        'error': 'error',
+        'sessions': 'sessions'
     }
 
-    def __init__(self, id=None, name=None, description=None, status=None, entrypoint=None, duration=None, create_user=None, create_time=None, start_time=None, end_time=None, execution_result=None):
+    def __init__(self, id=None, name=None, description=None, status=None, entrypoint=None, duration=None, create_user=None, create_time=None, start_time=None, end_time=None, execution_result=None, error=None, sessions=None):
         r"""ShowAuraDataframeJobResponse
 
         The model defined in huaweicloud sdk
@@ -70,6 +74,10 @@ class ShowAuraDataframeJobResponse(SdkResponse):
         :type end_time: datetime
         :param execution_result: 
         :type execution_result: :class:`huaweicloudsdkaidatalake.v2.ExecutionResult`
+        :param error: 
+        :type error: :class:`huaweicloudsdkaidatalake.v2.ErrorMessage`
+        :param sessions: **参数解释**：作业关联的 session 列表（含该 session 下的 statement 列表与已处理条数）。 **约束限制**：作业无关联 session 时返回空数组。 **取值范围**：不涉及。 **默认取值**：不涉及。
+        :type sessions: list[:class:`huaweicloudsdkaidatalake.v2.DataframeJobSessionResp`]
         """
         
         super().__init__()
@@ -85,6 +93,8 @@ class ShowAuraDataframeJobResponse(SdkResponse):
         self._start_time = None
         self._end_time = None
         self._execution_result = None
+        self._error = None
+        self._sessions = None
         self.discriminator = None
 
         if id is not None:
@@ -109,6 +119,10 @@ class ShowAuraDataframeJobResponse(SdkResponse):
             self.end_time = end_time
         if execution_result is not None:
             self.execution_result = execution_result
+        if error is not None:
+            self.error = error
+        if sessions is not None:
+            self.sessions = sessions
 
     @property
     def id(self):
@@ -343,6 +357,46 @@ class ShowAuraDataframeJobResponse(SdkResponse):
         :type execution_result: :class:`huaweicloudsdkaidatalake.v2.ExecutionResult`
         """
         self._execution_result = execution_result
+
+    @property
+    def error(self):
+        r"""Gets the error of this ShowAuraDataframeJobResponse.
+
+        :return: The error of this ShowAuraDataframeJobResponse.
+        :rtype: :class:`huaweicloudsdkaidatalake.v2.ErrorMessage`
+        """
+        return self._error
+
+    @error.setter
+    def error(self, error):
+        r"""Sets the error of this ShowAuraDataframeJobResponse.
+
+        :param error: The error of this ShowAuraDataframeJobResponse.
+        :type error: :class:`huaweicloudsdkaidatalake.v2.ErrorMessage`
+        """
+        self._error = error
+
+    @property
+    def sessions(self):
+        r"""Gets the sessions of this ShowAuraDataframeJobResponse.
+
+        **参数解释**：作业关联的 session 列表（含该 session 下的 statement 列表与已处理条数）。 **约束限制**：作业无关联 session 时返回空数组。 **取值范围**：不涉及。 **默认取值**：不涉及。
+
+        :return: The sessions of this ShowAuraDataframeJobResponse.
+        :rtype: list[:class:`huaweicloudsdkaidatalake.v2.DataframeJobSessionResp`]
+        """
+        return self._sessions
+
+    @sessions.setter
+    def sessions(self, sessions):
+        r"""Sets the sessions of this ShowAuraDataframeJobResponse.
+
+        **参数解释**：作业关联的 session 列表（含该 session 下的 statement 列表与已处理条数）。 **约束限制**：作业无关联 session 时返回空数组。 **取值范围**：不涉及。 **默认取值**：不涉及。
+
+        :param sessions: The sessions of this ShowAuraDataframeJobResponse.
+        :type sessions: list[:class:`huaweicloudsdkaidatalake.v2.DataframeJobSessionResp`]
+        """
+        self._sessions = sessions
 
     def to_dict(self):
         import warnings

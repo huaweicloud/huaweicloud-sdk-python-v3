@@ -41,7 +41,7 @@ class ListVulRepairCmdsRequestBody:
         :type data_list: list[:class:`huaweicloudsdkhss.v5.VulOperateInfo`]
         :param host_data_list: **参数解释**: 主机维度漏洞列表 **约束限制**: 不涉及 **取值范围**: 最少1条，最多500条 **默认取值**: 不涉及 
         :type host_data_list: list[:class:`huaweicloudsdkhss.v5.HostVulOperateInfo`]
-        :param is_container: **参数解释**: 是否是容器场景 **约束限制**: 不涉及 **取值范围**: - true：是容器场景 - false：不是容器场景 **默认取值**: false 
+        :param is_container: **参数解释**: 是否是容器场景 **约束限制**: 不涉及 **取值范围**: - true：是容器场景 - false：不是容器场景  **默认取值**: false 
         :type is_container: bool
         :param cluster_id: **参数解释**: 集群id **约束限制**: 不涉及 **取值范围**: 字符长度0-256 **默认取值**: 不涉及 
         :type cluster_id: str
@@ -137,7 +137,7 @@ class ListVulRepairCmdsRequestBody:
     def is_container(self):
         r"""Gets the is_container of this ListVulRepairCmdsRequestBody.
 
-        **参数解释**: 是否是容器场景 **约束限制**: 不涉及 **取值范围**: - true：是容器场景 - false：不是容器场景 **默认取值**: false 
+        **参数解释**: 是否是容器场景 **约束限制**: 不涉及 **取值范围**: - true：是容器场景 - false：不是容器场景  **默认取值**: false 
 
         :return: The is_container of this ListVulRepairCmdsRequestBody.
         :rtype: bool
@@ -148,7 +148,7 @@ class ListVulRepairCmdsRequestBody:
     def is_container(self, is_container):
         r"""Sets the is_container of this ListVulRepairCmdsRequestBody.
 
-        **参数解释**: 是否是容器场景 **约束限制**: 不涉及 **取值范围**: - true：是容器场景 - false：不是容器场景 **默认取值**: false 
+        **参数解释**: 是否是容器场景 **约束限制**: 不涉及 **取值范围**: - true：是容器场景 - false：不是容器场景  **默认取值**: false 
 
         :param is_container: The is_container of this ListVulRepairCmdsRequestBody.
         :type is_container: bool

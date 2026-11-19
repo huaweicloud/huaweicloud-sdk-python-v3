@@ -17,16 +17,18 @@ class IdentityInput:
     openapi_types = {
         'user_names': 'list[str]',
         'groups': 'list[str]',
-        'roles': 'list[str]'
+        'roles': 'list[str]',
+        'location': 'str'
     }
 
     attribute_map = {
         'user_names': 'user_names',
         'groups': 'groups',
-        'roles': 'roles'
+        'roles': 'roles',
+        'location': 'location'
     }
 
-    def __init__(self, user_names=None, groups=None, roles=None):
+    def __init__(self, user_names=None, groups=None, roles=None, location=None):
         r"""IdentityInput
 
         The model defined in huaweicloud sdk
@@ -37,6 +39,8 @@ class IdentityInput:
         :type groups: list[str]
         :param roles: 角色
         :type roles: list[str]
+        :param location: OBS路径（可选），用于指定获取临时AKSK访问的对象路径，仅支持并行文件系统（PFS）桶，不支持对象桶。格式：obs://桶名/对象键
+        :type location: str
         """
         
         
@@ -44,6 +48,7 @@ class IdentityInput:
         self._user_names = None
         self._groups = None
         self._roles = None
+        self._location = None
         self.discriminator = None
 
         if user_names is not None:
@@ -52,6 +57,8 @@ class IdentityInput:
             self.groups = groups
         if roles is not None:
             self.roles = roles
+        if location is not None:
+            self.location = location
 
     @property
     def user_names(self):
@@ -118,6 +125,28 @@ class IdentityInput:
         :type roles: list[str]
         """
         self._roles = roles
+
+    @property
+    def location(self):
+        r"""Gets the location of this IdentityInput.
+
+        OBS路径（可选），用于指定获取临时AKSK访问的对象路径，仅支持并行文件系统（PFS）桶，不支持对象桶。格式：obs://桶名/对象键
+
+        :return: The location of this IdentityInput.
+        :rtype: str
+        """
+        return self._location
+
+    @location.setter
+    def location(self, location):
+        r"""Sets the location of this IdentityInput.
+
+        OBS路径（可选），用于指定获取临时AKSK访问的对象路径，仅支持并行文件系统（PFS）桶，不支持对象桶。格式：obs://桶名/对象键
+
+        :param location: The location of this IdentityInput.
+        :type location: str
+        """
+        self._location = location
 
     def to_dict(self):
         result = {}

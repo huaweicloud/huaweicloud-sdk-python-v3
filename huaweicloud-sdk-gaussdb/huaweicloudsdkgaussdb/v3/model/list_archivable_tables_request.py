@@ -1,0 +1,280 @@
+# coding: utf-8
+
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
+
+
+class ListArchivableTablesRequest:
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+    sensitive_list = []
+
+    openapi_types = {
+        'x_language': 'str',
+        'instance_id': 'str',
+        'db_name': 'str',
+        'table_name': 'str',
+        'partition_name': 'str',
+        'offset': 'int',
+        'limit': 'int'
+    }
+
+    attribute_map = {
+        'x_language': 'X-Language',
+        'instance_id': 'instance_id',
+        'db_name': 'db_name',
+        'table_name': 'table_name',
+        'partition_name': 'partition_name',
+        'offset': 'offset',
+        'limit': 'limit'
+    }
+
+    def __init__(self, x_language=None, instance_id=None, db_name=None, table_name=None, partition_name=None, offset=None, limit=None):
+        r"""ListArchivableTablesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: **参数解释**：  请求语言类型。  **约束限制**：  不涉及。  **取值范围**：  - en-us：英文。 - zh-cn：中文。  **默认取值**：  en-us。
+        :type x_language: str
+        :param instance_id: **参数解释**：  实例ID，此参数是实例的唯一标识。  获取方法请参见[查询实例列表](https://support.huaweicloud.com/api-taurusdb/ListGaussMySqlInstancesUnifyStatus.html)。  **约束限制**：  不涉及。  **取值范围**：  只能由英文字母、数字组成，后缀为in07，长度为36个字符。  **默认取值**：  不涉及。
+        :type instance_id: str
+        :param db_name: **参数解释**：  数据库名。  获取方法请参见[查询数据库列表](https://support.huaweicloud.com/api-taurusdb/ListGaussMySqlDatabase.html)。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        :type db_name: str
+        :param table_name: **参数解释**：  表名。  **约束限制**：  参数值必须为指定数据库中已存在的表。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        :type table_name: str
+        :param partition_name: **参数解释**：  分区名。  **约束限制**：  依赖table_name，参数值必须为指定数据库和指定表中已存在的分区。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        :type partition_name: str
+        :param offset: **参数解释**：  索引位置，偏移量。从第一条数据偏移offset条数据后开始查询。  **约束限制**：  必须为整数，不能为负数。  **取值范围**：  ≥0。  **默认取值**：  0。
+        :type offset: int
+        :param limit: **参数解释**：  查询记录数。  **约束限制**：  必须为整数，不能为负数。  **取值范围**：  1-50。  **默认取值**：  50。
+        :type limit: int
+        """
+        
+        
+
+        self._x_language = None
+        self._instance_id = None
+        self._db_name = None
+        self._table_name = None
+        self._partition_name = None
+        self._offset = None
+        self._limit = None
+        self.discriminator = None
+
+        if x_language is not None:
+            self.x_language = x_language
+        self.instance_id = instance_id
+        self.db_name = db_name
+        if table_name is not None:
+            self.table_name = table_name
+        if partition_name is not None:
+            self.partition_name = partition_name
+        if offset is not None:
+            self.offset = offset
+        if limit is not None:
+            self.limit = limit
+
+    @property
+    def x_language(self):
+        r"""Gets the x_language of this ListArchivableTablesRequest.
+
+        **参数解释**：  请求语言类型。  **约束限制**：  不涉及。  **取值范围**：  - en-us：英文。 - zh-cn：中文。  **默认取值**：  en-us。
+
+        :return: The x_language of this ListArchivableTablesRequest.
+        :rtype: str
+        """
+        return self._x_language
+
+    @x_language.setter
+    def x_language(self, x_language):
+        r"""Sets the x_language of this ListArchivableTablesRequest.
+
+        **参数解释**：  请求语言类型。  **约束限制**：  不涉及。  **取值范围**：  - en-us：英文。 - zh-cn：中文。  **默认取值**：  en-us。
+
+        :param x_language: The x_language of this ListArchivableTablesRequest.
+        :type x_language: str
+        """
+        self._x_language = x_language
+
+    @property
+    def instance_id(self):
+        r"""Gets the instance_id of this ListArchivableTablesRequest.
+
+        **参数解释**：  实例ID，此参数是实例的唯一标识。  获取方法请参见[查询实例列表](https://support.huaweicloud.com/api-taurusdb/ListGaussMySqlInstancesUnifyStatus.html)。  **约束限制**：  不涉及。  **取值范围**：  只能由英文字母、数字组成，后缀为in07，长度为36个字符。  **默认取值**：  不涉及。
+
+        :return: The instance_id of this ListArchivableTablesRequest.
+        :rtype: str
+        """
+        return self._instance_id
+
+    @instance_id.setter
+    def instance_id(self, instance_id):
+        r"""Sets the instance_id of this ListArchivableTablesRequest.
+
+        **参数解释**：  实例ID，此参数是实例的唯一标识。  获取方法请参见[查询实例列表](https://support.huaweicloud.com/api-taurusdb/ListGaussMySqlInstancesUnifyStatus.html)。  **约束限制**：  不涉及。  **取值范围**：  只能由英文字母、数字组成，后缀为in07，长度为36个字符。  **默认取值**：  不涉及。
+
+        :param instance_id: The instance_id of this ListArchivableTablesRequest.
+        :type instance_id: str
+        """
+        self._instance_id = instance_id
+
+    @property
+    def db_name(self):
+        r"""Gets the db_name of this ListArchivableTablesRequest.
+
+        **参数解释**：  数据库名。  获取方法请参见[查询数据库列表](https://support.huaweicloud.com/api-taurusdb/ListGaussMySqlDatabase.html)。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+
+        :return: The db_name of this ListArchivableTablesRequest.
+        :rtype: str
+        """
+        return self._db_name
+
+    @db_name.setter
+    def db_name(self, db_name):
+        r"""Sets the db_name of this ListArchivableTablesRequest.
+
+        **参数解释**：  数据库名。  获取方法请参见[查询数据库列表](https://support.huaweicloud.com/api-taurusdb/ListGaussMySqlDatabase.html)。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+
+        :param db_name: The db_name of this ListArchivableTablesRequest.
+        :type db_name: str
+        """
+        self._db_name = db_name
+
+    @property
+    def table_name(self):
+        r"""Gets the table_name of this ListArchivableTablesRequest.
+
+        **参数解释**：  表名。  **约束限制**：  参数值必须为指定数据库中已存在的表。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+
+        :return: The table_name of this ListArchivableTablesRequest.
+        :rtype: str
+        """
+        return self._table_name
+
+    @table_name.setter
+    def table_name(self, table_name):
+        r"""Sets the table_name of this ListArchivableTablesRequest.
+
+        **参数解释**：  表名。  **约束限制**：  参数值必须为指定数据库中已存在的表。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+
+        :param table_name: The table_name of this ListArchivableTablesRequest.
+        :type table_name: str
+        """
+        self._table_name = table_name
+
+    @property
+    def partition_name(self):
+        r"""Gets the partition_name of this ListArchivableTablesRequest.
+
+        **参数解释**：  分区名。  **约束限制**：  依赖table_name，参数值必须为指定数据库和指定表中已存在的分区。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+
+        :return: The partition_name of this ListArchivableTablesRequest.
+        :rtype: str
+        """
+        return self._partition_name
+
+    @partition_name.setter
+    def partition_name(self, partition_name):
+        r"""Sets the partition_name of this ListArchivableTablesRequest.
+
+        **参数解释**：  分区名。  **约束限制**：  依赖table_name，参数值必须为指定数据库和指定表中已存在的分区。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+
+        :param partition_name: The partition_name of this ListArchivableTablesRequest.
+        :type partition_name: str
+        """
+        self._partition_name = partition_name
+
+    @property
+    def offset(self):
+        r"""Gets the offset of this ListArchivableTablesRequest.
+
+        **参数解释**：  索引位置，偏移量。从第一条数据偏移offset条数据后开始查询。  **约束限制**：  必须为整数，不能为负数。  **取值范围**：  ≥0。  **默认取值**：  0。
+
+        :return: The offset of this ListArchivableTablesRequest.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        r"""Sets the offset of this ListArchivableTablesRequest.
+
+        **参数解释**：  索引位置，偏移量。从第一条数据偏移offset条数据后开始查询。  **约束限制**：  必须为整数，不能为负数。  **取值范围**：  ≥0。  **默认取值**：  0。
+
+        :param offset: The offset of this ListArchivableTablesRequest.
+        :type offset: int
+        """
+        self._offset = offset
+
+    @property
+    def limit(self):
+        r"""Gets the limit of this ListArchivableTablesRequest.
+
+        **参数解释**：  查询记录数。  **约束限制**：  必须为整数，不能为负数。  **取值范围**：  1-50。  **默认取值**：  50。
+
+        :return: The limit of this ListArchivableTablesRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this ListArchivableTablesRequest.
+
+        **参数解释**：  查询记录数。  **约束限制**：  必须为整数，不能为负数。  **取值范围**：  1-50。  **默认取值**：  50。
+
+        :param limit: The limit of this ListArchivableTablesRequest.
+        :type limit: int
+        """
+        self._limit = limit
+
+    def to_dict(self):
+        result = {}
+
+        for attr, _ in self.openapi_types.items():
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        import simplejson as json
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
+
+    def __repr__(self):
+        """For `print`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, ListArchivableTablesRequest):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

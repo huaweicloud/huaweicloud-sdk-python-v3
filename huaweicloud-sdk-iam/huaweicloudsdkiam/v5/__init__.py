@@ -43,6 +43,7 @@ from huaweicloudsdkiam.v5.model.change_password_v5_request import ChangePassword
 from huaweicloudsdkiam.v5.model.change_password_v5_response import ChangePasswordV5Response
 from huaweicloudsdkiam.v5.model.condition import Condition
 from huaweicloudsdkiam.v5.model.condition_key import ConditionKey
+from huaweicloudsdkiam.v5.model.create_access_key_req_body import CreateAccessKeyReqBody
 from huaweicloudsdkiam.v5.model.create_access_key_v5_request import CreateAccessKeyV5Request
 from huaweicloudsdkiam.v5.model.create_access_key_v5_response import CreateAccessKeyV5Response
 from huaweicloudsdkiam.v5.model.create_agency_req_body import CreateAgencyReqBody

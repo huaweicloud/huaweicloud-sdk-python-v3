@@ -71,13 +71,13 @@ class ExportAntiVirusResultRequest:
         :type private_ip: str
         :param public_ip: **参数解释**: 服务器弹性IP地址 **约束限制**: 不涉及 **取值范围**: IPv4格式（长度7-15位）、IPv6格式（长度15-39位） **默认取值**: 无 
         :type public_ip: str
-        :param handle_status: **参数解释**: 处置状态 **约束限制**: 不涉及 **取值范围**: 包含如下:   - unhandled：未处理   - handled：已处理 **默认取值**: 不涉及 
+        :param handle_status: **参数解释**: 处置状态 **约束限制**: 不涉及 **取值范围**: 包含如下:   - unhandled：未处理   - handled：已处理  **默认取值**: 不涉及 
         :type handle_status: str
-        :param severity_list: **参数解释**: 威胁等级，已废弃 **约束限制**: 不涉及 **取值范围**: 威胁等级，包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命 **默认取值**: 不涉及 
+        :param severity_list: **参数解释**: 威胁等级，已废弃 **约束限制**: 不涉及 **取值范围**: 威胁等级，包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命  **默认取值**: 不涉及 
         :type severity_list: list[str]
         :param severities: 威胁等级，包含如下:   - Low : 低危   - Medium : 中危   - High : 高危   - Critical : 危急
         :type severities: str
-        :param asset_value: **参数解释**： 资产重要性 **约束限制**： 不涉及 **取值范围**： - important：重要资产 - common：一般资产 - test：测试资产 **默认取值**： 无 
+        :param asset_value: **参数解释**： 资产重要性 **约束限制**： 不涉及 **取值范围**： - important：重要资产 - common：一般资产 - test：测试资产  **默认取值**： 无 
         :type asset_value: str
         :param malware_name: 病毒名称
         :type malware_name: str
@@ -285,7 +285,7 @@ class ExportAntiVirusResultRequest:
     def handle_status(self):
         r"""Gets the handle_status of this ExportAntiVirusResultRequest.
 
-        **参数解释**: 处置状态 **约束限制**: 不涉及 **取值范围**: 包含如下:   - unhandled：未处理   - handled：已处理 **默认取值**: 不涉及 
+        **参数解释**: 处置状态 **约束限制**: 不涉及 **取值范围**: 包含如下:   - unhandled：未处理   - handled：已处理  **默认取值**: 不涉及 
 
         :return: The handle_status of this ExportAntiVirusResultRequest.
         :rtype: str
@@ -296,7 +296,7 @@ class ExportAntiVirusResultRequest:
     def handle_status(self, handle_status):
         r"""Sets the handle_status of this ExportAntiVirusResultRequest.
 
-        **参数解释**: 处置状态 **约束限制**: 不涉及 **取值范围**: 包含如下:   - unhandled：未处理   - handled：已处理 **默认取值**: 不涉及 
+        **参数解释**: 处置状态 **约束限制**: 不涉及 **取值范围**: 包含如下:   - unhandled：未处理   - handled：已处理  **默认取值**: 不涉及 
 
         :param handle_status: The handle_status of this ExportAntiVirusResultRequest.
         :type handle_status: str
@@ -307,7 +307,7 @@ class ExportAntiVirusResultRequest:
     def severity_list(self):
         r"""Gets the severity_list of this ExportAntiVirusResultRequest.
 
-        **参数解释**: 威胁等级，已废弃 **约束限制**: 不涉及 **取值范围**: 威胁等级，包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命 **默认取值**: 不涉及 
+        **参数解释**: 威胁等级，已废弃 **约束限制**: 不涉及 **取值范围**: 威胁等级，包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命  **默认取值**: 不涉及 
 
         :return: The severity_list of this ExportAntiVirusResultRequest.
         :rtype: list[str]
@@ -318,7 +318,7 @@ class ExportAntiVirusResultRequest:
     def severity_list(self, severity_list):
         r"""Sets the severity_list of this ExportAntiVirusResultRequest.
 
-        **参数解释**: 威胁等级，已废弃 **约束限制**: 不涉及 **取值范围**: 威胁等级，包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命 **默认取值**: 不涉及 
+        **参数解释**: 威胁等级，已废弃 **约束限制**: 不涉及 **取值范围**: 威胁等级，包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命  **默认取值**: 不涉及 
 
         :param severity_list: The severity_list of this ExportAntiVirusResultRequest.
         :type severity_list: list[str]
@@ -351,7 +351,7 @@ class ExportAntiVirusResultRequest:
     def asset_value(self):
         r"""Gets the asset_value of this ExportAntiVirusResultRequest.
 
-        **参数解释**： 资产重要性 **约束限制**： 不涉及 **取值范围**： - important：重要资产 - common：一般资产 - test：测试资产 **默认取值**： 无 
+        **参数解释**： 资产重要性 **约束限制**： 不涉及 **取值范围**： - important：重要资产 - common：一般资产 - test：测试资产  **默认取值**： 无 
 
         :return: The asset_value of this ExportAntiVirusResultRequest.
         :rtype: str
@@ -362,7 +362,7 @@ class ExportAntiVirusResultRequest:
     def asset_value(self, asset_value):
         r"""Sets the asset_value of this ExportAntiVirusResultRequest.
 
-        **参数解释**： 资产重要性 **约束限制**： 不涉及 **取值范围**： - important：重要资产 - common：一般资产 - test：测试资产 **默认取值**： 无 
+        **参数解释**： 资产重要性 **约束限制**： 不涉及 **取值范围**： - important：重要资产 - common：一般资产 - test：测试资产  **默认取值**： 无 
 
         :param asset_value: The asset_value of this ExportAntiVirusResultRequest.
         :type asset_value: str

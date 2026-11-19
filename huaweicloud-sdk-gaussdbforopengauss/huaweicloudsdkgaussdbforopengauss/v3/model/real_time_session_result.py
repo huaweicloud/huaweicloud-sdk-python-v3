@@ -36,6 +36,7 @@ class RealTimeSessionResult:
         'rollback_num': 'str',
         'sql_num': 'str',
         'client_port': 'str',
+        'server_port': 'str',
         'query_id': 'str',
         'transaction_time_cost': 'str',
         'trace_id': 'str',
@@ -75,6 +76,7 @@ class RealTimeSessionResult:
         'rollback_num': 'rollback_num',
         'sql_num': 'sql_num',
         'client_port': 'client_port',
+        'server_port': 'server_port',
         'query_id': 'query_id',
         'transaction_time_cost': 'transaction_time_cost',
         'trace_id': 'trace_id',
@@ -92,7 +94,7 @@ class RealTimeSessionResult:
         'component_name': 'component_name'
     }
 
-    def __init__(self, session_id=None, pid=None, unique_sql_id=None, database_name=None, client_ip=None, user_name=None, wait=None, block_session=None, wait_event=None, state=None, query_runtime=None, query=None, back_end_start=None, transaction_start=None, query_start=None, application_name=None, exec_time=None, trans_num=None, rollback_num=None, sql_num=None, client_port=None, query_id=None, transaction_time_cost=None, trace_id=None, global_session_id=None, top_transaction_id=None, current_transaction_id=None, xlog_quantity_pretty=None, wait_status=None, lwt_id=None, thread_name=None, lock_mode=None, parent_session_id=None, smp_id=None, lock_tag=None, component_name=None):
+    def __init__(self, session_id=None, pid=None, unique_sql_id=None, database_name=None, client_ip=None, user_name=None, wait=None, block_session=None, wait_event=None, state=None, query_runtime=None, query=None, back_end_start=None, transaction_start=None, query_start=None, application_name=None, exec_time=None, trans_num=None, rollback_num=None, sql_num=None, client_port=None, server_port=None, query_id=None, transaction_time_cost=None, trace_id=None, global_session_id=None, top_transaction_id=None, current_transaction_id=None, xlog_quantity_pretty=None, wait_status=None, lwt_id=None, thread_name=None, lock_mode=None, parent_session_id=None, smp_id=None, lock_tag=None, component_name=None):
         r"""RealTimeSessionResult
 
         The model defined in huaweicloud sdk
@@ -139,6 +141,8 @@ class RealTimeSessionResult:
         :type sql_num: str
         :param client_port: **参数解释**： 客户端用于与后台通讯的TCP端口号，如果使用Unix套接字，则为-1。 **取值范围**： 不涉及。
         :type client_port: str
+        :param server_port: **参数解释**： 服务端用于通讯的TCP端口号，如果使用Unix套接字，则为-1。 **取值范围**： 不涉及。
+        :type server_port: str
         :param query_id: **参数解释**： 会话执行的sql数。 **取值范围**： 不涉及。
         :type query_id: str
         :param transaction_time_cost: **参数解释**： 当前用户上一次执行的事务持续时间。 **取值范围**： 不涉及。
@@ -194,6 +198,7 @@ class RealTimeSessionResult:
         self._rollback_num = None
         self._sql_num = None
         self._client_port = None
+        self._server_port = None
         self._query_id = None
         self._transaction_time_cost = None
         self._trace_id = None
@@ -253,6 +258,8 @@ class RealTimeSessionResult:
             self.sql_num = sql_num
         if client_port is not None:
             self.client_port = client_port
+        if server_port is not None:
+            self.server_port = server_port
         if query_id is not None:
             self.query_id = query_id
         if transaction_time_cost is not None:
@@ -745,6 +752,28 @@ class RealTimeSessionResult:
         :type client_port: str
         """
         self._client_port = client_port
+
+    @property
+    def server_port(self):
+        r"""Gets the server_port of this RealTimeSessionResult.
+
+        **参数解释**： 服务端用于通讯的TCP端口号，如果使用Unix套接字，则为-1。 **取值范围**： 不涉及。
+
+        :return: The server_port of this RealTimeSessionResult.
+        :rtype: str
+        """
+        return self._server_port
+
+    @server_port.setter
+    def server_port(self, server_port):
+        r"""Sets the server_port of this RealTimeSessionResult.
+
+        **参数解释**： 服务端用于通讯的TCP端口号，如果使用Unix套接字，则为-1。 **取值范围**： 不涉及。
+
+        :param server_port: The server_port of this RealTimeSessionResult.
+        :type server_port: str
+        """
+        self._server_port = server_port
 
     @property
     def query_id(self):

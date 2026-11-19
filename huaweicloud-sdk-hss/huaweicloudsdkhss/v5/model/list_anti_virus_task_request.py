@@ -65,7 +65,7 @@ class ListAntiVirusTaskRequest:
         :type begin_time: str
         :param end_time: **参数解释**： 自定义筛选任务的结束时间（任务启动时间≤该时间） **约束限制**： 与last_days互斥，需与begin_time同时传参，且需大于等于begin_time **取值范围**： UTC时区，格式为YYYY-MM-DD HH:MM:SS **默认取值**： 不涉及 
         :type end_time: str
-        :param task_status: **参数解释**: 任务状态 **约束限制**: 不涉及 **取值范围**: 包含如下4种   - scanning：扫描中   - cancel：已取消   - fail：扫描失败   - finish：已完成 **默认取值**: 不涉及 
+        :param task_status: **参数解释**: 任务状态 **约束限制**: 不涉及 **取值范围**: 包含如下4种   - scanning：扫描中   - cancel：已取消   - fail：扫描失败   - finish：已完成  **默认取值**: 不涉及 
         :type task_status: str
         :param host_name: **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
         :type host_name: str
@@ -75,7 +75,7 @@ class ListAntiVirusTaskRequest:
         :type public_ip: str
         :param whether_paid_task: **参数解释**: 此次扫描任务是否付费 **约束限制**: 必选参数，仅支持指定布尔值 **取值范围**: true（付费任务）、false（免费任务） **默认取值**: 不涉及 
         :type whether_paid_task: bool
-        :param host_task_status: 服务器扫描状态， **参数解释**： 服务器扫描状态 **约束限制**: 不涉及 **取值范围**: 包含如下4种   - scanning ：扫描中   - success ：扫描成功   - fail ：扫描失败   - cancel ：取消扫描 **默认取值**: 不涉及 
+        :param host_task_status: 服务器扫描状态， **参数解释**： 服务器扫描状态 **约束限制**: 不涉及 **取值范围**: 包含如下4种   - scanning ：扫描中   - success ：扫描成功   - fail ：扫描失败   - cancel ：取消扫描  **默认取值**: 不涉及 
         :type host_task_status: list[str]
         """
         
@@ -278,7 +278,7 @@ class ListAntiVirusTaskRequest:
     def task_status(self):
         r"""Gets the task_status of this ListAntiVirusTaskRequest.
 
-        **参数解释**: 任务状态 **约束限制**: 不涉及 **取值范围**: 包含如下4种   - scanning：扫描中   - cancel：已取消   - fail：扫描失败   - finish：已完成 **默认取值**: 不涉及 
+        **参数解释**: 任务状态 **约束限制**: 不涉及 **取值范围**: 包含如下4种   - scanning：扫描中   - cancel：已取消   - fail：扫描失败   - finish：已完成  **默认取值**: 不涉及 
 
         :return: The task_status of this ListAntiVirusTaskRequest.
         :rtype: str
@@ -289,7 +289,7 @@ class ListAntiVirusTaskRequest:
     def task_status(self, task_status):
         r"""Sets the task_status of this ListAntiVirusTaskRequest.
 
-        **参数解释**: 任务状态 **约束限制**: 不涉及 **取值范围**: 包含如下4种   - scanning：扫描中   - cancel：已取消   - fail：扫描失败   - finish：已完成 **默认取值**: 不涉及 
+        **参数解释**: 任务状态 **约束限制**: 不涉及 **取值范围**: 包含如下4种   - scanning：扫描中   - cancel：已取消   - fail：扫描失败   - finish：已完成  **默认取值**: 不涉及 
 
         :param task_status: The task_status of this ListAntiVirusTaskRequest.
         :type task_status: str
@@ -388,7 +388,7 @@ class ListAntiVirusTaskRequest:
     def host_task_status(self):
         r"""Gets the host_task_status of this ListAntiVirusTaskRequest.
 
-        服务器扫描状态， **参数解释**： 服务器扫描状态 **约束限制**: 不涉及 **取值范围**: 包含如下4种   - scanning ：扫描中   - success ：扫描成功   - fail ：扫描失败   - cancel ：取消扫描 **默认取值**: 不涉及 
+        服务器扫描状态， **参数解释**： 服务器扫描状态 **约束限制**: 不涉及 **取值范围**: 包含如下4种   - scanning ：扫描中   - success ：扫描成功   - fail ：扫描失败   - cancel ：取消扫描  **默认取值**: 不涉及 
 
         :return: The host_task_status of this ListAntiVirusTaskRequest.
         :rtype: list[str]
@@ -399,7 +399,7 @@ class ListAntiVirusTaskRequest:
     def host_task_status(self, host_task_status):
         r"""Sets the host_task_status of this ListAntiVirusTaskRequest.
 
-        服务器扫描状态， **参数解释**： 服务器扫描状态 **约束限制**: 不涉及 **取值范围**: 包含如下4种   - scanning ：扫描中   - success ：扫描成功   - fail ：扫描失败   - cancel ：取消扫描 **默认取值**: 不涉及 
+        服务器扫描状态， **参数解释**： 服务器扫描状态 **约束限制**: 不涉及 **取值范围**: 包含如下4种   - scanning ：扫描中   - success ：扫描成功   - fail ：扫描失败   - cancel ：取消扫描  **默认取值**: 不涉及 
 
         :param host_task_status: The host_task_status of this ListAntiVirusTaskRequest.
         :type host_task_status: list[str]

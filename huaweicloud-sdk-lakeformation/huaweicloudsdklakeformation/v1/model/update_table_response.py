@@ -33,7 +33,14 @@ class UpdateTableResponse(SdkResponse):
         'table_type': 'str',
         'comments': 'str',
         'view_expanded_text': 'str',
-        'view_original_text': 'str'
+        'view_original_text': 'str',
+        'catalog_id': 'str',
+        'database_id': 'str',
+        'table_id': 'str',
+        'table_status': 'int',
+        'external_table_id': 'str',
+        'data_statistic_enable': 'bool',
+        'version_id': 'str'
     }
 
     attribute_map = {
@@ -54,10 +61,17 @@ class UpdateTableResponse(SdkResponse):
         'table_type': 'table_type',
         'comments': 'comments',
         'view_expanded_text': 'view_expanded_text',
-        'view_original_text': 'view_original_text'
+        'view_original_text': 'view_original_text',
+        'catalog_id': 'catalog_id',
+        'database_id': 'database_id',
+        'table_id': 'table_id',
+        'table_status': 'table_status',
+        'external_table_id': 'external_table_id',
+        'data_statistic_enable': 'data_statistic_enable',
+        'version_id': 'version_id'
     }
 
-    def __init__(self, catalog_name=None, database_name=None, table_name=None, create_time=None, last_access_time=None, update_time=None, last_analyzed_time=None, owner=None, owner_type=None, parameters=None, partition_keys=None, retention=None, storage_descriptor=None, table_format=None, table_type=None, comments=None, view_expanded_text=None, view_original_text=None):
+    def __init__(self, catalog_name=None, database_name=None, table_name=None, create_time=None, last_access_time=None, update_time=None, last_analyzed_time=None, owner=None, owner_type=None, parameters=None, partition_keys=None, retention=None, storage_descriptor=None, table_format=None, table_type=None, comments=None, view_expanded_text=None, view_original_text=None, catalog_id=None, database_id=None, table_id=None, table_status=None, external_table_id=None, data_statistic_enable=None, version_id=None):
         r"""UpdateTableResponse
 
         The model defined in huaweicloud sdk
@@ -98,6 +112,20 @@ class UpdateTableResponse(SdkResponse):
         :type view_expanded_text: str
         :param view_original_text: 如果表是视图，则为视图的原始文本；否则为 null
         :type view_original_text: str
+        :param catalog_id: catalogID
+        :type catalog_id: str
+        :param database_id: 数据库ID
+        :type database_id: str
+        :param table_id: 表ID
+        :type table_id: str
+        :param table_status: 表状态，0表示正常，1表示删除中，2表示已删除，3表示恢复中，4表示清除中，其余值为元数据更新、创建、异常等中间状态
+        :type table_status: int
+        :param external_table_id: 用户端表id，创建时指定，不可修改
+        :type external_table_id: str
+        :param data_statistic_enable: 数据概况统计开关。默认状态为开，修改table开关状态后，还需检查所属database的开关状态
+        :type data_statistic_enable: bool
+        :param version_id: 版本ID
+        :type version_id: str
         """
         
         super().__init__()
@@ -120,6 +148,13 @@ class UpdateTableResponse(SdkResponse):
         self._comments = None
         self._view_expanded_text = None
         self._view_original_text = None
+        self._catalog_id = None
+        self._database_id = None
+        self._table_id = None
+        self._table_status = None
+        self._external_table_id = None
+        self._data_statistic_enable = None
+        self._version_id = None
         self.discriminator = None
 
         if catalog_name is not None:
@@ -158,6 +193,20 @@ class UpdateTableResponse(SdkResponse):
             self.view_expanded_text = view_expanded_text
         if view_original_text is not None:
             self.view_original_text = view_original_text
+        if catalog_id is not None:
+            self.catalog_id = catalog_id
+        if database_id is not None:
+            self.database_id = database_id
+        if table_id is not None:
+            self.table_id = table_id
+        if table_status is not None:
+            self.table_status = table_status
+        if external_table_id is not None:
+            self.external_table_id = external_table_id
+        if data_statistic_enable is not None:
+            self.data_statistic_enable = data_statistic_enable
+        if version_id is not None:
+            self.version_id = version_id
 
     @property
     def catalog_name(self):
@@ -550,6 +599,160 @@ class UpdateTableResponse(SdkResponse):
         :type view_original_text: str
         """
         self._view_original_text = view_original_text
+
+    @property
+    def catalog_id(self):
+        r"""Gets the catalog_id of this UpdateTableResponse.
+
+        catalogID
+
+        :return: The catalog_id of this UpdateTableResponse.
+        :rtype: str
+        """
+        return self._catalog_id
+
+    @catalog_id.setter
+    def catalog_id(self, catalog_id):
+        r"""Sets the catalog_id of this UpdateTableResponse.
+
+        catalogID
+
+        :param catalog_id: The catalog_id of this UpdateTableResponse.
+        :type catalog_id: str
+        """
+        self._catalog_id = catalog_id
+
+    @property
+    def database_id(self):
+        r"""Gets the database_id of this UpdateTableResponse.
+
+        数据库ID
+
+        :return: The database_id of this UpdateTableResponse.
+        :rtype: str
+        """
+        return self._database_id
+
+    @database_id.setter
+    def database_id(self, database_id):
+        r"""Sets the database_id of this UpdateTableResponse.
+
+        数据库ID
+
+        :param database_id: The database_id of this UpdateTableResponse.
+        :type database_id: str
+        """
+        self._database_id = database_id
+
+    @property
+    def table_id(self):
+        r"""Gets the table_id of this UpdateTableResponse.
+
+        表ID
+
+        :return: The table_id of this UpdateTableResponse.
+        :rtype: str
+        """
+        return self._table_id
+
+    @table_id.setter
+    def table_id(self, table_id):
+        r"""Sets the table_id of this UpdateTableResponse.
+
+        表ID
+
+        :param table_id: The table_id of this UpdateTableResponse.
+        :type table_id: str
+        """
+        self._table_id = table_id
+
+    @property
+    def table_status(self):
+        r"""Gets the table_status of this UpdateTableResponse.
+
+        表状态，0表示正常，1表示删除中，2表示已删除，3表示恢复中，4表示清除中，其余值为元数据更新、创建、异常等中间状态
+
+        :return: The table_status of this UpdateTableResponse.
+        :rtype: int
+        """
+        return self._table_status
+
+    @table_status.setter
+    def table_status(self, table_status):
+        r"""Sets the table_status of this UpdateTableResponse.
+
+        表状态，0表示正常，1表示删除中，2表示已删除，3表示恢复中，4表示清除中，其余值为元数据更新、创建、异常等中间状态
+
+        :param table_status: The table_status of this UpdateTableResponse.
+        :type table_status: int
+        """
+        self._table_status = table_status
+
+    @property
+    def external_table_id(self):
+        r"""Gets the external_table_id of this UpdateTableResponse.
+
+        用户端表id，创建时指定，不可修改
+
+        :return: The external_table_id of this UpdateTableResponse.
+        :rtype: str
+        """
+        return self._external_table_id
+
+    @external_table_id.setter
+    def external_table_id(self, external_table_id):
+        r"""Sets the external_table_id of this UpdateTableResponse.
+
+        用户端表id，创建时指定，不可修改
+
+        :param external_table_id: The external_table_id of this UpdateTableResponse.
+        :type external_table_id: str
+        """
+        self._external_table_id = external_table_id
+
+    @property
+    def data_statistic_enable(self):
+        r"""Gets the data_statistic_enable of this UpdateTableResponse.
+
+        数据概况统计开关。默认状态为开，修改table开关状态后，还需检查所属database的开关状态
+
+        :return: The data_statistic_enable of this UpdateTableResponse.
+        :rtype: bool
+        """
+        return self._data_statistic_enable
+
+    @data_statistic_enable.setter
+    def data_statistic_enable(self, data_statistic_enable):
+        r"""Sets the data_statistic_enable of this UpdateTableResponse.
+
+        数据概况统计开关。默认状态为开，修改table开关状态后，还需检查所属database的开关状态
+
+        :param data_statistic_enable: The data_statistic_enable of this UpdateTableResponse.
+        :type data_statistic_enable: bool
+        """
+        self._data_statistic_enable = data_statistic_enable
+
+    @property
+    def version_id(self):
+        r"""Gets the version_id of this UpdateTableResponse.
+
+        版本ID
+
+        :return: The version_id of this UpdateTableResponse.
+        :rtype: str
+        """
+        return self._version_id
+
+    @version_id.setter
+    def version_id(self, version_id):
+        r"""Sets the version_id of this UpdateTableResponse.
+
+        版本ID
+
+        :param version_id: The version_id of this UpdateTableResponse.
+        :type version_id: str
+        """
+        self._version_id = version_id
 
     def to_dict(self):
         import warnings

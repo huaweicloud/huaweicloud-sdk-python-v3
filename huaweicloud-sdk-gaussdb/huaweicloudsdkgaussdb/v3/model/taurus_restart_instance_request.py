@@ -15,29 +15,36 @@ class TaurusRestartInstanceRequest:
     sensitive_list = []
 
     openapi_types = {
-        'delay': 'bool'
+        'delay': 'bool',
+        'max_connections': 'int'
     }
 
     attribute_map = {
-        'delay': 'delay'
+        'delay': 'delay',
+        'max_connections': 'max_connections'
     }
 
-    def __init__(self, delay=None):
+    def __init__(self, delay=None, max_connections=None):
         r"""TaurusRestartInstanceRequest
 
         The model defined in huaweicloud sdk
 
         :param delay: 实例是否延迟重启，默认false，立即重启。  - true: 延迟重启，实例将在运维时间窗内自动重启。 - false: 立即重启。
         :type delay: bool
+        :param max_connections: **参数解释**：  实例重启后生效的max_connections内核参数配置值。max_connections用于设置允许同时连接到数据库实例的最大客户端连接数。  **约束限制**：  不涉及。  **取值范围**： 30-100000。  **默认取值**： 不涉及。
+        :type max_connections: int
         """
         
         
 
         self._delay = None
+        self._max_connections = None
         self.discriminator = None
 
         if delay is not None:
             self.delay = delay
+        if max_connections is not None:
+            self.max_connections = max_connections
 
     @property
     def delay(self):
@@ -60,6 +67,28 @@ class TaurusRestartInstanceRequest:
         :type delay: bool
         """
         self._delay = delay
+
+    @property
+    def max_connections(self):
+        r"""Gets the max_connections of this TaurusRestartInstanceRequest.
+
+        **参数解释**：  实例重启后生效的max_connections内核参数配置值。max_connections用于设置允许同时连接到数据库实例的最大客户端连接数。  **约束限制**：  不涉及。  **取值范围**： 30-100000。  **默认取值**： 不涉及。
+
+        :return: The max_connections of this TaurusRestartInstanceRequest.
+        :rtype: int
+        """
+        return self._max_connections
+
+    @max_connections.setter
+    def max_connections(self, max_connections):
+        r"""Sets the max_connections of this TaurusRestartInstanceRequest.
+
+        **参数解释**：  实例重启后生效的max_connections内核参数配置值。max_connections用于设置允许同时连接到数据库实例的最大客户端连接数。  **约束限制**：  不涉及。  **取值范围**： 30-100000。  **默认取值**： 不涉及。
+
+        :param max_connections: The max_connections of this TaurusRestartInstanceRequest.
+        :type max_connections: int
+        """
+        self._max_connections = max_connections
 
     def to_dict(self):
         result = {}

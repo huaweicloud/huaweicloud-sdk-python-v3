@@ -45,7 +45,7 @@ class ShowCheckRuleDetailRequest:
         :type check_type: str
         :param check_rule_id: **参数解释**:  检查项ID，值可以通过这个接口的返回数据获得：/v5/{project_id}/baseline/risk-config/{check_name}/check-rules **约束限制**: 不涉及 **取值范围**: 字符长度0-255位 **默认取值**: 不涉及
         :type check_rule_id: str
-        :param standard: **参数解释**: 标准类型 **约束限制**: 不涉及 **取值范围**: - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准 **默认取值**: 不涉及
+        :param standard: **参数解释**: 标准类型 **约束限制**: 不涉及 **取值范围**: - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准  **默认取值**: 不涉及
         :type standard: str
         :param host_id: **参数解释**: 主机id **约束限制**: 不涉及 **取值范围**: 字符长度0-64位 **默认取值**: 不涉及
         :type host_id: str
@@ -162,7 +162,7 @@ class ShowCheckRuleDetailRequest:
     def standard(self):
         r"""Gets the standard of this ShowCheckRuleDetailRequest.
 
-        **参数解释**: 标准类型 **约束限制**: 不涉及 **取值范围**: - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准 **默认取值**: 不涉及
+        **参数解释**: 标准类型 **约束限制**: 不涉及 **取值范围**: - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准  **默认取值**: 不涉及
 
         :return: The standard of this ShowCheckRuleDetailRequest.
         :rtype: str
@@ -173,7 +173,7 @@ class ShowCheckRuleDetailRequest:
     def standard(self, standard):
         r"""Sets the standard of this ShowCheckRuleDetailRequest.
 
-        **参数解释**: 标准类型 **约束限制**: 不涉及 **取值范围**: - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准 **默认取值**: 不涉及
+        **参数解释**: 标准类型 **约束限制**: 不涉及 **取值范围**: - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准  **默认取值**: 不涉及
 
         :param standard: The standard of this ShowCheckRuleDetailRequest.
         :type standard: str

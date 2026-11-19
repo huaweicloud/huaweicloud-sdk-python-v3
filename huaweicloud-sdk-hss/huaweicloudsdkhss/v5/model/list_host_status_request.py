@@ -117,19 +117,19 @@ class ListHostStatusRequest:
         :type region: str
         :param enterprise_project_id: **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
         :type enterprise_project_id: str
-        :param version: **参数解释**： 主机开通的版本 **约束限制**: 不涉及 **取值范围**： 包含如下7种输入。 - hss.version.null ：无。 - hss.version.basic ：基础版。 - hss.version.advanced ：专业版。 - hss.version.enterprise ：企业版。 - hss.version.premium ：旗舰版。 - hss.version.wtp ：网页防篡改版。 - hss.version.container.enterprise：容器版。 **默认取值**: 不涉及
+        :param version: **参数解释**： 主机开通的版本 **约束限制**: 不涉及 **取值范围**： 包含如下7种输入。 - hss.version.null ：无。 - hss.version.basic ：基础版。 - hss.version.advanced ：专业版。 - hss.version.enterprise ：企业版。 - hss.version.premium ：旗舰版。 - hss.version.wtp ：网页防篡改版。 - hss.version.container.enterprise：容器版。 - hss.version.container.wtp：容器网页防篡改增值项。  **默认取值**: 不涉及
         :type version: str
         :param agent_status: **参数解释**: Agent的状态 **约束限制**: 不涉及 **取值范围**: Agent的状态分为两类： - installed：已安装。已安装状态包含以下四种情况：   - online：在线。表示Agent已经成功安装并且与HSS云端防护中心保持连接。   - offline：离线。表示虽然Agent已经安装，但当前与HSS云端防护中心的连接中断。   - install_failed：安装失败。表示在尝试安装过程中遇到错误或问题，导致安装未能完成。   - installing：安装中。表示当前正在进行Agent安装。 - not_installed ：未安装。表示服务器中尚未安装Agent。 如果您要筛选除在线以外所有状态的Agent，可设置not_online（仅作为查询条件） **默认取值**: 不涉及
         :type agent_status: str
-        :param detect_result: **参数解释**: 检测结果 **约束限制**: 不涉及 **取值范围**: 包含如下4种。   - undetected ：未检测。   - clean ：无风险。   - risk ：有风险。   - scanning ：检测中。 **默认取值**: 不涉及
+        :param detect_result: **参数解释**: 检测结果 **约束限制**: 不涉及 **取值范围**: 包含如下4种。   - undetected ：未检测。   - clean ：无风险。   - risk ：有风险。   - scanning ：检测中。  **默认取值**: 不涉及
         :type detect_result: str
         :param host_name: **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
         :type host_name: str
         :param host_id: **参数解释**: 服务器的唯一标识ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type host_id: str
-        :param host_status: **参数解释**: 主机状态 **约束限制**: 不涉及 **取值范围**: 包含如下4种。 - ACTIVE ：正在运行。 - SHUTOFF ：关机。 - BUILDING ：创建中。 - ERROR ：故障。 **默认取值**: 不涉及
+        :param host_status: **参数解释**: 主机状态 **约束限制**: 不涉及 **取值范围**: 包含如下4种。 - ACTIVE ：正在运行。 - SHUTOFF ：关机。 - BUILDING ：创建中。 - ERROR ：故障。  **默认取值**: 不涉及
         :type host_status: str
-        :param os_type: **参数解释**: 操作系统类型 **约束限制**: 不涉及 **取值范围**: 包含如下2种。 - Linux ：Linux。 - Windows ：Windows。 **默认取值**: 不涉及
+        :param os_type: **参数解释**: 操作系统类型 **约束限制**: 不涉及 **取值范围**: 包含如下2种。 - Linux ：Linux。 - Windows ：Windows。  **默认取值**: 不涉及
         :type os_type: str
         :param private_ip: **参数解释**: 服务器私有IP **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
         :type private_ip: str
@@ -137,7 +137,7 @@ class ListHostStatusRequest:
         :type public_ip: str
         :param ip_addr: **参数解释**: 公网或私网IP **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及
         :type ip_addr: str
-        :param protect_status: **参数解释**: 防护状态 **约束限制**: 不涉及 **取值范围**: 包含如下3种： - closed ：关闭。 - opened ：开启。 - protection_exception ：防护异常。 **默认取值**: 不涉及
+        :param protect_status: **参数解释**: 防护状态 **约束限制**: 不涉及 **取值范围**: 包含如下3种： - closed ：关闭。 - opened ：开启。 - protection_exception ：防护异常。  **默认取值**: 不涉及
         :type protect_status: str
         :param group_id: 服务器组的唯一标识ID
         :type group_id: str
@@ -161,13 +161,13 @@ class ListHostStatusRequest:
         :type has_baseline: bool
         :param sort_key: **参数解释**: 排序字段 **约束限制**: 不涉及 **取值范围**: 只支持risk_num **默认取值**: 不涉及 
         :type sort_key: str
-        :param sort_dir: **参数解释**: 排序的顺序 **约束限制**: 不涉及 **取值范围**: - asc: 正序 - desc: 倒序 **默认取值**: 不涉及 
+        :param sort_dir: **参数解释**: 排序的顺序 **约束限制**: 不涉及 **取值范围**: - asc: 正序 - desc: 倒序  **默认取值**: 不涉及 
         :type sort_dir: str
         :param policy_group_id: **参数解释**: 策略组ID **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
         :type policy_group_id: str
         :param policy_group_name: **参数解释**: 策略组名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
         :type policy_group_name: str
-        :param charging_mode: **参数解释**： 收费模式 **约束限制**: 不涉及 **取值范围**: - packet_cycle ：包年/包月。 - on_demand ：按需。 **默认取值**: 不涉及
+        :param charging_mode: **参数解释**： 收费模式 **约束限制**: 不涉及 **取值范围**: - packet_cycle ：包年/包月。 - on_demand ：按需。  **默认取值**: 不涉及
         :type charging_mode: str
         :param refresh: **参数解释** : 是否强制从ECS同步主机 **约束限制** : 不涉及 **取值范围** : true或者false **默认取值** : 不涉及 
         :type refresh: bool
@@ -388,7 +388,7 @@ class ListHostStatusRequest:
     def version(self):
         r"""Gets the version of this ListHostStatusRequest.
 
-        **参数解释**： 主机开通的版本 **约束限制**: 不涉及 **取值范围**： 包含如下7种输入。 - hss.version.null ：无。 - hss.version.basic ：基础版。 - hss.version.advanced ：专业版。 - hss.version.enterprise ：企业版。 - hss.version.premium ：旗舰版。 - hss.version.wtp ：网页防篡改版。 - hss.version.container.enterprise：容器版。 **默认取值**: 不涉及
+        **参数解释**： 主机开通的版本 **约束限制**: 不涉及 **取值范围**： 包含如下7种输入。 - hss.version.null ：无。 - hss.version.basic ：基础版。 - hss.version.advanced ：专业版。 - hss.version.enterprise ：企业版。 - hss.version.premium ：旗舰版。 - hss.version.wtp ：网页防篡改版。 - hss.version.container.enterprise：容器版。 - hss.version.container.wtp：容器网页防篡改增值项。  **默认取值**: 不涉及
 
         :return: The version of this ListHostStatusRequest.
         :rtype: str
@@ -399,7 +399,7 @@ class ListHostStatusRequest:
     def version(self, version):
         r"""Sets the version of this ListHostStatusRequest.
 
-        **参数解释**： 主机开通的版本 **约束限制**: 不涉及 **取值范围**： 包含如下7种输入。 - hss.version.null ：无。 - hss.version.basic ：基础版。 - hss.version.advanced ：专业版。 - hss.version.enterprise ：企业版。 - hss.version.premium ：旗舰版。 - hss.version.wtp ：网页防篡改版。 - hss.version.container.enterprise：容器版。 **默认取值**: 不涉及
+        **参数解释**： 主机开通的版本 **约束限制**: 不涉及 **取值范围**： 包含如下7种输入。 - hss.version.null ：无。 - hss.version.basic ：基础版。 - hss.version.advanced ：专业版。 - hss.version.enterprise ：企业版。 - hss.version.premium ：旗舰版。 - hss.version.wtp ：网页防篡改版。 - hss.version.container.enterprise：容器版。 - hss.version.container.wtp：容器网页防篡改增值项。  **默认取值**: 不涉及
 
         :param version: The version of this ListHostStatusRequest.
         :type version: str
@@ -432,7 +432,7 @@ class ListHostStatusRequest:
     def detect_result(self):
         r"""Gets the detect_result of this ListHostStatusRequest.
 
-        **参数解释**: 检测结果 **约束限制**: 不涉及 **取值范围**: 包含如下4种。   - undetected ：未检测。   - clean ：无风险。   - risk ：有风险。   - scanning ：检测中。 **默认取值**: 不涉及
+        **参数解释**: 检测结果 **约束限制**: 不涉及 **取值范围**: 包含如下4种。   - undetected ：未检测。   - clean ：无风险。   - risk ：有风险。   - scanning ：检测中。  **默认取值**: 不涉及
 
         :return: The detect_result of this ListHostStatusRequest.
         :rtype: str
@@ -443,7 +443,7 @@ class ListHostStatusRequest:
     def detect_result(self, detect_result):
         r"""Sets the detect_result of this ListHostStatusRequest.
 
-        **参数解释**: 检测结果 **约束限制**: 不涉及 **取值范围**: 包含如下4种。   - undetected ：未检测。   - clean ：无风险。   - risk ：有风险。   - scanning ：检测中。 **默认取值**: 不涉及
+        **参数解释**: 检测结果 **约束限制**: 不涉及 **取值范围**: 包含如下4种。   - undetected ：未检测。   - clean ：无风险。   - risk ：有风险。   - scanning ：检测中。  **默认取值**: 不涉及
 
         :param detect_result: The detect_result of this ListHostStatusRequest.
         :type detect_result: str
@@ -498,7 +498,7 @@ class ListHostStatusRequest:
     def host_status(self):
         r"""Gets the host_status of this ListHostStatusRequest.
 
-        **参数解释**: 主机状态 **约束限制**: 不涉及 **取值范围**: 包含如下4种。 - ACTIVE ：正在运行。 - SHUTOFF ：关机。 - BUILDING ：创建中。 - ERROR ：故障。 **默认取值**: 不涉及
+        **参数解释**: 主机状态 **约束限制**: 不涉及 **取值范围**: 包含如下4种。 - ACTIVE ：正在运行。 - SHUTOFF ：关机。 - BUILDING ：创建中。 - ERROR ：故障。  **默认取值**: 不涉及
 
         :return: The host_status of this ListHostStatusRequest.
         :rtype: str
@@ -509,7 +509,7 @@ class ListHostStatusRequest:
     def host_status(self, host_status):
         r"""Sets the host_status of this ListHostStatusRequest.
 
-        **参数解释**: 主机状态 **约束限制**: 不涉及 **取值范围**: 包含如下4种。 - ACTIVE ：正在运行。 - SHUTOFF ：关机。 - BUILDING ：创建中。 - ERROR ：故障。 **默认取值**: 不涉及
+        **参数解释**: 主机状态 **约束限制**: 不涉及 **取值范围**: 包含如下4种。 - ACTIVE ：正在运行。 - SHUTOFF ：关机。 - BUILDING ：创建中。 - ERROR ：故障。  **默认取值**: 不涉及
 
         :param host_status: The host_status of this ListHostStatusRequest.
         :type host_status: str
@@ -520,7 +520,7 @@ class ListHostStatusRequest:
     def os_type(self):
         r"""Gets the os_type of this ListHostStatusRequest.
 
-        **参数解释**: 操作系统类型 **约束限制**: 不涉及 **取值范围**: 包含如下2种。 - Linux ：Linux。 - Windows ：Windows。 **默认取值**: 不涉及
+        **参数解释**: 操作系统类型 **约束限制**: 不涉及 **取值范围**: 包含如下2种。 - Linux ：Linux。 - Windows ：Windows。  **默认取值**: 不涉及
 
         :return: The os_type of this ListHostStatusRequest.
         :rtype: str
@@ -531,7 +531,7 @@ class ListHostStatusRequest:
     def os_type(self, os_type):
         r"""Sets the os_type of this ListHostStatusRequest.
 
-        **参数解释**: 操作系统类型 **约束限制**: 不涉及 **取值范围**: 包含如下2种。 - Linux ：Linux。 - Windows ：Windows。 **默认取值**: 不涉及
+        **参数解释**: 操作系统类型 **约束限制**: 不涉及 **取值范围**: 包含如下2种。 - Linux ：Linux。 - Windows ：Windows。  **默认取值**: 不涉及
 
         :param os_type: The os_type of this ListHostStatusRequest.
         :type os_type: str
@@ -608,7 +608,7 @@ class ListHostStatusRequest:
     def protect_status(self):
         r"""Gets the protect_status of this ListHostStatusRequest.
 
-        **参数解释**: 防护状态 **约束限制**: 不涉及 **取值范围**: 包含如下3种： - closed ：关闭。 - opened ：开启。 - protection_exception ：防护异常。 **默认取值**: 不涉及
+        **参数解释**: 防护状态 **约束限制**: 不涉及 **取值范围**: 包含如下3种： - closed ：关闭。 - opened ：开启。 - protection_exception ：防护异常。  **默认取值**: 不涉及
 
         :return: The protect_status of this ListHostStatusRequest.
         :rtype: str
@@ -619,7 +619,7 @@ class ListHostStatusRequest:
     def protect_status(self, protect_status):
         r"""Sets the protect_status of this ListHostStatusRequest.
 
-        **参数解释**: 防护状态 **约束限制**: 不涉及 **取值范围**: 包含如下3种： - closed ：关闭。 - opened ：开启。 - protection_exception ：防护异常。 **默认取值**: 不涉及
+        **参数解释**: 防护状态 **约束限制**: 不涉及 **取值范围**: 包含如下3种： - closed ：关闭。 - opened ：开启。 - protection_exception ：防护异常。  **默认取值**: 不涉及
 
         :param protect_status: The protect_status of this ListHostStatusRequest.
         :type protect_status: str
@@ -872,7 +872,7 @@ class ListHostStatusRequest:
     def sort_dir(self):
         r"""Gets the sort_dir of this ListHostStatusRequest.
 
-        **参数解释**: 排序的顺序 **约束限制**: 不涉及 **取值范围**: - asc: 正序 - desc: 倒序 **默认取值**: 不涉及 
+        **参数解释**: 排序的顺序 **约束限制**: 不涉及 **取值范围**: - asc: 正序 - desc: 倒序  **默认取值**: 不涉及 
 
         :return: The sort_dir of this ListHostStatusRequest.
         :rtype: str
@@ -883,7 +883,7 @@ class ListHostStatusRequest:
     def sort_dir(self, sort_dir):
         r"""Sets the sort_dir of this ListHostStatusRequest.
 
-        **参数解释**: 排序的顺序 **约束限制**: 不涉及 **取值范围**: - asc: 正序 - desc: 倒序 **默认取值**: 不涉及 
+        **参数解释**: 排序的顺序 **约束限制**: 不涉及 **取值范围**: - asc: 正序 - desc: 倒序  **默认取值**: 不涉及 
 
         :param sort_dir: The sort_dir of this ListHostStatusRequest.
         :type sort_dir: str
@@ -938,7 +938,7 @@ class ListHostStatusRequest:
     def charging_mode(self):
         r"""Gets the charging_mode of this ListHostStatusRequest.
 
-        **参数解释**： 收费模式 **约束限制**: 不涉及 **取值范围**: - packet_cycle ：包年/包月。 - on_demand ：按需。 **默认取值**: 不涉及
+        **参数解释**： 收费模式 **约束限制**: 不涉及 **取值范围**: - packet_cycle ：包年/包月。 - on_demand ：按需。  **默认取值**: 不涉及
 
         :return: The charging_mode of this ListHostStatusRequest.
         :rtype: str
@@ -949,7 +949,7 @@ class ListHostStatusRequest:
     def charging_mode(self, charging_mode):
         r"""Sets the charging_mode of this ListHostStatusRequest.
 
-        **参数解释**： 收费模式 **约束限制**: 不涉及 **取值范围**: - packet_cycle ：包年/包月。 - on_demand ：按需。 **默认取值**: 不涉及
+        **参数解释**： 收费模式 **约束限制**: 不涉及 **取值范围**: - packet_cycle ：包年/包月。 - on_demand ：按需。  **默认取值**: 不涉及
 
         :param charging_mode: The charging_mode of this ListHostStatusRequest.
         :type charging_mode: str

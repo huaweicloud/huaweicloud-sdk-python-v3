@@ -49,7 +49,7 @@ class ListImageAppsRequest:
         :type offset: int
         :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
         :type limit: int
-        :param image_type: **参数解释**: 镜像类型 **约束限制**: 不涉及 **取值范围**: 镜像类型，包含如下:   - private_image : 私有镜像仓库   - shared_image : 共享镜像仓库   - instance_image : 企业镜像   - cicd : cicd镜像   - harbor ：Harbor仓库镜像 **默认取值**: 不涉及 
+        :param image_type: **参数解释**: 镜像类型 **约束限制**: 不涉及 **取值范围**: 镜像类型，包含如下:   - private_image : 私有镜像仓库   - shared_image : 共享镜像仓库   - instance_image : 企业镜像   - cicd : cicd镜像   - harbor ：Harbor仓库镜像  **默认取值**: 不涉及 
         :type image_type: str
         :param image_id: **参数解释**: 镜像id **约束限制**: 不涉及 **取值范围**: 字符长度0-65535位 **默认取值**: 不涉及 
         :type image_id: str
@@ -163,7 +163,7 @@ class ListImageAppsRequest:
     def image_type(self):
         r"""Gets the image_type of this ListImageAppsRequest.
 
-        **参数解释**: 镜像类型 **约束限制**: 不涉及 **取值范围**: 镜像类型，包含如下:   - private_image : 私有镜像仓库   - shared_image : 共享镜像仓库   - instance_image : 企业镜像   - cicd : cicd镜像   - harbor ：Harbor仓库镜像 **默认取值**: 不涉及 
+        **参数解释**: 镜像类型 **约束限制**: 不涉及 **取值范围**: 镜像类型，包含如下:   - private_image : 私有镜像仓库   - shared_image : 共享镜像仓库   - instance_image : 企业镜像   - cicd : cicd镜像   - harbor ：Harbor仓库镜像  **默认取值**: 不涉及 
 
         :return: The image_type of this ListImageAppsRequest.
         :rtype: str
@@ -174,7 +174,7 @@ class ListImageAppsRequest:
     def image_type(self, image_type):
         r"""Sets the image_type of this ListImageAppsRequest.
 
-        **参数解释**: 镜像类型 **约束限制**: 不涉及 **取值范围**: 镜像类型，包含如下:   - private_image : 私有镜像仓库   - shared_image : 共享镜像仓库   - instance_image : 企业镜像   - cicd : cicd镜像   - harbor ：Harbor仓库镜像 **默认取值**: 不涉及 
+        **参数解释**: 镜像类型 **约束限制**: 不涉及 **取值范围**: 镜像类型，包含如下:   - private_image : 私有镜像仓库   - shared_image : 共享镜像仓库   - instance_image : 企业镜像   - cicd : cicd镜像   - harbor ：Harbor仓库镜像  **默认取值**: 不涉及 
 
         :param image_type: The image_type of this ListImageAppsRequest.
         :type image_type: str

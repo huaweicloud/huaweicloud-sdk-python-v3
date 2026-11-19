@@ -73,7 +73,7 @@ class ListGeneralImageVulsRequest:
         :type cve_id: str
         :param label_list: **参数解释**: 漏洞标签列表 **取值范围**: 最小值0，最大值10 
         :type label_list: list[str]
-        :param status: **参数解释**: 漏洞当前状态 **约束限制**: 不涉及 **取值范围**: - vul_status_unfix：未处理 - vul_status_ignored：已忽略 **默认取值**: 不涉及 
+        :param status: **参数解释**: 漏洞当前状态 **约束限制**: 不涉及 **取值范围**: - vul_status_unfix：未处理 - vul_status_ignored：已忽略  **默认取值**: 不涉及 
         :type status: str
         :param cluster_id: **参数解释**: 集群id **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
         :type cluster_id: str
@@ -366,7 +366,7 @@ class ListGeneralImageVulsRequest:
     def status(self):
         r"""Gets the status of this ListGeneralImageVulsRequest.
 
-        **参数解释**: 漏洞当前状态 **约束限制**: 不涉及 **取值范围**: - vul_status_unfix：未处理 - vul_status_ignored：已忽略 **默认取值**: 不涉及 
+        **参数解释**: 漏洞当前状态 **约束限制**: 不涉及 **取值范围**: - vul_status_unfix：未处理 - vul_status_ignored：已忽略  **默认取值**: 不涉及 
 
         :return: The status of this ListGeneralImageVulsRequest.
         :rtype: str
@@ -377,7 +377,7 @@ class ListGeneralImageVulsRequest:
     def status(self, status):
         r"""Sets the status of this ListGeneralImageVulsRequest.
 
-        **参数解释**: 漏洞当前状态 **约束限制**: 不涉及 **取值范围**: - vul_status_unfix：未处理 - vul_status_ignored：已忽略 **默认取值**: 不涉及 
+        **参数解释**: 漏洞当前状态 **约束限制**: 不涉及 **取值范围**: - vul_status_unfix：未处理 - vul_status_ignored：已忽略  **默认取值**: 不涉及 
 
         :param status: The status of this ListGeneralImageVulsRequest.
         :type status: str

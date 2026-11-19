@@ -51,7 +51,7 @@ class ListProtectionPolicyRequest:
         :type policy_name: str
         :param protect_policy_id: **参数解释**: 防护策略id **约束限制**: 不涉及 **取值范围**: 字符长度0-128 **默认取值**: 不涉及 
         :type protect_policy_id: str
-        :param operating_system: **参数解释**: 策略支持的操作系统 **约束限制**: 不涉及 **取值范围**: 包含如下：   - Windows : Windows系统   - Linux : Linux系统 **默认取值**: 不涉及
+        :param operating_system: **参数解释**: 策略支持的操作系统 **约束限制**: 不涉及 **取值范围**: 包含如下：   - Windows : Windows系统   - Linux : Linux系统  **默认取值**: 不涉及
         :type operating_system: str
         """
         
@@ -217,7 +217,7 @@ class ListProtectionPolicyRequest:
     def operating_system(self):
         r"""Gets the operating_system of this ListProtectionPolicyRequest.
 
-        **参数解释**: 策略支持的操作系统 **约束限制**: 不涉及 **取值范围**: 包含如下：   - Windows : Windows系统   - Linux : Linux系统 **默认取值**: 不涉及
+        **参数解释**: 策略支持的操作系统 **约束限制**: 不涉及 **取值范围**: 包含如下：   - Windows : Windows系统   - Linux : Linux系统  **默认取值**: 不涉及
 
         :return: The operating_system of this ListProtectionPolicyRequest.
         :rtype: str
@@ -228,7 +228,7 @@ class ListProtectionPolicyRequest:
     def operating_system(self, operating_system):
         r"""Sets the operating_system of this ListProtectionPolicyRequest.
 
-        **参数解释**: 策略支持的操作系统 **约束限制**: 不涉及 **取值范围**: 包含如下：   - Windows : Windows系统   - Linux : Linux系统 **默认取值**: 不涉及
+        **参数解释**: 策略支持的操作系统 **约束限制**: 不涉及 **取值范围**: 包含如下：   - Windows : Windows系统   - Linux : Linux系统  **默认取值**: 不涉及
 
         :param operating_system: The operating_system of this ListProtectionPolicyRequest.
         :type operating_system: str

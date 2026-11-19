@@ -44,7 +44,7 @@ class ShowMultiCloudClusterImageCommandRequest:
         :type username: str
         :param password: 密码
         :type password: str
-        :param plug_type: **参数解释**: 插件类型 **约束限制**: 不涉及 **取值范围**: - docker: docker插件镜像 - agent: hostguard镜像 **默认取值**: 不涉及 
+        :param plug_type: **参数解释**: 插件类型 **约束限制**: 不涉及 **取值范围**: - docker: docker插件镜像 - agent: hostguard镜像  **默认取值**: 不涉及 
         :type plug_type: str
         """
         
@@ -156,7 +156,7 @@ class ShowMultiCloudClusterImageCommandRequest:
     def plug_type(self):
         r"""Gets the plug_type of this ShowMultiCloudClusterImageCommandRequest.
 
-        **参数解释**: 插件类型 **约束限制**: 不涉及 **取值范围**: - docker: docker插件镜像 - agent: hostguard镜像 **默认取值**: 不涉及 
+        **参数解释**: 插件类型 **约束限制**: 不涉及 **取值范围**: - docker: docker插件镜像 - agent: hostguard镜像  **默认取值**: 不涉及 
 
         :return: The plug_type of this ShowMultiCloudClusterImageCommandRequest.
         :rtype: str
@@ -167,7 +167,7 @@ class ShowMultiCloudClusterImageCommandRequest:
     def plug_type(self, plug_type):
         r"""Sets the plug_type of this ShowMultiCloudClusterImageCommandRequest.
 
-        **参数解释**: 插件类型 **约束限制**: 不涉及 **取值范围**: - docker: docker插件镜像 - agent: hostguard镜像 **默认取值**: 不涉及 
+        **参数解释**: 插件类型 **约束限制**: 不涉及 **取值范围**: - docker: docker插件镜像 - agent: hostguard镜像  **默认取值**: 不涉及 
 
         :param plug_type: The plug_type of this ShowMultiCloudClusterImageCommandRequest.
         :type plug_type: str

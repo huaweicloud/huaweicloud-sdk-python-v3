@@ -15,28 +15,35 @@ class TaurusSwitchoverRequest:
     sensitive_list = []
 
     openapi_types = {
-        'node_id': 'str'
+        'node_id': 'str',
+        'force': 'bool'
     }
 
     attribute_map = {
-        'node_id': 'node_id'
+        'node_id': 'node_id',
+        'force': 'force'
     }
 
-    def __init__(self, node_id=None):
+    def __init__(self, node_id=None, force=None):
         r"""TaurusSwitchoverRequest
 
         The model defined in huaweicloud sdk
 
         :param node_id: 只读节点ID，倒换后为主节点。
         :type node_id: str
+        :param force: **参数解释**：  是否进行强制倒换。强制倒换将导致主节点重启，未提交的事务会被中断，请在业务低峰期执行该操作。  **约束限制**：  不涉及。  **取值范围**：  - true：强制倒换。 - false：普通倒换。  **默认取值**：  false。
+        :type force: bool
         """
         
         
 
         self._node_id = None
+        self._force = None
         self.discriminator = None
 
         self.node_id = node_id
+        if force is not None:
+            self.force = force
 
     @property
     def node_id(self):
@@ -59,6 +66,28 @@ class TaurusSwitchoverRequest:
         :type node_id: str
         """
         self._node_id = node_id
+
+    @property
+    def force(self):
+        r"""Gets the force of this TaurusSwitchoverRequest.
+
+        **参数解释**：  是否进行强制倒换。强制倒换将导致主节点重启，未提交的事务会被中断，请在业务低峰期执行该操作。  **约束限制**：  不涉及。  **取值范围**：  - true：强制倒换。 - false：普通倒换。  **默认取值**：  false。
+
+        :return: The force of this TaurusSwitchoverRequest.
+        :rtype: bool
+        """
+        return self._force
+
+    @force.setter
+    def force(self, force):
+        r"""Sets the force of this TaurusSwitchoverRequest.
+
+        **参数解释**：  是否进行强制倒换。强制倒换将导致主节点重启，未提交的事务会被中断，请在业务低峰期执行该操作。  **约束限制**：  不涉及。  **取值范围**：  - true：强制倒换。 - false：普通倒换。  **默认取值**：  false。
+
+        :param force: The force of this TaurusSwitchoverRequest.
+        :type force: bool
+        """
+        self._force = force
 
     def to_dict(self):
         result = {}

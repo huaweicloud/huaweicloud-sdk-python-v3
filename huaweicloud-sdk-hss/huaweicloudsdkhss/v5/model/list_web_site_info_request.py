@@ -37,7 +37,7 @@ class ListWebSiteInfoRequest:
         :type enterprise_project_id: str
         :param host_id: **参数解释**: 服务器ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type host_id: str
-        :param category: **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产  **默认取值**: host 
+        :param category: **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产 - serverless：Serverless安全场景  **默认取值**: host 
         :type category: str
         :param domain: **参数解释**: 域名 **约束限制**: 不涉及 **取值范围**: 字符长度1-256 **默认取值**: 不涉及 
         :type domain: str
@@ -106,7 +106,7 @@ class ListWebSiteInfoRequest:
     def category(self):
         r"""Gets the category of this ListWebSiteInfoRequest.
 
-        **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产  **默认取值**: host 
+        **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产 - serverless：Serverless安全场景  **默认取值**: host 
 
         :return: The category of this ListWebSiteInfoRequest.
         :rtype: str
@@ -117,7 +117,7 @@ class ListWebSiteInfoRequest:
     def category(self, category):
         r"""Sets the category of this ListWebSiteInfoRequest.
 
-        **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产  **默认取值**: host 
+        **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产 - serverless：Serverless安全场景  **默认取值**: host 
 
         :param category: The category of this ListWebSiteInfoRequest.
         :type category: str

@@ -85,7 +85,7 @@ class ListVulHostVulsRequest:
         :type repair_type: str
         :param severity_level: **参数解释**: 漏洞风险等级 **约束限制**: 不涉及 **取值范围**: - Critical: 紧急 - High: 高 - Medium: 中 - Low: 低  **默认取值**: 不涉及 
         :type severity_level: str
-        :param repair_priority: **参数解释**: 漏洞修复优先级 **约束限制**: 不涉及 **取值范围**: - Critical：紧急 - High：高 - Medium：中 - Low：低 **默认取值**: 不涉及 
+        :param repair_priority: **参数解释**: 漏洞修复优先级 **约束限制**: 不涉及 **取值范围**: - Critical：紧急 - High：高 - Medium：中 - Low：低  **默认取值**: 不涉及 
         :type repair_priority: str
         :param host_id_list: **参数解释**: 主机id列表，多个主机id用英文逗号分隔 **约束限制**: 不涉及 **取值范围**: 字符长度0-1850位 **默认取值**: 不涉及 
         :type host_id_list: str
@@ -456,7 +456,7 @@ class ListVulHostVulsRequest:
     def repair_priority(self):
         r"""Gets the repair_priority of this ListVulHostVulsRequest.
 
-        **参数解释**: 漏洞修复优先级 **约束限制**: 不涉及 **取值范围**: - Critical：紧急 - High：高 - Medium：中 - Low：低 **默认取值**: 不涉及 
+        **参数解释**: 漏洞修复优先级 **约束限制**: 不涉及 **取值范围**: - Critical：紧急 - High：高 - Medium：中 - Low：低  **默认取值**: 不涉及 
 
         :return: The repair_priority of this ListVulHostVulsRequest.
         :rtype: str
@@ -467,7 +467,7 @@ class ListVulHostVulsRequest:
     def repair_priority(self, repair_priority):
         r"""Sets the repair_priority of this ListVulHostVulsRequest.
 
-        **参数解释**: 漏洞修复优先级 **约束限制**: 不涉及 **取值范围**: - Critical：紧急 - High：高 - Medium：中 - Low：低 **默认取值**: 不涉及 
+        **参数解释**: 漏洞修复优先级 **约束限制**: 不涉及 **取值范围**: - Critical：紧急 - High：高 - Medium：中 - Low：低  **默认取值**: 不涉及 
 
         :param repair_priority: The repair_priority of this ListVulHostVulsRequest.
         :type repair_priority: str

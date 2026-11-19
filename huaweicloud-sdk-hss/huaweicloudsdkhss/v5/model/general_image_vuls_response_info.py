@@ -57,13 +57,13 @@ class GeneralImageVulsResponseInfo:
         :type vul_name: str
         :param vul_id: **参数解释**： 漏洞ID **取值范围**： 字符长度0-128位 
         :type vul_id: str
-        :param type: **参数解释**： 漏洞类型 **约束限制**: 不涉及 **取值范围**： - linux_vul：linux漏洞 - app_vul：应用漏洞 **默认取值**: 不涉及 
+        :param type: **参数解释**： 漏洞类型 **约束限制**: 不涉及 **取值范围**： - linux_vul：linux漏洞 - app_vul：应用漏洞  **默认取值**: 不涉及 
         :type type: str
-        :param image_type: **参数解释**： 镜像类型 **约束限制**: 不涉及 **取值范围**： - local：本地镜像 - registry：仓库镜像 - cicd：CI/CD镜像 - cluster：集群镜像 **默认取值**: 不涉及 
+        :param image_type: **参数解释**： 镜像类型 **约束限制**: 不涉及 **取值范围**： - local：本地镜像 - registry：仓库镜像 - cicd：CI/CD镜像 - cluster：集群镜像  **默认取值**: 不涉及 
         :type image_type: str
         :param label_list: **参数解释**： 漏洞标签列表 **取值范围**： 最小值0，最大值10 
         :type label_list: list[str]
-        :param severity_level: **参数解释**： 漏洞的风险程度 **约束限制**: 不涉及 **取值范围**： - Critical：严重 - High：高危 - Medium：中危 - Low：低危 **默认取值**: 不涉及 
+        :param severity_level: **参数解释**： 漏洞的风险程度 **约束限制**: 不涉及 **取值范围**： - Critical：严重 - High：高危 - Medium：中危 - Low：低危  **默认取值**: 不涉及 
         :type severity_level: str
         :param image_num: **参数解释**： 受影响镜像总数 **取值范围**： 字符长度0-2147483547位 
         :type image_num: int
@@ -178,7 +178,7 @@ class GeneralImageVulsResponseInfo:
     def type(self):
         r"""Gets the type of this GeneralImageVulsResponseInfo.
 
-        **参数解释**： 漏洞类型 **约束限制**: 不涉及 **取值范围**： - linux_vul：linux漏洞 - app_vul：应用漏洞 **默认取值**: 不涉及 
+        **参数解释**： 漏洞类型 **约束限制**: 不涉及 **取值范围**： - linux_vul：linux漏洞 - app_vul：应用漏洞  **默认取值**: 不涉及 
 
         :return: The type of this GeneralImageVulsResponseInfo.
         :rtype: str
@@ -189,7 +189,7 @@ class GeneralImageVulsResponseInfo:
     def type(self, type):
         r"""Sets the type of this GeneralImageVulsResponseInfo.
 
-        **参数解释**： 漏洞类型 **约束限制**: 不涉及 **取值范围**： - linux_vul：linux漏洞 - app_vul：应用漏洞 **默认取值**: 不涉及 
+        **参数解释**： 漏洞类型 **约束限制**: 不涉及 **取值范围**： - linux_vul：linux漏洞 - app_vul：应用漏洞  **默认取值**: 不涉及 
 
         :param type: The type of this GeneralImageVulsResponseInfo.
         :type type: str
@@ -200,7 +200,7 @@ class GeneralImageVulsResponseInfo:
     def image_type(self):
         r"""Gets the image_type of this GeneralImageVulsResponseInfo.
 
-        **参数解释**： 镜像类型 **约束限制**: 不涉及 **取值范围**： - local：本地镜像 - registry：仓库镜像 - cicd：CI/CD镜像 - cluster：集群镜像 **默认取值**: 不涉及 
+        **参数解释**： 镜像类型 **约束限制**: 不涉及 **取值范围**： - local：本地镜像 - registry：仓库镜像 - cicd：CI/CD镜像 - cluster：集群镜像  **默认取值**: 不涉及 
 
         :return: The image_type of this GeneralImageVulsResponseInfo.
         :rtype: str
@@ -211,7 +211,7 @@ class GeneralImageVulsResponseInfo:
     def image_type(self, image_type):
         r"""Sets the image_type of this GeneralImageVulsResponseInfo.
 
-        **参数解释**： 镜像类型 **约束限制**: 不涉及 **取值范围**： - local：本地镜像 - registry：仓库镜像 - cicd：CI/CD镜像 - cluster：集群镜像 **默认取值**: 不涉及 
+        **参数解释**： 镜像类型 **约束限制**: 不涉及 **取值范围**： - local：本地镜像 - registry：仓库镜像 - cicd：CI/CD镜像 - cluster：集群镜像  **默认取值**: 不涉及 
 
         :param image_type: The image_type of this GeneralImageVulsResponseInfo.
         :type image_type: str
@@ -244,7 +244,7 @@ class GeneralImageVulsResponseInfo:
     def severity_level(self):
         r"""Gets the severity_level of this GeneralImageVulsResponseInfo.
 
-        **参数解释**： 漏洞的风险程度 **约束限制**: 不涉及 **取值范围**： - Critical：严重 - High：高危 - Medium：中危 - Low：低危 **默认取值**: 不涉及 
+        **参数解释**： 漏洞的风险程度 **约束限制**: 不涉及 **取值范围**： - Critical：严重 - High：高危 - Medium：中危 - Low：低危  **默认取值**: 不涉及 
 
         :return: The severity_level of this GeneralImageVulsResponseInfo.
         :rtype: str
@@ -255,7 +255,7 @@ class GeneralImageVulsResponseInfo:
     def severity_level(self, severity_level):
         r"""Sets the severity_level of this GeneralImageVulsResponseInfo.
 
-        **参数解释**： 漏洞的风险程度 **约束限制**: 不涉及 **取值范围**： - Critical：严重 - High：高危 - Medium：中危 - Low：低危 **默认取值**: 不涉及 
+        **参数解释**： 漏洞的风险程度 **约束限制**: 不涉及 **取值范围**： - Critical：严重 - High：高危 - Medium：中危 - Low：低危  **默认取值**: 不涉及 
 
         :param severity_level: The severity_level of this GeneralImageVulsResponseInfo.
         :type severity_level: str

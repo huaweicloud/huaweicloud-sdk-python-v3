@@ -29,7 +29,7 @@ class SwitchFirewallStatusRequestInfo:
 
         The model defined in huaweicloud sdk
 
-        :param firewall_status: **参数解释**： 防火墙开启状态 **约束限制**： 不涉及 **取值范围**：   - Opened：开启windows防火墙   - Closed：关闭windows防火墙 **默认取值**： 不涉及 
+        :param firewall_status: **参数解释**： 防火墙开启状态 **约束限制**： 不涉及 **取值范围**：   - Opened：开启windows防火墙   - Closed：关闭windows防火墙  **默认取值**： 不涉及 
         :type firewall_status: str
         :param host_id_list: **参数解释**： 主机ID列表 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type host_id_list: list[str]
@@ -48,7 +48,7 @@ class SwitchFirewallStatusRequestInfo:
     def firewall_status(self):
         r"""Gets the firewall_status of this SwitchFirewallStatusRequestInfo.
 
-        **参数解释**： 防火墙开启状态 **约束限制**： 不涉及 **取值范围**：   - Opened：开启windows防火墙   - Closed：关闭windows防火墙 **默认取值**： 不涉及 
+        **参数解释**： 防火墙开启状态 **约束限制**： 不涉及 **取值范围**：   - Opened：开启windows防火墙   - Closed：关闭windows防火墙  **默认取值**： 不涉及 
 
         :return: The firewall_status of this SwitchFirewallStatusRequestInfo.
         :rtype: str
@@ -59,7 +59,7 @@ class SwitchFirewallStatusRequestInfo:
     def firewall_status(self, firewall_status):
         r"""Sets the firewall_status of this SwitchFirewallStatusRequestInfo.
 
-        **参数解释**： 防火墙开启状态 **约束限制**： 不涉及 **取值范围**：   - Opened：开启windows防火墙   - Closed：关闭windows防火墙 **默认取值**： 不涉及 
+        **参数解释**： 防火墙开启状态 **约束限制**： 不涉及 **取值范围**：   - Opened：开启windows防火墙   - Closed：关闭windows防火墙  **默认取值**： 不涉及 
 
         :param firewall_status: The firewall_status of this SwitchFirewallStatusRequestInfo.
         :type firewall_status: str

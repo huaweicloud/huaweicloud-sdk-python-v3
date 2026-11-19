@@ -29,7 +29,7 @@ class AIStatisticInfoResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param ai_component_name: **参数解释**： AI组件对应类型的名称 **取值范围**： 字符长度1-256位 
+        :param ai_component_name: **参数解释**： AI组件对应类型的名称 **取值范围**： 字符长度1-256位    
         :type ai_component_name: str
         :param num: **参数解释**： AI组件所在的服务器数量 
         :type num: int
@@ -50,7 +50,7 @@ class AIStatisticInfoResponseInfo:
     def ai_component_name(self):
         r"""Gets the ai_component_name of this AIStatisticInfoResponseInfo.
 
-        **参数解释**： AI组件对应类型的名称 **取值范围**： 字符长度1-256位 
+        **参数解释**： AI组件对应类型的名称 **取值范围**： 字符长度1-256位    
 
         :return: The ai_component_name of this AIStatisticInfoResponseInfo.
         :rtype: str
@@ -61,7 +61,7 @@ class AIStatisticInfoResponseInfo:
     def ai_component_name(self, ai_component_name):
         r"""Sets the ai_component_name of this AIStatisticInfoResponseInfo.
 
-        **参数解释**： AI组件对应类型的名称 **取值范围**： 字符长度1-256位 
+        **参数解释**： AI组件对应类型的名称 **取值范围**： 字符长度1-256位    
 
         :param ai_component_name: The ai_component_name of this AIStatisticInfoResponseInfo.
         :type ai_component_name: str

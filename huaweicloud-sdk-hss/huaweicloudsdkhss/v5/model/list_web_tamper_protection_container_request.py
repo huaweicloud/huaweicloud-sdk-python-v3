@@ -63,7 +63,7 @@ class ListWebTamperProtectionContainerRequest:
         :type container_name: str
         :param container_id: **参数解释**: 受影响容器id **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 不涉及 
         :type container_id: str
-        :param status: **参数解释**: 防护状态 **约束限制**: 不涉及 **取值范围**: - protected：防护中 - partial_protected：部分防护 - protect_failed：防护失败 **默认取值**: 不涉及 
+        :param status: **参数解释**: 防护状态 **约束限制**: 不涉及 **取值范围**: - protected：防护中 - partial_protected：部分防护 - protect_failed：防护失败  **默认取值**: 不涉及 
         :type status: str
         """
         
@@ -303,7 +303,7 @@ class ListWebTamperProtectionContainerRequest:
     def status(self):
         r"""Gets the status of this ListWebTamperProtectionContainerRequest.
 
-        **参数解释**: 防护状态 **约束限制**: 不涉及 **取值范围**: - protected：防护中 - partial_protected：部分防护 - protect_failed：防护失败 **默认取值**: 不涉及 
+        **参数解释**: 防护状态 **约束限制**: 不涉及 **取值范围**: - protected：防护中 - partial_protected：部分防护 - protect_failed：防护失败  **默认取值**: 不涉及 
 
         :return: The status of this ListWebTamperProtectionContainerRequest.
         :rtype: str
@@ -314,7 +314,7 @@ class ListWebTamperProtectionContainerRequest:
     def status(self, status):
         r"""Sets the status of this ListWebTamperProtectionContainerRequest.
 
-        **参数解释**: 防护状态 **约束限制**: 不涉及 **取值范围**: - protected：防护中 - partial_protected：部分防护 - protect_failed：防护失败 **默认取值**: 不涉及 
+        **参数解释**: 防护状态 **约束限制**: 不涉及 **取值范围**: - protected：防护中 - partial_protected：部分防护 - protect_failed：防护失败  **默认取值**: 不涉及 
 
         :param status: The status of this ListWebTamperProtectionContainerRequest.
         :type status: str

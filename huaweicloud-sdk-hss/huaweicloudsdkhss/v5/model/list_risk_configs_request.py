@@ -47,9 +47,9 @@ class ListRiskConfigsRequest:
         :type check_name: str
         :param group_id: **参数解释**: 策略组ID **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
         :type group_id: str
-        :param severity: **参数解释**: 风险等级 **约束限制**: 不涉及 **取值范围**: - Security : 安全 - Low : 低危 - Medium : 中危 - High : 高危 **默认取值**: 不涉及 
+        :param severity: **参数解释**: 风险等级 **约束限制**: 不涉及 **取值范围**: - Security : 安全 - Low : 低危 - Medium : 中危 - High : 高危  **默认取值**: 不涉及 
         :type severity: str
-        :param standard: **参数解释**: 标准类型 **约束限制**: 不涉及 **取值范围**: - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准 **默认取值**: 不涉及 
+        :param standard: **参数解释**: 标准类型 **约束限制**: 不涉及 **取值范围**: - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准  **默认取值**: 不涉及 
         :type standard: str
         :param host_id: **参数解释**: 主机id **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
         :type host_id: str
@@ -158,7 +158,7 @@ class ListRiskConfigsRequest:
     def severity(self):
         r"""Gets the severity of this ListRiskConfigsRequest.
 
-        **参数解释**: 风险等级 **约束限制**: 不涉及 **取值范围**: - Security : 安全 - Low : 低危 - Medium : 中危 - High : 高危 **默认取值**: 不涉及 
+        **参数解释**: 风险等级 **约束限制**: 不涉及 **取值范围**: - Security : 安全 - Low : 低危 - Medium : 中危 - High : 高危  **默认取值**: 不涉及 
 
         :return: The severity of this ListRiskConfigsRequest.
         :rtype: str
@@ -169,7 +169,7 @@ class ListRiskConfigsRequest:
     def severity(self, severity):
         r"""Sets the severity of this ListRiskConfigsRequest.
 
-        **参数解释**: 风险等级 **约束限制**: 不涉及 **取值范围**: - Security : 安全 - Low : 低危 - Medium : 中危 - High : 高危 **默认取值**: 不涉及 
+        **参数解释**: 风险等级 **约束限制**: 不涉及 **取值范围**: - Security : 安全 - Low : 低危 - Medium : 中危 - High : 高危  **默认取值**: 不涉及 
 
         :param severity: The severity of this ListRiskConfigsRequest.
         :type severity: str
@@ -180,7 +180,7 @@ class ListRiskConfigsRequest:
     def standard(self):
         r"""Gets the standard of this ListRiskConfigsRequest.
 
-        **参数解释**: 标准类型 **约束限制**: 不涉及 **取值范围**: - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准 **默认取值**: 不涉及 
+        **参数解释**: 标准类型 **约束限制**: 不涉及 **取值范围**: - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准  **默认取值**: 不涉及 
 
         :return: The standard of this ListRiskConfigsRequest.
         :rtype: str
@@ -191,7 +191,7 @@ class ListRiskConfigsRequest:
     def standard(self, standard):
         r"""Sets the standard of this ListRiskConfigsRequest.
 
-        **参数解释**: 标准类型 **约束限制**: 不涉及 **取值范围**: - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准 **默认取值**: 不涉及 
+        **参数解释**: 标准类型 **约束限制**: 不涉及 **取值范围**: - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准  **默认取值**: 不涉及 
 
         :param standard: The standard of this ListRiskConfigsRequest.
         :type standard: str

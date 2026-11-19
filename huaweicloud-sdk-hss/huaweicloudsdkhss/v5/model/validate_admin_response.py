@@ -28,7 +28,7 @@ class ValidateAdminResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param is_admin_account: 是否是管理员账号
+        :param is_admin_account: **参数解释**： 当前账号是否是管理员账号 **取值范围**： - true：是管理员账号 - false：不是管理员账号 
         :type is_admin_account: bool
         """
         
@@ -44,7 +44,7 @@ class ValidateAdminResponse(SdkResponse):
     def is_admin_account(self):
         r"""Gets the is_admin_account of this ValidateAdminResponse.
 
-        是否是管理员账号
+        **参数解释**： 当前账号是否是管理员账号 **取值范围**： - true：是管理员账号 - false：不是管理员账号 
 
         :return: The is_admin_account of this ValidateAdminResponse.
         :rtype: bool
@@ -55,7 +55,7 @@ class ValidateAdminResponse(SdkResponse):
     def is_admin_account(self, is_admin_account):
         r"""Sets the is_admin_account of this ValidateAdminResponse.
 
-        是否是管理员账号
+        **参数解释**： 当前账号是否是管理员账号 **取值范围**： - true：是管理员账号 - false：不是管理员账号 
 
         :param is_admin_account: The is_admin_account of this ValidateAdminResponse.
         :type is_admin_account: bool

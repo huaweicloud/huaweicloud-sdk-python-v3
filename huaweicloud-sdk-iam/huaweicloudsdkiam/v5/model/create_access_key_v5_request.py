@@ -15,28 +15,35 @@ class CreateAccessKeyV5Request:
     sensitive_list = []
 
     openapi_types = {
-        'user_id': 'str'
+        'user_id': 'str',
+        'body': 'CreateAccessKeyReqBody'
     }
 
     attribute_map = {
-        'user_id': 'user_id'
+        'user_id': 'user_id',
+        'body': 'body'
     }
 
-    def __init__(self, user_id=None):
+    def __init__(self, user_id=None, body=None):
         r"""CreateAccessKeyV5Request
 
         The model defined in huaweicloud sdk
 
         :param user_id: IAM用户ID。
         :type user_id: str
+        :param body: Body of the CreateAccessKeyV5Request
+        :type body: :class:`huaweicloudsdkiam.v5.CreateAccessKeyReqBody`
         """
         
         
 
         self._user_id = None
+        self._body = None
         self.discriminator = None
 
         self.user_id = user_id
+        if body is not None:
+            self.body = body
 
     @property
     def user_id(self):
@@ -59,6 +66,24 @@ class CreateAccessKeyV5Request:
         :type user_id: str
         """
         self._user_id = user_id
+
+    @property
+    def body(self):
+        r"""Gets the body of this CreateAccessKeyV5Request.
+
+        :return: The body of this CreateAccessKeyV5Request.
+        :rtype: :class:`huaweicloudsdkiam.v5.CreateAccessKeyReqBody`
+        """
+        return self._body
+
+    @body.setter
+    def body(self, body):
+        r"""Sets the body of this CreateAccessKeyV5Request.
+
+        :param body: The body of this CreateAccessKeyV5Request.
+        :type body: :class:`huaweicloudsdkiam.v5.CreateAccessKeyReqBody`
+        """
+        self._body = body
 
     def to_dict(self):
         result = {}

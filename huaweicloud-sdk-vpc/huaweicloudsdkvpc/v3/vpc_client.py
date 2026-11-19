@@ -2382,6 +2382,10 @@ class VpcClient(Client):
             collection_formats['instance_type'] = 'csv'
         if 'instance_project_id' in local_var_params:
             query_params.append(('instance_project_id', local_var_params['instance_project_id']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
 
@@ -2710,6 +2714,33 @@ class VpcClient(Client):
         if 'parent_id' in local_var_params:
             query_params.append(('parent_id', local_var_params['parent_id']))
             collection_formats['parent_id'] = 'multi'
+        if 'enable_eip' in local_var_params:
+            query_params.append(('enable_eip', local_var_params['enable_eip']))
+        if 'scope' in local_var_params:
+            query_params.append(('scope', local_var_params['scope']))
+        if 'security_groups' in local_var_params:
+            query_params.append(('security_groups', local_var_params['security_groups']))
+            collection_formats['security_groups'] = 'csv'
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'parent_device_id' in local_var_params:
+            query_params.append(('parent_device_id', local_var_params['parent_device_id']))
+            collection_formats['parent_device_id'] = 'csv'
+        if 'vlan_id' in local_var_params:
+            query_params.append(('vlan_id', local_var_params['vlan_id']))
+            collection_formats['vlan_id'] = 'csv'
+        if 'state' in local_var_params:
+            query_params.append(('state', local_var_params['state']))
+            collection_formats['state'] = 'csv'
+        if 'ipv6_ip_address' in local_var_params:
+            query_params.append(('ipv6_ip_address', local_var_params['ipv6_ip_address']))
+            collection_formats['ipv6_ip_address'] = 'csv'
+        if 'instance_id' in local_var_params:
+            query_params.append(('instance_id', local_var_params['instance_id']))
+            collection_formats['instance_id'] = 'csv'
+        if 'instance_type' in local_var_params:
+            query_params.append(('instance_type', local_var_params['instance_type']))
+            collection_formats['instance_type'] = 'csv'
 
         header_params = {}
 

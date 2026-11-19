@@ -21,7 +21,10 @@ class ShowServerlessComputeAbilityPolicyResponse(SdkResponse):
         'max_vcpus': 'str',
         'scale_out_switch': 'bool',
         'max_readonly_node_count': 'int',
-        'min_readonly_node_count': 'int'
+        'min_readonly_node_count': 'int',
+        'scale_to_zero': 'bool',
+        'idle_duration_seconds': 'int',
+        'scale_to_zero_status': 'str'
     }
 
     attribute_map = {
@@ -30,10 +33,13 @@ class ShowServerlessComputeAbilityPolicyResponse(SdkResponse):
         'max_vcpus': 'max_vcpus',
         'scale_out_switch': 'scale_out_switch',
         'max_readonly_node_count': 'max_readonly_node_count',
-        'min_readonly_node_count': 'min_readonly_node_count'
+        'min_readonly_node_count': 'min_readonly_node_count',
+        'scale_to_zero': 'scale_to_zero',
+        'idle_duration_seconds': 'idle_duration_seconds',
+        'scale_to_zero_status': 'scale_to_zero_status'
     }
 
-    def __init__(self, current_vcpus=None, min_vcpus=None, max_vcpus=None, scale_out_switch=None, max_readonly_node_count=None, min_readonly_node_count=None):
+    def __init__(self, current_vcpus=None, min_vcpus=None, max_vcpus=None, scale_out_switch=None, max_readonly_node_count=None, min_readonly_node_count=None, scale_to_zero=None, idle_duration_seconds=None, scale_to_zero_status=None):
         r"""ShowServerlessComputeAbilityPolicyResponse
 
         The model defined in huaweicloud sdk
@@ -48,8 +54,14 @@ class ShowServerlessComputeAbilityPolicyResponse(SdkResponse):
         :type scale_out_switch: bool
         :param max_readonly_node_count: **参数解释**：  最大只读节点个数。  **取值范围**：  ≥2。
         :type max_readonly_node_count: int
-        :param min_readonly_node_count: **参数解释**：  最小只读节点个数。  **取值范围**：  ≥1。    
+        :param min_readonly_node_count: **参数解释**：  最小只读节点个数。  **取值范围**：  ≥1。
         :type min_readonly_node_count: int
+        :param scale_to_zero: **参数解释**：  Scale to Zero开关。  **取值范围**： - true: 开启Scale to Zero。 - false: 关闭Scale to Zero。
+        :type scale_to_zero: bool
+        :param idle_duration_seconds: **参数解释**：  空闲持续时长阈值，单位是秒。  所有节点活跃连接数为0且持续达到该阈值时触发Scale to Zero（停止计算计费）。  **取值范围**：  300-3600。
+        :type idle_duration_seconds: int
+        :param scale_to_zero_status: **参数解释**：  Scale to Zero开启后实例的运行状态。  **取值范围**： - ACTIVE：实例已唤醒，正常计费。 - SCALED_TO_ZERO：计算资源停止计费。
+        :type scale_to_zero_status: str
         """
         
         super().__init__()
@@ -60,6 +72,9 @@ class ShowServerlessComputeAbilityPolicyResponse(SdkResponse):
         self._scale_out_switch = None
         self._max_readonly_node_count = None
         self._min_readonly_node_count = None
+        self._scale_to_zero = None
+        self._idle_duration_seconds = None
+        self._scale_to_zero_status = None
         self.discriminator = None
 
         if current_vcpus is not None:
@@ -74,6 +89,12 @@ class ShowServerlessComputeAbilityPolicyResponse(SdkResponse):
             self.max_readonly_node_count = max_readonly_node_count
         if min_readonly_node_count is not None:
             self.min_readonly_node_count = min_readonly_node_count
+        if scale_to_zero is not None:
+            self.scale_to_zero = scale_to_zero
+        if idle_duration_seconds is not None:
+            self.idle_duration_seconds = idle_duration_seconds
+        if scale_to_zero_status is not None:
+            self.scale_to_zero_status = scale_to_zero_status
 
     @property
     def current_vcpus(self):
@@ -189,7 +210,7 @@ class ShowServerlessComputeAbilityPolicyResponse(SdkResponse):
     def min_readonly_node_count(self):
         r"""Gets the min_readonly_node_count of this ShowServerlessComputeAbilityPolicyResponse.
 
-        **参数解释**：  最小只读节点个数。  **取值范围**：  ≥1。    
+        **参数解释**：  最小只读节点个数。  **取值范围**：  ≥1。
 
         :return: The min_readonly_node_count of this ShowServerlessComputeAbilityPolicyResponse.
         :rtype: int
@@ -200,12 +221,78 @@ class ShowServerlessComputeAbilityPolicyResponse(SdkResponse):
     def min_readonly_node_count(self, min_readonly_node_count):
         r"""Sets the min_readonly_node_count of this ShowServerlessComputeAbilityPolicyResponse.
 
-        **参数解释**：  最小只读节点个数。  **取值范围**：  ≥1。    
+        **参数解释**：  最小只读节点个数。  **取值范围**：  ≥1。
 
         :param min_readonly_node_count: The min_readonly_node_count of this ShowServerlessComputeAbilityPolicyResponse.
         :type min_readonly_node_count: int
         """
         self._min_readonly_node_count = min_readonly_node_count
+
+    @property
+    def scale_to_zero(self):
+        r"""Gets the scale_to_zero of this ShowServerlessComputeAbilityPolicyResponse.
+
+        **参数解释**：  Scale to Zero开关。  **取值范围**： - true: 开启Scale to Zero。 - false: 关闭Scale to Zero。
+
+        :return: The scale_to_zero of this ShowServerlessComputeAbilityPolicyResponse.
+        :rtype: bool
+        """
+        return self._scale_to_zero
+
+    @scale_to_zero.setter
+    def scale_to_zero(self, scale_to_zero):
+        r"""Sets the scale_to_zero of this ShowServerlessComputeAbilityPolicyResponse.
+
+        **参数解释**：  Scale to Zero开关。  **取值范围**： - true: 开启Scale to Zero。 - false: 关闭Scale to Zero。
+
+        :param scale_to_zero: The scale_to_zero of this ShowServerlessComputeAbilityPolicyResponse.
+        :type scale_to_zero: bool
+        """
+        self._scale_to_zero = scale_to_zero
+
+    @property
+    def idle_duration_seconds(self):
+        r"""Gets the idle_duration_seconds of this ShowServerlessComputeAbilityPolicyResponse.
+
+        **参数解释**：  空闲持续时长阈值，单位是秒。  所有节点活跃连接数为0且持续达到该阈值时触发Scale to Zero（停止计算计费）。  **取值范围**：  300-3600。
+
+        :return: The idle_duration_seconds of this ShowServerlessComputeAbilityPolicyResponse.
+        :rtype: int
+        """
+        return self._idle_duration_seconds
+
+    @idle_duration_seconds.setter
+    def idle_duration_seconds(self, idle_duration_seconds):
+        r"""Sets the idle_duration_seconds of this ShowServerlessComputeAbilityPolicyResponse.
+
+        **参数解释**：  空闲持续时长阈值，单位是秒。  所有节点活跃连接数为0且持续达到该阈值时触发Scale to Zero（停止计算计费）。  **取值范围**：  300-3600。
+
+        :param idle_duration_seconds: The idle_duration_seconds of this ShowServerlessComputeAbilityPolicyResponse.
+        :type idle_duration_seconds: int
+        """
+        self._idle_duration_seconds = idle_duration_seconds
+
+    @property
+    def scale_to_zero_status(self):
+        r"""Gets the scale_to_zero_status of this ShowServerlessComputeAbilityPolicyResponse.
+
+        **参数解释**：  Scale to Zero开启后实例的运行状态。  **取值范围**： - ACTIVE：实例已唤醒，正常计费。 - SCALED_TO_ZERO：计算资源停止计费。
+
+        :return: The scale_to_zero_status of this ShowServerlessComputeAbilityPolicyResponse.
+        :rtype: str
+        """
+        return self._scale_to_zero_status
+
+    @scale_to_zero_status.setter
+    def scale_to_zero_status(self, scale_to_zero_status):
+        r"""Sets the scale_to_zero_status of this ShowServerlessComputeAbilityPolicyResponse.
+
+        **参数解释**：  Scale to Zero开启后实例的运行状态。  **取值范围**： - ACTIVE：实例已唤醒，正常计费。 - SCALED_TO_ZERO：计算资源停止计费。
+
+        :param scale_to_zero_status: The scale_to_zero_status of this ShowServerlessComputeAbilityPolicyResponse.
+        :type scale_to_zero_status: str
+        """
+        self._scale_to_zero_status = scale_to_zero_status
 
     def to_dict(self):
         import warnings

@@ -67,7 +67,7 @@ class ListCheckRulesInfoRequest:
         :type instance_id: str
         :param image_id: **参数解释**: 镜像id **约束限制**： 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
         :type image_id: str
-        :param scan_result: **参数解释**: 检测结果 **约束限制**: 不涉及 **取值范围**:   - pass：通过   - failed：未通过 **默认取值**: 不涉及
+        :param scan_result: **参数解释**: 检测结果 **约束限制**: 不涉及 **取值范围**:   - pass：通过   - failed：未通过  **默认取值**: 不涉及
         :type scan_result: str
         """
         
@@ -331,7 +331,7 @@ class ListCheckRulesInfoRequest:
     def scan_result(self):
         r"""Gets the scan_result of this ListCheckRulesInfoRequest.
 
-        **参数解释**: 检测结果 **约束限制**: 不涉及 **取值范围**:   - pass：通过   - failed：未通过 **默认取值**: 不涉及
+        **参数解释**: 检测结果 **约束限制**: 不涉及 **取值范围**:   - pass：通过   - failed：未通过  **默认取值**: 不涉及
 
         :return: The scan_result of this ListCheckRulesInfoRequest.
         :rtype: str
@@ -342,7 +342,7 @@ class ListCheckRulesInfoRequest:
     def scan_result(self, scan_result):
         r"""Sets the scan_result of this ListCheckRulesInfoRequest.
 
-        **参数解释**: 检测结果 **约束限制**: 不涉及 **取值范围**:   - pass：通过   - failed：未通过 **默认取值**: 不涉及
+        **参数解释**: 检测结果 **约束限制**: 不涉及 **取值范围**:   - pass：通过   - failed：未通过  **默认取值**: 不涉及
 
         :param scan_result: The scan_result of this ListCheckRulesInfoRequest.
         :type scan_result: str

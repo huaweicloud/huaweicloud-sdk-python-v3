@@ -49,7 +49,7 @@ class ListImageFilesRequest:
         :type limit: int
         :param offset: **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
         :type offset: int
-        :param image_type: **参数解释**: 镜像类型 **取值范围**: - private_image : 私有镜像仓库 - shared_image : 共享镜像仓库 - instance_image : 企业镜像 - cicd : cicd镜像 - harbor ：Harbor仓库镜像 **默认取值**: 不涉及 
+        :param image_type: **参数解释**: 镜像类型 **取值范围**: - private_image : 私有镜像仓库 - shared_image : 共享镜像仓库 - instance_image : 企业镜像 - cicd : cicd镜像 - harbor ：Harbor仓库镜像  **默认取值**: 不涉及 
         :type image_type: str
         :param image_id: **参数解释**: 镜像id **取值范围**: 字符长度0-256位 **默认取值**: 不涉及 
         :type image_id: str
@@ -163,7 +163,7 @@ class ListImageFilesRequest:
     def image_type(self):
         r"""Gets the image_type of this ListImageFilesRequest.
 
-        **参数解释**: 镜像类型 **取值范围**: - private_image : 私有镜像仓库 - shared_image : 共享镜像仓库 - instance_image : 企业镜像 - cicd : cicd镜像 - harbor ：Harbor仓库镜像 **默认取值**: 不涉及 
+        **参数解释**: 镜像类型 **取值范围**: - private_image : 私有镜像仓库 - shared_image : 共享镜像仓库 - instance_image : 企业镜像 - cicd : cicd镜像 - harbor ：Harbor仓库镜像  **默认取值**: 不涉及 
 
         :return: The image_type of this ListImageFilesRequest.
         :rtype: str
@@ -174,7 +174,7 @@ class ListImageFilesRequest:
     def image_type(self, image_type):
         r"""Sets the image_type of this ListImageFilesRequest.
 
-        **参数解释**: 镜像类型 **取值范围**: - private_image : 私有镜像仓库 - shared_image : 共享镜像仓库 - instance_image : 企业镜像 - cicd : cicd镜像 - harbor ：Harbor仓库镜像 **默认取值**: 不涉及 
+        **参数解释**: 镜像类型 **取值范围**: - private_image : 私有镜像仓库 - shared_image : 共享镜像仓库 - instance_image : 企业镜像 - cicd : cicd镜像 - harbor ：Harbor仓库镜像  **默认取值**: 不涉及 
 
         :param image_type: The image_type of this ListImageFilesRequest.
         :type image_type: str

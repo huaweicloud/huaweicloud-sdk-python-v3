@@ -45,15 +45,15 @@ class ProtectionInfoRequestInfo:
 
         The model defined in huaweicloud sdk
 
-        :param operating_system: **参数解释**: 策略支持的操作系统 **约束限制**: 不涉及 **取值范围**: 包含如下：   - Windows : Windows系统   - Linux : Linux系统 **默认取值**: 不涉及
+        :param operating_system: **参数解释**: 策略支持的操作系统 **约束限制**: 不涉及 **取值范围**: 包含如下：   - Windows : Windows系统   - Linux : Linux系统  **默认取值**: 不涉及
         :type operating_system: str
-        :param ransom_protection_status: **参数解释**: 勒索防护是否开启，若开启勒索病毒防护，则必填protection_policy_id或者create_protection_policy其中一项。 **约束限制**: 不涉及 **取值范围**: 包含如下：   - closed ：关闭。   - opened ：开启。 **默认取值**: 不涉及
+        :param ransom_protection_status: **参数解释**: 勒索防护是否开启，若开启勒索病毒防护，则必填protection_policy_id或者create_protection_policy其中一项。 **约束限制**: 不涉及 **取值范围**: 包含如下：   - closed ：关闭。   - opened ：开启。  **默认取值**: 不涉及
         :type ransom_protection_status: str
         :param protection_policy_id: **参数解释**: 勒索防护策略ID，若开启勒索防护，选择已有策略防护，则该字段必选。 **约束限制**: 不涉及 **取值范围**: 字符长度0-64 **默认取值**: 不涉及 
         :type protection_policy_id: str
         :param create_protection_policy: 
         :type create_protection_policy: :class:`huaweicloudsdkhss.v5.ProtectionProxyInfoRequestInfo`
-        :param backup_protection_status: **参数解释**: 是否服务器备份，若选择开启服务器备份，则backup_cycle必填 **约束限制**: 不涉及 **取值范围**: 包含如下：   - closed ：关闭。   - opened ：开启。 **默认取值**: 不涉及
+        :param backup_protection_status: **参数解释**: 是否服务器备份，若选择开启服务器备份，则backup_cycle必填 **约束限制**: 不涉及 **取值范围**: 包含如下：   - closed ：关闭。   - opened ：开启。  **默认取值**: 不涉及
         :type backup_protection_status: str
         :param backup_resources: 
         :type backup_resources: :class:`huaweicloudsdkhss.v5.BackupResources`
@@ -101,7 +101,7 @@ class ProtectionInfoRequestInfo:
     def operating_system(self):
         r"""Gets the operating_system of this ProtectionInfoRequestInfo.
 
-        **参数解释**: 策略支持的操作系统 **约束限制**: 不涉及 **取值范围**: 包含如下：   - Windows : Windows系统   - Linux : Linux系统 **默认取值**: 不涉及
+        **参数解释**: 策略支持的操作系统 **约束限制**: 不涉及 **取值范围**: 包含如下：   - Windows : Windows系统   - Linux : Linux系统  **默认取值**: 不涉及
 
         :return: The operating_system of this ProtectionInfoRequestInfo.
         :rtype: str
@@ -112,7 +112,7 @@ class ProtectionInfoRequestInfo:
     def operating_system(self, operating_system):
         r"""Sets the operating_system of this ProtectionInfoRequestInfo.
 
-        **参数解释**: 策略支持的操作系统 **约束限制**: 不涉及 **取值范围**: 包含如下：   - Windows : Windows系统   - Linux : Linux系统 **默认取值**: 不涉及
+        **参数解释**: 策略支持的操作系统 **约束限制**: 不涉及 **取值范围**: 包含如下：   - Windows : Windows系统   - Linux : Linux系统  **默认取值**: 不涉及
 
         :param operating_system: The operating_system of this ProtectionInfoRequestInfo.
         :type operating_system: str
@@ -123,7 +123,7 @@ class ProtectionInfoRequestInfo:
     def ransom_protection_status(self):
         r"""Gets the ransom_protection_status of this ProtectionInfoRequestInfo.
 
-        **参数解释**: 勒索防护是否开启，若开启勒索病毒防护，则必填protection_policy_id或者create_protection_policy其中一项。 **约束限制**: 不涉及 **取值范围**: 包含如下：   - closed ：关闭。   - opened ：开启。 **默认取值**: 不涉及
+        **参数解释**: 勒索防护是否开启，若开启勒索病毒防护，则必填protection_policy_id或者create_protection_policy其中一项。 **约束限制**: 不涉及 **取值范围**: 包含如下：   - closed ：关闭。   - opened ：开启。  **默认取值**: 不涉及
 
         :return: The ransom_protection_status of this ProtectionInfoRequestInfo.
         :rtype: str
@@ -134,7 +134,7 @@ class ProtectionInfoRequestInfo:
     def ransom_protection_status(self, ransom_protection_status):
         r"""Sets the ransom_protection_status of this ProtectionInfoRequestInfo.
 
-        **参数解释**: 勒索防护是否开启，若开启勒索病毒防护，则必填protection_policy_id或者create_protection_policy其中一项。 **约束限制**: 不涉及 **取值范围**: 包含如下：   - closed ：关闭。   - opened ：开启。 **默认取值**: 不涉及
+        **参数解释**: 勒索防护是否开启，若开启勒索病毒防护，则必填protection_policy_id或者create_protection_policy其中一项。 **约束限制**: 不涉及 **取值范围**: 包含如下：   - closed ：关闭。   - opened ：开启。  **默认取值**: 不涉及
 
         :param ransom_protection_status: The ransom_protection_status of this ProtectionInfoRequestInfo.
         :type ransom_protection_status: str
@@ -185,7 +185,7 @@ class ProtectionInfoRequestInfo:
     def backup_protection_status(self):
         r"""Gets the backup_protection_status of this ProtectionInfoRequestInfo.
 
-        **参数解释**: 是否服务器备份，若选择开启服务器备份，则backup_cycle必填 **约束限制**: 不涉及 **取值范围**: 包含如下：   - closed ：关闭。   - opened ：开启。 **默认取值**: 不涉及
+        **参数解释**: 是否服务器备份，若选择开启服务器备份，则backup_cycle必填 **约束限制**: 不涉及 **取值范围**: 包含如下：   - closed ：关闭。   - opened ：开启。  **默认取值**: 不涉及
 
         :return: The backup_protection_status of this ProtectionInfoRequestInfo.
         :rtype: str
@@ -196,7 +196,7 @@ class ProtectionInfoRequestInfo:
     def backup_protection_status(self, backup_protection_status):
         r"""Sets the backup_protection_status of this ProtectionInfoRequestInfo.
 
-        **参数解释**: 是否服务器备份，若选择开启服务器备份，则backup_cycle必填 **约束限制**: 不涉及 **取值范围**: 包含如下：   - closed ：关闭。   - opened ：开启。 **默认取值**: 不涉及
+        **参数解释**: 是否服务器备份，若选择开启服务器备份，则backup_cycle必填 **约束限制**: 不涉及 **取值范围**: 包含如下：   - closed ：关闭。   - opened ：开启。  **默认取值**: 不涉及
 
         :param backup_protection_status: The backup_protection_status of this ProtectionInfoRequestInfo.
         :type backup_protection_status: str

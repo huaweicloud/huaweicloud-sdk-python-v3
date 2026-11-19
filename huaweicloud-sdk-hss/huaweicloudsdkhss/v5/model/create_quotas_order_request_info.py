@@ -37,9 +37,9 @@ class CreateQuotasOrderRequestInfo:
 
         The model defined in huaweicloud sdk
 
-        :param resource_spec_code: **参数解释**： 资源规格 **约束限制**: 不涉及 **取值范围**： - hss.version.basic ：基础版。 - hss.version.advanced ：专业版。 - hss.version.enterprise ：企业版。 - hss.version.premium ：旗舰版。 - hss.version.wtp ：网页防篡改版。 - hss.version.container.enterprise：容器版。 **默认取值**: 不涉及
+        :param resource_spec_code: **参数解释**： 资源规格 **约束限制**: 不涉及 **取值范围**： - hss.version.basic ：基础版。 - hss.version.advanced ：专业版。 - hss.version.enterprise ：企业版。 - hss.version.premium ：旗舰版。 - hss.version.wtp ：网页防篡改版。 - hss.version.container.enterprise：容器版。  **默认取值**: 不涉及
         :type resource_spec_code: str
-        :param period_type: **参数解释**： 订购周期类型 **约束限制**: 不涉及 **取值范围**： - 2 : 月 - 3 : 年 **默认取值**: 不涉及
+        :param period_type: **参数解释**： 订购周期类型 **约束限制**: 不涉及 **取值范围**： - 2 : 月 - 3 : 年  **默认取值**: 不涉及
         :type period_type: int
         :param period_num: **参数解释**： 订购周期数 **约束限制**: 不涉及 **取值范围**： 整数类型1-1000 **默认取值**: 不涉及
         :type period_num: int
@@ -74,7 +74,7 @@ class CreateQuotasOrderRequestInfo:
     def resource_spec_code(self):
         r"""Gets the resource_spec_code of this CreateQuotasOrderRequestInfo.
 
-        **参数解释**： 资源规格 **约束限制**: 不涉及 **取值范围**： - hss.version.basic ：基础版。 - hss.version.advanced ：专业版。 - hss.version.enterprise ：企业版。 - hss.version.premium ：旗舰版。 - hss.version.wtp ：网页防篡改版。 - hss.version.container.enterprise：容器版。 **默认取值**: 不涉及
+        **参数解释**： 资源规格 **约束限制**: 不涉及 **取值范围**： - hss.version.basic ：基础版。 - hss.version.advanced ：专业版。 - hss.version.enterprise ：企业版。 - hss.version.premium ：旗舰版。 - hss.version.wtp ：网页防篡改版。 - hss.version.container.enterprise：容器版。  **默认取值**: 不涉及
 
         :return: The resource_spec_code of this CreateQuotasOrderRequestInfo.
         :rtype: str
@@ -85,7 +85,7 @@ class CreateQuotasOrderRequestInfo:
     def resource_spec_code(self, resource_spec_code):
         r"""Sets the resource_spec_code of this CreateQuotasOrderRequestInfo.
 
-        **参数解释**： 资源规格 **约束限制**: 不涉及 **取值范围**： - hss.version.basic ：基础版。 - hss.version.advanced ：专业版。 - hss.version.enterprise ：企业版。 - hss.version.premium ：旗舰版。 - hss.version.wtp ：网页防篡改版。 - hss.version.container.enterprise：容器版。 **默认取值**: 不涉及
+        **参数解释**： 资源规格 **约束限制**: 不涉及 **取值范围**： - hss.version.basic ：基础版。 - hss.version.advanced ：专业版。 - hss.version.enterprise ：企业版。 - hss.version.premium ：旗舰版。 - hss.version.wtp ：网页防篡改版。 - hss.version.container.enterprise：容器版。  **默认取值**: 不涉及
 
         :param resource_spec_code: The resource_spec_code of this CreateQuotasOrderRequestInfo.
         :type resource_spec_code: str
@@ -96,7 +96,7 @@ class CreateQuotasOrderRequestInfo:
     def period_type(self):
         r"""Gets the period_type of this CreateQuotasOrderRequestInfo.
 
-        **参数解释**： 订购周期类型 **约束限制**: 不涉及 **取值范围**： - 2 : 月 - 3 : 年 **默认取值**: 不涉及
+        **参数解释**： 订购周期类型 **约束限制**: 不涉及 **取值范围**： - 2 : 月 - 3 : 年  **默认取值**: 不涉及
 
         :return: The period_type of this CreateQuotasOrderRequestInfo.
         :rtype: int
@@ -107,7 +107,7 @@ class CreateQuotasOrderRequestInfo:
     def period_type(self, period_type):
         r"""Sets the period_type of this CreateQuotasOrderRequestInfo.
 
-        **参数解释**： 订购周期类型 **约束限制**: 不涉及 **取值范围**： - 2 : 月 - 3 : 年 **默认取值**: 不涉及
+        **参数解释**： 订购周期类型 **约束限制**: 不涉及 **取值范围**： - 2 : 月 - 3 : 年  **默认取值**: 不涉及
 
         :param period_type: The period_type of this CreateQuotasOrderRequestInfo.
         :type period_type: int

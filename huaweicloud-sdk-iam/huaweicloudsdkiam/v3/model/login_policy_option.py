@@ -21,7 +21,8 @@ class LoginPolicyOption:
         'login_failed_times': 'int',
         'period_with_login_failures': 'int',
         'session_timeout': 'int',
-        'show_recent_login_info': 'bool'
+        'show_recent_login_info': 'bool',
+        'allow_sms_login': 'bool'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class LoginPolicyOption:
         'login_failed_times': 'login_failed_times',
         'period_with_login_failures': 'period_with_login_failures',
         'session_timeout': 'session_timeout',
-        'show_recent_login_info': 'show_recent_login_info'
+        'show_recent_login_info': 'show_recent_login_info',
+        'allow_sms_login': 'allow_sms_login'
     }
 
-    def __init__(self, account_validity_period=None, custom_info_for_login=None, lockout_duration=None, login_failed_times=None, period_with_login_failures=None, session_timeout=None, show_recent_login_info=None):
+    def __init__(self, account_validity_period=None, custom_info_for_login=None, lockout_duration=None, login_failed_times=None, period_with_login_failures=None, session_timeout=None, show_recent_login_info=None, allow_sms_login=None):
         r"""LoginPolicyOption
 
         The model defined in huaweicloud sdk
@@ -53,6 +55,8 @@ class LoginPolicyOption:
         :type session_timeout: int
         :param show_recent_login_info: 显示最近一次的登录信息。取值范围true或false。
         :type show_recent_login_info: bool
+        :param allow_sms_login: 允许账号短信登录。取值范围true或false。
+        :type allow_sms_login: bool
         """
         
         
@@ -64,6 +68,7 @@ class LoginPolicyOption:
         self._period_with_login_failures = None
         self._session_timeout = None
         self._show_recent_login_info = None
+        self._allow_sms_login = None
         self.discriminator = None
 
         if account_validity_period is not None:
@@ -80,6 +85,8 @@ class LoginPolicyOption:
             self.session_timeout = session_timeout
         if show_recent_login_info is not None:
             self.show_recent_login_info = show_recent_login_info
+        if allow_sms_login is not None:
+            self.allow_sms_login = allow_sms_login
 
     @property
     def account_validity_period(self):
@@ -234,6 +241,28 @@ class LoginPolicyOption:
         :type show_recent_login_info: bool
         """
         self._show_recent_login_info = show_recent_login_info
+
+    @property
+    def allow_sms_login(self):
+        r"""Gets the allow_sms_login of this LoginPolicyOption.
+
+        允许账号短信登录。取值范围true或false。
+
+        :return: The allow_sms_login of this LoginPolicyOption.
+        :rtype: bool
+        """
+        return self._allow_sms_login
+
+    @allow_sms_login.setter
+    def allow_sms_login(self, allow_sms_login):
+        r"""Sets the allow_sms_login of this LoginPolicyOption.
+
+        允许账号短信登录。取值范围true或false。
+
+        :param allow_sms_login: The allow_sms_login of this LoginPolicyOption.
+        :type allow_sms_login: bool
+        """
+        self._allow_sms_login = allow_sms_login
 
     def to_dict(self):
         result = {}

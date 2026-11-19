@@ -59,7 +59,7 @@ class AddProtectionPolicyInfoRequestInfo:
         :type operating_system: str
         :param process_whitelist: 进程白名单
         :type process_whitelist: list[:class:`huaweicloudsdkhss.v5.TrustProcessInfo`]
-        :param ai_protection_status: **参数解释**: 是否开启AI勒索防护 **约束限制**: 不涉及 **取值范围**: 包含两种：   - opened ：开启。   - closed ：关闭。 **默认取值**: closed
+        :param ai_protection_status: **参数解释**: 是否开启AI勒索防护 **约束限制**: 不涉及 **取值范围**: 包含两种：   - opened ：开启。   - closed ：关闭。  **默认取值**: closed
         :type ai_protection_status: str
         """
         
@@ -270,7 +270,7 @@ class AddProtectionPolicyInfoRequestInfo:
     def ai_protection_status(self):
         r"""Gets the ai_protection_status of this AddProtectionPolicyInfoRequestInfo.
 
-        **参数解释**: 是否开启AI勒索防护 **约束限制**: 不涉及 **取值范围**: 包含两种：   - opened ：开启。   - closed ：关闭。 **默认取值**: closed
+        **参数解释**: 是否开启AI勒索防护 **约束限制**: 不涉及 **取值范围**: 包含两种：   - opened ：开启。   - closed ：关闭。  **默认取值**: closed
 
         :return: The ai_protection_status of this AddProtectionPolicyInfoRequestInfo.
         :rtype: str
@@ -281,7 +281,7 @@ class AddProtectionPolicyInfoRequestInfo:
     def ai_protection_status(self, ai_protection_status):
         r"""Sets the ai_protection_status of this AddProtectionPolicyInfoRequestInfo.
 
-        **参数解释**: 是否开启AI勒索防护 **约束限制**: 不涉及 **取值范围**: 包含两种：   - opened ：开启。   - closed ：关闭。 **默认取值**: closed
+        **参数解释**: 是否开启AI勒索防护 **约束限制**: 不涉及 **取值范围**: 包含两种：   - opened ：开启。   - closed ：关闭。  **默认取值**: closed
 
         :param ai_protection_status: The ai_protection_status of this AddProtectionPolicyInfoRequestInfo.
         :type ai_protection_status: str

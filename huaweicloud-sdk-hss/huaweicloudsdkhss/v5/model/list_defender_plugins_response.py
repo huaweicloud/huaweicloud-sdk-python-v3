@@ -4,7 +4,7 @@ from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ListCceClusterDetectRiskResponse(SdkResponse):
+class ListDefenderPluginsResponse(SdkResponse):
 
     """
     Attributes:
@@ -17,7 +17,7 @@ class ListCceClusterDetectRiskResponse(SdkResponse):
 
     openapi_types = {
         'total_num': 'int',
-        'data_list': 'list[NodeDetectRiskResponseInfo]'
+        'data_list': 'list[ListDefenderPluginsResponseBodyData]'
     }
 
     attribute_map = {
@@ -26,14 +26,14 @@ class ListCceClusterDetectRiskResponse(SdkResponse):
     }
 
     def __init__(self, total_num=None, data_list=None):
-        r"""ListCceClusterDetectRiskResponse
+        r"""ListDefenderPluginsResponse
 
         The model defined in huaweicloud sdk
 
-        :param total_num: 集群总数
+        :param total_num: **参数解释**： 总记录数 **取值范围**： 最小值0，最大值2000000 
         :type total_num: int
-        :param data_list: 集群信息列表
-        :type data_list: list[:class:`huaweicloudsdkhss.v5.NodeDetectRiskResponseInfo`]
+        :param data_list: **参数解释**： 插件列表 **取值范围**： 0~200条 
+        :type data_list: list[:class:`huaweicloudsdkhss.v5.ListDefenderPluginsResponseBodyData`]
         """
         
         super().__init__()
@@ -49,51 +49,51 @@ class ListCceClusterDetectRiskResponse(SdkResponse):
 
     @property
     def total_num(self):
-        r"""Gets the total_num of this ListCceClusterDetectRiskResponse.
+        r"""Gets the total_num of this ListDefenderPluginsResponse.
 
-        集群总数
+        **参数解释**： 总记录数 **取值范围**： 最小值0，最大值2000000 
 
-        :return: The total_num of this ListCceClusterDetectRiskResponse.
+        :return: The total_num of this ListDefenderPluginsResponse.
         :rtype: int
         """
         return self._total_num
 
     @total_num.setter
     def total_num(self, total_num):
-        r"""Sets the total_num of this ListCceClusterDetectRiskResponse.
+        r"""Sets the total_num of this ListDefenderPluginsResponse.
 
-        集群总数
+        **参数解释**： 总记录数 **取值范围**： 最小值0，最大值2000000 
 
-        :param total_num: The total_num of this ListCceClusterDetectRiskResponse.
+        :param total_num: The total_num of this ListDefenderPluginsResponse.
         :type total_num: int
         """
         self._total_num = total_num
 
     @property
     def data_list(self):
-        r"""Gets the data_list of this ListCceClusterDetectRiskResponse.
+        r"""Gets the data_list of this ListDefenderPluginsResponse.
 
-        集群信息列表
+        **参数解释**： 插件列表 **取值范围**： 0~200条 
 
-        :return: The data_list of this ListCceClusterDetectRiskResponse.
-        :rtype: list[:class:`huaweicloudsdkhss.v5.NodeDetectRiskResponseInfo`]
+        :return: The data_list of this ListDefenderPluginsResponse.
+        :rtype: list[:class:`huaweicloudsdkhss.v5.ListDefenderPluginsResponseBodyData`]
         """
         return self._data_list
 
     @data_list.setter
     def data_list(self, data_list):
-        r"""Sets the data_list of this ListCceClusterDetectRiskResponse.
+        r"""Sets the data_list of this ListDefenderPluginsResponse.
 
-        集群信息列表
+        **参数解释**： 插件列表 **取值范围**： 0~200条 
 
-        :param data_list: The data_list of this ListCceClusterDetectRiskResponse.
-        :type data_list: list[:class:`huaweicloudsdkhss.v5.NodeDetectRiskResponseInfo`]
+        :param data_list: The data_list of this ListDefenderPluginsResponse.
+        :type data_list: list[:class:`huaweicloudsdkhss.v5.ListDefenderPluginsResponseBodyData`]
         """
         self._data_list = data_list
 
     def to_dict(self):
         import warnings
-        warnings.warn("ListCceClusterDetectRiskResponse.to_dict() is deprecated and no longer maintained, "
+        warnings.warn("ListDefenderPluginsResponse.to_dict() is deprecated and no longer maintained, "
                       "use to_json_object() to get the response content.", DeprecationWarning)
         result = {}
 
@@ -131,7 +131,7 @@ class ListCceClusterDetectRiskResponse(SdkResponse):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ListCceClusterDetectRiskResponse):
+        if not isinstance(other, ListDefenderPluginsResponse):
             return False
 
         return self.__dict__ == other.__dict__

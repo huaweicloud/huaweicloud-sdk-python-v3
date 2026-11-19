@@ -15,7 +15,6 @@ class ListSecurityReportRequest:
     sensitive_list = []
 
     openapi_types = {
-        'region': 'str',
         'enterprise_project_id': 'str',
         'report_category': 'str',
         'offset': 'int',
@@ -23,23 +22,20 @@ class ListSecurityReportRequest:
     }
 
     attribute_map = {
-        'region': 'region',
         'enterprise_project_id': 'enterprise_project_id',
         'report_category': 'report_category',
         'offset': 'offset',
         'limit': 'limit'
     }
 
-    def __init__(self, region=None, enterprise_project_id=None, report_category=None, offset=None, limit=None):
+    def __init__(self, enterprise_project_id=None, report_category=None, offset=None, limit=None):
         r"""ListSecurityReportRequest
 
         The model defined in huaweicloud sdk
 
-        :param region: **参数解释**: 区域ID，用于查询目的区域内的资产。获取方式请参见[获取区域ID](hss_02_0026.xml)。 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
-        :type region: str
         :param enterprise_project_id: **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
         :type enterprise_project_id: str
-        :param report_category: **参数解释**: \&quot;报告类别(不传默认是全部)\&quot;  **约束限制**:  不涉及  **取值范围**:  - daily_report：安全日报  - weekly_report：安全周报  - monthly_report：安全月报  - custom_report：自定义报告  **默认取值**:  不涉及，不传默认是全部 
+        :param report_category: **参数解释**: 报告类别，不传默认查询全部类别。 **约束限制**: 不涉及 **取值范围**: - daily_report：日报 - weekly_report：周报 - monthly_report：月报 - custom_report：自定义报告  **默认取值**: 不涉及 
         :type report_category: str
         :param offset: **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
         :type offset: int
@@ -49,15 +45,12 @@ class ListSecurityReportRequest:
         
         
 
-        self._region = None
         self._enterprise_project_id = None
         self._report_category = None
         self._offset = None
         self._limit = None
         self.discriminator = None
 
-        if region is not None:
-            self.region = region
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         if report_category is not None:
@@ -66,28 +59,6 @@ class ListSecurityReportRequest:
             self.offset = offset
         if limit is not None:
             self.limit = limit
-
-    @property
-    def region(self):
-        r"""Gets the region of this ListSecurityReportRequest.
-
-        **参数解释**: 区域ID，用于查询目的区域内的资产。获取方式请参见[获取区域ID](hss_02_0026.xml)。 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
-
-        :return: The region of this ListSecurityReportRequest.
-        :rtype: str
-        """
-        return self._region
-
-    @region.setter
-    def region(self, region):
-        r"""Sets the region of this ListSecurityReportRequest.
-
-        **参数解释**: 区域ID，用于查询目的区域内的资产。获取方式请参见[获取区域ID](hss_02_0026.xml)。 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
-
-        :param region: The region of this ListSecurityReportRequest.
-        :type region: str
-        """
-        self._region = region
 
     @property
     def enterprise_project_id(self):
@@ -115,7 +86,7 @@ class ListSecurityReportRequest:
     def report_category(self):
         r"""Gets the report_category of this ListSecurityReportRequest.
 
-        **参数解释**: \"报告类别(不传默认是全部)\"  **约束限制**:  不涉及  **取值范围**:  - daily_report：安全日报  - weekly_report：安全周报  - monthly_report：安全月报  - custom_report：自定义报告  **默认取值**:  不涉及，不传默认是全部 
+        **参数解释**: 报告类别，不传默认查询全部类别。 **约束限制**: 不涉及 **取值范围**: - daily_report：日报 - weekly_report：周报 - monthly_report：月报 - custom_report：自定义报告  **默认取值**: 不涉及 
 
         :return: The report_category of this ListSecurityReportRequest.
         :rtype: str
@@ -126,7 +97,7 @@ class ListSecurityReportRequest:
     def report_category(self, report_category):
         r"""Sets the report_category of this ListSecurityReportRequest.
 
-        **参数解释**: \"报告类别(不传默认是全部)\"  **约束限制**:  不涉及  **取值范围**:  - daily_report：安全日报  - weekly_report：安全周报  - monthly_report：安全月报  - custom_report：自定义报告  **默认取值**:  不涉及，不传默认是全部 
+        **参数解释**: 报告类别，不传默认查询全部类别。 **约束限制**: 不涉及 **取值范围**: - daily_report：日报 - weekly_report：周报 - monthly_report：月报 - custom_report：自定义报告  **默认取值**: 不涉及 
 
         :param report_category: The report_category of this ListSecurityReportRequest.
         :type report_category: str

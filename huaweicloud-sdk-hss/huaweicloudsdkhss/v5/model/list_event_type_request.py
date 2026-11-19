@@ -73,7 +73,7 @@ class ListEventTypeRequest:
         :type end_time: int
         :param last_days: 查询时间范围天数，与自定义查询时间begin_time，end_time互斥
         :type last_days: int
-        :param category: **参数解释**: 事件类别 **约束限制**: 不涉及 **取值范围**: - host : 主机安全事件 - container : 容器安全事件 - serverless : serverless场景安全事件 **默认取值**: 不涉及 
+        :param category: **参数解释**: 事件类别 **约束限制**: 不涉及 **取值范围**: - host : 主机安全事件 - container : 容器安全事件 - serverless : serverless场景安全事件  **默认取值**: 不涉及 
         :type category: str
         :param host_name: 服务器名称
         :type host_name: str
@@ -278,7 +278,7 @@ class ListEventTypeRequest:
     def category(self):
         r"""Gets the category of this ListEventTypeRequest.
 
-        **参数解释**: 事件类别 **约束限制**: 不涉及 **取值范围**: - host : 主机安全事件 - container : 容器安全事件 - serverless : serverless场景安全事件 **默认取值**: 不涉及 
+        **参数解释**: 事件类别 **约束限制**: 不涉及 **取值范围**: - host : 主机安全事件 - container : 容器安全事件 - serverless : serverless场景安全事件  **默认取值**: 不涉及 
 
         :return: The category of this ListEventTypeRequest.
         :rtype: str
@@ -289,7 +289,7 @@ class ListEventTypeRequest:
     def category(self, category):
         r"""Sets the category of this ListEventTypeRequest.
 
-        **参数解释**: 事件类别 **约束限制**: 不涉及 **取值范围**: - host : 主机安全事件 - container : 容器安全事件 - serverless : serverless场景安全事件 **默认取值**: 不涉及 
+        **参数解释**: 事件类别 **约束限制**: 不涉及 **取值范围**: - host : 主机安全事件 - container : 容器安全事件 - serverless : serverless场景安全事件  **默认取值**: 不涉及 
 
         :param category: The category of this ListEventTypeRequest.
         :type category: str

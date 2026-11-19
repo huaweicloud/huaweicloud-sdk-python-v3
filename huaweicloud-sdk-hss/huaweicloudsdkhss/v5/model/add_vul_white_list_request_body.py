@@ -45,7 +45,7 @@ class AddVulWhiteListRequestBody:
         :type rule_type: str
         :param host_ids: **参数解释**: 主机ID列表，当rule_type为specific_host时，该字段必填 **约束限制**: 不涉及 **取值范围**: 最小值1，最大值1000 **默认取值**: 不涉及 
         :type host_ids: list[str]
-        :param with_ignore: **参数解释**: 是否忽略当前已扫描出的漏洞 **约束限制**: 不涉及 **取值范围**: - true：忽略 - false：不忽略 **默认取值**: true 
+        :param with_ignore: **参数解释**: 是否忽略当前已扫描出的漏洞 **约束限制**: 不涉及 **取值范围**: - true：忽略 - false：不忽略  **默认取值**: true 
         :type with_ignore: bool
         :param description: **参数解释**: 白名单的描述信息 **约束限制**: 不涉及 **取值范围**: 字符长度0-1000 **默认取值**: 不涉及 
         :type description: str
@@ -163,7 +163,7 @@ class AddVulWhiteListRequestBody:
     def with_ignore(self):
         r"""Gets the with_ignore of this AddVulWhiteListRequestBody.
 
-        **参数解释**: 是否忽略当前已扫描出的漏洞 **约束限制**: 不涉及 **取值范围**: - true：忽略 - false：不忽略 **默认取值**: true 
+        **参数解释**: 是否忽略当前已扫描出的漏洞 **约束限制**: 不涉及 **取值范围**: - true：忽略 - false：不忽略  **默认取值**: true 
 
         :return: The with_ignore of this AddVulWhiteListRequestBody.
         :rtype: bool
@@ -174,7 +174,7 @@ class AddVulWhiteListRequestBody:
     def with_ignore(self, with_ignore):
         r"""Sets the with_ignore of this AddVulWhiteListRequestBody.
 
-        **参数解释**: 是否忽略当前已扫描出的漏洞 **约束限制**: 不涉及 **取值范围**: - true：忽略 - false：不忽略 **默认取值**: true 
+        **参数解释**: 是否忽略当前已扫描出的漏洞 **约束限制**: 不涉及 **取值范围**: - true：忽略 - false：不忽略  **默认取值**: true 
 
         :param with_ignore: The with_ignore of this AddVulWhiteListRequestBody.
         :type with_ignore: bool

@@ -53,13 +53,13 @@ class ListQuotasDetailRequest:
         :type region: str
         :param enterprise_project_id: **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
         :type enterprise_project_id: str
-        :param version: **参数解释**： 主机开通的版本 **约束限制**: 不涉及 **取值范围**： 包含如下7种输入。 - hss.version.null ：无。 - hss.version.basic ：基础版。 - hss.version.advanced ：专业版。 - hss.version.enterprise ：企业版。 - hss.version.premium ：旗舰版。 - hss.version.wtp ：网页防篡改版。 - hss.version.container.enterprise：容器版。 **默认取值**: 不涉及
+        :param version: **参数解释**： 主机开通的版本 **约束限制**: 不涉及 **取值范围**： 包含如下7种输入。 - hss.version.null ：无。 - hss.version.basic ：基础版。 - hss.version.advanced ：专业版。 - hss.version.enterprise ：企业版。 - hss.version.premium ：旗舰版。 - hss.version.wtp ：网页防篡改版。 - hss.version.container.enterprise：容器版。 - hss.version.container.wtp：容器网页防篡改增值项。  **默认取值**: 不涉及
         :type version: str
-        :param category: **参数解释**: 类别 **约束限制**: 不涉及 **取值范围**: 包含如下两种： - host_resource ：主机 - container_resource ：容器 **默认取值**: 不涉及
+        :param category: **参数解释**: 类别 **约束限制**: 不涉及 **取值范围**: 包含如下两种： - host_resource：主机 - container_resource：容器 - container_wtp_resource：容器网页防篡改  **默认取值**: 不涉及
         :type category: str
-        :param quota_status: **参数解释**: 配额状态 **约束限制**: 不涉及 **取值范围**: 包含如下三种： - normal ： 正常 - expired ：过期 - freeze ：冻结 **默认取值**: 不涉及
+        :param quota_status: **参数解释**: 配额状态 **约束限制**: 不涉及 **取值范围**: 包含如下三种： - normal ： 正常 - expired ：过期 - freeze ：冻结  **默认取值**: 不涉及
         :type quota_status: str
-        :param used_status: **参数解释**: 使用状态 **约束限制**: 不涉及 **取值范围**: 包含如下两种： - idle ：空闲的 - used ：使用中 **默认取值**: 不涉及
+        :param used_status: **参数解释**: 使用状态 **约束限制**: 不涉及 **取值范围**: 包含如下两种： - idle ：空闲的 - used ：使用中  **默认取值**: 不涉及
         :type used_status: str
         :param host_name: **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
         :type host_name: str
@@ -67,7 +67,7 @@ class ListQuotasDetailRequest:
         :type host_id_list: list[str]
         :param resource_id: **参数解释** : HSS配额的资源ID **约束限制** : 不涉及 **取值范围** : 字符长度1-128位 **默认取值** : 不涉及 
         :type resource_id: str
-        :param charging_mode: **参数解释**： 收费模式 **约束限制**: 不涉及 **取值范围**: - packet_cycle ：包年/包月。 - on_demand ：按需。 **默认取值**: 不涉及
+        :param charging_mode: **参数解释**： 收费模式 **约束限制**: 不涉及 **取值范围**: - packet_cycle ：包年/包月。 - on_demand ：按需。  **默认取值**: 不涉及
         :type charging_mode: str
         :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
         :type limit: int
@@ -164,7 +164,7 @@ class ListQuotasDetailRequest:
     def version(self):
         r"""Gets the version of this ListQuotasDetailRequest.
 
-        **参数解释**： 主机开通的版本 **约束限制**: 不涉及 **取值范围**： 包含如下7种输入。 - hss.version.null ：无。 - hss.version.basic ：基础版。 - hss.version.advanced ：专业版。 - hss.version.enterprise ：企业版。 - hss.version.premium ：旗舰版。 - hss.version.wtp ：网页防篡改版。 - hss.version.container.enterprise：容器版。 **默认取值**: 不涉及
+        **参数解释**： 主机开通的版本 **约束限制**: 不涉及 **取值范围**： 包含如下7种输入。 - hss.version.null ：无。 - hss.version.basic ：基础版。 - hss.version.advanced ：专业版。 - hss.version.enterprise ：企业版。 - hss.version.premium ：旗舰版。 - hss.version.wtp ：网页防篡改版。 - hss.version.container.enterprise：容器版。 - hss.version.container.wtp：容器网页防篡改增值项。  **默认取值**: 不涉及
 
         :return: The version of this ListQuotasDetailRequest.
         :rtype: str
@@ -175,7 +175,7 @@ class ListQuotasDetailRequest:
     def version(self, version):
         r"""Sets the version of this ListQuotasDetailRequest.
 
-        **参数解释**： 主机开通的版本 **约束限制**: 不涉及 **取值范围**： 包含如下7种输入。 - hss.version.null ：无。 - hss.version.basic ：基础版。 - hss.version.advanced ：专业版。 - hss.version.enterprise ：企业版。 - hss.version.premium ：旗舰版。 - hss.version.wtp ：网页防篡改版。 - hss.version.container.enterprise：容器版。 **默认取值**: 不涉及
+        **参数解释**： 主机开通的版本 **约束限制**: 不涉及 **取值范围**： 包含如下7种输入。 - hss.version.null ：无。 - hss.version.basic ：基础版。 - hss.version.advanced ：专业版。 - hss.version.enterprise ：企业版。 - hss.version.premium ：旗舰版。 - hss.version.wtp ：网页防篡改版。 - hss.version.container.enterprise：容器版。 - hss.version.container.wtp：容器网页防篡改增值项。  **默认取值**: 不涉及
 
         :param version: The version of this ListQuotasDetailRequest.
         :type version: str
@@ -186,7 +186,7 @@ class ListQuotasDetailRequest:
     def category(self):
         r"""Gets the category of this ListQuotasDetailRequest.
 
-        **参数解释**: 类别 **约束限制**: 不涉及 **取值范围**: 包含如下两种： - host_resource ：主机 - container_resource ：容器 **默认取值**: 不涉及
+        **参数解释**: 类别 **约束限制**: 不涉及 **取值范围**: 包含如下两种： - host_resource：主机 - container_resource：容器 - container_wtp_resource：容器网页防篡改  **默认取值**: 不涉及
 
         :return: The category of this ListQuotasDetailRequest.
         :rtype: str
@@ -197,7 +197,7 @@ class ListQuotasDetailRequest:
     def category(self, category):
         r"""Sets the category of this ListQuotasDetailRequest.
 
-        **参数解释**: 类别 **约束限制**: 不涉及 **取值范围**: 包含如下两种： - host_resource ：主机 - container_resource ：容器 **默认取值**: 不涉及
+        **参数解释**: 类别 **约束限制**: 不涉及 **取值范围**: 包含如下两种： - host_resource：主机 - container_resource：容器 - container_wtp_resource：容器网页防篡改  **默认取值**: 不涉及
 
         :param category: The category of this ListQuotasDetailRequest.
         :type category: str
@@ -208,7 +208,7 @@ class ListQuotasDetailRequest:
     def quota_status(self):
         r"""Gets the quota_status of this ListQuotasDetailRequest.
 
-        **参数解释**: 配额状态 **约束限制**: 不涉及 **取值范围**: 包含如下三种： - normal ： 正常 - expired ：过期 - freeze ：冻结 **默认取值**: 不涉及
+        **参数解释**: 配额状态 **约束限制**: 不涉及 **取值范围**: 包含如下三种： - normal ： 正常 - expired ：过期 - freeze ：冻结  **默认取值**: 不涉及
 
         :return: The quota_status of this ListQuotasDetailRequest.
         :rtype: str
@@ -219,7 +219,7 @@ class ListQuotasDetailRequest:
     def quota_status(self, quota_status):
         r"""Sets the quota_status of this ListQuotasDetailRequest.
 
-        **参数解释**: 配额状态 **约束限制**: 不涉及 **取值范围**: 包含如下三种： - normal ： 正常 - expired ：过期 - freeze ：冻结 **默认取值**: 不涉及
+        **参数解释**: 配额状态 **约束限制**: 不涉及 **取值范围**: 包含如下三种： - normal ： 正常 - expired ：过期 - freeze ：冻结  **默认取值**: 不涉及
 
         :param quota_status: The quota_status of this ListQuotasDetailRequest.
         :type quota_status: str
@@ -230,7 +230,7 @@ class ListQuotasDetailRequest:
     def used_status(self):
         r"""Gets the used_status of this ListQuotasDetailRequest.
 
-        **参数解释**: 使用状态 **约束限制**: 不涉及 **取值范围**: 包含如下两种： - idle ：空闲的 - used ：使用中 **默认取值**: 不涉及
+        **参数解释**: 使用状态 **约束限制**: 不涉及 **取值范围**: 包含如下两种： - idle ：空闲的 - used ：使用中  **默认取值**: 不涉及
 
         :return: The used_status of this ListQuotasDetailRequest.
         :rtype: str
@@ -241,7 +241,7 @@ class ListQuotasDetailRequest:
     def used_status(self, used_status):
         r"""Sets the used_status of this ListQuotasDetailRequest.
 
-        **参数解释**: 使用状态 **约束限制**: 不涉及 **取值范围**: 包含如下两种： - idle ：空闲的 - used ：使用中 **默认取值**: 不涉及
+        **参数解释**: 使用状态 **约束限制**: 不涉及 **取值范围**: 包含如下两种： - idle ：空闲的 - used ：使用中  **默认取值**: 不涉及
 
         :param used_status: The used_status of this ListQuotasDetailRequest.
         :type used_status: str
@@ -318,7 +318,7 @@ class ListQuotasDetailRequest:
     def charging_mode(self):
         r"""Gets the charging_mode of this ListQuotasDetailRequest.
 
-        **参数解释**： 收费模式 **约束限制**: 不涉及 **取值范围**: - packet_cycle ：包年/包月。 - on_demand ：按需。 **默认取值**: 不涉及
+        **参数解释**： 收费模式 **约束限制**: 不涉及 **取值范围**: - packet_cycle ：包年/包月。 - on_demand ：按需。  **默认取值**: 不涉及
 
         :return: The charging_mode of this ListQuotasDetailRequest.
         :rtype: str
@@ -329,7 +329,7 @@ class ListQuotasDetailRequest:
     def charging_mode(self, charging_mode):
         r"""Sets the charging_mode of this ListQuotasDetailRequest.
 
-        **参数解释**： 收费模式 **约束限制**: 不涉及 **取值范围**: - packet_cycle ：包年/包月。 - on_demand ：按需。 **默认取值**: 不涉及
+        **参数解释**： 收费模式 **约束限制**: 不涉及 **取值范围**: - packet_cycle ：包年/包月。 - on_demand ：按需。  **默认取值**: 不涉及
 
         :param charging_mode: The charging_mode of this ListQuotasDetailRequest.
         :type charging_mode: str

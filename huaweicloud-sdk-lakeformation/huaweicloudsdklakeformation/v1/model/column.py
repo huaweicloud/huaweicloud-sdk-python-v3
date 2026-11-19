@@ -17,16 +17,18 @@ class Column:
     openapi_types = {
         'column_type': 'str',
         'column_name': 'str',
-        'comment': 'str'
+        'comment': 'str',
+        'advance_column_type': 'str'
     }
 
     attribute_map = {
         'column_type': 'column_type',
         'column_name': 'column_name',
-        'comment': 'comment'
+        'comment': 'comment',
+        'advance_column_type': 'advance_column_type'
     }
 
-    def __init__(self, column_type=None, column_name=None, comment=None):
+    def __init__(self, column_type=None, column_name=None, comment=None, advance_column_type=None):
         r"""Column
 
         The model defined in huaweicloud sdk
@@ -37,6 +39,8 @@ class Column:
         :type column_name: str
         :param comment: 列描述信息
         :type comment: str
+        :param advance_column_type: 用户自定义类型名称，当且仅当column_type为struct，字段可填写。该字段存在值时，表示用户自定义的高阶类型
+        :type advance_column_type: str
         """
         
         
@@ -44,12 +48,15 @@ class Column:
         self._column_type = None
         self._column_name = None
         self._comment = None
+        self._advance_column_type = None
         self.discriminator = None
 
         self.column_type = column_type
         self.column_name = column_name
         if comment is not None:
             self.comment = comment
+        if advance_column_type is not None:
+            self.advance_column_type = advance_column_type
 
     @property
     def column_type(self):
@@ -116,6 +123,28 @@ class Column:
         :type comment: str
         """
         self._comment = comment
+
+    @property
+    def advance_column_type(self):
+        r"""Gets the advance_column_type of this Column.
+
+        用户自定义类型名称，当且仅当column_type为struct，字段可填写。该字段存在值时，表示用户自定义的高阶类型
+
+        :return: The advance_column_type of this Column.
+        :rtype: str
+        """
+        return self._advance_column_type
+
+    @advance_column_type.setter
+    def advance_column_type(self, advance_column_type):
+        r"""Sets the advance_column_type of this Column.
+
+        用户自定义类型名称，当且仅当column_type为struct，字段可填写。该字段存在值时，表示用户自定义的高阶类型
+
+        :param advance_column_type: The advance_column_type of this Column.
+        :type advance_column_type: str
+        """
+        self._advance_column_type = advance_column_type
 
     def to_dict(self):
         result = {}

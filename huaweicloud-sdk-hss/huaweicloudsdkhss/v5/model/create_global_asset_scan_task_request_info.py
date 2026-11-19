@@ -35,7 +35,7 @@ class CreateGlobalAssetScanTaskRequestInfo:
         :type host_ids: list[str]
         :param server_group: **参数解释**: 下发任务的主机组列表 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值200 **默认取值**: 不涉及 
         :type server_group: list[str]
-        :param all_hosts: **参数解释**: 下发全部主机的扫描 **约束限制**: 不涉及 **取值范围**: - true：扫描全部主机 - false：不扫描全部主机 **默认取值**: 不涉及 
+        :param all_hosts: **参数解释**: 下发全部主机的扫描 **约束限制**: 不涉及 **取值范围**: - true：扫描全部主机 - false：不扫描全部主机  **默认取值**: 不涉及 
         :type all_hosts: bool
         """
         
@@ -101,7 +101,7 @@ class CreateGlobalAssetScanTaskRequestInfo:
     def all_hosts(self):
         r"""Gets the all_hosts of this CreateGlobalAssetScanTaskRequestInfo.
 
-        **参数解释**: 下发全部主机的扫描 **约束限制**: 不涉及 **取值范围**: - true：扫描全部主机 - false：不扫描全部主机 **默认取值**: 不涉及 
+        **参数解释**: 下发全部主机的扫描 **约束限制**: 不涉及 **取值范围**: - true：扫描全部主机 - false：不扫描全部主机  **默认取值**: 不涉及 
 
         :return: The all_hosts of this CreateGlobalAssetScanTaskRequestInfo.
         :rtype: bool
@@ -112,7 +112,7 @@ class CreateGlobalAssetScanTaskRequestInfo:
     def all_hosts(self, all_hosts):
         r"""Sets the all_hosts of this CreateGlobalAssetScanTaskRequestInfo.
 
-        **参数解释**: 下发全部主机的扫描 **约束限制**: 不涉及 **取值范围**: - true：扫描全部主机 - false：不扫描全部主机 **默认取值**: 不涉及 
+        **参数解释**: 下发全部主机的扫描 **约束限制**: 不涉及 **取值范围**: - true：扫描全部主机 - false：不扫描全部主机  **默认取值**: 不涉及 
 
         :param all_hosts: The all_hosts of this CreateGlobalAssetScanTaskRequestInfo.
         :type all_hosts: bool

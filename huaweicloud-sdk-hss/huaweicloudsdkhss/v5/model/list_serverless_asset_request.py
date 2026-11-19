@@ -39,7 +39,7 @@ class ListServerlessAssetRequest:
         :type limit: int
         :param offset: **参数解释**： 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0 **约束限制**： 不涉及 **取值范围**： 取值[0,2000000] **默认取值**： 0 
         :type offset: int
-        :param category: **参数解释**： 资产维度 **约束限制**： 不涉及 **取值范围**： - container: 容器维度 - pod: pod实例维度 **默认取值**： container
+        :param category: **参数解释**： 资产维度 **约束限制**： 不涉及 **取值范围**： - container: 容器维度 - pod: pod实例维度  **默认取值**： container
         :type category: str
         """
         
@@ -129,7 +129,7 @@ class ListServerlessAssetRequest:
     def category(self):
         r"""Gets the category of this ListServerlessAssetRequest.
 
-        **参数解释**： 资产维度 **约束限制**： 不涉及 **取值范围**： - container: 容器维度 - pod: pod实例维度 **默认取值**： container
+        **参数解释**： 资产维度 **约束限制**： 不涉及 **取值范围**： - container: 容器维度 - pod: pod实例维度  **默认取值**： container
 
         :return: The category of this ListServerlessAssetRequest.
         :rtype: str
@@ -140,7 +140,7 @@ class ListServerlessAssetRequest:
     def category(self, category):
         r"""Sets the category of this ListServerlessAssetRequest.
 
-        **参数解释**： 资产维度 **约束限制**： 不涉及 **取值范围**： - container: 容器维度 - pod: pod实例维度 **默认取值**： container
+        **参数解释**： 资产维度 **约束限制**： 不涉及 **取值范围**： - container: 容器维度 - pod: pod实例维度  **默认取值**： container
 
         :param category: The category of this ListServerlessAssetRequest.
         :type category: str

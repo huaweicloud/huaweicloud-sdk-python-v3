@@ -37,9 +37,9 @@ class ChangeVulScanPolicyRequestInfo:
 
         The model defined in huaweicloud sdk
 
-        :param scan_period: **参数解释**: 扫描周期 **约束限制**: 不涉及 **取值范围**: - one_day：每天 - three_day：每三天 - one_week：每周 - one_month：每月 **默认取值**: 不涉及 
+        :param scan_period: **参数解释**: 扫描周期 **约束限制**: 不涉及 **取值范围**: - one_day：每天 - three_day：每三天 - one_week：每周 - one_month：每月  **默认取值**: 不涉及 
         :type scan_period: str
-        :param scan_range_type: **参数解释**: 扫描主机的范围 **约束限制**: 不涉及 **取值范围**: - all_host：扫描全部主机 - specific_host：扫描指定主机 **默认取值**: 不涉及 
+        :param scan_range_type: **参数解释**: 扫描主机的范围 **约束限制**: 不涉及 **取值范围**: - all_host：扫描全部主机 - specific_host：扫描指定主机  **默认取值**: 不涉及 
         :type scan_range_type: str
         :param host_ids: **参数解释**: 主机ID列表； **约束限制**: 当scan_range_type的值为specific_host时 表示扫描的主机列表 必填 **取值范围**: 最小值0，最大值20000 **默认取值**: 不涉及 
         :type host_ids: list[str]
@@ -75,7 +75,7 @@ class ChangeVulScanPolicyRequestInfo:
     def scan_period(self):
         r"""Gets the scan_period of this ChangeVulScanPolicyRequestInfo.
 
-        **参数解释**: 扫描周期 **约束限制**: 不涉及 **取值范围**: - one_day：每天 - three_day：每三天 - one_week：每周 - one_month：每月 **默认取值**: 不涉及 
+        **参数解释**: 扫描周期 **约束限制**: 不涉及 **取值范围**: - one_day：每天 - three_day：每三天 - one_week：每周 - one_month：每月  **默认取值**: 不涉及 
 
         :return: The scan_period of this ChangeVulScanPolicyRequestInfo.
         :rtype: str
@@ -86,7 +86,7 @@ class ChangeVulScanPolicyRequestInfo:
     def scan_period(self, scan_period):
         r"""Sets the scan_period of this ChangeVulScanPolicyRequestInfo.
 
-        **参数解释**: 扫描周期 **约束限制**: 不涉及 **取值范围**: - one_day：每天 - three_day：每三天 - one_week：每周 - one_month：每月 **默认取值**: 不涉及 
+        **参数解释**: 扫描周期 **约束限制**: 不涉及 **取值范围**: - one_day：每天 - three_day：每三天 - one_week：每周 - one_month：每月  **默认取值**: 不涉及 
 
         :param scan_period: The scan_period of this ChangeVulScanPolicyRequestInfo.
         :type scan_period: str
@@ -97,7 +97,7 @@ class ChangeVulScanPolicyRequestInfo:
     def scan_range_type(self):
         r"""Gets the scan_range_type of this ChangeVulScanPolicyRequestInfo.
 
-        **参数解释**: 扫描主机的范围 **约束限制**: 不涉及 **取值范围**: - all_host：扫描全部主机 - specific_host：扫描指定主机 **默认取值**: 不涉及 
+        **参数解释**: 扫描主机的范围 **约束限制**: 不涉及 **取值范围**: - all_host：扫描全部主机 - specific_host：扫描指定主机  **默认取值**: 不涉及 
 
         :return: The scan_range_type of this ChangeVulScanPolicyRequestInfo.
         :rtype: str
@@ -108,7 +108,7 @@ class ChangeVulScanPolicyRequestInfo:
     def scan_range_type(self, scan_range_type):
         r"""Sets the scan_range_type of this ChangeVulScanPolicyRequestInfo.
 
-        **参数解释**: 扫描主机的范围 **约束限制**: 不涉及 **取值范围**: - all_host：扫描全部主机 - specific_host：扫描指定主机 **默认取值**: 不涉及 
+        **参数解释**: 扫描主机的范围 **约束限制**: 不涉及 **取值范围**: - all_host：扫描全部主机 - specific_host：扫描指定主机  **默认取值**: 不涉及 
 
         :param scan_range_type: The scan_range_type of this ChangeVulScanPolicyRequestInfo.
         :type scan_range_type: str

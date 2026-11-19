@@ -47,13 +47,13 @@ class UpdateWebTamperProtectionConfigRequestInfo:
         :type type: str
         :param protection_config_id: **参数解释**: 防护配置id **约束限制**: 不涉及。 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type protection_config_id: str
-        :param protect_mode: **参数解释**: 防护模式 **约束限制**: 不涉及 **取值范围**: - alarm：告警模式 - block：拦截模式 **默认取值**: alarm 
+        :param protect_mode: **参数解释**: 防护模式 **约束限制**: 不涉及 **取值范围**: - alarm：告警模式 - block：拦截模式  **默认取值**: alarm 
         :type protect_mode: str
-        :param monitor_process: **参数解释**: 是否对篡改行为进行进程监控 **约束限制**: 不涉及 **取值范围**: - true：监控篡改进程 - false：不监控篡改进程 **默认取值**: true 
+        :param monitor_process: **参数解释**: 是否对篡改行为进行进程监控 **约束限制**: 不涉及 **取值范围**: - true：监控篡改进程 - false：不监控篡改进程  **默认取值**: true 
         :type monitor_process: bool
         :param privileged_process_list: **参数解释**: 特权进程路径列表 **约束限制**: monitor_process值为true时生效（不进行进程监控无法判断特权进程） **取值范围**: 最少0条，最多10条 **默认取值**: 不涉及 
         :type privileged_process_list: list[str]
-        :param privileged_child: **参数解释**: 特权进程的子进程是否仍享有特权 **约束限制**: monitor_process值为true时生效（不进行进程监控无法判断特权进程） **取值范围**: - true：特权进程的子进程依然是特权进程 - false：特权进程的子进程不再是特权进程 **默认取值**: false 
+        :param privileged_child: **参数解释**: 特权进程的子进程是否仍享有特权 **约束限制**: monitor_process值为true时生效（不进行进程监控无法判断特权进程） **取值范围**: - true：特权进程的子进程依然是特权进程 - false：特权进程的子进程不再是特权进程  **默认取值**: false 
         :type privileged_child: bool
         :param container_wtp_info: 
         :type container_wtp_info: :class:`huaweicloudsdkhss.v5.UpdateWebTamperProtectionConfigRequestInfoContainerWtpInfo`
@@ -141,7 +141,7 @@ class UpdateWebTamperProtectionConfigRequestInfo:
     def protect_mode(self):
         r"""Gets the protect_mode of this UpdateWebTamperProtectionConfigRequestInfo.
 
-        **参数解释**: 防护模式 **约束限制**: 不涉及 **取值范围**: - alarm：告警模式 - block：拦截模式 **默认取值**: alarm 
+        **参数解释**: 防护模式 **约束限制**: 不涉及 **取值范围**: - alarm：告警模式 - block：拦截模式  **默认取值**: alarm 
 
         :return: The protect_mode of this UpdateWebTamperProtectionConfigRequestInfo.
         :rtype: str
@@ -152,7 +152,7 @@ class UpdateWebTamperProtectionConfigRequestInfo:
     def protect_mode(self, protect_mode):
         r"""Sets the protect_mode of this UpdateWebTamperProtectionConfigRequestInfo.
 
-        **参数解释**: 防护模式 **约束限制**: 不涉及 **取值范围**: - alarm：告警模式 - block：拦截模式 **默认取值**: alarm 
+        **参数解释**: 防护模式 **约束限制**: 不涉及 **取值范围**: - alarm：告警模式 - block：拦截模式  **默认取值**: alarm 
 
         :param protect_mode: The protect_mode of this UpdateWebTamperProtectionConfigRequestInfo.
         :type protect_mode: str
@@ -163,7 +163,7 @@ class UpdateWebTamperProtectionConfigRequestInfo:
     def monitor_process(self):
         r"""Gets the monitor_process of this UpdateWebTamperProtectionConfigRequestInfo.
 
-        **参数解释**: 是否对篡改行为进行进程监控 **约束限制**: 不涉及 **取值范围**: - true：监控篡改进程 - false：不监控篡改进程 **默认取值**: true 
+        **参数解释**: 是否对篡改行为进行进程监控 **约束限制**: 不涉及 **取值范围**: - true：监控篡改进程 - false：不监控篡改进程  **默认取值**: true 
 
         :return: The monitor_process of this UpdateWebTamperProtectionConfigRequestInfo.
         :rtype: bool
@@ -174,7 +174,7 @@ class UpdateWebTamperProtectionConfigRequestInfo:
     def monitor_process(self, monitor_process):
         r"""Sets the monitor_process of this UpdateWebTamperProtectionConfigRequestInfo.
 
-        **参数解释**: 是否对篡改行为进行进程监控 **约束限制**: 不涉及 **取值范围**: - true：监控篡改进程 - false：不监控篡改进程 **默认取值**: true 
+        **参数解释**: 是否对篡改行为进行进程监控 **约束限制**: 不涉及 **取值范围**: - true：监控篡改进程 - false：不监控篡改进程  **默认取值**: true 
 
         :param monitor_process: The monitor_process of this UpdateWebTamperProtectionConfigRequestInfo.
         :type monitor_process: bool
@@ -207,7 +207,7 @@ class UpdateWebTamperProtectionConfigRequestInfo:
     def privileged_child(self):
         r"""Gets the privileged_child of this UpdateWebTamperProtectionConfigRequestInfo.
 
-        **参数解释**: 特权进程的子进程是否仍享有特权 **约束限制**: monitor_process值为true时生效（不进行进程监控无法判断特权进程） **取值范围**: - true：特权进程的子进程依然是特权进程 - false：特权进程的子进程不再是特权进程 **默认取值**: false 
+        **参数解释**: 特权进程的子进程是否仍享有特权 **约束限制**: monitor_process值为true时生效（不进行进程监控无法判断特权进程） **取值范围**: - true：特权进程的子进程依然是特权进程 - false：特权进程的子进程不再是特权进程  **默认取值**: false 
 
         :return: The privileged_child of this UpdateWebTamperProtectionConfigRequestInfo.
         :rtype: bool
@@ -218,7 +218,7 @@ class UpdateWebTamperProtectionConfigRequestInfo:
     def privileged_child(self, privileged_child):
         r"""Sets the privileged_child of this UpdateWebTamperProtectionConfigRequestInfo.
 
-        **参数解释**: 特权进程的子进程是否仍享有特权 **约束限制**: monitor_process值为true时生效（不进行进程监控无法判断特权进程） **取值范围**: - true：特权进程的子进程依然是特权进程 - false：特权进程的子进程不再是特权进程 **默认取值**: false 
+        **参数解释**: 特权进程的子进程是否仍享有特权 **约束限制**: monitor_process值为true时生效（不进行进程监控无法判断特权进程） **取值范围**: - true：特权进程的子进程依然是特权进程 - false：特权进程的子进程不再是特权进程  **默认取值**: false 
 
         :param privileged_child: The privileged_child of this UpdateWebTamperProtectionConfigRequestInfo.
         :type privileged_child: bool

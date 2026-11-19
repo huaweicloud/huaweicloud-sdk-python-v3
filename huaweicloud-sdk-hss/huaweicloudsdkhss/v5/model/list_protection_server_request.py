@@ -57,7 +57,7 @@ class ListProtectionServerRequest:
         :type os_type: str
         :param host_ip: **参数解释**: 服务器IP地址 **约束限制**: 不涉及 **取值范围**: 字符长度0-256 **默认取值**: 不涉及 
         :type host_ip: str
-        :param host_status: **参数解释**: 主机状态 **约束限制**: 不涉及 **取值范围**: 包含如下3种。   - 不传参默认为全部。   - ACTIVE ：正在运行。   - SHUTOFF ：关机。 **默认取值**: 不涉及 
+        :param host_status: **参数解释**: 主机状态 **约束限制**: 不涉及 **取值范围**: 包含如下3种。   - 不传参默认为全部。   - ACTIVE ：正在运行。   - SHUTOFF ：关机。  **默认取值**: 不涉及 
         :type host_status: str
         :param last_days: **参数解释**: 查询时间范围天数 **约束限制**: 不涉及 **取值范围**: 长度1-30。若不填，则默认查询一天内的防护事件和已有备份数。 **默认取值**: 不涉及 
         :type last_days: int
@@ -253,7 +253,7 @@ class ListProtectionServerRequest:
     def host_status(self):
         r"""Gets the host_status of this ListProtectionServerRequest.
 
-        **参数解释**: 主机状态 **约束限制**: 不涉及 **取值范围**: 包含如下3种。   - 不传参默认为全部。   - ACTIVE ：正在运行。   - SHUTOFF ：关机。 **默认取值**: 不涉及 
+        **参数解释**: 主机状态 **约束限制**: 不涉及 **取值范围**: 包含如下3种。   - 不传参默认为全部。   - ACTIVE ：正在运行。   - SHUTOFF ：关机。  **默认取值**: 不涉及 
 
         :return: The host_status of this ListProtectionServerRequest.
         :rtype: str
@@ -264,7 +264,7 @@ class ListProtectionServerRequest:
     def host_status(self, host_status):
         r"""Sets the host_status of this ListProtectionServerRequest.
 
-        **参数解释**: 主机状态 **约束限制**: 不涉及 **取值范围**: 包含如下3种。   - 不传参默认为全部。   - ACTIVE ：正在运行。   - SHUTOFF ：关机。 **默认取值**: 不涉及 
+        **参数解释**: 主机状态 **约束限制**: 不涉及 **取值范围**: 包含如下3种。   - 不传参默认为全部。   - ACTIVE ：正在运行。   - SHUTOFF ：关机。  **默认取值**: 不涉及 
 
         :param host_status: The host_status of this ListProtectionServerRequest.
         :type host_status: str

@@ -17,16 +17,18 @@ class ListRealTimeSessionsRequestBody:
     openapi_types = {
         'node_id': 'str',
         'component_id': 'str',
+        'support_local': 'bool',
         'query_info': 'SessionQueryInfoOption'
     }
 
     attribute_map = {
         'node_id': 'node_id',
         'component_id': 'component_id',
+        'support_local': 'support_local',
         'query_info': 'query_info'
     }
 
-    def __init__(self, node_id=None, component_id=None, query_info=None):
+    def __init__(self, node_id=None, component_id=None, support_local=None, query_info=None):
         r"""ListRealTimeSessionsRequestBody
 
         The model defined in huaweicloud sdk
@@ -35,6 +37,8 @@ class ListRealTimeSessionsRequestBody:
         :type node_id: str
         :param component_id: **参数解释**： 组件ID。 **约束限制**： 仅支持非日志类型的CN或DN节点。 **取值范围**： 不涉及。 **默认取值**: 不涉及。
         :type component_id: str
+        :param support_local: **参数解释**： 是否展示本地会话。 **约束限制**： 不涉及。 **取值范围**： - true：展示本地会话 - false：不展示本地会话  **默认取值**: false。
+        :type support_local: bool
         :param query_info: 
         :type query_info: :class:`huaweicloudsdkgaussdbforopengauss.v3.SessionQueryInfoOption`
         """
@@ -43,11 +47,14 @@ class ListRealTimeSessionsRequestBody:
 
         self._node_id = None
         self._component_id = None
+        self._support_local = None
         self._query_info = None
         self.discriminator = None
 
         self.node_id = node_id
         self.component_id = component_id
+        if support_local is not None:
+            self.support_local = support_local
         if query_info is not None:
             self.query_info = query_info
 
@@ -94,6 +101,28 @@ class ListRealTimeSessionsRequestBody:
         :type component_id: str
         """
         self._component_id = component_id
+
+    @property
+    def support_local(self):
+        r"""Gets the support_local of this ListRealTimeSessionsRequestBody.
+
+        **参数解释**： 是否展示本地会话。 **约束限制**： 不涉及。 **取值范围**： - true：展示本地会话 - false：不展示本地会话  **默认取值**: false。
+
+        :return: The support_local of this ListRealTimeSessionsRequestBody.
+        :rtype: bool
+        """
+        return self._support_local
+
+    @support_local.setter
+    def support_local(self, support_local):
+        r"""Sets the support_local of this ListRealTimeSessionsRequestBody.
+
+        **参数解释**： 是否展示本地会话。 **约束限制**： 不涉及。 **取值范围**： - true：展示本地会话 - false：不展示本地会话  **默认取值**: false。
+
+        :param support_local: The support_local of this ListRealTimeSessionsRequestBody.
+        :type support_local: bool
+        """
+        self._support_local = support_local
 
     @property
     def query_info(self):

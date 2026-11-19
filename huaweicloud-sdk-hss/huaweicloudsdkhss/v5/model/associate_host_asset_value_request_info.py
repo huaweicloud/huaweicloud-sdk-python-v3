@@ -29,7 +29,7 @@ class AssociateHostAssetValueRequestInfo:
 
         The model defined in huaweicloud sdk
 
-        :param asset_value: **参数解释**： 资产重要性 **约束限制**： 不涉及 **取值范围**： - important：重要资产 - common：一般资产 - test：测试资产 **默认取值**： 不涉及 
+        :param asset_value: **参数解释**： 资产重要性 **约束限制**： 不涉及 **取值范围**： - important：重要资产 - common：一般资产 - test：测试资产  **默认取值**： 不涉及 
         :type asset_value: str
         :param host_id_list: **参数解释**： 主机ID列表 **约束限制**： 不涉及 **取值范围**： 列表大小为1-200条 **默认取值**： 不涉及 
         :type host_id_list: list[str]
@@ -48,7 +48,7 @@ class AssociateHostAssetValueRequestInfo:
     def asset_value(self):
         r"""Gets the asset_value of this AssociateHostAssetValueRequestInfo.
 
-        **参数解释**： 资产重要性 **约束限制**： 不涉及 **取值范围**： - important：重要资产 - common：一般资产 - test：测试资产 **默认取值**： 不涉及 
+        **参数解释**： 资产重要性 **约束限制**： 不涉及 **取值范围**： - important：重要资产 - common：一般资产 - test：测试资产  **默认取值**： 不涉及 
 
         :return: The asset_value of this AssociateHostAssetValueRequestInfo.
         :rtype: str
@@ -59,7 +59,7 @@ class AssociateHostAssetValueRequestInfo:
     def asset_value(self, asset_value):
         r"""Sets the asset_value of this AssociateHostAssetValueRequestInfo.
 
-        **参数解释**： 资产重要性 **约束限制**： 不涉及 **取值范围**： - important：重要资产 - common：一般资产 - test：测试资产 **默认取值**： 不涉及 
+        **参数解释**： 资产重要性 **约束限制**： 不涉及 **取值范围**： - important：重要资产 - common：一般资产 - test：测试资产  **默认取值**： 不涉及 
 
         :param asset_value: The asset_value of this AssociateHostAssetValueRequestInfo.
         :type asset_value: str

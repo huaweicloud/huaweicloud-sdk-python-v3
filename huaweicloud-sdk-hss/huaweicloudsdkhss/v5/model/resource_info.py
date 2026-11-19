@@ -31,7 +31,7 @@ class ResourceInfo:
 
         :param host_id: **参数解释**: 主机id **约束限制**: 不涉及 **取值范围**: 字符长度0-128 **默认取值**: 不涉及 
         :type host_id: str
-        :param history_backup_status: **参数解释**: 历史开启备份状态，通过筛选可用服务器的error_message或者status判断，如果error_message为空，则没有开启备份，该字段为closed；若不为空，则为opened **约束限制**: 不涉及 **取值范围**: - closed：关闭备份 - opened：开启备份 **默认取值**: 不涉及 
+        :param history_backup_status: **参数解释**: 历史开启备份状态，通过筛选可用服务器的error_message或者status判断，如果error_message为空，则没有开启备份，该字段为closed；若不为空，则为opened **约束限制**: 不涉及 **取值范围**: - closed：关闭备份 - opened：开启备份  **默认取值**: 不涉及 
         :type history_backup_status: str
         """
         
@@ -72,7 +72,7 @@ class ResourceInfo:
     def history_backup_status(self):
         r"""Gets the history_backup_status of this ResourceInfo.
 
-        **参数解释**: 历史开启备份状态，通过筛选可用服务器的error_message或者status判断，如果error_message为空，则没有开启备份，该字段为closed；若不为空，则为opened **约束限制**: 不涉及 **取值范围**: - closed：关闭备份 - opened：开启备份 **默认取值**: 不涉及 
+        **参数解释**: 历史开启备份状态，通过筛选可用服务器的error_message或者status判断，如果error_message为空，则没有开启备份，该字段为closed；若不为空，则为opened **约束限制**: 不涉及 **取值范围**: - closed：关闭备份 - opened：开启备份  **默认取值**: 不涉及 
 
         :return: The history_backup_status of this ResourceInfo.
         :rtype: str
@@ -83,7 +83,7 @@ class ResourceInfo:
     def history_backup_status(self, history_backup_status):
         r"""Sets the history_backup_status of this ResourceInfo.
 
-        **参数解释**: 历史开启备份状态，通过筛选可用服务器的error_message或者status判断，如果error_message为空，则没有开启备份，该字段为closed；若不为空，则为opened **约束限制**: 不涉及 **取值范围**: - closed：关闭备份 - opened：开启备份 **默认取值**: 不涉及 
+        **参数解释**: 历史开启备份状态，通过筛选可用服务器的error_message或者status判断，如果error_message为空，则没有开启备份，该字段为closed；若不为空，则为opened **约束限制**: 不涉及 **取值范围**: - closed：关闭备份 - opened：开启备份  **默认取值**: 不涉及 
 
         :param history_backup_status: The history_backup_status of this ResourceInfo.
         :type history_backup_status: str

@@ -133,7 +133,7 @@ class VulHostInfo:
         :type os_version: str
         :param os_kernel: **参数解释**: 操作系统内核 **取值范围**: 字符长度1-64位 
         :type os_kernel: str
-        :param host_status: **参数解释**: 主机状态 **取值范围**: - ACTIVE：正在运行。 - SHUTOFF：关机。 - BUILDING：创建中。 - ERROR：故障。 **默认取值**: 不涉及 
+        :param host_status: **参数解释**: 主机状态 **取值范围**: - ACTIVE：正在运行。 - SHUTOFF：关机。 - BUILDING：创建中。 - ERROR：故障。  **默认取值**: 不涉及 
         :type host_status: str
         :param first_scan_time: **参数解释**: 首次扫描时间 **取值范围**: 最小值0，最大值9223372036854775807 
         :type first_scan_time: int
@@ -744,7 +744,7 @@ class VulHostInfo:
     def host_status(self):
         r"""Gets the host_status of this VulHostInfo.
 
-        **参数解释**: 主机状态 **取值范围**: - ACTIVE：正在运行。 - SHUTOFF：关机。 - BUILDING：创建中。 - ERROR：故障。 **默认取值**: 不涉及 
+        **参数解释**: 主机状态 **取值范围**: - ACTIVE：正在运行。 - SHUTOFF：关机。 - BUILDING：创建中。 - ERROR：故障。  **默认取值**: 不涉及 
 
         :return: The host_status of this VulHostInfo.
         :rtype: str
@@ -755,7 +755,7 @@ class VulHostInfo:
     def host_status(self, host_status):
         r"""Sets the host_status of this VulHostInfo.
 
-        **参数解释**: 主机状态 **取值范围**: - ACTIVE：正在运行。 - SHUTOFF：关机。 - BUILDING：创建中。 - ERROR：故障。 **默认取值**: 不涉及 
+        **参数解释**: 主机状态 **取值范围**: - ACTIVE：正在运行。 - SHUTOFF：关机。 - BUILDING：创建中。 - ERROR：故障。  **默认取值**: 不涉及 
 
         :param host_status: The host_status of this VulHostInfo.
         :type host_status: str

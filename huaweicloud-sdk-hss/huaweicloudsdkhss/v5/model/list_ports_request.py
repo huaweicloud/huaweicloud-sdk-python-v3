@@ -53,7 +53,7 @@ class ListPortsRequest:
         :type host_ip: str
         :param port: **参数解释**: 端口号 **约束限制**: 不涉及 **取值范围**: 最小值1，最大值65535 **默认取值**: 不涉及 
         :type port: int
-        :param type: **参数解释**: 端口类型：目前包括TCP，UDP两种 **约束限制**: 不涉及 **取值范围**: - TCP: TCP类型的端口 - UDP: UDP类型的端口 **默认取值**: 不涉及 
+        :param type: **参数解释**: 端口类型：目前包括TCP，UDP两种 **约束限制**: 不涉及 **取值范围**: - TCP: TCP类型的端口 - UDP: UDP类型的端口  **默认取值**: 不涉及 
         :type type: str
         :param status: **参数解释**: 端口状态 **约束限制**: 不涉及 **取值范围**: - danger: 危险端口 - unknown: 无已知危险的端口  **默认取值**: 不涉及 
         :type status: str
@@ -63,7 +63,7 @@ class ListPortsRequest:
         :type limit: int
         :param offset: **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
         :type offset: int
-        :param category: **参数解释**: 类别，默认为host **约束限制**: 不涉及 **取值范围**: - host：主机 - container：容器 **默认取值**: host 
+        :param category: **参数解释**: 类别，默认为host **约束限制**: 不涉及 **取值范围**: - host：主机 - container：容器  **默认取值**: host 
         :type category: str
         """
         
@@ -193,7 +193,7 @@ class ListPortsRequest:
     def type(self):
         r"""Gets the type of this ListPortsRequest.
 
-        **参数解释**: 端口类型：目前包括TCP，UDP两种 **约束限制**: 不涉及 **取值范围**: - TCP: TCP类型的端口 - UDP: UDP类型的端口 **默认取值**: 不涉及 
+        **参数解释**: 端口类型：目前包括TCP，UDP两种 **约束限制**: 不涉及 **取值范围**: - TCP: TCP类型的端口 - UDP: UDP类型的端口  **默认取值**: 不涉及 
 
         :return: The type of this ListPortsRequest.
         :rtype: str
@@ -204,7 +204,7 @@ class ListPortsRequest:
     def type(self, type):
         r"""Sets the type of this ListPortsRequest.
 
-        **参数解释**: 端口类型：目前包括TCP，UDP两种 **约束限制**: 不涉及 **取值范围**: - TCP: TCP类型的端口 - UDP: UDP类型的端口 **默认取值**: 不涉及 
+        **参数解释**: 端口类型：目前包括TCP，UDP两种 **约束限制**: 不涉及 **取值范围**: - TCP: TCP类型的端口 - UDP: UDP类型的端口  **默认取值**: 不涉及 
 
         :param type: The type of this ListPortsRequest.
         :type type: str
@@ -303,7 +303,7 @@ class ListPortsRequest:
     def category(self):
         r"""Gets the category of this ListPortsRequest.
 
-        **参数解释**: 类别，默认为host **约束限制**: 不涉及 **取值范围**: - host：主机 - container：容器 **默认取值**: host 
+        **参数解释**: 类别，默认为host **约束限制**: 不涉及 **取值范围**: - host：主机 - container：容器  **默认取值**: host 
 
         :return: The category of this ListPortsRequest.
         :rtype: str
@@ -314,7 +314,7 @@ class ListPortsRequest:
     def category(self, category):
         r"""Sets the category of this ListPortsRequest.
 
-        **参数解释**: 类别，默认为host **约束限制**: 不涉及 **取值范围**: - host：主机 - container：容器 **默认取值**: host 
+        **参数解释**: 类别，默认为host **约束限制**: 不涉及 **取值范围**: - host：主机 - container：容器  **默认取值**: host 
 
         :param category: The category of this ListPortsRequest.
         :type category: str
