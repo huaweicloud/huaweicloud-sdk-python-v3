@@ -40,7 +40,7 @@ INSTALL_REQUIRES = [
     "certifi>=2025.4.26",
     "six",
     "pymongo<=4.0.2; python_version < '3.9'",
-    "pymongo==4.18.2; python_version >= '3.9'"
+    "pymongo==4.18.3; python_version >= '3.9'"
 ]
 
 TESTS_REQUIRES = [
