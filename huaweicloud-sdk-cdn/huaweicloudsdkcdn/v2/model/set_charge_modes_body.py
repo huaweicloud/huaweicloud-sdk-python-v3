@@ -31,7 +31,7 @@ class SetChargeModesBody:
 
         The model defined in huaweicloud sdk
 
-        :param charge_mode: **参数解释：** 计费模式 **约束限制：** v2及以上客户支持bw（带宽）计费模式 **取值范围：** - flux：流量 - bw：带宽 **默认取值：** 不涉及
+        :param charge_mode: **参数解释：** 计费模式 **约束限制：** v2及以上客户支持bw（带宽）计费模式 **取值范围：** - flux：流量 - bw：带宽  **默认取值：** 不涉及
         :type charge_mode: str
         :param product_type: **参数解释：** 产品模式 **约束限制：** 不涉及 **取值范围：** base：基础加速 **默认取值：** 不涉及
         :type product_type: str
@@ -54,7 +54,7 @@ class SetChargeModesBody:
     def charge_mode(self):
         r"""Gets the charge_mode of this SetChargeModesBody.
 
-        **参数解释：** 计费模式 **约束限制：** v2及以上客户支持bw（带宽）计费模式 **取值范围：** - flux：流量 - bw：带宽 **默认取值：** 不涉及
+        **参数解释：** 计费模式 **约束限制：** v2及以上客户支持bw（带宽）计费模式 **取值范围：** - flux：流量 - bw：带宽  **默认取值：** 不涉及
 
         :return: The charge_mode of this SetChargeModesBody.
         :rtype: str
@@ -65,7 +65,7 @@ class SetChargeModesBody:
     def charge_mode(self, charge_mode):
         r"""Sets the charge_mode of this SetChargeModesBody.
 
-        **参数解释：** 计费模式 **约束限制：** v2及以上客户支持bw（带宽）计费模式 **取值范围：** - flux：流量 - bw：带宽 **默认取值：** 不涉及
+        **参数解释：** 计费模式 **约束限制：** v2及以上客户支持bw（带宽）计费模式 **取值范围：** - flux：流量 - bw：带宽  **默认取值：** 不涉及
 
         :param charge_mode: The charge_mode of this SetChargeModesBody.
         :type charge_mode: str

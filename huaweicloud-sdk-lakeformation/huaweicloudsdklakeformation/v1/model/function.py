@@ -24,7 +24,13 @@ class Function:
         'owner_auth_source_type': 'str',
         'class_name': 'str',
         'create_time': 'datetime',
-        'resource_uris': 'list[FunctionResourceUri]'
+        'resource_uris': 'list[FunctionResourceUri]',
+        'catalog_id': 'str',
+        'database_id': 'str',
+        'function_id': 'str',
+        'parameters': 'dict(str, str)',
+        'update_time': 'datetime',
+        'version_id': 'str'
     }
 
     attribute_map = {
@@ -37,10 +43,16 @@ class Function:
         'owner_auth_source_type': 'owner_auth_source_type',
         'class_name': 'class_name',
         'create_time': 'create_time',
-        'resource_uris': 'resource_uris'
+        'resource_uris': 'resource_uris',
+        'catalog_id': 'catalog_id',
+        'database_id': 'database_id',
+        'function_id': 'function_id',
+        'parameters': 'parameters',
+        'update_time': 'update_time',
+        'version_id': 'version_id'
     }
 
-    def __init__(self, catalog_name=None, database_name=None, function_name=None, function_type=None, owner=None, owner_type=None, owner_auth_source_type=None, class_name=None, create_time=None, resource_uris=None):
+    def __init__(self, catalog_name=None, database_name=None, function_name=None, function_type=None, owner=None, owner_type=None, owner_auth_source_type=None, class_name=None, create_time=None, resource_uris=None, catalog_id=None, database_id=None, function_id=None, parameters=None, update_time=None, version_id=None):
         r"""Function
 
         The model defined in huaweicloud sdk
@@ -65,6 +77,18 @@ class Function:
         :type create_time: datetime
         :param resource_uris: 函数地址信息
         :type resource_uris: list[:class:`huaweicloudsdklakeformation.v1.FunctionResourceUri`]
+        :param catalog_id: catalogID。
+        :type catalog_id: str
+        :param database_id: 数据库ID。
+        :type database_id: str
+        :param function_id: 函数ID。
+        :type function_id: str
+        :param parameters: 参数
+        :type parameters: dict(str, str)
+        :param update_time: 函数元数据最后一次修改时间。
+        :type update_time: datetime
+        :param version_id: 版本ID
+        :type version_id: str
         """
         
         
@@ -79,6 +103,12 @@ class Function:
         self._class_name = None
         self._create_time = None
         self._resource_uris = None
+        self._catalog_id = None
+        self._database_id = None
+        self._function_id = None
+        self._parameters = None
+        self._update_time = None
+        self._version_id = None
         self.discriminator = None
 
         self.catalog_name = catalog_name
@@ -94,6 +124,18 @@ class Function:
             self.create_time = create_time
         if resource_uris is not None:
             self.resource_uris = resource_uris
+        if catalog_id is not None:
+            self.catalog_id = catalog_id
+        if database_id is not None:
+            self.database_id = database_id
+        if function_id is not None:
+            self.function_id = function_id
+        if parameters is not None:
+            self.parameters = parameters
+        if update_time is not None:
+            self.update_time = update_time
+        if version_id is not None:
+            self.version_id = version_id
 
     @property
     def catalog_name(self):
@@ -314,6 +356,138 @@ class Function:
         :type resource_uris: list[:class:`huaweicloudsdklakeformation.v1.FunctionResourceUri`]
         """
         self._resource_uris = resource_uris
+
+    @property
+    def catalog_id(self):
+        r"""Gets the catalog_id of this Function.
+
+        catalogID。
+
+        :return: The catalog_id of this Function.
+        :rtype: str
+        """
+        return self._catalog_id
+
+    @catalog_id.setter
+    def catalog_id(self, catalog_id):
+        r"""Sets the catalog_id of this Function.
+
+        catalogID。
+
+        :param catalog_id: The catalog_id of this Function.
+        :type catalog_id: str
+        """
+        self._catalog_id = catalog_id
+
+    @property
+    def database_id(self):
+        r"""Gets the database_id of this Function.
+
+        数据库ID。
+
+        :return: The database_id of this Function.
+        :rtype: str
+        """
+        return self._database_id
+
+    @database_id.setter
+    def database_id(self, database_id):
+        r"""Sets the database_id of this Function.
+
+        数据库ID。
+
+        :param database_id: The database_id of this Function.
+        :type database_id: str
+        """
+        self._database_id = database_id
+
+    @property
+    def function_id(self):
+        r"""Gets the function_id of this Function.
+
+        函数ID。
+
+        :return: The function_id of this Function.
+        :rtype: str
+        """
+        return self._function_id
+
+    @function_id.setter
+    def function_id(self, function_id):
+        r"""Sets the function_id of this Function.
+
+        函数ID。
+
+        :param function_id: The function_id of this Function.
+        :type function_id: str
+        """
+        self._function_id = function_id
+
+    @property
+    def parameters(self):
+        r"""Gets the parameters of this Function.
+
+        参数
+
+        :return: The parameters of this Function.
+        :rtype: dict(str, str)
+        """
+        return self._parameters
+
+    @parameters.setter
+    def parameters(self, parameters):
+        r"""Sets the parameters of this Function.
+
+        参数
+
+        :param parameters: The parameters of this Function.
+        :type parameters: dict(str, str)
+        """
+        self._parameters = parameters
+
+    @property
+    def update_time(self):
+        r"""Gets the update_time of this Function.
+
+        函数元数据最后一次修改时间。
+
+        :return: The update_time of this Function.
+        :rtype: datetime
+        """
+        return self._update_time
+
+    @update_time.setter
+    def update_time(self, update_time):
+        r"""Sets the update_time of this Function.
+
+        函数元数据最后一次修改时间。
+
+        :param update_time: The update_time of this Function.
+        :type update_time: datetime
+        """
+        self._update_time = update_time
+
+    @property
+    def version_id(self):
+        r"""Gets the version_id of this Function.
+
+        版本ID
+
+        :return: The version_id of this Function.
+        :rtype: str
+        """
+        return self._version_id
+
+    @version_id.setter
+    def version_id(self, version_id):
+        r"""Sets the version_id of this Function.
+
+        版本ID
+
+        :param version_id: The version_id of this Function.
+        :type version_id: str
+        """
+        self._version_id = version_id
 
     def to_dict(self):
         result = {}

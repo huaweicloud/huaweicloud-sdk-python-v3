@@ -87,7 +87,7 @@ class ShowReposTagResp:
         :type updated: str
         :param deleted: 镜像删除时间，UTC时间格式，时间为UTC标准时间，用户需要根据本地时间计算偏移量；如东8区需要+8:00
         :type deleted: str
-        :param domain_id: 帐号ID
+        :param domain_id: 账号ID
         :type domain_id: str
         :param scanned: 镜像是否被扫描过
         :type scanned: bool
@@ -446,7 +446,7 @@ class ShowReposTagResp:
     def domain_id(self):
         r"""Gets the domain_id of this ShowReposTagResp.
 
-        帐号ID
+        账号ID
 
         :return: The domain_id of this ShowReposTagResp.
         :rtype: str
@@ -457,7 +457,7 @@ class ShowReposTagResp:
     def domain_id(self, domain_id):
         r"""Sets the domain_id of this ShowReposTagResp.
 
-        帐号ID
+        账号ID
 
         :param domain_id: The domain_id of this ShowReposTagResp.
         :type domain_id: str

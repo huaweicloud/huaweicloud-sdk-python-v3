@@ -19,7 +19,9 @@ class BackSources:
         'ip_or_domain': 'str',
         'obs_bucket_type': 'str',
         'http_port': 'int',
-        'https_port': 'int'
+        'https_port': 'int',
+        'origin_protocol': 'str',
+        'host_name': 'str'
     }
 
     attribute_map = {
@@ -27,24 +29,30 @@ class BackSources:
         'ip_or_domain': 'ip_or_domain',
         'obs_bucket_type': 'obs_bucket_type',
         'http_port': 'http_port',
-        'https_port': 'https_port'
+        'https_port': 'https_port',
+        'origin_protocol': 'origin_protocol',
+        'host_name': 'host_name'
     }
 
-    def __init__(self, sources_type=None, ip_or_domain=None, obs_bucket_type=None, http_port=None, https_port=None):
+    def __init__(self, sources_type=None, ip_or_domain=None, obs_bucket_type=None, http_port=None, https_port=None, origin_protocol=None, host_name=None):
         r"""BackSources
 
         The model defined in huaweicloud sdk
 
-        :param sources_type: 源站类型, ipaddr：源站IP，domain：源站域名，obs_bucket：OBS桶域名。
+        :param sources_type: **参数解释：** 源站类型 **约束限制：** 不涉及 **取值范围：** - ipaddr: 源站IP - domain: 源站域名 - obs_bucket: OBS桶域名  **默认取值：** 不涉及
         :type sources_type: str
-        :param ip_or_domain: 源站IP或者域名。
+        :param ip_or_domain: **参数解释：** 源站IP或者域名 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type ip_or_domain: str
-        :param obs_bucket_type: OBS桶类型： - “private”， 私有桶： - “public”，公有桶。
+        :param obs_bucket_type: **参数解释：** OBS桶类型 **约束限制：** 不涉及 **取值范围：** - private: 私有桶 - public: 公有桶  **默认取值：** public: 公有桶
         :type obs_bucket_type: str
-        :param http_port: HTTP端口，取值范围：1-65535。
+        :param http_port: **参数解释：** HTTP端口 **约束限制：** 不涉及 **取值范围：** 1-65535 **默认取值：** 80
         :type http_port: int
-        :param https_port: HTTPS端口，取值范围：1-65535。
+        :param https_port: **参数解释：** HTTPS端口 **约束限制：** 不涉及 **取值范围：** 1-65535 **默认取值：** 443
         :type https_port: int
+        :param origin_protocol: **参数解释：** 指定CDN回源时的请求协议 **约束限制：** 不涉及 **取值范围：** - follow: 协议跟随 - http: http协议 - https: https协议  **默认取值：** http: http协议
+        :type origin_protocol: str
+        :param host_name: **参数解释：** 回源HOST **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 加速域名
+        :type host_name: str
         """
         
         
@@ -54,6 +62,8 @@ class BackSources:
         self._obs_bucket_type = None
         self._http_port = None
         self._https_port = None
+        self._origin_protocol = None
+        self._host_name = None
         self.discriminator = None
 
         self.sources_type = sources_type
@@ -64,12 +74,16 @@ class BackSources:
             self.http_port = http_port
         if https_port is not None:
             self.https_port = https_port
+        if origin_protocol is not None:
+            self.origin_protocol = origin_protocol
+        if host_name is not None:
+            self.host_name = host_name
 
     @property
     def sources_type(self):
         r"""Gets the sources_type of this BackSources.
 
-        源站类型, ipaddr：源站IP，domain：源站域名，obs_bucket：OBS桶域名。
+        **参数解释：** 源站类型 **约束限制：** 不涉及 **取值范围：** - ipaddr: 源站IP - domain: 源站域名 - obs_bucket: OBS桶域名  **默认取值：** 不涉及
 
         :return: The sources_type of this BackSources.
         :rtype: str
@@ -80,7 +94,7 @@ class BackSources:
     def sources_type(self, sources_type):
         r"""Sets the sources_type of this BackSources.
 
-        源站类型, ipaddr：源站IP，domain：源站域名，obs_bucket：OBS桶域名。
+        **参数解释：** 源站类型 **约束限制：** 不涉及 **取值范围：** - ipaddr: 源站IP - domain: 源站域名 - obs_bucket: OBS桶域名  **默认取值：** 不涉及
 
         :param sources_type: The sources_type of this BackSources.
         :type sources_type: str
@@ -91,7 +105,7 @@ class BackSources:
     def ip_or_domain(self):
         r"""Gets the ip_or_domain of this BackSources.
 
-        源站IP或者域名。
+        **参数解释：** 源站IP或者域名 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The ip_or_domain of this BackSources.
         :rtype: str
@@ -102,7 +116,7 @@ class BackSources:
     def ip_or_domain(self, ip_or_domain):
         r"""Sets the ip_or_domain of this BackSources.
 
-        源站IP或者域名。
+        **参数解释：** 源站IP或者域名 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param ip_or_domain: The ip_or_domain of this BackSources.
         :type ip_or_domain: str
@@ -113,7 +127,7 @@ class BackSources:
     def obs_bucket_type(self):
         r"""Gets the obs_bucket_type of this BackSources.
 
-        OBS桶类型： - “private”， 私有桶： - “public”，公有桶。
+        **参数解释：** OBS桶类型 **约束限制：** 不涉及 **取值范围：** - private: 私有桶 - public: 公有桶  **默认取值：** public: 公有桶
 
         :return: The obs_bucket_type of this BackSources.
         :rtype: str
@@ -124,7 +138,7 @@ class BackSources:
     def obs_bucket_type(self, obs_bucket_type):
         r"""Sets the obs_bucket_type of this BackSources.
 
-        OBS桶类型： - “private”， 私有桶： - “public”，公有桶。
+        **参数解释：** OBS桶类型 **约束限制：** 不涉及 **取值范围：** - private: 私有桶 - public: 公有桶  **默认取值：** public: 公有桶
 
         :param obs_bucket_type: The obs_bucket_type of this BackSources.
         :type obs_bucket_type: str
@@ -135,7 +149,7 @@ class BackSources:
     def http_port(self):
         r"""Gets the http_port of this BackSources.
 
-        HTTP端口，取值范围：1-65535。
+        **参数解释：** HTTP端口 **约束限制：** 不涉及 **取值范围：** 1-65535 **默认取值：** 80
 
         :return: The http_port of this BackSources.
         :rtype: int
@@ -146,7 +160,7 @@ class BackSources:
     def http_port(self, http_port):
         r"""Sets the http_port of this BackSources.
 
-        HTTP端口，取值范围：1-65535。
+        **参数解释：** HTTP端口 **约束限制：** 不涉及 **取值范围：** 1-65535 **默认取值：** 80
 
         :param http_port: The http_port of this BackSources.
         :type http_port: int
@@ -157,7 +171,7 @@ class BackSources:
     def https_port(self):
         r"""Gets the https_port of this BackSources.
 
-        HTTPS端口，取值范围：1-65535。
+        **参数解释：** HTTPS端口 **约束限制：** 不涉及 **取值范围：** 1-65535 **默认取值：** 443
 
         :return: The https_port of this BackSources.
         :rtype: int
@@ -168,12 +182,56 @@ class BackSources:
     def https_port(self, https_port):
         r"""Sets the https_port of this BackSources.
 
-        HTTPS端口，取值范围：1-65535。
+        **参数解释：** HTTPS端口 **约束限制：** 不涉及 **取值范围：** 1-65535 **默认取值：** 443
 
         :param https_port: The https_port of this BackSources.
         :type https_port: int
         """
         self._https_port = https_port
+
+    @property
+    def origin_protocol(self):
+        r"""Gets the origin_protocol of this BackSources.
+
+        **参数解释：** 指定CDN回源时的请求协议 **约束限制：** 不涉及 **取值范围：** - follow: 协议跟随 - http: http协议 - https: https协议  **默认取值：** http: http协议
+
+        :return: The origin_protocol of this BackSources.
+        :rtype: str
+        """
+        return self._origin_protocol
+
+    @origin_protocol.setter
+    def origin_protocol(self, origin_protocol):
+        r"""Sets the origin_protocol of this BackSources.
+
+        **参数解释：** 指定CDN回源时的请求协议 **约束限制：** 不涉及 **取值范围：** - follow: 协议跟随 - http: http协议 - https: https协议  **默认取值：** http: http协议
+
+        :param origin_protocol: The origin_protocol of this BackSources.
+        :type origin_protocol: str
+        """
+        self._origin_protocol = origin_protocol
+
+    @property
+    def host_name(self):
+        r"""Gets the host_name of this BackSources.
+
+        **参数解释：** 回源HOST **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 加速域名
+
+        :return: The host_name of this BackSources.
+        :rtype: str
+        """
+        return self._host_name
+
+    @host_name.setter
+    def host_name(self, host_name):
+        r"""Sets the host_name of this BackSources.
+
+        **参数解释：** 回源HOST **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 加速域名
+
+        :param host_name: The host_name of this BackSources.
+        :type host_name: str
+        """
+        self._host_name = host_name
 
     def to_dict(self):
         result = {}

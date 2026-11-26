@@ -19,7 +19,9 @@ class DomainBody:
         'business_type': 'str',
         'sources': 'list[SourcesRequestBody]',
         'service_area': 'str',
-        'enterprise_project_id': 'str'
+        'enterprise_project_id': 'str',
+        'origin_protocol': 'str',
+        'configs': 'CreateDomainConfigs'
     }
 
     attribute_map = {
@@ -27,24 +29,30 @@ class DomainBody:
         'business_type': 'business_type',
         'sources': 'sources',
         'service_area': 'service_area',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'origin_protocol': 'origin_protocol',
+        'configs': 'configs'
     }
 
-    def __init__(self, domain_name=None, business_type=None, sources=None, service_area=None, enterprise_project_id=None):
+    def __init__(self, domain_name=None, business_type=None, sources=None, service_area=None, enterprise_project_id=None, origin_protocol=None, configs=None):
         r"""DomainBody
 
         The model defined in huaweicloud sdk
 
-        :param domain_name: **参数解释：** 需要添加到CDN控制台加速的域名 &gt; 添加泛域名后，该泛域名所有次级域名均默认接入CDN加速。  **约束限制：** 加速域名不允许重复添加 **取值范围：** - 域名长度不能超过200个字符 - 支持大小写字母、数字、\&quot;-\&quot;、\&quot;.\&quot;，首尾字符不能是\&quot;-\&quot;或\&quot;.\&quot; - 泛域名场景下支持\&quot;*\&quot;，且\&quot;*\&quot;必须为首字符 - 域名单节点长度不超过63个字符，即：xxx.xxx.com中，xxx的字符数不超过63个字符  **默认取值：** 不涉及
+        :param domain_name: **参数解释：** 加速域名 &gt; 添加泛域名后，该泛域名所有次级域名默认支持CDN加速  **约束限制：** 加速域名不允许重复添加 **取值范围：** - 域名长度不能超过200个字符 - 支持大小写字母、数字、\&quot;-\&quot;、\&quot;.\&quot;，首尾字符不能是\&quot;-\&quot;或\&quot;.\&quot; - 泛域名场景下支持\&quot;\\*\&quot;，且\&quot;\\*必须为首字符 - 域名单节点长度不超过63个字符，即：\\*\\*\\*.\\*\\*\\*.com中，\\*\\*\\*的字符数不超过63个字符  **默认取值：** 不涉及
         :type domain_name: str
-        :param business_type: 域名业务类型，若为web，则表示类型为网页加速；若为download，则表示业务类型为文件下载加速；若为video，则表示业务类型为点播加速；若为wholeSite，则表示业务类型为全站加速。
+        :param business_type: **参数解释：** 域名业务类型 **约束限制：** 不涉及 **取值范围：** - web: 网页加速 - download: 文件下载加速 - video: 点播加速 - wholeSite: 全站加速  **默认取值：** 不涉及
         :type business_type: str
-        :param sources: 源站配置。
+        :param sources: **参数解释：** 源站配置 **约束限制：** 不涉及
         :type sources: list[:class:`huaweicloudsdkcdn.v2.SourcesRequestBody`]
-        :param service_area: 域名服务范围，若为mainland_china，则表示服务范围为中国大陆；若为outside_mainland_china，则表示服务范围为中国大陆境外；若为global，则表示服务范围为全球。
+        :param service_area: **参数解释：** 域名服务范围 **约束限制：** 服务范围为中国大陆或全球时，加速域名需要到工信部备案 **取值范围：** - mainland_china: 中国大陆 - outside_mainland_china: 中国大陆境外 - global: 全球  **默认取值：** mainland_china: 中国大陆
         :type service_area: str
-        :param enterprise_project_id: 当用户开启企业项目功能时，该参数生效，表示添加加速域名到该企业项目。注意：当使用子帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。
+        :param enterprise_project_id: **参数解释：** 企业项目id。您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id **约束限制：** 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\&quot;all\&quot;表示所有项目  **取值范围：** 不涉及 **默认取值：** 不涉及
         :type enterprise_project_id: str
+        :param origin_protocol: **参数解释：** 指定CDN回源时的请求协议 **约束限制：** 不涉及 **取值范围：** - follow: 协议跟随 - http: http协议 - https: https协议  **默认取值：** http: http协议
+        :type origin_protocol: str
+        :param configs: 
+        :type configs: :class:`huaweicloudsdkcdn.v2.CreateDomainConfigs`
         """
         
         
@@ -54,6 +62,8 @@ class DomainBody:
         self._sources = None
         self._service_area = None
         self._enterprise_project_id = None
+        self._origin_protocol = None
+        self._configs = None
         self.discriminator = None
 
         self.domain_name = domain_name
@@ -63,12 +73,16 @@ class DomainBody:
             self.service_area = service_area
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if origin_protocol is not None:
+            self.origin_protocol = origin_protocol
+        if configs is not None:
+            self.configs = configs
 
     @property
     def domain_name(self):
         r"""Gets the domain_name of this DomainBody.
 
-        **参数解释：** 需要添加到CDN控制台加速的域名 > 添加泛域名后，该泛域名所有次级域名均默认接入CDN加速。  **约束限制：** 加速域名不允许重复添加 **取值范围：** - 域名长度不能超过200个字符 - 支持大小写字母、数字、\"-\"、\".\"，首尾字符不能是\"-\"或\".\" - 泛域名场景下支持\"*\"，且\"*\"必须为首字符 - 域名单节点长度不超过63个字符，即：xxx.xxx.com中，xxx的字符数不超过63个字符  **默认取值：** 不涉及
+        **参数解释：** 加速域名 > 添加泛域名后，该泛域名所有次级域名默认支持CDN加速  **约束限制：** 加速域名不允许重复添加 **取值范围：** - 域名长度不能超过200个字符 - 支持大小写字母、数字、\"-\"、\".\"，首尾字符不能是\"-\"或\".\" - 泛域名场景下支持\"\\*\"，且\"\\*必须为首字符 - 域名单节点长度不超过63个字符，即：\\*\\*\\*.\\*\\*\\*.com中，\\*\\*\\*的字符数不超过63个字符  **默认取值：** 不涉及
 
         :return: The domain_name of this DomainBody.
         :rtype: str
@@ -79,7 +93,7 @@ class DomainBody:
     def domain_name(self, domain_name):
         r"""Sets the domain_name of this DomainBody.
 
-        **参数解释：** 需要添加到CDN控制台加速的域名 > 添加泛域名后，该泛域名所有次级域名均默认接入CDN加速。  **约束限制：** 加速域名不允许重复添加 **取值范围：** - 域名长度不能超过200个字符 - 支持大小写字母、数字、\"-\"、\".\"，首尾字符不能是\"-\"或\".\" - 泛域名场景下支持\"*\"，且\"*\"必须为首字符 - 域名单节点长度不超过63个字符，即：xxx.xxx.com中，xxx的字符数不超过63个字符  **默认取值：** 不涉及
+        **参数解释：** 加速域名 > 添加泛域名后，该泛域名所有次级域名默认支持CDN加速  **约束限制：** 加速域名不允许重复添加 **取值范围：** - 域名长度不能超过200个字符 - 支持大小写字母、数字、\"-\"、\".\"，首尾字符不能是\"-\"或\".\" - 泛域名场景下支持\"\\*\"，且\"\\*必须为首字符 - 域名单节点长度不超过63个字符，即：\\*\\*\\*.\\*\\*\\*.com中，\\*\\*\\*的字符数不超过63个字符  **默认取值：** 不涉及
 
         :param domain_name: The domain_name of this DomainBody.
         :type domain_name: str
@@ -90,7 +104,7 @@ class DomainBody:
     def business_type(self):
         r"""Gets the business_type of this DomainBody.
 
-        域名业务类型，若为web，则表示类型为网页加速；若为download，则表示业务类型为文件下载加速；若为video，则表示业务类型为点播加速；若为wholeSite，则表示业务类型为全站加速。
+        **参数解释：** 域名业务类型 **约束限制：** 不涉及 **取值范围：** - web: 网页加速 - download: 文件下载加速 - video: 点播加速 - wholeSite: 全站加速  **默认取值：** 不涉及
 
         :return: The business_type of this DomainBody.
         :rtype: str
@@ -101,7 +115,7 @@ class DomainBody:
     def business_type(self, business_type):
         r"""Sets the business_type of this DomainBody.
 
-        域名业务类型，若为web，则表示类型为网页加速；若为download，则表示业务类型为文件下载加速；若为video，则表示业务类型为点播加速；若为wholeSite，则表示业务类型为全站加速。
+        **参数解释：** 域名业务类型 **约束限制：** 不涉及 **取值范围：** - web: 网页加速 - download: 文件下载加速 - video: 点播加速 - wholeSite: 全站加速  **默认取值：** 不涉及
 
         :param business_type: The business_type of this DomainBody.
         :type business_type: str
@@ -112,7 +126,7 @@ class DomainBody:
     def sources(self):
         r"""Gets the sources of this DomainBody.
 
-        源站配置。
+        **参数解释：** 源站配置 **约束限制：** 不涉及
 
         :return: The sources of this DomainBody.
         :rtype: list[:class:`huaweicloudsdkcdn.v2.SourcesRequestBody`]
@@ -123,7 +137,7 @@ class DomainBody:
     def sources(self, sources):
         r"""Sets the sources of this DomainBody.
 
-        源站配置。
+        **参数解释：** 源站配置 **约束限制：** 不涉及
 
         :param sources: The sources of this DomainBody.
         :type sources: list[:class:`huaweicloudsdkcdn.v2.SourcesRequestBody`]
@@ -134,7 +148,7 @@ class DomainBody:
     def service_area(self):
         r"""Gets the service_area of this DomainBody.
 
-        域名服务范围，若为mainland_china，则表示服务范围为中国大陆；若为outside_mainland_china，则表示服务范围为中国大陆境外；若为global，则表示服务范围为全球。
+        **参数解释：** 域名服务范围 **约束限制：** 服务范围为中国大陆或全球时，加速域名需要到工信部备案 **取值范围：** - mainland_china: 中国大陆 - outside_mainland_china: 中国大陆境外 - global: 全球  **默认取值：** mainland_china: 中国大陆
 
         :return: The service_area of this DomainBody.
         :rtype: str
@@ -145,7 +159,7 @@ class DomainBody:
     def service_area(self, service_area):
         r"""Sets the service_area of this DomainBody.
 
-        域名服务范围，若为mainland_china，则表示服务范围为中国大陆；若为outside_mainland_china，则表示服务范围为中国大陆境外；若为global，则表示服务范围为全球。
+        **参数解释：** 域名服务范围 **约束限制：** 服务范围为中国大陆或全球时，加速域名需要到工信部备案 **取值范围：** - mainland_china: 中国大陆 - outside_mainland_china: 中国大陆境外 - global: 全球  **默认取值：** mainland_china: 中国大陆
 
         :param service_area: The service_area of this DomainBody.
         :type service_area: str
@@ -156,7 +170,7 @@ class DomainBody:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this DomainBody.
 
-        当用户开启企业项目功能时，该参数生效，表示添加加速域名到该企业项目。注意：当使用子帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。
+        **参数解释：** 企业项目id。您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id **约束限制：** 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\"all\"表示所有项目  **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The enterprise_project_id of this DomainBody.
         :rtype: str
@@ -167,12 +181,52 @@ class DomainBody:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this DomainBody.
 
-        当用户开启企业项目功能时，该参数生效，表示添加加速域名到该企业项目。注意：当使用子帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。
+        **参数解释：** 企业项目id。您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id **约束限制：** 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\"all\"表示所有项目  **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param enterprise_project_id: The enterprise_project_id of this DomainBody.
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def origin_protocol(self):
+        r"""Gets the origin_protocol of this DomainBody.
+
+        **参数解释：** 指定CDN回源时的请求协议 **约束限制：** 不涉及 **取值范围：** - follow: 协议跟随 - http: http协议 - https: https协议  **默认取值：** http: http协议
+
+        :return: The origin_protocol of this DomainBody.
+        :rtype: str
+        """
+        return self._origin_protocol
+
+    @origin_protocol.setter
+    def origin_protocol(self, origin_protocol):
+        r"""Sets the origin_protocol of this DomainBody.
+
+        **参数解释：** 指定CDN回源时的请求协议 **约束限制：** 不涉及 **取值范围：** - follow: 协议跟随 - http: http协议 - https: https协议  **默认取值：** http: http协议
+
+        :param origin_protocol: The origin_protocol of this DomainBody.
+        :type origin_protocol: str
+        """
+        self._origin_protocol = origin_protocol
+
+    @property
+    def configs(self):
+        r"""Gets the configs of this DomainBody.
+
+        :return: The configs of this DomainBody.
+        :rtype: :class:`huaweicloudsdkcdn.v2.CreateDomainConfigs`
+        """
+        return self._configs
+
+    @configs.setter
+    def configs(self, configs):
+        r"""Sets the configs of this DomainBody.
+
+        :param configs: The configs of this DomainBody.
+        :type configs: :class:`huaweicloudsdkcdn.v2.CreateDomainConfigs`
+        """
+        self._configs = configs
 
     def to_dict(self):
         result = {}

@@ -39,11 +39,11 @@ class SearchAuthorizeAppRequest:
         :type workspace: str
         :param dlm_type: 数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
         :type dlm_type: str
-        :param api_id: api编号。
+        :param api_id: API编号。
         :type api_id: str
-        :param offset: 查询起始坐标, 即跳过前X条数据。仅支持0或limit的整数倍，不满足则向下取整。
+        :param offset: 查询起始坐标，即跳过前X条数据。仅支持0或limit的整数倍，不满足则向下取整。
         :type offset: int
-        :param limit: 查询条数, 即查询Y条数据。
+        :param limit: 查询条数，即查询Y条数据。
         :type limit: int
         """
         
@@ -113,7 +113,7 @@ class SearchAuthorizeAppRequest:
     def api_id(self):
         r"""Gets the api_id of this SearchAuthorizeAppRequest.
 
-        api编号。
+        API编号。
 
         :return: The api_id of this SearchAuthorizeAppRequest.
         :rtype: str
@@ -124,7 +124,7 @@ class SearchAuthorizeAppRequest:
     def api_id(self, api_id):
         r"""Sets the api_id of this SearchAuthorizeAppRequest.
 
-        api编号。
+        API编号。
 
         :param api_id: The api_id of this SearchAuthorizeAppRequest.
         :type api_id: str
@@ -135,7 +135,7 @@ class SearchAuthorizeAppRequest:
     def offset(self):
         r"""Gets the offset of this SearchAuthorizeAppRequest.
 
-        查询起始坐标, 即跳过前X条数据。仅支持0或limit的整数倍，不满足则向下取整。
+        查询起始坐标，即跳过前X条数据。仅支持0或limit的整数倍，不满足则向下取整。
 
         :return: The offset of this SearchAuthorizeAppRequest.
         :rtype: int
@@ -146,7 +146,7 @@ class SearchAuthorizeAppRequest:
     def offset(self, offset):
         r"""Sets the offset of this SearchAuthorizeAppRequest.
 
-        查询起始坐标, 即跳过前X条数据。仅支持0或limit的整数倍，不满足则向下取整。
+        查询起始坐标，即跳过前X条数据。仅支持0或limit的整数倍，不满足则向下取整。
 
         :param offset: The offset of this SearchAuthorizeAppRequest.
         :type offset: int
@@ -157,7 +157,7 @@ class SearchAuthorizeAppRequest:
     def limit(self):
         r"""Gets the limit of this SearchAuthorizeAppRequest.
 
-        查询条数, 即查询Y条数据。
+        查询条数，即查询Y条数据。
 
         :return: The limit of this SearchAuthorizeAppRequest.
         :rtype: int
@@ -168,7 +168,7 @@ class SearchAuthorizeAppRequest:
     def limit(self, limit):
         r"""Sets the limit of this SearchAuthorizeAppRequest.
 
-        查询条数, 即查询Y条数据。
+        查询条数，即查询Y条数据。
 
         :param limit: The limit of this SearchAuthorizeAppRequest.
         :type limit: int

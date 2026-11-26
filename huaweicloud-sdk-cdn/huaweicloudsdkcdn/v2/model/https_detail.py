@@ -25,7 +25,8 @@ class HttpsDetail:
         'https_status': 'int',
         'force_redirect_https': 'int',
         'force_redirect_config': 'ForceRedirect',
-        'http2': 'int'
+        'http2': 'int',
+        'certificates': 'list[HttpsDetailCertificates]'
     }
 
     attribute_map = {
@@ -39,27 +40,28 @@ class HttpsDetail:
         'https_status': 'https_status',
         'force_redirect_https': 'force_redirect_https',
         'force_redirect_config': 'force_redirect_config',
-        'http2': 'http2'
+        'http2': 'http2',
+        'certificates': 'certificates'
     }
 
-    def __init__(self, domain_id=None, domain_name=None, cert_name=None, certificate=None, private_key=None, certificate_type=None, expiration_time=None, https_status=None, force_redirect_https=None, force_redirect_config=None, http2=None):
+    def __init__(self, domain_id=None, domain_name=None, cert_name=None, certificate=None, private_key=None, certificate_type=None, expiration_time=None, https_status=None, force_redirect_https=None, force_redirect_config=None, http2=None, certificates=None):
         r"""HttpsDetail
 
         The model defined in huaweicloud sdk
 
-        :param domain_id: 域名id。
+        :param domain_id: **参数解释：** 域名id。 **约束限制：** 不涉及 **取值范围：** 不涉及
         :type domain_id: str
-        :param domain_name: 绑定该证书的域名。
+        :param domain_name: **参数解释：** 绑定该证书的域名。 **约束限制：** 不涉及 **取值范围：** 不涉及
         :type domain_name: str
-        :param cert_name: 证书名字。
+        :param cert_name: **参数解释：** 证书名字。 **约束限制：** 不涉及 **取值范围：** 不涉及
         :type cert_name: str
-        :param certificate: 证书内容。
+        :param certificate: **参数解释：** 证书内容。 **约束限制：** 不涉及 **取值范围：** 不涉及
         :type certificate: str
-        :param private_key: 私钥内容。
+        :param private_key: **参数解释：** 私钥内容。 **约束限制：** 不涉及 **取值范围：** 不涉及
         :type private_key: str
         :param certificate_type: 证书类型，0：自有证书，1：云托管证书，2：SCM证书。
         :type certificate_type: int
-        :param expiration_time: 证书过期时间。
+        :param expiration_time: **参数解释：** 证书过期时间，Unix时间戳格式，单位为毫秒。 **约束限制：** 不涉及 **取值范围：** 不涉及
         :type expiration_time: int
         :param https_status: HTTPS证书是否启用，取值0：不启用；1：启用HTTPS加速并协议跟随回源；2：启用HTTPS加速并HTTP回源。
         :type https_status: int
@@ -69,6 +71,8 @@ class HttpsDetail:
         :type force_redirect_config: :class:`huaweicloudsdkcdn.v2.ForceRedirect`
         :param http2: 是否使用HTTP2.0。（1是，0否。）
         :type http2: int
+        :param certificates: **参数解释：** 证书列表，配置双证书场景下包含国际证书和国密证书两项 **约束限制：** 不涉及
+        :type certificates: list[:class:`huaweicloudsdkcdn.v2.HttpsDetailCertificates`]
         """
         
         
@@ -84,6 +88,7 @@ class HttpsDetail:
         self._force_redirect_https = None
         self._force_redirect_config = None
         self._http2 = None
+        self._certificates = None
         self.discriminator = None
 
         if domain_id is not None:
@@ -108,12 +113,14 @@ class HttpsDetail:
             self.force_redirect_config = force_redirect_config
         if http2 is not None:
             self.http2 = http2
+        if certificates is not None:
+            self.certificates = certificates
 
     @property
     def domain_id(self):
         r"""Gets the domain_id of this HttpsDetail.
 
-        域名id。
+        **参数解释：** 域名id。 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :return: The domain_id of this HttpsDetail.
         :rtype: str
@@ -124,7 +131,7 @@ class HttpsDetail:
     def domain_id(self, domain_id):
         r"""Sets the domain_id of this HttpsDetail.
 
-        域名id。
+        **参数解释：** 域名id。 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :param domain_id: The domain_id of this HttpsDetail.
         :type domain_id: str
@@ -135,7 +142,7 @@ class HttpsDetail:
     def domain_name(self):
         r"""Gets the domain_name of this HttpsDetail.
 
-        绑定该证书的域名。
+        **参数解释：** 绑定该证书的域名。 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :return: The domain_name of this HttpsDetail.
         :rtype: str
@@ -146,7 +153,7 @@ class HttpsDetail:
     def domain_name(self, domain_name):
         r"""Sets the domain_name of this HttpsDetail.
 
-        绑定该证书的域名。
+        **参数解释：** 绑定该证书的域名。 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :param domain_name: The domain_name of this HttpsDetail.
         :type domain_name: str
@@ -157,7 +164,7 @@ class HttpsDetail:
     def cert_name(self):
         r"""Gets the cert_name of this HttpsDetail.
 
-        证书名字。
+        **参数解释：** 证书名字。 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :return: The cert_name of this HttpsDetail.
         :rtype: str
@@ -168,7 +175,7 @@ class HttpsDetail:
     def cert_name(self, cert_name):
         r"""Sets the cert_name of this HttpsDetail.
 
-        证书名字。
+        **参数解释：** 证书名字。 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :param cert_name: The cert_name of this HttpsDetail.
         :type cert_name: str
@@ -179,7 +186,7 @@ class HttpsDetail:
     def certificate(self):
         r"""Gets the certificate of this HttpsDetail.
 
-        证书内容。
+        **参数解释：** 证书内容。 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :return: The certificate of this HttpsDetail.
         :rtype: str
@@ -190,7 +197,7 @@ class HttpsDetail:
     def certificate(self, certificate):
         r"""Sets the certificate of this HttpsDetail.
 
-        证书内容。
+        **参数解释：** 证书内容。 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :param certificate: The certificate of this HttpsDetail.
         :type certificate: str
@@ -201,7 +208,7 @@ class HttpsDetail:
     def private_key(self):
         r"""Gets the private_key of this HttpsDetail.
 
-        私钥内容。
+        **参数解释：** 私钥内容。 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :return: The private_key of this HttpsDetail.
         :rtype: str
@@ -212,7 +219,7 @@ class HttpsDetail:
     def private_key(self, private_key):
         r"""Sets the private_key of this HttpsDetail.
 
-        私钥内容。
+        **参数解释：** 私钥内容。 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :param private_key: The private_key of this HttpsDetail.
         :type private_key: str
@@ -245,7 +252,7 @@ class HttpsDetail:
     def expiration_time(self):
         r"""Gets the expiration_time of this HttpsDetail.
 
-        证书过期时间。
+        **参数解释：** 证书过期时间，Unix时间戳格式，单位为毫秒。 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :return: The expiration_time of this HttpsDetail.
         :rtype: int
@@ -256,7 +263,7 @@ class HttpsDetail:
     def expiration_time(self, expiration_time):
         r"""Sets the expiration_time of this HttpsDetail.
 
-        证书过期时间。
+        **参数解释：** 证书过期时间，Unix时间戳格式，单位为毫秒。 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :param expiration_time: The expiration_time of this HttpsDetail.
         :type expiration_time: int
@@ -346,6 +353,28 @@ class HttpsDetail:
         :type http2: int
         """
         self._http2 = http2
+
+    @property
+    def certificates(self):
+        r"""Gets the certificates of this HttpsDetail.
+
+        **参数解释：** 证书列表，配置双证书场景下包含国际证书和国密证书两项 **约束限制：** 不涉及
+
+        :return: The certificates of this HttpsDetail.
+        :rtype: list[:class:`huaweicloudsdkcdn.v2.HttpsDetailCertificates`]
+        """
+        return self._certificates
+
+    @certificates.setter
+    def certificates(self, certificates):
+        r"""Sets the certificates of this HttpsDetail.
+
+        **参数解释：** 证书列表，配置双证书场景下包含国际证书和国密证书两项 **约束限制：** 不涉及
+
+        :param certificates: The certificates of this HttpsDetail.
+        :type certificates: list[:class:`huaweicloudsdkcdn.v2.HttpsDetailCertificates`]
+        """
+        self._certificates = certificates
 
     def to_dict(self):
         result = {}

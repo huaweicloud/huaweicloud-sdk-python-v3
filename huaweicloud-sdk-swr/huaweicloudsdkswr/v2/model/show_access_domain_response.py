@@ -56,7 +56,7 @@ class ShowAccessDomainResponse(SdkResponse):
         :type namespace: str
         :param repository: 镜像仓库名称
         :type repository: str
-        :param access_domain: 共享帐号名
+        :param access_domain: 共享账号名
         :type access_domain: str
         :param permit: 权限
         :type permit: str
@@ -187,7 +187,7 @@ class ShowAccessDomainResponse(SdkResponse):
     def access_domain(self):
         r"""Gets the access_domain of this ShowAccessDomainResponse.
 
-        共享帐号名
+        共享账号名
 
         :return: The access_domain of this ShowAccessDomainResponse.
         :rtype: str
@@ -198,7 +198,7 @@ class ShowAccessDomainResponse(SdkResponse):
     def access_domain(self, access_domain):
         r"""Sets the access_domain of this ShowAccessDomainResponse.
 
-        共享帐号名
+        共享账号名
 
         :param access_domain: The access_domain of this ShowAccessDomainResponse.
         :type access_domain: str

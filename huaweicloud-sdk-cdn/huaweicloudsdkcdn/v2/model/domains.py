@@ -35,7 +35,8 @@ class Domains:
         'banned_reason': 'str',
         'locked_reason': 'str',
         'enterprise_project_id': 'str',
-        'tags': 'list[EpResourceTag]'
+        'tags': 'list[EpResourceTag]',
+        'origin_protocol': 'str'
     }
 
     attribute_map = {
@@ -59,23 +60,24 @@ class Domains:
         'banned_reason': 'banned_reason',
         'locked_reason': 'locked_reason',
         'enterprise_project_id': 'enterprise_project_id',
-        'tags': 'tags'
+        'tags': 'tags',
+        'origin_protocol': 'origin_protocol'
     }
 
-    def __init__(self, id=None, domain_name=None, business_type=None, domain_status=None, cname=None, sources=None, domain_origin_host=None, https_status=None, create_time=None, modify_time=None, disabled=None, locked=None, auto_refresh_preheat=None, service_area=None, range_status=None, follow_status=None, origin_status=None, banned_reason=None, locked_reason=None, enterprise_project_id=None, tags=None):
+    def __init__(self, id=None, domain_name=None, business_type=None, domain_status=None, cname=None, sources=None, domain_origin_host=None, https_status=None, create_time=None, modify_time=None, disabled=None, locked=None, auto_refresh_preheat=None, service_area=None, range_status=None, follow_status=None, origin_status=None, banned_reason=None, locked_reason=None, enterprise_project_id=None, tags=None, origin_protocol=None):
         r"""Domains
 
         The model defined in huaweicloud sdk
 
-        :param id: 加速域名ID。
+        :param id: **参数解释：** 加速域名ID。 **约束限制：** 不涉及 **取值范围：** 不涉及
         :type id: str
-        :param domain_name: 加速域名。
+        :param domain_name: **参数解释：** 加速域名。 **约束限制：** 不涉及 **取值范围：** 不涉及
         :type domain_name: str
         :param business_type: 域名业务类型，若为web，则表示类型为网站加速；若为download，则表示业务类型为文件下载加速；若为video，则表示业务类型为点播加速；若为wholeSite，则表示类型为全站加速。
         :type business_type: str
         :param domain_status: 加速域名状态。取值意义： - online表示“已开启” - offline表示“已停用” - configuring表示“配置中” - configure_failed表示“配置失败” - checking表示“审核中” - check_failed表示“审核未通过” - deleting表示“删除中”。
         :type domain_status: str
-        :param cname: 加速域名对应的CNAME。
+        :param cname: **参数解释：** 加速域名对应的CNAME。 **约束限制：** 不涉及 **取值范围：** 不涉及
         :type cname: str
         :param sources: 源站配置。
         :type sources: list[:class:`huaweicloudsdkcdn.v2.Sources`]
@@ -83,9 +85,9 @@ class Domains:
         :type domain_origin_host: :class:`huaweicloudsdkcdn.v2.DomainOriginHost`
         :param https_status: 是否开启HTTPS加速。取值意义： - 0：未开启 - 1：开启
         :type https_status: int
-        :param create_time: 域名创建时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
+        :param create_time: **参数解释：** 域名创建时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。 **约束限制：** 不涉及 **取值范围：** 不涉及
         :type create_time: int
-        :param modify_time: 域名修改时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
+        :param modify_time: **参数解释：** 域名修改时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。 **约束限制：** 不涉及 **取值范围：** 不涉及
         :type modify_time: int
         :param disabled: 封禁状态（0代表未禁用；1代表禁用）。
         :type disabled: int
@@ -101,14 +103,16 @@ class Domains:
         :type follow_status: str
         :param origin_status: 是否暂停源站回源。取值意义： - on：开启 - off：关闭
         :type origin_status: str
-        :param banned_reason: 域名禁用原因。
+        :param banned_reason: **参数解释：** 域名禁用原因。 **约束限制：** 不涉及 **取值范围：** 不涉及
         :type banned_reason: str
-        :param locked_reason: 域名锁定原因。
+        :param locked_reason: **参数解释：** 域名锁定原因。 **约束限制：** 不涉及 **取值范围：** 不涉及
         :type locked_reason: str
-        :param enterprise_project_id: 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。
+        :param enterprise_project_id: **参数解释：** 企业项目ID。 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。 **约束限制：** 不涉及 **取值范围：** 不涉及
         :type enterprise_project_id: str
         :param tags: 标签信息。
         :type tags: list[:class:`huaweicloudsdkcdn.v2.EpResourceTag`]
+        :param origin_protocol: **参数解释：** 指定CDN回源时的请求协议 **约束限制：** 不涉及 **取值范围：** - follow: 协议跟随 - http: http协议 - https: https协议  **默认取值：** http: http协议
+        :type origin_protocol: str
         """
         
         
@@ -134,6 +138,7 @@ class Domains:
         self._locked_reason = None
         self._enterprise_project_id = None
         self._tags = None
+        self._origin_protocol = None
         self.discriminator = None
 
         if id is not None:
@@ -178,12 +183,14 @@ class Domains:
             self.enterprise_project_id = enterprise_project_id
         if tags is not None:
             self.tags = tags
+        if origin_protocol is not None:
+            self.origin_protocol = origin_protocol
 
     @property
     def id(self):
         r"""Gets the id of this Domains.
 
-        加速域名ID。
+        **参数解释：** 加速域名ID。 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :return: The id of this Domains.
         :rtype: str
@@ -194,7 +201,7 @@ class Domains:
     def id(self, id):
         r"""Sets the id of this Domains.
 
-        加速域名ID。
+        **参数解释：** 加速域名ID。 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :param id: The id of this Domains.
         :type id: str
@@ -205,7 +212,7 @@ class Domains:
     def domain_name(self):
         r"""Gets the domain_name of this Domains.
 
-        加速域名。
+        **参数解释：** 加速域名。 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :return: The domain_name of this Domains.
         :rtype: str
@@ -216,7 +223,7 @@ class Domains:
     def domain_name(self, domain_name):
         r"""Sets the domain_name of this Domains.
 
-        加速域名。
+        **参数解释：** 加速域名。 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :param domain_name: The domain_name of this Domains.
         :type domain_name: str
@@ -271,7 +278,7 @@ class Domains:
     def cname(self):
         r"""Gets the cname of this Domains.
 
-        加速域名对应的CNAME。
+        **参数解释：** 加速域名对应的CNAME。 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :return: The cname of this Domains.
         :rtype: str
@@ -282,7 +289,7 @@ class Domains:
     def cname(self, cname):
         r"""Sets the cname of this Domains.
 
-        加速域名对应的CNAME。
+        **参数解释：** 加速域名对应的CNAME。 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :param cname: The cname of this Domains.
         :type cname: str
@@ -355,7 +362,7 @@ class Domains:
     def create_time(self):
         r"""Gets the create_time of this Domains.
 
-        域名创建时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
+        **参数解释：** 域名创建时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :return: The create_time of this Domains.
         :rtype: int
@@ -366,7 +373,7 @@ class Domains:
     def create_time(self, create_time):
         r"""Sets the create_time of this Domains.
 
-        域名创建时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
+        **参数解释：** 域名创建时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :param create_time: The create_time of this Domains.
         :type create_time: int
@@ -377,7 +384,7 @@ class Domains:
     def modify_time(self):
         r"""Gets the modify_time of this Domains.
 
-        域名修改时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
+        **参数解释：** 域名修改时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :return: The modify_time of this Domains.
         :rtype: int
@@ -388,7 +395,7 @@ class Domains:
     def modify_time(self, modify_time):
         r"""Sets the modify_time of this Domains.
 
-        域名修改时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
+        **参数解释：** 域名修改时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :param modify_time: The modify_time of this Domains.
         :type modify_time: int
@@ -553,7 +560,7 @@ class Domains:
     def banned_reason(self):
         r"""Gets the banned_reason of this Domains.
 
-        域名禁用原因。
+        **参数解释：** 域名禁用原因。 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :return: The banned_reason of this Domains.
         :rtype: str
@@ -564,7 +571,7 @@ class Domains:
     def banned_reason(self, banned_reason):
         r"""Sets the banned_reason of this Domains.
 
-        域名禁用原因。
+        **参数解释：** 域名禁用原因。 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :param banned_reason: The banned_reason of this Domains.
         :type banned_reason: str
@@ -575,7 +582,7 @@ class Domains:
     def locked_reason(self):
         r"""Gets the locked_reason of this Domains.
 
-        域名锁定原因。
+        **参数解释：** 域名锁定原因。 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :return: The locked_reason of this Domains.
         :rtype: str
@@ -586,7 +593,7 @@ class Domains:
     def locked_reason(self, locked_reason):
         r"""Sets the locked_reason of this Domains.
 
-        域名锁定原因。
+        **参数解释：** 域名锁定原因。 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :param locked_reason: The locked_reason of this Domains.
         :type locked_reason: str
@@ -597,7 +604,7 @@ class Domains:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this Domains.
 
-        当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。
+        **参数解释：** 企业项目ID。 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :return: The enterprise_project_id of this Domains.
         :rtype: str
@@ -608,7 +615,7 @@ class Domains:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this Domains.
 
-        当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。
+        **参数解释：** 企业项目ID。 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :param enterprise_project_id: The enterprise_project_id of this Domains.
         :type enterprise_project_id: str
@@ -636,6 +643,28 @@ class Domains:
         :type tags: list[:class:`huaweicloudsdkcdn.v2.EpResourceTag`]
         """
         self._tags = tags
+
+    @property
+    def origin_protocol(self):
+        r"""Gets the origin_protocol of this Domains.
+
+        **参数解释：** 指定CDN回源时的请求协议 **约束限制：** 不涉及 **取值范围：** - follow: 协议跟随 - http: http协议 - https: https协议  **默认取值：** http: http协议
+
+        :return: The origin_protocol of this Domains.
+        :rtype: str
+        """
+        return self._origin_protocol
+
+    @origin_protocol.setter
+    def origin_protocol(self, origin_protocol):
+        r"""Sets the origin_protocol of this Domains.
+
+        **参数解释：** 指定CDN回源时的请求协议 **约束限制：** 不涉及 **取值范围：** - follow: 协议跟随 - http: http协议 - https: https协议  **默认取值：** http: http协议
+
+        :param origin_protocol: The origin_protocol of this Domains.
+        :type origin_protocol: str
+        """
+        self._origin_protocol = origin_protocol
 
     def to_dict(self):
         result = {}

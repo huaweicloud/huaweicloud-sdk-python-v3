@@ -39,11 +39,11 @@ class ListMessageRequest:
         :type workspace: str
         :param dlm_type: 数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
         :type dlm_type: str
-        :param offset: 查询起始坐标, 即跳过前X条数据。仅支持0或limit的整数倍，不满足则向下取整。
+        :param offset: 查询起始坐标，即跳过前X条数据。仅支持0或limit的整数倍，不满足则向下取整。
         :type offset: int
-        :param limit: 查询条数, 即查询Y条数据。
+        :param limit: 查询条数，即查询Y条数据。
         :type limit: int
-        :param api_name: api名称。
+        :param api_name: API名称。
         :type api_name: str
         """
         
@@ -114,7 +114,7 @@ class ListMessageRequest:
     def offset(self):
         r"""Gets the offset of this ListMessageRequest.
 
-        查询起始坐标, 即跳过前X条数据。仅支持0或limit的整数倍，不满足则向下取整。
+        查询起始坐标，即跳过前X条数据。仅支持0或limit的整数倍，不满足则向下取整。
 
         :return: The offset of this ListMessageRequest.
         :rtype: int
@@ -125,7 +125,7 @@ class ListMessageRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListMessageRequest.
 
-        查询起始坐标, 即跳过前X条数据。仅支持0或limit的整数倍，不满足则向下取整。
+        查询起始坐标，即跳过前X条数据。仅支持0或limit的整数倍，不满足则向下取整。
 
         :param offset: The offset of this ListMessageRequest.
         :type offset: int
@@ -136,7 +136,7 @@ class ListMessageRequest:
     def limit(self):
         r"""Gets the limit of this ListMessageRequest.
 
-        查询条数, 即查询Y条数据。
+        查询条数，即查询Y条数据。
 
         :return: The limit of this ListMessageRequest.
         :rtype: int
@@ -147,7 +147,7 @@ class ListMessageRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListMessageRequest.
 
-        查询条数, 即查询Y条数据。
+        查询条数，即查询Y条数据。
 
         :param limit: The limit of this ListMessageRequest.
         :type limit: int
@@ -158,7 +158,7 @@ class ListMessageRequest:
     def api_name(self):
         r"""Gets the api_name of this ListMessageRequest.
 
-        api名称。
+        API名称。
 
         :return: The api_name of this ListMessageRequest.
         :rtype: str
@@ -169,7 +169,7 @@ class ListMessageRequest:
     def api_name(self, api_name):
         r"""Sets the api_name of this ListMessageRequest.
 
-        api名称。
+        API名称。
 
         :param api_name: The api_name of this ListMessageRequest.
         :type api_name: str

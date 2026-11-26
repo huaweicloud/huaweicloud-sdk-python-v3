@@ -33,13 +33,13 @@ class FlexibleOrigins:
 
         The model defined in huaweicloud sdk
 
-        :param match_type: URI的匹配方式，支持文件后缀（file_extension）和路径前缀（file_path）。
+        :param match_type: **参数解释：** URI的匹配方式 **约束限制：** 不涉及 **取值范围：** - file_extension: 文件后缀匹配 - file_path: 目录路径 - all: 匹配所有文件  **默认取值：** 不涉及
         :type match_type: str
-        :param match_pattern: file_extension（文件后缀）： 支持所有格式的文件类型。 输入首字符为“.”，以“;”进行分隔。 输入的文件后缀名总数不能超过20个。 file_path（目录路径）：输入要求以“/”作为首字符，以“;”进行分隔，输入的目录路径总数不能超过20个。
+        :param match_pattern: **参数解释：** URI的匹配规则 **约束限制：** match_type为file_extension时：   - 支持所有格式的文件类型   - 输入首字符为“.”，以“;”进行分隔   - 输入的文件后缀名总数不能超过20个  match_type为file_path时：   - 要求以“/”作为首字符   - 以“;”进行分隔   - 输入的目录路径总数不能超过20个  match_type为all时：置空  &gt; 文件名后缀英文字符大、小写代表不同资源  **取值范围：** 1-512个字符 **默认取值：** 不涉及
         :type match_pattern: str
-        :param priority: 优先级取值范围为1-100，数值越大优先级越高。
+        :param priority: **参数解释：** 优先级 &gt; 数值越大优先级越高  **约束限制：** 不涉及 **取值范围：** 1-1000 **默认取值：** 不涉及
         :type priority: int
-        :param back_sources: 回源信息。  &gt; 每个目录的回源源站数量不超过1个。
+        :param back_sources: **参数解释：** 配置客户端请求匹配当前规则时，CDN节点回源访问的源站 **约束限制：** 每条规则的回源源站数量不超过1个 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type back_sources: list[:class:`huaweicloudsdkcdn.v2.BackSources`]
         """
         
@@ -52,7 +52,8 @@ class FlexibleOrigins:
         self.discriminator = None
 
         self.match_type = match_type
-        self.match_pattern = match_pattern
+        if match_pattern is not None:
+            self.match_pattern = match_pattern
         self.priority = priority
         self.back_sources = back_sources
 
@@ -60,7 +61,7 @@ class FlexibleOrigins:
     def match_type(self):
         r"""Gets the match_type of this FlexibleOrigins.
 
-        URI的匹配方式，支持文件后缀（file_extension）和路径前缀（file_path）。
+        **参数解释：** URI的匹配方式 **约束限制：** 不涉及 **取值范围：** - file_extension: 文件后缀匹配 - file_path: 目录路径 - all: 匹配所有文件  **默认取值：** 不涉及
 
         :return: The match_type of this FlexibleOrigins.
         :rtype: str
@@ -71,7 +72,7 @@ class FlexibleOrigins:
     def match_type(self, match_type):
         r"""Sets the match_type of this FlexibleOrigins.
 
-        URI的匹配方式，支持文件后缀（file_extension）和路径前缀（file_path）。
+        **参数解释：** URI的匹配方式 **约束限制：** 不涉及 **取值范围：** - file_extension: 文件后缀匹配 - file_path: 目录路径 - all: 匹配所有文件  **默认取值：** 不涉及
 
         :param match_type: The match_type of this FlexibleOrigins.
         :type match_type: str
@@ -82,7 +83,7 @@ class FlexibleOrigins:
     def match_pattern(self):
         r"""Gets the match_pattern of this FlexibleOrigins.
 
-        file_extension（文件后缀）： 支持所有格式的文件类型。 输入首字符为“.”，以“;”进行分隔。 输入的文件后缀名总数不能超过20个。 file_path（目录路径）：输入要求以“/”作为首字符，以“;”进行分隔，输入的目录路径总数不能超过20个。
+        **参数解释：** URI的匹配规则 **约束限制：** match_type为file_extension时：   - 支持所有格式的文件类型   - 输入首字符为“.”，以“;”进行分隔   - 输入的文件后缀名总数不能超过20个  match_type为file_path时：   - 要求以“/”作为首字符   - 以“;”进行分隔   - 输入的目录路径总数不能超过20个  match_type为all时：置空  > 文件名后缀英文字符大、小写代表不同资源  **取值范围：** 1-512个字符 **默认取值：** 不涉及
 
         :return: The match_pattern of this FlexibleOrigins.
         :rtype: str
@@ -93,7 +94,7 @@ class FlexibleOrigins:
     def match_pattern(self, match_pattern):
         r"""Sets the match_pattern of this FlexibleOrigins.
 
-        file_extension（文件后缀）： 支持所有格式的文件类型。 输入首字符为“.”，以“;”进行分隔。 输入的文件后缀名总数不能超过20个。 file_path（目录路径）：输入要求以“/”作为首字符，以“;”进行分隔，输入的目录路径总数不能超过20个。
+        **参数解释：** URI的匹配规则 **约束限制：** match_type为file_extension时：   - 支持所有格式的文件类型   - 输入首字符为“.”，以“;”进行分隔   - 输入的文件后缀名总数不能超过20个  match_type为file_path时：   - 要求以“/”作为首字符   - 以“;”进行分隔   - 输入的目录路径总数不能超过20个  match_type为all时：置空  > 文件名后缀英文字符大、小写代表不同资源  **取值范围：** 1-512个字符 **默认取值：** 不涉及
 
         :param match_pattern: The match_pattern of this FlexibleOrigins.
         :type match_pattern: str
@@ -104,7 +105,7 @@ class FlexibleOrigins:
     def priority(self):
         r"""Gets the priority of this FlexibleOrigins.
 
-        优先级取值范围为1-100，数值越大优先级越高。
+        **参数解释：** 优先级 > 数值越大优先级越高  **约束限制：** 不涉及 **取值范围：** 1-1000 **默认取值：** 不涉及
 
         :return: The priority of this FlexibleOrigins.
         :rtype: int
@@ -115,7 +116,7 @@ class FlexibleOrigins:
     def priority(self, priority):
         r"""Sets the priority of this FlexibleOrigins.
 
-        优先级取值范围为1-100，数值越大优先级越高。
+        **参数解释：** 优先级 > 数值越大优先级越高  **约束限制：** 不涉及 **取值范围：** 1-1000 **默认取值：** 不涉及
 
         :param priority: The priority of this FlexibleOrigins.
         :type priority: int
@@ -126,7 +127,7 @@ class FlexibleOrigins:
     def back_sources(self):
         r"""Gets the back_sources of this FlexibleOrigins.
 
-        回源信息。  > 每个目录的回源源站数量不超过1个。
+        **参数解释：** 配置客户端请求匹配当前规则时，CDN节点回源访问的源站 **约束限制：** 每条规则的回源源站数量不超过1个 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The back_sources of this FlexibleOrigins.
         :rtype: list[:class:`huaweicloudsdkcdn.v2.BackSources`]
@@ -137,7 +138,7 @@ class FlexibleOrigins:
     def back_sources(self, back_sources):
         r"""Sets the back_sources of this FlexibleOrigins.
 
-        回源信息。  > 每个目录的回源源站数量不超过1个。
+        **参数解释：** 配置客户端请求匹配当前规则时，CDN节点回源访问的源站 **约束限制：** 每条规则的回源源站数量不超过1个 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param back_sources: The back_sources of this FlexibleOrigins.
         :type back_sources: list[:class:`huaweicloudsdkcdn.v2.BackSources`]

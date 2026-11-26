@@ -1,3 +1,548 @@
+# 3.1.224 2026-11-26
+
+### HuaweiCloud SDK CDN
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **VerifyDomainOwner**
+    - changes of response param
+      - `+ status`
+  - **ListAccessControlTask**
+    - changes of request param
+      - `+ task_id`
+  - **UpdateDomainMultiCertificates**
+    - changes of request param
+      - `+ https.certificates`
+    - changes of response param
+      - `+ https.certificate_category`
+      - `+ https.certificates`
+  - **ShowCertificatesHttpsInfo**
+    - changes of response param
+      - `+ https.certificates`
+  - **ListDomains**
+    - changes of response param
+      - `+ domains.origin_protocol`
+  - **CreateDomain**
+    - changes of request param
+      - `+ domain.origin_protocol`
+      - `+ domain.configs`
+      - `+ domain.sources.priority`
+      - `+ domain.sources.weight`
+      - `+ domain.sources.host_name`
+  - **DeleteDomain**
+    - changes of response param
+      - `+ domain.cnames`
+      - `+ domain.tags`
+      - `+ domain.sources.weight`
+  - **EnableDomain**
+    - changes of response param
+      - `+ domain.cnames`
+      - `+ domain.tags`
+      - `+ domain.sources.weight`
+  - **DisableDomain**
+    - changes of response param
+      - `+ domain.cnames`
+      - `+ domain.tags`
+      - `+ domain.sources.weight`
+  - **UpdateRuleNew**
+    - changes of request param
+      - `+ actions.request_url_rewrite.rewrite_type`
+      - `+ actions.request_url_rewrite.source_url`
+      - `+ actions.request_url_rewrite.inherit_param`
+  - **UpdateDomainTemplate**
+    - changes of request param
+      - `+ configs.origin_request_header`
+      - `+ configs.https`
+      - `+ configs.quic`
+      - `+ configs.force_redirect`
+      - `+ configs.https_tls_version`
+      - `+ configs.access_area_filter`
+      - `+ configs.url_auth`
+      - `+ configs.rules`
+      - `+ configs.cache_rules.stale_while_revalidate`
+  - **ShowDomainFullConfig**
+    - changes of response param
+      - `+ configs.bandwidth_alarm_strategy`
+      - `+ configs.cache_rules.stale_while_revalidate`
+      - `+ configs.client_cert.trusted_certs`
+      - `+ configs.client_cert.sm_trusted_certs`
+      - `+ configs.client_cert.sm_cert_hosts`
+      - `+ configs.flexible_origin.back_sources.origin_protocol`
+      - `+ configs.flexible_origin.back_sources.host_name`
+  - **UpdateDomainFullConfig**
+    - changes of request param
+      - `+ configs.bandwidth_alarm_strategy`
+      - `+ configs.cache_rules.stale_while_revalidate`
+      - `+ configs.client_cert.trusted_certs`
+      - `+ configs.client_cert.sm_trusted_certs`
+      - `+ configs.client_cert.sm_cert_hosts`
+      - `+ configs.flexible_origin.back_sources.origin_protocol`
+      - `+ configs.flexible_origin.back_sources.host_name`
+  - **CreateRuleNew**
+    - changes of request param
+      - `+ actions.request_url_rewrite.rewrite_type`
+      - `+ actions.request_url_rewrite.source_url`
+      - `+ actions.request_url_rewrite.inherit_param`
+  - **ListRuleDetails**
+    - changes of response param
+      - `+ rules.actions.request_url_rewrite.rewrite_type`
+      - `+ rules.actions.request_url_rewrite.source_url`
+      - `+ rules.actions.request_url_rewrite.inherit_param`
+  - **UpdateFullRule**
+    - changes of request param
+      - `+ rules.actions.request_url_rewrite.rewrite_type`
+      - `+ rules.actions.request_url_rewrite.source_url`
+      - `+ rules.actions.request_url_rewrite.inherit_param`
+  - **CreateDomainTemplate**
+    - changes of request param
+      - `+ configs.origin_request_header`
+      - `+ configs.https`
+      - `+ configs.quic`
+      - `+ configs.force_redirect`
+      - `+ configs.https_tls_version`
+      - `+ configs.access_area_filter`
+      - `+ configs.url_auth`
+      - `+ configs.rules`
+      - `+ configs.cache_rules.stale_while_revalidate`
+  - **ShowDomainTemplate**
+    - changes of response param
+      - `+ templates.configs.origin_request_header`
+      - `+ templates.configs.https`
+      - `+ templates.configs.quic`
+      - `+ templates.configs.force_redirect`
+      - `+ templates.configs.https_tls_version`
+      - `+ templates.configs.access_area_filter`
+      - `+ templates.configs.url_auth`
+      - `+ templates.configs.rules`
+      - `+ templates.configs.cache_rules.stale_while_revalidate`
+  - **ShowAppliedTemplateRecord**
+    - changes of response param
+      - `+ elements.configs.origin_request_header`
+      - `+ elements.configs.https`
+      - `+ elements.configs.quic`
+      - `+ elements.configs.force_redirect`
+      - `+ elements.configs.https_tls_version`
+      - `+ elements.configs.access_area_filter`
+      - `+ elements.configs.url_auth`
+      - `+ elements.configs.rules`
+      - `+ elements.configs.cache_rules.stale_while_revalidate`
+
+### HuaweiCloud SDK CSS
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowClusterDetail**
+    - changes of response param
+      - `+ instances.created`
+  - **ListClustersDetails**
+    - changes of response param
+      - `+ clusters.instances.created`
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the API `ListDataServiceApprovers`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK GaussDB
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the API `ShowMigrateInfo`
+  - **ShowBackupRestoreTime**
+    - changes of request param
+      - `- date`
+
+### HuaweiCloud SDK IAM
+
+- _API Version_
+  - V5
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListPoliciesV5**
+    - changes of response param
+      - `- policies.tags`
+  - **CreatePolicyV5**
+    - changes of response param
+      - `- policy.tags`
+  - **GetPolicyV5**
+    - changes of response param
+      - `* policy: object<Policy> -> object<PolicyWithTags>`
+
+### HuaweiCloud SDK LakeFormation
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateRoles**
+    - changes of response param
+      - `+ external_role_id`
+      - `+ parameters`
+  - **ShowDatabase**
+    - changes of response param
+      - `+ access_policy_source`
+      - `+ version_id`
+      - `+ permission_connection_name`
+      - `+ catalog_id`
+      - `+ connection_name`
+      - `+ database_type`
+      - `+ external_database_id`
+      - `+ update_time`
+      - `+ database_id`
+      - `+ database_status`
+      - `+ data_statistic_enable`
+  - **UpdateDatabase**
+    - changes of response param
+      - `+ access_policy_source`
+      - `+ version_id`
+      - `+ permission_connection_name`
+      - `+ catalog_id`
+      - `+ connection_name`
+      - `+ database_type`
+      - `+ external_database_id`
+      - `+ update_time`
+      - `+ database_id`
+      - `+ database_status`
+      - `+ data_statistic_enable`
+  - **ListCatalogs**
+    - changes of response param
+      - `+ create_time`
+      - `+ version_id`
+      - `+ type`
+      - `+ catalog_id`
+      - `+ update_time`
+  - **CreateCatalog**
+    - changes of response param
+      - `+ create_time`
+      - `+ version_id`
+      - `+ type`
+      - `+ catalog_id`
+      - `+ update_time`
+  - **ShowCatalog**
+    - changes of response param
+      - `+ create_time`
+      - `+ version_id`
+      - `+ type`
+      - `+ catalog_id`
+      - `+ update_time`
+  - **UpdateCatalog**
+    - changes of response param
+      - `+ create_time`
+      - `+ version_id`
+      - `+ type`
+      - `+ catalog_id`
+      - `+ update_time`
+  - **ShowRole**
+    - changes of response param
+      - `+ external_role_id`
+      - `+ parameters`
+  - **UpdateRole**
+    - changes of request param
+      - `+ external_role_id`
+      - `+ parameters`
+    - changes of response param
+      - `+ external_role_id`
+      - `+ parameters`
+  - **ListUserRoles**
+    - changes of response param
+      - `+ external_role_id`
+      - `+ parameters`
+      - `+ roles.external_role_id`
+      - `+ roles.parameters`
+  - **CreateDatabase**
+    - changes of response param
+      - `+ access_policy_source`
+      - `+ version_id`
+      - `+ permission_connection_name`
+      - `+ catalog_id`
+      - `+ connection_name`
+      - `+ database_type`
+      - `+ external_database_id`
+      - `+ update_time`
+      - `+ database_id`
+      - `+ database_status`
+      - `+ data_statistic_enable`
+  - **ListDatabases**
+    - changes of response param
+      - `+ access_policy_source`
+      - `+ version_id`
+      - `+ permission_connection_name`
+      - `+ catalog_id`
+      - `+ connection_name`
+      - `+ database_type`
+      - `+ external_database_id`
+      - `+ update_time`
+      - `+ database_id`
+      - `+ database_status`
+      - `+ data_statistic_enable`
+      - `+ databases.access_policy_source`
+      - `+ databases.catalog_id`
+      - `+ databases.connection_name`
+      - `+ databases.data_statistic_enable`
+      - `+ databases.database_id`
+      - `+ databases.database_status`
+      - `+ databases.database_type`
+      - `+ databases.external_database_id`
+      - `+ databases.permission_connection_name`
+      - `+ databases.update_time`
+      - `+ databases.version_id`
+  - **ShowFunction**
+    - changes of response param
+      - `+ version_id`
+      - `+ catalog_id`
+      - `+ update_time`
+      - `+ database_id`
+      - `+ function_id`
+      - `+ parameters`
+  - **UpdateFunction**
+    - changes of response param
+      - `+ version_id`
+      - `+ catalog_id`
+      - `+ update_time`
+      - `+ database_id`
+      - `+ function_id`
+      - `+ parameters`
+  - **CreateRole**
+    - changes of request param
+      - `+ external_role_id`
+      - `+ parameters`
+    - changes of response param
+      - `+ external_role_id`
+      - `+ parameters`
+  - **ListRoles**
+    - changes of response param
+      - `+ external_role_id`
+      - `+ parameters`
+      - `+ roles.external_role_id`
+      - `+ roles.parameters`
+  - **ListTableMeta**
+    - changes of response param
+      - `+ table_metas.external_table_id`
+  - **BatchCheckPermission**
+    - changes of request param
+      - `+ access_request.resource.model`
+    - changes of response param
+      - `+ data_filters`
+      - `+ data_masks`
+  - **BatchDeletePartition**
+    - changes of response param
+      - `+ catalog_id`
+      - `+ database_id`
+      - `+ partition_id`
+      - `+ table_id`
+      - `+ update_time`
+  - **BatchListPartitionByValues**
+    - changes of response param
+      - `+ catalog_id`
+      - `+ database_id`
+      - `+ partition_id`
+      - `+ table_id`
+      - `+ update_time`
+  - **ListAllFunctions**
+    - changes of response param
+      - `+ version_id`
+      - `+ catalog_id`
+      - `+ update_time`
+      - `+ database_id`
+      - `+ function_id`
+      - `+ parameters`
+      - `+ functions.catalog_id`
+      - `+ functions.database_id`
+      - `+ functions.function_id`
+      - `+ functions.parameters`
+      - `+ functions.update_time`
+      - `+ functions.version_id`
+  - **CreateFunction**
+    - changes of response param
+      - `+ version_id`
+      - `+ catalog_id`
+      - `+ update_time`
+      - `+ database_id`
+      - `+ function_id`
+      - `+ parameters`
+  - **ListFunctions**
+    - changes of response param
+      - `+ version_id`
+      - `+ catalog_id`
+      - `+ update_time`
+      - `+ database_id`
+      - `+ function_id`
+      - `+ parameters`
+      - `+ functions.catalog_id`
+      - `+ functions.database_id`
+      - `+ functions.function_id`
+      - `+ functions.parameters`
+      - `+ functions.update_time`
+      - `+ functions.version_id`
+  - **ListPartitions**
+    - changes of response param
+      - `+ partitions.catalog_id`
+      - `+ partitions.database_id`
+      - `+ partitions.partition_id`
+      - `+ partitions.table_id`
+      - `+ partitions.update_time`
+  - **AddPartitions**
+    - changes of request param
+      - `+ use_table_column`
+    - changes of response param
+      - `+ catalog_id`
+      - `+ database_id`
+      - `+ partition_id`
+      - `+ table_id`
+      - `+ update_time`
+  - **BatchUpdatePartition**
+    - changes of response param
+      - `+ catalog_id`
+      - `+ database_id`
+      - `+ partition_id`
+      - `+ table_id`
+      - `+ update_time`
+  - **CreateTable**
+    - changes of request param
+      - `+ external_table_id`
+      - `+ owner_auth_source_type`
+      - `+ create_open_table_format_input.create_iceberg_table_input.schema.fields.initial_default`
+  - **BatchCancelAuthorizationInterface**
+    - changes of request param
+      - `+ data_mask_type`
+      - `+ parameters`
+      - `+ resource.catalogs.models`
+  - **BatchAuthorizeInterface**
+    - changes of request param
+      - `+ data_mask_type`
+      - `+ parameters`
+      - `+ resource.catalogs.models`
+    - changes of response param
+      - `+ policies.access_policy_type`
+      - `+ policies.obs_access_label`
+      - `+ policies.parameters`
+      - `+ policies.resource.catalogs.models`
+  - **ListInterfaces**
+    - changes of response param
+      - `+ policies.access_policy_type`
+      - `+ policies.obs_access_label`
+      - `+ policies.parameters`
+      - `+ policies.resource.catalogs.models`
+
+### HuaweiCloud SDK SWR
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the APIs `ShowRepoTagConfig`, `ListResourcesTagsByProjectId`, `ShowInstanceArtifactManifest`, `ShowInstanceTag`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowShareFeatureGates**
+    - changes of response param
+      - `+ enable_customize_validity_period`
+      - `+ enable_cosign_signature`
+      - `+ enable_enterprise_edition_link`
+      - `+ swr_util_download_url`
+  - **ShowInstance**
+    - changes of response param
+      - `+ tags`
+      - `+ status: enum value [Frozen,DeploymentAbnormal,PartiallyUnavailable,CoreDialFailed]`
+  - **ShowInstanceRepository**
+    - changes of response param
+      - `+ tags`
+  - **ListFeatureGates**
+    - changes of response param
+      - `+ enableArtifactMetadata`
+      - `+ enableNamespaceTag`
+      - `+ enableRepositoryTag`
+  - **ListGlobalFeatureGates**
+    - changes of response param
+      - `+ enableV5CustomAgency`
+      - `+ enableConsoleAgency`
+      - `+ agencyName`
+  - **ListInstance**
+    - changes of request param
+      - `+ status: enum value [Frozen,DeploymentAbnormal,PartiallyUnavailable,CoreDialFailed]`
+    - changes of response param
+      - `+ tags`
+      - `+ instances.tags`
+      - `+ instances.status: enum value [Frozen,DeploymentAbnormal,PartiallyUnavailable,CoreDialFailed]`
+  - **ListInstanceRepositories**
+    - changes of request param
+      - `+ name`
+      - `+ with_tag`
+      - `+ tags`
+      - `+ namespace_ids`
+    - changes of response param
+      - `+ tags`
+      - `+ repositories.tags`
+  - **ListNamespaceRepositories**
+    - changes of response param
+      - `+ tags`
+      - `+ repositories.tags`
+  - **ListAllInstanceRepositories**
+    - changes of response param
+      - `+ tags`
+      - `+ repositories.tags`
+  - **ListInstanceRetentionPolicyExecSubTasks**
+    - changes of response param
+      - `* sub_tasks.job_id: int32 -> string`
+  - **ShowInstanceNamespace**
+    - changes of response param
+      - `+ tags`
+  - **ShowInstanceReplicationPolicy**
+    - changes of response param
+      - `+ dest_namespace_replace_count`
+  - **ListInstanceArtifacts**
+    - changes of response param
+      - `+ artifacts.extra_attrs`
+      - `+ artifacts.references`
+  - **ListInstanceAllArtifacts**
+    - changes of response param
+      - `+ artifacts.extra_attrs`
+      - `+ artifacts.references`
+  - **CreateInstanceNamespace**
+    - changes of request param
+      - `+ tags`
+  - **ListInstanceNamespaces**
+    - changes of response param
+      - `+ tags`
+      - `+ namespaces.tags`
+  - **CreateInstanceReplicationPolicy**
+    - changes of request param
+      - `+ dest_namespace_replace_count`
+  - **ListInstanceReplicationPolicies**
+    - changes of response param
+      - `+ dest_namespace_replace_count`
+      - `+ policies.dest_namespace_replace_count`
+  - **ShowInstanceArtifact**
+    - changes of response param
+      - `+ references`
+      - `+ extra_attrs`
+
 # 3.1.223 2026-11-19
 
 ### HuaweiCloud SDK AIDataLake

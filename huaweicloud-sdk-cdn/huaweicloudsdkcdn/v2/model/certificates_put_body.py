@@ -77,8 +77,10 @@ class CertificatesPutBody:
             self.scm_certificate_id = scm_certificate_id
         self.certificate_type = certificate_type
         self.certificate_name = certificate_name
-        self.certificate_value = certificate_value
-        self.private_key = private_key
+        if certificate_value is not None:
+            self.certificate_value = certificate_value
+        if private_key is not None:
+            self.private_key = private_key
         if enc_certificate_value is not None:
             self.enc_certificate_value = enc_certificate_value
         if enc_private_key is not None:

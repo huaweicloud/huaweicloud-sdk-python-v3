@@ -27,7 +27,7 @@ class ImportDataServiceExcelRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param file: 导入包含api的excel文件，大小必须小于4MB。
+        :param file: 导入包含API的EXCEL文件，大小必须小于4MB。
         :type file: :class:`huaweicloudsdkcore.http.formdata.FormFile`
         """
         
@@ -42,7 +42,7 @@ class ImportDataServiceExcelRequestBody:
     def file(self):
         r"""Gets the file of this ImportDataServiceExcelRequestBody.
 
-        导入包含api的excel文件，大小必须小于4MB。
+        导入包含API的EXCEL文件，大小必须小于4MB。
 
         :return: The file of this ImportDataServiceExcelRequestBody.
         :rtype: :class:`huaweicloudsdkcore.http.formdata.FormFile`
@@ -53,7 +53,7 @@ class ImportDataServiceExcelRequestBody:
     def file(self, file):
         r"""Sets the file of this ImportDataServiceExcelRequestBody.
 
-        导入包含api的excel文件，大小必须小于4MB。
+        导入包含API的EXCEL文件，大小必须小于4MB。
 
         :param file: The file of this ImportDataServiceExcelRequestBody.
         :type file: :class:`huaweicloudsdkcore.http.formdata.FormFile`

@@ -39,11 +39,11 @@ class SearchBindApiRequest:
         :type workspace: str
         :param dlm_type: 数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
         :type dlm_type: str
-        :param app_id: app编号。
+        :param app_id: APP编号。
         :type app_id: str
-        :param offset: 查询起始坐标, 即跳过前X条数据。仅支持0或limit的整数倍，不满足则向下取整。
+        :param offset: 查询起始坐标，即跳过前X条数据。仅支持0或limit的整数倍，不满足则向下取整。
         :type offset: int
-        :param limit: 查询条数, 即查询Y条数据。
+        :param limit: 查询条数，即查询Y条数据。
         :type limit: int
         """
         
@@ -113,7 +113,7 @@ class SearchBindApiRequest:
     def app_id(self):
         r"""Gets the app_id of this SearchBindApiRequest.
 
-        app编号。
+        APP编号。
 
         :return: The app_id of this SearchBindApiRequest.
         :rtype: str
@@ -124,7 +124,7 @@ class SearchBindApiRequest:
     def app_id(self, app_id):
         r"""Sets the app_id of this SearchBindApiRequest.
 
-        app编号。
+        APP编号。
 
         :param app_id: The app_id of this SearchBindApiRequest.
         :type app_id: str
@@ -135,7 +135,7 @@ class SearchBindApiRequest:
     def offset(self):
         r"""Gets the offset of this SearchBindApiRequest.
 
-        查询起始坐标, 即跳过前X条数据。仅支持0或limit的整数倍，不满足则向下取整。
+        查询起始坐标，即跳过前X条数据。仅支持0或limit的整数倍，不满足则向下取整。
 
         :return: The offset of this SearchBindApiRequest.
         :rtype: int
@@ -146,7 +146,7 @@ class SearchBindApiRequest:
     def offset(self, offset):
         r"""Sets the offset of this SearchBindApiRequest.
 
-        查询起始坐标, 即跳过前X条数据。仅支持0或limit的整数倍，不满足则向下取整。
+        查询起始坐标，即跳过前X条数据。仅支持0或limit的整数倍，不满足则向下取整。
 
         :param offset: The offset of this SearchBindApiRequest.
         :type offset: int
@@ -157,7 +157,7 @@ class SearchBindApiRequest:
     def limit(self):
         r"""Gets the limit of this SearchBindApiRequest.
 
-        查询条数, 即查询Y条数据。
+        查询条数，即查询Y条数据。
 
         :return: The limit of this SearchBindApiRequest.
         :rtype: int
@@ -168,7 +168,7 @@ class SearchBindApiRequest:
     def limit(self, limit):
         r"""Sets the limit of this SearchBindApiRequest.
 
-        查询条数, 即查询Y条数据。
+        查询条数，即查询Y条数据。
 
         :param limit: The limit of this SearchBindApiRequest.
         :type limit: int

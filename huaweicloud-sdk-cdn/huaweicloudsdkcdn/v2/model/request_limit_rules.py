@@ -41,21 +41,21 @@ class RequestLimitRules:
 
         The model defined in huaweicloud sdk
 
-        :param status: status只支持on，off无效。  &gt; request_limit_rules字段置空时代表关闭请求限速功能。  &gt; 旧接口中的参数，后续将下线。
+        :param status: **参数解释：** 是否开启请求限速 - 此为旧接口中的参数，后续将下线  **约束限制：** - request_limit_rules字段置空时代表关闭请求限速功能 - 只支持on，off无效  **取值范围：** on **默认取值：** 不涉及
         :type status: str
-        :param priority: 优先级，值越大，优先级越高,取值范围：1-100。
+        :param priority: **参数解释：** 优先级 &gt; 数值越大优先级越高  **约束限制：** 优先级不能相同 **取值范围：** 1-1000 **默认取值：** 不涉及
         :type priority: int
-        :param match_type: 匹配类型，all：所有文件，catalog：目录。
+        :param match_type: **参数解释：** 匹配类型 **约束限制：** 不涉及 **取值范围：** - all：所有文件 - catalog：目录  **默认取值：** 不涉及
         :type match_type: str
-        :param match_value: 匹配类型值。 当match_type为all时传空值，例如：\&quot;\&quot;； 当match_type为catalog时传目录地址，以“/”作为首字符,例如：\&quot;/test\&quot;。  &gt; 值为catalog的时候必填
+        :param match_value: **参数解释：** 匹配类型值 **约束限制：** - 当match_type为all时传空值，例如：\&quot;\&quot; - 当match_type为catalog时传目录地址，以“/”作为首字符,例如：\&quot;/test\&quot; - 值为catalog的时候必填  **取值范围：** 不涉及 **默认取值：** 不涉及
         :type match_value: str
-        :param type: 限速方式，当前仅支持按流量大小限速，取值为size。
+        :param type: **参数解释：** 限速方式 **约束限制：** 当前仅支持按流量大小限速，取值为size **取值范围：** 不涉及 **默认取值：** 不涉及
         :type type: str
-        :param limit_rate_after: 限速条件,type&#x3D;size,limit_rate_after&#x3D;50表示从传输表示传输50个字节后开始限速且限速值为limit_rate_value， 单位byte，取值范围：0-1073741824。
+        :param limit_rate_after: **参数解释：** 限速条件 &gt; 例如：type&#x3D;size，limit_rate_after&#x3D;50表示从传输50个字节后开始限速且限速值为limit_rate_value  **约束限制：** 不涉及 **取值范围：** 0-1073741824，单位：byte **默认取值：** 不涉及
         :type limit_rate_after: int
-        :param limit_rate_value: 限速值,单位Bps，取值范围 0-104857600。
+        :param limit_rate_value: **参数解释：** 限速值，即达到限速条件后的最大访问速度 **约束限制：** 不涉及 **取值范围：** 0-104857600，单位：Bps **默认取值：** 不涉及
         :type limit_rate_value: int
-        :param limit_time: 指明限速的时段，按照每天24小时设置限速时段，格式为：HHMM-HHMM（HH为时，MM为分，时区为UTC+8），多个时段限速时用“,”分隔，最多可配置10个时段，例如：0100-0200,2200-2300。不传或传空时默认值为0000-2400，代表限速对所有时段生效。
+        :param limit_time: **参数解释：** 指明限速的时段 **约束限制：** - 按照每天24小时设置限速时段，格式为：HHMM-HHMM（HH为时，MM为分，时区为UTC+8） - 多个时段限速时用“,”分隔，例如：0100-0200,2200-2300 - 最多可配置10个时段  **取值范围：** 不涉及 **默认取值：** 0000-2400
         :type limit_time: str
         """
         
@@ -87,7 +87,7 @@ class RequestLimitRules:
     def status(self):
         r"""Gets the status of this RequestLimitRules.
 
-        status只支持on，off无效。  > request_limit_rules字段置空时代表关闭请求限速功能。  > 旧接口中的参数，后续将下线。
+        **参数解释：** 是否开启请求限速 - 此为旧接口中的参数，后续将下线  **约束限制：** - request_limit_rules字段置空时代表关闭请求限速功能 - 只支持on，off无效  **取值范围：** on **默认取值：** 不涉及
 
         :return: The status of this RequestLimitRules.
         :rtype: str
@@ -98,7 +98,7 @@ class RequestLimitRules:
     def status(self, status):
         r"""Sets the status of this RequestLimitRules.
 
-        status只支持on，off无效。  > request_limit_rules字段置空时代表关闭请求限速功能。  > 旧接口中的参数，后续将下线。
+        **参数解释：** 是否开启请求限速 - 此为旧接口中的参数，后续将下线  **约束限制：** - request_limit_rules字段置空时代表关闭请求限速功能 - 只支持on，off无效  **取值范围：** on **默认取值：** 不涉及
 
         :param status: The status of this RequestLimitRules.
         :type status: str
@@ -109,7 +109,7 @@ class RequestLimitRules:
     def priority(self):
         r"""Gets the priority of this RequestLimitRules.
 
-        优先级，值越大，优先级越高,取值范围：1-100。
+        **参数解释：** 优先级 > 数值越大优先级越高  **约束限制：** 优先级不能相同 **取值范围：** 1-1000 **默认取值：** 不涉及
 
         :return: The priority of this RequestLimitRules.
         :rtype: int
@@ -120,7 +120,7 @@ class RequestLimitRules:
     def priority(self, priority):
         r"""Sets the priority of this RequestLimitRules.
 
-        优先级，值越大，优先级越高,取值范围：1-100。
+        **参数解释：** 优先级 > 数值越大优先级越高  **约束限制：** 优先级不能相同 **取值范围：** 1-1000 **默认取值：** 不涉及
 
         :param priority: The priority of this RequestLimitRules.
         :type priority: int
@@ -131,7 +131,7 @@ class RequestLimitRules:
     def match_type(self):
         r"""Gets the match_type of this RequestLimitRules.
 
-        匹配类型，all：所有文件，catalog：目录。
+        **参数解释：** 匹配类型 **约束限制：** 不涉及 **取值范围：** - all：所有文件 - catalog：目录  **默认取值：** 不涉及
 
         :return: The match_type of this RequestLimitRules.
         :rtype: str
@@ -142,7 +142,7 @@ class RequestLimitRules:
     def match_type(self, match_type):
         r"""Sets the match_type of this RequestLimitRules.
 
-        匹配类型，all：所有文件，catalog：目录。
+        **参数解释：** 匹配类型 **约束限制：** 不涉及 **取值范围：** - all：所有文件 - catalog：目录  **默认取值：** 不涉及
 
         :param match_type: The match_type of this RequestLimitRules.
         :type match_type: str
@@ -153,7 +153,7 @@ class RequestLimitRules:
     def match_value(self):
         r"""Gets the match_value of this RequestLimitRules.
 
-        匹配类型值。 当match_type为all时传空值，例如：\"\"； 当match_type为catalog时传目录地址，以“/”作为首字符,例如：\"/test\"。  > 值为catalog的时候必填
+        **参数解释：** 匹配类型值 **约束限制：** - 当match_type为all时传空值，例如：\"\" - 当match_type为catalog时传目录地址，以“/”作为首字符,例如：\"/test\" - 值为catalog的时候必填  **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The match_value of this RequestLimitRules.
         :rtype: str
@@ -164,7 +164,7 @@ class RequestLimitRules:
     def match_value(self, match_value):
         r"""Sets the match_value of this RequestLimitRules.
 
-        匹配类型值。 当match_type为all时传空值，例如：\"\"； 当match_type为catalog时传目录地址，以“/”作为首字符,例如：\"/test\"。  > 值为catalog的时候必填
+        **参数解释：** 匹配类型值 **约束限制：** - 当match_type为all时传空值，例如：\"\" - 当match_type为catalog时传目录地址，以“/”作为首字符,例如：\"/test\" - 值为catalog的时候必填  **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param match_value: The match_value of this RequestLimitRules.
         :type match_value: str
@@ -175,7 +175,7 @@ class RequestLimitRules:
     def type(self):
         r"""Gets the type of this RequestLimitRules.
 
-        限速方式，当前仅支持按流量大小限速，取值为size。
+        **参数解释：** 限速方式 **约束限制：** 当前仅支持按流量大小限速，取值为size **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The type of this RequestLimitRules.
         :rtype: str
@@ -186,7 +186,7 @@ class RequestLimitRules:
     def type(self, type):
         r"""Sets the type of this RequestLimitRules.
 
-        限速方式，当前仅支持按流量大小限速，取值为size。
+        **参数解释：** 限速方式 **约束限制：** 当前仅支持按流量大小限速，取值为size **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param type: The type of this RequestLimitRules.
         :type type: str
@@ -197,7 +197,7 @@ class RequestLimitRules:
     def limit_rate_after(self):
         r"""Gets the limit_rate_after of this RequestLimitRules.
 
-        限速条件,type=size,limit_rate_after=50表示从传输表示传输50个字节后开始限速且限速值为limit_rate_value， 单位byte，取值范围：0-1073741824。
+        **参数解释：** 限速条件 > 例如：type=size，limit_rate_after=50表示从传输50个字节后开始限速且限速值为limit_rate_value  **约束限制：** 不涉及 **取值范围：** 0-1073741824，单位：byte **默认取值：** 不涉及
 
         :return: The limit_rate_after of this RequestLimitRules.
         :rtype: int
@@ -208,7 +208,7 @@ class RequestLimitRules:
     def limit_rate_after(self, limit_rate_after):
         r"""Sets the limit_rate_after of this RequestLimitRules.
 
-        限速条件,type=size,limit_rate_after=50表示从传输表示传输50个字节后开始限速且限速值为limit_rate_value， 单位byte，取值范围：0-1073741824。
+        **参数解释：** 限速条件 > 例如：type=size，limit_rate_after=50表示从传输50个字节后开始限速且限速值为limit_rate_value  **约束限制：** 不涉及 **取值范围：** 0-1073741824，单位：byte **默认取值：** 不涉及
 
         :param limit_rate_after: The limit_rate_after of this RequestLimitRules.
         :type limit_rate_after: int
@@ -219,7 +219,7 @@ class RequestLimitRules:
     def limit_rate_value(self):
         r"""Gets the limit_rate_value of this RequestLimitRules.
 
-        限速值,单位Bps，取值范围 0-104857600。
+        **参数解释：** 限速值，即达到限速条件后的最大访问速度 **约束限制：** 不涉及 **取值范围：** 0-104857600，单位：Bps **默认取值：** 不涉及
 
         :return: The limit_rate_value of this RequestLimitRules.
         :rtype: int
@@ -230,7 +230,7 @@ class RequestLimitRules:
     def limit_rate_value(self, limit_rate_value):
         r"""Sets the limit_rate_value of this RequestLimitRules.
 
-        限速值,单位Bps，取值范围 0-104857600。
+        **参数解释：** 限速值，即达到限速条件后的最大访问速度 **约束限制：** 不涉及 **取值范围：** 0-104857600，单位：Bps **默认取值：** 不涉及
 
         :param limit_rate_value: The limit_rate_value of this RequestLimitRules.
         :type limit_rate_value: int
@@ -241,7 +241,7 @@ class RequestLimitRules:
     def limit_time(self):
         r"""Gets the limit_time of this RequestLimitRules.
 
-        指明限速的时段，按照每天24小时设置限速时段，格式为：HHMM-HHMM（HH为时，MM为分，时区为UTC+8），多个时段限速时用“,”分隔，最多可配置10个时段，例如：0100-0200,2200-2300。不传或传空时默认值为0000-2400，代表限速对所有时段生效。
+        **参数解释：** 指明限速的时段 **约束限制：** - 按照每天24小时设置限速时段，格式为：HHMM-HHMM（HH为时，MM为分，时区为UTC+8） - 多个时段限速时用“,”分隔，例如：0100-0200,2200-2300 - 最多可配置10个时段  **取值范围：** 不涉及 **默认取值：** 0000-2400
 
         :return: The limit_time of this RequestLimitRules.
         :rtype: str
@@ -252,7 +252,7 @@ class RequestLimitRules:
     def limit_time(self, limit_time):
         r"""Sets the limit_time of this RequestLimitRules.
 
-        指明限速的时段，按照每天24小时设置限速时段，格式为：HHMM-HHMM（HH为时，MM为分，时区为UTC+8），多个时段限速时用“,”分隔，最多可配置10个时段，例如：0100-0200,2200-2300。不传或传空时默认值为0000-2400，代表限速对所有时段生效。
+        **参数解释：** 指明限速的时段 **约束限制：** - 按照每天24小时设置限速时段，格式为：HHMM-HHMM（HH为时，MM为分，时区为UTC+8） - 多个时段限速时用“,”分隔，例如：0100-0200,2200-2300 - 最多可配置10个时段  **取值范围：** 不涉及 **默认取值：** 0000-2400
 
         :param limit_time: The limit_time of this RequestLimitRules.
         :type limit_time: str

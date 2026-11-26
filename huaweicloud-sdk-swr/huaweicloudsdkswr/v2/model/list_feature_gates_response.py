@@ -19,17 +19,23 @@ class ListFeatureGatesResponse(SdkResponse):
         'enable_domain_name': 'bool',
         'enable_combination_retention': 'bool',
         'enable_artifact_scanning': 'bool',
-        'enable_artifact_gc': 'bool'
+        'enable_artifact_gc': 'bool',
+        'enable_repository_tag': 'bool',
+        'enable_namespace_tag': 'bool',
+        'enable_artifact_metadata': 'bool'
     }
 
     attribute_map = {
         'enable_domain_name': 'enableDomainName',
         'enable_combination_retention': 'enableCombinationRetention',
         'enable_artifact_scanning': 'enableArtifactScanning',
-        'enable_artifact_gc': 'enableArtifactGc'
+        'enable_artifact_gc': 'enableArtifactGc',
+        'enable_repository_tag': 'enableRepositoryTag',
+        'enable_namespace_tag': 'enableNamespaceTag',
+        'enable_artifact_metadata': 'enableArtifactMetadata'
     }
 
-    def __init__(self, enable_domain_name=None, enable_combination_retention=None, enable_artifact_scanning=None, enable_artifact_gc=None):
+    def __init__(self, enable_domain_name=None, enable_combination_retention=None, enable_artifact_scanning=None, enable_artifact_gc=None, enable_repository_tag=None, enable_namespace_tag=None, enable_artifact_metadata=None):
         r"""ListFeatureGatesResponse
 
         The model defined in huaweicloud sdk
@@ -42,6 +48,12 @@ class ListFeatureGatesResponse(SdkResponse):
         :type enable_artifact_scanning: bool
         :param enable_artifact_gc: 是否支持制品清理
         :type enable_artifact_gc: bool
+        :param enable_repository_tag: 仓库是否支持标签
+        :type enable_repository_tag: bool
+        :param enable_namespace_tag: 创建命名空间时是否支持传入标签以及查询命名空间列表是否支持根据标签过滤
+        :type enable_namespace_tag: bool
+        :param enable_artifact_metadata: 是否支持查询制品的Manifest信息
+        :type enable_artifact_metadata: bool
         """
         
         super().__init__()
@@ -50,6 +62,9 @@ class ListFeatureGatesResponse(SdkResponse):
         self._enable_combination_retention = None
         self._enable_artifact_scanning = None
         self._enable_artifact_gc = None
+        self._enable_repository_tag = None
+        self._enable_namespace_tag = None
+        self._enable_artifact_metadata = None
         self.discriminator = None
 
         if enable_domain_name is not None:
@@ -60,6 +75,12 @@ class ListFeatureGatesResponse(SdkResponse):
             self.enable_artifact_scanning = enable_artifact_scanning
         if enable_artifact_gc is not None:
             self.enable_artifact_gc = enable_artifact_gc
+        if enable_repository_tag is not None:
+            self.enable_repository_tag = enable_repository_tag
+        if enable_namespace_tag is not None:
+            self.enable_namespace_tag = enable_namespace_tag
+        if enable_artifact_metadata is not None:
+            self.enable_artifact_metadata = enable_artifact_metadata
 
     @property
     def enable_domain_name(self):
@@ -148,6 +169,72 @@ class ListFeatureGatesResponse(SdkResponse):
         :type enable_artifact_gc: bool
         """
         self._enable_artifact_gc = enable_artifact_gc
+
+    @property
+    def enable_repository_tag(self):
+        r"""Gets the enable_repository_tag of this ListFeatureGatesResponse.
+
+        仓库是否支持标签
+
+        :return: The enable_repository_tag of this ListFeatureGatesResponse.
+        :rtype: bool
+        """
+        return self._enable_repository_tag
+
+    @enable_repository_tag.setter
+    def enable_repository_tag(self, enable_repository_tag):
+        r"""Sets the enable_repository_tag of this ListFeatureGatesResponse.
+
+        仓库是否支持标签
+
+        :param enable_repository_tag: The enable_repository_tag of this ListFeatureGatesResponse.
+        :type enable_repository_tag: bool
+        """
+        self._enable_repository_tag = enable_repository_tag
+
+    @property
+    def enable_namespace_tag(self):
+        r"""Gets the enable_namespace_tag of this ListFeatureGatesResponse.
+
+        创建命名空间时是否支持传入标签以及查询命名空间列表是否支持根据标签过滤
+
+        :return: The enable_namespace_tag of this ListFeatureGatesResponse.
+        :rtype: bool
+        """
+        return self._enable_namespace_tag
+
+    @enable_namespace_tag.setter
+    def enable_namespace_tag(self, enable_namespace_tag):
+        r"""Sets the enable_namespace_tag of this ListFeatureGatesResponse.
+
+        创建命名空间时是否支持传入标签以及查询命名空间列表是否支持根据标签过滤
+
+        :param enable_namespace_tag: The enable_namespace_tag of this ListFeatureGatesResponse.
+        :type enable_namespace_tag: bool
+        """
+        self._enable_namespace_tag = enable_namespace_tag
+
+    @property
+    def enable_artifact_metadata(self):
+        r"""Gets the enable_artifact_metadata of this ListFeatureGatesResponse.
+
+        是否支持查询制品的Manifest信息
+
+        :return: The enable_artifact_metadata of this ListFeatureGatesResponse.
+        :rtype: bool
+        """
+        return self._enable_artifact_metadata
+
+    @enable_artifact_metadata.setter
+    def enable_artifact_metadata(self, enable_artifact_metadata):
+        r"""Sets the enable_artifact_metadata of this ListFeatureGatesResponse.
+
+        是否支持查询制品的Manifest信息
+
+        :param enable_artifact_metadata: The enable_artifact_metadata of this ListFeatureGatesResponse.
+        :type enable_artifact_metadata: bool
+        """
+        self._enable_artifact_metadata = enable_artifact_metadata
 
     def to_dict(self):
         import warnings

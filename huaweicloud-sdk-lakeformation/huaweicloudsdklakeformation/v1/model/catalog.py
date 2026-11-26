@@ -21,7 +21,12 @@ class Catalog:
         'database_location_list': 'list[str]',
         'owner': 'str',
         'owner_type': 'str',
-        'owner_source': 'str'
+        'owner_source': 'str',
+        'catalog_id': 'str',
+        'create_time': 'datetime',
+        'type': 'str',
+        'update_time': 'datetime',
+        'version_id': 'str'
     }
 
     attribute_map = {
@@ -31,10 +36,15 @@ class Catalog:
         'database_location_list': 'database_location_list',
         'owner': 'owner',
         'owner_type': 'owner_type',
-        'owner_source': 'owner_source'
+        'owner_source': 'owner_source',
+        'catalog_id': 'catalog_id',
+        'create_time': 'create_time',
+        'type': 'type',
+        'update_time': 'update_time',
+        'version_id': 'version_id'
     }
 
-    def __init__(self, catalog_name=None, description=None, location=None, database_location_list=None, owner=None, owner_type=None, owner_source=None):
+    def __init__(self, catalog_name=None, description=None, location=None, database_location_list=None, owner=None, owner_type=None, owner_source=None, catalog_id=None, create_time=None, type=None, update_time=None, version_id=None):
         r"""Catalog
 
         The model defined in huaweicloud sdk
@@ -53,6 +63,16 @@ class Catalog:
         :type owner_type: str
         :param owner_source: 所有者来源,IAM-云用户,SAML-联邦,LDAP-ld用户,LOCAL-本地用户,AGENTTENANT-委托,OTHER-其它。LakeFormation服务分为一期和二期，一期响应Body无该参数。
         :type owner_source: str
+        :param catalog_id: catalogID。
+        :type catalog_id: str
+        :param create_time: catalog元数据创建时间。
+        :type create_time: datetime
+        :param type: catalog类型，可选值为DEFAULT（代表默认的元数据类型）、CLICKHOUSE（代表CH类型），不设置时默认为DEFAULT。 创建时指定，不可修改。
+        :type type: str
+        :param update_time: catalog元数据最后一次修改时间。
+        :type update_time: datetime
+        :param version_id: 版本ID
+        :type version_id: str
         """
         
         
@@ -64,6 +84,11 @@ class Catalog:
         self._owner = None
         self._owner_type = None
         self._owner_source = None
+        self._catalog_id = None
+        self._create_time = None
+        self._type = None
+        self._update_time = None
+        self._version_id = None
         self.discriminator = None
 
         self.catalog_name = catalog_name
@@ -79,6 +104,16 @@ class Catalog:
             self.owner_type = owner_type
         if owner_source is not None:
             self.owner_source = owner_source
+        if catalog_id is not None:
+            self.catalog_id = catalog_id
+        if create_time is not None:
+            self.create_time = create_time
+        if type is not None:
+            self.type = type
+        if update_time is not None:
+            self.update_time = update_time
+        if version_id is not None:
+            self.version_id = version_id
 
     @property
     def catalog_name(self):
@@ -233,6 +268,116 @@ class Catalog:
         :type owner_source: str
         """
         self._owner_source = owner_source
+
+    @property
+    def catalog_id(self):
+        r"""Gets the catalog_id of this Catalog.
+
+        catalogID。
+
+        :return: The catalog_id of this Catalog.
+        :rtype: str
+        """
+        return self._catalog_id
+
+    @catalog_id.setter
+    def catalog_id(self, catalog_id):
+        r"""Sets the catalog_id of this Catalog.
+
+        catalogID。
+
+        :param catalog_id: The catalog_id of this Catalog.
+        :type catalog_id: str
+        """
+        self._catalog_id = catalog_id
+
+    @property
+    def create_time(self):
+        r"""Gets the create_time of this Catalog.
+
+        catalog元数据创建时间。
+
+        :return: The create_time of this Catalog.
+        :rtype: datetime
+        """
+        return self._create_time
+
+    @create_time.setter
+    def create_time(self, create_time):
+        r"""Sets the create_time of this Catalog.
+
+        catalog元数据创建时间。
+
+        :param create_time: The create_time of this Catalog.
+        :type create_time: datetime
+        """
+        self._create_time = create_time
+
+    @property
+    def type(self):
+        r"""Gets the type of this Catalog.
+
+        catalog类型，可选值为DEFAULT（代表默认的元数据类型）、CLICKHOUSE（代表CH类型），不设置时默认为DEFAULT。 创建时指定，不可修改。
+
+        :return: The type of this Catalog.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        r"""Sets the type of this Catalog.
+
+        catalog类型，可选值为DEFAULT（代表默认的元数据类型）、CLICKHOUSE（代表CH类型），不设置时默认为DEFAULT。 创建时指定，不可修改。
+
+        :param type: The type of this Catalog.
+        :type type: str
+        """
+        self._type = type
+
+    @property
+    def update_time(self):
+        r"""Gets the update_time of this Catalog.
+
+        catalog元数据最后一次修改时间。
+
+        :return: The update_time of this Catalog.
+        :rtype: datetime
+        """
+        return self._update_time
+
+    @update_time.setter
+    def update_time(self, update_time):
+        r"""Sets the update_time of this Catalog.
+
+        catalog元数据最后一次修改时间。
+
+        :param update_time: The update_time of this Catalog.
+        :type update_time: datetime
+        """
+        self._update_time = update_time
+
+    @property
+    def version_id(self):
+        r"""Gets the version_id of this Catalog.
+
+        版本ID
+
+        :return: The version_id of this Catalog.
+        :rtype: str
+        """
+        return self._version_id
+
+    @version_id.setter
+    def version_id(self, version_id):
+        r"""Sets the version_id of this Catalog.
+
+        版本ID
+
+        :param version_id: The version_id of this Catalog.
+        :type version_id: str
+        """
+        self._version_id = version_id
 
     def to_dict(self):
         result = {}

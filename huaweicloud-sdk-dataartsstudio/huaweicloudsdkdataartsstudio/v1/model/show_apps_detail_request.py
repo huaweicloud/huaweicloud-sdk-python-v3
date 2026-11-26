@@ -41,7 +41,7 @@ class ShowAppsDetailRequest:
         :type workspace: str
         :param dlm_type: 数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
         :type dlm_type: str
-        :param app_id: app编号。
+        :param app_id: APP编号。
         :type app_id: str
         :param start_time: 开始时间（13位时间戳）。
         :type start_time: int
@@ -117,7 +117,7 @@ class ShowAppsDetailRequest:
     def app_id(self):
         r"""Gets the app_id of this ShowAppsDetailRequest.
 
-        app编号。
+        APP编号。
 
         :return: The app_id of this ShowAppsDetailRequest.
         :rtype: str
@@ -128,7 +128,7 @@ class ShowAppsDetailRequest:
     def app_id(self, app_id):
         r"""Sets the app_id of this ShowAppsDetailRequest.
 
-        app编号。
+        APP编号。
 
         :param app_id: The app_id of this ShowAppsDetailRequest.
         :type app_id: str

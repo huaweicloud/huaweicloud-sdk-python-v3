@@ -10045,7 +10045,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_api_catalog_list(self, request):
-        r"""获取当前目录下的api列表
+        r"""获取当前目录下的API列表
 
         获取当前目录下的API列表。
         
@@ -10118,7 +10118,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_api_top_n(self, request):
-        r"""查询指定api 应用调用topN
+        r"""查询指定API应用调用TopN
 
         查询指定API应用调用TopN。
         
@@ -10274,9 +10274,9 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_apic_instances(self, request):
-        r"""获取网关实例(专享版)
+        r"""获取网关实例（专享版）
 
-        获取网关实例(专享版)。
+        获取网关实例（专享版）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -10347,7 +10347,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_apis_top(self, request):
-        r"""查询api 服务调用topN
+        r"""查询API服务调用TopN
 
         查询API服务调用TopN。
         
@@ -10649,9 +10649,9 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_apps_top(self, request):
-        r"""查询app 服务使用topN
+        r"""查询APP服务使用TopN
 
-        查询app 服务使用topN。
+        查询APP服务使用TopN。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -11674,6 +11674,79 @@ class DataArtsStudioClient(Client):
             query_params.append(('offset', local_var_params['offset']))
 
         header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_data_service_approvers(self, request):
+        r"""获取审批人列表
+
+        获取审批人列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListDataServiceApprovers
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListDataServiceApproversRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListDataServiceApproversResponse`
+        """
+        http_info = self._list_data_service_approvers_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_data_service_approvers_invoker(self, request):
+        http_info = self._list_data_service_approvers_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_data_service_approvers_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/service/authorizeapply/approver",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDataServiceApproversResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'page' in local_var_params:
+            query_params.append(('page', local_var_params['page']))
+        if 'size' in local_var_params:
+            query_params.append(('size', local_var_params['size']))
+        if 'approver_name' in local_var_params:
+            query_params.append(('approver_name', local_var_params['approver_name']))
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'dlm_type' in local_var_params:
+            header_params['Dlm-Type'] = local_var_params['dlm_type']
 
         form_params = {}
 
@@ -17290,7 +17363,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def migrate_api(self, request):
-        r"""批量移动api至新目录
+        r"""批量移动API至新目录
 
         批量移动API至新目录。
         
@@ -17362,7 +17435,7 @@ class DataArtsStudioClient(Client):
         r"""移动当前目录至新目录
 
         移动当前目录至新目录。  
-        移动目录的的同时会移动其下的所有子目录与api。
+        移动目录的的同时会移动其下的所有子目录与API。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -19043,7 +19116,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def search_id_by_path(self, request):
-        r"""通过路径获取id
+        r"""通过路径获取ID
 
         通过路径获取ID。
         
@@ -19594,7 +19667,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_api_dashboard(self, request):
-        r"""查询指定api 仪表板数据详情
+        r"""查询指定API仪表板数据详情
 
         查询指定API仪表板数据详情。
         
@@ -19671,7 +19744,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_apis_dashboard(self, request):
-        r"""查询api 仪表板数据详情
+        r"""查询API仪表板数据详情
 
         查询API仪表板数据详情。
         
@@ -19750,7 +19823,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_apis_detail(self, request):
-        r"""查询api 统计数据详情
+        r"""查询API统计数据详情
 
         查询API统计数据详情。
         
@@ -20039,7 +20112,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_apps_dashboard(self, request):
-        r"""查询app 仪表板数据详情
+        r"""查询APP仪表板数据详情
 
         查询APP仪表板数据详情。
         
@@ -20116,7 +20189,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_apps_detail(self, request):
-        r"""查询app 统计数据详情
+        r"""查询APP统计数据详情
 
         查询APP统计数据详情。
         
@@ -23336,7 +23409,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_path_by_id(self, request):
-        r"""通过id获取路径
+        r"""通过ID获取路径
 
         通过ID获取路径。
         
@@ -23409,9 +23482,9 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_path_object_by_id(self, request):
-        r"""通过id获取路径对象
+        r"""通过目录ID获取路径对象
 
-        通过目录id获取从根目录至当前目录链路上每一层的路径信息。
+        通过目录ID获取从根目录至当前目录链路上每一层的路径信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -28382,9 +28455,9 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def authorize_action_api_to_instance(self, request):
-        r"""API授权操作(授权/取消授权/申请/续约)
+        r"""API授权操作（授权/取消授权/申请/续约）
 
-        API授权操作(授权/取消授权/申请/续约)。
+        API授权操作（授权/取消授权/申请/续约）。
         - API主动授权：  API审核人可发起，API主动授权成功后，在有效期内，APP即可访问该API。API授权包含授权和续约两部分功能。
             * 授权：授权会给予APP在有效期内访问API的权利。
             * 续约：续约会更新授权有效期，仅支持延长有效期，不能减少。
@@ -28460,7 +28533,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def authorize_api_to_instance(self, request):
-        r"""批量授权API(专享版)
+        r"""批量授权API（专享版）
 
         APP创建成功后，还不能访问API，如果想要访问某个API，需要将该API授权给APP。API主动授权成功后，在有效期内，APP即可访问该API。  
         API授权包含授权和续约两部分功能。  
@@ -28747,7 +28820,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def execute_api_to_instance(self, request):
-        r"""API操作(下线/停用/恢复)
+        r"""API操作（下线/停用/恢复）
 
         下线API、停用API或恢复API。
         - 下线API。将已发布的API下线。下线后，所有授权关系都会被解除，API将无法再被调用。
@@ -28826,7 +28899,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def export_data_service_excel(self, request):
-        r"""导出包含API信息的excel文件
+        r"""导出包含API信息的EXCEL文件
 
         导出包含API信息的EXCEL文件。
         
@@ -28895,7 +28968,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def export_data_service_excel_template(self, request):
-        r"""下载excel模板
+        r"""下载EXCEL模板
 
         下载EXCEL模板。
         
@@ -28962,7 +29035,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def export_data_service_zip(self, request):
-        r"""全量导出包含API的excel压缩文件
+        r"""全量导出包含API的EXCEL压缩文件
 
         全量导出包含API的EXCEL压缩文件。
         
@@ -29031,7 +29104,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def import_data_service_excel(self, request):
-        r"""导入包含API信息的excel文件
+        r"""导入包含API信息的EXCEL文件
 
         导入包含API信息的EXCEL文件。
         
@@ -29194,7 +29267,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_instance_list(self, request):
-        r"""查看API不同操作对应的实例信息(专享版)
+        r"""查看API不同操作对应的实例信息（专享版）
 
         查看API不同操作对应的实例信息。
         
@@ -29353,7 +29426,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def search_debug_info(self, request):
-        r"""查看API调试信息(专享版)
+        r"""查看API调试信息（专享版）
 
         查看API在不同集群上的调试信息。
         
@@ -29426,7 +29499,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def search_publish_info(self, request):
-        r"""查看API发布信息(专享版)
+        r"""查看API发布信息（专享版）
 
         查看API在不同集群上的发布信息。  
         API在集群上进行过操作后会存在发布信息，例如调试、注册类发布等。

@@ -16,7 +16,7 @@ class GetPolicyV5Response(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'policy': 'Policy'
+        'policy': 'PolicyWithTags'
     }
 
     attribute_map = {
@@ -29,7 +29,7 @@ class GetPolicyV5Response(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param policy: 
-        :type policy: :class:`huaweicloudsdkiam.v5.Policy`
+        :type policy: :class:`huaweicloudsdkiam.v5.PolicyWithTags`
         """
         
         super().__init__()
@@ -45,7 +45,7 @@ class GetPolicyV5Response(SdkResponse):
         r"""Gets the policy of this GetPolicyV5Response.
 
         :return: The policy of this GetPolicyV5Response.
-        :rtype: :class:`huaweicloudsdkiam.v5.Policy`
+        :rtype: :class:`huaweicloudsdkiam.v5.PolicyWithTags`
         """
         return self._policy
 
@@ -54,7 +54,7 @@ class GetPolicyV5Response(SdkResponse):
         r"""Sets the policy of this GetPolicyV5Response.
 
         :param policy: The policy of this GetPolicyV5Response.
-        :type policy: :class:`huaweicloudsdkiam.v5.Policy`
+        :type policy: :class:`huaweicloudsdkiam.v5.PolicyWithTags`
         """
         self._policy = policy
 

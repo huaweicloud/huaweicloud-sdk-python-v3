@@ -55,7 +55,7 @@ class ApplyRecord:
         :type remark: str
         :param tml_id: **参数解释：** 域名模板ID **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type tml_id: str
-        :param apply_time: **参数解释：** 域名模板应用时间 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :param apply_time: **参数解释：** 域名模板应用时间，Unix时间戳格式，单位为毫秒 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type apply_time: int
         :param type: **参数解释：** 域名模板类型 **约束限制：** 不涉及 **取值范围：** - 1: 系统预置模板 - 2: 租户自定义模板  **默认取值：** 不涉及
         :type type: int
@@ -216,7 +216,7 @@ class ApplyRecord:
     def apply_time(self):
         r"""Gets the apply_time of this ApplyRecord.
 
-        **参数解释：** 域名模板应用时间 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 域名模板应用时间，Unix时间戳格式，单位为毫秒 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The apply_time of this ApplyRecord.
         :rtype: int
@@ -227,7 +227,7 @@ class ApplyRecord:
     def apply_time(self, apply_time):
         r"""Sets the apply_time of this ApplyRecord.
 
-        **参数解释：** 域名模板应用时间 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 域名模板应用时间，Unix时间戳格式，单位为毫秒 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param apply_time: The apply_time of this ApplyRecord.
         :type apply_time: int

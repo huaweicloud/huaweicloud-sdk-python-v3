@@ -18,16 +18,20 @@ class ShowRoleResponse(SdkResponse):
     openapi_types = {
         'role_name': 'str',
         'description': 'str',
-        'principal_source': 'str'
+        'principal_source': 'str',
+        'external_role_id': 'str',
+        'parameters': 'dict(str, str)'
     }
 
     attribute_map = {
         'role_name': 'role_name',
         'description': 'description',
-        'principal_source': 'principal_source'
+        'principal_source': 'principal_source',
+        'external_role_id': 'external_role_id',
+        'parameters': 'parameters'
     }
 
-    def __init__(self, role_name=None, description=None, principal_source=None):
+    def __init__(self, role_name=None, description=None, principal_source=None, external_role_id=None, parameters=None):
         r"""ShowRoleResponse
 
         The model defined in huaweicloud sdk
@@ -38,6 +42,10 @@ class ShowRoleResponse(SdkResponse):
         :type description: str
         :param principal_source: 主体来源 IAM云用户 SAML联邦 LDAP ld用户 LOCAL 本地用户 AGENTTENANT 委托 OTHER 其它
         :type principal_source: str
+        :param external_role_id: 用户端角色id，创建时指定，不可修改。
+        :type external_role_id: str
+        :param parameters: 参数。
+        :type parameters: dict(str, str)
         """
         
         super().__init__()
@@ -45,6 +53,8 @@ class ShowRoleResponse(SdkResponse):
         self._role_name = None
         self._description = None
         self._principal_source = None
+        self._external_role_id = None
+        self._parameters = None
         self.discriminator = None
 
         if role_name is not None:
@@ -53,6 +63,10 @@ class ShowRoleResponse(SdkResponse):
             self.description = description
         if principal_source is not None:
             self.principal_source = principal_source
+        if external_role_id is not None:
+            self.external_role_id = external_role_id
+        if parameters is not None:
+            self.parameters = parameters
 
     @property
     def role_name(self):
@@ -119,6 +133,50 @@ class ShowRoleResponse(SdkResponse):
         :type principal_source: str
         """
         self._principal_source = principal_source
+
+    @property
+    def external_role_id(self):
+        r"""Gets the external_role_id of this ShowRoleResponse.
+
+        用户端角色id，创建时指定，不可修改。
+
+        :return: The external_role_id of this ShowRoleResponse.
+        :rtype: str
+        """
+        return self._external_role_id
+
+    @external_role_id.setter
+    def external_role_id(self, external_role_id):
+        r"""Sets the external_role_id of this ShowRoleResponse.
+
+        用户端角色id，创建时指定，不可修改。
+
+        :param external_role_id: The external_role_id of this ShowRoleResponse.
+        :type external_role_id: str
+        """
+        self._external_role_id = external_role_id
+
+    @property
+    def parameters(self):
+        r"""Gets the parameters of this ShowRoleResponse.
+
+        参数。
+
+        :return: The parameters of this ShowRoleResponse.
+        :rtype: dict(str, str)
+        """
+        return self._parameters
+
+    @parameters.setter
+    def parameters(self, parameters):
+        r"""Sets the parameters of this ShowRoleResponse.
+
+        参数。
+
+        :param parameters: The parameters of this ShowRoleResponse.
+        :type parameters: dict(str, str)
+        """
+        self._parameters = parameters
 
     def to_dict(self):
         import warnings

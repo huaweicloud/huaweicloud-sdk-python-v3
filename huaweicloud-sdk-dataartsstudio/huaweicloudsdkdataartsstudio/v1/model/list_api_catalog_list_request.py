@@ -41,9 +41,9 @@ class ListApiCatalogListRequest:
         :type dlm_type: str
         :param catalog_id: 目录编号。
         :type catalog_id: str
-        :param offset: 查询起始坐标, 即跳过前X条数据。
+        :param offset: 查询起始坐标，即跳过前X条数据。
         :type offset: int
-        :param limit: 查询条数, 即查询Y条数据。
+        :param limit: 查询条数，即查询Y条数据。
         :type limit: int
         """
         
@@ -135,7 +135,7 @@ class ListApiCatalogListRequest:
     def offset(self):
         r"""Gets the offset of this ListApiCatalogListRequest.
 
-        查询起始坐标, 即跳过前X条数据。
+        查询起始坐标，即跳过前X条数据。
 
         :return: The offset of this ListApiCatalogListRequest.
         :rtype: int
@@ -146,7 +146,7 @@ class ListApiCatalogListRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListApiCatalogListRequest.
 
-        查询起始坐标, 即跳过前X条数据。
+        查询起始坐标，即跳过前X条数据。
 
         :param offset: The offset of this ListApiCatalogListRequest.
         :type offset: int
@@ -157,7 +157,7 @@ class ListApiCatalogListRequest:
     def limit(self):
         r"""Gets the limit of this ListApiCatalogListRequest.
 
-        查询条数, 即查询Y条数据。
+        查询条数，即查询Y条数据。
 
         :return: The limit of this ListApiCatalogListRequest.
         :rtype: int
@@ -168,7 +168,7 @@ class ListApiCatalogListRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListApiCatalogListRequest.
 
-        查询条数, 即查询Y条数据。
+        查询条数，即查询Y条数据。
 
         :param limit: The limit of this ListApiCatalogListRequest.
         :type limit: int

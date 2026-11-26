@@ -47,7 +47,7 @@ class ListApiTopNRequest:
         :type workspace: str
         :param dlm_type: 数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
         :type dlm_type: str
-        :param api_id: api编号。
+        :param api_id: API编号。
         :type api_id: str
         :param instance_id: 集群编号。
         :type instance_id: str
@@ -136,7 +136,7 @@ class ListApiTopNRequest:
     def api_id(self):
         r"""Gets the api_id of this ListApiTopNRequest.
 
-        api编号。
+        API编号。
 
         :return: The api_id of this ListApiTopNRequest.
         :rtype: str
@@ -147,7 +147,7 @@ class ListApiTopNRequest:
     def api_id(self, api_id):
         r"""Sets the api_id of this ListApiTopNRequest.
 
-        api编号。
+        API编号。
 
         :param api_id: The api_id of this ListApiTopNRequest.
         :type api_id: str

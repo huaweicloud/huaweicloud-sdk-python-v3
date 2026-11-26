@@ -15,6 +15,7 @@ class ListAccessControlTaskRequest:
     sensitive_list = []
 
     openapi_types = {
+        'task_id': 'str',
         'start_time': 'int',
         'end_time': 'int',
         'offset': 'int',
@@ -23,6 +24,7 @@ class ListAccessControlTaskRequest:
     }
 
     attribute_map = {
+        'task_id': 'task_id',
         'start_time': 'start_time',
         'end_time': 'end_time',
         'offset': 'offset',
@@ -30,11 +32,13 @@ class ListAccessControlTaskRequest:
         'status': 'status'
     }
 
-    def __init__(self, start_time=None, end_time=None, offset=None, limit=None, status=None):
+    def __init__(self, task_id=None, start_time=None, end_time=None, offset=None, limit=None, status=None):
         r"""ListAccessControlTaskRequest
 
         The model defined in huaweicloud sdk
 
+        :param task_id: **参数解释：** 封禁/解禁任务ID **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :type task_id: str
         :param start_time: 查询起始时间戳（毫秒），不传默认为当前时间，需与结束时间戳同时指定，时间跨度不能超过7天。
         :type start_time: int
         :param end_time: 查询结束时间戳（毫秒），不传默认3天前，需与开始时间戳同时指定，时间跨度不能超过7天。
@@ -49,6 +53,7 @@ class ListAccessControlTaskRequest:
         
         
 
+        self._task_id = None
         self._start_time = None
         self._end_time = None
         self._offset = None
@@ -56,6 +61,8 @@ class ListAccessControlTaskRequest:
         self._status = None
         self.discriminator = None
 
+        if task_id is not None:
+            self.task_id = task_id
         if start_time is not None:
             self.start_time = start_time
         if end_time is not None:
@@ -66,6 +73,28 @@ class ListAccessControlTaskRequest:
             self.limit = limit
         if status is not None:
             self.status = status
+
+    @property
+    def task_id(self):
+        r"""Gets the task_id of this ListAccessControlTaskRequest.
+
+        **参数解释：** 封禁/解禁任务ID **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+
+        :return: The task_id of this ListAccessControlTaskRequest.
+        :rtype: str
+        """
+        return self._task_id
+
+    @task_id.setter
+    def task_id(self, task_id):
+        r"""Sets the task_id of this ListAccessControlTaskRequest.
+
+        **参数解释：** 封禁/解禁任务ID **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+
+        :param task_id: The task_id of this ListAccessControlTaskRequest.
+        :type task_id: str
+        """
+        self._task_id = task_id
 
     @property
     def start_time(self):

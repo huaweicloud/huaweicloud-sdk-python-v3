@@ -35,7 +35,9 @@ class DomainsWithPort:
         'origin_status': 'str',
         'banned_reason': 'str',
         'locked_reason': 'str',
-        'enterprise_project_id': 'str'
+        'enterprise_project_id': 'str',
+        'cnames': 'str',
+        'tags': 'list[EpResourceTag]'
     }
 
     attribute_map = {
@@ -59,35 +61,37 @@ class DomainsWithPort:
         'origin_status': 'origin_status',
         'banned_reason': 'banned_reason',
         'locked_reason': 'locked_reason',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'cnames': 'cnames',
+        'tags': 'tags'
     }
 
-    def __init__(self, id=None, domain_name=None, business_type=None, user_domain_id=None, domain_status=None, cname=None, sources=None, domain_origin_host=None, https_status=None, create_time=None, modify_time=None, disabled=None, locked=None, auto_refresh_preheat=None, service_area=None, range_status=None, follow_status=None, origin_status=None, banned_reason=None, locked_reason=None, enterprise_project_id=None):
+    def __init__(self, id=None, domain_name=None, business_type=None, user_domain_id=None, domain_status=None, cname=None, sources=None, domain_origin_host=None, https_status=None, create_time=None, modify_time=None, disabled=None, locked=None, auto_refresh_preheat=None, service_area=None, range_status=None, follow_status=None, origin_status=None, banned_reason=None, locked_reason=None, enterprise_project_id=None, cnames=None, tags=None):
         r"""DomainsWithPort
 
         The model defined in huaweicloud sdk
 
-        :param id: 加速域名ID。
+        :param id: **参数解释：** 加速域名ID。 **约束限制：** 不涉及 **取值范围：** 不涉及
         :type id: str
-        :param domain_name: 加速域名。
+        :param domain_name: **参数解释：** 加速域名。 **约束限制：** 不涉及 **取值范围：** 不涉及
         :type domain_name: str
         :param business_type: 域名业务类型，若为web，则表示类型为网站加速；若为download，则表示业务类型为文件下载加速；若为video，则表示业务类型为点播加速；若为wholeSite，则表示类型为全站加速。
         :type business_type: str
-        :param user_domain_id: 域名所属用户的domain_id。
+        :param user_domain_id: **参数解释：** 域名所属用户的domain_id。 **约束限制：** 不涉及 **取值范围：** 不涉及
         :type user_domain_id: str
         :param domain_status: 加速域名状态。取值意义： - online表示“已开启” - offline表示“已停用” - configuring表示“配置中” - configure_failed表示“配置失败” - checking表示“审核中” - check_failed表示“审核未通过” - deleting表示“删除中”。
         :type domain_status: str
-        :param cname: 加速域名对应的CNAME。
+        :param cname: **参数解释：** 加速域名对应的CNAME。 **约束限制：** 不涉及 **取值范围：** 不涉及
         :type cname: str
-        :param sources: 源站配置。
+        :param sources: **参数解释：** 域名的源站，包含源站类型、端口等信息。 **约束限制：** 不涉及
         :type sources: list[:class:`huaweicloudsdkcdn.v2.SourceWithPort`]
         :param domain_origin_host: 
         :type domain_origin_host: :class:`huaweicloudsdkcdn.v2.DomainOriginHost`
         :param https_status: 是否开启HTTPS加速。 0：代表未开启HTTPS加速； 1：代表开启HTTPS加速，且回源方式为协议跟随； 2：代表开启HTTPS加速，且回源方式为HTTP； 3：代表开启HTTPS加速，且回源方式为HTTPS。
         :type https_status: int
-        :param create_time: 域名创建时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
+        :param create_time: **参数解释：** 域名创建时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。 **约束限制：** 不涉及 **取值范围：** 不涉及
         :type create_time: int
-        :param modify_time: 域名修改时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
+        :param modify_time: **参数解释：** 域名修改时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。 **约束限制：** 不涉及 **取值范围：** 不涉及
         :type modify_time: int
         :param disabled: 封禁状态（0代表未禁用；1代表禁用）。
         :type disabled: int
@@ -105,10 +109,14 @@ class DomainsWithPort:
         :type origin_status: str
         :param banned_reason: 域名禁用原因。 1：该域名涉嫌违规内容（涉黄/涉赌/涉毒/涉政）已被禁用； 2：该域名因备案失效已被禁用； 3：该域名遭受攻击，已被禁用； 150：该域名涉嫌违规内容涉黄已被禁用； 151：该域名涉嫌违规内容涉政已被禁用； 152：该域名涉嫌违规内容涉暴已被禁用； 153：该域名涉嫌违规内容涉赌已被禁用。
         :type banned_reason: str
-        :param locked_reason: 域名锁定原因（Changing the config, please wait）。
+        :param locked_reason: **参数解释：** 域名锁定原因（Changing the config, please wait）。 **约束限制：** 不涉及 **取值范围：** 不涉及
         :type locked_reason: str
-        :param enterprise_project_id: 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。
+        :param enterprise_project_id: **参数解释：** 企业项目ID。 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。 **约束限制：** 不涉及 **取值范围：** 不涉及
         :type enterprise_project_id: str
+        :param cnames: **参数解释：** 加速域名对应的CNAME，多个CNAME以英文逗号分隔 **约束限制：** 不涉及 **取值范围：** 不涉及
+        :type cnames: str
+        :param tags: **参数解释：** 标签信息 **约束限制：** 不涉及
+        :type tags: list[:class:`huaweicloudsdkcdn.v2.EpResourceTag`]
         """
         
         
@@ -134,6 +142,8 @@ class DomainsWithPort:
         self._banned_reason = None
         self._locked_reason = None
         self._enterprise_project_id = None
+        self._cnames = None
+        self._tags = None
         self.discriminator = None
 
         if id is not None:
@@ -178,12 +188,16 @@ class DomainsWithPort:
             self.locked_reason = locked_reason
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if cnames is not None:
+            self.cnames = cnames
+        if tags is not None:
+            self.tags = tags
 
     @property
     def id(self):
         r"""Gets the id of this DomainsWithPort.
 
-        加速域名ID。
+        **参数解释：** 加速域名ID。 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :return: The id of this DomainsWithPort.
         :rtype: str
@@ -194,7 +208,7 @@ class DomainsWithPort:
     def id(self, id):
         r"""Sets the id of this DomainsWithPort.
 
-        加速域名ID。
+        **参数解释：** 加速域名ID。 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :param id: The id of this DomainsWithPort.
         :type id: str
@@ -205,7 +219,7 @@ class DomainsWithPort:
     def domain_name(self):
         r"""Gets the domain_name of this DomainsWithPort.
 
-        加速域名。
+        **参数解释：** 加速域名。 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :return: The domain_name of this DomainsWithPort.
         :rtype: str
@@ -216,7 +230,7 @@ class DomainsWithPort:
     def domain_name(self, domain_name):
         r"""Sets the domain_name of this DomainsWithPort.
 
-        加速域名。
+        **参数解释：** 加速域名。 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :param domain_name: The domain_name of this DomainsWithPort.
         :type domain_name: str
@@ -249,7 +263,7 @@ class DomainsWithPort:
     def user_domain_id(self):
         r"""Gets the user_domain_id of this DomainsWithPort.
 
-        域名所属用户的domain_id。
+        **参数解释：** 域名所属用户的domain_id。 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :return: The user_domain_id of this DomainsWithPort.
         :rtype: str
@@ -260,7 +274,7 @@ class DomainsWithPort:
     def user_domain_id(self, user_domain_id):
         r"""Sets the user_domain_id of this DomainsWithPort.
 
-        域名所属用户的domain_id。
+        **参数解释：** 域名所属用户的domain_id。 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :param user_domain_id: The user_domain_id of this DomainsWithPort.
         :type user_domain_id: str
@@ -293,7 +307,7 @@ class DomainsWithPort:
     def cname(self):
         r"""Gets the cname of this DomainsWithPort.
 
-        加速域名对应的CNAME。
+        **参数解释：** 加速域名对应的CNAME。 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :return: The cname of this DomainsWithPort.
         :rtype: str
@@ -304,7 +318,7 @@ class DomainsWithPort:
     def cname(self, cname):
         r"""Sets the cname of this DomainsWithPort.
 
-        加速域名对应的CNAME。
+        **参数解释：** 加速域名对应的CNAME。 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :param cname: The cname of this DomainsWithPort.
         :type cname: str
@@ -315,7 +329,7 @@ class DomainsWithPort:
     def sources(self):
         r"""Gets the sources of this DomainsWithPort.
 
-        源站配置。
+        **参数解释：** 域名的源站，包含源站类型、端口等信息。 **约束限制：** 不涉及
 
         :return: The sources of this DomainsWithPort.
         :rtype: list[:class:`huaweicloudsdkcdn.v2.SourceWithPort`]
@@ -326,7 +340,7 @@ class DomainsWithPort:
     def sources(self, sources):
         r"""Sets the sources of this DomainsWithPort.
 
-        源站配置。
+        **参数解释：** 域名的源站，包含源站类型、端口等信息。 **约束限制：** 不涉及
 
         :param sources: The sources of this DomainsWithPort.
         :type sources: list[:class:`huaweicloudsdkcdn.v2.SourceWithPort`]
@@ -377,7 +391,7 @@ class DomainsWithPort:
     def create_time(self):
         r"""Gets the create_time of this DomainsWithPort.
 
-        域名创建时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
+        **参数解释：** 域名创建时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :return: The create_time of this DomainsWithPort.
         :rtype: int
@@ -388,7 +402,7 @@ class DomainsWithPort:
     def create_time(self, create_time):
         r"""Sets the create_time of this DomainsWithPort.
 
-        域名创建时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
+        **参数解释：** 域名创建时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :param create_time: The create_time of this DomainsWithPort.
         :type create_time: int
@@ -399,7 +413,7 @@ class DomainsWithPort:
     def modify_time(self):
         r"""Gets the modify_time of this DomainsWithPort.
 
-        域名修改时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
+        **参数解释：** 域名修改时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :return: The modify_time of this DomainsWithPort.
         :rtype: int
@@ -410,7 +424,7 @@ class DomainsWithPort:
     def modify_time(self, modify_time):
         r"""Sets the modify_time of this DomainsWithPort.
 
-        域名修改时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
+        **参数解释：** 域名修改时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :param modify_time: The modify_time of this DomainsWithPort.
         :type modify_time: int
@@ -597,7 +611,7 @@ class DomainsWithPort:
     def locked_reason(self):
         r"""Gets the locked_reason of this DomainsWithPort.
 
-        域名锁定原因（Changing the config, please wait）。
+        **参数解释：** 域名锁定原因（Changing the config, please wait）。 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :return: The locked_reason of this DomainsWithPort.
         :rtype: str
@@ -608,7 +622,7 @@ class DomainsWithPort:
     def locked_reason(self, locked_reason):
         r"""Sets the locked_reason of this DomainsWithPort.
 
-        域名锁定原因（Changing the config, please wait）。
+        **参数解释：** 域名锁定原因（Changing the config, please wait）。 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :param locked_reason: The locked_reason of this DomainsWithPort.
         :type locked_reason: str
@@ -619,7 +633,7 @@ class DomainsWithPort:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this DomainsWithPort.
 
-        当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。
+        **参数解释：** 企业项目ID。 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :return: The enterprise_project_id of this DomainsWithPort.
         :rtype: str
@@ -630,12 +644,56 @@ class DomainsWithPort:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this DomainsWithPort.
 
-        当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。
+        **参数解释：** 企业项目ID。 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :param enterprise_project_id: The enterprise_project_id of this DomainsWithPort.
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def cnames(self):
+        r"""Gets the cnames of this DomainsWithPort.
+
+        **参数解释：** 加速域名对应的CNAME，多个CNAME以英文逗号分隔 **约束限制：** 不涉及 **取值范围：** 不涉及
+
+        :return: The cnames of this DomainsWithPort.
+        :rtype: str
+        """
+        return self._cnames
+
+    @cnames.setter
+    def cnames(self, cnames):
+        r"""Sets the cnames of this DomainsWithPort.
+
+        **参数解释：** 加速域名对应的CNAME，多个CNAME以英文逗号分隔 **约束限制：** 不涉及 **取值范围：** 不涉及
+
+        :param cnames: The cnames of this DomainsWithPort.
+        :type cnames: str
+        """
+        self._cnames = cnames
+
+    @property
+    def tags(self):
+        r"""Gets the tags of this DomainsWithPort.
+
+        **参数解释：** 标签信息 **约束限制：** 不涉及
+
+        :return: The tags of this DomainsWithPort.
+        :rtype: list[:class:`huaweicloudsdkcdn.v2.EpResourceTag`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        r"""Sets the tags of this DomainsWithPort.
+
+        **参数解释：** 标签信息 **约束限制：** 不涉及
+
+        :param tags: The tags of this DomainsWithPort.
+        :type tags: list[:class:`huaweicloudsdkcdn.v2.EpResourceTag`]
+        """
+        self._tags = tags
 
     def to_dict(self):
         result = {}

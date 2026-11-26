@@ -16,15 +16,17 @@ class CreateInstanceNamespaceRequestBody:
 
     openapi_types = {
         'namespace_name': 'str',
-        'metadata': 'NamespaceMetadata'
+        'metadata': 'NamespaceMetadata',
+        'tags': 'list[ResourceTag]'
     }
 
     attribute_map = {
         'namespace_name': 'namespace_name',
-        'metadata': 'metadata'
+        'metadata': 'metadata',
+        'tags': 'tags'
     }
 
-    def __init__(self, namespace_name=None, metadata=None):
+    def __init__(self, namespace_name=None, metadata=None, tags=None):
         r"""CreateInstanceNamespaceRequestBody
 
         The model defined in huaweicloud sdk
@@ -33,16 +35,21 @@ class CreateInstanceNamespaceRequestBody:
         :type namespace_name: str
         :param metadata: 
         :type metadata: :class:`huaweicloudsdkswr.v2.NamespaceMetadata`
+        :param tags: 资源标签, 最多支持20个标签
+        :type tags: list[:class:`huaweicloudsdkswr.v2.ResourceTag`]
         """
         
         
 
         self._namespace_name = None
         self._metadata = None
+        self._tags = None
         self.discriminator = None
 
         self.namespace_name = namespace_name
         self.metadata = metadata
+        if tags is not None:
+            self.tags = tags
 
     @property
     def namespace_name(self):
@@ -83,6 +90,28 @@ class CreateInstanceNamespaceRequestBody:
         :type metadata: :class:`huaweicloudsdkswr.v2.NamespaceMetadata`
         """
         self._metadata = metadata
+
+    @property
+    def tags(self):
+        r"""Gets the tags of this CreateInstanceNamespaceRequestBody.
+
+        资源标签, 最多支持20个标签
+
+        :return: The tags of this CreateInstanceNamespaceRequestBody.
+        :rtype: list[:class:`huaweicloudsdkswr.v2.ResourceTag`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        r"""Sets the tags of this CreateInstanceNamespaceRequestBody.
+
+        资源标签, 最多支持20个标签
+
+        :param tags: The tags of this CreateInstanceNamespaceRequestBody.
+        :type tags: list[:class:`huaweicloudsdkswr.v2.ResourceTag`]
+        """
+        self._tags = tags
 
     def to_dict(self):
         result = {}

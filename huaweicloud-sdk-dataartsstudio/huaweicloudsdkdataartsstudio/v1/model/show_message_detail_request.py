@@ -35,7 +35,7 @@ class ShowMessageDetailRequest:
         :type workspace: str
         :param dlm_type: 数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
         :type dlm_type: str
-        :param message_id: 消息信息id。
+        :param message_id: 消息信息ID。
         :type message_id: str
         """
         
@@ -99,7 +99,7 @@ class ShowMessageDetailRequest:
     def message_id(self):
         r"""Gets the message_id of this ShowMessageDetailRequest.
 
-        消息信息id。
+        消息信息ID。
 
         :return: The message_id of this ShowMessageDetailRequest.
         :rtype: str
@@ -110,7 +110,7 @@ class ShowMessageDetailRequest:
     def message_id(self, message_id):
         r"""Sets the message_id of this ShowMessageDetailRequest.
 
-        消息信息id。
+        消息信息ID。
 
         :param message_id: The message_id of this ShowMessageDetailRequest.
         :type message_id: str

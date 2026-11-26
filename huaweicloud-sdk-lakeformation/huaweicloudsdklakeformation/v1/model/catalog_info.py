@@ -16,15 +16,17 @@ class CatalogInfo:
 
     openapi_types = {
         'databases': 'list[DatabaseInfo]',
-        'name': 'str'
+        'name': 'str',
+        'models': 'list[ModelInfo]'
     }
 
     attribute_map = {
         'databases': 'databases',
-        'name': 'name'
+        'name': 'name',
+        'models': 'models'
     }
 
-    def __init__(self, databases=None, name=None):
+    def __init__(self, databases=None, name=None, models=None):
         r"""CatalogInfo
 
         The model defined in huaweicloud sdk
@@ -33,17 +35,22 @@ class CatalogInfo:
         :type databases: list[:class:`huaweicloudsdklakeformation.v1.DatabaseInfo`]
         :param name: catalog名
         :type name: str
+        :param models: 子模型信息。
+        :type models: list[:class:`huaweicloudsdklakeformation.v1.ModelInfo`]
         """
         
         
 
         self._databases = None
         self._name = None
+        self._models = None
         self.discriminator = None
 
         if databases is not None:
             self.databases = databases
         self.name = name
+        if models is not None:
+            self.models = models
 
     @property
     def databases(self):
@@ -88,6 +95,28 @@ class CatalogInfo:
         :type name: str
         """
         self._name = name
+
+    @property
+    def models(self):
+        r"""Gets the models of this CatalogInfo.
+
+        子模型信息。
+
+        :return: The models of this CatalogInfo.
+        :rtype: list[:class:`huaweicloudsdklakeformation.v1.ModelInfo`]
+        """
+        return self._models
+
+    @models.setter
+    def models(self, models):
+        r"""Sets the models of this CatalogInfo.
+
+        子模型信息。
+
+        :param models: The models of this CatalogInfo.
+        :type models: list[:class:`huaweicloudsdklakeformation.v1.ModelInfo`]
+        """
+        self._models = models
 
     def to_dict(self):
         result = {}

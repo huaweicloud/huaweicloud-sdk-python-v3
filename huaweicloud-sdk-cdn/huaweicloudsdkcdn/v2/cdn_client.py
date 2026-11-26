@@ -1784,6 +1784,8 @@ class CdnClient(Client):
         path_params = {}
 
         query_params = []
+        if 'task_id' in local_var_params:
+            query_params.append(('task_id', local_var_params['task_id']))
         if 'start_time' in local_var_params:
             query_params.append(('start_time', local_var_params['start_time']))
         if 'end_time' in local_var_params:

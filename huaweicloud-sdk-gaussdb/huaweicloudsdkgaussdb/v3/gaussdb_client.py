@@ -9075,8 +9075,6 @@ class GaussDBClient(Client):
         query_params = []
         if 'date' in local_var_params:
             query_params.append(('date', local_var_params['date']))
-        if 'date2' in local_var_params:
-            query_params.append(('date', local_var_params['date2']))
         if 'start_time' in local_var_params:
             query_params.append(('start_time', local_var_params['start_time']))
         if 'end_time' in local_var_params:
@@ -11680,73 +11678,6 @@ class GaussDBClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
-
-        header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def show_migrate_info(self, request):
-        r"""查询一键迁移信息
-
-        查询一键迁移到TaurusDB企业版的迁移信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for ShowMigrateInfo
-        :type request: :class:`huaweicloudsdkgaussdb.v3.ShowMigrateInfoRequest`
-        :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowMigrateInfoResponse`
-        """
-        http_info = self._show_migrate_info_http_info(request)
-        return self._call_api(**http_info)
-
-    def show_migrate_info_invoker(self, request):
-        http_info = self._show_migrate_info_http_info(request)
-        return SyncInvoker(self, http_info)
-
-    @classmethod
-    def _show_migrate_info_http_info(cls, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v3/{project_id}/migration/{instance_id}/info",
-            "request_type": request.__class__.__name__,
-            "response_type": "ShowMigrateInfoResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'instance_id' in local_var_params:
-            path_params['instance_id'] = local_var_params['instance_id']
-
-        query_params = []
 
         header_params = {}
         if 'x_language' in local_var_params:

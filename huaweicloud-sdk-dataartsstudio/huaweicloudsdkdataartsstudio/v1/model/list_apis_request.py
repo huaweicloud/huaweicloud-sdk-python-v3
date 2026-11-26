@@ -59,9 +59,9 @@ class ListApisRequest:
         :type dlm_type: str
         :param x_return_publish_messages: 是否返回专享版API的发布信息。
         :type x_return_publish_messages: str
-        :param offset: 查询起始坐标, 即跳过前X条数据。仅支持0或limit的整数倍，不满足则向下取整。
+        :param offset: 查询起始坐标，即跳过前X条数据。仅支持0或limit的整数倍，不满足则向下取整。
         :type offset: int
-        :param limit: 查询条数, 即查询Y条数据。
+        :param limit: 查询条数，即查询Y条数据。
         :type limit: int
         :param name: 根据API名称模糊查询。
         :type name: str
@@ -199,7 +199,7 @@ class ListApisRequest:
     def offset(self):
         r"""Gets the offset of this ListApisRequest.
 
-        查询起始坐标, 即跳过前X条数据。仅支持0或limit的整数倍，不满足则向下取整。
+        查询起始坐标，即跳过前X条数据。仅支持0或limit的整数倍，不满足则向下取整。
 
         :return: The offset of this ListApisRequest.
         :rtype: int
@@ -210,7 +210,7 @@ class ListApisRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListApisRequest.
 
-        查询起始坐标, 即跳过前X条数据。仅支持0或limit的整数倍，不满足则向下取整。
+        查询起始坐标，即跳过前X条数据。仅支持0或limit的整数倍，不满足则向下取整。
 
         :param offset: The offset of this ListApisRequest.
         :type offset: int
@@ -221,7 +221,7 @@ class ListApisRequest:
     def limit(self):
         r"""Gets the limit of this ListApisRequest.
 
-        查询条数, 即查询Y条数据。
+        查询条数，即查询Y条数据。
 
         :return: The limit of this ListApisRequest.
         :rtype: int
@@ -232,7 +232,7 @@ class ListApisRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListApisRequest.
 
-        查询条数, 即查询Y条数据。
+        查询条数，即查询Y条数据。
 
         :param limit: The limit of this ListApisRequest.
         :type limit: int

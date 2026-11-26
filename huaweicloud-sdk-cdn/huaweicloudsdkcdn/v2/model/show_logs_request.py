@@ -41,13 +41,13 @@ class ShowLogsRequest:
         :type domain_name: str
         :param start_time: **参数解释：** 查询开始时间 **约束限制：** 不涉及 **取值范围：** 时间格式为整点毫秒时间戳 **默认取值：** 当天0点
         :type start_time: int
-        :param end_time: **参数解释：** 查询结束时间 **约束限制：** 不涉及 **取值范围：** - 不包含结束时间 - 与开始时间的最大跨度为30天 - 时间格式为整点毫秒时间戳 **默认取值：** 开始时间加1天
+        :param end_time: **参数解释：** 查询结束时间 **约束限制：** 不涉及 **取值范围：** - 不包含结束时间 - 与开始时间的最大跨度为30天 - 时间格式为整点毫秒时间戳  **默认取值：** 开始时间加1天
         :type end_time: int
         :param page_size: **参数解释：** 查询时单页数量 **约束限制：** 不涉及 **取值范围：** 1-10000 **默认取值：** 10
         :type page_size: int
         :param page_number: **参数解释：** 当前查询第几页 **约束限制：** 不涉及 **取值范围：** 1-65535 **默认取值：** 1
         :type page_number: int
-        :param enterprise_project_id: **参数解释：** 企业项目id &gt; 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id  **约束限制：** - 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目 - 当使用子账号调用接口时，该参数必传 **取值范围：** all表示所有项目 **默认取值：** 不涉及
+        :param enterprise_project_id: **参数解释：** 企业项目id &gt; 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id  **约束限制：** - 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目 - 当使用子账号调用接口时，该参数必传  **取值范围：** all表示所有项目 **默认取值：** 不涉及
         :type enterprise_project_id: str
         """
         
@@ -121,7 +121,7 @@ class ShowLogsRequest:
     def end_time(self):
         r"""Gets the end_time of this ShowLogsRequest.
 
-        **参数解释：** 查询结束时间 **约束限制：** 不涉及 **取值范围：** - 不包含结束时间 - 与开始时间的最大跨度为30天 - 时间格式为整点毫秒时间戳 **默认取值：** 开始时间加1天
+        **参数解释：** 查询结束时间 **约束限制：** 不涉及 **取值范围：** - 不包含结束时间 - 与开始时间的最大跨度为30天 - 时间格式为整点毫秒时间戳  **默认取值：** 开始时间加1天
 
         :return: The end_time of this ShowLogsRequest.
         :rtype: int
@@ -132,7 +132,7 @@ class ShowLogsRequest:
     def end_time(self, end_time):
         r"""Sets the end_time of this ShowLogsRequest.
 
-        **参数解释：** 查询结束时间 **约束限制：** 不涉及 **取值范围：** - 不包含结束时间 - 与开始时间的最大跨度为30天 - 时间格式为整点毫秒时间戳 **默认取值：** 开始时间加1天
+        **参数解释：** 查询结束时间 **约束限制：** 不涉及 **取值范围：** - 不包含结束时间 - 与开始时间的最大跨度为30天 - 时间格式为整点毫秒时间戳  **默认取值：** 开始时间加1天
 
         :param end_time: The end_time of this ShowLogsRequest.
         :type end_time: int
@@ -187,7 +187,7 @@ class ShowLogsRequest:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ShowLogsRequest.
 
-        **参数解释：** 企业项目id > 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id  **约束限制：** - 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目 - 当使用子账号调用接口时，该参数必传 **取值范围：** all表示所有项目 **默认取值：** 不涉及
+        **参数解释：** 企业项目id > 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id  **约束限制：** - 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目 - 当使用子账号调用接口时，该参数必传  **取值范围：** all表示所有项目 **默认取值：** 不涉及
 
         :return: The enterprise_project_id of this ShowLogsRequest.
         :rtype: str
@@ -198,7 +198,7 @@ class ShowLogsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ShowLogsRequest.
 
-        **参数解释：** 企业项目id > 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id  **约束限制：** - 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目 - 当使用子账号调用接口时，该参数必传 **取值范围：** all表示所有项目 **默认取值：** 不涉及
+        **参数解释：** 企业项目id > 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id  **约束限制：** - 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目 - 当使用子账号调用接口时，该参数必传  **取值范围：** all表示所有项目 **默认取值：** 不涉及
 
         :param enterprise_project_id: The enterprise_project_id of this ShowLogsRequest.
         :type enterprise_project_id: str

@@ -39,7 +39,7 @@ class FlowLimitStrategy:
         :type strategy_type: str
         :param item_type: **参数解释：**  用量封顶类型 **约束限制：** 不涉及 **取值范围：** - bandwidth: 带宽封顶，单位: bit/s - traffic: 流量封顶，单位: byte  **默认取值：** 不涉及
         :type item_type: str
-        :param limit_value: **参数解释：** 用量封顶阈值，域名用量达到该阈值后，将会停用域名 **约束限制：** 不涉及 **取值范围：** 必须为正整数 **默认取值：** 不涉及
+        :param limit_value: **参数解释：** 用量封顶阈值，域名用量达到该阈值后，将会停用域名 **约束限制：** 不涉及 **取值范围：** 1000000-10000000000000 **默认取值：** 不涉及
         :type limit_value: int
         :param alarm_percent_threshold: **参数解释：** 用量告警阈值，域名用量达到该阈值后，将会发送告警 **约束限制：** 不涉及 **取值范围：** 10-90 **默认取值：** 不涉及
         :type alarm_percent_threshold: int
@@ -112,7 +112,7 @@ class FlowLimitStrategy:
     def limit_value(self):
         r"""Gets the limit_value of this FlowLimitStrategy.
 
-        **参数解释：** 用量封顶阈值，域名用量达到该阈值后，将会停用域名 **约束限制：** 不涉及 **取值范围：** 必须为正整数 **默认取值：** 不涉及
+        **参数解释：** 用量封顶阈值，域名用量达到该阈值后，将会停用域名 **约束限制：** 不涉及 **取值范围：** 1000000-10000000000000 **默认取值：** 不涉及
 
         :return: The limit_value of this FlowLimitStrategy.
         :rtype: int
@@ -123,7 +123,7 @@ class FlowLimitStrategy:
     def limit_value(self, limit_value):
         r"""Sets the limit_value of this FlowLimitStrategy.
 
-        **参数解释：** 用量封顶阈值，域名用量达到该阈值后，将会停用域名 **约束限制：** 不涉及 **取值范围：** 必须为正整数 **默认取值：** 不涉及
+        **参数解释：** 用量封顶阈值，域名用量达到该阈值后，将会停用域名 **约束限制：** 不涉及 **取值范围：** 1000000-10000000000000 **默认取值：** 不涉及
 
         :param limit_value: The limit_value of this FlowLimitStrategy.
         :type limit_value: int

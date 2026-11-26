@@ -22,7 +22,8 @@ class ShowInstanceNamespaceResponse(SdkResponse):
         'created_at': 'str',
         'updated_at': 'str',
         'repo_count': 'int',
-        'cve_allowlist': 'CVEAllowlist'
+        'cve_allowlist': 'CVEAllowlist',
+        'tags': 'list[ResourceTag]'
     }
 
     attribute_map = {
@@ -32,10 +33,11 @@ class ShowInstanceNamespaceResponse(SdkResponse):
         'created_at': 'created_at',
         'updated_at': 'updated_at',
         'repo_count': 'repo_count',
-        'cve_allowlist': 'cve_allowlist'
+        'cve_allowlist': 'cve_allowlist',
+        'tags': 'tags'
     }
 
-    def __init__(self, name=None, metadata=None, namespace_id=None, created_at=None, updated_at=None, repo_count=None, cve_allowlist=None):
+    def __init__(self, name=None, metadata=None, namespace_id=None, created_at=None, updated_at=None, repo_count=None, cve_allowlist=None, tags=None):
         r"""ShowInstanceNamespaceResponse
 
         The model defined in huaweicloud sdk
@@ -54,6 +56,8 @@ class ShowInstanceNamespaceResponse(SdkResponse):
         :type repo_count: int
         :param cve_allowlist: 
         :type cve_allowlist: :class:`huaweicloudsdkswr.v2.CVEAllowlist`
+        :param tags: 标签列表
+        :type tags: list[:class:`huaweicloudsdkswr.v2.ResourceTag`]
         """
         
         super().__init__()
@@ -65,6 +69,7 @@ class ShowInstanceNamespaceResponse(SdkResponse):
         self._updated_at = None
         self._repo_count = None
         self._cve_allowlist = None
+        self._tags = None
         self.discriminator = None
 
         if name is not None:
@@ -81,6 +86,8 @@ class ShowInstanceNamespaceResponse(SdkResponse):
             self.repo_count = repo_count
         if cve_allowlist is not None:
             self.cve_allowlist = cve_allowlist
+        if tags is not None:
+            self.tags = tags
 
     @property
     def name(self):
@@ -227,6 +234,28 @@ class ShowInstanceNamespaceResponse(SdkResponse):
         :type cve_allowlist: :class:`huaweicloudsdkswr.v2.CVEAllowlist`
         """
         self._cve_allowlist = cve_allowlist
+
+    @property
+    def tags(self):
+        r"""Gets the tags of this ShowInstanceNamespaceResponse.
+
+        标签列表
+
+        :return: The tags of this ShowInstanceNamespaceResponse.
+        :rtype: list[:class:`huaweicloudsdkswr.v2.ResourceTag`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        r"""Sets the tags of this ShowInstanceNamespaceResponse.
+
+        标签列表
+
+        :param tags: The tags of this ShowInstanceNamespaceResponse.
+        :type tags: list[:class:`huaweicloudsdkswr.v2.ResourceTag`]
+        """
+        self._tags = tags
 
     def to_dict(self):
         import warnings

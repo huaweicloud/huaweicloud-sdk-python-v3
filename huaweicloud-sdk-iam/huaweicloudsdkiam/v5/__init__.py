@@ -211,6 +211,7 @@ from huaweicloudsdkiam.v5.model.policy_type import PolicyType
 from huaweicloudsdkiam.v5.model.policy_user import PolicyUser
 from huaweicloudsdkiam.v5.model.policy_version import PolicyVersion
 from huaweicloudsdkiam.v5.model.policy_version_id import PolicyVersionId
+from huaweicloudsdkiam.v5.model.policy_with_tags import PolicyWithTags
 from huaweicloudsdkiam.v5.model.provider_description import ProviderDescription
 from huaweicloudsdkiam.v5.model.reason import Reason
 from huaweicloudsdkiam.v5.model.region_name import RegionName

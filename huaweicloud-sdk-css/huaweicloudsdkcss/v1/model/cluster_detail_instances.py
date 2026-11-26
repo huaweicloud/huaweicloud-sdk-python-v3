@@ -24,7 +24,8 @@ class ClusterDetailInstances:
         'az_code': 'str',
         'ip': 'str',
         'volume': 'ShowClusterVolumeRsp',
-        'subnet_id': 'str'
+        'subnet_id': 'str',
+        'created': 'datetime'
     }
 
     attribute_map = {
@@ -37,10 +38,11 @@ class ClusterDetailInstances:
         'az_code': 'azCode',
         'ip': 'ip',
         'volume': 'volume',
-        'subnet_id': 'subnetId'
+        'subnet_id': 'subnetId',
+        'created': 'created'
     }
 
-    def __init__(self, status=None, resource_id=None, type=None, id=None, name=None, spec_code=None, az_code=None, ip=None, volume=None, subnet_id=None):
+    def __init__(self, status=None, resource_id=None, type=None, id=None, name=None, spec_code=None, az_code=None, ip=None, volume=None, subnet_id=None, created=None):
         r"""ClusterDetailInstances
 
         The model defined in huaweicloud sdk
@@ -65,6 +67,8 @@ class ClusterDetailInstances:
         :type volume: :class:`huaweicloudsdkcss.v1.ShowClusterVolumeRsp`
         :param subnet_id: 当前节点所属子网ID。
         :type subnet_id: str
+        :param created: 
+        :type created: datetime
         """
         
         
@@ -79,6 +83,7 @@ class ClusterDetailInstances:
         self._ip = None
         self._volume = None
         self._subnet_id = None
+        self._created = None
         self.discriminator = None
 
         if status is not None:
@@ -101,6 +106,8 @@ class ClusterDetailInstances:
             self.volume = volume
         if subnet_id is not None:
             self.subnet_id = subnet_id
+        if created is not None:
+            self.created = created
 
     @property
     def status(self):
@@ -317,6 +324,24 @@ class ClusterDetailInstances:
         :type subnet_id: str
         """
         self._subnet_id = subnet_id
+
+    @property
+    def created(self):
+        r"""Gets the created of this ClusterDetailInstances.
+
+        :return: The created of this ClusterDetailInstances.
+        :rtype: datetime
+        """
+        return self._created
+
+    @created.setter
+    def created(self, created):
+        r"""Sets the created of this ClusterDetailInstances.
+
+        :param created: The created of this ClusterDetailInstances.
+        :type created: datetime
+        """
+        self._created = created
 
     def to_dict(self):
         result = {}

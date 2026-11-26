@@ -53,7 +53,8 @@ class Configs:
         'access_area_filter': 'list[AccessAreaFilter]',
         'client_cert': 'ClientCert',
         'https_tls_version': 'HttpsTlsVersion',
-        'flow_limit_strategy': 'list[FlowLimitStrategy]'
+        'flow_limit_strategy': 'list[FlowLimitStrategy]',
+        'bandwidth_alarm_strategy': 'BandwidthAlarmStrategy'
     }
 
     attribute_map = {
@@ -95,35 +96,36 @@ class Configs:
         'access_area_filter': 'access_area_filter',
         'client_cert': 'client_cert',
         'https_tls_version': 'https_tls_version',
-        'flow_limit_strategy': 'flow_limit_strategy'
+        'flow_limit_strategy': 'flow_limit_strategy',
+        'bandwidth_alarm_strategy': 'bandwidth_alarm_strategy'
     }
 
-    def __init__(self, business_type=None, service_area=None, remark=None, origin_request_header=None, http_response_header=None, url_auth=None, https=None, sources=None, origin_protocol=None, origin_follow302_status=None, cache_rules=None, ip_filter=None, referer=None, force_redirect=None, compress=None, cache_url_parameter_filter=None, ipv6_accelerate=None, error_code_cache=None, origin_range_status=None, user_agent_filter=None, origin_request_url_rewrite=None, flexible_origin=None, slice_etag_status=None, origin_receive_timeout=None, remote_auth=None, websocket=None, video_seek=None, request_limit_rules=None, ip_frequency_limit=None, hsts=None, quic=None, error_code_redirect_rules=None, sni=None, request_url_rewrite=None, browser_cache_rules=None, access_area_filter=None, client_cert=None, https_tls_version=None, flow_limit_strategy=None):
+    def __init__(self, business_type=None, service_area=None, remark=None, origin_request_header=None, http_response_header=None, url_auth=None, https=None, sources=None, origin_protocol=None, origin_follow302_status=None, cache_rules=None, ip_filter=None, referer=None, force_redirect=None, compress=None, cache_url_parameter_filter=None, ipv6_accelerate=None, error_code_cache=None, origin_range_status=None, user_agent_filter=None, origin_request_url_rewrite=None, flexible_origin=None, slice_etag_status=None, origin_receive_timeout=None, remote_auth=None, websocket=None, video_seek=None, request_limit_rules=None, ip_frequency_limit=None, hsts=None, quic=None, error_code_redirect_rules=None, sni=None, request_url_rewrite=None, browser_cache_rules=None, access_area_filter=None, client_cert=None, https_tls_version=None, flow_limit_strategy=None, bandwidth_alarm_strategy=None):
         r"""Configs
 
         The model defined in huaweicloud sdk
 
-        :param business_type: 业务类型： - web：网站加速； - download：文件下载加速； - video：点播加速。  &gt; 暂不支持“全站加速”变更为其它业务类型。
+        :param business_type: **参数解释：** 业务类型 **约束限制：** 暂不支持“全站加速”变更为其它业务类型 **取值范围：** - web: 网站加速 - download: 文件下载加速 - video: 点播加速  **默认取值：** 不涉及
         :type business_type: str
-        :param service_area: 服务区域： - mainland_china：中国大陆； - global：全球； - outside_mainland_china：中国大陆境外。  &gt; 暂不支持“中国大陆”与“中国大陆境外”互相直接切换。
+        :param service_area: **参数解释：** 加速域名的服务范围，客户端访问将会调度到服务范围内的CDN节点，可根据用户聚集区域选择合适的范围 **约束限制：** - 暂不支持“中国大陆”与“中国大陆境外”互相直接切换 - 服务范围修改为中国大陆或全球时，加速域名需要到工信部备案  **取值范围：** - mainland_china：中国大陆 - global：全球 - outside_mainland_china：中国大陆境外  **默认取值：** 不涉及
         :type service_area: str
-        :param remark: 给域名添加备注，字符长度范围0-200。
+        :param remark: **参数解释：** 域名备注信息 **约束限制：** 不涉及 **取值范围：** 0-10000个字符 **默认取值：** 不涉及
         :type remark: str
-        :param origin_request_header: 回源请求头改写 该功能将覆盖原有配置（清空之前的配置），在使用此接口时，请上传全量头部信息。
+        :param origin_request_header: **参数解释：** 回源请求头，CDN节点回源时，根据回源请求头配置操作请求的HTTP头部信息 **约束限制：** - 修改时该功能将覆盖原有配置（清空之前的配置），在使用此接口时，请上传全量头部信息 - 如果域名在后台配置了特殊请求头，需要将对应的请求头一并传入
         :type origin_request_header: list[:class:`huaweicloudsdkcdn.v2.OriginRequestHeader`]
-        :param http_response_header: http header配置 该功能将覆盖原有配置（清空之前的配置），在使用此接口时，请上传全量头部信息。
+        :param http_response_header: **参数解释：** HTTP响应头，CDN节点响应客户端时，根据HTTP响应头配置操作响应的HTTP头部信息 **约束限制：** - 修改时该功能将覆盖原有配置（清空之前的配置），在使用此接口时，请上传全量头部信息 - 如果域名在后台配置了特殊响应头，需要将对应的响应头一并传入
         :type http_response_header: list[:class:`huaweicloudsdkcdn.v2.HttpResponseHeader`]
         :param url_auth: 
         :type url_auth: :class:`huaweicloudsdkcdn.v2.UrlAuth`
         :param https: 
         :type https: :class:`huaweicloudsdkcdn.v2.HttpPutBody`
-        :param sources: 源站配置。
+        :param sources: **参数解释：** 配置加速域名的源站，CDN通过加速域名将源站上需要加速的内容缓存到CDN节点，达到加速访问资源的效果 **约束限制：** 不涉及
         :type sources: list[:class:`huaweicloudsdkcdn.v2.SourcesConfig`]
-        :param origin_protocol: 回源协议，follow：协议跟随回源，http：HTTP回源(默认)，https：https回源。
+        :param origin_protocol: **参数解释：** 指定CDN回源时的请求协议 **约束限制：** 不涉及 **取值范围：** - follow: 协议跟随 - http: http协议 - https: https协议  **默认取值：** http: http协议
         :type origin_protocol: str
-        :param origin_follow302_status: 回源跟随，on：开启，off：关闭。
+        :param origin_follow302_status: **参数解释：** 开启回源跟随，当源站地址因业务需求做了301/302 重定向，CDN节点会先跳转到301/302对应地址获取资源，缓存后再返回给用户 **约束限制：** 不涉及 **取值范围：** - on: 开启 - off: 关闭  **默认取值：** 不涉及
         :type origin_follow302_status: str
-        :param cache_rules: 缓存规则。
+        :param cache_rules: **参数解释：** 通过不同参数控制源站资源在CDN节点的缓存时长 **约束限制：** 必须存在一条所有文件类型的规则
         :type cache_rules: list[:class:`huaweicloudsdkcdn.v2.CacheRules`]
         :param ip_filter: 
         :type ip_filter: :class:`huaweicloudsdkcdn.v2.IpFilter`
@@ -135,21 +137,21 @@ class Configs:
         :type compress: :class:`huaweicloudsdkcdn.v2.Compress`
         :param cache_url_parameter_filter: 
         :type cache_url_parameter_filter: :class:`huaweicloudsdkcdn.v2.CacheUrlParameterFilter`
-        :param ipv6_accelerate: ipv6设置，1：打开；0：关闭。
+        :param ipv6_accelerate: **参数解释：** 配置客户端用IPv6协议访问CDN节点 **约束限制：** 不涉及 **取值范围：** - 1: 开启 - 0: 关闭  **默认取值：** 不涉及
         :type ipv6_accelerate: int
-        :param error_code_cache: 状态码缓存时间。
+        :param error_code_cache: **参数解释：** 将源站返回的错误状态码缓存到CDN节点，用户再次请求时由CDN直接响应给用户错误码 **约束限制：** 不涉及
         :type error_code_cache: list[:class:`huaweicloudsdkcdn.v2.ErrorCodeCache`]
-        :param origin_range_status: Range回源，即分片回源，开启: on，关闭: off。  &gt; 开启Range回源的前提是您的源站支持Range请求，即HTTP请求头中包含Range字段，否则可能导致回源失败。
+        :param origin_range_status: **参数解释：** Range回源，开启后，源站在收到CDN节点回源请求时，根据HTTP请求头中的Range信息返回指定范围的数据给CDN节点 **约束限制：** 开启Range回源的前提是您的源站支持Range请求，即HTTP请求头中包含Range字段，否则可能导致回源失败 **取值范围：** - on: 开启 - off: 关闭  **默认取值：** 不涉及
         :type origin_range_status: str
         :param user_agent_filter: 
         :type user_agent_filter: :class:`huaweicloudsdkcdn.v2.UserAgentFilter`
-        :param origin_request_url_rewrite: 改写回源URL，最多配置20条。
+        :param origin_request_url_rewrite: **参数解释：** 回源URL改写，解决回源请求URL与源站URL不匹配的问题 **约束限制：** 最多配置20条
         :type origin_request_url_rewrite: list[:class:`huaweicloudsdkcdn.v2.OriginRequestUrlRewrite`]
-        :param flexible_origin: 高级回源，最多配置20条。
+        :param flexible_origin: **参数解释：** 高级回源，实现根据不同的资源类型或路径回源到不同源站 **约束限制：** 最多配置20条
         :type flexible_origin: list[:class:`huaweicloudsdkcdn.v2.FlexibleOrigins`]
-        :param slice_etag_status: 回源是否校验ETag，on：开启，off：关闭。
+        :param slice_etag_status: **参数解释：** 回源是否校验ETag，开启此项配置后，当用户再次请求节点已缓存资源时，会将ETag的值加入到判断资源是否过期的逻辑 **约束限制：** 不涉及 **取值范围：** - on: 开启 - off: 关闭  **默认取值：** 不涉及
         :type slice_etag_status: str
-        :param origin_receive_timeout: 回源超时时间，范围:5-60，单位：秒。
+        :param origin_receive_timeout: **参数解释：** 自定义设置CDN节点回源时的超时时间，请求超时即表示此次回源失败 **约束限制：** 不涉及 **取值范围：** 5-300，单位：秒 **默认取值：** 不涉及
         :type origin_receive_timeout: int
         :param remote_auth: 
         :type remote_auth: :class:`huaweicloudsdkcdn.v2.CommonRemoteAuth`
@@ -157,7 +159,7 @@ class Configs:
         :type websocket: :class:`huaweicloudsdkcdn.v2.WebSocketSeek`
         :param video_seek: 
         :type video_seek: :class:`huaweicloudsdkcdn.v2.VideoSeek`
-        :param request_limit_rules: 请求限速配置。
+        :param request_limit_rules: **参数解释：** 请求限速，将用户请求速度限制在指定范围内，一定程度上减少突发高带宽风险，节省成本 **约束限制：** 不涉及
         :type request_limit_rules: list[:class:`huaweicloudsdkcdn.v2.RequestLimitRules`]
         :param ip_frequency_limit: 
         :type ip_frequency_limit: :class:`huaweicloudsdkcdn.v2.IpFrequencyLimit`
@@ -165,13 +167,13 @@ class Configs:
         :type hsts: :class:`huaweicloudsdkcdn.v2.Hsts`
         :param quic: 
         :type quic: :class:`huaweicloudsdkcdn.v2.Quic`
-        :param error_code_redirect_rules: 自定义错误页面。
+        :param error_code_redirect_rules: **参数解释：** 自定义错误页面，当访问页面出错时，会给客户端返回指定的页面，优化用户体验 **约束限制：** 不涉及
         :type error_code_redirect_rules: list[:class:`huaweicloudsdkcdn.v2.ErrorCodeRedirectRules`]
         :param sni: 
         :type sni: :class:`huaweicloudsdkcdn.v2.Sni`
-        :param request_url_rewrite: 访问URL重写。
+        :param request_url_rewrite: **参数解释：** 访问URL重写，当用户请求URL与CDN节点缓存资源的URL不一致时，可以通过访问URL重写功能重定向到目标URL **约束限制：** 不涉及
         :type request_url_rewrite: list[:class:`huaweicloudsdkcdn.v2.RequestUrlRewrite`]
-        :param browser_cache_rules: 浏览器缓存过期时间。
+        :param browser_cache_rules: **参数解释：** 浏览器缓存过期时间，当终端用户请求资源时，如果浏览器有缓存，直接返回给用户 **约束限制：** 不涉及
         :type browser_cache_rules: list[:class:`huaweicloudsdkcdn.v2.BrowserCacheRules`]
         :param access_area_filter: 
         :type access_area_filter: list[:class:`huaweicloudsdkcdn.v2.AccessAreaFilter`]
@@ -181,6 +183,8 @@ class Configs:
         :type https_tls_version: :class:`huaweicloudsdkcdn.v2.HttpsTlsVersion`
         :param flow_limit_strategy: **参数解释：** 设置用量封顶阈值，当实际用量大于阈值时停用域名，有效预防流量盗刷或恶意攻击带来的高额账单。  &gt; 由于监控数据存在时延，域名将在用量达到阈值后的10分钟左右被停用  **约束限制：** 不涉及
         :type flow_limit_strategy: list[:class:`huaweicloudsdkcdn.v2.FlowLimitStrategy`]
+        :param bandwidth_alarm_strategy: 
+        :type bandwidth_alarm_strategy: :class:`huaweicloudsdkcdn.v2.BandwidthAlarmStrategy`
         """
         
         
@@ -224,6 +228,7 @@ class Configs:
         self._client_cert = None
         self._https_tls_version = None
         self._flow_limit_strategy = None
+        self._bandwidth_alarm_strategy = None
         self.discriminator = None
 
         if business_type is not None:
@@ -304,12 +309,14 @@ class Configs:
             self.https_tls_version = https_tls_version
         if flow_limit_strategy is not None:
             self.flow_limit_strategy = flow_limit_strategy
+        if bandwidth_alarm_strategy is not None:
+            self.bandwidth_alarm_strategy = bandwidth_alarm_strategy
 
     @property
     def business_type(self):
         r"""Gets the business_type of this Configs.
 
-        业务类型： - web：网站加速； - download：文件下载加速； - video：点播加速。  > 暂不支持“全站加速”变更为其它业务类型。
+        **参数解释：** 业务类型 **约束限制：** 暂不支持“全站加速”变更为其它业务类型 **取值范围：** - web: 网站加速 - download: 文件下载加速 - video: 点播加速  **默认取值：** 不涉及
 
         :return: The business_type of this Configs.
         :rtype: str
@@ -320,7 +327,7 @@ class Configs:
     def business_type(self, business_type):
         r"""Sets the business_type of this Configs.
 
-        业务类型： - web：网站加速； - download：文件下载加速； - video：点播加速。  > 暂不支持“全站加速”变更为其它业务类型。
+        **参数解释：** 业务类型 **约束限制：** 暂不支持“全站加速”变更为其它业务类型 **取值范围：** - web: 网站加速 - download: 文件下载加速 - video: 点播加速  **默认取值：** 不涉及
 
         :param business_type: The business_type of this Configs.
         :type business_type: str
@@ -331,7 +338,7 @@ class Configs:
     def service_area(self):
         r"""Gets the service_area of this Configs.
 
-        服务区域： - mainland_china：中国大陆； - global：全球； - outside_mainland_china：中国大陆境外。  > 暂不支持“中国大陆”与“中国大陆境外”互相直接切换。
+        **参数解释：** 加速域名的服务范围，客户端访问将会调度到服务范围内的CDN节点，可根据用户聚集区域选择合适的范围 **约束限制：** - 暂不支持“中国大陆”与“中国大陆境外”互相直接切换 - 服务范围修改为中国大陆或全球时，加速域名需要到工信部备案  **取值范围：** - mainland_china：中国大陆 - global：全球 - outside_mainland_china：中国大陆境外  **默认取值：** 不涉及
 
         :return: The service_area of this Configs.
         :rtype: str
@@ -342,7 +349,7 @@ class Configs:
     def service_area(self, service_area):
         r"""Sets the service_area of this Configs.
 
-        服务区域： - mainland_china：中国大陆； - global：全球； - outside_mainland_china：中国大陆境外。  > 暂不支持“中国大陆”与“中国大陆境外”互相直接切换。
+        **参数解释：** 加速域名的服务范围，客户端访问将会调度到服务范围内的CDN节点，可根据用户聚集区域选择合适的范围 **约束限制：** - 暂不支持“中国大陆”与“中国大陆境外”互相直接切换 - 服务范围修改为中国大陆或全球时，加速域名需要到工信部备案  **取值范围：** - mainland_china：中国大陆 - global：全球 - outside_mainland_china：中国大陆境外  **默认取值：** 不涉及
 
         :param service_area: The service_area of this Configs.
         :type service_area: str
@@ -353,7 +360,7 @@ class Configs:
     def remark(self):
         r"""Gets the remark of this Configs.
 
-        给域名添加备注，字符长度范围0-200。
+        **参数解释：** 域名备注信息 **约束限制：** 不涉及 **取值范围：** 0-10000个字符 **默认取值：** 不涉及
 
         :return: The remark of this Configs.
         :rtype: str
@@ -364,7 +371,7 @@ class Configs:
     def remark(self, remark):
         r"""Sets the remark of this Configs.
 
-        给域名添加备注，字符长度范围0-200。
+        **参数解释：** 域名备注信息 **约束限制：** 不涉及 **取值范围：** 0-10000个字符 **默认取值：** 不涉及
 
         :param remark: The remark of this Configs.
         :type remark: str
@@ -375,7 +382,7 @@ class Configs:
     def origin_request_header(self):
         r"""Gets the origin_request_header of this Configs.
 
-        回源请求头改写 该功能将覆盖原有配置（清空之前的配置），在使用此接口时，请上传全量头部信息。
+        **参数解释：** 回源请求头，CDN节点回源时，根据回源请求头配置操作请求的HTTP头部信息 **约束限制：** - 修改时该功能将覆盖原有配置（清空之前的配置），在使用此接口时，请上传全量头部信息 - 如果域名在后台配置了特殊请求头，需要将对应的请求头一并传入
 
         :return: The origin_request_header of this Configs.
         :rtype: list[:class:`huaweicloudsdkcdn.v2.OriginRequestHeader`]
@@ -386,7 +393,7 @@ class Configs:
     def origin_request_header(self, origin_request_header):
         r"""Sets the origin_request_header of this Configs.
 
-        回源请求头改写 该功能将覆盖原有配置（清空之前的配置），在使用此接口时，请上传全量头部信息。
+        **参数解释：** 回源请求头，CDN节点回源时，根据回源请求头配置操作请求的HTTP头部信息 **约束限制：** - 修改时该功能将覆盖原有配置（清空之前的配置），在使用此接口时，请上传全量头部信息 - 如果域名在后台配置了特殊请求头，需要将对应的请求头一并传入
 
         :param origin_request_header: The origin_request_header of this Configs.
         :type origin_request_header: list[:class:`huaweicloudsdkcdn.v2.OriginRequestHeader`]
@@ -397,7 +404,7 @@ class Configs:
     def http_response_header(self):
         r"""Gets the http_response_header of this Configs.
 
-        http header配置 该功能将覆盖原有配置（清空之前的配置），在使用此接口时，请上传全量头部信息。
+        **参数解释：** HTTP响应头，CDN节点响应客户端时，根据HTTP响应头配置操作响应的HTTP头部信息 **约束限制：** - 修改时该功能将覆盖原有配置（清空之前的配置），在使用此接口时，请上传全量头部信息 - 如果域名在后台配置了特殊响应头，需要将对应的响应头一并传入
 
         :return: The http_response_header of this Configs.
         :rtype: list[:class:`huaweicloudsdkcdn.v2.HttpResponseHeader`]
@@ -408,7 +415,7 @@ class Configs:
     def http_response_header(self, http_response_header):
         r"""Sets the http_response_header of this Configs.
 
-        http header配置 该功能将覆盖原有配置（清空之前的配置），在使用此接口时，请上传全量头部信息。
+        **参数解释：** HTTP响应头，CDN节点响应客户端时，根据HTTP响应头配置操作响应的HTTP头部信息 **约束限制：** - 修改时该功能将覆盖原有配置（清空之前的配置），在使用此接口时，请上传全量头部信息 - 如果域名在后台配置了特殊响应头，需要将对应的响应头一并传入
 
         :param http_response_header: The http_response_header of this Configs.
         :type http_response_header: list[:class:`huaweicloudsdkcdn.v2.HttpResponseHeader`]
@@ -455,7 +462,7 @@ class Configs:
     def sources(self):
         r"""Gets the sources of this Configs.
 
-        源站配置。
+        **参数解释：** 配置加速域名的源站，CDN通过加速域名将源站上需要加速的内容缓存到CDN节点，达到加速访问资源的效果 **约束限制：** 不涉及
 
         :return: The sources of this Configs.
         :rtype: list[:class:`huaweicloudsdkcdn.v2.SourcesConfig`]
@@ -466,7 +473,7 @@ class Configs:
     def sources(self, sources):
         r"""Sets the sources of this Configs.
 
-        源站配置。
+        **参数解释：** 配置加速域名的源站，CDN通过加速域名将源站上需要加速的内容缓存到CDN节点，达到加速访问资源的效果 **约束限制：** 不涉及
 
         :param sources: The sources of this Configs.
         :type sources: list[:class:`huaweicloudsdkcdn.v2.SourcesConfig`]
@@ -477,7 +484,7 @@ class Configs:
     def origin_protocol(self):
         r"""Gets the origin_protocol of this Configs.
 
-        回源协议，follow：协议跟随回源，http：HTTP回源(默认)，https：https回源。
+        **参数解释：** 指定CDN回源时的请求协议 **约束限制：** 不涉及 **取值范围：** - follow: 协议跟随 - http: http协议 - https: https协议  **默认取值：** http: http协议
 
         :return: The origin_protocol of this Configs.
         :rtype: str
@@ -488,7 +495,7 @@ class Configs:
     def origin_protocol(self, origin_protocol):
         r"""Sets the origin_protocol of this Configs.
 
-        回源协议，follow：协议跟随回源，http：HTTP回源(默认)，https：https回源。
+        **参数解释：** 指定CDN回源时的请求协议 **约束限制：** 不涉及 **取值范围：** - follow: 协议跟随 - http: http协议 - https: https协议  **默认取值：** http: http协议
 
         :param origin_protocol: The origin_protocol of this Configs.
         :type origin_protocol: str
@@ -499,7 +506,7 @@ class Configs:
     def origin_follow302_status(self):
         r"""Gets the origin_follow302_status of this Configs.
 
-        回源跟随，on：开启，off：关闭。
+        **参数解释：** 开启回源跟随，当源站地址因业务需求做了301/302 重定向，CDN节点会先跳转到301/302对应地址获取资源，缓存后再返回给用户 **约束限制：** 不涉及 **取值范围：** - on: 开启 - off: 关闭  **默认取值：** 不涉及
 
         :return: The origin_follow302_status of this Configs.
         :rtype: str
@@ -510,7 +517,7 @@ class Configs:
     def origin_follow302_status(self, origin_follow302_status):
         r"""Sets the origin_follow302_status of this Configs.
 
-        回源跟随，on：开启，off：关闭。
+        **参数解释：** 开启回源跟随，当源站地址因业务需求做了301/302 重定向，CDN节点会先跳转到301/302对应地址获取资源，缓存后再返回给用户 **约束限制：** 不涉及 **取值范围：** - on: 开启 - off: 关闭  **默认取值：** 不涉及
 
         :param origin_follow302_status: The origin_follow302_status of this Configs.
         :type origin_follow302_status: str
@@ -521,7 +528,7 @@ class Configs:
     def cache_rules(self):
         r"""Gets the cache_rules of this Configs.
 
-        缓存规则。
+        **参数解释：** 通过不同参数控制源站资源在CDN节点的缓存时长 **约束限制：** 必须存在一条所有文件类型的规则
 
         :return: The cache_rules of this Configs.
         :rtype: list[:class:`huaweicloudsdkcdn.v2.CacheRules`]
@@ -532,7 +539,7 @@ class Configs:
     def cache_rules(self, cache_rules):
         r"""Sets the cache_rules of this Configs.
 
-        缓存规则。
+        **参数解释：** 通过不同参数控制源站资源在CDN节点的缓存时长 **约束限制：** 必须存在一条所有文件类型的规则
 
         :param cache_rules: The cache_rules of this Configs.
         :type cache_rules: list[:class:`huaweicloudsdkcdn.v2.CacheRules`]
@@ -633,7 +640,7 @@ class Configs:
     def ipv6_accelerate(self):
         r"""Gets the ipv6_accelerate of this Configs.
 
-        ipv6设置，1：打开；0：关闭。
+        **参数解释：** 配置客户端用IPv6协议访问CDN节点 **约束限制：** 不涉及 **取值范围：** - 1: 开启 - 0: 关闭  **默认取值：** 不涉及
 
         :return: The ipv6_accelerate of this Configs.
         :rtype: int
@@ -644,7 +651,7 @@ class Configs:
     def ipv6_accelerate(self, ipv6_accelerate):
         r"""Sets the ipv6_accelerate of this Configs.
 
-        ipv6设置，1：打开；0：关闭。
+        **参数解释：** 配置客户端用IPv6协议访问CDN节点 **约束限制：** 不涉及 **取值范围：** - 1: 开启 - 0: 关闭  **默认取值：** 不涉及
 
         :param ipv6_accelerate: The ipv6_accelerate of this Configs.
         :type ipv6_accelerate: int
@@ -655,7 +662,7 @@ class Configs:
     def error_code_cache(self):
         r"""Gets the error_code_cache of this Configs.
 
-        状态码缓存时间。
+        **参数解释：** 将源站返回的错误状态码缓存到CDN节点，用户再次请求时由CDN直接响应给用户错误码 **约束限制：** 不涉及
 
         :return: The error_code_cache of this Configs.
         :rtype: list[:class:`huaweicloudsdkcdn.v2.ErrorCodeCache`]
@@ -666,7 +673,7 @@ class Configs:
     def error_code_cache(self, error_code_cache):
         r"""Sets the error_code_cache of this Configs.
 
-        状态码缓存时间。
+        **参数解释：** 将源站返回的错误状态码缓存到CDN节点，用户再次请求时由CDN直接响应给用户错误码 **约束限制：** 不涉及
 
         :param error_code_cache: The error_code_cache of this Configs.
         :type error_code_cache: list[:class:`huaweicloudsdkcdn.v2.ErrorCodeCache`]
@@ -677,7 +684,7 @@ class Configs:
     def origin_range_status(self):
         r"""Gets the origin_range_status of this Configs.
 
-        Range回源，即分片回源，开启: on，关闭: off。  > 开启Range回源的前提是您的源站支持Range请求，即HTTP请求头中包含Range字段，否则可能导致回源失败。
+        **参数解释：** Range回源，开启后，源站在收到CDN节点回源请求时，根据HTTP请求头中的Range信息返回指定范围的数据给CDN节点 **约束限制：** 开启Range回源的前提是您的源站支持Range请求，即HTTP请求头中包含Range字段，否则可能导致回源失败 **取值范围：** - on: 开启 - off: 关闭  **默认取值：** 不涉及
 
         :return: The origin_range_status of this Configs.
         :rtype: str
@@ -688,7 +695,7 @@ class Configs:
     def origin_range_status(self, origin_range_status):
         r"""Sets the origin_range_status of this Configs.
 
-        Range回源，即分片回源，开启: on，关闭: off。  > 开启Range回源的前提是您的源站支持Range请求，即HTTP请求头中包含Range字段，否则可能导致回源失败。
+        **参数解释：** Range回源，开启后，源站在收到CDN节点回源请求时，根据HTTP请求头中的Range信息返回指定范围的数据给CDN节点 **约束限制：** 开启Range回源的前提是您的源站支持Range请求，即HTTP请求头中包含Range字段，否则可能导致回源失败 **取值范围：** - on: 开启 - off: 关闭  **默认取值：** 不涉及
 
         :param origin_range_status: The origin_range_status of this Configs.
         :type origin_range_status: str
@@ -717,7 +724,7 @@ class Configs:
     def origin_request_url_rewrite(self):
         r"""Gets the origin_request_url_rewrite of this Configs.
 
-        改写回源URL，最多配置20条。
+        **参数解释：** 回源URL改写，解决回源请求URL与源站URL不匹配的问题 **约束限制：** 最多配置20条
 
         :return: The origin_request_url_rewrite of this Configs.
         :rtype: list[:class:`huaweicloudsdkcdn.v2.OriginRequestUrlRewrite`]
@@ -728,7 +735,7 @@ class Configs:
     def origin_request_url_rewrite(self, origin_request_url_rewrite):
         r"""Sets the origin_request_url_rewrite of this Configs.
 
-        改写回源URL，最多配置20条。
+        **参数解释：** 回源URL改写，解决回源请求URL与源站URL不匹配的问题 **约束限制：** 最多配置20条
 
         :param origin_request_url_rewrite: The origin_request_url_rewrite of this Configs.
         :type origin_request_url_rewrite: list[:class:`huaweicloudsdkcdn.v2.OriginRequestUrlRewrite`]
@@ -739,7 +746,7 @@ class Configs:
     def flexible_origin(self):
         r"""Gets the flexible_origin of this Configs.
 
-        高级回源，最多配置20条。
+        **参数解释：** 高级回源，实现根据不同的资源类型或路径回源到不同源站 **约束限制：** 最多配置20条
 
         :return: The flexible_origin of this Configs.
         :rtype: list[:class:`huaweicloudsdkcdn.v2.FlexibleOrigins`]
@@ -750,7 +757,7 @@ class Configs:
     def flexible_origin(self, flexible_origin):
         r"""Sets the flexible_origin of this Configs.
 
-        高级回源，最多配置20条。
+        **参数解释：** 高级回源，实现根据不同的资源类型或路径回源到不同源站 **约束限制：** 最多配置20条
 
         :param flexible_origin: The flexible_origin of this Configs.
         :type flexible_origin: list[:class:`huaweicloudsdkcdn.v2.FlexibleOrigins`]
@@ -761,7 +768,7 @@ class Configs:
     def slice_etag_status(self):
         r"""Gets the slice_etag_status of this Configs.
 
-        回源是否校验ETag，on：开启，off：关闭。
+        **参数解释：** 回源是否校验ETag，开启此项配置后，当用户再次请求节点已缓存资源时，会将ETag的值加入到判断资源是否过期的逻辑 **约束限制：** 不涉及 **取值范围：** - on: 开启 - off: 关闭  **默认取值：** 不涉及
 
         :return: The slice_etag_status of this Configs.
         :rtype: str
@@ -772,7 +779,7 @@ class Configs:
     def slice_etag_status(self, slice_etag_status):
         r"""Sets the slice_etag_status of this Configs.
 
-        回源是否校验ETag，on：开启，off：关闭。
+        **参数解释：** 回源是否校验ETag，开启此项配置后，当用户再次请求节点已缓存资源时，会将ETag的值加入到判断资源是否过期的逻辑 **约束限制：** 不涉及 **取值范围：** - on: 开启 - off: 关闭  **默认取值：** 不涉及
 
         :param slice_etag_status: The slice_etag_status of this Configs.
         :type slice_etag_status: str
@@ -783,7 +790,7 @@ class Configs:
     def origin_receive_timeout(self):
         r"""Gets the origin_receive_timeout of this Configs.
 
-        回源超时时间，范围:5-60，单位：秒。
+        **参数解释：** 自定义设置CDN节点回源时的超时时间，请求超时即表示此次回源失败 **约束限制：** 不涉及 **取值范围：** 5-300，单位：秒 **默认取值：** 不涉及
 
         :return: The origin_receive_timeout of this Configs.
         :rtype: int
@@ -794,7 +801,7 @@ class Configs:
     def origin_receive_timeout(self, origin_receive_timeout):
         r"""Sets the origin_receive_timeout of this Configs.
 
-        回源超时时间，范围:5-60，单位：秒。
+        **参数解释：** 自定义设置CDN节点回源时的超时时间，请求超时即表示此次回源失败 **约束限制：** 不涉及 **取值范围：** 5-300，单位：秒 **默认取值：** 不涉及
 
         :param origin_receive_timeout: The origin_receive_timeout of this Configs.
         :type origin_receive_timeout: int
@@ -859,7 +866,7 @@ class Configs:
     def request_limit_rules(self):
         r"""Gets the request_limit_rules of this Configs.
 
-        请求限速配置。
+        **参数解释：** 请求限速，将用户请求速度限制在指定范围内，一定程度上减少突发高带宽风险，节省成本 **约束限制：** 不涉及
 
         :return: The request_limit_rules of this Configs.
         :rtype: list[:class:`huaweicloudsdkcdn.v2.RequestLimitRules`]
@@ -870,7 +877,7 @@ class Configs:
     def request_limit_rules(self, request_limit_rules):
         r"""Sets the request_limit_rules of this Configs.
 
-        请求限速配置。
+        **参数解释：** 请求限速，将用户请求速度限制在指定范围内，一定程度上减少突发高带宽风险，节省成本 **约束限制：** 不涉及
 
         :param request_limit_rules: The request_limit_rules of this Configs.
         :type request_limit_rules: list[:class:`huaweicloudsdkcdn.v2.RequestLimitRules`]
@@ -935,7 +942,7 @@ class Configs:
     def error_code_redirect_rules(self):
         r"""Gets the error_code_redirect_rules of this Configs.
 
-        自定义错误页面。
+        **参数解释：** 自定义错误页面，当访问页面出错时，会给客户端返回指定的页面，优化用户体验 **约束限制：** 不涉及
 
         :return: The error_code_redirect_rules of this Configs.
         :rtype: list[:class:`huaweicloudsdkcdn.v2.ErrorCodeRedirectRules`]
@@ -946,7 +953,7 @@ class Configs:
     def error_code_redirect_rules(self, error_code_redirect_rules):
         r"""Sets the error_code_redirect_rules of this Configs.
 
-        自定义错误页面。
+        **参数解释：** 自定义错误页面，当访问页面出错时，会给客户端返回指定的页面，优化用户体验 **约束限制：** 不涉及
 
         :param error_code_redirect_rules: The error_code_redirect_rules of this Configs.
         :type error_code_redirect_rules: list[:class:`huaweicloudsdkcdn.v2.ErrorCodeRedirectRules`]
@@ -975,7 +982,7 @@ class Configs:
     def request_url_rewrite(self):
         r"""Gets the request_url_rewrite of this Configs.
 
-        访问URL重写。
+        **参数解释：** 访问URL重写，当用户请求URL与CDN节点缓存资源的URL不一致时，可以通过访问URL重写功能重定向到目标URL **约束限制：** 不涉及
 
         :return: The request_url_rewrite of this Configs.
         :rtype: list[:class:`huaweicloudsdkcdn.v2.RequestUrlRewrite`]
@@ -986,7 +993,7 @@ class Configs:
     def request_url_rewrite(self, request_url_rewrite):
         r"""Sets the request_url_rewrite of this Configs.
 
-        访问URL重写。
+        **参数解释：** 访问URL重写，当用户请求URL与CDN节点缓存资源的URL不一致时，可以通过访问URL重写功能重定向到目标URL **约束限制：** 不涉及
 
         :param request_url_rewrite: The request_url_rewrite of this Configs.
         :type request_url_rewrite: list[:class:`huaweicloudsdkcdn.v2.RequestUrlRewrite`]
@@ -997,7 +1004,7 @@ class Configs:
     def browser_cache_rules(self):
         r"""Gets the browser_cache_rules of this Configs.
 
-        浏览器缓存过期时间。
+        **参数解释：** 浏览器缓存过期时间，当终端用户请求资源时，如果浏览器有缓存，直接返回给用户 **约束限制：** 不涉及
 
         :return: The browser_cache_rules of this Configs.
         :rtype: list[:class:`huaweicloudsdkcdn.v2.BrowserCacheRules`]
@@ -1008,7 +1015,7 @@ class Configs:
     def browser_cache_rules(self, browser_cache_rules):
         r"""Sets the browser_cache_rules of this Configs.
 
-        浏览器缓存过期时间。
+        **参数解释：** 浏览器缓存过期时间，当终端用户请求资源时，如果浏览器有缓存，直接返回给用户 **约束限制：** 不涉及
 
         :param browser_cache_rules: The browser_cache_rules of this Configs.
         :type browser_cache_rules: list[:class:`huaweicloudsdkcdn.v2.BrowserCacheRules`]
@@ -1090,6 +1097,24 @@ class Configs:
         :type flow_limit_strategy: list[:class:`huaweicloudsdkcdn.v2.FlowLimitStrategy`]
         """
         self._flow_limit_strategy = flow_limit_strategy
+
+    @property
+    def bandwidth_alarm_strategy(self):
+        r"""Gets the bandwidth_alarm_strategy of this Configs.
+
+        :return: The bandwidth_alarm_strategy of this Configs.
+        :rtype: :class:`huaweicloudsdkcdn.v2.BandwidthAlarmStrategy`
+        """
+        return self._bandwidth_alarm_strategy
+
+    @bandwidth_alarm_strategy.setter
+    def bandwidth_alarm_strategy(self, bandwidth_alarm_strategy):
+        r"""Sets the bandwidth_alarm_strategy of this Configs.
+
+        :param bandwidth_alarm_strategy: The bandwidth_alarm_strategy of this Configs.
+        :type bandwidth_alarm_strategy: :class:`huaweicloudsdkcdn.v2.BandwidthAlarmStrategy`
+        """
+        self._bandwidth_alarm_strategy = bandwidth_alarm_strategy
 
     def to_dict(self):
         result = {}

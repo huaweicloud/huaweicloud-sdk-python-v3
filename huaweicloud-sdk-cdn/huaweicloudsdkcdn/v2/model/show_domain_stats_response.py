@@ -50,7 +50,7 @@ class ShowDomainStatsResponse(SdkResponse):
         :type stat_type: str
         :param action: **参数解释：** 查询数据类型 **取值范围：** - summary：汇总数据 - detail：明细数据
         :type action: str
-        :param interval: **参数解释：** 查询时间粒度 **取值范围：** - 300：采样时间间隔为5分钟，单位：秒 - 3600：采样时间间隔为1小时，单位：秒 - 86400：采样时间间隔为1天，单位：秒 **默认取值：** 默认取对应时间跨度的最小间隔 &gt; 时间跨度小于等于7天，最小时间间隔为300；时间跨度大于7天，最小时间间隔为3600
+        :param interval: **参数解释：** 查询时间粒度 **取值范围：** - 300：采样时间间隔为5分钟，单位：秒 - 3600：采样时间间隔为1小时，单位：秒 - 86400：采样时间间隔为1天，单位：秒  **默认取值：** 默认取对应时间跨度的最小间隔 &gt; 时间跨度小于等于7天，最小时间间隔为300；时间跨度大于7天，最小时间间隔为3600
         :type interval: int
         :param result: **参数解释：** 按指定的分组方式组织的数据 **取值范围：** 不涉及
         :type result: dict(str, object)
@@ -196,7 +196,7 @@ class ShowDomainStatsResponse(SdkResponse):
     def interval(self):
         r"""Gets the interval of this ShowDomainStatsResponse.
 
-        **参数解释：** 查询时间粒度 **取值范围：** - 300：采样时间间隔为5分钟，单位：秒 - 3600：采样时间间隔为1小时，单位：秒 - 86400：采样时间间隔为1天，单位：秒 **默认取值：** 默认取对应时间跨度的最小间隔 > 时间跨度小于等于7天，最小时间间隔为300；时间跨度大于7天，最小时间间隔为3600
+        **参数解释：** 查询时间粒度 **取值范围：** - 300：采样时间间隔为5分钟，单位：秒 - 3600：采样时间间隔为1小时，单位：秒 - 86400：采样时间间隔为1天，单位：秒  **默认取值：** 默认取对应时间跨度的最小间隔 > 时间跨度小于等于7天，最小时间间隔为300；时间跨度大于7天，最小时间间隔为3600
 
         :return: The interval of this ShowDomainStatsResponse.
         :rtype: int
@@ -207,7 +207,7 @@ class ShowDomainStatsResponse(SdkResponse):
     def interval(self, interval):
         r"""Sets the interval of this ShowDomainStatsResponse.
 
-        **参数解释：** 查询时间粒度 **取值范围：** - 300：采样时间间隔为5分钟，单位：秒 - 3600：采样时间间隔为1小时，单位：秒 - 86400：采样时间间隔为1天，单位：秒 **默认取值：** 默认取对应时间跨度的最小间隔 > 时间跨度小于等于7天，最小时间间隔为300；时间跨度大于7天，最小时间间隔为3600
+        **参数解释：** 查询时间粒度 **取值范围：** - 300：采样时间间隔为5分钟，单位：秒 - 3600：采样时间间隔为1小时，单位：秒 - 86400：采样时间间隔为1天，单位：秒  **默认取值：** 默认取对应时间跨度的最小间隔 > 时间跨度小于等于7天，最小时间间隔为300；时间跨度大于7天，最小时间间隔为3600
 
         :param interval: The interval of this ShowDomainStatsResponse.
         :type interval: int

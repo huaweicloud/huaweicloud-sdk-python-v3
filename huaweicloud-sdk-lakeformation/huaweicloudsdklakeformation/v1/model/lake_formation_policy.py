@@ -27,7 +27,10 @@ class LakeFormationPolicy:
         'created_time': 'int',
         'condition': 'str',
         'obligation': 'str',
-        'authorization_paths': 'list[str]'
+        'authorization_paths': 'list[str]',
+        'access_policy_type': 'str',
+        'obs_access_label': 'str',
+        'parameters': 'dict(str, str)'
     }
 
     attribute_map = {
@@ -43,10 +46,13 @@ class LakeFormationPolicy:
         'created_time': 'created_time',
         'condition': 'condition',
         'obligation': 'obligation',
-        'authorization_paths': 'authorization_paths'
+        'authorization_paths': 'authorization_paths',
+        'access_policy_type': 'access_policy_type',
+        'obs_access_label': 'obs_access_label',
+        'parameters': 'parameters'
     }
 
-    def __init__(self, project_id=None, instance_id=None, principal_type=None, principal_source=None, principal_name=None, resource=None, resource_name=None, permissions=None, grant_able_permissions=None, created_time=None, condition=None, obligation=None, authorization_paths=None):
+    def __init__(self, project_id=None, instance_id=None, principal_type=None, principal_source=None, principal_name=None, resource=None, resource_name=None, permissions=None, grant_able_permissions=None, created_time=None, condition=None, obligation=None, authorization_paths=None, access_policy_type=None, obs_access_label=None, parameters=None):
         r"""LakeFormationPolicy
 
         The model defined in huaweicloud sdk
@@ -77,6 +83,12 @@ class LakeFormationPolicy:
         :type obligation: str
         :param authorization_paths: 授权路径列表
         :type authorization_paths: list[str]
+        :param access_policy_type: 权限策略类型：DEFAULT-普通策略、ROW_FILTER-行过滤权限策略、DATA_MASK-列掩码权限策略。
+        :type access_policy_type: str
+        :param obs_access_label: OBS Access Label, 描述了该条LakeFormation权限
+        :type obs_access_label: str
+        :param parameters: 参数。
+        :type parameters: dict(str, str)
         """
         
         
@@ -94,6 +106,9 @@ class LakeFormationPolicy:
         self._condition = None
         self._obligation = None
         self._authorization_paths = None
+        self._access_policy_type = None
+        self._obs_access_label = None
+        self._parameters = None
         self.discriminator = None
 
         self.project_id = project_id
@@ -115,6 +130,12 @@ class LakeFormationPolicy:
             self.obligation = obligation
         if authorization_paths is not None:
             self.authorization_paths = authorization_paths
+        if access_policy_type is not None:
+            self.access_policy_type = access_policy_type
+        if obs_access_label is not None:
+            self.obs_access_label = obs_access_label
+        if parameters is not None:
+            self.parameters = parameters
 
     @property
     def project_id(self):
@@ -397,6 +418,72 @@ class LakeFormationPolicy:
         :type authorization_paths: list[str]
         """
         self._authorization_paths = authorization_paths
+
+    @property
+    def access_policy_type(self):
+        r"""Gets the access_policy_type of this LakeFormationPolicy.
+
+        权限策略类型：DEFAULT-普通策略、ROW_FILTER-行过滤权限策略、DATA_MASK-列掩码权限策略。
+
+        :return: The access_policy_type of this LakeFormationPolicy.
+        :rtype: str
+        """
+        return self._access_policy_type
+
+    @access_policy_type.setter
+    def access_policy_type(self, access_policy_type):
+        r"""Sets the access_policy_type of this LakeFormationPolicy.
+
+        权限策略类型：DEFAULT-普通策略、ROW_FILTER-行过滤权限策略、DATA_MASK-列掩码权限策略。
+
+        :param access_policy_type: The access_policy_type of this LakeFormationPolicy.
+        :type access_policy_type: str
+        """
+        self._access_policy_type = access_policy_type
+
+    @property
+    def obs_access_label(self):
+        r"""Gets the obs_access_label of this LakeFormationPolicy.
+
+        OBS Access Label, 描述了该条LakeFormation权限
+
+        :return: The obs_access_label of this LakeFormationPolicy.
+        :rtype: str
+        """
+        return self._obs_access_label
+
+    @obs_access_label.setter
+    def obs_access_label(self, obs_access_label):
+        r"""Sets the obs_access_label of this LakeFormationPolicy.
+
+        OBS Access Label, 描述了该条LakeFormation权限
+
+        :param obs_access_label: The obs_access_label of this LakeFormationPolicy.
+        :type obs_access_label: str
+        """
+        self._obs_access_label = obs_access_label
+
+    @property
+    def parameters(self):
+        r"""Gets the parameters of this LakeFormationPolicy.
+
+        参数。
+
+        :return: The parameters of this LakeFormationPolicy.
+        :rtype: dict(str, str)
+        """
+        return self._parameters
+
+    @parameters.setter
+    def parameters(self, parameters):
+        r"""Sets the parameters of this LakeFormationPolicy.
+
+        参数。
+
+        :param parameters: The parameters of this LakeFormationPolicy.
+        :type parameters: dict(str, str)
+        """
+        self._parameters = parameters
 
     def to_dict(self):
         result = {}

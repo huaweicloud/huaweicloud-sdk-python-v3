@@ -19,17 +19,23 @@ class ListGlobalFeatureGatesResponse(SdkResponse):
         'enable_user_def_obs': 'bool',
         'enable_enterprise': 'bool',
         'cer_available': 'bool',
-        'enable_intranet_access_switch': 'bool'
+        'enable_intranet_access_switch': 'bool',
+        'enable_console_agency': 'bool',
+        'enable_v5_custom_agency': 'bool',
+        'agency_name': 'str'
     }
 
     attribute_map = {
         'enable_user_def_obs': 'enableUserDefObs',
         'enable_enterprise': 'enableEnterprise',
         'cer_available': 'cerAvailable',
-        'enable_intranet_access_switch': 'enableIntranetAccessSwitch'
+        'enable_intranet_access_switch': 'enableIntranetAccessSwitch',
+        'enable_console_agency': 'enableConsoleAgency',
+        'enable_v5_custom_agency': 'enableV5CustomAgency',
+        'agency_name': 'agencyName'
     }
 
-    def __init__(self, enable_user_def_obs=None, enable_enterprise=None, cer_available=None, enable_intranet_access_switch=None):
+    def __init__(self, enable_user_def_obs=None, enable_enterprise=None, cer_available=None, enable_intranet_access_switch=None, enable_console_agency=None, enable_v5_custom_agency=None, agency_name=None):
         r"""ListGlobalFeatureGatesResponse
 
         The model defined in huaweicloud sdk
@@ -42,6 +48,12 @@ class ListGlobalFeatureGatesResponse(SdkResponse):
         :type cer_available: bool
         :param enable_intranet_access_switch: 是否展示创建内网访问的开关按钮
         :type enable_intranet_access_switch: bool
+        :param enable_console_agency: 是否支持Console侧的一键委托
+        :type enable_console_agency: bool
+        :param enable_v5_custom_agency: 是否支持IAM新平面的信任委托
+        :type enable_v5_custom_agency: bool
+        :param agency_name: 委托名称
+        :type agency_name: str
         """
         
         super().__init__()
@@ -50,6 +62,9 @@ class ListGlobalFeatureGatesResponse(SdkResponse):
         self._enable_enterprise = None
         self._cer_available = None
         self._enable_intranet_access_switch = None
+        self._enable_console_agency = None
+        self._enable_v5_custom_agency = None
+        self._agency_name = None
         self.discriminator = None
 
         if enable_user_def_obs is not None:
@@ -60,6 +75,12 @@ class ListGlobalFeatureGatesResponse(SdkResponse):
             self.cer_available = cer_available
         if enable_intranet_access_switch is not None:
             self.enable_intranet_access_switch = enable_intranet_access_switch
+        if enable_console_agency is not None:
+            self.enable_console_agency = enable_console_agency
+        if enable_v5_custom_agency is not None:
+            self.enable_v5_custom_agency = enable_v5_custom_agency
+        if agency_name is not None:
+            self.agency_name = agency_name
 
     @property
     def enable_user_def_obs(self):
@@ -148,6 +169,72 @@ class ListGlobalFeatureGatesResponse(SdkResponse):
         :type enable_intranet_access_switch: bool
         """
         self._enable_intranet_access_switch = enable_intranet_access_switch
+
+    @property
+    def enable_console_agency(self):
+        r"""Gets the enable_console_agency of this ListGlobalFeatureGatesResponse.
+
+        是否支持Console侧的一键委托
+
+        :return: The enable_console_agency of this ListGlobalFeatureGatesResponse.
+        :rtype: bool
+        """
+        return self._enable_console_agency
+
+    @enable_console_agency.setter
+    def enable_console_agency(self, enable_console_agency):
+        r"""Sets the enable_console_agency of this ListGlobalFeatureGatesResponse.
+
+        是否支持Console侧的一键委托
+
+        :param enable_console_agency: The enable_console_agency of this ListGlobalFeatureGatesResponse.
+        :type enable_console_agency: bool
+        """
+        self._enable_console_agency = enable_console_agency
+
+    @property
+    def enable_v5_custom_agency(self):
+        r"""Gets the enable_v5_custom_agency of this ListGlobalFeatureGatesResponse.
+
+        是否支持IAM新平面的信任委托
+
+        :return: The enable_v5_custom_agency of this ListGlobalFeatureGatesResponse.
+        :rtype: bool
+        """
+        return self._enable_v5_custom_agency
+
+    @enable_v5_custom_agency.setter
+    def enable_v5_custom_agency(self, enable_v5_custom_agency):
+        r"""Sets the enable_v5_custom_agency of this ListGlobalFeatureGatesResponse.
+
+        是否支持IAM新平面的信任委托
+
+        :param enable_v5_custom_agency: The enable_v5_custom_agency of this ListGlobalFeatureGatesResponse.
+        :type enable_v5_custom_agency: bool
+        """
+        self._enable_v5_custom_agency = enable_v5_custom_agency
+
+    @property
+    def agency_name(self):
+        r"""Gets the agency_name of this ListGlobalFeatureGatesResponse.
+
+        委托名称
+
+        :return: The agency_name of this ListGlobalFeatureGatesResponse.
+        :rtype: str
+        """
+        return self._agency_name
+
+    @agency_name.setter
+    def agency_name(self, agency_name):
+        r"""Sets the agency_name of this ListGlobalFeatureGatesResponse.
+
+        委托名称
+
+        :param agency_name: The agency_name of this ListGlobalFeatureGatesResponse.
+        :type agency_name: str
+        """
+        self._agency_name = agency_name
 
     def to_dict(self):
         import warnings

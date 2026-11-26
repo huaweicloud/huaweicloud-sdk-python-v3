@@ -23,7 +23,8 @@ class ResourceInput:
         'column': 'str',
         'uri': 'str',
         'columns': 'list[str]',
-        'dataset': 'str'
+        'dataset': 'str',
+        'model': 'str'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class ResourceInput:
         'column': 'column',
         'uri': 'uri',
         'columns': 'columns',
-        'dataset': 'dataset'
+        'dataset': 'dataset',
+        'model': 'model'
     }
 
-    def __init__(self, resource_type=None, catalog=None, database=None, function=None, table=None, column=None, uri=None, columns=None, dataset=None):
+    def __init__(self, resource_type=None, catalog=None, database=None, function=None, table=None, column=None, uri=None, columns=None, dataset=None, model=None):
         r"""ResourceInput
 
         The model defined in huaweicloud sdk
@@ -61,6 +63,8 @@ class ResourceInput:
         :type columns: list[str]
         :param dataset: 数据集名称。
         :type dataset: str
+        :param model: 模型名称。
+        :type model: str
         """
         
         
@@ -74,6 +78,7 @@ class ResourceInput:
         self._uri = None
         self._columns = None
         self._dataset = None
+        self._model = None
         self.discriminator = None
 
         self.resource_type = resource_type
@@ -93,6 +98,8 @@ class ResourceInput:
             self.columns = columns
         if dataset is not None:
             self.dataset = dataset
+        if model is not None:
+            self.model = model
 
     @property
     def resource_type(self):
@@ -291,6 +298,28 @@ class ResourceInput:
         :type dataset: str
         """
         self._dataset = dataset
+
+    @property
+    def model(self):
+        r"""Gets the model of this ResourceInput.
+
+        模型名称。
+
+        :return: The model of this ResourceInput.
+        :rtype: str
+        """
+        return self._model
+
+    @model.setter
+    def model(self, model):
+        r"""Sets the model of this ResourceInput.
+
+        模型名称。
+
+        :param model: The model of this ResourceInput.
+        :type model: str
+        """
+        self._model = model
 
     def to_dict(self):
         result = {}

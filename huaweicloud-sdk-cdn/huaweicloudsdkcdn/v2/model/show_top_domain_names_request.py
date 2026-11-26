@@ -43,11 +43,11 @@ class ShowTopDomainNamesRequest:
         :type end_time: int
         :param stat_type: - 统计类型 - 目前只支持bw（带宽），flux（流量），req_num（请求总数）
         :type stat_type: str
-        :param service_area: **参数解释：** 服务范围 **约束限制：** 当查询回源类指标时，该参数无效 **取值范围：** - mainland_china：中国大陆 - outside_mainland_china：中国大陆境外 **默认取值：** - mainland_china：中国大陆
+        :param service_area: **参数解释：** 服务范围 **约束限制：** 当查询回源类指标时，该参数无效 **取值范围：** - mainland_china：中国大陆 - outside_mainland_china：中国大陆境外  **默认取值：** - mainland_china：中国大陆
         :type service_area: str
         :param limit: **参数解释：** top域名查询数量 **约束限制：** 不涉及 **取值范围：** 0-500 **默认取值：** 20
         :type limit: int
-        :param enterprise_project_id: **参数解释：** 企业项目id &gt; 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id  **约束限制：** - 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目 - 当使用子账号调用接口时，该参数必传 **取值范围：** all表示所有项目 **默认取值：** 不涉及
+        :param enterprise_project_id: **参数解释：** 企业项目id &gt; 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id  **约束限制：** - 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目 - 当使用子账号调用接口时，该参数必传  **取值范围：** all表示所有项目 **默认取值：** 不涉及
         :type enterprise_project_id: str
         """
         
@@ -141,7 +141,7 @@ class ShowTopDomainNamesRequest:
     def service_area(self):
         r"""Gets the service_area of this ShowTopDomainNamesRequest.
 
-        **参数解释：** 服务范围 **约束限制：** 当查询回源类指标时，该参数无效 **取值范围：** - mainland_china：中国大陆 - outside_mainland_china：中国大陆境外 **默认取值：** - mainland_china：中国大陆
+        **参数解释：** 服务范围 **约束限制：** 当查询回源类指标时，该参数无效 **取值范围：** - mainland_china：中国大陆 - outside_mainland_china：中国大陆境外  **默认取值：** - mainland_china：中国大陆
 
         :return: The service_area of this ShowTopDomainNamesRequest.
         :rtype: str
@@ -152,7 +152,7 @@ class ShowTopDomainNamesRequest:
     def service_area(self, service_area):
         r"""Sets the service_area of this ShowTopDomainNamesRequest.
 
-        **参数解释：** 服务范围 **约束限制：** 当查询回源类指标时，该参数无效 **取值范围：** - mainland_china：中国大陆 - outside_mainland_china：中国大陆境外 **默认取值：** - mainland_china：中国大陆
+        **参数解释：** 服务范围 **约束限制：** 当查询回源类指标时，该参数无效 **取值范围：** - mainland_china：中国大陆 - outside_mainland_china：中国大陆境外  **默认取值：** - mainland_china：中国大陆
 
         :param service_area: The service_area of this ShowTopDomainNamesRequest.
         :type service_area: str
@@ -185,7 +185,7 @@ class ShowTopDomainNamesRequest:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ShowTopDomainNamesRequest.
 
-        **参数解释：** 企业项目id > 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id  **约束限制：** - 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目 - 当使用子账号调用接口时，该参数必传 **取值范围：** all表示所有项目 **默认取值：** 不涉及
+        **参数解释：** 企业项目id > 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id  **约束限制：** - 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目 - 当使用子账号调用接口时，该参数必传  **取值范围：** all表示所有项目 **默认取值：** 不涉及
 
         :return: The enterprise_project_id of this ShowTopDomainNamesRequest.
         :rtype: str
@@ -196,7 +196,7 @@ class ShowTopDomainNamesRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ShowTopDomainNamesRequest.
 
-        **参数解释：** 企业项目id > 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id  **约束限制：** - 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目 - 当使用子账号调用接口时，该参数必传 **取值范围：** all表示所有项目 **默认取值：** 不涉及
+        **参数解释：** 企业项目id > 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id  **约束限制：** - 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目 - 当使用子账号调用接口时，该参数必传  **取值范围：** all表示所有项目 **默认取值：** 不涉及
 
         :param enterprise_project_id: The enterprise_project_id of this ShowTopDomainNamesRequest.
         :type enterprise_project_id: str

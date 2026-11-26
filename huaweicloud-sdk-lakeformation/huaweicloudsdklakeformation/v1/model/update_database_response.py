@@ -25,7 +25,18 @@ class UpdateDatabaseResponse(SdkResponse):
         'location': 'str',
         'parameters': 'dict(str, str)',
         'table_location_list': 'list[str]',
-        'function_location_list': 'list[str]'
+        'function_location_list': 'list[str]',
+        'access_policy_source': 'str',
+        'catalog_id': 'str',
+        'connection_name': 'str',
+        'data_statistic_enable': 'bool',
+        'database_id': 'str',
+        'database_status': 'int',
+        'database_type': 'str',
+        'external_database_id': 'str',
+        'permission_connection_name': 'str',
+        'update_time': 'datetime',
+        'version_id': 'str'
     }
 
     attribute_map = {
@@ -38,10 +49,21 @@ class UpdateDatabaseResponse(SdkResponse):
         'location': 'location',
         'parameters': 'parameters',
         'table_location_list': 'table_location_list',
-        'function_location_list': 'function_location_list'
+        'function_location_list': 'function_location_list',
+        'access_policy_source': 'access_policy_source',
+        'catalog_id': 'catalog_id',
+        'connection_name': 'connection_name',
+        'data_statistic_enable': 'data_statistic_enable',
+        'database_id': 'database_id',
+        'database_status': 'database_status',
+        'database_type': 'database_type',
+        'external_database_id': 'external_database_id',
+        'permission_connection_name': 'permission_connection_name',
+        'update_time': 'update_time',
+        'version_id': 'version_id'
     }
 
-    def __init__(self, catalog_name=None, database_name=None, owner=None, owner_type=None, owner_auth_source_type=None, description=None, location=None, parameters=None, table_location_list=None, function_location_list=None):
+    def __init__(self, catalog_name=None, database_name=None, owner=None, owner_type=None, owner_auth_source_type=None, description=None, location=None, parameters=None, table_location_list=None, function_location_list=None, access_policy_source=None, catalog_id=None, connection_name=None, data_statistic_enable=None, database_id=None, database_status=None, database_type=None, external_database_id=None, permission_connection_name=None, update_time=None, version_id=None):
         r"""UpdateDatabaseResponse
 
         The model defined in huaweicloud sdk
@@ -66,6 +88,28 @@ class UpdateDatabaseResponse(SdkResponse):
         :type table_location_list: list[str]
         :param function_location_list: 函数路径列表。默认为null，当值为null时，响应Body无该参数。
         :type function_location_list: list[str]
+        :param access_policy_source: 权限策略来源。可选值为：lakeformation、ranger、hive。
+        :type access_policy_source: str
+        :param catalog_id: catalogID。
+        :type catalog_id: str
+        :param connection_name: 连接名称。
+        :type connection_name: str
+        :param data_statistic_enable: 数据概况统计开关。默认状态为关，若要开启database下table的数据概况统计，需要先打开database的数据概况开关。database此开关开启后，database下所有table都会默认开启此开关
+        :type data_statistic_enable: bool
+        :param database_id: 数据库ID。
+        :type database_id: str
+        :param database_status: 数据库状态：0表示正常，1表示删除中，2表示已删除，3表示恢复中，4表示清除中。
+        :type database_status: int
+        :param database_type: 数据库类型：MANAGED_DATABASE内置数据库、FOREIGN_DATABASE外置数据库。
+        :type database_type: str
+        :param external_database_id: 用户端数据库id，创建时指定，不可修改。
+        :type external_database_id: str
+        :param permission_connection_name: 权限连接名称。绑定后由该权限连接代理鉴权。为空时保留原权限连接。
+        :type permission_connection_name: str
+        :param update_time: 数据库元数据最后一次修改时间。
+        :type update_time: datetime
+        :param version_id: 版本ID
+        :type version_id: str
         """
         
         super().__init__()
@@ -80,6 +124,17 @@ class UpdateDatabaseResponse(SdkResponse):
         self._parameters = None
         self._table_location_list = None
         self._function_location_list = None
+        self._access_policy_source = None
+        self._catalog_id = None
+        self._connection_name = None
+        self._data_statistic_enable = None
+        self._database_id = None
+        self._database_status = None
+        self._database_type = None
+        self._external_database_id = None
+        self._permission_connection_name = None
+        self._update_time = None
+        self._version_id = None
         self.discriminator = None
 
         if catalog_name is not None:
@@ -102,6 +157,28 @@ class UpdateDatabaseResponse(SdkResponse):
             self.table_location_list = table_location_list
         if function_location_list is not None:
             self.function_location_list = function_location_list
+        if access_policy_source is not None:
+            self.access_policy_source = access_policy_source
+        if catalog_id is not None:
+            self.catalog_id = catalog_id
+        if connection_name is not None:
+            self.connection_name = connection_name
+        if data_statistic_enable is not None:
+            self.data_statistic_enable = data_statistic_enable
+        if database_id is not None:
+            self.database_id = database_id
+        if database_status is not None:
+            self.database_status = database_status
+        if database_type is not None:
+            self.database_type = database_type
+        if external_database_id is not None:
+            self.external_database_id = external_database_id
+        if permission_connection_name is not None:
+            self.permission_connection_name = permission_connection_name
+        if update_time is not None:
+            self.update_time = update_time
+        if version_id is not None:
+            self.version_id = version_id
 
     @property
     def catalog_name(self):
@@ -322,6 +399,248 @@ class UpdateDatabaseResponse(SdkResponse):
         :type function_location_list: list[str]
         """
         self._function_location_list = function_location_list
+
+    @property
+    def access_policy_source(self):
+        r"""Gets the access_policy_source of this UpdateDatabaseResponse.
+
+        权限策略来源。可选值为：lakeformation、ranger、hive。
+
+        :return: The access_policy_source of this UpdateDatabaseResponse.
+        :rtype: str
+        """
+        return self._access_policy_source
+
+    @access_policy_source.setter
+    def access_policy_source(self, access_policy_source):
+        r"""Sets the access_policy_source of this UpdateDatabaseResponse.
+
+        权限策略来源。可选值为：lakeformation、ranger、hive。
+
+        :param access_policy_source: The access_policy_source of this UpdateDatabaseResponse.
+        :type access_policy_source: str
+        """
+        self._access_policy_source = access_policy_source
+
+    @property
+    def catalog_id(self):
+        r"""Gets the catalog_id of this UpdateDatabaseResponse.
+
+        catalogID。
+
+        :return: The catalog_id of this UpdateDatabaseResponse.
+        :rtype: str
+        """
+        return self._catalog_id
+
+    @catalog_id.setter
+    def catalog_id(self, catalog_id):
+        r"""Sets the catalog_id of this UpdateDatabaseResponse.
+
+        catalogID。
+
+        :param catalog_id: The catalog_id of this UpdateDatabaseResponse.
+        :type catalog_id: str
+        """
+        self._catalog_id = catalog_id
+
+    @property
+    def connection_name(self):
+        r"""Gets the connection_name of this UpdateDatabaseResponse.
+
+        连接名称。
+
+        :return: The connection_name of this UpdateDatabaseResponse.
+        :rtype: str
+        """
+        return self._connection_name
+
+    @connection_name.setter
+    def connection_name(self, connection_name):
+        r"""Sets the connection_name of this UpdateDatabaseResponse.
+
+        连接名称。
+
+        :param connection_name: The connection_name of this UpdateDatabaseResponse.
+        :type connection_name: str
+        """
+        self._connection_name = connection_name
+
+    @property
+    def data_statistic_enable(self):
+        r"""Gets the data_statistic_enable of this UpdateDatabaseResponse.
+
+        数据概况统计开关。默认状态为关，若要开启database下table的数据概况统计，需要先打开database的数据概况开关。database此开关开启后，database下所有table都会默认开启此开关
+
+        :return: The data_statistic_enable of this UpdateDatabaseResponse.
+        :rtype: bool
+        """
+        return self._data_statistic_enable
+
+    @data_statistic_enable.setter
+    def data_statistic_enable(self, data_statistic_enable):
+        r"""Sets the data_statistic_enable of this UpdateDatabaseResponse.
+
+        数据概况统计开关。默认状态为关，若要开启database下table的数据概况统计，需要先打开database的数据概况开关。database此开关开启后，database下所有table都会默认开启此开关
+
+        :param data_statistic_enable: The data_statistic_enable of this UpdateDatabaseResponse.
+        :type data_statistic_enable: bool
+        """
+        self._data_statistic_enable = data_statistic_enable
+
+    @property
+    def database_id(self):
+        r"""Gets the database_id of this UpdateDatabaseResponse.
+
+        数据库ID。
+
+        :return: The database_id of this UpdateDatabaseResponse.
+        :rtype: str
+        """
+        return self._database_id
+
+    @database_id.setter
+    def database_id(self, database_id):
+        r"""Sets the database_id of this UpdateDatabaseResponse.
+
+        数据库ID。
+
+        :param database_id: The database_id of this UpdateDatabaseResponse.
+        :type database_id: str
+        """
+        self._database_id = database_id
+
+    @property
+    def database_status(self):
+        r"""Gets the database_status of this UpdateDatabaseResponse.
+
+        数据库状态：0表示正常，1表示删除中，2表示已删除，3表示恢复中，4表示清除中。
+
+        :return: The database_status of this UpdateDatabaseResponse.
+        :rtype: int
+        """
+        return self._database_status
+
+    @database_status.setter
+    def database_status(self, database_status):
+        r"""Sets the database_status of this UpdateDatabaseResponse.
+
+        数据库状态：0表示正常，1表示删除中，2表示已删除，3表示恢复中，4表示清除中。
+
+        :param database_status: The database_status of this UpdateDatabaseResponse.
+        :type database_status: int
+        """
+        self._database_status = database_status
+
+    @property
+    def database_type(self):
+        r"""Gets the database_type of this UpdateDatabaseResponse.
+
+        数据库类型：MANAGED_DATABASE内置数据库、FOREIGN_DATABASE外置数据库。
+
+        :return: The database_type of this UpdateDatabaseResponse.
+        :rtype: str
+        """
+        return self._database_type
+
+    @database_type.setter
+    def database_type(self, database_type):
+        r"""Sets the database_type of this UpdateDatabaseResponse.
+
+        数据库类型：MANAGED_DATABASE内置数据库、FOREIGN_DATABASE外置数据库。
+
+        :param database_type: The database_type of this UpdateDatabaseResponse.
+        :type database_type: str
+        """
+        self._database_type = database_type
+
+    @property
+    def external_database_id(self):
+        r"""Gets the external_database_id of this UpdateDatabaseResponse.
+
+        用户端数据库id，创建时指定，不可修改。
+
+        :return: The external_database_id of this UpdateDatabaseResponse.
+        :rtype: str
+        """
+        return self._external_database_id
+
+    @external_database_id.setter
+    def external_database_id(self, external_database_id):
+        r"""Sets the external_database_id of this UpdateDatabaseResponse.
+
+        用户端数据库id，创建时指定，不可修改。
+
+        :param external_database_id: The external_database_id of this UpdateDatabaseResponse.
+        :type external_database_id: str
+        """
+        self._external_database_id = external_database_id
+
+    @property
+    def permission_connection_name(self):
+        r"""Gets the permission_connection_name of this UpdateDatabaseResponse.
+
+        权限连接名称。绑定后由该权限连接代理鉴权。为空时保留原权限连接。
+
+        :return: The permission_connection_name of this UpdateDatabaseResponse.
+        :rtype: str
+        """
+        return self._permission_connection_name
+
+    @permission_connection_name.setter
+    def permission_connection_name(self, permission_connection_name):
+        r"""Sets the permission_connection_name of this UpdateDatabaseResponse.
+
+        权限连接名称。绑定后由该权限连接代理鉴权。为空时保留原权限连接。
+
+        :param permission_connection_name: The permission_connection_name of this UpdateDatabaseResponse.
+        :type permission_connection_name: str
+        """
+        self._permission_connection_name = permission_connection_name
+
+    @property
+    def update_time(self):
+        r"""Gets the update_time of this UpdateDatabaseResponse.
+
+        数据库元数据最后一次修改时间。
+
+        :return: The update_time of this UpdateDatabaseResponse.
+        :rtype: datetime
+        """
+        return self._update_time
+
+    @update_time.setter
+    def update_time(self, update_time):
+        r"""Sets the update_time of this UpdateDatabaseResponse.
+
+        数据库元数据最后一次修改时间。
+
+        :param update_time: The update_time of this UpdateDatabaseResponse.
+        :type update_time: datetime
+        """
+        self._update_time = update_time
+
+    @property
+    def version_id(self):
+        r"""Gets the version_id of this UpdateDatabaseResponse.
+
+        版本ID
+
+        :return: The version_id of this UpdateDatabaseResponse.
+        :rtype: str
+        """
+        return self._version_id
+
+    @version_id.setter
+    def version_id(self, version_id):
+        r"""Sets the version_id of this UpdateDatabaseResponse.
+
+        版本ID
+
+        :param version_id: The version_id of this UpdateDatabaseResponse.
+        :type version_id: str
+        """
+        self._version_id = version_id
 
     def to_dict(self):
         import warnings

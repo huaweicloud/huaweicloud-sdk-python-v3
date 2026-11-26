@@ -16,15 +16,17 @@ class AddPartitionInput:
 
     openapi_types = {
         'if_not_exist': 'bool',
-        'partitions': 'list[PartitionInput]'
+        'partitions': 'list[PartitionInput]',
+        'use_table_column': 'bool'
     }
 
     attribute_map = {
         'if_not_exist': 'if_not_exist',
-        'partitions': 'partitions'
+        'partitions': 'partitions',
+        'use_table_column': 'use_table_column'
     }
 
-    def __init__(self, if_not_exist=None, partitions=None):
+    def __init__(self, if_not_exist=None, partitions=None, use_table_column=None):
         r"""AddPartitionInput
 
         The model defined in huaweicloud sdk
@@ -33,16 +35,21 @@ class AddPartitionInput:
         :type if_not_exist: bool
         :param partitions: 添加的分区信息
         :type partitions: list[:class:`huaweicloudsdklakeformation.v1.PartitionInput`]
+        :param use_table_column: 是否使用表的列作为分区中的列。默认为false
+        :type use_table_column: bool
         """
         
         
 
         self._if_not_exist = None
         self._partitions = None
+        self._use_table_column = None
         self.discriminator = None
 
         self.if_not_exist = if_not_exist
         self.partitions = partitions
+        if use_table_column is not None:
+            self.use_table_column = use_table_column
 
     @property
     def if_not_exist(self):
@@ -87,6 +94,28 @@ class AddPartitionInput:
         :type partitions: list[:class:`huaweicloudsdklakeformation.v1.PartitionInput`]
         """
         self._partitions = partitions
+
+    @property
+    def use_table_column(self):
+        r"""Gets the use_table_column of this AddPartitionInput.
+
+        是否使用表的列作为分区中的列。默认为false
+
+        :return: The use_table_column of this AddPartitionInput.
+        :rtype: bool
+        """
+        return self._use_table_column
+
+    @use_table_column.setter
+    def use_table_column(self, use_table_column):
+        r"""Sets the use_table_column of this AddPartitionInput.
+
+        是否使用表的列作为分区中的列。默认为false
+
+        :param use_table_column: The use_table_column of this AddPartitionInput.
+        :type use_table_column: bool
+        """
+        self._use_table_column = use_table_column
 
     def to_dict(self):
         result = {}

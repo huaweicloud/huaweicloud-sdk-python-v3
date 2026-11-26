@@ -22,7 +22,9 @@ class AccessPolicyInput:
         'grant_able_permissions': 'list[str]',
         'conditions': 'str',
         'data_filter': 'str',
-        'data_mask': 'str'
+        'data_mask': 'str',
+        'data_mask_type': 'str',
+        'parameters': 'dict(str, str)'
     }
 
     attribute_map = {
@@ -33,10 +35,12 @@ class AccessPolicyInput:
         'grant_able_permissions': 'grant_able_permissions',
         'conditions': 'conditions',
         'data_filter': 'data_filter',
-        'data_mask': 'data_mask'
+        'data_mask': 'data_mask',
+        'data_mask_type': 'data_mask_type',
+        'parameters': 'parameters'
     }
 
-    def __init__(self, principal_list=None, resource=None, effect=None, permissions=None, grant_able_permissions=None, conditions=None, data_filter=None, data_mask=None):
+    def __init__(self, principal_list=None, resource=None, effect=None, permissions=None, grant_able_permissions=None, conditions=None, data_filter=None, data_mask=None, data_mask_type=None, parameters=None):
         r"""AccessPolicyInput
 
         The model defined in huaweicloud sdk
@@ -57,6 +61,10 @@ class AccessPolicyInput:
         :type data_filter: str
         :param data_mask: 列掩码
         :type data_mask: str
+        :param data_mask_type: data mask type：REDACT修订， HASH哈希加密，PARTIAL_MASK部分掩码，NULLIFY用NULL值替换原值，UNMASKED原样显示，DATA_ONLY_SHOW_YEAR仅显示日期字符串的年份部分，CUSTOM自定义脱敏规则。
+        :type data_mask_type: str
+        :param parameters: 参数。
+        :type parameters: dict(str, str)
         """
         
         
@@ -69,6 +77,8 @@ class AccessPolicyInput:
         self._conditions = None
         self._data_filter = None
         self._data_mask = None
+        self._data_mask_type = None
+        self._parameters = None
         self.discriminator = None
 
         self.principal_list = principal_list
@@ -83,6 +93,10 @@ class AccessPolicyInput:
             self.data_filter = data_filter
         if data_mask is not None:
             self.data_mask = data_mask
+        if data_mask_type is not None:
+            self.data_mask_type = data_mask_type
+        if parameters is not None:
+            self.parameters = parameters
 
     @property
     def principal_list(self):
@@ -255,6 +269,50 @@ class AccessPolicyInput:
         :type data_mask: str
         """
         self._data_mask = data_mask
+
+    @property
+    def data_mask_type(self):
+        r"""Gets the data_mask_type of this AccessPolicyInput.
+
+        data mask type：REDACT修订， HASH哈希加密，PARTIAL_MASK部分掩码，NULLIFY用NULL值替换原值，UNMASKED原样显示，DATA_ONLY_SHOW_YEAR仅显示日期字符串的年份部分，CUSTOM自定义脱敏规则。
+
+        :return: The data_mask_type of this AccessPolicyInput.
+        :rtype: str
+        """
+        return self._data_mask_type
+
+    @data_mask_type.setter
+    def data_mask_type(self, data_mask_type):
+        r"""Sets the data_mask_type of this AccessPolicyInput.
+
+        data mask type：REDACT修订， HASH哈希加密，PARTIAL_MASK部分掩码，NULLIFY用NULL值替换原值，UNMASKED原样显示，DATA_ONLY_SHOW_YEAR仅显示日期字符串的年份部分，CUSTOM自定义脱敏规则。
+
+        :param data_mask_type: The data_mask_type of this AccessPolicyInput.
+        :type data_mask_type: str
+        """
+        self._data_mask_type = data_mask_type
+
+    @property
+    def parameters(self):
+        r"""Gets the parameters of this AccessPolicyInput.
+
+        参数。
+
+        :return: The parameters of this AccessPolicyInput.
+        :rtype: dict(str, str)
+        """
+        return self._parameters
+
+    @parameters.setter
+    def parameters(self, parameters):
+        r"""Sets the parameters of this AccessPolicyInput.
+
+        参数。
+
+        :param parameters: The parameters of this AccessPolicyInput.
+        :type parameters: dict(str, str)
+        """
+        self._parameters = parameters
 
     def to_dict(self):
         result = {}

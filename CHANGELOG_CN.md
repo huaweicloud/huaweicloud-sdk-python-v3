@@ -1,3 +1,548 @@
+# 3.1.224 2026-11-26
+
+### HuaweiCloud SDK CDN
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **VerifyDomainOwner**
+    - 响应参数变更
+      - `+ status`
+  - **ListAccessControlTask**
+    - 请求参数变更
+      - `+ task_id`
+  - **UpdateDomainMultiCertificates**
+    - 请求参数变更
+      - `+ https.certificates`
+    - 响应参数变更
+      - `+ https.certificate_category`
+      - `+ https.certificates`
+  - **ShowCertificatesHttpsInfo**
+    - 响应参数变更
+      - `+ https.certificates`
+  - **ListDomains**
+    - 响应参数变更
+      - `+ domains.origin_protocol`
+  - **CreateDomain**
+    - 请求参数变更
+      - `+ domain.origin_protocol`
+      - `+ domain.configs`
+      - `+ domain.sources.priority`
+      - `+ domain.sources.weight`
+      - `+ domain.sources.host_name`
+  - **DeleteDomain**
+    - 响应参数变更
+      - `+ domain.cnames`
+      - `+ domain.tags`
+      - `+ domain.sources.weight`
+  - **EnableDomain**
+    - 响应参数变更
+      - `+ domain.cnames`
+      - `+ domain.tags`
+      - `+ domain.sources.weight`
+  - **DisableDomain**
+    - 响应参数变更
+      - `+ domain.cnames`
+      - `+ domain.tags`
+      - `+ domain.sources.weight`
+  - **UpdateRuleNew**
+    - 请求参数变更
+      - `+ actions.request_url_rewrite.rewrite_type`
+      - `+ actions.request_url_rewrite.source_url`
+      - `+ actions.request_url_rewrite.inherit_param`
+  - **UpdateDomainTemplate**
+    - 请求参数变更
+      - `+ configs.origin_request_header`
+      - `+ configs.https`
+      - `+ configs.quic`
+      - `+ configs.force_redirect`
+      - `+ configs.https_tls_version`
+      - `+ configs.access_area_filter`
+      - `+ configs.url_auth`
+      - `+ configs.rules`
+      - `+ configs.cache_rules.stale_while_revalidate`
+  - **ShowDomainFullConfig**
+    - 响应参数变更
+      - `+ configs.bandwidth_alarm_strategy`
+      - `+ configs.cache_rules.stale_while_revalidate`
+      - `+ configs.client_cert.trusted_certs`
+      - `+ configs.client_cert.sm_trusted_certs`
+      - `+ configs.client_cert.sm_cert_hosts`
+      - `+ configs.flexible_origin.back_sources.origin_protocol`
+      - `+ configs.flexible_origin.back_sources.host_name`
+  - **UpdateDomainFullConfig**
+    - 请求参数变更
+      - `+ configs.bandwidth_alarm_strategy`
+      - `+ configs.cache_rules.stale_while_revalidate`
+      - `+ configs.client_cert.trusted_certs`
+      - `+ configs.client_cert.sm_trusted_certs`
+      - `+ configs.client_cert.sm_cert_hosts`
+      - `+ configs.flexible_origin.back_sources.origin_protocol`
+      - `+ configs.flexible_origin.back_sources.host_name`
+  - **CreateRuleNew**
+    - 请求参数变更
+      - `+ actions.request_url_rewrite.rewrite_type`
+      - `+ actions.request_url_rewrite.source_url`
+      - `+ actions.request_url_rewrite.inherit_param`
+  - **ListRuleDetails**
+    - 响应参数变更
+      - `+ rules.actions.request_url_rewrite.rewrite_type`
+      - `+ rules.actions.request_url_rewrite.source_url`
+      - `+ rules.actions.request_url_rewrite.inherit_param`
+  - **UpdateFullRule**
+    - 请求参数变更
+      - `+ rules.actions.request_url_rewrite.rewrite_type`
+      - `+ rules.actions.request_url_rewrite.source_url`
+      - `+ rules.actions.request_url_rewrite.inherit_param`
+  - **CreateDomainTemplate**
+    - 请求参数变更
+      - `+ configs.origin_request_header`
+      - `+ configs.https`
+      - `+ configs.quic`
+      - `+ configs.force_redirect`
+      - `+ configs.https_tls_version`
+      - `+ configs.access_area_filter`
+      - `+ configs.url_auth`
+      - `+ configs.rules`
+      - `+ configs.cache_rules.stale_while_revalidate`
+  - **ShowDomainTemplate**
+    - 响应参数变更
+      - `+ templates.configs.origin_request_header`
+      - `+ templates.configs.https`
+      - `+ templates.configs.quic`
+      - `+ templates.configs.force_redirect`
+      - `+ templates.configs.https_tls_version`
+      - `+ templates.configs.access_area_filter`
+      - `+ templates.configs.url_auth`
+      - `+ templates.configs.rules`
+      - `+ templates.configs.cache_rules.stale_while_revalidate`
+  - **ShowAppliedTemplateRecord**
+    - 响应参数变更
+      - `+ elements.configs.origin_request_header`
+      - `+ elements.configs.https`
+      - `+ elements.configs.quic`
+      - `+ elements.configs.force_redirect`
+      - `+ elements.configs.https_tls_version`
+      - `+ elements.configs.access_area_filter`
+      - `+ elements.configs.url_auth`
+      - `+ elements.configs.rules`
+      - `+ elements.configs.cache_rules.stale_while_revalidate`
+
+### HuaweiCloud SDK CSS
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowClusterDetail**
+    - 响应参数变更
+      - `+ instances.created`
+  - **ListClustersDetails**
+    - 响应参数变更
+      - `+ clusters.instances.created`
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`ListDataServiceApprovers`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK GaussDB
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`ShowMigrateInfo`
+  - **ShowBackupRestoreTime**
+    - 请求参数变更
+      - `- date`
+
+### HuaweiCloud SDK IAM
+
+- _接口版本_
+  - V5
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListPoliciesV5**
+    - 响应参数变更
+      - `- policies.tags`
+  - **CreatePolicyV5**
+    - 响应参数变更
+      - `- policy.tags`
+  - **GetPolicyV5**
+    - 响应参数变更
+      - `* policy: object<Policy> -> object<PolicyWithTags>`
+
+### HuaweiCloud SDK LakeFormation
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateRoles**
+    - 响应参数变更
+      - `+ external_role_id`
+      - `+ parameters`
+  - **ShowDatabase**
+    - 响应参数变更
+      - `+ access_policy_source`
+      - `+ version_id`
+      - `+ permission_connection_name`
+      - `+ catalog_id`
+      - `+ connection_name`
+      - `+ database_type`
+      - `+ external_database_id`
+      - `+ update_time`
+      - `+ database_id`
+      - `+ database_status`
+      - `+ data_statistic_enable`
+  - **UpdateDatabase**
+    - 响应参数变更
+      - `+ access_policy_source`
+      - `+ version_id`
+      - `+ permission_connection_name`
+      - `+ catalog_id`
+      - `+ connection_name`
+      - `+ database_type`
+      - `+ external_database_id`
+      - `+ update_time`
+      - `+ database_id`
+      - `+ database_status`
+      - `+ data_statistic_enable`
+  - **ListCatalogs**
+    - 响应参数变更
+      - `+ create_time`
+      - `+ version_id`
+      - `+ type`
+      - `+ catalog_id`
+      - `+ update_time`
+  - **CreateCatalog**
+    - 响应参数变更
+      - `+ create_time`
+      - `+ version_id`
+      - `+ type`
+      - `+ catalog_id`
+      - `+ update_time`
+  - **ShowCatalog**
+    - 响应参数变更
+      - `+ create_time`
+      - `+ version_id`
+      - `+ type`
+      - `+ catalog_id`
+      - `+ update_time`
+  - **UpdateCatalog**
+    - 响应参数变更
+      - `+ create_time`
+      - `+ version_id`
+      - `+ type`
+      - `+ catalog_id`
+      - `+ update_time`
+  - **ShowRole**
+    - 响应参数变更
+      - `+ external_role_id`
+      - `+ parameters`
+  - **UpdateRole**
+    - 请求参数变更
+      - `+ external_role_id`
+      - `+ parameters`
+    - 响应参数变更
+      - `+ external_role_id`
+      - `+ parameters`
+  - **ListUserRoles**
+    - 响应参数变更
+      - `+ external_role_id`
+      - `+ parameters`
+      - `+ roles.external_role_id`
+      - `+ roles.parameters`
+  - **CreateDatabase**
+    - 响应参数变更
+      - `+ access_policy_source`
+      - `+ version_id`
+      - `+ permission_connection_name`
+      - `+ catalog_id`
+      - `+ connection_name`
+      - `+ database_type`
+      - `+ external_database_id`
+      - `+ update_time`
+      - `+ database_id`
+      - `+ database_status`
+      - `+ data_statistic_enable`
+  - **ListDatabases**
+    - 响应参数变更
+      - `+ access_policy_source`
+      - `+ version_id`
+      - `+ permission_connection_name`
+      - `+ catalog_id`
+      - `+ connection_name`
+      - `+ database_type`
+      - `+ external_database_id`
+      - `+ update_time`
+      - `+ database_id`
+      - `+ database_status`
+      - `+ data_statistic_enable`
+      - `+ databases.access_policy_source`
+      - `+ databases.catalog_id`
+      - `+ databases.connection_name`
+      - `+ databases.data_statistic_enable`
+      - `+ databases.database_id`
+      - `+ databases.database_status`
+      - `+ databases.database_type`
+      - `+ databases.external_database_id`
+      - `+ databases.permission_connection_name`
+      - `+ databases.update_time`
+      - `+ databases.version_id`
+  - **ShowFunction**
+    - 响应参数变更
+      - `+ version_id`
+      - `+ catalog_id`
+      - `+ update_time`
+      - `+ database_id`
+      - `+ function_id`
+      - `+ parameters`
+  - **UpdateFunction**
+    - 响应参数变更
+      - `+ version_id`
+      - `+ catalog_id`
+      - `+ update_time`
+      - `+ database_id`
+      - `+ function_id`
+      - `+ parameters`
+  - **CreateRole**
+    - 请求参数变更
+      - `+ external_role_id`
+      - `+ parameters`
+    - 响应参数变更
+      - `+ external_role_id`
+      - `+ parameters`
+  - **ListRoles**
+    - 响应参数变更
+      - `+ external_role_id`
+      - `+ parameters`
+      - `+ roles.external_role_id`
+      - `+ roles.parameters`
+  - **ListTableMeta**
+    - 响应参数变更
+      - `+ table_metas.external_table_id`
+  - **BatchCheckPermission**
+    - 请求参数变更
+      - `+ access_request.resource.model`
+    - 响应参数变更
+      - `+ data_filters`
+      - `+ data_masks`
+  - **BatchDeletePartition**
+    - 响应参数变更
+      - `+ catalog_id`
+      - `+ database_id`
+      - `+ partition_id`
+      - `+ table_id`
+      - `+ update_time`
+  - **BatchListPartitionByValues**
+    - 响应参数变更
+      - `+ catalog_id`
+      - `+ database_id`
+      - `+ partition_id`
+      - `+ table_id`
+      - `+ update_time`
+  - **ListAllFunctions**
+    - 响应参数变更
+      - `+ version_id`
+      - `+ catalog_id`
+      - `+ update_time`
+      - `+ database_id`
+      - `+ function_id`
+      - `+ parameters`
+      - `+ functions.catalog_id`
+      - `+ functions.database_id`
+      - `+ functions.function_id`
+      - `+ functions.parameters`
+      - `+ functions.update_time`
+      - `+ functions.version_id`
+  - **CreateFunction**
+    - 响应参数变更
+      - `+ version_id`
+      - `+ catalog_id`
+      - `+ update_time`
+      - `+ database_id`
+      - `+ function_id`
+      - `+ parameters`
+  - **ListFunctions**
+    - 响应参数变更
+      - `+ version_id`
+      - `+ catalog_id`
+      - `+ update_time`
+      - `+ database_id`
+      - `+ function_id`
+      - `+ parameters`
+      - `+ functions.catalog_id`
+      - `+ functions.database_id`
+      - `+ functions.function_id`
+      - `+ functions.parameters`
+      - `+ functions.update_time`
+      - `+ functions.version_id`
+  - **ListPartitions**
+    - 响应参数变更
+      - `+ partitions.catalog_id`
+      - `+ partitions.database_id`
+      - `+ partitions.partition_id`
+      - `+ partitions.table_id`
+      - `+ partitions.update_time`
+  - **AddPartitions**
+    - 请求参数变更
+      - `+ use_table_column`
+    - 响应参数变更
+      - `+ catalog_id`
+      - `+ database_id`
+      - `+ partition_id`
+      - `+ table_id`
+      - `+ update_time`
+  - **BatchUpdatePartition**
+    - 响应参数变更
+      - `+ catalog_id`
+      - `+ database_id`
+      - `+ partition_id`
+      - `+ table_id`
+      - `+ update_time`
+  - **CreateTable**
+    - 请求参数变更
+      - `+ external_table_id`
+      - `+ owner_auth_source_type`
+      - `+ create_open_table_format_input.create_iceberg_table_input.schema.fields.initial_default`
+  - **BatchCancelAuthorizationInterface**
+    - 请求参数变更
+      - `+ data_mask_type`
+      - `+ parameters`
+      - `+ resource.catalogs.models`
+  - **BatchAuthorizeInterface**
+    - 请求参数变更
+      - `+ data_mask_type`
+      - `+ parameters`
+      - `+ resource.catalogs.models`
+    - 响应参数变更
+      - `+ policies.access_policy_type`
+      - `+ policies.obs_access_label`
+      - `+ policies.parameters`
+      - `+ policies.resource.catalogs.models`
+  - **ListInterfaces**
+    - 响应参数变更
+      - `+ policies.access_policy_type`
+      - `+ policies.obs_access_label`
+      - `+ policies.parameters`
+      - `+ policies.resource.catalogs.models`
+
+### HuaweiCloud SDK SWR
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持接口`ShowRepoTagConfig`、`ListResourcesTagsByProjectId`、`ShowInstanceArtifactManifest`、`ShowInstanceTag`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowShareFeatureGates**
+    - 响应参数变更
+      - `+ enable_customize_validity_period`
+      - `+ enable_cosign_signature`
+      - `+ enable_enterprise_edition_link`
+      - `+ swr_util_download_url`
+  - **ShowInstance**
+    - 响应参数变更
+      - `+ tags`
+      - `+ status: enum value [Frozen,DeploymentAbnormal,PartiallyUnavailable,CoreDialFailed]`
+  - **ShowInstanceRepository**
+    - 响应参数变更
+      - `+ tags`
+  - **ListFeatureGates**
+    - 响应参数变更
+      - `+ enableArtifactMetadata`
+      - `+ enableNamespaceTag`
+      - `+ enableRepositoryTag`
+  - **ListGlobalFeatureGates**
+    - 响应参数变更
+      - `+ enableV5CustomAgency`
+      - `+ enableConsoleAgency`
+      - `+ agencyName`
+  - **ListInstance**
+    - 请求参数变更
+      - `+ status: enum value [Frozen,DeploymentAbnormal,PartiallyUnavailable,CoreDialFailed]`
+    - 响应参数变更
+      - `+ tags`
+      - `+ instances.tags`
+      - `+ instances.status: enum value [Frozen,DeploymentAbnormal,PartiallyUnavailable,CoreDialFailed]`
+  - **ListInstanceRepositories**
+    - 请求参数变更
+      - `+ name`
+      - `+ with_tag`
+      - `+ tags`
+      - `+ namespace_ids`
+    - 响应参数变更
+      - `+ tags`
+      - `+ repositories.tags`
+  - **ListNamespaceRepositories**
+    - 响应参数变更
+      - `+ tags`
+      - `+ repositories.tags`
+  - **ListAllInstanceRepositories**
+    - 响应参数变更
+      - `+ tags`
+      - `+ repositories.tags`
+  - **ListInstanceRetentionPolicyExecSubTasks**
+    - 响应参数变更
+      - `* sub_tasks.job_id: int32 -> string`
+  - **ShowInstanceNamespace**
+    - 响应参数变更
+      - `+ tags`
+  - **ShowInstanceReplicationPolicy**
+    - 响应参数变更
+      - `+ dest_namespace_replace_count`
+  - **ListInstanceArtifacts**
+    - 响应参数变更
+      - `+ artifacts.extra_attrs`
+      - `+ artifacts.references`
+  - **ListInstanceAllArtifacts**
+    - 响应参数变更
+      - `+ artifacts.extra_attrs`
+      - `+ artifacts.references`
+  - **CreateInstanceNamespace**
+    - 请求参数变更
+      - `+ tags`
+  - **ListInstanceNamespaces**
+    - 响应参数变更
+      - `+ tags`
+      - `+ namespaces.tags`
+  - **CreateInstanceReplicationPolicy**
+    - 请求参数变更
+      - `+ dest_namespace_replace_count`
+  - **ListInstanceReplicationPolicies**
+    - 响应参数变更
+      - `+ dest_namespace_replace_count`
+      - `+ policies.dest_namespace_replace_count`
+  - **ShowInstanceArtifact**
+    - 响应参数变更
+      - `+ references`
+      - `+ extra_attrs`
+
 # 3.1.223 2026-11-19
 
 ### HuaweiCloud SDK AIDataLake

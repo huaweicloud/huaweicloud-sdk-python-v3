@@ -17,6 +17,7 @@ from huaweicloudsdkcdn.v2.model.apply_record import ApplyRecord
 from huaweicloudsdkcdn.v2.model.apply_tml_detail import ApplyTmlDetail
 from huaweicloudsdkcdn.v2.model.back_sources import BackSources
 from huaweicloudsdkcdn.v2.model.ban_url_list import BanUrlList
+from huaweicloudsdkcdn.v2.model.bandwidth_alarm_strategy import BandwidthAlarmStrategy
 from huaweicloudsdkcdn.v2.model.batch_copy_configs import BatchCopyConfigs
 from huaweicloudsdkcdn.v2.model.batch_copy_d_request_body import BatchCopyDRequestBody
 from huaweicloudsdkcdn.v2.model.batch_copy_domain_request import BatchCopyDomainRequest
@@ -40,6 +41,7 @@ from huaweicloudsdkcdn.v2.model.cdn_ips import CdnIps
 from huaweicloudsdkcdn.v2.model.certificates_get_body import CertificatesGetBody
 from huaweicloudsdkcdn.v2.model.certificates_put_body import CertificatesPutBody
 from huaweicloudsdkcdn.v2.model.client_cert import ClientCert
+from huaweicloudsdkcdn.v2.model.client_cert_trusted_certs import ClientCertTrustedCerts
 from huaweicloudsdkcdn.v2.model.cname_status import CnameStatus
 from huaweicloudsdkcdn.v2.model.common_remote_auth import CommonRemoteAuth
 from huaweicloudsdkcdn.v2.model.compress import Compress
@@ -51,6 +53,7 @@ from huaweicloudsdkcdn.v2.model.create_access_control_task_request import Create
 from huaweicloudsdkcdn.v2.model.create_access_control_task_response import CreateAccessControlTaskResponse
 from huaweicloudsdkcdn.v2.model.create_domain_by_duplicate_request import CreateDomainByDuplicateRequest
 from huaweicloudsdkcdn.v2.model.create_domain_by_duplicate_response import CreateDomainByDuplicateResponse
+from huaweicloudsdkcdn.v2.model.create_domain_configs import CreateDomainConfigs
 from huaweicloudsdkcdn.v2.model.create_domain_request import CreateDomainRequest
 from huaweicloudsdkcdn.v2.model.create_domain_request_body import CreateDomainRequestBody
 from huaweicloudsdkcdn.v2.model.create_domain_response import CreateDomainResponse
@@ -125,7 +128,9 @@ from huaweicloudsdkcdn.v2.model.hsts_query import HstsQuery
 from huaweicloudsdkcdn.v2.model.http_get_body import HttpGetBody
 from huaweicloudsdkcdn.v2.model.http_put_body import HttpPutBody
 from huaweicloudsdkcdn.v2.model.http_response_header import HttpResponseHeader
+from huaweicloudsdkcdn.v2.model.http_template_body import HttpTemplateBody
 from huaweicloudsdkcdn.v2.model.https_detail import HttpsDetail
+from huaweicloudsdkcdn.v2.model.https_detail_certificates import HttpsDetailCertificates
 from huaweicloudsdkcdn.v2.model.https_tls_version import HttpsTlsVersion
 from huaweicloudsdkcdn.v2.model.inherit_config import InheritConfig
 from huaweicloudsdkcdn.v2.model.inherit_config_query import InheritConfigQuery
@@ -169,6 +174,7 @@ from huaweicloudsdkcdn.v2.model.match import Match
 from huaweicloudsdkcdn.v2.model.modify_account_info_request import ModifyAccountInfoRequest
 from huaweicloudsdkcdn.v2.model.modify_account_info_response import ModifyAccountInfoResponse
 from huaweicloudsdkcdn.v2.model.modify_domain_config_request_body import ModifyDomainConfigRequestBody
+from huaweicloudsdkcdn.v2.model.multi_certificate_batch_vo import MultiCertificateBatchVo
 from huaweicloudsdkcdn.v2.model.origin_request_header import OriginRequestHeader
 from huaweicloudsdkcdn.v2.model.origin_request_url_rewrite import OriginRequestUrlRewrite
 from huaweicloudsdkcdn.v2.model.origin_request_url_rewrite_engine import OriginRequestUrlRewriteEngine

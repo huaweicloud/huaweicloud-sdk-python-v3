@@ -44,7 +44,7 @@ class ShowDomainCountryStatResponse(SdkResponse):
         :type end_time: int
         :param stat_type: **参数解释：** 统计指标类型 **取值范围：** - flux：流量 - req_num：请求总数
         :type stat_type: str
-        :param result: **参数解释：** 按指定的分组方式组织的数据 **取值范围：** - domain：按域名分组 - country：按国际&amp;地区分组 - province：按省份分组 - isp：按运营商分组 **默认取值：** 默认不分组
+        :param result: **参数解释：** 按指定的分组方式组织的数据 **取值范围：** - domain：按域名分组 - country：按国际&amp;地区分组 - province：按省份分组 - isp：按运营商分组  **默认取值：** 默认不分组
         :type result: dict(str, object)
         """
         
@@ -160,7 +160,7 @@ class ShowDomainCountryStatResponse(SdkResponse):
     def result(self):
         r"""Gets the result of this ShowDomainCountryStatResponse.
 
-        **参数解释：** 按指定的分组方式组织的数据 **取值范围：** - domain：按域名分组 - country：按国际&地区分组 - province：按省份分组 - isp：按运营商分组 **默认取值：** 默认不分组
+        **参数解释：** 按指定的分组方式组织的数据 **取值范围：** - domain：按域名分组 - country：按国际&地区分组 - province：按省份分组 - isp：按运营商分组  **默认取值：** 默认不分组
 
         :return: The result of this ShowDomainCountryStatResponse.
         :rtype: dict(str, object)
@@ -171,7 +171,7 @@ class ShowDomainCountryStatResponse(SdkResponse):
     def result(self, result):
         r"""Sets the result of this ShowDomainCountryStatResponse.
 
-        **参数解释：** 按指定的分组方式组织的数据 **取值范围：** - domain：按域名分组 - country：按国际&地区分组 - province：按省份分组 - isp：按运营商分组 **默认取值：** 默认不分组
+        **参数解释：** 按指定的分组方式组织的数据 **取值范围：** - domain：按域名分组 - country：按国际&地区分组 - province：按省份分组 - isp：按运营商分组  **默认取值：** 默认不分组
 
         :param result: The result of this ShowDomainCountryStatResponse.
         :type result: dict(str, object)

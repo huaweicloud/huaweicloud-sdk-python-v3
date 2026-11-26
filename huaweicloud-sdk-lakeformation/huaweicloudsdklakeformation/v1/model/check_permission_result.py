@@ -16,15 +16,19 @@ class CheckPermissionResult:
 
     openapi_types = {
         'check_result': 'bool',
-        'error_message': 'str'
+        'error_message': 'str',
+        'data_filters': 'list[str]',
+        'data_masks': 'list[DataMaskInfo]'
     }
 
     attribute_map = {
         'check_result': 'check_result',
-        'error_message': 'error_message'
+        'error_message': 'error_message',
+        'data_filters': 'data_filters',
+        'data_masks': 'data_masks'
     }
 
-    def __init__(self, check_result=None, error_message=None):
+    def __init__(self, check_result=None, error_message=None, data_filters=None, data_masks=None):
         r"""CheckPermissionResult
 
         The model defined in huaweicloud sdk
@@ -33,17 +37,27 @@ class CheckPermissionResult:
         :type check_result: bool
         :param error_message: 错误信息
         :type error_message: str
+        :param data_filters: 行过滤条件列表。
+        :type data_filters: list[str]
+        :param data_masks: 列掩码条件列表。
+        :type data_masks: list[:class:`huaweicloudsdklakeformation.v1.DataMaskInfo`]
         """
         
         
 
         self._check_result = None
         self._error_message = None
+        self._data_filters = None
+        self._data_masks = None
         self.discriminator = None
 
         self.check_result = check_result
         if error_message is not None:
             self.error_message = error_message
+        if data_filters is not None:
+            self.data_filters = data_filters
+        if data_masks is not None:
+            self.data_masks = data_masks
 
     @property
     def check_result(self):
@@ -88,6 +102,50 @@ class CheckPermissionResult:
         :type error_message: str
         """
         self._error_message = error_message
+
+    @property
+    def data_filters(self):
+        r"""Gets the data_filters of this CheckPermissionResult.
+
+        行过滤条件列表。
+
+        :return: The data_filters of this CheckPermissionResult.
+        :rtype: list[str]
+        """
+        return self._data_filters
+
+    @data_filters.setter
+    def data_filters(self, data_filters):
+        r"""Sets the data_filters of this CheckPermissionResult.
+
+        行过滤条件列表。
+
+        :param data_filters: The data_filters of this CheckPermissionResult.
+        :type data_filters: list[str]
+        """
+        self._data_filters = data_filters
+
+    @property
+    def data_masks(self):
+        r"""Gets the data_masks of this CheckPermissionResult.
+
+        列掩码条件列表。
+
+        :return: The data_masks of this CheckPermissionResult.
+        :rtype: list[:class:`huaweicloudsdklakeformation.v1.DataMaskInfo`]
+        """
+        return self._data_masks
+
+    @data_masks.setter
+    def data_masks(self, data_masks):
+        r"""Sets the data_masks of this CheckPermissionResult.
+
+        列掩码条件列表。
+
+        :param data_masks: The data_masks of this CheckPermissionResult.
+        :type data_masks: list[:class:`huaweicloudsdklakeformation.v1.DataMaskInfo`]
+        """
+        self._data_masks = data_masks
 
     def to_dict(self):
         result = {}

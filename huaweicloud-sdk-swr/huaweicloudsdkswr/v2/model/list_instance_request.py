@@ -37,7 +37,7 @@ class ListInstanceRequest:
         :type offset: int
         :param limit: 返回条数，默认为100，最大值为100。**注意：offset和limit参数需要配套使用。**
         :type limit: int
-        :param status: 实例状态, Initial, Creating, Running, Unavailable
+        :param status: 实例状态 取值范围： - Initial：初始化 - Creating：创建中 - Running：运行中 - Unavailable：不可用 - Frozen：已冻结 - DeploymentAbnormal：部署异常 - PartiallyUnavailable：部分不可用 - CoreDialFailed：核心拨测失败
         :type status: str
         :param enterprise_project_id: 企业项目ID
         :type enterprise_project_id: str
@@ -108,7 +108,7 @@ class ListInstanceRequest:
     def status(self):
         r"""Gets the status of this ListInstanceRequest.
 
-        实例状态, Initial, Creating, Running, Unavailable
+        实例状态 取值范围： - Initial：初始化 - Creating：创建中 - Running：运行中 - Unavailable：不可用 - Frozen：已冻结 - DeploymentAbnormal：部署异常 - PartiallyUnavailable：部分不可用 - CoreDialFailed：核心拨测失败
 
         :return: The status of this ListInstanceRequest.
         :rtype: str
@@ -119,7 +119,7 @@ class ListInstanceRequest:
     def status(self, status):
         r"""Sets the status of this ListInstanceRequest.
 
-        实例状态, Initial, Creating, Running, Unavailable
+        实例状态 取值范围： - Initial：初始化 - Creating：创建中 - Running：运行中 - Unavailable：不可用 - Frozen：已冻结 - DeploymentAbnormal：部署异常 - PartiallyUnavailable：部分不可用 - CoreDialFailed：核心拨测失败
 
         :param status: The status of this ListInstanceRequest.
         :type status: str

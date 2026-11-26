@@ -28,6 +28,8 @@ class ShowInstanceArtifactResponse(SdkResponse):
         'push_time': 'str',
         'size': 'int',
         'tags': 'list[ArtifactTag]',
+        'extra_attrs': 'dict(str, object)',
+        'references': 'list[Reference]',
         'scan_overview': 'dict(str, NativeReportSummary)'
     }
 
@@ -44,10 +46,12 @@ class ShowInstanceArtifactResponse(SdkResponse):
         'push_time': 'push_time',
         'size': 'size',
         'tags': 'tags',
+        'extra_attrs': 'extra_attrs',
+        'references': 'references',
         'scan_overview': 'scan_overview'
     }
 
-    def __init__(self, digest=None, id=None, repository_id=None, repository_name=None, type=None, namespace_id=None, media_type=None, manifest_media_type=None, pull_time=None, push_time=None, size=None, tags=None, scan_overview=None):
+    def __init__(self, digest=None, id=None, repository_id=None, repository_name=None, type=None, namespace_id=None, media_type=None, manifest_media_type=None, pull_time=None, push_time=None, size=None, tags=None, extra_attrs=None, references=None, scan_overview=None):
         r"""ShowInstanceArtifactResponse
 
         The model defined in huaweicloud sdk
@@ -76,6 +80,10 @@ class ShowInstanceArtifactResponse(SdkResponse):
         :type size: int
         :param tags: 制品版本的Tag列表
         :type tags: list[:class:`huaweicloudsdkswr.v2.ArtifactTag`]
+        :param extra_attrs: 制品的一些额外属性，比如制品的构建时间(created)、支持的操作系统(os)、支持CPU架构(architecture)等信息。
+        :type extra_attrs: dict(str, object)
+        :param references: 当制品为多架构镜像索引时，显示其引用的所有子制品。
+        :type references: list[:class:`huaweicloudsdkswr.v2.Reference`]
         :param scan_overview: 制品扫描摘要,支持制品扫描报告类型为application/vnd.security.vulnerability.report; version&#x3D;1.1的制品扫描摘要
         :type scan_overview: dict(str, NativeReportSummary)
         """
@@ -94,6 +102,8 @@ class ShowInstanceArtifactResponse(SdkResponse):
         self._push_time = None
         self._size = None
         self._tags = None
+        self._extra_attrs = None
+        self._references = None
         self._scan_overview = None
         self.discriminator = None
 
@@ -121,6 +131,10 @@ class ShowInstanceArtifactResponse(SdkResponse):
             self.size = size
         if tags is not None:
             self.tags = tags
+        if extra_attrs is not None:
+            self.extra_attrs = extra_attrs
+        if references is not None:
+            self.references = references
         if scan_overview is not None:
             self.scan_overview = scan_overview
 
@@ -387,6 +401,50 @@ class ShowInstanceArtifactResponse(SdkResponse):
         :type tags: list[:class:`huaweicloudsdkswr.v2.ArtifactTag`]
         """
         self._tags = tags
+
+    @property
+    def extra_attrs(self):
+        r"""Gets the extra_attrs of this ShowInstanceArtifactResponse.
+
+        制品的一些额外属性，比如制品的构建时间(created)、支持的操作系统(os)、支持CPU架构(architecture)等信息。
+
+        :return: The extra_attrs of this ShowInstanceArtifactResponse.
+        :rtype: dict(str, object)
+        """
+        return self._extra_attrs
+
+    @extra_attrs.setter
+    def extra_attrs(self, extra_attrs):
+        r"""Sets the extra_attrs of this ShowInstanceArtifactResponse.
+
+        制品的一些额外属性，比如制品的构建时间(created)、支持的操作系统(os)、支持CPU架构(architecture)等信息。
+
+        :param extra_attrs: The extra_attrs of this ShowInstanceArtifactResponse.
+        :type extra_attrs: dict(str, object)
+        """
+        self._extra_attrs = extra_attrs
+
+    @property
+    def references(self):
+        r"""Gets the references of this ShowInstanceArtifactResponse.
+
+        当制品为多架构镜像索引时，显示其引用的所有子制品。
+
+        :return: The references of this ShowInstanceArtifactResponse.
+        :rtype: list[:class:`huaweicloudsdkswr.v2.Reference`]
+        """
+        return self._references
+
+    @references.setter
+    def references(self, references):
+        r"""Sets the references of this ShowInstanceArtifactResponse.
+
+        当制品为多架构镜像索引时，显示其引用的所有子制品。
+
+        :param references: The references of this ShowInstanceArtifactResponse.
+        :type references: list[:class:`huaweicloudsdkswr.v2.Reference`]
+        """
+        self._references = references
 
     @property
     def scan_overview(self):

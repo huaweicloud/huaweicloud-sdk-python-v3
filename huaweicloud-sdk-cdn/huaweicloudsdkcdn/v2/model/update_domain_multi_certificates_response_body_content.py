@@ -24,7 +24,9 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
         'cert_name': 'str',
         'certificate': 'str',
         'certificate_type': 'int',
-        'expiration_time': 'int'
+        'expiration_time': 'int',
+        'certificate_category': 'int',
+        'certificates': 'list[MultiCertificateBatchVo]'
     }
 
     attribute_map = {
@@ -37,15 +39,17 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
         'cert_name': 'cert_name',
         'certificate': 'certificate',
         'certificate_type': 'certificate_type',
-        'expiration_time': 'expiration_time'
+        'expiration_time': 'expiration_time',
+        'certificate_category': 'certificate_category',
+        'certificates': 'certificates'
     }
 
-    def __init__(self, domain_name=None, https_switch=None, access_origin_way=None, force_redirect_https=None, force_redirect_config=None, http2=None, cert_name=None, certificate=None, certificate_type=None, expiration_time=None):
+    def __init__(self, domain_name=None, https_switch=None, access_origin_way=None, force_redirect_https=None, force_redirect_config=None, http2=None, cert_name=None, certificate=None, certificate_type=None, expiration_time=None, certificate_category=None, certificates=None):
         r"""UpdateDomainMultiCertificatesResponseBodyContent
 
         The model defined in huaweicloud sdk
 
-        :param domain_name: 域名列表。
+        :param domain_name: **参数解释：** 域名列表 **约束限制：** 不涉及 **取值范围：** 不涉及
         :type domain_name: str
         :param https_switch: https开关(0：\&quot;关闭\&quot;；1：\&quot;设置证书\&quot;)。
         :type https_switch: int
@@ -57,14 +61,18 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
         :type force_redirect_config: :class:`huaweicloudsdkcdn.v2.ForceRedirect`
         :param http2: http2.0（0：关闭；1：开启）
         :type http2: int
-        :param cert_name: 证书名称。
+        :param cert_name: **参数解释：** 证书名称 **约束限制：** 不涉及 **取值范围：** 不涉及
         :type cert_name: str
-        :param certificate: 证书内容。
+        :param certificate: **参数解释：** 证书内容 **约束限制：** 不涉及 **取值范围：** 不涉及
         :type certificate: str
         :param certificate_type: 证书类型。取值意义： - 0：自有证书 - 2：SCM证书
         :type certificate_type: int
-        :param expiration_time: 证书过期时间。
+        :param expiration_time: **参数解释：** 证书最近过期时间，Unix时间戳格式，单位为毫秒 **约束限制：** 不涉及 **取值范围：** 不涉及
         :type expiration_time: int
+        :param certificate_category: **参数解释：** 证书类型 **约束限制：** 不涉及 **取值范围：** - 0: 国际证书 - 1: 国密证书  **默认取值：** 不涉及
+        :type certificate_category: int
+        :param certificates: **参数解释：** 双证书场景下的证书列表 **约束限制：** 不涉及
+        :type certificates: list[:class:`huaweicloudsdkcdn.v2.MultiCertificateBatchVo`]
         """
         
         
@@ -79,6 +87,8 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
         self._certificate = None
         self._certificate_type = None
         self._expiration_time = None
+        self._certificate_category = None
+        self._certificates = None
         self.discriminator = None
 
         self.domain_name = domain_name
@@ -100,12 +110,16 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
             self.certificate_type = certificate_type
         if expiration_time is not None:
             self.expiration_time = expiration_time
+        if certificate_category is not None:
+            self.certificate_category = certificate_category
+        if certificates is not None:
+            self.certificates = certificates
 
     @property
     def domain_name(self):
         r"""Gets the domain_name of this UpdateDomainMultiCertificatesResponseBodyContent.
 
-        域名列表。
+        **参数解释：** 域名列表 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :return: The domain_name of this UpdateDomainMultiCertificatesResponseBodyContent.
         :rtype: str
@@ -116,7 +130,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
     def domain_name(self, domain_name):
         r"""Sets the domain_name of this UpdateDomainMultiCertificatesResponseBodyContent.
 
-        域名列表。
+        **参数解释：** 域名列表 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :param domain_name: The domain_name of this UpdateDomainMultiCertificatesResponseBodyContent.
         :type domain_name: str
@@ -233,7 +247,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
     def cert_name(self):
         r"""Gets the cert_name of this UpdateDomainMultiCertificatesResponseBodyContent.
 
-        证书名称。
+        **参数解释：** 证书名称 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :return: The cert_name of this UpdateDomainMultiCertificatesResponseBodyContent.
         :rtype: str
@@ -244,7 +258,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
     def cert_name(self, cert_name):
         r"""Sets the cert_name of this UpdateDomainMultiCertificatesResponseBodyContent.
 
-        证书名称。
+        **参数解释：** 证书名称 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :param cert_name: The cert_name of this UpdateDomainMultiCertificatesResponseBodyContent.
         :type cert_name: str
@@ -255,7 +269,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
     def certificate(self):
         r"""Gets the certificate of this UpdateDomainMultiCertificatesResponseBodyContent.
 
-        证书内容。
+        **参数解释：** 证书内容 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :return: The certificate of this UpdateDomainMultiCertificatesResponseBodyContent.
         :rtype: str
@@ -266,7 +280,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
     def certificate(self, certificate):
         r"""Sets the certificate of this UpdateDomainMultiCertificatesResponseBodyContent.
 
-        证书内容。
+        **参数解释：** 证书内容 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :param certificate: The certificate of this UpdateDomainMultiCertificatesResponseBodyContent.
         :type certificate: str
@@ -299,7 +313,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
     def expiration_time(self):
         r"""Gets the expiration_time of this UpdateDomainMultiCertificatesResponseBodyContent.
 
-        证书过期时间。
+        **参数解释：** 证书最近过期时间，Unix时间戳格式，单位为毫秒 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :return: The expiration_time of this UpdateDomainMultiCertificatesResponseBodyContent.
         :rtype: int
@@ -310,12 +324,56 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
     def expiration_time(self, expiration_time):
         r"""Sets the expiration_time of this UpdateDomainMultiCertificatesResponseBodyContent.
 
-        证书过期时间。
+        **参数解释：** 证书最近过期时间，Unix时间戳格式，单位为毫秒 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :param expiration_time: The expiration_time of this UpdateDomainMultiCertificatesResponseBodyContent.
         :type expiration_time: int
         """
         self._expiration_time = expiration_time
+
+    @property
+    def certificate_category(self):
+        r"""Gets the certificate_category of this UpdateDomainMultiCertificatesResponseBodyContent.
+
+        **参数解释：** 证书类型 **约束限制：** 不涉及 **取值范围：** - 0: 国际证书 - 1: 国密证书  **默认取值：** 不涉及
+
+        :return: The certificate_category of this UpdateDomainMultiCertificatesResponseBodyContent.
+        :rtype: int
+        """
+        return self._certificate_category
+
+    @certificate_category.setter
+    def certificate_category(self, certificate_category):
+        r"""Sets the certificate_category of this UpdateDomainMultiCertificatesResponseBodyContent.
+
+        **参数解释：** 证书类型 **约束限制：** 不涉及 **取值范围：** - 0: 国际证书 - 1: 国密证书  **默认取值：** 不涉及
+
+        :param certificate_category: The certificate_category of this UpdateDomainMultiCertificatesResponseBodyContent.
+        :type certificate_category: int
+        """
+        self._certificate_category = certificate_category
+
+    @property
+    def certificates(self):
+        r"""Gets the certificates of this UpdateDomainMultiCertificatesResponseBodyContent.
+
+        **参数解释：** 双证书场景下的证书列表 **约束限制：** 不涉及
+
+        :return: The certificates of this UpdateDomainMultiCertificatesResponseBodyContent.
+        :rtype: list[:class:`huaweicloudsdkcdn.v2.MultiCertificateBatchVo`]
+        """
+        return self._certificates
+
+    @certificates.setter
+    def certificates(self, certificates):
+        r"""Sets the certificates of this UpdateDomainMultiCertificatesResponseBodyContent.
+
+        **参数解释：** 双证书场景下的证书列表 **约束限制：** 不涉及
+
+        :param certificates: The certificates of this UpdateDomainMultiCertificatesResponseBodyContent.
+        :type certificates: list[:class:`huaweicloudsdkcdn.v2.MultiCertificateBatchVo`]
+        """
+        self._certificates = certificates
 
     def to_dict(self):
         result = {}

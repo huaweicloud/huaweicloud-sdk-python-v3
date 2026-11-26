@@ -35,11 +35,11 @@ class CreateRuleRequest:
 
         The model defined in huaweicloud sdk
 
-        :param name: **参数解释：** 规则名称 **约束限制：** 不涉及 **取值范围：** 1-50个字符 **默认取值：** 不涉及
+        :param name: **参数解释：** 规则名称 **约束限制：** 不涉及 **取值范围：** - 1-50个字符 - 由中文字符、英文字母、数字及“-”、“_”组成  **默认取值：** 不涉及
         :type name: str
         :param status: **参数解释：** 是否开启规则 **约束限制：** 不涉及 **取值范围：** - on: 开启 - off: 关闭  **默认取值：** 不涉及
         :type status: str
-        :param priority: **参数解释：** 规则的优先级，数值越大，优先级越高 **约束限制：** 优先级不能重复 **取值范围：** 1-100 **默认取值：** 不涉及
+        :param priority: **参数解释：** 规则的优先级，数值越大，优先级越高 **约束限制：** 优先级不能重复 **取值范围：** 1-1000 **默认取值：** 不涉及
         :type priority: int
         :param conditions: 
         :type conditions: :class:`huaweicloudsdkcdn.v2.Conditions`
@@ -66,7 +66,7 @@ class CreateRuleRequest:
     def name(self):
         r"""Gets the name of this CreateRuleRequest.
 
-        **参数解释：** 规则名称 **约束限制：** 不涉及 **取值范围：** 1-50个字符 **默认取值：** 不涉及
+        **参数解释：** 规则名称 **约束限制：** 不涉及 **取值范围：** - 1-50个字符 - 由中文字符、英文字母、数字及“-”、“_”组成  **默认取值：** 不涉及
 
         :return: The name of this CreateRuleRequest.
         :rtype: str
@@ -77,7 +77,7 @@ class CreateRuleRequest:
     def name(self, name):
         r"""Sets the name of this CreateRuleRequest.
 
-        **参数解释：** 规则名称 **约束限制：** 不涉及 **取值范围：** 1-50个字符 **默认取值：** 不涉及
+        **参数解释：** 规则名称 **约束限制：** 不涉及 **取值范围：** - 1-50个字符 - 由中文字符、英文字母、数字及“-”、“_”组成  **默认取值：** 不涉及
 
         :param name: The name of this CreateRuleRequest.
         :type name: str
@@ -110,7 +110,7 @@ class CreateRuleRequest:
     def priority(self):
         r"""Gets the priority of this CreateRuleRequest.
 
-        **参数解释：** 规则的优先级，数值越大，优先级越高 **约束限制：** 优先级不能重复 **取值范围：** 1-100 **默认取值：** 不涉及
+        **参数解释：** 规则的优先级，数值越大，优先级越高 **约束限制：** 优先级不能重复 **取值范围：** 1-1000 **默认取值：** 不涉及
 
         :return: The priority of this CreateRuleRequest.
         :rtype: int
@@ -121,7 +121,7 @@ class CreateRuleRequest:
     def priority(self, priority):
         r"""Sets the priority of this CreateRuleRequest.
 
-        **参数解释：** 规则的优先级，数值越大，优先级越高 **约束限制：** 优先级不能重复 **取值范围：** 1-100 **默认取值：** 不涉及
+        **参数解释：** 规则的优先级，数值越大，优先级越高 **约束限制：** 优先级不能重复 **取值范围：** 1-1000 **默认取值：** 不涉及
 
         :param priority: The priority of this CreateRuleRequest.
         :type priority: int

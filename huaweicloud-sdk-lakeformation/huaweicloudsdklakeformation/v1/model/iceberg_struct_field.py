@@ -21,7 +21,8 @@ class IcebergStructField:
         'type_json': 'str',
         'required': 'bool',
         'doc': 'str',
-        'write_default': 'str'
+        'write_default': 'str',
+        'initial_default': 'str'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class IcebergStructField:
         'type_json': 'type_json',
         'required': 'required',
         'doc': 'doc',
-        'write_default': 'write_default'
+        'write_default': 'write_default',
+        'initial_default': 'initial_default'
     }
 
-    def __init__(self, id=None, name=None, type=None, type_json=None, required=None, doc=None, write_default=None):
+    def __init__(self, id=None, name=None, type=None, type_json=None, required=None, doc=None, write_default=None, initial_default=None):
         r"""IcebergStructField
 
         The model defined in huaweicloud sdk
@@ -53,6 +55,8 @@ class IcebergStructField:
         :type doc: str
         :param write_default: 字段写入默认值, 在每次写入操作时生效，覆盖显式写入的null值。
         :type write_default: str
+        :param initial_default: 字段初始默认值, 用于为列创建前已存在的行返回的值，设置后不可更改。仅在Iceberg format-version 3及以上版本支持。
+        :type initial_default: str
         """
         
         
@@ -64,6 +68,7 @@ class IcebergStructField:
         self._required = None
         self._doc = None
         self._write_default = None
+        self._initial_default = None
         self.discriminator = None
 
         self.id = id
@@ -76,6 +81,8 @@ class IcebergStructField:
             self.doc = doc
         if write_default is not None:
             self.write_default = write_default
+        if initial_default is not None:
+            self.initial_default = initial_default
 
     @property
     def id(self):
@@ -230,6 +237,28 @@ class IcebergStructField:
         :type write_default: str
         """
         self._write_default = write_default
+
+    @property
+    def initial_default(self):
+        r"""Gets the initial_default of this IcebergStructField.
+
+        字段初始默认值, 用于为列创建前已存在的行返回的值，设置后不可更改。仅在Iceberg format-version 3及以上版本支持。
+
+        :return: The initial_default of this IcebergStructField.
+        :rtype: str
+        """
+        return self._initial_default
+
+    @initial_default.setter
+    def initial_default(self, initial_default):
+        r"""Sets the initial_default of this IcebergStructField.
+
+        字段初始默认值, 用于为列创建前已存在的行返回的值，设置后不可更改。仅在Iceberg format-version 3及以上版本支持。
+
+        :param initial_default: The initial_default of this IcebergStructField.
+        :type initial_default: str
+        """
+        self._initial_default = initial_default
 
     def to_dict(self):
         result = {}

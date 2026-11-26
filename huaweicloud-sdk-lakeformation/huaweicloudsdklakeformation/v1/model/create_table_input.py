@@ -32,7 +32,9 @@ class CreateTableInput:
         'view_original_text': 'str',
         'ignore_obs_checked': 'bool',
         'data_statistic_enable': 'bool',
-        'create_open_table_format_input': 'CreateOpenTableFormatInput'
+        'create_open_table_format_input': 'CreateOpenTableFormatInput',
+        'external_table_id': 'str',
+        'owner_auth_source_type': 'str'
     }
 
     attribute_map = {
@@ -53,10 +55,12 @@ class CreateTableInput:
         'view_original_text': 'view_original_text',
         'ignore_obs_checked': 'ignore_obs_checked',
         'data_statistic_enable': 'data_statistic_enable',
-        'create_open_table_format_input': 'create_open_table_format_input'
+        'create_open_table_format_input': 'create_open_table_format_input',
+        'external_table_id': 'external_table_id',
+        'owner_auth_source_type': 'owner_auth_source_type'
     }
 
-    def __init__(self, table_name=None, table_format=None, table_type=None, owner=None, owner_type=None, create_time=None, last_access_time=None, last_analyzed_time=None, partition_keys=None, retention=None, storage_descriptor=None, parameters=None, comments=None, view_expanded_text=None, view_original_text=None, ignore_obs_checked=None, data_statistic_enable=None, create_open_table_format_input=None):
+    def __init__(self, table_name=None, table_format=None, table_type=None, owner=None, owner_type=None, create_time=None, last_access_time=None, last_analyzed_time=None, partition_keys=None, retention=None, storage_descriptor=None, parameters=None, comments=None, view_expanded_text=None, view_original_text=None, ignore_obs_checked=None, data_statistic_enable=None, create_open_table_format_input=None, external_table_id=None, owner_auth_source_type=None):
         r"""CreateTableInput
 
         The model defined in huaweicloud sdk
@@ -97,6 +101,10 @@ class CreateTableInput:
         :type data_statistic_enable: bool
         :param create_open_table_format_input: 
         :type create_open_table_format_input: :class:`huaweicloudsdklakeformation.v1.CreateOpenTableFormatInput`
+        :param external_table_id: 用户端表id，创建时指定，不可修改。
+        :type external_table_id: str
+        :param owner_auth_source_type: 所有者来源：IAM-云用户、SAML-联邦、LDAP-ld用户、LOCAL-本地用户、AGENTTENANT-委托、OTHER-其它。LakeFormation服务分为一期和二期，一期响应Body无该参数。
+        :type owner_auth_source_type: str
         """
         
         
@@ -119,6 +127,8 @@ class CreateTableInput:
         self._ignore_obs_checked = None
         self._data_statistic_enable = None
         self._create_open_table_format_input = None
+        self._external_table_id = None
+        self._owner_auth_source_type = None
         self.discriminator = None
 
         self.table_name = table_name
@@ -153,6 +163,10 @@ class CreateTableInput:
             self.data_statistic_enable = data_statistic_enable
         if create_open_table_format_input is not None:
             self.create_open_table_format_input = create_open_table_format_input
+        if external_table_id is not None:
+            self.external_table_id = external_table_id
+        if owner_auth_source_type is not None:
+            self.owner_auth_source_type = owner_auth_source_type
 
     @property
     def table_name(self):
@@ -541,6 +555,50 @@ class CreateTableInput:
         :type create_open_table_format_input: :class:`huaweicloudsdklakeformation.v1.CreateOpenTableFormatInput`
         """
         self._create_open_table_format_input = create_open_table_format_input
+
+    @property
+    def external_table_id(self):
+        r"""Gets the external_table_id of this CreateTableInput.
+
+        用户端表id，创建时指定，不可修改。
+
+        :return: The external_table_id of this CreateTableInput.
+        :rtype: str
+        """
+        return self._external_table_id
+
+    @external_table_id.setter
+    def external_table_id(self, external_table_id):
+        r"""Sets the external_table_id of this CreateTableInput.
+
+        用户端表id，创建时指定，不可修改。
+
+        :param external_table_id: The external_table_id of this CreateTableInput.
+        :type external_table_id: str
+        """
+        self._external_table_id = external_table_id
+
+    @property
+    def owner_auth_source_type(self):
+        r"""Gets the owner_auth_source_type of this CreateTableInput.
+
+        所有者来源：IAM-云用户、SAML-联邦、LDAP-ld用户、LOCAL-本地用户、AGENTTENANT-委托、OTHER-其它。LakeFormation服务分为一期和二期，一期响应Body无该参数。
+
+        :return: The owner_auth_source_type of this CreateTableInput.
+        :rtype: str
+        """
+        return self._owner_auth_source_type
+
+    @owner_auth_source_type.setter
+    def owner_auth_source_type(self, owner_auth_source_type):
+        r"""Sets the owner_auth_source_type of this CreateTableInput.
+
+        所有者来源：IAM-云用户、SAML-联邦、LDAP-ld用户、LOCAL-本地用户、AGENTTENANT-委托、OTHER-其它。LakeFormation服务分为一期和二期，一期响应Body无该参数。
+
+        :param owner_auth_source_type: The owner_auth_source_type of this CreateTableInput.
+        :type owner_auth_source_type: str
+        """
+        self._owner_auth_source_type = owner_auth_source_type
 
     def to_dict(self):
         result = {}

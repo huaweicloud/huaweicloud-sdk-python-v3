@@ -35,7 +35,7 @@ class UpdateRuleStatusRequest:
         :type rule_id: str
         :param status: **参数解释：** 是否开启规则 **约束限制：** 不涉及 **取值范围：** - on: 开启 - off: 关闭  **默认取值：** 不涉及
         :type status: str
-        :param priority: **参数解释：** 此条规则的优先级，数值越大，优先级越高 **约束限制：** 优先级不能相同 **取值范围：** 1-100 **默认取值：** 不涉及
+        :param priority: **参数解释：** 此条规则的优先级，数值越大，优先级越高 **约束限制：** 优先级不能相同 **取值范围：** 1-1000 **默认取值：** 不涉及
         :type priority: int
         """
         
@@ -100,7 +100,7 @@ class UpdateRuleStatusRequest:
     def priority(self):
         r"""Gets the priority of this UpdateRuleStatusRequest.
 
-        **参数解释：** 此条规则的优先级，数值越大，优先级越高 **约束限制：** 优先级不能相同 **取值范围：** 1-100 **默认取值：** 不涉及
+        **参数解释：** 此条规则的优先级，数值越大，优先级越高 **约束限制：** 优先级不能相同 **取值范围：** 1-1000 **默认取值：** 不涉及
 
         :return: The priority of this UpdateRuleStatusRequest.
         :rtype: int
@@ -111,7 +111,7 @@ class UpdateRuleStatusRequest:
     def priority(self, priority):
         r"""Sets the priority of this UpdateRuleStatusRequest.
 
-        **参数解释：** 此条规则的优先级，数值越大，优先级越高 **约束限制：** 优先级不能相同 **取值范围：** 1-100 **默认取值：** 不涉及
+        **参数解释：** 此条规则的优先级，数值越大，优先级越高 **约束限制：** 优先级不能相同 **取值范围：** 1-1000 **默认取值：** 不涉及
 
         :param priority: The priority of this UpdateRuleStatusRequest.
         :type priority: int

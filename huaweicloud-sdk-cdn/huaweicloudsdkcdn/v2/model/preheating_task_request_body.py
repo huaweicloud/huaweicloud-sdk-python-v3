@@ -31,7 +31,7 @@ class PreheatingTaskRequestBody:
 
         :param zh_url_encode: 是否对url中的中文字符进行编码后预热，false代表不开启，true代表开启，开启后仅预热转码后的URL。
         :type zh_url_encode: bool
-        :param urls: 需要预热的URL必须带有“http://”或“https://”，多个URL用逗号分隔（\&quot;url1\&quot;, \&quot;url2\&quot;），目前不支持对目录的预热，单个url的长度限制为4096字符,单次最多输入1000个url。
+        :param urls: 需要预热的URL必须带有“http://”或“https://”，多个URL用逗号分隔（\&quot;url1\&quot;,\&quot;url2\&quot;），目前不支持对目录的预热，单个url的长度限制为4096字符,单次最多输入1000个url。
         :type urls: list[str]
         """
         
@@ -71,7 +71,7 @@ class PreheatingTaskRequestBody:
     def urls(self):
         r"""Gets the urls of this PreheatingTaskRequestBody.
 
-        需要预热的URL必须带有“http://”或“https://”，多个URL用逗号分隔（\"url1\", \"url2\"），目前不支持对目录的预热，单个url的长度限制为4096字符,单次最多输入1000个url。
+        需要预热的URL必须带有“http://”或“https://”，多个URL用逗号分隔（\"url1\",\"url2\"），目前不支持对目录的预热，单个url的长度限制为4096字符,单次最多输入1000个url。
 
         :return: The urls of this PreheatingTaskRequestBody.
         :rtype: list[str]
@@ -82,7 +82,7 @@ class PreheatingTaskRequestBody:
     def urls(self, urls):
         r"""Sets the urls of this PreheatingTaskRequestBody.
 
-        需要预热的URL必须带有“http://”或“https://”，多个URL用逗号分隔（\"url1\", \"url2\"），目前不支持对目录的预热，单个url的长度限制为4096字符,单次最多输入1000个url。
+        需要预热的URL必须带有“http://”或“https://”，多个URL用逗号分隔（\"url1\",\"url2\"），目前不支持对目录的预热，单个url的长度限制为4096字符,单次最多输入1000个url。
 
         :param urls: The urls of this PreheatingTaskRequestBody.
         :type urls: list[str]

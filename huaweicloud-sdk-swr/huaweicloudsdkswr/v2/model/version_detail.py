@@ -47,7 +47,7 @@ class VersionDetail:
         :type status: str
         :param updated: 版本发布时间，要求用UTC时间表示。如v1发布的时间2014-06-28T12:20:21Z。
         :type updated: str
-        :param min_version: 若该版本API 支持微版本，则填支持的最小微版本号， 如果不支持微版本，则填空。
+        :param min_version: 若该版本API 支持微版本，则填支持的最小微版本号。当前版本为2.0。
         :type min_version: str
         """
         
@@ -178,7 +178,7 @@ class VersionDetail:
     def min_version(self):
         r"""Gets the min_version of this VersionDetail.
 
-        若该版本API 支持微版本，则填支持的最小微版本号， 如果不支持微版本，则填空。
+        若该版本API 支持微版本，则填支持的最小微版本号。当前版本为2.0。
 
         :return: The min_version of this VersionDetail.
         :rtype: str
@@ -189,7 +189,7 @@ class VersionDetail:
     def min_version(self, min_version):
         r"""Sets the min_version of this VersionDetail.
 
-        若该版本API 支持微版本，则填支持的最小微版本号， 如果不支持微版本，则填空。
+        若该版本API 支持微版本，则填支持的最小微版本号。当前版本为2.0。
 
         :param min_version: The min_version of this VersionDetail.
         :type min_version: str

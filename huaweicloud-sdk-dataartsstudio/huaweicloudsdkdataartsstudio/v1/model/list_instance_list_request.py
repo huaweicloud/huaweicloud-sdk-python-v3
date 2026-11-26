@@ -49,17 +49,17 @@ class ListInstanceListRequest:
         :type workspace: str
         :param dlm_type: 数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
         :type dlm_type: str
-        :param api_id: api编号。
+        :param api_id: API编号。
         :type api_id: str
-        :param action: api操作。
+        :param action: API操作。
         :type action: str
-        :param show_all: 全部展示(包括不可执行当前操作的实例)。
+        :param show_all: 全部展示（包括不可执行当前操作的实例）。
         :type show_all: bool
-        :param check_status: 校验api状态。
+        :param check_status: 校验API状态。
         :type check_status: bool
-        :param check_debug: 校验api调试状态。
+        :param check_debug: 校验API调试状态。
         :type check_debug: bool
-        :param app_id: app编号(用于判断授权操作app可选的实例)。
+        :param app_id: APP编号（用于判断授权操作APP可选的实例）。
         :type app_id: str
         :param limit: limit。
         :type limit: int
@@ -147,7 +147,7 @@ class ListInstanceListRequest:
     def api_id(self):
         r"""Gets the api_id of this ListInstanceListRequest.
 
-        api编号。
+        API编号。
 
         :return: The api_id of this ListInstanceListRequest.
         :rtype: str
@@ -158,7 +158,7 @@ class ListInstanceListRequest:
     def api_id(self, api_id):
         r"""Sets the api_id of this ListInstanceListRequest.
 
-        api编号。
+        API编号。
 
         :param api_id: The api_id of this ListInstanceListRequest.
         :type api_id: str
@@ -169,7 +169,7 @@ class ListInstanceListRequest:
     def action(self):
         r"""Gets the action of this ListInstanceListRequest.
 
-        api操作。
+        API操作。
 
         :return: The action of this ListInstanceListRequest.
         :rtype: str
@@ -180,7 +180,7 @@ class ListInstanceListRequest:
     def action(self, action):
         r"""Sets the action of this ListInstanceListRequest.
 
-        api操作。
+        API操作。
 
         :param action: The action of this ListInstanceListRequest.
         :type action: str
@@ -191,7 +191,7 @@ class ListInstanceListRequest:
     def show_all(self):
         r"""Gets the show_all of this ListInstanceListRequest.
 
-        全部展示(包括不可执行当前操作的实例)。
+        全部展示（包括不可执行当前操作的实例）。
 
         :return: The show_all of this ListInstanceListRequest.
         :rtype: bool
@@ -202,7 +202,7 @@ class ListInstanceListRequest:
     def show_all(self, show_all):
         r"""Sets the show_all of this ListInstanceListRequest.
 
-        全部展示(包括不可执行当前操作的实例)。
+        全部展示（包括不可执行当前操作的实例）。
 
         :param show_all: The show_all of this ListInstanceListRequest.
         :type show_all: bool
@@ -213,7 +213,7 @@ class ListInstanceListRequest:
     def check_status(self):
         r"""Gets the check_status of this ListInstanceListRequest.
 
-        校验api状态。
+        校验API状态。
 
         :return: The check_status of this ListInstanceListRequest.
         :rtype: bool
@@ -224,7 +224,7 @@ class ListInstanceListRequest:
     def check_status(self, check_status):
         r"""Sets the check_status of this ListInstanceListRequest.
 
-        校验api状态。
+        校验API状态。
 
         :param check_status: The check_status of this ListInstanceListRequest.
         :type check_status: bool
@@ -235,7 +235,7 @@ class ListInstanceListRequest:
     def check_debug(self):
         r"""Gets the check_debug of this ListInstanceListRequest.
 
-        校验api调试状态。
+        校验API调试状态。
 
         :return: The check_debug of this ListInstanceListRequest.
         :rtype: bool
@@ -246,7 +246,7 @@ class ListInstanceListRequest:
     def check_debug(self, check_debug):
         r"""Sets the check_debug of this ListInstanceListRequest.
 
-        校验api调试状态。
+        校验API调试状态。
 
         :param check_debug: The check_debug of this ListInstanceListRequest.
         :type check_debug: bool
@@ -257,7 +257,7 @@ class ListInstanceListRequest:
     def app_id(self):
         r"""Gets the app_id of this ListInstanceListRequest.
 
-        app编号(用于判断授权操作app可选的实例)。
+        APP编号（用于判断授权操作APP可选的实例）。
 
         :return: The app_id of this ListInstanceListRequest.
         :rtype: str
@@ -268,7 +268,7 @@ class ListInstanceListRequest:
     def app_id(self, app_id):
         r"""Sets the app_id of this ListInstanceListRequest.
 
-        app编号(用于判断授权操作app可选的实例)。
+        APP编号（用于判断授权操作APP可选的实例）。
 
         :param app_id: The app_id of this ListInstanceListRequest.
         :type app_id: str

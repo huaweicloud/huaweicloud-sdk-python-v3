@@ -20,6 +20,7 @@ class CreateReplicationPolicyRequestBody:
         'src_registry': 'ReplicationRegistry',
         'dest_registry': 'ReplicationRegistry',
         'dest_namespace': 'str',
+        'dest_namespace_replace_count': 'int',
         'filters': 'list[Filter]',
         'repo_scope_mode': 'str',
         'trigger': 'TriggerConfig',
@@ -33,6 +34,7 @@ class CreateReplicationPolicyRequestBody:
         'src_registry': 'src_registry',
         'dest_registry': 'dest_registry',
         'dest_namespace': 'dest_namespace',
+        'dest_namespace_replace_count': 'dest_namespace_replace_count',
         'filters': 'filters',
         'repo_scope_mode': 'repo_scope_mode',
         'trigger': 'trigger',
@@ -40,7 +42,7 @@ class CreateReplicationPolicyRequestBody:
         'enabled': 'enabled'
     }
 
-    def __init__(self, name=None, description=None, src_registry=None, dest_registry=None, dest_namespace=None, filters=None, repo_scope_mode=None, trigger=None, override=None, enabled=None):
+    def __init__(self, name=None, description=None, src_registry=None, dest_registry=None, dest_namespace=None, dest_namespace_replace_count=None, filters=None, repo_scope_mode=None, trigger=None, override=None, enabled=None):
         r"""CreateReplicationPolicyRequestBody
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class CreateReplicationPolicyRequestBody:
         :type dest_registry: :class:`huaweicloudsdkswr.v2.ReplicationRegistry`
         :param dest_namespace: 目标命名空间名，默认值为空值
         :type dest_namespace: str
+        :param dest_namespace_replace_count: 在镜像复制过程中，针对多路径镜像名称，可通过设置替换层级来优化仓库目录结构。支持的值为-1,0,1,2,3。dest_namespace_replace_count不传值，则默认为-1。假设原始镜像路径为 a/b/c/d/img，其中a为原始镜像的命名空间名称，目标命名空间为 ns，不同替换级别的效果如下： -1：替换所有级：&#39;a/b/c/d/img&#39; -&gt; &#39;ns/img&#39; 0：无替换：&#39;a/b/c/d/img&#39; -&gt; &#39;ns/a/b/c/d/img&#39; 1：替换1级：&#39;a/b/c/d/img&#39; -&gt; &#39;ns/b/c/d/img&#39; 2：替换2级：&#39;a/b/c/d/img&#39; -&gt; &#39;ns/c/d/img&#39; 3：替换3级：&#39;a/b/c/d/img&#39; -&gt; &#39;ns/d/img&#39;
+        :type dest_namespace_replace_count: int
         :param filters: 过滤器（目前只支持harbor类型的仓库）
         :type filters: list[:class:`huaweicloudsdkswr.v2.Filter`]
         :param repo_scope_mode: repo的选择方式，regular，selection
@@ -74,6 +78,7 @@ class CreateReplicationPolicyRequestBody:
         self._src_registry = None
         self._dest_registry = None
         self._dest_namespace = None
+        self._dest_namespace_replace_count = None
         self._filters = None
         self._repo_scope_mode = None
         self._trigger = None
@@ -90,6 +95,8 @@ class CreateReplicationPolicyRequestBody:
             self.dest_registry = dest_registry
         if dest_namespace is not None:
             self.dest_namespace = dest_namespace
+        if dest_namespace_replace_count is not None:
+            self.dest_namespace_replace_count = dest_namespace_replace_count
         self.filters = filters
         self.repo_scope_mode = repo_scope_mode
         self.trigger = trigger
@@ -198,6 +205,28 @@ class CreateReplicationPolicyRequestBody:
         :type dest_namespace: str
         """
         self._dest_namespace = dest_namespace
+
+    @property
+    def dest_namespace_replace_count(self):
+        r"""Gets the dest_namespace_replace_count of this CreateReplicationPolicyRequestBody.
+
+        在镜像复制过程中，针对多路径镜像名称，可通过设置替换层级来优化仓库目录结构。支持的值为-1,0,1,2,3。dest_namespace_replace_count不传值，则默认为-1。假设原始镜像路径为 a/b/c/d/img，其中a为原始镜像的命名空间名称，目标命名空间为 ns，不同替换级别的效果如下： -1：替换所有级：'a/b/c/d/img' -> 'ns/img' 0：无替换：'a/b/c/d/img' -> 'ns/a/b/c/d/img' 1：替换1级：'a/b/c/d/img' -> 'ns/b/c/d/img' 2：替换2级：'a/b/c/d/img' -> 'ns/c/d/img' 3：替换3级：'a/b/c/d/img' -> 'ns/d/img'
+
+        :return: The dest_namespace_replace_count of this CreateReplicationPolicyRequestBody.
+        :rtype: int
+        """
+        return self._dest_namespace_replace_count
+
+    @dest_namespace_replace_count.setter
+    def dest_namespace_replace_count(self, dest_namespace_replace_count):
+        r"""Sets the dest_namespace_replace_count of this CreateReplicationPolicyRequestBody.
+
+        在镜像复制过程中，针对多路径镜像名称，可通过设置替换层级来优化仓库目录结构。支持的值为-1,0,1,2,3。dest_namespace_replace_count不传值，则默认为-1。假设原始镜像路径为 a/b/c/d/img，其中a为原始镜像的命名空间名称，目标命名空间为 ns，不同替换级别的效果如下： -1：替换所有级：'a/b/c/d/img' -> 'ns/img' 0：无替换：'a/b/c/d/img' -> 'ns/a/b/c/d/img' 1：替换1级：'a/b/c/d/img' -> 'ns/b/c/d/img' 2：替换2级：'a/b/c/d/img' -> 'ns/c/d/img' 3：替换3级：'a/b/c/d/img' -> 'ns/d/img'
+
+        :param dest_namespace_replace_count: The dest_namespace_replace_count of this CreateReplicationPolicyRequestBody.
+        :type dest_namespace_replace_count: int
+        """
+        self._dest_namespace_replace_count = dest_namespace_replace_count
 
     @property
     def filters(self):

@@ -31,7 +31,7 @@ class ShowStatsConfigsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param config_type: **参数解释：** 配置类型 **约束限制：** 不涉及 **取值范围：** - 0：热点统计 - 1：ces上报 **默认取值：** 不涉及
+        :param config_type: **参数解释：** 配置类型 **约束限制：** 不涉及 **取值范围：** - 0：热点统计 - 1：ces上报  **默认取值：** 不涉及
         :type config_type: int
         :param limit: **参数解释：** 分页查询每页的数量 **约束限制：** 不涉及 **取值范围：** 1-1000 **默认取值：** 10
         :type limit: int
@@ -56,7 +56,7 @@ class ShowStatsConfigsRequest:
     def config_type(self):
         r"""Gets the config_type of this ShowStatsConfigsRequest.
 
-        **参数解释：** 配置类型 **约束限制：** 不涉及 **取值范围：** - 0：热点统计 - 1：ces上报 **默认取值：** 不涉及
+        **参数解释：** 配置类型 **约束限制：** 不涉及 **取值范围：** - 0：热点统计 - 1：ces上报  **默认取值：** 不涉及
 
         :return: The config_type of this ShowStatsConfigsRequest.
         :rtype: int
@@ -67,7 +67,7 @@ class ShowStatsConfigsRequest:
     def config_type(self, config_type):
         r"""Sets the config_type of this ShowStatsConfigsRequest.
 
-        **参数解释：** 配置类型 **约束限制：** 不涉及 **取值范围：** - 0：热点统计 - 1：ces上报 **默认取值：** 不涉及
+        **参数解释：** 配置类型 **约束限制：** 不涉及 **取值范围：** - 0：热点统计 - 1：ces上报  **默认取值：** 不涉及
 
         :param config_type: The config_type of this ShowStatsConfigsRequest.
         :type config_type: int

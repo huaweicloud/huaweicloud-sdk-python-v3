@@ -2445,6 +2445,146 @@ class ModelArtsClient(Client):
 
         return http_info
 
+    def create_asset(self, request):
+        r"""创建资产
+
+        创建资产接口用于在ModelArts平台上创建一个新的资产，支持创建独立资产或基于父资产派生新版本，并支持加入已有资产组进行版本管理。
+        该接口适用于以下场景：当用户需要将自定义模型、数据集、算子等资产上传至平台并进行统一管理时，可以通过此接口创建资产。使用该接口的前提条件是用户已具备项目访问权限，并已准备好资产的元数据信息及存储路径。平台将在校验资产类型、版本唯一性及数据合法性后，将资产添加到资产列表中并返回资产ID。若资产信息不完整、版本冲突或用户无权限操作，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateAsset
+        :type request: :class:`huaweicloudsdkmodelarts.v1.CreateAssetRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.CreateAssetResponse`
+        """
+        http_info = self._create_asset_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_asset_invoker(self, request):
+        http_info = self._create_asset_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_asset_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/assets",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAssetResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'workspace_id' in local_var_params:
+            query_params.append(('workspace_id', local_var_params['workspace_id']))
+
+        header_params = {}
+        if 'x_storage_token' in local_var_params:
+            header_params['X-Storage-Token'] = local_var_params['x_storage_token']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_asset_file_down_load_path(self, request):
+        r"""获取资产文件临时下载路径
+
+        获取资产文件临时下载路径接口用于在ModelArts平台上为指定资产生成临时签名的文件下载路径。
+        该接口适用于以下场景：当用户需要下载资产关联的文件资源时，可以通过此接口获取临时有效的下载链接。使用该接口的前提条件是用户已具备项目访问权限，并已知目标资产的ID。若资产不存在或用户无权限操作，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateAssetFileDownLoadPath
+        :type request: :class:`huaweicloudsdkmodelarts.v1.CreateAssetFileDownLoadPathRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.CreateAssetFileDownLoadPathResponse`
+        """
+        http_info = self._create_asset_file_down_load_path_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_asset_file_down_load_path_invoker(self, request):
+        http_info = self._create_asset_file_down_load_path_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_asset_file_down_load_path_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/assets/{asset_id}/resources/file-path/sign",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAssetFileDownLoadPathResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'asset_id' in local_var_params:
+            path_params['asset_id'] = local_var_params['asset_id']
+
+        query_params = []
+        if 'workspace_id' in local_var_params:
+            query_params.append(('workspace_id', local_var_params['workspace_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_auth_grant(self, request):
         r"""一键授权或重置授权
 
@@ -4144,6 +4284,76 @@ class ModelArtsClient(Client):
             path_params['algorithm_id'] = local_var_params['algorithm_id']
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_asset(self, request):
+        r"""删除资产
+
+        删除资产接口用于在ModelArts平台上删除指定的资产，支持通过forceDelete参数对数据集类型资产进行强制删除。
+        该接口适用于以下场景：当用户需要清理不再使用的资产或释放存储资源时，可以通过此接口进行删除。使用该接口的前提条件是用户已具备项目访问权限，并已知目标资产的ID。平台将在校验资产存在性、归属权限及使用状态后执行禁用删除操作并返回资产ID。若资产不存在、为预置资产不可删除、模型资产仍在使用中或用户无权限操作，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteAsset
+        :type request: :class:`huaweicloudsdkmodelarts.v1.DeleteAssetRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.DeleteAssetResponse`
+        """
+        http_info = self._delete_asset_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_asset_invoker(self, request):
+        http_info = self._delete_asset_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_asset_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/assets/{asset_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAssetResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'asset_id' in local_var_params:
+            path_params['asset_id'] = local_var_params['asset_id']
+
+        query_params = []
+        if 'workspace_id' in local_var_params:
+            query_params.append(('workspace_id', local_var_params['workspace_id']))
+        if 'force_delete' in local_var_params:
+            query_params.append(('force_delete', local_var_params['force_delete']))
 
         header_params = {}
 
@@ -6818,6 +7028,309 @@ class ModelArtsClient(Client):
         path_params = {}
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_asset(self, request):
+        r"""查询资产列表
+
+        查询资产列表接口用于在ModelArts平台上查询指定项目下的资产列表。
+        该接口适用于以下场景：当用户需要在资产管理浏览、检索和管理资产时，可以通过此接口按需筛选所需资产。使用该接口的前提条件是用户已具备项目访问权限。平台将根据传入的查询条件返回符合条件的资产详情列表及总数。若请求参数格式错误或用户无权限操作，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListAsset
+        :type request: :class:`huaweicloudsdkmodelarts.v1.ListAssetRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.ListAssetResponse`
+        """
+        http_info = self._list_asset_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_asset_invoker(self, request):
+        http_info = self._list_asset_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_asset_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/assets",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAssetResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'workspace_id' in local_var_params:
+            query_params.append(('workspace_id', local_var_params['workspace_id']))
+        if 'asset_name' in local_var_params:
+            query_params.append(('asset_name', local_var_params['asset_name']))
+        if 'asset_type' in local_var_params:
+            query_params.append(('asset_type', local_var_params['asset_type']))
+            collection_formats['asset_type'] = 'csv'
+        if 'asset_source' in local_var_params:
+            query_params.append(('asset_source', local_var_params['asset_source']))
+        if 'asset_source_type' in local_var_params:
+            query_params.append(('asset_source_type', local_var_params['asset_source_type']))
+        if 'asset_code' in local_var_params:
+            query_params.append(('asset_code', local_var_params['asset_code']))
+        if 'asset_version' in local_var_params:
+            query_params.append(('asset_version', local_var_params['asset_version']))
+        if 'asset_group_id' in local_var_params:
+            query_params.append(('asset_group_id', local_var_params['asset_group_id']))
+        if 'filter_all_version' in local_var_params:
+            query_params.append(('filter_all_version', local_var_params['filter_all_version']))
+        if 'support_actions' in local_var_params:
+            query_params.append(('support_actions', local_var_params['support_actions']))
+            collection_formats['support_actions'] = 'csv'
+        if 'tag' in local_var_params:
+            query_params.append(('tag', local_var_params['tag']))
+            collection_formats['tag'] = 'csv'
+        if 'is_mine' in local_var_params:
+            query_params.append(('is_mine', local_var_params['is_mine']))
+        if 'with_actions' in local_var_params:
+            query_params.append(('with_actions', local_var_params['with_actions']))
+        if 'asset_series' in local_var_params:
+            query_params.append(('asset_series', local_var_params['asset_series']))
+        if 'asset_capabilities' in local_var_params:
+            query_params.append(('asset_capabilities', local_var_params['asset_capabilities']))
+            collection_formats['asset_capabilities'] = 'csv'
+        if 'asset_scenes' in local_var_params:
+            query_params.append(('asset_scenes', local_var_params['asset_scenes']))
+            collection_formats['asset_scenes'] = 'csv'
+        if 'root_asset_id' in local_var_params:
+            query_params.append(('root_asset_id', local_var_params['root_asset_id']))
+        if 'parent_asset_id' in local_var_params:
+            query_params.append(('parent_asset_id', local_var_params['parent_asset_id']))
+        if 'is_deleted' in local_var_params:
+            query_params.append(('is_deleted', local_var_params['is_deleted']))
+        if 'asset_ids' in local_var_params:
+            query_params.append(('asset_ids', local_var_params['asset_ids']))
+            collection_formats['asset_ids'] = 'csv'
+        if 'tag_mode' in local_var_params:
+            query_params.append(('tag_mode', local_var_params['tag_mode']))
+        if 'dataset_usage' in local_var_params:
+            query_params.append(('dataset_usage', local_var_params['dataset_usage']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'dataset_file_formats' in local_var_params:
+            query_params.append(('dataset_file_formats', local_var_params['dataset_file_formats']))
+            collection_formats['dataset_file_formats'] = 'csv'
+        if 'dataset_type' in local_var_params:
+            query_params.append(('dataset_type', local_var_params['dataset_type']))
+        if 'dataset_sub_type' in local_var_params:
+            query_params.append(('dataset_sub_type', local_var_params['dataset_sub_type']))
+        if 'dataset_schema_format' in local_var_params:
+            query_params.append(('dataset_schema_format', local_var_params['dataset_schema_format']))
+        if 'creator' in local_var_params:
+            query_params.append(('creator', local_var_params['creator']))
+        if 'data_source_id' in local_var_params:
+            query_params.append(('data_source_id', local_var_params['data_source_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_asset_file(self, request):
+        r"""查询数据集文件列表
+
+        查询数据集文件列表接口用于在ModelArts平台上获取指定资产关联的文件列表信息。
+        该接口适用于以下场景：当用户需要浏览或检索某一资产下的文件资源时，可以通过此接口分页查询文件列表。使用该接口的前提条件是用户已具备项目访问权限，并已知目标资产的ID。若资产不存在或用户无权限操作，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListAssetFile
+        :type request: :class:`huaweicloudsdkmodelarts.v1.ListAssetFileRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.ListAssetFileResponse`
+        """
+        http_info = self._list_asset_file_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_asset_file_invoker(self, request):
+        http_info = self._list_asset_file_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_asset_file_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/assets/{asset_id}/resources/file-path",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAssetFileResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'asset_id' in local_var_params:
+            path_params['asset_id'] = local_var_params['asset_id']
+
+        query_params = []
+        if 'workspace_id' in local_var_params:
+            query_params.append(('workspace_id', local_var_params['workspace_id']))
+        if 'prefix' in local_var_params:
+            query_params.append(('prefix', local_var_params['prefix']))
+        if 'max_keys' in local_var_params:
+            query_params.append(('max_keys', local_var_params['max_keys']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_asset_operation_records(self, request):
+        r"""查询资产操作记录列表
+
+        查询资产操作记录列表接口用于在ModelArts平台上分页查询资产的操作记录信息。
+        该接口适用于以下场景：当用户需要检索和审计资产的操作执行历史时，可以通过此接口按多种条件筛选并分页查询操作记录。使用该接口的前提条件是用户已具备项目访问权限。若用户无权限操作，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListAssetOperationRecords
+        :type request: :class:`huaweicloudsdkmodelarts.v1.ListAssetOperationRecordsRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.ListAssetOperationRecordsResponse`
+        """
+        http_info = self._list_asset_operation_records_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_asset_operation_records_invoker(self, request):
+        http_info = self._list_asset_operation_records_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_asset_operation_records_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/assets/operation-records",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAssetOperationRecordsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'workspace_id' in local_var_params:
+            query_params.append(('workspace_id', local_var_params['workspace_id']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'record_id' in local_var_params:
+            query_params.append(('record_id', local_var_params['record_id']))
+        if 'job_type' in local_var_params:
+            query_params.append(('job_type', local_var_params['job_type']))
+        if 'job_id' in local_var_params:
+            query_params.append(('job_id', local_var_params['job_id']))
+        if 'job_name' in local_var_params:
+            query_params.append(('job_name', local_var_params['job_name']))
+        if 'job_status' in local_var_params:
+            query_params.append(('job_status', local_var_params['job_status']))
+        if 'user_id' in local_var_params:
+            query_params.append(('user_id', local_var_params['user_id']))
+        if 'user_name' in local_var_params:
+            query_params.append(('user_name', local_var_params['user_name']))
+        if 'asset_id' in local_var_params:
+            query_params.append(('asset_id', local_var_params['asset_id']))
+        if 'asset_code' in local_var_params:
+            query_params.append(('asset_code', local_var_params['asset_code']))
+        if 'is_deleted' in local_var_params:
+            query_params.append(('is_deleted', local_var_params['is_deleted']))
 
         header_params = {}
 
@@ -11710,6 +12223,356 @@ class ModelArtsClient(Client):
 
         return http_info
 
+    def show_asset(self, request):
+        r"""查询资产详情
+
+        查询资产详情接口用于在ModelArts平台上获取指定资产的详细信息。
+        该接口适用于以下场景：当用户需要查看某个资产的完整元数据、存储位置、支持的操作及扩展信息时，可以通过此接口获取。使用该接口的前提条件是用户已具备项目访问权限，并已知目标资产的ID。平台将根据资产ID查询并返回资产的详情信息。若资产不存在或用户无权限操作，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowAsset
+        :type request: :class:`huaweicloudsdkmodelarts.v1.ShowAssetRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.ShowAssetResponse`
+        """
+        http_info = self._show_asset_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_asset_invoker(self, request):
+        http_info = self._show_asset_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_asset_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/assets/{asset_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAssetResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'asset_id' in local_var_params:
+            path_params['asset_id'] = local_var_params['asset_id']
+
+        query_params = []
+        if 'workspace_id' in local_var_params:
+            query_params.append(('workspace_id', local_var_params['workspace_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_asset_by_code_and_version(self, request):
+        r"""通过asset code 和asset version查询资产详情
+
+        通过资产编码和版本查询资产详情接口用于在ModelArts平台上根据asset_code和版本asset_version查询指定资产的详细信息。
+        该接口适用于以下场景：当用户已知资产编码和版本但无资产ID时，可以通过此接口获取资产的完整详情及可执行操作。使用该接口的前提条件是用户已具备项目访问权限，并已知目标资产的编码和版本号。平台将根据资产编码和版本查询并返回资产的详情信息。若资产不存在或用户无权限操作，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowAssetByCodeAndVersion
+        :type request: :class:`huaweicloudsdkmodelarts.v1.ShowAssetByCodeAndVersionRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.ShowAssetByCodeAndVersionResponse`
+        """
+        http_info = self._show_asset_by_code_and_version_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_asset_by_code_and_version_invoker(self, request):
+        http_info = self._show_asset_by_code_and_version_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_asset_by_code_and_version_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/assets/{asset_code}/{asset_version}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAssetByCodeAndVersionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'asset_code' in local_var_params:
+            path_params['asset_code'] = local_var_params['asset_code']
+        if 'asset_version' in local_var_params:
+            path_params['asset_version'] = local_var_params['asset_version']
+
+        query_params = []
+        if 'workspace_id' in local_var_params:
+            query_params.append(('workspace_id', local_var_params['workspace_id']))
+        if 'asset_type' in local_var_params:
+            query_params.append(('asset_type', local_var_params['asset_type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_asset_extend_message(self, request):
+        r"""查询README中的yaml内容
+
+        查询资产扩展信息接口用于在ModelArts平台上获取指定资产README文件中的YAML内容。
+        该接口适用于以下场景：当用户需要查看预置资产的扩展元数据信息时，可以通过此接口解析README中的YAML片段并返回。使用该接口的前提条件是用户已具备项目访问权限，并已知目标资产ID。平台将根据资产ID读取对应README文件，解析其中的YAML内容后以JSON格式返回。若资产不存在、资产非预置资产、README文件未找到或用户无权限操作，接口将返回相应的错误信息或空数据。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowAssetExtendMessage
+        :type request: :class:`huaweicloudsdkmodelarts.v1.ShowAssetExtendMessageRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.ShowAssetExtendMessageResponse`
+        """
+        http_info = self._show_asset_extend_message_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_asset_extend_message_invoker(self, request):
+        http_info = self._show_asset_extend_message_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_asset_extend_message_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/assets/{asset_id}/extend-message",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAssetExtendMessageResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'asset_id' in local_var_params:
+            path_params['asset_id'] = local_var_params['asset_id']
+
+        query_params = []
+        if 'workspace_id' in local_var_params:
+            query_params.append(('workspace_id', local_var_params['workspace_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_asset_resource(self, request):
+        r"""查询资产管理resource、doc目录下的内容
+
+        查询资产资源接口用于在ModelArts平台上获取指定资产中resource、doc等目录下的资源文件内容，如说明文档、芯片配置等。
+        该接口适用于以下场景：当用户需要查看资产的附加文档、配置文件或其他静态资源时，可以通过此接口按资源名称获取对应内容。使用该接口的前提条件是用户已具备项目访问权限，并已知目标资产ID及资源文件名称。平台将根据资产ID和资源名称读取对应文件，并按文件类型自动返回相应的内容格式。若资产不存在或用户无权限操作，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowAssetResource
+        :type request: :class:`huaweicloudsdkmodelarts.v1.ShowAssetResourceRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.ShowAssetResourceResponse`
+        """
+        http_info = self._show_asset_resource_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_asset_resource_invoker(self, request):
+        http_info = self._show_asset_resource_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_asset_resource_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/assets/{asset_id}/resources",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAssetResourceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'asset_id' in local_var_params:
+            path_params['asset_id'] = local_var_params['asset_id']
+
+        query_params = []
+        if 'workspace_id' in local_var_params:
+            query_params.append(('workspace_id', local_var_params['workspace_id']))
+        if 'resource_name' in local_var_params:
+            query_params.append(('resource_name', local_var_params['resource_name']))
+        if 'check_locale' in local_var_params:
+            query_params.append(('check_locale', local_var_params['check_locale']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_asset_tags_info(self, request):
+        r"""查询tag列表信息
+
+        查询tag列表信息接口用于在ModelArts平台上查询tag列表信息。
+        该接口适用于以下场景：当用户需要获取某一标签分类下所有标签的层级结构及详细信息时，可以通过此接口查询完整的标签树数据。使用该接口的前提条件是用户已具备项目访问权限，并已知目标标签的类型名称。平台将根据标签类型从对象存储中查询并返回对应的标签树形结构信息，支持多语言展示。若标签资源不存在或用户无权限操作，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowAssetTagsInfo
+        :type request: :class:`huaweicloudsdkmodelarts.v1.ShowAssetTagsInfoRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.ShowAssetTagsInfoResponse`
+        """
+        http_info = self._show_asset_tags_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_asset_tags_info_invoker(self, request):
+        http_info = self._show_asset_tags_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_asset_tags_info_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/assets/tags/{tag_category}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAssetTagsInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'tag_category' in local_var_params:
+            path_params['tag_category'] = local_var_params['tag_category']
+
+        query_params = []
+        if 'workspace_id' in local_var_params:
+            query_params.append(('workspace_id', local_var_params['workspace_id']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_auth_grant(self, request):
         r"""查询委托授权状态
 
@@ -15999,6 +16862,76 @@ class ModelArtsClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_asset(self, request):
+        r"""更新资产
+
+        更新资产接口用于在ModelArts平台上修改指定资产的属性信息，包括资产名称、描述、系列、能力、启用状态、标签及自定义属性等。
+        该接口适用于以下场景：当用户需要修改已有资产的元数据信息或调整资产状态时，可以通过此接口进行更新。使用该接口的前提条件是用户已具备项目访问权限，并已知目标资产的ID。平台将在校验资产存在性及归属权限后将更新应用到目标资产及其同组资产上。若资产不存在、为预置资产不可修改或用户无权限操作，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateAsset
+        :type request: :class:`huaweicloudsdkmodelarts.v1.UpdateAssetRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.UpdateAssetResponse`
+        """
+        http_info = self._update_asset_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_asset_invoker(self, request):
+        http_info = self._update_asset_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_asset_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/assets/{asset_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAssetResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'asset_id' in local_var_params:
+            path_params['asset_id'] = local_var_params['asset_id']
+
+        query_params = []
+        if 'workspace_id' in local_var_params:
+            query_params.append(('workspace_id', local_var_params['workspace_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
 
         auth_settings = ['ApiTokenAuth']
 

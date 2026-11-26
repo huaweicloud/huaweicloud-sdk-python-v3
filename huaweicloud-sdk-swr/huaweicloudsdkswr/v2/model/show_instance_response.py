@@ -39,7 +39,8 @@ class ShowInstanceResponse(SdkResponse):
         'vpc_cidr': 'str',
         'subnet_name': 'str',
         'subnet_cidr': 'str',
-        'vpcep_service_id': 'str'
+        'vpcep_service_id': 'str',
+        'tags': 'list[ResourceTag]'
     }
 
     attribute_map = {
@@ -66,10 +67,11 @@ class ShowInstanceResponse(SdkResponse):
         'vpc_cidr': 'vpc_cidr',
         'subnet_name': 'subnet_name',
         'subnet_cidr': 'subnet_cidr',
-        'vpcep_service_id': 'vpcep_service_id'
+        'vpcep_service_id': 'vpcep_service_id',
+        'tags': 'tags'
     }
 
-    def __init__(self, id=None, name=None, description=None, vpc_id=None, subnet_id=None, spec=None, version=None, charge_mode=None, access_address=None, created_at=None, updated_at=None, expires_at=None, status=None, obs_bucket_name=None, project_id=None, enterprise_project_id=None, user_def_obs=None, product_id=None, order_id=None, vpc_name=None, vpc_cidr=None, subnet_name=None, subnet_cidr=None, vpcep_service_id=None):
+    def __init__(self, id=None, name=None, description=None, vpc_id=None, subnet_id=None, spec=None, version=None, charge_mode=None, access_address=None, created_at=None, updated_at=None, expires_at=None, status=None, obs_bucket_name=None, project_id=None, enterprise_project_id=None, user_def_obs=None, product_id=None, order_id=None, vpc_name=None, vpc_cidr=None, subnet_name=None, subnet_cidr=None, vpcep_service_id=None, tags=None):
         r"""ShowInstanceResponse
 
         The model defined in huaweicloud sdk
@@ -98,7 +100,7 @@ class ShowInstanceResponse(SdkResponse):
         :type updated_at: str
         :param expires_at: 实例过期时间
         :type expires_at: str
-        :param status: 实例状态
+        :param status: 实例状态 取值范围： - Initial：初始化 - Creating：创建中 - Running：运行中 - Unavailable：不可用 - Frozen：已冻结 - DeploymentAbnormal：部署异常 - PartiallyUnavailable：部分不可用 - CoreDialFailed：核心拨测失败
         :type status: str
         :param obs_bucket_name: obs桶名称
         :type obs_bucket_name: str
@@ -122,6 +124,8 @@ class ShowInstanceResponse(SdkResponse):
         :type subnet_cidr: str
         :param vpcep_service_id: 实例对应的VPC终端节点服务ID
         :type vpcep_service_id: str
+        :param tags: 标签列表
+        :type tags: list[:class:`huaweicloudsdkswr.v2.ResourceTag`]
         """
         
         super().__init__()
@@ -150,6 +154,7 @@ class ShowInstanceResponse(SdkResponse):
         self._subnet_name = None
         self._subnet_cidr = None
         self._vpcep_service_id = None
+        self._tags = None
         self.discriminator = None
 
         if id is not None:
@@ -200,6 +205,8 @@ class ShowInstanceResponse(SdkResponse):
             self.subnet_cidr = subnet_cidr
         if vpcep_service_id is not None:
             self.vpcep_service_id = vpcep_service_id
+        if tags is not None:
+            self.tags = tags
 
     @property
     def id(self):
@@ -469,7 +476,7 @@ class ShowInstanceResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this ShowInstanceResponse.
 
-        实例状态
+        实例状态 取值范围： - Initial：初始化 - Creating：创建中 - Running：运行中 - Unavailable：不可用 - Frozen：已冻结 - DeploymentAbnormal：部署异常 - PartiallyUnavailable：部分不可用 - CoreDialFailed：核心拨测失败
 
         :return: The status of this ShowInstanceResponse.
         :rtype: str
@@ -480,7 +487,7 @@ class ShowInstanceResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this ShowInstanceResponse.
 
-        实例状态
+        实例状态 取值范围： - Initial：初始化 - Creating：创建中 - Running：运行中 - Unavailable：不可用 - Frozen：已冻结 - DeploymentAbnormal：部署异常 - PartiallyUnavailable：部分不可用 - CoreDialFailed：核心拨测失败
 
         :param status: The status of this ShowInstanceResponse.
         :type status: str
@@ -728,6 +735,28 @@ class ShowInstanceResponse(SdkResponse):
         :type vpcep_service_id: str
         """
         self._vpcep_service_id = vpcep_service_id
+
+    @property
+    def tags(self):
+        r"""Gets the tags of this ShowInstanceResponse.
+
+        标签列表
+
+        :return: The tags of this ShowInstanceResponse.
+        :rtype: list[:class:`huaweicloudsdkswr.v2.ResourceTag`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        r"""Sets the tags of this ShowInstanceResponse.
+
+        标签列表
+
+        :param tags: The tags of this ShowInstanceResponse.
+        :type tags: list[:class:`huaweicloudsdkswr.v2.ResourceTag`]
+        """
+        self._tags = tags
 
     def to_dict(self):
         import warnings

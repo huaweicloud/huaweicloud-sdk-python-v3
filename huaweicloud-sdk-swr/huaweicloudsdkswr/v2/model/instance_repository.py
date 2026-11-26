@@ -25,6 +25,7 @@ class InstanceRepository:
         'description': 'str',
         'created_at': 'str',
         'updated_at': 'str',
+        'tags': 'list[ResourceTag]',
         'instance_id': 'str',
         'instance_name': 'str',
         'resource_urn': 'str'
@@ -41,12 +42,13 @@ class InstanceRepository:
         'description': 'description',
         'created_at': 'created_at',
         'updated_at': 'updated_at',
+        'tags': 'tags',
         'instance_id': 'instance_id',
         'instance_name': 'instance_name',
         'resource_urn': 'resource_urn'
     }
 
-    def __init__(self, id=None, name=None, namespace_name=None, namespace_id=None, tag_count=None, pull_count=None, artifact_count=None, description=None, created_at=None, updated_at=None, instance_id=None, instance_name=None, resource_urn=None):
+    def __init__(self, id=None, name=None, namespace_name=None, namespace_id=None, tag_count=None, pull_count=None, artifact_count=None, description=None, created_at=None, updated_at=None, tags=None, instance_id=None, instance_name=None, resource_urn=None):
         r"""InstanceRepository
 
         The model defined in huaweicloud sdk
@@ -71,6 +73,8 @@ class InstanceRepository:
         :type created_at: str
         :param updated_at: 更新时间
         :type updated_at: str
+        :param tags: 标签列表
+        :type tags: list[:class:`huaweicloudsdkswr.v2.ResourceTag`]
         :param instance_id: 企业仓库实例ID
         :type instance_id: str
         :param instance_name: 企业仓库实例名称
@@ -91,6 +95,7 @@ class InstanceRepository:
         self._description = None
         self._created_at = None
         self._updated_at = None
+        self._tags = None
         self._instance_id = None
         self._instance_name = None
         self._resource_urn = None
@@ -116,6 +121,8 @@ class InstanceRepository:
             self.created_at = created_at
         if updated_at is not None:
             self.updated_at = updated_at
+        if tags is not None:
+            self.tags = tags
         if instance_id is not None:
             self.instance_id = instance_id
         if instance_name is not None:
@@ -342,6 +349,28 @@ class InstanceRepository:
         :type updated_at: str
         """
         self._updated_at = updated_at
+
+    @property
+    def tags(self):
+        r"""Gets the tags of this InstanceRepository.
+
+        标签列表
+
+        :return: The tags of this InstanceRepository.
+        :rtype: list[:class:`huaweicloudsdkswr.v2.ResourceTag`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        r"""Sets the tags of this InstanceRepository.
+
+        标签列表
+
+        :param tags: The tags of this InstanceRepository.
+        :type tags: list[:class:`huaweicloudsdkswr.v2.ResourceTag`]
+        """
+        self._tags = tags
 
     @property
     def instance_id(self):

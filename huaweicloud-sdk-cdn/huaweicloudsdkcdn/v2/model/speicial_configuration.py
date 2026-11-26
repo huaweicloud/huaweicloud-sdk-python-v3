@@ -29,9 +29,9 @@ class SpeicialConfiguration:
 
         The model defined in huaweicloud sdk
 
-        :param create_time: 创建时间
+        :param create_time: **参数解释：** 创建时间，Unix时间戳格式，单位为毫秒 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type create_time: int
-        :param note: 备忘录
+        :param note: **参数解释：** 备忘录 **约束限制：** 不涉及 **取值范围：** 不涉及
         :type note: str
         """
         
@@ -48,7 +48,7 @@ class SpeicialConfiguration:
     def create_time(self):
         r"""Gets the create_time of this SpeicialConfiguration.
 
-        创建时间
+        **参数解释：** 创建时间，Unix时间戳格式，单位为毫秒 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The create_time of this SpeicialConfiguration.
         :rtype: int
@@ -59,7 +59,7 @@ class SpeicialConfiguration:
     def create_time(self, create_time):
         r"""Sets the create_time of this SpeicialConfiguration.
 
-        创建时间
+        **参数解释：** 创建时间，Unix时间戳格式，单位为毫秒 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param create_time: The create_time of this SpeicialConfiguration.
         :type create_time: int
@@ -70,7 +70,7 @@ class SpeicialConfiguration:
     def note(self):
         r"""Gets the note of this SpeicialConfiguration.
 
-        备忘录
+        **参数解释：** 备忘录 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :return: The note of this SpeicialConfiguration.
         :rtype: str
@@ -81,7 +81,7 @@ class SpeicialConfiguration:
     def note(self, note):
         r"""Sets the note of this SpeicialConfiguration.
 
-        备忘录
+        **参数解释：** 备忘录 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :param note: The note of this SpeicialConfiguration.
         :type note: str

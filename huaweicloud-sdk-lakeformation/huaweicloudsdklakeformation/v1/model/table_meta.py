@@ -22,7 +22,8 @@ class TableMeta:
         'comments': 'str',
         'table_format': 'str',
         'columns': 'list[Column]',
-        'partition_keys': 'list[Column]'
+        'partition_keys': 'list[Column]',
+        'external_table_id': 'str'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class TableMeta:
         'comments': 'comments',
         'table_format': 'table_format',
         'columns': 'columns',
-        'partition_keys': 'partition_keys'
+        'partition_keys': 'partition_keys',
+        'external_table_id': 'external_table_id'
     }
 
-    def __init__(self, catalog_name=None, database_name=None, table_name=None, table_type=None, comments=None, table_format=None, columns=None, partition_keys=None):
+    def __init__(self, catalog_name=None, database_name=None, table_name=None, table_type=None, comments=None, table_format=None, columns=None, partition_keys=None, external_table_id=None):
         r"""TableMeta
 
         The model defined in huaweicloud sdk
@@ -57,6 +59,8 @@ class TableMeta:
         :type columns: list[:class:`huaweicloudsdklakeformation.v1.Column`]
         :param partition_keys: 分区列的信息。
         :type partition_keys: list[:class:`huaweicloudsdklakeformation.v1.Column`]
+        :param external_table_id: 用户端表id，创建时指定，不可修改。
+        :type external_table_id: str
         """
         
         
@@ -69,6 +73,7 @@ class TableMeta:
         self._table_format = None
         self._columns = None
         self._partition_keys = None
+        self._external_table_id = None
         self.discriminator = None
 
         self.catalog_name = catalog_name
@@ -82,6 +87,8 @@ class TableMeta:
             self.columns = columns
         if partition_keys is not None:
             self.partition_keys = partition_keys
+        if external_table_id is not None:
+            self.external_table_id = external_table_id
 
     @property
     def catalog_name(self):
@@ -258,6 +265,28 @@ class TableMeta:
         :type partition_keys: list[:class:`huaweicloudsdklakeformation.v1.Column`]
         """
         self._partition_keys = partition_keys
+
+    @property
+    def external_table_id(self):
+        r"""Gets the external_table_id of this TableMeta.
+
+        用户端表id，创建时指定，不可修改。
+
+        :return: The external_table_id of this TableMeta.
+        :rtype: str
+        """
+        return self._external_table_id
+
+    @external_table_id.setter
+    def external_table_id(self, external_table_id):
+        r"""Sets the external_table_id of this TableMeta.
+
+        用户端表id，创建时指定，不可修改。
+
+        :param external_table_id: The external_table_id of this TableMeta.
+        :type external_table_id: str
+        """
+        self._external_table_id = external_table_id
 
     def to_dict(self):
         result = {}

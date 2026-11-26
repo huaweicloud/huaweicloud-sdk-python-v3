@@ -51,31 +51,31 @@ class SourcesConfig:
 
         The model defined in huaweicloud sdk
 
-        :param origin_type: 源站类型， - ipaddr：源站IP； - domain：源站域名； - obs_bucket：OBS桶域名； - third_bucket：第三方桶。
+        :param origin_type: **参数解释：** 源站类型 **约束限制：** 不涉及 **取值范围：** - ipaddr: 源站IP - domain: 源站域名 - obs_bucket: OBS桶域名 - third_bucket: 第三方桶，使用该源站类型需要提交工单申请  **默认取值：** 不涉及
         :type origin_type: str
-        :param origin_addr: 源站IP或者域名。
+        :param origin_addr: **参数解释：** 源站IP或者域名 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type origin_addr: str
-        :param priority: 源站优先级，70：主，30：备。
+        :param priority: **参数解释：** 源站优先级 **约束限制：** 不涉及 **取值范围：** 1-1000 **默认取值：** 不涉及
         :type priority: int
-        :param weight: 权重，取值范围1-100。
+        :param weight: **参数解释：** 权重 **约束限制：** 不涉及 **取值范围：** 1-100 **默认取值：** 不涉及
         :type weight: int
-        :param obs_web_hosting_status: 是否开启OBS静态网站托管，源站类型为obs_bucket时传递，off：关闭，on：开启。
+        :param obs_web_hosting_status: **参数解释：** 是否开启静态网站托管功能，如果您的源站是OBS桶域名且配置了静态网站托管，开启该功能后，客户端即可访问静态网站托管页面 &gt; 开启该功能后将自动给桶源站地址加上website字段，如果地址中已有website字段，该参数不生效 **约束限制：** - 源站类型为obs_bucket时需要传该参数 - 只有当源站OBS桶已经开启静态网站托管时，才可开启，否则将导致业务异常  **取值范围：** - on: 开启 - off: 关闭  **默认取值：** 不涉及
         :type obs_web_hosting_status: str
-        :param http_port: HTTP端口，默认80,端口取值取值范围1-65535。
+        :param http_port: **参数解释：** HTTP端口 **约束限制：** 不涉及 **取值范围：** 1-65535 **默认取值：** 80
         :type http_port: int
-        :param https_port: HTTPS端口，默认443,端口取值取值范围1-65535。
+        :param https_port: **参数解释：** HTTPS端口 **约束限制：** 不涉及 **取值范围：** 1-65535 **默认取值：** 443
         :type https_port: int
-        :param host_name: 回源HOST，默认加速域名。
+        :param host_name: **参数解释：** 回源HOST **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 加速域名
         :type host_name: str
-        :param obs_bucket_type: OBS桶类型，源站类型是“OBS桶域名”时需要传该参数，不传默认为“public”。   - private: 私有桶（除桶ACL授权外的其他用户无桶的访问权限）。   - public: 公有桶（任何用户都可以对桶内对象进行读操作）。
+        :param obs_bucket_type: **参数解释：** OBS回源鉴权开关，适用于OBS桶源站场景，如果桶需要带鉴权访问，则需要打开OBS回源鉴权开关。如此，CDN节点回源时会携带鉴权信息，鉴权信息与OBS桶不匹配时，回源失败，避免非授权的请求盗刷流量 **约束限制：** 源站类型是“OBS桶域名”时需要传该参数 **取值范围：** - private: 开启回源鉴权开关 - public: 关闭回源鉴权开关  **默认取值：** public: 关闭回源鉴权开关
         :type obs_bucket_type: str
-        :param bucket_access_key: 第三方对象存储访问密钥。  &gt; 源站类型为第三方桶时必填
+        :param bucket_access_key: **参数解释：** 第三方对象存储访问密钥ID，即AK **约束限制：** 源站类型为第三方桶时必填 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type bucket_access_key: str
-        :param bucket_secret_key: 第三方对象存储密钥。  &gt; 源站类型为第三方桶时必填
+        :param bucket_secret_key: **参数解释：** 第三方对象存储私密访问密钥，即SK **约束限制：** 源站类型为第三方桶时必填 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type bucket_secret_key: str
-        :param bucket_region: 第三方对象存储区域。  &gt; 源站类型为第三方桶时必填
+        :param bucket_region: **参数解释：** 第三方对象存储区域 **约束限制：** 源站类型为第三方桶时必填 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type bucket_region: str
-        :param bucket_name: 第三方对象存储名称。  &gt; 源站类型为第三方桶时必填
+        :param bucket_name: **参数解释：** 第三方对象存储名称 **约束限制：** 源站类型为第三方桶时必填 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type bucket_name: str
         """
         
@@ -124,7 +124,7 @@ class SourcesConfig:
     def origin_type(self):
         r"""Gets the origin_type of this SourcesConfig.
 
-        源站类型， - ipaddr：源站IP； - domain：源站域名； - obs_bucket：OBS桶域名； - third_bucket：第三方桶。
+        **参数解释：** 源站类型 **约束限制：** 不涉及 **取值范围：** - ipaddr: 源站IP - domain: 源站域名 - obs_bucket: OBS桶域名 - third_bucket: 第三方桶，使用该源站类型需要提交工单申请  **默认取值：** 不涉及
 
         :return: The origin_type of this SourcesConfig.
         :rtype: str
@@ -135,7 +135,7 @@ class SourcesConfig:
     def origin_type(self, origin_type):
         r"""Sets the origin_type of this SourcesConfig.
 
-        源站类型， - ipaddr：源站IP； - domain：源站域名； - obs_bucket：OBS桶域名； - third_bucket：第三方桶。
+        **参数解释：** 源站类型 **约束限制：** 不涉及 **取值范围：** - ipaddr: 源站IP - domain: 源站域名 - obs_bucket: OBS桶域名 - third_bucket: 第三方桶，使用该源站类型需要提交工单申请  **默认取值：** 不涉及
 
         :param origin_type: The origin_type of this SourcesConfig.
         :type origin_type: str
@@ -146,7 +146,7 @@ class SourcesConfig:
     def origin_addr(self):
         r"""Gets the origin_addr of this SourcesConfig.
 
-        源站IP或者域名。
+        **参数解释：** 源站IP或者域名 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The origin_addr of this SourcesConfig.
         :rtype: str
@@ -157,7 +157,7 @@ class SourcesConfig:
     def origin_addr(self, origin_addr):
         r"""Sets the origin_addr of this SourcesConfig.
 
-        源站IP或者域名。
+        **参数解释：** 源站IP或者域名 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param origin_addr: The origin_addr of this SourcesConfig.
         :type origin_addr: str
@@ -168,7 +168,7 @@ class SourcesConfig:
     def priority(self):
         r"""Gets the priority of this SourcesConfig.
 
-        源站优先级，70：主，30：备。
+        **参数解释：** 源站优先级 **约束限制：** 不涉及 **取值范围：** 1-1000 **默认取值：** 不涉及
 
         :return: The priority of this SourcesConfig.
         :rtype: int
@@ -179,7 +179,7 @@ class SourcesConfig:
     def priority(self, priority):
         r"""Sets the priority of this SourcesConfig.
 
-        源站优先级，70：主，30：备。
+        **参数解释：** 源站优先级 **约束限制：** 不涉及 **取值范围：** 1-1000 **默认取值：** 不涉及
 
         :param priority: The priority of this SourcesConfig.
         :type priority: int
@@ -190,7 +190,7 @@ class SourcesConfig:
     def weight(self):
         r"""Gets the weight of this SourcesConfig.
 
-        权重，取值范围1-100。
+        **参数解释：** 权重 **约束限制：** 不涉及 **取值范围：** 1-100 **默认取值：** 不涉及
 
         :return: The weight of this SourcesConfig.
         :rtype: int
@@ -201,7 +201,7 @@ class SourcesConfig:
     def weight(self, weight):
         r"""Sets the weight of this SourcesConfig.
 
-        权重，取值范围1-100。
+        **参数解释：** 权重 **约束限制：** 不涉及 **取值范围：** 1-100 **默认取值：** 不涉及
 
         :param weight: The weight of this SourcesConfig.
         :type weight: int
@@ -212,7 +212,7 @@ class SourcesConfig:
     def obs_web_hosting_status(self):
         r"""Gets the obs_web_hosting_status of this SourcesConfig.
 
-        是否开启OBS静态网站托管，源站类型为obs_bucket时传递，off：关闭，on：开启。
+        **参数解释：** 是否开启静态网站托管功能，如果您的源站是OBS桶域名且配置了静态网站托管，开启该功能后，客户端即可访问静态网站托管页面 > 开启该功能后将自动给桶源站地址加上website字段，如果地址中已有website字段，该参数不生效 **约束限制：** - 源站类型为obs_bucket时需要传该参数 - 只有当源站OBS桶已经开启静态网站托管时，才可开启，否则将导致业务异常  **取值范围：** - on: 开启 - off: 关闭  **默认取值：** 不涉及
 
         :return: The obs_web_hosting_status of this SourcesConfig.
         :rtype: str
@@ -223,7 +223,7 @@ class SourcesConfig:
     def obs_web_hosting_status(self, obs_web_hosting_status):
         r"""Sets the obs_web_hosting_status of this SourcesConfig.
 
-        是否开启OBS静态网站托管，源站类型为obs_bucket时传递，off：关闭，on：开启。
+        **参数解释：** 是否开启静态网站托管功能，如果您的源站是OBS桶域名且配置了静态网站托管，开启该功能后，客户端即可访问静态网站托管页面 > 开启该功能后将自动给桶源站地址加上website字段，如果地址中已有website字段，该参数不生效 **约束限制：** - 源站类型为obs_bucket时需要传该参数 - 只有当源站OBS桶已经开启静态网站托管时，才可开启，否则将导致业务异常  **取值范围：** - on: 开启 - off: 关闭  **默认取值：** 不涉及
 
         :param obs_web_hosting_status: The obs_web_hosting_status of this SourcesConfig.
         :type obs_web_hosting_status: str
@@ -234,7 +234,7 @@ class SourcesConfig:
     def http_port(self):
         r"""Gets the http_port of this SourcesConfig.
 
-        HTTP端口，默认80,端口取值取值范围1-65535。
+        **参数解释：** HTTP端口 **约束限制：** 不涉及 **取值范围：** 1-65535 **默认取值：** 80
 
         :return: The http_port of this SourcesConfig.
         :rtype: int
@@ -245,7 +245,7 @@ class SourcesConfig:
     def http_port(self, http_port):
         r"""Sets the http_port of this SourcesConfig.
 
-        HTTP端口，默认80,端口取值取值范围1-65535。
+        **参数解释：** HTTP端口 **约束限制：** 不涉及 **取值范围：** 1-65535 **默认取值：** 80
 
         :param http_port: The http_port of this SourcesConfig.
         :type http_port: int
@@ -256,7 +256,7 @@ class SourcesConfig:
     def https_port(self):
         r"""Gets the https_port of this SourcesConfig.
 
-        HTTPS端口，默认443,端口取值取值范围1-65535。
+        **参数解释：** HTTPS端口 **约束限制：** 不涉及 **取值范围：** 1-65535 **默认取值：** 443
 
         :return: The https_port of this SourcesConfig.
         :rtype: int
@@ -267,7 +267,7 @@ class SourcesConfig:
     def https_port(self, https_port):
         r"""Sets the https_port of this SourcesConfig.
 
-        HTTPS端口，默认443,端口取值取值范围1-65535。
+        **参数解释：** HTTPS端口 **约束限制：** 不涉及 **取值范围：** 1-65535 **默认取值：** 443
 
         :param https_port: The https_port of this SourcesConfig.
         :type https_port: int
@@ -278,7 +278,7 @@ class SourcesConfig:
     def host_name(self):
         r"""Gets the host_name of this SourcesConfig.
 
-        回源HOST，默认加速域名。
+        **参数解释：** 回源HOST **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 加速域名
 
         :return: The host_name of this SourcesConfig.
         :rtype: str
@@ -289,7 +289,7 @@ class SourcesConfig:
     def host_name(self, host_name):
         r"""Sets the host_name of this SourcesConfig.
 
-        回源HOST，默认加速域名。
+        **参数解释：** 回源HOST **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 加速域名
 
         :param host_name: The host_name of this SourcesConfig.
         :type host_name: str
@@ -300,7 +300,7 @@ class SourcesConfig:
     def obs_bucket_type(self):
         r"""Gets the obs_bucket_type of this SourcesConfig.
 
-        OBS桶类型，源站类型是“OBS桶域名”时需要传该参数，不传默认为“public”。   - private: 私有桶（除桶ACL授权外的其他用户无桶的访问权限）。   - public: 公有桶（任何用户都可以对桶内对象进行读操作）。
+        **参数解释：** OBS回源鉴权开关，适用于OBS桶源站场景，如果桶需要带鉴权访问，则需要打开OBS回源鉴权开关。如此，CDN节点回源时会携带鉴权信息，鉴权信息与OBS桶不匹配时，回源失败，避免非授权的请求盗刷流量 **约束限制：** 源站类型是“OBS桶域名”时需要传该参数 **取值范围：** - private: 开启回源鉴权开关 - public: 关闭回源鉴权开关  **默认取值：** public: 关闭回源鉴权开关
 
         :return: The obs_bucket_type of this SourcesConfig.
         :rtype: str
@@ -311,7 +311,7 @@ class SourcesConfig:
     def obs_bucket_type(self, obs_bucket_type):
         r"""Sets the obs_bucket_type of this SourcesConfig.
 
-        OBS桶类型，源站类型是“OBS桶域名”时需要传该参数，不传默认为“public”。   - private: 私有桶（除桶ACL授权外的其他用户无桶的访问权限）。   - public: 公有桶（任何用户都可以对桶内对象进行读操作）。
+        **参数解释：** OBS回源鉴权开关，适用于OBS桶源站场景，如果桶需要带鉴权访问，则需要打开OBS回源鉴权开关。如此，CDN节点回源时会携带鉴权信息，鉴权信息与OBS桶不匹配时，回源失败，避免非授权的请求盗刷流量 **约束限制：** 源站类型是“OBS桶域名”时需要传该参数 **取值范围：** - private: 开启回源鉴权开关 - public: 关闭回源鉴权开关  **默认取值：** public: 关闭回源鉴权开关
 
         :param obs_bucket_type: The obs_bucket_type of this SourcesConfig.
         :type obs_bucket_type: str
@@ -322,7 +322,7 @@ class SourcesConfig:
     def bucket_access_key(self):
         r"""Gets the bucket_access_key of this SourcesConfig.
 
-        第三方对象存储访问密钥。  > 源站类型为第三方桶时必填
+        **参数解释：** 第三方对象存储访问密钥ID，即AK **约束限制：** 源站类型为第三方桶时必填 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The bucket_access_key of this SourcesConfig.
         :rtype: str
@@ -333,7 +333,7 @@ class SourcesConfig:
     def bucket_access_key(self, bucket_access_key):
         r"""Sets the bucket_access_key of this SourcesConfig.
 
-        第三方对象存储访问密钥。  > 源站类型为第三方桶时必填
+        **参数解释：** 第三方对象存储访问密钥ID，即AK **约束限制：** 源站类型为第三方桶时必填 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param bucket_access_key: The bucket_access_key of this SourcesConfig.
         :type bucket_access_key: str
@@ -344,7 +344,7 @@ class SourcesConfig:
     def bucket_secret_key(self):
         r"""Gets the bucket_secret_key of this SourcesConfig.
 
-        第三方对象存储密钥。  > 源站类型为第三方桶时必填
+        **参数解释：** 第三方对象存储私密访问密钥，即SK **约束限制：** 源站类型为第三方桶时必填 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The bucket_secret_key of this SourcesConfig.
         :rtype: str
@@ -355,7 +355,7 @@ class SourcesConfig:
     def bucket_secret_key(self, bucket_secret_key):
         r"""Sets the bucket_secret_key of this SourcesConfig.
 
-        第三方对象存储密钥。  > 源站类型为第三方桶时必填
+        **参数解释：** 第三方对象存储私密访问密钥，即SK **约束限制：** 源站类型为第三方桶时必填 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param bucket_secret_key: The bucket_secret_key of this SourcesConfig.
         :type bucket_secret_key: str
@@ -366,7 +366,7 @@ class SourcesConfig:
     def bucket_region(self):
         r"""Gets the bucket_region of this SourcesConfig.
 
-        第三方对象存储区域。  > 源站类型为第三方桶时必填
+        **参数解释：** 第三方对象存储区域 **约束限制：** 源站类型为第三方桶时必填 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The bucket_region of this SourcesConfig.
         :rtype: str
@@ -377,7 +377,7 @@ class SourcesConfig:
     def bucket_region(self, bucket_region):
         r"""Sets the bucket_region of this SourcesConfig.
 
-        第三方对象存储区域。  > 源站类型为第三方桶时必填
+        **参数解释：** 第三方对象存储区域 **约束限制：** 源站类型为第三方桶时必填 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param bucket_region: The bucket_region of this SourcesConfig.
         :type bucket_region: str
@@ -388,7 +388,7 @@ class SourcesConfig:
     def bucket_name(self):
         r"""Gets the bucket_name of this SourcesConfig.
 
-        第三方对象存储名称。  > 源站类型为第三方桶时必填
+        **参数解释：** 第三方对象存储名称 **约束限制：** 源站类型为第三方桶时必填 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The bucket_name of this SourcesConfig.
         :rtype: str
@@ -399,7 +399,7 @@ class SourcesConfig:
     def bucket_name(self, bucket_name):
         r"""Sets the bucket_name of this SourcesConfig.
 
-        第三方对象存储名称。  > 源站类型为第三方桶时必填
+        **参数解释：** 第三方对象存储名称 **约束限制：** 源站类型为第三方桶时必填 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param bucket_name: The bucket_name of this SourcesConfig.
         :type bucket_name: str

@@ -37,13 +37,13 @@ class RuleResponse:
 
         The model defined in huaweicloud sdk
 
-        :param rule_id: 规则id
+        :param rule_id: **参数解释：** 规则id **约束限制：** 不涉及 **取值范围：** 不涉及
         :type rule_id: str
-        :param name: 规则名称
+        :param name: **参数解释：** 规则名称 **约束限制：** 不涉及 **取值范围：** 不涉及
         :type name: str
         :param status: 规则状态，on：开启，off：关闭。
         :type status: str
-        :param priority: 此条规则的优先级，数值越大，优先级越高。
+        :param priority: **参数解释：** 此条规则的优先级，数值越大，优先级越高。 **约束限制：** 不涉及 **取值范围：** 1-1000
         :type priority: int
         :param conditions: 
         :type conditions: :class:`huaweicloudsdkcdn.v2.Conditions`
@@ -72,7 +72,7 @@ class RuleResponse:
     def rule_id(self):
         r"""Gets the rule_id of this RuleResponse.
 
-        规则id
+        **参数解释：** 规则id **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :return: The rule_id of this RuleResponse.
         :rtype: str
@@ -83,7 +83,7 @@ class RuleResponse:
     def rule_id(self, rule_id):
         r"""Sets the rule_id of this RuleResponse.
 
-        规则id
+        **参数解释：** 规则id **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :param rule_id: The rule_id of this RuleResponse.
         :type rule_id: str
@@ -94,7 +94,7 @@ class RuleResponse:
     def name(self):
         r"""Gets the name of this RuleResponse.
 
-        规则名称
+        **参数解释：** 规则名称 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :return: The name of this RuleResponse.
         :rtype: str
@@ -105,7 +105,7 @@ class RuleResponse:
     def name(self, name):
         r"""Sets the name of this RuleResponse.
 
-        规则名称
+        **参数解释：** 规则名称 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :param name: The name of this RuleResponse.
         :type name: str
@@ -138,7 +138,7 @@ class RuleResponse:
     def priority(self):
         r"""Gets the priority of this RuleResponse.
 
-        此条规则的优先级，数值越大，优先级越高。
+        **参数解释：** 此条规则的优先级，数值越大，优先级越高。 **约束限制：** 不涉及 **取值范围：** 1-1000
 
         :return: The priority of this RuleResponse.
         :rtype: int
@@ -149,7 +149,7 @@ class RuleResponse:
     def priority(self, priority):
         r"""Sets the priority of this RuleResponse.
 
-        此条规则的优先级，数值越大，优先级越高。
+        **参数解释：** 此条规则的优先级，数值越大，优先级越高。 **约束限制：** 不涉及 **取值范围：** 1-1000
 
         :param priority: The priority of this RuleResponse.
         :type priority: int

@@ -17,21 +17,25 @@ class VerifyDomainOwnerResponse(SdkResponse):
 
     openapi_types = {
         'result': 'bool',
+        'status': 'str',
         'x_request_id': 'str'
     }
 
     attribute_map = {
         'result': 'result',
+        'status': 'status',
         'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, result=None, x_request_id=None):
+    def __init__(self, result=None, status=None, x_request_id=None):
         r"""VerifyDomainOwnerResponse
 
         The model defined in huaweicloud sdk
 
         :param result: 验证是否通过，true：通过，false：不通过。
         :type result: bool
+        :param status: **参数解释：** 域名校验状态，表示当前账号下是否存在该域名 **约束限制：** 不涉及 **取值范围：** - DomainExist: 该域名已存在 - DomainNotExist: 该域名不存在  **默认取值：** 不涉及
+        :type status: str
         :param x_request_id: 
         :type x_request_id: str
         """
@@ -39,11 +43,14 @@ class VerifyDomainOwnerResponse(SdkResponse):
         super().__init__()
 
         self._result = None
+        self._status = None
         self._x_request_id = None
         self.discriminator = None
 
         if result is not None:
             self.result = result
+        if status is not None:
+            self.status = status
         if x_request_id is not None:
             self.x_request_id = x_request_id
 
@@ -68,6 +75,28 @@ class VerifyDomainOwnerResponse(SdkResponse):
         :type result: bool
         """
         self._result = result
+
+    @property
+    def status(self):
+        r"""Gets the status of this VerifyDomainOwnerResponse.
+
+        **参数解释：** 域名校验状态，表示当前账号下是否存在该域名 **约束限制：** 不涉及 **取值范围：** - DomainExist: 该域名已存在 - DomainNotExist: 该域名不存在  **默认取值：** 不涉及
+
+        :return: The status of this VerifyDomainOwnerResponse.
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        r"""Sets the status of this VerifyDomainOwnerResponse.
+
+        **参数解释：** 域名校验状态，表示当前账号下是否存在该域名 **约束限制：** 不涉及 **取值范围：** - DomainExist: 该域名已存在 - DomainNotExist: 该域名不存在  **默认取值：** 不涉及
+
+        :param status: The status of this VerifyDomainOwnerResponse.
+        :type status: str
+        """
+        self._status = status
 
     @property
     def x_request_id(self):

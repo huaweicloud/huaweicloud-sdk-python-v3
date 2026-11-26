@@ -53,7 +53,8 @@ class ConfigsGetBody:
         'access_area_filter': 'list[AccessAreaFilter]',
         'client_cert': 'ClientCert',
         'https_tls_version': 'HttpsTlsVersion',
-        'flow_limit_strategy': 'list[FlowLimitStrategy]'
+        'flow_limit_strategy': 'list[FlowLimitStrategy]',
+        'bandwidth_alarm_strategy': 'BandwidthAlarmStrategy'
     }
 
     attribute_map = {
@@ -95,10 +96,11 @@ class ConfigsGetBody:
         'access_area_filter': 'access_area_filter',
         'client_cert': 'client_cert',
         'https_tls_version': 'https_tls_version',
-        'flow_limit_strategy': 'flow_limit_strategy'
+        'flow_limit_strategy': 'flow_limit_strategy',
+        'bandwidth_alarm_strategy': 'bandwidth_alarm_strategy'
     }
 
-    def __init__(self, business_type=None, service_area=None, remark=None, origin_request_header=None, http_response_header=None, url_auth=None, https=None, sources=None, origin_protocol=None, origin_follow302_status=None, cache_rules=None, ip_filter=None, referer=None, force_redirect=None, compress=None, cache_url_parameter_filter=None, ipv6_accelerate=None, error_code_cache=None, origin_range_status=None, user_agent_filter=None, origin_request_url_rewrite=None, flexible_origin=None, slice_etag_status=None, origin_receive_timeout=None, remote_auth=None, websocket=None, video_seek=None, request_limit_rules=None, ip_frequency_limit=None, hsts=None, quic=None, error_code_redirect_rules=None, sni=None, request_url_rewrite=None, browser_cache_rules=None, access_area_filter=None, client_cert=None, https_tls_version=None, flow_limit_strategy=None):
+    def __init__(self, business_type=None, service_area=None, remark=None, origin_request_header=None, http_response_header=None, url_auth=None, https=None, sources=None, origin_protocol=None, origin_follow302_status=None, cache_rules=None, ip_filter=None, referer=None, force_redirect=None, compress=None, cache_url_parameter_filter=None, ipv6_accelerate=None, error_code_cache=None, origin_range_status=None, user_agent_filter=None, origin_request_url_rewrite=None, flexible_origin=None, slice_etag_status=None, origin_receive_timeout=None, remote_auth=None, websocket=None, video_seek=None, request_limit_rules=None, ip_frequency_limit=None, hsts=None, quic=None, error_code_redirect_rules=None, sni=None, request_url_rewrite=None, browser_cache_rules=None, access_area_filter=None, client_cert=None, https_tls_version=None, flow_limit_strategy=None, bandwidth_alarm_strategy=None):
         r"""ConfigsGetBody
 
         The model defined in huaweicloud sdk
@@ -107,11 +109,11 @@ class ConfigsGetBody:
         :type business_type: str
         :param service_area: 服务区域： - mainland_china：中国大陆； - global：全球； - outside_mainland_china：中国大陆境外。
         :type service_area: str
-        :param remark: 域名备注。
+        :param remark: **参数解释：** 域名备注。 **约束限制：** 不涉及 **取值范围：** 不涉及
         :type remark: str
-        :param origin_request_header: 回源请求头配置
+        :param origin_request_header: 回源请求头配置。
         :type origin_request_header: list[:class:`huaweicloudsdkcdn.v2.OriginRequestHeader`]
-        :param http_response_header: http header配置
+        :param http_response_header: http header配置。
         :type http_response_header: list[:class:`huaweicloudsdkcdn.v2.HttpResponseHeader`]
         :param url_auth: 
         :type url_auth: :class:`huaweicloudsdkcdn.v2.UrlAuthGetBody`
@@ -149,7 +151,7 @@ class ConfigsGetBody:
         :type flexible_origin: list[:class:`huaweicloudsdkcdn.v2.FlexibleOrigins`]
         :param slice_etag_status: 回源是否校验ETag，on：开启，off：关闭。
         :type slice_etag_status: str
-        :param origin_receive_timeout: 回源超时时间，单位：秒。
+        :param origin_receive_timeout: **参数解释：** 回源超时时间，单位：秒。 **约束限制：** 不涉及 **取值范围：** 不涉及
         :type origin_receive_timeout: int
         :param remote_auth: 
         :type remote_auth: :class:`huaweicloudsdkcdn.v2.CommonRemoteAuth`
@@ -157,7 +159,7 @@ class ConfigsGetBody:
         :type websocket: :class:`huaweicloudsdkcdn.v2.WebSocketSeek`
         :param video_seek: 
         :type video_seek: :class:`huaweicloudsdkcdn.v2.VideoSeek`
-        :param request_limit_rules: 请求限速。
+        :param request_limit_rules: 
         :type request_limit_rules: list[:class:`huaweicloudsdkcdn.v2.RequestLimitRules`]
         :param ip_frequency_limit: 
         :type ip_frequency_limit: :class:`huaweicloudsdkcdn.v2.IpFrequencyLimitQuery`
@@ -181,6 +183,8 @@ class ConfigsGetBody:
         :type https_tls_version: :class:`huaweicloudsdkcdn.v2.HttpsTlsVersion`
         :param flow_limit_strategy: **参数解释：** 设置用量封顶阈值，当实际用量大于阈值时停用域名，有效预防流量盗刷或恶意攻击带来的高额账单。  &gt; 由于监控数据存在时延，域名将在用量达到阈值后的10分钟左右被停用  **约束限制：** 不涉及
         :type flow_limit_strategy: list[:class:`huaweicloudsdkcdn.v2.FlowLimitStrategy`]
+        :param bandwidth_alarm_strategy: 
+        :type bandwidth_alarm_strategy: :class:`huaweicloudsdkcdn.v2.BandwidthAlarmStrategy`
         """
         
         
@@ -224,6 +228,7 @@ class ConfigsGetBody:
         self._client_cert = None
         self._https_tls_version = None
         self._flow_limit_strategy = None
+        self._bandwidth_alarm_strategy = None
         self.discriminator = None
 
         if business_type is not None:
@@ -304,6 +309,8 @@ class ConfigsGetBody:
             self.https_tls_version = https_tls_version
         if flow_limit_strategy is not None:
             self.flow_limit_strategy = flow_limit_strategy
+        if bandwidth_alarm_strategy is not None:
+            self.bandwidth_alarm_strategy = bandwidth_alarm_strategy
 
     @property
     def business_type(self):
@@ -353,7 +360,7 @@ class ConfigsGetBody:
     def remark(self):
         r"""Gets the remark of this ConfigsGetBody.
 
-        域名备注。
+        **参数解释：** 域名备注。 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :return: The remark of this ConfigsGetBody.
         :rtype: str
@@ -364,7 +371,7 @@ class ConfigsGetBody:
     def remark(self, remark):
         r"""Sets the remark of this ConfigsGetBody.
 
-        域名备注。
+        **参数解释：** 域名备注。 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :param remark: The remark of this ConfigsGetBody.
         :type remark: str
@@ -375,7 +382,7 @@ class ConfigsGetBody:
     def origin_request_header(self):
         r"""Gets the origin_request_header of this ConfigsGetBody.
 
-        回源请求头配置
+        回源请求头配置。
 
         :return: The origin_request_header of this ConfigsGetBody.
         :rtype: list[:class:`huaweicloudsdkcdn.v2.OriginRequestHeader`]
@@ -386,7 +393,7 @@ class ConfigsGetBody:
     def origin_request_header(self, origin_request_header):
         r"""Sets the origin_request_header of this ConfigsGetBody.
 
-        回源请求头配置
+        回源请求头配置。
 
         :param origin_request_header: The origin_request_header of this ConfigsGetBody.
         :type origin_request_header: list[:class:`huaweicloudsdkcdn.v2.OriginRequestHeader`]
@@ -397,7 +404,7 @@ class ConfigsGetBody:
     def http_response_header(self):
         r"""Gets the http_response_header of this ConfigsGetBody.
 
-        http header配置
+        http header配置。
 
         :return: The http_response_header of this ConfigsGetBody.
         :rtype: list[:class:`huaweicloudsdkcdn.v2.HttpResponseHeader`]
@@ -408,7 +415,7 @@ class ConfigsGetBody:
     def http_response_header(self, http_response_header):
         r"""Sets the http_response_header of this ConfigsGetBody.
 
-        http header配置
+        http header配置。
 
         :param http_response_header: The http_response_header of this ConfigsGetBody.
         :type http_response_header: list[:class:`huaweicloudsdkcdn.v2.HttpResponseHeader`]
@@ -783,7 +790,7 @@ class ConfigsGetBody:
     def origin_receive_timeout(self):
         r"""Gets the origin_receive_timeout of this ConfigsGetBody.
 
-        回源超时时间，单位：秒。
+        **参数解释：** 回源超时时间，单位：秒。 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :return: The origin_receive_timeout of this ConfigsGetBody.
         :rtype: int
@@ -794,7 +801,7 @@ class ConfigsGetBody:
     def origin_receive_timeout(self, origin_receive_timeout):
         r"""Sets the origin_receive_timeout of this ConfigsGetBody.
 
-        回源超时时间，单位：秒。
+        **参数解释：** 回源超时时间，单位：秒。 **约束限制：** 不涉及 **取值范围：** 不涉及
 
         :param origin_receive_timeout: The origin_receive_timeout of this ConfigsGetBody.
         :type origin_receive_timeout: int
@@ -859,8 +866,6 @@ class ConfigsGetBody:
     def request_limit_rules(self):
         r"""Gets the request_limit_rules of this ConfigsGetBody.
 
-        请求限速。
-
         :return: The request_limit_rules of this ConfigsGetBody.
         :rtype: list[:class:`huaweicloudsdkcdn.v2.RequestLimitRules`]
         """
@@ -869,8 +874,6 @@ class ConfigsGetBody:
     @request_limit_rules.setter
     def request_limit_rules(self, request_limit_rules):
         r"""Sets the request_limit_rules of this ConfigsGetBody.
-
-        请求限速。
 
         :param request_limit_rules: The request_limit_rules of this ConfigsGetBody.
         :type request_limit_rules: list[:class:`huaweicloudsdkcdn.v2.RequestLimitRules`]
@@ -1090,6 +1093,24 @@ class ConfigsGetBody:
         :type flow_limit_strategy: list[:class:`huaweicloudsdkcdn.v2.FlowLimitStrategy`]
         """
         self._flow_limit_strategy = flow_limit_strategy
+
+    @property
+    def bandwidth_alarm_strategy(self):
+        r"""Gets the bandwidth_alarm_strategy of this ConfigsGetBody.
+
+        :return: The bandwidth_alarm_strategy of this ConfigsGetBody.
+        :rtype: :class:`huaweicloudsdkcdn.v2.BandwidthAlarmStrategy`
+        """
+        return self._bandwidth_alarm_strategy
+
+    @bandwidth_alarm_strategy.setter
+    def bandwidth_alarm_strategy(self, bandwidth_alarm_strategy):
+        r"""Sets the bandwidth_alarm_strategy of this ConfigsGetBody.
+
+        :param bandwidth_alarm_strategy: The bandwidth_alarm_strategy of this ConfigsGetBody.
+        :type bandwidth_alarm_strategy: :class:`huaweicloudsdkcdn.v2.BandwidthAlarmStrategy`
+        """
+        self._bandwidth_alarm_strategy = bandwidth_alarm_strategy
 
     def to_dict(self):
         result = {}

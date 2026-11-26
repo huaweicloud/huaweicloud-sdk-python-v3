@@ -286,6 +286,8 @@ from huaweicloudsdkswr.v2.model.list_repository_tag_response import ListReposito
 from huaweicloudsdkswr.v2.model.list_repository_tags_request import ListRepositoryTagsRequest
 from huaweicloudsdkswr.v2.model.list_repository_tags_response import ListRepositoryTagsResponse
 from huaweicloudsdkswr.v2.model.list_resource_instances_request_body import ListResourceInstancesRequestBody
+from huaweicloudsdkswr.v2.model.list_resources_tags_by_project_id_request import ListResourcesTagsByProjectIdRequest
+from huaweicloudsdkswr.v2.model.list_resources_tags_by_project_id_response import ListResourcesTagsByProjectIdResponse
 from huaweicloudsdkswr.v2.model.list_retention_histories_request import ListRetentionHistoriesRequest
 from huaweicloudsdkswr.v2.model.list_retention_histories_response import ListRetentionHistoriesResponse
 from huaweicloudsdkswr.v2.model.list_retentions_request import ListRetentionsRequest
@@ -307,7 +309,9 @@ from huaweicloudsdkswr.v2.model.namespace_metadata import NamespaceMetadata
 from huaweicloudsdkswr.v2.model.native_report_summary import NativeReportSummary
 from huaweicloudsdkswr.v2.model.page_info import PageInfo
 from huaweicloudsdkswr.v2.model.permission_item import PermissionItem
+from huaweicloudsdkswr.v2.model.platform import Platform
 from huaweicloudsdkswr.v2.model.project_tag import ProjectTag
+from huaweicloudsdkswr.v2.model.reference import Reference
 from huaweicloudsdkswr.v2.model.region_info import RegionInfo
 from huaweicloudsdkswr.v2.model.registry import Registry
 from huaweicloudsdkswr.v2.model.replication_policy import ReplicationPolicy
@@ -343,6 +347,8 @@ from huaweicloudsdkswr.v2.model.show_gc_task_request import ShowGcTaskRequest
 from huaweicloudsdkswr.v2.model.show_gc_task_response import ShowGcTaskResponse
 from huaweicloudsdkswr.v2.model.show_instance_artifact_addition_request import ShowInstanceArtifactAdditionRequest
 from huaweicloudsdkswr.v2.model.show_instance_artifact_addition_response import ShowInstanceArtifactAdditionResponse
+from huaweicloudsdkswr.v2.model.show_instance_artifact_manifest_request import ShowInstanceArtifactManifestRequest
+from huaweicloudsdkswr.v2.model.show_instance_artifact_manifest_response import ShowInstanceArtifactManifestResponse
 from huaweicloudsdkswr.v2.model.show_instance_artifact_request import ShowInstanceArtifactRequest
 from huaweicloudsdkswr.v2.model.show_instance_artifact_response import ShowInstanceArtifactResponse
 from huaweicloudsdkswr.v2.model.show_instance_configuration_request import ShowInstanceConfigurationRequest
@@ -369,6 +375,8 @@ from huaweicloudsdkswr.v2.model.show_instance_retention_policy_request import Sh
 from huaweicloudsdkswr.v2.model.show_instance_retention_policy_response import ShowInstanceRetentionPolicyResponse
 from huaweicloudsdkswr.v2.model.show_instance_sign_policy_request import ShowInstanceSignPolicyRequest
 from huaweicloudsdkswr.v2.model.show_instance_sign_policy_response import ShowInstanceSignPolicyResponse
+from huaweicloudsdkswr.v2.model.show_instance_tag_request import ShowInstanceTagRequest
+from huaweicloudsdkswr.v2.model.show_instance_tag_response import ShowInstanceTagResponse
 from huaweicloudsdkswr.v2.model.show_instance_webhook_request import ShowInstanceWebhookRequest
 from huaweicloudsdkswr.v2.model.show_instance_webhook_response import ShowInstanceWebhookResponse
 from huaweicloudsdkswr.v2.model.show_namespace import ShowNamespace
@@ -378,6 +386,8 @@ from huaweicloudsdkswr.v2.model.show_namespace_request import ShowNamespaceReque
 from huaweicloudsdkswr.v2.model.show_namespace_response import ShowNamespaceResponse
 from huaweicloudsdkswr.v2.model.show_quota import ShowQuota
 from huaweicloudsdkswr.v2.model.show_repo_domains_response import ShowRepoDomainsResponse
+from huaweicloudsdkswr.v2.model.show_repo_tag_config_request import ShowRepoTagConfigRequest
+from huaweicloudsdkswr.v2.model.show_repo_tag_config_response import ShowRepoTagConfigResponse
 from huaweicloudsdkswr.v2.model.show_repo_tag_request import ShowRepoTagRequest
 from huaweicloudsdkswr.v2.model.show_repo_tag_response import ShowRepoTagResponse
 from huaweicloudsdkswr.v2.model.show_repos_resp import ShowReposResp

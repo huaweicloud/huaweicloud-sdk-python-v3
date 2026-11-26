@@ -39,11 +39,11 @@ class FullUpdateRuleRequest:
 
         :param rule_id: **参数解释：** 规则ID，可以通过查询规则引擎列表接口获取 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type rule_id: str
-        :param name: **参数解释：** 规则名称 **约束限制：** 不涉及 **取值范围：** 1-50个字符 **默认取值：** 不涉及
+        :param name: **参数解释：** 规则名称 **约束限制：** 不涉及 **取值范围：** - 1-50个字符 - 由中文字符、英文字母、数字及“-”、“_”组成  **默认取值：** 不涉及
         :type name: str
         :param status: **参数解释：** 是否开启规则 **约束限制：** 不涉及 **取值范围：** - on: 开启 - off: 关闭  **默认取值：** 不涉及
         :type status: str
-        :param priority: **参数解释：** 规则的优先级，数值越大，优先级越高 **约束限制：** 优先级不能重复 **取值范围：** 1-100 **默认取值：** 不涉及
+        :param priority: **参数解释：** 规则的优先级，数值越大，优先级越高 **约束限制：** 优先级不能重复 **取值范围：** 1-1000 **默认取值：** 不涉及
         :type priority: int
         :param conditions: 
         :type conditions: :class:`huaweicloudsdkcdn.v2.Conditions`
@@ -95,7 +95,7 @@ class FullUpdateRuleRequest:
     def name(self):
         r"""Gets the name of this FullUpdateRuleRequest.
 
-        **参数解释：** 规则名称 **约束限制：** 不涉及 **取值范围：** 1-50个字符 **默认取值：** 不涉及
+        **参数解释：** 规则名称 **约束限制：** 不涉及 **取值范围：** - 1-50个字符 - 由中文字符、英文字母、数字及“-”、“_”组成  **默认取值：** 不涉及
 
         :return: The name of this FullUpdateRuleRequest.
         :rtype: str
@@ -106,7 +106,7 @@ class FullUpdateRuleRequest:
     def name(self, name):
         r"""Sets the name of this FullUpdateRuleRequest.
 
-        **参数解释：** 规则名称 **约束限制：** 不涉及 **取值范围：** 1-50个字符 **默认取值：** 不涉及
+        **参数解释：** 规则名称 **约束限制：** 不涉及 **取值范围：** - 1-50个字符 - 由中文字符、英文字母、数字及“-”、“_”组成  **默认取值：** 不涉及
 
         :param name: The name of this FullUpdateRuleRequest.
         :type name: str
@@ -139,7 +139,7 @@ class FullUpdateRuleRequest:
     def priority(self):
         r"""Gets the priority of this FullUpdateRuleRequest.
 
-        **参数解释：** 规则的优先级，数值越大，优先级越高 **约束限制：** 优先级不能重复 **取值范围：** 1-100 **默认取值：** 不涉及
+        **参数解释：** 规则的优先级，数值越大，优先级越高 **约束限制：** 优先级不能重复 **取值范围：** 1-1000 **默认取值：** 不涉及
 
         :return: The priority of this FullUpdateRuleRequest.
         :rtype: int
@@ -150,7 +150,7 @@ class FullUpdateRuleRequest:
     def priority(self, priority):
         r"""Sets the priority of this FullUpdateRuleRequest.
 
-        **参数解释：** 规则的优先级，数值越大，优先级越高 **约束限制：** 优先级不能重复 **取值范围：** 1-100 **默认取值：** 不涉及
+        **参数解释：** 规则的优先级，数值越大，优先级越高 **约束限制：** 优先级不能重复 **取值范围：** 1-1000 **默认取值：** 不涉及
 
         :param priority: The priority of this FullUpdateRuleRequest.
         :type priority: int

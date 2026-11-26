@@ -35,7 +35,7 @@ class ShowApplyDetailRequest:
         :type workspace: str
         :param dlm_type: 数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
         :type dlm_type: str
-        :param apply_id: 审核信息id。
+        :param apply_id: 审核信息ID。
         :type apply_id: str
         """
         
@@ -99,7 +99,7 @@ class ShowApplyDetailRequest:
     def apply_id(self):
         r"""Gets the apply_id of this ShowApplyDetailRequest.
 
-        审核信息id。
+        审核信息ID。
 
         :return: The apply_id of this ShowApplyDetailRequest.
         :rtype: str
@@ -110,7 +110,7 @@ class ShowApplyDetailRequest:
     def apply_id(self, apply_id):
         r"""Sets the apply_id of this ShowApplyDetailRequest.
 
-        审核信息id。
+        审核信息ID。
 
         :param apply_id: The apply_id of this ShowApplyDetailRequest.
         :type apply_id: str

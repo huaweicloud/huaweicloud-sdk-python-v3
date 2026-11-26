@@ -22,7 +22,12 @@ class Partition:
         'create_time': 'datetime',
         'last_access_time': 'datetime',
         'parameters': 'dict(str, str)',
-        'storage_descriptor': 'StorageDescriptor'
+        'storage_descriptor': 'StorageDescriptor',
+        'catalog_id': 'str',
+        'database_id': 'str',
+        'partition_id': 'str',
+        'table_id': 'str',
+        'update_time': 'datetime'
     }
 
     attribute_map = {
@@ -33,10 +38,15 @@ class Partition:
         'create_time': 'create_time',
         'last_access_time': 'last_access_time',
         'parameters': 'parameters',
-        'storage_descriptor': 'storage_descriptor'
+        'storage_descriptor': 'storage_descriptor',
+        'catalog_id': 'catalog_id',
+        'database_id': 'database_id',
+        'partition_id': 'partition_id',
+        'table_id': 'table_id',
+        'update_time': 'update_time'
     }
 
-    def __init__(self, catalog_name=None, database_name=None, table_name=None, partition_values=None, create_time=None, last_access_time=None, parameters=None, storage_descriptor=None):
+    def __init__(self, catalog_name=None, database_name=None, table_name=None, partition_values=None, create_time=None, last_access_time=None, parameters=None, storage_descriptor=None, catalog_id=None, database_id=None, partition_id=None, table_id=None, update_time=None):
         r"""Partition
 
         The model defined in huaweicloud sdk
@@ -57,6 +67,16 @@ class Partition:
         :type parameters: dict(str, str)
         :param storage_descriptor: 
         :type storage_descriptor: :class:`huaweicloudsdklakeformation.v1.StorageDescriptor`
+        :param catalog_id: catalogID。
+        :type catalog_id: str
+        :param database_id: 数据库ID。
+        :type database_id: str
+        :param partition_id: 分区ID。
+        :type partition_id: str
+        :param table_id: 表ID。
+        :type table_id: str
+        :param update_time: 更新时间
+        :type update_time: datetime
         """
         
         
@@ -69,6 +89,11 @@ class Partition:
         self._last_access_time = None
         self._parameters = None
         self._storage_descriptor = None
+        self._catalog_id = None
+        self._database_id = None
+        self._partition_id = None
+        self._table_id = None
+        self._update_time = None
         self.discriminator = None
 
         self.catalog_name = catalog_name
@@ -79,6 +104,16 @@ class Partition:
         self.last_access_time = last_access_time
         self.parameters = parameters
         self.storage_descriptor = storage_descriptor
+        if catalog_id is not None:
+            self.catalog_id = catalog_id
+        if database_id is not None:
+            self.database_id = database_id
+        if partition_id is not None:
+            self.partition_id = partition_id
+        if table_id is not None:
+            self.table_id = table_id
+        if update_time is not None:
+            self.update_time = update_time
 
     @property
     def catalog_name(self):
@@ -251,6 +286,116 @@ class Partition:
         :type storage_descriptor: :class:`huaweicloudsdklakeformation.v1.StorageDescriptor`
         """
         self._storage_descriptor = storage_descriptor
+
+    @property
+    def catalog_id(self):
+        r"""Gets the catalog_id of this Partition.
+
+        catalogID。
+
+        :return: The catalog_id of this Partition.
+        :rtype: str
+        """
+        return self._catalog_id
+
+    @catalog_id.setter
+    def catalog_id(self, catalog_id):
+        r"""Sets the catalog_id of this Partition.
+
+        catalogID。
+
+        :param catalog_id: The catalog_id of this Partition.
+        :type catalog_id: str
+        """
+        self._catalog_id = catalog_id
+
+    @property
+    def database_id(self):
+        r"""Gets the database_id of this Partition.
+
+        数据库ID。
+
+        :return: The database_id of this Partition.
+        :rtype: str
+        """
+        return self._database_id
+
+    @database_id.setter
+    def database_id(self, database_id):
+        r"""Sets the database_id of this Partition.
+
+        数据库ID。
+
+        :param database_id: The database_id of this Partition.
+        :type database_id: str
+        """
+        self._database_id = database_id
+
+    @property
+    def partition_id(self):
+        r"""Gets the partition_id of this Partition.
+
+        分区ID。
+
+        :return: The partition_id of this Partition.
+        :rtype: str
+        """
+        return self._partition_id
+
+    @partition_id.setter
+    def partition_id(self, partition_id):
+        r"""Sets the partition_id of this Partition.
+
+        分区ID。
+
+        :param partition_id: The partition_id of this Partition.
+        :type partition_id: str
+        """
+        self._partition_id = partition_id
+
+    @property
+    def table_id(self):
+        r"""Gets the table_id of this Partition.
+
+        表ID。
+
+        :return: The table_id of this Partition.
+        :rtype: str
+        """
+        return self._table_id
+
+    @table_id.setter
+    def table_id(self, table_id):
+        r"""Sets the table_id of this Partition.
+
+        表ID。
+
+        :param table_id: The table_id of this Partition.
+        :type table_id: str
+        """
+        self._table_id = table_id
+
+    @property
+    def update_time(self):
+        r"""Gets the update_time of this Partition.
+
+        更新时间
+
+        :return: The update_time of this Partition.
+        :rtype: datetime
+        """
+        return self._update_time
+
+    @update_time.setter
+    def update_time(self, update_time):
+        r"""Sets the update_time of this Partition.
+
+        更新时间
+
+        :param update_time: The update_time of this Partition.
+        :type update_time: datetime
+        """
+        self._update_time = update_time
 
     def to_dict(self):
         result = {}

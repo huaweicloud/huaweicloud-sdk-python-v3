@@ -41,11 +41,11 @@ class ListCdnDomainTopPathRequest:
         :type start_time: int
         :param end_time: **参数解释：** 查询结束时间戳 **约束限制：** 该参数只能传0点毫秒时间戳 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type end_time: int
-        :param domain_name: **参数解释：** 域名列表 &gt; 如果域名在查询时间段内无数据，结果将不返回该域名的信息  **约束限制：** 仅支持查询已经在CDN创建成功的域名 **取值范围：** - all表示查询名下全部域名 - 多个域名以逗号（半角）分隔，如：www.test1.com,www.test2.com **默认取值：** 不涉及
+        :param domain_name: **参数解释：** 域名列表 &gt; 如果域名在查询时间段内无数据，结果将不返回该域名的信息  **约束限制：** 仅支持查询已经在CDN创建成功的域名 **取值范围：** - all表示查询名下全部域名 - 多个域名以逗号（半角）分隔，如：www.test1.com,www.test2.com  **默认取值：** 不涉及
         :type domain_name: str
-        :param stat_type: **参数解释：** 统计指标类型 **约束限制：** 不涉及 **取值范围：** - flux：流量 - req_num：请求数 **默认取值：** 不涉及
+        :param stat_type: **参数解释：** 统计指标类型 **约束限制：** 不涉及 **取值范围：** - flux：流量 - req_num：请求数  **默认取值：** 不涉及
         :type stat_type: str
-        :param service_area: **参数解释：** 服务范围 **约束限制：** 不涉及 **取值范围：** - mainland_china：中国大陆 - outside_mainland_china：中国大陆境外 - global：全球 **默认取值：** global：全球
+        :param service_area: **参数解释：** 服务范围 **约束限制：** 不涉及 **取值范围：** - mainland_china：中国大陆 - outside_mainland_china：中国大陆境外 - global：全球  **默认取值：** global：全球
         :type service_area: str
         :param user_domain_id: **参数解释：** 域名所属账号的domain_id **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type user_domain_id: str
@@ -118,7 +118,7 @@ class ListCdnDomainTopPathRequest:
     def domain_name(self):
         r"""Gets the domain_name of this ListCdnDomainTopPathRequest.
 
-        **参数解释：** 域名列表 > 如果域名在查询时间段内无数据，结果将不返回该域名的信息  **约束限制：** 仅支持查询已经在CDN创建成功的域名 **取值范围：** - all表示查询名下全部域名 - 多个域名以逗号（半角）分隔，如：www.test1.com,www.test2.com **默认取值：** 不涉及
+        **参数解释：** 域名列表 > 如果域名在查询时间段内无数据，结果将不返回该域名的信息  **约束限制：** 仅支持查询已经在CDN创建成功的域名 **取值范围：** - all表示查询名下全部域名 - 多个域名以逗号（半角）分隔，如：www.test1.com,www.test2.com  **默认取值：** 不涉及
 
         :return: The domain_name of this ListCdnDomainTopPathRequest.
         :rtype: str
@@ -129,7 +129,7 @@ class ListCdnDomainTopPathRequest:
     def domain_name(self, domain_name):
         r"""Sets the domain_name of this ListCdnDomainTopPathRequest.
 
-        **参数解释：** 域名列表 > 如果域名在查询时间段内无数据，结果将不返回该域名的信息  **约束限制：** 仅支持查询已经在CDN创建成功的域名 **取值范围：** - all表示查询名下全部域名 - 多个域名以逗号（半角）分隔，如：www.test1.com,www.test2.com **默认取值：** 不涉及
+        **参数解释：** 域名列表 > 如果域名在查询时间段内无数据，结果将不返回该域名的信息  **约束限制：** 仅支持查询已经在CDN创建成功的域名 **取值范围：** - all表示查询名下全部域名 - 多个域名以逗号（半角）分隔，如：www.test1.com,www.test2.com  **默认取值：** 不涉及
 
         :param domain_name: The domain_name of this ListCdnDomainTopPathRequest.
         :type domain_name: str
@@ -140,7 +140,7 @@ class ListCdnDomainTopPathRequest:
     def stat_type(self):
         r"""Gets the stat_type of this ListCdnDomainTopPathRequest.
 
-        **参数解释：** 统计指标类型 **约束限制：** 不涉及 **取值范围：** - flux：流量 - req_num：请求数 **默认取值：** 不涉及
+        **参数解释：** 统计指标类型 **约束限制：** 不涉及 **取值范围：** - flux：流量 - req_num：请求数  **默认取值：** 不涉及
 
         :return: The stat_type of this ListCdnDomainTopPathRequest.
         :rtype: str
@@ -151,7 +151,7 @@ class ListCdnDomainTopPathRequest:
     def stat_type(self, stat_type):
         r"""Sets the stat_type of this ListCdnDomainTopPathRequest.
 
-        **参数解释：** 统计指标类型 **约束限制：** 不涉及 **取值范围：** - flux：流量 - req_num：请求数 **默认取值：** 不涉及
+        **参数解释：** 统计指标类型 **约束限制：** 不涉及 **取值范围：** - flux：流量 - req_num：请求数  **默认取值：** 不涉及
 
         :param stat_type: The stat_type of this ListCdnDomainTopPathRequest.
         :type stat_type: str
@@ -162,7 +162,7 @@ class ListCdnDomainTopPathRequest:
     def service_area(self):
         r"""Gets the service_area of this ListCdnDomainTopPathRequest.
 
-        **参数解释：** 服务范围 **约束限制：** 不涉及 **取值范围：** - mainland_china：中国大陆 - outside_mainland_china：中国大陆境外 - global：全球 **默认取值：** global：全球
+        **参数解释：** 服务范围 **约束限制：** 不涉及 **取值范围：** - mainland_china：中国大陆 - outside_mainland_china：中国大陆境外 - global：全球  **默认取值：** global：全球
 
         :return: The service_area of this ListCdnDomainTopPathRequest.
         :rtype: str
@@ -173,7 +173,7 @@ class ListCdnDomainTopPathRequest:
     def service_area(self, service_area):
         r"""Sets the service_area of this ListCdnDomainTopPathRequest.
 
-        **参数解释：** 服务范围 **约束限制：** 不涉及 **取值范围：** - mainland_china：中国大陆 - outside_mainland_china：中国大陆境外 - global：全球 **默认取值：** global：全球
+        **参数解释：** 服务范围 **约束限制：** 不涉及 **取值范围：** - mainland_china：中国大陆 - outside_mainland_china：中国大陆境外 - global：全球  **默认取值：** global：全球
 
         :param service_area: The service_area of this ListCdnDomainTopPathRequest.
         :type service_area: str

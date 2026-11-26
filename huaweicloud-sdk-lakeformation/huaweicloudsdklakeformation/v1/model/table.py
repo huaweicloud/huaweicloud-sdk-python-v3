@@ -117,7 +117,7 @@ class Table:
         :type database_id: str
         :param table_id: 表ID
         :type table_id: str
-        :param table_status: 表状态，0表示正常，1表示删除中，2表示已删除，3表示恢复中，4表示清除中，其余值为元数据更新、创建、异常等中间状态
+        :param table_status: 表状态，0表示正常，1表示删除中，2表示已删除，3表示恢复中，4表示清除中，5~13表示元数据更新、创建、失败、异常等中间状态
         :type table_status: int
         :param external_table_id: 用户端表id，创建时指定，不可修改
         :type external_table_id: str
@@ -655,7 +655,7 @@ class Table:
     def table_status(self):
         r"""Gets the table_status of this Table.
 
-        表状态，0表示正常，1表示删除中，2表示已删除，3表示恢复中，4表示清除中，其余值为元数据更新、创建、异常等中间状态
+        表状态，0表示正常，1表示删除中，2表示已删除，3表示恢复中，4表示清除中，5~13表示元数据更新、创建、失败、异常等中间状态
 
         :return: The table_status of this Table.
         :rtype: int
@@ -666,7 +666,7 @@ class Table:
     def table_status(self, table_status):
         r"""Sets the table_status of this Table.
 
-        表状态，0表示正常，1表示删除中，2表示已删除，3表示恢复中，4表示清除中，其余值为元数据更新、创建、异常等中间状态
+        表状态，0表示正常，1表示删除中，2表示已删除，3表示恢复中，4表示清除中，5~13表示元数据更新、创建、失败、异常等中间状态
 
         :param table_status: The table_status of this Table.
         :type table_status: int
